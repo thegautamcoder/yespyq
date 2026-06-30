@@ -61,6 +61,7 @@ function showView(name) {
   $$(".view").forEach(v => v.classList.add("hidden"));
   $(`#view-${name}`)?.classList.remove("hidden");
   $$(".main-nav a").forEach(a => a.classList.toggle("active", a.dataset.nav === name));
+  document.body.classList.toggle("in-quiz", name === "quiz");
   window.scrollTo({ top: 0 });
 }
 
@@ -292,6 +293,7 @@ function answerQuiz(btn) {
   const next = body.querySelector("[data-quiz-next]");
   next.textContent = quiz.idx + 1 >= quiz.total ? "See results →" : "Next →";
   next.classList.remove("hidden");
+  ex.querySelector(".verdict")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
 function nextQuiz() {

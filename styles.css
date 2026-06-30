@@ -361,3 +361,12 @@ a{color:inherit;text-decoration:none}
 .rev-q{font-size:1rem;font-weight:600;margin-bottom:.6rem}
 .rev-ans{font-size:.92rem;color:var(--slate)}
 .rev-you{color:var(--bad)}
+
+/* ===== Quiz: app-like layout — sticky Next, scrollable solution ===== */
+body.in-quiz .site-footer{display:none}
+#view-quiz .quiz-actions{position:sticky;bottom:0;z-index:30;margin-top:1rem;justify-content:stretch;
+  padding:.85rem 0 max(.85rem,env(safe-area-inset-bottom));
+  background:linear-gradient(180deg,rgba(248,250,252,0),var(--bg) 38%)}
+#view-quiz .quiz-actions .btn-lg{width:100%;box-shadow:0 8px 22px rgba(37,99,235,.3)}
+#view-quiz .explain{margin-top:1.2rem}
+#view-quiz .explain .exp-body{max-height:38vh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
