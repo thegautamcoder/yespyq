@@ -277,7 +277,6 @@ PAGE_TMPL = """<!DOCTYPE html>
         <a href="/">Home</a>
         <a href="/">Practice</a>
         <a href="/subjects/" class="active">Subjects</a>
-        <a href="/blog/">Blog</a>
       </nav>
       <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
     </div>
@@ -340,7 +339,6 @@ PAGE_TMPL = """<!DOCTYPE html>
         <h4>Practice</h4>
         <a href="/">Home</a>
         <a href="/subjects/">Subjects</a>
-        <a href="/blog/">Blog</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
@@ -469,7 +467,6 @@ HUB_TMPL = """<!DOCTYPE html>
         <a href="/">Home</a>
         <a href="/">Practice</a>
         <a href="/subjects/" class="active">Subjects</a>
-        <a href="/blog/">Blog</a>
       </nav>
       <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
     </div>
@@ -508,7 +505,6 @@ HUB_TMPL = """<!DOCTYPE html>
         <h4>Practice</h4>
         <a href="/">Home</a>
         <a href="/subjects/">Subjects</a>
-        <a href="/blog/">Blog</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>

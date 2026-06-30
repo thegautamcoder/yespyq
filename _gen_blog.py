@@ -407,7 +407,6 @@ TMPL = """<!DOCTYPE html>
       <nav class="main-nav">
         <a href="/">Home</a>
         <a href="/subjects/">Subjects</a>
-        <a href="/blog/" class="active">Blog</a>
       </nav>
       <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
     </div>
@@ -416,7 +415,6 @@ TMPL = """<!DOCTYPE html>
   <main>
     <article class="article">
       <nav class="breadcrumb">
-        <a href="/">Home</a> › <a href="/blog/">Blog</a> › {tag}
       </nav>
       <h1>{h1}</h1>
       <div class="meta"><span>By YESPYQ</span> · <span>Updated June 2026</span> · <span>{read}</span></div>
@@ -449,7 +447,6 @@ TMPL = """<!DOCTYPE html>
         <h4>Practice</h4>
         <a href="/">Home</a>
         <a href="/subjects/">Subjects</a>
-        <a href="/blog/">Blog</a>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
