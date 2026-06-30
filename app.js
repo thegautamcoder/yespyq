@@ -434,11 +434,33 @@ function formatBody(raw, isQuestion) {
     .join("");
 }
 
+/* ---------- entrance animation helpers ---------- */
+function countUp(el, target) {
+  if (!el) return;
+  const dur = 1000, t0 = performance.now();
+  (function step(now) {
+    const p = Math.min(1, (now - t0) / dur);
+    el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString();
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+}
+function revealOnScroll() {
+  if (!("IntersectionObserver" in window)) return;
+  const els = $$(".subject-card,.year-card,.seo-links a");
+  els.forEach(el => el.classList.add("reveal"));
+  const io = new IntersectionObserver(ents => {
+    ents.forEach(e => { if (e.isIntersecting) { e.target.classList.add("reveal-in"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(el => io.observe(el));
+}
+
 /* ---------- init ---------- */
 renderSubjects();
 renderYears();
 renderGameStats();
-const sQ = $("#stat-q"); if (sQ) sQ.textContent = QUESTIONS.length.toLocaleString();
-const sY = $("#stat-y"); if (sY) sY.textContent = YEARS.length;
+document.body.classList.add("anim-ready");
+countUp($("#stat-q"), QUESTIONS.length);
+countUp($("#stat-y"), YEARS.length);
+revealOnScroll();
 $("#year").textContent = new Date().getFullYear();
 showView("home");

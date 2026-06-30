@@ -379,3 +379,60 @@ body.in-quiz .site-footer{display:none}
 .setup-h{font-size:.85rem;font-weight:800;color:var(--muted);text-transform:uppercase;
   letter-spacing:.05em;margin:1.4rem 0 .7rem}
 .quiz-setup .result-chips{justify-content:flex-start}
+
+/* ============================================================
+   Dark mode (toggle + auto by IST), animations, texture, polish
+   ============================================================ */
+[data-theme="dark"]{
+  --blue-50:#15233c; --blue-100:#1b2c49; --blue-500:#3b82f6; --blue-600:#3b82f6;
+  --blue-700:#7cb0ff; --blue-800:#a8cbff;
+  --ink:#e6ebf3; --slate:#aab4c6; --muted:#8593a8;
+  --line:#263247; --bg:#0b1220; --card:#121c30;
+  --good:#22c55e; --good-bg:#10301d; --bad:#f87171; --bad-bg:#341417;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.45);
+}
+[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+[data-theme="dark"] .site-header{background:rgba(11,18,32,.85)}
+[data-theme="dark"] .btn-ghost,[data-theme="dark"] .option,[data-theme="dark"] .rchip,
+[data-theme="dark"] .quiz-exit,[data-theme="dark"] .pyq-list a,[data-theme="dark"] .seo-links a,
+[data-theme="dark"] .theme-toggle{background:var(--card)}
+[data-theme="dark"] .option:hover{background:var(--blue-100)}
+[data-theme="dark"] .qpage-options .option:not(.correct):hover{background:var(--card)}
+[data-theme="dark"] .hero,[data-theme="dark"] .blog-hero{background:linear-gradient(160deg,var(--blue-50),var(--bg) 72%)}
+[data-theme="dark"] .cta-box{background:linear-gradient(160deg,var(--blue-50),var(--card));border-color:var(--line)}
+[data-theme="dark"] .result-ring::after{background:var(--card)}
+[data-theme="dark"] .quiz-actions{background:linear-gradient(180deg,rgba(11,18,32,0),var(--bg) 38%)}
+[data-theme="dark"] .pill{background:var(--blue-100);color:var(--blue-800)}
+
+/* floating theme toggle (added by inline script on every page) */
+.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;
+  border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.2rem;cursor:pointer;
+  box-shadow:var(--shadow);display:grid;place-items:center;transition:.18s;line-height:1}
+.theme-toggle:hover{transform:translateY(-2px) scale(1.06)}
+body.in-quiz .theme-toggle{display:none}
+
+/* subtle study-symbol texture on heroes (kills the plain white) */
+.hero,.blog-hero{position:relative;overflow:hidden}
+.hero::before,.blog-hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.45;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cg fill='none' stroke='%2393b4f5' stroke-width='1.1' opacity='.55'%3E%3Ccircle cx='58' cy='58' r='19'/%3E%3Cellipse cx='58' cy='58' rx='19' ry='7'/%3E%3Crect x='205' y='44' width='32' height='42' rx='3'/%3E%3Cpath d='M44 232 l30 0 M44 246 l44 0'/%3E%3C/g%3E%3Cg fill='%2393b4f5' opacity='.5' font-family='Georgia,serif' font-size='30'%3E%3Ctext x='150' y='112'%3E%CF%80%3C/text%3E%3Ctext x='240' y='180'%3E%E2%88%AB%3C/text%3E%3Ctext x='66' y='150'%3E%CE%A3%3C/text%3E%3Ctext x='205' y='268'%3E%E2%88%9A%3C/text%3E%3Ctext x='120' y='238'%3E%E2%88%9E%3C/text%3E%3C/g%3E%3C/svg%3E");
+  background-size:300px 300px}
+.hero-inner,.blog-hero .container{position:relative;z-index:1}
+
+/* footer polish */
+.site-footer{border-top:3px solid var(--blue-600)}
+.footer-brand p{max-width:230px;line-height:1.5}
+.footer-col a{transition:.12s}
+.footer-col a:hover{transform:translateX(2px)}
+
+/* entrance animations (homepage app sets .anim-ready; safe without JS) */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:no-preference){
+  .anim-ready .hero-inner>*{opacity:0;animation:fadeUp .6s cubic-bezier(.22,.61,.36,1) forwards}
+  .anim-ready .hero-inner .pill{animation-delay:.04s}
+  .anim-ready .hero-inner h1{animation-delay:.13s}
+  .anim-ready .hero-inner .lead{animation-delay:.24s}
+  .anim-ready .hero-inner .hero-cta{animation-delay:.36s}
+  .anim-ready .hero-inner .hero-stats{animation-delay:.48s}
+  .anim-ready .reveal{opacity:0;transform:translateY(16px)}
+  .anim-ready .reveal.reveal-in{animation:fadeUp .55s cubic-bezier(.22,.61,.36,1) forwards}
+}
