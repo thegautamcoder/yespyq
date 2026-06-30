@@ -22,9 +22,9 @@ function isCleanQ(x) {
   }
   return true;
 }
-if (Array.isArray(window.QUESTIONS)) {
+if (typeof QUESTIONS !== "undefined" && Array.isArray(QUESTIONS)) {
   const clean = QUESTIONS.filter(isCleanQ);
-  if (clean.length) { QUESTIONS.length = 0; QUESTIONS.push(...clean); }
+  if (clean.length && clean.length < QUESTIONS.length) { QUESTIONS.length = 0; QUESTIONS.push(...clean); }
 }
 
 const byId = Object.fromEntries(QUESTIONS.map(q => [q.i, q]));
