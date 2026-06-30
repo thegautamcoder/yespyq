@@ -359,7 +359,7 @@ TMPL = """<!DOCTYPE html>
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="/styles.css?v=11" />
-  <link rel="stylesheet" href="/blog.css?v=2" />
+  <link rel="stylesheet" href="/blog.css?v=3" />
 
   <script type="application/ld+json">
   {{
