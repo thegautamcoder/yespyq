@@ -4,6 +4,29 @@ const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
 const subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+
+/* Drop questions whose source OCR is corrupted — truncated stems ending in
+   "Option", options carrying explanation text / embedded sub-questions, or
+   punctuation-only options. Keeps the visible bank trustworthy. */
+function isCleanQ(x) {
+  const qq = (x.q || "").trim(), opts = x.o || [], a = x.a;
+  if (opts.length !== 4 || qq.length < 12) return false;
+  if (typeof a !== "number" || a < 0 || a >= opts.length) return false;
+  if (/\bOptions?\s*$/.test(qq)) return false;                 // truncated stem
+  const BAD = /consider the following|incorrect\s*:|correct\s*:|\([a-d]\)\s|\(20\d\d\)|select the correct answer/i;
+  for (let o of opts) {
+    o = (o || "").trim();
+    if (o.length < 1 || o.length > 180) return false;          // empty / explanation dumped in
+    if (o.length <= 2 && !/^[a-z0-9]+$/i.test(o)) return false; // punctuation-only
+    if (BAD.test(o)) return false;                              // embedded question/explanation
+  }
+  return true;
+}
+if (Array.isArray(window.QUESTIONS)) {
+  const clean = QUESTIONS.filter(isCleanQ);
+  if (clean.length) { QUESTIONS.length = 0; QUESTIONS.push(...clean); }
+}
+
 const byId = Object.fromEntries(QUESTIONS.map(q => [q.i, q]));
 const YEARS = [...new Set(QUESTIONS.map(q => q.y))].filter(Boolean).sort((a, b) => b - a);
 const PAGE = 15;
