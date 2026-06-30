@@ -300,3 +300,64 @@ a{color:inherit;text-decoration:none}
   border-radius:999px;background:var(--card);color:var(--blue-700);font-weight:600;
   font-size:.92rem;transition:.15s}
 .seo-links a:hover{border-color:var(--blue-500);background:var(--blue-50);transform:translateY(-1px)}
+
+/* ===== Quiz mode (one question at a time) ===== */
+.btn-lg{padding:.9rem 1.5rem;font-size:1.02rem;border-radius:14px}
+.gs-item.bump{animation:bump .45s ease}
+@keyframes bump{0%{transform:scale(1)}35%{transform:scale(1.35)}100%{transform:scale(1)}}
+#confetti{display:none}
+
+.quiz-wrap{width:min(720px,94vw);margin:1.4rem auto 3rem}
+.quiz-top{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem}
+.quiz-exit{flex:none;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);
+  background:#fff;color:var(--slate);font-size:1rem;cursor:pointer;transition:.15s}
+.quiz-exit:hover{border-color:var(--bad);color:var(--bad)}
+.quiz-progress{flex:1;height:12px;background:var(--blue-50);border:1px solid var(--line);
+  border-radius:999px;overflow:hidden}
+.quiz-progress-bar{display:block;height:100%;width:0;border-radius:999px;
+  background:linear-gradient(90deg,var(--blue-500),var(--blue-700));transition:width .4s ease}
+.quiz-combo{flex:none;min-width:38px;text-align:right;font-weight:800;color:#f59e0b;font-size:1.05rem}
+
+.quiz-card{animation:slideUp .3s ease}
+.quiz-meta{display:flex;gap:.5rem;align-items:center;margin-bottom:1rem;flex-wrap:wrap}
+.quiz-count{margin-left:auto;font-weight:800;color:var(--muted);font-size:.9rem}
+.quiz-q{font-size:1.18rem;margin-bottom:1.4rem}
+.quiz-actions{margin-top:1.4rem;display:flex;justify-content:flex-end}
+.quiz-actions .btn-lg{width:100%}
+
+/* ===== Result screen ===== */
+.result{text-align:center;animation:slideUp .35s ease;padding-top:.5rem}
+.result-ring{position:relative;width:150px;height:150px;border-radius:50%;margin:.5rem auto 1.3rem;
+  background:conic-gradient(var(--blue-600) calc(var(--pct)*1%),var(--blue-100) 0);display:grid;place-items:center}
+.result-ring::after{content:"";position:absolute;inset:13px;background:#fff;border-radius:50%}
+.result-score{position:relative;z-index:1;font-size:2.3rem;font-weight:800;color:var(--ink)}
+.result-score small{font-size:1rem;color:var(--muted);font-weight:600;margin-left:.15rem}
+.result-msg{font-size:1.6rem;font-weight:800;letter-spacing:-.02em;margin:.2rem 0 .3rem}
+.result-sub{color:var(--slate);margin-bottom:1.4rem}
+.result-sub b{color:var(--blue-700)}
+.result-stats{display:flex;justify-content:center;gap:1.2rem;margin-bottom:1.6rem;flex-wrap:wrap}
+.result-stats div{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:.9rem 1.3rem;min-width:96px}
+.result-stats b{display:block;font-size:1.4rem;font-weight:800;color:var(--ink)}
+.result-stats span{font-size:.8rem;color:var(--muted)}
+.result-cta{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.6rem}
+.result-cta .btn-lg{flex:1;min-width:200px}
+.result-more{font-size:.85rem;color:var(--muted);margin-bottom:.7rem}
+.result-chips{display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;margin-bottom:1.6rem}
+.rchip{display:inline-flex;align-items:center;gap:.3rem;padding:.5rem .85rem;border:1px solid var(--line);
+  border-radius:999px;background:#fff;color:var(--ink);font-weight:600;font-size:.9rem;cursor:pointer;transition:.15s}
+.rchip:hover{border-color:var(--blue-500);color:var(--blue-700);transform:translateY(-1px)}
+.share-btn{display:inline-flex;align-items:center;gap:.5rem;background:#25D366;color:#fff;border:none;
+  padding:.8rem 1.4rem;border-radius:14px;font-weight:700;font-size:.98rem;cursor:pointer;
+  box-shadow:0 6px 16px rgba(37,211,102,.3);transition:.15s}
+.share-btn:hover{filter:brightness(.96);transform:translateY(-1px)}
+
+/* ===== Review screen ===== */
+.review h2{font-size:1.4rem;font-weight:800;margin-bottom:1.2rem}
+.rev-row{border:1px solid var(--line);border-left-width:4px;border-radius:12px;padding:1rem 1.1rem;margin-bottom:.9rem;background:var(--card)}
+.rev-row.ok{border-left-color:var(--good)}
+.rev-row.no{border-left-color:var(--bad)}
+.rev-head{display:flex;justify-content:space-between;align-items:center;gap:.5rem;font-weight:800;margin-bottom:.6rem}
+.rev-q{font-size:1rem;font-weight:600;margin-bottom:.6rem}
+.rev-ans{font-size:.92rem;color:var(--slate)}
+.rev-you{color:var(--bad)}

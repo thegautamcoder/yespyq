@@ -55,7 +55,7 @@
   <!-- Perf hints -->
   <link rel="preload" href="styles.css" as="style" />
 
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css?v=12" />
 
   <!-- Structured data: Organization + WebSite + EducationalOrganization -->
   <script type="application/ld+json">
@@ -150,7 +150,16 @@
         <div class="container hero-inner">
           <span class="pill">UPSC Civil Services Examination</span>
           <h1>Master UPSC CSE with <span class="accent">Previous Year Questions</span></h1>
-          <p class="lead">Practice authentic Prelims PYQs — sorted subject-wise and year-wise — with answer keys and crisp explanations.</p>
+          <p class="lead">Practice authentic Prelims PYQs — one question at a time, with instant answers, crisp explanations, XP and streaks.</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary btn-lg" data-quiz-start>⚡ Start a 10-question quiz</button>
+            <a href="#" class="btn btn-ghost btn-lg" data-nav="practice">Browse all PYQs</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><b id="stat-q">2,100+</b><span>Real PYQs</span></div>
+            <div class="stat"><b id="stat-y">30</b><span>Years</span></div>
+            <div class="stat"><b>7</b><span>Subjects</span></div>
+          </div>
         </div>
       </div>
 
@@ -215,6 +224,18 @@
       </div>
     </section>
 
+    <!-- QUIZ VIEW (one question at a time) -->
+    <section class="view hidden" id="view-quiz">
+      <div class="quiz-wrap">
+        <div class="quiz-top">
+          <button class="quiz-exit" data-quiz-exit aria-label="Exit quiz">✕</button>
+          <div class="quiz-progress"><span class="quiz-progress-bar" id="quiz-bar"></span></div>
+          <span class="quiz-combo" id="quiz-combo"></span>
+        </div>
+        <div id="quiz-body"></div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
@@ -261,6 +282,6 @@
   <script src="data.js?v=8"></script>
   <script src="pyq.js?v=8"></script>
   <script src="pyq-exp.js?v=8" defer></script>
-  <script src="app.js?v=11"></script>
+  <script src="app.js?v=12"></script>
 </body>
 </html>

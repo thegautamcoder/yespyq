@@ -43,6 +43,7 @@ function earnXp(n) {
   const t = today();
   if (game.lastDay !== t) { game.streak = (game.lastDay === yesterday()) ? game.streak + 1 : 1; game.lastDay = t; }
   game.xp += n; saveGame(); renderGameStats();
+  const xpEl = $(".gs-xp"); if (xpEl) { xpEl.classList.remove("bump"); void xpEl.offsetWidth; xpEl.classList.add("bump"); }
 }
 function renderGameStats() {
   $("#game-stats").innerHTML =
@@ -195,6 +196,17 @@ $("#qlist").addEventListener("click", e => {
 
 /* ---------- global click routing ---------- */
 document.addEventListener("click", e => {
+  // ----- quiz routing (checked first) -----
+  const qStart = e.target.closest("[data-quiz-start]");
+  if (qStart) { e.preventDefault(); const d = qStart.dataset; startQuiz({ size: 10, subject: d.subject || null, year: d.year ? +d.year : null }); return; }
+  if (e.target.closest("[data-quiz-exit]")) { e.preventDefault(); showView("home"); return; }
+  const qa = e.target.closest("[data-qa]");
+  if (qa) { if (!qa.closest(".quiz-options").querySelector(".locked")) answerQuiz(qa); return; }
+  if (e.target.closest("[data-quiz-next]")) { nextQuiz(); return; }
+  if (e.target.closest("[data-quiz-again]")) { startQuiz({ size: 10, subject: quiz && quiz.subject, year: quiz && quiz.year, label: quiz && quiz.label }); return; }
+  if (e.target.closest("[data-quiz-review]")) { renderReview(); return; }
+  if (e.target.closest("[data-share]")) { e.preventDefault(); shareResult(); return; }
+
   const nav = e.target.closest("[data-nav]");
   if (nav) { e.preventDefault(); const n = nav.dataset.nav; n === "practice" ? openBrowse({}) : showView(n); return; }
   if (e.target.closest("[data-action='start']")) { e.preventDefault(); openBrowse({ subject: null, year: null }); return; }
@@ -209,6 +221,154 @@ document.addEventListener("click", e => {
   if (e.target.closest("#filter-toggle")) { $("#filters").classList.toggle("open"); return; }
   if (e.target.closest("#load-more")) { renderMore(); }
 });
+
+/* ============================================================
+   QUIZ MODE — one question at a time (Duolingo-style loop)
+   ============================================================ */
+let quiz = null;
+function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+function startQuiz(opts = {}) {
+  const size = opts.size || 10;
+  let pool = QUESTIONS.filter(q => (!opts.subject || q.s === opts.subject) && (!opts.year || q.y === opts.year));
+  if (pool.length < 4) pool = QUESTIONS.slice();
+  const queue = shuffle(pool.slice()).slice(0, Math.min(size, pool.length));
+  quiz = {
+    queue, idx: 0, correct: 0, total: queue.length, xp: 0, combo: 0, bestCombo: 0, results: [],
+    subject: opts.subject || null, year: opts.year || null,
+    label: opts.label || (opts.subject ? subjectMap[opts.subject].name : opts.year ? `UPSC ${opts.year}` : "Quick Quiz"),
+  };
+  showView("quiz");
+  renderQuizQuestion();
+}
+
+function renderQuizQuestion() {
+  const q = quiz.queue[quiz.idx];
+  $("#quiz-bar").style.width = (quiz.idx / quiz.total) * 100 + "%";
+  $("#quiz-combo").innerHTML = quiz.combo >= 2 ? `🔥 ${quiz.combo}` : "";
+  $("#quiz-body").innerHTML = `
+    <div class="quiz-card">
+      <div class="quiz-meta">
+        <span class="qtag">${subjectMap[q.s].icon} ${subjectMap[q.s].name}</span>
+        ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
+        <span class="quiz-count">${quiz.idx + 1} / ${quiz.total}</span>
+      </div>
+      <div class="qtext quiz-q">${formatBody(q.q, true)}</div>
+      <div class="options quiz-options">
+        ${q.o.map((o, i) => `<button class="option" data-qa="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${escapeHTML(o)}</span></button>`).join("")}
+      </div>
+      <div class="explain hidden" data-exp></div>
+      <div class="quiz-actions"><button class="btn btn-primary btn-lg hidden" data-quiz-next>Next →</button></div>
+    </div>`;
+  window.scrollTo({ top: 0 });
+}
+
+function answerQuiz(btn) {
+  const i = +btn.dataset.qa, q = quiz.queue[quiz.idx], correct = i === q.a;
+  const body = $("#quiz-body");
+  body.querySelectorAll(".option").forEach((o, k) => {
+    o.classList.add("locked");
+    if (k === q.a) o.classList.add("correct");
+    else if (k === i) o.classList.add("wrong");
+    else o.classList.add("dim");
+  });
+  quiz.results.push({ q, chosen: i, correct });
+  if (correct) {
+    quiz.correct++; quiz.combo++; quiz.bestCombo = Math.max(quiz.bestCombo, quiz.combo);
+    const gain = 10 + (quiz.combo - 1) * 2;           // combo bonus = more XP for streaks
+    quiz.xp += gain; earnXp(gain);
+    const r = btn.getBoundingClientRect(); floatXp(r.right - 56, r.top, `+${gain} XP`);
+    if (quiz.combo >= 3) burstConfetti();
+  } else {
+    quiz.combo = 0;
+  }
+  $("#quiz-combo").innerHTML = quiz.combo >= 2 ? `🔥 ${quiz.combo}` : "";
+  const expl = (window.EXP && window.EXP[q.i]) || "Explanation coming soon.";
+  const ex = body.querySelector("[data-exp]");
+  ex.innerHTML = `
+    <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
+    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>`;
+  ex.classList.remove("hidden");
+  const next = body.querySelector("[data-quiz-next]");
+  next.textContent = quiz.idx + 1 >= quiz.total ? "See results →" : "Next →";
+  next.classList.remove("hidden");
+}
+
+function nextQuiz() {
+  if (quiz.idx + 1 >= quiz.total) return renderResult();
+  quiz.idx++; renderQuizQuestion();
+}
+
+function renderResult() {
+  $("#quiz-bar").style.width = "100%";
+  $("#quiz-combo").innerHTML = "";
+  const pct = Math.round((quiz.correct / quiz.total) * 100);
+  const msg = pct >= 80 ? "Outstanding! 🏆" : pct >= 60 ? "Strong work! 💪" : pct >= 40 ? "Keep pushing! 📈" : "Every attempt counts 🌱";
+  $("#quiz-body").innerHTML = `
+    <div class="result">
+      <div class="result-ring" style="--pct:${pct}"><span class="result-score">${quiz.correct}<small>/ ${quiz.total}</small></span></div>
+      <h2 class="result-msg">${msg}</h2>
+      <p class="result-sub">${quiz.label} · You earned <b>+${quiz.xp} XP</b></p>
+      <div class="result-stats">
+        <div><b>${pct}%</b><span>Accuracy</span></div>
+        <div><b>+${quiz.xp}</b><span>XP earned</span></div>
+        <div><b>🔥 ${quiz.bestCombo}</b><span>Best combo</span></div>
+      </div>
+      <div class="result-cta">
+        <button class="btn btn-primary btn-lg" data-quiz-again>Next 10 questions →</button>
+        <button class="btn btn-ghost btn-lg" data-quiz-review>Review answers</button>
+      </div>
+      <p class="result-more">Or keep going:</p>
+      <div class="result-chips">
+        <button class="rchip" data-quiz-start data-mix="1">🎲 Mixed quiz</button>
+        ${SUBJECTS.slice(0, 6).map(s => `<button class="rchip" data-quiz-start data-subject="${s.id}">${s.icon} ${s.name.split(" ")[0]}</button>`).join("")}
+        <a class="rchip" href="#" data-nav="home">📚 By year / subject</a>
+      </div>
+      <button class="share-btn" data-share>📲 Share my score on WhatsApp</button>
+    </div>`;
+  burstConfetti();
+  window.scrollTo({ top: 0 });
+}
+
+function renderReview() {
+  const rows = quiz.results.map((r, n) => `
+    <div class="rev-row ${r.correct ? "ok" : "no"}">
+      <div class="rev-head"><span>${r.correct ? "✓" : "✗"} Q${n + 1}</span><span class="qtag">${subjectMap[r.q.s].icon} ${subjectMap[r.q.s].name}${r.q.y ? " · " + r.q.y : ""}</span></div>
+      <div class="qtext rev-q">${formatBody(r.q.q, true)}</div>
+      <div class="rev-ans"><b>Correct:</b> ${String.fromCharCode(97 + r.q.a)}) ${escapeHTML(r.q.o[r.q.a])}${r.correct ? "" : ` &nbsp;·&nbsp; <span class="rev-you">You: ${String.fromCharCode(97 + r.chosen)}) ${escapeHTML(r.q.o[r.chosen])}</span>`}</div>
+    </div>`).join("");
+  $("#quiz-body").innerHTML = `
+    <div class="review">
+      <h2>Review · ${quiz.correct}/${quiz.total} correct</h2>
+      ${rows}
+      <div class="result-cta">
+        <button class="btn btn-primary btn-lg" data-quiz-again>Next 10 questions →</button>
+        <a class="btn btn-ghost btn-lg" href="#" data-nav="home">Back to home</a>
+      </div>
+    </div>`;
+  window.scrollTo({ top: 0 });
+}
+
+function shareResult() {
+  const score = quiz ? `${quiz.correct}/${quiz.total}` : "";
+  const txt = `I scored ${score} on a UPSC Prelims PYQ quiz on YESPYQ! 🎯 Practice free, one question at a time:`;
+  const url = "https://yespyq.com/";
+  if (navigator.share) { navigator.share({ title: "YESPYQ — UPSC PYQ Quiz", text: txt, url }).catch(() => {}); }
+  else { window.open(`https://wa.me/?text=${encodeURIComponent(txt + " " + url)}`, "_blank"); }
+}
+
+function burstConfetti() {
+  const c = $("#confetti"); if (!c) return;
+  const ctx = c.getContext("2d"); c.width = innerWidth; c.height = innerHeight; c.style.display = "block";
+  const cols = ["#2563eb", "#16a34a", "#f59e0b", "#ef4444", "#8b5cf6"];
+  const P = Array.from({ length: 90 }, () => ({ x: innerWidth / 2, y: innerHeight * .28, vx: (Math.random() - .5) * 13, vy: Math.random() * -13 - 3, g: .42, s: Math.random() * 6 + 3, c: cols[Math.random() * cols.length | 0] }));
+  let f = 0;
+  (function anim() {
+    ctx.clearRect(0, 0, c.width, c.height);
+    P.forEach(p => { p.vy += p.g; p.x += p.vx; p.y += p.vy; ctx.fillStyle = p.c; ctx.fillRect(p.x, p.y, p.s, p.s); });
+    if (f++ < 75) requestAnimationFrame(anim); else { ctx.clearRect(0, 0, c.width, c.height); c.style.display = "none"; }
+  })();
+}
 
 /* ---------- util ---------- */
 function escapeHTML(str) { return String(str).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])); }
@@ -255,5 +415,7 @@ function formatBody(raw, isQuestion) {
 renderSubjects();
 renderYears();
 renderGameStats();
+const sQ = $("#stat-q"); if (sQ) sQ.textContent = QUESTIONS.length.toLocaleString();
+const sY = $("#stat-y"); if (sY) sY.textContent = YEARS.length;
 $("#year").textContent = new Date().getFullYear();
 showView("home");
