@@ -121,7 +121,7 @@ function cardHTML(q, serial) {
         <span class="qtag">${subjectMap[q.s].icon} ${subjectMap[q.s].name}</span>
         ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
       </div>
-      <div class="qtext">${escapeHTML(q.q)}</div>
+      <div class="qtext">${formatBody(q.q)}</div>
       <div class="options">${opts}</div>
       <div class="explain hidden" data-exp></div>
     </article>`;
@@ -160,7 +160,7 @@ $("#qlist").addEventListener("click", e => {
   const ex = card.querySelector("[data-exp]");
   ex.innerHTML = `
     <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
-    <p><span class="lbl">Explanation:</span> ${escapeHTML(expl)}</p>`;
+    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl)}</div>`;
   ex.classList.remove("hidden");
   if (correct && !answered.has(q.i)) {
     answered.add(q.i);
@@ -189,6 +189,25 @@ document.addEventListener("click", e => {
 
 /* ---------- util ---------- */
 function escapeHTML(str) { return String(str).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])); }
+
+/* Turn a flat run-on question/explanation string into readable, spaced lines:
+   numbered statements (1. 2. 3.) each on their own line, and natural paragraph
+   breaks before "Statement N ..." and the closing question/instruction.
+   Guards against decimals (2.5) and initials (S.) — those need a space after
+   the dot to break, which they never have. */
+function formatBody(raw) {
+  let t = escapeHTML(String(raw)).replace(/\s+/g, " ").trim();
+  // break before an enumerated statement marker: " 1. " -> new line "1. "
+  t = t.replace(/\s+(\d{1,2})\.\s+/g, "\n$1. ");
+  // break before "Statement N" chunks in explanations
+  t = t.replace(/\s+(Statement\s+\d+\b)/g, "\n$1");
+  // break before the closing question / instruction of a stem
+  t = t.replace(/\s+(How many of the |Which of the statements |Which of the above |Which one of the following |Select the correct answer |Consider the following codes |With reference to the above )/g, "\n$1");
+  const lines = t.split("\n").map(s => s.trim()).filter(Boolean);
+  return lines
+    .map(line => `<span class="bline${/^\d{1,2}\.\s/.test(line) ? " stmt" : ""}">${line}</span>`)
+    .join("");
+}
 
 /* ---------- init ---------- */
 renderSubjects();
