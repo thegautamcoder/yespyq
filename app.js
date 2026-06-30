@@ -198,6 +198,7 @@ $("#qlist").addEventListener("click", e => {
 /* ---------- global click routing ---------- */
 document.addEventListener("click", e => {
   // ----- quiz routing (checked first) -----
+  if (e.target.closest("[data-quiz-setup]")) { e.preventDefault(); openQuizSetup(); return; }
   const qStart = e.target.closest("[data-quiz-start]");
   if (qStart) { e.preventDefault(); const d = qStart.dataset; startQuiz({ size: 10, subject: d.subject || null, year: d.year ? +d.year : null }); return; }
   if (e.target.closest("[data-quiz-exit]")) { e.preventDefault(); showView("home"); return; }
@@ -228,6 +229,26 @@ document.addEventListener("click", e => {
    ============================================================ */
 let quiz = null;
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+/* Setup screen — choose a mixed quiz, or focus by subject or year */
+function openQuizSetup() { showView("quiz"); renderQuizSetup(); }
+function renderQuizSetup() {
+  $("#quiz-bar").style.width = "0%";
+  $("#quiz-combo").innerHTML = "";
+  const subs = SUBJECTS.map(s => `<button class="rchip" data-quiz-start data-subject="${s.id}">${s.icon} ${s.name}</button>`).join("");
+  const yrs = YEARS.slice(0, 12).map(y => `<button class="rchip" data-quiz-start data-year="${y}">${y}</button>`).join("");
+  $("#quiz-body").innerHTML = `
+    <div class="quiz-setup">
+      <h2 class="setup-title">Start a 10-question quiz</h2>
+      <p class="setup-sub">Jump in with a mixed set, or focus on one subject or exam year.</p>
+      <button class="btn btn-primary btn-lg setup-mixed" data-quiz-start>🎲 Mixed quiz — 10 random PYQs</button>
+      <h3 class="setup-h">Practice by subject</h3>
+      <div class="result-chips">${subs}</div>
+      <h3 class="setup-h">Practice by year</h3>
+      <div class="result-chips">${yrs}</div>
+    </div>`;
+  window.scrollTo({ top: 0 });
+}
 
 function startQuiz(opts = {}) {
   const size = opts.size || 10;
