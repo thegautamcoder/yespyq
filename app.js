@@ -121,7 +121,7 @@ function cardHTML(q, serial) {
         <span class="qtag">${subjectMap[q.s].icon} ${subjectMap[q.s].name}</span>
         ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
       </div>
-      <div class="qtext">${formatBody(q.q)}</div>
+      <div class="qtext">${formatBody(q.q, true)}</div>
       <div class="options">${opts}</div>
       <div class="explain hidden" data-exp></div>
     </article>`;
@@ -160,7 +160,7 @@ $("#qlist").addEventListener("click", e => {
   const ex = card.querySelector("[data-exp]");
   ex.innerHTML = `
     <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
-    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl)}</div>`;
+    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>`;
   ex.classList.remove("hidden");
   if (correct && !answered.has(q.i)) {
     answered.add(q.i);
@@ -190,22 +190,41 @@ document.addEventListener("click", e => {
 /* ---------- util ---------- */
 function escapeHTML(str) { return String(str).replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])); }
 
-/* Turn a flat run-on question/explanation string into readable, spaced lines:
-   numbered statements (1. 2. 3.) each on their own line, and natural paragraph
-   breaks before "Statement N ..." and the closing question/instruction.
-   Guards against decimals (2.5) and initials (S.) — those need a space after
-   the dot to break, which they never have. */
-function formatBody(raw) {
-  let t = escapeHTML(String(raw)).replace(/\s+/g, " ").trim();
-  // break before an enumerated statement marker: " 1. " -> new line "1. "
-  t = t.replace(/\s+(\d{1,2})\.\s+/g, "\n$1. ");
-  // break before "Statement N" chunks in explanations
-  t = t.replace(/\s+(Statement\s+\d+\b)/g, "\n$1");
-  // break before the closing question / instruction of a stem
-  t = t.replace(/\s+(How many of the |Which of the statements |Which of the above |Which one of the following |Select the correct answer |Consider the following codes |With reference to the above )/g, "\n$1");
-  const lines = t.split("\n").map(s => s.trim()).filter(Boolean);
-  return lines
-    .map(line => `<span class="bline${/^\d{1,2}\.\s/.test(line) ? " stmt" : ""}">${line}</span>`)
+/* Render a flat run-on question/explanation string as readable, spaced lines.
+   Questions: List–I/II headers, A./B./C./D. and 1./2./3. items, "Codes:" and the
+   closing instruction each get their own line. Explanations: bullet (•) and
+   "Statement N" markers break, then each sentence goes on its own line.
+   Sentence splitting guards initials (Dr. B.R. Ambedkar, S. Radhakrishnan),
+   decimals (2.5) and common abbreviations so they never break mid-phrase. */
+const ABBR = new Set(["Dr","Mr","Mrs","Ms","Smt","Shri","Sh","Prof","Rev","Hon","St","Lt","Col","Gen","Capt","Sgt","Ex","No","Art","Sec","Fig","Vol","Rs","vs","etc","Pvt","Ltd","Co","viz","Mt","Govt","Deptt"]);
+function breakSentences(t) {
+  return t.replace(/([.?!])\s+(?=[A-Z0-9"(])/g, (m, p, off, str) => {
+    if (p === ".") {
+      const wm = str.slice(0, off).match(/(\S+)$/);
+      const core = wm ? wm[1] : "";
+      if (/^(?:[A-Za-z]\.)*[A-Za-z]$/.test(core)) return m;   // initials: S, B.R, U.S.A, i.e
+      if (/^\d+$/.test(core)) return m;                        // numbers / decimals
+      if (ABBR.has(core.replace(/[^A-Za-z]/g, ""))) return m;  // Dr, Mr, etc.
+    }
+    return p + "\n";
+  });
+}
+function formatBody(raw, isQuestion) {
+  // mis-encoded bullets / C1 control chars are used as item separators -> break
+  let t = String(raw).replace(/[\x80-\x9F•‣▪●·]+/g, " \n ");
+  t = escapeHTML(t).replace(/[^\S\n]+/g, " ");                 // collapse spaces, keep breaks
+  if (isQuestion) {
+    t = t.replace(/(^|\s)([A-E])\.\s+(?=[A-Z])/g, "$1\n$2. "); // A. B. C. D. E. markers
+    t = t.replace(/[^\S\n]*(\d{1,2})\.\s+/g, "\n$1. ");        // 1. 2. 3. markers
+    t = t.replace(/\s*(Codes?\s*:)/g, "\n$1");                 // Codes:
+    t = t.replace(/\s*(How many of the |Which of the statements |Which of the above |Which one of the following |Select the correct answer |Consider the following codes )/g, "\n$1");
+  } else {
+    t = t.replace(/\s*(Statement\s+\d+\b)/g, "\n$1");          // Statement 1 / Statement 2 …
+    t = t.replace(/[^\S\n]*(\d{1,2})\.\s+/g, "\n$1. ");
+    t = breakSentences(t);
+  }
+  return t.split("\n").map(s => s.trim()).filter(Boolean)
+    .map(line => `<span class="bline${/^(?:\d{1,2}|[A-E])\.\s/.test(line) ? " stmt" : ""}">${line}</span>`)
     .join("");
 }
 
