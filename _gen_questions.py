@@ -150,7 +150,7 @@ def head(title, desc, canonical, schema_blocks, og_type="article"):
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="/styles.css?v=14" />
-  <link rel="stylesheet" href="/blog.css?v=4" />
+  <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 </head>
 <body>'''
