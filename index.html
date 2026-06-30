@@ -55,7 +55,7 @@
   <!-- Perf hints -->
   <link rel="preload" href="styles.css" as="style" />
 
-  <link rel="stylesheet" href="styles.css?v=8" />
+  <link rel="stylesheet" href="styles.css?v=10" />
 
   <!-- Structured data: Organization + WebSite + EducationalOrganization -->
   <script type="application/ld+json">
@@ -134,7 +134,8 @@
       <nav class="main-nav">
         <a href="#" data-nav="home" class="active">Home</a>
         <a href="#" data-nav="practice">Practice</a>
-        <a href="#" data-nav="subjects">Subjects</a>
+        <a href="/subjects/">Subjects</a>
+        <a href="/blog/">Blog</a>
       </nav>
       <div class="game-stats" id="game-stats"></div>
       <a href="#" class="btn btn-primary btn-sm" data-action="start">Start Practice</a>
@@ -161,6 +162,19 @@
         <h2 class="section-title">Practice by Year</h2>
         <p class="section-sub">Attempt questions from a specific exam year.</p>
         <div class="year-grid" id="home-years"></div>
+
+        <h2 class="section-title">UPSC PYQs by Subject</h2>
+        <p class="section-sub">Explore high-yield topics and practice previous year questions, subject by subject.</p>
+        <div class="seo-links">
+          <a href="/subjects/polity/">UPSC Polity PYQs</a>
+          <a href="/subjects/history/">UPSC History PYQs</a>
+          <a href="/subjects/geography/">UPSC Geography PYQs</a>
+          <a href="/subjects/economy/">UPSC Economy PYQs</a>
+          <a href="/subjects/environment/">UPSC Environment PYQs</a>
+          <a href="/subjects/science-technology/">UPSC Science &amp; Tech PYQs</a>
+          <a href="/subjects/current-affairs/">UPSC Current Affairs PYQs</a>
+          <a href="/subjects/">All subjects →</a>
+        </div>
       </div>
     </section>
 
@@ -210,15 +224,35 @@
         <span class="brand-name">YES<span>PYQ</span></span>
         <p>Previous Year Questions, simplified.</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
+        <h4>Practice</h4>
         <a href="#" data-nav="home">Home</a>
         <a href="#" data-nav="practice">Practice</a>
-        <a href="#" data-nav="subjects">Subjects</a>
-        <a href="#" data-nav="about">About</a>
-        <a href="https://governmentjobs.yespyq.com">Government Jobs</a>
+        <a href="/subjects/">Subjects</a>
+        <a href="/blog/">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h4>Subjects</h4>
+        <a href="/subjects/polity/">Polity PYQs</a>
+        <a href="/subjects/history/">History PYQs</a>
+        <a href="/subjects/geography/">Geography PYQs</a>
+        <a href="/subjects/economy/">Economy PYQs</a>
+        <a href="/subjects/environment/">Environment PYQs</a>
+        <a href="/subjects/current-affairs/">Current Affairs PYQs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="/privacy-policy/">Privacy Policy</a>
+        <a href="/terms/">Terms &amp; Conditions</a>
+        <a href="/disclaimer/">Disclaimer</a>
       </div>
     </div>
-    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Built for UPSC CSE aspirants</div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Built for UPSC CSE aspirants · Not affiliated with UPSC</div>
   </footer>
 
   <canvas id="confetti"></canvas>

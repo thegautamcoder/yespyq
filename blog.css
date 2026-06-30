@@ -1,0 +1,77 @@
+/* YESPYQ Blog & article styles — depends on tokens in styles.css */
+
+.blog-hero{background:linear-gradient(160deg,var(--blue-50),#fff 70%);
+  border-bottom:1px solid var(--line);padding:3.2rem 0 2.6rem}
+.blog-hero .pill{margin-bottom:1rem}
+.blog-hero h1{font-size:clamp(1.8rem,4.5vw,2.7rem);line-height:1.12;
+  letter-spacing:-.03em;font-weight:800;max-width:760px}
+.blog-hero p{color:var(--slate);font-size:1.08rem;max-width:640px;margin-top:.9rem}
+
+/* post list */
+.post-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+  gap:1.2rem;margin:2.2rem 0 3rem}
+.post-card{display:flex;flex-direction:column;background:var(--card);
+  border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;
+  box-shadow:var(--shadow);transition:.18s}
+.post-card:hover{transform:translateY(-3px);border-color:var(--blue-500)}
+.post-card .tag{display:inline-block;font-size:.74rem;font-weight:700;
+  text-transform:uppercase;letter-spacing:.04em;color:var(--blue-700);
+  background:var(--blue-50);padding:.22rem .6rem;border-radius:999px;align-self:flex-start}
+.post-card h2{font-size:1.18rem;line-height:1.3;margin:.8rem 0 .5rem;letter-spacing:-.01em}
+.post-card p{font-size:.92rem;color:var(--muted);flex:1}
+.post-card .meta{font-size:.8rem;color:var(--muted);margin-top:1rem;
+  display:flex;gap:.6rem;align-items:center}
+.post-card .read{color:var(--blue-700);font-weight:600;margin-top:.9rem;font-size:.9rem}
+
+/* article */
+.article{width:min(740px,92vw);margin:2.6rem auto 1rem}
+.breadcrumb{font-size:.85rem;color:var(--muted);margin-bottom:1.2rem}
+.breadcrumb a{color:var(--blue-700);font-weight:500}
+.breadcrumb a:hover{text-decoration:underline}
+.article h1{font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15;
+  letter-spacing:-.03em;font-weight:800;margin-bottom:.8rem}
+.article .meta{font-size:.85rem;color:var(--muted);margin-bottom:1.8rem;
+  padding-bottom:1.4rem;border-bottom:1px solid var(--line);
+  display:flex;gap:.6rem;flex-wrap:wrap;align-items:center}
+.prose{font-size:1.06rem;line-height:1.72;color:var(--ink)}
+.prose h2{font-size:1.5rem;font-weight:800;letter-spacing:-.02em;margin:2.2rem 0 .8rem}
+.prose h3{font-size:1.2rem;font-weight:700;margin:1.8rem 0 .6rem}
+.prose p{margin:0 0 1.1rem}
+.prose ul,.prose ol{margin:0 0 1.2rem 1.3rem}
+.prose li{margin:.4rem 0}
+.prose a{color:var(--blue-700);font-weight:600;text-decoration:underline;
+  text-underline-offset:2px}
+.prose a:hover{color:var(--blue-800)}
+.prose strong{font-weight:700}
+.prose blockquote{border-left:4px solid var(--blue-500);background:var(--blue-50);
+  padding:.9rem 1.2rem;border-radius:0 10px 10px 0;margin:1.4rem 0;color:var(--slate)}
+.prose table{width:100%;border-collapse:collapse;margin:1.4rem 0;font-size:.96rem}
+.prose th,.prose td{border:1px solid var(--line);padding:.6rem .8rem;text-align:left}
+.prose th{background:var(--blue-50);font-weight:700}
+
+/* in-article CTA */
+.cta-box{background:linear-gradient(160deg,var(--blue-50),#fff);
+  border:1px solid var(--blue-100);border-radius:var(--radius);
+  padding:1.6rem;margin:2.4rem 0;text-align:center}
+.cta-box h3{font-size:1.2rem;font-weight:800;margin-bottom:.4rem}
+.cta-box p{color:var(--slate);margin-bottom:1rem;font-size:.98rem}
+
+/* faq inside article */
+.faq{margin:2rem 0}
+.faq details{border:1px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;
+  margin-bottom:.7rem;background:var(--card)}
+.faq summary{font-weight:700;cursor:pointer;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq details[open] summary{color:var(--blue-700);margin-bottom:.6rem}
+.faq p{color:var(--slate);font-size:.97rem}
+
+/* related posts */
+.related{margin:3rem 0 1rem}
+.related h2{font-size:1.3rem;font-weight:800;margin-bottom:1rem}
+.related-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+.related-list a{display:block;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:1rem 1.1rem;transition:.15s}
+.related-list a:hover{border-color:var(--blue-500);transform:translateY(-2px)}
+.related-list .tag{font-size:.72rem;font-weight:700;text-transform:uppercase;
+  color:var(--blue-700)}
+.related-list b{display:block;margin-top:.3rem;font-size:.98rem;line-height:1.35}
