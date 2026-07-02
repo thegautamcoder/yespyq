@@ -455,19 +455,20 @@ function revealOnScroll() {
 }
 
 /* ---------- rotating hero demo card (question → answer → solution) ---------- */
+// Real UPSC CSE Prelims PYQs (subject · exam · year shown on the card).
 const DEMO = [
-  { sub: "🏛️ History", yr: "2023",
-    q: "The ‘Doctrine of Lapse’ is associated with which Governor-General?",
-    o: ["Lord William Bentinck", "Lord Dalhousie", "Lord Curzon", "Lord Ripon"], a: 1,
-    sol: "Lord Dalhousie (1848–56) used the Doctrine of Lapse to annex states such as Satara, Jhansi and Nagpur." },
-  { sub: "⚖️ Polity", yr: "",
-    q: "Which Article of the Constitution guarantees the Right to Equality?",
-    o: ["Article 14", "Article 19", "Article 21", "Article 32"], a: 0,
-    sol: "Article 14 guarantees equality before the law and equal protection of the laws to all persons." },
-  { sub: "🌍 Geography", yr: "",
-    q: "Which river is known as the ‘Sorrow of Bihar’?",
-    o: ["Ganga", "Kosi", "Son", "Gandak"], a: 1,
-    sol: "The Kosi is called the ‘Sorrow of Bihar’ for its shifting course and devastating annual floods." },
+  { sub: "🔬 Science & Tech", yr: "UPSC Prelims 2022",
+    q: "Certain species of which one of the following organisms are well known as cultivators of fungi?",
+    o: ["Ant", "Cockroach", "Crab", "Spider"], a: 0,
+    sol: "Leaf-cutter ants (genera Atta and Acromyrmex) farm fungi on chewed leaves — a classic case of insect agriculture." },
+  { sub: "⚖️ Polity", yr: "UPSC Prelims 2023",
+    q: "By which one of the following Acts was the Governor-General of Bengal designated as the Governor-General of India?",
+    o: ["The Regulating Act", "Pitt’s India Act", "Charter Act of 1793", "Charter Act of 1833"], a: 3,
+    sol: "The Charter Act of 1833 made the Governor-General of Bengal the Governor-General of India, centralising British power." },
+  { sub: "🌍 Geography", yr: "UPSC Prelims 2024",
+    q: "Which of the following countries are well known as the two largest cocoa producers in the world?",
+    o: ["Algeria and Morocco", "Botswana and Namibia", "Côte d’Ivoire and Ghana", "Madagascar and Mozambique"], a: 2,
+    sol: "Côte d’Ivoire and Ghana together account for over 60% of the world’s cocoa production." },
 ];
 let demoI = 0, demoRevealT = null;
 function renderDemo() {

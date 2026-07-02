@@ -122,6 +122,36 @@
     ]
   }
   </script>
+
+  <!-- Structured data: SoftwareApplication (helps search + AI understand the app) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "YESPYQ",
+    "alternateName": "YESPYQ — UPSC PYQ Practice",
+    "url": "https://yespyq.com/",
+    "applicationCategory": "EducationApplication",
+    "applicationSubCategory": "Exam Preparation",
+    "operatingSystem": "Web, Android, iOS (Progressive Web App)",
+    "inLanguage": "en-IN",
+    "description": "YESPYQ is a free web app to practise UPSC Civil Services (IAS) Prelims previous year questions (PYQs). Over 2,100 authentic UPSC CSE Prelims MCQs from past years, organised subject-wise and year-wise, each with the correct answer and a detailed explanation, plus a one-question-at-a-time quiz mode with XP and streaks.",
+    "featureList": [
+      "2,100+ authentic UPSC CSE Prelims previous year questions (PYQs)",
+      "Subject-wise practice: Polity, History, Geography, Economy, Environment, Science & Technology, Current Affairs",
+      "Year-wise practice across three decades of UPSC Prelims",
+      "Instant answer keys with detailed explanations for every question",
+      "10-question quiz mode with XP, combos and daily streaks",
+      "Dark mode and mobile-friendly PWA",
+      "Completely free, no login required"
+    ],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "availability": "https://schema.org/InStock" },
+    "isAccessibleForFree": true,
+    "screenshot": "https://yespyq.com/assets/og-image.png",
+    "publisher": { "@type": "EducationalOrganization", "name": "YESPYQ", "url": "https://yespyq.com/", "logo": "https://yespyq.com/assets/favicon.svg" },
+    "audience": { "@type": "EducationalAudience", "educationalRole": "UPSC Civil Services aspirant" }
+  }
+  </script>
   <script src="/theme.js?v=1"></script>
 </head>
 <body>
@@ -292,6 +322,6 @@
   <script src="data.js?v=8"></script>
   <script src="pyq.js?v=8"></script>
   <script src="pyq-exp.js?v=8" defer></script>
-  <script src="app.js?v=19"></script>
+  <script src="app.js?v=20"></script>
 </body>
 </html>
