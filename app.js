@@ -454,6 +454,42 @@ function revealOnScroll() {
   els.forEach(el => io.observe(el));
 }
 
+/* ---------- rotating hero demo card (question → answer → solution) ---------- */
+const DEMO = [
+  { sub: "🏛️ History", yr: "2023",
+    q: "The ‘Doctrine of Lapse’ is associated with which Governor-General?",
+    o: ["Lord William Bentinck", "Lord Dalhousie", "Lord Curzon", "Lord Ripon"], a: 1,
+    sol: "Lord Dalhousie (1848–56) used the Doctrine of Lapse to annex states such as Satara, Jhansi and Nagpur." },
+  { sub: "⚖️ Polity", yr: "",
+    q: "Which Article of the Constitution guarantees the Right to Equality?",
+    o: ["Article 14", "Article 19", "Article 21", "Article 32"], a: 0,
+    sol: "Article 14 guarantees equality before the law and equal protection of the laws to all persons." },
+  { sub: "🌍 Geography", yr: "",
+    q: "Which river is known as the ‘Sorrow of Bihar’?",
+    o: ["Ganga", "Kosi", "Son", "Gandak"], a: 1,
+    sol: "The Kosi is called the ‘Sorrow of Bihar’ for its shifting course and devastating annual floods." },
+];
+let demoI = 0;
+function renderDemo() {
+  const el = document.getElementById("demo-card");
+  if (!el) return;
+  const d = DEMO[demoI];
+  const opts = d.o.map((o, i) =>
+    `<div class="demo-opt${i === d.a ? " is-correct" : ""}"><span class="demo-key">${String.fromCharCode(65 + i)}</span> ${escapeHTML(o)}${i === d.a ? ' <span class="demo-tick">✓</span>' : ""}</div>`).join("");
+  el.innerHTML = `
+    <div class="demo-inner demo-fade">
+      <div class="demo-tags"><span class="qtag">${d.sub}</span>${d.yr ? `<span class="qtag">${d.yr}</span>` : ""}</div>
+      <p class="demo-q">${escapeHTML(d.q)}</p>
+      <div class="demo-opts">${opts}</div>
+      <div class="demo-sol"><b>✓ Answer: ${String.fromCharCode(65 + d.a)}) ${escapeHTML(d.o[d.a])}</b><span>${escapeHTML(d.sol)}</span></div>
+    </div>`;
+}
+function startDemo() {
+  if (!document.getElementById("demo-card")) return;
+  renderDemo();
+  setInterval(() => { demoI = (demoI + 1) % DEMO.length; renderDemo(); }, 4500);
+}
+
 /* ---------- init ---------- */
 renderSubjects();
 renderYears();
@@ -462,5 +498,6 @@ document.body.classList.add("anim-ready");
 countUp($("#stat-q"), QUESTIONS.length);
 countUp($("#stat-y"), YEARS.length);
 revealOnScroll();
+startDemo();
 $("#year").textContent = new Date().getFullYear();
 showView("home");

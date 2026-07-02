@@ -546,3 +546,13 @@ body.in-quiz .theme-toggle{display:none}
   .hero-bg span,.demo-card,.demo-badge,.demo-opt.is-correct,.demo-tick{animation:none}
   .demo-tick{opacity:1}
 }
+
+/* ===== Rotating hero demo card (question → answer → solution) ===== */
+.demo-card{min-height:340px}
+.demo-card .demo-opt.is-correct{animation:none}
+.demo-card .demo-tick{opacity:1;animation:none}
+.demo-sol{margin-top:.9rem;padding-top:.75rem;border-top:1px dashed var(--line);font-size:.85rem;color:var(--slate);line-height:1.5}
+.demo-sol b{display:block;color:var(--good);margin-bottom:.25rem;font-size:.88rem}
+.demo-fade{animation:demoFade .5s ease}
+@keyframes demoFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){.demo-fade{animation:none}}
