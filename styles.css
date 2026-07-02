@@ -580,3 +580,42 @@ body.in-quiz .theme-toggle{display:none}
   .demo-card .demo-tick{transition:none}
   .demo-sol{transition:none}
 }
+
+/* ===== Demo badges: both at top (never cover the solution) + pop on update ===== */
+.demo-badge{animation:none;white-space:nowrap}
+.demo-xp{top:-14px;right:8px;bottom:auto;color:#16a34a}
+.demo-streak{top:-14px;left:8px;bottom:auto;color:#ea580c}
+.demo-badge.badge-pop{animation:badgePop .45s ease}
+@keyframes badgePop{0%{transform:scale(1)}42%{transform:scale(1.22)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.demo-badge.badge-pop{animation:none}}
+
+/* ============================================================
+   Mobile polish — kill horizontal overflow, tighten header/hero
+   ============================================================ */
+html,body{overflow-x:hidden}
+.hero-bg{max-width:100vw}
+@media (max-width:640px){
+  .header-inner{gap:.55rem}
+  .brand-name{font-size:1.12rem}
+  #game-stats{display:none}                 /* free header space so brand + CTA fit */
+  .header-inner .btn-primary{padding:.55rem .85rem;font-size:.86rem}
+  .hero{padding:2.4rem 0 2.4rem}
+  .hero-copy h1{font-size:clamp(1.85rem,7.6vw,2.5rem)}
+  .hero-copy .lead{font-size:1.02rem}
+  .pill-live{font-size:.72rem;padding:.35rem .7rem}
+  .hero-cta{width:100%}
+  .hero-cta .btn-lg{width:100%}
+  .hero-stats{gap:.55rem;flex-wrap:nowrap}
+  .hero-stats .stat{flex:1;min-width:0;padding:.7rem .35rem}
+  .hero-stats .stat b{font-size:1.35rem}
+  .hero-stats .stat span{font-size:.72rem}
+  .section-title{font-size:1.4rem;margin-top:2.4rem}
+  .demo-card{width:100%;padding:1.15rem 1.15rem}
+  .demo-xp{right:2px}
+  .demo-streak{left:2px}
+}
+
+/* Responsive tables: scroll instead of clip on small screens */
+@media (max-width:640px){
+  .prose table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+}

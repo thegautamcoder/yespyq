@@ -470,7 +470,13 @@ const DEMO = [
     o: ["Algeria and Morocco", "Botswana and Namibia", "Côte d’Ivoire and Ghana", "Madagascar and Mozambique"], a: 2,
     sol: "Côte d’Ivoire and Ghana together account for over 60% of the world’s cocoa production." },
 ];
-let demoI = 0, demoRevealT = null;
+let demoI = 0, demoRevealT = null, demoXP = 140, demoStreak = 6;
+function bumpBadge(sel, txt) {
+  const el = document.querySelector(sel);
+  if (!el) return;
+  el.textContent = txt;
+  el.classList.remove("badge-pop"); void el.offsetWidth; el.classList.add("badge-pop");
+}
 function renderDemo() {
   const el = document.getElementById("demo-card");
   if (!el) return;
@@ -484,21 +490,26 @@ function renderDemo() {
       <div class="demo-opts">${opts}</div>
       <div class="demo-sol"><b>✓ Answer: ${String.fromCharCode(65 + d.a)}) ${escapeHTML(d.o[d.a])}</b><span>${escapeHTML(d.sol)}</span></div>
     </div>`;
+  bumpBadge(".demo-streak", `🔥 ${demoStreak}-day streak`);
   clearTimeout(demoRevealT);
   demoRevealT = setTimeout(() => {           // reveal the answer after options settle
     const co = el.querySelector(`.demo-opt[data-i="${d.a}"]`);
     if (co) co.classList.add("is-correct");
     const sol = el.querySelector(".demo-sol");
     if (sol) sol.classList.add("show");
+    demoXP += 10;                            // XP climbs as each question is solved
+    bumpBadge(".demo-xp", `⚡ ${demoXP} XP`);
   }, 1350);
 }
 function nextDemo() {
   const inner = document.querySelector("#demo-card .demo-inner");
-  if (inner) { inner.classList.add("demo-out"); setTimeout(() => { demoI = (demoI + 1) % DEMO.length; renderDemo(); }, 300); }
-  else { renderDemo(); }
+  const advance = () => { demoI = (demoI + 1) % DEMO.length; if (demoI === 0) demoStreak++; renderDemo(); };
+  if (inner) { inner.classList.add("demo-out"); setTimeout(advance, 300); }
+  else advance();
 }
 function startDemo() {
   if (!document.getElementById("demo-card")) return;
+  bumpBadge(".demo-xp", `⚡ ${demoXP} XP`);
   renderDemo();
   setInterval(nextDemo, 5200);
 }
