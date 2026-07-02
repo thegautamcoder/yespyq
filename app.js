@@ -469,25 +469,37 @@ const DEMO = [
     o: ["Ganga", "Kosi", "Son", "Gandak"], a: 1,
     sol: "The Kosi is called the ‘Sorrow of Bihar’ for its shifting course and devastating annual floods." },
 ];
-let demoI = 0;
+let demoI = 0, demoRevealT = null;
 function renderDemo() {
   const el = document.getElementById("demo-card");
   if (!el) return;
   const d = DEMO[demoI];
   const opts = d.o.map((o, i) =>
-    `<div class="demo-opt${i === d.a ? " is-correct" : ""}"><span class="demo-key">${String.fromCharCode(65 + i)}</span> ${escapeHTML(o)}${i === d.a ? ' <span class="demo-tick">✓</span>' : ""}</div>`).join("");
+    `<div class="demo-opt" data-i="${i}" style="animation-delay:${(0.16 + i * 0.1).toFixed(2)}s"><span class="demo-key">${String.fromCharCode(65 + i)}</span><span class="demo-otext">${escapeHTML(o)}</span><span class="demo-tick">✓</span></div>`).join("");
   el.innerHTML = `
-    <div class="demo-inner demo-fade">
+    <div class="demo-inner">
       <div class="demo-tags"><span class="qtag">${d.sub}</span>${d.yr ? `<span class="qtag">${d.yr}</span>` : ""}</div>
       <p class="demo-q">${escapeHTML(d.q)}</p>
       <div class="demo-opts">${opts}</div>
       <div class="demo-sol"><b>✓ Answer: ${String.fromCharCode(65 + d.a)}) ${escapeHTML(d.o[d.a])}</b><span>${escapeHTML(d.sol)}</span></div>
     </div>`;
+  clearTimeout(demoRevealT);
+  demoRevealT = setTimeout(() => {           // reveal the answer after options settle
+    const co = el.querySelector(`.demo-opt[data-i="${d.a}"]`);
+    if (co) co.classList.add("is-correct");
+    const sol = el.querySelector(".demo-sol");
+    if (sol) sol.classList.add("show");
+  }, 1350);
+}
+function nextDemo() {
+  const inner = document.querySelector("#demo-card .demo-inner");
+  if (inner) { inner.classList.add("demo-out"); setTimeout(() => { demoI = (demoI + 1) % DEMO.length; renderDemo(); }, 300); }
+  else { renderDemo(); }
 }
 function startDemo() {
   if (!document.getElementById("demo-card")) return;
   renderDemo();
-  setInterval(() => { demoI = (demoI + 1) % DEMO.length; renderDemo(); }, 4500);
+  setInterval(nextDemo, 5200);
 }
 
 /* ---------- init ---------- */

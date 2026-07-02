@@ -547,12 +547,36 @@ body.in-quiz .theme-toggle{display:none}
   .demo-tick{opacity:1}
 }
 
-/* ===== Rotating hero demo card (question → answer → solution) ===== */
-.demo-card{min-height:340px}
-.demo-card .demo-opt.is-correct{animation:none}
-.demo-card .demo-tick{opacity:1;animation:none}
-.demo-sol{margin-top:.9rem;padding-top:.75rem;border-top:1px dashed var(--line);font-size:.85rem;color:var(--slate);line-height:1.5}
+/* ===== Rotating hero demo card — premium staggered reveal ===== */
+.demo-card{min-height:352px}
+.demo-inner{animation:demoIn .5s cubic-bezier(.22,.61,.36,1) both}
+.demo-inner.demo-out{animation:demoOut .3s ease forwards}
+@keyframes demoIn{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes demoOut{to{opacity:0;transform:translateY(-10px) scale(.985)}}
+
+/* options: staggered entrance, then smooth light-up of the correct one */
+.demo-card .demo-opt{opacity:0;transform:translateY(10px);
+  animation:demoOptIn .45s cubic-bezier(.22,.61,.36,1) forwards;
+  transition:border-color .4s ease,background .4s ease,box-shadow .4s ease}
+@keyframes demoOptIn{to{opacity:1;transform:none}}
+.demo-otext{flex:1}
+.demo-card .demo-opt.is-correct{border-color:var(--good);background:var(--good-bg);
+  box-shadow:0 0 0 3px rgba(22,163,74,.18)}
+.demo-card .demo-opt.is-correct .demo-key{background:var(--good);color:#fff;border-color:var(--good)}
+.demo-card .demo-tick{margin-left:auto;color:var(--good);font-weight:800;opacity:0;animation:none;
+  transform:scale(.3) rotate(-20deg);transition:transform .34s cubic-bezier(.34,1.56,.64,1) .08s,opacity .2s .08s}
+.demo-card .demo-opt.is-correct .demo-tick{opacity:1;transform:scale(1) rotate(0)}
+
+/* solution: slides open after the answer lights up */
+.demo-sol{font-size:.85rem;color:var(--slate);line-height:1.5;
+  opacity:0;max-height:0;overflow:hidden;transform:translateY(6px);border-top:0;margin-top:0;padding-top:0;
+  transition:opacity .45s ease,max-height .45s ease,transform .45s ease}
 .demo-sol b{display:block;color:var(--good);margin-bottom:.25rem;font-size:.88rem}
-.demo-fade{animation:demoFade .5s ease}
-@keyframes demoFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@media (prefers-reduced-motion:reduce){.demo-fade{animation:none}}
+.demo-sol.show{opacity:1;max-height:160px;transform:none;
+  margin-top:.9rem;padding-top:.75rem;border-top:1px dashed var(--line)}
+
+@media (prefers-reduced-motion:reduce){
+  .demo-inner,.demo-card .demo-opt{animation:none;opacity:1;transform:none}
+  .demo-card .demo-tick{transition:none}
+  .demo-sol{transition:none}
+}
