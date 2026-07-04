@@ -666,3 +666,30 @@ html,body{overflow-x:hidden}
   .trust-stats{grid-template-columns:repeat(2,1fr);gap:.7rem}
   .trust-stats .ts b{font-size:1.45rem}
 }
+
+/* ============================================================
+   Premium-minimalist refinements (calmer, cleaner top-to-bottom)
+   ============================================================ */
+/* quieter hero background — less noise, more premium */
+.hero::before,.blog-hero::before{opacity:.2}
+.hero-bg span{opacity:.4;filter:blur(70px)}
+[data-theme="dark"] .hero-bg span{opacity:.3}
+
+/* trust band: tight, cohesive, understated */
+.trust{padding:2.4rem 0 .4rem}
+.trust-badge{font-size:.82rem;padding:.45rem 1rem;color:var(--slate)}
+.trust-title{font-size:clamp(1.35rem,2.8vw,1.85rem);margin:1rem 0 .4rem}
+.trust-sub{font-size:.98rem;color:var(--muted);margin-bottom:1.3rem}
+
+/* section headers: consistent rhythm */
+.section-title{font-size:1.55rem;margin-top:3.4rem}
+.section-sub{margin:.35rem 0 1.7rem}
+
+/* subject / year cards: airier, softer depth */
+.subject-card{padding:1.5rem;border-radius:18px}
+.subject-card .ico{font-size:1.7rem}
+.subject-card h3{font-size:1.06rem;margin:.75rem 0 .25rem}
+.subject-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(15,23,42,.09);border-color:var(--line)}
+[data-theme="dark"] .subject-card:hover{box-shadow:0 18px 38px rgba(0,0,0,.5)}
+.year-card{border-radius:14px;padding:1.1rem}
+.year-card:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(15,23,42,.08);border-color:var(--line)}
