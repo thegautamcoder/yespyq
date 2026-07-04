@@ -638,12 +638,9 @@ html,body{overflow-x:hidden}
   animation:mqScroll 32s linear infinite}
 .trust-marquee:hover .mq-track{animation-play-state:paused}
 @keyframes mqScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.clg{display:inline-flex;align-items:center;gap:.55rem;white-space:nowrap;flex:none;
-  background:var(--card);border:1px solid var(--line);border-radius:12px;
-  padding:.5rem .85rem .5rem .5rem;font-weight:700;font-size:.9rem;color:var(--ink);box-shadow:var(--shadow)}
-.clg-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;flex:none;
-  font-style:normal;font-weight:800;font-size:.66rem;letter-spacing:.02em;color:#fff;
-  background:linear-gradient(135deg,var(--blue-600),#7c3aed)}
+.clg{display:inline-flex;align-items:center;white-space:nowrap;flex:none;
+  background:var(--card);border:1px solid var(--line);border-radius:999px;
+  padding:.55rem 1.1rem;font-weight:700;font-size:.92rem;color:var(--ink);box-shadow:var(--shadow)}
 @media (prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center}}
 .trust-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:760px;margin:0 auto 2.4rem}
 .trust-stats .ts{background:var(--card);border:1px solid var(--line);border-radius:14px;
