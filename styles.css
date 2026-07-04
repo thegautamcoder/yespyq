@@ -630,18 +630,23 @@ html,body{overflow-x:hidden}
 .trust-stars,.tq-stars{color:#f59e0b;letter-spacing:1px}
 .trust-title{font-size:clamp(1.5rem,3.6vw,2.1rem);font-weight:800;letter-spacing:-.025em;margin:1.1rem 0 .5rem}
 .trust-sub{color:var(--slate);max-width:620px;margin:0 auto 1.6rem;font-size:1.02rem}
-/* moving college marquee */
-.trust-marquee{position:relative;overflow:hidden;margin:0 -4vw 2.2rem;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
-.mq-track{display:flex;align-items:center;gap:.7rem;width:max-content;
-  animation:mqScroll 32s linear infinite}
+/* moving college marquee — premium minimalist logo strip */
+.trust-marquee{position:relative;overflow:hidden;margin:.6rem -4vw 2.6rem;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+.mq-track{display:flex;align-items:center;gap:0;width:max-content;
+  animation:mqScroll 46s linear infinite;will-change:transform}
 .trust-marquee:hover .mq-track{animation-play-state:paused}
 @keyframes mqScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.clg{display:inline-flex;align-items:center;white-space:nowrap;flex:none;
-  background:var(--card);border:1px solid var(--line);border-radius:999px;
-  padding:.55rem 1.1rem;font-weight:700;font-size:.92rem;color:var(--ink);box-shadow:var(--shadow)}
-@media (prefers-reduced-motion:reduce){.mq-track{animation:none;flex-wrap:wrap;justify-content:center}}
+.clg{flex:none;display:inline-flex;align-items:center;white-space:nowrap;
+  text-transform:uppercase;letter-spacing:.09em;font-weight:600;font-size:.8rem;
+  color:var(--muted);transition:color .25s}
+.clg::after{content:"";flex:none;width:4px;height:4px;border-radius:50%;
+  background:var(--line);margin:0 1.9rem}
+.clg:hover{color:var(--blue-700)}
+@media (prefers-reduced-motion:reduce){
+  .mq-track{animation:none;flex-wrap:wrap;justify-content:center;row-gap:.6rem}
+}
 .trust-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:760px;margin:0 auto 2.4rem}
 .trust-stats .ts{background:var(--card);border:1px solid var(--line);border-radius:14px;
   padding:1.1rem .6rem;box-shadow:var(--shadow)}
