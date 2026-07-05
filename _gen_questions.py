@@ -174,7 +174,7 @@ def question_page(x):
     ans_text = x['o'][x['a']]
 
     schema = f'''  <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"QAPage","mainEntity":{{"@type":"Question","name":"{attr(x['q'])}","text":"{attr(x['q'])}","answerCount":1,"acceptedAnswer":{{"@type":"Answer","text":"{attr('Correct answer: ' + ans_text + '. ' + plain(expl))[:1100]}"}}}}}}
+  {{"@context":"https://schema.org","@type":"QAPage","mainEntity":{{"@type":"Question","name":"{attr(x['q'])}","text":"{attr(x['q'])}","answerCount":1,"author":{{"@type":"Organization","name":"YESPYQ","url":"{BASE}/"}},"datePublished":"{TODAY}","acceptedAnswer":{{"@type":"Answer","text":"{attr('Correct answer: ' + ans_text + '. ' + plain(expl))[:1100]}","url":"{canonical}","author":{{"@type":"Organization","name":"YESPYQ","url":"{BASE}/"}},"datePublished":"{TODAY}","upvoteCount":1}}}}}}
   </script>
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"PYQs","item":"{BASE}/pyq/"}},{{"@type":"ListItem","position":3,"name":"{attr(sname)}","item":"{BASE}/pyq/{x['s']}/"}},{{"@type":"ListItem","position":4,"name":"Question","item":"{canonical}"}}]}}
