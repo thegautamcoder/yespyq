@@ -96,6 +96,10 @@ SLUG = {x['i']: qslug(x) for x in ITEMS}
 BY_SUB = defaultdict(list)
 for x in ITEMS:
     BY_SUB[x['s']].append(x)
+BY_YEAR = defaultdict(list)
+for x in ITEMS:
+    if x.get('y'): BY_YEAR[x['y']].append(x)
+YEARS = sorted(BY_YEAR, reverse=True)
 
 HEADER = '''  <header class="site-header">
     <div class="container header-inner">
@@ -250,6 +254,44 @@ def subject_index(sid):
 </html>'''
     return head(title, desc, canonical, schema, "website") + body
 
+def year_index(year):
+    items = BY_YEAR[year]
+    canonical = f"{BASE}/pyq/year/{year}/"
+    title = attr(f"UPSC Prelims {year} Question Paper — {len(items)} Solved PYQs with Answers | YESPYQ")
+    desc = attr(f"UPSC CSE Prelims {year} previous year questions (PYQs) with correct answers and detailed explanations — {len(items)} solved IAS {year} questions, subject-wise. Free previous year question paper practice on YESPYQ.")
+    schema = f'''  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"PYQs","item":"{BASE}/pyq/"}},{{"@type":"ListItem","position":3,"name":"UPSC {year}","item":"{canonical}"}}]}}
+  </script>'''
+    by_sub = defaultdict(list)
+    for x in items: by_sub[x['s']].append(x)
+    listing = ""
+    for sid in SUB:
+        if not by_sub.get(sid): continue
+        sname, sicon, shub = SUB[sid]
+        listing += f'<h2 class="pyq-year">{sicon} {esc(sname)}</h2><ul class="pyq-list">'
+        for x in by_sub[sid]:
+            listing += f'<li><a href="/pyq/q/{SLUG[x["i"]]}/">{esc(plain(x["q"])[:110])}{"…" if len(plain(x["q"]))>110 else ""}</a></li>'
+        listing += '</ul>'
+    # prev/next year links for crawl depth
+    yr_links = " · ".join(f'<a href="/pyq/year/{y}/">UPSC {y}</a>' for y in YEARS[:14])
+    body = f'''{HEADER}
+  <main>
+    <section class="blog-hero"><div class="container"><span class="pill">UPSC CSE Prelims · {year}</span>
+      <h1>UPSC Prelims {year} — Solved Previous Year Questions (PYQs) with Answers</h1>
+      <p>All {len(items)} solved UPSC (IAS) Prelims {year} previous year questions, subject-wise, each with the correct answer and a detailed explanation. Click any question for its full solution.</p></div></section>
+    <div class="container">
+      <p class="pyq-cross">Other years: {yr_links}</p>
+      {listing}
+      <div class="prose" style="width:min(740px,92vw);margin:1rem auto 3rem">
+        <p>Looking for more? Browse all <a href="/pyq/">solved UPSC PYQs</a>, go <a href="/subjects/">subject-wise</a>, or take a free <a href="/">10-question quiz</a>.</p>
+      </div>
+    </div>
+  </main>
+{FOOTER}
+</body>
+</html>'''
+    return head(title, desc, canonical, schema, "website") + body
+
 def hub():
     canonical = f"{BASE}/pyq/"
     total = len(ITEMS)
@@ -263,13 +305,17 @@ def hub():
         n = len(BY_SUB[sid])
         if not n: continue
         cards += f'<a class="post-card" href="/pyq/{sid}/"><span class="tag">{sicon} {esc(sname.split(" ")[0])}</span><h2>{esc(sname)} PYQs</h2><p>{n} solved previous year questions with answers &amp; explanations.</p><span class="read">Browse {n} questions →</span></a>'
+    year_chips = "".join(f'<a href="/pyq/year/{y}/">UPSC {y}</a>' for y in YEARS)
     body = f'''{HEADER}
   <main>
     <section class="blog-hero"><div class="container"><span class="pill">UPSC CSE Prelims</span>
       <h1>UPSC Previous Year Questions with Answers &amp; Explanations</h1>
       <p>{total} solved UPSC CSE Prelims PYQs — every question with its correct answer and a detailed explanation. Pick a subject to start.</p></div></section>
     <div class="container"><div class="post-grid">{cards}</div>
-      <div class="prose" style="width:min(740px,92vw);margin:0 auto 3rem">
+      <h2 class="section-title">Browse UPSC PYQs by year</h2>
+      <p class="section-sub">Solved previous-year question papers, year by year — with answers &amp; explanations.</p>
+      <div class="seo-links">{year_chips}</div>
+      <div class="prose" style="width:min(740px,92vw);margin:2rem auto 3rem">
         <h2>Solved UPSC PYQs, free and searchable</h2>
         <p>Every previous-year question here is on its own page with the four options, the correct answer and a full explanation — so you can revise a single concept or search for an exact question and land straight on its solution. For focused practice, take a <a href="/">10-question quiz</a> or explore <a href="/subjects/">subject-wise PYQs and strategy</a>.</p>
       </div>
@@ -290,16 +336,19 @@ def main():
     for sid in SUB:
         if BY_SUB[sid]:
             write(os.path.join(ROOT, "pyq", sid, "index.html"), subject_index(sid))
+    for y in YEARS:
+        write(os.path.join(ROOT, "pyq", "year", str(y), "index.html"), year_index(y))
     for x in ITEMS:
         write(os.path.join(ROOT, "pyq", "q", SLUG[x['i']], "index.html"), question_page(x))
 
     # sitemap-questions.xml
     urls = [f"{BASE}/pyq/"]
     urls += [f"{BASE}/pyq/{sid}/" for sid in SUB if BY_SUB[sid]]
+    urls += [f"{BASE}/pyq/year/{y}/" for y in YEARS]
     urls += [f"{BASE}/pyq/q/{SLUG[x['i']]}/" for x in ITEMS]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
-        pr = "0.8" if u.endswith("/pyq/") or u.count("/") == 4 else "0.6"
+        pr = "0.8" if u.endswith("/pyq/") or u.count("/") == 4 else ("0.7" if "/pyq/year/" in u else "0.6")
         sm.append(f"  <url><loc>{u}</loc><lastmod>{TODAY}</lastmod><changefreq>monthly</changefreq><priority>{pr}</priority></url>")
     sm.append("</urlset>")
     write(os.path.join(ROOT, "sitemap-questions.xml"), "\n".join(sm) + "\n")
