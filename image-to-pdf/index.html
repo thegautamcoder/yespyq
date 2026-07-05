@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Image to PDF — Convert JPG/PNG to PDF Online Free | YESPYQ</title>
+  <meta name="description" content="Make a PDF from JPG, PNG or WEBP images for free, combining several pictures into a single file. It works right in your browser with no upload and downloads on the spot." />
+  <meta name="keywords" content="image to pdf, jpg to pdf, png to pdf, convert image to pdf online free, jpeg to pdf, images to pdf, jpg to pdf converter free" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/image-to-pdf/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="Image to PDF Converter — Free Online | YESPYQ" />
+  <meta property="og:description" content="Convert JPG and PNG images to PDF for free. Combine multiple images into one file, all in your browser." />
+  <meta property="og:url" content="https://yespyq.com/image-to-pdf/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Image to PDF Converter | YESPYQ" />
+  <meta name="twitter:description" content="Convert JPG/PNG to PDF free. No upload needed." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfYzoVQzU3Bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"Image to PDF","item":"https://yespyq.com/image-to-pdf/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Image to PDF Converter","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/image-to-pdf/","description":"Free browser-based image to PDF converter. Turn JPG, PNG and WEBP into PDF and combine several images into one file. Nothing is uploaded.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I convert an image to PDF online for free?","acceptedAnswer":{"@type":"Answer","text":"Add your JPG or PNG pictures to the tool above, take out or rearrange whatever you like, then press Convert to PDF. Your browser assembles the file and it downloads immediately."}},
+    {"@type":"Question","name":"Can I merge several images into one PDF?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Load as many images as you need and every one lands on its own page. Any picture can be dropped before you convert."}},
+    {"@type":"Question","name":"Is my image uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. jsPDF builds the document entirely inside your browser, so your images never leave your device."}},
+    {"@type":"Question","name":"Which image formats work?","acceptedAnswer":{"@type":"Answer","text":"You can use JPG, JPEG, PNG and WEBP, and each picture turns into a single page of the finished PDF."}},
+    {"@type":"Question","name":"Why do exam portals want a PDF?","acceptedAnswer":{"@type":"Answer","text":"A lot of Indian government sites and universities expect supporting papers in PDF form. When your Aadhaar, marksheet or certificate scans are stored as images, merging them into one PDF makes the upload far easier."}},
+    {"@type":"Question","name":"What page size does the PDF use?","acceptedAnswer":{"@type":"Answer","text":"Each picture is placed on an A4 page (210×297 mm), scaled to fit as large as it can while its original proportions are preserved."}}
+  ]}
+  </script>
+
+  <style>
+    /* Tool-specific bits re-themed to YESPYQ light tokens. Class/id names kept
+       exactly as the script expects (drop-zone / drag-over / thumb*). */
+    .drop-zone{border:2px dashed var(--line);border-radius:14px;padding:2.2rem 1.2rem;
+      text-align:center;cursor:pointer;transition:.15s;background:var(--blue-50)}
+    .drop-zone:hover,.drop-zone.drag-over{border-color:var(--blue-500);background:#eef4ff}
+    .drop-zone .big{font-size:2.2rem;display:block;margin-bottom:.5rem}
+    .drop-zone .dz-t{font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 .3rem}
+    .drop-zone .dz-s{font-size:.85rem;color:var(--muted);margin:0}
+    .pdf-head{display:flex;align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap;margin-bottom:.9rem}
+    .pdf-head p{font-size:.85rem;font-weight:700;color:var(--ink);margin:0}
+    .add-more{font-size:.78rem;font-weight:600;color:var(--blue-700);background:var(--blue-50);
+      border:1px solid var(--blue-100);padding:.4rem .8rem;border-radius:8px;cursor:pointer}
+    .add-more:hover{border-color:var(--blue-500);background:#eef4ff}
+    #thumbs{display:flex;flex-wrap:wrap;gap:.7rem;margin-bottom:1.2rem}
+    .thumb{width:80px;height:80px;object-fit:cover;border-radius:8px;border:2px solid var(--line)}
+    .thumb-wrap{position:relative;display:inline-block}
+    .thumb-del{position:absolute;top:-6px;right:-6px;width:20px;height:20px;background:#ef4444;color:#fff;
+      border-radius:50%;border:none;font-size:12px;font-weight:700;cursor:pointer;display:flex;
+      align-items:center;justify-content:center;line-height:1}
+    .dl-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue-600);color:#fff;font-weight:700;
+      border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.8rem;font-size:.98rem;transition:.18s;
+      box-shadow:0 6px 16px rgba(37,99,235,.25)}
+    .dl-btn:hover{background:var(--blue-700);transform:translateY(-1px)}
+    .dl-btn:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+    .progress{font-size:.85rem;color:var(--muted);margin-top:.7rem}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Image to PDF</nav>
+        <span class="pill">Document Tools</span>
+        <h1>Image to PDF Converter</h1>
+        <p class="lead">Turn your JPG, PNG and WEBP pictures into a free PDF and roll several of them into a single file. Everything happens in your browser, with no upload and no account.</p>
+
+        <div class="tool-panel">
+          <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+            <span class="big">📄</span>
+            <p class="dz-t">Drop images here or click to upload</p>
+            <p class="dz-s">JPG, PNG, WEBP · Multiple files supported · Up to 15 MB each</p>
+          </div>
+          <input type="file" id="file-input" accept="image/*" multiple style="display:none" />
+
+          <div id="preview-section" style="display:none;margin-top:1.3rem">
+            <div class="pdf-head">
+              <p id="img-count">0 image(s) — each becomes one PDF page</p>
+              <button class="add-more" onclick="document.getElementById('file-input').click()">+ Add more</button>
+            </div>
+            <div id="thumbs"></div>
+            <div style="text-align:center">
+              <button class="dl-btn" id="convert-btn" onclick="convertToPdf()">⬇ Convert to PDF &amp; Download</button>
+              <p id="progress-msg" class="progress" style="display:none">Converting…</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="tool-card">
+        <h2>Why convert images to PDF?</h2>
+        <p>A great many Indian admission portals, scholarship forms and government recruitment sites insist that supporting papers — Aadhaar, mark sheets, certificates, photos — arrive as one <strong>single PDF</strong>. When those live as loose JPG/PNG files, converting to PDF is the fastest route to meeting the requirement.</p>
+        <p>PDF also holds up better than a plain image: it locks in the layout, survives sharing without losing clarity, and opens in practically every portal and email client.</p>
+        <h3>How to use this tool</h3>
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><div><b>Add your images</b><span>Drag one or more JPG/PNG files onto the upload area, or click to pick them.</span></div></div>
+          <div class="step"><span class="step-num">2</span><div><b>Review the thumbnails</b><span>Use the ✕ button to drop anything you would rather leave out.</span></div></div>
+          <div class="step"><span class="step-num">3</span><div><b>Convert and download</b><span>Press "Convert to PDF & Download" and every image lands on its own A4 page.</span></div></div>
+        </div>
+        <h3>Related tools</h3>
+        <div class="tool-links">
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/">📚 Practice PYQs</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I convert an image to PDF online for free?</summary><div class="faq-a">Add your JPG or PNG pictures to the tool above and hit Convert to PDF — the file downloads straight away, with no sign-up.</div></details>
+        <details class="faq-item"><summary>Can I combine multiple images into one PDF?</summary><div class="faq-a">Yes — load several pictures and each becomes its own page, and you can drop any of them before converting.</div></details>
+        <details class="faq-item"><summary>Is my image uploaded to a server?</summary><div class="faq-a">No. The jsPDF library does all the work inside your browser, so your images never leave your device.</div></details>
+        <details class="faq-item"><summary>What image formats are supported?</summary><div class="faq-a">JPG, JPEG, PNG and WEBP, with each picture placed on a single A4 page of the resulting PDF.</div></details>
+        <details class="faq-item"><summary>Why do portals ask for documents as PDF?</summary><div class="faq-a">PDF opens everywhere and survives printing or sharing better than an image, which is why government and university portals favour it for uploads such as Aadhaar, certificates and marksheets.</div></details>
+        <details class="faq-item"><summary>What size is the output PDF page?</summary><div class="faq-a">Every picture is scaled onto an A4 page (210×297 mm) with its original aspect ratio kept intact.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More tools</h2>
+        <div class="tool-links">
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+const { jsPDF } = window.jspdf;
+let images = [];
+
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); addFiles(e.dataTransfer.files); });
+fileInput.addEventListener('change', () => addFiles(fileInput.files));
+
+function addFiles(files) {
+  Array.from(files).forEach(file => {
+    if (!file.type.startsWith('image/')) return;
+    const reader = new FileReader();
+    reader.onload = ev => {
+      images.push({ dataUrl: ev.target.result, name: file.name });
+      renderThumbs();
+    };
+    reader.readAsDataURL(file);
+  });
+  fileInput.value = '';
+}
+
+function removeImage(i) {
+  images.splice(i, 1);
+  renderThumbs();
+}
+
+function renderThumbs() {
+  const thumbs = document.getElementById('thumbs');
+  thumbs.innerHTML = images.map((img, i) =>
+    `<div class="thumb-wrap"><img class="thumb" src="${img.dataUrl}" alt="page ${i+1}"><button class="thumb-del" onclick="removeImage(${i})">✕</button></div>`
+  ).join('');
+  document.getElementById('img-count').textContent = `${images.length} image(s) — each becomes one PDF page`;
+  document.getElementById('preview-section').style.display = images.length ? 'block' : 'none';
+}
+
+async function convertToPdf() {
+  if (!images.length) return;
+  const btn = document.getElementById('convert-btn');
+  const prog = document.getElementById('progress-msg');
+  btn.disabled = true;
+  prog.style.display = 'block';
+
+  const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+  const A4_W = 210, A4_H = 297, MARGIN = 10;
+
+  for (let i = 0; i < images.length; i++) {
+    if (i > 0) doc.addPage();
+    prog.textContent = `Converting image ${i+1} of ${images.length}…`;
+    await new Promise(res => {
+      const img = new Image();
+      img.onload = () => {
+        const maxW = A4_W - MARGIN*2;
+        const maxH = A4_H - MARGIN*2;
+        let w = img.width, h = img.height;
+        const ratio = Math.min(maxW/w, maxH/h);
+        w = w * ratio; h = h * ratio;
+        const x = (A4_W - w) / 2;
+        const y = (A4_H - h) / 2;
+        const fmt = images[i].dataUrl.startsWith('data:image/png') ? 'PNG' : 'JPEG';
+        doc.addImage(images[i].dataUrl, fmt, x, y, w, h);
+        res();
+      };
+      img.src = images[i].dataUrl;
+    });
+  }
+
+  doc.save('images.pdf');
+  btn.disabled = false;
+  prog.textContent = '✓ PDF downloaded!';
+  setTimeout(() => { prog.style.display = 'none'; }, 3000);
+}
+</script>
+<script>var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();</script>
+</body>
+</html>

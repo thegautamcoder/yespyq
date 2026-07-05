@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>BMI Calculator India 2026 — NDA, Army & Police Physical Standards | YESPYQ</title>
+  <meta name="description" content="Check your Body Mass Index against NDA, Army, Police and CAPF fitness benchmarks. A free, no-signup BMI tool built for Indian aspirants, with both metric (kg/cm) and imperial (lbs/ft) input." />
+  <meta name="keywords" content="bmi calculator, bmi calculator india, bmi calculator for nda, nda physical standards bmi, army bmi calculator, police bmi, bmi calculator kg cm, body mass index calculator india" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/bmi-calculator/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="BMI Calculator India — NDA, Army & Police Physical Standards | YESPYQ" />
+  <meta property="og:description" content="Calculate your BMI and check whether you meet NDA, Indian Army, Police and CAPF physical eligibility standards. Free, instant, no login." />
+  <meta property="og:url" content="https://yespyq.com/bmi-calculator/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BMI Calculator India — NDA, Army & Police Standards | YESPYQ" />
+  <meta name="twitter:description" content="Find your BMI and check it against Indian defence and police fitness standards instantly." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"BMI Calculator India","item":"https://yespyq.com/bmi-calculator/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"BMI Calculator India","applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/bmi-calculator/","description":"Free BMI calculator for Indian exam aspirants. Compare your BMI against NDA, Army, Police and CAPF physical fitness standards.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"What is the BMI requirement for NDA?","acceptedAnswer":{"@type":"Answer","text":"Rather than a fixed BMI number, NDA judges whether your weight is proportionate to your height. Army Wing entry needs at least 157.5 cm of height and the Air Force and Naval Wings need 162.5 cm, with weight scaled to that height. In practice a BMI anywhere from 17 to 25 is usually fine."}},
+    {"@type":"Question","name":"What is the formula for BMI?","acceptedAnswer":{"@type":"Answer","text":"Take your weight in kilograms and divide it by your height in metres squared. A 70 kg person who is 175 cm tall works out to 70 / (1.75)^2, which is 70 / 3.0625 = 22.86."}},
+    {"@type":"Question","name":"What is a healthy BMI for Indians?","acceptedAnswer":{"@type":"Answer","text":"An Indian adult is considered to be in the normal range between 18.5 and 22.9. Because South Asians typically hold more body fat at the same BMI as Caucasians, the ICMR uses cutoffs that sit below the WHO's global figures."}},
+    {"@type":"Question","name":"What is the minimum height for NDA?","acceptedAnswer":{"@type":"Answer","text":"You need 157.5 cm for the Army Wing and 162.5 cm for the Air Force and Naval Wings. A 5 cm concession applies to Gorkha candidates and those from hilly regions."}},
+    {"@type":"Question","name":"What is the height requirement for the Indian Army?","acceptedAnswer":{"@type":"Answer","text":"Soldier (general duty) entry generally asks for about 169 cm across most states, dropping to 165 cm in hilly or tribal belts and 160 cm in some north-eastern states. Those commissioned as officers through NDA or CDS need a minimum of 157.5 cm."}},
+    {"@type":"Question","name":"Does UPSC have a BMI requirement?","acceptedAnswer":{"@type":"Answer","text":"The UPSC Civil Services written stage carries no BMI condition at all. That said, if you join a service with field duties such as the IPS or IFS, a medical board follows and can flag someone who is severely obese or severely underweight."}},
+    {"@type":"Question","name":"Is there a BMI cutoff for police recruitment in India?","acceptedAnswer":{"@type":"Answer","text":"State police forces rarely publish an explicit BMI figure, but they do impose height and chest measurements together with a physical efficiency test. As long as you are reasonably fit, a BMI in the rough 18 to 27 window is normally acceptable."}}
+  ]}
+  </script>
+
+  <style>
+    /* scoped extras for the BMI meter + unit tabs (YESPYQ light theme) */
+    .unit-tabs{display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap}
+    .unit-tab{padding:.4rem 1rem;border-radius:999px;font-size:.85rem;font-weight:600;cursor:pointer;
+      border:2px solid var(--blue-500);color:var(--blue-700);background:#fff;transition:.15s}
+    .unit-tab.active{background:var(--blue-600);color:#fff;border-color:var(--blue-600)}
+    .bmi-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    @media(min-width:560px){.bmi-grid.three{grid-template-columns:1fr 1fr 1fr}}
+    .bmi-readout{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+    .bmi-readout .lbl{font-size:.78rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em;margin:0}
+    .bmi-readout .big{font-size:clamp(2rem,7vw,3rem);font-weight:900;line-height:1;margin:.15rem 0 0}
+    .bmi-readout .med{font-size:1.2rem;font-weight:800;margin:.2rem 0 0;color:#fff}
+    .bmi-readout .range{font-size:1rem;font-weight:600;margin:.2rem 0 0;color:#fff}
+    .bmi-meter{height:20px;border-radius:999px;position:relative;margin:1rem 0;
+      background:linear-gradient(to right,#3b82f6 0%,var(--good) 30%,#f59e0b 60%,var(--bad) 100%)}
+    .bmi-needle{position:absolute;top:-6px;width:4px;height:32px;background:#0f172a;border-radius:2px;
+      transform:translateX(-50%);transition:left .5s;border:1px solid #fff}
+    .bmi-scale{display:flex;justify-content:space-between;font-size:.68rem;color:rgba(255,255,255,.65)}
+    .elig-box{border-radius:12px;padding:1rem 1.1rem;margin-top:1rem;font-size:.92rem;line-height:1.6}
+    .elig-box.ok{background:var(--good-bg);border:1px solid #86efac;color:#166534}
+    .elig-box.warn{background:#fffbeb;border:1px solid #fcd34d;color:#78350f}
+    .elig-box.bad{background:var(--bad-bg);border:1px solid #fca5a5;color:#991b1b}
+    .elig-box b{display:block;margin-bottom:.25rem}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › BMI Calculator</nav>
+        <span class="pill">Fitness & Eligibility</span>
+        <h1>BMI Calculator India</h1>
+        <p class="lead">Find your Body Mass Index in a click, then see where it lands against the fitness benchmarks used by NDA, the Indian Army, Police and CAPF.</p>
+
+        <div class="tool-panel">
+          <div class="unit-tabs">
+            <button class="unit-tab active" onclick="setUnit('metric', this)">Metric (kg / cm)</button>
+            <button class="unit-tab" onclick="setUnit('imperial', this)">Imperial (lbs / ft)</button>
+          </div>
+
+          <div id="unit-metric">
+            <div class="bmi-grid">
+              <div class="field">
+                <label for="height-cm">Height (cm)</label>
+                <input type="number" id="height-cm" placeholder="e.g. 170" min="100" max="250" />
+              </div>
+              <div class="field">
+                <label for="weight-kg">Weight (kg)</label>
+                <input type="number" id="weight-kg" placeholder="e.g. 65" min="20" max="300" />
+              </div>
+            </div>
+          </div>
+
+          <div id="unit-imperial" style="display:none">
+            <div class="bmi-grid three">
+              <div class="field">
+                <label for="height-ft">Height (feet)</label>
+                <input type="number" id="height-ft" placeholder="e.g. 5" min="3" max="8" />
+              </div>
+              <div class="field">
+                <label for="height-in">Height (inches)</label>
+                <input type="number" id="height-in" placeholder="e.g. 8" min="0" max="11" />
+              </div>
+              <div class="field">
+                <label for="weight-lbs">Weight (lbs)</label>
+                <input type="number" id="weight-lbs" placeholder="e.g. 143" min="44" max="660" />
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="gender-select">Gender</label>
+            <select id="gender-select">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+
+          <button class="tool-btn" onclick="calcBMI()" style="margin-top:.5rem">Calculate BMI →</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="result-box" id="bmi-result" style="display:none">
+        <p class="r-label">Your result</p>
+        <div class="bmi-readout">
+          <div>
+            <p class="lbl">Your BMI</p>
+            <p class="big" id="bmi-value" style="color:var(--good)">—</p>
+          </div>
+          <div>
+            <p class="lbl">Category</p>
+            <p class="med" id="bmi-category">—</p>
+          </div>
+          <div>
+            <p class="lbl">Healthy weight range</p>
+            <p class="range" id="healthy-range">—</p>
+          </div>
+        </div>
+        <div class="bmi-meter"><div class="bmi-needle" id="bmi-needle" style="left:0%"></div></div>
+        <div class="bmi-scale">
+          <span>Underweight<br>&lt;18.5</span>
+          <span style="text-align:center">Normal<br>18.5–23</span>
+          <span style="text-align:center">Overweight<br>23–27.5</span>
+          <span style="text-align:right">Obese<br>&gt;27.5</span>
+        </div>
+        <div class="elig-box" id="exam-eligibility"></div>
+      </div>
+
+      <div class="tool-card">
+        <h2>Physical standards for Indian defence & police exams</h2>
+        <div class="tool-table-wrap">
+          <table class="tool-table">
+            <thead><tr>
+              <th>Exam</th><th>Min height (Male)</th><th>Min height (Female)</th><th>Note</th>
+            </tr></thead>
+            <tbody>
+              <tr><td>NDA (Army Wing)</td><td>157.5 cm</td><td>—</td><td>Male only; weight proportional</td></tr>
+              <tr><td>NDA (Air Force / Navy)</td><td>162.5 cm</td><td>—</td><td>Additional vision standards</td></tr>
+              <tr><td>CDS (IMA/OTA)</td><td>157.5 cm</td><td>152 cm</td><td>Weight proportional to height</td></tr>
+              <tr><td>Indian Army (Soldier GD)</td><td>169 cm</td><td>—</td><td>165 cm for hilly areas</td></tr>
+              <tr><td>CRPF / BSF / CISF</td><td>170 cm</td><td>157 cm</td><td>+5 cm relaxation for NE states</td></tr>
+              <tr><td>Delhi / State Police</td><td>170 cm</td><td>157 cm</td><td>Varies by state</td></tr>
+              <tr><td>Indian Coast Guard</td><td>157 cm</td><td>—</td><td>Weight 50–75 kg for 157–163 cm</td></tr>
+              <tr><td>SSB / Intelligence Bureau</td><td>165 cm</td><td>150 cm</td><td>Medical fitness required</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted-note">* These figures shift with category and recruitment year — treat the official notification as the final word.</p>
+      </div>
+
+      <div class="tool-card">
+        <h2>BMI for Indian competitive exams — what to know</h2>
+        <p>BMI is a quick way to gauge body fat using just your height and weight. Most Indian recruitment exams, though, do not chase a single BMI target — they check that your weight is in proportion to your height. Bodies like the Indian Army, CRPF, BSF and the state police work from height-weight charts calibrated to the Indian population.</p>
+        <p><strong>If you are targeting NDA:</strong> the SSB medical board looks at your height, weight, chest and general fitness together. Being clearly underweight (a BMI under 16) or obese (over 30) will usually get you marked unfit, so aim to sit inside the comfortable 17–25 band that defence hopefuls are expected to hold.</p>
+        <p><strong>Why the Indian numbers differ:</strong> the WHO calls 25–30 overweight and 30+ obese, but Indian medical bodies pull those lines down. The ICMR treats 23 as the start of overweight and 27.5 as obese, since South Asians tend to carry more body fat than Caucasians at an identical BMI.</p>
+        <p><strong>Writing UPSC, SSC or bank exams?</strong> None of these written papers ask for a BMI or any physical standard. A full medical only comes into play later, and only if you are posted to a service with field duties such as the IPS or the IFS forest service.</p>
+        <div class="infobox warn">
+          <b>Keep in mind:</b> because the rules bend with exam, category and year, use this reading as a ballpark and always cross-check the official notification.
+        </div>
+        <h3>Also useful</h3>
+        <div class="tool-links">
+          <a href="/age-calculator-for-nda/">🎖 NDA age calculator</a>
+          <a href="/age-calculator-for-upsc/">🏛 UPSC age calculator</a>
+          <a href="/percentage-calculator/">📊 Percentage calculator</a>
+          <a href="/">📚 Practice UPSC PYQs</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>What is the BMI requirement for NDA?</summary><div class="faq-a">There is no hard BMI figure — NDA looks at whether weight matches height. Minimum height is 157.5 cm for the Army and 162.5 cm for Air Force/Navy, and a BMI in the 17–25 range is generally fine for defence aspirants.</div></details>
+        <details class="faq-item"><summary>What is the formula for BMI?</summary><div class="faq-a">Divide your weight in kg by your height in metres squared: BMI = Weight (kg) ÷ Height² (m²). For 70 kg at 175 cm → 70 ÷ (1.75)² = 70 ÷ 3.0625 = 22.86.</div></details>
+        <details class="faq-item"><summary>What is a healthy BMI for Indians?</summary><div class="faq-a">The normal band for Indian adults runs 18.5–22.9. Indian cutoffs are stricter than the WHO's 25/30 lines — the ICMR flags overweight at 23 and obesity at 27.5.</div></details>
+        <details class="faq-item"><summary>What is the minimum height for NDA?</summary><div class="faq-a">You need 157.5 cm for the Army Wing and 162.5 cm for the Air Force and Naval Wings, with a 5 cm concession for Gorkha and hill-region candidates.</div></details>
+        <details class="faq-item"><summary>Does UPSC have a BMI requirement?</summary><div class="faq-a">The written exam has none. A medical check only happens later for services like the IPS or IFS, where extreme obesity or being underweight can be flagged — but UPSC itself publishes no BMI cutoff.</div></details>
+        <details class="faq-item"><summary>What BMI is required for police recruitment?</summary><div class="faq-a">State forces usually skip a BMI figure and instead run a physical efficiency test (running, jumps). Anything in roughly the 18–27 range tends to pass; confirm the details in your state's notification.</div></details>
+        <details class="faq-item"><summary>Is this BMI calculator free?</summary><div class="faq-a">Yes — there is no login or app to install. Everything runs right in your browser on both phone and desktop.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More free tools</h2>
+        <div class="tool-links">
+          <a href="/percentage-calculator/">Percentage calculator</a>
+          <a href="/cgpa-to-percentage/">CGPA to percentage</a>
+          <a href="/marks-calculator/">Marks calculator</a>
+          <a href="/word-counter/">Word counter</a>
+          <a href="/age-calculator/">Age calculator</a>
+          <a href="/age-calculator-for-upsc/">UPSC age calculator</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+let currentUnit = 'metric';
+
+function setUnit(unit, btn) {
+  currentUnit = unit;
+  document.getElementById('unit-metric').style.display = unit === 'metric' ? 'block' : 'none';
+  document.getElementById('unit-imperial').style.display = unit === 'imperial' ? 'block' : 'none';
+  document.querySelectorAll('.unit-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+}
+
+function calcBMI() {
+  let heightM, weightKg;
+  if (currentUnit === 'metric') {
+    const hcm = parseFloat(document.getElementById('height-cm').value);
+    weightKg = parseFloat(document.getElementById('weight-kg').value);
+    if (isNaN(hcm) || isNaN(weightKg)) { alert('Please enter height and weight.'); return; }
+    heightM = hcm / 100;
+  } else {
+    const ft = parseFloat(document.getElementById('height-ft').value) || 0;
+    const ins = parseFloat(document.getElementById('height-in').value) || 0;
+    const lbs = parseFloat(document.getElementById('weight-lbs').value);
+    if (!lbs) { alert('Please enter weight.'); return; }
+    heightM = (ft * 12 + ins) * 0.0254;
+    weightKg = lbs * 0.453592;
+  }
+
+  if (heightM <= 0) { alert('Please enter a valid height.'); return; }
+
+  const bmi = weightKg / (heightM * heightM);
+  const bmiRounded = bmi.toFixed(1);
+
+  // Indian ICMR categories
+  let category, color;
+  if (bmi < 16) { category = 'Severely Underweight'; color = '#a78bfa'; }
+  else if (bmi < 18.5) { category = 'Underweight'; color = '#93c5fd'; }
+  else if (bmi < 23) { category = 'Normal (Healthy)'; color = '#4ade80'; }
+  else if (bmi < 27.5) { category = 'Overweight'; color = '#fbbf24'; }
+  else { category = 'Obese'; color = '#f87171'; }
+
+  // Healthy weight range at this height
+  const minKg = (18.5 * heightM * heightM).toFixed(1);
+  const maxKg = (23 * heightM * heightM).toFixed(1);
+
+  document.getElementById('bmi-value').textContent = bmiRounded;
+  document.getElementById('bmi-value').style.color = color;
+  document.getElementById('bmi-category').textContent = category;
+  document.getElementById('bmi-category').style.color = color;
+  document.getElementById('healthy-range').textContent = `${minKg} – ${maxKg} kg`;
+
+  // Needle position: map BMI 10–40 to 0–100%
+  const needlePct = Math.min(100, Math.max(0, (bmi - 10) / 30 * 100));
+  document.getElementById('bmi-needle').style.left = needlePct + '%';
+
+  // Exam eligibility
+  const isDefenceOk = bmi >= 17 && bmi <= 25;
+  const eligEl = document.getElementById('exam-eligibility');
+  if (isDefenceOk) {
+    eligEl.className = 'elig-box ok';
+    eligEl.innerHTML = `<b>✅ Generally within the defence fitness range</b>Your BMI sits in the 17–25 band typically accepted for NDA, CDS and Indian Army recruitment. The medical board still runs a full examination — BMI is just one of many factors.`;
+  } else if (bmi < 17) {
+    eligEl.className = 'elig-box warn';
+    eligEl.innerHTML = `<b>⚠️ Below the ideal defence fitness range</b>Your BMI is under 17. Defence medical boards may classify this as underweight. Work on nutrition and strength training to reach a healthy BMI of 18.5–23 before your SSB.`;
+  } else {
+    eligEl.className = 'elig-box bad';
+    eligEl.innerHTML = `<b>⚠️ Above the ideal defence fitness range</b>Your BMI is over 25. It is not an automatic disqualification, but you may be flagged during the SSB/Army medical exam. Aim for a BMI of 17–25 before your exam date.`;
+  }
+
+  document.getElementById('bmi-result').style.display = 'block';
+  document.getElementById('bmi-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

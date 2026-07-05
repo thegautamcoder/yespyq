@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>JPG to PNG Converter — Convert JPEG to PNG Online Free | YESPYQ</title>
+  <meta name="description" content="Change a JPG into a lossless PNG for free, directly in your browser. Nothing is uploaded and the finished file downloads the moment it is ready." />
+  <meta name="keywords" content="jpg to png, jpeg to png, convert jpg to png online, jpg to png converter, jpeg to png free, change jpg to png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/jpg-to-png/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="JPG to PNG Converter — Free Online | YESPYQ" />
+  <meta property="og:description" content="Convert JPG to PNG free. No upload, runs in your browser, instant lossless output." />
+  <meta property="og:url" content="https://yespyq.com/jpg-to-png/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JPG to PNG Converter | YESPYQ" />
+  <meta name="twitter:description" content="Convert JPG to PNG free online. No upload needed." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"JPG to PNG Converter","item":"https://yespyq.com/jpg-to-png/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"JPG to PNG Converter","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/jpg-to-png/","description":"Free browser-based JPG to PNG converter with lossless PNG output. Nothing is uploaded.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I convert JPG to PNG online for free?","acceptedAnswer":{"@type":"Answer","text":"Drop your JPG into the tool above and hit Download PNG. Your browser converts it instantly, with no software to install and no account to open."}},
+    {"@type":"Question","name":"Why convert JPG to PNG?","acceptedAnswer":{"@type":"Answer","text":"PNG is lossless, holding every pixel exactly, and it can carry transparency. That is why people switch to it — to open images in software that favours PNG, to prepare transparent backgrounds, or to keep a file from degrading each time it is re-saved."}},
+    {"@type":"Question","name":"Will the PNG be bigger than the JPG?","acceptedAnswer":{"@type":"Answer","text":"Yes. Storing data losslessly means more of it, so a 200 KB JPG typically turns into a 500 KB–2 MB PNG. When a smaller file matters, stay with the JPG or run it through our image compressor."}},
+    {"@type":"Question","name":"Is my image uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. HTML5 Canvas performs the whole conversion inside your browser, so the file never leaves your device."}},
+    {"@type":"Question","name":"Can I convert several JPG files at once?","acceptedAnswer":{"@type":"Answer","text":"At the moment it works with one picture at a time, so upload and save each file on its own."}},
+    {"@type":"Question","name":"Can I also convert PNG back to JPG?","acceptedAnswer":{"@type":"Answer","text":"Yes — our PNG to JPG converter handles the reverse direction."}}
+  ]}
+  </script>
+
+  <style>
+    /* Tool-specific bits re-themed to YESPYQ light tokens. Class/id names kept
+       exactly as the script expects (drop-zone / drag-over). */
+    .drop-zone{border:2px dashed var(--line);border-radius:14px;padding:2.4rem 1.2rem;
+      text-align:center;cursor:pointer;transition:.15s;background:var(--blue-50)}
+    .drop-zone:hover,.drop-zone.drag-over{border-color:var(--blue-500);background:#eef4ff}
+    .drop-zone .big{font-size:2.2rem;display:block;margin-bottom:.5rem}
+    .drop-zone .dz-t{font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 .3rem}
+    .drop-zone .dz-s{font-size:.85rem;color:var(--muted);margin:0}
+    #info{font-size:.85rem;color:var(--slate);margin:0 0 1rem}
+    .dl-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue-600);color:#fff;font-weight:700;
+      border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.8rem;font-size:.98rem;transition:.18s;
+      box-shadow:0 6px 16px rgba(37,99,235,.25)}
+    .dl-btn:hover{background:var(--blue-700);transform:translateY(-1px)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › JPG to PNG Converter</nav>
+        <span class="pill">Image Converter</span>
+        <h1>JPG to PNG Converter</h1>
+        <p class="lead">Change JPG/JPEG pictures into lossless PNG for free. There is nothing to upload — the work is done in your browser and the file downloads right away.</p>
+
+        <div class="tool-panel">
+          <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+            <span class="big">🖼️</span>
+            <p class="dz-t">Drop a JPG here or click to upload</p>
+            <p class="dz-s">JPG, JPEG, WEBP · Up to 15 MB</p>
+          </div>
+          <input type="file" id="file-input" accept="image/jpeg,image/jpg,image/webp,image/*" style="display:none" />
+          <div id="controls" style="display:none;margin-top:1.5rem;text-align:center">
+            <p id="info"></p>
+            <button class="dl-btn" onclick="download()">⬇ Download PNG</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="tool-card">
+        <h2>When should you convert JPG to PNG?</h2>
+        <p>Being lossless, PNG records every pixel just as it is, free of compression artefacts. That makes it a natural fit for screenshots, text-heavy graphics, logos and anything you expect to edit and save again and again.</p>
+        <p>Do bear in mind that going from JPG to PNG will <em>not</em> claw back quality — the JPEG compression is already baked in. All the conversion does is move the same pixels into a lossless wrapper. The PNG comes out larger, but it holds steady through repeated edits and saves.</p>
+        <h3>Common use cases</h3>
+        <ul>
+          <li>Importing a photo into design tools such as Canva or Photoshop that handle PNG better</li>
+          <li>Sites and apps that will only take PNG</li>
+          <li>Keeping quality intact across many edit-and-save rounds</li>
+          <li>Setting up for transparency you plan to add later in an editor</li>
+        </ul>
+        <h3>Related tools</h3>
+        <div class="tool-links">
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/">📚 Practice PYQs</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I convert JPG to PNG online for free?</summary><div class="faq-a">Load your JPG into the tool above and press Download PNG — the browser converts it on the spot, with no sign-up.</div></details>
+        <details class="faq-item"><summary>Does converting JPG to PNG improve quality?</summary><div class="faq-a">No. There is no undoing JPEG compression; the PNG keeps the identical pixels without adding loss, but it cannot restore detail the JPEG already discarded.</div></details>
+        <details class="faq-item"><summary>Will the PNG be larger than the original JPG?</summary><div class="faq-a">Yes — lossless storage means more data, so a 200 KB JPG usually ends up a 500 KB–2 MB PNG.</div></details>
+        <details class="faq-item"><summary>Is my image uploaded to a server?</summary><div class="faq-a">No — HTML5 Canvas handles the whole conversion in your browser, so the file never leaves your device.</div></details>
+        <details class="faq-item"><summary>What formats can I upload?</summary><div class="faq-a">JPG, JPEG and WEBP all work, and the result is always a PNG.</div></details>
+        <details class="faq-item"><summary>Can I also convert PNG to JPG?</summary><div class="faq-a">Yes — head to our <a href="/png-to-jpg/">PNG to JPG converter</a> for the reverse.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More tools</h2>
+        <div class="tool-links">
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+let canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+let img = new Image();
+let origFile = null;
+
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); const f = e.dataTransfer.files[0]; if (f) load(f); });
+fileInput.addEventListener('change', () => { if (fileInput.files[0]) load(fileInput.files[0]); });
+
+function fmtSize(b) { return b < 1024*1024 ? (b/1024).toFixed(1)+' KB' : (b/(1024*1024)).toFixed(2)+' MB'; }
+
+function load(file) {
+  origFile = file;
+  const url = URL.createObjectURL(file);
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0);
+    URL.revokeObjectURL(url);
+    canvas.toBlob(b => {
+      document.getElementById('info').textContent = `Original JPG: ${fmtSize(file.size)} · Output PNG: ~${fmtSize(b.size)} · ${img.width}×${img.height} px`;
+    }, 'image/png');
+    document.getElementById('controls').style.display = 'block';
+  };
+  img.src = url;
+}
+
+function download() {
+  canvas.toBlob(blob => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = (origFile.name.replace(/\.[^.]+$/, '') || 'image') + '.png';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }, 'image/png');
+}
+</script>
+<script>var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();</script>
+</body>
+</html>

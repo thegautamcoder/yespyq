@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PNG to JPG Converter — Convert PNG to JPEG Online Free | YESPYQ</title>
+  <meta name="description" content="Change PNG images to JPG free, entirely in your browser. Set the output quality, choose a fill colour for transparent PNGs, and download at once with nothing uploaded." />
+  <meta name="keywords" content="png to jpg, png to jpeg, convert png to jpg online, png to jpg converter, png to jpeg online free, change png to jpg" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/png-to-jpg/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="PNG to JPG Converter — Free Online | YESPYQ" />
+  <meta property="og:description" content="Convert PNG to JPG free. No upload, works in your browser, choose quality and background colour." />
+  <meta property="og:url" content="https://yespyq.com/png-to-jpg/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PNG to JPG Converter | YESPYQ" />
+  <meta name="twitter:description" content="Convert PNG to JPG free online. No upload needed." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"PNG to JPG Converter","item":"https://yespyq.com/png-to-jpg/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"PNG to JPG Converter","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/png-to-jpg/","description":"Free browser-based PNG to JPG converter with quality and background-colour controls. Nothing is uploaded.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I convert PNG to JPG online for free?","acceptedAnswer":{"@type":"Answer","text":"Drop your PNG into the tool above, choose a quality level and a fill colour, then press Download JPG. It all takes place in your browser with nothing uploaded."}},
+    {"@type":"Question","name":"Why convert PNG to JPG?","acceptedAnswer":{"@type":"Answer","text":"For photos, JPG is dramatically lighter than PNG, and Indian exam and government portals nearly always take only JPG/JPEG. Converting keeps your file both accepted and small enough to submit."}},
+    {"@type":"Question","name":"What happens to transparent areas in my PNG?","acceptedAnswer":{"@type":"Answer","text":"Since JPEG holds no transparency, the tool paints any see-through pixels with the fill colour you pick, defaulting to white. White is the one to use for exam photos and ID documents."}},
+    {"@type":"Question","name":"Is my image uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is converted locally through HTML5 Canvas, so the file never leaves your device."}},
+    {"@type":"Question","name":"Does PNG to JPG conversion lose quality?","acceptedAnswer":{"@type":"Answer","text":"Between 80 and 95% quality no difference is visible. Low settings add faint artefacts, but from roughly 75% upward a photo JPG looks the same as the PNG."}},
+    {"@type":"Question","name":"Can I convert several PNG files at once?","acceptedAnswer":{"@type":"Answer","text":"At present it processes a single picture at a time, so handle each file on its own."}}
+  ]}
+  </script>
+
+  <style>
+    /* Tool-specific bits re-themed to YESPYQ light tokens. Class/id names kept
+       exactly as the script expects (drop-zone / drag-over / range-slider / bg-color). */
+    .drop-zone{border:2px dashed var(--line);border-radius:14px;padding:2.4rem 1.2rem;
+      text-align:center;cursor:pointer;transition:.15s;background:var(--blue-50)}
+    .drop-zone:hover,.drop-zone.drag-over{border-color:var(--blue-500);background:#eef4ff}
+    .drop-zone .big{font-size:2.2rem;display:block;margin-bottom:.5rem}
+    .drop-zone .dz-t{font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 .3rem}
+    .drop-zone .dz-s{font-size:.85rem;color:var(--muted);margin:0}
+    .ctrl-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem}
+    .q-label{font-size:.85rem;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;margin-bottom:.5rem}
+    .q-label span:last-child{color:var(--blue-600)}
+    .fld-label{font-size:.85rem;font-weight:700;color:var(--ink);display:block;margin-bottom:.5rem}
+    .fld-label .hint{font-size:.72rem;font-weight:400;color:var(--muted)}
+    .range-slider{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;background:#e2e8f0;outline:none}
+    .range-slider::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--blue-600);cursor:pointer}
+    .range-slider::-moz-range-thumb{width:20px;height:20px;border:none;border-radius:50%;background:var(--blue-600);cursor:pointer}
+    .range-ends{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:.35rem}
+    .bg-row{display:flex;gap:.5rem;align-items:center}
+    #bg-color{width:44px;height:38px;border:2px solid var(--line);border-radius:8px;cursor:pointer;padding:2px}
+    .bg-preset{font-size:.78rem;font-weight:600;padding:.4rem .7rem;border-radius:7px;cursor:pointer}
+    .bg-preset.w{background:#fff;border:1.5px solid var(--line);color:var(--ink)}
+    .bg-preset.b{background:var(--ink);border:1.5px solid var(--ink);color:#fff}
+    .info-box{background:var(--blue-50);border:1px solid var(--line);border-radius:12px;padding:.75rem 1rem;margin-bottom:1rem}
+    #size-info{font-size:.85rem;color:var(--slate)}
+    .dl-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue-600);color:#fff;font-weight:700;
+      border:none;border-radius:12px;cursor:pointer;padding:.85rem 1.8rem;font-size:.98rem;transition:.18s;
+      box-shadow:0 6px 16px rgba(37,99,235,.25)}
+    .dl-btn:hover{background:var(--blue-700);transform:translateY(-1px)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › PNG to JPG Converter</nav>
+        <span class="pill">Image Converter</span>
+        <h1>PNG to JPG Converter</h1>
+        <p class="lead">Change PNG pictures into JPEG for free, setting the quality and a fill colour for any transparent PNGs. Nothing is uploaded — it all happens in your browser.</p>
+
+        <div class="tool-panel">
+          <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+            <span class="big">🖼️</span>
+            <p class="dz-t">Drop a PNG here or click to upload</p>
+            <p class="dz-s">PNG, WEBP, BMP · Up to 15 MB</p>
+          </div>
+          <input type="file" id="file-input" accept="image/png,image/webp,image/bmp,image/*" style="display:none" />
+
+          <div id="controls" style="display:none;margin-top:1.5rem">
+            <div class="ctrl-grid">
+              <div>
+                <label class="q-label"><span>JPG Quality</span><span id="q-val">85%</span></label>
+                <input type="range" class="range-slider" id="quality" min="10" max="95" value="85" oninput="document.getElementById('q-val').textContent=this.value+'%'" />
+                <div class="range-ends"><span>Smaller</span><span>Higher quality</span></div>
+              </div>
+              <div>
+                <label class="fld-label">Background Colour <span class="hint">(for transparent PNGs)</span></label>
+                <div class="bg-row">
+                  <input type="color" id="bg-color" value="#ffffff" />
+                  <div style="display:flex;gap:.4rem">
+                    <button class="bg-preset w" onclick="setBg('#ffffff')">White</button>
+                    <button class="bg-preset b" onclick="setBg('#000000')">Black</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-box"><span id="size-info"></span></div>
+            <div style="text-align:center">
+              <button class="dl-btn" onclick="download()">⬇ Download JPG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="tool-card">
+        <h2>Why convert PNG to JPG?</h2>
+        <p>PNG is lossless — it preserves every pixel perfectly and can carry transparency. The downside is size: for photographs, PNG files dwarf their JPEG equivalents. An exam photo stored as PNG might weigh 500 KB–2 MB, whereas the very same photo saved as JPEG at 85% quality usually stays under 100 KB.</p>
+        <p>Indian exam portals — UPSC, SSC, IBPS, NTA, RRB — will almost always take <strong>JPEG/JPG</strong> and little else. So if your photo is a PNG, you will have to convert it before most application forms accept the upload.</p>
+        <h3>What about transparency?</h3>
+        <p>Transparent pixels have no place in a JPEG. When your PNG carries a see-through background — as logos, screenshots and edited photos often do — the converter paints those regions in the fill colour you select. For exam photos, <strong>white</strong> is always the safe pick.</p>
+        <h3>Related tools</h3>
+        <div class="tool-links">
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/">📚 Practice PYQs</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I convert PNG to JPG online for free?</summary><div class="faq-a">Load your PNG into the tool above, set a quality and a fill colour, then press Download JPG — no software and no sign-up.</div></details>
+        <details class="faq-item"><summary>Why convert PNG to JPG?</summary><div class="faq-a">For photos JPEG is far lighter than PNG, and Indian exam portals mostly take only JPG/JPEG. Converting keeps your image both accepted and slim enough to upload.</div></details>
+        <details class="faq-item"><summary>What happens to transparent areas in my PNG?</summary><div class="faq-a">JPEG cannot hold transparency, so the tool paints see-through pixels in your chosen fill colour, white by default. White is the right pick for exam photos and ID documents.</div></details>
+        <details class="faq-item"><summary>Is my image uploaded to a server?</summary><div class="faq-a">No — HTML5 Canvas runs the entire conversion in your browser, so the file never leaves your device.</div></details>
+        <details class="faq-item"><summary>Does conversion lose quality?</summary><div class="faq-a">From 80–95% quality the eye sees no difference. For exam uploads, 80–85% keeps things sharp while holding the size down.</div></details>
+        <details class="faq-item"><summary>Can I also convert JPG back to PNG?</summary><div class="faq-a">Yes — our <a href="/jpg-to-png/">JPG to PNG converter</a> takes care of the reverse.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More tools</h2>
+        <div class="tool-links">
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+let canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+let img = new Image();
+let origFile = null;
+
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); const f = e.dataTransfer.files[0]; if (f) load(f); });
+fileInput.addEventListener('change', () => { if (fileInput.files[0]) load(fileInput.files[0]); });
+
+function setBg(hex) { document.getElementById('bg-color').value = hex; }
+function fmtSize(b) { return b < 1024*1024 ? (b/1024).toFixed(1)+' KB' : (b/(1024*1024)).toFixed(2)+' MB'; }
+
+function load(file) {
+  origFile = file;
+  const url = URL.createObjectURL(file);
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    draw();
+    URL.revokeObjectURL(url);
+    canvas.toBlob(b => {
+      document.getElementById('size-info').textContent = `Original: ${fmtSize(file.size)} · Output JPG: ~${fmtSize(b.size)}`;
+    }, 'image/jpeg', 0.85);
+    document.getElementById('controls').style.display = 'block';
+  };
+  img.src = url;
+}
+
+function draw() {
+  const bg = document.getElementById('bg-color').value;
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  ctx.drawImage(img, 0, 0);
+}
+
+function download() {
+  draw();
+  const q = parseInt(document.getElementById('quality').value) / 100;
+  canvas.toBlob(blob => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = (origFile.name.replace(/\.[^.]+$/, '') || 'image') + '.jpg';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }, 'image/jpeg', q);
+}
+</script>
+<script>var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();</script>
+</body>
+</html>

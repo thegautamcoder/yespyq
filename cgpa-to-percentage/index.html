@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>CGPA to Percentage Calculator — All Indian Universities | YESPYQ</title>
+  <meta name="description" content="Turn your CGPA into a percentage instantly on the 10-point scale. Built-in formulas for CBSE, Anna University, VTU, Mumbai University, AKTU, GTU, DU and others — a free tool for Indian students." />
+  <meta name="keywords" content="cgpa to percentage, cgpa to percentage calculator, cgpa to percentage converter, cgpa calculator, 10 point cgpa to percentage, anna university cgpa to percentage, vtu cgpa to percentage, cbse cgpa to percentage" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/cgpa-to-percentage/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="CGPA to Percentage Calculator — All Universities | YESPYQ" />
+  <meta property="og:description" content="Convert your CGPA to a percentage for any Indian university. Supports CBSE, Anna University, VTU, Mumbai University, AKTU, GTU and more." />
+  <meta property="og:url" content="https://yespyq.com/cgpa-to-percentage/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CGPA to Percentage Calculator | YESPYQ" />
+  <meta name="twitter:description" content="Turn your CGPA into a percentage for any Indian university — CBSE, Anna, VTU, Mumbai and more." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"CGPA to Percentage","item":"https://yespyq.com/cgpa-to-percentage/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"CGPA to Percentage Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/cgpa-to-percentage/","description":"Free CGPA to percentage converter for Indian students. Supports major universities including CBSE, Anna University, VTU and Mumbai University.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I convert CGPA to percentage for CBSE?","acceptedAnswer":{"@type":"Answer","text":"CBSE simply multiplies your CGPA by 9.5. Take a CGPA of 8.5 and you get 8.5 x 9.5 = 80.75%."}},
+    {"@type":"Question","name":"What is the Anna University CGPA to percentage formula?","acceptedAnswer":{"@type":"Answer","text":"At Anna University the rule is Percentage = (CGPA - 0.5) x 10. Feeding in a CGPA of 8.0 gives (8.0 - 0.5) x 10 = 75%."}},
+    {"@type":"Question","name":"How do I convert VTU CGPA to percentage?","acceptedAnswer":{"@type":"Answer","text":"VTU subtracts 0.75 first: Percentage = (CGPA - 0.75) x 10. For a CGPA of 8.5 that is (8.5 - 0.75) x 10 = 77.5%."}},
+    {"@type":"Question","name":"Is a 7 CGPA good?","acceptedAnswer":{"@type":"Answer","text":"On a 10-point scale a 7.0 is a solid score. Converted through the CBSE rule it comes to 66.5%, comfortably above the cutoff for most government jobs and post-graduate courses."}},
+    {"@type":"Question","name":"How do I convert a 10-point CGPA to percentage?","acceptedAnswer":{"@type":"Answer","text":"CBSE's CGPA x 9.5 is the rule you will see most often, but each university sets its own multiplier. Confirm the exact formula your institution uses before you quote a figure on any application."}},
+    {"@type":"Question","name":"Is CGPA or percentage better?","acceptedAnswer":{"@type":"Answer","text":"Neither is strictly better. CGPA takes the sting out of chasing exact marks, whereas employers tend to read percentages more easily. Since most places accept either, you can convert back and forth as the situation demands."}},
+    {"@type":"Question","name":"What CGPA equals 60%?","acceptedAnswer":{"@type":"Answer","text":"Under the CBSE rule, 60 / 9.5 lands you at roughly 6.32 CGPA. Using the Anna University rule it is 60 / 10 + 0.5 = 6.5 CGPA. Your own university's formula decides the precise value."}}
+  ]}
+  </script>
+
+  <style>
+    /* scoped extras for the CGPA arrow-style result */
+    .cgpa-readout{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem}
+    .cgpa-readout .lbl{font-size:.78rem;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.06em;margin:0}
+    .cgpa-readout .val{font-size:1.6rem;font-weight:800;color:#fff;margin:.2rem 0 0}
+    .cgpa-readout .val.big{font-size:clamp(1.8rem,6vw,2.6rem);font-weight:900;color:#bfdbfe}
+    .cgpa-readout .val.formula{font-size:1rem;font-weight:600;color:#dbeafe}
+    .cgpa-arrow{font-size:1.8rem;color:rgba(255,255,255,.4)}
+    @media(max-width:520px){.cgpa-arrow{display:none}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › CGPA to Percentage</nav>
+        <span class="pill">Marks & Grades</span>
+        <h1>CGPA to Percentage Calculator</h1>
+        <p class="lead">Enter your CGPA and get the matching percentage for CBSE, Anna University, VTU, Mumbai University, AKTU and more — each worked out with that institution's own formula.</p>
+
+        <div class="tool-panel">
+          <div class="field">
+            <label for="cgpa-input">Your CGPA</label>
+            <input type="number" id="cgpa-input" placeholder="e.g. 8.5" min="0" max="10" step="0.01" />
+          </div>
+          <div class="field">
+            <label for="uni-select">Select university / formula</label>
+            <select id="uni-select">
+              <option value="cbse">CBSE (× 9.5)</option>
+              <option value="anna">Anna University (−0.5) × 10</option>
+              <option value="vtu">VTU (−0.75) × 10</option>
+              <option value="mumbai">Mumbai University (× 7.1 + 11)</option>
+              <option value="aktu">AKTU / UPTU (× 10 − 7.5)</option>
+              <option value="gtu">GTU (× 10)</option>
+              <option value="du">Delhi University (× 9.5)</option>
+              <option value="generic">Generic (× 10)</option>
+            </select>
+          </div>
+          <button class="tool-btn" onclick="convertCgpa()" style="margin-top:.5rem">Convert to Percentage →</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="result-box" id="cgpa-result" style="display:none">
+        <p class="r-label">Conversion</p>
+        <div class="cgpa-readout">
+          <div>
+            <p class="lbl">Your CGPA</p>
+            <p class="val" id="res-cgpa-val">—</p>
+          </div>
+          <div class="cgpa-arrow">→</div>
+          <div>
+            <p class="lbl">Equivalent percentage</p>
+            <p class="val big" id="res-pct-val">—</p>
+          </div>
+          <div>
+            <p class="lbl">Formula used</p>
+            <p class="val formula" id="res-formula">—</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <h2>CGPA to percentage formulas — all universities</h2>
+        <div class="tool-table-wrap">
+          <table class="tool-table">
+            <thead><tr>
+              <th>University / Board</th><th>Formula</th><th>Example (8.0 CGPA)</th>
+            </tr></thead>
+            <tbody>
+              <tr><td>CBSE Class 10/12</td><td>CGPA × 9.5</td><td>76%</td></tr>
+              <tr><td>Anna University</td><td>(CGPA − 0.5) × 10</td><td>75%</td></tr>
+              <tr><td>VTU (Visvesvaraya)</td><td>(CGPA − 0.75) × 10</td><td>72.5%</td></tr>
+              <tr><td>Mumbai University</td><td>CGPA × 7.1 + 11</td><td>67.8%</td></tr>
+              <tr><td>AKTU / UPTU</td><td>CGPA × 10 − 7.5</td><td>72.5%</td></tr>
+              <tr><td>GTU</td><td>CGPA × 10</td><td>80%</td></tr>
+              <tr><td>Delhi University</td><td>CGPA × 9.5</td><td>76%</td></tr>
+              <tr><td>Generic / Others</td><td>CGPA × 10</td><td>80%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted-note">* Multipliers get revised from time to time, so check your university's official notification before relying on one.</p>
+      </div>
+
+      <div class="tool-card">
+        <h2>CGPA vs percentage — what Indian employers expect</h2>
+        <p>CGPA, short for Cumulative Grade Point Average, is how universities roll up your semester-by-semester results into one figure. The 10-point version dominates in India, a shift that gathered pace once the UGC began promoting grade-based evaluation.</p>
+        <p>The catch is that employers and exam boards here still think in percentages. The moment a notification asks for a "minimum 60% in graduation", you have to run your CGPA through your university's official formula to see if you clear it.</p>
+        <p><strong>UPSC and SSC:</strong> neither sets a graduation percentage bar, so there is nothing to convert. The picture changes for RBI Grade B, CAT admissions to the IIMs and several PSU roles, where a percentage cutoff applies and conversion becomes essential.</p>
+        <p><strong>A word of caution:</strong> stick to your own university's official multiplier. Blindly multiplying by 10 or 9.5 can inflate your figure and lead you to claim eligibility you do not actually have.</p>
+        <div class="infobox info">
+          Before you put a converted percentage on any official form, confirm the multiplier against your university's most recent circular.
+        </div>
+        <h3>Also useful</h3>
+        <div class="tool-links">
+          <a href="/percentage-calculator/">📊 Percentage calculator</a>
+          <a href="/marks-calculator/">📝 Marks calculator</a>
+          <a href="/age-calculator-for-upsc/">🏛 UPSC age calculator</a>
+          <a href="/">📚 Practice UPSC PYQs</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I convert CGPA to percentage for CBSE?</summary><div class="faq-a">Multiply your CGPA by 9.5. A CGPA of 8.5 therefore becomes 8.5 × 9.5 = 80.75%.</div></details>
+        <details class="faq-item"><summary>What is the Anna University CGPA to percentage formula?</summary><div class="faq-a">The rule at Anna University is (CGPA − 0.5) × 10. So an 8.0 CGPA gives (8.0 − 0.5) × 10 = 75%.</div></details>
+        <details class="faq-item"><summary>How do I convert VTU CGPA to percentage?</summary><div class="faq-a">VTU takes off 0.75 before multiplying: (CGPA − 0.75) × 10. An 8.5 CGPA becomes (8.5 − 0.75) × 10 = 77.5%.</div></details>
+        <details class="faq-item"><summary>Is a 7 CGPA good?</summary><div class="faq-a">A 7.0 CGPA holds up well. Run through the CBSE rule it equals 66.5%, which clears the usual 60% bar for government jobs and post-graduate study.</div></details>
+        <details class="faq-item"><summary>What CGPA equals 60%?</summary><div class="faq-a">Under CBSE, 60 ÷ 9.5 is about 6.32 CGPA; under the Anna University rule, 60 ÷ 10 + 0.5 works out to 6.5 CGPA. The figure shifts from one university to another.</div></details>
+        <details class="faq-item"><summary>Is CGPA or percentage better?</summary><div class="faq-a">Each has its use. CGPA is a fairer all-round measure, while a percentage reads more clearly to Indian employers and boards — so listing both on your resume is the safe move.</div></details>
+        <details class="faq-item"><summary>Is this CGPA calculator free and accurate?</summary><div class="faq-a">It is entirely free. The formulas mirror official university notifications, though you should still verify against your university's newest circular, as multipliers do get revised now and then.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More free tools</h2>
+        <div class="tool-links">
+          <a href="/percentage-calculator/">Percentage calculator</a>
+          <a href="/marks-calculator/">Marks calculator</a>
+          <a href="/bmi-calculator/">BMI calculator</a>
+          <a href="/word-counter/">Word counter</a>
+          <a href="/age-calculator/">Age calculator</a>
+          <a href="/age-calculator-for-upsc/">UPSC age calculator</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+const FORMULAS = {
+  cbse:    { label: 'CBSE: CGPA × 9.5',            fn: v => v * 9.5 },
+  anna:    { label: 'Anna Univ: (CGPA − 0.5) × 10', fn: v => (v - 0.5) * 10 },
+  vtu:     { label: 'VTU: (CGPA − 0.75) × 10',     fn: v => (v - 0.75) * 10 },
+  mumbai:  { label: 'Mumbai: CGPA × 7.1 + 11',      fn: v => v * 7.1 + 11 },
+  aktu:    { label: 'AKTU: CGPA × 10 − 7.5',        fn: v => v * 10 - 7.5 },
+  gtu:     { label: 'GTU: CGPA × 10',               fn: v => v * 10 },
+  du:      { label: 'DU: CGPA × 9.5',               fn: v => v * 9.5 },
+  generic: { label: 'Generic: CGPA × 10',           fn: v => v * 10 },
+};
+
+function convertCgpa() {
+  const val = parseFloat(document.getElementById('cgpa-input').value);
+  const uni = document.getElementById('uni-select').value;
+  if (isNaN(val) || val < 0 || val > 10) { alert('Please enter a valid CGPA (0–10).'); return; }
+  const f = FORMULAS[uni];
+  const pct = Math.min(100, Math.max(0, f.fn(val))).toFixed(2);
+  document.getElementById('res-cgpa-val').textContent = val;
+  document.getElementById('res-pct-val').textContent = pct + '%';
+  document.getElementById('res-formula').textContent = f.label;
+  document.getElementById('cgpa-result').style.display = 'block';
+  document.getElementById('cgpa-result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

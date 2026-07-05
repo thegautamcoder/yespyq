@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Compress Image Online — Reduce Image File Size Free | YESPYQ</title>
+  <meta name="description" content="Shrink JPEG, PNG and WEBP files without losing sharpness using this free online compressor. Every step happens inside your browser, so nothing is ever uploaded." />
+  <meta name="keywords" content="compress image, image compressor, reduce image size, compress jpeg online, compress png, image size reducer, compress image without losing quality" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/compress-image/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="Compress Image Online — Free Image Compressor | YESPYQ" />
+  <meta property="og:description" content="Reduce JPEG, PNG and WEBP file size in your browser while keeping quality. 100% free, no upload, instant download." />
+  <meta property="og:url" content="https://yespyq.com/compress-image/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Compress Image Online | YESPYQ" />
+  <meta name="twitter:description" content="Free image compressor. Reduce JPEG, PNG and WEBP size in your browser — no upload needed." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"Compress Image","item":"https://yespyq.com/compress-image/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Compress Image Online","applicationCategory":"MultimediaApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/compress-image/","description":"Free browser-based image compressor. Reduce JPEG, PNG and WEBP file size while keeping maximum quality. Nothing is uploaded.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I compress an image online for free?","acceptedAnswer":{"@type":"Answer","text":"Load your picture into the tool above, slide the quality control to where you want it, and press Download. The lighter file lands on your device immediately, with no account or install to bother with."}},
+    {"@type":"Question","name":"Does compression lower image quality?","acceptedAnswer":{"@type":"Answer","text":"Between 70 and 90% quality, the eye can barely register any difference; it is only once you drop under about 40% that artefacts appear. Somewhere around 70–80% keeps exam-form uploads both sharp and small."}},
+    {"@type":"Question","name":"Is my image sent to a server?","acceptedAnswer":{"@type":"Answer","text":"Never. HTML5 Canvas does all the compressing right on your machine, so the picture stays where it is and is never uploaded."}},
+    {"@type":"Question","name":"Which formats can I compress?","acceptedAnswer":{"@type":"Answer","text":"JPG, JPEG, PNG, WEBP and HEIC files all open fine. Whatever you feed in, the output is written as JPEG so it stays broadly compatible and as small as possible."}},
+    {"@type":"Question","name":"How much smaller can the file get?","acceptedAnswer":{"@type":"Answer","text":"Cuts of 40–80% are routine with barely any visible loss. Set to 75% quality, a 2 MB photo will often fall under 200 KB while looking identical on screen."}},
+    {"@type":"Question","name":"Is there a limit on image size?","acceptedAnswer":{"@type":"Answer","text":"Anything up to about 15 MB is handled without trouble. Really big files can be slow on some devices, so shrink the pixel dimensions first if you hit a lag."}}
+  ]}
+  </script>
+
+  <style>
+    /* Tool-specific bits re-themed to YESPYQ light tokens. Class names kept
+       exactly as the script expects (drop-zone / drag-over / range-slider). */
+    .drop-zone{border:2px dashed var(--line);border-radius:14px;padding:2.4rem 1.2rem;
+      text-align:center;cursor:pointer;transition:.15s;background:var(--blue-50)}
+    .drop-zone:hover,.drop-zone.drag-over{border-color:var(--blue-500);background:#eef4ff}
+    .drop-zone .big{font-size:2.2rem;display:block;margin-bottom:.5rem}
+    .drop-zone .dz-t{font-size:1rem;font-weight:700;color:var(--ink);margin:0 0 .3rem}
+    .drop-zone .dz-s{font-size:.85rem;color:var(--muted);margin:0}
+    .size-cards{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1.2rem}
+    .size-card{background:var(--blue-50);border:1px solid var(--line);border-radius:12px;padding:.9rem 1rem;text-align:center}
+    .size-card .lbl{font-size:.68rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:0 0 .25rem}
+    .size-card .val{font-size:1.25rem;font-weight:800;color:var(--ink);margin:0}
+    .size-card .val.b{color:var(--blue-600)}
+    .size-bar-wrap{background:#e2e8f0;border-radius:8px;height:8px;overflow:hidden;margin-top:.4rem}
+    .size-bar{height:8px;border-radius:8px;background:linear-gradient(90deg,var(--blue-500),#06b6d4);transition:width .4s}
+    .q-label{font-size:.85rem;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;margin-bottom:.5rem}
+    .q-label span:last-child{color:var(--blue-600)}
+    .range-slider{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;background:#e2e8f0;outline:none}
+    .range-slider::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--blue-600);cursor:pointer}
+    .range-slider::-moz-range-thumb{width:20px;height:20px;border:none;border-radius:50%;background:var(--blue-600);cursor:pointer}
+    .range-ends{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-top:.35rem}
+    .dl-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue-600);color:#fff;font-weight:700;
+      border:none;border-radius:12px;cursor:pointer;text-decoration:none;padding:.85rem 1.8rem;font-size:.98rem;transition:.18s;
+      box-shadow:0 6px 16px rgba(37,99,235,.25)}
+    .dl-btn:hover{background:var(--blue-700);transform:translateY(-1px)}
+    .savings{font-size:.85rem;color:#059669;font-weight:600;margin-top:.7rem}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Compress Image</nav>
+        <span class="pill">Image Tools</span>
+        <h1>Compress Image Online</h1>
+        <p class="lead">Bring down the file size of a JPG, PNG or WEBP with no visible loss of quality. The whole job runs inside your browser, so your picture is never uploaded anywhere.</p>
+
+        <div class="tool-panel">
+          <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()">
+            <span class="big">🗜️</span>
+            <p class="dz-t">Drop an image here or click to upload</p>
+            <p class="dz-s">JPG, PNG, WEBP, HEIC · Up to 15 MB</p>
+          </div>
+          <input type="file" id="file-input" accept="image/*" style="display:none" />
+
+          <div id="controls" style="display:none;margin-top:1.5rem">
+            <div class="size-cards">
+              <div class="size-card">
+                <p class="lbl">Original</p>
+                <p class="val" id="orig-size">—</p>
+                <div class="size-bar-wrap"><div class="size-bar" style="width:100%"></div></div>
+              </div>
+              <div class="size-card">
+                <p class="lbl">Compressed</p>
+                <p class="val b" id="comp-size">—</p>
+                <div class="size-bar-wrap"><div class="size-bar" id="comp-bar" style="width:0%"></div></div>
+              </div>
+            </div>
+
+            <label class="q-label"><span>Quality</span><span id="quality-val">80%</span></label>
+            <input type="range" class="range-slider" id="quality-slider" min="10" max="95" value="80" oninput="onQualityChange(this.value)" />
+            <div class="range-ends"><span>Smallest file</span><span>Best quality</span></div>
+
+            <div style="text-align:center;margin-top:1.4rem">
+              <button class="dl-btn" id="dl-btn" onclick="download()">⬇ Download Compressed Image</button>
+              <p class="savings" id="savings-msg"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="tool-card">
+        <h2>How to compress an image — step by step</h2>
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><div><b>Upload your image</b><span>Drag a JPG, PNG or WEBP onto the upload area, or click to browse — no account needed.</span></div></div>
+          <div class="step"><span class="step-num">2</span><div><b>Set the quality</b><span>Move the slider to your preferred level; about 80% suits exam uploads, staying crisp while cutting the size sharply.</span></div></div>
+          <div class="step"><span class="step-num">3</span><div><b>Download</b><span>Press "Download Compressed Image" to save it — no watermark and no sign-up.</span></div></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <h2>Why compress images?</h2>
+        <p>Government exam portals in India — SSC, UPSC, IBPS, NTA, RRB and the rest — keep upload sizes small, generally 20–200 KB for a photo or document. Trouble is, a photo shot on a phone usually weighs 2–5 MB, far above those ceilings.</p>
+        <p>By packing the pixels more efficiently, compression brings the file down. Hold the JPEG quality at 70–85% and the screen looks the same, even though the file commonly loses 60–80% of its weight.</p>
+        <h3>Compression vs. resizing — what's the difference?</h3>
+        <ul>
+          <li><strong>Compression</strong> leaves the pixel dimensions untouched and instead drops the encoding quality to trim the file.</li>
+          <li><strong>Resizing</strong> alters the actual width × height in pixels, which shrinks the file as well.</li>
+          <li>If a portal caps only the KB, compress. If it caps both KB and dimensions, resize first, then compress.</li>
+        </ul>
+        <h3>Related tools</h3>
+        <div class="tool-links">
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/">📚 Practice PYQs</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I compress an image online for free?</summary><div class="faq-a">Load your image into the tool above, nudge the quality slider, then click Download — the lighter file saves at once, with no sign-up.</div></details>
+        <details class="faq-item"><summary>Does compressing an image reduce quality?</summary><div class="faq-a">From 70–90% quality the loss is almost impossible to notice; JPEG artefacts only creep in under 50%. For exam-form uploads, 75–85% strikes a good balance of sharpness and size.</div></details>
+        <details class="faq-item"><summary>Is my image uploaded to a server?</summary><div class="faq-a">No — HTML5 Canvas compresses everything in your browser, so the image stays on your device and remains fully private.</div></details>
+        <details class="faq-item"><summary>What image formats are supported?</summary><div class="faq-a">JPG, JPEG, PNG, WEBP and HEIC all load fine, and the result is written as JPEG for the widest compatibility.</div></details>
+        <details class="faq-item"><summary>How much can I reduce the file size?</summary><div class="faq-a">Cuts of 50–80% are typical with little to see. At 80% quality a 3 MB phone photo often lands under 300 KB.</div></details>
+        <details class="faq-item"><summary>What quality should I use for exam portals?</summary><div class="faq-a">For Indian exam portals, 75–80% is a reliable choice — clear enough for identification yet slim enough to slip under 50–100 KB caps.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More tools</h2>
+        <div class="tool-links">
+          <a href="/compress-image/">Compress Image</a>
+          <a href="/jpg-to-png/">JPG to PNG</a>
+          <a href="/png-to-jpg/">PNG to JPG</a>
+          <a href="/image-to-pdf/">Image to PDF</a>
+          <a href="/">Home</a>
+          <a href="/blog/">Blog</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+let origFile = null;
+let canvas = document.createElement('canvas');
+let ctx = canvas.getContext('2d');
+let img = new Image();
+
+const dropZone = document.getElementById('drop-zone');
+const fileInput = document.getElementById('file-input');
+
+dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
+dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
+dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); const f = e.dataTransfer.files[0]; if (f) loadFile(f); });
+fileInput.addEventListener('change', () => { if (fileInput.files[0]) loadFile(fileInput.files[0]); });
+
+function fmtSize(bytes) {
+  if (bytes < 1024) return bytes + ' B';
+  if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+  return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+}
+
+function loadFile(file) {
+  origFile = file;
+  const url = URL.createObjectURL(file);
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0);
+    URL.revokeObjectURL(url);
+    document.getElementById('orig-size').textContent = fmtSize(file.size);
+    document.getElementById('controls').style.display = 'block';
+    updateCompressed();
+  };
+  img.src = url;
+}
+
+function updateCompressed() {
+  const q = parseInt(document.getElementById('quality-slider').value) / 100;
+  canvas.toBlob(blob => {
+    document.getElementById('comp-size').textContent = fmtSize(blob.size);
+    const pct = Math.round((blob.size / origFile.size) * 100);
+    document.getElementById('comp-bar').style.width = pct + '%';
+    const saved = Math.round((1 - blob.size / origFile.size) * 100);
+    document.getElementById('savings-msg').textContent = saved > 0 ? `✓ ${saved}% smaller than original` : '';
+  }, 'image/jpeg', q);
+}
+
+function onQualityChange(v) {
+  document.getElementById('quality-val').textContent = v + '%';
+  updateCompressed();
+}
+
+function download() {
+  const q = parseInt(document.getElementById('quality-slider').value) / 100;
+  canvas.toBlob(blob => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    const name = (origFile.name.replace(/\.[^.]+$/, '') || 'compressed') + '.jpg';
+    a.download = name;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }, 'image/jpeg', q);
+}
+</script>
+<script>var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();</script>
+</body>
+</html>

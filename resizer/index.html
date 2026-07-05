@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="0226qH4u04EiETLZppAKo_b77dJGdbbTM64xQ4egLjU" />
+
+  <!-- ═══ PERFORMANCE: PRECONNECT ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+
+  <!-- ═══ GEO TARGETING ═══ -->
+  <meta name="geo.region" content="IN">
+  <meta name="geo.placename" content="India">
+  <meta name="DC.language" content="en-IN">
+  <meta name="coverage" content="India">
+  <meta name="distribution" content="global">
+  <meta name="target" content="all">
+  <meta name="rating" content="general">
+
+  <!-- ═══ FAVICON ═══ -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.svg">
+  <link rel="shortcut icon" href="/assets/favicon.svg">
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>YESPYQ – Free Photo &amp; Signature Resizer for UPSC, SSC, SBI, NEET &amp; 80+ Indian Exams</title>
+  <meta name="description" content="Instantly resize your photo and signature for UPSC, SSC, SBI PO, IBPS, NEET, JEE and 80+ Indian competitive exams. Free, instant, 100% private — all processing happens in your browser. No uploads, no server.">
+  <meta name="keywords" content="UPSC photo resize, SSC photo size, SBI PO photo resize, IBPS photo size, NEET photo resize, JEE photo resize, exam photo resizer India, passport photo resize online, competitive exam photo size, signature resize India, government exam photo">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="YESPYQ">
+  <meta name="theme-color" content="#f8fafc">
+  <link rel="canonical" href="https://yespyq.com/resizer/">
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:site_name"   content="YESPYQ">
+  <meta property="og:title"       content="YESPYQ – Free Photo &amp; Signature Resizer for 80+ Indian Exams">
+  <meta property="og:description" content="Resize your photo and signature for UPSC, SSC, SBI, IBPS, NEET, JEE and 80+ Indian exams instantly. 100% free, private, and processed in your browser.">
+  <meta property="og:url"         content="https://yespyq.com/resizer/">
+  <meta property="og:image"       content="https://yespyq.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="en_IN">
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="YESPYQ – Free Photo &amp; Signature Resizer for Indian Exams">
+  <meta name="twitter:description" content="Resize your exam photo &amp; signature for UPSC, SSC, IBPS, NEET, JEE and 80+ Indian exams. Free, instant, 100% private.">
+  <meta name="twitter:image"       content="https://yespyq.com/assets/og-image.png">
+
+  <!-- ═══ MOBILE / PWA ═══ -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="YESPYQ">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #f8fafc; color: #0f172a; }
+
+    /* ── brand colors ── */
+    :root {
+      --em: #3b82f6;
+      --em-dark: #2563eb;
+      --em-light: #dbeafe;
+      --em-glow: rgba(59,130,246,.18);
+      --dark: #0a0e1a;
+      --dark2: #131929;
+      --dark3: #1e293b;
+    }
+
+    /* ── header gradient ── */
+    .hero { background: linear-gradient(160deg, #eff6ff, #fff 72%); border-bottom: 1px solid #e2e8f0; }
+
+    /* ── exam chip ── */
+    .chip {
+      display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+      padding: 12px 14px; border-radius: 12px; cursor: pointer; text-align: left;
+      border: 1.5px solid #e2e8f0; background: #fff;
+      transition: all .18s ease;
+      box-shadow: 0 1px 3px rgba(0,0,0,.06);
+    }
+    .chip:hover { border-color: var(--em); box-shadow: 0 4px 16px var(--em-glow); transform: translateY(-1px); }
+    .chip.selected { border-color: var(--em); background: #eff6ff; box-shadow: 0 4px 20px var(--em-glow); }
+    .chip-name { font-size: 13px; font-weight: 600; color: #0f172a; line-height: 1.3; }
+    .chip-spec { font-size: 10px; color: #94a3b8; font-family: monospace; }
+
+    /* ── category pill ── */
+    .cat-pill {
+      padding: 6px 16px; border-radius: 999px; font-size: 13px; font-weight: 600;
+      cursor: pointer; border: 1.5px solid #e2e8f0; background: #fff;
+      color: #64748b; transition: all .15s ease; white-space: nowrap;
+    }
+    .cat-pill:hover { border-color: var(--em); color: var(--em); }
+    .cat-pill.active { background: var(--em); border-color: var(--em); color: #fff; }
+
+    /* ── input ── */
+    .inp {
+      width: 100%; padding: 9px 12px; border: 1.5px solid #e2e8f0; border-radius: 10px;
+      font-size: 13px; outline: none; transition: border-color .15s;
+      font-family: monospace; background: #fff;
+    }
+    .inp:focus { border-color: var(--em); box-shadow: 0 0 0 3px var(--em-glow); }
+
+    /* ── search bar ── */
+    .search-bar {
+      width: 100%; padding: 13px 16px 13px 44px;
+      border: 1.5px solid #e2e8f0; border-radius: 14px;
+      background: #fff; color: #0f172a; font-size: 15px;
+      outline: none; transition: all .2s;
+    }
+    .search-bar::placeholder { color: #94a3b8; }
+    .search-bar:focus { border-color: var(--em); background: #fff; box-shadow: 0 0 0 3px var(--em-glow); }
+
+    /* ── doc type btn ── */
+    .doc-btn {
+      flex: 1; padding: 14px 12px; border-radius: 14px; border: 2px solid #e2e8f0;
+      text-align: center; cursor: pointer; background: #fff; transition: all .18s;
+    }
+    .doc-btn:hover { border-color: var(--em); }
+    .doc-btn.active { border-color: var(--em); background: #eff6ff; }
+
+    /* ── drop zone ── */
+    .drop-zone {
+      border: 2px dashed #d1d5db; border-radius: 16px; padding: 40px 24px;
+      text-align: center; cursor: pointer; transition: all .2s;
+      background: linear-gradient(135deg, #fafffe 0%, #eff6ff 100%);
+    }
+    .drop-zone:hover, .drop-zone.over { border-color: var(--em); background: #eff6ff; }
+
+    /* ── cropper ── */
+    .crop-wrap { background: #0f172a; border-radius: 14px; overflow: hidden; min-height: 240px; }
+
+    /* ── tool btn ── */
+    .tool-btn {
+      display: flex; align-items: center; gap: 5px;
+      padding: 7px 12px; border-radius: 8px; font-size: 12px; font-weight: 600;
+      border: 1.5px solid #e2e8f0; background: #fff; cursor: pointer; color: #374151;
+      transition: all .15s; white-space: nowrap;
+    }
+    .tool-btn:hover { border-color: var(--em); color: var(--em); background: #eff6ff; }
+
+    /* ── btn primary ── */
+    .btn-primary {
+      width: 100%; padding: 14px; border-radius: 12px; font-size: 15px; font-weight: 700;
+      background: linear-gradient(135deg, var(--em) 0%, var(--em-dark) 100%);
+      color: #fff; border: none; cursor: pointer; transition: all .2s;
+      box-shadow: 0 4px 14px rgba(59,130,246,.35);
+    }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(59,130,246,.45); }
+    .btn-primary:active { transform: none; }
+
+    /* ── btn download ── */
+    .btn-download {
+      width: 100%; padding: 14px; border-radius: 12px; font-size: 15px; font-weight: 700;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff; border: none; cursor: pointer; text-align: center; text-decoration: none;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: all .2s; box-shadow: 0 4px 14px rgba(0,0,0,.25);
+    }
+    .btn-download:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,.3); }
+
+    /* ── card ── */
+    .card { background: #fff; border-radius: 20px; border: 1.5px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,.05); overflow: hidden; }
+
+    /* ── spec card ── */
+    .spec-card { background: #f8fafc; border-radius: 10px; padding: 10px 12px; }
+
+    /* ── badge ok/warn ── */
+    .badge-ok   { background: #dbeafe; color: #2563eb; }
+    .badge-warn { background: #fef3c7; color: #d97706; }
+
+    /* ── scrollbar ── */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+
+    /* ── spin ── */
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .spin { animation: spin .9s linear infinite; }
+
+    /* ── chip grid ── */
+    .chip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+
+    /* ── section divider ── */
+    .section-header { font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #94a3b8; margin-bottom: 8px; }
+
+    /* ── privacy badge ── */
+    .privacy { display: flex; gap: 8px; align-items: flex-start; background: #eff6ff; border: 1.5px solid #bfdbfe; border-radius: 12px; padding: 12px; }
+
+    /* ── result before/after ── */
+    .result-img { width: 100%; object-fit: contain; background: #f8fafc; border-radius: 12px; border: 1.5px solid #e2e8f0; max-height: 190px; }
+
+    /* ── logo text ── */
+    .logo-i     { color: #0f172a; font-weight: 900; letter-spacing: -1px; }
+    .logo-heart { color: #ef4444; font-weight: 900; }
+    .logo-exams { color: #0f172a; font-weight: 900; letter-spacing: -1px; }
+    .logo-in    { color: #64748b; font-weight: 500; font-size: 13px; margin-left: 2px; vertical-align: middle; }
+  </style>
+</head>
+
+<body>
+
+<!-- ═══════════════════════════ STICKY NAVBAR ═══════════════════════════ -->
+<nav style="position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e2e8f0;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)">
+  <div class="max-w-5xl mx-auto px-4" style="height:58px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+
+    <!-- Logo -->
+    <a href="/" style="text-decoration:none;display:flex;align-items:center;gap:0;flex-shrink:0" aria-label="YESPYQ Home">
+      <span style="font-size:22px;font-weight:900;color:#0f172a">YES</span><span style="font-size:22px;font-weight:900;color:#2563eb">PYQ</span>
+    </a>
+
+    <!-- Centre nav -->
+    <div class="hidden md:flex items-center" style="gap:26px;font-size:13.5px;font-weight:600">
+      <a href="/resizer/" style="color:#475569;text-decoration:none">Exam Resizer</a>
+      <a href="/" style="color:#475569;text-decoration:none">All Tools</a>
+      <div class="relative group" style="padding:20px 0">
+        <button style="color:#475569;background:none;border:none;cursor:pointer;font-size:13.5px;font-weight:600;display:flex;align-items:center;gap:5px;padding:0">Tools <span style="font-size:8px;opacity:.7">▼</span></button>
+        <div class="hidden group-hover:block" style="position:absolute;top:100%;left:50%;transform:translateX(-50%);background:#fff;border-radius:14px;box-shadow:0 16px 40px rgba(0,0,0,.22);padding:8px;min-width:248px;z-index:60">
+          <a href="/#id" style="display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:#0f172a;font-size:13px;font-weight:600;white-space:nowrap">🪪 ID Card — Voter, Aadhaar, PAN</a>
+          <a href="/#kb" style="display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:#0f172a;font-size:13px;font-weight:600;white-space:nowrap">💾 By File Size — 10–500&nbsp;KB</a>
+          <a href="/#dim" style="display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:#0f172a;font-size:13px;font-weight:600;white-space:nowrap">📐 By Dimension — cm, inch, custom</a>
+          <div style="height:1px;background:#e2e8f0;margin:6px 8px"></div>
+          <a href="/" style="display:block;padding:9px 12px;border-radius:8px;text-decoration:none;color:#2563eb;font-size:13px;font-weight:700;white-space:nowrap">View all tools →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side -->
+    <div style="display:flex;align-items:center;gap:10px;flex-shrink:0">
+      <span class="hidden sm:flex" style="align-items:center;gap:6px;font-size:11px;font-weight:600;color:#2563eb;background:#eff6ff;border:1px solid #bfdbfe;padding:5px 11px;border-radius:999px;white-space:nowrap">
+        <span style="width:6px;height:6px;background:#3b82f6;border-radius:50%;display:inline-block;flex-shrink:0"></span>
+        100% Private
+      </span>
+    </div>
+
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO / SEARCH ═══════════════════════════ -->
+<div class="hero">
+  <div class="max-w-5xl mx-auto px-4 pt-7 pb-10">
+
+    <!-- H1 — primary SEO heading -->
+    <h1 style="font-size:14px;font-weight:500;color:#475569;margin-bottom:24px;letter-spacing:.01em;line-height:1.5">
+      Free photo &amp; signature resizer for UPSC, SSC, SBI PO, IBPS, NEET, JEE &amp; 80+ Indian competitive exams
+    </h1>
+
+    <!-- Tool hero (shown only in ?preset= tool mode) -->
+    <div id="tool-hero" class="hidden" style="margin-bottom:4px">
+      <p id="tool-hero-sub" style="font-size:13.5px;color:#475569;line-height:1.55;max-width:640px"></p>
+      <a href="/tools/" style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:12.5px;font-weight:600;color:#2563eb;text-decoration:none">← Browse all tools</a>
+    </div>
+
+    <!-- Search bar -->
+    <div id="search-section">
+      <div class="relative mb-5">
+        <svg class="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5" style="color:#94a3b8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        <input id="exam-search" type="text" class="search-bar" placeholder="Search UPSC, SSC, IBPS, NEET, JEE…" oninput="filterExams(this.value)" autocomplete="off">
+        <span id="search-count" class="absolute right-4 top-1/2 -translate-y-1/2 text-xs font-medium" style="color:#94a3b8">80 exams</span>
+      </div>
+
+      <!-- Category pills -->
+      <div class="flex gap-2 overflow-x-auto pb-1" id="cat-pills" style="scrollbar-width:none"></div>
+    </div>
+
+    <!-- Exam grid -->
+    <div id="exam-grid-section" class="mt-5">
+      <div id="exam-grid" class="chip-grid"></div>
+      <div id="no-results" class="hidden text-center py-10 text-sm" style="color:#64748b">No exams match your search.</div>
+    </div>
+
+    <!-- Selected exam bar (shown after selection) -->
+    <div id="selected-bar" class="hidden mt-5 flex items-center justify-between gap-3 rounded-2xl px-5 py-3" style="background:#eff6ff;border:1.5px solid #bfdbfe">
+      <div class="flex items-center gap-3">
+        <span style="width:10px;height:10px;background:#2563eb;border-radius:50%;display:inline-block;flex-shrink:0"></span>
+        <span id="sel-exam-name" class="font-bold text-slate-900 text-sm"></span>
+        <span id="sel-exam-spec" class="text-xs font-mono" style="color:#64748b"></span>
+      </div>
+      <button onclick="clearExam()" class="text-xs font-semibold px-3 py-1.5 rounded-full" style="background:#fff;color:#475569;border:1px solid #e2e8f0;cursor:pointer">Change exam</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MAIN CONTENT ═══════════════════════════ -->
+<div class="max-w-5xl mx-auto px-4 py-8">
+
+  <!-- No exam selected hint -->
+  <div id="hint-select" class="text-center py-12 text-sm text-slate-400">
+    ↑ Search or click an exam above to start resizing
+  </div>
+
+  <!-- 2-col config + upload (shown after exam selected) -->
+  <div id="main-panels" class="hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- ══════════════ LEFT: CONFIGURE ══════════════ -->
+      <div class="card flex flex-col">
+        <div class="px-6 py-4 border-b border-slate-100 flex items-center gap-3">
+          <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--em)">1</span>
+          <span class="font-bold text-slate-700">Configure</span>
+        </div>
+
+        <div class="p-5 flex flex-col gap-5 flex-1">
+
+          <!-- Selected exam row inside card (hidden until exam chosen) -->
+          <div id="card-exam-row" class="hidden flex items-center justify-between gap-3 rounded-xl px-4 py-2.5" style="background:#eff6ff;border:1.5px solid #bfdbfe">
+            <div class="flex items-center gap-2 min-w-0">
+              <span style="width:8px;height:8px;background:#3b82f6;border-radius:50%;display:inline-block;flex-shrink:0"></span>
+              <div class="min-w-0">
+                <div id="card-exam-name" class="font-bold text-slate-700 text-sm truncate"></div>
+                <div id="card-exam-spec" class="text-xs font-mono text-slate-400"></div>
+              </div>
+            </div>
+            <button onclick="changeExamFromCard()" class="text-xs font-semibold px-3 py-1.5 rounded-full flex-shrink-0" style="background:rgba(59,130,246,.15);color:#2563eb;border:none;cursor:pointer">
+              ✏️ Change
+            </button>
+          </div>
+
+          <!-- Doc type -->
+          <div>
+            <div class="section-header">Document Type</div>
+            <div class="flex gap-3">
+              <button id="btn-photo" class="doc-btn active" onclick="selectDoc('photo')">
+                <div class="text-2xl mb-1">🖼️</div>
+                <div class="text-sm font-bold text-slate-700">Photo</div>
+                <div class="text-xs text-slate-400">Passport size</div>
+              </button>
+              <button id="btn-sig" class="doc-btn" onclick="selectDoc('signature')">
+                <div class="text-2xl mb-1">✍️</div>
+                <div class="text-sm font-bold text-slate-700">Signature</div>
+                <div class="text-xs text-slate-400">Digital sign</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Specs -->
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <div class="section-header" style="margin-bottom:0">Image Requirements</div>
+              <button id="reset-btn" onclick="resetSpecs()" class="hidden text-xs font-semibold" style="color:var(--em)">↩ Reset</button>
+            </div>
+            <div class="space-y-3" style="background:#f8fafc;border-radius:14px;padding:16px;border:1.5px solid #f1f5f9">
+
+              <!-- Dimensions -->
+              <div id="wh-fields">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="section-header" style="margin-bottom:0">Dimensions</div>
+                  <select id="dim-unit" onchange="onUnitChange()" class="text-xs font-semibold" style="border:1.5px solid #e2e8f0;border-radius:8px;padding:4px 8px;background:#fff;color:#475569;cursor:pointer">
+                    <option value="px">px</option>
+                    <option value="cm">cm</option>
+                    <option value="inch">inch</option>
+                    <option value="mm">mm</option>
+                  </select>
+                </div>
+                <p id="dim-note" class="text-xs mb-2" style="display:none;color:#64748b">✓ Original size kept — edit only if you want to resize.</p>
+                <div class="flex items-center gap-2">
+                  <div class="flex-1">
+                    <label class="block text-xs text-slate-400 mb-1">Width <span id="unit-lbl-w">(px)</span></label>
+                    <input type="number" id="req-w" min="0" step="any" class="inp" oninput="onSpecChange()">
+                  </div>
+                  <span class="text-slate-300 text-xl mt-5">×</span>
+                  <div class="flex-1">
+                    <label class="block text-xs text-slate-400 mb-1">Height <span id="unit-lbl-h">(px)</span></label>
+                    <input type="number" id="req-h" min="0" step="any" class="inp" oninput="onSpecChange()">
+                  </div>
+                </div>
+                <div id="dpi-row" class="flex items-center gap-2 mt-2" style="display:none">
+                  <label class="text-xs text-slate-400 whitespace-nowrap">Resolution</label>
+                  <select id="dim-dpi" onchange="onDpiChange()" class="inp" style="flex:1">
+                    <option value="72">72 DPI (screen)</option>
+                    <option value="96">96 DPI</option>
+                    <option value="150">150 DPI</option>
+                    <option value="300" selected>300 DPI (print)</option>
+                    <option value="600">600 DPI (high quality)</option>
+                  </select>
+                </div>
+                <p id="px-hint" class="text-xs font-semibold mt-1.5" style="display:none;color:var(--em)"></p>
+              </div>
+
+              <!-- KB -->
+              <div>
+                <div class="section-header">File Size (KB)</div>
+                <div class="flex items-center gap-2">
+                  <div class="flex-1">
+                    <label class="block text-xs text-slate-400 mb-1">Min</label>
+                    <input type="number" id="req-min" min="1" class="inp" oninput="onSpecChange()">
+                  </div>
+                  <span class="text-slate-300 text-xl mt-5">–</span>
+                  <div class="flex-1">
+                    <label class="block text-xs text-slate-400 mb-1">Max</label>
+                    <input type="number" id="req-max" min="1" class="inp" oninput="onSpecChange()">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Format -->
+              <div>
+                <div class="section-header">Output Format</div>
+                <select id="req-fmt" class="inp" onchange="onSpecChange()">
+                  <option value="JPG">JPG / JPEG</option>
+                  <option value="PNG">PNG</option>
+                  <option value="WEBP">WEBP</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Privacy -->
+          <div class="privacy mt-auto">
+            <span style="font-size:18px;flex-shrink:0">🔒</span>
+            <p class="text-xs text-blue-700 leading-relaxed">
+              <strong>Privacy first.</strong> Your images are processed entirely in your browser. Nothing is sent to any server.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ══════════════ RIGHT: UPLOAD & PROCESS ══════════════ -->
+      <div class="card flex flex-col">
+        <div class="px-6 py-4 border-b border-slate-100 flex items-center gap-3">
+          <span class="w-7 h-7 rounded-full flex items-center justify-center text-xs font-bold text-white" style="background:var(--em)">2</span>
+          <span class="font-bold text-slate-700">Upload &amp; Process</span>
+        </div>
+
+        <div class="p-5 flex-1 flex flex-col gap-4">
+
+          <!-- Upload zone -->
+          <div id="st-upload" class="flex-1 flex flex-col gap-3">
+            <!-- Spec strip -->
+            <div class="grid grid-cols-3 gap-2 text-center">
+              <div class="spec-card">
+                <div class="text-xs text-slate-400 font-medium mb-0.5">Dimensions</div>
+                <div class="text-sm font-bold text-slate-700" id="strip-dim">—</div>
+              </div>
+              <div class="spec-card">
+                <div class="text-xs text-slate-400 font-medium mb-0.5">Size</div>
+                <div class="text-sm font-bold text-slate-700" id="strip-size">—</div>
+              </div>
+              <div class="spec-card">
+                <div class="text-xs text-slate-400 font-medium mb-0.5">Format</div>
+                <div class="text-sm font-bold text-slate-700" id="strip-fmt">—</div>
+              </div>
+            </div>
+
+            <!-- Drop zone -->
+            <div id="drop-zone" class="drop-zone flex-1 flex flex-col items-center justify-center gap-3 min-h-48"
+              onclick="document.getElementById('file-input').click()"
+              ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
+              <div class="w-14 h-14 rounded-2xl flex items-center justify-center" style="background:var(--em-light)">
+                <svg class="w-7 h-7" style="color:var(--em)" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-bold text-slate-700 text-center">Click or drop image here</p>
+                <p class="text-sm text-slate-400 text-center mt-0.5">JPG, PNG, HEIC, WEBP · up to 15 MB</p>
+              </div>
+            </div>
+            <input type="file" id="file-input" accept="image/*,.heic,.heif" class="hidden" onchange="onFileSelect(event)">
+          </div>
+
+          <!-- Editor -->
+          <div id="st-editor" class="hidden flex-1 flex flex-col gap-3">
+            <!-- Tools -->
+            <div class="flex flex-wrap gap-2">
+              <button class="tool-btn" onclick="cropperZoom(0.1)">🔍+ Zoom In</button>
+              <button class="tool-btn" onclick="cropperZoom(-0.1)">🔍− Zoom Out</button>
+              <button class="tool-btn" onclick="cropperRotate(-90)">↺ Rotate</button>
+              <button class="tool-btn" onclick="cropperFlip()">⇄ Flip</button>
+              <button class="tool-btn" id="btn-bg" onclick="triggerBgRemoval()" style="border-color:#c084fc;color:#7c3aed;background:#faf5ff">🪄 Remove BG</button>
+            </div>
+
+            <!-- Cropper -->
+            <div class="crop-wrap flex-1" style="min-height:220px">
+              <img id="crop-img" src="" alt="" style="max-width:100%;display:block">
+            </div>
+
+            <!-- BG status -->
+            <div id="bg-status" class="hidden items-center gap-2 text-xs font-medium text-purple-700 rounded-lg px-3 py-2.5" style="background:#faf5ff;border:1.5px solid #e9d5ff">
+              <svg class="spin w-3.5 h-3.5 shrink-0" fill="none" viewBox="0 0 24 24">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
+              </svg>
+              <span id="bg-txt">Loading AI model (first time ~20s)…</span>
+            </div>
+
+            <button class="btn-primary" onclick="processImage()">⚡ Process &amp; Download</button>
+            <button onclick="goUpload()" class="text-xs text-slate-400 hover:text-slate-600 text-center py-1">← Upload different image</button>
+          </div>
+
+          <!-- Result -->
+          <div id="st-result" class="hidden flex-1 flex flex-col gap-4">
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <div class="text-xs font-semibold text-slate-400 mb-1.5 text-center">Original</div>
+                <img id="res-before" class="result-img" alt="Before">
+              </div>
+              <div>
+                <div class="text-xs font-semibold text-slate-400 mb-1.5 text-center">Processed</div>
+                <img id="res-after" class="result-img" style="border-color:var(--em)" alt="After">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 text-center">
+              <div class="spec-card">
+                <div class="text-xs text-slate-400 font-medium mb-0.5">Size</div>
+                <div class="text-sm font-bold text-slate-700" id="res-dim">—</div>
+              </div>
+              <div class="spec-card">
+                <div class="text-xs text-slate-400 font-medium mb-0.5">File Size</div>
+                <div class="text-sm font-bold text-slate-700" id="res-size">—</div>
+              </div>
+              <div class="spec-card">
+                <div class="text-xs text-slate-400 font-medium mb-0.5">Status</div>
+                <div id="res-status" class="text-sm font-bold rounded-md px-2 py-0.5 inline-block">—</div>
+              </div>
+            </div>
+
+            <a id="dl-link" href="#" class="btn-download">⬇️ Download Image</a>
+
+            <button onclick="goUpload()" class="text-xs text-slate-400 hover:text-slate-600 text-center py-1">← Process another</button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════ SEO: SPECS REFERENCE ═══════════════════════════ -->
+<section id="seo-specs" style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:48px 0 40px">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 style="font-size:20px;font-weight:800;color:#0f172a;margin-bottom:6px">Exam Photo &amp; Signature Size Chart</h2>
+    <p style="color:#64748b;font-size:14px;margin-bottom:28px">Official specifications for major Indian competitive exams — resize instantly by clicking any exam.</p>
+
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;font-size:13px">
+        <thead>
+          <tr style="background:#0f172a;color:#fff">
+            <th style="padding:10px 14px;text-align:left;border-radius:10px 0 0 0;font-weight:700">Exam</th>
+            <th style="padding:10px 14px;text-align:center;font-weight:700">Photo Size (px)</th>
+            <th style="padding:10px 14px;text-align:center;font-weight:700">Photo KB</th>
+            <th style="padding:10px 14px;text-align:center;font-weight:700">Signature (px)</th>
+            <th style="padding:10px 14px;text-align:center;border-radius:0 10px 0 0;font-weight:700">Sig KB</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background:#fff;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=upsc&document=photo" style="color:#0f172a;text-decoration:none">UPSC CSE</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">400×400</td><td style="padding:9px 14px;text-align:center;color:#475569">20–300 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">400×400</td><td style="padding:9px 14px;text-align:center;color:#475569">20–100 KB</td></tr>
+          <tr style="background:#f8fafc;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=ssc-cgl&document=photo" style="color:#0f172a;text-decoration:none">SSC CGL</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">275×354</td><td style="padding:9px 14px;text-align:center;color:#475569">20–50 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">236×79</td><td style="padding:9px 14px;text-align:center;color:#475569">10–20 KB</td></tr>
+          <tr style="background:#fff;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=sbi-po&document=photo" style="color:#0f172a;text-decoration:none">SBI PO</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">200×230</td><td style="padding:9px 14px;text-align:center;color:#475569">20–50 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">140×60</td><td style="padding:9px 14px;text-align:center;color:#475569">10–20 KB</td></tr>
+          <tr style="background:#f8fafc;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=ibps-po&document=photo" style="color:#0f172a;text-decoration:none">IBPS PO</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">200×230</td><td style="padding:9px 14px;text-align:center;color:#475569">20–50 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">140×60</td><td style="padding:9px 14px;text-align:center;color:#475569">10–20 KB</td></tr>
+          <tr style="background:#fff;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=neet-ug&document=photo" style="color:#0f172a;text-decoration:none">NEET UG</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">275×354</td><td style="padding:9px 14px;text-align:center;color:#475569">10–200 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">275×118</td><td style="padding:9px 14px;text-align:center;color:#475569">4–30 KB</td></tr>
+          <tr style="background:#f8fafc;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=jee-main&document=photo" style="color:#0f172a;text-decoration:none">JEE Main</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">275×354</td><td style="padding:9px 14px;text-align:center;color:#475569">10–300 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">275×118</td><td style="padding:9px 14px;text-align:center;color:#475569">10–50 KB</td></tr>
+          <tr style="background:#fff;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=rbi-grade-b&document=photo" style="color:#0f172a;text-decoration:none">RBI Grade B</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">200×230</td><td style="padding:9px 14px;text-align:center;color:#475569">20–50 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">140×60</td><td style="padding:9px 14px;text-align:center;color:#475569">10–20 KB</td></tr>
+          <tr style="background:#f8fafc;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=gate&document=photo" style="color:#0f172a;text-decoration:none">GATE</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">480×640</td><td style="padding:9px 14px;text-align:center;color:#475569">5–200 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">160×160</td><td style="padding:9px 14px;text-align:center;color:#475569">5–100 KB</td></tr>
+          <tr style="background:#fff;border-bottom:1px solid #f1f5f9"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=rrb-alp&document=photo" style="color:#0f172a;text-decoration:none">RRB ALP</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">200×230</td><td style="padding:9px 14px;text-align:center;color:#475569">20–50 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">140×60</td><td style="padding:9px 14px;text-align:center;color:#475569">10–20 KB</td></tr>
+          <tr style="background:#f8fafc"><td style="padding:9px 14px;font-weight:600;color:#0f172a"><a href="?exam=uppsc&document=photo" style="color:#0f172a;text-decoration:none">UPPSC</a></td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">300×300</td><td style="padding:9px 14px;text-align:center;color:#475569">20–100 KB</td><td style="padding:9px 14px;text-align:center;color:#475569;font-family:monospace">300×80</td><td style="padding:9px 14px;text-align:center;color:#475569">10–30 KB</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:#94a3b8;margin-top:14px;text-align:center">
+      Click any exam name above to auto-load its specifications and start resizing instantly.
+      All 80+ exams supported — <a href="#exam-grid-section" style="color:#3b82f6;text-decoration:none">browse the full list ↑</a>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer style="background:#f8fafc;color:#475569;margin-top:32px;border-top:1px solid #e2e8f0">
+
+  <!-- Exam links grid -->
+  <div id="footer-exam-links" class="max-w-5xl mx-auto px-4 py-12">
+    <p style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#94a3b8;margin-bottom:28px">
+      Resize photos &amp; signatures for 80+ Indian exams
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:28px 20px">
+
+      <!-- UPSC -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">UPSC</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=upsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UPSC CSE Photo Resize</a></li>
+          <li><a href="?exam=upsc&document=signature" style="font-size:12px;color:#475569;text-decoration:none">UPSC CSE Signature Resize</a></li>
+          <li><a href="?exam=upsc-nda&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UPSC NDA Photo Resize</a></li>
+          <li><a href="?exam=upsc-nda&document=signature" style="font-size:12px;color:#475569;text-decoration:none">UPSC NDA Signature Resize</a></li>
+          <li><a href="?exam=upsc-cds&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UPSC CDS Photo Resize</a></li>
+          <li><a href="?exam=upsc-cds&document=signature" style="font-size:12px;color:#475569;text-decoration:none">UPSC CDS Signature Resize</a></li>
+          <li><a href="?exam=upsc-capf&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UPSC CAPF Photo Resize</a></li>
+          <li><a href="?exam=upsc-ies&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UPSC IES Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- SSC -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">SSC</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=ssc-cgl&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SSC CGL Photo Resize</a></li>
+          <li><a href="?exam=ssc-cgl&document=signature" style="font-size:12px;color:#475569;text-decoration:none">SSC CGL Signature Resize</a></li>
+          <li><a href="?exam=ssc-chsl&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SSC CHSL Photo Resize</a></li>
+          <li><a href="?exam=ssc-chsl&document=signature" style="font-size:12px;color:#475569;text-decoration:none">SSC CHSL Signature Resize</a></li>
+          <li><a href="?exam=ssc-gd&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SSC GD Photo Resize</a></li>
+          <li><a href="?exam=ssc-mts&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SSC MTS Photo Resize</a></li>
+          <li><a href="?exam=ssc-cpo&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SSC CPO Photo Resize</a></li>
+          <li><a href="?exam=ssc-steno&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SSC Steno Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- Banking -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">Banking</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=sbi-po&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SBI PO Photo Resize</a></li>
+          <li><a href="?exam=sbi-po&document=signature" style="font-size:12px;color:#475569;text-decoration:none">SBI PO Signature Resize</a></li>
+          <li><a href="?exam=ibps-po&document=photo" style="font-size:12px;color:#475569;text-decoration:none">IBPS PO Photo Resize</a></li>
+          <li><a href="?exam=ibps-po&document=signature" style="font-size:12px;color:#475569;text-decoration:none">IBPS PO Signature Resize</a></li>
+          <li><a href="?exam=rbi-grade-b&document=photo" style="font-size:12px;color:#475569;text-decoration:none">RBI Grade B Photo Resize</a></li>
+          <li><a href="?exam=rbi-grade-b&document=signature" style="font-size:12px;color:#475569;text-decoration:none">RBI Grade B Signature</a></li>
+          <li><a href="?exam=sbi-clerk&document=photo" style="font-size:12px;color:#475569;text-decoration:none">SBI Clerk Photo Resize</a></li>
+          <li><a href="?exam=ibps-clerk&document=photo" style="font-size:12px;color:#475569;text-decoration:none">IBPS Clerk Photo Resize</a></li>
+          <li><a href="?exam=lic-aao&document=photo" style="font-size:12px;color:#475569;text-decoration:none">LIC AAO Photo Resize</a></li>
+          <li><a href="?exam=nabard&document=photo" style="font-size:12px;color:#475569;text-decoration:none">NABARD Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- Entrance -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">Entrance</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=neet-ug&document=photo" style="font-size:12px;color:#475569;text-decoration:none">NEET UG Photo Resize</a></li>
+          <li><a href="?exam=neet-ug&document=signature" style="font-size:12px;color:#475569;text-decoration:none">NEET UG Signature Resize</a></li>
+          <li><a href="?exam=jee-main&document=photo" style="font-size:12px;color:#475569;text-decoration:none">JEE Main Photo Resize</a></li>
+          <li><a href="?exam=jee-main&document=signature" style="font-size:12px;color:#475569;text-decoration:none">JEE Main Signature Resize</a></li>
+          <li><a href="?exam=gate&document=photo" style="font-size:12px;color:#475569;text-decoration:none">GATE Photo Resize</a></li>
+          <li><a href="?exam=gate&document=signature" style="font-size:12px;color:#475569;text-decoration:none">GATE Signature Resize</a></li>
+          <li><a href="?exam=cuet&document=photo" style="font-size:12px;color:#475569;text-decoration:none">CUET Photo Resize</a></li>
+          <li><a href="?exam=cat&document=photo" style="font-size:12px;color:#475569;text-decoration:none">CAT Photo Resize</a></li>
+          <li><a href="?exam=clat&document=photo" style="font-size:12px;color:#475569;text-decoration:none">CLAT Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- Railways -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">Railways</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=rrb-alp&document=photo" style="font-size:12px;color:#475569;text-decoration:none">RRB ALP Photo Resize</a></li>
+          <li><a href="?exam=rrb-alp&document=signature" style="font-size:12px;color:#475569;text-decoration:none">RRB ALP Signature Resize</a></li>
+          <li><a href="?exam=rpf-si&document=photo" style="font-size:12px;color:#475569;text-decoration:none">RPF SI Photo Resize</a></li>
+          <li><a href="?exam=rpf-si&document=signature" style="font-size:12px;color:#475569;text-decoration:none">RPF SI Signature Resize</a></li>
+          <li><a href="?exam=rpf-constable&document=photo" style="font-size:12px;color:#475569;text-decoration:none">RPF Constable Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- State PSC -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">State PSC</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=uppsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UPPSC Photo Resize</a></li>
+          <li><a href="?exam=uppsc&document=signature" style="font-size:12px;color:#475569;text-decoration:none">UPPSC Signature Resize</a></li>
+          <li><a href="?exam=bpsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">BPSC Photo Resize</a></li>
+          <li><a href="?exam=mpsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">MPSC Photo Resize</a></li>
+          <li><a href="?exam=wbcs&document=photo" style="font-size:12px;color:#475569;text-decoration:none">WBCS Photo Resize</a></li>
+          <li><a href="?exam=tnpsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">TNPSC Photo Resize</a></li>
+          <li><a href="?exam=rpsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">RPSC Photo Resize</a></li>
+          <li><a href="?exam=mppsc&document=photo" style="font-size:12px;color:#475569;text-decoration:none">MPPSC Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- Defence & Central -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">Defence &amp; Central</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=afcat&document=photo" style="font-size:12px;color:#475569;text-decoration:none">AFCAT Photo Resize</a></li>
+          <li><a href="?exam=afcat&document=signature" style="font-size:12px;color:#475569;text-decoration:none">AFCAT Signature Resize</a></li>
+          <li><a href="?exam=coast-guard&document=photo" style="font-size:12px;color:#475569;text-decoration:none">Coast Guard Photo Resize</a></li>
+          <li><a href="?exam=ugc-net&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UGC NET Photo Resize</a></li>
+          <li><a href="?exam=ugc-net&document=signature" style="font-size:12px;color:#475569;text-decoration:none">UGC NET Signature Resize</a></li>
+          <li><a href="?exam=ib-acio&document=photo" style="font-size:12px;color:#475569;text-decoration:none">IB ACIO Photo Resize</a></li>
+          <li><a href="?exam=post-gds&document=photo" style="font-size:12px;color:#475569;text-decoration:none">Post GDS Photo Resize</a></li>
+          <li><a href="?exam=csir-net&document=photo" style="font-size:12px;color:#475569;text-decoration:none">CSIR NET Photo Resize</a></li>
+        </ul>
+      </div>
+
+      <!-- Police -->
+      <div>
+        <h3 style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px">Police</h3>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:5px">
+          <li><a href="?exam=up-police&document=photo" style="font-size:12px;color:#475569;text-decoration:none">UP Police Photo Resize</a></li>
+          <li><a href="?exam=up-police&document=signature" style="font-size:12px;color:#475569;text-decoration:none">UP Police Signature Resize</a></li>
+          <li><a href="?exam=delhi-police&document=photo" style="font-size:12px;color:#475569;text-decoration:none">Delhi Police Photo Resize</a></li>
+          <li><a href="?exam=delhi-police&document=signature" style="font-size:12px;color:#475569;text-decoration:none">Delhi Police Signature Resize</a></li>
+          <li><a href="?exam=tnusrb&document=photo" style="font-size:12px;color:#475569;text-decoration:none">TNUSRB Photo Resize</a></li>
+          <li><a href="?exam=wbprb&document=photo" style="font-size:12px;color:#475569;text-decoration:none">WBPRB Photo Resize</a></li>
+          <li><a href="?exam=rsmssb&document=photo" style="font-size:12px;color:#475569;text-decoration:none">RSMSSB Photo Resize</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div style="border-top:1px solid #e2e8f0;padding:20px 16px;text-align:center">
+    <div style="font-size:16px;font-weight:900;margin-bottom:6px">
+      <a href="/" style="text-decoration:none"><span style="color:#0f172a">YES</span><span style="color:#2563eb">PYQ</span></a>
+    </div>
+    <p style="font-size:11px;color:#64748b;margin:0">
+      Free photo &amp; signature resizer for Indian competitive exams · 100% private · All processing in your browser · No uploads · No server
+    </p>
+    <p style="font-size:11px;color:#94a3b8;margin:8px 0 0">
+      © 2026 YESPYQ.com ·
+      <a href="/" style="color:#475569;text-decoration:none">Home</a> ·
+      <a href="/tools/" style="color:#475569;text-decoration:none">Tools</a> ·
+      <a href="/privacy-policy/" style="color:#475569;text-decoration:none">Privacy</a> ·
+      <a href="/terms/" style="color:#475569;text-decoration:none">Terms</a>
+    </p>
+  </div>
+
+</footer>
+
+<!-- ═══════════════════════════ STRUCTURED DATA ═══════════════════════════ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "YESPYQ Photo Resizer",
+  "url": "https://yespyq.com",
+  "description": "Free online photo and signature resizer for 80+ Indian competitive exams including UPSC, SSC, SBI, IBPS, NEET and JEE. All processing is done locally in the browser.",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires JavaScript. Works on all modern browsers.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "INR"
+  },
+  "featureList": [
+    "Resize photo to exact exam dimensions",
+    "Compress image to target KB range",
+    "AI-powered background removal",
+    "Crop, rotate, zoom and flip tools",
+    "80+ Indian exam presets",
+    "Editable image requirements",
+    "100% private — no server upload"
+  ],
+  "inLanguage": "en-IN",
+  "publisher": {
+    "@type": "Organization",
+    "name": "YESPYQ",
+    "url": "https://yespyq.com"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "YESPYQ",
+  "url": "https://yespyq.com",
+  "logo": "https://yespyq.com/assets/favicon.svg",
+  "description": "YESPYQ provides free tools for Indian competitive exam aspirants, including instant photo and signature resizers for UPSC, SSC, Banking, Railway, Defence and State PSC exams.",
+  "sameAs": []
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the photo size for UPSC exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UPSC requires a passport-size photograph of 400×400 pixels in JPG format. The file size must be between 20 KB and 300 KB. YESPYQ automatically resizes and compresses your photo to meet these exact specifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for SSC CGL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SSC CGL requires a photograph of 275×354 pixels in JPG format with a file size between 20 KB and 50 KB. The signature must be 236×79 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for SBI PO and IBPS PO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SBI PO and IBPS PO require a photograph of 200×230 pixels in JPG format with a file size between 20 KB and 50 KB. The signature should be 140×60 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for NEET UG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NEET UG requires a photograph of 275×354 pixels in JPG format with file size between 10 KB and 200 KB. The signature must be 275×118 pixels between 4 KB and 30 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my photo uploaded to any server?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. YESPYQ processes all images entirely within your browser using the HTML5 Canvas API. Your photos never leave your device and are never uploaded to any server, ensuring complete privacy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I remove the background from my exam photo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. YESPYQ includes an AI-powered background removal tool that runs entirely in your browser. Click the 'Remove BG' button after uploading your photo. The AI model loads once and works offline after that."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What photo size does JEE Main require?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "JEE Main requires a photograph of 275×354 pixels in JPG format with file size between 10 KB and 300 KB. The signature must be 275×118 pixels between 10 KB and 50 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I change the photo dimensions for my exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. After selecting any exam preset, all image requirements — width, height, minimum KB, maximum KB, and format — are fully editable. You can override any preset value before processing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for IBPS PO and IBPS Clerk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IBPS PO and IBPS Clerk require a photograph of 200×230 pixels in JPG format with a file size between 20 KB and 50 KB. The signature must be 140×60 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for RBI Grade B?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RBI Grade B requires a passport-size photograph of 200×230 pixels in JPG format with file size between 20 KB and 50 KB. Signature should be 140×60 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for GATE exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "GATE requires a photograph of 480×640 pixels in JPG format with file size between 5 KB and 200 KB. The signature must be 160×160 pixels between 5 KB and 100 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for SSC CHSL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SSC CHSL requires a photograph of 200×240 pixels in JPG format with file size between 20 KB and 50 KB. Signature must be 200×80 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for CUET?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CUET requires a photograph of 200×230 pixels in JPG format with file size between 10 KB and 200 KB. The signature must be 200×80 pixels between 5 KB and 30 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for UPSC NDA and CDS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UPSC NDA and CDS require a passport-size photograph of 400×400 pixels in JPG format with file size between 20 KB and 300 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for RRB ALP and Railway exams?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RRB ALP and most Railway exams require a photograph of 200×230 pixels in JPG format with file size between 20 KB and 50 KB. Signature must be 140×60 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for UPPSC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UPPSC requires a photograph of 300×300 pixels in JPG format with file size between 20 KB and 100 KB. Signature must be 300×80 pixels between 10 KB and 30 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for BPSC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BPSC requires a photograph of 200×230 pixels in JPG format with file size between 20 KB and 50 KB. Signature must be 140×60 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for SSC GD Constable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SSC GD Constable requires a photograph of 200×240 pixels in JPG format with file size between 20 KB and 50 KB. Signature must be 240×80 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the signature size for UPSC exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UPSC requires a signature of 400×400 pixels in JPG format with file size between 20 KB and 100 KB. YESPYQ automatically resizes your signature to meet these exact specifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for CAT exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CAT (Common Admission Test) requires a photograph of 200×240 pixels in JPG format with file size between 10 KB and 100 KB. Signature must be 200×80 pixels between 5 KB and 30 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for Delhi Police exam?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Delhi Police requires a photograph of 200×240 pixels in JPG format with file size between 20 KB and 50 KB. Signature must be 200×80 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I reduce photo size below 50 KB for SSC CGL?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Upload your photo on YESPYQ, select SSC CGL preset, then click Process Image. The tool automatically compresses the image using a quality loop until it falls within 20–50 KB while keeping the exact 275×354 pixel dimensions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the photo size for LIC AAO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LIC AAO requires a photograph of 200×230 pixels in JPG format with file size between 20 KB and 50 KB. Signature must be 140×60 pixels between 10 KB and 20 KB."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does YESPYQ work on mobile phones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, YESPYQ works fully on mobile phones and tablets. The entire tool is browser-based — just open yespyq.com on your Android or iPhone browser, upload your photo from the gallery, and download the resized image. No app installation needed."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to resize your photo for UPSC exam",
+  "description": "Step-by-step guide to resize and compress your passport photo to exactly 400×400 pixels and 20–300 KB as required by UPSC.",
+  "totalTime": "PT2M",
+  "estimatedCost": { "@type": "MonetaryAmount", "currency": "INR", "value": "0" },
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Select UPSC exam",
+      "text": "Go to yespyq.com and click on 'UPSC CSE' from the exam grid or type UPSC in the search bar.",
+      "position": 1
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose Photo document type",
+      "text": "In the Configure panel, make sure 'Photo' is selected (not Signature). The requirements will show 400×400px, 20–300KB, JPG.",
+      "position": 2
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Upload your photo",
+      "text": "Click the upload area or drag and drop your photo. Supports JPG, PNG, HEIC and WEBP formats up to 15 MB.",
+      "position": 3
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Crop and adjust",
+      "text": "Use the crop tool to frame your face correctly. You can also zoom, rotate, flip, or use AI background removal if needed.",
+      "position": 4
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Process and download",
+      "text": "Click 'Process Image'. The tool resizes to 400×400px and compresses to fit within 300KB automatically. Click Download to save.",
+      "position": 5
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://yespyq.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Photo Resizer",
+      "item": "https://yespyq.com/"
+    }
+  ]
+}
+</script>
+
+<!-- ═══════════════════════════ JAVASCRIPT ═══════════════════════════ -->
+<script>
+
+// ────────────────────────────────────────────────────────────────────
+// EXAM DATA
+// ────────────────────────────────────────────────────────────────────
+
+const EXAMS = [
+  {id:1,  slug:'upsc',            name:'UPSC CSE',                cat:'UPSC',      photo:{w:400, h:400, min:20,  max:300,  fmt:'JPG'}, sig:{w:400, h:400, min:20,  max:100, fmt:'JPG'}},
+  {id:9,  slug:'upsc-ies',        name:'UPSC IES / ESE',          cat:'UPSC',      photo:{w:400, h:400, min:20,  max:300,  fmt:'JPG'}, sig:{w:400, h:400, min:20,  max:100, fmt:'JPG'}},
+  {id:10, slug:'upsc-geo',        name:'UPSC Geo-Scientist',       cat:'UPSC',      photo:{w:400, h:400, min:20,  max:300,  fmt:'JPG'}, sig:{w:400, h:400, min:20,  max:100, fmt:'JPG'}},
+  {id:11, slug:'upsc-capf',       name:'UPSC CAPF AC',            cat:'UPSC',      photo:{w:400, h:400, min:20,  max:300,  fmt:'JPG'}, sig:{w:400, h:400, min:20,  max:100, fmt:'JPG'}},
+  {id:31, slug:'upsc-nda',        name:'UPSC NDA',                cat:'UPSC',      photo:{w:400, h:400, min:20,  max:300,  fmt:'JPG'}, sig:{w:400, h:400, min:20,  max:100, fmt:'JPG'}},
+  {id:32, slug:'upsc-cds',        name:'UPSC CDS',                cat:'UPSC',      photo:{w:400, h:400, min:20,  max:300,  fmt:'JPG'}, sig:{w:400, h:400, min:20,  max:100, fmt:'JPG'}},
+  {id:2,  slug:'ssc-cgl',         name:'SSC CGL',                 cat:'SSC',       photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:236, h:79,  min:10,  max:20,  fmt:'JPG'}},
+  {id:3,  slug:'ssc-chsl',        name:'SSC CHSL',                cat:'SSC',       photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:200, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:4,  slug:'ssc-mts',         name:'SSC MTS',                 cat:'SSC',       photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:240, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:5,  slug:'ssc-gd',          name:'SSC GD Constable',        cat:'SSC',       photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:240, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:6,  slug:'ssc-cpo',         name:'SSC CPO SI',              cat:'SSC',       photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:236, h:79,  min:10,  max:20,  fmt:'JPG'}},
+  {id:7,  slug:'ssc-steno',       name:'SSC Stenographer',        cat:'SSC',       photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:200, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:8,  slug:'ssc-je',          name:'SSC JE',                  cat:'SSC',       photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:236, h:79,  min:10,  max:20,  fmt:'JPG'}},
+  {id:16, slug:'sbi-po',          name:'SBI PO',                  cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:17, slug:'sbi-clerk',       name:'SBI Clerk',               cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:18, slug:'ibps-po',         name:'IBPS PO',                 cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:19, slug:'ibps-clerk',      name:'IBPS Clerk',              cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:20, slug:'ibps-rrb-po',     name:'IBPS RRB Officer',        cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:21, slug:'ibps-rrb-clerk',  name:'IBPS RRB Assistant',      cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:22, slug:'ibps-so',         name:'IBPS SO',                 cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:23, slug:'rbi-grade-b',     name:'RBI Grade B',             cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:24, slug:'rbi-assistant',   name:'RBI Assistant',           cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:25, slug:'lic-aao',         name:'LIC AAO',                 cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:26, slug:'lic-ado',         name:'LIC ADO',                 cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:27, slug:'nabard',          name:'NABARD Grade A',          cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:28, slug:'idbi',            name:'IDBI Executive',          cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:29, slug:'niacl',           name:'NIACL AO',                cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:30, slug:'sebi',            name:'SEBI Grade A',            cat:'Banking',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:33, slug:'afcat',           name:'AFCAT',                   cat:'Defence',   photo:{w:200, h:230, min:10,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:50,  fmt:'JPG'}},
+  {id:34, slug:'coast-guard',     name:'Coast Guard Navik',       cat:'Defence',   photo:{w:200, h:230, min:10,  max:100,  fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:100, fmt:'JPG'}},
+  {id:35, slug:'rrb-alp',         name:'RRB ALP',                 cat:'Railways',  photo:{w:275, h:354, min:50,  max:150,  fmt:'JPG'}, sig:{w:275, h:157, min:30,  max:49,  fmt:'JPG'}},
+  {id:36, slug:'rpf-si',          name:'RPF SI',                  cat:'Railways',  photo:{w:320, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:40,  fmt:'JPG'}},
+  {id:37, slug:'rpf-constable',   name:'RPF Constable',           cat:'Railways',  photo:{w:320, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:40,  fmt:'JPG'}},
+  {id:38, slug:'jee-main',        name:'JEE Main',                cat:'Entrance',  photo:{w:275, h:354, min:10,  max:300,  fmt:'JPG'}, sig:{w:275, h:118, min:10,  max:50,  fmt:'JPG'}},
+  {id:39, slug:'neet-ug',         name:'NEET UG',                 cat:'Entrance',  photo:{w:275, h:354, min:10,  max:200,  fmt:'JPG'}, sig:{w:275, h:118, min:4,   max:30,  fmt:'JPG'}},
+  {id:40, slug:'gate',            name:'GATE',                    cat:'Entrance',  photo:{w:350, h:450, min:5,   max:1000, fmt:'JPG'}, sig:{w:400, h:120, min:3,   max:1000,fmt:'JPG'}},
+  {id:41, slug:'cuet',            name:'CUET UG',                 cat:'Entrance',  photo:{w:200, h:230, min:10,  max:200,  fmt:'JPG'}, sig:{w:140, h:60,  min:4,   max:30,  fmt:'JPG'}},
+  {id:42, slug:'clat',            name:'CLAT',                    cat:'Entrance',  photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:43, slug:'cat',             name:'CAT (IIM)',               cat:'Entrance',  photo:{w:1200,h:1200,min:30,  max:80,   fmt:'JPG'}, sig:{w:1000,h:350, min:30,  max:80,  fmt:'JPG'}},
+  {id:44, slug:'cmat',            name:'NTA CMAT',                cat:'Entrance',  photo:{w:200, h:230, min:10,  max:200,  fmt:'JPG'}, sig:{w:140, h:60,  min:4,   max:30,  fmt:'JPG'}},
+  {id:45, slug:'xat',             name:'XAT',                     cat:'Entrance',  photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:12, slug:'ib-acio',         name:'IB ACIO',                 cat:'Central',   photo:{w:200, h:230, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:13, slug:'post-gds',        name:'India Post GDS',          cat:'Central',   photo:{w:320, h:400, min:30,  max:100,  fmt:'JPG'}, sig:{w:300, h:120, min:20,  max:100, fmt:'JPG'}},
+  {id:14, slug:'ugc-net',         name:'UGC NET',                 cat:'Central',   photo:{w:200, h:230, min:10,  max:200,  fmt:'JPG'}, sig:{w:140, h:60,  min:4,   max:30,  fmt:'JPG'}},
+  {id:15, slug:'csir-net',        name:'CSIR UGC NET',            cat:'Central',   photo:{w:200, h:230, min:10,  max:200,  fmt:'JPG'}, sig:{w:140, h:60,  min:4,   max:30,  fmt:'JPG'}},
+  {id:46, slug:'uppsc',           name:'UPPSC',                   cat:'State PSC', photo:{w:180, h:216, min:20,  max:50,   fmt:'JPG'}, sig:{w:216, h:108, min:10,  max:30,  fmt:'JPG'}},
+  {id:47, slug:'bpsc',            name:'BPSC',                    cat:'State PSC', photo:{w:250, h:250, min:20,  max:50,   fmt:'JPG'}, sig:{w:220, h:100, min:10,  max:20,  fmt:'JPG'}},
+  {id:48, slug:'mpsc',            name:'MPSC (Maharashtra)',       cat:'State PSC', photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:275, h:118, min:10,  max:20,  fmt:'JPG'}},
+  {id:49, slug:'wbcs',            name:'WBCS',                    cat:'State PSC', photo:{w:138, h:177, min:20,  max:100,  fmt:'JPG'}, sig:{w:138, h:59,  min:10,  max:20,  fmt:'JPG'}},
+  {id:50, slug:'opsc',            name:'OPSC (Odisha)',            cat:'State PSC', photo:{w:200, h:240, min:20,  max:100,  fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:50,  fmt:'JPG'}},
+  {id:51, slug:'apsc',            name:'APSC (Assam)',             cat:'State PSC', photo:{w:200, h:250, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:20,  fmt:'JPG'}},
+  {id:52, slug:'mppsc',           name:'MPPSC',                   cat:'State PSC', photo:{w:275, h:354, min:25,  max:200,  fmt:'JPG'}, sig:{w:275, h:118, min:25,  max:200, fmt:'JPG'}},
+  {id:53, slug:'jpsc',            name:'JPSC (Jharkhand)',         cat:'State PSC', photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:275, h:118, min:10,  max:20,  fmt:'JPG'}},
+  {id:54, slug:'tnpsc',           name:'TNPSC',                   cat:'State PSC', photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:275, h:118, min:10,  max:20,  fmt:'JPG'}},
+  {id:55, slug:'kpsc',            name:'KPSC (Kerala)',            cat:'State PSC', photo:{w:150, h:200, min:20,  max:30,   fmt:'JPG'}, sig:{w:150, h:100, min:20,  max:30,  fmt:'JPG'}},
+  {id:56, slug:'gpsc',            name:'GPSC (Gujarat)',           cat:'State PSC', photo:{w:130, h:180, min:10,  max:15,   fmt:'JPG'}, sig:{w:275, h:90,  min:10,  max:15,  fmt:'JPG'}},
+  {id:57, slug:'rpsc',            name:'RPSC / RAS',              cat:'State PSC', photo:{w:240, h:320, min:20,  max:50,   fmt:'JPG'}, sig:{w:280, h:80,  min:20,  max:50,  fmt:'JPG'}},
+  {id:58, slug:'tspsc',           name:'TSPSC (Telangana)',        cat:'State PSC', photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:275, h:118, min:10,  max:30,  fmt:'JPG'}},
+  {id:59, slug:'cgpsc',           name:'CGPSC',                   cat:'State PSC', photo:{w:275, h:354, min:30,  max:100,  fmt:'JPG'}, sig:{w:275, h:118, min:20,  max:50,  fmt:'JPG'}},
+  {id:60, slug:'ukpsc',           name:'UKPSC',                   cat:'State PSC', photo:{w:150, h:200, min:30,  max:50,   fmt:'JPG'}, sig:{w:150, h:100, min:20,  max:30,  fmt:'JPG'}},
+  {id:61, slug:'appsc',           name:'APPSC (Arunachal)',        cat:'State PSC', photo:{w:200, h:250, min:50,  max:100,  fmt:'JPG'}, sig:{w:140, h:60,  min:20,  max:50,  fmt:'JPG'}},
+  {id:62, slug:'ppsc',            name:'PPSC (Punjab)',            cat:'State PSC', photo:{w:140, h:177, min:10,  max:40,   fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:40,  fmt:'JPG'}},
+  {id:63, slug:'hpsc',            name:'HPSC (Haryana)',           cat:'State PSC', photo:{w:138, h:177, min:10,  max:100,  fmt:'JPG'}, sig:{w:138, h:59,  min:10,  max:50,  fmt:'JPG'}},
+  {id:64, slug:'jkpsc',           name:'JKPSC',                   cat:'State PSC', photo:{w:200, h:240, min:10,  max:20,   fmt:'JPG'}, sig:{w:200, h:100, min:10,  max:20,  fmt:'JPG'}},
+  {id:65, slug:'spsc',            name:'SPSC (Sikkim)',            cat:'State PSC', photo:{w:150, h:200, min:10,  max:50,   fmt:'JPG'}, sig:{w:150, h:100, min:5,   max:30,  fmt:'JPG'}},
+  {id:66, slug:'up-police',       name:'UP Police',               cat:'Police',    photo:{w:180, h:225, min:20,  max:50,   fmt:'JPG'}, sig:{w:200, h:80,  min:5,   max:20,  fmt:'JPG'}},
+  {id:67, slug:'delhi-police',    name:'Delhi Police',            cat:'Police',    photo:{w:100, h:120, min:20,  max:50,   fmt:'JPG'}, sig:{w:40,  h:60,  min:20,  max:50,  fmt:'JPG'}},
+  {id:68, slug:'wbprb',           name:'WBPRB (WB Police)',       cat:'Police',    photo:{w:200, h:240, min:10,  max:50,   fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:30,  fmt:'JPG'}},
+  {id:69, slug:'bpssc',           name:'BPSSC (Bihar Police)',    cat:'Police',    photo:{w:200, h:230, min:30,  max:50,   fmt:'JPG'}, sig:{w:140, h:60,  min:20,  max:50,  fmt:'JPG'}},
+  {id:70, slug:'tnusrb',          name:'TNUSRB (TN Police)',      cat:'Police',    photo:{w:275, h:354, min:20,  max:50,   fmt:'JPG'}, sig:{w:200, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:71, slug:'jkssb',           name:'JKSSB',                   cat:'Police',    photo:{w:180, h:225, min:20,  max:50,   fmt:'JPG'}, sig:{w:180, h:100, min:10,  max:20,  fmt:'JPG'}},
+  {id:72, slug:'osssc',           name:'OSSSC (Odisha)',           cat:'Police',    photo:{w:200, h:240, min:20,  max:100,  fmt:'JPG'}, sig:{w:140, h:60,  min:10,  max:50,  fmt:'JPG'}},
+  {id:73, slug:'rsmssb',          name:'RSMSSB (Rajasthan)',       cat:'Police',    photo:{w:240, h:320, min:20,  max:50,   fmt:'JPG'}, sig:{w:280, h:80,  min:20,  max:50,  fmt:'JPG'}},
+  {id:74, slug:'delhi-judicial',  name:'Delhi Judicial',          cat:'Judiciary', photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:75, slug:'patna-hc',        name:'Patna High Court',        cat:'Judiciary', photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:76, slug:'bombay-hc',       name:'Bombay High Court',       cat:'Judiciary', photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:120, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:77, slug:'raj-judicial',    name:'Rajasthan Judicial',      cat:'Judiciary', photo:{w:240, h:320, min:20,  max:50,   fmt:'JPG'}, sig:{w:280, h:80,  min:20,  max:50,  fmt:'JPG'}},
+  {id:78, slug:'mah-judicial',    name:'Maharashtra Judicial',    cat:'Judiciary', photo:{w:200, h:240, min:20,  max:50,   fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:20,  fmt:'JPG'}},
+  {id:79, slug:'gauhati-hc',      name:'Gauhati High Court',      cat:'Judiciary', photo:{w:200, h:240, min:20,  max:100,  fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:50,  fmt:'JPG'}},
+  {id:80, slug:'cg-judicial',     name:'CG Judicial Service',     cat:'Judiciary', photo:{w:200, h:240, min:20,  max:100,  fmt:'JPG'}, sig:{w:140, h:80,  min:10,  max:100, fmt:'JPG'}},
+];
+
+const CATS = ['All', ...new Set(EXAMS.map(e => e.cat))];
+
+// Top 10 shown on default load
+const FEATURED = [
+  'upsc',        // UPSC CSE — most popular
+  'neet-ug',     // NEET UG
+  'jee-main',    // JEE Main
+  'ssc-cgl',     // SSC CGL
+  'ibps-po',     // IBPS PO
+  'sbi-po',      // SBI PO
+  'rbi-grade-b', // RBI Grade B
+  'ssc-chsl',    // SSC CHSL
+  'rrb-alp',     // Railways ALP
+  'uppsc',       // Most popular State PSC
+];
+
+// Top 6 per category when category filter is active
+const TOP_PER_CAT = {
+  'UPSC':      ['upsc','upsc-nda','upsc-cds','upsc-capf','upsc-ies','upsc-geo'],
+  'SSC':       ['ssc-cgl','ssc-chsl','ssc-gd','ssc-mts','ssc-cpo','ssc-steno'],
+  'Banking':   ['ibps-po','sbi-po','rbi-grade-b','ibps-clerk','sbi-clerk','rbi-assistant'],
+  'Defence':   ['upsc-nda','upsc-cds','afcat','coast-guard'],
+  'Railways':  ['rrb-alp','rpf-si','rpf-constable'],
+  'Entrance':  ['jee-main','neet-ug','gate','cuet','cat','clat'],
+  'Central':   ['ugc-net','post-gds','ib-acio','csir-net'],
+  'State PSC': ['uppsc','bpsc','mpsc','mppsc','tnpsc','rpsc'],
+  'Police':    ['up-police','delhi-police','tnusrb','wbprb','bpssc','rsmssb'],
+  'Judiciary': ['delhi-judicial','bombay-hc','patna-hc','raj-judicial','mah-judicial','gauhati-hc'],
+};
+
+// ────────────────────────────────────────────────────────────────────
+// STATE
+// ────────────────────────────────────────────────────────────────────
+
+const S = {
+  exam: null, doc: 'photo', edited: false,
+  origURL: null, cropper: null, bgMod: null, flipX: 1,
+  activeCat: 'All', query: '', showAllCat: false,
+  freeDim: false,   // when true: keep original aspect ratio, only hit target KB
+  unit: 'px', dpi: 300,   // dimension unit (px/cm/inch/mm) + print resolution
+};
+
+// ────────────────────────────────────────────────────────────────────
+// INIT
+// ────────────────────────────────────────────────────────────────────
+
+document.addEventListener('DOMContentLoaded', () => {
+  buildCatPills();
+  renderGrid(EXAMS, true);
+  readURLParams();
+  // If no exam came from URL, pre-select a random popular exam so the
+  // page is immediately useful rather than showing a blank hint
+  if (!S.exam) {
+    const slug = FEATURED[Math.floor(Math.random() * FEATURED.length)];
+    const exam = EXAMS.find(e => e.slug === slug);
+    if (exam) selectExam(exam.id, true); // skipURL=true — don't pollute the address bar
+  }
+});
+
+function readURLParams() {
+  const p = new URLSearchParams(window.location.search);
+
+  // ── Generic tool preset (voter id, aadhaar, resize-to-KB, custom, etc.) ──
+  // e.g. /resizer/?preset=voter-id-photo&w=200&h=230&maxkb=50&title=Voter%20ID%20Photo
+  //      /resizer/?preset=to-20kb&maxkb=20&free=1&title=Resize%20to%2020%20KB
+  if (p.get('preset')) { applyPreset(p); return; }
+
+  const slug = p.get('exam');
+  const doc  = p.get('document') || 'photo';
+  if (!slug) return;
+  const exam = EXAMS.find(e => e.slug === slug);
+  if (exam) { selectExam(exam.id, true); selectDoc(doc, true); }
+}
+
+// Build a synthetic "exam" from URL params so any tool can reuse the engine.
+function applyPreset(p) {
+  const free  = p.get('free') === '1';
+  const w     = parseInt(p.get('w'))     || (free ? 0 : 600);
+  const h     = parseInt(p.get('h'))     || (free ? 0 : 600);
+  const maxkb = parseInt(p.get('maxkb')) || 50;
+  const minkb = free ? 0 : (parseInt(p.get('minkb')) || 0);
+  const fmt   = (p.get('fmt') || 'JPG').toUpperCase();
+  const title = p.get('title') || 'Image Resizer';
+  const spec  = { w, h, min: minkb, max: maxkb, fmt };
+
+  const synthetic = {
+    id: 99999, slug: p.get('preset'), name: title, cat: 'Tool',
+    photo: spec, sig: spec,
+  };
+  // Replace any prior synthetic, then register so selectExam() can find it
+  const i = EXAMS.findIndex(e => e.id === 99999);
+  if (i >= 0) EXAMS.splice(i, 1);
+  EXAMS.push(synthetic);
+
+  S.freeDim = free;
+
+  // Default dimension unit inferred from the preset slug (user can still switch)
+  const slug = p.get('preset') || '';
+  let unit = 'px';
+  if      (slug.includes('in-inches'))  unit = 'inch';
+  else if (slug.includes('in-mm'))      unit = 'mm';
+  else if (slug.includes('in-cm') || slug.includes('cm-inch-mm')) unit = 'cm';
+  if (p.get('unit')) unit = p.get('unit');
+  S.unit = free ? 'px' : unit;
+  S.dpi  = parseInt(p.get('dpi')) || 300;
+
+  selectExam(99999, true);
+  applyUnitUI();
+
+  // ── Tool mode: hide the exam-browsing UI (user came for ONE specific tool) ──
+  const hide = id => { const e = document.getElementById(id); if (e) e.style.display = 'none'; };
+  hide('search-section');     // search bar + category pills
+  hide('exam-grid-section');  // the 80-exam grid
+  hide('selected-bar');       // "Change exam" bar
+  hide('card-exam-row');      // "Change" row inside the Configure card
+  hide('seo-specs');          // exam specs table (not relevant for KB/dimension tools)
+  hide('footer-exam-links');  // 80-exam footer link grid
+
+  // Turn the hero into a clean tool header
+  const h1 = document.querySelector('.hero h1');
+  if (h1) {
+    h1.textContent = title;
+    h1.style.cssText = 'font-size:24px;font-weight:800;color:#0f172a;margin-bottom:6px;line-height:1.25;letter-spacing:-.01em';
+  }
+  const th = document.getElementById('tool-hero');
+  if (th) {
+    const sub = document.getElementById('tool-hero-sub');
+    if (sub) sub.textContent = free
+      ? `Compress any image to ≤ ${maxkb} KB. Your original dimensions are kept by default — processed instantly in your browser, never uploaded.`
+      : `Resize to ${w}×${h}px (${fmt}). Free, instant and 100% private — processed in your browser, never uploaded.`;
+    th.classList.remove('hidden');
+  }
+
+  // Free mode → no fixed dimensions yet; the W/H fields are filled from the
+  // uploaded image (original size) once a file is chosen. Keep them hidden until then.
+  if (free) {
+    const wh = document.getElementById('wh-fields');
+    if (wh) wh.style.display = 'none';
+    const cs = document.getElementById('card-exam-spec');
+    if (cs) cs.textContent = `Target ≤ ${maxkb} KB · keeps original size · ${fmt}`;
+    const sb = document.getElementById('sel-exam-spec');
+    if (sb) sb.textContent = `Target ≤ ${maxkb} KB · ${fmt}`;
+  }
+
+  // Tool-specific SEO
+  document.title = `${title} – Free Online Tool | YESPYQ`;
+  const md = document.querySelector('meta[name="description"]');
+  if (md) md.setAttribute('content', `${title}. Free, instant and 100% private — your image is processed in your browser and never uploaded.`);
+  const cn = document.querySelector('link[rel="canonical"]');
+  if (cn) cn.setAttribute('href', p.get('canon') || 'https://yespyq.com/resizer/');
+}
+
+// ────────────────────────────────────────────────────────────────────
+// CATEGORY PILLS
+// ────────────────────────────────────────────────────────────────────
+
+function buildCatPills() {
+  const wrap = document.getElementById('cat-pills');
+  wrap.innerHTML = CATS.map(c => `
+    <button class="cat-pill ${c==='All'?'active':''}" onclick="setCat('${c}')">${c}</button>
+  `).join('');
+}
+
+function setCat(cat) {
+  S.activeCat = cat;
+  S.showAllCat = false;
+  document.querySelectorAll('.cat-pill').forEach(b => b.classList.toggle('active', b.textContent === cat));
+  applyFilter();
+}
+
+// ────────────────────────────────────────────────────────────────────
+// FILTER
+// ────────────────────────────────────────────────────────────────────
+
+function filterExams(q) {
+  S.query = q.toLowerCase();
+  S.showAllCat = false;
+  applyFilter();
+}
+
+function applyFilter() {
+  let list = EXAMS;
+  const isDefault = !S.query && S.activeCat === 'All';
+  // Category filter only applies when NOT searching — search always spans all 80 exams
+  if (!S.query && S.activeCat !== 'All') list = list.filter(e => e.cat === S.activeCat);
+  if (S.query) list = list.filter(e => e.name.toLowerCase().includes(S.query) || e.cat.toLowerCase().includes(S.query));
+
+  // Category mode (no search): cap to TOP_PER_CAT unless user hit "Show all"
+  const isCatCapped = !S.query && S.activeCat !== 'All' && !S.showAllCat;
+  const topSlugs = isCatCapped ? (TOP_PER_CAT[S.activeCat] || []) : [];
+  const display = isCatCapped && topSlugs.length
+    ? list.filter(e => topSlugs.includes(e.slug))
+    : list;
+
+  renderGrid(display, isDefault, isCatCapped && list.length > display.length ? list.length : 0);
+}
+
+function showAllCat() {
+  S.showAllCat = true;
+  applyFilter();
+}
+
+function renderGrid(display, isDefault, hiddenCount) {
+  const grid = document.getElementById('exam-grid');
+  const none = document.getElementById('no-results');
+
+  // Default view: show only featured exams
+  const shown = isDefault ? EXAMS.filter(e => FEATURED.includes(e.slug)) : display;
+  document.getElementById('search-count').textContent = isDefault ? '80 exams' : (display.length + (hiddenCount||0)) + ' results';
+
+  if (!shown.length) { grid.innerHTML = ''; none.classList.remove('hidden'); return; }
+  none.classList.add('hidden');
+
+  const chips = shown.map(e => {
+    const sp = e.photo;
+    const sel = S.exam?.id === e.id;
+    return `<button class="chip${sel?' selected':''}" onclick="selectExam(${e.id})">
+      <span class="chip-name">${e.name}</span>
+      <span class="chip-spec">${sp.w}×${sp.h} · ${sp.min}–${sp.max}KB</span>
+    </button>`;
+  }).join('');
+
+  let hint = '';
+  if (isDefault) {
+    hint = `<p style="color:#64748b;font-size:12px;margin-top:12px;text-align:center">
+        Search above or pick a category to see all 80 exams
+       </p>`;
+  } else if (hiddenCount > 0) {
+    const total = shown.length + hiddenCount;
+    hint = `<p style="text-align:center;margin-top:14px">
+        <button onclick="showAllCat()" style="background:none;border:1px solid rgba(59,130,246,.4);color:#3b82f6;border-radius:20px;padding:6px 18px;cursor:pointer;font-size:13px;">
+          Show all ${total} exams in this category →
+        </button>
+      </p>`;
+  }
+
+  grid.innerHTML = chips + hint;
+}
+
+// ────────────────────────────────────────────────────────────────────
+// SELECT EXAM
+// ────────────────────────────────────────────────────────────────────
+
+function selectExam(id, skipURL) {
+  S.exam   = EXAMS.find(e => e.id === id) || null;
+  S.edited = false;
+  S.flipX  = 1;
+
+  renderGrid(getCurrentList(), !S.query && S.activeCat === 'All'); // re-render to mark selected
+
+  if (!S.exam) return;
+
+  // Update selected bar (hero) + card row (configure)
+  const sp = S.doc === 'photo' ? S.exam.photo : S.exam.sig;
+  const specText = `${sp.w}×${sp.h}px · ${sp.min}–${sp.max}KB · ${sp.fmt}`;
+  document.getElementById('sel-exam-name').textContent = S.exam.name;
+  document.getElementById('sel-exam-spec').textContent = specText;
+  document.getElementById('selected-bar').classList.remove('hidden');
+  document.getElementById('card-exam-name').textContent = S.exam.name;
+  document.getElementById('card-exam-spec').textContent = specText;
+  document.getElementById('card-exam-row').classList.remove('hidden');
+
+  // Dynamic SEO update
+  const sp2 = S.doc === 'photo' ? S.exam.photo : S.exam.sig;
+  document.title = `${S.exam.name} Photo Resize – ${sp2.w}×${sp2.h}px ${sp2.min}–${sp2.max}KB | YESPYQ`;
+  document.querySelector('meta[name="description"]').setAttribute('content',
+    `Resize your ${S.exam.name} photo to ${sp2.w}×${sp2.h}px, ${sp2.min}–${sp2.max}KB ${sp2.fmt} format. Free, instant, 100% private. Processed in your browser at YESPYQ.com`);
+  document.querySelector('link[rel="canonical"]').setAttribute('href',
+    `https://yespyq.com/?exam=${S.exam.slug}&document=${S.doc}`);
+
+  // Show panels
+  document.getElementById('hint-select').classList.add('hidden');
+  document.getElementById('main-panels').classList.remove('hidden');
+
+  fillSpecs();
+  updateStrip();
+  showRight('upload');
+  if (!skipURL) pushURL();
+
+  // Scroll to panels
+  setTimeout(() => document.getElementById('main-panels').scrollIntoView({behavior:'smooth', block:'nearest'}), 100);
+}
+
+function clearExam() {
+  S.exam = null;
+  document.getElementById('selected-bar').classList.add('hidden');
+  document.getElementById('card-exam-row').classList.add('hidden');
+  document.getElementById('main-panels').classList.add('hidden');
+  document.getElementById('hint-select').classList.remove('hidden');
+  destroyCropper();
+  renderGrid(getCurrentList(), !S.query && S.activeCat === 'All');
+  history.replaceState({}, '', window.location.pathname);
+}
+
+// "Change" button inside Configure card — scroll to hero grid & focus search
+function changeExamFromCard() {
+  const heroGrid = document.getElementById('exam-grid-section');
+  heroGrid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  setTimeout(() => document.getElementById('exam-search').focus(), 400);
+}
+
+function getCurrentList() {
+  let list = EXAMS;
+  if (!S.query && S.activeCat !== 'All') list = list.filter(e => e.cat === S.activeCat);
+  if (S.query) list = list.filter(e => e.name.toLowerCase().includes(S.query) || e.cat.toLowerCase().includes(S.query));
+  return list;
+}
+
+// ────────────────────────────────────────────────────────────────────
+// URL
+// ────────────────────────────────────────────────────────────────────
+
+function pushURL() {
+  if (!S.exam) return;
+  const url = `?exam=${S.exam.slug}&document=${S.doc}`;
+  history.pushState({}, '', url);
+}
+
+// ────────────────────────────────────────────────────────────────────
+// DOC TYPE
+// ────────────────────────────────────────────────────────────────────
+
+function selectDoc(t, skipURL) {
+  S.doc = t;
+  document.getElementById('btn-photo').className = 'doc-btn' + (t==='photo'?' active':'');
+  document.getElementById('btn-sig').className   = 'doc-btn' + (t==='signature'?' active':'');
+  S.edited = false;
+  if (S.exam) {
+    fillSpecs(); updateStrip();
+    if (S.cropper) S.cropper.setAspectRatio(getSpecs().w / getSpecs().h);
+    if (!skipURL) pushURL();
+  }
+}
+
+// ────────────────────────────────────────────────────────────────────
+// SPECS
+// ────────────────────────────────────────────────────────────────────
+
+// ── Unit conversion (canonical store is px; inputs display the chosen unit) ──
+function unitToPx(v, unit, dpi) {
+  if (unit === 'cm')   return v * dpi / 2.54;
+  if (unit === 'inch') return v * dpi;
+  if (unit === 'mm')   return v * dpi / 25.4;
+  return v;
+}
+function pxToUnit(px, unit, dpi) {
+  if (unit === 'cm')   return px * 2.54 / dpi;
+  if (unit === 'inch') return px / dpi;
+  if (unit === 'mm')   return px * 25.4 / dpi;
+  return px;
+}
+function roundUnit(v, unit) { return unit === 'px' ? Math.round(v) : Math.round(v * 100) / 100; }
+
+function fillSpecs() {
+  if (!S.exam) return;
+  const src = S.doc === 'photo' ? S.exam.photo : S.exam.sig;
+  const u = S.unit || 'px', d = S.dpi || 300;
+  document.getElementById('req-w').value   = roundUnit(pxToUnit(src.w, u, d), u);
+  document.getElementById('req-h').value   = roundUnit(pxToUnit(src.h, u, d), u);
+  document.getElementById('req-min').value = src.min;
+  document.getElementById('req-max').value = src.max;
+  document.getElementById('req-fmt').value = src.fmt;
+  document.getElementById('reset-btn').classList.add('hidden');
+  S.edited = false;
+  applyUnitUI();
+}
+
+function getSpecs() {
+  const u = S.unit || 'px', d = S.dpi || 300;
+  let w = Math.round(unitToPx(parseFloat(document.getElementById('req-w').value) || 0, u, d));
+  let h = Math.round(unitToPx(parseFloat(document.getElementById('req-h').value) || 0, u, d));
+  const minRaw = parseInt(document.getElementById('req-min').value);  // 0 is valid (KB tools)
+  const maxRaw = parseInt(document.getElementById('req-max').value);
+  return {
+    w:   Math.min(w || 400, 20000),
+    h:   Math.min(h || 400, 20000),
+    min: isNaN(minRaw) ? 20  : minRaw,
+    max: isNaN(maxRaw) ? 300 : maxRaw,
+    fmt: document.getElementById('req-fmt').value || 'JPG',
+  };
+}
+
+// shared UI refresh (strip + px hint + live cropper aspect) — no "edited" flag
+function refreshSpecUI() {
+  updateStrip();
+  updatePxHint();
+  if (S.cropper && !S.freeDim) {
+    const sp = getSpecs();
+    S.cropper.setAspectRatio(sp.w / sp.h);
+  }
+}
+
+function onSpecChange() {
+  S.edited = true;
+  document.getElementById('reset-btn').classList.remove('hidden');
+  refreshSpecUI();
+}
+
+// reflect the current unit on labels / DPI row / dropdown
+function applyUnitUI() {
+  const u = S.unit || 'px';
+  const lw = document.getElementById('unit-lbl-w');
+  const lh = document.getElementById('unit-lbl-h');
+  if (lw) lw.textContent = '(' + u + ')';
+  if (lh) lh.textContent = '(' + u + ')';
+  const dr = document.getElementById('dpi-row');
+  if (dr) dr.style.display = 'flex'; // always show DPI — relevant for all modes
+  const us = document.getElementById('dim-unit'); if (us) us.value = u;
+  const ds = document.getElementById('dim-dpi');  if (ds) ds.value = String(S.dpi || 300);
+  updatePxHint();
+}
+
+function updatePxHint() {
+  const hint = document.getElementById('px-hint');
+  if (!hint) return;
+  const sp = getSpecs();
+  const dpi = S.dpi || 300;
+  const u = S.unit || 'px';
+  if (u === 'px') {
+    // show physical print size at chosen DPI
+    if (sp.w && sp.h) {
+      const inW = (sp.w / dpi).toFixed(2), inH = (sp.h / dpi).toFixed(2);
+      const cmW = (sp.w * 2.54 / dpi).toFixed(2), cmH = (sp.h * 2.54 / dpi).toFixed(2);
+      hint.textContent = '≈ ' + cmW + ' × ' + cmH + ' cm  (' + inW + ' × ' + inH + ' in)  @ ' + dpi + ' DPI';
+      hint.style.display = 'block';
+    } else {
+      hint.style.display = 'none';
+    }
+  } else {
+    hint.textContent = '= ' + sp.w + ' × ' + sp.h + ' px  @ ' + dpi + ' DPI';
+    hint.style.display = 'block';
+  }
+}
+
+// user switched unit → convert displayed values through px, keep physical size
+function onUnitChange() {
+  const newU = document.getElementById('dim-unit').value;
+  const oldU = S.unit || 'px', d = S.dpi || 300;
+  const curW = parseFloat(document.getElementById('req-w').value) || 0;
+  const curH = parseFloat(document.getElementById('req-h').value) || 0;
+  const pxW = unitToPx(curW, oldU, d), pxH = unitToPx(curH, oldU, d);
+  S.unit = newU;
+  document.getElementById('req-w').value = roundUnit(pxToUnit(pxW, newU, d), newU);
+  document.getElementById('req-h').value = roundUnit(pxToUnit(pxH, newU, d), newU);
+  applyUnitUI();
+  refreshSpecUI();
+}
+
+// user changed DPI → physical size (displayed unit value) stays, pixels recompute
+function onDpiChange() {
+  S.dpi = parseInt(document.getElementById('dim-dpi').value) || 300;
+  refreshSpecUI();
+}
+
+function resetSpecs() { fillSpecs(); updateStrip(); }
+
+function updateStrip() {
+  const sp = getSpecs();
+  const wRaw = parseFloat(document.getElementById('req-w').value) || 0;
+  // KB tools before upload have no dimensions yet → show "Original"
+  const dimTxt  = (S.freeDim && !wRaw) ? 'Original' : `${sp.w} × ${sp.h}`;
+  const sizeTxt = sp.min ? `${sp.min}–${sp.max} KB` : `≤ ${sp.max} KB`;
+  document.getElementById('strip-dim').textContent  = dimTxt;
+  document.getElementById('strip-size').textContent = sizeTxt;
+  document.getElementById('strip-fmt').textContent  = sp.fmt;
+
+  // update selected bar (hidden in tool mode, used by exam mode)
+  if (S.exam) {
+    document.getElementById('sel-exam-spec').textContent =
+      (S.freeDim && !wRaw) ? `Original size · ${sizeTxt} · ${sp.fmt}` : `${sp.w}×${sp.h}px · ${sizeTxt} · ${sp.fmt}`;
+  }
+}
+
+// ────────────────────────────────────────────────────────────────────
+// RIGHT PANEL STATES
+// ────────────────────────────────────────────────────────────────────
+
+function showRight(name) {
+  ['upload','editor','result'].forEach(s =>
+    document.getElementById('st-'+s).classList.toggle('hidden', s !== name)
+  );
+}
+
+// ────────────────────────────────────────────────────────────────────
+// DRAG & DROP
+// ────────────────────────────────────────────────────────────────────
+
+function onDragOver(e)  { e.preventDefault(); document.getElementById('drop-zone').classList.add('over'); }
+function onDragLeave()  { document.getElementById('drop-zone').classList.remove('over'); }
+function onDrop(e)      { e.preventDefault(); document.getElementById('drop-zone').classList.remove('over'); const f = e.dataTransfer.files[0]; if(f) loadFile(f); }
+function onFileSelect(e){ if(e.target.files[0]) loadFile(e.target.files[0]); }
+
+function loadFile(file) {
+  const r = new FileReader();
+  r.onload = ev => { S.origURL = ev.target.result; S.flipX = 1; initCropper(ev.target.result); showRight('editor'); };
+  r.readAsDataURL(file);
+}
+
+// ────────────────────────────────────────────────────────────────────
+// CROPPER
+// ────────────────────────────────────────────────────────────────────
+
+function initCropper(src) {
+  destroyCropper();
+  const img = document.getElementById('crop-img');
+  img.src = src;
+  const sp = getSpecs();
+  S.cropper = new Cropper(img, {
+    aspectRatio: S.freeDim ? NaN : sp.w / sp.h,
+    viewMode: 1, dragMode: 'move', autoCropArea: S.freeDim ? 1 : 0.85,
+    restore: false, guides: true, center: true, highlight: false,
+    cropBoxMovable: true, cropBoxResizable: true,
+    ready() { if (S.freeDim) prefillFreeDims(); },
+  });
+}
+
+// KB tools: once the image is loaded, default the output size to the image's
+// OWN dimensions and reveal the (now editable) W/H fields. Untouched = original.
+function prefillFreeDims() {
+  if (!S.freeDim || !S.cropper) return;
+  const d = S.cropper.getImageData();
+  const w = Math.round(d.naturalWidth), h = Math.round(d.naturalHeight);
+  if (!w || !h) return;
+  S.unit = 'px';
+  const rw = document.getElementById('req-w'), rh = document.getElementById('req-h');
+  if (rw) rw.value = w;
+  if (rh) rh.value = h;
+  const wh = document.getElementById('wh-fields'); if (wh) wh.style.display = '';
+  const note = document.getElementById('dim-note'); if (note) note.style.display = 'block';
+  applyUnitUI();
+  updateStrip();
+}
+
+function destroyCropper() {
+  if (S.cropper) { S.cropper.destroy(); S.cropper = null; }
+  document.getElementById('crop-img').src = '';
+}
+
+function cropperZoom(v)   { S.cropper && S.cropper.zoom(v); }
+function cropperRotate(v) { S.cropper && S.cropper.rotate(v); }
+function cropperFlip()    { S.flipX *= -1; S.cropper && S.cropper.scaleX(S.flipX); }
+
+// ────────────────────────────────────────────────────────────────────
+// BACKGROUND REMOVAL
+// ────────────────────────────────────────────────────────────────────
+
+async function triggerBgRemoval() {
+  if (!S.cropper) return;
+  const el = document.getElementById('bg-status');
+  const tx = document.getElementById('bg-txt');
+  const btn = document.getElementById('btn-bg');
+  el.style.display = 'flex'; btn.disabled = true; btn.style.opacity = '.5';
+  try {
+    if (!S.bgMod) {
+      tx.textContent = 'Loading AI model (first time ~20s)…';
+      S.bgMod = await import('https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.4.5/dist/browser/index.js');
+    }
+    tx.textContent = 'Removing background…';
+    const canvas = S.cropper.getCroppedCanvas({maxWidth:1024, maxHeight:1024});
+    const blob   = await new Promise(r => canvas.toBlob(r, 'image/png'));
+    const result = await S.bgMod.removeBackground(blob, {
+      publicPath: 'https://cdn.jsdelivr.net/npm/@imgly/background-removal@1.4.5/dist/browser/',
+    });
+    const newSrc = URL.createObjectURL(result);
+    destroyCropper();
+    const img = document.getElementById('crop-img');
+    img.src = newSrc;
+    await new Promise(r => { img.onload = r; });
+    const sp = getSpecs();
+    S.cropper = new Cropper(img, { aspectRatio: S.freeDim ? NaN : sp.w/sp.h, viewMode:1, dragMode:'move', autoCropArea: S.freeDim ? 1 : 0.85 });
+    el.style.display = 'none';
+  } catch(err) {
+    tx.textContent = '⚠️ Failed. Check console.'; console.error(err);
+  }
+  btn.disabled = false; btn.style.opacity = '1';
+}
+
+// ────────────────────────────────────────────────────────────────────
+// PROCESS & DOWNLOAD
+// ────────────────────────────────────────────────────────────────────
+
+async function processImage() {
+  if (!S.cropper) return;
+  const sp   = getSpecs();
+  const mime = sp.fmt==='PNG'?'image/png': sp.fmt==='WEBP'?'image/webp':'image/jpeg';
+  const ext  = sp.fmt==='PNG'?'png'      : sp.fmt==='WEBP'?'webp'     :'jpg';
+
+  // Both modes now render to the W/H in the fields. For KB tools those fields
+  // are pre-filled with the image's ORIGINAL dimensions (kept unless the user
+  // edits them); the only difference is KB tools may downscale further below
+  // if the target size can't be reached by quality alone.
+  let canvas = S.cropper.getCroppedCanvas({ width: sp.w, height: sp.h, imageSmoothingEnabled: true, imageSmoothingQuality: 'high' });
+
+  const maxB = sp.max * 1024, minB = sp.min * 1024;
+  let q = 0.97, blob;
+  const toB = q => new Promise(r => canvas.toBlob(r, mime, q));
+
+  do { blob = await toB(q); q -= 0.04; } while (blob && blob.size > maxB && q > 0.05);
+
+  // Free mode: if still over target at lowest quality, progressively downscale
+  if (S.freeDim) {
+    let guard = 0;
+    while (blob && blob.size > maxB && canvas.width > 80 && guard < 30) {
+      const c2 = document.createElement('canvas');
+      c2.width  = Math.round(canvas.width  * 0.85);
+      c2.height = Math.round(canvas.height * 0.85);
+      const ctx = c2.getContext('2d');
+      ctx.imageSmoothingQuality = 'high';
+      ctx.drawImage(canvas, 0, 0, c2.width, c2.height);
+      canvas = c2;
+      q = 0.92; blob = await toB(q);
+      while (blob && blob.size > maxB && q > 0.05) { q -= 0.06; blob = await toB(q); }
+      guard++;
+    }
+  } else if (blob && blob.size < minB && mime !== 'image/png') {
+    q = 1.0;
+    while (blob.size < minB && q <= 1.0) { blob = await toB(q); q += 0.01; }
+  }
+
+  // recompute effective output dimensions for the result readout
+  sp.w = canvas.width; sp.h = canvas.height;
+
+  const url = URL.createObjectURL(blob);
+  const kb  = (blob.size / 1024).toFixed(1);
+  const ok  = blob.size >= minB && blob.size <= maxB;
+
+  document.getElementById('res-before').src = S.origURL;
+  document.getElementById('res-after').src  = url;
+  document.getElementById('res-dim').textContent  = `${sp.w}×${sp.h}`;
+  document.getElementById('res-size').textContent = `${kb} KB`;
+  const st = document.getElementById('res-status');
+  st.textContent = ok ? '✓ OK' : '⚠ Check';
+  st.className   = 'text-sm font-bold px-2.5 py-0.5 rounded-full inline-block ' + (ok ? 'badge-ok' : 'badge-warn');
+
+  const dl = document.getElementById('dl-link');
+  dl.href     = url;
+  dl.download = `yespyq_${S.exam?.slug||'photo'}.${ext}`;
+  showRight('result');
+}
+
+function goUpload() {
+  showRight('upload');
+  destroyCropper();
+  document.getElementById('file-input').value = '';
+  S.origURL = null;
+}
+
+</script>
+</body>
+</html>

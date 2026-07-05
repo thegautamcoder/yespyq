@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Word Counter — Count Words, Characters & Sentences Online Free | YESPYQ</title>
+  <meta name="description" content="Paste or type any text and see the word count, characters (with and without spaces), sentences, paragraphs and reading time update instantly. A free online word counter with no sign-up." />
+  <meta name="keywords" content="word counter, word count online, character counter, count words online, word count tool, words characters counter, online word counter free" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/word-counter/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="Word Counter — Count Words & Characters Online | YESPYQ" />
+  <meta property="og:description" content="Count words, characters, sentences and paragraphs instantly. Free, online, no sign-up." />
+  <meta property="og:url" content="https://yespyq.com/word-counter/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Word Counter | YESPYQ" />
+  <meta name="twitter:description" content="Count words, characters, sentences and paragraphs online, free." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"Word Counter","item":"https://yespyq.com/word-counter/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Word Counter","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/word-counter/","description":"Free online word counter. Count words, characters, sentences and paragraphs instantly.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I count words online for free?","acceptedAnswer":{"@type":"Answer","text":"Just drop your text into the box above. Words, characters, sentences, paragraphs and an estimated reading time all appear at once, with no account required."}},
+    {"@type":"Question","name":"What is a word counter used for?","acceptedAnswer":{"@type":"Answer","text":"It lets students and writers gauge the length of essays, answers, reports and documents. When rehearsing answers for UPSC, SSC and similar papers, it keeps you inside the prescribed word limits."}},
+    {"@type":"Question","name":"What is the difference between characters with and without spaces?","acceptedAnswer":{"@type":"Answer","text":"The with-spaces count tallies everything, spaces and punctuation included, while the without-spaces count leaves the blanks out and tallies only real characters. Several portals base their limit on the with-spaces number."}},
+    {"@type":"Question","name":"How is reading time calculated?","acceptedAnswer":{"@type":"Answer","text":"The estimate assumes 200 words a minute, roughly how fast an average adult reads. At that rate a 1000-word essay works out to about 5 minutes."}},
+    {"@type":"Question","name":"Is the word counter free and private?","acceptedAnswer":{"@type":"Answer","text":"Completely - there is no charge, no sign-up, and nothing is saved or transmitted. Every count is worked out inside your own browser."}},
+    {"@type":"Question","name":"What word limits are common for UPSC answers?","acceptedAnswer":{"@type":"Answer","text":"In UPSC GS papers, 10-mark questions expect around 150 words and 15-mark questions around 250. The essay paper typically runs 1000-1200 words. This counter is ideal for drilling those targets."}}
+  ]}
+  </script>
+
+  <style>
+    /* scoped extras: light stat grid + keyword chips */
+    .wc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:1.4rem 0}
+    .wc-stat{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:1rem 1.1rem;text-align:center}
+    .stat-num{font-size:1.75rem;font-weight:900;color:var(--ink);line-height:1}
+    .wc-stat .stat-lbl{font-size:.7rem;color:var(--muted);margin-top:.35rem;font-weight:600;
+      text-transform:uppercase;letter-spacing:.05em}
+    .wc-clear{font-size:.85rem;font-weight:600;color:var(--slate);background:var(--blue-50);
+      border:1px solid var(--blue-100);padding:.5rem 1rem;border-radius:8px;cursor:pointer;transition:.15s}
+    .wc-clear:hover{border-color:var(--blue-500);background:#eef4ff}
+    .kw-chip{font-size:.85rem;color:var(--ink);background:var(--blue-50);border:1px solid var(--blue-100);
+      padding:.3rem .7rem;border-radius:6px}
+    .kw-chip .n{color:var(--muted);font-size:.72rem}
+    @media(max-width:520px){.wc-stats{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Word Counter</nav>
+        <span class="pill">Text Tools</span>
+        <h1>Word Counter</h1>
+        <p class="lead">See words, characters, sentences and paragraphs tally up as you type — useful for answer-writing practice, essays, reports and anything bound by a word limit.</p>
+
+        <div class="tool-panel">
+          <textarea id="text-input" placeholder="Paste or type your text here…" oninput="count(this.value)"></textarea>
+          <div class="field-row" style="justify-content:flex-end">
+            <button class="wc-clear" onclick="document.getElementById('text-input').value='';count('');">Clear</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="wc-stats" id="stats-grid">
+        <div class="wc-stat"><div class="stat-num" id="s-words">0</div><div class="stat-lbl">Words</div></div>
+        <div class="wc-stat"><div class="stat-num" id="s-chars">0</div><div class="stat-lbl">Characters</div></div>
+        <div class="wc-stat"><div class="stat-num" id="s-nospace">0</div><div class="stat-lbl">Chars (no spaces)</div></div>
+        <div class="wc-stat"><div class="stat-num" id="s-sentences">0</div><div class="stat-lbl">Sentences</div></div>
+        <div class="wc-stat"><div class="stat-num" id="s-paragraphs">0</div><div class="stat-lbl">Paragraphs</div></div>
+        <div class="wc-stat"><div class="stat-num" id="s-read">0 min</div><div class="stat-lbl">Reading Time</div></div>
+      </div>
+
+      <div id="keyword-section" style="display:none" class="tool-card">
+        <h2 style="font-size:1.05rem">Top keywords</h2>
+        <div id="keyword-list" style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.6rem"></div>
+      </div>
+
+      <div class="tool-card">
+        <h2>Word limits for UPSC & Indian competitive exams</h2>
+        <p>Nearly every written competitive exam in India caps how long an answer can be. Exceeding the cap wins you nothing, while falling far short leaves marks on the table. Use this table as a handy guide:</p>
+        <div class="tool-table-wrap">
+          <table class="tool-table">
+            <thead><tr>
+              <th>Exam / Section</th><th>Marks</th><th>Word limit</th>
+            </tr></thead>
+            <tbody>
+              <tr><td>UPSC GS (short)</td><td>10 marks</td><td>150 words</td></tr>
+              <tr><td>UPSC GS (long)</td><td>15 marks</td><td>250 words</td></tr>
+              <tr><td>UPSC Essay Paper</td><td>250 marks</td><td>1000–1200 words</td></tr>
+              <tr><td>SSC Descriptive</td><td>Varies</td><td>200–400 words</td></tr>
+              <tr><td>RBI Grade B Essay</td><td>30 marks</td><td>400–500 words</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Rehearse your UPSC, SSC or bank exam answers in the counter above until landing on these targets becomes second nature.</p>
+        <h3>Also useful</h3>
+        <div class="tool-links">
+          <a href="/age-calculator/">🎂 Age calculator</a>
+          <a href="/percentage-calculator/">📊 Percentage calculator</a>
+          <a href="/marks-calculator/">📝 Marks calculator</a>
+          <a href="/">📚 Practice UPSC PYQs</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I count words online for free?</summary><div class="faq-a">Type or paste into the box above and the totals refresh live — there is no button to click and no sign-up.</div></details>
+        <details class="faq-item"><summary>What is a word counter useful for?</summary><div class="faq-a">Aspirants lean on it to keep UPSC, SSC and bank answers within limit; writers use it for essays, articles and posts; and it comes in handy for character caps on forms and applications too.</div></details>
+        <details class="faq-item"><summary>What is the difference between characters with and without spaces?</summary><div class="faq-a">"Characters" totals everything, spaces and punctuation included, whereas "Chars (no spaces)" leaves the blanks out. Platforms set their limits differently, and many count the spaces.</div></details>
+        <details class="faq-item"><summary>How is reading time calculated?</summary><div class="faq-a">It assumes 200 words a minute — about an average adult's pace — so a 1000-word essay reads in roughly 5 minutes.</div></details>
+        <details class="faq-item"><summary>Is the word counter private?</summary><div class="faq-a">Yes — every count runs inside your browser, with nothing sent to a server or stored anywhere.</div></details>
+        <details class="faq-item"><summary>What are the UPSC answer word limits?</summary><div class="faq-a">For UPSC GS, allow about 150 words for a 10-mark question and 250 for a 15-mark one, with the essay paper near 1000–1200 words. Working inside these caps is a core exam skill.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More free tools</h2>
+        <div class="tool-links">
+          <a href="/percentage-calculator/">Percentage calculator</a>
+          <a href="/cgpa-to-percentage/">CGPA to percentage</a>
+          <a href="/marks-calculator/">Marks calculator</a>
+          <a href="/bmi-calculator/">BMI calculator</a>
+          <a href="/age-calculator/">Age calculator</a>
+          <a href="/age-calculator-for-upsc/">UPSC age calculator</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+const STOP_WORDS = new Set(['the','a','an','and','or','but','in','on','at','to','for','of','with','by','from','is','are','was','were','be','been','being','have','has','had','do','does','did','will','would','could','should','may','might','i','you','he','she','it','we','they','that','this','these','those','as','if','so','not','no','up','out','its']);
+
+function count(text) {
+  const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
+  const chars = text.length;
+  const charsNoSpace = text.replace(/\s/g, '').length;
+  const sentences = text.trim() === '' ? 0 : (text.match(/[.!?]+/g) || []).length;
+  const paragraphs = text.trim() === '' ? 0 : text.split(/\n\s*\n/).filter(p => p.trim()).length || (text.trim() ? 1 : 0);
+  const readMins = Math.ceil(words / 200);
+
+  document.getElementById('s-words').textContent = words.toLocaleString('en-IN');
+  document.getElementById('s-chars').textContent = chars.toLocaleString('en-IN');
+  document.getElementById('s-nospace').textContent = charsNoSpace.toLocaleString('en-IN');
+  document.getElementById('s-sentences').textContent = sentences.toLocaleString('en-IN');
+  document.getElementById('s-paragraphs').textContent = paragraphs.toLocaleString('en-IN');
+  document.getElementById('s-read').textContent = readMins < 1 ? '<1 min' : readMins + ' min';
+
+  if (words >= 10) {
+    const freq = {};
+    text.toLowerCase().replace(/[^a-z\s]/g, '').split(/\s+/).forEach(w => {
+      if (w.length > 2 && !STOP_WORDS.has(w)) freq[w] = (freq[w] || 0) + 1;
+    });
+    const top = Object.entries(freq).sort((a,b) => b[1]-a[1]).slice(0, 10);
+    document.getElementById('keyword-list').innerHTML = top.map(([w,n]) =>
+      `<span class="kw-chip">${w} <span class="n">${n}</span></span>`
+    ).join('');
+    document.getElementById('keyword-section').style.display = 'block';
+  } else {
+    document.getElementById('keyword-section').style.display = 'none';
+  }
+}
+
+var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>

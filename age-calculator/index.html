@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Age Calculator — Exact Age in Years, Months &amp; Days | YESPYQ</title>
+  <meta name="description" content="Type in your birth date and get your precise age in years, months and days. Then see at a glance whether you qualify for UPSC, SSC, IBPS, SBI, NDA and over 50 Indian government exams. Free, no login." />
+  <meta name="keywords" content="age calculator, age calculator online, how old am i, age calculator for upsc, age calculator for ssc, exam eligibility age, date of birth calculator, age in years months days" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/age-calculator/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="Age Calculator — Exact Age in Years, Months &amp; Days | YESPYQ" />
+  <meta property="og:description" content="Calculate your exact age instantly and check UPSC, SSC, IBPS, SBI and 50+ exam eligibility from your date of birth. 100% free." />
+  <meta property="og:url" content="https://yespyq.com/age-calculator/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Age Calculator | YESPYQ" />
+  <meta name="twitter:description" content="Find your exact age and check eligibility for UPSC, SSC, IBPS and 50+ Indian competitive exams." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"Age Calculator","item":"https://yespyq.com/age-calculator/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Age Calculator","applicationCategory":"UtilityApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/age-calculator/","description":"Free online age calculator. Find your exact age in years, months and days and check eligibility for 50+ Indian competitive exams.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I calculate my exact age?","acceptedAnswer":{"@type":"Answer","text":"Put your birth date into the calculator above and press Calculate Age. Straight away you get your precise age in years, months and days, plus the total days you have lived and the countdown to your next birthday."}},
+    {"@type":"Question","name":"What is the age limit for UPSC CSE?","acceptedAnswer":{"@type":"Answer","text":"General-category applicants for the UPSC Civil Services Examination must be 21 to 32 years on 1 August of the exam year. The ceiling extends to 35 for OBC (+3 years) and 37 for SC/ST (+5 years), with an extra 10 years for PwBD."}},
+    {"@type":"Question","name":"What is the age limit for SSC CGL?","acceptedAnswer":{"@type":"Answer","text":"General-category candidates for SSC CGL need to be 18 to 32 years old, with 3 more years for OBC and 5 more for SC/ST. Age is fixed as on the first day of the month in which the exam is notified."}},
+    {"@type":"Question","name":"Is this age calculator free?","acceptedAnswer":{"@type":"Answer","text":"Completely free. There is no sign-up, nothing gating the tool, and no data leaves your device — every calculation happens right in your browser."}},
+    {"@type":"Question","name":"How is age calculated for competitive exams in India?","acceptedAnswer":{"@type":"Answer","text":"Nearly every Indian competitive exam fixes your age to a set cut-off date named in the notification — commonly 1 August, 1 January or the last date to submit the form. It is your age on that date, not on exam day, that decides eligibility."}},
+    {"@type":"Question","name":"What is the age limit for IBPS PO?","acceptedAnswer":{"@type":"Answer","text":"IBPS PO takes general-category candidates aged 20 to 30. Relaxation adds 3 years for OBC, 5 years for SC/ST and 10 years for PwBD."}},
+    {"@type":"Question","name":"Does age relaxation apply for reserved categories?","acceptedAnswer":{"@type":"Answer","text":"Yes, though the amount differs by exam. Candidates from reserved groups — OBC, SC, ST, PwBD, Ex-servicemen — get extra years over the general ceiling: as a rule 3 for OBC, 5 for SC/ST and 10 for PwBD."}}
+  ]}
+  </script>
+
+  <style>
+    .elig-row{display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+      padding:.65rem 0;border-bottom:1px solid var(--line);font-size:.92rem}
+    .elig-row:last-child{border-bottom:none}
+    .elig-row .elig-name{font-weight:600;color:var(--ink)}
+    .elig-row .elig-range{color:var(--muted);font-size:.82rem;margin-left:auto;margin-right:.6rem;white-space:nowrap}
+    .birthday-note{background:var(--blue-50);border:1px solid var(--blue-100);border-radius:12px;
+      padding:.85rem 1.1rem;margin-top:.4rem}
+    .birthday-note p{margin:0;font-size:.9rem;color:var(--slate)}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Age Calculator</nav>
+        <span class="pill">Calculator</span>
+        <h1>Age Calculator</h1>
+        <p class="lead">Work out precisely how old you are — down to the day — and in the same click see which of 50+ Indian competitive exams (UPSC, SSC, IBPS, SBI, NDA and more) you are eligible for.</p>
+
+        <div class="tool-panel">
+          <div class="field">
+            <label for="dob">Your date of birth</label>
+            <input type="date" id="dob" max="" />
+          </div>
+          <div class="field-row">
+            <label for="asof">Age as of:</label>
+            <input type="date" id="asof" style="flex:1;min-width:160px" />
+            <button class="btn btn-ghost btn-sm" onclick="setToday()">Today</button>
+          </div>
+          <button class="tool-btn" onclick="calculate()" style="margin-top:1rem">Calculate Age →</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="result-box" id="result" style="display:none">
+        <p class="r-label">Your age</p>
+        <p class="r-main" id="main-age">—</p>
+        <p class="r-sub" id="main-sub"></p>
+        <div class="stat-grid" id="stats-grid"></div>
+        <div class="result-note">
+          <p class="msg" id="birthday-msg"></p>
+        </div>
+      </div>
+
+      <div class="tool-card" id="eligibility-section" style="display:none">
+        <h2>Exam eligibility (General Category)</h2>
+        <p class="muted-note">Calculated from your age on the date you picked. This view shows the general-category window only — the extra years allowed for OBC (+3), SC/ST (+5) and PwBD (+10) are not factored in.</p>
+        <div id="exam-list"></div>
+      </div>
+
+      <div class="tool-card">
+        <h2>Age limits for major Indian competitive exams (2026)</h2>
+        <p>Age bars in Indian recruitment exams are unforgiving: your age is fixed to the cut-off date printed in the notification, and overshooting the ceiling by so much as one day is enough to see your form thrown out. The table below sums up the limits for the big exams so you can check yours at a glance.</p>
+        <div class="tool-table-wrap">
+          <table class="tool-table">
+            <thead><tr>
+              <th>Exam</th><th class="c">Min age</th><th class="c">Max age (General)</th><th>Cut-off date</th>
+            </tr></thead>
+            <tbody>
+              <tr><td>UPSC CSE</td><td class="c">21</td><td class="c">32</td><td>1 Aug</td></tr>
+              <tr><td>UPSC NDA</td><td class="c">16.5 yrs</td><td class="c">19.5 yrs</td><td>Notification date</td></tr>
+              <tr><td>UPSC CDS</td><td class="c">19</td><td class="c">25 (IMA/OTA)</td><td>Notification date</td></tr>
+              <tr><td>SSC CGL</td><td class="c">18</td><td class="c">32</td><td>1 Jan (exam year)</td></tr>
+              <tr><td>SSC CHSL</td><td class="c">18</td><td class="c">27</td><td>1 Jan (exam year)</td></tr>
+              <tr><td>SSC MTS</td><td class="c">18</td><td class="c">25–27</td><td>1 Jan (exam year)</td></tr>
+              <tr><td>IBPS PO</td><td class="c">20</td><td class="c">30</td><td>Notification date</td></tr>
+              <tr><td>IBPS Clerk</td><td class="c">20</td><td class="c">28</td><td>Notification date</td></tr>
+              <tr><td>SBI PO</td><td class="c">21</td><td class="c">30</td><td>Notification date</td></tr>
+              <tr><td>SBI Clerk</td><td class="c">20</td><td class="c">28</td><td>Notification date</td></tr>
+              <tr><td>RRB NTPC</td><td class="c">18</td><td class="c">33</td><td>Notification date</td></tr>
+              <tr><td>NEET-UG</td><td class="c">17</td><td class="c">No upper limit</td><td>31 Dec (admission year)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="muted-note">These figures can be revised from one notification to the next, so treat them as a guide and confirm against the official notification before you apply.</p>
+      </div>
+
+      <div class="tool-card">
+        <h2>How age is calculated for Indian competitive exams</h2>
+        <p>What counts is not your age on exam day, nor the day you submit the form — it is your age on the <strong>cut-off date</strong> the notification names. For most exams that date is <strong>1 January</strong> or <strong>1 August</strong> of the exam year.</p>
+        <p>To put numbers on it: with a cut-off of 1 August 2026 and a ceiling of 32, only those born on or after 2 August 1994 make the cut. Cross that line by a single day and you drop out of eligibility for that cycle.</p>
+        <h3>Age relaxation for reserved categories</h3>
+        <ul>
+          <li><strong>OBC (non-creamy layer):</strong> the upper limit is raised by 3 years</li>
+          <li><strong>SC / ST:</strong> an extra 5 years on top of the general ceiling</li>
+          <li><strong>PwBD (Persons with Benchmark Disabilities):</strong> 10 more years for general, 13 for OBC, 15 for SC/ST</li>
+          <li><strong>Ex-Servicemen:</strong> usually 3 to 5 years, depending on the exam</li>
+          <li><strong>J&amp;K residents (domicile):</strong> 5 additional years on several central exams</li>
+        </ul>
+        <div class="infobox warn">
+          <b>Note:</b> both the age bars and the attempt caps can shift from one notification to the next. Lean on this calculator for a fast estimate, then cross-check the official notification for the exam you have your eye on.
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I calculate my exact age online?</summary><div class="faq-a">Fill in your birth date, pick the "age as of" date (it starts on today), and hit Calculate. In a moment you get your age broken into years, months and days, the total number of days you have lived, and how long until your next birthday.</div></details>
+        <details class="faq-item"><summary>What is the age limit for UPSC CSE (IAS)?</summary><div class="faq-a">For the UPSC Civil Services Examination you must fall between 21 and 32 years on 1 August of the exam year. That ceiling rises to 35 for OBC (+3 years), 37 for SC/ST (+5 years), with a further 10 years for PwBD candidates.</div></details>
+        <details class="faq-item"><summary>What is the age limit for SSC CGL?</summary><div class="faq-a">General-category candidates for SSC CGL must be 18 to 32 years on 1 January of the exam year, with 3 extra years for OBC and 5 for SC/ST. Some posts carry their own limits, so read the notification carefully.</div></details>
+        <details class="faq-item"><summary>How is age calculated for government jobs in India?</summary><div class="faq-a">Your eligibility is fixed to the notification's cut-off date — usually 1 January or 1 August of the exam year — not the day you apply. The exact birth date is what counts, measured in completed years and months.</div></details>
+        <details class="faq-item"><summary>What is the age limit for IBPS PO?</summary><div class="faq-a">General candidates for IBPS PO need to be 20 to 30 years on the notification date. OBC applicants get three more years (20 to 33) and SC/ST five more (20 to 35).</div></details>
+        <details class="faq-item"><summary>Does age relaxation apply automatically for OBC/SC/ST?</summary><div class="faq-a">No — it is never automatic. You have to claim the relaxation while filling the form and back it up with a valid category or caste certificate, otherwise it will not be applied.</div></details>
+        <details class="faq-item"><summary>Is this age calculator accurate?</summary><div class="faq-a">Yes. It works out the precise gap between your birth date and the chosen date in years, months and days, correctly handling months of different lengths as well as leap years.</div></details>
+        <details class="faq-item"><summary>Can I check eligibility for multiple exams at once?</summary><div class="faq-a">Yes. As soon as your age is computed, the tool runs a general-category eligibility check across 10+ leading Indian competitive exams in one go.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More age calculators</h2>
+        <div class="tool-links">
+          <a href="/age-calculator/">All exams</a>
+          <a href="/age-calculator-for-upsc/">UPSC CSE</a>
+          <a href="/age-calculator-for-ssc-cgl/">SSC CGL</a>
+          <a href="/age-calculator-for-ibps-po/">IBPS PO</a>
+          <a href="/age-calculator-for-nda/">NDA</a>
+          <a href="/age-calculator-for-neet/">NEET-UG</a>
+          <a href="/age-calculator-for-sbi-po/">SBI PO</a>
+          <a href="/age-calculator-for-rrb-ntpc/">RRB NTPC</a>
+          <a href="/age-calculator-for-ibps-clerk/">IBPS Clerk</a>
+          <a href="/">📚 Practice UPSC PYQs</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+const EXAMS = [
+  { name:'UPSC CSE (IAS/IPS/IFS)', min:21, max:32 },
+  { name:'UPSC NDA', min:16.5, max:19.5 },
+  { name:'UPSC CDS (IMA)', min:19, max:25 },
+  { name:'SSC CGL', min:18, max:32 },
+  { name:'SSC CHSL', min:18, max:27 },
+  { name:'SSC MTS', min:18, max:25 },
+  { name:'IBPS PO', min:20, max:30 },
+  { name:'IBPS Clerk', min:20, max:28 },
+  { name:'SBI PO', min:21, max:30 },
+  { name:'SBI Clerk', min:20, max:28 },
+  { name:'RRB NTPC', min:18, max:33 },
+  { name:'RRB Group D', min:18, max:33 },
+  { name:'NEET-UG', min:17, max:999 },
+  { name:'JEE Main', min:17, max:999 },
+];
+
+function setToday() {
+  const today = new Date();
+  document.getElementById('asof').value = today.toISOString().split('T')[0];
+}
+
+function pad(n) { return String(n).padStart(2,'0'); }
+function fmt(d) { return d.toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric'}); }
+
+function calculate() {
+  const dobVal = document.getElementById('dob').value;
+  const asofVal = document.getElementById('asof').value;
+  if (!dobVal) { alert('Please enter your date of birth.'); return; }
+
+  const dob = new Date(dobVal + 'T00:00:00');
+  const ref = asofVal ? new Date(asofVal + 'T00:00:00') : new Date();
+  ref.setHours(0,0,0,0);
+
+  if (dob >= ref) { alert('Date of birth must be before the "age as of" date.'); return; }
+
+  let years = ref.getFullYear() - dob.getFullYear();
+  let months = ref.getMonth() - dob.getMonth();
+  let days = ref.getDate() - dob.getDate();
+
+  if (days < 0) {
+    months--;
+    const prevMonthLastDay = new Date(ref.getFullYear(), ref.getMonth(), 0).getDate();
+    days += prevMonthLastDay;
+  }
+  if (months < 0) { years--; months += 12; }
+
+  const totalMs = ref - dob;
+  const totalDays = Math.floor(totalMs / 86400000);
+  const totalWeeks = Math.floor(totalDays / 7);
+  const totalHours = totalDays * 24;
+
+  const nextBirthday = new Date(ref.getFullYear(), dob.getMonth(), dob.getDate());
+  if (nextBirthday <= ref) nextBirthday.setFullYear(ref.getFullYear() + 1);
+  const daysToNext = Math.ceil((nextBirthday - ref) / 86400000);
+  const isBirthday = daysToNext === 365 || daysToNext === 366;
+
+  document.getElementById('main-age').textContent = `${years} years, ${months} months & ${days} days`;
+  document.getElementById('main-sub').textContent = `Born ${fmt(dob)} · Age as of ${fmt(ref)}`;
+
+  const stats = [
+    { v: totalDays.toLocaleString('en-IN'), l: 'Total Days' },
+    { v: totalWeeks.toLocaleString('en-IN'), l: 'Total Weeks' },
+    { v: (years * 12 + months).toLocaleString('en-IN'), l: 'Total Months' },
+    { v: totalHours.toLocaleString('en-IN'), l: 'Total Hours' },
+  ];
+  document.getElementById('stats-grid').innerHTML = stats.map(s =>
+    `<div class="stat-card"><div class="stat-val">${s.v}</div><div class="stat-lbl">${s.l}</div></div>`
+  ).join('');
+
+  if (isBirthday) {
+    document.getElementById('birthday-msg').textContent = '🎉 Happy Birthday!';
+  } else {
+    document.getElementById('birthday-msg').textContent = `🎂 Next birthday: ${fmt(nextBirthday)} (${daysToNext} days away)`;
+  }
+
+  document.getElementById('result').style.display = 'block';
+
+  const ageDecimal = years + months / 12 + days / 365;
+  const examHTML = EXAMS.map(e => {
+    let badge, label;
+    if (ageDecimal >= e.min && ageDecimal <= e.max) {
+      badge = 'badge-yes'; label = 'Eligible';
+    } else if (ageDecimal < e.min) {
+      badge = 'badge-unk'; label = 'Too Young';
+    } else {
+      badge = 'badge-no'; label = 'Over Age';
+    }
+    return `<div class="elig-row"><span class="elig-name">${e.name}</span><span class="elig-range">${e.min}–${e.max === 999 ? 'No limit' : e.max} yrs</span><span class="${badge}">${label}</span></div>`;
+  }).join('');
+
+  document.getElementById('exam-list').innerHTML = examHTML;
+  document.getElementById('eligibility-section').style.display = 'block';
+
+  document.getElementById('result').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// init: set max date to today, set asof to today
+window.addEventListener('DOMContentLoaded', () => {
+  const today = new Date().toISOString().split('T')[0];
+  document.getElementById('dob').max = today;
+  document.getElementById('asof').value = today;
+});
+
+document.getElementById('dob').addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
+document.getElementById('asof').addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
+</script>
+<script>var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Percentage Calculator — Marks, Discount & Increase | YESPYQ</title>
+  <meta name="description" content="A free, all-in-one percentage tool for students and exam aspirants. Work out marks percentages, increases and decreases, what share one number is of another, and discount prices — all in a click." />
+  <meta name="keywords" content="percentage calculator, percentage calculator online, marks percentage calculator, percentage increase calculator, discount calculator, percentage of marks, how to calculate percentage" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="geo.region" content="IN" />
+  <meta name="geo.placename" content="India" />
+  <link rel="canonical" href="https://yespyq.com/percentage-calculator/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="YESPYQ" />
+  <meta property="og:title" content="Percentage Calculator — Marks, Discount & Increase | YESPYQ" />
+  <meta property="og:description" content="Calculate any percentage instantly — marks, discounts, increase or decrease, and what percent one number is of another." />
+  <meta property="og:url" content="https://yespyq.com/percentage-calculator/" />
+  <meta property="og:image" content="https://yespyq.com/assets/og-image.png" />
+  <meta property="og:locale" content="en_IN" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Percentage Calculator | YESPYQ" />
+  <meta name="twitter:description" content="Marks, discounts, increase or decrease — calculate any percentage in seconds." />
+  <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
+
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icon-32.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <link rel="stylesheet" href="/styles.css?v=8" />
+  <link rel="stylesheet" href="/tools.css?v=1" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},
+    {"@type":"ListItem","position":2,"name":"Tools","item":"https://yespyq.com/tools/"},
+    {"@type":"ListItem","position":3,"name":"Percentage Calculator","item":"https://yespyq.com/percentage-calculator/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Percentage Calculator","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"url":"https://yespyq.com/percentage-calculator/","description":"Free percentage calculator for students — work out marks percentage, percentage increase, discount percentage and more.","provider":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How do I calculate the percentage of marks?","acceptedAnswer":{"@type":"Answer","text":"Take the marks you scored, divide by the total on offer, and multiply by 100. Scoring 450 out of 500 works out to 450 / 500 x 100 = 90%."}},
+    {"@type":"Question","name":"What is the formula for percentage increase?","acceptedAnswer":{"@type":"Answer","text":"Subtract the old value from the new one, divide that by the old value, then multiply by 100: (New Value - Old Value) / Old Value x 100."}},
+    {"@type":"Question","name":"How do I calculate percentage decrease?","acceptedAnswer":{"@type":"Answer","text":"Take how much the value dropped, divide by the original, and multiply by 100: (Old Value - New Value) / Old Value x 100."}},
+    {"@type":"Question","name":"What percentage is X of Y?","acceptedAnswer":{"@type":"Answer","text":"Divide X by Y and scale up by 100. So 45 out of 200 comes to 45 / 200 x 100 = 22.5%."}},
+    {"@type":"Question","name":"How do I find X% of a number?","acceptedAnswer":{"@type":"Answer","text":"Multiply the number by the percentage and then divide by 100. To get 15% of 800, compute 800 x 15 / 100 = 120."}},
+    {"@type":"Question","name":"Is this calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is nothing to pay, no account to create and nothing to download."}},
+    {"@type":"Question","name":"What is a good percentage in board exams?","acceptedAnswer":{"@type":"Answer","text":"Crossing 80% counts as very strong, and distinctions typically start above 75%. Most competitive exams only ask for a graduation percentage in the 50 to 60% range."}}
+  ]}
+  </script>
+
+  <style>
+    /* scoped extras: sub-calculator tabs + light result banner */
+    .calc-tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.4rem}
+    .calc-tab{padding:.5rem 1rem;border-radius:999px;font-size:.85rem;font-weight:600;cursor:pointer;
+      border:2px solid var(--blue-500);color:var(--blue-700);background:#fff;transition:.15s}
+    .calc-tab.active{background:var(--blue-600);color:#fff;border-color:var(--blue-600)}
+    .pc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+    .calc-result{background:var(--good-bg);border:2px solid #86efac;border-radius:12px;padding:1rem;
+      font-size:1.4rem;font-weight:800;color:#166534;text-align:center;margin-top:1rem;display:none}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+      </a>
+      <nav class="main-nav">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/" class="active">Tools</a>
+      </nav>
+      <a href="/" class="btn btn-primary btn-sm">Start Practice</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="tool-hero">
+      <div class="tool-wrap">
+        <nav class="breadcrumb"><a href="/">Home</a> › <a href="/tools/">Tools</a> › Percentage Calculator</nav>
+        <span class="pill">Marks & Grades</span>
+        <h1>Percentage Calculator</h1>
+        <p class="lead">One tool for every percentage you need — marks, discounts, a rise or fall in value, and what share one number is of another.</p>
+
+        <div class="tool-panel">
+          <div class="calc-tabs">
+            <button class="calc-tab active" onclick="showCalc('marks')">Marks %</button>
+            <button class="calc-tab" onclick="showCalc('whatpct')">What % is X of Y?</button>
+            <button class="calc-tab" onclick="showCalc('xofy')">X% of Y</button>
+            <button class="calc-tab" onclick="showCalc('change')">% Increase/Decrease</button>
+            <button class="calc-tab" onclick="showCalc('discount')">Discount</button>
+          </div>
+
+          <div id="calc-marks">
+            <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem">📊 Percentage of marks</h2>
+            <div class="pc-grid">
+              <div class="field">
+                <label for="marks-obtained">Marks obtained</label>
+                <input type="number" id="marks-obtained" placeholder="e.g. 450" min="0" />
+              </div>
+              <div class="field">
+                <label for="marks-total">Total marks</label>
+                <input type="number" id="marks-total" placeholder="e.g. 500" min="1" />
+              </div>
+            </div>
+            <button class="tool-btn" onclick="calcMarks()">Calculate</button>
+            <div class="calc-result" id="res-marks"></div>
+          </div>
+
+          <div id="calc-whatpct" style="display:none">
+            <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem">🔢 What percentage is X of Y?</h2>
+            <div class="pc-grid">
+              <div class="field">
+                <label for="whatpct-x">Value (X)</label>
+                <input type="number" id="whatpct-x" placeholder="e.g. 45" />
+              </div>
+              <div class="field">
+                <label for="whatpct-y">Total (Y)</label>
+                <input type="number" id="whatpct-y" placeholder="e.g. 200" />
+              </div>
+            </div>
+            <button class="tool-btn" onclick="calcWhatPct()">Calculate</button>
+            <div class="calc-result" id="res-whatpct"></div>
+          </div>
+
+          <div id="calc-xofy" style="display:none">
+            <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem">💡 Find X% of a number</h2>
+            <div class="pc-grid">
+              <div class="field">
+                <label for="xofy-pct">Percentage (%)</label>
+                <input type="number" id="xofy-pct" placeholder="e.g. 15" />
+              </div>
+              <div class="field">
+                <label for="xofy-num">Number (Y)</label>
+                <input type="number" id="xofy-num" placeholder="e.g. 800" />
+              </div>
+            </div>
+            <button class="tool-btn" onclick="calcXofY()">Calculate</button>
+            <div class="calc-result" id="res-xofy"></div>
+          </div>
+
+          <div id="calc-change" style="display:none">
+            <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem">📈 Percentage increase / decrease</h2>
+            <div class="pc-grid">
+              <div class="field">
+                <label for="change-old">Old value</label>
+                <input type="number" id="change-old" placeholder="e.g. 200" />
+              </div>
+              <div class="field">
+                <label for="change-new">New value</label>
+                <input type="number" id="change-new" placeholder="e.g. 250" />
+              </div>
+            </div>
+            <button class="tool-btn" onclick="calcChange()">Calculate</button>
+            <div class="calc-result" id="res-change"></div>
+          </div>
+
+          <div id="calc-discount" style="display:none">
+            <h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem">🏷 Discount calculator</h2>
+            <div class="pc-grid">
+              <div class="field">
+                <label for="disc-price">Original price (₹)</label>
+                <input type="number" id="disc-price" placeholder="e.g. 1200" />
+              </div>
+              <div class="field">
+                <label for="disc-pct">Discount (%)</label>
+                <input type="number" id="disc-pct" placeholder="e.g. 20" />
+              </div>
+            </div>
+            <button class="tool-btn" onclick="calcDiscount()">Calculate</button>
+            <div class="calc-result" id="res-discount"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tool-wrap">
+
+      <div class="tool-card">
+        <h2>Percentage required for Indian competitive exams</h2>
+        <div class="tool-table-wrap">
+          <table class="tool-table">
+            <thead><tr>
+              <th>Exam</th><th>Minimum % in graduation</th><th>Note</th>
+            </tr></thead>
+            <tbody>
+              <tr><td>UPSC CSE</td><td>No minimum %</td><td>Any graduate eligible</td></tr>
+              <tr><td>SSC CGL</td><td>No minimum %</td><td>Graduate in any stream</td></tr>
+              <tr><td>IBPS PO</td><td>No minimum %</td><td>Computer proficiency required</td></tr>
+              <tr><td>RBI Grade B</td><td>60% (Gen), 50% (SC/ST)</td><td>Strict cutoff</td></tr>
+              <tr><td>NEET-UG</td><td>50% in PCB (Gen)</td><td>45% for OBC; 40% SC/ST</td></tr>
+              <tr><td>JEE Advanced (IIT)</td><td>75% in Class 12 (Gen)</td><td>65% for SC/ST/PwD</td></tr>
+              <tr><td>CAT (IIM)</td><td>50% in graduation (Gen)</td><td>45% for SC/ST</td></tr>
+              <tr><td>NDA</td><td>Class 12 passed</td><td>PCM for Army Wing</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <h2>How to calculate percentage — formula & examples</h2>
+        <p>Few ideas turn up as often as percentages — they run through exam results, shop sales and pay revisions alike. Since "percent" comes from "per hundred", a percentage is nothing more than a part of 100.</p>
+        <p><strong>Formula 1 — marks percentage:</strong> (Marks Obtained ÷ Total Marks) × 100. A score of 432 out of 600 becomes 432/600 × 100 = 72%.</p>
+        <p><strong>Formula 2 — percentage increase:</strong> when a score climbs from 60 to 75, the jump is (75−60)/60 × 100 = 25%.</p>
+        <p><strong>Formula 3 — percentage decrease:</strong> a price sliding from ₹500 to ₹400 is (500−400)/500 × 100 = 20% off.</p>
+        <p><strong>Indian board exams:</strong> because CBSE reports marks one subject at a time, your aggregate = total marks across subjects ÷ total maximum marks × 100. Plenty of colleges then apply a Best-of-5 or Best-of-4 rule, so read your college's own eligibility criteria carefully.</p>
+        <div class="infobox info">
+          Not every exam counts a percentage the same way — for board-exam admissions, first confirm whether Best-of-4, Best-of-5 or the full aggregate applies.
+        </div>
+        <h3>Also useful</h3>
+        <div class="tool-links">
+          <a href="/cgpa-to-percentage/">🎓 CGPA to percentage</a>
+          <a href="/marks-calculator/">📝 Marks calculator</a>
+          <a href="/age-calculator/">🎂 Age calculator</a>
+          <a href="/">📚 Practice UPSC PYQs</a>
+        </div>
+      </div>
+
+      <div class="tool-faq">
+        <h2>Frequently asked questions</h2>
+        <details class="faq-item"><summary>How do I calculate the percentage of marks?</summary><div class="faq-a">Divide the marks you got by the total and multiply by 100 — 450/500 × 100 = 90%. The "Marks %" tab above does it for you in one tap.</div></details>
+        <details class="faq-item"><summary>What is the formula for percentage increase?</summary><div class="faq-a">Percentage increase = (New Value − Old Value) / Old Value × 100. A salary going from ₹25,000 to ₹30,000 is (30,000−25,000)/25,000 × 100 = 20%.</div></details>
+        <details class="faq-item"><summary>How do I calculate percentage decrease?</summary><div class="faq-a">Percentage decrease = (Old Value − New Value) / Old Value × 100 — the formula behind discounts, price drops and falling scores.</div></details>
+        <details class="faq-item"><summary>What percentage is X of Y?</summary><div class="faq-a">Divide X by Y and multiply by 100. Take 45 out of 200: 45/200 × 100 = 22.5%. The "What % is X of Y?" tab above handles it instantly.</div></details>
+        <details class="faq-item"><summary>How do I find X% of a number?</summary><div class="faq-a">Multiply the number by X, then divide by 100 — 15% of 800 = 800 × 15 / 100 = 120. Try the "X% of Y" tab above.</div></details>
+        <details class="faq-item"><summary>Is this calculator free?</summary><div class="faq-a">Entirely free, with no login, no download and no hidden charges. It runs on any browser or phone.</div></details>
+        <details class="faq-item"><summary>What is a good percentage in board exams?</summary><div class="faq-a">In CBSE/ICSE, anything from 80% up is considered very good, and distinctions generally begin above 75%. For a specific exam's eligibility, look up its requirement in the table above.</div></details>
+      </div>
+
+      <div class="tool-card">
+        <h2>More free tools</h2>
+        <div class="tool-links">
+          <a href="/cgpa-to-percentage/">CGPA to percentage</a>
+          <a href="/marks-calculator/">Marks calculator</a>
+          <a href="/bmi-calculator/">BMI calculator</a>
+          <a href="/word-counter/">Word counter</a>
+          <a href="/age-calculator/">Age calculator</a>
+          <a href="/age-calculator-for-upsc/">UPSC age calculator</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
+        <p>Previous Year Questions, simplified.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/blog/">Blog</a>
+        <a href="/tools/">Tools</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · Free tools for UPSC &amp; exam aspirants</div>
+  </footer>
+
+<script>
+function showCalc(id) {
+  ['marks','whatpct','xofy','change','discount'].forEach(c => {
+    document.getElementById('calc-'+c).style.display = (c===id) ? 'block' : 'none';
+  });
+  document.querySelectorAll('.calc-tab').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+
+function showRes(id, text) {
+  const el = document.getElementById('res-'+id);
+  el.textContent = text;
+  el.style.display = 'block';
+}
+
+function calcMarks() {
+  const o = parseFloat(document.getElementById('marks-obtained').value);
+  const t = parseFloat(document.getElementById('marks-total').value);
+  if (isNaN(o)||isNaN(t)||t<=0) { alert('Please enter valid marks.'); return; }
+  const pct = (o/t*100).toFixed(2);
+  showRes('marks', `${pct}%`);
+}
+
+function calcWhatPct() {
+  const x = parseFloat(document.getElementById('whatpct-x').value);
+  const y = parseFloat(document.getElementById('whatpct-y').value);
+  if (isNaN(x)||isNaN(y)||y<=0) { alert('Please enter valid values.'); return; }
+  showRes('whatpct', `${(x/y*100).toFixed(2)}%`);
+}
+
+function calcXofY() {
+  const p = parseFloat(document.getElementById('xofy-pct').value);
+  const n = parseFloat(document.getElementById('xofy-num').value);
+  if (isNaN(p)||isNaN(n)) { alert('Please enter valid values.'); return; }
+  showRes('xofy', `${(p*n/100).toFixed(2)}`);
+}
+
+function calcChange() {
+  const o = parseFloat(document.getElementById('change-old').value);
+  const n = parseFloat(document.getElementById('change-new').value);
+  if (isNaN(o)||isNaN(n)||o===0) { alert('Please enter valid values.'); return; }
+  const pct = ((n-o)/Math.abs(o)*100).toFixed(2);
+  const dir = pct >= 0 ? '▲ Increase' : '▼ Decrease';
+  showRes('change', `${dir}: ${Math.abs(pct)}%`);
+}
+
+function calcDiscount() {
+  const p = parseFloat(document.getElementById('disc-price').value);
+  const d = parseFloat(document.getElementById('disc-pct').value);
+  if (isNaN(p)||isNaN(d)) { alert('Please enter valid values.'); return; }
+  const saving = (p*d/100).toFixed(2);
+  const final = (p - saving).toFixed(2);
+  showRes('discount', `Final Price: ₹${final} (Save ₹${saving})`);
+}
+
+var _y=document.getElementById('year');if(_y)_y.textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
