@@ -1,0 +1,285 @@
+#!/usr/bin/env python3
+"""Generate evergreen 'current-affairs topic' explainer posts under /blog/<slug>/.
+International organizations, reports & indices, and national bodies — factually
+stable, high-search UPSC current-affairs topics. Reuses _gen_topics.py template.
+Run from repo root: python3 _gen_ca.py
+"""
+import os, importlib.util
+spec = importlib.util.spec_from_file_location("gt", os.path.join(os.path.dirname(os.path.abspath(__file__)), "_gen_topics.py"))
+gt = importlib.util.module_from_spec(spec); spec.loader.exec_module(gt)
+TMPL, esc, BASE, TODAY, ROOT = gt.TMPL, gt.esc, gt.BASE, gt.TODAY, gt.ROOT
+
+CA = [
+ {"slug":"world-health-organization-who","tag":"Organisation","read":"5 min read","cta":"/pyq/",
+  "title":"World Health Organization (WHO): Role and Structure","kw":"WHO UPSC, World Health Organization, WHO functions, UN specialised agency, global health",
+  "desc":"WHO explained for UPSC — the UN specialised agency for international public health, its headquarters, functions and role in disease control.",
+  "intro":"The World Health Organization (WHO) is the United Nations specialised agency responsible for international public health, established in 1948 and headquartered in Geneva, Switzerland.",
+  "sec":[("Role and functions","WHO directs and coordinates global health, sets norms and standards, monitors health trends, coordinates responses to health emergencies and pandemics, and supports countries in strengthening health systems. Its decision-making body is the World Health Assembly."),
+    ("Significance for India","WHO publishes health guidelines, classifies diseases (ICD), and works with India on immunisation, disease elimination and health data. India is a founding member.")],
+  "why":"WHO's status as a UN specialised agency, its headquarters and its role in health emergencies are commonly tested in Prelims and used in Mains health answers.",
+  "faq":[("Where is the WHO headquartered?","In Geneva, Switzerland."),("What is the decision-making body of WHO?","The World Health Assembly.")]},
+
+ {"slug":"international-monetary-fund-imf","tag":"Organisation","read":"5 min read","cta":"/pyq/economy/",
+  "title":"International Monetary Fund (IMF): Functions Explained","kw":"IMF UPSC, International Monetary Fund, SDR, Bretton Woods, balance of payments",
+  "desc":"IMF explained for UPSC — the Bretton Woods institution that promotes global monetary cooperation, provides balance-of-payments support and issues Special Drawing Rights.",
+  "intro":"The International Monetary Fund (IMF) is an international organisation established in 1944 at the Bretton Woods Conference to promote global monetary cooperation and financial stability. It is headquartered in Washington, D.C.",
+  "sec":[("Core functions","The IMF oversees the international monetary system, provides financial assistance to countries facing balance-of-payments problems, and offers technical advice and surveillance of member economies."),
+    ("Special Drawing Rights","The IMF created the Special Drawing Right (SDR), an international reserve asset whose value is based on a basket of major currencies, including the Indian rupee's basket partners.")],
+  "why":"The IMF's Bretton Woods origin, SDR and balance-of-payments role are frequently tested Economy and IR facts.",
+  "faq":[("What is the SDR?","The Special Drawing Right, an international reserve asset created by the IMF, valued on a basket of major currencies."),("Where is the IMF headquartered?","In Washington, D.C., United States.")]},
+
+ {"slug":"world-bank-explained","tag":"Organisation","read":"5 min read","cta":"/pyq/economy/",
+  "title":"World Bank Group: Structure and Role Explained","kw":"World Bank UPSC, World Bank Group, IBRD IDA, Bretton Woods, development finance",
+  "desc":"The World Bank explained for UPSC — the Bretton Woods development institution, its five arms (IBRD, IDA, IFC, MIGA, ICSID), and its role in development finance.",
+  "intro":"The World Bank is an international financial institution that provides loans and grants to developing countries for development projects. It was established at the 1944 Bretton Woods Conference.",
+  "sec":[("The five institutions","The World Bank Group has five arms: the IBRD (loans to middle-income countries), IDA (concessional finance to the poorest), IFC (private sector), MIGA (guarantees) and ICSID (investment dispute settlement)."),
+    ("Reports","The Bank publishes influential reports and data, and funds infrastructure, health, education and poverty-reduction projects worldwide, including in India.")],
+  "why":"The World Bank's arms (especially IBRD and IDA) and its Bretton Woods origin are standard Economy Prelims content.",
+  "faq":[("How many institutions make up the World Bank Group?","Five — IBRD, IDA, IFC, MIGA and ICSID."),("Which World Bank arm lends to the poorest countries?","The International Development Association (IDA).")]},
+
+ {"slug":"world-trade-organization-wto","tag":"Organisation","read":"5 min read","cta":"/pyq/economy/",
+  "title":"World Trade Organization (WTO): Role Explained","kw":"WTO UPSC, World Trade Organization, GATT, trade rules, dispute settlement",
+  "desc":"WTO explained for UPSC — the global body that regulates international trade, its origin from GATT, and its dispute-settlement mechanism.",
+  "intro":"The World Trade Organization (WTO) is the international body that sets and enforces the rules of global trade. It came into being in 1995, succeeding the General Agreement on Tariffs and Trade (GATT).",
+  "sec":[("What it does","The WTO administers trade agreements, provides a forum for trade negotiations, and settles disputes between members through its Dispute Settlement Body. Decisions are generally taken by consensus."),
+    ("Key issues for India","India engages on agriculture, public stockholding for food security, and special and differential treatment for developing countries.")],
+  "why":"The WTO's 1995 origin from GATT, its dispute-settlement role and consensus decision-making are commonly asked in Prelims and Mains.",
+  "faq":[("What did the WTO succeed?","The General Agreement on Tariffs and Trade (GATT), in 1995."),("How does the WTO settle trade disputes?","Through its Dispute Settlement Body (DSB).")]},
+
+ {"slug":"unesco-explained","tag":"Organisation","read":"5 min read","cta":"/pyq/history/",
+  "title":"UNESCO: World Heritage and Its Role Explained","kw":"UNESCO UPSC, World Heritage Sites, UN education science culture, intangible heritage",
+  "desc":"UNESCO explained for UPSC — the UN agency for education, science and culture, and its World Heritage and Intangible Cultural Heritage lists.",
+  "intro":"UNESCO (United Nations Educational, Scientific and Cultural Organization) is the UN specialised agency that promotes cooperation in education, science, culture and communication. It is headquartered in Paris.",
+  "sec":[("World Heritage","UNESCO designates World Heritage Sites of outstanding cultural or natural value, and maintains a list of Intangible Cultural Heritage. India has numerous inscribed sites and traditions."),
+    ("Broader role","It works on literacy, girls' education, biosphere reserves (Man and the Biosphere programme) and global scientific cooperation.")],
+  "why":"UNESCO World Heritage Sites and Intangible Cultural Heritage from India are among the most reliably tested Art & Culture facts.",
+  "faq":[("Where is UNESCO headquartered?","In Paris, France."),("What does UNESCO's World Heritage list recognise?","Sites of outstanding cultural or natural value to humanity.")]},
+
+ {"slug":"international-labour-organization-ilo","tag":"Organisation","read":"5 min read","cta":"/pyq/",
+  "title":"International Labour Organization (ILO) Explained","kw":"ILO UPSC, International Labour Organization, tripartite, labour standards, decent work",
+  "desc":"ILO explained for UPSC — the tripartite UN agency setting international labour standards, and India's status as a founding member.",
+  "intro":"The International Labour Organization (ILO) is a UN specialised agency that sets international labour standards and promotes decent work. Founded in 1919 under the Treaty of Versailles, it is the only tripartite UN agency.",
+  "sec":[("Tripartite structure","The ILO uniquely brings together governments, employers and workers of its member states to shape labour policies and conventions."),
+    ("India and the ILO","India is a founding member. ILO conventions influence labour laws, and the agency promotes goals like eliminating child labour and forced labour.")],
+  "why":"The ILO's tripartite structure and 1919 founding are classic Prelims facts.",
+  "faq":[("Why is the ILO called tripartite?","Because it brings together governments, employers and workers in its decision-making."),("When was the ILO founded?","In 1919.")]},
+
+ {"slug":"iaea-explained","tag":"Organisation","read":"5 min read","cta":"/pyq/science-technology/",
+  "title":"International Atomic Energy Agency (IAEA) Explained","kw":"IAEA UPSC, International Atomic Energy Agency, nuclear safeguards, Atoms for Peace, NPT",
+  "desc":"IAEA explained for UPSC — the 'Atoms for Peace' organisation that promotes peaceful nuclear use and applies safeguards against weapons proliferation.",
+  "intro":"The International Atomic Energy Agency (IAEA) is an international organisation that promotes the peaceful use of nuclear energy and inhibits its use for military purposes. Established in 1957, it is headquartered in Vienna.",
+  "sec":[("Safeguards","The IAEA applies safeguards and inspections to ensure nuclear material is not diverted to weapons. India has placed some civilian reactors under IAEA safeguards under its civil nuclear agreements."),
+    ("Reporting","Though autonomous, the IAEA reports to both the UN General Assembly and the Security Council. It is often called the world's 'Atoms for Peace' organisation.")],
+  "why":"IAEA safeguards, its Vienna headquarters and its link to India's civil nuclear reactors are commonly tested Science & Technology facts.",
+  "faq":[("Where is the IAEA headquartered?","In Vienna, Austria."),("What is the main safeguards role of the IAEA?","To ensure nuclear material and technology are used for peaceful purposes and not diverted to weapons.")]},
+
+ {"slug":"opec-explained","tag":"Organisation","read":"4 min read","cta":"/pyq/economy/",
+  "title":"OPEC Explained: The Oil Producers' Cartel","kw":"OPEC UPSC, Organization Petroleum Exporting Countries, crude oil prices, OPEC plus",
+  "desc":"OPEC explained for UPSC — the intergovernmental organisation of major oil-exporting countries that coordinates petroleum policies and influences crude prices.",
+  "intro":"The Organization of the Petroleum Exporting Countries (OPEC) is an intergovernmental organisation of major oil-exporting nations, founded in 1960 and headquartered in Vienna.",
+  "sec":[("Purpose","OPEC coordinates and unifies the petroleum policies of its members to stabilise oil markets and secure fair prices, giving it significant influence over global crude oil supply."),
+    ("OPEC+ and India","'OPEC+' includes non-OPEC producers like Russia. As a large oil importer, India's economy is sensitive to OPEC production decisions and oil prices.")],
+  "why":"OPEC's role in oil prices and its impact on India's import bill and inflation make it a recurring current-affairs and Economy topic.",
+  "faq":[("What is OPEC?","An intergovernmental organisation of major oil-exporting countries that coordinates petroleum policies."),("What is OPEC+?","OPEC plus additional oil-producing countries such as Russia that coordinate on output.")]},
+
+ {"slug":"asean-explained","tag":"Organisation","read":"5 min read","cta":"/pyq/",
+  "title":"ASEAN Explained: Members and India's Ties","kw":"ASEAN UPSC, Association Southeast Asian Nations, Act East Policy, ASEAN members",
+  "desc":"ASEAN explained for UPSC — the Southeast Asian regional grouping, its members, and India's engagement through the Act East Policy.",
+  "intro":"The Association of Southeast Asian Nations (ASEAN) is a regional grouping formed in 1967 to promote economic growth, stability and cooperation in Southeast Asia.",
+  "sec":[("Members","ASEAN comprises ten member states, including Indonesia, Malaysia, Singapore, Thailand, the Philippines, Vietnam and others. Its secretariat is in Jakarta."),
+    ("India and ASEAN","India is a dialogue partner and engages ASEAN centrally through its Act East Policy, cooperating on trade, connectivity and maritime security in the Indo-Pacific.")],
+  "why":"ASEAN's membership, Act East Policy and Indo-Pacific relevance are common IR current-affairs topics.",
+  "faq":[("When was ASEAN formed?","In 1967."),("How does India engage ASEAN?","Primarily through its Act East Policy as a dialogue partner.")]},
+
+ {"slug":"saarc-explained","tag":"Organisation","read":"4 min read","cta":"/pyq/",
+  "title":"SAARC Explained: South Asian Regional Cooperation","kw":"SAARC UPSC, South Asian Association Regional Cooperation, SAARC members, regional grouping",
+  "desc":"SAARC explained for UPSC — the South Asian regional grouping, its eight members, and its objectives and challenges.",
+  "intro":"The South Asian Association for Regional Cooperation (SAARC) is a regional intergovernmental organisation of South Asian nations, established in 1985. Its secretariat is in Kathmandu.",
+  "sec":[("Members","SAARC has eight members: Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan and Sri Lanka."),
+    ("Objectives and challenges","It aims to promote economic and regional integration, but progress has been slowed by political tensions among members. Decisions are taken unanimously.")],
+  "why":"SAARC's members, its 1985 founding and its challenges are frequently tested IR facts.",
+  "faq":[("How many members does SAARC have?","Eight."),("Where is the SAARC secretariat located?","In Kathmandu, Nepal.")]},
+
+ {"slug":"bimstec-explained","tag":"Organisation","read":"4 min read","cta":"/pyq/",
+  "title":"BIMSTEC Explained: Bay of Bengal Cooperation","kw":"BIMSTEC UPSC, Bay of Bengal, regional grouping, BIMSTEC members, Act East",
+  "desc":"BIMSTEC explained for UPSC — the Bay of Bengal regional grouping connecting South and Southeast Asia, its members and significance for India.",
+  "intro":"BIMSTEC (Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation) is a regional organisation linking countries around the Bay of Bengal, bridging South and Southeast Asia.",
+  "sec":[("Members","It has seven members: Bangladesh, Bhutan, India, Myanmar, Nepal, Sri Lanka and Thailand. Its secretariat is in Dhaka."),
+    ("Why it matters for India","BIMSTEC has gained importance as a platform for regional cooperation, aligning with India's Act East and Neighbourhood First policies, especially given SAARC's stalemate.")],
+  "why":"BIMSTEC's members, Bay of Bengal focus and its rise relative to SAARC are current IR topics.",
+  "faq":[("How many members does BIMSTEC have?","Seven."),("Which two regions does BIMSTEC connect?","South Asia and Southeast Asia, around the Bay of Bengal.")]},
+
+ {"slug":"shanghai-cooperation-organisation-sco","tag":"Organisation","read":"5 min read","cta":"/pyq/",
+  "title":"Shanghai Cooperation Organisation (SCO) Explained","kw":"SCO UPSC, Shanghai Cooperation Organisation, Eurasian security, SCO members, RATS",
+  "desc":"SCO explained for UPSC — the Eurasian political, economic and security organisation, its members, and India's membership.",
+  "intro":"The Shanghai Cooperation Organisation (SCO) is a Eurasian political, economic and security organisation founded in 2001, headquartered in Beijing.",
+  "sec":[("Members and focus","The SCO focuses on regional security, counter-terrorism and economic cooperation across Eurasia. India became a full member in 2017. It has a Regional Anti-Terrorist Structure (RATS)."),
+    ("Significance","The SCO covers a vast area and population, and gives India a platform to engage Central Asia, Russia and China on security and connectivity.")],
+  "why":"India's SCO membership, RATS and the grouping's Eurasian security focus are common IR current-affairs points.",
+  "faq":[("When did India become a full member of the SCO?","In 2017."),("What is RATS in the SCO?","The Regional Anti-Terrorist Structure, which coordinates counter-terrorism cooperation.")]},
+
+ {"slug":"human-development-index-hdi","tag":"Index","read":"5 min read","cta":"/pyq/economy/",
+  "title":"Human Development Index (HDI) Explained","kw":"HDI UPSC, Human Development Index, UNDP, life expectancy education income, human development report",
+  "desc":"HDI explained for UPSC — the UNDP's composite measure of human development based on health, education and income.",
+  "intro":"The Human Development Index (HDI) is a composite measure of average achievement in human development, published by the United Nations Development Programme (UNDP) in its Human Development Report.",
+  "sec":[("Three dimensions","HDI combines three dimensions: a long and healthy life (life expectancy at birth), knowledge (mean and expected years of schooling), and a decent standard of living (Gross National Income per capita)."),
+    ("Why it matters","HDI shifts the development focus from income alone to people's capabilities, and countries are ranked as low, medium, high or very high human development.")],
+  "why":"HDI's publishing body (UNDP) and its three dimensions are among the most frequently tested index facts.",
+  "faq":[("Who publishes the Human Development Index?","The United Nations Development Programme (UNDP)."),("What three dimensions make up the HDI?","Health (life expectancy), education (years of schooling) and income (GNI per capita).")]},
+
+ {"slug":"global-hunger-index","tag":"Index","read":"4 min read","cta":"/pyq/economy/",
+  "title":"Global Hunger Index (GHI) Explained","kw":"Global Hunger Index UPSC, GHI indicators, undernourishment, child stunting wasting, hunger measure",
+  "desc":"The Global Hunger Index explained for UPSC — how it measures hunger using four indicators, and who publishes it.",
+  "intro":"The Global Hunger Index (GHI) is a tool that measures and tracks hunger at global, regional and national levels, published jointly by Concern Worldwide and Welthungerhilfe.",
+  "sec":[("Four indicators","The GHI is based on four indicators: undernourishment, child stunting, child wasting and child mortality. A higher score indicates more severe hunger."),
+    ("Interpretation","The index is used to compare hunger across countries and over time, though methodology and data sources are sometimes debated by governments.")],
+  "why":"The GHI's four indicators and publishers are commonly tested, and India's ranking often features in current affairs.",
+  "faq":[("What indicators does the Global Hunger Index use?","Undernourishment, child stunting, child wasting and child mortality."),("Who publishes the Global Hunger Index?","Concern Worldwide and Welthungerhilfe.")]},
+
+ {"slug":"global-innovation-index","tag":"Index","read":"4 min read","cta":"/pyq/",
+  "title":"Global Innovation Index (GII) Explained","kw":"Global Innovation Index UPSC, GII WIPO, innovation ranking, R&D",
+  "desc":"The Global Innovation Index explained for UPSC — the WIPO ranking of economies by innovation capacity and outputs.",
+  "intro":"The Global Innovation Index (GII) ranks world economies according to their innovation capabilities and results. It is published by the World Intellectual Property Organization (WIPO).",
+  "sec":[("What it measures","The GII assesses innovation inputs (like institutions, human capital, infrastructure and market sophistication) and outputs (knowledge, technology and creative outputs)."),
+    ("India's trajectory","India has steadily improved its GII ranking over the years, reflecting growing innovation and a strong startup ecosystem.")],
+  "why":"The GII's publisher (WIPO) and India's rising rank are common current-affairs facts.",
+  "faq":[("Who publishes the Global Innovation Index?","The World Intellectual Property Organization (WIPO)."),("What does the GII measure?","Innovation inputs and outputs across economies.")]},
+
+ {"slug":"world-happiness-report","tag":"Index","read":"4 min read","cta":"/pyq/",
+  "title":"World Happiness Report Explained","kw":"World Happiness Report UPSC, happiness index, SDSN, well-being ranking",
+  "desc":"The World Happiness Report explained for UPSC — how it ranks countries by self-reported well-being and the factors it considers.",
+  "intro":"The World Happiness Report ranks countries by how happy their citizens perceive themselves to be, based on survey data. It is published under the UN Sustainable Development Solutions Network (SDSN).",
+  "sec":[("Factors considered","The report links happiness to factors such as GDP per capita, social support, healthy life expectancy, freedom to make life choices, generosity and perceptions of corruption."),
+    ("Significance","It highlights that well-being depends on more than income, informing policy debates on quality of life.")],
+  "why":"The report's publisher and its well-being factors sometimes appear in current-affairs questions.",
+  "faq":[("Who publishes the World Happiness Report?","The UN Sustainable Development Solutions Network (SDSN)."),("Is happiness in the report based only on income?","No. It also considers social support, life expectancy, freedom, generosity and corruption perceptions.")]},
+
+ {"slug":"press-freedom-index","tag":"Index","read":"4 min read","cta":"/pyq/",
+  "title":"World Press Freedom Index Explained","kw":"Press Freedom Index UPSC, Reporters Without Borders, RSF, media freedom",
+  "desc":"The World Press Freedom Index explained for UPSC — the annual ranking of press freedom published by Reporters Without Borders.",
+  "intro":"The World Press Freedom Index is an annual ranking of countries by the degree of freedom available to journalists and media. It is published by Reporters Without Borders (RSF).",
+  "sec":[("What it assesses","The index evaluates media independence, pluralism, the legislative environment, transparency and the safety of journalists."),
+    ("Debate","Governments sometimes contest the methodology, but the index is widely cited in discussions on media freedom and democracy.")],
+  "why":"The publisher (Reporters Without Borders) and the index's link to democracy and rights make it a recurring current-affairs point.",
+  "faq":[("Who publishes the World Press Freedom Index?","Reporters Without Borders (RSF)."),("What does the Press Freedom Index measure?","The freedom and safety available to journalists and media in each country.")]},
+
+ {"slug":"corruption-perceptions-index","tag":"Index","read":"4 min read","cta":"/pyq/",
+  "title":"Corruption Perceptions Index (CPI) Explained","kw":"Corruption Perceptions Index UPSC, Transparency International, CPI corruption ranking",
+  "desc":"The Corruption Perceptions Index explained for UPSC — how Transparency International ranks countries by perceived public-sector corruption.",
+  "intro":"The Corruption Perceptions Index (CPI) ranks countries by their perceived levels of public-sector corruption, based on expert assessments and surveys. It is published by Transparency International.",
+  "sec":[("How it works","Countries are scored on a scale where a higher score means cleaner (less corrupt) and a lower score means more corrupt. It is based on perceptions, not direct measurement of corruption."),
+    ("Relevance","The CPI is used in governance and ethics discussions and to track anti-corruption progress.")],
+  "why":"The CPI's publisher (Transparency International) and its perception-based nature are testable governance facts.",
+  "faq":[("Who publishes the Corruption Perceptions Index?","Transparency International."),("Does the CPI measure actual corruption?","No, it measures perceived public-sector corruption based on expert and survey data.")]},
+
+ {"slug":"multidimensional-poverty-index","tag":"Index","read":"4 min read","cta":"/pyq/economy/",
+  "title":"Multidimensional Poverty Index (MPI) Explained","kw":"MPI UPSC, Multidimensional Poverty Index, UNDP OPHI, health education living standards",
+  "desc":"The Multidimensional Poverty Index explained for UPSC — how it measures poverty beyond income across health, education and living standards.",
+  "intro":"The global Multidimensional Poverty Index (MPI) measures poverty across multiple dimensions, not just income. It is published by the UNDP and the Oxford Poverty and Human Development Initiative (OPHI).",
+  "sec":[("Three dimensions","The MPI uses three dimensions — health, education and standard of living — captured through indicators like nutrition, schooling, sanitation, drinking water and assets."),
+    ("India's version","NITI Aayog also produces a National MPI for India, which has shown a significant fall in multidimensional poverty.")],
+  "why":"The MPI's three dimensions and NITI Aayog's National MPI are commonly tested Economy and governance facts.",
+  "faq":[("What three dimensions does the MPI use?","Health, education and standard of living."),("Who produces the National MPI for India?","NITI Aayog.")]},
+
+ {"slug":"environmental-performance-index","tag":"Index","read":"4 min read","cta":"/pyq/environment/",
+  "title":"Environmental Performance Index (EPI) Explained","kw":"Environmental Performance Index UPSC, EPI Yale, environment ranking, climate policy",
+  "desc":"The Environmental Performance Index explained for UPSC — the ranking of countries on environmental health and ecosystem vitality.",
+  "intro":"The Environmental Performance Index (EPI) ranks countries on environmental health and ecosystem vitality. It is produced by researchers at Yale and Columbia universities.",
+  "sec":[("What it measures","The EPI uses indicators across categories such as climate change mitigation, environmental health (air quality, sanitation) and ecosystem vitality (biodiversity, forests)."),
+    ("Debate","India has questioned certain indicators and weightings, arguing they do not fully reflect developing-country contexts.")],
+  "why":"The EPI's producers and its environmental indicators feature in Environment current-affairs questions.",
+  "faq":[("Who produces the Environmental Performance Index?","Researchers at Yale and Columbia universities."),("What does the EPI assess?","Environmental health and ecosystem vitality across countries.")]},
+
+ {"slug":"securities-and-exchange-board-of-india-sebi","tag":"Body","read":"5 min read","cta":"/pyq/economy/",
+  "title":"SEBI Explained: India's Capital Markets Regulator","kw":"SEBI UPSC, Securities and Exchange Board of India, capital market regulator, statutory body",
+  "desc":"SEBI explained for UPSC — the statutory regulator of India's securities and capital markets, its objectives and functions.",
+  "intro":"The Securities and Exchange Board of India (SEBI) is the statutory regulator of the securities and capital markets in India, established in 1992 under the SEBI Act.",
+  "sec":[("Objectives","SEBI's core objectives are to protect investors, promote the development of the securities market, and regulate it to ensure fairness and transparency."),
+    ("Functions","It regulates stock exchanges, mutual funds, brokers and other intermediaries, curbs insider trading and unfair practices, and has quasi-legislative, executive and judicial powers.")],
+  "why":"SEBI's statutory status, its 1992 establishment and its three-fold powers are frequently tested Economy and Polity facts.",
+  "faq":[("What does SEBI regulate?","India's securities and capital markets, including stock exchanges and market intermediaries."),("Is SEBI a statutory body?","Yes. SEBI is a statutory body established under the SEBI Act, 1992.")]},
+
+ {"slug":"competition-commission-of-india-cci","tag":"Body","read":"4 min read","cta":"/pyq/economy/",
+  "title":"Competition Commission of India (CCI) Explained","kw":"CCI UPSC, Competition Commission India, Competition Act 2002, anti-competitive, statutory body",
+  "desc":"The CCI explained for UPSC — the statutory body that enforces competition law and prevents anti-competitive practices in India.",
+  "intro":"The Competition Commission of India (CCI) is a statutory body established under the Competition Act, 2002, to promote and sustain competition in markets.",
+  "sec":[("Mandate","The CCI prevents practices that have an adverse effect on competition — such as cartels and abuse of dominant position — and regulates combinations (mergers and acquisitions) above certain thresholds."),
+    ("Goal","Its aim is to protect the interests of consumers and ensure freedom of trade in Indian markets.")],
+  "why":"The CCI's statutory basis (Competition Act, 2002) and its role against anti-competitive practices are testable Economy and governance facts.",
+  "faq":[("Under which law is the CCI established?","The Competition Act, 2002."),("What does the CCI prevent?","Anti-competitive practices such as cartels and abuse of dominant market position.")]},
+
+ {"slug":"national-human-rights-commission-nhrc","tag":"Body","read":"4 min read","cta":"/pyq/polity/",
+  "title":"National Human Rights Commission (NHRC) Explained","kw":"NHRC UPSC, National Human Rights Commission, Protection of Human Rights Act, statutory body",
+  "desc":"The NHRC explained for UPSC — the statutory watchdog for human rights in India, its composition and its recommendatory powers.",
+  "intro":"The National Human Rights Commission (NHRC) is a statutory body established in 1993 under the Protection of Human Rights Act to protect and promote human rights in India.",
+  "sec":[("Composition","It is a multi-member body headed by a chairperson (a former Chief Justice of India or Supreme Court judge) and includes other members with relevant expertise."),
+    ("Powers","The NHRC can inquire into human-rights violations, but its recommendations are advisory, not binding — it cannot directly punish violators.")],
+  "why":"The NHRC's statutory (not constitutional) status, its 1993 establishment and its recommendatory powers are commonly tested Polity facts.",
+  "faq":[("Is the NHRC a constitutional body?","No. The NHRC is a statutory body established under the Protection of Human Rights Act, 1993."),("Are NHRC recommendations binding?","No. Its recommendations are advisory in nature.")]},
+
+ {"slug":"central-vigilance-commission-cvc","tag":"Body","read":"4 min read","cta":"/pyq/polity/",
+  "title":"Central Vigilance Commission (CVC) Explained","kw":"CVC UPSC, Central Vigilance Commission, anti-corruption, statutory body, Santhanam Committee",
+  "desc":"The CVC explained for UPSC — India's apex anti-corruption body, its statutory status and its role in vigilance administration.",
+  "intro":"The Central Vigilance Commission (CVC) is the apex vigilance institution in India, created in 1964 on the recommendation of the Santhanam Committee and given statutory status by the CVC Act, 2003.",
+  "sec":[("Mandate","The CVC advises and guides central government agencies on vigilance matters and monitors corruption-related issues in the central government."),
+    ("Composition","It is a multi-member body consisting of a Central Vigilance Commissioner and Vigilance Commissioners, appointed by the President.")],
+  "why":"The CVC's origin (Santhanam Committee), its statutory status and its anti-corruption role are testable Polity facts.",
+  "faq":[("On whose recommendation was the CVC set up?","The Santhanam Committee's."),("Is the CVC a statutory body?","Yes. It was given statutory status by the CVC Act, 2003.")]},
+
+ {"slug":"lokpal-explained","tag":"Body","read":"5 min read","cta":"/pyq/polity/",
+  "title":"Lokpal and Lokayuktas Explained","kw":"Lokpal UPSC, Lokayukta, Lokpal Act 2013, anti-corruption ombudsman",
+  "desc":"Lokpal explained for UPSC — the anti-corruption ombudsman at the central level, its statutory basis and jurisdiction.",
+  "intro":"The Lokpal is an anti-corruption ombudsman at the central level, established under the Lokpal and Lokayuktas Act, 2013, to inquire into corruption allegations against public functionaries.",
+  "sec":[("Jurisdiction","The Lokpal's jurisdiction extends to the Prime Minister (with safeguards), ministers, Members of Parliament and central government employees, in relation to corruption allegations."),
+    ("Lokayuktas","States are required to set up Lokayuktas to perform a similar ombudsman role at the state level.")],
+  "why":"The Lokpal's statutory basis (2013 Act) and its jurisdiction are commonly tested governance topics.",
+  "faq":[("Under which law is the Lokpal established?","The Lokpal and Lokayuktas Act, 2013."),("What is a Lokayukta?","A state-level anti-corruption ombudsman corresponding to the Lokpal at the central level.")]},
+
+ {"slug":"right-to-information-act","tag":"Body","read":"5 min read","cta":"/pyq/polity/",
+  "title":"Right to Information Act (RTI) Explained","kw":"RTI Act UPSC, Right to Information 2005, transparency, public authority, PIO",
+  "desc":"The RTI Act explained for UPSC — how it empowers citizens to seek information from public authorities and strengthens transparency.",
+  "intro":"The Right to Information (RTI) Act, 2005, empowers citizens to request information from public authorities, promoting transparency and accountability in governance.",
+  "sec":[("How it works","Citizens can file requests with a Public Information Officer (PIO), who must generally respond within a set time. Certain categories of information are exempt for reasons like national security."),
+    ("Institutions","Central and State Information Commissions hear appeals and complaints, functioning as the enforcing authorities under the Act.")],
+  "why":"The RTI Act's 2005 enactment, the PIO mechanism and Information Commissions are frequently tested Polity and governance facts.",
+  "faq":[("When was the RTI Act enacted?","In 2005."),("Who handles RTI requests in a public authority?","The Public Information Officer (PIO).")]},
+
+ {"slug":"attorney-general-of-india","tag":"Body","read":"4 min read","cta":"/pyq/polity/",
+  "title":"Attorney General of India Explained","kw":"Attorney General UPSC, Article 76, chief law officer, AG of India",
+  "desc":"The Attorney General explained for UPSC — the highest law officer of the Union under Article 76, and their role and status.",
+  "intro":"The Attorney General of India is the highest law officer of the Union, provided for under Article 76 of the Constitution.",
+  "sec":[("Role","The Attorney General advises the Government of India on legal matters and represents it in the Supreme Court and High Courts. They have the right of audience in all courts and can take part in parliamentary proceedings without a right to vote."),
+    ("Appointment","Appointed by the President, the Attorney General holds office during the pleasure of the President and must be qualified to be a Supreme Court judge.")],
+  "why":"Article 76, the AG's role and their status are common Polity Prelims facts.",
+  "faq":[("Under which article is the Attorney General provided for?","Article 76 of the Constitution."),("Who appoints the Attorney General of India?","The President of India.")]},
+
+ {"slug":"telecom-regulatory-authority-of-india-trai","tag":"Body","read":"4 min read","cta":"/pyq/",
+  "title":"TRAI Explained: India's Telecom Regulator","kw":"TRAI UPSC, Telecom Regulatory Authority of India, statutory body, telecom regulation",
+  "desc":"TRAI explained for UPSC — the statutory regulator of India's telecom sector, its establishment and functions.",
+  "intro":"The Telecom Regulatory Authority of India (TRAI) is the statutory body that regulates the telecommunications sector in India, established under the TRAI Act, 1997.",
+  "sec":[("Functions","TRAI regulates telecom services and tariffs, promotes fair competition, protects consumer interests, and makes recommendations on issues like licensing and spectrum."),
+    ("Dispute settlement","Telecom disputes are handled by a separate body, the Telecom Disputes Settlement and Appellate Tribunal (TDSAT).")],
+  "why":"TRAI's statutory basis (1997 Act) and the role of TDSAT are testable governance and Science & Technology facts.",
+  "faq":[("Under which law is TRAI established?","The TRAI Act, 1997."),("Which body settles telecom disputes?","The Telecom Disputes Settlement and Appellate Tribunal (TDSAT).")]},
+]
+
+def build(t, idx):
+    sections = "".join(f'        <h2>{h}</h2>\n        <p>{p}</p>\n' for h,p in t["sec"])
+    faq_html = "".join('          <details><summary>{}</summary><p>{}</p></details>\n'.format(q,a) for q,a in t["faq"])
+    faq_ld = ",".join('{{"@type":"Question","name":"{}","acceptedAnswer":{{"@type":"Answer","text":"{}"}}}}'.format(esc(q),esc(a)) for q,a in t["faq"])
+    rel=""
+    for j in range(1,4):
+        r=CA[(idx+j)%len(CA)]
+        rel+=f'<a href="/blog/{r["slug"]}/"><span class="tag">{r["tag"]}</span><b>{r["title"].split(":")[0]}</b></a>'
+    return TMPL.format(base=BASE, slug=t["slug"], title=t["title"], h1=t["title"].split(":")[0] if ":" in t["title"] else t["title"],
+        desc=t["desc"], kw=t["kw"], tag=t["tag"], read=t["read"], today=TODAY, intro=t["intro"],
+        sections=sections, why=t["why"], cta=t["cta"], faq_html=faq_html, faq_ld=faq_ld, related=rel)
+
+def main():
+    for i,t in enumerate(CA):
+        d=os.path.join(ROOT,"blog",t["slug"]); os.makedirs(d,exist_ok=True)
+        open(os.path.join(d,"index.html"),"w").write(build(t,i))
+    print("wrote",len(CA),"current-affairs topic posts")
+
+if __name__=="__main__":
+    main()
