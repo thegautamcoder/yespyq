@@ -100,6 +100,11 @@ BY_YEAR = defaultdict(list)
 for x in ITEMS:
     if x.get('y'): BY_YEAR[x['y']].append(x)
 YEARS = sorted(BY_YEAR, reverse=True)
+BY_YS = defaultdict(list)
+for x in ITEMS:
+    if x.get('y'): BY_YS[(x['y'], x['s'])].append(x)
+# up to 100 year x subject combos with >=5 questions, recent years first
+YS_COMBOS = sorted([k for k, v in BY_YS.items() if len(v) >= 5], key=lambda k: (-k[0], -len(BY_YS[k])))[:100]
 
 HEADER = '''  <header class="site-header">
     <div class="container header-inner">
@@ -274,6 +279,8 @@ def year_index(year):
         listing += '</ul>'
     # prev/next year links for crawl depth
     yr_links = " · ".join(f'<a href="/pyq/year/{y}/">UPSC {y}</a>' for y in YEARS[:14])
+    sub_links = "".join(f'<a href="/pyq/year/{year}/{sid}/">{SUB[sid][1]} {esc(SUB[sid][0].split(" ")[0])} {year}</a>'
+                        for sid in SUB if (year, sid) in set(YS_COMBOS))
     body = f'''{HEADER}
   <main>
     <section class="blog-hero"><div class="container"><span class="pill">UPSC CSE Prelims · {year}</span>
@@ -281,10 +288,40 @@ def year_index(year):
       <p>All {len(items)} solved UPSC (IAS) Prelims {year} previous year questions, subject-wise, each with the correct answer and a detailed explanation. Click any question for its full solution.</p></div></section>
     <div class="container">
       <p class="pyq-cross">Other years: {yr_links}</p>
+      {"<div class='seo-links'>" + sub_links + "</div>" if sub_links else ""}
       {listing}
       <div class="prose" style="width:min(740px,92vw);margin:1rem auto 3rem">
         <p>Looking for more? Browse all <a href="/pyq/">solved UPSC PYQs</a>, go <a href="/subjects/">subject-wise</a>, or take a free <a href="/">10-question quiz</a>.</p>
       </div>
+    </div>
+  </main>
+{FOOTER}
+</body>
+</html>'''
+    return head(title, desc, canonical, schema, "website") + body
+
+def year_subject_index(year, sid):
+    sname, sicon, shub = SUB[sid]
+    short = sname.split(" ")[0]
+    items = BY_YS[(year, sid)]
+    canonical = f"{BASE}/pyq/year/{year}/{sid}/"
+    title = attr(f"UPSC Prelims {year} {short} PYQs — Solved Previous Year Questions | YESPYQ")
+    desc = attr(f"UPSC CSE Prelims {year} {sname} previous year questions (PYQs) — {len(items)} solved IAS {year} {short} questions with correct answers and detailed explanations. Free on YESPYQ.")
+    schema = f'''  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"PYQs","item":"{BASE}/pyq/"}},{{"@type":"ListItem","position":3,"name":"UPSC {year}","item":"{BASE}/pyq/year/{year}/"}},{{"@type":"ListItem","position":4,"name":"{attr(short)}","item":"{canonical}"}}]}}
+  </script>'''
+    listing = '<ul class="pyq-list">'
+    for x in items:
+        listing += f'<li><a href="/pyq/q/{SLUG[x["i"]]}/">{esc(plain(x["q"])[:110])}{"…" if len(plain(x["q"]))>110 else ""}</a></li>'
+    listing += '</ul>'
+    body = f'''{HEADER}
+  <main>
+    <section class="blog-hero"><div class="container"><span class="pill">UPSC CSE Prelims · {year}</span>
+      <h1>UPSC Prelims {year} {esc(short)} — Solved PYQs with Answers</h1>
+      <p>{len(items)} solved UPSC (IAS) Prelims {year} {esc(sname)} previous year questions, each with the correct answer and a detailed explanation.</p></div></section>
+    <div class="container">
+      <p class="pyq-cross"><a href="/pyq/year/{year}/">← All UPSC {year} PYQs</a> · <a href="/pyq/{sid}/">All {esc(short)} PYQs</a> · <a href="/subjects/{shub}/">{esc(short)} strategy</a></p>
+      {listing}
     </div>
   </main>
 {FOOTER}
@@ -338,6 +375,8 @@ def main():
             write(os.path.join(ROOT, "pyq", sid, "index.html"), subject_index(sid))
     for y in YEARS:
         write(os.path.join(ROOT, "pyq", "year", str(y), "index.html"), year_index(y))
+    for (y, sid) in YS_COMBOS:
+        write(os.path.join(ROOT, "pyq", "year", str(y), sid, "index.html"), year_subject_index(y, sid))
     for x in ITEMS:
         write(os.path.join(ROOT, "pyq", "q", SLUG[x['i']], "index.html"), question_page(x))
 
@@ -345,6 +384,7 @@ def main():
     urls = [f"{BASE}/pyq/"]
     urls += [f"{BASE}/pyq/{sid}/" for sid in SUB if BY_SUB[sid]]
     urls += [f"{BASE}/pyq/year/{y}/" for y in YEARS]
+    urls += [f"{BASE}/pyq/year/{y}/{sid}/" for (y, sid) in YS_COMBOS]
     urls += [f"{BASE}/pyq/q/{SLUG[x['i']]}/" for x in ITEMS]
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
