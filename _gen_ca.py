@@ -263,17 +263,7 @@ CA = [
   "faq":[("Under which law is TRAI established?","The TRAI Act, 1997."),("Which body settles telecom disputes?","The Telecom Disputes Settlement and Appellate Tribunal (TDSAT).")]},
 ]
 
-def build(t, idx):
-    sections = "".join(f'        <h2>{h}</h2>\n        <p>{p}</p>\n' for h,p in t["sec"])
-    faq_html = "".join('          <details><summary>{}</summary><p>{}</p></details>\n'.format(q,a) for q,a in t["faq"])
-    faq_ld = ",".join('{{"@type":"Question","name":"{}","acceptedAnswer":{{"@type":"Answer","text":"{}"}}}}'.format(esc(q),esc(a)) for q,a in t["faq"])
-    rel=""
-    for j in range(1,4):
-        r=CA[(idx+j)%len(CA)]
-        rel+=f'<a href="/blog/{r["slug"]}/"><span class="tag">{r["tag"]}</span><b>{r["title"].split(":")[0]}</b></a>'
-    return TMPL.format(base=BASE, slug=t["slug"], title=t["title"], h1=t["title"].split(":")[0] if ":" in t["title"] else t["title"],
-        desc=t["desc"], kw=t["kw"], tag=t["tag"], read=t["read"], today=TODAY, intro=t["intro"],
-        sections=sections, why=t["why"], cta=t["cta"], faq_html=faq_html, faq_ld=faq_ld, related=rel)
+def build(t, idx): return gt.render(t, CA, idx)
 
 def main():
     for i,t in enumerate(CA):

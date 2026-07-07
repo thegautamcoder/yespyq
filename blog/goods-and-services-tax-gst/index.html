@@ -30,8 +30,29 @@
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="/styles.css?v=25" />
   <link rel="stylesheet" href="/blog.css?v=5" />
+  <style>
+    .quick-answer{border:1px solid var(--border,#e2e8f0);background:var(--surface,#f8fafc);border-left:4px solid #2563eb;padding:14px 16px;border-radius:10px;margin:18px 0}
+    .quick-answer .qa-label{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#2563eb;margin-bottom:4px}
+    .quick-answer p{margin:0;font-size:1.02rem;line-height:1.6}
+    .toc{border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:12px 16px 12px 18px;margin:18px 0;background:var(--surface,#f8fafc)}
+    .toc-h{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px;color:var(--muted,#64748b)}
+    .toc ol{margin:0;padding-left:18px}
+    .toc li{margin:3px 0}
+    .toc a{color:#2563eb;text-decoration:none}
+    .toc a:hover{text-decoration:underline}
+    .keyfacts{margin:20px 0}
+    .keyfacts table{width:100%;border-collapse:collapse;font-size:.95rem}
+    .keyfacts th,.keyfacts td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border,#e2e8f0);vertical-align:top}
+    .keyfacts th{width:38%;font-weight:600;color:var(--muted,#475569)}
+    .takeaways{border:1px solid var(--border,#e2e8f0);background:var(--surface,#f8fafc);border-radius:10px;padding:14px 18px;margin:22px 0}
+    .takeaways h2{margin-top:0}
+    .takeaways ul{margin:8px 0 0;padding-left:20px}
+    .takeaways li{margin:6px 0}
+    [data-theme="dark"] .quick-answer,[data-theme="dark"] .toc,[data-theme="dark"] .takeaways{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+    [data-theme="dark"] .keyfacts th,[data-theme="dark"] .keyfacts td{border-color:rgba(255,255,255,.12)}
+  </style>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Article","headline":"Goods and Services Tax (GST)","description":"GST explained for UPSC — the destination-based dual GST model, CGST/SGST/IGST, the GST Council, and why it is called 'one nation, one tax'.","image":"https://yespyq.com/assets/og-image.png","datePublished":"2026-07-05","dateModified":"2026-07-05","inLanguage":"en-IN","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"publisher":{"@type":"EducationalOrganization","name":"YESPYQ","logo":{"@type":"ImageObject","url":"https://yespyq.com/assets/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://yespyq.com/blog/goods-and-services-tax-gst/"}}
+  {"@context":"https://schema.org","@type":"Article","headline":"Goods and Services Tax (GST)","description":"GST explained for UPSC — the destination-based dual GST model, CGST/SGST/IGST, the GST Council, and why it is called 'one nation, one tax'.","image":"https://yespyq.com/assets/og-image.png","datePublished":"2026-07-05","dateModified":"2026-07-05","inLanguage":"en-IN","wordCount":148,"keywords":"GST, Goods and Services Tax, GST UPSC, GST Council, CGST SGST IGST, one nation one tax","articleSection":"Economy","about":{"@type":"Thing","name":"Goods and Services Tax (GST)"},"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"publisher":{"@type":"EducationalOrganization","name":"YESPYQ","logo":{"@type":"ImageObject","url":"https://yespyq.com/assets/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://yespyq.com/blog/goods-and-services-tax-gst/"}}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://yespyq.com/blog/"},{"@type":"ListItem","position":3,"name":"Economy","item":"https://yespyq.com/blog/goods-and-services-tax-gst/"}]}
@@ -54,24 +75,28 @@
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/blog/">Blog</a> › Economy</nav>
       <h1>Goods and Services Tax (GST)</h1>
       <div class="meta"><span>By YESPYQ</span> · <span>Updated July 2026</span> · <span>7 min read</span></div>
+      <div class="quick-answer"><span class="qa-label">Quick answer</span><p>The Goods and Services Tax (GST), launched on 1 July 2017 via the 101st Constitutional Amendment, is a comprehensive, destination-based indirect tax that subsumed most central and state indirect taxes.</p></div>
       <div class="prose">
+        <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol><li><a href="#the-dual-gst-model">The dual GST model</a></li><li><a href="#the-gst-council">The GST Council</a></li><li><a href="#why-it-matters">Why it matters</a></li><li><a href="#faq">FAQs</a></li></ol></nav>
         <p>The Goods and Services Tax (GST), launched on 1 July 2017 via the 101st Constitutional Amendment, is a comprehensive, destination-based indirect tax that subsumed most central and state indirect taxes.</p>
-        <h2>The dual GST model</h2>
+        
+        <h2 id="the-dual-gst-model">The dual GST model</h2>
         <p>India follows a dual GST: on intra-state supplies both Central GST (CGST) and State GST (SGST) apply, while inter-state supplies attract Integrated GST (IGST). It is destination-based, so tax accrues to the consuming state.</p>
-        <h2>The GST Council</h2>
+        <h2 id="the-gst-council">The GST Council</h2>
         <p>The GST Council, a constitutional body chaired by the Union Finance Minister with state finance ministers as members, recommends rates, exemptions and rules — making GST a landmark in cooperative federalism.</p>
-        <h2>Why it matters</h2>
+        <h2 id="why-it-matters">Why it matters</h2>
         <p>By replacing a web of cascading taxes with input tax credit across the supply chain, GST created a common national market, earning the tagline 'one nation, one tax'.</p>
 
-        <h2>Why it matters for UPSC</h2>
+        <h2 id="why-upsc">Why it matters for UPSC</h2>
         <p>GST is core to the Economy syllabus — the dual model, the GST Council's composition and its federal significance appear regularly in Prelims and Mains.</p>
+        
         <div class="cta-box">
           <h3>Practise related UPSC PYQs</h3>
           <p>See how this topic has actually been asked. Solve real UPSC Prelims previous year questions with answers and explanations — free.</p>
           <a href="/pyq/economy/" class="btn btn-primary">Practise PYQs →</a>
         </div>
         <div class="faq">
-          <h2>Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions</h2>
           <details><summary>What are CGST, SGST and IGST?</summary><p>CGST and SGST apply on intra-state supplies; IGST applies on inter-state supplies. GST is destination-based.</p></details>
           <details><summary>Who chairs the GST Council?</summary><p>The Union Finance Minister chairs the GST Council, with state finance ministers as members.</p></details>
 

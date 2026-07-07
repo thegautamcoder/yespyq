@@ -441,8 +441,29 @@ TMPL = """<!DOCTYPE html>
   <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="/styles.css?v=25" />
   <link rel="stylesheet" href="/blog.css?v=5" />
+  <style>
+    .quick-answer{{border:1px solid var(--border,#e2e8f0);background:var(--surface,#f8fafc);border-left:4px solid #2563eb;padding:14px 16px;border-radius:10px;margin:18px 0}}
+    .quick-answer .qa-label{{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#2563eb;margin-bottom:4px}}
+    .quick-answer p{{margin:0;font-size:1.02rem;line-height:1.6}}
+    .toc{{border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:12px 16px 12px 18px;margin:18px 0;background:var(--surface,#f8fafc)}}
+    .toc-h{{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin:0 0 6px;color:var(--muted,#64748b)}}
+    .toc ol{{margin:0;padding-left:18px}}
+    .toc li{{margin:3px 0}}
+    .toc a{{color:#2563eb;text-decoration:none}}
+    .toc a:hover{{text-decoration:underline}}
+    .keyfacts{{margin:20px 0}}
+    .keyfacts table{{width:100%;border-collapse:collapse;font-size:.95rem}}
+    .keyfacts th,.keyfacts td{{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border,#e2e8f0);vertical-align:top}}
+    .keyfacts th{{width:38%;font-weight:600;color:var(--muted,#475569)}}
+    .takeaways{{border:1px solid var(--border,#e2e8f0);background:var(--surface,#f8fafc);border-radius:10px;padding:14px 18px;margin:22px 0}}
+    .takeaways h2{{margin-top:0}}
+    .takeaways ul{{margin:8px 0 0;padding-left:20px}}
+    .takeaways li{{margin:6px 0}}
+    [data-theme="dark"] .quick-answer,[data-theme="dark"] .toc,[data-theme="dark"] .takeaways{{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}}
+    [data-theme="dark"] .keyfacts th,[data-theme="dark"] .keyfacts td{{border-color:rgba(255,255,255,.12)}}
+  </style>
   <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"Article","headline":"{h1}","description":"{desc}","image":"{base}/assets/og-image.png","datePublished":"{today}","dateModified":"{today}","inLanguage":"en-IN","author":{{"@type":"Organization","name":"YESPYQ","url":"{base}/"}},"publisher":{{"@type":"EducationalOrganization","name":"YESPYQ","logo":{{"@type":"ImageObject","url":"{base}/assets/favicon.svg"}}}},"mainEntityOfPage":{{"@type":"WebPage","@id":"{base}/blog/{slug}/"}}}}
+  {{"@context":"https://schema.org","@type":"Article","headline":"{h1}","description":"{desc}","image":"{base}/assets/og-image.png","datePublished":"{today}","dateModified":"{today}","inLanguage":"en-IN","wordCount":{wc},"keywords":"{kw}","articleSection":"{tag}","about":{{"@type":"Thing","name":"{h1}"}},"author":{{"@type":"Organization","name":"YESPYQ","url":"{base}/"}},"publisher":{{"@type":"EducationalOrganization","name":"YESPYQ","logo":{{"@type":"ImageObject","url":"{base}/assets/favicon.svg"}}}},"mainEntityOfPage":{{"@type":"WebPage","@id":"{base}/blog/{slug}/"}}}}
   </script>
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{base}/"}},{{"@type":"ListItem","position":2,"name":"Blog","item":"{base}/blog/"}},{{"@type":"ListItem","position":3,"name":"{tag}","item":"{base}/blog/{slug}/"}}]}}
@@ -465,18 +486,22 @@ TMPL = """<!DOCTYPE html>
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/blog/">Blog</a> › {tag}</nav>
       <h1>{h1}</h1>
       <div class="meta"><span>By YESPYQ</span> · <span>Updated July 2026</span> · <span>{read}</span></div>
+      <div class="quick-answer"><span class="qa-label">Quick answer</span><p>{quick_answer}</p></div>
       <div class="prose">
+        {toc}
         <p>{intro}</p>
+        {keyfacts}
 {sections}
-        <h2>Why it matters for UPSC</h2>
+        <h2 id="why-upsc">Why it matters for UPSC</h2>
         <p>{why}</p>
+        {takeaways}
         <div class="cta-box">
           <h3>Practise related UPSC PYQs</h3>
           <p>See how this topic has actually been asked. Solve real UPSC Prelims previous year questions with answers and explanations — free.</p>
           <a href="{cta}" class="btn btn-primary">Practise PYQs →</a>
         </div>
         <div class="faq">
-          <h2>Frequently asked questions</h2>
+          <h2 id="faq">Frequently asked questions</h2>
 {faq_html}
         </div>
       </div>
@@ -502,18 +527,48 @@ TMPL = """<!DOCTYPE html>
 
 def esc(s): return s.replace('"','\\"')
 
-def build(t, idx):
-    sections = "".join(f'        <h2>{h}</h2>\n        <p>{p}</p>\n' for h,p in t["sec"])
-    faq_html = "".join('          <details><summary>{}</summary><p>{}</p></details>\n'.format(q,a) for q,a in t["faq"])
-    faq_ld = ",".join('{{"@type":"Question","name":"{}","acceptedAnswer":{{"@type":"Answer","text":"{}"}}}}'.format(esc(q),esc(a)) for q,a in t["faq"])
-    # related: next 3 topics (wrap around)
+def _h1(t): return t.get("h1") or (t["title"].split(":")[0].strip() if ":" in t["title"] else t["title"])
+
+def slugify(s):
+    s=re.sub(r'[^a-z0-9]+','-',s.lower()).strip('-')
+    return s[:44] or 'section'
+
+def render(t, Tlist, idx):
+    h1=_h1(t)
+    sec_html=""; toc_items=[]
+    for h,p in t["sec"]:
+        sid=slugify(h)
+        sec_html+=f'        <h2 id="{sid}">{h}</h2>\n        <p>{p}</p>\n'
+        toc_items.append((sid,h))
+    toc_li="".join(f'<li><a href="#{sid}">{h}</a></li>' for sid,h in toc_items)
+    if t.get("take"): toc_li+='<li><a href="#key-takeaways">Key takeaways</a></li>'
+    toc_li+='<li><a href="#faq">FAQs</a></li>'
+    toc=f'<nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ol>{toc_li}</ol></nav>'
+    quick_answer=t.get("tldr") or t["intro"]
+    facts=t.get("facts")
+    if facts:
+        rows="".join(f'<tr><th>{l}</th><td>{v}</td></tr>' for l,v in facts)
+        keyfacts=f'<div class="keyfacts"><h2 id="at-a-glance">Key facts at a glance</h2><table><tbody>{rows}</tbody></table></div>'
+    else: keyfacts=""
+    take=t.get("take")
+    if take:
+        lis="".join(f'<li>{x}</li>' for x in take)
+        takeaways=f'<div class="takeaways"><h2 id="key-takeaways">Key takeaways</h2><ul>{lis}</ul></div>'
+    else: takeaways=""
+    faq_html="".join('          <details><summary>{}</summary><p>{}</p></details>\n'.format(q,a) for q,a in t["faq"])
+    faq_ld=",".join('{{"@type":"Question","name":"{}","acceptedAnswer":{{"@type":"Answer","text":"{}"}}}}'.format(esc(q),esc(a)) for q,a in t["faq"])
     rel=""
     for j in range(1,4):
-        r=T[(idx+j)%len(T)]
-        rel+=f'<a href="/blog/{r["slug"]}/"><span class="tag">{r["tag"]}</span><b>{r["h1"]}</b></a>'
-    return TMPL.format(base=BASE, slug=t["slug"], title=t["title"], h1=t["h1"], desc=t["desc"], kw=t["kw"],
-        tag=t["tag"], read=t["read"], today=TODAY, intro=t["intro"], sections=sections, why=t["why"],
-        cta=t["cta"], faq_html=faq_html, faq_ld=faq_ld, related=rel)
+        r=Tlist[(idx+j)%len(Tlist)]
+        rel+=f'<a href="/blog/{r["slug"]}/"><span class="tag">{r["tag"]}</span><b>{_h1(r)}</b></a>'
+    text=t["intro"]+" "+" ".join(p for _,p in t["sec"])+" "+t["why"]
+    wc=len(re.sub(r'<[^>]+>',' ',text).split())
+    return TMPL.format(base=BASE, slug=t["slug"], title=t["title"], h1=h1, desc=t["desc"], kw=t["kw"],
+        tag=t["tag"], read=t.get("read","6 min read"), today=TODAY, intro=t["intro"], sections=sec_html,
+        why=t["why"], cta=t.get("cta","/pyq/"), faq_html=faq_html, faq_ld=faq_ld, related=rel,
+        toc=toc, quick_answer=quick_answer, keyfacts=keyfacts, takeaways=takeaways, wc=wc)
+
+def build(t, idx): return render(t, T, idx)
 
 def main():
     for i,t in enumerate(T):
