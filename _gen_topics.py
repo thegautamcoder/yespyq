@@ -194,7 +194,9 @@ T = [
   "faq":[("From which country's constitution are DPSP borrowed?","The Directive Principles of State Policy are borrowed from the Constitution of Ireland."),
     ("Are DPSP enforceable in court?","No. Under Article 37, DPSP are non-justiciable, but they are declared fundamental in the governance of the country."),
     ("What are the three classifications of DPSP?","Socialistic principles, Gandhian principles and Liberal-Intellectual principles."),
-    ("Which case linked the FR–DPSP balance to the basic structure?","In Minerva Mills v. Union of India (1980), the Supreme Court held that harmony and balance between Fundamental Rights and Directive Principles is part of the basic structure.")]},
+    ("Which case linked the FR–DPSP balance to the basic structure?","In Minerva Mills v. Union of India (1980), the Supreme Court held that harmony and balance between Fundamental Rights and Directive Principles is part of the basic structure."),
+    ("Which amendment added Article 48A on the environment?","The 42nd Amendment, 1976, added Article 48A, directing the State to protect and improve the environment and to safeguard forests and wildlife."),
+    ("Are Directive Principles superior to Fundamental Rights?","No. The Supreme Court has held that Fundamental Rights and Directive Principles are complementary, and their harmony is part of the basic structure — neither is absolutely superior to the other.")]},
 
  {"slug":"preamble-of-indian-constitution","tag":"Polity","read":"5 min read","cta":"/pyq/polity/",
   "title":"Preamble of the Indian Constitution: Meaning and Keywords",
@@ -214,7 +216,9 @@ T = [
   "faq":[("Which words were added to the Preamble by the 42nd Amendment?","'Socialist', 'Secular' and 'Integrity' were added by the 42nd Amendment, 1976."),
     ("Can the Preamble be amended?","Yes. The Supreme Court held in Kesavananda Bharati (1973) that the Preamble is part of the Constitution and can be amended under Article 368, subject to the basic structure. It has been amended once, in 1976."),
     ("On which resolution is the Preamble based?","The Preamble is based on the Objectives Resolution, drafted and moved by Jawaharlal Nehru and adopted by the Constituent Assembly."),
-    ("Is the Preamble justiciable?","No. The Preamble is non-justiciable and grants no powers by itself, but it is used by courts to interpret the Constitution.")]},
+    ("Is the Preamble justiciable?","No. The Preamble is non-justiciable and grants no powers by itself, but it is used by courts to interpret the Constitution."),
+    ("What does 'Secular' in the Preamble mean?","That India has no official state religion and treats all religions equally — a principle affirmed as part of the basic structure in the S.R. Bommai case (1994)."),
+    ("Why is India called a 'Republic' in the Preamble?","Because the head of state, the President, is elected and holds office for a fixed term, rather than being a hereditary monarch.")]},
 
  {"slug":"anti-defection-law","tag":"Polity","read":"6 min read","cta":"/pyq/polity/",
   "title":"Anti-Defection Law (Tenth Schedule) Explained",
