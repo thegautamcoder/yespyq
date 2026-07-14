@@ -10,7 +10,7 @@ import re, json, os, html
 from collections import defaultdict
 
 BASE = "https://yespyq.com"
-TODAY = "2026-06-30"
+TODAY = "2026-07-14"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SUB = {
