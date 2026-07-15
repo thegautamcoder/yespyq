@@ -51,6 +51,22 @@ EXAMS = {
             "geography": ("Geography", "🌍"),
         },
     },
+    "ssc-cgl": {
+        "name": "SSC CGL",
+        "full": "SSC CGL (Combined Graduate Level)",
+        "desc": "staff selection commission",
+        "icon": "📝",
+        "subjects": {
+            "english": ("English", "🔤"),
+            "history": ("History", "🏛️"),
+            "economy": ("Economy", "📈"),
+            "computer": ("Computer Awareness", "💻"),
+            "geography": ("Geography", "🌍"),
+            "science": ("Science", "🔬"),
+            "gk": ("General Knowledge", "🌐"),
+            "polity": ("Polity", "⚖️"),
+        },
+    },
 }
 
 
@@ -315,8 +331,8 @@ def exam_hub(exam, by_subject):
 def exams_hub(counts):
     canonical = f"{BASE}/exams/"
     total = sum(counts.values())
-    title = attr(f"India's PYQ Hub — UPSC, JEE, NEET, Defence Previous Year Questions | YESPYQ")
-    desc = attr(f"Free previous year questions for UPSC, JEE, NEET and Defence exams — {total}+ solved questions with answers and explanations. Pick your exam to start practicing.")
+    title = attr(f"India's PYQ Hub — UPSC, JEE, NEET, Defence, SSC CGL PYQs | YESPYQ")
+    desc = attr(f"Free previous year questions for UPSC, JEE, NEET, Defence and SSC CGL — {total}+ solved questions with answers and explanations. Pick your exam to start practicing.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{canonical}"}}]}}
@@ -333,7 +349,7 @@ def exams_hub(counts):
       <h1>India's Previous Year Questions Hub</h1>
       <p>YESPYQ is expanding beyond UPSC — solved previous year questions for every major Indian exam, all free, all with answers and explanations. Pick your exam below.</p>
       <div class="exam-tiles">{tiles}</div>
-      <p style="margin-top:2rem;color:var(--muted);font-size:.9rem">More exams (SSC, Banking, TET and others) are on the way.</p>
+      <p style="margin-top:2rem;color:var(--muted);font-size:.9rem">More exams (Banking, TET and others) are on the way.</p>
     </article>
   </main>
 {FOOTER}
