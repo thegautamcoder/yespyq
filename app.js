@@ -514,6 +514,32 @@ function startDemo() {
   setInterval(nextDemo, 5200);
 }
 
+/* ---------- hero exam-name rotator ---------- */
+const HERO_EXAMS = [
+  { headline: "UPSC Prelims", sub: "Prelims" },
+  { headline: "SSC CGL", sub: "SSC CGL" },
+  { headline: "JEE", sub: "JEE" },
+  { headline: "NEET", sub: "NEET" },
+  { headline: "Defence Exams", sub: "Defence" },
+];
+function startHeroRotator() {
+  const h = document.getElementById("hero-exam");
+  const s = document.getElementById("hero-exam-sub");
+  if (!h || !s) return;
+  let i = 0;
+  setInterval(() => {
+    i = (i + 1) % HERO_EXAMS.length;
+    h.classList.add("rotate-out");
+    s.classList.add("rotate-out");
+    setTimeout(() => {
+      h.textContent = HERO_EXAMS[i].headline;
+      s.textContent = HERO_EXAMS[i].sub;
+      h.classList.remove("rotate-out");
+      s.classList.remove("rotate-out");
+    }, 250);
+  }, 3200);
+}
+
 /* ---------- init ---------- */
 renderSubjects();
 renderYears();
@@ -523,5 +549,6 @@ countUp($("#stat-q"), QUESTIONS.length);
 countUp($("#stat-y"), YEARS.length);
 revealOnScroll();
 startDemo();
+startHeroRotator();
 $("#year").textContent = new Date().getFullYear();
 showView("home");

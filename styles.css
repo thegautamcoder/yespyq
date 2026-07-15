@@ -75,6 +75,19 @@ a{color:inherit;text-decoration:none}
 .subject-card .count{display:inline-block;margin-top:.7rem;font-size:.78rem;font-weight:600;
   color:var(--blue-700);background:var(--blue-50);padding:.2rem .6rem;border-radius:999px}
 
+/* exam tiles (homepage "Explore PYQs by exam") — same look as subject-card,
+   deliberately not reusing that class so it isn't swept into the scroll-reveal
+   IntersectionObserver and doesn't depend on animation timing to be visible */
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.exam-tile-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:1.3rem;cursor:pointer;transition:.18s;box-shadow:var(--shadow)}
+.exam-tile-card:hover{transform:translateY(-3px);border-color:var(--blue-500)}
+.exam-tile-card .ico{font-size:1.8rem}
+.exam-tile-card h3{font-size:1.05rem;margin:.6rem 0 .2rem}
+.exam-tile-card p{font-size:.85rem;color:var(--muted)}
+.exam-tile-card .count{display:inline-block;margin-top:.7rem;font-size:.78rem;font-weight:600;
+  color:var(--blue-700);background:var(--blue-50);padding:.2rem .6rem;border-radius:999px}
+
 /* year grid */
 .year-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:.8rem}
 .year-card{background:var(--card);border:1px solid var(--line);border-radius:12px;
