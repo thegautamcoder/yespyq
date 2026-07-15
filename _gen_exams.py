@@ -60,6 +60,8 @@ EXAMS = {
             "english": ("English", "🔤"),
             "history": ("History", "🏛️"),
             "economy": ("Economy", "📈"),
+            "aptitude": ("Quantitative Aptitude", "🔢"),
+            "reasoning": ("Reasoning", "🧩"),
             "computer": ("Computer Awareness", "💻"),
             "geography": ("Geography", "🌍"),
             "science": ("Science", "🔬"),
