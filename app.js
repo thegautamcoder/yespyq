@@ -154,16 +154,65 @@ function cardHTML(q, serial) {
 
 function renderMore() {
   const list = currentList();
-  const next = list.slice(shown, shown + PAGE);
+  const gated = window.PAY && !PAY.isPaid();
+  const cap = gated ? Math.min(list.length, PAY.freeQuestions()) : list.length;
+  const next = list.slice(shown, Math.min(shown + PAGE, cap));
   const frag = document.createElement("div");
   frag.innerHTML = next.map((q, k) => cardHTML(q, shown + k + 1)).join("");
   const wrap = $("#qlist");
   while (frag.firstChild) wrap.appendChild(frag.firstChild);
   shown += next.length;
   const more = $("#load-more");
-  more.classList.toggle("hidden", shown >= list.length);
-  if (shown < list.length) more.textContent = `Show more (${list.length - shown} left)`;
+  if (gated && shown >= cap && cap < list.length) {
+    more.classList.add("hidden");
+    showUnlockStrip(list.length - cap);
+  } else {
+    removeUnlockStrip();
+    more.classList.toggle("hidden", shown >= list.length);
+    if (shown < list.length) more.textContent = `Show more (${list.length - shown} left)`;
+  }
 }
+
+/* premium lock strip shown when a free user hits the preview limit */
+function showUnlockStrip(locked) {
+  removeUnlockStrip();
+  const strip = document.createElement("div");
+  strip.id = "unlock-strip";
+  strip.className = "unlock-strip";
+  strip.innerHTML =
+    `<div class="us-fade"></div>
+     <div class="us-body">
+       <div class="us-lock">🔒</div>
+       <h3>${locked.toLocaleString()} more questions locked</h3>
+       <p>Unlock every UPSC PYQ, all explanations and unlimited quizzes — one-time ${(window.PAY && PAY.freeQuestions ? "" : "")}<b>₹149</b>, lifetime access.</p>
+       <button class="btn btn-primary btn-lg btn-glow" data-unlock="browse">✨ Unlock everything · ₹149</button>
+       <span class="us-mini">Secure via Razorpay · Instant access · No subscription</span>
+     </div>`;
+  const wrap = $("#qlist");
+  wrap.parentNode.insertBefore(strip, wrap.nextSibling);
+}
+function removeUnlockStrip() { const s = $("#unlock-strip"); if (s) s.remove(); }
+
+/* ---------- free-quiz daily limit ---------- */
+function quizAllowed() {
+  if (!window.PAY || PAY.isPaid()) return true;
+  const used = +(localStorage.getItem("yespyq_quiz_" + today()) || 0);
+  return used < PAY.freeQuizzesPerDay();
+}
+function noteQuizStart() {
+  if (!window.PAY || PAY.isPaid()) return;
+  const k = "yespyq_quiz_" + today();
+  localStorage.setItem(k, (+(localStorage.getItem(k) || 0)) + 1);
+}
+
+/* re-render when payment/login state changes (called by auth-pay.js) */
+window.onPayChange = function () {
+  try {
+    if (typeof PAY !== "undefined" && PAY.isPaid()) removeUnlockStrip();
+    const pv = $("#view-practice");
+    if (pv && !pv.classList.contains("hidden")) applyFilter();
+  } catch (e) {}
+};
 
 /* reveal answer on option click (delegated) */
 $("#qlist").addEventListener("click", e => {
@@ -251,6 +300,8 @@ function renderQuizSetup() {
 }
 
 function startQuiz(opts = {}) {
+  if (!quizAllowed()) { if (window.PAY) PAY.openUnlock("quiz"); return; }
+  noteQuizStart();
   const size = opts.size || 10;
   let pool = QUESTIONS.filter(q => (!opts.subject || q.s === opts.subject) && (!opts.year || q.y === opts.year));
   if (pool.length < 4) pool = QUESTIONS.slice();

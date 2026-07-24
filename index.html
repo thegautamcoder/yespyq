@@ -55,7 +55,7 @@
   <!-- Perf hints -->
   <link rel="preload" href="styles.css" as="style" />
 
-  <link rel="stylesheet" href="styles.css?v=26" />
+  <link rel="stylesheet" href="styles.css?v=27" />
 
   <!-- Structured data: Organization + WebSite + EducationalOrganization -->
   <script type="application/ld+json">
@@ -203,6 +203,7 @@
         <a href="/tools/">Tools</a>
       </nav>
       <div class="game-stats" id="game-stats"></div>
+      <a href="#" class="btn btn-premium btn-sm" data-unlock="header">👑 Premium</a>
       <a href="#" class="btn btn-primary btn-sm" data-action="start">Start Practice</a>
     </div>
   </header>
@@ -449,9 +450,13 @@
   <canvas id="confetti"></canvas>
   <div id="fx-layer"></div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="pay-config.js?v=1"></script>
+  <script src="auth-pay.js?v=1"></script>
   <script src="data.js?v=8"></script>
   <script src="pyq.js?v=8"></script>
   <script src="pyq-exp.js?v=8" defer></script>
-  <script src="app.js?v=22"></script>
+  <script src="app.js?v=23"></script>
 </body>
 </html>
