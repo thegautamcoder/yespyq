@@ -27,7 +27,10 @@
   var FUNCS = (cfg.FUNCTIONS_BASE || (cfg.SUPABASE_URL || "") + "/functions/v1").replace(/\/$/, "");
   var INTENT = "yespyq_pay_intent";
 
-  var sb = null, _user = null, _paid = false;
+  var sb = null, _user = null, _paid = false, _exp = null, _expired = false;
+
+  function daysLeft() { return _exp ? Math.max(0, Math.ceil((_exp - Date.now()) / 86400000)) : 0; }
+  function expDate() { return _exp ? new Date(_exp).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) : ""; }
 
   function notify() { try { if (typeof window.onPayChange === "function") window.onPayChange(); } catch (e) {} }
 
@@ -63,11 +66,15 @@
   async function ensureRzp() { if (!window.Razorpay) await loadScript("https://checkout.razorpay.com/v1/checkout.js"); }
 
   async function refreshEntitlement() {
-    if (!_user || !sb) { _paid = false; return; }
+    if (!_user || !sb) { _paid = false; _exp = null; _expired = false; return; }
     try {
-      var r = await sb.from("entitlements").select("paid").eq("user_id", _user.id).maybeSingle();
-      _paid = !!(r && r.data && r.data.paid);
-    } catch (e) { _paid = false; }
+      var r = await sb.from("entitlements").select("paid,expires_at").eq("user_id", _user.id).maybeSingle();
+      var row = r && r.data;
+      _exp = row && row.expires_at ? Date.parse(row.expires_at) : null;
+      var valid = !_exp || _exp > Date.now();        // no expiry recorded = legacy lifetime
+      _paid = !!(row && row.paid && valid);
+      _expired = !!(row && row.paid && _exp && _exp <= Date.now());
+    } catch (e) { _paid = false; _exp = null; _expired = false; }
   }
   async function accessToken() {
     if (!sb) return null;
@@ -87,7 +94,12 @@
       var res = await sb.auth.getSession();
       var session = res && res.data && res.data.session;
       if (session) { _user = session.user; await refreshEntitlement(); renderChrome(); notify(); }
-      if (_user && !_paid && localStorage.getItem(INTENT)) { localStorage.removeItem(INTENT); startCheckout(); }
+      if (_user && !_paid && localStorage.getItem(INTENT)) { localStorage.removeItem(INTENT); startCheckout(); return; }
+      // plan ran out → tell the user once per session and re-lock content
+      if (_expired && SHOW && !sessionStorage.getItem("yespyq_renew_shown")) {
+        sessionStorage.setItem("yespyq_renew_shown", "1");
+        openUnlock("expired");
+      }
     } catch (e) {}
   }
 
@@ -158,7 +170,7 @@
 
     var rzp = new window.Razorpay({
       key: cfg.RAZORPAY_KEY_ID, order_id: order.id, amount: order.amount, currency: order.currency || "INR",
-      name: "YESPYQ Premium", description: "Lifetime access — all PYQs & explanations",
+      name: "YESPYQ Premium", description: "1-year access — all PYQs & explanations",
       image: "https://yespyq.com/assets/favicon.svg", prefill: { email: _user.email || "" }, theme: { color: "#6366f1" },
       handler: async function (r) {
         setBusy(true, "Verifying…");
@@ -177,7 +189,7 @@
     rzp.on("payment.failed", function () { setBusy(false); alert("Payment failed or cancelled."); });
     setBusy(false); rzp.open();
   }
-  function onPaid() { closeUnlock(); renderChrome(); notify(); showToast("🎉 Premium unlocked — enjoy full access!"); }
+  function onPaid() { refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 Premium active for 1 year — everything's unlocked!"); }); }
   function comingSoon() { showToast("💛 Premium is launching very soon — thanks for your interest!"); }
 
   /* ============================================================
@@ -199,7 +211,7 @@
   function renderChrome() {
     if (!SHOW) return;
     injectHeaderButton();
-    // floating pill (hidden when paid)
+    // floating pill (only for logged-out / unpaid, never for paid)
     var pill = document.getElementById("pay-pill");
     if (_paid) { if (pill) pill.remove(); }
     else {
@@ -210,45 +222,86 @@
       }
       pill.innerHTML = '<span class="pp-star">✨</span> Go Premium <b>' + (cfg.PRICE_LABEL || "₹149") + '</b>';
     }
-    // hide any Premium buttons for paid users
-    if (_paid) document.querySelectorAll("[data-unlock='header']").forEach(function (el) { el.style.display = "none"; });
+    document.querySelectorAll("[data-unlock='header']").forEach(function (el) { el.style.display = _paid ? "none" : ""; });
+    renderAccount();
   }
 
-  /* Free-vs-Premium comparison — loss-framing converts better than bullets */
-  function compareTable() {
-    var rows = [
-      ["All 2,237 UPSC PYQs (1995–2024)", "20 preview", "✓ All"],
-      ["Detailed explanations", "Preview only", "✓ Every answer"],
-      ["Quiz mode", "1 / day", "✓ Unlimited"],
-      ["All 30 years · 7 subjects", "Limited", "✓ Everything"],
-      ["Future question updates", "—", "✓ Free forever"]
-    ].map(function (r) {
-      return '<div class="cmp-row"><span class="cmp-f">' + r[0] + '</span><span class="cmp-no">' + r[1] + '</span><span class="cmp-yes">' + r[2] + '</span></div>';
-    }).join("");
-    return '<div class="cmp"><div class="cmp-row cmp-head"><span></span><span>Free</span><span class="cmp-pro">👑 Premium</span></div>' + rows + '</div>';
+  /* account chip (right side of header): plan status, days left, renew, sign out */
+  function renderAccount() {
+    var bar = document.querySelector(".site-header .header-inner");
+    var acct = document.getElementById("pay-acct");
+    if (!_user) { if (acct) acct.remove(); return; }
+    if (!bar) return;
+    if (!acct) {
+      acct = document.createElement("div");
+      acct.id = "pay-acct"; acct.className = "acct";
+      bar.appendChild(acct);
+    }
+    var email = _user.email || "";
+    var initial = (email[0] || "U").toUpperCase();
+    var plan, planCls, renewBtn = "";
+    if (_paid) {
+      var d = daysLeft();
+      plan = "👑 Premium · " + d + " day" + (d === 1 ? "" : "s") + " left";
+      planCls = d <= 30 ? "warn" : "ok";
+      if (d <= 30) renewBtn = '<button class="acct-renew" data-unlock-buy>Renew now · ' + (cfg.PRICE_LABEL || "₹149") + '</button>';
+      plan += _exp ? '<em>expires ' + expDate() + '</em>' : "";
+    } else if (_expired) {
+      plan = "Plan expired" + (_exp ? '<em>on ' + expDate() + '</em>' : "");
+      planCls = "no";
+      renewBtn = '<button class="acct-renew" data-unlock-buy>Renew · ' + (cfg.PRICE_LABEL || "₹149") + '</button>';
+    } else {
+      plan = "Free plan";
+      planCls = "";
+      renewBtn = '<button class="acct-renew" data-unlock="acct">Upgrade · ' + (cfg.PRICE_LABEL || "₹149") + '</button>';
+    }
+    acct.innerHTML =
+      '<button class="acct-btn ' + (_paid ? "paid" : "") + '" data-acct-toggle aria-label="Account">' + escapeH(initial) + '</button>' +
+      '<div class="acct-menu" hidden>' +
+        '<div class="acct-email">' + escapeH(email) + '</div>' +
+        '<div class="acct-plan ' + planCls + '">' + plan + '</div>' +
+        renewBtn +
+        '<button class="acct-out" data-pay-signout>Sign out</button>' +
+      '</div>';
+  }
+
+  /* Short, scannable value list — three lines, no reading fatigue */
+  function valueList() {
+    return ['<ul class="unlock-feats">',
+      '<li><span class="uf-ck">✓</span>2,700+ PYQs, every one explained</li>',
+      '<li><span class="uf-ck">✓</span>Unlimited quizzes, all subjects &amp; years</li>',
+      '<li><span class="uf-ck">✓</span>New questions added at no extra cost</li>',
+    '</ul>'].join("");
   }
 
   function openUnlock(context) {
     if (!SHOW || _paid || overlay) return;
+    var renewing = context === "expired" || _expired;
     overlay = document.createElement("div");
     overlay.className = "unlock-overlay";
     var loggedIn = !!_user;
-    var cta = "Get Lifetime Access →";
-    var sub = loggedIn ? "One-time payment · unlocked in seconds" : "30 seconds: Google sign-in → pay " + (cfg.PRICE_LABEL || "₹149") + " → everything unlocks";
+    var price = cfg.PRICE_LABEL || "₹149";
+    var cta = renewing ? "Renew · " + price : "Unlock Premium →";
+    var sub = renewing ? "Another full year, same price"
+      : loggedIn ? "Pay once · unlocked in seconds"
+      : "Google sign-in, then " + price + " — done in 30 seconds";
+    var h2 = renewing ? "Welcome back — your plan has expired"
+      : "Every PYQ. Every exam. One key.";
+    var tag = renewing ? "Renew to keep everything unlocked."
+      : "UPSC · SSC · JEE · NEET · Boards &amp; more";
     overlay.innerHTML =
       '<div class="unlock-card" role="dialog" aria-modal="true">' +
         '<button class="unlock-x" data-unlock-close aria-label="Close">×</button>' +
-        '<div class="unlock-banner"><span class="ub-shine"></span><span class="ub-crown">👑</span> YESPYQ PREMIUM <span class="ub-off">🔥 70% OFF — LAUNCH OFFER</span></div>' +
+        '<div class="unlock-banner"><span class="ub-crown">👑</span> PREMIUM</div>' +
         '<div class="unlock-main">' +
           '<div class="unlock-left">' +
-            '<h2>Every UPSC PYQ ever asked. Every explanation. One price.</h2>' +
-            '<p class="unlock-tag">Toppers don’t guess what UPSC asks — they study what it already asked.</p>' +
-            compareTable() +
-            '<div class="unlock-stats"><span><b>2,237</b> PYQs</span><span><b>30</b> years</span><span><b>7</b> subjects</span></div>' +
+            '<h2>' + h2 + '</h2>' +
+            '<p class="unlock-tag">' + tag + '</p>' +
+            valueList() +
           '</div>' +
           '<div class="unlock-right">' +
-            '<div class="offer-chip">LAUNCH OFFER — ENDS SOON</div>' +
-            '<div class="unlock-price"><span class="up-was">₹499</span><span class="up-amt">' + (cfg.PRICE_LABEL || "₹149") + '</span><span class="up-note">one-time · lifetime · no subscription</span><span class="up-math">less than one mock test 📝</span></div>' +
+            '<div class="offer-chip">Launch price · 70% off</div>' +
+            '<div class="unlock-price"><span class="up-was">₹499</span><span class="up-amt">' + price + '</span><span class="up-note">one-time · valid 1 year</span></div>' +
             '<button class="unlock-cta" data-unlock-buy><span class="uc-glow"></span>' + escapeH(cta) + '</button>' +
             '<p class="unlock-sub">' + escapeH(sub) + '</p>' +
             (loggedIn ? '' :
@@ -265,7 +318,7 @@
                 '</div>' +
                 '<div class="email-hint" data-otp-hint></div>' +
               '</div>') +
-            '<div class="unlock-trust"><span>🔒 Secure via Razorpay</span><span>⚡ Instant access</span><span>♾️ No subscription</span></div>' +
+            '<div class="unlock-trust">🔒 Razorpay secure · ⚡ Instant access</div>' +
           '</div>' +
         '</div>' +
       '</div>';
@@ -309,6 +362,10 @@
 
   /* ---------- delegated clicks ---------- */
   document.addEventListener("click", function (e) {
+    var at = e.target.closest("[data-acct-toggle]");
+    if (at) { e.preventDefault(); var m = at.parentNode.querySelector(".acct-menu"); if (m) m.hidden = !m.hidden; return; }
+    var om = document.querySelector(".acct-menu:not([hidden])");
+    if (om && !e.target.closest("#pay-acct")) om.hidden = true;
     if (e.target.closest("[data-unlock-close]") || (overlay && e.target === overlay)) { e.preventDefault(); closeUnlock(); return; }
     if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); startCheckout(); return; }
     if (e.target.closest("[data-email-toggle]")) { e.preventDefault(); toggleEmail(); return; }

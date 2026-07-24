@@ -184,7 +184,7 @@ function showUnlockStrip(locked) {
      <div class="us-body">
        <div class="us-lock">🔒</div>
        <h3>${locked.toLocaleString()} more questions locked</h3>
-       <p>Unlock every UPSC PYQ, all explanations and unlimited quizzes — one-time ${(window.PAY && PAY.freeQuestions ? "" : "")}<b>₹149</b>, lifetime access.</p>
+       <p>Every PYQ, every explanation, unlimited quizzes — <b>₹149</b> once, full year of access.</p>
        <button class="btn btn-primary btn-lg btn-glow" data-unlock="browse">✨ Unlock everything · ₹149</button>
        <span class="us-mini">Secure via Razorpay · Instant access · No subscription</span>
      </div>`;

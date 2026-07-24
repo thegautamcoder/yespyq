@@ -43,8 +43,12 @@ Deno.serve(async (req) => {
   }
 
   // Signature is genuine → record the entitlement with the service role.
+  // Plan runs PLAN_DAYS (default 365) from this payment; a renewal simply
+  // overwrites expires_at with a fresh year from now.
   const admin = createClient(url, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
   const amount = parseInt(Deno.env.get("PRICE_PAISE") || "14900", 10);
+  const days = parseInt(Deno.env.get("PLAN_DAYS") || "365", 10);
+  const expires = new Date(Date.now() + days * 86400000).toISOString();
   const { error: wErr } = await admin.from("entitlements").upsert({
     user_id: user.id,
     paid: true,
@@ -53,10 +57,11 @@ Deno.serve(async (req) => {
     razorpay_order_id,
     razorpay_payment_id,
     paid_at: new Date().toISOString(),
+    expires_at: expires,
   }, { onConflict: "user_id" });
   if (wErr) return json({ error: "could not save entitlement" }, 500);
 
-  return json({ paid: true });
+  return json({ paid: true, expires_at: expires });
 });
 
 async function hmacHex(secret: string, msg: string): Promise<string> {

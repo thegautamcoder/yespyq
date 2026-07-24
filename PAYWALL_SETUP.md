@@ -38,7 +38,8 @@ supabase link --project-ref YOUR_PROJECT_REF     # from the project URL
 supabase secrets set \
   RAZORPAY_KEY_ID=rzp_test_xxxxxxxx \
   RAZORPAY_KEY_SECRET=YOUR_NEW_SECRET \
-  PRICE_PAISE=14900
+  PRICE_PAISE=14900 \
+  PLAN_DAYS=365
 ```
 (SUPABASE_URL / SUPABASE_ANON_KEY / SUPABASE_SERVICE_ROLE_KEY are injected by Supabase automatically.)
 

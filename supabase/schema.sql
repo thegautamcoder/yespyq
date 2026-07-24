@@ -10,6 +10,7 @@ create table if not exists public.entitlements (
   razorpay_order_id    text,
   razorpay_payment_id  text,
   paid_at              timestamptz,
+  expires_at           timestamptz,          -- plan is valid until this moment (1 year)
   created_at           timestamptz not null default now()
 );
 
@@ -20,6 +21,9 @@ drop policy if exists entitlements_own_read on public.entitlements;
 create policy entitlements_own_read
   on public.entitlements for select
   using (auth.uid() = user_id);
+
+-- If the table already existed without the column (safe to re-run):
+alter table public.entitlements add column if not exists expires_at timestamptz;
 
 -- No insert/update/delete policies exist for normal users on purpose:
 -- writes happen only via the Edge Functions using the service-role key.

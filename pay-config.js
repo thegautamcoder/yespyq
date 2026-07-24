@@ -27,5 +27,6 @@ window.PAY_CONFIG = {
 
   PRICE_PAISE: 14900,           // ₹149.00
   PRICE_LABEL: "₹149",
+  PLAN_DAYS: 365,               // plan validity (client display; server enforces via PLAN_DAYS secret)
   FUNCTIONS_BASE: ""            // defaults to SUPABASE_URL + "/functions/v1"
 };
