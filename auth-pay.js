@@ -20,10 +20,10 @@
   var GATE = !!cfg.GATE_CONTENT;
 
   function ph(v, needle) { return v && v.indexOf(needle) === -1; }
-  function backendReady() {
-    return ph(cfg.SUPABASE_URL, "YOUR-PROJECT") && ph(cfg.SUPABASE_ANON_KEY, "YOUR_") &&
-           ph(cfg.RAZORPAY_KEY_ID, "YOUR") && !!window;
-  }
+  // auth (Supabase) and payment (Razorpay) readiness are independent:
+  // sign-in can work before the Razorpay key is filled in.
+  function authReady() { return ph(cfg.SUPABASE_URL, "YOUR-PROJECT") && ph(cfg.SUPABASE_ANON_KEY, "YOUR_"); }
+  function backendReady() { return authReady() && ph(cfg.RAZORPAY_KEY_ID, "YOUR"); }
   var FUNCS = (cfg.FUNCTIONS_BASE || (cfg.SUPABASE_URL || "") + "/functions/v1").replace(/\/$/, "");
   var INTENT = "yespyq_pay_intent";
 
@@ -81,7 +81,7 @@
     return false;
   }
   async function initSession() {
-    if (!backendReady() || !hasStoredSession()) return;
+    if (!authReady() || !hasStoredSession()) return;
     try {
       await ensureSb();
       var res = await sb.auth.getSession();
@@ -93,17 +93,58 @@
 
   /* ---------- auth ---------- */
   async function signInWithGoogle() {
-    if (!backendReady()) { comingSoon(); return; }
+    if (!authReady()) { comingSoon(); return; }
     localStorage.setItem(INTENT, "1");
     await ensureSb();
     sb.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname } });
   }
   async function signOut() { try { if (sb) await sb.auth.signOut(); } catch (e) {} _user = null; _paid = false; renderChrome(); notify(); }
 
+  /* ---------- email OTP fallback ---------- */
+  var _otpEmail = "";
+  function otpHint(t) { var h = overlay && overlay.querySelector("[data-otp-hint]"); if (h) h.textContent = t; }
+  function toggleEmail() {
+    var a = overlay && overlay.querySelector(".email-alt"), t = overlay && overlay.querySelector(".email-toggle");
+    if (a) a.hidden = false; if (t) t.style.display = "none";
+    var i = overlay && overlay.querySelector('[data-otp-step="1"] .email-in'); if (i) i.focus();
+  }
+  async function sendOtp() {
+    if (!authReady()) { comingSoon(); return; }
+    var el = overlay && overlay.querySelector('[data-otp-step="1"] .email-in');
+    var email = el ? el.value.trim() : "";
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { otpHint("Enter a valid email address."); return; }
+    _otpEmail = email; otpHint("Sending code…");
+    try {
+      await ensureSb();
+      var r = await sb.auth.signInWithOtp({ email: email, options: { shouldCreateUser: true } });
+      if (r.error) throw r.error;
+      var s1 = overlay.querySelector('[data-otp-step="1"]'), s2 = overlay.querySelector('[data-otp-step="2"]');
+      if (s1) s1.hidden = true; if (s2) s2.hidden = false;
+      otpHint("Code sent to " + email + " — check your inbox.");
+      var c = overlay.querySelector(".otp-in"); if (c) c.focus();
+    } catch (e) { otpHint("Could not send code. Please try again."); }
+  }
+  async function verifyOtp() {
+    var c = overlay && overlay.querySelector(".otp-in");
+    var code = c ? c.value.trim() : "";
+    if (!/^\d{4,8}$/.test(code)) { otpHint("Enter the code from your email."); return; }
+    otpHint("Verifying…");
+    try {
+      await ensureSb();
+      var r = await sb.auth.verifyOtp({ email: _otpEmail, token: code, type: "email" });
+      if (r.error) throw r.error;
+      _user = (r.data && r.data.user) || _user;
+      await refreshEntitlement();
+      if (_paid) { onPaid(); return; }
+      otpHint(""); startCheckout();
+    } catch (e) { otpHint("Invalid or expired code. Try again."); }
+  }
+
   /* ---------- payment ---------- */
   async function startCheckout() {
-    if (!backendReady()) { comingSoon(); return; }
-    if (!_user) { await signInWithGoogle(); return; }
+    if (!authReady()) { comingSoon(); return; }
+    if (!_user) { await signInWithGoogle(); return; }      // sign-in works even before Razorpay is set
+    if (!backendReady()) { comingSoon(); return; }          // signed in, but payments not live yet
     await ensureRzp();
     setBusy(true);
     var token = await accessToken(), order;
@@ -207,8 +248,21 @@
             '<div class="unlock-price"><span class="up-amt">' + (cfg.PRICE_LABEL || "₹149") + '</span><span class="up-note">one-time · lifetime</span></div>' +
             '<button class="unlock-cta" data-unlock-buy><span class="uc-glow"></span>' + escapeH(cta) + '</button>' +
             '<p class="unlock-sub">' + escapeH(sub) + '</p>' +
+            (loggedIn ? '' :
+              '<button class="email-toggle" data-email-toggle>Prefer email? Use a code instead</button>' +
+              '<div class="email-alt" hidden>' +
+                '<div class="email-or">or continue with email</div>' +
+                '<div class="email-step" data-otp-step="1">' +
+                  '<input type="email" class="email-in" placeholder="you@email.com" autocomplete="email" />' +
+                  '<button class="email-btn" data-otp-send>Send code</button>' +
+                '</div>' +
+                '<div class="email-step" data-otp-step="2" hidden>' +
+                  '<input type="text" class="email-in otp-in" inputmode="numeric" maxlength="6" placeholder="6-digit code" />' +
+                  '<button class="email-btn" data-otp-verify>Verify &amp; continue</button>' +
+                '</div>' +
+                '<div class="email-hint" data-otp-hint></div>' +
+              '</div>') +
             '<div class="unlock-trust"><span>🔒 Secure via Razorpay</span><span>⚡ Instant access</span><span>♾️ No subscription</span></div>' +
-            (loggedIn ? '' : '<p class="unlock-restore">Already purchased? <a href="#" data-unlock-buy>Sign in to restore</a></p>') +
           '</div>' +
         '</div>' +
       '</div>';
@@ -254,6 +308,9 @@
   document.addEventListener("click", function (e) {
     if (e.target.closest("[data-unlock-close]") || (overlay && e.target === overlay)) { e.preventDefault(); closeUnlock(); return; }
     if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); startCheckout(); return; }
+    if (e.target.closest("[data-email-toggle]")) { e.preventDefault(); toggleEmail(); return; }
+    if (e.target.closest("[data-otp-send]")) { e.preventDefault(); sendOtp(); return; }
+    if (e.target.closest("[data-otp-verify]")) { e.preventDefault(); verifyOtp(); return; }
     var u = e.target.closest("[data-unlock]");
     if (u) { e.preventDefault(); openUnlock(u.dataset.unlock || "cta"); return; }
     if (e.target.closest("[data-pay-signout]")) { e.preventDefault(); signOut(); return; }

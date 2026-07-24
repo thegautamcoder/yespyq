@@ -795,6 +795,22 @@ html,body{overflow-x:hidden}
   font-size:.74rem;color:var(--slate);border-top:1px solid var(--line);padding-top:.75rem}
 .unlock-restore{font-size:.8rem;margin-top:.6rem;color:var(--muted)}
 .unlock-restore a{color:var(--blue-600);font-weight:600}
+/* email OTP fallback */
+.email-toggle{margin-top:.6rem;background:none;border:none;cursor:pointer;font-size:.82rem;
+  color:#6366f1;font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.email-alt{margin-top:.7rem;text-align:left}
+.email-or{text-align:center;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
+.email-step{display:flex;gap:.4rem}
+.email-step[hidden]{display:none}
+.email-in{flex:1;min-width:0;padding:.6rem .7rem;border:1px solid var(--line);border-radius:10px;
+  font-size:.9rem;background:var(--card);color:var(--ink)}
+.email-in:focus{outline:none;border-color:#6366f1;box-shadow:0 0 0 3px rgba(99,102,241,.15)}
+.otp-in{letter-spacing:.25em;text-align:center;font-weight:700}
+.email-btn{flex:none;border:none;cursor:pointer;padding:.6rem .8rem;border-radius:10px;font-size:.85rem;
+  font-weight:700;color:#fff;background:linear-gradient(100deg,#6366f1,#7c3aed)}
+.email-btn:hover{filter:brightness(1.05)}
+.email-hint{font-size:.75rem;color:var(--muted);margin-top:.45rem;min-height:1em}
+[data-theme="dark"] .email-in{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15);color:#f1f5f9}
 @media (max-width:620px){
   .unlock-main{grid-template-columns:1fr;gap:1.1rem;padding:1.2rem 1.2rem 1.4rem}
   .unlock-left h2{font-size:1.2rem}

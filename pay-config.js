@@ -19,8 +19,8 @@ window.PAY_CONFIG = {
 
   /* ---- backend (fill to make payments actually work) ---- */
   // From Supabase → Project Settings → API (both public/safe)
-  SUPABASE_URL: "https://YOUR-PROJECT.supabase.co",
-  SUPABASE_ANON_KEY: "YOUR_SUPABASE_ANON_KEY",
+  SUPABASE_URL: "https://jcfyoovojzkxzqrzlcpz.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable_uVIZ60AYMFj3hdnhPYp4lw_AtMJLRNS",
   // Razorpay key_id ONLY (public). Test key first (rzp_test_...),
   // then live rzp_live_THPWiyqKLDnWYH. The SECRET never goes here.
   RAZORPAY_KEY_ID: "rzp_test_YOUR_TEST_KEY",
