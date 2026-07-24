@@ -338,9 +338,7 @@
     var loggedIn = !!_user;
     var price = cfg.PRICE_LABEL || "₹149";
     var cta = renewing ? "Renew · " + price : "Unlock Premium →";
-    var sub = renewing ? "Another full year, same price"
-      : loggedIn ? "Pay once · unlocked in seconds"
-      : "Google sign-in, then " + price + " — done in 30 seconds";
+    var sub = renewing ? "Another full year, same price" : "Pay once · unlocked in seconds";
     var h2 = renewing ? "Welcome back — your plan has expired"
       : "Every PYQ. Every exam. One key.";
     var tag = renewing ? "Renew to keep everything unlocked."
@@ -361,7 +359,7 @@
             '<button class="unlock-cta" data-unlock-buy><span class="uc-glow"></span>' + escapeH(cta) + '</button>' +
             '<p class="unlock-sub">' + escapeH(sub) + '</p>' +
             '<div class="unlock-trust">🔒 Razorpay secure · ⚡ Instant access</div>' +
-            (loggedIn ? '' : '<p class="unlock-restore">Already paid? <a href="#" data-unlock-signin>Sign in to restore access</a></p>') +
+            (loggedIn ? '' : '<p class="unlock-restore">Already paid? <a href="#" data-unlock-signin>Sign in</a></p>') +
           '</div>' +
         '</div>' +
       '</div>';

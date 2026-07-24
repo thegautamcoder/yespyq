@@ -36,7 +36,7 @@
       var c = document.createElement("script");
       c.id = "pay-config-js"; c.src = "/pay-config.js?v=5";
       c.onload = function () {
-        var m = document.createElement("script"); m.src = "/auth-pay.js?v=10"; m.defer = true;
+        var m = document.createElement("script"); m.src = "/auth-pay.js?v=11"; m.defer = true;
         document.body.appendChild(m);
       };
       document.body.appendChild(c);
