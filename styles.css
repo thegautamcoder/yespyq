@@ -788,22 +788,6 @@ html,body{overflow-x:hidden}
   .unlock-left h2{font-size:1.2rem}
 }
 
-/* email OTP fallback (inside dark right rail) */
-.email-toggle{margin-top:.6rem;background:none;border:none;cursor:pointer;font-size:.8rem;
-  color:#93c5fd;font-weight:600;text-decoration:underline;text-underline-offset:2px}
-.email-alt{margin-top:.7rem;text-align:left}
-.email-or{text-align:center;font-size:.68rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
-.email-step{display:flex;gap:.4rem}
-.email-step[hidden]{display:none}
-.email-in{flex:1;min-width:0;padding:.6rem .7rem;border:1px solid rgba(148,163,184,.35);border-radius:10px;
-  font-size:.9rem;background:rgba(255,255,255,.06);color:#f1f5f9}
-.email-in:focus{outline:none;border-color:#60a5fa;box-shadow:0 0 0 3px rgba(96,165,250,.2)}
-.otp-in{letter-spacing:.25em;text-align:center;font-weight:700}
-.email-btn{flex:none;border:none;cursor:pointer;padding:.6rem .8rem;border-radius:10px;font-size:.85rem;
-  font-weight:700;color:#fff;background:linear-gradient(100deg,var(--blue-600),#4f46e5)}
-.email-btn:hover{filter:brightness(1.08)}
-.email-hint{font-size:.74rem;color:#94a3b8;margin-top:.45rem;min-height:1em}
-
 /* account chip + dropdown */
 .acct{position:relative;margin-left:.35rem}
 .acct-btn{width:34px;height:34px;border-radius:50%;border:1px solid var(--line);cursor:pointer;
@@ -837,3 +821,42 @@ html,body{overflow-x:hidden}
 .pay-toast.in{opacity:1;transform:translate(-50%,0)}
 
 @media (prefers-reduced-motion:reduce){.uc-glow{animation:none}}
+
+/* ============================================================
+   IN-PAGE PREMIUM PROMOS — side rail + inline band (v34)
+   ============================================================ */
+/* sticky rail in the empty right margin (wide screens only) */
+.promo-rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:880;width:186px;
+  background:#0f172a;color:#e2e8f0;border:1px solid rgba(217,178,74,.4);border-radius:16px;
+  padding:1.05rem .9rem;text-align:center;box-shadow:0 16px 40px rgba(15,23,42,.3)}
+.promo-rail .pr-crown{font-size:1.5rem}
+.promo-rail .pr-title{font-weight:800;font-size:.98rem;color:#fff;margin-top:.3rem}
+.promo-rail .pr-sub{font-size:.72rem;color:#94a3b8;margin-top:.2rem;line-height:1.35}
+.promo-rail .pr-price{font-size:1.5rem;font-weight:800;color:#e8c76b;margin:.55rem 0 .1rem}
+.promo-rail .pr-price span{font-size:.7rem;font-weight:600;color:#94a3b8}
+.promo-rail .pr-cta{width:100%;margin-top:.6rem;border:none;cursor:pointer;padding:.6rem;border-radius:10px;
+  font-weight:800;font-size:.85rem;color:#fff;background:linear-gradient(100deg,var(--blue-600),#4f46e5)}
+.promo-rail .pr-cta:hover{filter:brightness(1.08)}
+.promo-rail .pr-signin{width:100%;margin-top:.4rem;background:none;border:none;cursor:pointer;
+  font-size:.72rem;color:#93c5fd;text-decoration:underline;text-underline-offset:2px}
+@media (max-width:1239px){.promo-rail{display:none}}
+
+/* inline band inside the content column */
+.promo-band{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  margin:1.8rem 0;padding:1.05rem 1.2rem;border-radius:16px;background:#0f172a;color:#e2e8f0;
+  border:1px solid rgba(217,178,74,.35)}
+.promo-band .pb-left{display:flex;align-items:center;gap:.8rem;min-width:0}
+.promo-band .pb-crown{font-size:1.6rem;flex:none}
+.promo-band b{display:block;color:#fff;font-size:.98rem}
+.promo-band em{display:block;font-style:normal;font-size:.8rem;color:#94a3b8;margin-top:.15rem}
+.promo-band .pb-right{display:flex;align-items:center;gap:.7rem;flex:none}
+.promo-band .pb-cta{border:none;cursor:pointer;padding:.65rem 1.1rem;border-radius:11px;font-weight:800;
+  font-size:.9rem;color:#fff;background:linear-gradient(100deg,var(--blue-600),#4f46e5);white-space:nowrap}
+.promo-band .pb-cta:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.promo-band .pb-signin{background:none;border:none;cursor:pointer;font-size:.78rem;color:#93c5fd;
+  text-decoration:underline;text-underline-offset:2px;white-space:nowrap}
+@media (max-width:560px){
+  .promo-band{flex-direction:column;align-items:flex-start}
+  .promo-band .pb-right{width:100%}
+  .promo-band .pb-cta{flex:1;text-align:center}
+}

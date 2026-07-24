@@ -58,7 +58,7 @@
     sb = window.supabase.createClient(cfg.SUPABASE_URL, cfg.SUPABASE_ANON_KEY);
     sb.auth.onAuthStateChange(function (_e, session) {
       _user = session ? session.user : null;
-      if (_user) refreshEntitlement().then(function () { renderChrome(); notify(); });
+      if (_user) refreshEntitlement().then(function () { recordLogin(); startActivityTimer(); renderChrome(); notify(); });
       else { _paid = false; renderChrome(); notify(); }
     });
     return sb;
@@ -93,7 +93,7 @@
       await ensureSb();
       var res = await sb.auth.getSession();
       var session = res && res.data && res.data.session;
-      if (session) { _user = session.user; await refreshEntitlement(); renderChrome(); notify(); }
+      if (session) { _user = session.user; await refreshEntitlement(); recordLogin(); startActivityTimer(); renderChrome(); notify(); }
       if (_user && !_paid && localStorage.getItem(INTENT)) { localStorage.removeItem(INTENT); startCheckout(); return; }
       // plan ran out → tell the user once per session and re-lock content
       if (_expired && SHOW && !sessionStorage.getItem("yespyq_renew_shown")) {
@@ -112,45 +112,37 @@
   }
   async function signOut() { try { if (sb) await sb.auth.signOut(); } catch (e) {} _user = null; _paid = false; renderChrome(); notify(); }
 
-  /* ---------- email OTP fallback ---------- */
-  var _otpEmail = "";
-  function otpHint(t) { var h = overlay && overlay.querySelector("[data-otp-hint]"); if (h) h.textContent = t; }
-  function toggleEmail() {
-    var a = overlay && overlay.querySelector(".email-alt"), t = overlay && overlay.querySelector(".email-toggle");
-    if (a) a.hidden = false; if (t) t.style.display = "none";
-    var i = overlay && overlay.querySelector('[data-otp-step="1"] .email-in'); if (i) i.focus();
+  /* ---------- analytics: logins + time on site ----------
+     Writes go through SECURITY DEFINER RPCs keyed on auth.uid(),
+     so a user can only ever record their own activity. */
+  function recordLogin() {
+    if (!sb || !_user) return;
+    // one login event per browser session, not per page view
+    if (sessionStorage.getItem("yespyq_login_logged")) return;
+    sessionStorage.setItem("yespyq_login_logged", "1");
+    try { sb.rpc("record_login", { p_user_agent: navigator.userAgent.slice(0, 300) }); } catch (e) {}
   }
-  async function sendOtp() {
-    if (!authReady()) { comingSoon(); return; }
-    var el = overlay && overlay.querySelector('[data-otp-step="1"] .email-in');
-    var email = el ? el.value.trim() : "";
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { otpHint("Enter a valid email address."); return; }
-    _otpEmail = email; otpHint("Sending code…");
-    try {
-      await ensureSb();
-      var r = await sb.auth.signInWithOtp({ email: email, options: { shouldCreateUser: true } });
-      if (r.error) throw r.error;
-      var s1 = overlay.querySelector('[data-otp-step="1"]'), s2 = overlay.querySelector('[data-otp-step="2"]');
-      if (s1) s1.hidden = true; if (s2) s2.hidden = false;
-      otpHint("Code sent to " + email + " — check your inbox.");
-      var c = overlay.querySelector(".otp-in"); if (c) c.focus();
-    } catch (e) { otpHint("Could not send code. Please try again."); }
+
+  var _acc = 0, _tick = null;
+  function flushActivity() {
+    var secs = Math.round(_acc);
+    if (!sb || !_user || secs < 5) return;
+    _acc = 0;
+    try { sb.rpc("record_activity", { p_seconds: secs }); } catch (e) {}
   }
-  async function verifyOtp() {
-    var c = overlay && overlay.querySelector(".otp-in");
-    var code = c ? c.value.trim() : "";
-    if (!/^\d{4,8}$/.test(code)) { otpHint("Enter the code from your email."); return; }
-    otpHint("Verifying…");
-    try {
-      await ensureSb();
-      var r = await sb.auth.verifyOtp({ email: _otpEmail, token: code, type: "email" });
-      if (r.error) throw r.error;
-      _user = (r.data && r.data.user) || _user;
-      await refreshEntitlement();
-      if (_paid) { onPaid(); return; }
-      otpHint(""); startCheckout();
-    } catch (e) { otpHint("Invalid or expired code. Try again."); }
+  function startActivityTimer() {
+    if (_tick || !_user) return;
+    _tick = setInterval(function () {
+      if (document.visibilityState === "visible") _acc += 15;
+      if (_acc >= 60) flushActivity();               // flush at least once a minute
+    }, 15000);
+    // best-effort flush when the tab is hidden or the user navigates away
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "hidden") flushActivity();
+    });
+    window.addEventListener("pagehide", flushActivity);
   }
+
 
   /* ---------- payment ---------- */
   async function startCheckout() {
@@ -171,7 +163,7 @@
     var rzp = new window.Razorpay({
       key: cfg.RAZORPAY_KEY_ID, order_id: order.id, amount: order.amount, currency: order.currency || "INR",
       name: "YESPYQ Premium", description: "1-year access — all PYQs & explanations",
-      image: "https://yespyq.com/assets/favicon.svg", prefill: { email: _user.email || "" }, theme: { color: "#6366f1" },
+      image: "https://yespyq.com/assets/favicon.svg", prefill: { email: _user.email || "" }, theme: { color: "#2563eb" },
       handler: async function (r) {
         setBusy(true, "Verifying…");
         try {
@@ -224,6 +216,70 @@
     }
     document.querySelectorAll("[data-unlock='header']").forEach(function (el) { el.style.display = _paid ? "none" : ""; });
     renderAccount();
+    renderPromos();
+  }
+
+  /* In-page promos on content pages: a sticky rail in the empty side
+     margin (desktop) + an inline banner after the first content block.
+     Both vanish once the user is premium. */
+  function renderPromos() {
+    if (_paid) {
+      var old = document.getElementById("promo-rail"); if (old) old.remove();
+      var oldb = document.getElementById("promo-band"); if (oldb) oldb.remove();
+      return;
+    }
+    if (!SHOW) return;
+    var price = cfg.PRICE_LABEL || "₹149";
+    var isHome = !!document.getElementById("view-home");   // SPA homepage handles its own CTAs
+
+    // 1. side rail — only when the empty right margin is genuinely wide
+    // enough to hold it (measured, not guessed), so it never overlaps text
+    var col = document.querySelector("main .container") || document.querySelector("main");
+    var freeRight = col ? window.innerWidth - col.getBoundingClientRect().right : 0;
+    if (!isHome && !document.getElementById("promo-rail") && freeRight >= 210) {
+      var rail = document.createElement("aside");
+      rail.id = "promo-rail"; rail.className = "promo-rail";
+      rail.innerHTML =
+        '<div class="pr-crown">👑</div>' +
+        '<div class="pr-title">Unlock every PYQ</div>' +
+        '<div class="pr-sub">UPSC · SSC · JEE · NEET &amp; more</div>' +
+        '<div class="pr-price">' + price + '<span>/year</span></div>' +
+        '<button class="pr-cta" data-unlock="rail">Get Premium</button>' +
+        '<button class="pr-signin" data-unlock-signin>Already paid? Sign in</button>';
+      document.body.appendChild(rail);
+    }
+
+    // 2. inline banner mid-content
+    if (!isHome && !document.getElementById("promo-band")) {
+      // descend past single-child wrappers (main > .container > …) to the
+      // element that actually holds the page's content blocks
+      var host = document.querySelector("main") || document.querySelector(".site-main");
+      while (host && host.children.length === 1 && host.firstElementChild &&
+             /^(DIV|SECTION)$/.test(host.firstElementChild.tagName)) {
+        host = host.firstElementChild;
+      }
+      if (host) {
+        var blocks = [].filter.call(host.children, function (el) {
+          return /^(SECTION|ARTICLE|DIV|UL|OL|TABLE)$/.test(el.tagName) && el.offsetHeight > 40;
+        });
+        // sit after the 2nd block, but never as the very last thing on the page
+        var anchor = blocks.length >= 3 ? blocks[1] : (blocks.length ? blocks[0] : null);
+        if (anchor) {
+          var band = document.createElement("div");
+          band.id = "promo-band"; band.className = "promo-band";
+          band.innerHTML =
+            '<div class="pb-left"><span class="pb-crown">👑</span>' +
+              '<div><b>Unlock every PYQ, every explanation</b>' +
+              '<em>UPSC · SSC · JEE · NEET · Boards — ' + price + ' for a full year</em></div>' +
+            '</div>' +
+            '<div class="pb-right">' +
+              '<button class="pb-cta" data-unlock="band">Get Premium</button>' +
+              '<button class="pb-signin" data-unlock-signin>Already paid?</button>' +
+            '</div>';
+          anchor.parentNode.insertBefore(band, anchor.nextSibling);
+        }
+      }
+    }
   }
 
   /* account chip (right side of header): plan status, days left, renew, sign out */
@@ -304,21 +360,8 @@
             '<div class="unlock-price"><span class="up-was">₹499</span><span class="up-amt">' + price + '</span><span class="up-note">one-time · valid 1 year</span></div>' +
             '<button class="unlock-cta" data-unlock-buy><span class="uc-glow"></span>' + escapeH(cta) + '</button>' +
             '<p class="unlock-sub">' + escapeH(sub) + '</p>' +
-            (loggedIn ? '' :
-              '<button class="email-toggle" data-email-toggle>Prefer email? Use a code instead</button>' +
-              '<div class="email-alt" hidden>' +
-                '<div class="email-or">or continue with email</div>' +
-                '<div class="email-step" data-otp-step="1">' +
-                  '<input type="email" class="email-in" placeholder="you@email.com" autocomplete="email" />' +
-                  '<button class="email-btn" data-otp-send>Send code</button>' +
-                '</div>' +
-                '<div class="email-step" data-otp-step="2" hidden>' +
-                  '<input type="text" class="email-in otp-in" inputmode="numeric" maxlength="6" placeholder="6-digit code" />' +
-                  '<button class="email-btn" data-otp-verify>Verify &amp; continue</button>' +
-                '</div>' +
-                '<div class="email-hint" data-otp-hint></div>' +
-              '</div>') +
             '<div class="unlock-trust">🔒 Razorpay secure · ⚡ Instant access</div>' +
+            (loggedIn ? '' : '<p class="unlock-restore">Already paid? <a href="#" data-unlock-signin>Sign in to restore access</a></p>') +
           '</div>' +
         '</div>' +
       '</div>';
@@ -367,10 +410,8 @@
     var om = document.querySelector(".acct-menu:not([hidden])");
     if (om && !e.target.closest("#pay-acct")) om.hidden = true;
     if (e.target.closest("[data-unlock-close]") || (overlay && e.target === overlay)) { e.preventDefault(); closeUnlock(); return; }
+    if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); signInWithGoogle(); return; }
     if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); startCheckout(); return; }
-    if (e.target.closest("[data-email-toggle]")) { e.preventDefault(); toggleEmail(); return; }
-    if (e.target.closest("[data-otp-send]")) { e.preventDefault(); sendOtp(); return; }
-    if (e.target.closest("[data-otp-verify]")) { e.preventDefault(); verifyOtp(); return; }
     var u = e.target.closest("[data-unlock]");
     if (u) { e.preventDefault(); openUnlock(u.dataset.unlock || "cta"); return; }
     if (e.target.closest("[data-pay-signout]")) { e.preventDefault(); signOut(); return; }

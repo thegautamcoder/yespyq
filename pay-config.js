@@ -23,7 +23,7 @@ window.PAY_CONFIG = {
   SUPABASE_ANON_KEY: "sb_publishable_uVIZ60AYMFj3hdnhPYp4lw_AtMJLRNS",
   // Razorpay key_id ONLY (public). Test key first (rzp_test_...),
   // then live rzp_live_THPWiyqKLDnWYH. The SECRET never goes here.
-  RAZORPAY_KEY_ID: "rzp_test_YOUR_TEST_KEY",
+  RAZORPAY_KEY_ID: "rzp_live_THPWiyqKLDnWYH",
 
   PRICE_PAISE: 14900,           // ₹149.00
   PRICE_LABEL: "₹149",

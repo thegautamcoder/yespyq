@@ -48,16 +48,27 @@ Deno.serve(async (req) => {
   const admin = createClient(url, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!);
   const amount = parseInt(Deno.env.get("PRICE_PAISE") || "14900", 10);
   const days = parseInt(Deno.env.get("PLAN_DAYS") || "365", 10);
-  const expires = new Date(Date.now() + days * 86400000).toISOString();
+  const now = new Date();
+
+  // Renewal? Extend from whichever is later: today, or their existing expiry
+  // (so renewing early never loses the days they already paid for).
+  const { data: prev } = await admin.from("entitlements")
+    .select("expires_at, first_paid_at, purchase_count").eq("user_id", user.id).maybeSingle();
+  const base = prev?.expires_at && new Date(prev.expires_at) > now ? new Date(prev.expires_at) : now;
+  const expires = new Date(base.getTime() + days * 86400000).toISOString();
+
   const { error: wErr } = await admin.from("entitlements").upsert({
     user_id: user.id,
+    email: user.email ?? null,
     paid: true,
     amount,
     currency: "INR",
     razorpay_order_id,
     razorpay_payment_id,
-    paid_at: new Date().toISOString(),
+    paid_at: now.toISOString(),
+    first_paid_at: prev?.first_paid_at ?? now.toISOString(),
     expires_at: expires,
+    purchase_count: (prev?.purchase_count ?? 0) + 1,
   }, { onConflict: "user_id" });
   if (wErr) return json({ error: "could not save entitlement" }, 500);
 
