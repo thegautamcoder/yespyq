@@ -13,7 +13,7 @@ window.PAY_CONFIG = {
   /* ---- enforcement: actually require ₹149 to see everything ---- */
   // Turn ON only once Supabase + Razorpay below are live & tested.
   // While false, the whole site stays fully usable (no content locked).
-  GATE_CONTENT: false,
+  GATE_CONTENT: true,
   FREE_QUESTIONS: 20,           // questions a free user can browse per view
   FREE_QUIZZES_PER_DAY: 1,      // free quizzes per day
 
