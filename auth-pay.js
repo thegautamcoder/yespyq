@@ -118,7 +118,7 @@
     var rzp = new window.Razorpay({
       key: cfg.RAZORPAY_KEY_ID, order_id: order.id, amount: order.amount, currency: order.currency || "INR",
       name: "YESPYQ Premium", description: "Lifetime access — all PYQs & explanations",
-      image: "https://yespyq.com/assets/favicon.svg", prefill: { email: _user.email || "" }, theme: { color: "#ea580c" },
+      image: "https://yespyq.com/assets/favicon.svg", prefill: { email: _user.email || "" }, theme: { color: "#6366f1" },
       handler: async function (r) {
         setBusy(true, "Verifying…");
         try {
