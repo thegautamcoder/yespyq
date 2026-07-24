@@ -755,12 +755,38 @@ html,body{overflow-x:hidden}
   width:32px;height:32px;border-radius:50%;font-size:1.3rem;line-height:1;color:#fff;cursor:pointer}
 .unlock-x:hover{background:rgba(255,255,255,.45)}
 /* top banner ribbon */
-.unlock-banner{position:relative;overflow:hidden;text-align:center;font-weight:800;letter-spacing:.14em;
-  font-size:.95rem;color:#fff;padding:.85rem 1rem;border-radius:24px 24px 0 0;
+.unlock-banner{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;
+  gap:.6rem;flex-wrap:wrap;font-weight:800;letter-spacing:.12em;
+  font-size:.9rem;color:#fff;padding:.8rem 1rem;border-radius:24px 24px 0 0;
   background:linear-gradient(100deg,#6366f1,#7c3aed 60%,#6d28d9)}
 .unlock-banner .ub-crown{font-size:1.15rem;filter:drop-shadow(0 3px 6px rgba(0,0,0,.25))}
+.unlock-banner .ub-off{font-size:.68rem;letter-spacing:.06em;background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.35);padding:.2rem .55rem;border-radius:999px;white-space:nowrap}
 .unlock-banner .ub-shine{position:absolute;top:0;left:-60%;width:60%;height:100%;
   background:linear-gradient(105deg,transparent,rgba(255,255,255,.55),transparent);animation:shineSweep 3.2s ease-in-out infinite}
+/* free vs premium comparison table */
+.cmp{border:1px solid rgba(99,102,241,.25);border-radius:14px;overflow:hidden;margin-top:.9rem}
+.cmp-row{display:grid;grid-template-columns:1.6fr .7fr .9fr;align-items:center;gap:.4rem;
+  padding:.5rem .7rem;font-size:.82rem;border-top:1px solid rgba(99,102,241,.12)}
+.cmp-row:first-child{border-top:none}
+.cmp-head{background:rgba(99,102,241,.08);font-weight:800;font-size:.72rem;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--muted)}
+.cmp-head .cmp-pro{color:#7c3aed}
+.cmp-f{color:var(--ink);font-weight:600}
+.cmp-no{color:var(--muted);text-align:center;font-size:.76rem}
+.cmp-yes{color:#7c3aed;font-weight:700;text-align:center;font-size:.78rem;background:rgba(124,58,237,.08);
+  border-radius:8px;padding:.2rem .3rem}
+.cmp-head span:nth-child(2){text-align:center}
+.unlock-stats{display:flex;gap:1.2rem;justify-content:center;margin-top:.85rem;color:var(--muted);font-size:.78rem}
+.unlock-stats b{color:var(--ink);font-size:1.05rem;margin-right:.25rem}
+/* offer chip + anchor price */
+.offer-chip{display:inline-block;margin:0 auto .6rem;font-size:.68rem;font-weight:800;letter-spacing:.09em;
+  color:#fff;background:linear-gradient(100deg,#e11d48,#be123c);border-radius:999px;padding:.3rem .8rem;
+  animation:chipPulse 2s ease-in-out infinite}
+@keyframes chipPulse{0%,100%{box-shadow:0 0 0 0 rgba(225,29,72,.45)}50%{box-shadow:0 0 0 7px rgba(225,29,72,0)}}
+.up-was{display:inline-block;font-size:1.15rem;color:var(--muted);text-decoration:line-through;
+  margin-right:.5rem;vertical-align:baseline}
+.up-math{display:block;font-size:.78rem;color:#7c3aed;font-weight:600;margin-top:.35rem}
 /* two-column body — kills the empty side space */
 .unlock-main{display:grid;grid-template-columns:1.25fr 1fr;gap:1.6rem;padding:1.6rem 1.8rem 1.7rem}
 .unlock-left h2{font-size:1.4rem;line-height:1.25;margin-bottom:.35rem;

@@ -214,17 +214,18 @@
     if (_paid) document.querySelectorAll("[data-unlock='header']").forEach(function (el) { el.style.display = "none"; });
   }
 
-  function featureList() {
-    return [
-      ["📚", "All 2,200+ UPSC PYQs", "Every subject & year, fully unlocked"],
-      ["💡", "Detailed explanations", "The why behind every answer"],
-      ["⚡", "Unlimited quiz mode", "Practice as much as you want"],
-      ["🎯", "Subject & year filters", "Target exactly what you need"],
-      ["♾️", "Lifetime access", "One-time payment, no subscription"],
-      ["📈", "Track XP & streaks", "Stay motivated every day"]
-    ].map(function (x) {
-      return '<li><span class="uf-ic">' + x[0] + '</span><span class="uf-t"><b>' + x[1] + '</b><em>' + x[2] + '</em></span><span class="uf-ck">✓</span></li>';
+  /* Free-vs-Premium comparison — loss-framing converts better than bullets */
+  function compareTable() {
+    var rows = [
+      ["All 2,237 UPSC PYQs (1995–2024)", "20 preview", "✓ All"],
+      ["Detailed explanations", "Preview only", "✓ Every answer"],
+      ["Quiz mode", "1 / day", "✓ Unlimited"],
+      ["All 30 years · 7 subjects", "Limited", "✓ Everything"],
+      ["Future question updates", "—", "✓ Free forever"]
+    ].map(function (r) {
+      return '<div class="cmp-row"><span class="cmp-f">' + r[0] + '</span><span class="cmp-no">' + r[1] + '</span><span class="cmp-yes">' + r[2] + '</span></div>';
     }).join("");
+    return '<div class="cmp"><div class="cmp-row cmp-head"><span></span><span>Free</span><span class="cmp-pro">👑 Premium</span></div>' + rows + '</div>';
   }
 
   function openUnlock(context) {
@@ -232,20 +233,22 @@
     overlay = document.createElement("div");
     overlay.className = "unlock-overlay";
     var loggedIn = !!_user;
-    var cta = loggedIn ? "Unlock everything · " + (cfg.PRICE_LABEL || "₹149") : "Continue with Google";
-    var sub = loggedIn ? "One-time payment · instant lifetime access" : "Sign in, then pay " + (cfg.PRICE_LABEL || "₹149") + " once — instant access";
+    var cta = "Get Lifetime Access →";
+    var sub = loggedIn ? "One-time payment · unlocked in seconds" : "30 seconds: Google sign-in → pay " + (cfg.PRICE_LABEL || "₹149") + " → everything unlocks";
     overlay.innerHTML =
       '<div class="unlock-card" role="dialog" aria-modal="true">' +
         '<button class="unlock-x" data-unlock-close aria-label="Close">×</button>' +
-        '<div class="unlock-banner"><span class="ub-shine"></span><span class="ub-crown">👑</span> YESPYQ PREMIUM</div>' +
+        '<div class="unlock-banner"><span class="ub-shine"></span><span class="ub-crown">👑</span> YESPYQ PREMIUM <span class="ub-off">🔥 70% OFF — LAUNCH OFFER</span></div>' +
         '<div class="unlock-main">' +
           '<div class="unlock-left">' +
-            '<h2>Unlock everything you need to crack Prelims</h2>' +
-            '<p class="unlock-tag">Join aspirants practising the complete PYQ bank — one place, one price.</p>' +
-            '<ul class="unlock-feats">' + featureList() + '</ul>' +
+            '<h2>Every UPSC PYQ ever asked. Every explanation. One price.</h2>' +
+            '<p class="unlock-tag">Toppers don’t guess what UPSC asks — they study what it already asked.</p>' +
+            compareTable() +
+            '<div class="unlock-stats"><span><b>2,237</b> PYQs</span><span><b>30</b> years</span><span><b>7</b> subjects</span></div>' +
           '</div>' +
           '<div class="unlock-right">' +
-            '<div class="unlock-price"><span class="up-amt">' + (cfg.PRICE_LABEL || "₹149") + '</span><span class="up-note">one-time · lifetime</span></div>' +
+            '<div class="offer-chip">LAUNCH OFFER — ENDS SOON</div>' +
+            '<div class="unlock-price"><span class="up-was">₹499</span><span class="up-amt">' + (cfg.PRICE_LABEL || "₹149") + '</span><span class="up-note">one-time · lifetime · no subscription</span><span class="up-math">less than one mock test 📝</span></div>' +
             '<button class="unlock-cta" data-unlock-buy><span class="uc-glow"></span>' + escapeH(cta) + '</button>' +
             '<p class="unlock-sub">' + escapeH(sub) + '</p>' +
             (loggedIn ? '' :
