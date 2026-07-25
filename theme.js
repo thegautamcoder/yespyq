@@ -7,8 +7,15 @@
    06:00 without needing a reload.
    Exposes window.YQTheme = { get, set, effective, onChange }. */
 (function () {
-  var KEY = "yespyq_theme";
+  /* v2 key on purpose. The old system stored only "light"/"dark", so every
+     visitor who ever tapped the toggle had a permanent pin saved — and the
+     new code would read that as a deliberate choice and never auto-switch
+     again. Reading a fresh key retires those legacy pins: everyone starts
+     on auto, and only a choice made in the new UI sticks. */
+  var KEY = "yespyq_theme_v2";
+  var LEGACY_KEY = "yespyq_theme";
   var listeners = [];
+  try { localStorage.removeItem(LEGACY_KEY); } catch (e) {}
 
   function istHour() {
     var d = new Date();
