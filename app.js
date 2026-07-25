@@ -176,6 +176,7 @@ function renderMore() {
 /* premium lock strip shown when a free user hits the preview limit */
 function showUnlockStrip(locked) {
   removeUnlockStrip();
+  if (window.PAY && PAY.track) PAY.track("content_locked", { locked: locked, subject: filter.subject, year: filter.year });
   const strip = document.createElement("div");
   strip.id = "unlock-strip";
   strip.className = "unlock-strip";
@@ -300,7 +301,7 @@ function renderQuizSetup() {
 }
 
 function startQuiz(opts = {}) {
-  if (!quizAllowed()) { if (window.PAY) PAY.openUnlock("quiz"); return; }
+  if (!quizAllowed()) { if (window.PAY && PAY.track) PAY.track("quiz_limit_hit", {}); if (window.PAY) PAY.openUnlock("quiz"); return; }
   noteQuizStart();
   const size = opts.size || 10;
   let pool = QUESTIONS.filter(q => (!opts.subject || q.s === opts.subject) && (!opts.year || q.y === opts.year));

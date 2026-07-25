@@ -162,6 +162,7 @@
      never push a returning customer into paying again. */
   async function signInWithGoogle(wantsToBuy) {
     if (!authReady()) { comingSoon(); return; }
+    track("signin_started", { intent: wantsToBuy ? "buy" : "restore" });
     if (wantsToBuy) localStorage.setItem(INTENT, "1");
     else localStorage.removeItem(INTENT);
     await ensureSb();
@@ -172,20 +173,58 @@
   /* ---------- analytics: logins + time on site ----------
      Writes go through SECURITY DEFINER RPCs keyed on auth.uid(),
      so a user can only ever record their own activity. */
+  /* NOTE: supabase-js builders are lazy — rpc() only performs the request
+     once it is awaited/then-ed. Calling it fire-and-forget silently does
+     nothing, which is why logins and activity were never recorded. Always
+     attach .then(). */
+  function rpc(fn, args) {
+    if (!sb) return Promise.resolve();
+    try {
+      return Promise.resolve(sb.rpc(fn, args)).then(function (r) {
+        if (r && r.error) console.warn("[YESPYQ] rpc " + fn + " failed:", r.error.message);
+        return r;
+      }, function (e) { console.warn("[YESPYQ] rpc " + fn + " threw:", e); });
+    } catch (e) { return Promise.resolve(); }
+  }
+
   function recordLogin() {
     if (!sb || !_user) return;
     // one login event per browser session, not per page view
     if (sessionStorage.getItem("yespyq_login_logged")) return;
     sessionStorage.setItem("yespyq_login_logged", "1");
-    try { sb.rpc("record_login", { p_user_agent: navigator.userAgent.slice(0, 300) }); } catch (e) {}
+    rpc("record_login", { p_user_agent: navigator.userAgent.slice(0, 300) });
+    track("signin_completed", { paid: _paid });
   }
+
+  /* ---------- product events (works logged-out too) ---------- */
+  function anonId() {
+    try {
+      var k = "yespyq_anon", v = localStorage.getItem(k);
+      if (!v) { v = "a_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 9); localStorage.setItem(k, v); }
+      return v;
+    } catch (e) { return null; }
+  }
+  function track(event, props) {
+    if (!authReady()) return Promise.resolve();
+    // events must fire for anonymous visitors too — they are the drop-offs
+    return ensureSb().then(function () {
+      return rpc("track_event", {
+        p_event: event,
+        p_props: props || {},
+        p_path: location.pathname.slice(0, 300),
+        p_anon_id: anonId(),
+        p_referrer: (document.referrer || "").slice(0, 300)
+      });
+    }, function () {});
+  }
+  window.PAY.track = track;
 
   var _acc = 0, _tick = null;
   function flushActivity() {
     var secs = Math.round(_acc);
     if (!sb || !_user || secs < 5) return;
     _acc = 0;
-    try { sb.rpc("record_activity", { p_seconds: secs }); } catch (e) {}
+    rpc("record_activity", { p_seconds: secs });
   }
   function startActivityTimer() {
     if (_tick || !_user) return;
@@ -223,6 +262,7 @@
       if (!overlay) openUnlock("error");
       hidePayLoader();
       var why = (e && e.message) ? String(e.message) : "unknown error";
+      track("order_failed", { reason: why });
       console.error("[YESPYQ] create-order failed:", why);
       alert("Could not start payment.\n\nReason: " + why + "\n\nPlease screenshot this and email teamyespyq@gmail.com.");
       return;
@@ -261,14 +301,15 @@
       },
       // closing the Razorpay window shouldn't quietly drop them onto the
       // site — bring the paywall back so the next step is obvious
-      modal: { ondismiss: function () { setBusy(false); hidePayLoader(); if (!_paid) openUnlock("dismissed"); } }
+      modal: { ondismiss: function () { setBusy(false); hidePayLoader(); track("checkout_dismissed", {}); if (!_paid) openUnlock("dismissed"); } }
     });
-    rzp.on("payment.failed", function () { setBusy(false); hidePayLoader(); alert("Payment failed or cancelled."); });
+    rzp.on("payment.failed", function (r) { setBusy(false); hidePayLoader(); track("payment_failed", { reason: (r && r.error && r.error.description) || "" }); alert("Payment failed or cancelled."); });
     setBusy(false);
+    track("checkout_started", { order_id: order.id, amount: order.amount });
     rzp.open();
     hidePayLoader();                      // Razorpay is on screen now
   }
-  function onPaid() { refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 Premium active for 1 year — everything's unlocked!"); }); }
+  function onPaid() { track("payment_success", {}); refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 Premium active for 1 year — everything's unlocked!"); }); }
   function comingSoon() { showToast("💛 Premium is launching very soon — thanks for your interest!"); }
 
   /* ============================================================
@@ -428,6 +469,7 @@
   function openUnlock(context) {
     if (!SHOW || _paid || overlay) return;
     var renewing = context === "expired" || _expired;
+    track("paywall_shown", { context: context || "cta", renewing: renewing, signed_in: !!_user });
     overlay = document.createElement("div");
     overlay.className = "unlock-overlay";
     var loggedIn = !!_user;
@@ -464,6 +506,7 @@
   }
   function closeUnlock() {
     if (!overlay) return;
+    if (!_paid) track("paywall_dismissed", { signed_in: !!_user });
     overlay.classList.remove("in"); var o = overlay; overlay = null;
     document.body.style.overflow = "";
     setTimeout(function () { if (o && o.parentNode) o.parentNode.removeChild(o); }, 200);
@@ -513,12 +556,12 @@
     if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); signInWithGoogle(false); return; }
     if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); startCheckout(); return; }
     var u = e.target.closest("[data-unlock]");
-    if (u) { e.preventDefault(); openUnlock(u.dataset.unlock || "cta"); return; }
+    if (u) { e.preventDefault(); track("premium_click", { source: u.dataset.unlock || "cta" }); openUnlock(u.dataset.unlock || "cta"); return; }
     if (e.target.closest("[data-pay-signout]")) { e.preventDefault(); signOut(); return; }
   });
 
   /* ---------- boot ---------- */
-  function boot() { renderChrome(); armTimer(); initSession(); }
+  function boot() { renderChrome(); armTimer(); initSession(); track("page_view", { gated: GATE, paid: _paid }); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();
 })();

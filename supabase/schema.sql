@@ -127,3 +127,57 @@ from public.entitlements e
 left join public.user_profiles p on p.user_id = e.user_id
 where e.paid
 order by e.paid_at desc;
+
+/* ============================================================
+   6. EVENTS — product funnel (page views, CTA clicks, drop-offs)
+      Anonymous visitors matter most here (they are the ones who
+      drop), so anon_id lets us follow a visitor before login and
+      stitch them to a user_id once they sign in.
+   ============================================================ */
+create table if not exists public.events (
+  id          bigserial primary key,
+  user_id     uuid references auth.users(id) on delete set null,
+  anon_id     text,
+  event       text not null,
+  props       jsonb not null default '{}'::jsonb,
+  path        text,
+  referrer    text,
+  created_at  timestamptz not null default now()
+);
+create index if not exists events_event_time_idx on public.events(event, created_at desc);
+create index if not exists events_user_idx       on public.events(user_id, created_at desc);
+create index if not exists events_anon_idx       on public.events(anon_id, created_at desc);
+
+alter table public.events enable row level security;
+drop policy if exists events_own_read on public.events;
+create policy events_own_read on public.events
+  for select using (auth.uid() = user_id);
+
+-- Only writable through this RPC, so nobody can forge somebody else's user_id.
+create or replace function public.track_event(
+  p_event text, p_props jsonb default '{}'::jsonb,
+  p_path text default null, p_anon_id text default null, p_referrer text default null)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  if p_event is null or length(p_event) > 60 then return; end if;
+  insert into public.events(user_id, anon_id, event, props, path, referrer)
+  values (auth.uid(), nullif(p_anon_id,''), p_event,
+          coalesce(p_props,'{}'::jsonb), left(coalesce(p_path,''),300), left(coalesce(p_referrer,''),300));
+end $$;
+grant execute on function public.track_event(text, jsonb, text, text, text) to anon, authenticated;
+
+/* Funnel rollup — how many reach each step, and where people drop. */
+create or replace view public.funnel_daily as
+select date_trunc('day', created_at)::date as day,
+  count(*) filter (where event='page_view')         as page_views,
+  count(distinct anon_id) filter (where event='page_view') as visitors,
+  count(*) filter (where event='premium_click')     as premium_clicks,
+  count(*) filter (where event='paywall_shown')     as paywall_shown,
+  count(*) filter (where event='paywall_dismissed') as paywall_dismissed,
+  count(*) filter (where event='signin_started')    as signin_started,
+  count(*) filter (where event='signin_completed')  as signin_completed,
+  count(*) filter (where event='checkout_started')  as checkout_started,
+  count(*) filter (where event='checkout_dismissed')as checkout_dismissed,
+  count(*) filter (where event='payment_success')   as payments,
+  count(*) filter (where event in ('payment_failed','order_failed')) as payment_errors
+from public.events group by 1 order by 1 desc;
