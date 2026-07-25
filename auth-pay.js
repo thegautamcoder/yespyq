@@ -157,9 +157,13 @@
   }
 
   /* ---------- auth ---------- */
-  async function signInWithGoogle() {
+  /* wantsToBuy=true  → resume checkout automatically after the redirect
+     wantsToBuy=false → "Already paid? Sign in": restore access only, and
+     never push a returning customer into paying again. */
+  async function signInWithGoogle(wantsToBuy) {
     if (!authReady()) { comingSoon(); return; }
-    localStorage.setItem(INTENT, "1");
+    if (wantsToBuy) localStorage.setItem(INTENT, "1");
+    else localStorage.removeItem(INTENT);
     await ensureSb();
     sb.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname } });
   }
@@ -200,7 +204,7 @@
   /* ---------- payment ---------- */
   async function startCheckout() {
     if (!authReady()) { comingSoon(); return; }
-    if (!_user) { await signInWithGoogle(); return; }      // sign-in works even before Razorpay is set
+    if (!_user) { await signInWithGoogle(true); return; }  // buying: resume checkout after redirect
     if (!backendReady()) { comingSoon(); return; }          // signed in, but payments not live yet
     // load Razorpay's SDK *while* the order is being created, not after —
     // the two are independent and doing them in series wastes a second
@@ -394,12 +398,20 @@
       planCls = "";
       renewBtn = '<button class="acct-renew" data-unlock="acct">Upgrade · ' + (cfg.PRICE_LABEL || "₹149") + '</button>';
     }
+    var mode = (window.YQTheme && window.YQTheme.get()) || "auto";
+    var themeRow = '<div class="acct-theme"><span class="at-lbl">Appearance</span><div class="at-seg">' +
+      ["auto", "light", "dark"].map(function (m) {
+        return '<button class="at-opt' + (mode === m ? " on" : "") + '" data-theme-set="' + m + '">' +
+          (m === "auto" ? "Auto" : m === "light" ? "☀️" : "🌙") + '</button>';
+      }).join("") + '</div></div>';
+
     acct.innerHTML =
       '<button class="acct-btn ' + (_paid ? "paid" : "") + '" data-acct-toggle aria-label="Account">' + escapeH(initial) + '</button>' +
       '<div class="acct-menu" hidden>' +
         '<div class="acct-email">' + escapeH(email) + '</div>' +
         '<div class="acct-plan ' + planCls + '">' + plan + '</div>' +
         renewBtn +
+        themeRow +
         '<button class="acct-out" data-pay-signout>Sign out</button>' +
       '</div>';
   }
@@ -486,12 +498,19 @@
 
   /* ---------- delegated clicks ---------- */
   document.addEventListener("click", function (e) {
+    var ts = e.target.closest("[data-theme-set]");
+    if (ts) {
+      e.preventDefault();
+      if (window.YQTheme) window.YQTheme.set(ts.dataset.themeSet);
+      ts.parentNode.querySelectorAll(".at-opt").forEach(function (b) { b.classList.toggle("on", b === ts); });
+      return;
+    }
     var at = e.target.closest("[data-acct-toggle]");
     if (at) { e.preventDefault(); var m = at.parentNode.querySelector(".acct-menu"); if (m) m.hidden = !m.hidden; return; }
     var om = document.querySelector(".acct-menu:not([hidden])");
     if (om && !e.target.closest("#pay-acct")) om.hidden = true;
     if (e.target.closest("[data-unlock-close]") || (overlay && e.target === overlay)) { e.preventDefault(); closeUnlock(); return; }
-    if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); signInWithGoogle(); return; }
+    if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); signInWithGoogle(false); return; }
     if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); startCheckout(); return; }
     var u = e.target.closest("[data-unlock]");
     if (u) { e.preventDefault(); openUnlock(u.dataset.unlock || "cta"); return; }
