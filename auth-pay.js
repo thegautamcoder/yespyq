@@ -169,11 +169,13 @@
         method: "POST", headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token }, body: "{}"
       });
       order = await resp.json();
-      if (!resp.ok || !order.id) throw 0;
+      if (!resp.ok || !order.id) throw new Error(order && order.error ? order.error : "HTTP " + resp.status);
     } catch (e) {
       setBusy(false);
       if (!overlay) openUnlock("error");
-      alert("Could not start payment. Please try again, or email teamyespyq@gmail.com.");
+      var why = (e && e.message) ? String(e.message) : "unknown error";
+      console.error("[YESPYQ] create-order failed:", why);
+      alert("Could not start payment.\n\nReason: " + why + "\n\nPlease screenshot this and email teamyespyq@gmail.com.");
       return;
     }
 
