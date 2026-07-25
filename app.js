@@ -235,7 +235,8 @@ $("#qlist").addEventListener("click", e => {
   const ex = card.querySelector("[data-exp]");
   ex.innerHTML = `
     <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
-    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>`;
+    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>
+    ${(window.PAY && PAY.nudgeHTML) ? PAY.nudgeHTML() : ""}`;
   ex.classList.remove("hidden");
   if (correct && !answered.has(q.i)) {
     answered.add(q.i);
@@ -361,7 +362,8 @@ function answerQuiz(btn) {
   const ex = body.querySelector("[data-exp]");
   ex.innerHTML = `
     <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
-    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>`;
+    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>
+    ${(window.PAY && PAY.nudgeHTML) ? PAY.nudgeHTML() : ""}`;
   ex.classList.remove("hidden");
   const next = body.querySelector("[data-quiz-next]");
   next.textContent = quiz.idx + 1 >= quiz.total ? "See results →" : "Next →";

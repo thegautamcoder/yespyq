@@ -350,7 +350,53 @@
   /* In-page promos on content pages: a sticky rail in the empty side
      margin (desktop) + an inline banner after the first content block.
      Both vanish once the user is premium. */
+  /* A line under every revealed solution — the highest-intent moment on
+     the site, since they've just read one explanation and want the rest. */
+  function nudgeHTML() {
+    if (_paid || !SHOW) return "";
+    return '<div class="sol-nudge">' +
+      '<span class="sn-t">Liked this explanation? <b>2,700+ more</b>, every one solved.</span>' +
+      '<button class="sn-cta" data-unlock="solution">Get Premium · ' + (cfg.PRICE_LABEL || "₹149") + '</button>' +
+    '</div>';
+  }
+  window.PAY.nudgeHTML = nudgeHTML;
+
+  function injectSolutionNudges() {
+    if (_paid || !SHOW) {
+      document.querySelectorAll(".sol-nudge").forEach(function (n) { n.remove() });
+      return;
+    }
+    document.querySelectorAll(".exp-body").forEach(function (body) {
+      var host = body.parentNode;
+      if (!host || host.querySelector(":scope > .sol-nudge")) return;
+      host.insertAdjacentHTML("beforeend", nudgeHTML());
+    });
+  }
+
+  /* Where does the readable content actually end? Page types differ:
+     most use main > .container, but the question pages wrap in
+     article.article with no container, so keying off .container alone
+     measured main itself (full width) and reported zero free margin —
+     hiding the rail on the largest section of the site. Take the widest
+     genuinely-constrained block instead, ignoring full-bleed elements
+     and anything we injected ourselves. */
+  function contentRightEdge() {
+    var main = document.querySelector("main") || document.body;
+    var vw = window.innerWidth, edge = 0;
+    var cands = main.querySelectorAll(".container, article, section, .wrap");
+    for (var i = 0; i < cands.length; i++) {
+      var el = cands[i];
+      if (el.closest("#promo-band") || el.closest("#promo-rail")) continue;
+      var r = el.getBoundingClientRect();
+      if (r.width < 200 || r.height < 40) continue;
+      if (r.width > vw - 80) continue;                 // full-bleed, tells us nothing
+      if (r.right > edge) edge = r.right;
+    }
+    return edge || main.getBoundingClientRect().right;
+  }
+
   function renderPromos() {
+    injectSolutionNudges();
     if (_paid) {
       var old = document.getElementById("promo-rail"); if (old) old.remove();
       var oldb = document.getElementById("promo-band"); if (oldb) oldb.remove();
@@ -363,20 +409,21 @@
     // 1. side rail — sized to whatever margin the page actually has, so the
     // common laptop widths (1440/1512, ~160-196px of margin) get one too
     // instead of leaving that column empty. Measured, never overlapping.
-    var col = document.querySelector("main .container") || document.querySelector("main");
-    var freeRight = col ? window.innerWidth - col.getBoundingClientRect().right : 0;
-    var GAP = 14, MIN_RAIL = 120, FULL_RAIL = 186;
+    var freeRight = window.innerWidth - contentRightEdge();
+    var GAP = 14, MIN_RAIL = 120, FULL_RAIL = 250;
     var railW = Math.min(FULL_RAIL, Math.floor(freeRight - GAP * 2));
     if (!isHome && !document.getElementById("promo-rail") && railW >= MIN_RAIL) {
       var rail = document.createElement("aside");
       rail.id = "promo-rail";
-      rail.className = "promo-rail" + (railW < 160 ? " compact" : "");
+      // three sizes so the card grows into whatever margin exists
+      rail.className = "promo-rail" + (railW < 160 ? " compact" : railW >= 200 ? " wide" : "");
       rail.style.width = railW + "px";
       rail.style.right = GAP + "px";
       rail.innerHTML =
         '<div class="pr-crown">👑</div>' +
         '<div class="pr-title">Unlock every PYQ</div>' +
         '<div class="pr-sub">UPSC · SSC · JEE · NEET &amp; more</div>' +
+        (railW >= 200 ? '<ul class="pr-list"><li>✓ 2,700+ PYQs</li><li>✓ Every explanation</li><li>✓ Unlimited quizzes</li></ul>' : "") +
         '<div class="pr-price">' + price + '<span>/year</span></div>' +
         '<button class="pr-cta" data-unlock="rail">Get Premium</button>' +
         '<button class="pr-signin" data-unlock-signin>Already paid? Sign in</button>';

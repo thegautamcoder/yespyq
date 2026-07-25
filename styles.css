@@ -945,3 +945,26 @@ body.nav-open{overflow:hidden}
 .acct-theme .at-opt{flex:1;border:none;cursor:pointer;background:none;border-radius:7px;
   padding:.38rem .2rem;font-size:.8rem;font-weight:600;color:var(--slate)}
 .acct-theme .at-opt.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(15,23,42,.12)}
+
+/* wide rail variant — more presence when the margin allows (v38) */
+.promo-rail.wide{padding:1.25rem 1rem}
+.promo-rail.wide .pr-crown{font-size:1.8rem}
+.promo-rail.wide .pr-title{font-size:1.08rem;margin-top:.35rem}
+.promo-rail.wide .pr-sub{font-size:.76rem}
+.promo-rail.wide .pr-price{font-size:1.85rem;margin:.7rem 0 .15rem}
+.promo-rail.wide .pr-cta{padding:.7rem;font-size:.92rem}
+.promo-rail .pr-list{list-style:none;margin:.75rem 0 .1rem;text-align:left;display:flex;
+  flex-direction:column;gap:.32rem}
+.promo-rail .pr-list li{font-size:.76rem;color:#cbd5e1;line-height:1.3}
+
+/* premium nudge under a revealed solution/explanation */
+.sol-nudge{display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap;
+  margin-top:.85rem;padding:.7rem .9rem;border-radius:12px;background:#0f172a;
+  border:1px solid rgba(217,178,74,.35)}
+.sol-nudge .sn-t{font-size:.85rem;color:#e2e8f0;min-width:0}
+.sol-nudge .sn-t b{color:#e8c76b}
+.sol-nudge .sn-cta{flex:none;border:none;cursor:pointer;padding:.5rem .9rem;border-radius:9px;
+  font-weight:700;font-size:.82rem;color:#fff;background:linear-gradient(100deg,var(--blue-600),#4f46e5)}
+.sol-nudge .sn-cta:hover{filter:brightness(1.08)}
+@media(max-width:560px){ .sol-nudge{flex-direction:column;align-items:stretch;text-align:center}
+  .sol-nudge .sn-cta{width:100%} }
