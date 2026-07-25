@@ -87,13 +87,25 @@
     try { for (var i = 0; i < localStorage.length; i++) { var k = localStorage.key(i); if (/^sb-.*-auth-token$/.test(k)) return true; } } catch (e) {}
     return false;
   }
+  /* Returning from Google, the session arrives in the URL (hash for the
+     implicit flow, ?code= for PKCE) BEFORE it exists in localStorage — so
+     we must boot Supabase for that too, or the login silently drops. */
+  function hasOAuthCallback() {
+    return /[#&]access_token=|[#&]error=/.test(location.hash || "") ||
+           /[?&]code=/.test(location.search || "");
+  }
   async function initSession() {
-    if (!authReady() || !hasStoredSession()) return;
+    if (!authReady()) return;
+    if (!hasStoredSession() && !hasOAuthCallback()) return;
     try {
       await ensureSb();
       var res = await sb.auth.getSession();
       var session = res && res.data && res.data.session;
       if (session) { _user = session.user; await refreshEntitlement(); recordLogin(); startActivityTimer(); renderChrome(); notify(); }
+      // tidy the tokens out of the address bar once they're stored
+      if (session && hasOAuthCallback() && history.replaceState) {
+        history.replaceState({}, document.title, location.pathname + location.search.replace(/[?&]code=[^&]*/, ""));
+      }
       if (_user && !_paid && localStorage.getItem(INTENT)) { localStorage.removeItem(INTENT); startCheckout(); return; }
       // plan ran out → tell the user once per session and re-lock content
       if (_expired && SHOW && !sessionStorage.getItem("yespyq_renew_shown")) {
@@ -158,7 +170,12 @@
       });
       order = await resp.json();
       if (!resp.ok || !order.id) throw 0;
-    } catch (e) { setBusy(false); alert("Could not start payment. Please try again."); return; }
+    } catch (e) {
+      setBusy(false);
+      if (!overlay) openUnlock("error");
+      alert("Could not start payment. Please try again, or email teamyespyq@gmail.com.");
+      return;
+    }
 
     var rzp = new window.Razorpay({
       key: cfg.RAZORPAY_KEY_ID, order_id: order.id, amount: order.amount, currency: order.currency || "INR",
@@ -176,7 +193,9 @@
         } catch (e) { alert("Payment received but verification failed. Email teamyespyq@gmail.com with your payment id."); }
         setBusy(false);
       },
-      modal: { ondismiss: function () { setBusy(false); } }
+      // closing the Razorpay window shouldn't quietly drop them onto the
+      // site — bring the paywall back so the next step is obvious
+      modal: { ondismiss: function () { setBusy(false); if (!_paid) openUnlock("dismissed"); } }
     });
     rzp.on("payment.failed", function () { setBusy(false); alert("Payment failed or cancelled."); });
     setBusy(false); rzp.open();
