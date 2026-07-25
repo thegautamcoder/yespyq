@@ -63,7 +63,43 @@
     });
     return sb;
   }
-  async function ensureRzp() { if (!window.Razorpay) await loadScript("https://checkout.razorpay.com/v1/checkout.js"); }
+  var _rzpLoading = null;
+  function ensureRzp() {
+    if (window.Razorpay) return Promise.resolve();
+    if (!_rzpLoading) _rzpLoading = loadScript("https://checkout.razorpay.com/v1/checkout.js");
+    return _rzpLoading;
+  }
+
+  /* ---------- "we're getting your payment ready" overlay ----------
+     Returning from Google there is a real gap (restore session, check
+     entitlement, load Razorpay, create the order). Left blank, people
+     assume it failed and leave — so say what's happening straight away. */
+  var _loader = null;
+  function showPayLoader(msg) {
+    if (_loader) { if (msg) setLoaderMsg(msg); return; }
+    _loader = document.createElement("div");
+    _loader.className = "pay-loader";
+    _loader.innerHTML =
+      '<div class="pl-card">' +
+        '<div class="pl-crown">👑</div>' +
+        '<div class="pl-spin" aria-hidden="true"></div>' +
+        '<div class="pl-msg">' + escapeH(msg || "Signing you in…") + '</div>' +
+        '<div class="pl-sub">Opening secure payment · ₹149 for 1 year</div>' +
+        '<div class="pl-trust">🔒 Secured by Razorpay</div>' +
+      '</div>';
+    document.body.appendChild(_loader);
+    requestAnimationFrame(function () { if (_loader) _loader.classList.add("in"); });
+  }
+  function setLoaderMsg(msg) {
+    var m = _loader && _loader.querySelector(".pl-msg");
+    if (m) m.textContent = msg;
+  }
+  function hidePayLoader() {
+    if (!_loader) return;
+    var l = _loader; _loader = null;
+    l.classList.remove("in");
+    setTimeout(function () { if (l.parentNode) l.parentNode.removeChild(l); }, 200);
+  }
 
   async function refreshEntitlement() {
     if (!_user || !sb) { _paid = false; _exp = null; _expired = false; return; }
@@ -97,6 +133,10 @@
   async function initSession() {
     if (!authReady()) return;
     if (!hasStoredSession() && !hasOAuthCallback()) return;
+    // coming back from Google mid-purchase: show the loader immediately,
+    // and start fetching Razorpay's SDK in the background right away
+    var resuming = hasOAuthCallback() && localStorage.getItem(INTENT);
+    if (resuming && SHOW) { showPayLoader("Signing you in…"); ensureRzp(); }
     try {
       await ensureSb();
       var res = await sb.auth.getSession();
@@ -107,12 +147,13 @@
         history.replaceState({}, document.title, location.pathname + location.search.replace(/[?&]code=[^&]*/, ""));
       }
       if (_user && !_paid && localStorage.getItem(INTENT)) { localStorage.removeItem(INTENT); startCheckout(); return; }
+      hidePayLoader();   // signed in but nothing to resume
       // plan ran out → tell the user once per session and re-lock content
       if (_expired && SHOW && !sessionStorage.getItem("yespyq_renew_shown")) {
         sessionStorage.setItem("yespyq_renew_shown", "1");
         openUnlock("expired");
       }
-    } catch (e) {}
+    } catch (e) { hidePayLoader(); }
   }
 
   /* ---------- auth ---------- */
@@ -161,8 +202,11 @@
     if (!authReady()) { comingSoon(); return; }
     if (!_user) { await signInWithGoogle(); return; }      // sign-in works even before Razorpay is set
     if (!backendReady()) { comingSoon(); return; }          // signed in, but payments not live yet
-    await ensureRzp();
+    // load Razorpay's SDK *while* the order is being created, not after —
+    // the two are independent and doing them in series wastes a second
+    var rzpReady = ensureRzp();
     setBusy(true);
+    setLoaderMsg("Setting up your payment…");
     var token = await accessToken(), order;
     try {
       var resp = await fetch(FUNCS + "/create-order", {
@@ -173,9 +217,19 @@
     } catch (e) {
       setBusy(false);
       if (!overlay) openUnlock("error");
+      hidePayLoader();
       var why = (e && e.message) ? String(e.message) : "unknown error";
       console.error("[YESPYQ] create-order failed:", why);
       alert("Could not start payment.\n\nReason: " + why + "\n\nPlease screenshot this and email teamyespyq@gmail.com.");
+      return;
+    }
+
+    // the SDK has been loading alongside the order — make sure it's ready
+    try { await rzpReady; } catch (e) {}
+    if (typeof window.Razorpay !== "function") {
+      hidePayLoader(); setBusy(false);
+      if (!overlay) openUnlock("error");
+      alert("Payment library failed to load. Please check your connection and try again.");
       return;
     }
 
@@ -203,10 +257,12 @@
       },
       // closing the Razorpay window shouldn't quietly drop them onto the
       // site — bring the paywall back so the next step is obvious
-      modal: { ondismiss: function () { setBusy(false); if (!_paid) openUnlock("dismissed"); } }
+      modal: { ondismiss: function () { setBusy(false); hidePayLoader(); if (!_paid) openUnlock("dismissed"); } }
     });
-    rzp.on("payment.failed", function () { setBusy(false); alert("Payment failed or cancelled."); });
-    setBusy(false); rzp.open();
+    rzp.on("payment.failed", function () { setBusy(false); hidePayLoader(); alert("Payment failed or cancelled."); });
+    setBusy(false);
+    rzp.open();
+    hidePayLoader();                      // Razorpay is on screen now
   }
   function onPaid() { refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 Premium active for 1 year — everything's unlocked!"); }); }
   function comingSoon() { showToast("💛 Premium is launching very soon — thanks for your interest!"); }
