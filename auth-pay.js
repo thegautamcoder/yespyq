@@ -182,7 +182,13 @@
     var rzp = new window.Razorpay({
       key: cfg.RAZORPAY_KEY_ID, order_id: order.id, amount: order.amount, currency: order.currency || "INR",
       name: "YESPYQ Premium", description: "1-year access — all PYQs & explanations",
-      image: "https://yespyq.com/assets/favicon.svg", prefill: { email: _user.email || "" }, theme: { color: "#2563eb" },
+      image: "https://yespyq.com/assets/favicon.svg", theme: { color: "#2563eb" },
+      // we already know who they are from Google — don't ask for a phone
+      // number, and don't let them type a different email than the account
+      // the entitlement will be written against
+      prefill: { email: _user.email || "" },
+      readonly: { email: true },
+      hidden: { contact: true },
       handler: async function (r) {
         setBusy(true, "Verifying…");
         try {
