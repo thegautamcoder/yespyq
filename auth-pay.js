@@ -360,13 +360,19 @@
     var price = cfg.PRICE_LABEL || "₹149";
     var isHome = !!document.getElementById("view-home");   // SPA homepage handles its own CTAs
 
-    // 1. side rail — only when the empty right margin is genuinely wide
-    // enough to hold it (measured, not guessed), so it never overlaps text
+    // 1. side rail — sized to whatever margin the page actually has, so the
+    // common laptop widths (1440/1512, ~160-196px of margin) get one too
+    // instead of leaving that column empty. Measured, never overlapping.
     var col = document.querySelector("main .container") || document.querySelector("main");
     var freeRight = col ? window.innerWidth - col.getBoundingClientRect().right : 0;
-    if (!isHome && !document.getElementById("promo-rail") && freeRight >= 210) {
+    var GAP = 14, MIN_RAIL = 120, FULL_RAIL = 186;
+    var railW = Math.min(FULL_RAIL, Math.floor(freeRight - GAP * 2));
+    if (!isHome && !document.getElementById("promo-rail") && railW >= MIN_RAIL) {
       var rail = document.createElement("aside");
-      rail.id = "promo-rail"; rail.className = "promo-rail";
+      rail.id = "promo-rail";
+      rail.className = "promo-rail" + (railW < 160 ? " compact" : "");
+      rail.style.width = railW + "px";
+      rail.style.right = GAP + "px";
       rail.innerHTML =
         '<div class="pr-crown">👑</div>' +
         '<div class="pr-title">Unlock every PYQ</div>' +
@@ -561,6 +567,18 @@
   });
 
   /* ---------- boot ---------- */
+  // the rail is sized from the measured margin, so re-fit it when the
+  // window changes rather than leaving a stale (or missing) one
+  var _refit = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(_refit);
+    _refit = setTimeout(function () {
+      var r = document.getElementById("promo-rail");
+      if (r) r.remove();
+      renderPromos();
+    }, 200);
+  });
+
   function boot() { renderChrome(); armTimer(); initSession(); track("page_view", { gated: GATE, paid: _paid }); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();

@@ -826,7 +826,7 @@ html,body{overflow-x:hidden}
    IN-PAGE PREMIUM PROMOS — side rail + inline band (v34)
    ============================================================ */
 /* sticky rail in the empty right margin (wide screens only) */
-.promo-rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:880;width:186px;
+.promo-rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:880;
   background:#0f172a;color:#e2e8f0;border:1px solid rgba(217,178,74,.4);border-radius:16px;
   padding:1.05rem .9rem;text-align:center;box-shadow:0 16px 40px rgba(15,23,42,.3)}
 .promo-rail .pr-crown{font-size:1.5rem}
@@ -839,7 +839,16 @@ html,body{overflow-x:hidden}
 .promo-rail .pr-cta:hover{filter:brightness(1.08)}
 .promo-rail .pr-signin{width:100%;margin-top:.4rem;background:none;border:none;cursor:pointer;
   font-size:.72rem;color:#93c5fd;text-decoration:underline;text-underline-offset:2px}
-@media (max-width:1239px){.promo-rail{display:none}}
+/* narrow variant for laptop-sized margins (~120-160px) */
+.promo-rail.compact{padding:.85rem .6rem}
+.promo-rail.compact .pr-crown{font-size:1.25rem}
+.promo-rail.compact .pr-title{font-size:.86rem}
+.promo-rail.compact .pr-sub{font-size:.66rem}
+.promo-rail.compact .pr-price{font-size:1.25rem;margin:.4rem 0 .05rem}
+.promo-rail.compact .pr-cta{padding:.5rem .3rem;font-size:.78rem}
+.promo-rail.compact .pr-signin{font-size:.66rem}
+/* JS decides visibility from the real measured margin; this is the floor */
+@media (max-width:1180px){.promo-rail{display:none}}
 
 /* inline band inside the content column */
 .promo-band{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
