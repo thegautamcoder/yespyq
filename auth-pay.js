@@ -192,7 +192,11 @@
     // one login event per browser session, not per page view
     if (sessionStorage.getItem("yespyq_login_logged")) return;
     sessionStorage.setItem("yespyq_login_logged", "1");
-    rpc("record_login", { p_user_agent: navigator.userAgent.slice(0, 300) });
+    // reuse the same per-browser id used for anonymous events as the
+    // "device id" — lets us tell a repeat visit on the same browser from
+    // a genuinely new one, and spot one device signing into several
+    // accounts (a proxy for account sharing), without fingerprinting
+    rpc("record_login", { p_user_agent: navigator.userAgent.slice(0, 300), p_device_id: anonId() });
     track("signin_completed", { paid: _paid });
   }
 
@@ -328,19 +332,47 @@
     if (cta) bar.insertBefore(a, cta); else bar.appendChild(a);
   }
 
+  /* Bottom-right pill messages — short enough to read in one glance,
+     rotated so the corner stays alive without being an actual banner ad. */
+  function pillMessages() {
+    var p = cfg.PRICE_LABEL || "₹149";
+    return [
+      '<span class="pp-ic">✨</span> Go Premium <b>' + p + '</b>',
+      '<span class="pp-ic">📚</span> <b>2,700+</b> PYQs unlocked',
+      '<span class="pp-ic">🎯</span> UPSC · JEE · NEET &amp; more',
+      '<span class="pp-ic">⚡</span> Unlimited quizzes, ' + p + '/yr'
+    ];
+  }
+  var _pillTimer = null, _pillIdx = 0;
+  function startPillRotation(pill) {
+    stopPillRotation();
+    _pillTimer = setInterval(function () {
+      if (!pill.isConnected) { stopPillRotation(); return; }
+      var msgs = pillMessages();
+      _pillIdx = (_pillIdx + 1) % msgs.length;
+      pill.classList.add("pp-out");
+      setTimeout(function () {
+        pill.innerHTML = msgs[_pillIdx];
+        pill.classList.remove("pp-out");
+      }, 220);
+    }, 4200);
+  }
+  function stopPillRotation() { clearInterval(_pillTimer); _pillTimer = null; }
+
   function renderChrome() {
     if (!SHOW) return;
     injectHeaderButton();
     // floating pill (only for logged-out / unpaid, never for paid)
     var pill = document.getElementById("pay-pill");
-    if (_paid) { if (pill) pill.remove(); }
+    if (_paid) { if (pill) pill.remove(); stopPillRotation(); }
     else {
       if (!pill) {
         pill = document.createElement("button");
         pill.id = "pay-pill"; pill.className = "pay-pill"; pill.setAttribute("data-unlock", "float");
+        pill.innerHTML = pillMessages()[0];
         document.body.appendChild(pill);
+        startPillRotation(pill);
       }
-      pill.innerHTML = '<span class="pp-star">✨</span> Go Premium <b>' + (cfg.PRICE_LABEL || "₹149") + '</b>';
     }
     document.querySelectorAll("[data-unlock='header']").forEach(function (el) { el.style.display = _paid ? "none" : ""; });
     renderAccount();
@@ -373,32 +405,10 @@
     });
   }
 
-  /* Where does the readable content actually end? Page types differ:
-     most use main > .container, but the question pages wrap in
-     article.article with no container, so keying off .container alone
-     measured main itself (full width) and reported zero free margin —
-     hiding the rail on the largest section of the site. Take the widest
-     genuinely-constrained block instead, ignoring full-bleed elements
-     and anything we injected ourselves. */
-  function contentRightEdge() {
-    var main = document.querySelector("main") || document.body;
-    var vw = window.innerWidth, edge = 0;
-    var cands = main.querySelectorAll(".container, article, section, .wrap");
-    for (var i = 0; i < cands.length; i++) {
-      var el = cands[i];
-      if (el.closest("#promo-band") || el.closest("#promo-rail")) continue;
-      var r = el.getBoundingClientRect();
-      if (r.width < 200 || r.height < 40) continue;
-      if (r.width > vw - 80) continue;                 // full-bleed, tells us nothing
-      if (r.right > edge) edge = r.right;
-    }
-    return edge || main.getBoundingClientRect().right;
-  }
-
   function renderPromos() {
     injectSolutionNudges();
+    var oldRail = document.getElementById("promo-rail"); if (oldRail) oldRail.remove(); // retired
     if (_paid) {
-      var old = document.getElementById("promo-rail"); if (old) old.remove();
       var oldb = document.getElementById("promo-band"); if (oldb) oldb.remove();
       return;
     }
@@ -406,31 +416,7 @@
     var price = cfg.PRICE_LABEL || "₹149";
     var isHome = !!document.getElementById("view-home");   // SPA homepage handles its own CTAs
 
-    // 1. side rail — sized to whatever margin the page actually has, so the
-    // common laptop widths (1440/1512, ~160-196px of margin) get one too
-    // instead of leaving that column empty. Measured, never overlapping.
-    var freeRight = window.innerWidth - contentRightEdge();
-    var GAP = 14, MIN_RAIL = 120, FULL_RAIL = 250;
-    var railW = Math.min(FULL_RAIL, Math.floor(freeRight - GAP * 2));
-    if (!isHome && !document.getElementById("promo-rail") && railW >= MIN_RAIL) {
-      var rail = document.createElement("aside");
-      rail.id = "promo-rail";
-      // three sizes so the card grows into whatever margin exists
-      rail.className = "promo-rail" + (railW < 160 ? " compact" : railW >= 200 ? " wide" : "");
-      rail.style.width = railW + "px";
-      rail.style.right = GAP + "px";
-      rail.innerHTML =
-        '<div class="pr-crown">👑</div>' +
-        '<div class="pr-title">Unlock every PYQ</div>' +
-        '<div class="pr-sub">UPSC · SSC · JEE · NEET &amp; more</div>' +
-        (railW >= 200 ? '<ul class="pr-list"><li>✓ 2,700+ PYQs</li><li>✓ Every explanation</li><li>✓ Unlimited quizzes</li></ul>' : "") +
-        '<div class="pr-price">' + price + '<span>/year</span></div>' +
-        '<button class="pr-cta" data-unlock="rail">Get Premium</button>' +
-        '<button class="pr-signin" data-unlock-signin>Already paid? Sign in</button>';
-      document.body.appendChild(rail);
-    }
-
-    // 2. inline banner mid-content
+    // inline banner mid-content
     if (!isHome && !document.getElementById("promo-band")) {
       // descend past single-child wrappers (main > .container > …) to the
       // element that actually holds the page's content blocks
@@ -614,18 +600,6 @@
   });
 
   /* ---------- boot ---------- */
-  // the rail is sized from the measured margin, so re-fit it when the
-  // window changes rather than leaving a stale (or missing) one
-  var _refit = null;
-  window.addEventListener("resize", function () {
-    clearTimeout(_refit);
-    _refit = setTimeout(function () {
-      var r = document.getElementById("promo-rail");
-      if (r) r.remove();
-      renderPromos();
-    }, 200);
-  });
-
   function boot() { renderChrome(); armTimer(); initSession(); track("page_view", { gated: GATE, paid: _paid }); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();

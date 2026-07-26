@@ -543,6 +543,11 @@
 
             <a id="dl-link" href="#" class="btn-download">⬇️ Download Image</a>
 
+            <div id="resizer-nudge" class="hidden" style="margin-top:.4rem;padding:.75rem .9rem;border-radius:12px;background:#0f172a;border:1px solid rgba(217,178,74,.35);align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap">
+              <span style="font-size:.82rem;color:#e2e8f0">👑 Also need <b style="color:#e8c76b">UPSC/JEE/NEET PYQs</b>? 2,700+ solved, ₹149/yr.</span>
+              <a href="/exams/" style="flex:none;text-decoration:none;padding:.45rem .8rem;border-radius:9px;font-weight:700;font-size:.78rem;color:#fff;background:linear-gradient(100deg,#2563eb,#4f46e5)">Get Premium →</a>
+            </div>
+
             <button onclick="goUpload()" class="text-xs text-slate-400 hover:text-slate-600 text-center py-1">← Process another</button>
           </div>
 
@@ -1784,6 +1789,12 @@ async function processImage() {
   dl.href     = url;
   dl.download = `yespyq_${S.exam?.slug||'photo'}.${ext}`;
   showRight('result');
+
+  // premium nudge, right at the moment the action (resize) completes —
+  // a plain link to /exams/ (not the site's popup system) since this
+  // standalone tool doesn't load the shared styles.css/auth-pay.js
+  const nudge = document.getElementById('resizer-nudge');
+  if (nudge) { nudge.classList.remove('hidden'); nudge.style.display = 'flex'; }
 }
 
 function goUpload() {

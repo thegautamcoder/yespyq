@@ -714,13 +714,28 @@ html,body{overflow-x:hidden}
 .btn-premium:hover{background:#1e293b;transform:translateY(-1px);box-shadow:0 6px 16px rgba(15,23,42,.3)}
 [data-theme="dark"] .btn-premium{background:#1e293b;border-color:rgba(217,178,74,.5)}
 
-/* floating go-premium pill */
+/* floating go-premium pill — bottom-right, rotates through short messages */
 .pay-pill{position:fixed;right:16px;bottom:16px;z-index:900;border:none;cursor:pointer;
-  padding:.7rem 1.15rem;border-radius:999px;color:#e8c76b;font-size:.92rem;font-weight:700;
+  padding:.7rem 1.15rem;border-radius:999px;color:#e8c76b;font-size:.9rem;font-weight:700;
   background:#0f172a;border:1px solid rgba(217,178,74,.45);
-  box-shadow:0 8px 24px rgba(15,23,42,.35);display:flex;align-items:center;gap:.4rem}
+  box-shadow:0 8px 24px rgba(15,23,42,.35);display:flex;align-items:center;gap:.45rem;
+  max-width:min(78vw,300px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  animation:pillBreathe 3.6s ease-in-out infinite}
 .pay-pill b{font-weight:800;color:#fff}
-.pay-pill:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(15,23,42,.45)}
+.pay-pill:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(15,23,42,.5);animation-play-state:paused}
+.pay-pill .pp-ic{display:inline-block;animation:ppIconPulse 2.4s ease-in-out infinite}
+/* message swap: fade + slight rise, replayed on every rotation */
+.pay-pill{transition:opacity .22s ease}
+.pay-pill.pp-out{opacity:0;transform:translateY(3px)}
+@keyframes pillBreathe{
+  0%,100%{box-shadow:0 8px 24px rgba(15,23,42,.35),0 0 0 0 rgba(217,178,74,0)}
+  50%{box-shadow:0 8px 24px rgba(15,23,42,.35),0 0 0 6px rgba(217,178,74,.12)}
+}
+@keyframes ppIconPulse{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.18) rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){
+  .pay-pill{animation:none}
+  .pay-pill .pp-ic{animation:none}
+}
 
 /* preview-limit lock strip inside the browse list */
 .unlock-strip{position:relative;margin-top:-60px;padding-top:60px;text-align:center}
@@ -823,33 +838,8 @@ html,body{overflow-x:hidden}
 @media (prefers-reduced-motion:reduce){.uc-glow{animation:none}}
 
 /* ============================================================
-   IN-PAGE PREMIUM PROMOS — side rail + inline band (v34)
+   IN-PAGE PREMIUM PROMOS — inline band (v39; side rail retired)
    ============================================================ */
-/* sticky rail in the empty right margin (wide screens only) */
-.promo-rail{position:fixed;right:14px;top:50%;transform:translateY(-50%);z-index:880;
-  background:#0f172a;color:#e2e8f0;border:1px solid rgba(217,178,74,.4);border-radius:16px;
-  padding:1.05rem .9rem;text-align:center;box-shadow:0 16px 40px rgba(15,23,42,.3)}
-.promo-rail .pr-crown{font-size:1.5rem}
-.promo-rail .pr-title{font-weight:800;font-size:.98rem;color:#fff;margin-top:.3rem}
-.promo-rail .pr-sub{font-size:.72rem;color:#94a3b8;margin-top:.2rem;line-height:1.35}
-.promo-rail .pr-price{font-size:1.5rem;font-weight:800;color:#e8c76b;margin:.55rem 0 .1rem}
-.promo-rail .pr-price span{font-size:.7rem;font-weight:600;color:#94a3b8}
-.promo-rail .pr-cta{width:100%;margin-top:.6rem;border:none;cursor:pointer;padding:.6rem;border-radius:10px;
-  font-weight:800;font-size:.85rem;color:#fff;background:linear-gradient(100deg,var(--blue-600),#4f46e5)}
-.promo-rail .pr-cta:hover{filter:brightness(1.08)}
-.promo-rail .pr-signin{width:100%;margin-top:.4rem;background:none;border:none;cursor:pointer;
-  font-size:.72rem;color:#93c5fd;text-decoration:underline;text-underline-offset:2px}
-/* narrow variant for laptop-sized margins (~120-160px) */
-.promo-rail.compact{padding:.85rem .6rem}
-.promo-rail.compact .pr-crown{font-size:1.25rem}
-.promo-rail.compact .pr-title{font-size:.86rem}
-.promo-rail.compact .pr-sub{font-size:.66rem}
-.promo-rail.compact .pr-price{font-size:1.25rem;margin:.4rem 0 .05rem}
-.promo-rail.compact .pr-cta{padding:.5rem .3rem;font-size:.78rem}
-.promo-rail.compact .pr-signin{font-size:.66rem}
-/* JS decides visibility from the real measured margin; this is the floor */
-@media (max-width:1180px){.promo-rail{display:none}}
-
 /* inline band inside the content column */
 .promo-band{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
   margin:1.8rem 0;padding:1.05rem 1.2rem;border-radius:16px;background:#0f172a;color:#e2e8f0;
@@ -945,17 +935,6 @@ body.nav-open{overflow:hidden}
 .acct-theme .at-opt{flex:1;border:none;cursor:pointer;background:none;border-radius:7px;
   padding:.38rem .2rem;font-size:.8rem;font-weight:600;color:var(--slate)}
 .acct-theme .at-opt.on{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(15,23,42,.12)}
-
-/* wide rail variant — more presence when the margin allows (v38) */
-.promo-rail.wide{padding:1.25rem 1rem}
-.promo-rail.wide .pr-crown{font-size:1.8rem}
-.promo-rail.wide .pr-title{font-size:1.08rem;margin-top:.35rem}
-.promo-rail.wide .pr-sub{font-size:.76rem}
-.promo-rail.wide .pr-price{font-size:1.85rem;margin:.7rem 0 .15rem}
-.promo-rail.wide .pr-cta{padding:.7rem;font-size:.92rem}
-.promo-rail .pr-list{list-style:none;margin:.75rem 0 .1rem;text-align:left;display:flex;
-  flex-direction:column;gap:.32rem}
-.promo-rail .pr-list li{font-size:.76rem;color:#cbd5e1;line-height:1.3}
 
 /* premium nudge under a revealed solution/explanation */
 .sol-nudge{display:flex;align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap;

@@ -42,8 +42,10 @@ create table if not exists public.user_profiles (
   last_seen_at   timestamptz,
   login_count    integer not null default 0,
   total_seconds  bigint  not null default 0,   -- cumulative time on site
+  last_device_id text,                         -- most recent device (localStorage id)
   created_at     timestamptz not null default now()
 );
+alter table public.user_profiles add column if not exists last_device_id text;
 alter table public.user_profiles enable row level security;
 drop policy if exists profiles_own_read on public.user_profiles;
 create policy profiles_own_read on public.user_profiles
@@ -57,9 +59,12 @@ create table if not exists public.user_logins (
   user_id       uuid references auth.users(id) on delete cascade,
   email         text,
   logged_in_at  timestamptz not null default now(),
-  user_agent    text
+  user_agent    text,
+  device_id     text          -- stable per-browser id (localStorage), NOT a hardware id
 );
-create index if not exists user_logins_user_idx on public.user_logins(user_id, logged_in_at desc);
+alter table public.user_logins add column if not exists device_id text;
+create index if not exists user_logins_user_idx   on public.user_logins(user_id, logged_in_at desc);
+create index if not exists user_logins_device_idx on public.user_logins(device_id, logged_in_at desc);
 alter table public.user_logins enable row level security;
 drop policy if exists logins_own_read on public.user_logins;
 create policy logins_own_read on public.user_logins
@@ -70,22 +75,23 @@ create policy logins_own_read on public.user_logins
       SECURITY DEFINER + auth.uid() means a user can never
       write a row for somebody else, or fake a paid flag.
    ============================================================ */
-create or replace function public.record_login(p_user_agent text default null)
+create or replace function public.record_login(p_user_agent text default null, p_device_id text default null)
 returns void language plpgsql security definer set search_path = public as $$
 declare u uuid := auth.uid(); e text;
 begin
   if u is null then return; end if;
   select email into e from auth.users where id = u;
 
-  insert into public.user_logins(user_id, email, user_agent) values (u, e, p_user_agent);
+  insert into public.user_logins(user_id, email, user_agent, device_id) values (u, e, p_user_agent, p_device_id);
 
-  insert into public.user_profiles(user_id, email, last_login_at, last_seen_at, login_count)
-  values (u, e, now(), now(), 1)
+  insert into public.user_profiles(user_id, email, last_login_at, last_seen_at, login_count, last_device_id)
+  values (u, e, now(), now(), 1, p_device_id)
   on conflict (user_id) do update
-    set login_count   = public.user_profiles.login_count + 1,
-        last_login_at = now(),
-        last_seen_at  = now(),
-        email         = excluded.email;
+    set login_count    = public.user_profiles.login_count + 1,
+        last_login_at  = now(),
+        last_seen_at   = now(),
+        email          = excluded.email,
+        last_device_id = coalesce(excluded.last_device_id, public.user_profiles.last_device_id);
 
   update public.entitlements set email = e where user_id = u and email is distinct from e;
 end $$;
@@ -104,7 +110,7 @@ begin
         last_seen_at  = now();
 end $$;
 
-grant execute on function public.record_login(text)     to authenticated;
+grant execute on function public.record_login(text, text) to authenticated;
 grant execute on function public.record_activity(integer) to authenticated;
 
 /* ============================================================
@@ -181,3 +187,27 @@ select date_trunc('day', created_at)::date as day,
   count(*) filter (where event='payment_success')   as payments,
   count(*) filter (where event in ('payment_failed','order_failed')) as payment_errors
 from public.events group by 1 order by 1 desc;
+
+/* ============================================================
+   7. DEVICE VIEWS — same user on multiple devices, or one device
+      shared across multiple accounts (a proxy for account sharing).
+      device_id is a random id generated once and stored in the
+      visitor's localStorage — a stable per-browser signal, not a
+      hardware fingerprint, and it resets if storage is cleared.
+   ============================================================ */
+create or replace view public.user_devices as
+select user_id, count(distinct device_id) filter (where device_id is not null) as device_count,
+       array_agg(distinct device_id) filter (where device_id is not null) as device_ids,
+       max(logged_in_at) as last_login_at
+from public.user_logins
+group by user_id;
+
+create or replace view public.shared_devices as
+select device_id, count(distinct user_id) as account_count,
+       array_agg(distinct email) as emails,
+       max(logged_in_at) as last_login_at
+from public.user_logins
+where device_id is not null
+group by device_id
+having count(distinct user_id) > 1
+order by account_count desc;
