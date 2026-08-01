@@ -7,11 +7,11 @@
 - sitemap-exams.xml               all of the above
 Run from repo root: python3 _gen_exams.py
 """
-import json, os, re
+import datetime, json, os, re
 from collections import defaultdict
 
 BASE = "https://yespyq.com"
-TODAY = "2026-07-15"
+TODAY = datetime.date.today().isoformat()
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 EXAMS = {
@@ -20,9 +20,11 @@ EXAMS = {
         "full": "JEE (Main & Advanced)",
         "desc": "engineering entrance",
         "icon": "🛠️",
+        "gated": True,
         "subjects": {
             "physics": ("Physics", "🧲"),
             "chemistry": ("Chemistry", "🧪"),
+            "maths": ("Maths", "➗"),
         },
     },
     "neet": {
@@ -30,10 +32,23 @@ EXAMS = {
         "full": "NEET-UG",
         "desc": "medical entrance",
         "icon": "🩺",
+        "gated": True,
         "subjects": {
             "physics": ("Physics", "🧲"),
             "chemistry": ("Chemistry", "🧪"),
             "biology": ("Biology", "🧬"),
+        },
+    },
+    "board": {
+        "name": "Board",
+        "full": "Board Exams (Class 11 & 12)",
+        "desc": "school board exams",
+        "icon": "🏫",
+        "gated": True,
+        "subjects": {
+            "physics": ("Physics", "🧲"),
+            "chemistry": ("Chemistry", "🧪"),
+            "maths": ("Maths", "➗"),
         },
     },
     "defence": {
@@ -41,6 +56,7 @@ EXAMS = {
         "full": "Defence Exams (Agniveer, AFCAT, Coast Guard & more)",
         "desc": "armed forces recruitment",
         "icon": "🎖️",
+        "gated": False,
         "subjects": {
             "staticgk": ("Static GK", "🌐"),
             "currentaff": ("Current Affairs", "🗞️"),
@@ -56,6 +72,7 @@ EXAMS = {
         "full": "SSC CGL (Combined Graduate Level)",
         "desc": "staff selection commission",
         "icon": "📝",
+        "gated": False,
         "subjects": {
             "english": ("English", "🔤"),
             "history": ("History", "🏛️"),
@@ -147,7 +164,7 @@ FOOTER = '''  <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand"><img src="/assets/favicon.svg" alt="" class="brand-mark" /><span class="brand-name">YES<span>PYQ</span></span><p>India's previous year questions hub, simplified — free practice with answers &amp; explanations.</p></div>
       <div class="footer-col"><h4>Practice</h4><a href="/">Home</a><a href="/exams/">All Exams</a><a href="/pyq/">UPSC PYQs</a><a href="/subjects/">Subjects</a><a href="/guides/">Guides</a><a href="/blog/">Blog</a><a href="/tools/">Tools</a></div>
-      <div class="footer-col"><h4>Exams</h4><a href="/pyq/">UPSC PYQs</a><a href="/exams/jee/">JEE PYQs</a><a href="/exams/neet/">NEET PYQs</a><a href="/exams/defence/">Defence PYQs</a><a href="/exams/ssc-cgl/">SSC CGL PYQs</a></div>
+      <div class="footer-col"><h4>Exams</h4><a href="/pyq/">UPSC PYQs</a><a href="/exams/jee/">JEE PYQs</a><a href="/exams/neet/">NEET PYQs</a><a href="/exams/board/">Board Exam PYQs</a><a href="/exams/defence/">Defence PYQs</a><a href="/exams/ssc-cgl/">SSC CGL PYQs</a></div>
       <div class="footer-col"><h4>UPSC Subjects</h4><a href="/subjects/polity/">Polity PYQs</a><a href="/subjects/history/">History PYQs</a><a href="/subjects/geography/">Geography PYQs</a><a href="/subjects/economy/">Economy PYQs</a><a href="/subjects/environment/">Environment PYQs</a><a href="/subjects/science-technology/">Science &amp; Tech PYQs</a><a href="/subjects/current-affairs/">Current Affairs PYQs</a></div>
       <div class="footer-col"><h4>UPSC PYQs by Year</h4><a href="/pyq/year/2024/">UPSC 2024</a><a href="/pyq/year/2023/">UPSC 2023</a><a href="/pyq/year/2022/">UPSC 2022</a><a href="/pyq/year/2021/">UPSC 2021</a><a href="/pyq/year/2020/">UPSC 2020</a><a href="/pyq/">All Years</a></div>
       <div class="footer-col"><h4>Popular Explainers</h4><a href="/blog/goods-and-services-tax-gst/">GST Explained</a><a href="/blog/fundamental-rights-explained/">Fundamental Rights</a><a href="/blog/monetary-policy-repo-rate/">Monetary Policy</a><a href="/blog/niti-aayog-explained/">NITI Aayog</a><a href="/blog/inflation-cpi-wpi-explained/">Inflation: CPI vs WPI</a><a href="/blog/fiscal-deficit-explained/">Fiscal Deficit</a></div>
@@ -173,10 +190,35 @@ EXTRA_CSS = '''  <style>
     .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
+    .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(217,178,74,.5);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
+    .answer-gate .ag-lock{font-size:1.4rem;flex:none}
+    .answer-gate div{flex:1;min-width:0}
+    .answer-gate b{display:block;font-size:.92rem}
+    .answer-gate p{margin:.15rem 0 0;font-size:.82rem;color:var(--muted)}
+    .answer-gate .btn{flex:none}
   </style>'''
 
+KATEX_HEAD = '  <link rel="stylesheet" href="/assets/katex/katex.min.css" />'
+KATEX_SCRIPTS = '''  <script defer src="/assets/katex/katex.min.js"></script>
+  <script defer src="/assets/katex/auto-render.min.js"></script>
+  <script defer src="/exam-gate.js?v=1"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (window.renderMathInElement) {
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "\\\\[", right: "\\\\]", display: true},
+          {left: "\\\\(", right: "\\\\)", display: false}
+        ],
+        throwOnError: false
+      });
+    }
+  });
+  </script>'''
 
-def head(title, desc, canonical, schema_blocks):
+
+def head(title, desc, canonical, schema_blocks, extra_head=""):
     return f'''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -202,6 +244,7 @@ def head(title, desc, canonical, schema_blocks):
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 {EXTRA_CSS}
+{extra_head}
   <script src="/theme.js?v=1"></script>
 </head>
 <body>'''
@@ -215,46 +258,70 @@ def qslug(x):
     return (x["i"].lower() + "-" + slugify(x["q"]))[:80].rstrip("-")
 
 
-def question_block(x, n):
+def question_block(x, n, gated):
+    html_mode = x.get("fmt") == "html"
+    q_html = x["q"] if html_mode else format_body(x["q"], True)
     opts = ""
     for i, o in enumerate(x["o"]):
-        cls = "option" + (" correct" if i == x["a"] else "")
-        opts += f'<div class="{cls}"><span class="key">{chr(97+i)}</span><span>{esc(o)}</span></div>'
+        o_html = o if html_mode else esc(o)
+        cls = "option" if gated else ("option" + (" correct" if i == x["a"] else ""))
+        opts += f'<div class="{cls}"><span class="key">{chr(97+i)}</span><span>{o_html}</span></div>'
     ans_letter = chr(97 + x["a"])
-    ans_text = x["o"][x["a"]]
-    year_tag = f'<span class="qtag">{x["y"]}</span>' if x.get("y") else ""
-    return f'''    <div class="qblock" id="q{n}">
-      <div class="qnum">Q{n}{year_tag and " · " + str(x["y"]) or ""}</div>
-      <div class="qtext">{format_body(x["q"], True)}</div>
-      <div class="options qpage-options">{opts}</div>
-      <div class="explain">
-        <div class="verdict ok">✓ Correct answer: {ans_letter}) {esc(ans_text)}</div>
-        <div class="exp-body"><span class="lbl">Explanation</span>{format_body(x["exp"], False)}</div>
-      </div>
+    ans_html = x["o"][x["a"]] if html_mode else esc(x["o"][x["a"]])
+    exp_html = x["exp"] if html_mode else format_body(x["exp"], False)
+    year_suffix = f' · {x["y"]}' if x.get("y") else ""
+
+    explain_cls = "explain hidden" if gated else "explain"
+    explain = f'''
+      <div class="{explain_cls}" data-exp>
+        <div class="verdict ok">✓ Correct answer: {ans_letter}) {ans_html}</div>
+        <div class="exp-body"><span class="lbl">Explanation</span>{exp_html}</div>
+      </div>'''
+    gate = f'''
+      <div class="answer-gate" data-unlock="exam-answer">
+        <span class="ag-lock">🔒</span>
+        <div><b>Answer &amp; explanation — Premium</b><p>Unlock this and thousands more solved PYQs.</p></div>
+        <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
+      </div>''' if gated else ""
+    data_attrs = f' data-gated="1" data-a="{x["a"]}"' if gated else ""
+
+    return f'''    <div class="qblock" id="q{n}"{data_attrs}>
+      <div class="qnum">Q{n}{year_suffix}</div>
+      <div class="qtext">{q_html}</div>
+      <div class="options qpage-options">{opts}</div>{gate}{explain}
     </div>'''
 
 
 def chapter_page(exam, subject, chapter, items):
     ecfg = EXAMS[exam]
+    gated = ecfg.get("gated", False)
     sname, sicon = ecfg["subjects"][subject]
     slug = slugify(chapter)
     canonical = f"{BASE}/exams/{exam}/{subject}/{slug}/"
     title = attr(f"{chapter} — {ecfg['name']} {sname} PYQs with Answers | YESPYQ")
-    desc = attr(f"{len(items)} solved {ecfg['name']} {sname} previous year questions on {chapter}, each with the correct answer and explanation. Free practice on YESPYQ.")
+    if gated:
+        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter} — free to practice, unlock the correct answer & explanation with Premium.")
+    else:
+        desc = attr(f"{len(items)} solved {ecfg['name']} {sname} previous year questions on {chapter}, each with the correct answer and explanation. Free practice on YESPYQ.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{esc(sname)}","item":"{BASE}/exams/{exam}/{subject}/"}},{{"@type":"ListItem","position":5,"name":"{esc(chapter)}","item":"{canonical}"}}]}}
   </script>'''
 
-    qs_html = "\n".join(question_block(x, i + 1) for i, x in enumerate(items))
+    qs_html = "\n".join(question_block(x, i + 1, gated) for i, x in enumerate(items))
 
+    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b> — free to practice, unlock the correct answer &amp; explanation with Premium."
+              if gated else
+              f"{len(items)} solved {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>, each with the correct answer and a full explanation.")
+
+    end_scripts = KATEX_SCRIPTS if gated else ""
     body = f'''{HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › <a href="/exams/{exam}/">{esc(ecfg['name'])}</a> › <a href="/exams/{exam}/{subject}/">{esc(sname)}</a> › {esc(chapter)}</nav>
       <div class="qtags"><span class="qtag">{ecfg['icon']} {esc(ecfg['name'])}</span><span class="qtag">{sicon} {esc(sname)}</span></div>
       <h1>{esc(chapter)}</h1>
-      <p>{len(items)} solved {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>, each with the correct answer and a full explanation.</p>
+      <p>{intro}</p>
 {qs_html}
       <div class="cta-box">
         <h3>Practice more {esc(ecfg['name'])} {esc(sname)} PYQs</h3>
@@ -264,18 +331,24 @@ def chapter_page(exam, subject, chapter, items):
     </article>
   </main>
 {FOOTER}
+{end_scripts}
 </body>
 </html>'''
-    return head(title, desc, canonical, schema) + body
+    extra_head = KATEX_HEAD if gated else ""
+    return head(title, desc, canonical, schema, extra_head) + body
 
 
 def subject_index(exam, subject, by_chapter):
     ecfg = EXAMS[exam]
+    gated = ecfg.get("gated", False)
     sname, sicon = ecfg["subjects"][subject]
     canonical = f"{BASE}/exams/{exam}/{subject}/"
     total = sum(len(v) for v in by_chapter.values())
     title = attr(f"{ecfg['name']} {sname} PYQs — {total} Solved Previous Year Questions | YESPYQ")
-    desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} solved previous year questions, each with the correct answer and a detailed explanation. Free on YESPYQ.")
+    if gated:
+        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} previous year questions — free to practice, answers & explanations unlocked with Premium.")
+    else:
+        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} solved previous year questions, each with the correct answer and a detailed explanation. Free on YESPYQ.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{esc(sname)}","item":"{canonical}"}}]}}
@@ -305,10 +378,14 @@ def subject_index(exam, subject, by_chapter):
 
 def exam_hub(exam, by_subject):
     ecfg = EXAMS[exam]
+    gated = ecfg.get("gated", False)
     canonical = f"{BASE}/exams/{exam}/"
     total = sum(len(v) for v in by_subject.values())
     title = attr(f"{ecfg['full']} PYQs — {total} Solved Previous Year Questions | YESPYQ")
-    desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
+    if gated:
+        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise — free to practice, answers & explanations unlocked with Premium.")
+    else:
+        desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{canonical}"}}]}}
@@ -317,14 +394,19 @@ def exam_hub(exam, by_subject):
     tiles = ""
     for sid, (sname, sicon) in ecfg["subjects"].items():
         n = len(by_subject.get(sid, []))
-        tiles += f'<a class="exam-tile" href="/exams/{exam}/{sid}/"><div class="et-icon">{sicon}</div><h3>{esc(sname)}</h3><p>{n} solved PYQs</p></a>'
+        label = "PYQs" if gated else "solved PYQs"
+        tiles += f'<a class="exam-tile" href="/exams/{exam}/{sid}/"><div class="et-icon">{sicon}</div><h3>{esc(sname)}</h3><p>{n} {label}</p></a>'
+
+    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — free to practice, unlock the correct answer & explanation with Premium."
+              if gated else
+              f"{total} solved previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation.")
 
     body = f'''{HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › {esc(ecfg['name'])}</nav>
       <h1>{ecfg['icon']} {esc(ecfg['full'])} PYQs</h1>
-      <p>{total} solved previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation.</p>
+      <p>{intro}</p>
       <div class="exam-tiles">{tiles}</div>
     </article>
   </main>
@@ -337,8 +419,8 @@ def exam_hub(exam, by_subject):
 def exams_hub(counts):
     canonical = f"{BASE}/exams/"
     total = sum(counts.values())
-    title = attr(f"India's PYQ Hub — UPSC, JEE, NEET, Defence, SSC CGL PYQs | YESPYQ")
-    desc = attr(f"Free previous year questions for UPSC, JEE, NEET, Defence and SSC CGL — {total}+ solved questions with answers and explanations. Pick your exam to start practicing.")
+    title = attr(f"India's PYQ Hub — UPSC, JEE, NEET, Board, Defence, SSC CGL PYQs | YESPYQ")
+    desc = attr(f"Previous year questions for UPSC, JEE, NEET, Board exams, Defence and SSC CGL — {total}+ questions to practice. Pick your exam to start.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{canonical}"}}]}}
@@ -346,14 +428,15 @@ def exams_hub(counts):
 
     tiles = f'<a class="exam-tile" href="/pyq/"><div class="et-icon">🏛️</div><h3>UPSC (CSE Prelims)</h3><p>2,200+ solved PYQs</p></a>'
     for exam, ecfg in EXAMS.items():
-        tiles += f'<a class="exam-tile" href="/exams/{exam}/"><div class="et-icon">{ecfg["icon"]}</div><h3>{esc(ecfg["full"])}</h3><p>{counts.get(exam,0)} solved PYQs</p></a>'
+        label = "PYQs" if ecfg.get("gated") else "solved PYQs"
+        tiles += f'<a class="exam-tile" href="/exams/{exam}/"><div class="et-icon">{ecfg["icon"]}</div><h3>{esc(ecfg["full"])}</h3><p>{counts.get(exam,0)} {label}</p></a>'
 
     body = f'''{HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › Exams</nav>
       <h1>India's Previous Year Questions Hub</h1>
-      <p>YESPYQ is expanding beyond UPSC — solved previous year questions for every major Indian exam, all free, all with answers and explanations. Pick your exam below.</p>
+      <p>YESPYQ is expanding beyond UPSC — previous year questions for every major Indian exam, free to practice, with answers &amp; explanations unlocked for Premium members. Pick your exam below.</p>
       <div class="exam-tiles">{tiles}</div>
       <p style="margin-top:2rem;color:var(--muted);font-size:.9rem">More exams (Banking, TET and others) are on the way.</p>
     </article>

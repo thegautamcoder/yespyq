@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=39" />
+  <link rel="stylesheet" href="/styles.css?v=25" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"SSC CGL","item":"https://yespyq.com/exams/ssc-cgl/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/ssc-cgl/english/"},{"@type":"ListItem","position":5,"name":"Correct/Incorrect Sentence","item":"https://yespyq.com/exams/ssc-cgl/english/correct-incorrect-sentence/"}]}
@@ -40,8 +40,15 @@
     .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
+    .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(217,178,74,.5);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
+    .answer-gate .ag-lock{font-size:1.4rem;flex:none}
+    .answer-gate div{flex:1;min-width:0}
+    .answer-gate b{display:block;font-size:.92rem}
+    .answer-gate p{margin:.15rem 0 0;font-size:.82rem;color:var(--muted)}
+    .answer-gate .btn{flex:none}
   </style>
-  <script src="/theme.js?v=18"></script>
+
+  <script src="/theme.js?v=1"></script>
 </head>
 <body>  <header class="site-header">
     <div class="container header-inner">
@@ -67,7 +74,7 @@
       <div class="qnum">Q1</div>
       <div class="qtext"><span class="bline">Select the sentence with the appropriate use of adverb of manner.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>He done his work regularly</span></div><div class="option"><span class="key">b</span><span>He has just done his work</span></div><div class="option correct"><span class="key">c</span><span>He does his work carefully</span></div><div class="option"><span class="key">d</span><span>He has done his work on my table</span></div></div>
-      <div class="explain">
+      <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: c) He does his work carefully</div>
         <div class="exp-body"><span class="lbl">Explanation</span><span class="bline">The Correct Answer: Option C — He does his work carefully.</span><span class="bline">Explanation: "Carefully" is an adverb of manner because it describes how or in what way the work is done.</span><span class="bline">Adverbs of manner answer the question "How?" and typically end in "-ly." In this sentence, "carefully" tells us the manner in which he does his work - with care and attention.</span><span class="bline">The other options: Option A has a grammar error ("done" should be "does") and "regularly" is an adverb of frequency, not manner.</span><span class="bline">Option B uses "just" which is an adverb of time, not manner.</span><span class="bline">Option D uses "on my table" which is an adverbial phrase of place, not manner.</span><span class="bline">Additional Info: Wo rd Part s of Spee ch Hindi Mean ing (हिन्दी अर्थ) Usage / Functio n Example Reg ula rly Adve rb (Freq uenc y) नियमित रूप से Tells how often somethi ng happen s She exercises regularly.</span><span class="bline">(वह नियमित रूप से व्याायाम करती है।) Just Adve rb (Time ) अभी, बस Tells when somethi ng happen ed I have just arrived.</span><span class="bline">(मैं अभी पहुंचा हूँ।) Wo rd Part s of Spee ch Hindi Mean ing (हिन्दी अर्थ) Usage / Functio n Example (recentl y) Car efu lly Adve rb (Man ner) सावधा नीपूर्वक , ध्यान से Tells how/in what way somethi ng is done Drive carefully.</span><span class="bline">(सावधानी से गाड़ीी चलाओ।) On my tab le Adve rbial phra se (Plac e) मेरी मेज पर Tells where somethi ng happen s The book is on my table.</span><span class="bline">(किताब मेरी मेज पर है।)</span></div>
       </div>
@@ -76,7 +83,7 @@
       <div class="qnum">Q2</div>
       <div class="qtext"><span class="bline">Identify the sentence that correctly uses the indefinite article.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>She purchased a apple in the market with me.</span></div><div class="option correct"><span class="key">b</span><span>She purchased an apple in the market with me.</span></div><div class="option"><span class="key">c</span><span>She purchased apple in the market with me.</span></div><div class="option"><span class="key">d</span><span>She purchase a apple in the market with me.</span></div></div>
-      <div class="explain">
+      <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: b) She purchased an apple in the market with me.</div>
         <div class="exp-body"><span class="lbl">Explanation</span><span class="bline">There are two types of articles: definite (the) and indefinite (a/an).</span><span class="bline">Definite Article ("the"): Used before specific nouns, indicating a particular item or group.</span><span class="bline">Example: "The cat is on the roof." Indefinite Article ("a" before consonant sounds, "an" before vowel sounds): Used before nonspecific nouns, indicating any one of a group.</span><span class="bline">Example: "A dog barked loudly." The sentence that correctly uses the indefinite article is "She purchased an apple in the market with me".</span></div>
       </div>
@@ -85,7 +92,7 @@
       <div class="qnum">Q3</div>
       <div class="qtext"><span class="bline">Select the grammatically correct sentence.</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>The participants of the competition are waiting for their turn curiously.</span></div><div class="option"><span class="key">b</span><span>The participants of the competition has been waiting for their turn curiously.</span></div><div class="option"><span class="key">c</span><span>A participants of the competition is waiting for their turn curiously.</span></div><div class="option"><span class="key">d</span><span>The participants of the competition is waiting for their turn curiously</span></div></div>
-      <div class="explain">
+      <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: a) The participants of the competition are waiting for their turn curiously.</div>
         <div class="exp-body"><span class="lbl">Explanation</span><span class="bline">To determine the grammatically correct sentence among the options, let’s analyse: Option A: "The participants of the competition are waiting for their turn curiously." "The participants" is a plural subject.</span><span class="bline">"are waiting" is the correct plural verb form to match the subject.</span><span class="bline">The sentence is grammatically correct.</span><span class="bline">Hence, Option A is the grammatically correct sentence: "The participants of the competition are waiting for their turn curiously." In Hinglish: "The participants" (पार्टिसिपेंट्स) एक plural subject है। "are waiting" (प्रतीक्षाा कर रहे हैं) plural subject के साथ सही verb form है। पूरा वाक्य grammatically correct है।</span></div>
       </div>
@@ -94,7 +101,7 @@
       <div class="qnum">Q4</div>
       <div class="qtext"><span class="bline">The given sentence has an error. Choose the option that corrects the error Throw a rounder stone to create ripples in the water.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Throw the roundest stone to create ripples in the water.</span></div><div class="option"><span class="key">b</span><span>Throw a more round stone to create ripples in the water.</span></div><div class="option"><span class="key">c</span><span>Throw a more rounder stone to create ripples in the water.</span></div><div class="option correct"><span class="key">d</span><span>Throw a round stone to create ripples in the water.</span></div></div>
-      <div class="explain">
+      <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: d) Throw a round stone to create ripples in the water.</div>
         <div class="exp-body"><span class="lbl">Explanation</span><span class="bline">The given sentence has an error.</span><span class="bline">The error in the original sentence lies in the use of the comparative form "rounder".</span><span class="bline">"Round" is already an adjective in its positive form, and it doesn't have comparative or superlative degrees.</span><span class="bline">Therefore, the correct option is D: Throw a round stone to create ripples in the water.</span><span class="bline">This sentence uses the positive form of the adjective "round" to describe the stone.</span></div>
       </div>
@@ -110,7 +117,7 @@
     <div class="container footer-inner">
       <div class="footer-brand"><img src="/assets/favicon.svg" alt="" class="brand-mark" /><span class="brand-name">YES<span>PYQ</span></span><p>India's previous year questions hub, simplified — free practice with answers &amp; explanations.</p></div>
       <div class="footer-col"><h4>Practice</h4><a href="/">Home</a><a href="/exams/">All Exams</a><a href="/pyq/">UPSC PYQs</a><a href="/subjects/">Subjects</a><a href="/guides/">Guides</a><a href="/blog/">Blog</a><a href="/tools/">Tools</a></div>
-      <div class="footer-col"><h4>Exams</h4><a href="/pyq/">UPSC PYQs</a><a href="/exams/jee/">JEE PYQs</a><a href="/exams/neet/">NEET PYQs</a><a href="/exams/defence/">Defence PYQs</a><a href="/exams/ssc-cgl/">SSC CGL PYQs</a></div>
+      <div class="footer-col"><h4>Exams</h4><a href="/pyq/">UPSC PYQs</a><a href="/exams/jee/">JEE PYQs</a><a href="/exams/neet/">NEET PYQs</a><a href="/exams/board/">Board Exam PYQs</a><a href="/exams/defence/">Defence PYQs</a><a href="/exams/ssc-cgl/">SSC CGL PYQs</a></div>
       <div class="footer-col"><h4>UPSC Subjects</h4><a href="/subjects/polity/">Polity PYQs</a><a href="/subjects/history/">History PYQs</a><a href="/subjects/geography/">Geography PYQs</a><a href="/subjects/economy/">Economy PYQs</a><a href="/subjects/environment/">Environment PYQs</a><a href="/subjects/science-technology/">Science &amp; Tech PYQs</a><a href="/subjects/current-affairs/">Current Affairs PYQs</a></div>
       <div class="footer-col"><h4>UPSC PYQs by Year</h4><a href="/pyq/year/2024/">UPSC 2024</a><a href="/pyq/year/2023/">UPSC 2023</a><a href="/pyq/year/2022/">UPSC 2022</a><a href="/pyq/year/2021/">UPSC 2021</a><a href="/pyq/year/2020/">UPSC 2020</a><a href="/pyq/">All Years</a></div>
       <div class="footer-col"><h4>Popular Explainers</h4><a href="/blog/goods-and-services-tax-gst/">GST Explained</a><a href="/blog/fundamental-rights-explained/">Fundamental Rights</a><a href="/blog/monetary-policy-repo-rate/">Monetary Policy</a><a href="/blog/niti-aayog-explained/">NITI Aayog</a><a href="/blog/inflation-cpi-wpi-explained/">Inflation: CPI vs WPI</a><a href="/blog/fiscal-deficit-explained/">Fiscal Deficit</a></div>
@@ -119,5 +126,6 @@
     <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · India's previous year questions hub · Not affiliated with UPSC, NTA, SSC, IBPS or any government body</div>
   </footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
 </body>
 </html>
