@@ -105,7 +105,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     var b = document.createElement("button");
-    b.className = "theme-toggle";
+    b.className = "theme-toggle-header";
     b.type = "button";
     function icon() {
       var t = effective();
@@ -114,11 +114,14 @@
       b.title = get() === "auto" ? "Auto (by time of day)" : "Theme: " + get();
     }
     icon();
-    // the floating button pins the opposite theme; the account menu is
-    // where you can put it back on auto
+    // pins the opposite theme; the account menu is where you can put it
+    // back on auto. Lives in the header nav, not floating, so it never
+    // collides with the paywall pill/CTA in the corner.
     b.addEventListener("click", function () { set(effective() === "dark" ? "light" : "dark"); icon(); });
     window.YQTheme.onChange(icon);
-    document.body.appendChild(b);
+    var bar = document.querySelector(".site-header .header-inner");
+    if (bar) bar.insertBefore(b, bar.querySelector(".main-nav") ? bar.querySelector(".main-nav").nextSibling : null);
+    else document.body.appendChild(b);
 
     buildMobileNav();
 

@@ -332,48 +332,13 @@
     if (cta) bar.insertBefore(a, cta); else bar.appendChild(a);
   }
 
-  /* Bottom-right pill messages — short enough to read in one glance,
-     rotated so the corner stays alive without being an actual banner ad. */
-  function pillMessages() {
-    var p = cfg.PRICE_LABEL || "₹149";
-    return [
-      '<span class="pp-ic">🎫</span> Get PYQ Pass <b>' + p + '</b>',
-      '<span class="pp-ic">📚</span> <b>2,700+</b> PYQs unlocked',
-      '<span class="pp-ic">🎯</span> UPSC · JEE · NEET &amp; more',
-      '<span class="pp-ic">⚡</span> Unlimited quizzes, ' + p + '/yr'
-    ];
-  }
-  var _pillTimer = null, _pillIdx = 0;
-  function startPillRotation(pill) {
-    stopPillRotation();
-    _pillTimer = setInterval(function () {
-      if (!pill.isConnected) { stopPillRotation(); return; }
-      var msgs = pillMessages();
-      _pillIdx = (_pillIdx + 1) % msgs.length;
-      pill.classList.add("pp-out");
-      setTimeout(function () {
-        pill.innerHTML = msgs[_pillIdx];
-        pill.classList.remove("pp-out");
-      }, 220);
-    }, 4200);
-  }
-  function stopPillRotation() { clearInterval(_pillTimer); _pillTimer = null; }
-
   function renderChrome() {
     if (!SHOW) return;
     injectHeaderButton();
-    // floating pill (only for logged-out / unpaid, never for paid)
+    // the floating rotating pill was cut — a single clear header CTA
+    // (PYQ Pass) is the one persistent upsell now, no floating nag.
     var pill = document.getElementById("pay-pill");
-    if (_paid) { if (pill) pill.remove(); stopPillRotation(); }
-    else {
-      if (!pill) {
-        pill = document.createElement("button");
-        pill.id = "pay-pill"; pill.className = "pay-pill"; pill.setAttribute("data-unlock", "float");
-        pill.innerHTML = pillMessages()[0];
-        document.body.appendChild(pill);
-        startPillRotation(pill);
-      }
-    }
+    if (pill) pill.remove();
     document.querySelectorAll("[data-unlock='header']").forEach(function (el) { el.style.display = _paid ? "none" : ""; });
     renderAccount();
     renderPromos();

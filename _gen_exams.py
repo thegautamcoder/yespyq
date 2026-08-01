@@ -152,11 +152,9 @@ HEADER = '''  <header class="site-header">
         <a href="/">Home</a>
         <a href="/">Practice</a>
         <a href="/exams/" class="active">Exams</a>
-        <a href="/subjects/">Subjects</a>
         <a href="/blog/">Blog</a>
-        <a href="/tools/">Tools</a>
       </nav>
-      <a href="/exams/" class="btn btn-primary btn-sm">Browse Exams</a>
+      <a href="/exams/" class="btn btn-ghost btn-sm">Browse Exams</a>
     </div>
   </header>'''
 

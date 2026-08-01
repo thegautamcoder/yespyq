@@ -408,7 +408,7 @@ body.in-quiz .site-footer{display:none}
 [data-theme="dark"] .site-header{background:rgba(11,18,32,.85)}
 [data-theme="dark"] .btn-ghost,[data-theme="dark"] .option,[data-theme="dark"] .rchip,
 [data-theme="dark"] .quiz-exit,[data-theme="dark"] .pyq-list a,[data-theme="dark"] .seo-links a,
-[data-theme="dark"] .theme-toggle{background:var(--card)}
+[data-theme="dark"] .theme-toggle-header{background:var(--card)}
 [data-theme="dark"] .option:hover{background:var(--blue-100)}
 [data-theme="dark"] .qpage-options .option:not(.correct):hover{background:var(--card)}
 [data-theme="dark"] .hero,[data-theme="dark"] .blog-hero{background:linear-gradient(160deg,var(--blue-50),var(--bg) 72%)}
@@ -417,12 +417,12 @@ body.in-quiz .site-footer{display:none}
 [data-theme="dark"] .quiz-actions{background:linear-gradient(180deg,rgba(11,18,32,0),var(--bg) 38%)}
 [data-theme="dark"] .pill{background:var(--blue-100);color:var(--blue-800)}
 
-/* floating theme toggle (added by inline script on every page) */
-.theme-toggle{position:fixed;right:16px;bottom:16px;z-index:60;width:46px;height:46px;border-radius:50%;
-  border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.2rem;cursor:pointer;
-  box-shadow:var(--shadow);display:grid;place-items:center;transition:.18s;line-height:1}
-.theme-toggle:hover{transform:translateY(-2px) scale(1.06)}
-body.in-quiz .theme-toggle{display:none}
+/* header theme toggle (added by inline script on every page; lives in
+   the nav, not floating, so it never collides with the paywall pill) */
+.theme-toggle-header{order:1;margin-left:.4rem;width:38px;height:38px;border-radius:50%;flex:none;
+  border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1.05rem;cursor:pointer;
+  display:grid;place-items:center;transition:.18s;line-height:1}
+.theme-toggle-header:hover{transform:scale(1.06)}
 
 /* subtle study-symbol texture on heroes (kills the plain white) */
 .hero,.blog-hero{position:relative;overflow:hidden}
@@ -500,6 +500,14 @@ body.in-quiz .theme-toggle{display:none}
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .hero-copy .hero-cta{justify-content:flex-start}
 .hero-copy .hero-stats{justify-content:flex-start;gap:.9rem}
+
+/* single-column hero (no side visual) */
+.hero-centered .hero-copy{max-width:720px;margin:0 auto}
+.hero-centered .hero-copy .lead{max-width:none}
+
+/* pointer from the UPSC-only practice grids to the other exam pages */
+.other-exams-note{text-align:center;color:var(--muted);font-size:.92rem;margin:1.6rem 0 0}
+.other-exams-note a{color:var(--blue-700);font-weight:600}
 
 /* live pill */
 .pill-live{display:inline-flex;align-items:center;gap:.5rem}
@@ -713,29 +721,6 @@ html,body{overflow-x:hidden}
 .btn-premium{background:#0f172a;color:#e8c76b;border:1px solid rgba(217,178,74,.45);font-weight:700}
 .btn-premium:hover{background:#1e293b;transform:translateY(-1px);box-shadow:0 6px 16px rgba(15,23,42,.3)}
 [data-theme="dark"] .btn-premium{background:#1e293b;border-color:rgba(217,178,74,.5)}
-
-/* floating go-premium pill — bottom-right, rotates through short messages */
-.pay-pill{position:fixed;right:16px;bottom:16px;z-index:900;border:none;cursor:pointer;
-  padding:.7rem 1.15rem;border-radius:999px;color:#e8c76b;font-size:.9rem;font-weight:700;
-  background:#0f172a;border:1px solid rgba(217,178,74,.45);
-  box-shadow:0 8px 24px rgba(15,23,42,.35);display:flex;align-items:center;gap:.45rem;
-  max-width:min(78vw,300px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  animation:pillBreathe 3.6s ease-in-out infinite}
-.pay-pill b{font-weight:800;color:#fff}
-.pay-pill:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(15,23,42,.5);animation-play-state:paused}
-.pay-pill .pp-ic{display:inline-block;animation:ppIconPulse 2.4s ease-in-out infinite}
-/* message swap: fade + slight rise, replayed on every rotation */
-.pay-pill{transition:opacity .22s ease}
-.pay-pill.pp-out{opacity:0;transform:translateY(3px)}
-@keyframes pillBreathe{
-  0%,100%{box-shadow:0 8px 24px rgba(15,23,42,.35),0 0 0 0 rgba(217,178,74,0)}
-  50%{box-shadow:0 8px 24px rgba(15,23,42,.35),0 0 0 6px rgba(217,178,74,.12)}
-}
-@keyframes ppIconPulse{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.18) rotate(8deg)}}
-@media (prefers-reduced-motion:reduce){
-  .pay-pill{animation:none}
-  .pay-pill .pp-ic{animation:none}
-}
 
 /* preview-limit lock strip inside the browse list */
 .unlock-strip{position:relative;margin-top:-60px;padding-top:60px;text-align:center}

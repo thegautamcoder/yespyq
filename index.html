@@ -184,10 +184,6 @@
   }
   </script>
   <script src="/theme.js?v=19"></script>
-  <style>
-    #hero-exam,#hero-exam-sub{display:inline-block;transition:opacity .25s ease,transform .25s ease}
-    #hero-exam.rotate-out,#hero-exam-sub.rotate-out{opacity:0;transform:translateY(-6px)}
-  </style>
 </head>
 <body>
   <!-- HEADER -->
@@ -201,12 +197,9 @@
         <a href="#" data-nav="home" class="active">Home</a>
         <a href="#" data-nav="practice">Practice</a>
         <a href="/exams/">Exams</a>
-        <a href="/subjects/">Subjects</a>
         <a href="/blog/">Blog</a>
-        <a href="/tools/">Tools</a>
       </nav>
-      <div class="game-stats" id="game-stats"></div>
-      <a href="#" class="btn btn-primary btn-sm" data-action="start">Start Practice</a>
+      <a href="#" class="btn btn-ghost btn-sm" data-action="start">Start Practice</a>
     </div>
   </header>
 
@@ -214,13 +207,13 @@
 
     <!-- HOME VIEW -->
     <section class="view" id="view-home">
-      <div class="hero">
+      <div class="hero hero-centered">
         <div class="hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
-        <div class="container hero-grid">
+        <div class="container">
           <div class="hero-copy">
             <span class="pill pill-live"><span class="live-dot"></span> Start free · 12,000+ real PYQs</span>
-            <h1>Crack <span id="hero-exam">UPSC Prelims</span> with <span class="accent">Previous Year Questions</span></h1>
-            <p class="lead">Practice authentic <span id="hero-exam-sub">Prelims</span> PYQs — one question at a time, with instant answers, crisp explanations, XP and streaks.</p>
+            <h1>Previous year questions for <span class="accent">every major exam</span></h1>
+            <p class="lead">UPSC · JEE · NEET · SSC CGL · Defence · Boards — one question at a time, with instant answers and clear explanations.</p>
             <div class="hero-cta">
               <button class="btn btn-primary btn-lg btn-glow" data-quiz-setup>⚡ Start a 10-question quiz</button>
               <a href="#" class="btn btn-ghost btn-lg" data-nav="practice">Browse all PYQs</a>
@@ -231,18 +224,13 @@
               <div class="stat"><b id="stat-y">30</b><span>Years</span></div>
             </div>
           </div>
-          <div class="hero-visual" aria-hidden="true">
-            <div class="demo-card" id="demo-card"></div>
-            <div class="demo-badge demo-xp">+10 XP</div>
-            <div class="demo-badge demo-streak">🔥 5-day streak</div>
-          </div>
         </div>
       </div>
 
       <!-- ALL EXAMS -->
       <div class="container">
         <h2 class="section-title">Explore PYQs by exam</h2>
-        <p class="section-sub">YESPYQ isn't just UPSC anymore — pick any exam to browse solved previous year questions, free.</p>
+        <p class="section-sub">Pick any exam to browse solved previous year questions, free.</p>
         <div class="exam-grid">
           <a class="exam-tile-card" href="/pyq/"><div class="ico">🏛️</div><h3>UPSC (CSE Prelims)</h3><p>Civil Services Prelims PYQs</p><span class="count">2,237 questions</span></a>
           <a class="exam-tile-card" href="/exams/jee/"><div class="ico">🛠️</div><h3>JEE (Main &amp; Advanced)</h3><p>Engineering entrance PYQs</p><span class="count">3,975 questions</span></a>
@@ -253,26 +241,12 @@
         </div>
       </div>
 
-      <!-- TRUST -->
-      <section class="trust">
-        <div class="container">
-          <h2 class="trust-title">One platform, every major Indian exam</h2>
-          <p class="trust-sub">Real previous year questions, not mock filler — every one with the correct answer and a full explanation.</p>
-          <div class="trust-stats">
-            <div class="ts"><b>12,000+</b><span>PYQs total</span></div>
-            <div class="ts"><b>6</b><span>Exams covered</span></div>
-            <div class="ts"><b>100%</b><span>Answers explained</span></div>
-            <div class="ts"><b>₹149</b><span>PYQ Pass, 1 year</span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- PYQ PASS TEASER -->
+      <!-- PYQ PASS -->
       <div class="container">
         <div class="pp-teaser">
           <div class="pp-teaser-copy">
             <h3>🎫 PYQ Pass</h3>
-            <p>One pass, one year, all exams, all PYQs. Unlock every answer and explanation across UPSC, JEE, NEET, SSC CGL, Defence and Boards.</p>
+            <p>One pass, one year, all exams, all PYQs. Unlock every correct answer and explanation across UPSC, JEE, NEET, SSC CGL, Defence and Boards — ₹149 once, not a subscription.</p>
           </div>
           <a href="/pyq-pass/" class="btn btn-primary btn-lg">Get PYQ Pass · ₹149 →</a>
         </div>
@@ -286,6 +260,8 @@
         <h2 class="section-title">Practice UPSC by Year</h2>
         <p class="section-sub">Attempt questions from a specific exam year.</p>
         <div class="year-grid" id="home-years"></div>
+
+        <p class="other-exams-note">JEE, NEET, SSC CGL, Board and Defence PYQs are organised by subject and chapter on their own exam pages — <a href="/exams/">browse all exams →</a></p>
       </div>
     </section>
 
@@ -417,6 +393,6 @@
   <script src="data.js?v=8"></script>
   <script src="pyq.js?v=8"></script>
   <script src="pyq-exp.js?v=8" defer></script>
-  <script src="app.js?v=28"></script>
+  <script src="app.js?v=29"></script>
 </body>
 </html>

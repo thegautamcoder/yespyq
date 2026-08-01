@@ -46,7 +46,10 @@ function earnXp(n) {
   const xpEl = $(".gs-xp"); if (xpEl) { xpEl.classList.remove("bump"); void xpEl.offsetWidth; xpEl.classList.add("bump"); }
 }
 function renderGameStats() {
-  $("#game-stats").innerHTML =
+  const el = $("#game-stats");
+  if (!el) return;               // header streak/XP pills were cut (confusing at 0 for new visitors);
+                                  // streak/XP still tracked and shown via floatXp() during a quiz
+  el.innerHTML =
     `<div class="gs-item gs-streak" title="Day streak">🔥<b>${game.streak}</b></div>
      <div class="gs-item gs-xp" title="Total XP">⚡<b>${game.xp}</b></div>`;
 }
@@ -508,92 +511,6 @@ function revealOnScroll() {
   els.forEach(el => io.observe(el));
 }
 
-/* ---------- rotating hero demo card (question → answer → solution) ---------- */
-// Real UPSC CSE Prelims PYQs (subject · exam · year shown on the card).
-const DEMO = [
-  { sub: "🔬 Science & Tech", yr: "UPSC Prelims 2022",
-    q: "Certain species of which one of the following organisms are well known as cultivators of fungi?",
-    o: ["Ant", "Cockroach", "Crab", "Spider"], a: 0,
-    sol: "Leaf-cutter ants (genera Atta and Acromyrmex) farm fungi on chewed leaves — a classic case of insect agriculture." },
-  { sub: "⚖️ Polity", yr: "UPSC Prelims 2023",
-    q: "By which one of the following Acts was the Governor-General of Bengal designated as the Governor-General of India?",
-    o: ["The Regulating Act", "Pitt’s India Act", "Charter Act of 1793", "Charter Act of 1833"], a: 3,
-    sol: "The Charter Act of 1833 made the Governor-General of Bengal the Governor-General of India, centralising British power." },
-  { sub: "🌍 Geography", yr: "UPSC Prelims 2024",
-    q: "Which of the following countries are well known as the two largest cocoa producers in the world?",
-    o: ["Algeria and Morocco", "Botswana and Namibia", "Côte d’Ivoire and Ghana", "Madagascar and Mozambique"], a: 2,
-    sol: "Côte d’Ivoire and Ghana together account for over 60% of the world’s cocoa production." },
-];
-let demoI = 0, demoRevealT = null, demoXP = 140, demoStreak = 6;
-function bumpBadge(sel, txt) {
-  const el = document.querySelector(sel);
-  if (!el) return;
-  el.textContent = txt;
-  el.classList.remove("badge-pop"); void el.offsetWidth; el.classList.add("badge-pop");
-}
-function renderDemo() {
-  const el = document.getElementById("demo-card");
-  if (!el) return;
-  const d = DEMO[demoI];
-  const opts = d.o.map((o, i) =>
-    `<div class="demo-opt" data-i="${i}" style="animation-delay:${(0.16 + i * 0.1).toFixed(2)}s"><span class="demo-key">${String.fromCharCode(65 + i)}</span><span class="demo-otext">${escapeHTML(o)}</span><span class="demo-tick">✓</span></div>`).join("");
-  el.innerHTML = `
-    <div class="demo-inner">
-      <div class="demo-tags"><span class="qtag">${d.sub}</span>${d.yr ? `<span class="qtag">${d.yr}</span>` : ""}</div>
-      <p class="demo-q">${escapeHTML(d.q)}</p>
-      <div class="demo-opts">${opts}</div>
-      <div class="demo-sol"><b>✓ Answer: ${String.fromCharCode(65 + d.a)}) ${escapeHTML(d.o[d.a])}</b><span>${escapeHTML(d.sol)}</span></div>
-    </div>`;
-  bumpBadge(".demo-streak", `🔥 ${demoStreak}-day streak`);
-  clearTimeout(demoRevealT);
-  demoRevealT = setTimeout(() => {           // reveal the answer after options settle
-    const co = el.querySelector(`.demo-opt[data-i="${d.a}"]`);
-    if (co) co.classList.add("is-correct");
-    const sol = el.querySelector(".demo-sol");
-    if (sol) sol.classList.add("show");
-    demoXP += 10;                            // XP climbs as each question is solved
-    bumpBadge(".demo-xp", `⚡ ${demoXP} XP`);
-  }, 1350);
-}
-function nextDemo() {
-  const inner = document.querySelector("#demo-card .demo-inner");
-  const advance = () => { demoI = (demoI + 1) % DEMO.length; if (demoI === 0) demoStreak++; renderDemo(); };
-  if (inner) { inner.classList.add("demo-out"); setTimeout(advance, 300); }
-  else advance();
-}
-function startDemo() {
-  if (!document.getElementById("demo-card")) return;
-  bumpBadge(".demo-xp", `⚡ ${demoXP} XP`);
-  renderDemo();
-  setInterval(nextDemo, 5200);
-}
-
-/* ---------- hero exam-name rotator ---------- */
-const HERO_EXAMS = [
-  { headline: "UPSC Prelims", sub: "Prelims" },
-  { headline: "SSC CGL", sub: "SSC CGL" },
-  { headline: "JEE", sub: "JEE" },
-  { headline: "NEET", sub: "NEET" },
-  { headline: "Board Exams", sub: "Boards" },
-  { headline: "Defence Exams", sub: "Defence" },
-];
-function startHeroRotator() {
-  const h = document.getElementById("hero-exam");
-  const s = document.getElementById("hero-exam-sub");
-  if (!h || !s) return;
-  let i = 0;
-  setInterval(() => {
-    i = (i + 1) % HERO_EXAMS.length;
-    h.classList.add("rotate-out");
-    s.classList.add("rotate-out");
-    setTimeout(() => {
-      h.textContent = HERO_EXAMS[i].headline;
-      s.textContent = HERO_EXAMS[i].sub;
-      h.classList.remove("rotate-out");
-      s.classList.remove("rotate-out");
-    }, 250);
-  }, 3200);
-}
 
 /* ---------- init ---------- */
 // PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
@@ -602,12 +519,9 @@ function startHeroRotator() {
 const OTHER_EXAM_PYQS = 10078;
 renderSubjects();
 renderYears();
-renderGameStats();
 document.body.classList.add("anim-ready");
 countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
 countUp($("#stat-y"), YEARS.length);
 revealOnScroll();
-startDemo();
-startHeroRotator();
 $("#year").textContent = new Date().getFullYear();
 showView("home");
