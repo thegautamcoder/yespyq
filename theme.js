@@ -58,7 +58,7 @@
   setInterval(function () { if (get() === "auto") { var b = document.documentElement.getAttribute("data-theme"); if (apply() !== b) listeners.forEach(function (fn) { try { fn("auto", effective()); } catch (e) {} }); } }, 60000);
 
   /* Small screens used to just hide the nav, leaving no way to navigate.
-     Build a drawer instead: brand + Premium stay visible in the bar, the
+     Build a drawer instead: brand + PYQ Pass stay visible in the bar, the
      links and the main CTA move behind the ☰ button. Injected here so all
      2,471 pages get it without touching their markup. */
   function buildMobileNav() {
@@ -127,7 +127,7 @@
       var c = document.createElement("script");
       c.id = "pay-config-js"; c.src = "/pay-config.js?v=6";
       c.onload = function () {
-        var m = document.createElement("script"); m.src = "/auth-pay.js?v=21"; m.defer = true;
+        var m = document.createElement("script"); m.src = "/auth-pay.js?v=22"; m.defer = true;
         document.body.appendChild(m);
       };
       document.body.appendChild(c);

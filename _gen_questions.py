@@ -164,10 +164,10 @@ def head(title, desc, canonical, schema_blocks, og_type="article"):
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=25" />
+  <link rel="stylesheet" href="/styles.css?v=40" />
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
-  <script src="/theme.js?v=1"></script>
+  <script src="/theme.js?v=19"></script>
 </head>
 <body>'''
 

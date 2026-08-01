@@ -3,8 +3,8 @@
    The Razorpay SECRET lives ONLY in Supabase (see PAYWALL_SETUP.md).
    ============================================================ */
 window.PAY_CONFIG = {
-  /* ---- display: the shiny Premium button, popup & auto-popup ---- */
-  // Show the Premium button (all pages), the unlock popup, the floating
+  /* ---- display: the shiny PYQ Pass button, popup & auto-popup ---- */
+  // Show the PYQ Pass button (all pages), the unlock popup, the floating
   // pill and the "spent N seconds" auto-popup. Safe with no backend —
   // if payments aren't wired yet the popup shows a "launching soon" note.
   SHOW_POPUP: true,

@@ -484,8 +484,8 @@
             <input type="file" id="file-input" accept="image/*,.heic,.heif" class="hidden" onchange="onFileSelect(event)">
 
             <a href="/exams/" style="display:flex;align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap;text-decoration:none;margin-top:.15rem;padding:.7rem .85rem;border-radius:12px;background:#0f172a;border:1px solid rgba(217,178,74,.35)">
-              <span style="font-size:.78rem;color:#e2e8f0;line-height:1.35">👑 Also prepping for an exam? <b style="color:#e8c76b">2,700+ UPSC/JEE/NEET PYQs</b>, ₹149/yr.</span>
-              <span style="flex:none;padding:.42rem .75rem;border-radius:9px;font-weight:700;font-size:.76rem;color:#fff;background:linear-gradient(100deg,#2563eb,#4f46e5)">Get Premium →</span>
+              <span style="font-size:.78rem;color:#e2e8f0;line-height:1.35">🎫 Also prepping for an exam? <b style="color:#e8c76b">12,000+ UPSC/JEE/NEET PYQs</b>, ₹149/yr.</span>
+              <span style="flex:none;padding:.42rem .75rem;border-radius:9px;font-weight:700;font-size:.76rem;color:#fff;background:linear-gradient(100deg,#2563eb,#4f46e5)">Get PYQ Pass →</span>
             </a>
           </div>
 
@@ -549,8 +549,8 @@
             <a id="dl-link" href="#" class="btn-download">⬇️ Download Image</a>
 
             <div id="resizer-nudge" class="hidden" style="margin-top:.4rem;padding:.75rem .9rem;border-radius:12px;background:#0f172a;border:1px solid rgba(217,178,74,.35);align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap">
-              <span style="font-size:.82rem;color:#e2e8f0">👑 Also need <b style="color:#e8c76b">UPSC/JEE/NEET PYQs</b>? 2,700+ solved, ₹149/yr.</span>
-              <a href="/exams/" style="flex:none;text-decoration:none;padding:.45rem .8rem;border-radius:9px;font-weight:700;font-size:.78rem;color:#fff;background:linear-gradient(100deg,#2563eb,#4f46e5)">Get Premium →</a>
+              <span style="font-size:.82rem;color:#e2e8f0">🎫 Also need <b style="color:#e8c76b">UPSC/JEE/NEET PYQs</b>? 12,000+ solved, ₹149/yr.</span>
+              <a href="/exams/" style="flex:none;text-decoration:none;padding:.45rem .8rem;border-radius:9px;font-weight:700;font-size:.78rem;color:#fff;background:linear-gradient(100deg,#2563eb,#4f46e5)">Get PYQ Pass →</a>
             </div>
 
             <button onclick="goUpload()" class="text-xs text-slate-400 hover:text-slate-600 text-center py-1">← Process another</button>
@@ -1795,7 +1795,7 @@ async function processImage() {
   dl.download = `yespyq_${S.exam?.slug||'photo'}.${ext}`;
   showRight('result');
 
-  // premium nudge, right at the moment the action (resize) completes —
+  // PYQ Pass nudge, right at the moment the action (resize) completes —
   // a plain link to /exams/ (not the site's popup system) since this
   // standalone tool doesn't load the shared styles.css/auth-pay.js
   const nudge = document.getElementById('resizer-nudge');

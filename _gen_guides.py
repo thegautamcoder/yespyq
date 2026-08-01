@@ -331,7 +331,7 @@ TMPL = """<!DOCTYPE html>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=25" />
+  <link rel="stylesheet" href="/styles.css?v=40" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"Article","headline":"{h1}","description":"{desc}","image":"{base}/assets/og-image.png","datePublished":"{today}","dateModified":"{today}","inLanguage":"en-IN","author":{{"@type":"Organization","name":"YESPYQ","url":"{base}/"}},"publisher":{{"@type":"EducationalOrganization","name":"YESPYQ","logo":{{"@type":"ImageObject","url":"{base}/assets/favicon.svg"}}}},"mainEntityOfPage":{{"@type":"WebPage","@id":"{base}/guides/{slug}/"}}}}
@@ -342,7 +342,7 @@ TMPL = """<!DOCTYPE html>
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{faq_ld}]}}
   </script>
-  <script src="/theme.js?v=1"></script>
+  <script src="/theme.js?v=19"></script>
 </head>
 <body>
   <header class="site-header">
@@ -424,12 +424,12 @@ HUB_TMPL = """<!DOCTYPE html>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=25" />
+  <link rel="stylesheet" href="/styles.css?v=40" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{base}/"}},{{"@type":"ListItem","position":2,"name":"Guides","item":"{base}/guides/"}}]}}
   </script>
-  <script src="/theme.js?v=1"></script>
+  <script src="/theme.js?v=19"></script>
 </head>
 <body>
   <header class="site-header">

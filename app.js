@@ -574,6 +574,7 @@ const HERO_EXAMS = [
   { headline: "SSC CGL", sub: "SSC CGL" },
   { headline: "JEE", sub: "JEE" },
   { headline: "NEET", sub: "NEET" },
+  { headline: "Board Exams", sub: "Boards" },
   { headline: "Defence Exams", sub: "Defence" },
 ];
 function startHeroRotator() {
@@ -595,11 +596,15 @@ function startHeroRotator() {
 }
 
 /* ---------- init ---------- */
+// PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
+// which live in separate static exam-data JSON, not loaded here — update
+// this after each exam-data import so the homepage stat stays accurate.
+const OTHER_EXAM_PYQS = 10078;
 renderSubjects();
 renderYears();
 renderGameStats();
 document.body.classList.add("anim-ready");
-countUp($("#stat-q"), QUESTIONS.length);
+countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
 countUp($("#stat-y"), YEARS.length);
 revealOnScroll();
 startDemo();

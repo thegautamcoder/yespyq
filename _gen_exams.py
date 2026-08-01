@@ -168,7 +168,7 @@ FOOTER = '''  <footer class="site-footer">
       <div class="footer-col"><h4>UPSC Subjects</h4><a href="/subjects/polity/">Polity PYQs</a><a href="/subjects/history/">History PYQs</a><a href="/subjects/geography/">Geography PYQs</a><a href="/subjects/economy/">Economy PYQs</a><a href="/subjects/environment/">Environment PYQs</a><a href="/subjects/science-technology/">Science &amp; Tech PYQs</a><a href="/subjects/current-affairs/">Current Affairs PYQs</a></div>
       <div class="footer-col"><h4>UPSC PYQs by Year</h4><a href="/pyq/year/2024/">UPSC 2024</a><a href="/pyq/year/2023/">UPSC 2023</a><a href="/pyq/year/2022/">UPSC 2022</a><a href="/pyq/year/2021/">UPSC 2021</a><a href="/pyq/year/2020/">UPSC 2020</a><a href="/pyq/">All Years</a></div>
       <div class="footer-col"><h4>Popular Explainers</h4><a href="/blog/goods-and-services-tax-gst/">GST Explained</a><a href="/blog/fundamental-rights-explained/">Fundamental Rights</a><a href="/blog/monetary-policy-repo-rate/">Monetary Policy</a><a href="/blog/niti-aayog-explained/">NITI Aayog</a><a href="/blog/inflation-cpi-wpi-explained/">Inflation: CPI vs WPI</a><a href="/blog/fiscal-deficit-explained/">Fiscal Deficit</a></div>
-      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/disclaimer/">Disclaimer</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="/about/">About</a><a href="/pyq-pass/">PYQ Pass</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy Policy</a><a href="/terms/">Terms &amp; Conditions</a><a href="/disclaimer/">Disclaimer</a></div>
     </div>
     <div class="footer-bottom">© <span id="year"></span> YESPYQ.com · India's previous year questions hub · Not affiliated with UPSC, NTA, SSC, IBPS or any government body</div>
   </footer>
@@ -240,12 +240,12 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=25" />
+  <link rel="stylesheet" href="/styles.css?v=40" />
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 {EXTRA_CSS}
 {extra_head}
-  <script src="/theme.js?v=1"></script>
+  <script src="/theme.js?v=19"></script>
 </head>
 <body>'''
 
@@ -280,7 +280,7 @@ def question_block(x, n, gated):
     gate = f'''
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
-        <div><b>Answer &amp; explanation — Premium</b><p>Unlock this and thousands more solved PYQs.</p></div>
+        <div><b>Answer &amp; explanation — PYQ Pass</b><p>Unlock this and thousands more solved PYQs.</p></div>
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>''' if gated else ""
     data_attrs = f' data-gated="1" data-a="{x["a"]}"' if gated else ""
@@ -300,7 +300,7 @@ def chapter_page(exam, subject, chapter, items):
     canonical = f"{BASE}/exams/{exam}/{subject}/{slug}/"
     title = attr(f"{chapter} — {ecfg['name']} {sname} PYQs with Answers | YESPYQ")
     if gated:
-        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter} — free to practice, unlock the correct answer & explanation with Premium.")
+        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter} — free to practice, unlock the correct answer & explanation with PYQ Pass.")
     else:
         desc = attr(f"{len(items)} solved {ecfg['name']} {sname} previous year questions on {chapter}, each with the correct answer and explanation. Free practice on YESPYQ.")
 
@@ -310,7 +310,7 @@ def chapter_page(exam, subject, chapter, items):
 
     qs_html = "\n".join(question_block(x, i + 1, gated) for i, x in enumerate(items))
 
-    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b> — free to practice, unlock the correct answer &amp; explanation with Premium."
+    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b> — free to practice, unlock the correct answer &amp; explanation with PYQ Pass."
               if gated else
               f"{len(items)} solved {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>, each with the correct answer and a full explanation.")
 
@@ -346,7 +346,7 @@ def subject_index(exam, subject, by_chapter):
     total = sum(len(v) for v in by_chapter.values())
     title = attr(f"{ecfg['name']} {sname} PYQs — {total} Solved Previous Year Questions | YESPYQ")
     if gated:
-        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} previous year questions — free to practice, answers & explanations unlocked with Premium.")
+        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} previous year questions — free to practice, answers & explanations unlocked with PYQ Pass.")
     else:
         desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} solved previous year questions, each with the correct answer and a detailed explanation. Free on YESPYQ.")
 
@@ -383,7 +383,7 @@ def exam_hub(exam, by_subject):
     total = sum(len(v) for v in by_subject.values())
     title = attr(f"{ecfg['full']} PYQs — {total} Solved Previous Year Questions | YESPYQ")
     if gated:
-        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise — free to practice, answers & explanations unlocked with Premium.")
+        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise — free to practice, answers & explanations unlocked with PYQ Pass.")
     else:
         desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
 
@@ -397,7 +397,7 @@ def exam_hub(exam, by_subject):
         label = "PYQs" if gated else "solved PYQs"
         tiles += f'<a class="exam-tile" href="/exams/{exam}/{sid}/"><div class="et-icon">{sicon}</div><h3>{esc(sname)}</h3><p>{n} {label}</p></a>'
 
-    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — free to practice, unlock the correct answer & explanation with Premium."
+    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — free to practice, unlock the correct answer & explanation with PYQ Pass."
               if gated else
               f"{total} solved previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation.")
 
@@ -436,7 +436,7 @@ def exams_hub(counts):
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › Exams</nav>
       <h1>India's Previous Year Questions Hub</h1>
-      <p>YESPYQ is expanding beyond UPSC — previous year questions for every major Indian exam, free to practice, with answers &amp; explanations unlocked for Premium members. Pick your exam below.</p>
+      <p>YESPYQ is expanding beyond UPSC — previous year questions for every major Indian exam, free to practice, with answers &amp; explanations unlocked with PYQ Pass. Pick your exam below.</p>
       <div class="exam-tiles">{tiles}</div>
       <p style="margin-top:2rem;color:var(--muted);font-size:.9rem">More exams (Banking, TET and others) are on the way.</p>
     </article>

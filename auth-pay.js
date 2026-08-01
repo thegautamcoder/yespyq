@@ -1,7 +1,7 @@
 /* ============================================================
    YESPYQ — auth + payment layer (soft paywall), site-wide.
    Loaded on EVERY page (via theme.js). It:
-     • injects the "👑 Premium" button into the header
+     • injects the "🎫 PYQ Pass" button into the header
      • renders the shiny unlock popup + floating pill
      • auto-opens the popup after N seconds on site
      • runs Google sign-in (Supabase) + Razorpay checkout
@@ -81,7 +81,7 @@
     _loader.className = "pay-loader";
     _loader.innerHTML =
       '<div class="pl-card">' +
-        '<div class="pl-crown">👑</div>' +
+        '<div class="pl-crown">🎫</div>' +
         '<div class="pl-spin" aria-hidden="true"></div>' +
         '<div class="pl-msg">' + escapeH(msg || "Signing you in…") + '</div>' +
         '<div class="pl-sub">Opening secure payment · ₹149 for 1 year</div>' +
@@ -283,7 +283,7 @@
 
     var rzp = new window.Razorpay({
       key: cfg.RAZORPAY_KEY_ID, order_id: order.id, amount: order.amount, currency: order.currency || "INR",
-      name: "YESPYQ Premium", description: "1-year access — all PYQs & explanations",
+      name: "YESPYQ PYQ Pass", description: "1-year access — all PYQs & explanations",
       image: "https://yespyq.com/assets/favicon.svg", theme: { color: "#2563eb" },
       // we already know who they are from Google — don't ask for a phone
       // number, and don't let them type a different email than the account
@@ -313,21 +313,21 @@
     rzp.open();
     hidePayLoader();                      // Razorpay is on screen now
   }
-  function onPaid() { track("payment_success", {}); refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 Premium active for 1 year — everything's unlocked!"); }); }
-  function comingSoon() { showToast("💛 Premium is launching very soon — thanks for your interest!"); }
+  function onPaid() { track("payment_success", {}); refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 PYQ Pass active for 1 year — everything's unlocked!"); }); }
+  function comingSoon() { showToast("💛 PYQ Pass is launching very soon — thanks for your interest!"); }
 
   /* ============================================================
      UI
      ============================================================ */
   var overlay = null;
 
-  /* inject the Premium button into the header on every page */
+  /* inject the PYQ Pass button into the header on every page */
   function injectHeaderButton() {
     var bar = document.querySelector(".site-header .header-inner");
     if (!bar || bar.querySelector("[data-unlock='header']")) return;
     var a = document.createElement("a");
     a.href = "#"; a.className = "btn btn-premium btn-sm"; a.setAttribute("data-unlock", "header");
-    a.innerHTML = "👑 Premium";
+    a.innerHTML = "🎫 PYQ Pass";
     var cta = bar.querySelector(".btn-primary");
     if (cta) bar.insertBefore(a, cta); else bar.appendChild(a);
   }
@@ -337,7 +337,7 @@
   function pillMessages() {
     var p = cfg.PRICE_LABEL || "₹149";
     return [
-      '<span class="pp-ic">✨</span> Go Premium <b>' + p + '</b>',
+      '<span class="pp-ic">🎫</span> Get PYQ Pass <b>' + p + '</b>',
       '<span class="pp-ic">📚</span> <b>2,700+</b> PYQs unlocked',
       '<span class="pp-ic">🎯</span> UPSC · JEE · NEET &amp; more',
       '<span class="pp-ic">⚡</span> Unlimited quizzes, ' + p + '/yr'
@@ -388,7 +388,7 @@
     if (_paid || !SHOW) return "";
     return '<div class="sol-nudge">' +
       '<span class="sn-t">Liked this explanation? <b>2,700+ more</b>, every one solved.</span>' +
-      '<button class="sn-cta" data-unlock="solution">Get Premium · ' + (cfg.PRICE_LABEL || "₹149") + '</button>' +
+      '<button class="sn-cta" data-unlock="solution">Get PYQ Pass · ' + (cfg.PRICE_LABEL || "₹149") + '</button>' +
     '</div>';
   }
   window.PAY.nudgeHTML = nudgeHTML;
@@ -435,12 +435,12 @@
           var band = document.createElement("div");
           band.id = "promo-band"; band.className = "promo-band";
           band.innerHTML =
-            '<div class="pb-left"><span class="pb-crown">👑</span>' +
+            '<div class="pb-left"><span class="pb-crown">🎫</span>' +
               '<div><b>Unlock every PYQ, every explanation</b>' +
               '<em>UPSC · SSC · JEE · NEET · Boards — ' + price + ' for a full year</em></div>' +
             '</div>' +
             '<div class="pb-right">' +
-              '<button class="pb-cta" data-unlock="band">Get Premium</button>' +
+              '<button class="pb-cta" data-unlock="band">Get PYQ Pass</button>' +
               '<button class="pb-signin" data-unlock-signin>Already paid?</button>' +
             '</div>';
           anchor.parentNode.insertBefore(band, anchor.nextSibling);
@@ -465,7 +465,7 @@
     var plan, planCls, renewBtn = "";
     if (_paid) {
       var d = daysLeft();
-      plan = "👑 Premium · " + d + " day" + (d === 1 ? "" : "s") + " left";
+      plan = "🎫 PYQ Pass · " + d + " day" + (d === 1 ? "" : "s") + " left";
       planCls = d <= 30 ? "warn" : "ok";
       if (d <= 30) renewBtn = '<button class="acct-renew" data-unlock-buy>Renew now · ' + (cfg.PRICE_LABEL || "₹149") + '</button>';
       plan += _exp ? '<em>expires ' + expDate() + '</em>' : "";
@@ -513,16 +513,16 @@
     overlay.className = "unlock-overlay";
     var loggedIn = !!_user;
     var price = cfg.PRICE_LABEL || "₹149";
-    var cta = renewing ? "Renew · " + price : "Unlock Premium →";
+    var cta = renewing ? "Renew · " + price : "Unlock PYQ Pass →";
     var sub = renewing ? "Another full year, same price" : "Pay once · unlocked in seconds";
     var h2 = renewing ? "Welcome back — your plan has expired"
       : "Every PYQ. Every exam. One key.";
     var tag = renewing ? "Renew to keep everything unlocked."
-      : "UPSC · SSC · JEE · NEET · Boards &amp; more";
+      : "One pass, one year, all exams, all PYQs";
     overlay.innerHTML =
       '<div class="unlock-card" role="dialog" aria-modal="true">' +
         '<button class="unlock-x" data-unlock-close aria-label="Close">×</button>' +
-        '<div class="unlock-banner"><span class="ub-crown">👑</span> PREMIUM</div>' +
+        '<div class="unlock-banner"><span class="ub-crown">🎫</span> PYQ PASS</div>' +
         '<div class="unlock-main">' +
           '<div class="unlock-left">' +
             '<h2>' + h2 + '</h2>' +

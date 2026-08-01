@@ -680,7 +680,7 @@ TMPL = """<!DOCTYPE html>
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=25" />
+  <link rel="stylesheet" href="/styles.css?v=40" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <style>
     .quick-answer{{border:1px solid var(--border,#e2e8f0);background:var(--surface,#f8fafc);border-left:4px solid #2563eb;padding:14px 16px;border-radius:10px;margin:18px 0}}
@@ -715,7 +715,7 @@ TMPL = """<!DOCTYPE html>
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"EducationalOrganization","@id":"{base}/#org","name":"YESPYQ","alternateName":"YES PYQ — UPSC PYQ Practice","url":"{base}/","logo":{{"@type":"ImageObject","@id":"{base}/#logo","url":"{base}/assets/favicon.svg","contentUrl":"{base}/assets/favicon.svg","caption":"YESPYQ"}},"image":{{"@id":"{base}/#logo"}},"description":"YESPYQ is a free platform to practise UPSC Civil Services Examination previous year questions (PYQs) with answers and detailed explanations, offering subject-wise and year-wise practice plus exam-preparation guides and explainers.","email":"teamyespyq@gmail.com","areaServed":{{"@type":"Country","name":"India"}},"audience":{{"@type":"EducationalAudience","educationalRole":"UPSC Civil Services aspirant"}},"knowsAbout":["UPSC Civil Services Examination","Previous Year Questions","Indian Polity","Indian Economy","Geography","History","Environment and Ecology","Current Affairs","Science and Technology"],"contactPoint":{{"@type":"ContactPoint","contactType":"customer support","email":"teamyespyq@gmail.com","availableLanguage":["English","Hindi"]}},"sameAs":[]}}
   </script>
-  <script src="/theme.js?v=1"></script>
+  <script src="/theme.js?v=19"></script>
 </head>
 <body>
   <header class="site-header">
