@@ -380,9 +380,10 @@
     if (!SHOW) return;
     var price = cfg.PRICE_LABEL || "₹149";
     var isHome = !!document.getElementById("view-home");   // SPA homepage handles its own CTAs
+    var isPassPage = /\/pyq-pass\/?$/.test(location.pathname); // Pass page has its own buy card
 
-    // inline banner mid-content
-    if (!isHome && !document.getElementById("promo-band")) {
+    // inline banner mid-content — skip home + dedicated Pass page
+    if (!isHome && !isPassPage && !document.getElementById("promo-band")) {
       // descend past single-child wrappers (main > .container > …) to the
       // element that actually holds the page's content blocks
       var host = document.querySelector("main") || document.querySelector(".site-main");
