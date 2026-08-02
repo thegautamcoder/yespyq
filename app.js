@@ -3,7 +3,138 @@
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
-const subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+/* ---------- multi-exam banks ---------- */
+const UPSC_SUBJECTS = SUBJECTS.slice();
+const UPSC_QUESTIONS = QUESTIONS.slice();
+
+const EXAM_META = {
+  upsc: {
+    id: "upsc", name: "UPSC", full: "UPSC (CSE Prelims)", quiz: true, file: null,
+    subjects: UPSC_SUBJECTS
+  },
+  jee: {
+    id: "jee", name: "JEE", full: "JEE (Main & Advanced)", quiz: false, file: "/exam-data/jee.json",
+    subjects: [
+      { id: "physics", name: "Physics", icon: "🧲" },
+      { id: "chemistry", name: "Chemistry", icon: "🧪" },
+      { id: "maths", name: "Maths", icon: "➗" }
+    ]
+  },
+  neet: {
+    id: "neet", name: "NEET", full: "NEET-UG", quiz: false, file: "/exam-data/neet.json",
+    subjects: [
+      { id: "physics", name: "Physics", icon: "🧲" },
+      { id: "chemistry", name: "Chemistry", icon: "🧪" },
+      { id: "biology", name: "Biology", icon: "🧬" }
+    ]
+  },
+  "ssc-cgl": {
+    id: "ssc-cgl", name: "SSC CGL", full: "SSC CGL", quiz: false, file: "/exam-data/ssc-cgl.json",
+    subjects: [
+      { id: "english", name: "English", icon: "🔤" },
+      { id: "history", name: "History", icon: "🏛️" },
+      { id: "economy", name: "Economy", icon: "📈" },
+      { id: "aptitude", name: "Quantitative Aptitude", icon: "🔢" },
+      { id: "reasoning", name: "Reasoning", icon: "🧩" },
+      { id: "computer", name: "Computer", icon: "💻" },
+      { id: "geography", name: "Geography", icon: "🌍" },
+      { id: "science", name: "Science", icon: "🔬" },
+      { id: "gk", name: "General Knowledge", icon: "🌐" },
+      { id: "polity", name: "Polity", icon: "⚖️" }
+    ]
+  },
+  board: {
+    id: "board", name: "Boards", full: "Board Exams", quiz: false, file: "/exam-data/board.json",
+    subjects: [
+      { id: "physics", name: "Physics", icon: "🧲" },
+      { id: "chemistry", name: "Chemistry", icon: "🧪" },
+      { id: "maths", name: "Maths", icon: "➗" }
+    ]
+  },
+  defence: {
+    id: "defence", name: "Defence", full: "Defence Exams", quiz: false, file: "/exam-data/defence.json",
+    subjects: [
+      { id: "staticgk", name: "Static GK", icon: "🌐" },
+      { id: "currentaff", name: "Current Affairs", icon: "🗞️" },
+      { id: "economy", name: "Economics", icon: "📈" },
+      { id: "history", name: "History", icon: "🏛️" },
+      { id: "polity", name: "Polity", icon: "⚖️" },
+      { id: "english", name: "English", icon: "🔤" },
+      { id: "geography", name: "Geography", icon: "🌍" }
+    ]
+  }
+};
+
+let currentExam = "upsc";
+let subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+let byId = Object.fromEntries(QUESTIONS.map(q => [q.i, q]));
+let YEARS = [...new Set(QUESTIONS.map(q => q.y))].filter(Boolean).sort((a, b) => b - a);
+const bankCache = {};
+const PAGE = 15;
+
+function rebuildIndexes() {
+  subjectMap = Object.fromEntries(SUBJECTS.map(s => [s.id, s]));
+  byId = Object.fromEntries(QUESTIONS.map(q => [q.i, q]));
+  YEARS = [...new Set(QUESTIONS.map(q => q.y))].filter(Boolean).sort((a, b) => b - a);
+}
+
+function normalizeExamQ(raw) {
+  return {
+    i: raw.i,
+    q: raw.q,
+    o: raw.o,
+    a: raw.a,
+    s: raw.s || raw.subject,
+    c: raw.c || raw.chapter || "",
+    y: raw.y || null,
+    exp: raw.exp || ""
+  };
+}
+
+async function ensureExamBank(examId) {
+  const meta = EXAM_META[examId];
+  if (!meta) throw new Error("Unknown exam: " + examId);
+  if (examId === "upsc") {
+    return { questions: UPSC_QUESTIONS, subjects: UPSC_SUBJECTS };
+  }
+  if (bankCache[examId]) return bankCache[examId];
+  const res = await fetch(meta.file);
+  if (!res.ok) throw new Error("Failed to load " + meta.file);
+  const raw = await res.json();
+  const questions = (Array.isArray(raw) ? raw : [])
+    .map(normalizeExamQ)
+    .filter(isCleanQ);
+  const bank = { questions, subjects: meta.subjects };
+  bankCache[examId] = bank;
+  return bank;
+}
+
+async function setExam(examId, opts) {
+  opts = opts || {};
+  const meta = EXAM_META[examId] || EXAM_META.upsc;
+  const status = $("#qlist-title");
+  if (status && opts.showLoading !== false) status.textContent = "Loading " + meta.full + "…";
+  try {
+    const bank = await ensureExamBank(meta.id);
+    currentExam = meta.id;
+    SUBJECTS.length = 0;
+    SUBJECTS.push(...bank.subjects);
+    QUESTIONS.length = 0;
+    QUESTIONS.push(...bank.questions);
+    rebuildIndexes();
+    filter.subject = ("subject" in opts) ? opts.subject : null;
+    filter.year = ("year" in opts) ? opts.year : null;
+    if (opts.mode === "quiz" && meta.quiz) {
+      openQuizSetup();
+    } else {
+      openBrowse({ subject: filter.subject, year: filter.year });
+    }
+  } catch (err) {
+    console.error(err);
+    if (status) status.textContent = "Could not load exam bank";
+    alert("Could not load " + meta.full + " questions. Please try again.");
+  }
+}
 
 /* Drop questions whose source OCR is corrupted — truncated stems ending in
    "Option", options carrying explanation text / embedded sub-questions, or
@@ -25,11 +156,10 @@ function isCleanQ(x) {
 if (typeof QUESTIONS !== "undefined" && Array.isArray(QUESTIONS)) {
   const clean = QUESTIONS.filter(isCleanQ);
   if (clean.length && clean.length < QUESTIONS.length) { QUESTIONS.length = 0; QUESTIONS.push(...clean); }
+  UPSC_QUESTIONS.length = 0;
+  UPSC_QUESTIONS.push(...QUESTIONS);
+  rebuildIndexes();
 }
-
-const byId = Object.fromEntries(QUESTIONS.map(q => [q.i, q]));
-const YEARS = [...new Set(QUESTIONS.map(q => q.y))].filter(Boolean).sort((a, b) => b - a);
-const PAGE = 15;
 
 /* ---------- minimal gamification (header streak + XP) ---------- */
 const GKEY = "yespyq_game_v1";
@@ -113,30 +243,41 @@ function openBrowse(f) {
 }
 
 function renderFilters() {
+  const exams = Object.values(EXAM_META).map(ex =>
+    `<button class="f-item ${currentExam === ex.id ? "active" : ""}" data-fexam="${ex.id}">
+       <span>${ex.name}</span></button>`).join("");
   const subs = SUBJECTS.map(s =>
     `<button class="f-item ${filter.subject === s.id ? "active" : ""}" data-fsub="${s.id}">
        <span>${s.icon} ${s.name}</span><em>${countBySubject(s.id)}</em></button>`).join("");
-  const yrs = YEARS.map(y =>
-    `<button class="f-item ${filter.year === y ? "active" : ""}" data-fyear="${y}">
-       <span>${y}</span><em>${countByYear(y)}</em></button>`).join("");
+  const yearBlock = YEARS.length ? `
+    <div class="f-group">
+      <h4>Year</h4>
+      <button class="f-item ${!filter.year ? "active" : ""}" data-fyear=""><span>All years</span></button>
+      ${YEARS.map(y =>
+        `<button class="f-item ${filter.year === y ? "active" : ""}" data-fyear="${y}">
+           <span>${y}</span><em>${countByYear(y)}</em></button>`).join("")}
+    </div>` : "";
   $("#filters").innerHTML = `
+    <div class="f-group">
+      <h4>Exam</h4>
+      ${exams}
+    </div>
     <div class="f-group">
       <h4>Subject</h4>
       <button class="f-item ${!filter.subject ? "active" : ""}" data-fsub=""><span>All subjects</span><em>${QUESTIONS.length}</em></button>
       ${subs}
     </div>
-    <div class="f-group">
-      <h4>Year</h4>
-      <button class="f-item ${!filter.year ? "active" : ""}" data-fyear=""><span>All years</span></button>
-      ${yrs}
-    </div>`;
+    ${yearBlock}`;
 }
 
 function applyFilter() {
   const list = currentList();
-  const subName = filter.subject ? subjectMap[filter.subject].name : "All Questions";
+  const examName = (EXAM_META[currentExam] || EXAM_META.upsc).name;
+  const subName = filter.subject && subjectMap[filter.subject]
+    ? subjectMap[filter.subject].name
+    : "All subjects";
   const yr = filter.year ? ` · ${filter.year}` : "";
-  $("#qlist-title").textContent = subName + yr;
+  $("#qlist-title").textContent = `${examName} · ${subName}${yr}`;
   $("#qlist-count").textContent = `${list.length} question${list.length === 1 ? "" : "s"}`;
   $("#qlist").innerHTML = "";
   shown = 0;
@@ -145,12 +286,13 @@ function applyFilter() {
 }
 
 function cardHTML(q, serial) {
+  const sub = subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
   const opts = q.o.map((opt, i) =>
     `<button class="option" data-opt="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${escapeHTML(opt)}</span></button>`).join("");
   return `<article class="qcard" data-qid="${q.i}">
       <div class="qtags">
         <span class="qnum">Q${serial}</span>
-        <span class="qtag">${subjectMap[q.s].icon} ${subjectMap[q.s].name}</span>
+        <span class="qtag">${sub.icon} ${sub.name}</span>
         ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
       </div>
       <div class="qtext">${formatBody(q.q, true)}</div>
@@ -238,7 +380,7 @@ $("#qlist").addEventListener("click", e => {
     else if (i === chosen) o.classList.add("wrong");
     else o.classList.add("dim");
   });
-  const expl = (window.EXP && window.EXP[q.i]) || "Explanation will appear here.";
+  const expl = q.exp || (window.EXP && window.EXP[q.i]) || "Explanation will appear here.";
   const ex = card.querySelector("[data-exp]");
   ex.innerHTML = `
     <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
@@ -289,14 +431,15 @@ document.addEventListener("click", e => {
   const examTile = e.target.closest("#exam-picker [data-exam]");
   if (examTile) {
     e.preventDefault();
+    const examId = examTile.dataset.exam;
     const action = pendingPickerAction;
     closeExamPicker();
-    if (action === "quiz") openQuizSetup(); else openBrowse({ subject: null, year: null });
+    setExam(examId, { mode: action === "quiz" ? "quiz" : "browse", subject: null, year: null });
     return;
   }
 
   // ----- quiz routing (checked first) -----
-  if (e.target.closest("[data-quiz-setup]")) { e.preventDefault(); openQuizSetup(); return; }
+  if (e.target.closest("[data-quiz-setup]")) { e.preventDefault(); setExam(currentExam, { mode: "quiz" }); return; }
   const qStart = e.target.closest("[data-quiz-start]");
   if (qStart) { e.preventDefault(); const d = qStart.dataset; startQuiz({ size: 10, subject: d.subject || null, year: d.year ? +d.year : null }); return; }
   if (e.target.closest("[data-quiz-exit]")) { e.preventDefault(); showView("home"); return; }
@@ -308,14 +451,22 @@ document.addEventListener("click", e => {
   if (e.target.closest("[data-share]")) { e.preventDefault(); shareResult(); return; }
 
   const nav = e.target.closest("[data-nav]");
-  if (nav) { e.preventDefault(); const n = nav.dataset.nav; n === "practice" ? openBrowse({}) : showView(n); return; }
-  if (e.target.closest("[data-action='start']")) { e.preventDefault(); openBrowse({ subject: null, year: null }); return; }
+  if (nav) {
+    e.preventDefault();
+    const n = nav.dataset.nav;
+    if (n === "practice") setExam(currentExam || "upsc", { mode: "browse" });
+    else showView(n);
+    return;
+  }
+  if (e.target.closest("[data-action='start']")) { e.preventDefault(); openExamPicker("browse"); return; }
   const sc = e.target.closest("[data-subject]");
   if (sc) { openBrowse({ subject: sc.dataset.subject, year: null }); return; }
   const yc = e.target.closest("[data-year]");
   if (yc) { openBrowse({ subject: null, year: +yc.dataset.year }); return; }
+  const fexam = e.target.closest("[data-fexam]");
+  if (fexam) { setExam(fexam.dataset.fexam, { mode: "browse", subject: null, year: null }); return; }
   const fs = e.target.closest("[data-fsub]");
-  if (fs) { filter.subject = fs.dataset.fsub || null; renderFilters(); applyFilter(); return; }
+  if (fs) { openBrowse({ subject: fs.dataset.fsub || null, year: filter.year }); return; }
   const fy = e.target.closest("[data-fyear]");
   if (fy) { filter.year = fy.dataset.fyear ? +fy.dataset.fyear : null; renderFilters(); applyFilter(); return; }
   if (e.target.closest("#filter-toggle")) { $("#filters").classList.toggle("open"); return; }
@@ -333,13 +484,39 @@ function openQuizSetup() { showView("quiz"); renderQuizSetup(); }
 function renderQuizSetup() {
   $("#quiz-bar").style.width = "0%";
   $("#quiz-combo").innerHTML = "";
+  const meta = EXAM_META[currentExam] || EXAM_META.upsc;
+  if (!meta.quiz) {
+    const subs = SUBJECTS.map(s =>
+      `<button class="rchip" data-fsub="${s.id}">${s.icon} ${s.name}</button>`).join("");
+    $("#quiz-body").innerHTML = `
+      <div class="quiz-setup">
+        <h2 class="setup-title">${meta.full}</h2>
+        <p class="setup-sub">Interactive quiz is available for UPSC. For ${meta.name}, browse the solved question bank by subject.</p>
+        <button class="btn btn-primary btn-lg setup-mixed" data-nav="practice">Browse ${meta.name} PYQs</button>
+        <h3 class="setup-h">Or jump to a subject</h3>
+        <div class="result-chips">${subs}</div>
+        <h3 class="setup-h">Switch exam</h3>
+        <div class="result-chips">
+          ${Object.values(EXAM_META).map(ex =>
+            `<button class="rchip ${ex.id === currentExam ? "active" : ""}" data-fexam="${ex.id}">${ex.name}</button>`
+          ).join("")}
+        </div>
+      </div>`;
+    window.scrollTo({ top: 0 });
+    return;
+  }
+  const exams = Object.values(EXAM_META).map(ex =>
+    `<button class="rchip ${ex.id === currentExam ? "active" : ""}" data-fexam="${ex.id}">${ex.name}</button>`
+  ).join("");
   const subs = SUBJECTS.map(s => `<button class="rchip" data-quiz-start data-subject="${s.id}">${s.icon} ${s.name}</button>`).join("");
   const yrs = YEARS.slice(0, 12).map(y => `<button class="rchip" data-quiz-start data-year="${y}">${y}</button>`).join("");
   $("#quiz-body").innerHTML = `
     <div class="quiz-setup">
-      <h2 class="setup-title">Start a 10-question quiz</h2>
-      <p class="setup-sub">Jump in with a mixed set, or focus on one subject or exam year.</p>
-      <button class="btn btn-primary btn-lg setup-mixed" data-quiz-start>🎲 Mixed quiz — 10 random PYQs</button>
+      <h2 class="setup-title">Start a 10-question UPSC quiz</h2>
+      <p class="setup-sub">Mixed set, or focus on one subject or exam year. Switch exam below to browse other banks.</p>
+      <button class="btn btn-primary btn-lg setup-mixed" data-quiz-start>Mixed quiz — 10 random PYQs</button>
+      <h3 class="setup-h">Exam</h3>
+      <div class="result-chips">${exams}</div>
       <h3 class="setup-h">Practice by subject</h3>
       <div class="result-chips">${subs}</div>
       <h3 class="setup-h">Practice by year</h3>
@@ -368,10 +545,11 @@ function renderQuizQuestion() {
   const q = quiz.queue[quiz.idx];
   $("#quiz-bar").style.width = (quiz.idx / quiz.total) * 100 + "%";
   $("#quiz-combo").innerHTML = quiz.combo >= 2 ? `🔥 ${quiz.combo}` : "";
+  const sub = subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
   $("#quiz-body").innerHTML = `
     <div class="quiz-card">
       <div class="quiz-meta">
-        <span class="qtag">${subjectMap[q.s].icon} ${subjectMap[q.s].name}</span>
+        <span class="qtag">${sub.icon} ${sub.name}</span>
         ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
         <span class="quiz-count">${quiz.idx + 1} / ${quiz.total}</span>
       </div>
@@ -405,7 +583,7 @@ function answerQuiz(btn) {
     quiz.combo = 0;
   }
   $("#quiz-combo").innerHTML = quiz.combo >= 2 ? `🔥 ${quiz.combo}` : "";
-  const expl = (window.EXP && window.EXP[q.i]) || "Explanation coming soon.";
+  const expl = q.exp || (window.EXP && window.EXP[q.i]) || "Explanation coming soon.";
   const ex = body.querySelector("[data-exp]");
   ex.innerHTML = `
     <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
@@ -457,7 +635,7 @@ function renderResult() {
 function renderReview() {
   const rows = quiz.results.map((r, n) => `
     <div class="rev-row ${r.correct ? "ok" : "no"}">
-      <div class="rev-head"><span>${r.correct ? "✓" : "✗"} Q${n + 1}</span><span class="qtag">${subjectMap[r.q.s].icon} ${subjectMap[r.q.s].name}${r.q.y ? " · " + r.q.y : ""}</span></div>
+      <div class="rev-head"><span>${r.correct ? "✓" : "✗"} Q${n + 1}</span><span class="qtag">${(subjectMap[r.q.s]||{icon:"📘",name:r.q.s}).icon} ${(subjectMap[r.q.s]||{name:r.q.s}).name}${r.q.y ? " · " + r.q.y : ""}</span></div>
       <div class="qtext rev-q">${formatBody(r.q.q, true)}</div>
       <div class="rev-ans"><b>Correct:</b> ${String.fromCharCode(97 + r.q.a)}) ${escapeHTML(r.q.o[r.q.a])}${r.correct ? "" : ` &nbsp;·&nbsp; <span class="rev-you">You: ${String.fromCharCode(97 + r.chosen)}) ${escapeHTML(r.q.o[r.chosen])}</span>`}</div>
     </div>`).join("");

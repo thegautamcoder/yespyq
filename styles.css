@@ -3,7 +3,7 @@
   src:url("assets/Next_Sunday.ttf") format("truetype");
   font-display:swap;
 }
-/* Visual system mirrored from Instapyq; accent kept to YESPYQ logo blue. */
+/* Readable UI = Sora. NextSunday only on brand wordmark (sparse). */
 :root{
   --blue-50:#eff6ff; --blue-100:#dbeafe; --blue-500:#3b82f6;
   --blue-600:#2563eb; --blue-700:#1d4ed8; --blue-800:#1e40af;
@@ -17,13 +17,14 @@
   --glow-blue-deep:rgba(29,78,216,.1);
   --shadow:0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.06);
   --radius:18px;
-  --display-font:NextSunday,"Trebuchet MS","Segoe UI",sans-serif;
-  --body-font:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  --display-font:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --body-font:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --brand-font:NextSunday,"Trebuchet MS","Segoe UI",sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:var(--display-font);
+  font-family:var(--body-font);
   color:var(--ink); background:var(--bg); line-height:1.6;
   -webkit-font-smoothing:antialiased; overflow-x:hidden;
 }
@@ -31,9 +32,10 @@ body{
 a:focus-visible,button:focus-visible{
   outline:2px solid var(--accent);outline-offset:3px;border-radius:6px
 }
-h1,h2,h3,.brand-name,.section-title,.btn-lg,.hero-headline,.eyebrow,.exam-chip,.chip,.live-pill,.stat-row .num{
-  font-family:var(--display-font);letter-spacing:.02em
+h1,h2,h3,.section-title,.btn-lg,.hero-headline,.eyebrow,.exam-chip,.chip,.live-pill,.stat-row .num{
+  font-family:var(--display-font);letter-spacing:.01em
 }
+.brand-name{font-family:var(--brand-font) !important;letter-spacing:.5px}
 a{color:inherit;text-decoration:none}
 .container{width:min(1120px,92vw);margin-inline:auto}
 .container.narrow{width:min(760px,92vw)}
@@ -42,7 +44,7 @@ a{color:inherit;text-decoration:none}
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.55rem;justify-content:center;
   border:1px solid transparent;border-radius:14px;padding:.85rem 1.5rem;
-  font-family:var(--display-font);font-weight:600;font-size:1rem;letter-spacing:.02em;
+  font-family:var(--display-font);font-weight:600;font-size:1rem;letter-spacing:.01em;
   cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s,border-color .25s;
   white-space:nowrap}
 .btn-sm{padding:.55rem 1.1rem;font-size:.88rem;border-radius:11px}
