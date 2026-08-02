@@ -2,9 +2,10 @@ User-agent: *
 Allow: /
 
 # YESPYQ is a free, public PYQ practice site for UPSC, JEE, NEET, SSC, Defence
-# and Boards — all crawlers are welcome, including AI assistants and AI search
+# and Boards. All crawlers are welcome, including AI assistants and AI search
 # (Google AI Overviews/AI Mode, ChatGPT, Claude, Perplexity, Gemini, etc.).
 # Nothing is blocked.
+
 User-agent: Googlebot
 Allow: /
 User-agent: Google-Extended
@@ -32,6 +33,8 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# Prefer the sitemap index (covers all URL sets)
+Sitemap: https://yespyq.com/sitemap-index.xml
 Sitemap: https://yespyq.com/sitemap.xml
 Sitemap: https://yespyq.com/sitemap-questions.xml
 Sitemap: https://yespyq.com/sitemap-exams.xml

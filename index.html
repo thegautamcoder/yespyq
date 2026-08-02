@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,7 +18,7 @@
   <meta name="description" content="Practice 12,000+ previous year questions (PYQs) with answers and explanations for UPSC CSE, JEE, NEET, SSC CGL, Defence and Boards. Subject-wise practice. Free to start. PYQ Pass ₹149/year." />
   <meta name="keywords" content="previous year questions, PYQ, UPSC PYQ, JEE PYQ, NEET PYQ, SSC CGL PYQ, Defence PYQ, Board exam PYQ, PYQ practice, UPSC previous year questions, JEE previous year questions, NEET previous year questions, YESPYQ, PYQ Pass" />
   <meta name="author" content="YESPYQ" />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="googlebot" content="index, follow" />
   <meta name="theme-color" content="#2563eb" />
   <meta name="application-name" content="YESPYQ" />
@@ -45,6 +45,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://yespyq.com/" />
   <meta name="twitter:title" content="Previous Year Questions (PYQ) for UPSC, JEE, NEET, SSC &amp; Boards | YESPYQ" />
   <meta name="twitter:description" content="12,000+ PYQs with answers and explanations for UPSC, JEE, NEET, SSC CGL, Defence and Boards. PYQ Pass ₹149/year." />
   <meta name="twitter:image" content="https://yespyq.com/assets/og-image.png" />
@@ -61,9 +62,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css?v=63" />
+  <link rel="stylesheet" href="styles.css?v=64" />
 
-  <!-- Structured data: Organization + WebSite + EducationalOrganization -->
+  <!-- Structured data: WebSite + WebPage + Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -73,10 +74,10 @@
         "@id": "https://yespyq.com/#website",
         "url": "https://yespyq.com/",
         "name": "YESPYQ",
-        "alternateName": ["YES PYQ", "YesPYQ"],
+        "alternateName": ["YES PYQ", "YesPYQ", "Yes PYQ"],
         "description": "Previous Year Questions (PYQs) practice for UPSC, JEE, NEET, SSC CGL, Defence exams and Boards, with answers and explanations.",
         "inLanguage": "en-IN",
-        "publisher": { "@id": "https://yespyq.com/#org" }
+        "publisher": { "@id": "https://yespyq.com/#organizationanization" }
       },
       {
         "@type": "WebPage",
@@ -84,16 +85,26 @@
         "url": "https://yespyq.com/",
         "name": "Previous Year Questions (PYQ) for UPSC, JEE, NEET, SSC & Boards | YESPYQ",
         "isPartOf": { "@id": "https://yespyq.com/#website" },
-        "about": { "@id": "https://yespyq.com/#org" },
+        "about": { "@id": "https://yespyq.com/#organizationanization" },
         "description": "Practice 12,000+ previous year questions with answers and explanations across UPSC, JEE, NEET, SSC CGL, Defence and Boards.",
         "inLanguage": "en-IN",
-        "primaryImageOfPage": { "@type": "ImageObject", "url": "https://yespyq.com/assets/og-image.png" }
+        "dateModified": "2026-08-02",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://yespyq.com/assets/og-image.png",
+          "width": 1200,
+          "height": 630
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".exams-hero h1", ".exams-hero .lede"]
+        }
       },
       {
-        "@type": "EducationalOrganization",
-        "@id": "https://yespyq.com/#org",
+        "@type": ["Organization", "EducationalOrganization"],
+        "@id": "https://yespyq.com/#organizationanization",
         "name": "YESPYQ",
-        "alternateName": "YES PYQ · PYQ Practice for UPSC, JEE, NEET, SSC & Boards",
+        "alternateName": "YES PYQ",
         "url": "https://yespyq.com/",
         "logo": {
           "@type": "ImageObject",
@@ -103,29 +114,27 @@
           "caption": "YESPYQ"
         },
         "image": { "@id": "https://yespyq.com/#logo" },
-        "description": "YESPYQ is a practice platform for previous year questions (PYQs) across UPSC, JEE, NEET, SSC CGL, Defence exams and school Boards, with answers and detailed explanations, offering subject-wise and year-wise practice plus exam-preparation guides and explainers.",
+        "description": "YESPYQ helps aspirants practise authentic previous year questions across UPSC, JEE, NEET, SSC CGL, Defence and Boards with answers and explanations.",
         "email": "teamyespyq@gmail.com",
+        "foundingLocation": { "@type": "Country", "name": "India" },
         "areaServed": { "@type": "Country", "name": "India" },
         "audience": { "@type": "EducationalAudience", "educationalRole": "Exam aspirant" },
         "knowsAbout": [
+          "Previous Year Questions",
           "UPSC Civil Services Examination",
-          "JEE",
-          "NEET",
+          "JEE Main",
+          "JEE Advanced",
+          "NEET-UG",
           "SSC CGL",
           "Defence Exams",
-          "School Board Exams",
-          "Previous Year Questions",
-          "Indian Polity",
-          "Physics",
-          "Chemistry",
-          "Biology",
-          "Mathematics"
+          "Board Exams"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer support",
           "email": "teamyespyq@gmail.com",
-          "availableLanguage": ["English", "Hindi"]
+          "availableLanguage": ["English", "Hindi"],
+          "areaServed": "IN"
         },
         "sameAs": ["https://www.youtube.com/@YesPYQ.Official"]
       }
@@ -133,13 +142,14 @@
   }
   </script>
 
-
   <!-- Structured data: Exam collection -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "name": "Exams on YESPYQ",
+    "numberOfItems": 6,
+    "itemListOrder": "https://schema.org/ItemListOrderAscending",
     "itemListElement": [
       {"@type":"ListItem","position":1,"name":"UPSC CSE Prelims PYQs","url":"https://yespyq.com/pyq/"},
       {"@type":"ListItem","position":2,"name":"JEE Main & Advanced PYQs","url":"https://yespyq.com/exams/jee/"},
@@ -186,31 +196,51 @@
   }
   </script>
 
-  <!-- Structured data: SoftwareApplication (helps search + AI understand the app) -->
+  <!-- Structured data: SoftwareApplication -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "YESPYQ",
-    "alternateName": "YESPYQ · PYQ Practice for UPSC, JEE, NEET, SSC & Boards",
+    "alternateName": ["YES PYQ", "YesPYQ"],
     "url": "https://yespyq.com/",
-    "applicationCategory": "EducationApplication",
+    "applicationCategory": "EducationalApplication",
     "applicationSubCategory": "Exam Preparation",
-    "operatingSystem": "Web, Android, iOS (Progressive Web App)",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
     "inLanguage": "en-IN",
-    "description": "YESPYQ is a web app to practise previous year questions (PYQs) across UPSC, JEE, NEET, SSC CGL, Defence exams and Boards. Over 12,000 authentic PYQs from past years, organised subject-wise and year-wise, each with the correct answer and a detailed explanation, plus an interactive UPSC quiz mode.",
+    "description": "Web app to practise 12,000+ previous year questions across UPSC, JEE, NEET, SSC CGL, Defence and Boards with answers and explanations.",
     "featureList": [
-      "12,000+ previous year questions across UPSC, JEE, NEET, SSC CGL, Defence exams and Boards",
-      "Subject-wise practice across every exam",
-      "Year-wise practice for UPSC Prelims",
-      "Answer keys with explanations for every question",
-      "Interactive UPSC quiz mode",
-      "Practice is free to start; PYQ Pass unlocks all PYQs for ₹149 a year"
+      "12,000+ previous year questions",
+      "Six exam families: UPSC, JEE, NEET, SSC CGL, Defence, Boards",
+      "Subject-wise practice",
+      "Answers and explanations",
+      "UPSC interactive quiz",
+      "PYQ Pass full access for ₹149/year"
     ],
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "availability": "https://schema.org/InStock" },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Free practice",
+        "price": "0",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://yespyq.com/"
+      },
+      {
+        "@type": "Offer",
+        "name": "PYQ Pass",
+        "price": "149",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://yespyq.com/pyq-pass/",
+        "priceValidUntil": "2026-12-31"
+      }
+    ],
     "isAccessibleForFree": true,
     "screenshot": "https://yespyq.com/assets/og-image.png",
-    "publisher": { "@type": "EducationalOrganization", "name": "YESPYQ", "url": "https://yespyq.com/", "logo": "https://yespyq.com/assets/favicon.svg" },
+    "image": "https://yespyq.com/assets/og-image.png",
+    "publisher": { "@id": "https://yespyq.com/#organizationanization" },
     "audience": { "@type": "EducationalAudience", "educationalRole": "Exam aspirant" }
   }
   </script>
