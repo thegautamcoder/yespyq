@@ -850,22 +850,22 @@ body.in-quiz .site-footer{display:none}
 html,body{overflow-x:hidden}
 .hero-bg{max-width:100vw}
 @media (max-width:640px){
-  .header-inner{gap:.55rem}
-  .brand-name{font-size:1.12rem}
+  .header-inner{gap:.65rem}
+  .brand-name{font-size:1.2rem}
   #game-stats{display:none}                 /* free header space so brand + CTA fit */
-  .header-inner .btn-primary{padding:.55rem .85rem;font-size:.86rem}
-  .hero{padding:2.4rem 0 2.4rem}
-  .hero-copy h1{font-size:clamp(1.85rem,7.6vw,2.5rem)}
-  .hero-copy .lead{font-size:1.02rem}
+  .header-inner .btn-primary{padding:.55rem .95rem;font-size:.86rem}
+  .hero{padding:3.2rem 0 2.8rem}
+  .hero-copy h1{font-size:clamp(1.9rem,7.2vw,2.5rem);line-height:1.18;margin-bottom:1rem}
+  .hero-copy .lead{font-size:1.05rem;line-height:1.55}
   .pill-live{font-size:.72rem;padding:.35rem .7rem}
-  .hero-cta{width:100%}
+  .hero-cta{width:100%;gap:.85rem;margin-top:1.5rem}
   .hero-cta .btn-lg{width:100%}
-  .hero-stats{gap:.55rem;flex-wrap:nowrap}
-  .hero-stats .stat{flex:1;min-width:0;padding:.7rem .35rem}
-  .hero-stats .stat b{font-size:1.35rem}
-  .hero-stats .stat span{font-size:.72rem}
-  .section-title{font-size:1.4rem;margin-top:2.4rem}
-  .demo-card{width:100%;padding:1.15rem 1.15rem}
+  .hero-stats{gap:1rem;flex-wrap:wrap;margin-top:2rem}
+  .hero-stats .stat{flex:1 1 40%;min-width:120px;padding:.9rem .5rem}
+  .hero-stats .stat b{font-size:1.45rem}
+  .hero-stats .stat span{font-size:.76rem}
+  .section-title{font-size:1.45rem;margin-top:2.8rem}
+  .demo-card{width:100%;padding:1.25rem}
   .demo-xp{right:2px}
   .demo-streak{left:2px}
 }
@@ -1656,50 +1656,84 @@ a.chip:hover{border-color:rgba(37,99,235,.45);color:var(--accent);transform:tran
 .stat-row .stat:hover{transform:translateY(-3px)}
 
 @media(max-width:960px){
-  .land-hero .hero-grid{grid-template-columns:1fr;gap:1.8rem}
+  .land-hero .hero-grid{grid-template-columns:1fr;gap:2.4rem}
   .land-hero .hero-copy{text-align:center}
   .land-hero .hero-sub{margin-inline:auto}
   .hero-ctas,.hero-notes{justify-content:center}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
-  .exams-hero{padding:2.4rem 0 .35rem}
-  .exams-hero .lede{font-size:.98rem;gap:.2rem;max-width:36rem}
-  .stat-row{margin-top:1.35rem}
-  .ticker{margin-top:1.35rem;gap:.55rem}
-  .land-hero{padding:2.4rem 0 1.4rem}
-  .land-section{padding:2.6rem 0}
+  .exams-hero{padding:3.4rem 0 1.4rem}
+  .exams-hero .eyebrow{margin-bottom:1.25rem}
+  .exams-hero h1{margin-bottom:1.2rem;line-height:1.14}
+  .exams-hero .lede{font-size:1.02rem;gap:.45rem;max-width:36rem;line-height:1.55}
+  .stat-row{margin-top:2.2rem;gap:1.4rem 2rem}
+  .ticker{margin-top:2.2rem;gap:.85rem}
+  .land-hero{padding:3.2rem 0 2rem}
+  .land-section{padding:3.2rem 0}
   .member-pass{grid-template-columns:1fr;max-width:520px}
   .mp-face{clip-path:polygon(0 0,100% 0,100% 92%,0 100%);padding:1.7rem 1.4rem 2rem}
-  .cta-band{padding:2.6rem 0}
-  .value-strip{padding:.7rem 0 1rem}
-  .phone-stage{padding:.4rem 0 .8rem}
+  .cta-band{padding:3.2rem 0}
+  .value-strip{padding:1.2rem 0 1.6rem}
+  .phone-stage{padding:.8rem 0 1.2rem}
+  .section-head{margin-bottom:1.8rem}
 }
 @media(max-width:640px){
-  .header-inner{padding:.65rem 0;gap:.7rem}
+  .container{width:min(1120px,90vw)}
+  .header-inner{padding:.9rem 0 .8rem;gap:.65rem}
   .feat-grid{grid-template-columns:1fr}
+  .hero-ctas{gap:.85rem;margin-bottom:1.35rem}
   .hero-ctas .btn{width:100%;justify-content:center}
-  .phone{width:min(300px,92vw)}
-  .phone .screen{min-height:520px}
-  .exams-hero h1{font-size:clamp(1.85rem,7.5vw,2.35rem);margin-bottom:.75rem}
-  .exams-hero .lede{font-size:.92rem;line-height:1.4;padding:0 .15rem}
+  .hero-notes{gap:.65rem 1rem}
+  .phone{width:min(300px,90vw)}
+  .phone .screen{min-height:520px;padding:16px 14px 8px}
+  .exams-hero{padding:3.8rem 0 2rem}
+  .exams-hero .eyebrow{margin-bottom:1.4rem}
+  .exams-hero h1{
+    font-size:clamp(1.95rem,7vw,2.45rem);
+    margin-bottom:1.25rem;
+    line-height:1.2;
+    max-width:16ch;
+  }
+  .exams-hero .lede{
+    font-size:1rem;line-height:1.6;padding:0;
+    gap:.55rem;max-width:32ch;
+  }
   .exams-hero .lede-line{white-space:normal}
-  .stat-row{gap:.85rem 1.25rem}
-  .stat-row .num{font-size:clamp(1.55rem,7vw,2rem)}
-  .stat-row .cap{font-size:.7rem}
-  .exam-chip{font-size:.82rem;padding:.5rem .9rem}
-  .section-head{margin-bottom:1.4rem}
-  .section-head h2{font-size:clamp(1.45rem,6vw,1.9rem)}
-  .section-head p{font-size:.95rem}
-  .value-chip{font-size:.82rem;padding:.45rem .8rem}
-  .mp-body{padding:1.5rem 1.25rem 1.5rem}
-  .mp-list{grid-template-columns:1fr}
+  .stat-row{
+    margin-top:2.6rem;
+    gap:1.55rem;
+    flex-direction:column;
+    align-items:center;
+  }
+  .stat-row .stat{padding:.2rem 0}
+  .stat-row .num{font-size:clamp(1.75rem,7vw,2.2rem)}
+  .stat-row .cap{font-size:.76rem;margin-top:.4rem;letter-spacing:.1em}
+  .ticker{margin-top:2.6rem;gap:1.05rem;padding-bottom:.4rem}
+  .exam-chip{font-size:.86rem;padding:.62rem 1.05rem}
+  .land-hero{padding:3.6rem 0 2.4rem}
+  .land-hero .hero-headline{margin-bottom:1.2rem;line-height:1.18}
+  .land-hero .hero-sub{margin-bottom:1.7rem;line-height:1.58}
+  .land-section{padding:3.6rem 0}
+  .section-head{margin-bottom:2rem}
+  .section-head h2{font-size:clamp(1.55rem,6vw,2rem);line-height:1.22;margin:.4rem 0 .9rem}
+  .section-head p{font-size:1rem;line-height:1.55}
+  .value-strip{padding:1.4rem 0 2rem}
+  .value-chip{font-size:.86rem;padding:.58rem 1rem}
+  .value-strip-inner{gap:.7rem}
+  .mp-body{padding:1.7rem 1.4rem}
+  .mp-list{grid-template-columns:1fr;gap:.6rem}
   .mp-actions .btn,.mp-buy{width:100%}
+  .cta-band{padding:3.6rem 0}
+  .cta-actions{gap:1rem}
   .cta-actions .btn{width:100%;justify-content:center}
-  .footer-inner{padding:1.5rem 0 1.2rem;gap:1.4rem}
-  .article{margin:1.6rem auto .7rem}
-  .demo-caption{margin-top:1rem;font-size:.86rem}
+  .footer-inner{padding:2.1rem 0 1.6rem;gap:1.7rem}
+  .article{margin:2.1rem auto 1.1rem}
+  .demo-caption{margin-top:1.4rem;font-size:.92rem;line-height:1.5}
+  .phone-stage{padding:1.1rem 0 1.5rem}
 }
 @media(max-width:400px){
-  .exams-hero .lede{font-size:.84rem;gap:.15rem}
+  .exams-hero{padding:3.4rem 0 1.8rem}
+  .exams-hero .lede{font-size:.96rem;gap:.5rem;line-height:1.58}
+  .stat-row{margin-top:2.3rem;gap:1.35rem}
 }
 @media(prefers-reduced-motion:reduce){
   .phone-float,.live-pill i,.ticker-track,.pass-cta::after,.mp-buy::after,.member-pass::before{animation:none !important}
