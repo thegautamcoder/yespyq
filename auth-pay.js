@@ -1,7 +1,7 @@
 /* ============================================================
    YESPYQ — auth + payment layer (soft paywall), site-wide.
    Loaded on EVERY page (via theme.js). It:
-     • injects the "🎫 PYQ Pass" button into the header
+     • injects the "PYQ Pass" button into the header
      • renders the shiny unlock popup + floating pill
      • auto-opens the popup after N seconds on site
      • runs Google sign-in (Supabase) + Razorpay checkout
@@ -81,11 +81,11 @@
     _loader.className = "pay-loader";
     _loader.innerHTML =
       '<div class="pl-card">' +
-        '<div class="pl-crown">🎫</div>' +
+        '<div class="pl-crown">PYQ Pass</div>' +
         '<div class="pl-spin" aria-hidden="true"></div>' +
         '<div class="pl-msg">' + escapeH(msg || "Signing you in…") + '</div>' +
         '<div class="pl-sub">Opening secure payment · ₹149 for 1 year</div>' +
-        '<div class="pl-trust">🔒 Secured by Razorpay</div>' +
+        '<div class="pl-trust">Secured by Razorpay</div>' +
       '</div>';
     document.body.appendChild(_loader);
     requestAnimationFrame(function () { if (_loader) _loader.classList.add("in"); });
@@ -313,8 +313,8 @@
     rzp.open();
     hidePayLoader();                      // Razorpay is on screen now
   }
-  function onPaid() { track("payment_success", {}); refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("🎉 PYQ Pass active for 1 year — everything's unlocked!"); }); }
-  function comingSoon() { showToast("💛 PYQ Pass is launching very soon — thanks for your interest!"); }
+  function onPaid() { track("payment_success", {}); refreshEntitlement().then(function(){ closeUnlock(); renderChrome(); notify(); showToast("PYQ Pass active for 1 year — everything's unlocked!"); }); }
+  function comingSoon() { showToast("PYQ Pass is launching very soon — thanks for your interest!"); }
 
   /* ============================================================
      UI
@@ -327,7 +327,7 @@
     if (!bar || bar.querySelector("[data-unlock='header']")) return;
     var a = document.createElement("a");
     a.href = "#"; a.className = "btn btn-premium btn-sm"; a.setAttribute("data-unlock", "header");
-    a.innerHTML = "🎫 PYQ Pass";
+    a.innerHTML = "PYQ Pass";
     var cta = bar.querySelector(".btn-primary");
     if (cta) bar.insertBefore(a, cta); else bar.appendChild(a);
   }
@@ -400,7 +400,7 @@
           var band = document.createElement("div");
           band.id = "promo-band"; band.className = "promo-band";
           band.innerHTML =
-            '<div class="pb-left"><span class="pb-crown">🎫</span>' +
+            '<div class="pb-left">' +
               '<div><b>Unlock every PYQ, every explanation</b>' +
               '<em>UPSC · SSC · JEE · NEET · Boards — ' + price + ' for a full year</em></div>' +
             '</div>' +
@@ -430,7 +430,7 @@
     var plan, planCls, renewBtn = "";
     if (_paid) {
       var d = daysLeft();
-      plan = "🎫 PYQ Pass · " + d + " day" + (d === 1 ? "" : "s") + " left";
+      plan = "PYQ Pass · " + d + " day" + (d === 1 ? "" : "s") + " left";
       planCls = d <= 30 ? "warn" : "ok";
       if (d <= 30) renewBtn = '<button class="acct-renew" data-unlock-buy>Renew now · ' + (cfg.PRICE_LABEL || "₹149") + '</button>';
       plan += _exp ? '<em>expires ' + expDate() + '</em>' : "";
@@ -487,7 +487,7 @@
     overlay.innerHTML =
       '<div class="unlock-card" role="dialog" aria-modal="true">' +
         '<button class="unlock-x" data-unlock-close aria-label="Close">×</button>' +
-        '<div class="unlock-banner"><span class="ub-crown">🎫</span> PYQ PASS</div>' +
+        '<div class="unlock-banner">PYQ PASS</div>' +
         '<div class="unlock-main">' +
           '<div class="unlock-left">' +
             '<h2>' + h2 + '</h2>' +
@@ -499,7 +499,7 @@
             '<div class="unlock-price"><span class="up-was">₹499</span><span class="up-amt">' + price + '</span><span class="up-note">one-time · valid 1 year</span></div>' +
             '<button class="unlock-cta" data-unlock-buy><span class="uc-glow"></span>' + escapeH(cta) + '</button>' +
             '<p class="unlock-sub">' + escapeH(sub) + '</p>' +
-            '<div class="unlock-trust">🔒 Razorpay secure · ⚡ Instant access</div>' +
+            '<div class="unlock-trust">Razorpay secure · Instant access</div>' +
             (loggedIn ? '' : '<p class="unlock-restore">Already paid? <a href="#" data-unlock-signin>Sign in</a></p>') +
           '</div>' +
         '</div>' +

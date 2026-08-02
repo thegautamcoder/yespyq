@@ -238,7 +238,7 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=41" />
+  <link rel="stylesheet" href="/styles.css?v=42" />
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 {EXTRA_CSS}
