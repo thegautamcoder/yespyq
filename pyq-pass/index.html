@@ -28,7 +28,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=100" />
+  <link rel="stylesheet" href="/styles.css?v=101" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -90,6 +90,11 @@
   <script src="/theme.js?v=29"></script>
   <style>
     .pp-page{position:relative}
+    .pp-page .trusted-pyq{
+      width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);
+      box-sizing:border-box
+    }
+    .pp-page .trusted-reviews{width:100%;margin-left:0}
     .pp-hero{text-align:center;padding:2.4rem 0 .5rem;max-width:760px;margin:0 auto}
     .pp-hero .eyebrow{justify-content:center}
     .pp-hero h1{
@@ -341,7 +346,7 @@
 
       <section class="trusted-pyq" aria-labelledby="trusted-heading-pass">
         <div class="container">
-          <h2 id="trusted-heading-pass">India's Most Trusted PYQ Platform</h2>
+          <h2 id="trusted-heading-pass">India's Most Trusted <span class="trusted-h2-rest">PYQ Platform</span></h2>
           <ul class="trust-strip" aria-label="Why learners trust YESPYQ">
 <li>
               <span class="ts-ico" aria-hidden="true">
