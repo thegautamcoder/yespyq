@@ -535,7 +535,7 @@ function startQuiz(opts = {}) {
   quiz = {
     queue, idx: 0, correct: 0, total: queue.length, xp: 0, combo: 0, bestCombo: 0, results: [],
     subject: opts.subject || null, year: opts.year || null,
-    label: opts.label || (opts.subject ? subjectMap[opts.subject].name : opts.year ? `UPSC ${opts.year}` : "Quick Quiz"),
+    label: opts.label || (opts.subject ? (subjectMap[opts.subject]||{}).name || opts.subject : opts.year ? `UPSC ${opts.year}` : "Quick Quiz"),
   };
   showView("quiz");
   renderQuizQuestion();
