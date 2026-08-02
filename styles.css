@@ -1926,3 +1926,108 @@ a.chip:hover{border-color:rgba(37,99,235,.45);color:var(--accent);transform:tran
   .footer-inner{grid-template-columns:1fr;gap:1.35rem}
   .brand-name{font-size:1.12rem}
 }
+
+/* ============================================================
+   Trusted PYQ platform — map + upward review rail
+   ============================================================ */
+.trusted-pyq{
+  padding:4.2rem 0 3.6rem;
+  background:linear-gradient(180deg,#fff 0%,var(--blue-50) 48%,#fff 100%);
+  border-top:1px solid var(--line)
+}
+.trusted-pyq h2{
+  text-align:center;font-size:clamp(1.7rem,4vw,2.55rem);
+  font-weight:800;letter-spacing:-.02em;margin:0 auto 2.4rem;
+  max-width:18ch;line-height:1.15;color:var(--ink)
+}
+.trusted-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:2.2rem 2.8rem;
+  align-items:center;max-width:980px;margin:0 auto
+}
+.trusted-map{
+  position:relative;width:min(420px,100%);margin:0 auto;
+  aspect-ratio:4/5;filter:drop-shadow(0 18px 40px rgba(37,99,235,.08))
+}
+.trusted-map svg.map-outline{width:100%;height:100%;display:block}
+.trusted-map .map-outline path{
+  fill:rgba(37,99,235,.06);stroke:var(--blue-600);stroke-width:3.2;
+  stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke
+}
+.tm-pin{
+  position:absolute;width:42px;height:42px;border-radius:50%;
+  border:2.5px solid #fff;box-shadow:0 8px 18px rgba(15,23,42,.16);
+  display:grid;place-items:center;font-weight:800;font-size:.78rem;color:#fff;
+  transform:translate(-50%,-50%);z-index:2
+}
+.tm-pin::after{
+  content:"";position:absolute;left:50%;bottom:-7px;width:10px;height:10px;
+  background:inherit;transform:translateX(-50%) rotate(45deg);border-radius:2px;
+  box-shadow:2px 2px 0 rgba(15,23,42,.06);z-index:-1
+}
+.tm-pin .tm-stars{
+  position:absolute;left:calc(100% + 4px);top:50%;transform:translateY(-50%);
+  white-space:nowrap;font-size:.68rem;font-weight:800;color:#b45309;
+  background:#fff;border:1px solid rgba(245,158,11,.35);border-radius:999px;
+  padding:.12rem .4rem;box-shadow:0 4px 10px rgba(15,23,42,.08)
+}
+.tm-pin.c1{background:#2563eb}.tm-pin.c2{background:#0f766e}
+.tm-pin.c3{background:#7c3aed}.tm-pin.c4{background:#c2410c}
+.tm-pin.c5{background:#be185d}.tm-pin.c6{background:#0369a1}
+.tm-pin.c7{background:#15803d}
+
+.trusted-reviews{
+  position:relative;height:min(520px,62vh);overflow:hidden;
+  mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent);
+  -webkit-mask-image:linear-gradient(180deg,transparent,#000 12%,#000 88%,transparent)
+}
+.tr-dup{display:contents}
+.tr-rail{
+  display:flex;flex-direction:column;gap:.85rem;
+  animation:trUp 36s linear infinite;will-change:transform
+}
+.trusted-reviews:hover .tr-rail{animation-play-state:paused}
+@keyframes trUp{
+  from{transform:translateY(0)}
+  to{transform:translateY(-50%)}
+}
+@media(prefers-reduced-motion:reduce){
+  .tr-rail{animation:none;transform:none}
+  .trusted-reviews{overflow:auto;mask-image:none;-webkit-mask-image:none}
+}
+
+.tr-card{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:1rem 1.05rem 1.05rem;box-shadow:0 8px 22px rgba(15,23,42,.05)
+}
+.tr-top{display:flex;align-items:center;gap:.7rem;margin-bottom:.55rem}
+.tr-avatar{
+  width:36px;height:36px;border-radius:50%;flex:none;
+  display:grid;place-items:center;font-weight:800;font-size:.82rem;color:#fff
+}
+.tr-name{font-weight:700;font-size:.95rem;color:var(--ink);line-height:1.2}
+.tr-meta{font-size:.72rem;color:var(--muted);margin-top:.1rem}
+.tr-store{margin-left:auto;flex:none;width:22px;height:22px;opacity:.92}
+.tr-body{margin:0;font-size:.9rem;line-height:1.55;color:var(--slate)}
+.tr-stars{margin-top:.7rem;color:#f59e0b;letter-spacing:.08em;font-size:.92rem;line-height:1}
+
+[data-theme="dark"] .trusted-pyq{
+  background:linear-gradient(180deg,var(--bg) 0%,rgba(37,99,235,.08) 50%,var(--bg) 100%)
+}
+[data-theme="dark"] .tr-card{background:rgba(15,23,42,.72)}
+[data-theme="dark"] .trusted-map .map-outline path{stroke:#60a5fa;fill:rgba(96,165,250,.08)}
+
+@media(max-width:820px){
+  .trusted-pyq{padding:3.2rem 0 2.8rem}
+  .trusted-pyq h2{margin-bottom:1.8rem;max-width:16ch}
+  .trusted-grid{grid-template-columns:1fr;gap:1.6rem}
+  .trusted-map{width:min(280px,78vw)}
+  .trusted-reviews{height:420px}
+  .tm-pin{width:34px;height:34px;font-size:.7rem}
+  .tm-pin .tm-stars{font-size:.62rem;padding:.08rem .32rem}
+}
+@media(max-width:480px){
+  .trusted-reviews{height:380px}
+  .tr-card{padding:.9rem .95rem}
+  .tr-body{font-size:.88rem}
+}
+
