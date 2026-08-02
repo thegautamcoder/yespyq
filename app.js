@@ -580,7 +580,7 @@ document.addEventListener("click", e => {
     return;
   }
 
-  // ----- Smart PYQ Mock setup -----
+  // ----- PYQ Mock Test setup -----
   const mExam = e.target.closest("[data-mock-exam]");
   if (mExam) {
     e.preventDefault();
@@ -930,7 +930,7 @@ async function generateMock() {
     const paid = !window.PAY || PAY.isPaid();
     const size = Math.min(paid ? mockState.count : Math.min(mockState.count, MOCK_FREE_CAP), pool.length);
     const queue = shuffle(pool.slice()).slice(0, size);
-    const label = `Smart Mock · ${[...mockState.exams].map(id => (EXAM_META[id] || {}).name).join(" + ")}`;
+    const label = `Mock Test · ${[...mockState.exams].map(id => (EXAM_META[id] || {}).name).join(" + ")}`;
     if (mockState.mode === "exam") startExamMode(queue, label);
     else startCustomMock(queue, label);
   } finally {
