@@ -148,7 +148,19 @@ def plain(s):
 
 
 def attr(s):
-    return plain(s).replace('"', "&quot;").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+    # escape & first, so entities inserted below (&quot; etc.) don't get
+    # double-escaped into &amp;quot; on a literal " in the source text
+    return plain(s).replace("&", "&amp;").replace('"', "&quot;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def json_esc(s):
+    """Escape text for embedding inside a hand-built JSON-LD <script> block.
+    attr()/esc() only handle HTML-attribute escaping — question/explanation
+    text routinely contains literal backslashes (LaTeX like \\(x^2\\)),
+    which corrupts hand-assembled JSON unless properly JSON-string-escaped.
+    json.dumps() produces a quoted string; strip the surrounding quotes
+    since callers embed this inside their own f-string "..." already."""
+    return json.dumps(plain(s))[1:-1]
 
 
 def slugify(s):
@@ -386,13 +398,13 @@ def chapter_page(exam, subject, chapter, items):
     # Question stems listed for SEO; answers stay behind Pass on gated exams.
     item_els = []
     for i, x in enumerate(items[:40], 1):
-        name = attr(plain(x["q"])[:140])
+        name = json_esc(plain(x["q"])[:140])
         item_els.append(
             f'{{"@type":"ListItem","position":{i},"name":"{name}","url":"{canonical}#q{i}"}}'
         )
     item_list = ",".join(item_els)
     schema = f'''  <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{esc(sname)}","item":"{BASE}/exams/{exam}/{subject}/"}},{{"@type":"ListItem","position":5,"name":"{esc(chapter)}","item":"{canonical}"}}]}}
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{json_esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{json_esc(sname)}","item":"{BASE}/exams/{exam}/{subject}/"}},{{"@type":"ListItem","position":5,"name":"{json_esc(chapter)}","item":"{canonical}"}}]}}
   </script>
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"ItemList","name":"{attr(chapter)} {ecfg['name']} {sname} PYQs","numberOfItems":{len(items)},"itemListElement":[{item_list}]}}
@@ -443,7 +455,7 @@ def subject_index(exam, subject, by_chapter):
         desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} solved previous year questions, each with the correct answer and a detailed explanation. Free on YESPYQ.")
 
     schema = f'''  <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{esc(sname)}","item":"{canonical}"}}]}}
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{json_esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{json_esc(sname)}","item":"{canonical}"}}]}}
   </script>'''
 
     cards = ""
@@ -480,7 +492,7 @@ def exam_hub(exam, by_subject):
         desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
 
     schema = f'''  <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{canonical}"}}]}}
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{json_esc(ecfg['name'])}","item":"{canonical}"}}]}}
   </script>'''
 
     tiles = ""

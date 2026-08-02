@@ -89,7 +89,14 @@ def qslug(x):
     return (x['i'].lower() + "-" + slugify(x['q']))[:80].rstrip('-')
 
 def attr(s):  # safe for HTML attribute (title/meta content)
-    return plain(s).replace('"', '&quot;').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    # escape & first, so entities inserted below don't get double-escaped
+    # into &amp;quot; when the source text has a literal " character
+    return plain(s).replace('&', '&amp;').replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
+
+def json_esc(s):  # safe for embedding inside a hand-built JSON-LD <script>
+    # question/explanation text can contain literal backslashes (LaTeX like
+    # \(x^2\)) which corrupts hand-assembled JSON unless properly escaped
+    return json.dumps(plain(s))[1:-1]
 
 def make_title(x, trunc_len=100):
     sname, sicon, shub = SUB[x['s']]
@@ -217,7 +224,7 @@ def question_page(x):
     ans_text = x['o'][x['a']]
 
     schema = f'''  <script type="application/ld+json">
-  {{"@context":"https://schema.org","@type":"QAPage","mainEntity":{{"@type":"Question","name":"{attr(x['q'])}","text":"{attr(x['q'])}","answerCount":1,"author":{{"@type":"Organization","name":"YESPYQ","url":"{BASE}/"}},"datePublished":"{TODAY}","acceptedAnswer":{{"@type":"Answer","text":"{attr('Correct answer: ' + ans_text + '. ' + plain(expl))[:1100]}","url":"{canonical}","author":{{"@type":"Organization","name":"YESPYQ","url":"{BASE}/"}},"datePublished":"{TODAY}","upvoteCount":1}}}}}}
+  {{"@context":"https://schema.org","@type":"QAPage","mainEntity":{{"@type":"Question","name":"{json_esc(x['q'])}","text":"{json_esc(x['q'])}","answerCount":1,"author":{{"@type":"Organization","name":"YESPYQ","url":"{BASE}/"}},"datePublished":"{TODAY}","acceptedAnswer":{{"@type":"Answer","text":"{json_esc(('Correct answer: ' + ans_text + '. ' + plain(expl))[:1100])}","url":"{canonical}","author":{{"@type":"Organization","name":"YESPYQ","url":"{BASE}/"}},"datePublished":"{TODAY}","upvoteCount":1}}}}}}
   </script>
   <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"PYQs","item":"{BASE}/pyq/"}},{{"@type":"ListItem","position":3,"name":"{attr(sname)}","item":"{BASE}/pyq/{x['s']}/"}},{{"@type":"ListItem","position":4,"name":"Question","item":"{canonical}"}}]}}
