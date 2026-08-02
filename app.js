@@ -545,12 +545,29 @@ function countUp(el, target) {
     if (p < 1) requestAnimationFrame(step);
   })(t0);
 }
+function countUpTile(countEl) {
+  const m = countEl.textContent.match(/^([\d,]+)(.*)$/);
+  if (!m) return;
+  const target = +m[1].replace(/,/g, ""), suffix = m[2];
+  const dur = 900, t0 = performance.now();
+  (function step(now) {
+    const p = Math.min(1, (now - t0) / dur);
+    countEl.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString() + suffix;
+    if (p < 1) requestAnimationFrame(step);
+  })(t0);
+}
 function revealOnScroll() {
   if (!("IntersectionObserver" in window)) return;
-  const els = $$(".subject-card,.year-card,.seo-links a");
-  els.forEach(el => el.classList.add("reveal"));
+  const els = $$(".subject-card,.year-card,.seo-links a,.exam-tile-card,.pp-teaser,.reveal-group > *");
+  els.forEach((el, i) => { el.classList.add("reveal"); el.style.setProperty("--reveal-i", i % 6); });
   const io = new IntersectionObserver(ents => {
-    ents.forEach(e => { if (e.isIntersecting) { e.target.classList.add("reveal-in"); io.unobserve(e.target); } });
+    ents.forEach(e => {
+      if (!e.isIntersecting) return;
+      e.target.classList.add("reveal-in");
+      const count = e.target.querySelector(".count");
+      if (count) countUpTile(count);
+      io.unobserve(e.target);
+    });
   }, { threshold: 0.12 });
   els.forEach(el => io.observe(el));
 }

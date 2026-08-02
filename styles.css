@@ -84,7 +84,11 @@ a{color:inherit;text-decoration:none}
 .exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
 .exam-tile-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
   padding:1.3rem;cursor:pointer;transition:.18s;box-shadow:var(--shadow)}
-.exam-tile-card:hover{transform:translateY(-3px);border-color:var(--blue-500)}
+.exam-tile-card{transition:transform .25s cubic-bezier(.22,.61,.36,1),border-color .25s,box-shadow .25s}
+.exam-tile-card:hover{transform:translateY(-5px) scale(1.015);border-color:var(--blue-500);
+  box-shadow:0 16px 36px rgba(37,99,235,.16)}
+.exam-tile-card h3{transition:color .2s}
+.exam-tile-card:hover h3{color:var(--blue-700)}
 .exam-tile-card .ico{font-size:1.8rem}
 .exam-tile-card h3{font-family:var(--display-font);font-size:1.1rem;margin:0 0 .3rem;letter-spacing:-.01em}
 .exam-tile-card p{font-size:.85rem;color:var(--muted)}
@@ -459,13 +463,14 @@ body.in-quiz .site-footer{display:none}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @media (prefers-reduced-motion:no-preference){
   .anim-ready .hero-inner>*{opacity:0;animation:fadeUp .6s cubic-bezier(.22,.61,.36,1) forwards}
-  .anim-ready .hero-inner .pill{animation-delay:.04s}
+  .anim-ready .hero-inner .pill,.anim-ready .hero-inner .eyebrow{animation-delay:.04s}
   .anim-ready .hero-inner h1{animation-delay:.13s}
   .anim-ready .hero-inner .lead{animation-delay:.24s}
   .anim-ready .hero-inner .hero-cta{animation-delay:.36s}
   .anim-ready .hero-inner .hero-stats{animation-delay:.48s}
   .anim-ready .reveal{opacity:0;transform:translateY(16px)}
-  .anim-ready .reveal.reveal-in{animation:fadeUp .55s cubic-bezier(.22,.61,.36,1) forwards}
+  .anim-ready .reveal.reveal-in{animation:fadeUp .55s cubic-bezier(.22,.61,.36,1) forwards;
+    animation-delay:calc(var(--reveal-i, 0) * .07s)}
 }
 
 /* ============================================================
@@ -536,10 +541,14 @@ body.in-quiz .site-footer{display:none}
 @keyframes livePulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
 
 /* glowing primary button */
-.btn-glow{background:linear-gradient(100deg,var(--blue-600),#4f46e5);position:relative;
-  box-shadow:0 10px 26px rgba(37,99,235,.38)}
+.btn-glow{background:linear-gradient(100deg,var(--blue-600),#4f46e5);position:relative;overflow:hidden;
+  box-shadow:0 10px 26px rgba(37,99,235,.38);transition:transform .2s,box-shadow .2s,background .2s}
 .btn-glow:hover{background:linear-gradient(100deg,var(--blue-700),#4338ca);transform:translateY(-2px);
   box-shadow:0 14px 32px rgba(37,99,235,.5)}
+.btn-glow::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);
+  animation:shineSweep 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.btn-glow::after{animation:none}}
 
 /* animated gradient blobs behind hero */
 .hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
@@ -672,12 +681,13 @@ html,body{overflow-x:hidden}
 .trust-stars,.tq-stars{color:#f59e0b;letter-spacing:1px}
 .trust-title{font-size:clamp(1.5rem,3.6vw,2.1rem);font-weight:800;letter-spacing:-.025em;margin:1.1rem 0 .5rem}
 .trust-sub{color:var(--slate);max-width:620px;margin:0 auto 1.6rem;font-size:1.02rem}
-/* moving college marquee — premium minimalist logo strip */
-.trust-marquee{position:relative;overflow:hidden;margin:.6rem -4vw 2.6rem;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent)}
+/* moving subject/exam marquee — minimalist scrolling strip */
+.trust-marquee{position:relative;overflow:hidden;margin:1.6rem -4vw 2.4rem;padding:.9rem 0;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .mq-track{display:flex;align-items:center;gap:0;width:max-content;
-  animation:mqScroll 46s linear infinite;will-change:transform}
+  animation:mqScroll 34s linear infinite;will-change:transform}
 .trust-marquee:hover .mq-track{animation-play-state:paused}
 @keyframes mqScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 .clg{flex:none;display:inline-flex;align-items:center;white-space:nowrap;
