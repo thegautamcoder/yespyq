@@ -353,7 +353,8 @@ button.exam-tile-card{display:block;width:100%;text-align:left;font-family:inher
 }
 
 @media(max-width:640px){
-  .main-nav{display:none}
+  .main-nav{display:flex;order:3;width:100%;justify-content:flex-start;margin:0;gap:.85rem;
+    overflow-x:auto;-webkit-overflow-scrolling:touch;padding:.15rem 0 .35rem}
   .hero{padding:3rem 0 2.5rem}
   .qcard{padding:1.3rem}
   .game-stats{margin-left:auto;gap:.35rem}
@@ -1277,15 +1278,6 @@ html.js .ticker-track.reverse{animation-direction:reverse}
 .land-hero{background:transparent !important;border:0 !important;overflow:visible}
 [data-theme="dark"] .land-hero{background:transparent !important}
 .site-footer{border-top:1px solid var(--line) !important}
-@media(max-width:820px){
-  .header-right .live-pill{display:none}
-  .header-right .btn-primary{display:none}
-  .header-inner .header-right{margin-left:0}
-  .main-nav{display:none}
-}
-@media(max-width:720px){
-  .main-nav{display:none}
-}
 
 /* Kill study-symbol watermark on the Instapyq-style landing */
 #view-home .hero::before,
