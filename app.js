@@ -357,28 +357,14 @@ function applyFilter() {
 
 function cardHTML(q, serial) {
   const sub = subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
-  // Non-UPSC banks are sourced from mock-pool.json, which only ever holds
-  // the already-free ~10% preview — never lock those; only UPSC's browse
-  // view (backed by the full local pyq.js bank) needs the per-card gate.
-  const gated = currentExam === "upsc" && window.PAY && !PAY.isPaid();
   const qBody = q.fmt === "html" ? q.q : formatBody(q.q, true);
-  let optsBlock;
-  if (gated) {
-    optsBlock =
-      `<div class="options options-locked" data-unlock="browse-options">
-        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">a</span><span>Option locked</span></button>
-        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">b</span><span>Option locked</span></button>
-        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">c</span><span>Option locked</span></button>
-        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">d</span><span>Option locked</span></button>
-        <div class="opt-lock-note">Options &amp; explanation unlock with <b>PYQ Pass</b> · ₹149/year</div>
-      </div>`;
-  } else {
-    const opts = q.o.map((opt, i) => {
-      const body = q.fmt === "html" ? opt : escapeHTML(opt);
-      return `<button class="option" data-opt="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${body}</span></button>`;
-    }).join("");
-    optsBlock = `<div class="options">${opts}</div>`;
-  }
+  // Options are always free to see; only the correct answer + explanation
+  // are Pass-gated (for UPSC's unpaid users — see the #qlist click handler).
+  const opts = q.o.map((opt, i) => {
+    const body = q.fmt === "html" ? opt : escapeHTML(opt);
+    return `<button class="option" data-opt="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${body}</span></button>`;
+  }).join("");
+  const optsBlock = `<div class="options">${opts}</div>`;
   return `<article class="qcard" data-qid="${q.i}">
       <div class="qtags">
         <span class="qnum">Q${serial}</span>
@@ -451,27 +437,35 @@ window.onPayChange = function () {
 
 /* reveal answer on option click (delegated) */
 $("#qlist").addEventListener("click", e => {
-  if (e.target.closest("[data-unlock]")) return; // Pass CTA / locked options
+  if (e.target.closest("[data-unlock]")) return; // Pass CTA inside a gated answer box
   const opt = e.target.closest(".option");
-  if (!opt || opt.classList.contains("locked-opt")) return;
+  if (!opt) return;
   const card = opt.closest(".qcard");
   if (!card || card.dataset.done) return;
-  if (window.PAY && !PAY.isPaid()) {
-    if (typeof PAY.track === "function") PAY.track("premium_click", { source: "browse-options" });
-    const unlock = document.querySelector("[data-unlock]");
-    // openUnlock is internal; click a known unlock control
-    const btn = document.createElement("button");
-    btn.setAttribute("data-unlock", "browse-options");
-    btn.style.display = "none";
-    document.body.appendChild(btn);
-    btn.click();
-    btn.remove();
-    return;
-  }
   const q = byId[card.dataset.qid];
   const chosen = +opt.dataset.opt;
-  const correct = chosen === q.a;
   card.dataset.done = "1";
+  // Options are always free; only UPSC's answer key + explanation are
+  // Pass-gated for unpaid users (other exams' browse data is already the
+  // free ~10% preview pool, so never gated here — see EXAM_META/ensureExamBank).
+  const gated = currentExam === "upsc" && window.PAY && !PAY.isPaid();
+  const ex = card.querySelector("[data-exp]");
+  if (gated) {
+    card.querySelectorAll(".option").forEach((o, i) => {
+      o.classList.add("locked");
+      if (i === chosen) o.classList.add("picked");
+    });
+    if (typeof PAY.track === "function") PAY.track("premium_click", { source: "browse-answer" });
+    ex.innerHTML = `
+      <div class="answer-gate" data-unlock="browse-answer">
+        <span class="ag-lock">🔒</span>
+        <div><b>Answer &amp; explanation — PYQ Pass</b><p>You picked ${String.fromCharCode(97 + chosen)}). Unlock the correct answer and full explanation with Pass.</p></div>
+        <span class="btn btn-primary btn-sm" data-unlock="browse-answer">Unlock · ₹149</span>
+      </div>`;
+    ex.classList.remove("hidden");
+    return;
+  }
+  const correct = chosen === q.a;
   card.querySelectorAll(".option").forEach((o, i) => {
     o.classList.add("locked");
     if (i === q.a) o.classList.add("correct");
@@ -479,7 +473,6 @@ $("#qlist").addEventListener("click", e => {
     else o.classList.add("dim");
   });
   const expl = q.exp || (window.EXP && window.EXP[q.i]) || "Explanation will appear here.";
-  const ex = card.querySelector("[data-exp]");
   const ansText = q.fmt === "html" ? q.o[q.a] : escapeHTML(q.o[q.a]);
   const expBody = q.fmt === "html" ? expl : formatBody(expl, false);
   ex.innerHTML = `

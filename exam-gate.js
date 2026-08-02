@@ -1,31 +1,26 @@
-/* Reveals gated exam options/answers when window.PAY.isPaid().
-   Free HTML only contains the question stem + unlock CTA.
-   Options/explanation live in <script type="application/json" class="q-payload">. */
+/* Reveals the gated answer key + explanation when window.PAY.isPaid().
+   Options are always in the free HTML; only the correct-answer marking
+   and explanation live in <script type="application/json" class="q-payload">. */
 (function () {
   function renderPaid(qb, data) {
-    var host = qb.querySelector("[data-opts-host]");
+    var opts = qb.querySelectorAll(".qpage-options .option");
     var explain = qb.querySelector("[data-exp]");
     var gate = qb.querySelector(".answer-gate");
-    if (!host || !data || !data.o) return;
-    var html = "";
+    if (!opts.length || !data) return;
     var a = +data.a;
-    for (var i = 0; i < data.o.length; i++) {
-      var cls = "option" + (i === a ? " correct" : "");
-      html += '<div class="' + cls + '"><span class="key">' + String.fromCharCode(97 + i) +
-        '</span><span>' + data.o[i] + '</span></div>';
-    }
-    host.innerHTML = html;
+    opts.forEach(function (o, i) { o.classList.toggle("correct", i === a); });
     if (explain) {
       var letter = String.fromCharCode(97 + a);
+      var ansText = opts[a] ? opts[a].querySelector("span:last-child").textContent : "";
       explain.innerHTML =
-        '<div class="verdict ok">✓ Correct answer: ' + letter + ') ' + (data.o[a] || "") + '</div>' +
+        '<div class="verdict ok">✓ Correct answer: ' + letter + ') ' + ansText + '</div>' +
         '<div class="exp-body"><span class="lbl">Explanation</span>' + (data.exp || "") + '</div>';
       explain.classList.remove("hidden");
     }
     if (gate) gate.style.display = "none";
     qb.dataset.revealed = "1";
-    // options/explanation are injected after KaTeX's one-time DOMContentLoaded
-    // pass, so this content never got auto-rendered — render it explicitly now.
+    // explanation is injected after KaTeX's one-time DOMContentLoaded pass,
+    // so it never got auto-rendered — render it explicitly now.
     if (window.renderMathInElement) {
       renderMathInElement(qb, {
         delimiters: [
@@ -39,10 +34,10 @@
   }
 
   function renderFree(qb) {
-    var host = qb.querySelector("[data-opts-host]");
+    var opts = qb.querySelectorAll(".qpage-options .option");
     var explain = qb.querySelector("[data-exp]");
     var gate = qb.querySelector(".answer-gate");
-    if (host) host.innerHTML = "";
+    opts.forEach(function (o) { o.classList.remove("correct"); });
     if (explain) { explain.innerHTML = ""; explain.classList.add("hidden"); }
     if (gate) gate.style.display = "";
     delete qb.dataset.revealed;

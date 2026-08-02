@@ -217,14 +217,6 @@ button.exam-tile-card{display:block;width:100%;text-align:left;font-family:inher
 .exp-body .bline{font-weight:400}
 .exp-body .bline.stmt{font-weight:600}
 .options{display:flex;flex-direction:column;gap:.65rem}
-.options-locked .locked-opt{
-  opacity:.72;cursor:pointer;border-style:dashed;background:rgba(37,99,235,.04)
-}
-.options-locked .locked-opt span:last-child{color:var(--muted);font-style:italic}
-.opt-lock-note{
-  margin-top:.35rem;font-size:.82rem;color:var(--muted);text-align:center;line-height:1.4
-}
-.opt-lock-note b{color:var(--accent)}
 .option{display:flex;align-items:flex-start;gap:.8rem;border:1.5px solid var(--line);
   border-radius:12px;padding:.85rem 1rem;cursor:pointer;transition:.12s;background:#fff;text-align:left;font-size:.98rem}
 .option:hover{border-color:var(--blue-500);background:var(--blue-50)}
@@ -234,8 +226,20 @@ button.exam-tile-card{display:block;width:100%;text-align:left;font-family:inher
 .option.correct .key{background:var(--good);color:#fff;border-color:var(--good)}
 .option.wrong{border-color:var(--bad);background:var(--bad-bg)}
 .option.wrong .key{background:var(--bad);color:#fff;border-color:var(--bad)}
+.option.picked{border-color:var(--blue-600);background:var(--blue-50)}
+.option.picked .key{background:var(--blue-600);color:#fff;border-color:var(--blue-600)}
 .option.locked{cursor:default;pointer-events:none}
 .option.dim{opacity:.6}
+
+/* Pass-gated answer key + explanation (browse mode, and shared markup
+   pattern with the static exam pages' inline .answer-gate CSS) */
+.answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);
+  border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
+.answer-gate .ag-lock{font-size:1.4rem;flex:none}
+.answer-gate div{flex:1;min-width:0}
+.answer-gate b{display:block;font-size:.92rem}
+.answer-gate p{margin:.15rem 0 0;font-size:.82rem;color:var(--muted)}
+.answer-gate .btn{flex:none}
 
 .explain{margin-top:1.6rem;border-top:1px dashed var(--line);padding-top:1.3rem}
 .explain.hidden{display:none}
@@ -538,7 +542,6 @@ body.in-quiz .site-footer{display:none}
   padding:.35rem .8rem;font-size:.82rem;font-weight:700;cursor:pointer;color:var(--slate);transition:.15s}
 .exam-flag:hover{border-color:#f59e0b;color:#b45309}
 .exam-flag.active{background:#fef3c7;border-color:#f59e0b;color:#b45309}
-.exam-options .option.picked{border-color:var(--blue-600);background:var(--blue-50)}
 .exam-nav{display:flex;justify-content:space-between;gap:.8rem;margin-top:1.4rem}
 .exam-nav .btn-primary{margin-left:auto}
 @media(max-width:720px){
