@@ -558,12 +558,18 @@ function countUpTile(countEl) {
 }
 function revealOnScroll() {
   if (!("IntersectionObserver" in window)) return;
-  const els = $$(".subject-card,.year-card,.seo-links a,.exam-tile-card,.pp-teaser,.reveal-group > *");
-  els.forEach((el, i) => { el.classList.add("reveal"); el.style.setProperty("--reveal-i", i % 6); });
+  const els = $$(".subject-card,.year-card,.seo-links a,.exam-tile-card,.pp-teaser,.reveal-group > *,.reveal-land,.feat-card");
+  els.forEach((el, i) => {
+    if (!el.classList.contains("reveal-land") && !el.classList.contains("feat-card")) {
+      el.classList.add("reveal");
+    }
+    el.style.setProperty("--reveal-i", i % 6);
+  });
   const io = new IntersectionObserver(ents => {
     ents.forEach(e => {
       if (!e.isIntersecting) return;
       e.target.classList.add("reveal-in");
+      e.target.classList.add("in");
       const count = e.target.querySelector(".count");
       if (count) countUpTile(count);
       io.unobserve(e.target);
@@ -572,6 +578,29 @@ function revealOnScroll() {
   els.forEach(el => io.observe(el));
 }
 
+function initExamTickers() {
+  document.documentElement.classList.add("js");
+  document.querySelectorAll(".ticker-track").forEach(function (track) {
+    var set = track.querySelector(".ticker-set");
+    if (!set) return;
+    // Avoid re-cloning on soft navigations
+    if (track.dataset.ready === "1") return;
+    var width = set.getBoundingClientRect().width;
+    var target = Math.max(window.innerWidth, 600);
+    while (width < target) {
+      var filler = set.cloneNode(true);
+      filler.setAttribute("aria-hidden", "true");
+      track.appendChild(filler);
+      width += filler.getBoundingClientRect().width;
+    }
+    Array.prototype.slice.call(track.children).forEach(function (child) {
+      var clone = child.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+    track.dataset.ready = "1";
+  });
+}
 
 /* ---------- init ---------- */
 // PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
@@ -583,6 +612,7 @@ renderYears();
 document.body.classList.add("anim-ready");
 countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
 countUp($("#stat-y"), YEARS.length);
+initExamTickers();
 revealOnScroll();
 $("#year").textContent = new Date().getFullYear();
 showView("home");

@@ -120,8 +120,11 @@
     b.addEventListener("click", function () { set(effective() === "dark" ? "light" : "dark"); icon(); });
     window.YQTheme.onChange(icon);
     var bar = document.querySelector(".site-header .header-inner");
-    if (bar) bar.insertBefore(b, bar.querySelector(".main-nav") ? bar.querySelector(".main-nav").nextSibling : null);
-    else document.body.appendChild(b);
+    if (bar) {
+      var right = bar.querySelector(".header-right");
+      if (right) right.insertBefore(b, right.firstChild);
+      else bar.insertBefore(b, bar.querySelector(".main-nav") ? bar.querySelector(".main-nav").nextSibling : null);
+    } else document.body.appendChild(b);
 
     buildMobileNav();
 
