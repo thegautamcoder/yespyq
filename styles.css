@@ -1228,11 +1228,8 @@ body.nav-open{overflow:hidden}
   .acct-plan{font-size:.9rem;padding:.65rem .75rem;margin-bottom:.7rem}
   .acct-renew,.acct-out{min-height:44px;font-size:.9rem}
   .acct-theme .at-opt{min-height:40px;font-size:.85rem}
-  body.acct-open{overflow:hidden}
-  body.acct-open::after{
-    content:"";position:fixed;inset:0;z-index:970;
-    background:rgba(15,23,42,.35)
-  }
+  /* Keep the page fully visible — no dim overlay when profile is open */
+  body.acct-open .site-header{z-index:980}
   /* Theme lives in the account sheet once signed in — free header space */
   body:has(#pay-acct) .theme-toggle-header,
   body:has(#pay-acct) .header-right{display:none !important}
