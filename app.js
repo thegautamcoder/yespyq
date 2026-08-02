@@ -787,7 +787,10 @@ function initExamTickers() {
 const OTHER_EXAM_PYQS = 10078;
 renderSubjects();
 renderYears();
-if (document.querySelector(".ticker-track")) initExamTickers();
+document.body.classList.add("anim-ready");
+countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
+countUp($("#stat-y"), YEARS.length);
+initExamTickers();
 revealOnScroll();
 $("#year").textContent = new Date().getFullYear();
 showView("home");
