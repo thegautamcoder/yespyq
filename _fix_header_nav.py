@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""One-off: add Smart Mock + PYQ Pass nav links and the brand-mark logo to
-every static page's header, so it matches the homepage/_gen_exams.py nav.
+"""One-off: add Smart Mock + PYQ Pass nav links links on every static page header so it matches the homepage/_gen_exams.py nav.
+Does not insert any favicon/brand-mark tick icon (wordmark only).
 Skips index.html (homepage, hand-edited SPA header), pyq-pass/index.html
 (hand-edited), resizer/index.html (separate standalone tool, own header),
 and everything under exams/ (regenerated via _gen_exams.py instead).
