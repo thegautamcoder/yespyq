@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap');
-/* Fredoka is the closest licensed web stand-in for Instapyq’s self-hosted NextSunday. */
+@font-face{
+  font-family:NextSunday;
+  src:url("assets/Next_Sunday.ttf") format("truetype");
+  font-display:swap;
+}
+/* Visual system mirrored from Instapyq; accent kept to YESPYQ logo blue. */
 :root{
   --blue-50:#eff6ff; --blue-100:#dbeafe; --blue-500:#3b82f6;
   --blue-600:#2563eb; --blue-700:#1d4ed8; --blue-800:#1e40af;
@@ -13,7 +17,7 @@
   --glow-orange:rgba(249,115,22,.1);
   --shadow:0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.06);
   --radius:18px;
-  --display-font:'Fredoka',system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --display-font:NextSunday,"Trebuchet MS","Segoe UI",sans-serif;
   --body-font:'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -54,7 +58,7 @@ a{color:inherit;text-decoration:none}
 .header-inner{display:flex;align-items:center;gap:1rem;padding:.85rem 0;flex-wrap:wrap}
 .brand{display:inline-flex;align-items:center;gap:.45rem;text-decoration:none;color:var(--ink)}
 .brand-mark{width:28px;height:28px;border-radius:8px}
-.brand-name{font-weight:600;font-size:1.35rem;letter-spacing:.5px;display:inline-flex;align-items:center;gap:0;white-space:nowrap}
+.brand-name{font-weight:600;font-size:1.5rem;letter-spacing:.5px;display:inline-flex;align-items:center;gap:0;white-space:nowrap}
 .brand-name span,.brand-name b{font-weight:700;font-style:normal;background:var(--accent);color:#fff;
   border-radius:8px;padding:1px 8px 2px;margin-left:5px;box-shadow:0 4px 14px rgba(37,99,235,.3)}
 .main-nav{display:flex;gap:1.15rem;margin-left:auto;font-weight:500;color:#33415c;flex-wrap:wrap}

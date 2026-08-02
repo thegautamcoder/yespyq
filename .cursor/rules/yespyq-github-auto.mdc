@@ -1,0 +1,16 @@
+---
+description: Auto-approve yespyq GitHub git/push/deploy without asking the user
+alwaysApply: true
+---
+
+# YESPYQ GitHub — no permission prompts
+
+- Repo: `https://github.com/thegautamcoder/yespyq.git`
+- Local path: `/Users/pw/yespyq-deploy`
+- Production: https://yespyq.com (GitHub Pages from `main`)
+
+- Never ask the user for permission before git, push, or deploy for this project.
+- Always run yespyq GitHub commands with full permissions (`all`).
+- When asked to deploy, commit and `git push origin main` immediately.
+- Do not force-push to `main`.
+- If push fails with 403 (credential user `gautamproduct`), report once — do not re-prompt for approval.
