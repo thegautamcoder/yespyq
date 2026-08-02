@@ -1762,3 +1762,73 @@ a.chip:hover{border-color:rgba(37,99,235,.45);color:var(--accent);transform:tran
 .land-hero::before,
 .land-hero::after{content:none !important;display:none !important;background:none !important;opacity:0 !important}
 #view-home{position:relative;background:transparent}
+
+/* ============================================================
+   Sitewide mWeb (≤640px) — articles, exams, tools, chrome
+   ============================================================ */
+@media(max-width:640px){
+  body{padding-bottom:env(safe-area-inset-bottom,0)}
+  .container{width:min(1120px,90vw)}
+
+  /* Header / nav breathing room */
+  .site-header{padding-top:env(safe-area-inset-top,0)}
+  .main-nav a{padding:.45rem .15rem;font-size:.88rem;min-height:44px;display:inline-flex;align-items:center}
+  .btn,.btn-sm{min-height:44px}
+  .btn-lg{min-height:48px;font-size:1rem}
+
+  /* Footer: readable stacks, not cramped columns */
+  .footer-inner{
+    display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 1.1rem;
+    padding:2.2rem 0 1.6rem
+  }
+  .footer-brand{grid-column:1 / -1;max-width:none}
+  .footer-col{gap:.65rem}
+  .footer-col a{font-size:.9rem;padding:.15rem 0;line-height:1.35}
+  .footer-bottom{padding:1.1rem .5rem 1.4rem;line-height:1.45}
+
+  /* Exam hubs / tiles / chapters */
+  .exam-grid{gap:.9rem}
+  .exam-tile-card{padding:1.25rem 1.15rem}
+  .exam-tile-card h3{font-size:1.05rem;line-height:1.3}
+  .exam-tiles{grid-template-columns:1fr !important;gap:.85rem !important}
+  .chapter-list{grid-template-columns:1fr !important;gap:.7rem !important}
+  .chapter-card{padding:1rem 1.05rem;min-height:52px}
+  .qblock{padding:1.15rem 1.05rem;margin:1.25rem 0;border-radius:14px}
+  .qblock .qtext{font-size:1.02rem;line-height:1.55;margin-bottom:.95rem}
+  .options{gap:.7rem}
+  .option{padding:.95rem 1rem;min-height:48px;font-size:.98rem}
+  .answer-gate{
+    flex-direction:column;align-items:stretch;text-align:left;
+    gap:.75rem;padding:1.05rem 1.1rem;margin:1.1rem 0
+  }
+  .answer-gate .btn{width:100%;justify-content:center}
+
+  /* Quiz / mock / browse */
+  .quiz-wrap{width:min(720px,90vw);margin:1.2rem auto 2.4rem}
+  .quiz-q{font-size:1.08rem;line-height:1.5;margin-bottom:1.2rem}
+  .result-cta .btn-lg{min-width:0;width:100%}
+  .result-stats{gap:.75rem}
+  .result-stats div{min-width:0;flex:1 1 40%;padding:.85rem .7rem}
+  .mock-setup{padding:0 0 1.5rem}
+  .mock-generate,.mock-generate.btn{width:100%}
+  .exam-picker-card{width:min(640px,94vw);padding:1.4rem 1.15rem;max-height:88vh}
+  .exam-picker-grid{grid-template-columns:1fr;gap:.7rem}
+  .seo-links{gap:.55rem;margin:1rem 0 2rem}
+  .seo-links a{padding:.55rem .85rem;font-size:.88rem}
+
+  /* About inline helpers (legal pages) */
+  .about-stats{grid-template-columns:1fr !important;gap:.75rem !important;margin:1.6rem 0 1.9rem !important}
+  .about-stat{padding:1.1rem 1rem !important}
+  .about-stat b{font-size:1.55rem !important}
+  .exam-list{gap:.8rem !important}
+  .exam-list li{padding:1.05rem 1.1rem !important}
+
+  /* Avoid sticky chrome collisions */
+  .filters{top:auto}
+  .breadcrumb{line-height:1.45;overflow-wrap:anywhere}
+}
+
+@media(max-width:400px){
+  .footer-inner{grid-template-columns:1fr;gap:1.35rem}
+  .brand-name{font-size:1.12rem}
+}

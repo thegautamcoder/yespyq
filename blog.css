@@ -94,3 +94,48 @@
 .pyq-list a:hover{border-color:var(--blue-500);color:var(--blue-700);transform:translateX(2px)}
 .pyq-cross{margin:.5rem 0 1.5rem;font-size:.92rem}
 .pyq-cross a{color:var(--blue-700);font-weight:600}
+
+/* ===== mWeb articles / blog / question pages ===== */
+@media(max-width:640px){
+  .blog-hero{padding:2.8rem 0 2.2rem}
+  .blog-hero h1{font-size:clamp(1.7rem,7vw,2.25rem);line-height:1.18;max-width:16ch}
+  .blog-hero p{font-size:1.02rem;line-height:1.55;margin-top:1rem}
+
+  .post-grid{grid-template-columns:1fr;gap:1rem;margin:1.6rem 0 2.4rem}
+  .post-card{padding:1.25rem 1.15rem}
+  .post-card h2{font-size:1.12rem;line-height:1.35;margin:.75rem 0 .55rem}
+
+  .article{width:min(740px,90vw);margin:2rem auto 1.2rem}
+  .breadcrumb{font-size:.84rem;margin-bottom:1.15rem;line-height:1.5}
+  .article h1{font-size:clamp(1.55rem,6.5vw,2.1rem);line-height:1.22;margin-bottom:.85rem}
+  .article .meta{margin-bottom:1.5rem;padding-bottom:1.15rem;gap:.5rem}
+
+  .prose{font-size:1.02rem;line-height:1.7}
+  .prose h2{font-size:1.28rem;margin:1.9rem 0 .75rem;line-height:1.25}
+  .prose h3{font-size:1.1rem;margin:1.5rem 0 .55rem}
+  .prose p,.prose li{margin-bottom:1rem}
+  .prose ul,.prose ol{margin-left:1.15rem}
+  .prose blockquote{padding:.85rem 1rem;margin:1.2rem 0}
+  .prose table{font-size:.9rem}
+  .prose th,.prose td{padding:.55rem .65rem}
+
+  .cta-box{padding:1.4rem 1.15rem;margin:2rem 0;border-radius:16px}
+  .cta-box .btn{width:100%;justify-content:center;min-height:48px}
+  .faq{margin:1.8rem 0}
+  .faq details{padding:1rem 1.05rem;margin-bottom:.8rem}
+  .faq summary{font-size:1rem;line-height:1.4;padding:.15rem 0;min-height:44px;display:flex;align-items:center}
+
+  .related{margin:2.4rem 0 1rem}
+  .related-list{grid-template-columns:1fr;gap:.85rem}
+
+  .qpage-h1{font-size:clamp(1.2rem,5.5vw,1.55rem);line-height:1.35;margin-bottom:1.15rem}
+  .qmeta-tags{margin:.15rem 0 1.1rem;gap:.45rem}
+  .pyq-list a{padding:.85rem .95rem;font-size:.94rem;line-height:1.4;min-height:48px}
+  .pyq-year{margin:1.6rem 0 .75rem}
+}
+
+@media(max-width:400px){
+  .article{margin:1.7rem auto 1rem}
+  .prose{font-size:.98rem}
+  .blog-hero{padding:2.4rem 0 1.9rem}
+}

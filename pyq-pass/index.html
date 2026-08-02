@@ -28,7 +28,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=72" />
+  <link rel="stylesheet" href="/styles.css?v=80" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -164,7 +164,6 @@
     .pp-plan-cta{width:100%;margin-top:1.3rem}
     [data-theme="dark"] .pp-plan{background:rgba(15,23,42,.55)}
     [data-theme="dark"] .pp-plan-pass{background:linear-gradient(165deg,rgba(37,99,235,.16),rgba(15,23,42,.6))}
-    @media(max-width:640px){.pp-compare-grid{grid-template-columns:1fr}.pp-plan-pass{order:-1}}
     .pp-faq{max-width:680px;margin:3rem auto 3.5rem;padding:0 1rem}
     .pp-faq h2{text-align:center;margin:0 0 1rem;font-size:clamp(1.4rem,3vw,1.85rem)}
     .pp-faq details{
@@ -177,6 +176,30 @@
     @media(max-width:800px){
       .pp-stats{grid-template-columns:repeat(2,1fr)}
       .pp-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:640px){
+      .pp-compare-grid{grid-template-columns:1fr}
+      .pp-plan-pass{order:-1}
+      .pp-hero{padding:3.2rem 0 1rem;max-width:100%}
+      .pp-hero h1{font-size:clamp(1.85rem,7vw,2.4rem);line-height:1.18;margin-bottom:1rem}
+      .pp-hero .lede{font-size:1.02rem;line-height:1.58;max-width:34ch}
+      .pp-exams{gap:.55rem;margin:1.6rem 0 0}
+      .pp-stats{grid-template-columns:1fr 1fr;gap:.75rem;margin:2.2rem auto 0;padding:0 .15rem}
+      .pp-stat{padding:1.05rem .8rem}
+      .pp-stat b{font-size:1.35rem}
+      .pp-buy{margin-top:2.2rem;padding:0}
+      .pp-grid{gap:.85rem;margin:2.4rem auto 0;padding:0}
+      .pp-feat{padding:1.25rem 1.15rem}
+      .pp-compare{margin:2.6rem auto 0;padding:0}
+      .pp-plan{padding:1.4rem 1.2rem}
+      .pp-plan-cta,.pp-plan-cta.btn{width:100%}
+      .pp-faq{margin:2.6rem auto 3rem;padding:0}
+      .pp-faq details{padding:1.05rem 1.1rem}
+      .pp-faq summary{min-height:44px;display:flex;align-items:center}
+    }
+    @media(max-width:400px){
+      .pp-stats{grid-template-columns:1fr}
+      .pp-exams span{font-size:.76rem}
     }
   </style>
 </head>
