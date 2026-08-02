@@ -28,7 +28,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=101" />
+  <link rel="stylesheet" href="/styles.css?v=102" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,12 +89,14 @@
   </script>
   <script src="/theme.js?v=29"></script>
   <style>
-    .pp-page{position:relative}
+    .pp-page{position:relative;overflow-x:clip}
+    /* Trusted band must span the full viewport on Pass (page uses centered .container elsewhere) */
     .pp-page .trusted-pyq{
-      width:100vw;max-width:100vw;margin-left:calc(50% - 50vw);
-      box-sizing:border-box
+      position:relative;left:50%;transform:translateX(-50%);
+      width:100vw;max-width:100vw;box-sizing:border-box;
+      overflow:hidden
     }
-    .pp-page .trusted-reviews{width:100%;margin-left:0}
+    .pp-page .trusted-reviews{width:100%;margin:0}
     .pp-hero{text-align:center;padding:2.4rem 0 .5rem;max-width:760px;margin:0 auto}
     .pp-hero .eyebrow{justify-content:center}
     .pp-hero h1{
