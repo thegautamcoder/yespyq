@@ -533,6 +533,22 @@ body.in-quiz .site-footer{display:none}
 
 /* entrance animations (homepage app sets .anim-ready; safe without JS) */
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heroRise{
+  from{opacity:0;transform:translateY(28px);filter:blur(6px)}
+  to{opacity:1;transform:none;filter:blur(0)}
+}
+@keyframes heroSoft{
+  from{opacity:0;transform:translateY(18px)}
+  to{opacity:1;transform:none}
+}
+@keyframes statPop{
+  from{opacity:0;transform:translateY(20px) scale(.96)}
+  to{opacity:1;transform:none}
+}
+@keyframes emIn{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:none}
+}
 @media (prefers-reduced-motion:no-preference){
   .anim-ready .hero-inner>*{opacity:0;animation:fadeUp .6s cubic-bezier(.22,.61,.36,1) forwards}
   .anim-ready .hero-inner .pill,.anim-ready .hero-inner .eyebrow{animation-delay:.04s}
@@ -540,12 +556,27 @@ body.in-quiz .site-footer{display:none}
   .anim-ready .hero-inner .lead{animation-delay:.24s}
   .anim-ready .hero-inner .hero-cta{animation-delay:.36s}
   .anim-ready .hero-inner .hero-stats{animation-delay:.48s}
-  .anim-ready .exams-hero .container > *{opacity:0;animation:fadeUp .65s cubic-bezier(.22,.61,.36,1) forwards}
-  .anim-ready .exams-hero .eyebrow{animation-delay:.05s}
-  .anim-ready .exams-hero h1{animation-delay:.14s}
-  .anim-ready .exams-hero .lede{animation-delay:.26s}
-  .anim-ready .exams-hero .stat-row{animation-delay:.38s}
-  .anim-ready .exams-hero .ticker{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.61,.36,1) .5s forwards}
+
+  .anim-ready .exams-hero .eyebrow{
+    opacity:0;animation:heroSoft .55s cubic-bezier(.22,.61,.36,1) .05s forwards
+  }
+  .anim-ready .exams-hero h1{
+    opacity:0;animation:heroRise .85s cubic-bezier(.22,.61,.36,1) .12s forwards
+  }
+  .anim-ready .exams-hero h1 em{
+    display:inline-block;opacity:0;animation:emIn .55s cubic-bezier(.22,.61,.36,1) .55s forwards
+  }
+  .anim-ready .exams-hero .lede{
+    opacity:0;animation:heroSoft .7s cubic-bezier(.22,.61,.36,1) .38s forwards
+  }
+  .anim-ready .exams-hero .stat-row .stat{
+    opacity:0;animation:statPop .65s cubic-bezier(.22,.61,.36,1) forwards
+  }
+  .anim-ready .exams-hero .stat-row .stat:nth-child(1){animation-delay:.52s}
+  .anim-ready .exams-hero .stat-row .stat:nth-child(2){animation-delay:.64s}
+  .anim-ready .exams-hero .stat-row .stat:nth-child(3){animation-delay:.76s}
+  .anim-ready .exams-hero .ticker{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.61,.36,1) .85s forwards}
+
   .anim-ready .land-hero .hero-copy > *{opacity:0;animation:fadeUp .6s cubic-bezier(.22,.61,.36,1) forwards}
   .anim-ready .land-hero .eyebrow{animation-delay:.08s}
   .anim-ready .land-hero .hero-headline{animation-delay:.16s}
@@ -556,6 +587,13 @@ body.in-quiz .site-footer{display:none}
   .anim-ready .reveal{opacity:0;transform:translateY(16px)}
   .anim-ready .reveal.reveal-in{animation:fadeUp .55s cubic-bezier(.22,.61,.36,1) forwards;
     animation-delay:calc(var(--reveal-i, 0) * .07s)}
+}
+@media (prefers-reduced-motion:reduce){
+  .anim-ready .exams-hero .eyebrow,
+  .anim-ready .exams-hero h1,
+  .anim-ready .exams-hero h1 em,
+  .anim-ready .exams-hero .lede,
+  .anim-ready .exams-hero .stat-row .stat{opacity:1;animation:none;filter:none;transform:none}
 }
 
 /* ============================================================
@@ -1101,6 +1139,17 @@ body.nav-open{overflow:hidden}
 .stat-row .cap{
   font-size:.78rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-top:.2rem;font-weight:500
 }
+.stat-row .stat .num{transition:transform .35s ease}
+.anim-ready .exams-hero .stat-row .stat.is-live .num{transform:scale(1.04)}
+.home-faq{padding:1rem 0 3.2rem}
+.home-faq .section-head{margin-bottom:1.4rem;text-align:center;max-width:640px;margin-inline:auto}
+.home-faq details{
+  border:1px solid var(--line);border-radius:14px;padding:.95rem 1.1rem;margin:0 auto .55rem;
+  background:rgba(255,255,255,.72);max-width:720px
+}
+.home-faq summary{font-weight:700;cursor:pointer}
+.home-faq details p{margin:.55rem 0 0;color:var(--muted);font-size:.95rem;line-height:1.55}
+[data-theme="dark"] .home-faq details{background:rgba(15,23,42,.55)}
 
 /* multi-row exam tickers — Instapyq-style motion */
 .ticker{margin-top:2.8rem;display:flex;flex-direction:column;gap:1rem;overflow:hidden;

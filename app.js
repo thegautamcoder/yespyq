@@ -917,8 +917,14 @@ const OTHER_EXAM_PYQS = 10078;
 renderSubjects();
 renderYears();
 document.body.classList.add("anim-ready");
-countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
-countUp($("#stat-y"), YEARS.length);
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const countDelay = reduceMotion ? 0 : 520;
+setTimeout(() => {
+  countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
+  countUp($("#stat-f"), 6);
+  countUp($("#stat-y"), YEARS.length);
+  $$(".exams-hero .stat-row .stat").forEach(s => s.classList.add("is-live"));
+}, countDelay);
 initExamTickers();
 initPhoneDemo();
 revealOnScroll();
