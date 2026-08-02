@@ -1192,166 +1192,52 @@ function revealOnScroll() {
    that's what removes the jerk on hover/touch. A magnetic hover effect
    (chips near the pointer lift + scale, like train cars reacting as
    the engine passes) layers on top, reset the moment the pointer leaves. */
-/* Ticker "railway junction" — three rows, each an infinite train of chip
-   "compartments". Hovering a compartment doesn't move it; it's a junction
-   switch. While held, the compartments coming up behind it peel off one by
-   one onto the adjacent row, immediately taking on that row's speed/
-   direction so they blend into its flow — the row itself never stops or
-   snaps, only which row each compartment belongs to changes. Transfers are
-   one-way: releasing the hover just stops new peel-offs, already-switched
-   compartments stay put. Gaps left behind self-close: a lightweight
-   spacing pass nudges whichever compartment finds itself with too much
-   room ahead, and eases off the moment normal spacing returns.
-   Recycling is a fixed-size pool per row (no infinite DOM cloning) — a
-   compartment that fully exits one edge respawns just past the last
-   compartment at the other edge. */
+/* Ticker — three rows of chips, each scrolling continuously at a constant
+   speed. Purely decorative: hover/touch has no effect on it at all. */
 function initExamTickers() {
   document.documentElement.classList.add("js");
   var reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var wrap = document.querySelector(".ticker");
-  if (!wrap || wrap.dataset.trainReady === "1") return;
+  var tracks = [];
 
-  var trackEls = Array.prototype.slice.call(wrap.querySelectorAll(".ticker-track"));
-  if (!trackEls.length) return;
-
-  var laneSeeds = trackEls.map(function (track) {
+  document.querySelectorAll(".ticker-track").forEach(function (track) {
     var set = track.querySelector(".ticker-set");
-    var kids = set ? Array.prototype.slice.call(set.children) : [];
-    return kids.map(function (c) { return { html: c.innerHTML, cls: c.className }; });
-  });
-  if (reduceMotion || !laneSeeds.some(function (s) { return s.length; })) return; // CSS static wrapped fallback stays as-is
-
-  wrap.dataset.trainReady = "1";
-  wrap.innerHTML = "";
-  var stage = document.createElement("div");
-  stage.className = "ticker-stage";
-  wrap.appendChild(stage);
-
-  var GAP = 12, ROW_GAP = 12;
-  var LANE_DEFS = [{ dir: -1, speed: 34 }, { dir: 1, speed: 30 }, { dir: -1, speed: 40 }];
-  var DEST = { 0: 1, 1: 2, 2: 1 }; // which row a peeled-off compartment joins
-
-  function makeChipEl(seed) {
-    var el = document.createElement("span");
-    el.className = seed.cls;
-    el.innerHTML = seed.html;
-    el.style.position = "absolute";
-    el.style.left = "0";
-    el.style.top = "0";
-    stage.appendChild(el);
-    return el;
-  }
-
-  var stageWidth = Math.max(window.innerWidth, 600);
-  var lanes = laneSeeds.map(function (seeds, li) {
-    var def = LANE_DEFS[li] || LANE_DEFS[0];
-    return { idx: li, dir: def.dir, speed: def.speed, y: 0, chips: [], seeds: seeds, seedPtr: 0 };
-  });
-
-  var rowHeight = 0;
-  lanes.forEach(function (lane) {
-    if (!lane.seeds.length) return;
-    var cursor = 0, guard = 0;
-    while (cursor < stageWidth * 2.4 && guard < 200) {
-      var seed = lane.seeds[lane.seedPtr % lane.seeds.length];
-      lane.seedPtr++;
-      var el = makeChipEl(seed);
-      var r = el.getBoundingClientRect();
-      rowHeight = Math.max(rowHeight, r.height);
-      var chip = { el: el, x: cursor, renderY: 0, w: r.width, lane: lane.idx, boost: 1 };
-      lane.chips.push(chip);
-      attachChipEvents(chip);
-      cursor += r.width + GAP;
-      guard++;
+    if (!set) return;
+    if (track.dataset.ready === "1") return; // avoid re-cloning on soft navigations
+    var width = set.getBoundingClientRect().width;
+    var target = Math.max(window.innerWidth, 600);
+    while (width < target) {
+      var filler = set.cloneNode(true);
+      filler.setAttribute("aria-hidden", "true");
+      track.appendChild(filler);
+      width += filler.getBoundingClientRect().width;
     }
+    Array.prototype.slice.call(track.children).forEach(function (child) {
+      var clone = child.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      track.appendChild(clone);
+    });
+    track.dataset.ready = "1";
+    if (reduceMotion) return; // CSS falls back to a static wrapped layout
+
+    var loopWidth = track.scrollWidth / 2;
+    var dir = track.classList.contains("reverse") ? 1 : -1;
+    var duration = track.classList.contains("reverse") ? 56 : track.classList.contains("subjects") ? 42 : 48;
+    var speed = loopWidth / duration; // px/sec
+    tracks.push({ el: track, x: dir === 1 ? -loopWidth : 0, loopWidth: loopWidth, dir: dir, speed: speed });
   });
 
-  lanes.forEach(function (lane, i) { lane.y = i * (rowHeight + ROW_GAP); });
-  lanes.forEach(function (lane) { lane.chips.forEach(function (c) { c.renderY = lane.y; }); });
-  stage.style.height = (lanes.length * rowHeight + (lanes.length - 1) * ROW_GAP) + "px";
-
-  // Transfers only run one direction per row (edge rows only ever feed the
-  // middle one). Left unchecked across many hover sessions over a long
-  // browsing session, that drains the edge rows and jams the middle one.
-  // Cap how far any row can overfill relative to the starting average so
-  // the three rows stay visually even — a capped-out row just stops
-  // accepting new peel-offs until it thins back out on its own.
-  var avgChipsPerLane = lanes.reduce(function (n, l) { return n + l.chips.length; }, 0) / lanes.length;
-  var MAX_PER_LANE = Math.ceil(avgChipsPerLane * 1.5);
-
-  var hovered = null; // { chip, timer }
-  var TRANSFER_INTERVAL = 420;
-
-  function startHover(chip) {
-    if (hovered && hovered.chip === chip) return;
-    stopHover();
-    hovered = { chip: chip, timer: setInterval(function () { tryTransferNext(chip); }, TRANSFER_INTERVAL) };
-  }
-  function stopHover() {
-    if (hovered) clearInterval(hovered.timer);
-    hovered = null;
-  }
-
-  function tryTransferNext(anchorChip) {
-    var srcLane = lanes[anchorChip.lane];
-    var idx = srcLane.chips.indexOf(anchorChip);
-    if (idx === -1) return; // anchor itself somehow left its lane — nothing to do
-    // "Behind" = will reach the junction later. For a leftward (dir=-1) row
-    // laid out left-to-right, that's the next-higher index; for a
-    // rightward (dir=1) row it's the next-lower index.
-    var behindIdx = srcLane.dir === -1 ? idx + 1 : idx - 1;
-    var target = srcLane.chips[behindIdx];
-    if (!target) return; // nothing trailing right now — try again next tick
-    var destLane = lanes[DEST[srcLane.idx]];
-    if (destLane.chips.length >= MAX_PER_LANE) return; // destination is full for now — resume once it thins out
-    srcLane.chips.splice(behindIdx, 1);
-    target.lane = destLane.idx;
-    destLane.chips.push(target); // destination is already moving — it just adopts that lane's speed/dir next frame
-  }
-
-  function attachChipEvents(chip) {
-    chip.el.addEventListener("pointerenter", function (e) { if (e.pointerType !== "touch") startHover(chip); });
-    chip.el.addEventListener("pointerleave", function () { if (hovered && hovered.chip === chip) stopHover(); });
-    chip.el.addEventListener("touchstart", function () { startHover(chip); }, { passive: true });
-    chip.el.addEventListener("touchend", function () { if (hovered && hovered.chip === chip) stopHover(); }, { passive: true });
-  }
+  if (reduceMotion || !tracks.length) return;
 
   var last = performance.now();
   (function tick(now) {
     var dt = Math.min(now - last, 48) / 1000;
     last = now;
-
-    lanes.forEach(function (lane) {
-      // Self-closing gaps: sort a snapshot by x, and nudge whichever
-      // compartment has too much room ahead of it (or too little, e.g.
-      // right after a transfer lands nearby) back toward normal spacing.
-      var sorted = lane.chips.slice().sort(function (a, b) { return a.x - b.x; });
-      sorted.forEach(function (c) { c.boost = 1; });
-      for (var k = 0; k < sorted.length; k++) {
-        var behind = sorted[k];
-        var ahead = lane.dir === -1 ? sorted[k - 1] : sorted[k + 1];
-        if (!ahead) continue;
-        var gap = lane.dir === -1 ? (behind.x - (ahead.x + ahead.w)) : (ahead.x - (behind.x + behind.w));
-        if (gap > GAP * 2.2) behind.boost = 1.7;
-        else if (gap < GAP * 0.35) behind.boost = 0.55;
-      }
-
-      lane.chips.forEach(function (c) {
-        c.x += lane.dir * lane.speed * c.boost * dt;
-        if (lane.dir === -1 && c.x + c.w < -140) {
-          var maxX = lane.chips.reduce(function (m, o) { return Math.max(m, o.x); }, 0);
-          c.x = maxX + GAP;
-        } else if (lane.dir === 1 && c.x > stageWidth + 140) {
-          var minX = lane.chips.reduce(function (m, o) { return Math.min(m, o.x); }, stageWidth);
-          c.x = minX - c.w - GAP;
-        }
-        // Row switch renders as a smooth diagonal glide, not a snap.
-        var targetY = lanes[c.lane].y;
-        c.renderY += (targetY - c.renderY) * Math.min(1, dt * 6);
-        c.el.style.transform = "translate3d(" + c.x.toFixed(1) + "px," + c.renderY.toFixed(1) + "px,0)";
-      });
+    tracks.forEach(function (t) {
+      t.x += t.dir * t.speed * dt;
+      if (t.x <= -t.loopWidth) t.x += t.loopWidth;
+      if (t.x >= 0) t.x -= t.loopWidth;
+      t.el.style.transform = "translateX(" + t.x.toFixed(2) + "px)";
     });
-
     requestAnimationFrame(tick);
   })(last);
 }
