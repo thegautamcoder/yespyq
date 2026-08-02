@@ -780,6 +780,135 @@ function initExamTickers() {
   });
 }
 
+/* Homepage phone demo — cycles real-feeling PYQs across exams */
+const DEMO_QS = [
+  {
+    pill: "UPSC", exam: "UPSC Prelims 2020", subject: "Indian Polity", tag: "Civil Services",
+    q: "Which of the following is NOT a Fundamental Duty under the Indian Constitution?",
+    opts: ["Uphold the sovereignty of India", "Pay taxes honestly", "Vote in elections", "Protect the natural environment"],
+    correct: 2, why: "Voting is a constitutional right, not listed among the Fundamental Duties in Article 51A."
+  },
+  {
+    pill: "JEE", exam: "JEE Main 2023", subject: "Physics", tag: "Engineering",
+    q: "The SI unit of electric field is?",
+    opts: ["Newton", "Volt / metre", "Coulomb", "Joule / second"],
+    correct: 1, why: "Electric field is force per unit charge, which equals volt per metre."
+  },
+  {
+    pill: "NEET", exam: "NEET-UG 2022", subject: "Biology", tag: "Medical",
+    q: "Which organelle is called the powerhouse of the cell?",
+    opts: ["Ribosome", "Golgi apparatus", "Mitochondrion", "Lysosome"],
+    correct: 2, why: "Mitochondria produce ATP through cellular respiration."
+  },
+  {
+    pill: "SSC", exam: "SSC CGL 2021", subject: "Reasoning", tag: "Staff Selection",
+    q: "Complete the series: 2, 6, 12, 20, ?",
+    opts: ["28", "30", "32", "36"],
+    correct: 1, why: "Add consecutive even numbers: +4, +6, +8, then +10 → 30."
+  },
+  {
+    pill: "Boards", exam: "Class 12 Boards", subject: "Chemistry", tag: "School boards",
+    q: "pH of a neutral aqueous solution at 25°C is?",
+    opts: ["0", "7", "14", "1"],
+    correct: 1, why: "At 25°C, [H+] equals [OH−], so pH is 7."
+  }
+];
+
+function initPhoneDemo() {
+  const phone = $("#demo-phone");
+  if (!phone) return;
+  const body = $("#demo-body");
+  const optsEl = $("#demo-opts");
+  const exp = $("#demo-exp");
+  const dots = $("#demo-dots");
+  const pill = $("#demo-pill");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let i = 0;
+  let timers = [];
+
+  function clearTimers() {
+    timers.forEach(clearTimeout);
+    timers = [];
+  }
+  function later(fn, ms) {
+    timers.push(setTimeout(fn, ms));
+  }
+
+  dots.innerHTML = DEMO_QS.map((_, idx) => `<i${idx === 0 ? ' class="on"' : ""}></i>`).join("");
+
+  function render(idx, animate) {
+    const item = DEMO_QS[idx];
+    const keys = ["A", "B", "C", "D"];
+    $("#demo-exam").textContent = item.exam;
+    $("#demo-subj").textContent = item.subject;
+    $("#demo-tag").textContent = item.tag;
+    $("#demo-q").textContent = item.q;
+    $("#demo-qnum").textContent = `Q ${idx + 1} / ${DEMO_QS.length}`;
+    $("#demo-why").textContent = item.why;
+    $("#demo-verdict").innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg> Correct · Option ${keys[item.correct]}`;
+    pill.textContent = item.pill;
+    pill.classList.remove("swap");
+    optsEl.innerHTML = item.opts.map((label, oi) => (
+      `<div class="opt" data-i="${oi}"><span class="opt-key">${keys[oi]}</span><span class="opt-label">${label}</span><span class="check-badge" aria-hidden="true">✓</span></div>`
+    )).join("");
+    exp.hidden = false;
+    exp.classList.remove("show");
+    $$("#demo-dots i").forEach((d, di) => d.classList.toggle("on", di === idx));
+
+    if (reduce) {
+      $$("#demo-opts .opt").forEach(o => o.classList.add("show"));
+      const correct = optsEl.querySelector(`[data-i="${item.correct}"]`);
+      if (correct) correct.classList.add("is-correct");
+      exp.classList.add("show");
+      return;
+    }
+
+    if (animate) {
+      body.classList.remove("out");
+      body.classList.add("in");
+      requestAnimationFrame(() => {
+        body.classList.remove("in");
+      });
+    }
+
+    $$("#demo-opts .opt").forEach((o, oi) => {
+      later(() => o.classList.add("show"), 120 + oi * 90);
+    });
+
+    later(() => {
+      const target = optsEl.querySelector(`[data-i="${item.correct}"]`);
+      if (!target) return;
+      target.classList.add("is-tap");
+      later(() => {
+        target.classList.remove("is-tap");
+        target.classList.add("is-correct");
+        exp.classList.add("show");
+      }, 280);
+    }, 1600);
+  }
+
+  function next() {
+    if (reduce) {
+      i = (i + 1) % DEMO_QS.length;
+      render(i, false);
+      later(next, 5000);
+      return;
+    }
+    body.classList.add("out");
+    pill.classList.add("swap");
+    later(() => {
+      clearTimers();
+      i = (i + 1) % DEMO_QS.length;
+      render(i, true);
+      later(next, 7200);
+    }, 380);
+  }
+
+  render(0, false);
+  if (!reduce) later(next, 7200);
+  else later(next, 5000);
+}
+
 /* ---------- init ---------- */
 // PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
 // which live in separate static exam-data JSON, not loaded here — update
@@ -791,6 +920,7 @@ document.body.classList.add("anim-ready");
 countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
 countUp($("#stat-y"), YEARS.length);
 initExamTickers();
+initPhoneDemo();
 revealOnScroll();
 $("#year").textContent = new Date().getFullYear();
 showView("home");
