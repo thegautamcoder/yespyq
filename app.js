@@ -580,13 +580,13 @@ document.addEventListener("click", e => {
     return;
   }
 
-  // ----- PYQ Mock Test setup -----
+  // ----- PYQ Mock Test setup (one exam at a time) -----
   const mExam = e.target.closest("[data-mock-exam]");
   if (mExam) {
     e.preventDefault();
     const id = mExam.dataset.mockExam;
-    if (mockState.exams.has(id)) { if (mockState.exams.size > 1) mockState.exams.delete(id); }
-    else mockState.exams.add(id);
+    mockState.exams.clear();
+    mockState.exams.add(id);
     mockState.subjects.clear();
     renderMockSetup();
     return;
@@ -840,7 +840,7 @@ function renderReview() {
 }
 
 /* ============================================================
-   SMART PYQ MOCK — mix exams/subjects/years into one custom set,
+   PYQ MOCK TEST — one exam at a time, mix subjects/years into a set,
    run it as a practice quiz or a timed exam.
    ============================================================ */
 const mockState = { exams: new Set(["upsc"]), subjects: new Set(), count: 10, mode: "practice" };
@@ -1186,8 +1186,17 @@ function revealOnScroll() {
   els.forEach(el => io.observe(el));
 }
 
+/* Ticker "train" feel: position is driven by a single rAF loop with
+   velocity that EASES toward a target (0 when paused, cruise speed
+   otherwise) instead of a CSS animation snapping play-state on/off —
+   that's what removes the jerk on hover/touch. A magnetic hover effect
+   (chips near the pointer lift + scale, like train cars reacting as
+   the engine passes) layers on top, reset the moment the pointer leaves. */
 function initExamTickers() {
   document.documentElement.classList.add("js");
+  var reduceMotion = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var tracks = [];
+
   document.querySelectorAll(".ticker-track").forEach(function (track) {
     var set = track.querySelector(".ticker-set");
     if (!set) return;
@@ -1207,7 +1216,78 @@ function initExamTickers() {
       track.appendChild(clone);
     });
     track.dataset.ready = "1";
+    if (reduceMotion) return; // CSS falls back to a static wrapped layout
+
+    var loopWidth = track.scrollWidth / 2;
+    var dir = track.classList.contains("reverse") ? 1 : -1;
+    var duration = track.classList.contains("reverse") ? 56 : track.classList.contains("subjects") ? 42 : 48;
+    var cruiseSpeed = loopWidth / duration; // px/sec, matches the old CSS animation's pace
+    tracks.push({ el: track, x: 0, loopWidth: loopWidth, dir: dir, cruiseSpeed: cruiseSpeed, velocity: cruiseSpeed, paused: false, chips: null });
   });
+
+  if (reduceMotion || !tracks.length) return;
+
+  var wrap = document.querySelector(".ticker");
+  if (!wrap) return;
+
+  function setPaused(p) { tracks.forEach(function (t) { t.paused = p; }); }
+  wrap.addEventListener("mouseenter", function () { setPaused(true); });
+  wrap.addEventListener("mouseleave", function () { setPaused(false); pointerX = null; pointerTrack = null; resetMagnet(); });
+  wrap.addEventListener("touchstart", function () { setPaused(true); }, { passive: true });
+  wrap.addEventListener("touchend", function () { setPaused(false); pointerX = null; pointerTrack = null; resetMagnet(); }, { passive: true });
+
+  var pointerX = null, pointerTrack = null;
+  wrap.addEventListener("mousemove", function (e) {
+    pointerX = e.clientX;
+    pointerTrack = e.target.closest(".ticker-track");
+  });
+  wrap.addEventListener("touchmove", function (e) {
+    var t = e.touches[0];
+    if (!t) return;
+    pointerX = t.clientX;
+    pointerTrack = document.elementFromPoint(t.clientX, t.clientY);
+    pointerTrack = pointerTrack && pointerTrack.closest(".ticker-track");
+  }, { passive: true });
+
+  function resetMagnet() {
+    tracks.forEach(function (t) {
+      if (t.chips) t.chips.forEach(function (c) { c.style.transform = ""; });
+    });
+  }
+
+  var MAGNET_RADIUS = 110, MAGNET_SCALE = 1.14, MAGNET_LIFT = 7;
+  function applyMagnet(t) {
+    if (pointerTrack !== t.el) {
+      if (t.chips) t.chips.forEach(function (c) { c.style.transform = ""; });
+      return;
+    }
+    if (!t.chips) t.chips = Array.prototype.slice.call(t.el.querySelectorAll(".exam-chip"));
+    t.chips.forEach(function (c) {
+      var r = c.getBoundingClientRect();
+      var dist = Math.abs(pointerX - (r.left + r.width / 2));
+      if (dist > MAGNET_RADIUS) { c.style.transform = ""; return; }
+      var p = 1 - dist / MAGNET_RADIUS;
+      var ease = p * p * (3 - 2 * p); // smoothstep — no jerk in/out of the magnet field
+      c.style.transform = "translateY(" + (-MAGNET_LIFT * ease).toFixed(2) + "px) scale(" + (1 + (MAGNET_SCALE - 1) * ease).toFixed(3) + ")";
+    });
+  }
+
+  var last = performance.now();
+  (function tick(now) {
+    var dt = Math.min(now - last, 48) / 1000; // clamp so a tab-switch pause doesn't jump-scroll
+    last = now;
+    tracks.forEach(function (t) {
+      var targetV = t.paused ? 0 : t.cruiseSpeed;
+      t.velocity += (targetV - t.velocity) * Math.min(1, dt * 4.5); // ease toward target = the "smooth, no jerk" deceleration/acceleration
+      if (targetV === 0 && Math.abs(t.velocity) < 0.02) t.velocity = 0;
+      t.x += t.dir * t.velocity * dt;
+      if (t.x <= -t.loopWidth) t.x += t.loopWidth;
+      if (t.x >= t.loopWidth) t.x -= t.loopWidth;
+      t.el.style.transform = "translateX(" + t.x.toFixed(2) + "px)";
+      applyMagnet(t);
+    });
+    requestAnimationFrame(tick);
+  })(last);
 }
 
 /* Homepage phone demo — cycles real-feeling PYQs across exams */

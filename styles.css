@@ -1328,19 +1328,18 @@ body.nav-open{overflow:hidden}
   -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
   mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .ticker-track{display:flex;width:max-content;will-change:transform}
-html.js .ticker-track{animation:ypTicker 48s linear infinite}
-html.js .ticker-track.reverse{animation:ypTicker 56s linear infinite reverse}
-html.js .ticker-track.subjects{animation-duration:42s}
-.ticker:hover .ticker-track{animation-play-state:paused}
-@keyframes ypTicker{to{transform:translateX(-50%)}}
+/* Position is driven by JS (initExamTickers' rAF loop) for train-like smooth
+   accel/decel on hover/touch — no CSS keyframe animation here, so there's
+   nothing for animation-play-state to snap when paused/resumed. */
 .ticker-set{display:flex;gap:.75rem;padding-right:.75rem;flex:none}
 .exam-chip{
   display:inline-flex;align-items:center;gap:.55rem;font-size:.9rem;letter-spacing:.02em;
   color:#33415c;background:#fff;border:1px solid var(--line);border-radius:999px;
   padding:.62rem 1.15rem;white-space:nowrap;box-shadow:0 2px 12px rgba(15,23,42,.05);
-  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease
+  transition:transform .15s cubic-bezier(.22,.61,.36,1),box-shadow .15s ease,border-color .15s ease;
+  will-change:transform
 }
-.exam-chip:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(37,99,235,.12);border-color:rgba(37,99,235,.35)}
+.exam-chip:hover{box-shadow:0 6px 18px rgba(37,99,235,.12);border-color:rgba(37,99,235,.35)}
 .exam-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
 .ticker-track.reverse .exam-chip::before{background:#1d4ed8}
 .exam-chip.lead{

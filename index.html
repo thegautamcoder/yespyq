@@ -188,7 +188,7 @@
       "Six exam families: UPSC, JEE, NEET, SSC CGL, Defence, Boards",
       "Subject-wise practice",
       "Answers and explanations",
-      "PYQ Mock Test — custom mocks mixing exams, subjects and years, 10 to 100 questions",
+      "PYQ Mock Test — custom mocks per exam, mixing subjects and years, 5 to 100 questions",
       "Real Exam Mode — timed tests with a question grid and full result report",
       "UPSC interactive quiz",
       "PYQ Pass full access for ₹149/year"
@@ -271,7 +271,7 @@
         <div class="hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
         <div class="container">
           <span class="eyebrow">One site · Every exam</span>
-          <h1>Previous-year questions for every major exam, <em>with answers.</em></h1>
+          <h1>Previous-year questions for every major exam, <em>with answers and solutions.</em></h1>
           <p class="lede">
             <span class="lede-line"><strong>20,000+</strong> authentic PYQs across <strong>UPSC, JEE, NEET, SSC CGL, Defence</strong> and <strong>Boards</strong>.</span>
             <span class="lede-line">Organised by subject, each with the correct option and a clear explanation.</span>
@@ -446,7 +446,7 @@
             <a class="feat-card reveal-land" href="#" data-nav="mock">
               <div class="icon">🧩</div>
               <h3>PYQ Mock Test</h3>
-              <p>Generate unlimited custom mocks by mixing exams, subjects and years — from a quick 10 to a full 100 questions.</p>
+              <p>Generate unlimited custom mocks for one exam at a time, mixing subjects and years — from a quick 5 to a full 100 questions.</p>
             </a>
             <a class="feat-card reveal-land" href="#" data-nav="mock">
               <div class="icon">⏱️</div>
@@ -713,14 +713,15 @@
     <section class="view hidden" id="view-mock">
       <div class="container narrow">
         <h2 class="section-title">PYQ Mock Test</h2>
-        <p class="section-sub">Mix exams, subjects and years into one custom set — from a quick 10 to a full 100.</p>
+        <p class="section-sub">Pick one exam, mix in subjects and years, and build a custom set — from a quick 5 to a full 100.</p>
         <div class="mock-setup">
-          <h3 class="setup-h">Exams</h3>
+          <h3 class="setup-h">Exam <span class="mock-hint">(pick one)</span></h3>
           <div class="mock-exams" id="mock-exams"></div>
           <h3 class="setup-h">Subjects <span class="mock-hint">(optional — leave blank for all)</span></h3>
           <div class="mock-subjects" id="mock-subjects"></div>
           <h3 class="setup-h">How many questions?</h3>
           <div class="mock-counts" id="mock-counts">
+            <button class="rchip" data-mock-count="5">5</button>
             <button class="rchip active" data-mock-count="10">10</button>
             <button class="rchip" data-mock-count="20">20</button>
             <button class="rchip" data-mock-count="30">30</button>
