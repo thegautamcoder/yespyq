@@ -326,7 +326,7 @@
     var bar = document.querySelector(".site-header .header-inner");
     if (!bar || bar.querySelector("[data-unlock='header']")) return;
     var a = document.createElement("a");
-    a.href = "#"; a.className = "btn btn-premium btn-sm"; a.setAttribute("data-unlock", "header");
+    a.href = "/pyq-pass/"; a.className = "btn btn-premium btn-sm"; a.setAttribute("data-unlock", "header");
     a.innerHTML = "PYQ Pass";
     var right = bar.querySelector(".header-right");
     var cta = bar.querySelector(":scope > .btn-primary");
@@ -598,12 +598,33 @@
     if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); closeAcctMenu(); signInWithGoogle(false); return; }
     if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); closeAcctMenu(); startCheckout(); return; }
     var u = e.target.closest("[data-unlock]");
-    if (u) { e.preventDefault(); closeAcctMenu(); track("premium_click", { source: u.dataset.unlock || "cta" }); openUnlock(u.dataset.unlock || "cta"); return; }
+    if (u) {
+      e.preventDefault(); closeAcctMenu();
+      var source = u.dataset.unlock || "cta";
+      // Header "PYQ Pass" button: always land on the dedicated /pyq-pass/
+      // page as the background, then pop the unlock modal on top of it —
+      // rather than opening the modal over whatever page the user is on.
+      if (source === "header" && location.pathname !== "/pyq-pass/") {
+        track("premium_click", { source: source });
+        sessionStorage.setItem("yespyq_autopass_open", "1");
+        location.href = "/pyq-pass/";
+        return;
+      }
+      track("premium_click", { source: source });
+      openUnlock(source);
+      return;
+    }
     if (e.target.closest("[data-pay-signout]")) { e.preventDefault(); closeAcctMenu(); signOut(); return; }
   });
 
   /* ---------- boot ---------- */
-  function boot() { renderChrome(); armTimer(); initSession(); track("page_view", { gated: GATE, paid: _paid }); }
+  function maybeAutoOpenPass() {
+    if (!SHOW || _paid) return;
+    if (sessionStorage.getItem("yespyq_autopass_open") !== "1") return;
+    sessionStorage.removeItem("yespyq_autopass_open");
+    if (location.pathname === "/pyq-pass/") openUnlock("header");
+  }
+  function boot() { renderChrome(); armTimer(); initSession(); track("page_view", { gated: GATE, paid: _paid }); maybeAutoOpenPass(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();
 })();

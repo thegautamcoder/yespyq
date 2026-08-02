@@ -275,6 +275,7 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-adsense-account" content="ca-pub-9837613085159910" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2DK8674FB"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-G2DK8674FB');</script>
   <title>{title}</title>
@@ -296,7 +297,7 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
 {schema_blocks}
 {EXTRA_CSS}
 {extra_head}
-  <script src="/theme.js?v=24"></script>
+  <script src="/theme.js?v=30"></script>
 </head>
 <body>'''
 

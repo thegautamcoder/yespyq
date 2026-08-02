@@ -134,7 +134,7 @@
       var c = document.createElement("script");
       c.id = "pay-config-js"; c.src = "/pay-config.js?v=6";
       c.onload = function () {
-        var m = document.createElement("script"); m.src = "/auth-pay.js?v=27"; m.defer = true;
+        var m = document.createElement("script"); m.src = "/auth-pay.js?v=28"; m.defer = true;
         document.body.appendChild(m);
       };
       document.body.appendChild(c);
