@@ -80,10 +80,14 @@ function subjectCardHTML(s) {
 }
 function renderSubjects() {
   const html = SUBJECTS.map(subjectCardHTML).join("");
-  $("#home-subjects").innerHTML = html; $("#all-subjects").innerHTML = html;
+  const home = $("#home-subjects"), all = $("#all-subjects");
+  if (home) home.innerHTML = html;
+  if (all) all.innerHTML = html;
 }
 function renderYears() {
-  $("#home-years").innerHTML = YEARS.slice(0, 12).map(y =>
+  const el = $("#home-years");
+  if (!el) return;
+  el.innerHTML = YEARS.slice(0, 12).map(y =>
     `<div class="year-card" data-year="${y}"><b>${y}</b><span>${countByYear(y)} questions</span></div>`
   ).join("");
 }
@@ -249,8 +253,48 @@ $("#qlist").addEventListener("click", e => {
   }
 });
 
+/* ---------- exam picker (asked before assuming UPSC) ---------- */
+// Only UPSC has this interactive quiz/practice mode; other exams live as a
+// static question bank at /exams/<exam>/. Ask which exam before jumping in,
+// rather than silently defaulting every "Start Practice" click to UPSC.
+let pendingPickerAction = null;
+function openExamPicker(action) {
+  pendingPickerAction = action;
+  const el = $("#exam-picker");
+  if (!el) return;
+  el.classList.remove("hidden");
+  el.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+function closeExamPicker() {
+  const el = $("#exam-picker");
+  if (!el) return;
+  el.classList.add("hidden");
+  el.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  pendingPickerAction = null;
+}
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !$("#exam-picker")?.classList.contains("hidden")) closeExamPicker();
+});
+
 /* ---------- global click routing ---------- */
 document.addEventListener("click", e => {
+  // ----- exam picker (checked first — decides where quiz/browse CTAs go) -----
+  const picker = e.target.closest("[data-exam-picker]");
+  if (picker) { e.preventDefault(); openExamPicker(picker.dataset.examPicker); return; }
+  if (e.target.closest("[data-picker-close]") || e.target === $("#exam-picker")) {
+    e.preventDefault(); closeExamPicker(); return;
+  }
+  const examTile = e.target.closest("#exam-picker [data-exam]");
+  if (examTile) {
+    e.preventDefault();
+    const action = pendingPickerAction;
+    closeExamPicker();
+    if (action === "quiz") openQuizSetup(); else openBrowse({ subject: null, year: null });
+    return;
+  }
+
   // ----- quiz routing (checked first) -----
   if (e.target.closest("[data-quiz-setup]")) { e.preventDefault(); openQuizSetup(); return; }
   const qStart = e.target.closest("[data-quiz-start]");

@@ -6,7 +6,7 @@
 .tool-wrap.wide{width:min(960px,92vw)}
 
 /* ---------- hero ---------- */
-.tool-hero{background:linear-gradient(160deg,var(--blue-50),#fff 72%);
+.tool-hero{background:linear-gradient(160deg,var(--blue-50),var(--bg) 72%);
   border-bottom:1px solid var(--line);padding:3rem 0 2.4rem}
 .tool-hero .breadcrumb{font-size:.83rem;color:var(--muted);margin-bottom:.9rem}
 .tool-hero .breadcrumb a{color:var(--blue-700);font-weight:500}
@@ -15,7 +15,7 @@
   letter-spacing:-.03em;font-weight:800;margin:.9rem 0 .7rem}
 .tool-hero .lead{color:var(--slate);font-size:1.06rem;max-width:600px}
 .tool-hero .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.3rem}
-.tool-hero .badges span{background:#fff;border:1px solid var(--line);color:var(--slate);
+.tool-hero .badges span{background:var(--card);border:1px solid var(--line);color:var(--slate);
   padding:.35rem .8rem;border-radius:8px;font-size:.82rem;font-weight:600}
 .tool-hero .badges span.ok{background:var(--blue-50);border-color:var(--blue-100);color:var(--blue-700)}
 
@@ -29,8 +29,8 @@
 .tool-card ul{color:var(--slate);line-height:1.8;margin:0 0 1rem 1.2rem}
 .tool-card .muted-note{font-size:.82rem;color:var(--muted);margin-top:.8rem}
 
-/* the interactive panel (form) — light card */
-.tool-panel{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);
+/* the interactive panel (form) — flips with theme like every other card */
+.tool-panel{background:var(--card);border:1.5px solid var(--line);border-radius:var(--radius);
   padding:1.6rem;box-shadow:var(--shadow);margin:1.4rem 0}
 
 /* ---------- form fields ---------- */
@@ -39,7 +39,7 @@
   text-transform:uppercase;letter-spacing:.05em;margin-bottom:.45rem}
 .tool-panel input[type="date"],.tool-panel input[type="number"],
 .tool-panel input[type="text"],.tool-panel select,.tool-panel textarea{
-  width:100%;background:#fff;border:2px solid var(--line);border-radius:12px;
+  width:100%;background:var(--bg);border:2px solid var(--line);border-radius:12px;
   padding:.8rem .9rem;font-size:1rem;font-family:inherit;color:var(--ink);
   outline:none;transition:border-color .15s}
 .tool-panel input:focus,.tool-panel select:focus,.tool-panel textarea:focus{border-color:var(--blue-500)}
@@ -140,3 +140,11 @@
 @media(max-width:520px){
   .stat-grid{grid-template-columns:1fr 1fr}
 }
+
+/* ---------- dark mode ---------- */
+[data-theme="dark"] .dropzone:hover,[data-theme="dark"] .dropzone.drag{
+  background:rgba(37,99,235,.14);color:var(--slate)}
+[data-theme="dark"] .badge-unk{background:rgba(255,255,255,.08)}
+[data-theme="dark"] .infobox.warn{background:rgba(252,211,77,.1);border-color:rgba(252,211,77,.35);color:#fcd34d}
+[data-theme="dark"] .infobox.warn b{color:#fde68a}
+[data-theme="dark"] .tool-links a:hover{background:rgba(37,99,235,.14)}
