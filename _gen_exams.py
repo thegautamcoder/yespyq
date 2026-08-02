@@ -105,7 +105,7 @@ EXAMS = {
         "full": "Defence Exams (Agniveer, AFCAT, Coast Guard & more)",
         "desc": "armed forces recruitment",
         "icon": "🎖️",
-        "gated": False,
+        "gated": True,
         "subjects": {
             "staticgk": ("Static GK", "🌐"),
             "currentaff": ("Current Affairs", "🗞️"),
@@ -121,7 +121,7 @@ EXAMS = {
         "full": "SSC CGL (Combined Graduate Level)",
         "desc": "staff selection commission",
         "icon": "📝",
-        "gated": False,
+        "gated": True,
         "subjects": {
             "english": ("English", "🔤"),
             "history": ("History", "🏛️"),
@@ -237,18 +237,20 @@ EXTRA_CSS = '''  <style>
     .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
-    .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(217,178,74,.5);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
+    .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
     .answer-gate .ag-lock{font-size:1.4rem;flex:none}
     .answer-gate div{flex:1;min-width:0}
     .answer-gate b{display:block;font-size:.92rem}
     .answer-gate p{margin:.15rem 0 0;font-size:.82rem;color:var(--muted)}
     .answer-gate .btn{flex:none}
+    .free-tag{background:var(--good-bg,#dcfce7);color:var(--good,#16a34a);border-radius:6px;
+      padding:.1rem .5rem;font-size:.68rem;font-weight:800;letter-spacing:.04em;margin-left:.4rem}
   </style>'''
 
 KATEX_HEAD = '  <link rel="stylesheet" href="/assets/katex/katex.min.css" />'
 KATEX_SCRIPTS = '''  <script defer src="/assets/katex/katex.min.js"></script>
   <script defer src="/assets/katex/auto-render.min.js"></script>
-  <script defer src="/exam-gate.js?v=2"></script>
+  <script defer src="/exam-gate.js?v=3"></script>
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (window.renderMathInElement) {
@@ -305,12 +307,12 @@ def qslug(x):
     return (x["i"].lower() + "-" + slugify(x["q"]))[:80].rstrip("-")
 
 
-def question_block(x, n, gated):
+def question_block(x, n, gated, free=False):
     html_mode = x.get("fmt") == "html"
     q_html = x["q"] if html_mode else format_body(x["q"], True)
     year_suffix = f' · {x["y"]}' if x.get("y") else ""
 
-    if gated:
+    if gated and not free:
         # SEO: question stem is public. Options + solution stay out of free HTML.
         payload = json.dumps(
             {"o": x["o"], "a": x["a"], "exp": x["exp"], "fmt": x.get("fmt") or ""},
@@ -339,8 +341,9 @@ def question_block(x, n, gated):
     ans_letter = chr(97 + x["a"])
     ans_html = x["o"][x["a"]] if html_mode else esc(x["o"][x["a"]])
     exp_html = x["exp"] if html_mode else format_body(x["exp"], False)
+    free_tag = ' <span class="free-tag">FREE PREVIEW</span>' if (gated and free) else ""
     return f'''    <div class="qblock" id="q{n}">
-      <div class="qnum">Q{n}{year_suffix}</div>
+      <div class="qnum">Q{n}{year_suffix}{free_tag}</div>
       <div class="qtext">{q_html}</div>
       <div class="options qpage-options">{opts}</div>
       <div class="explain" data-exp>
@@ -350,15 +353,24 @@ def question_block(x, n, gated):
     </div>'''
 
 
+FREE_PREVIEW_PCT = 0.10
+
+
+def free_preview_count(n):
+    """At least 1 question free per chapter, ~10% of the rest, deterministic."""
+    return max(1, round(n * FREE_PREVIEW_PCT))
+
+
 def chapter_page(exam, subject, chapter, items):
     ecfg = EXAMS[exam]
     gated = ecfg.get("gated", False)
+    free_n = free_preview_count(len(items)) if gated else len(items)
     sname, sicon = ecfg["subjects"][subject]
     slug = slugify(chapter)
     canonical = f"{BASE}/exams/{exam}/{subject}/{slug}/"
     title = attr(f"{chapter} — {ecfg['name']} {sname} PYQs with Answers | YESPYQ")
     if gated:
-        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter}. Read every question free; unlock options, answers and explanations with PYQ Pass.")
+        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter} — {free_n} fully free, the rest unlock with PYQ Pass.")
     else:
         desc = attr(f"{len(items)} solved {ecfg['name']} {sname} previous year questions on {chapter}, each with the correct answer and explanation. Free practice on YESPYQ.")
 
@@ -377,9 +389,11 @@ def chapter_page(exam, subject, chapter, items):
   {{"@context":"https://schema.org","@type":"ItemList","name":"{attr(chapter)} {ecfg['name']} {sname} PYQs","numberOfItems":{len(items)},"itemListElement":[{item_list}]}}
   </script>'''
 
-    qs_html = "\n".join(question_block(x, i + 1, gated) for i, x in enumerate(items))
+    qs_html = "\n".join(
+        question_block(x, i + 1, gated, free=(i < free_n)) for i, x in enumerate(items)
+    )
 
-    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>. Read every question free; unlock options, answers and explanations with PYQ Pass."
+    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b> — <b>{free_n} fully free</b> to solve, the rest unlock with PYQ Pass."
               if gated else
               f"{len(items)} solved {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>, each with the correct answer and a full explanation.")
 
@@ -452,7 +466,7 @@ def exam_hub(exam, by_subject):
     total = sum(len(v) for v in by_subject.values())
     title = attr(f"{ecfg['full']} PYQs — {total} Solved Previous Year Questions | YESPYQ")
     if gated:
-        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise. Read questions free; options, answers and explanations unlock with PYQ Pass.")
+        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise. Every question free to read, ~10% fully free to solve — the rest unlock with PYQ Pass.")
     else:
         desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
 
@@ -466,7 +480,7 @@ def exam_hub(exam, by_subject):
         label = "PYQs" if gated else "solved PYQs"
         tiles += f'<a class="exam-tile" href="/exams/{exam}/{sid}/"><div class="et-icon">{sicon}</div><h3>{esc(sname)}</h3><p>{n} {label}</p></a>'
 
-    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject. Read questions free; unlock options, answers and explanations with PYQ Pass."
+    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject. Every question free to read, ~10% fully free to solve — unlock the rest with PYQ Pass."
               if gated else
               f"{total} solved previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation.")
 

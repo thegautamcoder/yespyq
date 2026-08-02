@@ -24,6 +24,18 @@
     }
     if (gate) gate.style.display = "none";
     qb.dataset.revealed = "1";
+    // options/explanation are injected after KaTeX's one-time DOMContentLoaded
+    // pass, so this content never got auto-rendered — render it explicitly now.
+    if (window.renderMathInElement) {
+      renderMathInElement(qb, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "\\[", right: "\\]", display: true},
+          {left: "\\(", right: "\\)", display: false}
+        ],
+        throwOnError: false
+      });
+    }
   }
 
   function renderFree(qb) {
