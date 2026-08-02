@@ -19,7 +19,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=66" />
+  <link rel="stylesheet" href="/styles.css?v=71" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Linear Programming","item":"https://yespyq.com/exams/jee/maths/linear-programming/"}]}
@@ -53,7 +53,7 @@
       padding:.1rem .5rem;font-size:.68rem;font-weight:800;letter-spacing:.04em;margin-left:.4rem}
   </style>
   <link rel="stylesheet" href="/assets/katex/katex.min.css" />
-  <script src="/theme.js?v=23"></script>
+  <script src="/theme.js?v=24"></script>
 </head>
 <body>  <header class="site-header">
     <div class="container header-inner">
@@ -61,10 +61,12 @@
       <nav class="main-nav">
         <a href="/">Home</a>
         <a href="/">Practice</a>
+        <a href="/">Smart Mock</a>
         <a href="/exams/" class="active">Exams</a>
         <a href="/blog/">Blog</a>
+        <a href="/pyq-pass/">PYQ Pass</a>
       </nav>
-      <a href="/exams/" class="btn btn-ghost btn-sm">Browse Exams</a>
+      <a href="/" class="btn btn-ghost btn-sm">Start Practice</a>
     </div>
   </header>
   <main>
@@ -79,7 +81,7 @@
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( p=q \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( p=2 q \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( p=3 q \)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\( q=3 p \)</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: d) <p>\( q=3 p \)</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p>As the maximum of \( Z \) occurs at both \( (3,4) \) and \( (0,5) \)</p> <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mo>∴</mo><msub><mi>Z</mi><mfenced><mrow><mn>3</mn><mo>,</mo><mn>4</mn></mrow></mfenced></msub><mo>=</mo><msub><mi>Z</mi><mfenced><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></mfenced></msub><mspace linebreak="newline"></mspace><mo>⇒</mo><mn>3</mn><mi>p</mi><mo>+</mo><mn>4</mn><mi>q</mi><mo>=</mo><mn>5</mn><mi>q</mi><mspace linebreak="newline"></mspace><mo>⇒</mo><mn>3</mn><mi>p</mi><mo>=</mo><mi>q</mi><mspace linebreak="newline"></mspace><mo>⇒</mo><mi>q</mi><mo>=</mo><mn>3</mn><mi>p</mi></math></p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p>As the maximum of \( Z \) occurs at both \( (3,4) \) and \( (0,5) \)</p> <p>\(∴{Z}_{\left(3,4\right)}={Z}_{\left(0,5\right)}\\ \Rightarrow 3p+4q=5q\\ \Rightarrow 3p=q\\ \Rightarrow q=3p\)</p></div>
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
@@ -92,7 +94,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As the maximum of \\( Z \\) occurs at both \\( (3,4) \\) and \\( (0,5) \\)\u003c/p> \u003cp>\u003cmath xmlns=\"http://www.w3.org/1998/Math/MathML\">\u003cmo>∴\u003c/mo>\u003cmsub>\u003cmi>Z\u003c/mi>\u003cmfenced>\u003cmrow>\u003cmn>3\u003c/mn>\u003cmo>,\u003c/mo>\u003cmn>4\u003c/mn>\u003c/mrow>\u003c/mfenced>\u003c/msub>\u003cmo>=\u003c/mo>\u003cmsub>\u003cmi>Z\u003c/mi>\u003cmfenced>\u003cmrow>\u003cmn>0\u003c/mn>\u003cmo>,\u003c/mo>\u003cmn>5\u003c/mn>\u003c/mrow>\u003c/mfenced>\u003c/msub>\u003cmspace linebreak=\"newline\">\u003c/mspace>\u003cmo>⇒\u003c/mo>\u003cmn>3\u003c/mn>\u003cmi>p\u003c/mi>\u003cmo>+\u003c/mo>\u003cmn>4\u003c/mn>\u003cmi>q\u003c/mi>\u003cmo>=\u003c/mo>\u003cmn>5\u003c/mn>\u003cmi>q\u003c/mi>\u003cmspace linebreak=\"newline\">\u003c/mspace>\u003cmo>⇒\u003c/mo>\u003cmn>3\u003c/mn>\u003cmi>p\u003c/mi>\u003cmo>=\u003c/mo>\u003cmi>q\u003c/mi>\u003cmspace linebreak=\"newline\">\u003c/mspace>\u003cmo>⇒\u003c/mo>\u003cmi>q\u003c/mi>\u003cmo>=\u003c/mo>\u003cmn>3\u003c/mn>\u003cmi>p\u003c/mi>\u003c/math>\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As the maximum of \\( Z \\) occurs at both \\( (3,4) \\) and \\( (0,5) \\)\u003c/p> \u003cp>\\(∴{Z}_{\\left(3,4\\right)}={Z}_{\\left(0,5\\right)}\\\\ \\Rightarrow 3p+4q=5q\\\\ \\Rightarrow 3p=q\\\\ \\Rightarrow q=3p\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
       <div class="qnum">Q3</div>

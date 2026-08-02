@@ -28,7 +28,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=68" />
+  <link rel="stylesheet" href="/styles.css?v=71" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -87,7 +87,7 @@
     ]
   }
   </script>
-  <script src="/theme.js?v=20"></script>
+  <script src="/theme.js?v=24"></script>
   <style>
     .pp-page{position:relative}
     .pp-hero{text-align:center;padding:2.4rem 0 .5rem;max-width:760px;margin:0 auto}
@@ -136,17 +136,35 @@
     .pp-feat h3{margin:0 0 .35rem;font-size:1.02rem}
     .pp-feat p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
     [data-theme="dark"] .pp-feat{background:rgba(15,23,42,.55)}
-    .pp-compare{max-width:720px;margin:3rem auto 0;padding:0 1rem}
-    .pp-compare h2{text-align:center;font-size:clamp(1.4rem,3vw,1.85rem);margin:0 0 1rem}
-    .pp-table{
-      width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;
-      border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.8)
+    .pp-compare{max-width:780px;margin:3rem auto 0;padding:0 1rem}
+    .pp-compare h2{text-align:center;font-size:clamp(1.4rem,3vw,1.85rem);margin:0 0 1.6rem}
+    .pp-compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.1rem;align-items:start}
+    .pp-plan{
+      background:rgba(255,255,255,.8);border:1.5px solid var(--line);border-radius:20px;
+      padding:1.5rem 1.4rem;position:relative
     }
-    .pp-table th,.pp-table td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--line)}
-    .pp-table th{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-    .pp-table tr:last-child td{border-bottom:0}
-    .pp-table td:last-child{font-weight:700;color:var(--accent);text-align:right}
-    [data-theme="dark"] .pp-table{background:rgba(15,23,42,.55)}
+    .pp-plan-pass{
+      border-color:var(--accent);background:linear-gradient(165deg,var(--accent-soft),rgba(255,255,255,.85));
+      box-shadow:0 14px 34px rgba(37,99,235,.14)
+    }
+    .pp-plan-badge{
+      position:absolute;top:-.7rem;left:50%;transform:translateX(-50%);
+      background:var(--accent);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.04em;
+      text-transform:uppercase;padding:.3rem .8rem;border-radius:999px;white-space:nowrap
+    }
+    .pp-plan-head{text-align:center;margin-bottom:1.2rem}
+    .pp-plan-head h3{margin:0 0 .3rem;font-size:1.1rem}
+    .pp-plan-price{font-size:1.7rem;font-weight:800;color:var(--ink)}
+    .pp-plan-price span{font-size:.85rem;font-weight:600;color:var(--muted)}
+    .pp-plan-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.65rem}
+    .pp-plan-list li{display:flex;align-items:flex-start;gap:.6rem;font-size:.9rem;line-height:1.4}
+    .pp-plan-list li.yes::before{content:"✓";flex:none;font-weight:800;color:var(--good,#22c55e)}
+    .pp-plan-list li.no::before{content:"✕";flex:none;font-weight:800;color:var(--muted)}
+    .pp-plan-list li.no{color:var(--muted)}
+    .pp-plan-cta{width:100%;margin-top:1.3rem}
+    [data-theme="dark"] .pp-plan{background:rgba(15,23,42,.55)}
+    [data-theme="dark"] .pp-plan-pass{background:linear-gradient(165deg,rgba(37,99,235,.16),rgba(15,23,42,.6))}
+    @media(max-width:640px){.pp-compare-grid{grid-template-columns:1fr}.pp-plan-pass{order:-1}}
     .pp-faq{max-width:680px;margin:3rem auto 3.5rem;padding:0 1rem}
     .pp-faq h2{text-align:center;margin:0 0 1rem;font-size:clamp(1.4rem,3vw,1.85rem)}
     .pp-faq details{
@@ -168,11 +186,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/" aria-label="YESPYQ home">
-        <span class="brand-name">YES<b>PYQ</b></span>
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
       </a>
       <nav class="main-nav" aria-label="Primary">
         <a href="/">Home</a>
-        <a href="/#">Practice</a>
+        <a href="/">Practice</a>
+        <a href="/">Smart Mock</a>
         <a href="/exams/">Exams</a>
         <a href="/blog/">Blog</a>
         <a href="/pyq-pass/" class="active">PYQ Pass</a>
@@ -224,14 +244,14 @@
             <p class="mp-meta">Pay once · Instant unlock</p>
           </div>
           <div class="mp-body">
+            <div class="mp-exams" aria-label="Exams included">
+              <span>UPSC</span><span>JEE</span><span>NEET</span><span>SSC CGL</span><span>Defence</span><span>Boards</span>
+            </div>
             <ul class="mp-list">
-              <li>All PYQs across 6 exam families</li>
-              <li>Answers &amp; explanations on every question</li>
-              <li>Subject-wise practice filters</li>
-              <li>Year filters where available</li>
-              <li>Smart PYQ Mock — mix exams, subjects &amp; years</li>
-              <li>Real Exam Mode — timed tests with full results</li>
-              <li>New PYQs added during your year</li>
+              <li>Every PYQ, every exam</li>
+              <li>Full answers &amp; explanations</li>
+              <li>Smart Mock &amp; Real Exam, 100 Qs</li>
+              <li>New PYQs added free</li>
             </ul>
             <div class="mp-actions">
               <button class="mp-buy" data-unlock="pass-page" type="button">
@@ -264,18 +284,36 @@
 
       <section class="pp-compare">
         <h2>Free practice vs PYQ Pass</h2>
-        <table class="pp-table">
-          <thead>
-            <tr><th>What you get</th><th>With Pass</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Browse PYQs across all exams</td><td>Full access</td></tr>
-            <tr><td>Answers &amp; explanations</td><td>Unlocked</td></tr>
-            <tr><td>UPSC interactive quiz</td><td>Included</td></tr>
-            <tr><td>New questions during your year</td><td>Included</td></tr>
-            <tr><td>Price</td><td>₹149 / year</td></tr>
-          </tbody>
-        </table>
+        <div class="pp-compare-grid">
+          <div class="pp-plan">
+            <div class="pp-plan-head">
+              <h3>Free</h3>
+              <div class="pp-plan-price">₹0</div>
+            </div>
+            <ul class="pp-plan-list">
+              <li class="yes">Every PYQ &amp; its options, all 6 exams</li>
+              <li class="yes">~10% of answers &amp; explanations free</li>
+              <li class="yes">Smart Mock &amp; Real Exam — up to 20 Qs</li>
+              <li class="no">Full answer key &amp; explanation</li>
+              <li class="no">Mocks &amp; exams up to 100 Qs</li>
+            </ul>
+          </div>
+          <div class="pp-plan pp-plan-pass">
+            <div class="pp-plan-badge">Best value</div>
+            <div class="pp-plan-head">
+              <h3>PYQ Pass</h3>
+              <div class="pp-plan-price">₹149<span>/year</span></div>
+            </div>
+            <ul class="pp-plan-list">
+              <li class="yes">Every PYQ &amp; its options, all 6 exams</li>
+              <li class="yes">100% answer key &amp; explanation unlocked</li>
+              <li class="yes">Smart Mock &amp; Real Exam — up to 100 Qs</li>
+              <li class="yes">Unlimited UPSC interactive quiz</li>
+              <li class="yes">New questions added at no extra cost</li>
+            </ul>
+            <button class="btn btn-primary pp-plan-cta" data-unlock="pass-page-compare" type="button">Unlock Pass · ₹149</button>
+          </div>
+        </div>
       </section>
 
       <section class="pp-faq">
@@ -311,7 +349,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a class="brand" href="/" aria-label="YESPYQ home"><span class="brand-name">YES<b>PYQ</b></span></a>
+        <a class="brand" href="/" aria-label="YESPYQ home"><img src="/assets/favicon.svg" alt="" class="brand-mark" /><span class="brand-name">YES<span>PYQ</span></span></a>
         <p>Previous-year questions with answers, for every major exam.</p>
         <a class="footer-social" href="https://www.youtube.com/@YesPYQ.Official" target="_blank" rel="noopener">▶ YouTube</a>
       </div>

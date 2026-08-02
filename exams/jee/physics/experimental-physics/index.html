@@ -19,13 +19,13 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=66" />
+  <link rel="stylesheet" href="/styles.css?v=71" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Experimental Physics","item":"https://yespyq.com/exams/jee/physics/experimental-physics/"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"Experimental Physics JEE Physics PYQs","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"One main scale division of a vernier calipers is ' a ' cm and n th division of the vernier scale coincide with ( n - 1 ) th division of the","url":"https://yespyq.com/exams/jee/physics/experimental-physics/#q1"}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"Experimental Physics JEE Physics PYQs","numberOfItems":1,"itemListElement":[{"@type":"ListItem","position":1,"name":"One main scale division of a vernier calipers is ' a ' cm and \({n}^{\text{th }}\) division of the vernier scale coincide with \((n-1{)}^{\t","url":"https://yespyq.com/exams/jee/physics/experimental-physics/#q1"}]}
   </script>
   <style>
     .exam-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1.6rem 0}
@@ -53,7 +53,7 @@
       padding:.1rem .5rem;font-size:.68rem;font-weight:800;letter-spacing:.04em;margin-left:.4rem}
   </style>
   <link rel="stylesheet" href="/assets/katex/katex.min.css" />
-  <script src="/theme.js?v=23"></script>
+  <script src="/theme.js?v=24"></script>
 </head>
 <body>  <header class="site-header">
     <div class="container header-inner">
@@ -61,10 +61,12 @@
       <nav class="main-nav">
         <a href="/">Home</a>
         <a href="/">Practice</a>
+        <a href="/">Smart Mock</a>
         <a href="/exams/" class="active">Exams</a>
         <a href="/blog/">Blog</a>
+        <a href="/pyq-pass/">PYQ Pass</a>
       </nav>
-      <a href="/exams/" class="btn btn-ghost btn-sm">Browse Exams</a>
+      <a href="/" class="btn btn-ghost btn-sm">Start Practice</a>
     </div>
   </header>
   <main>
@@ -75,10 +77,10 @@
       <p>1 JEE Physics previous year questions on <b>Experimental Physics</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
       <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
-      <div class="qtext"><p>One main scale division of a vernier calipers is ' a ' cm and <math xmlns="http://www.w3.org/1998/Math/MathML"><msup><mi>n</mi><mtext>th </mtext></msup></math> division of the vernier scale coincide with <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><msup><mo>)</mo><mtext>th </mtext></msup></math> division of the main scale. The least count of the calipers (in mm ) is:</p></div>
-      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10</mn><mi>n</mi><mi>a</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></math></p></span></div><div class="option"><span class="key">b</span><span><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10</mn><mi>a</mi></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></math></p></span></div><div class="option correct"><span class="key">c</span><span><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10</mn><mi>a</mi></mrow><mi>n</mi></mfrac></math></p></span></div><div class="option"><span class="key">d</span><span><p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfenced><mfrac><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mrow><mn>10</mn><mi>n</mi></mrow></mfrac></mfenced><mi>a</mi></math></p></span></div></div>
+      <div class="qtext"><p>One main scale division of a vernier calipers is ' a ' cm and \({n}^{\text{th }}\) division of the vernier scale coincide with \((n-1{)}^{\text{th }}\) division of the main scale. The least count of the calipers (in mm ) is:</p></div>
+      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{10na}{n-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{10a}{n-1}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{10a}{n}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left(\frac{n-1}{10n}\right)a\)</p></span></div></div>
       <div class="explain" data-exp>
-        <div class="verdict ok">✓ Correct answer: c) <p><math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mn>10</mn><mi>a</mi></mrow><mi>n</mi></mfrac></math></p></div>
+        <div class="verdict ok">✓ Correct answer: c) <p>\(\frac{10a}{n}\)</p></div>
         <div class="exp-body"><span class="lbl">Explanation</span><p>\[<br/>(n-1) M S D=n V S D \Rightarrow V S D=\frac{n-1}{n}(M S D)<br/>\]</p> <p>Now, L.C \(=[1 \mathrm{MSD}-1 \mathrm{VSD}] \mathrm{cm}\)<br/>\[<br/>\begin{aligned}<br/>&amp; =a-\frac{n-1}{n} a=\frac{a}{n} \mathrm{~cm} \\<br/>&amp; =\left(\frac{10 a}{n}\right) \mathrm{mm}<br/>\end{aligned}<br/>\]</p></div>
       </div>
     </div>

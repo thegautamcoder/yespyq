@@ -210,6 +210,14 @@ button.exam-tile-card{display:block;width:100%;text-align:left;font-family:inher
 .qtag{font-size:.72rem;font-weight:600;background:var(--blue-50);color:var(--blue-700);
   padding:.22rem .6rem;border-radius:999px}
 .qtext{font-size:1.12rem;font-weight:600;line-height:1.55;margin-bottom:1.3rem}
+/* Some imported questions carry native MathML (<math>...</math>) instead of
+   KaTeX/LaTeX. Left alone, browsers render it in a serif math font at a
+   different baseline than the surrounding sans-serif text — it reads as a
+   rendering glitch. Force it to match the body type so it blends in. */
+math{font-family:inherit;font-size:1em;line-height:inherit}
+mfrac{vertical-align:-.35em;padding:0 .1em}
+msup,msub{font-size:.92em}
+
 /* readable spacing for run-on questions & explanations */
 .bline{display:block}
 .bline + .bline{margin-top:.55rem}
@@ -1189,7 +1197,7 @@ body.nav-open{overflow:hidden}
     linear-gradient(160deg,#0b1220 0%,#111827 50%,#0b1220 100%);
 }
 
-.exams-hero{padding:5rem 0 .75rem;text-align:center}
+.exams-hero{padding:5rem 0 .75rem;text-align:center;position:relative;overflow:hidden}
 .exams-hero .eyebrow{justify-content:center;margin-bottom:1.35rem}
 .exams-hero h1{
   font-size:clamp(2.5rem,5.6vw,4.25rem);line-height:1.08;letter-spacing:.3px;

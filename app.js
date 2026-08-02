@@ -814,6 +814,7 @@ function renderReview() {
    run it as a practice quiz or a timed exam.
    ============================================================ */
 const mockState = { exams: new Set(["upsc"]), subjects: new Set(), count: 10, mode: "practice" };
+const MOCK_FREE_CAP = 20; // unpaid users can try any mix, capped at 20 questions — never blocked outright
 
 function mockSubjectOptions() {
   // de-duped by display name, so "Physics" in JEE/NEET/Board is one chip
@@ -845,10 +846,15 @@ async function renderMockSetup() {
   $("#mock-pool-note").textContent = "Checking how many questions match…";
   try {
     const pool = await buildMockPool();
-    const n = Math.min(mockState.count, pool.length);
-    $("#mock-pool-note").textContent = pool.length
-      ? `${pool.length.toLocaleString()} questions match — mock will use ${n}.`
-      : "No free-preview questions match this combination yet. Try another exam or subject.";
+    const paid = !window.PAY || PAY.isPaid();
+    const n = Math.min(paid ? mockState.count : Math.min(mockState.count, MOCK_FREE_CAP), pool.length);
+    if (!pool.length) {
+      $("#mock-pool-note").textContent = "No free-preview questions match this combination yet. Try another exam or subject.";
+    } else if (!paid && mockState.count > MOCK_FREE_CAP) {
+      $("#mock-pool-note").textContent = `${pool.length.toLocaleString()} questions match — free preview uses ${n}. Unlock PYQ Pass for the full ${Math.min(mockState.count, pool.length)}.`;
+    } else {
+      $("#mock-pool-note").textContent = `${pool.length.toLocaleString()} questions match — mock will use ${n}.`;
+    }
     $("#mock-generate").disabled = pool.length === 0;
   } catch (err) {
     console.error(err);
@@ -877,8 +883,6 @@ async function buildMockPool() {
 }
 
 function startCustomMock(queue, label) {
-  if (!quizAllowed()) { if (window.PAY && PAY.track) PAY.track("quiz_limit_hit", {}); if (window.PAY) PAY.openUnlock("quiz"); return; }
-  noteQuizStart();
   quiz = {
     queue, idx: 0, correct: 0, total: queue.length, xp: 0, combo: 0, bestCombo: 0, results: [],
     subject: null, year: null, label,
@@ -893,7 +897,9 @@ async function generateMock() {
   try {
     const pool = await buildMockPool();
     if (!pool.length) { $("#mock-pool-note").textContent = "No questions match — try another combination."; return; }
-    const queue = shuffle(pool.slice()).slice(0, Math.min(mockState.count, pool.length));
+    const paid = !window.PAY || PAY.isPaid();
+    const size = Math.min(paid ? mockState.count : Math.min(mockState.count, MOCK_FREE_CAP), pool.length);
+    const queue = shuffle(pool.slice()).slice(0, size);
     const label = `Smart Mock · ${[...mockState.exams].map(id => (EXAM_META[id] || {}).name).join(" + ")}`;
     if (mockState.mode === "exam") startExamMode(queue, label);
     else startCustomMock(queue, label);
@@ -911,8 +917,6 @@ const EXAM_MIN_SEC = 10 * 60, EXAM_MAX_SEC = 90 * 60;
 let examState = null;
 
 function startExamMode(queue, label) {
-  if (!quizAllowed()) { if (window.PAY && PAY.track) PAY.track("quiz_limit_hit", {}); if (window.PAY) PAY.openUnlock("quiz"); return; }
-  noteQuizStart();
   const totalSec = Math.min(EXAM_MAX_SEC, Math.max(EXAM_MIN_SEC, queue.length * SEC_PER_Q));
   examState = {
     queue, idx: 0, total: queue.length, label,

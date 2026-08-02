@@ -62,7 +62,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
   <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css?v=70" />
+  <link rel="stylesheet" href="styles.css?v=71" />
 
   <!-- Structured data: WebSite + WebPage + Organization -->
   <script type="application/ld+json">
@@ -211,7 +211,7 @@
     "audience": { "@type": "EducationalAudience", "educationalRole": "Exam aspirant" }
   }
   </script>
-  <script src="/theme.js?v=20"></script>
+  <script src="/theme.js?v=24"></script>
 </head>
 <body>
   <div class="sky" aria-hidden="true"></div>
@@ -220,7 +220,8 @@
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#" data-nav="home" aria-label="YESPYQ home">
-        <span class="brand-name">YES<b>PYQ</b></span>
+        <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+        <span class="brand-name">YES<span>PYQ</span></span>
       </a>
       <nav class="main-nav" aria-label="Primary">
         <a href="#" data-nav="home" class="active">Home</a>
@@ -260,6 +261,7 @@
 
       <!-- First viewport: exams hero -->
       <section class="exams-hero">
+        <div class="hero-bg" aria-hidden="true"><span></span><span></span><span></span></div>
         <div class="container">
           <span class="eyebrow">One site · Every exam</span>
           <h1>Previous-year questions for every major exam, <em>with answers.</em></h1>
@@ -463,13 +465,14 @@
               <p class="mp-meta">Pay once · Instant unlock</p>
             </div>
             <div class="mp-body">
+              <div class="mp-exams" aria-label="Exams included">
+                <span>UPSC</span><span>JEE</span><span>NEET</span><span>SSC CGL</span><span>Defence</span><span>Boards</span>
+              </div>
               <ul class="mp-list">
-                <li>All PYQs across 6 exam families</li>
-                <li>Answers &amp; explanations on every question</li>
-                <li>Subject-wise practice filters</li>
-                <li>Year filters where available</li>
-                <li>UPSC interactive quiz mode</li>
-                <li>New PYQs added during your year</li>
+                <li>Every PYQ, every exam</li>
+                <li>Full answers &amp; explanations</li>
+                <li>Smart Mock &amp; Real Exam, 100 Qs</li>
+                <li>New PYQs added free</li>
               </ul>
               <div class="mp-actions">
                 <button class="mp-buy" data-unlock="home-pass" type="button">
@@ -577,7 +580,8 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <a class="brand" href="#" data-nav="home" aria-label="YESPYQ home">
-          <span class="brand-name">YES<b>PYQ</b></span>
+          <img src="/assets/favicon.svg" alt="" class="brand-mark" />
+          <span class="brand-name">YES<span>PYQ</span></span>
         </a>
         <p>Previous-year questions with answers, for every major exam.</p>
         <a class="footer-social" href="https://www.youtube.com/@YesPYQ.Official" target="_blank" rel="noopener">▶ YouTube</a>

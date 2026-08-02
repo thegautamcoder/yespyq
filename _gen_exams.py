@@ -200,10 +200,12 @@ HEADER = '''  <header class="site-header">
       <nav class="main-nav">
         <a href="/">Home</a>
         <a href="/">Practice</a>
+        <a href="/">Smart Mock</a>
         <a href="/exams/" class="active">Exams</a>
         <a href="/blog/">Blog</a>
+        <a href="/pyq-pass/">PYQ Pass</a>
       </nav>
-      <a href="/exams/" class="btn btn-ghost btn-sm">Browse Exams</a>
+      <a href="/" class="btn btn-ghost btn-sm">Start Practice</a>
     </div>
   </header>'''
 
@@ -289,12 +291,12 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=66" />
+  <link rel="stylesheet" href="/styles.css?v=71" />
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 {EXTRA_CSS}
 {extra_head}
-  <script src="/theme.js?v=23"></script>
+  <script src="/theme.js?v=24"></script>
 </head>
 <body>'''
 
