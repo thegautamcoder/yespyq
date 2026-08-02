@@ -52,10 +52,12 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="manifest.webmanifest" />
 
-  <!-- Perf hints -->
-  <link rel="preload" href="assets/Next_Sunday.ttf" as="font" type="font/ttf" crossorigin />
+  <!-- Perf hints + licensed display font (Fredoka / SIL OFL — not NextSunday) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css?v=49" />
+  <link rel="stylesheet" href="styles.css?v=50" />
 
   <!-- Structured data: Organization + WebSite + EducationalOrganization -->
   <script type="application/ld+json">
@@ -168,13 +170,12 @@
     "inLanguage": "en-IN",
     "description": "YESPYQ is a web app to practise previous year questions (PYQs) across UPSC, JEE, NEET, SSC CGL, Defence exams and Boards. Over 12,000 authentic PYQs from past years, organised subject-wise and year-wise, each with the correct answer and a detailed explanation, plus a one-question-at-a-time quiz mode with XP and streaks.",
     "featureList": [
-      "12,000+ authentic previous year questions (PYQs) across UPSC, JEE, NEET, SSC CGL, Defence exams and Boards",
+      "12,000+ previous year questions across UPSC, JEE, NEET, SSC CGL, Defence exams and Boards",
       "Subject-wise practice across every exam",
-      "Year-wise practice across three decades of UPSC Prelims",
-      "Instant answer keys with detailed explanations for every question",
-      "10-question quiz mode with XP, combos and daily streaks",
-      "Dark mode and mobile-friendly PWA",
-      "Free to practice; PYQ Pass unlocks everything for ₹149 a year"
+      "Year-wise practice for UPSC Prelims",
+      "Answer keys with explanations for every question",
+      "Interactive UPSC quiz mode",
+      "Free practice to start; PYQ Pass unlocks the full banks for ₹149 a year"
     ],
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "availability": "https://schema.org/InStock" },
     "isAccessibleForFree": true,
@@ -231,14 +232,14 @@
     <!-- HOME VIEW -->
     <section class="view" id="view-home">
 
-      <!-- First viewport: Instapyq-style exams hero -->
+      <!-- First viewport: exams hero -->
       <section class="exams-hero">
         <div class="container">
           <span class="eyebrow">One site. Every exam.</span>
-          <h1>Every UPSC, JEE, NEET &amp; Board PYQ, <em>at your fingertips.</em></h1>
+          <h1>Previous year questions for UPSC, JEE, NEET &amp; more, <em>with answers.</em></h1>
           <p class="lede">
-            Decades of authentic previous-year questions from <strong>UPSC, JEE, NEET, SSC CGL, Defence</strong>
-            and <strong>Boards</strong> — neatly divided subject-wise and year-wise, each with the correct
+            Authentic PYQs from <strong>UPSC, JEE, NEET, SSC CGL, Defence</strong>
+            and <strong>Boards</strong> — organised subject-wise, each with the correct
             answer and a clear explanation. Practise free, or unlock everything with PYQ Pass.
           </p>
           <div class="stat-row">
@@ -248,7 +249,7 @@
             </div>
             <div class="stat">
               <div class="num">6</div>
-              <div class="cap">Major exam families</div>
+              <div class="cap">Exam families</div>
             </div>
             <div class="stat">
               <div class="num"><span id="stat-y">30</span></div>
@@ -267,7 +268,6 @@
               <span class="exam-chip">SSC CGL</span>
               <span class="exam-chip">Defence</span>
               <span class="exam-chip">Board Exams</span>
-              <span class="exam-chip soon">More coming soon</span>
             </div>
             <div class="ticker-set" aria-hidden="true">
               <span class="exam-chip lead">Exams</span>
@@ -277,34 +277,33 @@
               <span class="exam-chip">SSC CGL</span>
               <span class="exam-chip">Defence</span>
               <span class="exam-chip">Board Exams</span>
-              <span class="exam-chip soon">More coming soon</span>
             </div>
           </div>
           <div class="ticker-track reverse">
             <div class="ticker-set">
               <span class="exam-chip lead">UPSC subjects</span>
-              <span class="exam-chip">Indian Polity</span>
-              <span class="exam-chip">Indian Economy</span>
-              <span class="exam-chip">History</span>
+              <span class="exam-chip">Polity &amp; Governance</span>
+              <span class="exam-chip">History &amp; Culture</span>
               <span class="exam-chip">Geography</span>
-              <span class="exam-chip">Environment</span>
+              <span class="exam-chip">Economy</span>
+              <span class="exam-chip">Environment &amp; Ecology</span>
               <span class="exam-chip">Science &amp; Tech</span>
               <span class="exam-chip">Current Affairs</span>
             </div>
             <div class="ticker-set" aria-hidden="true">
               <span class="exam-chip lead">UPSC subjects</span>
-              <span class="exam-chip">Indian Polity</span>
-              <span class="exam-chip">Indian Economy</span>
-              <span class="exam-chip">History</span>
+              <span class="exam-chip">Polity &amp; Governance</span>
+              <span class="exam-chip">History &amp; Culture</span>
               <span class="exam-chip">Geography</span>
-              <span class="exam-chip">Environment</span>
+              <span class="exam-chip">Economy</span>
+              <span class="exam-chip">Environment &amp; Ecology</span>
               <span class="exam-chip">Science &amp; Tech</span>
               <span class="exam-chip">Current Affairs</span>
             </div>
           </div>
           <div class="ticker-track subjects">
             <div class="ticker-set">
-              <span class="exam-chip lead">Entrance &amp; Boards</span>
+              <span class="exam-chip lead">Other exams</span>
               <span class="exam-chip">Physics</span>
               <span class="exam-chip">Chemistry</span>
               <span class="exam-chip">Biology</span>
@@ -315,7 +314,7 @@
               <span class="exam-chip">Static GK</span>
             </div>
             <div class="ticker-set" aria-hidden="true">
-              <span class="exam-chip lead">Entrance &amp; Boards</span>
+              <span class="exam-chip lead">Other exams</span>
               <span class="exam-chip">Physics</span>
               <span class="exam-chip">Chemistry</span>
               <span class="exam-chip">Biology</span>
@@ -329,37 +328,38 @@
         </div>
       </section>
 
-      <!-- Practice hero + live quiz demo -->
+      <!-- Practice hero + UPSC quiz demo -->
       <section class="hero land-hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="eyebrow">Interactive practice</span>
-            <h2 class="hero-headline">One question at a time. <em>Instant answers.</em> Clear explanations.</h2>
+            <span class="eyebrow">Practice on YESPYQ</span>
+            <h2 class="hero-headline">Browse solved PYQs. <em>Or take a UPSC quiz.</em></h2>
             <p class="hero-sub">
-              Jump into a short quiz or browse the full bank. YESPYQ keeps practice focused —
-              <strong>pick an answer, see why it is right or wrong</strong>, then keep your streak going.
+              Open any exam’s question bank with answers and explanations.
+              For UPSC Prelims, start a short interactive quiz —
+              <strong>pick an answer and see why it is right or wrong.</strong>
             </p>
             <div class="hero-ctas">
-              <button class="btn btn-primary btn-lg" data-exam-picker="quiz">Start a 10-question quiz</button>
-              <a href="#" class="btn btn-ghost btn-lg" data-exam-picker="browse">Browse all PYQs</a>
+              <button class="btn btn-primary btn-lg" data-exam-picker="quiz">Start practising</button>
+              <a href="#" class="btn btn-ghost btn-lg" data-exam-picker="browse">Browse PYQs</a>
             </div>
             <div class="hero-notes">
-              <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Free daily practice</span>
-              <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Subject-wise &amp; year-wise</span>
-              <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>PYQ Pass from ₹149/year</span>
+              <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Free practice to start</span>
+              <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>Subject-wise banks</span>
+              <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5 10 18 20 6"/></svg>PYQ Pass · ₹149/year</span>
             </div>
           </div>
 
           <div class="phone-stage" aria-hidden="false">
             <div class="phone-float">
-              <div class="phone" role="img" aria-label="YESPYQ quiz demo: a UPSC question lights up the correct option, then an explanation slides up">
+              <div class="phone" role="img" aria-label="YESPYQ UPSC quiz demo: the correct option lights up, then an explanation slides up">
                 <div class="notch" aria-hidden="true"></div>
                 <div class="screen">
                   <div class="app-bar">
                     <div class="paper"><small>UPSC Prelims 2020</small>Indian Polity</div>
                     <span class="timer-chip">Q 4 / 10</span>
                   </div>
-                  <p class="q-count">Quick quiz</p>
+                  <p class="q-count">UPSC quiz</p>
                   <p class="q-text">Which of the following is NOT a Fundamental Duty under the Indian Constitution?</p>
                   <div class="opts">
                     <div class="opt">
@@ -392,47 +392,47 @@
             </div>
           </div>
         </div>
-        <p class="demo-caption container">Instant feedback in quiz mode — answer, learn, keep your streak.</p>
+        <p class="demo-caption container">UPSC quiz mode — answer, see the explanation, move on.</p>
       </section>
 
-      <!-- Practice system features -->
+      <!-- What YESPYQ actually offers -->
       <section class="land-section">
         <div class="container">
           <div class="section-head reveal-land">
-            <span class="eyebrow">Everything in one place</span>
-            <h2>A focused PYQ practice system</h2>
-            <p>Built around authentic previous-year questions — not another unsorted dump.</p>
+            <span class="eyebrow">What you get</span>
+            <h2>A focused PYQ practice site</h2>
+            <p>Previous-year questions with answers and explanations — nothing else dressed up as a feature.</p>
           </div>
           <div class="feat-grid">
             <article class="feat-card reveal-land">
               <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zm0 0a2 2 0 0 0 2 2h13"/><path d="M9 7h6M9 11h4"/></svg></span>
               <h3>12,000+ real PYQs</h3>
-              <p>UPSC, JEE, NEET, SSC CGL, Defence and Boards — authentic previous-year questions with answer keys.</p>
+              <p>UPSC, JEE, NEET, SSC CGL, Defence and Boards — previous-year questions with answer keys.</p>
             </article>
             <article class="feat-card reveal-land">
               <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h14"/></svg></span>
-              <h3>Subject-wise practice</h3>
-              <p>Drill Polity, Physics, Biology, Reasoning and more — focus the weak spots without noise.</p>
+              <h3>Subject-wise banks</h3>
+              <p>Browse by subject for each exam — Polity, Physics, Biology, Reasoning and more.</p>
             </article>
             <article class="feat-card reveal-land">
               <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-              <h3>Year-wise filters</h3>
-              <p>Walk through three decades of UPSC Prelims year by year, or jump straight to a recent paper.</p>
+              <h3>UPSC year-wise practice</h3>
+              <p>Filter UPSC Prelims by exam year across three decades of papers.</p>
             </article>
             <article class="feat-card reveal-land">
               <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/></svg></span>
-              <h3>Explanations that teach</h3>
-              <p>Every question ships with a clear explanation so you learn the concept, not just the letter.</p>
+              <h3>Answers &amp; explanations</h3>
+              <p>Every question includes the correct option and a clear explanation.</p>
             </article>
             <article class="feat-card reveal-land">
-              <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c1 4-4 5.5-4 9.5a4.5 4.5 0 0 0 9 .5c2 1 3-1 2.5-3 3 3.5 2.5 9-1.5 11.5A8.5 8.5 0 0 1 5 15C5 8 12 7 12 2z"/></svg></span>
-              <h3>Quizzes with XP &amp; streaks</h3>
-              <p>Ten-question rounds with combos, XP and daily streaks — keep the habit without burnout.</p>
+              <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <h3>UPSC interactive quiz</h3>
+              <p>Ten-question UPSC rounds with instant feedback. Other exams open as solved banks.</p>
             </article>
             <article class="feat-card reveal-land">
               <span class="icon" aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
               <h3>PYQ Pass · ₹149/year</h3>
-              <p>One payment unlocks the full bank, every explanation and unlimited quizzes for a full year.</p>
+              <p>One payment unlocks the full question bank and explanations across every exam on YESPYQ.</p>
             </article>
           </div>
         </div>
@@ -444,10 +444,10 @@
           <div class="section-head reveal-land">
             <span class="eyebrow">Browse by exam</span>
             <h2>Explore PYQs by exam</h2>
-            <p>Pick any exam to open its solved previous-year question bank.</p>
+            <p>Pick an exam to open its previous-year question bank.</p>
           </div>
           <div class="exam-grid">
-            <a class="exam-tile-card" href="/pyq/"><h3>UPSC (CSE Prelims)</h3><p>Civil Services Prelims PYQs</p><span class="count">2,237 questions</span></a>
+            <a class="exam-tile-card" href="/pyq/"><h3>UPSC (CSE Prelims)</h3><p>Civil Services Prelims PYQs + quiz</p><span class="count">2,237 questions</span></a>
             <a class="exam-tile-card" href="/exams/jee/"><h3>JEE (Main &amp; Advanced)</h3><p>Engineering entrance PYQs</p><span class="count">3,975 questions</span></a>
             <a class="exam-tile-card" href="/exams/ssc-cgl/"><h3>SSC CGL</h3><p>Staff Selection Commission PYQs</p><span class="count">2,339 questions</span></a>
             <a class="exam-tile-card" href="/exams/neet/"><h3>NEET-UG</h3><p>Medical entrance PYQs</p><span class="count">1,069 questions</span></a>
@@ -457,33 +457,15 @@
         </div>
       </section>
 
-      <!-- Extra chips -->
-      <section class="land-section more-band">
-        <div class="container reveal-land">
-          <span class="eyebrow" style="justify-content:center">And it keeps going</span>
-          <h2>Also on YESPYQ</h2>
-          <div class="chips">
-            <a class="chip" href="/guides/">Guides &amp; exam explainers</a>
-            <a class="chip" href="/tools/">Photo &amp; document tools</a>
-            <a class="chip" href="/age-calculator/">Age calculators</a>
-            <a class="chip" href="/marks-calculator/">Marks calculator</a>
-            <a class="chip" href="/blog/">Blog for aspirants</a>
-            <a class="chip" href="#" data-exam-picker="quiz">Free daily quiz</a>
-            <a class="chip" href="https://www.youtube.com/@YesPYQ.Official" target="_blank" rel="noopener">YouTube explainers</a>
-            <span class="chip">Dark mode PWA</span>
-          </div>
-        </div>
-      </section>
-
       <!-- PYQ Pass CTA -->
       <section class="cta-band">
         <div class="container reveal-land">
           <span class="live-pill"><i aria-hidden="true"></i>PYQ Pass</span>
           <h2>Unlock every PYQ for a year.</h2>
-          <p>One pass covers UPSC, JEE, NEET, SSC CGL, Defence and Boards — every answer, every explanation, unlimited quizzes. ₹149 once, not a subscription.</p>
+          <p>One pass covers UPSC, JEE, NEET, SSC CGL, Defence and Boards — full banks with answers and explanations. ₹149 once, not a subscription.</p>
           <div class="cta-actions">
             <a href="/pyq-pass/" class="btn btn-primary btn-lg">Get PYQ Pass · ₹149</a>
-            <button class="btn btn-ghost btn-lg" data-exam-picker="quiz">Try a free quiz first</button>
+            <button class="btn btn-ghost btn-lg" data-exam-picker="quiz">Try free practice first</button>
           </div>
         </div>
       </section>
