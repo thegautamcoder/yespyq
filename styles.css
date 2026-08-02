@@ -1310,28 +1310,29 @@ a.chip:hover{border-color:rgba(37,99,235,.45);color:var(--accent);transform:tran
 .pass-float{
   --a:0;
   position:absolute;left:50%;top:50%;
-  width:46px;height:46px;margin:-23px;border-radius:14px;
+  width:48px;height:48px;margin:-24px;border-radius:15px;
   display:grid;place-items:center;color:#fff;
   background:linear-gradient(145deg,#3b82f6,#1d4ed8);
-  box-shadow:0 12px 28px rgba(37,99,235,.28),0 0 0 1px rgba(255,255,255,.18) inset;
+  box-shadow:0 14px 32px rgba(37,99,235,.34),0 0 0 1px rgba(255,255,255,.22) inset;
   animation:passOrbit 18s linear infinite;
-  animation-delay:calc(var(--a) * -3s)
+  animation-delay:calc(var(--a) * -3s);
+  z-index:2
 }
 .pass-float svg{width:20px;height:20px}
-.pass-float:nth-child(odd){width:40px;height:40px;margin:-20px;border-radius:12px}
+.pass-float:nth-child(odd){width:42px;height:42px;margin:-21px;border-radius:13px}
 .pass-float:nth-child(3),.pass-float:nth-child(5){
   background:linear-gradient(145deg,#60a5fa,#2563eb)
 }
 @keyframes passOrbit{
-  from{transform:rotate(calc(var(--a) * 60deg)) translateX(min(38vw,280px)) rotate(calc(var(--a) * -60deg))}
-  to{transform:rotate(calc(var(--a) * 60deg + 360deg)) translateX(min(38vw,280px)) rotate(calc(var(--a) * -60deg - 360deg))}
+  from{transform:rotate(calc(var(--a) * 60deg)) translateX(min(46vw,390px)) rotate(calc(var(--a) * -60deg))}
+  to{transform:rotate(calc(var(--a) * 60deg + 360deg)) translateX(min(46vw,390px)) rotate(calc(var(--a) * -60deg - 360deg))}
 }
 .pass-card{
   position:relative;z-index:1;overflow:hidden;
   max-width:640px;margin:0 auto;padding:2.6rem 2rem 2.35rem;
   border-radius:28px;border:1px solid rgba(37,99,235,.22);
   background:
-    linear-gradient(165deg,rgba(255,255,255,.94),rgba(239,246,255,.9) 55%,rgba(255,255,255,.92));
+    linear-gradient(165deg,rgba(255,255,255,.96),rgba(239,246,255,.94) 55%,rgba(255,255,255,.96));
   box-shadow:
     0 30px 80px rgba(37,99,235,.14),
     0 8px 24px rgba(15,23,42,.06),
@@ -1434,13 +1435,12 @@ a.chip:hover{border-color:rgba(37,99,235,.45);color:var(--accent);transform:tran
   .hero-ctas,.hero-notes{justify-content:center}
   .feat-grid{grid-template-columns:repeat(2,1fr)}
   .exams-hero{padding-top:3.2rem}
-  .pass-float{opacity:.55}
   .pass-orbit{
-    position:relative;height:52px;margin:0 auto 1.25rem;max-width:320px;
+    position:relative;height:52px;margin:0 auto 1.25rem;max-width:340px;
     display:flex;justify-content:center;gap:.55rem;align-items:center
   }
   .pass-float{
-    position:static;left:auto;top:auto;margin:0;
+    position:static;left:auto;top:auto;margin:0;opacity:1;z-index:2;
     animation:passBob 3.2s ease-in-out infinite;
     animation-delay:calc(var(--a) * .35s);
     width:38px;height:38px;border-radius:11px
