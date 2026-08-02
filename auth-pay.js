@@ -362,7 +362,7 @@
   function nudgeHTML() {
     if (_paid || !SHOW) return "";
     return '<div class="sol-nudge">' +
-      '<span class="sn-t">Liked this explanation? <b>19,500+ more</b>, every one solved.</span>' +
+      '<span class="sn-t">Liked this explanation? <b>20,000+ more</b>, every one solved.</span>' +
       '<button class="sn-cta" data-unlock="solution">Get PYQ Pass · ' + (cfg.PRICE_LABEL || "₹149") + '</button>' +
     '</div>';
   }
@@ -490,7 +490,7 @@
         '<span>UPSC</span><span>JEE</span><span>NEET</span><span>SSC CGL</span><span>Defence</span><span>Boards</span>' +
       '</div>',
       '<ul class="unlock-feats">',
-      '<li><span class="uf-ck">✓</span>19,500+ PYQs, every one explained</li>',
+      '<li><span class="uf-ck">✓</span>20,000+ PYQs, every one explained</li>',
       '<li><span class="uf-ck">✓</span>Unlimited quizzes, all subjects &amp; years</li>',
       '<li><span class="uf-ck">✓</span>New questions added at no extra cost</li>',
     '</ul>'].join("");

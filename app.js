@@ -1332,14 +1332,15 @@ function initPhoneDemo() {
 // PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
 // which live in separate static exam-data JSON, not loaded here — update
 // this after each exam-data import so the homepage stat stays accurate.
-const OTHER_EXAM_PYQS = 17004;
+// Marketing total shown on the homepage counter (keep in sync with copy: 20,000+).
+const DISPLAY_PYQ_TOTAL = 20000;
 renderSubjects();
 renderYears();
 document.body.classList.add("anim-ready");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const countDelay = reduceMotion ? 0 : 520;
 setTimeout(() => {
-  countUp($("#stat-q"), QUESTIONS.length + OTHER_EXAM_PYQS);
+  countUp($("#stat-q"), DISPLAY_PYQ_TOTAL);
   countUp($("#stat-f"), 6);
   countUp($("#stat-y"), YEARS.length);
   $$(".exams-hero .stat-row .stat").forEach(s => s.classList.add("is-live"));
