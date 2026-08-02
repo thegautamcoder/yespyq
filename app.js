@@ -3,6 +3,46 @@
 const $  = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
+/* JEE/NEET/Board content carries LaTeX (\(...\) / \[...\]); KaTeX is
+   loaded lazily (see loadKatex()) the first time any such content is
+   about to render, then re-run on every dynamic re-render. */
+let katexLoading = null;
+function loadKatex() {
+  if (window.renderMathInElement) return Promise.resolve();
+  if (katexLoading) return katexLoading;
+  const css = document.createElement("link");
+  css.rel = "stylesheet"; css.href = "/assets/katex/katex.min.css";
+  document.head.appendChild(css);
+  katexLoading = new Promise(resolve => {
+    const s1 = document.createElement("script");
+    s1.src = "/assets/katex/katex.min.js";
+    s1.onload = () => {
+      const s2 = document.createElement("script");
+      s2.src = "/assets/katex/auto-render.min.js";
+      s2.onload = resolve;
+      s2.onerror = resolve;
+      document.head.appendChild(s2);
+    };
+    s1.onerror = resolve;
+    document.head.appendChild(s1);
+  });
+  return katexLoading;
+}
+function renderMath(el) {
+  if (!el) return;
+  loadKatex().then(() => {
+    if (!window.renderMathInElement) return;
+    renderMathInElement(el, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "\\[", right: "\\]", display: true },
+        { left: "\\(", right: "\\)", display: false }
+      ],
+      throwOnError: false
+    });
+  });
+}
+
 /* ---------- multi-exam banks ---------- */
 const UPSC_SUBJECTS = SUBJECTS.slice();
 const UPSC_QUESTIONS = QUESTIONS.slice();
@@ -105,6 +145,22 @@ function normalizeExamQ(raw) {
   };
 }
 
+/* mock-pool.json holds ONLY the same ~10% free-preview questions that are
+   fully visible on the static /exams/<exam>/ pages — never the full gated
+   bank. One shared fetch, filtered client-side per exam. (The old code
+   fetched /exam-data/<exam>.json directly, which contained every answer
+   for every question, gated or not — that file is no longer public.) */
+let mockPoolPromise = null;
+function ensureMockPool() {
+  if (!mockPoolPromise) {
+    mockPoolPromise = fetch("/mock-pool.json").then(res => {
+      if (!res.ok) throw new Error("Failed to load mock-pool.json");
+      return res.json();
+    });
+  }
+  return mockPoolPromise;
+}
+
 async function ensureExamBank(examId) {
   const meta = EXAM_META[examId];
   if (!meta) throw new Error("Unknown exam: " + examId);
@@ -112,12 +168,8 @@ async function ensureExamBank(examId) {
     return { questions: UPSC_QUESTIONS, subjects: UPSC_SUBJECTS };
   }
   if (bankCache[examId]) return bankCache[examId];
-  const res = await fetch(meta.file);
-  if (!res.ok) throw new Error("Failed to load " + meta.file);
-  const raw = await res.json();
-  const questions = (Array.isArray(raw) ? raw : [])
-    .map(normalizeExamQ)
-    .filter(isCleanQ);
+  const pool = await ensureMockPool();
+  const questions = pool.filter(x => x.exam === examId).map(normalizeExamQ).filter(isCleanQ);
   const bank = { questions, subjects: meta.subjects };
   bankCache[examId] = bank;
   return bank;
@@ -208,6 +260,7 @@ function floatXp(x, y, t) {
 
 /* ---------- navigation ---------- */
 function showView(name) {
+  if (name !== "exam" && typeof examState !== "undefined" && examState && examState.timerId) stopExamTimer();
   $$(".view").forEach(v => v.classList.add("hidden"));
   $(`#view-${name}`)?.classList.remove("hidden");
   $$(".main-nav a").forEach(a => a.classList.toggle("active", a.dataset.nav === name));
@@ -304,7 +357,10 @@ function applyFilter() {
 
 function cardHTML(q, serial) {
   const sub = subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
-  const gated = window.PAY && !PAY.isPaid();
+  // Non-UPSC banks are sourced from mock-pool.json, which only ever holds
+  // the already-free ~10% preview — never lock those; only UPSC's browse
+  // view (backed by the full local pyq.js bank) needs the per-card gate.
+  const gated = currentExam === "upsc" && window.PAY && !PAY.isPaid();
   const qBody = q.fmt === "html" ? q.q : formatBody(q.q, true);
   let optsBlock;
   if (gated) {
@@ -348,6 +404,7 @@ function renderMore() {
   removeUnlockStrip();
   more.classList.toggle("hidden", shown >= list.length);
   if (shown < list.length) more.textContent = `Show more (${list.length - shown} left)`;
+  if (next.some(q => q.fmt === "html")) renderMath(wrap);
 }
 
 /* premium lock strip shown when a free user hits the preview limit */
@@ -436,6 +493,7 @@ $("#qlist").addEventListener("click", e => {
     const r = opt.getBoundingClientRect();
     floatXp(r.right - 56, r.top, "+10 XP");
   }
+  renderMath(ex);
 });
 
 /* ---------- exam picker (asked before assuming UPSC) ---------- */
@@ -498,7 +556,67 @@ document.addEventListener("click", e => {
     e.preventDefault();
     const n = nav.dataset.nav;
     if (n === "practice") setExam(currentExam || "upsc", { mode: "browse" });
+    else if (n === "mock") openMockSetup();
     else showView(n);
+    return;
+  }
+
+  // ----- Smart PYQ Mock setup -----
+  const mExam = e.target.closest("[data-mock-exam]");
+  if (mExam) {
+    e.preventDefault();
+    const id = mExam.dataset.mockExam;
+    if (mockState.exams.has(id)) { if (mockState.exams.size > 1) mockState.exams.delete(id); }
+    else mockState.exams.add(id);
+    mockState.subjects.clear();
+    renderMockSetup();
+    return;
+  }
+  const mSubject = e.target.closest("[data-mock-subject]");
+  if (mSubject) {
+    e.preventDefault();
+    const name = mSubject.dataset.mockSubject;
+    if (mockState.subjects.has(name)) mockState.subjects.delete(name); else mockState.subjects.add(name);
+    renderMockSetup();
+    return;
+  }
+  const mCount = e.target.closest("[data-mock-count]");
+  if (mCount) {
+    e.preventDefault();
+    mockState.count = +mCount.dataset.mockCount;
+    $$("#mock-counts [data-mock-count]").forEach(b => b.classList.toggle("active", b === mCount));
+    renderMockSetup();
+    return;
+  }
+  const mMode = e.target.closest("[data-mock-mode]");
+  if (mMode) {
+    e.preventDefault();
+    mockState.mode = mMode.dataset.mockMode;
+    $$("#mock-modes [data-mock-mode]").forEach(b => b.classList.toggle("active", b === mMode));
+    return;
+  }
+  if (e.target.closest("#mock-generate")) { e.preventDefault(); generateMock(); return; }
+
+  // ----- Timed Exam Mode -----
+  const eJump = e.target.closest("[data-exam-jump]");
+  if (eJump) { e.preventDefault(); examJumpTo(+eJump.dataset.examJump); return; }
+  const eOpt = e.target.closest("[data-exam-opt]");
+  if (eOpt) { e.preventDefault(); examAnswer(eOpt); return; }
+  if (e.target.closest("[data-exam-flag]")) {
+    e.preventDefault();
+    const i = examState.idx;
+    if (examState.flagged.has(i)) examState.flagged.delete(i); else examState.flagged.add(i);
+    renderExamMode();
+    return;
+  }
+  if (e.target.closest("[data-exam-prev]")) { e.preventDefault(); examJumpTo(examState.idx - 1); return; }
+  if (e.target.closest("[data-exam-next]")) { e.preventDefault(); examJumpTo(examState.idx + 1); return; }
+  if (e.target.closest("[data-exam-submit]")) { e.preventDefault(); finishExamMode(); return; }
+  if (e.target.closest("[data-exam-exit]")) {
+    e.preventDefault();
+    if (examState.timerId && !confirm("Exit now? Your timed exam progress will be lost.")) return;
+    stopExamTimer();
+    showView("home");
     return;
   }
   if (e.target.closest("[data-action='start']")) { e.preventDefault(); openExamPicker("browse"); return; }
@@ -588,7 +706,7 @@ function renderQuizQuestion() {
   const q = quiz.queue[quiz.idx];
   $("#quiz-bar").style.width = (quiz.idx / quiz.total) * 100 + "%";
   $("#quiz-combo").innerHTML = quiz.combo >= 2 ? `🔥 ${quiz.combo}` : "";
-  const sub = subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
+  const sub = q._sub || subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
   $("#quiz-body").innerHTML = `
     <div class="quiz-card">
       <div class="quiz-meta">
@@ -596,14 +714,15 @@ function renderQuizQuestion() {
         ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
         <span class="quiz-count">${quiz.idx + 1} / ${quiz.total}</span>
       </div>
-      <div class="qtext quiz-q">${formatBody(q.q, true)}</div>
+      <div class="qtext quiz-q">${q.fmt === "html" ? q.q : formatBody(q.q, true)}</div>
       <div class="options quiz-options">
-        ${q.o.map((o, i) => `<button class="option" data-qa="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${escapeHTML(o)}</span></button>`).join("")}
+        ${q.o.map((o, i) => `<button class="option" data-qa="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${q.fmt === "html" ? o : escapeHTML(o)}</span></button>`).join("")}
       </div>
       <div class="explain hidden" data-exp></div>
       <div class="quiz-actions"><button class="btn btn-primary btn-lg hidden" data-quiz-next>Next →</button></div>
     </div>`;
   window.scrollTo({ top: 0 });
+  renderMath($("#quiz-body"));
 }
 
 function answerQuiz(btn) {
@@ -627,16 +746,19 @@ function answerQuiz(btn) {
   }
   $("#quiz-combo").innerHTML = quiz.combo >= 2 ? `🔥 ${quiz.combo}` : "";
   const expl = q.exp || (window.EXP && window.EXP[q.i]) || "Explanation coming soon.";
+  const ansText = q.fmt === "html" ? q.o[q.a] : escapeHTML(q.o[q.a]);
+  const expBody = q.fmt === "html" ? expl : formatBody(expl, false);
   const ex = body.querySelector("[data-exp]");
   ex.innerHTML = `
-    <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
-    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>
+    <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${ansText}</div>
+    <div class="exp-body"><span class="lbl">Explanation</span>${expBody}</div>
     ${(window.PAY && PAY.nudgeHTML) ? PAY.nudgeHTML() : ""}`;
   ex.classList.remove("hidden");
   const next = body.querySelector("[data-quiz-next]");
   next.textContent = quiz.idx + 1 >= quiz.total ? "See results →" : "Next →";
   next.classList.remove("hidden");
   ex.querySelector(".verdict")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  renderMath(ex);
 }
 
 function nextQuiz() {
@@ -692,6 +814,244 @@ function renderReview() {
       </div>
     </div>`;
   window.scrollTo({ top: 0 });
+}
+
+/* ============================================================
+   SMART PYQ MOCK — mix exams/subjects/years into one custom set,
+   run it as a practice quiz or a timed exam.
+   ============================================================ */
+const mockState = { exams: new Set(["upsc"]), subjects: new Set(), count: 10, mode: "practice" };
+
+function mockSubjectOptions() {
+  // de-duped by display name, so "Physics" in JEE/NEET/Board is one chip
+  const byName = new Map();
+  mockState.exams.forEach(examId => {
+    const meta = EXAM_META[examId];
+    if (!meta) return;
+    meta.subjects.forEach(s => { if (!byName.has(s.name)) byName.set(s.name, s.icon || "📘"); });
+  });
+  return [...byName.entries()];
+}
+
+async function renderMockSetup() {
+  const examsEl = $("#mock-exams");
+  examsEl.innerHTML = Object.values(EXAM_META).map(ex => `
+    <button class="mock-exam-chip ${mockState.exams.has(ex.id) ? "active" : ""}" data-mock-exam="${ex.id}">
+      ${ex.name}
+    </button>`).join("");
+
+  const subs = mockSubjectOptions();
+  const subsEl = $("#mock-subjects");
+  subsEl.innerHTML = subs.length
+    ? subs.map(([name, icon]) => `
+        <button class="rchip ${mockState.subjects.has(name) ? "active" : ""}" data-mock-subject="${escapeHTML(name)}">
+          ${icon} ${escapeHTML(name)}
+        </button>`).join("")
+    : `<span class="mock-hint">Pick an exam above to see its subjects</span>`;
+
+  $("#mock-pool-note").textContent = "Checking how many questions match…";
+  try {
+    const pool = await buildMockPool();
+    const n = Math.min(mockState.count, pool.length);
+    $("#mock-pool-note").textContent = pool.length
+      ? `${pool.length.toLocaleString()} questions match — mock will use ${n}.`
+      : "No free-preview questions match this combination yet. Try another exam or subject.";
+    $("#mock-generate").disabled = pool.length === 0;
+  } catch (err) {
+    console.error(err);
+    $("#mock-pool-note").textContent = "Couldn't load the question pool. Please try again.";
+  }
+}
+
+function openMockSetup() { showView("mock"); renderMockSetup(); }
+
+/* Gathers the eligible pool for the current mockState selections.
+   UPSC comes from the already-loaded pyq.js bank (all of it, same as
+   normal browse/quiz); every other exam comes from mock-pool.json,
+   which — by construction — only ever holds the free ~10% preview. */
+async function buildMockPool() {
+  const subjectNames = mockState.subjects.size ? mockState.subjects : null;
+  let pool = [];
+  for (const examId of mockState.exams) {
+    const meta = EXAM_META[examId];
+    if (!meta) continue;
+    const bank = await ensureExamBank(examId);
+    const subOf = sid => bank.subjects.find(x => x.id === sid);
+    const matched = bank.questions.filter(q => !subjectNames || subjectNames.has((subOf(q.s) || {}).name));
+    pool = pool.concat(matched.map(q => ({ ...q, _exam: examId, _sub: subOf(q.s) })));
+  }
+  return pool;
+}
+
+function startCustomMock(queue, label) {
+  if (!quizAllowed()) { if (window.PAY && PAY.track) PAY.track("quiz_limit_hit", {}); if (window.PAY) PAY.openUnlock("quiz"); return; }
+  noteQuizStart();
+  quiz = {
+    queue, idx: 0, correct: 0, total: queue.length, xp: 0, combo: 0, bestCombo: 0, results: [],
+    subject: null, year: null, label,
+  };
+  showView("quiz");
+  renderQuizQuestion();
+}
+
+async function generateMock() {
+  const btn = $("#mock-generate");
+  btn.disabled = true; btn.textContent = "Generating…";
+  try {
+    const pool = await buildMockPool();
+    if (!pool.length) { $("#mock-pool-note").textContent = "No questions match — try another combination."; return; }
+    const queue = shuffle(pool.slice()).slice(0, Math.min(mockState.count, pool.length));
+    const label = `Smart Mock · ${[...mockState.exams].map(id => (EXAM_META[id] || {}).name).join(" + ")}`;
+    if (mockState.mode === "exam") startExamMode(queue, label);
+    else startCustomMock(queue, label);
+  } finally {
+    btn.disabled = false; btn.textContent = "Generate mock →";
+  }
+}
+
+/* ============================================================
+   REAL EXAM MODE — timed, distraction-free, question grid to jump
+   around, no per-question reveal; ends in a full result report.
+   ============================================================ */
+const SEC_PER_Q = 72;               // ~1.2 min/question, matches real exam pacing
+const EXAM_MIN_SEC = 10 * 60, EXAM_MAX_SEC = 90 * 60;
+let examState = null;
+
+function startExamMode(queue, label) {
+  if (!quizAllowed()) { if (window.PAY && PAY.track) PAY.track("quiz_limit_hit", {}); if (window.PAY) PAY.openUnlock("quiz"); return; }
+  noteQuizStart();
+  const totalSec = Math.min(EXAM_MAX_SEC, Math.max(EXAM_MIN_SEC, queue.length * SEC_PER_Q));
+  examState = {
+    queue, idx: 0, total: queue.length, label,
+    answers: new Array(queue.length).fill(null),
+    flagged: new Set(),
+    timeLeftSec: totalSec, totalSec, timerId: null,
+  };
+  showView("exam");
+  renderExamMode();
+  startExamTimer();
+}
+
+function startExamTimer() {
+  stopExamTimer();
+  examState.timerId = setInterval(() => {
+    examState.timeLeftSec--;
+    updateExamTimerUI();
+    if (examState.timeLeftSec <= 0) finishExamMode();
+  }, 1000);
+}
+function stopExamTimer() {
+  if (examState && examState.timerId) { clearInterval(examState.timerId); examState.timerId = null; }
+}
+function updateExamTimerUI() {
+  const el = $("#exam-timer");
+  if (!el || !examState) return;
+  const t = Math.max(0, examState.timeLeftSec);
+  const m = String(Math.floor(t / 60)).padStart(2, "0"), s = String(t % 60).padStart(2, "0");
+  el.textContent = `${m}:${s}`;
+  el.classList.toggle("low", t <= 60);
+}
+
+function examGridHTML() {
+  return examState.queue.map((q, i) => {
+    const cls = ["exam-nav-cell"];
+    if (i === examState.idx) cls.push("current");
+    if (examState.answers[i] != null) cls.push("answered");
+    if (examState.flagged.has(i)) cls.push("flagged");
+    return `<button class="${cls.join(" ")}" data-exam-jump="${i}">${i + 1}</button>`;
+  }).join("");
+}
+
+function renderExamMode() {
+  const q = examState.queue[examState.idx];
+  const sub = q._sub || { icon: "📘", name: q.s || "Subject" };
+  const answered = examState.answers.filter(a => a != null).length;
+  $("#exam-wrap").innerHTML = `
+    <div class="exam-top">
+      <div class="exam-top-left">
+        <b>${escapeHTML(examState.label)}</b>
+        <span class="exam-progress-note">${answered} / ${examState.total} answered</span>
+      </div>
+      <div class="exam-timer" id="exam-timer">--:--</div>
+      <button class="btn btn-ghost" data-exam-exit>Exit</button>
+    </div>
+    <div class="exam-body">
+      <div class="exam-nav-grid" id="exam-grid">${examGridHTML()}</div>
+      <div class="exam-card">
+        <div class="quiz-meta">
+          <span class="qtag">${sub.icon} ${sub.name}</span>
+          ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
+          <span class="quiz-count">Q${examState.idx + 1} / ${examState.total}</span>
+          <button class="exam-flag ${examState.flagged.has(examState.idx) ? "active" : ""}" data-exam-flag>🚩 ${examState.flagged.has(examState.idx) ? "Flagged" : "Flag for review"}</button>
+        </div>
+        <div class="qtext quiz-q">${q.fmt === "html" ? q.q : formatBody(q.q, true)}</div>
+        <div class="options exam-options">
+          ${q.o.map((o, i) => `<button class="option ${examState.answers[examState.idx] === i ? "picked" : ""}" data-exam-opt="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${q.fmt === "html" ? o : escapeHTML(o)}</span></button>`).join("")}
+        </div>
+        <div class="exam-nav">
+          <button class="btn btn-ghost" data-exam-prev ${examState.idx === 0 ? "disabled" : ""}>← Prev</button>
+          ${examState.idx + 1 >= examState.total
+            ? `<button class="btn btn-primary btn-lg" data-exam-submit>Submit exam →</button>`
+            : `<button class="btn btn-primary" data-exam-next>Next →</button>`}
+        </div>
+      </div>
+    </div>`;
+  window.scrollTo({ top: 0 });
+  renderMath($("#exam-wrap"));
+  updateExamTimerUI();
+}
+
+function examAnswer(btn) {
+  examState.answers[examState.idx] = +btn.dataset.examOpt;
+  renderExamMode();
+}
+
+function examJumpTo(i) {
+  if (i < 0 || i >= examState.total) return;
+  examState.idx = i;
+  renderExamMode();
+}
+
+function finishExamMode() {
+  stopExamTimer();
+  const results = examState.queue.map((q, i) => ({ q, chosen: examState.answers[i], correct: examState.answers[i] === q.a }));
+  const correct = results.filter(r => r.correct).length;
+  const attempted = results.filter(r => r.chosen != null).length;
+  const total = examState.total;
+  const pct = Math.round((correct / total) * 100);
+  const xp = correct * 8;
+  earnXp(xp);
+  const msg = pct >= 80 ? "Outstanding! 🏆" : pct >= 60 ? "Strong work! 💪" : pct >= 40 ? "Keep pushing! 📈" : "Every attempt counts 🌱";
+  $("#exam-wrap").innerHTML = `
+    <div class="result">
+      <div class="result-ring" style="--pct:${pct}"><span class="result-score">${correct}<small>/ ${total}</small></span></div>
+      <h2 class="result-msg">${msg}</h2>
+      <p class="result-sub">${escapeHTML(examState.label)} · Timed Exam · Attempted ${attempted}/${total} · +${xp} XP</p>
+      <div class="result-stats">
+        <div><b>${pct}%</b><span>Accuracy</span></div>
+        <div><b>${attempted}</b><span>Attempted</span></div>
+        <div><b>${total - attempted}</b><span>Skipped</span></div>
+      </div>
+      <div class="result-cta">
+        <button class="btn btn-primary btn-lg" data-exam-review>Review answers</button>
+        <a class="btn btn-ghost btn-lg" href="#" data-nav="home">Back to home</a>
+      </div>
+      <div class="exam-review hidden" id="exam-review">
+        ${results.map((r, i) => `
+          <div class="review-item ${r.correct ? "ok" : r.chosen == null ? "skip" : "no"}">
+            <div class="review-q">Q${i + 1}. ${r.q.fmt === "html" ? r.q.q : escapeHTML(r.q.q)}</div>
+            <div class="review-a">Your answer: ${r.chosen != null ? String.fromCharCode(97 + r.chosen) : "— skipped —"} &nbsp;·&nbsp; Correct: ${String.fromCharCode(97 + r.q.a)}) ${r.q.fmt === "html" ? r.q.o[r.q.a] : escapeHTML(r.q.o[r.q.a])}</div>
+          </div>`).join("")}
+      </div>
+    </div>`;
+  window.scrollTo({ top: 0 });
+  renderMath($("#exam-wrap"));
+  const reviewBtn = $("#exam-wrap [data-exam-review]");
+  if (reviewBtn) reviewBtn.addEventListener("click", e => {
+    e.preventDefault();
+    $("#exam-review").classList.remove("hidden");
+    reviewBtn.classList.add("hidden");
+  });
 }
 
 function shareResult() {

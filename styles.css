@@ -495,6 +495,70 @@ body.in-quiz .site-footer{display:none}
   letter-spacing:.05em;margin:1.4rem 0 .7rem}
 .quiz-setup .result-chips{justify-content:flex-start}
 
+/* ===== Smart PYQ Mock setup ===== */
+.mock-setup{animation:slideUp .3s ease;padding-bottom:2rem}
+.mock-exams,.mock-subjects,.mock-counts{display:flex;flex-wrap:wrap;gap:.55rem;margin-bottom:.4rem}
+.mock-hint{font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);font-size:.82rem}
+.mock-exam-chip{padding:.55rem 1rem;border:1.5px solid var(--line);border-radius:999px;background:#fff;
+  color:var(--ink);font-weight:700;font-size:.92rem;cursor:pointer;transition:.15s}
+.mock-exam-chip:hover{border-color:var(--blue-500);transform:translateY(-1px)}
+.mock-exam-chip.active{border-color:var(--blue-600);background:var(--blue-50);color:var(--blue-700)}
+.mock-modes{display:grid;grid-template-columns:1fr 1fr;gap:.85rem;margin-bottom:1.6rem}
+.mock-mode-card{text-align:left;padding:1rem 1.1rem;border:1.5px solid var(--line);border-radius:16px;
+  background:#fff;cursor:pointer;transition:.15s;display:flex;flex-direction:column;gap:.25rem}
+.mock-mode-card b{font-size:1rem}
+.mock-mode-card span{font-size:.85rem;color:var(--slate);font-weight:500}
+.mock-mode-card:hover{border-color:var(--blue-500);transform:translateY(-1px)}
+.mock-mode-card.active{border-color:var(--blue-600);background:var(--blue-50)}
+.mock-mode-card.active b{color:var(--blue-700)}
+.mock-generate{width:100%;margin-top:.4rem}
+.mock-pool-note{text-align:center;color:var(--muted);font-size:.88rem;margin-top:.7rem}
+@media(max-width:520px){.mock-modes{grid-template-columns:1fr}}
+
+/* ===== Real Exam Mode: timer, question grid, review ===== */
+.exam-wrap{width:min(900px,94vw);margin:1.2rem auto 3rem}
+.exam-top{display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;flex-wrap:wrap}
+.exam-top-left{display:flex;flex-direction:column;gap:.1rem}
+.exam-progress-note{font-size:.82rem;color:var(--muted);font-weight:600}
+.exam-timer{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:800;font-size:1.3rem;
+  padding:.4rem .9rem;border-radius:12px;background:var(--blue-50);color:var(--blue-700);
+  border:1.5px solid var(--line)}
+.exam-timer.low{background:var(--bad-bg);color:var(--bad);border-color:var(--bad);animation:pulseTimer 1s infinite}
+@keyframes pulseTimer{0%,100%{opacity:1}50%{opacity:.55}}
+.exam-body{display:grid;grid-template-columns:170px 1fr;gap:1.4rem;align-items:start}
+.exam-nav-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem;position:sticky;top:1rem}
+.exam-nav-cell{aspect-ratio:1;border-radius:9px;border:1.5px solid var(--line);background:#fff;
+  color:var(--ink);font-weight:700;font-size:.85rem;cursor:pointer;transition:.15s}
+.exam-nav-cell:hover{border-color:var(--blue-500);transform:translateY(-1px)}
+.exam-nav-cell.answered{background:var(--good-bg);border-color:var(--good);color:var(--good)}
+.exam-nav-cell.flagged{background:#fef3c7;border-color:#f59e0b;color:#b45309}
+.exam-nav-cell.current{outline:2.5px solid var(--blue-600);outline-offset:1px}
+.exam-card{animation:slideUp .3s ease}
+.exam-flag{margin-left:auto;background:none;border:1.5px solid var(--line);border-radius:999px;
+  padding:.35rem .8rem;font-size:.82rem;font-weight:700;cursor:pointer;color:var(--slate);transition:.15s}
+.exam-flag:hover{border-color:#f59e0b;color:#b45309}
+.exam-flag.active{background:#fef3c7;border-color:#f59e0b;color:#b45309}
+.exam-options .option.picked{border-color:var(--blue-600);background:var(--blue-50)}
+.exam-nav{display:flex;justify-content:space-between;gap:.8rem;margin-top:1.4rem}
+.exam-nav .btn-primary{margin-left:auto}
+@media(max-width:720px){
+  .exam-body{grid-template-columns:1fr}
+  .exam-nav-grid{position:static;grid-template-columns:repeat(8,1fr)}
+}
+.exam-review{margin-top:1.6rem;text-align:left}
+.review-item{border:1px solid var(--line);border-left-width:4px;border-radius:12px;padding:.9rem 1.05rem;
+  margin-bottom:.8rem;background:var(--card);font-size:.92rem}
+.review-item.ok{border-left-color:var(--good)}
+.review-item.no{border-left-color:var(--bad)}
+.review-item.skip{border-left-color:var(--muted)}
+.review-q{font-weight:700;margin-bottom:.4rem}
+.review-a{color:var(--slate);font-size:.88rem}
+
+[data-theme="dark"] .mock-exam-chip,[data-theme="dark"] .mock-mode-card,
+[data-theme="dark"] .exam-nav-cell,[data-theme="dark"] .exam-timer{background:var(--card)}
+[data-theme="dark"] .exam-nav-cell.flagged{background:#3a2a0f;color:#fbbf24}
+[data-theme="dark"] .exam-flag.active{background:#3a2a0f;color:#fbbf24}
+
 /* ============================================================
    Dark mode (toggle + auto by IST), animations, texture, polish
    ============================================================ */
@@ -1352,6 +1416,7 @@ html.js .ticker-track.subjects{animation-duration:42s}
 }
 .feat-card h3{font-size:1.15rem;letter-spacing:.3px;margin:0 0 .5rem;font-weight:600}
 .feat-card p{color:var(--muted);font-size:.9rem;margin:0;line-height:1.55}
+a.feat-card{display:block;font-family:inherit;color:inherit;text-decoration:none}
 [data-theme="dark"] .feat-card{background:var(--card)}
 
 .more-band{text-align:center;padding-top:1rem}
