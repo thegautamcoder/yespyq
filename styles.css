@@ -528,6 +528,19 @@ body.in-quiz .site-footer{display:none}
   .anim-ready .hero-inner .lead{animation-delay:.24s}
   .anim-ready .hero-inner .hero-cta{animation-delay:.36s}
   .anim-ready .hero-inner .hero-stats{animation-delay:.48s}
+  .anim-ready .exams-hero .container > *{opacity:0;animation:fadeUp .65s cubic-bezier(.22,.61,.36,1) forwards}
+  .anim-ready .exams-hero .eyebrow{animation-delay:.05s}
+  .anim-ready .exams-hero h1{animation-delay:.14s}
+  .anim-ready .exams-hero .lede{animation-delay:.26s}
+  .anim-ready .exams-hero .stat-row{animation-delay:.38s}
+  .anim-ready .exams-hero .ticker{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.61,.36,1) .5s forwards}
+  .anim-ready .land-hero .hero-copy > *{opacity:0;animation:fadeUp .6s cubic-bezier(.22,.61,.36,1) forwards}
+  .anim-ready .land-hero .eyebrow{animation-delay:.08s}
+  .anim-ready .land-hero .hero-headline{animation-delay:.16s}
+  .anim-ready .land-hero .hero-sub{animation-delay:.28s}
+  .anim-ready .land-hero .hero-ctas{animation-delay:.38s}
+  .anim-ready .land-hero .hero-notes{animation-delay:.48s}
+  .anim-ready .land-hero .phone-stage{opacity:0;animation:fadeUp .7s cubic-bezier(.22,.61,.36,1) .3s forwards}
   .anim-ready .reveal{opacity:0;transform:translateY(16px)}
   .anim-ready .reveal.reveal-in{animation:fadeUp .55s cubic-bezier(.22,.61,.36,1) forwards;
     animation-delay:calc(var(--reveal-i, 0) * .07s)}
@@ -1060,11 +1073,11 @@ body.nav-open{overflow:hidden}
   font-size:clamp(2.5rem,5.6vw,4.25rem);line-height:1.08;letter-spacing:.3px;
   max-width:840px;margin:0 auto 1.35rem;text-wrap:balance;font-weight:700;
 }
-.exams-hero h1 em{font-style:normal;color:var(--accent)}
+.exams-hero h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .exams-hero .lede{
   color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);max-width:62ch;margin:0 auto;line-height:1.65
 }
-.exams-hero .lede strong{color:var(--ink);font-weight:600}
+.exams-hero .lede strong{color:var(--ink);font-weight:700}
 
 .stat-row{
   display:flex;justify-content:center;flex-wrap:wrap;
@@ -1073,47 +1086,53 @@ body.nav-open{overflow:hidden}
 .stat-row .stat{text-align:center}
 .stat-row .num{
   font-variant-numeric:tabular-nums;font-size:clamp(1.85rem,4vw,2.6rem);
-  line-height:1.15;color:var(--ink);font-weight:600
+  line-height:1.15;color:var(--ink);font-weight:700
 }
-.stat-row .num em{font-style:normal;color:var(--accent)}
+.stat-row .num em{font-style:normal;color:var(--accent);font-weight:700}
 .stat-row .cap{
-  font-size:.78rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-top:.2rem
+  font-size:.78rem;color:var(--muted);letter-spacing:.09em;text-transform:uppercase;margin-top:.2rem;font-weight:500
 }
 
-/* multi-row exam tickers */
-.ticker{margin-top:2.7rem;display:flex;flex-direction:column;gap:.85rem;overflow:hidden;
-  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
-  mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+/* multi-row exam tickers — Instapyq-style motion */
+.ticker{margin-top:2.8rem;display:flex;flex-direction:column;gap:1rem;overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .ticker-track{display:flex;width:max-content;will-change:transform}
-html.js .ticker-track{animation:ypTicker 60s linear infinite}
-html.js .ticker-track.reverse{animation-direction:reverse}
+html.js .ticker-track{animation:ypTicker 48s linear infinite}
+html.js .ticker-track.reverse{animation:ypTicker 56s linear infinite reverse}
+html.js .ticker-track.subjects{animation-duration:42s}
 .ticker:hover .ticker-track{animation-play-state:paused}
 @keyframes ypTicker{to{transform:translateX(-50%)}}
 .ticker-set{display:flex;gap:.75rem;padding-right:.75rem;flex:none}
 .exam-chip{
-  display:inline-flex;align-items:center;gap:.55rem;font-size:.88rem;letter-spacing:.3px;
+  display:inline-flex;align-items:center;gap:.55rem;font-size:.9rem;letter-spacing:.02em;
   color:#33415c;background:#fff;border:1px solid var(--line);border-radius:999px;
-  padding:.55rem 1.1rem;white-space:nowrap;box-shadow:0 2px 10px rgba(15,23,42,.04)
+  padding:.62rem 1.15rem;white-space:nowrap;box-shadow:0 2px 12px rgba(15,23,42,.05);
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease
 }
-.exam-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
-.ticker-track.reverse .exam-chip::before{background:var(--blue-700)}
+.exam-chip:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(37,99,235,.12);border-color:rgba(37,99,235,.35)}
+.exam-chip::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex:none}
+.ticker-track.reverse .exam-chip::before{background:#1d4ed8}
 .exam-chip.lead{
   background:var(--accent);color:#fff;border-color:transparent;font-weight:700;
-  text-transform:uppercase;letter-spacing:.08em;font-size:.8rem
+  text-transform:uppercase;letter-spacing:.08em;font-size:.78rem
 }
+.exam-chip.lead:hover{transform:none;box-shadow:0 4px 14px rgba(37,99,235,.3)}
 .exam-chip.lead::before{background:#fff}
-.ticker-track.reverse .exam-chip.lead{background:var(--blue-700);color:#fff}
-.ticker-track.subjects .exam-chip::before{background:var(--blue-500)}
-.ticker-track.subjects .exam-chip.lead{background:var(--blue-500);color:#fff}
+.ticker-track.reverse .exam-chip.lead{background:#1d4ed8;color:#fff}
+.ticker-track.subjects .exam-chip::before{background:#3b82f6}
+.ticker-track.subjects .exam-chip.lead{background:#2563eb;color:#fff}
 .exam-chip.soon{
   border-style:dashed;border-color:rgba(37,99,235,.45);color:var(--accent);
-  background:rgba(37,99,235,.05)
+  background:rgba(37,99,235,.05);font-style:italic;font-weight:500
 }
 .exam-chip.soon::before{background:var(--accent)}
 .ticker-track.reverse .exam-chip.soon{
-  border-color:rgba(29,78,216,.45);color:var(--blue-700);background:rgba(29,78,216,.06)
+  border-color:rgba(29,78,216,.45);color:#1d4ed8;background:rgba(29,78,216,.06)
 }
 [data-theme="dark"] .exam-chip{background:var(--card);color:var(--ink)}
+
+.hero-headline em{font-style:italic;font-weight:500;color:var(--accent)}
 
 /* second hero — practice + phone */
 .land-hero{background:transparent !important;border:0 !important;padding:4.5rem 0 2.5rem;position:relative;isolation:auto}
@@ -1127,7 +1146,6 @@ html.js .ticker-track.reverse{animation-direction:reverse}
   font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.1;letter-spacing:.3px;
   margin:0 0 1.35rem;font-weight:600;text-wrap:balance
 }
-.hero-headline em{font-style:normal;color:var(--accent)}
 .land-hero .hero-sub{
   font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:54ch;margin:0 0 2rem
 }
