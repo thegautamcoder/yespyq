@@ -1358,11 +1358,16 @@ body.nav-open{overflow:hidden}
    accel/decel on hover/touch — no CSS keyframe animation here, so there's
    nothing for animation-play-state to snap when paused/resumed. */
 .ticker-set{display:flex;gap:.75rem;padding-right:.75rem;flex:none}
+/* JS rebuilds .ticker into a single .ticker-stage of absolutely-positioned
+   compartments (see initExamTickers) — .ticker-track/.ticker-set above only
+   remain live as the prefers-reduced-motion static fallback markup. */
+.ticker-stage{position:relative;width:100%}
+.ticker-stage .exam-chip{position:absolute;left:0;top:0}
 .exam-chip{
   display:inline-flex;align-items:center;gap:.55rem;font-size:.9rem;letter-spacing:.02em;
   color:#33415c;background:#fff;border:1px solid var(--line);border-radius:999px;
   padding:.62rem 1.15rem;white-space:nowrap;box-shadow:0 2px 12px rgba(15,23,42,.05);
-  transition:transform .15s cubic-bezier(.22,.61,.36,1),box-shadow .15s ease,border-color .15s ease;
+  transition:box-shadow .15s ease,border-color .15s ease;
   will-change:transform
 }
 .exam-chip:hover{box-shadow:0 6px 18px rgba(37,99,235,.12);border-color:rgba(37,99,235,.35)}
