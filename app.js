@@ -179,6 +179,17 @@ async function setExam(examId, opts) {
   opts = opts || {};
   const meta = EXAM_META[examId] || EXAM_META.upsc;
   const status = $("#qlist-title");
+  // Switch to the practice view and show a visible loading state RIGHT
+  // AWAY, before the (possibly slow, ~490KB) exam-bank fetch — otherwise
+  // the click does nothing on screen until the fetch resolves, which reads
+  // as "the button doesn't work" rather than "it's loading".
+  if (opts.mode !== "quiz" && opts.showLoading !== false) {
+    showView("practice");
+    const list = $("#qlist");
+    if (list) list.innerHTML = '<p class="qlist-loading">Loading questions…</p>';
+    const count = $("#qlist-count");
+    if (count) count.textContent = "";
+  }
   if (status && opts.showLoading !== false) status.textContent = "Loading " + meta.full + "…";
   try {
     const bank = await ensureExamBank(meta.id);
@@ -1350,3 +1361,12 @@ initPhoneDemo();
 revealOnScroll();
 $("#year").textContent = new Date().getFullYear();
 showView("home");
+
+// mock-pool.json (~490KB gzipped) backs every non-UPSC "Practice"/Smart
+// Mock click. Warm it in idle time after the page is interactive so that
+// click feels instant instead of stalling on a cold fetch.
+(function prefetchMockPool() {
+  const start = () => ensureMockPool().catch(() => {});
+  if ("requestIdleCallback" in window) requestIdleCallback(start, { timeout: 4000 });
+  else setTimeout(start, 2000);
+})();
