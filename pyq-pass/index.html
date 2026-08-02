@@ -18,7 +18,7 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=60" />
+  <link rel="stylesheet" href="/styles.css?v=61" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -72,7 +72,10 @@
     .pp-stat span{display:block;margin-top:.2rem;font-size:.74rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
     [data-theme="dark"] .pp-stat{background:rgba(15,23,42,.55)}
     .pp-buy{max-width:920px;margin:2.6rem auto 0;padding:0 1rem}
-    .pp-trust{font-size:.82rem;color:var(--muted)}
+    .pp-trust{font-size:.82rem;color:var(--muted);margin-top:.85rem}
+    .mp-buy-center{max-width:420px;margin:0 auto}
+    .pp-hero h1{text-shadow:0 10px 40px rgba(37,99,235,.08)}
+    .pp-page .member-pass{margin-top:.2rem}
     .pp-grid{
       display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;
       max-width:960px;margin:3rem auto 0;padding:0 1rem
@@ -133,6 +136,7 @@
         <a href="/pyq-pass/" class="active">PYQ Pass</a>
       </nav>
       <div class="header-right">
+        <a href="/pyq-pass/" class="pass-pill"><i aria-hidden="true"></i>PYQ Pass · ₹149</a>
         <a href="/" class="btn btn-ghost btn-sm">Start Practice</a>
       </div>
     </div>
@@ -146,7 +150,7 @@
         <span class="eyebrow">PYQ Pass</span>
         <h1>One year of full access. <em>Every exam.</em></h1>
         <p class="lede">
-          Unlock the complete YESPYQ bank across UPSC, JEE, NEET, SSC CGL, Defence and Boards.
+          Unlock every PYQ across UPSC, JEE, NEET, SSC CGL, Defence and Boards.
           Answers and explanations included. Pay once. Valid for 12 months.
         </p>
         <div class="pp-exams" aria-label="Exams included">
@@ -181,7 +185,7 @@
           <div class="mp-body">
             <h3>Included with PYQ Pass</h3>
             <ul class="mp-list">
-              <li>Full banks across UPSC, JEE, NEET, SSC CGL, Defence &amp; Boards</li>
+              <li>All PYQs across UPSC, JEE, NEET, SSC CGL, Defence &amp; Boards</li>
               <li>Correct answers and clear explanations on every question</li>
               <li>Subject-wise practice + year filters where available</li>
               <li>UPSC interactive quiz mode</li>
@@ -191,9 +195,12 @@
               <span>UPSC</span><span>JEE</span><span>NEET</span><span>SSC</span><span>Defence</span><span>Boards</span>
             </div>
             <div class="mp-actions">
-              <button class="btn btn-primary btn-lg pass-cta" data-unlock="pass-page" type="button">Get PYQ Pass · ₹149</button>
+              <button class="mp-buy" data-unlock="pass-page" type="button">
+                <span class="mp-buy-main">Unlock PYQ Pass</span>
+                <span class="mp-buy-side"><b>₹149</b><small>/ year</small></span>
+              </button>
             </div>
-            <p class="pp-trust" style="margin-top:1rem">Razorpay secure checkout · Sign in with Google · Access in seconds</p>
+            <p class="pp-trust">Razorpay secure · Google sign-in · Instant access</p>
           </div>
         </article>
       </section>
@@ -257,9 +264,12 @@
       </section>
 
       <section class="pp-final">
-        <h2>Ready when you are</h2>
-        <p>Start free if you want. Upgrade when you need the full bank.</p>
-        <button class="pp-cta" data-unlock="pass-page-footer" type="button">Get PYQ Pass · ₹149</button>
+        <h2>Ready for full access?</h2>
+        <p>One payment unlocks every PYQ for a year.</p>
+        <button class="mp-buy mp-buy-center" data-unlock="pass-page-footer" type="button">
+          <span class="mp-buy-main">Unlock PYQ Pass</span>
+          <span class="mp-buy-side"><b>₹149</b><small>/ year</small></span>
+        </button>
       </section>
     </div>
   </main>
