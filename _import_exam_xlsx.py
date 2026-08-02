@@ -1,14 +1,11 @@
 #!/usr/bin/env python3
 """ETL: import JEE/NEET/Board PYQs from an xlsx export into YESPYQ exam-data.
 
-Reads: /Users/pw/Downloads/finalyes.xlsx
+Reads: finalyes.xlsx + yessss.xlsx
 Writes: exam-data/_staging/{neet,board,jee}_new.json  (net-new only)
 
-Skips only:
-  - rows with <img> (broken without assets)
-  - invalid correct-option index
-  - empty question / empty options
-  - duplicates of live exam-data (by plain question text)
+Policy: SINGLE-CORRECT MCQ ONLY (exactly 4 options, answer index 1-4).
+Skips images, multi-correct, numerical, broken rows, and duplicates.
 
 Run: python3 _import_exam_xlsx.py
 """
@@ -159,8 +156,12 @@ def clean_html(raw):
 
 
 def parse_answer(corr):
+    """Single-correct MCQ only. Rejects multi-correct (e.g. '1,2,4') and non-1..4."""
+    s = str(corr or "").strip()
+    if not s or "," in s or " " in s:
+        return None
     try:
-        a = int(str(corr).strip()) - 1
+        a = int(s) - 1
     except (TypeError, ValueError):
         return None
     if a not in (0, 1, 2, 3):

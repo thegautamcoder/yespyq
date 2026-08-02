@@ -208,6 +208,8 @@ async function setExam(examId, opts) {
 function isCleanQ(x) {
   const qq = (x.q || "").trim(), opts = x.o || [], a = x.a;
   if (opts.length !== 4 || qq.length < 12) return false;
+  // Single-correct MCQ only
+  if (Array.isArray(a) || (x && x.kind === "multi")) return false;
   if (typeof a !== "number" || a < 0 || a >= opts.length) return false;
   const plainQ = qq.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
   if (/\bOptions?\s*$/.test(plainQ)) return false;             // truncated stem
