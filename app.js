@@ -312,7 +312,16 @@ function openBrowse(f) {
   renderFilters();
   applyFilter();
   $("#filters").classList.remove("open");
+  document.body.classList.remove("filters-open");
 }
+
+function setFiltersOpen(on) {
+  const el = $("#filters");
+  if (!el) return;
+  el.classList.toggle("open", !!on);
+  document.body.classList.toggle("filters-open", !!on);
+}
+function closeFilters() { setFiltersOpen(false); }
 
 function renderFilters() {
   const exams = Object.values(EXAM_META).map(ex =>
@@ -330,6 +339,10 @@ function renderFilters() {
            <span>${y}</span><em>${countByYear(y)}</em></button>`).join("")}
     </div>` : "";
   $("#filters").innerHTML = `
+    <div class="f-panel-top">
+      <strong>Filters</strong>
+      <button type="button" class="f-close" id="filter-close" aria-label="Close filters">✕</button>
+    </div>
     <div class="f-group">
       <h4>Exam</h4>
       ${exams}
@@ -620,12 +633,16 @@ document.addEventListener("click", e => {
   const yc = e.target.closest("[data-year]");
   if (yc) { openBrowse({ subject: null, year: +yc.dataset.year }); return; }
   const fexam = e.target.closest("[data-fexam]");
-  if (fexam) { setExam(fexam.dataset.fexam, { mode: "browse", subject: null, year: null }); return; }
+  if (fexam) { closeFilters(); setExam(fexam.dataset.fexam, { mode: "browse", subject: null, year: null }); return; }
   const fs = e.target.closest("[data-fsub]");
-  if (fs) { openBrowse({ subject: fs.dataset.fsub || null, year: filter.year }); return; }
+  if (fs) { closeFilters(); openBrowse({ subject: fs.dataset.fsub || null, year: filter.year }); return; }
   const fy = e.target.closest("[data-fyear]");
-  if (fy) { filter.year = fy.dataset.fyear ? +fy.dataset.fyear : null; renderFilters(); applyFilter(); return; }
-  if (e.target.closest("#filter-toggle")) { $("#filters").classList.toggle("open"); return; }
+  if (fy) { filter.year = fy.dataset.fyear ? +fy.dataset.fyear : null; closeFilters(); renderFilters(); applyFilter(); return; }
+  if (e.target.closest("#filter-toggle")) { setFiltersOpen(!$("#filters").classList.contains("open")); return; }
+  if (e.target.closest("#filter-close")) { closeFilters(); return; }
+  if (document.body.classList.contains("filters-open") && !e.target.closest("#filters") && !e.target.closest("#filter-toggle")) {
+    closeFilters(); return;
+  }
   if (e.target.closest("#load-more")) { renderMore(); }
 });
 

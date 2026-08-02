@@ -85,10 +85,11 @@
         (a.dataset.nav ? ' data-nav="' + a.dataset.nav + '"' : "") +
         ">" + a.textContent.trim() + "</a>";
     }).join("");
-    var cta = bar.querySelector(".btn-primary");
+    var cta = bar.querySelector(".header-right .btn, .header-inner > .btn:not(.btn-premium)");
     drawer.innerHTML = '<nav class="nd-links">' + links + "</nav>" +
       (cta ? '<a class="nd-cta" href="' + (cta.getAttribute("href") || "#") + '"' +
-        (cta.dataset.action ? ' data-action="' + cta.dataset.action + '"' : "") + ">" +
+        (cta.dataset.action ? ' data-action="' + cta.dataset.action + '"' : "") +
+        (cta.dataset.examPicker ? ' data-exam-picker="' + cta.dataset.examPicker + '"' : "") + ">" +
         cta.textContent.trim() + "</a>" : "");
     document.body.appendChild(drawer);
 
@@ -133,7 +134,7 @@
       var c = document.createElement("script");
       c.id = "pay-config-js"; c.src = "/pay-config.js?v=6";
       c.onload = function () {
-        var m = document.createElement("script"); m.src = "/auth-pay.js?v=24"; m.defer = true;
+        var m = document.createElement("script"); m.src = "/auth-pay.js?v=25"; m.defer = true;
         document.body.appendChild(m);
       };
       document.body.appendChild(c);

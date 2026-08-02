@@ -328,8 +328,18 @@
     var a = document.createElement("a");
     a.href = "#"; a.className = "btn btn-premium btn-sm"; a.setAttribute("data-unlock", "header");
     a.innerHTML = "PYQ Pass";
-    var cta = bar.querySelector(".btn-primary");
-    if (cta) bar.insertBefore(a, cta); else bar.appendChild(a);
+    var right = bar.querySelector(".header-right");
+    var cta = bar.querySelector(":scope > .btn-primary");
+    var burger = document.getElementById("nav-burger");
+    if (right) {
+      bar.insertBefore(a, right);
+    } else if (cta) {
+      bar.insertBefore(a, cta);
+    } else if (burger) {
+      bar.insertBefore(a, burger);
+    } else {
+      bar.appendChild(a);
+    }
   }
 
   function renderChrome() {
