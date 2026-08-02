@@ -621,6 +621,11 @@ body.in-quiz .site-footer{display:none}
 }
 [data-theme="dark"] body{background:var(--bg);color:var(--ink)}
 [data-theme="dark"] .site-header{background:rgba(11,18,32,.85)}
+/* .main-nav's base color (#33415c) is a light-mode dark-slate meant to sit
+   on a white header — never overridden for dark, so nav links were nearly
+   invisible against the dark header background. */
+[data-theme="dark"] .main-nav{color:var(--slate)}
+[data-theme="dark"] .main-nav a:hover{color:var(--accent-bright)}
 [data-theme="dark"] .btn-ghost,[data-theme="dark"] .option,[data-theme="dark"] .rchip,
 [data-theme="dark"] .quiz-exit,[data-theme="dark"] .pyq-list a,[data-theme="dark"] .seo-links a,
 [data-theme="dark"] .theme-toggle-header{background:var(--card)}
