@@ -48,7 +48,20 @@ const EXAM_META = {
     subjects: [
       { id: "physics", name: "Physics", icon: "🧲" },
       { id: "chemistry", name: "Chemistry", icon: "🧪" },
-      { id: "maths", name: "Maths", icon: "➗" }
+      { id: "maths", name: "Maths", icon: "➗" },
+      { id: "biology", name: "Biology", icon: "🧬" },
+      { id: "english", name: "English", icon: "🔤" },
+      { id: "hindi", name: "Hindi", icon: "🪔" },
+      { id: "history", name: "History", icon: "🏛️" },
+      { id: "geography", name: "Geography", icon: "🌍" },
+      { id: "polity", name: "Political Science", icon: "⚖️" },
+      { id: "economics", name: "Economics", icon: "📈" },
+      { id: "accountancy", name: "Accountancy", icon: "📒" },
+      { id: "business-studies", name: "Business Studies", icon: "💼" },
+      { id: "social-studies", name: "Social Studies", icon: "🌏" },
+      { id: "psychology", name: "Psychology", icon: "🧠" },
+      { id: "sociology", name: "Sociology", icon: "👥" },
+      { id: "general", name: "General", icon: "📘" }
     ]
   },
   defence: {
@@ -943,7 +956,7 @@ function initPhoneDemo() {
 // PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
 // which live in separate static exam-data JSON, not loaded here — update
 // this after each exam-data import so the homepage stat stays accurate.
-const OTHER_EXAM_PYQS = 10173;
+const OTHER_EXAM_PYQS = 17004;
 renderSubjects();
 renderYears();
 document.body.classList.add("anim-ready");

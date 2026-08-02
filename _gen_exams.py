@@ -14,6 +14,46 @@ BASE = "https://yespyq.com"
 TODAY = datetime.date.today().isoformat()
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
+SUBJECT_LABELS = {
+    "physics": ("Physics", "🧲"),
+    "chemistry": ("Chemistry", "🧪"),
+    "maths": ("Maths", "➗"),
+    "biology": ("Biology", "🧬"),
+    "english": ("English", "🔤"),
+    "hindi": ("Hindi", "🪔"),
+    "sanskrit": ("Sanskrit", "📜"),
+    "history": ("History", "🏛️"),
+    "geography": ("Geography", "🌍"),
+    "polity": ("Political Science", "⚖️"),
+    "economics": ("Economics", "📈"),
+    "accountancy": ("Accountancy", "📒"),
+    "business-studies": ("Business Studies", "💼"),
+    "social-studies": ("Social Studies", "🌏"),
+    "psychology": ("Psychology", "🧠"),
+    "sociology": ("Sociology", "👥"),
+    "general": ("General", "📘"),
+}
+
+
+def subject_meta(sid):
+    if sid in SUBJECT_LABELS:
+        return SUBJECT_LABELS[sid]
+    name = sid.replace("-", " ").title()
+    return (name, "📘")
+
+
+def resolve_subjects(ecfg, by_subject):
+    """Prefer configured subjects, then any extra subjects present in the bank."""
+    ordered = {}
+    for sid, meta in ecfg["subjects"].items():
+        if sid in by_subject and by_subject[sid]:
+            ordered[sid] = meta
+    for sid in sorted(by_subject, key=lambda s: (-len(by_subject[s]), s)):
+        if sid not in ordered and by_subject[sid]:
+            ordered[sid] = subject_meta(sid)
+    return ordered
+
+
 EXAMS = {
     "jee": {
         "name": "JEE",
@@ -49,6 +89,15 @@ EXAMS = {
             "physics": ("Physics", "🧲"),
             "chemistry": ("Chemistry", "🧪"),
             "maths": ("Maths", "➗"),
+            "english": ("English", "🔤"),
+            "hindi": ("Hindi", "🪔"),
+            "biology": ("Biology", "🧬"),
+            "history": ("History", "🏛️"),
+            "geography": ("Geography", "🌍"),
+            "polity": ("Political Science", "⚖️"),
+            "economics": ("Economics", "📈"),
+            "accountancy": ("Accountancy", "📒"),
+            "business-studies": ("Business Studies", "💼"),
         },
     },
     "defence": {
@@ -483,12 +532,16 @@ def main():
         for x in items:
             by_subject[x["subject"]].append(x)
         exam_totals[exam] = len(items)
+        subjects = resolve_subjects(ecfg, by_subject)
+        # page helpers read ecfg["subjects"]
+        original_subjects = ecfg["subjects"]
+        ecfg["subjects"] = subjects
 
-        for subject in ecfg["subjects"]:
+        for subject in subjects:
             sitems = by_subject.get(subject, [])
             by_chapter = defaultdict(list)
             for x in sitems:
-                by_chapter[x["chapter"]].append(x)
+                by_chapter[x.get("chapter") or "General"].append(x)
 
             for chapter, qs in by_chapter.items():
                 write(f"exams/{exam}/{subject}/{slugify(chapter)}", chapter_page(exam, subject, chapter, qs))
@@ -499,6 +552,7 @@ def main():
 
         write(f"exams/{exam}", exam_hub(exam, by_subject))
         sitemap_urls.append((f"{BASE}/exams/{exam}/", "0.8"))
+        ecfg["subjects"] = original_subjects
 
     write("exams", exams_hub(exam_totals))
     sitemap_urls.append((f"{BASE}/exams/", "0.9"))

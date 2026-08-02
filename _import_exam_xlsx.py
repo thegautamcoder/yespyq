@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""ETL: import high-confidence JEE/NEET/Board PYQs from yessss.xlsx.
+"""ETL: import JEE/NEET/Board PYQs from an xlsx export into YESPYQ exam-data.
 
-Reads: /Users/pw/Downloads/yessss.xlsx
+Reads: /Users/pw/Downloads/finalyes.xlsx
 Writes: exam-data/_staging/{neet,board,jee}_new.json  (net-new only)
 
-Excludes:
-  - any row with <img>
-  - bad / missing answers or empty options
-  - garbled / low-confidence HTML
-  - Devanagari-only / non-STEM board subjects we don't surface yet
-  - duplicates of live exam-data
+Skips only:
+  - rows with <img> (broken without assets)
+  - invalid correct-option index
+  - empty question / empty options
+  - duplicates of live exam-data (by plain question text)
 
 Run: python3 _import_exam_xlsx.py
 """
@@ -22,18 +21,14 @@ import openpyxl
 from bs4 import BeautifulSoup, NavigableString
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-XLSX_PATH = "/Users/pw/Downloads/yessss.xlsx"
+XLSX_PATHS = [
+    "/Users/pw/Downloads/finalyes.xlsx",
+    "/Users/pw/Downloads/yessss.xlsx",
+]
 STAGING_DIR = os.path.join(ROOT, "exam-data", "_staging")
 
 JEE_EXAMS = {"JEE Mains", "JEE Advanced", "JEE", "BITSAT", "VITEEE", "MHT CET"}
 NEET_EXAMS = {"NEET", "AIIMS"}
-
-# Only subjects we already ship UI + SEO pages for
-ALLOWED_SUBJECTS = {
-    "jee": {"physics", "chemistry", "maths"},
-    "neet": {"physics", "chemistry", "biology"},
-    "board": {"physics", "chemistry", "maths"},
-}
 
 ALLOWED_ATTRLESS_TAGS = {
     "p", "br", "ul", "ol", "li", "strong", "b", "em", "i", "sub", "sup",
@@ -49,15 +44,21 @@ SUBJECT_MAP = {
     "maths": "maths",
     "mathematics": "maths",
     "core maths": "maths",
+    "english": "english",
+    "हिंदी": "hindi",
+    "hindi": "hindi",
+    "संस्कृतम्": "sanskrit",
+    "sanskrit": "sanskrit",
+    "business studies": "business-studies",
+    "accountancy": "accountancy",
+    "history": "history",
+    "social studies": "social-studies",
+    "political science": "polity",
+    "economics": "economics",
+    "psychology": "psychology",
+    "geography": "geography",
+    "sociology": "sociology",
 }
-
-DEVANAGARI = re.compile(r"[\u0900-\u097F]")
-GARBLED = re.compile(r"spantrebuchet|data-sheets-root|font-weight:normal|mso-|<!--", re.I)
-BAD_OPT = re.compile(
-    r"consider the following|incorrect\s*:|correct\s*:|\([a-d]\)\s|"
-    r"select the correct answer|explanation\s*:|hence\s+(the\s+)?(correct|answer)",
-    re.I,
-)
 
 
 def plain(s):
@@ -91,15 +92,22 @@ def bucket_exam(exam_raw, cat_raw=None, subj_raw=None, q_raw=None):
         return "jee"
     if re.search(r"\bNEET\b|\bAIIMS\b", qt, re.I):
         return "neet"
-    # empty exam + vernacular/arts without clear tag → low confidence
-    if c in ("Vernacular", "Arts", "Nursing", "Xylem", ""):
-        return None
     return "board"
 
 
-def bucket_subject(subject_raw):
-    s = (subject_raw or "").strip().lower()
-    return SUBJECT_MAP.get(s)
+def bucket_subject(subject_raw, exam_bucket):
+    s = (subject_raw or "").strip()
+    key = s.lower()
+    if key in SUBJECT_MAP:
+        return SUBJECT_MAP[key]
+    if s in SUBJECT_MAP:
+        return SUBJECT_MAP[s]
+    # keep PCM/bio mapping for common labels; otherwise slug
+    slug = re.sub(r"[^a-z0-9]+", "-", key).strip("-") or "general"
+    # exams UI expects these core ids
+    if exam_bucket == "neet" and slug in ("botany", "zoology"):
+        return "biology"
+    return slug
 
 
 def has_img(*cells):
@@ -160,47 +168,6 @@ def parse_answer(corr):
     return a
 
 
-def confident(q, opts, sol, subject, exam_bucket):
-    """Strict quality gate — skip anything we are not confident about."""
-    if exam_bucket not in ALLOWED_SUBJECTS:
-        return False, "bucket"
-    if subject not in ALLOWED_SUBJECTS[exam_bucket]:
-        return False, "subject"
-
-    qp = plain(q)
-    if len(qp) < 24:
-        return False, "short_q"
-    if DEVANAGARI.search(qp) and len(re.sub(DEVANAGARI, "", qp)) < 20:
-        return False, "non_english"
-    if GARBLED.search(str(q or "")):
-        return False, "garbled"
-    if re.search(r"\bOptions?\s*$", qp):
-        return False, "truncated"
-
-    plains = [plain(o) for o in opts]
-    if any(len(p) < 1 for p in plains):
-        return False, "empty_opt"
-    if any(len(p) > 400 for p in plains):
-        return False, "long_opt"
-    if any(len(p) <= 2 and not re.match(r"^[a-z0-9]+$", p, re.I) for p in plains):
-        return False, "punct_opt"
-    if any(BAD_OPT.search(p) for p in plains):
-        return False, "bad_opt"
-    if any(GARBLED.search(str(o or "")) for o in opts):
-        return False, "garbled_opt"
-    # options should be distinct
-    if len(set(p.lower() for p in plains)) < 4:
-        return False, "dup_opts"
-
-    sp = plain(sol)
-    if len(sp) < 30:
-        return False, "thin_sol"
-    if GARBLED.search(str(sol or "")):
-        return False, "garbled_sol"
-
-    return True, "ok"
-
-
 def load_live_fingerprints():
     fps = set()
     starts = {}
@@ -214,67 +181,66 @@ def load_live_fingerprints():
 
 def main():
     live_fps, start = load_live_fingerprints()
-    wb = openpyxl.load_workbook(XLSX_PATH, read_only=True, data_only=True)
-    ws = wb["Query result"]
-
     buckets = {"neet": [], "board": [], "jee": []}
     seen_batch = set()
     stats = Counter()
 
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        (q, o1, o2, o3, o4, o5, corr, sol, typ, diff, klass, subj, chap, cat, exam) = row[:15]
-        stats["rows"] += 1
-
-        if has_img(q, o1, o2, o3, o4, sol):
-            stats["img"] += 1
+    for path in XLSX_PATHS:
+        if not os.path.exists(path):
+            print(f"skip missing: {path}")
             continue
+        print(f"reading {path} …")
+        wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+        ws = wb["Query result"]
+        for row in ws.iter_rows(min_row=2, values_only=True):
+            (q, o1, o2, o3, o4, o5, corr, sol, typ, diff, klass, subj, chap, cat, exam) = row[:15]
+            stats["rows"] += 1
 
-        ans = parse_answer(corr)
-        if ans is None:
-            stats["bad_answer"] += 1
-            continue
+            if has_img(q, o1, o2, o3, o4, sol):
+                stats["img"] += 1
+                continue
 
-        eb = bucket_exam(exam, cat, subj, q)
-        if not eb:
-            stats["low_conf_bucket"] += 1
-            continue
+            ans = parse_answer(corr)
+            if ans is None:
+                stats["bad_answer"] += 1
+                continue
 
-        subject = bucket_subject(subj)
-        if subject not in ALLOWED_SUBJECTS.get(eb, set()):
-            stats["skip_subject"] += 1
-            continue
+            q_c = clean_html(q)
+            o_c = [clean_html(o1), clean_html(o2), clean_html(o3), clean_html(o4)]
+            sol_c = clean_html(sol)
 
-        # Clean first — spreadsheet junk (spantrebuchet, data-sheets-*) unwraps away.
-        q_c = clean_html(q)
-        o_c = [clean_html(o1), clean_html(o2), clean_html(o3), clean_html(o4)]
-        sol_c = clean_html(sol)
+            if len(plain(q_c)) < 8:
+                stats["empty_q"] += 1
+                continue
+            if any(len(plain(o)) < 1 for o in o_c):
+                stats["empty_opt"] += 1
+                continue
 
-        ok, reason = confident(q_c, o_c, sol_c, subject, eb)
-        if not ok:
-            stats[f"skip_{reason}"] += 1
-            continue
+            eb = bucket_exam(exam, cat, subj, q_c)
+            subject = bucket_subject(subj, eb)
 
-        fp = fingerprint(q_c)
-        if not fp or fp in live_fps or fp in seen_batch:
-            stats["dup"] += 1
-            continue
+            fp = fingerprint(q_c)
+            if not fp or fp in live_fps or fp in seen_batch:
+                stats["dup"] += 1
+                continue
 
-        entry = {
-            "q": q_c,
-            "o": o_c,
-            "a": ans,
-            "subject": subject,
-            "chapter": str(chap or "").strip() or "General",
-            "y": None,
-            "exp": sol_c,
-            "fmt": "html",
-        }
-        if eb == "board":
-            entry["cls"] = str(klass or "").strip()
+            entry = {
+                "q": q_c,
+                "o": o_c,
+                "a": ans,
+                "subject": subject,
+                "chapter": str(chap or "").strip() or "General",
+                "y": None,
+                "exp": sol_c,
+                "fmt": "html",
+            }
+            if eb == "board":
+                entry["cls"] = str(klass or "").strip()
 
-        buckets[eb].append(entry)
-        seen_batch.add(fp)
-        stats[f"new_{eb}"] += 1
+            buckets[eb].append(entry)
+            seen_batch.add(fp)
+            stats[f"new_{eb}"] += 1
+        wb.close()
 
     prefix = {"neet": "NEET", "jee": "JEE", "board": "BOARD"}
     os.makedirs(STAGING_DIR, exist_ok=True)
@@ -292,6 +258,7 @@ def main():
             json.dump({"offset": 0}, f)
         if ided:
             print(f"{eb}: {len(ided)} NEW -> {out_path} ({ided[0]['i']}..{ided[-1]['i']})")
+            print("  subjects:", dict(Counter(x["subject"] for x in ided).most_common(12)))
         else:
             print(f"{eb}: 0 NEW -> {out_path}")
 
