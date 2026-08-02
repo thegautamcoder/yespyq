@@ -425,16 +425,27 @@
     }
   }
 
+  function setAcctOpen(on) {
+    var menu = document.querySelector("#pay-acct .acct-menu");
+    var btn = document.querySelector("#pay-acct .acct-btn");
+    if (menu) menu.hidden = !on;
+    if (btn) btn.setAttribute("aria-expanded", on ? "true" : "false");
+    document.body.classList.toggle("acct-open", !!on && window.innerWidth <= 820);
+  }
+  function closeAcctMenu() { setAcctOpen(false); }
+
   /* account chip (right side of header): plan status, days left, renew, sign out */
   function renderAccount() {
     var bar = document.querySelector(".site-header .header-inner");
     var acct = document.getElementById("pay-acct");
-    if (!_user) { if (acct) acct.remove(); return; }
+    if (!_user) { if (acct) acct.remove(); closeAcctMenu(); return; }
     if (!bar) return;
     if (!acct) {
       acct = document.createElement("div");
       acct.id = "pay-acct"; acct.className = "acct";
-      bar.appendChild(acct);
+      var burger = document.getElementById("nav-burger");
+      if (burger) bar.insertBefore(acct, burger);
+      else bar.appendChild(acct);
     }
     var email = _user.email || "";
     var initial = (email[0] || "U").toUpperCase();
@@ -462,7 +473,7 @@
       }).join("") + '</div></div>';
 
     acct.innerHTML =
-      '<button class="acct-btn ' + (_paid ? "paid" : "") + '" data-acct-toggle aria-label="Account">' + escapeH(initial) + '</button>' +
+      '<button class="acct-btn ' + (_paid ? "paid" : "") + '" data-acct-toggle aria-label="Account" aria-expanded="false">' + escapeH(initial) + '</button>' +
       '<div class="acct-menu" hidden>' +
         '<div class="acct-email">' + escapeH(email) + '</div>' +
         '<div class="acct-plan ' + planCls + '">' + plan + '</div>' +
@@ -568,15 +579,27 @@
       return;
     }
     var at = e.target.closest("[data-acct-toggle]");
-    if (at) { e.preventDefault(); var m = at.parentNode.querySelector(".acct-menu"); if (m) m.hidden = !m.hidden; return; }
+    if (at) {
+      e.preventDefault();
+      var m = at.parentNode.querySelector(".acct-menu");
+      if (!m) return;
+      var open = m.hidden;
+      setAcctOpen(open);
+      at.setAttribute("aria-expanded", open ? "true" : "false");
+      return;
+    }
+    if (document.body.classList.contains("acct-open") && !e.target.closest("#pay-acct")) {
+      closeAcctMenu();
+      return;
+    }
     var om = document.querySelector(".acct-menu:not([hidden])");
-    if (om && !e.target.closest("#pay-acct")) om.hidden = true;
+    if (om && !e.target.closest("#pay-acct")) { om.hidden = true; }
     if (e.target.closest("[data-unlock-close]") || (overlay && e.target === overlay)) { e.preventDefault(); closeUnlock(); return; }
-    if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); signInWithGoogle(false); return; }
-    if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); startCheckout(); return; }
+    if (e.target.closest("[data-unlock-signin]")) { e.preventDefault(); closeAcctMenu(); signInWithGoogle(false); return; }
+    if (e.target.closest("[data-unlock-buy]")) { e.preventDefault(); closeAcctMenu(); startCheckout(); return; }
     var u = e.target.closest("[data-unlock]");
-    if (u) { e.preventDefault(); track("premium_click", { source: u.dataset.unlock || "cta" }); openUnlock(u.dataset.unlock || "cta"); return; }
-    if (e.target.closest("[data-pay-signout]")) { e.preventDefault(); signOut(); return; }
+    if (u) { e.preventDefault(); closeAcctMenu(); track("premium_click", { source: u.dataset.unlock || "cta" }); openUnlock(u.dataset.unlock || "cta"); return; }
+    if (e.target.closest("[data-pay-signout]")) { e.preventDefault(); closeAcctMenu(); signOut(); return; }
   });
 
   /* ---------- boot ---------- */

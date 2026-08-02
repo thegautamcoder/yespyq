@@ -1049,8 +1049,32 @@ html,body{overflow-x:hidden}
 [data-theme="dark"] .unlock-card{background:#0b1220;border-color:rgba(37,99,235,.3)}
 [data-theme="dark"] .unlock-right{background:#1e293b}
 @media (max-width:620px){
-  .unlock-main{grid-template-columns:1fr;gap:1.1rem;padding:1.2rem 1.2rem 1.4rem}
-  .unlock-left h2{font-size:1.2rem}
+  .unlock-overlay{
+    align-items:flex-end;justify-content:center;
+    padding:0;padding-bottom:env(safe-area-inset-bottom,0)
+  }
+  .unlock-card{
+    width:100%;max-width:none;max-height:min(92vh,920px);
+    border-radius:18px 18px 0 0;transform:translateY(40px)
+  }
+  .unlock-overlay.in .unlock-card{transform:none}
+  .unlock-main{grid-template-columns:1fr;gap:1rem;padding:1.15rem 1.1rem 1.35rem}
+  .unlock-left h2{font-size:1.22rem;line-height:1.25;margin-bottom:.35rem}
+  .unlock-tag{font-size:.86rem;margin-bottom:.85rem}
+  .unlock-banner{padding:.7rem 2.8rem .7rem 1rem;letter-spacing:.18em;font-size:.76rem}
+  .unlock-x{
+    top:.55rem;right:.65rem;width:36px;height:36px;font-size:1.25rem;
+    background:rgba(255,255,255,.22);color:#fff
+  }
+  .unlock-right{padding:1.2rem 1.1rem 1.25rem;border-radius:14px}
+  .up-amt{font-size:2.35rem}
+  .unlock-cta{min-height:48px;padding:1rem;font-size:1.02rem}
+  .unlock-feats{gap:.7rem}
+  .unlock-feats li{font-size:.9rem;line-height:1.35}
+  .mp-exams{gap:.35rem;margin:0 0 1rem}
+  .mp-exams span{font-size:.68rem;padding:.28rem .55rem}
+  .unlock-restore{margin-top:.7rem;font-size:.84rem;line-height:1.4}
+  .unlock-restore a{display:inline-block;padding:.25rem 0;min-height:44px;line-height:44px}
 }
 
 /* account chip + dropdown */
@@ -1191,7 +1215,27 @@ body.nav-open{overflow:hidden}
   .theme-toggle-header{
     order:20;margin-left:0;width:36px;height:36px;font-size:1rem
   }
-  #pay-acct{order:0;margin-left:0;flex:none}
+  #pay-acct{order:25;margin-left:0;flex:none;position:relative}
+  .acct{margin-left:0}
+  .acct-btn{width:36px;height:36px;font-size:.92rem}
+  /* Full-width sheet under the header so the menu never clips off-screen */
+  .acct-menu{
+    position:fixed;left:.75rem;right:.75rem;width:auto;max-width:none;
+    top:calc(env(safe-area-inset-top,0px) + 54px);z-index:980;
+    box-shadow:0 22px 50px rgba(15,23,42,.22);padding:1rem .95rem 1.05rem
+  }
+  .acct-email{font-size:.82rem;margin-bottom:.65rem}
+  .acct-plan{font-size:.9rem;padding:.65rem .75rem;margin-bottom:.7rem}
+  .acct-renew,.acct-out{min-height:44px;font-size:.9rem}
+  .acct-theme .at-opt{min-height:40px;font-size:.85rem}
+  body.acct-open{overflow:hidden}
+  body.acct-open::after{
+    content:"";position:fixed;inset:0;z-index:970;
+    background:rgba(15,23,42,.35)
+  }
+  /* Theme lives in the account sheet once signed in — free header space */
+  body:has(#pay-acct) .theme-toggle-header,
+  body:has(#pay-acct) .header-right{display:none !important}
   .nav-drawer{top:54px}
 }
 @media(max-width:380px){
