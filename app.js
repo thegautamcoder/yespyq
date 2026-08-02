@@ -736,7 +736,7 @@ function countUpTile(countEl) {
 }
 function revealOnScroll() {
   if (!("IntersectionObserver" in window)) return;
-  const els = $$(".subject-card,.year-card,.seo-links a,.exam-tile-card,.pp-teaser,.reveal-group > *,.reveal-land,.feat-card");
+  const els = $$(".subject-card,.year-card,.seo-links a,.exam-tile-card,.pp-teaser,.reveal-group > *,.reveal-land,.feat-card,.pass-card");
   els.forEach((el, i) => {
     if (!el.classList.contains("reveal-land") && !el.classList.contains("feat-card")) {
       el.classList.add("reveal");
