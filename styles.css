@@ -1,9 +1,13 @@
-@font-face{
-  font-family:NextSunday;
-  src:url("assets/Next_Sunday.ttf") format("truetype");
-  font-display:swap;
-}
-/* Readable UI = Sora. NextSunday only on brand wordmark (sparse). */
+/* ============================================================
+   YESPYQ typography (site-wide)
+   ------------------------------------------------------------
+   Product: long PYQ stems + explanations must stay readable on
+   mobile for hours — no novelty display faces in body/UI.
+   Design: one serious sans everywhere; hierarchy via weight/size
+   only. Brand wordmark uses the same family (no Instapyq font).
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
 :root{
   --blue-50:#eff6ff; --blue-100:#dbeafe; --blue-500:#3b82f6;
   --blue-600:#2563eb; --blue-700:#1d4ed8; --blue-800:#1e40af;
@@ -17,34 +21,47 @@
   --glow-blue-deep:rgba(29,78,216,.1);
   --shadow:0 1px 2px rgba(15,23,42,.04), 0 8px 24px rgba(15,23,42,.06);
   --radius:18px;
-  --display-font:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --body-font:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  --brand-font:NextSunday,"Trebuchet MS","Segoe UI",sans-serif;
+  --font:"Source Sans 3","Source Sans Pro",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --display-font:var(--font);
+  --body-font:var(--font);
+  --brand-font:var(--font);
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{
-  font-family:var(--body-font);
-  color:var(--ink); background:var(--bg); line-height:1.6;
-  -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  font-family:var(--font);
+  font-size:17px;
+  font-weight:400;
+  color:var(--ink); background:var(--bg); line-height:1.65;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden; letter-spacing:.01em;
 }
 ::selection{background:rgba(37,99,235,.18)}
 a:focus-visible,button:focus-visible{
   outline:2px solid var(--accent);outline-offset:3px;border-radius:6px
 }
-h1,h2,h3,.section-title,.btn-lg,.hero-headline,.eyebrow,.exam-chip,.chip,.live-pill,.stat-row .num{
-  font-family:var(--display-font);letter-spacing:.01em
+h1,h2,h3,h4,.section-title,.btn,.btn-lg,.hero-headline,.eyebrow,
+.exam-chip,.chip,.live-pill,.stat-row .num,.brand-name,.f-item,.qtag,.qnum{
+  font-family:var(--font);letter-spacing:.005em
 }
-.brand-name{font-family:var(--brand-font) !important;letter-spacing:.5px}
+h1,h2,h3{font-weight:700;line-height:1.2;letter-spacing:-.015em}
+.brand-name{font-weight:700;letter-spacing:.02em}
 a{color:inherit;text-decoration:none}
 .container{width:min(1120px,92vw);margin-inline:auto}
 .container.narrow{width:min(760px,92vw)}
 .hidden{display:none !important}
 
+/* Long-form reading surfaces (questions, explanations, articles) */
+.qtext,.q-text,.prose,.exp-body,.explain,.lede,.hero-sub,.lead,.article p{
+  font-family:var(--font);
+  line-height:1.7;
+  letter-spacing:.01em
+}
+
 /* buttons */
 .btn{display:inline-flex;align-items:center;gap:.55rem;justify-content:center;
   border:1px solid transparent;border-radius:14px;padding:.85rem 1.5rem;
-  font-family:var(--display-font);font-weight:600;font-size:1rem;letter-spacing:.01em;
+  font-family:var(--font);font-weight:600;font-size:1rem;letter-spacing:.01em;
   cursor:pointer;transition:transform .25s ease,box-shadow .25s ease,background .25s,border-color .25s;
   white-space:nowrap}
 .btn-sm{padding:.55rem 1.1rem;font-size:.88rem;border-radius:11px}
@@ -127,7 +144,7 @@ a{color:inherit;text-decoration:none}
 .exam-tile-card h3{transition:color .2s}
 .exam-tile-card:hover h3{color:var(--blue-700)}
 .exam-tile-card .ico{font-size:1.8rem}
-.exam-tile-card h3{font-family:var(--display-font);font-size:1.1rem;margin:0 0 .3rem;letter-spacing:-.01em}
+.exam-tile-card h3{font-family:var(--font);font-size:1.1rem;margin:0 0 .3rem;letter-spacing:-.01em}
 .exam-tile-card p{font-size:.85rem;color:var(--muted)}
 .exam-tile-card .count{display:inline-block;margin-top:.7rem;font-size:.78rem;font-weight:600;
   color:var(--blue-700);background:var(--blue-50);padding:.2rem .6rem;border-radius:999px}
@@ -172,6 +189,9 @@ button.exam-tile-card{display:block;width:100%;text-align:left;font-family:inher
 .quiz-progress-bar span{display:block;height:100%;background:var(--blue-600);width:0;transition:.3s}
 .quiz-count{font-size:.82rem;color:var(--muted);font-weight:600;white-space:nowrap}
 
+.qcard .qtext{font-size:1.05rem;line-height:1.7}
+.qcard .option{font-size:.98rem;line-height:1.45}
+.qcard .exp-body,.qcard .explain{font-size:.98rem;line-height:1.65}
 .qcard{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
   padding:1.8rem;box-shadow:var(--shadow)}
 .qtags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem}
@@ -573,7 +593,7 @@ body.in-quiz .site-footer{display:none}
 .other-exams-note a{color:var(--blue-700);font-weight:600}
 
 /* live pill / eyebrow */
-.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--display-font);
+.eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font);
   font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
   color:var(--accent);margin-bottom:1.2rem}
 .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);border-radius:2px}
@@ -1139,7 +1159,7 @@ html.js .ticker-track.reverse{animation-direction:reverse}
 }
 .phone .app-bar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
 .phone .paper{font-size:13px;letter-spacing:.04em;color:#f8fafc}
-.phone .paper small{display:block;font-family:var(--body-font);font-size:10.5px;color:#94a3b8;
+.phone .paper small{display:block;font-family:var(--font);font-size:10.5px;color:#94a3b8;
   letter-spacing:.06em;text-transform:uppercase}
 .phone .timer-chip{
   font-variant-numeric:tabular-nums;font-size:12.5px;color:#93c5fd;
@@ -1147,16 +1167,16 @@ html.js .ticker-track.reverse{animation-direction:reverse}
   border-radius:999px;padding:4px 11px
 }
 .phone .q-count{font-size:11px;color:#94a3b8;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
-.phone .q-text{font-size:13.5px;line-height:1.5;color:#f8fafc;margin-bottom:14px;font-family:var(--body-font)}
+.phone .q-text{font-size:13.5px;line-height:1.5;color:#f8fafc;margin-bottom:14px;font-family:var(--font)}
 .phone .opts{display:flex;flex-direction:column;gap:9px}
 .phone .opt{
   position:relative;display:flex;align-items:center;gap:10px;
   border:1px solid rgba(148,163,184,.16);background:rgba(30,41,59,.45);
-  border-radius:12px;padding:10px 11px;font-size:12.5px;color:#dbe4f0;font-family:var(--body-font)
+  border-radius:12px;padding:10px 11px;font-size:12.5px;color:#dbe4f0;font-family:var(--font)
 }
 .phone .opt-key{
   flex:none;width:24px;height:24px;border-radius:8px;background:rgba(148,163,184,.14);
-  color:#f8fafc;font-size:12px;display:grid;place-items:center;font-family:var(--display-font)
+  color:#f8fafc;font-size:12px;display:grid;place-items:center;font-family:var(--font)
 }
 .phone .opt-label{flex:1}
 .phone .check-badge{
@@ -1170,11 +1190,11 @@ html.js .ticker-track.reverse{animation-direction:reverse}
 .phone .explain{
   margin-top:auto;background:rgba(5,150,105,.12);border:1px solid rgba(5,150,105,.28);
   border-radius:14px;padding:12px;color:#d1fae5;font-size:12px;line-height:1.45;
-  font-family:var(--body-font);transform:translateY(112%);animation:ypExplain 11s ease infinite
+  font-family:var(--font);transform:translateY(112%);animation:ypExplain 11s ease infinite
 }
 .phone .explain .verdict{
   display:flex;align-items:center;gap:6px;color:#34d399;font-weight:700;
-  font-family:var(--display-font);margin-bottom:6px;font-size:12.5px
+  font-family:var(--font);margin-bottom:6px;font-size:12.5px
 }
 @keyframes ypPick{
   0%,35%{border-color:rgba(148,163,184,.16);background:rgba(30,41,59,.45)}
