@@ -199,7 +199,7 @@ EXTRA_CSS = '''  <style>
 KATEX_HEAD = '  <link rel="stylesheet" href="/assets/katex/katex.min.css" />'
 KATEX_SCRIPTS = '''  <script defer src="/assets/katex/katex.min.js"></script>
   <script defer src="/assets/katex/auto-render.min.js"></script>
-  <script defer src="/exam-gate.js?v=1"></script>
+  <script defer src="/exam-gate.js?v=2"></script>
   <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (window.renderMathInElement) {
@@ -238,12 +238,12 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=43" />
+  <link rel="stylesheet" href="/styles.css?v=66" />
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 {EXTRA_CSS}
 {extra_head}
-  <script src="/theme.js?v=19"></script>
+  <script src="/theme.js?v=23"></script>
 </head>
 <body>'''
 
@@ -259,34 +259,45 @@ def qslug(x):
 def question_block(x, n, gated):
     html_mode = x.get("fmt") == "html"
     q_html = x["q"] if html_mode else format_body(x["q"], True)
+    year_suffix = f' · {x["y"]}' if x.get("y") else ""
+
+    if gated:
+        # SEO: question stem is public. Options + solution stay out of free HTML.
+        payload = json.dumps(
+            {"o": x["o"], "a": x["a"], "exp": x["exp"], "fmt": x.get("fmt") or ""},
+            ensure_ascii=False,
+            separators=(",", ":"),
+        )
+        payload = payload.replace("<", "\\u003c")
+        return f'''    <div class="qblock" id="q{n}" data-gated="1">
+      <div class="qnum">Q{n}{year_suffix}</div>
+      <div class="qtext">{q_html}</div>
+      <div class="options qpage-options" data-opts-host></div>
+      <div class="answer-gate" data-unlock="exam-answer">
+        <span class="ag-lock">🔒</span>
+        <div><b>Options, answer &amp; explanation — PYQ Pass</b><p>Read the question free. Unlock choices and the full solution with Pass.</p></div>
+        <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
+      </div>
+      <div class="explain hidden" data-exp></div>
+      <script type="application/json" class="q-payload">{payload}</script>
+    </div>'''
+
     opts = ""
     for i, o in enumerate(x["o"]):
         o_html = o if html_mode else esc(o)
-        cls = "option" if gated else ("option" + (" correct" if i == x["a"] else ""))
+        cls = "option" + (" correct" if i == x["a"] else "")
         opts += f'<div class="{cls}"><span class="key">{chr(97+i)}</span><span>{o_html}</span></div>'
     ans_letter = chr(97 + x["a"])
     ans_html = x["o"][x["a"]] if html_mode else esc(x["o"][x["a"]])
     exp_html = x["exp"] if html_mode else format_body(x["exp"], False)
-    year_suffix = f' · {x["y"]}' if x.get("y") else ""
-
-    explain_cls = "explain hidden" if gated else "explain"
-    explain = f'''
-      <div class="{explain_cls}" data-exp>
-        <div class="verdict ok">✓ Correct answer: {ans_letter}) {ans_html}</div>
-        <div class="exp-body"><span class="lbl">Explanation</span>{exp_html}</div>
-      </div>'''
-    gate = f'''
-      <div class="answer-gate" data-unlock="exam-answer">
-        <span class="ag-lock">🔒</span>
-        <div><b>Answer &amp; explanation — PYQ Pass</b><p>Unlock this and thousands more solved PYQs.</p></div>
-        <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
-      </div>''' if gated else ""
-    data_attrs = f' data-gated="1" data-a="{x["a"]}"' if gated else ""
-
-    return f'''    <div class="qblock" id="q{n}"{data_attrs}>
+    return f'''    <div class="qblock" id="q{n}">
       <div class="qnum">Q{n}{year_suffix}</div>
       <div class="qtext">{q_html}</div>
-      <div class="options qpage-options">{opts}</div>{gate}{explain}
+      <div class="options qpage-options">{opts}</div>
+      <div class="explain" data-exp>
+        <div class="verdict ok">✓ Correct answer: {ans_letter}) {ans_html}</div>
+        <div class="exp-body"><span class="lbl">Explanation</span>{exp_html}</div>
+      </div>
     </div>'''
 
 
@@ -298,17 +309,28 @@ def chapter_page(exam, subject, chapter, items):
     canonical = f"{BASE}/exams/{exam}/{subject}/{slug}/"
     title = attr(f"{chapter} — {ecfg['name']} {sname} PYQs with Answers | YESPYQ")
     if gated:
-        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter} — free to practice, unlock the correct answer & explanation with PYQ Pass.")
+        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter}. Read every question free; unlock options, answers and explanations with PYQ Pass.")
     else:
         desc = attr(f"{len(items)} solved {ecfg['name']} {sname} previous year questions on {chapter}, each with the correct answer and explanation. Free practice on YESPYQ.")
 
+    # Question stems listed for SEO; answers stay behind Pass on gated exams.
+    item_els = []
+    for i, x in enumerate(items[:40], 1):
+        name = attr(plain(x["q"])[:140])
+        item_els.append(
+            f'{{"@type":"ListItem","position":{i},"name":"{name}","url":"{canonical}#q{i}"}}'
+        )
+    item_list = ",".join(item_els)
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{esc(sname)}","item":"{BASE}/exams/{exam}/{subject}/"}},{{"@type":"ListItem","position":5,"name":"{esc(chapter)}","item":"{canonical}"}}]}}
+  </script>
+  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"ItemList","name":"{attr(chapter)} {ecfg['name']} {sname} PYQs","numberOfItems":{len(items)},"itemListElement":[{item_list}]}}
   </script>'''
 
     qs_html = "\n".join(question_block(x, i + 1, gated) for i, x in enumerate(items))
 
-    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b> — free to practice, unlock the correct answer &amp; explanation with PYQ Pass."
+    intro = (f"{len(items)} {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>. Read every question free; unlock options, answers and explanations with PYQ Pass."
               if gated else
               f"{len(items)} solved {esc(ecfg['name'])} {esc(sname)} previous year questions on <b>{esc(chapter)}</b>, each with the correct answer and a full explanation.")
 
@@ -381,7 +403,7 @@ def exam_hub(exam, by_subject):
     total = sum(len(v) for v in by_subject.values())
     title = attr(f"{ecfg['full']} PYQs — {total} Solved Previous Year Questions | YESPYQ")
     if gated:
-        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise — free to practice, answers & explanations unlocked with PYQ Pass.")
+        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise. Read questions free; options, answers and explanations unlock with PYQ Pass.")
     else:
         desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
 
@@ -395,7 +417,7 @@ def exam_hub(exam, by_subject):
         label = "PYQs" if gated else "solved PYQs"
         tiles += f'<a class="exam-tile" href="/exams/{exam}/{sid}/"><div class="et-icon">{sicon}</div><h3>{esc(sname)}</h3><p>{n} {label}</p></a>'
 
-    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — free to practice, unlock the correct answer & explanation with PYQ Pass."
+    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject. Read questions free; unlock options, answers and explanations with PYQ Pass."
               if gated else
               f"{total} solved previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation.")
 

@@ -87,7 +87,8 @@ function normalizeExamQ(raw) {
     s: raw.s || raw.subject,
     c: raw.c || raw.chapter || "",
     y: raw.y || null,
-    exp: raw.exp || ""
+    exp: raw.exp || "",
+    fmt: raw.fmt || null
   };
 }
 
@@ -143,13 +144,16 @@ function isCleanQ(x) {
   const qq = (x.q || "").trim(), opts = x.o || [], a = x.a;
   if (opts.length !== 4 || qq.length < 12) return false;
   if (typeof a !== "number" || a < 0 || a >= opts.length) return false;
-  if (/\bOptions?\s*$/.test(qq)) return false;                 // truncated stem
+  const plainQ = qq.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  if (/\bOptions?\s*$/.test(plainQ)) return false;             // truncated stem
   const BAD = /consider the following|incorrect\s*:|correct\s*:|\([a-d]\)\s|\(20\d\d\)|select the correct answer/i;
+  const maxOpt = x.fmt === "html" ? 600 : 180;
   for (let o of opts) {
-    o = (o || "").trim();
-    if (o.length < 1 || o.length > 180) return false;          // empty / explanation dumped in
-    if (o.length <= 2 && !/^[a-z0-9]+$/i.test(o)) return false; // punctuation-only
-    if (BAD.test(o)) return false;                              // embedded question/explanation
+    const raw = (o || "").trim();
+    const plain = raw.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    if (plain.length < 1 || plain.length > maxOpt) return false;
+    if (plain.length <= 2 && !/^[a-z0-9]+$/i.test(plain)) return false;
+    if (BAD.test(plain)) return false;
   }
   return true;
 }
@@ -287,39 +291,50 @@ function applyFilter() {
 
 function cardHTML(q, serial) {
   const sub = subjectMap[q.s] || { icon: "📘", name: q.s || "Subject" };
-  const opts = q.o.map((opt, i) =>
-    `<button class="option" data-opt="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${escapeHTML(opt)}</span></button>`).join("");
+  const gated = window.PAY && !PAY.isPaid();
+  const qBody = q.fmt === "html" ? q.q : formatBody(q.q, true);
+  let optsBlock;
+  if (gated) {
+    optsBlock =
+      `<div class="options options-locked" data-unlock="browse-options">
+        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">a</span><span>Option locked</span></button>
+        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">b</span><span>Option locked</span></button>
+        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">c</span><span>Option locked</span></button>
+        <button class="option locked-opt" type="button" data-unlock="browse-options"><span class="key">d</span><span>Option locked</span></button>
+        <div class="opt-lock-note">Options &amp; explanation unlock with <b>PYQ Pass</b> · ₹149/year</div>
+      </div>`;
+  } else {
+    const opts = q.o.map((opt, i) => {
+      const body = q.fmt === "html" ? opt : escapeHTML(opt);
+      return `<button class="option" data-opt="${i}"><span class="key">${String.fromCharCode(97 + i)}</span><span>${body}</span></button>`;
+    }).join("");
+    optsBlock = `<div class="options">${opts}</div>`;
+  }
   return `<article class="qcard" data-qid="${q.i}">
       <div class="qtags">
         <span class="qnum">Q${serial}</span>
         <span class="qtag">${sub.icon} ${sub.name}</span>
         ${q.y ? `<span class="qtag">${q.y}</span>` : ""}
       </div>
-      <div class="qtext">${formatBody(q.q, true)}</div>
-      <div class="options">${opts}</div>
+      <div class="qtext">${qBody}</div>
+      ${optsBlock}
       <div class="explain hidden" data-exp></div>
     </article>`;
 }
 
 function renderMore() {
   const list = currentList();
-  const gated = window.PAY && !PAY.isPaid();
-  const cap = gated ? Math.min(list.length, PAY.freeQuestions()) : list.length;
-  const next = list.slice(shown, Math.min(shown + PAGE, cap));
+  // Free users can browse every question stem; options/explanations stay Pass-gated.
+  const next = list.slice(shown, shown + PAGE);
   const frag = document.createElement("div");
   frag.innerHTML = next.map((q, k) => cardHTML(q, shown + k + 1)).join("");
   const wrap = $("#qlist");
   while (frag.firstChild) wrap.appendChild(frag.firstChild);
   shown += next.length;
   const more = $("#load-more");
-  if (gated && shown >= cap && cap < list.length) {
-    more.classList.add("hidden");
-    showUnlockStrip(list.length - cap);
-  } else {
-    removeUnlockStrip();
-    more.classList.toggle("hidden", shown >= list.length);
-    if (shown < list.length) more.textContent = `Show more (${list.length - shown} left)`;
-  }
+  removeUnlockStrip();
+  more.classList.toggle("hidden", shown >= list.length);
+  if (shown < list.length) more.textContent = `Show more (${list.length - shown} left)`;
 }
 
 /* premium lock strip shown when a free user hits the preview limit */
@@ -366,10 +381,23 @@ window.onPayChange = function () {
 
 /* reveal answer on option click (delegated) */
 $("#qlist").addEventListener("click", e => {
+  if (e.target.closest("[data-unlock]")) return; // Pass CTA / locked options
   const opt = e.target.closest(".option");
-  if (!opt) return;
+  if (!opt || opt.classList.contains("locked-opt")) return;
   const card = opt.closest(".qcard");
-  if (card.dataset.done) return;
+  if (!card || card.dataset.done) return;
+  if (window.PAY && !PAY.isPaid()) {
+    if (typeof PAY.track === "function") PAY.track("premium_click", { source: "browse-options" });
+    const unlock = document.querySelector("[data-unlock]");
+    // openUnlock is internal; click a known unlock control
+    const btn = document.createElement("button");
+    btn.setAttribute("data-unlock", "browse-options");
+    btn.style.display = "none";
+    document.body.appendChild(btn);
+    btn.click();
+    btn.remove();
+    return;
+  }
   const q = byId[card.dataset.qid];
   const chosen = +opt.dataset.opt;
   const correct = chosen === q.a;
@@ -382,9 +410,11 @@ $("#qlist").addEventListener("click", e => {
   });
   const expl = q.exp || (window.EXP && window.EXP[q.i]) || "Explanation will appear here.";
   const ex = card.querySelector("[data-exp]");
+  const ansText = q.fmt === "html" ? q.o[q.a] : escapeHTML(q.o[q.a]);
+  const expBody = q.fmt === "html" ? expl : formatBody(expl, false);
   ex.innerHTML = `
-    <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${escapeHTML(q.o[q.a])}</div>
-    <div class="exp-body"><span class="lbl">Explanation</span>${formatBody(expl, false)}</div>
+    <div class="verdict ${correct ? "ok" : "no"}">${correct ? "✓ Correct" : "✗ Incorrect"} — Answer: ${String.fromCharCode(97 + q.a)}) ${ansText}</div>
+    <div class="exp-body"><span class="lbl">Explanation</span>${expBody}</div>
     ${(window.PAY && PAY.nudgeHTML) ? PAY.nudgeHTML() : ""}`;
   ex.classList.remove("hidden");
   if (correct && !answered.has(q.i)) {
@@ -913,7 +943,7 @@ function initPhoneDemo() {
 // PYQs across the other exam sections (JEE/NEET/Board/Defence/SSC CGL),
 // which live in separate static exam-data JSON, not loaded here — update
 // this after each exam-data import so the homepage stat stays accurate.
-const OTHER_EXAM_PYQS = 10078;
+const OTHER_EXAM_PYQS = 10173;
 renderSubjects();
 renderYears();
 document.body.classList.add("anim-ready");

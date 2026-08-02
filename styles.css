@@ -217,6 +217,14 @@ button.exam-tile-card{display:block;width:100%;text-align:left;font-family:inher
 .exp-body .bline{font-weight:400}
 .exp-body .bline.stmt{font-weight:600}
 .options{display:flex;flex-direction:column;gap:.65rem}
+.options-locked .locked-opt{
+  opacity:.72;cursor:pointer;border-style:dashed;background:rgba(37,99,235,.04)
+}
+.options-locked .locked-opt span:last-child{color:var(--muted);font-style:italic}
+.opt-lock-note{
+  margin-top:.35rem;font-size:.82rem;color:var(--muted);text-align:center;line-height:1.4
+}
+.opt-lock-note b{color:var(--accent)}
 .option{display:flex;align-items:flex-start;gap:.8rem;border:1.5px solid var(--line);
   border-radius:12px;padding:.85rem 1rem;cursor:pointer;transition:.12s;background:#fff;text-align:left;font-size:.98rem}
 .option:hover{border-color:var(--blue-500);background:var(--blue-50)}
