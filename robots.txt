@@ -1,13 +1,16 @@
 User-agent: *
 Allow: /
 
+# Preferred host: https://yespyq.com (apex). www and github.io redirect here.
+# Missing URLs return HTTP 404 via 404.html — do not index the error document.
+Disallow: /404.html
+
 # YESPYQ is a free, public PYQ practice site for UPSC, JEE, NEET, SSC, Defence
-# and Boards. All crawlers are welcome, including AI assistants and AI search
-# (Google AI Overviews/AI Mode, ChatGPT, Claude, Perplexity, Gemini, etc.).
-# Nothing is blocked.
+# and Boards. Educational content only. All major crawlers are welcome.
 
 User-agent: Googlebot
 Allow: /
+Disallow: /404.html
 User-agent: Google-Extended
 Allow: /
 User-agent: GPTBot

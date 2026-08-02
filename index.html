@@ -28,7 +28,14 @@
   <meta name="geo.region" content="IN" />
   <meta name="geo.placename" content="India" />
   <link rel="canonical" href="https://yespyq.com/" />
-
+  <script>
+    /* Prefer apex + trailing-slash homepage; avoid /index.html duplicate */
+    (function () {
+      if (location.pathname === "/index.html") {
+        location.replace("/");
+      }
+    })();
+  </script>
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="YESPYQ" />
