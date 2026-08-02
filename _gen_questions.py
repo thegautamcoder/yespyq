@@ -91,8 +91,43 @@ def qslug(x):
 def attr(s):  # safe for HTML attribute (title/meta content)
     return plain(s).replace('"', '&quot;').replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
 
+def make_title(x, trunc_len=100):
+    sname, sicon, shub = SUB[x['s']]
+    year = x.get('y') or ""
+    qplain = plain(x['q'])
+    short = qplain[:trunc_len].rsplit(' ', 1)[0] if len(qplain) > trunc_len else qplain
+    return f"{short} — UPSC {year} {sname.split(' ')[0]} PYQ | YESPYQ"
+
 # precompute slugs + groupings
 SLUG = {x['i']: qslug(x) for x in ITEMS}
+
+# Titles built from a truncated question stem can collide when several
+# questions share the same opening phrase (e.g. many "With reference to
+# Indian history, consider the following..." questions). Detect collisions
+# and disambiguate with a trailing question ID so every page still gets a
+# unique <title> for search results, instead of Google folding them together
+# as duplicate content.
+TITLE = {}
+_seen_titles = {}
+for x in ITEMS:
+    t = make_title(x)
+    if t in _seen_titles:
+        t = f"{t} (Q{x['i'].split('-')[-1]})"
+    _seen_titles[t] = x['i']
+    TITLE[x['i']] = t
+
+# Same collision fix for meta descriptions — a handful of short questions
+# truncate to an identical opening even at 150 chars.
+DESC = {}
+_seen_descs = {}
+for x in ITEMS:
+    qplain = plain(x['q'])
+    d = f"{qplain[:150]} — see the correct answer and a detailed explanation. Free UPSC CSE Prelims PYQ practice on YESPYQ."
+    if d in _seen_descs:
+        d = f"{qplain[:150]} ({x.get('y') or ''} Q{x['i'].split('-')[-1]}) — see the correct answer and a detailed explanation. Free UPSC CSE Prelims PYQ practice on YESPYQ."
+    _seen_descs[d] = x['i']
+    DESC[x['i']] = d
+
 BY_SUB = defaultdict(list)
 for x in ITEMS:
     BY_SUB[x['s']].append(x)
@@ -175,9 +210,8 @@ def question_page(x):
     canonical = f"{BASE}/pyq/q/{slug}/"
     year = x.get('y') or ""
     qplain = plain(x['q'])
-    short = qplain[:64].rsplit(' ', 1)[0] if len(qplain) > 64 else qplain
-    title = attr(f"{short} — UPSC {year} {sname.split(' ')[0]} PYQ | YESPYQ")
-    desc = attr(f"{qplain[:150]} — see the correct answer and a detailed explanation. Free UPSC CSE Prelims PYQ practice on YESPYQ.")
+    title = attr(TITLE[x['i']])
+    desc = attr(DESC[x['i']])
     expl = EXP.get(x['i'], "")
     ans_letter = chr(97 + x['a'])
     ans_text = x['o'][x['a']]
