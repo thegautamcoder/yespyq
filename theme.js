@@ -57,9 +57,10 @@
   // in auto mode, keep checking so the switch happens on its own
   setInterval(function () { if (get() === "auto") { var b = document.documentElement.getAttribute("data-theme"); if (apply() !== b) listeners.forEach(function (fn) { try { fn("auto", effective()); } catch (e) {} }); } }, 60000);
 
-  /* Small screens used to just hide the nav, leaving no way to navigate.
-     Build a drawer instead: brand + PYQ Pass stay visible in the bar, the
-     links and the main CTA move behind the ☰ button. Injected here so all
+  /* Small screens used to cram brand + PYQ Pass pill + theme toggle + ☰ all
+     into one bar — busy and cramped. The bar now shows only brand + ☰;
+     nav links, the theme switcher and the PYQ Pass entry all live in the
+     drawer, each in its own clearly-labelled row. Injected here so all
      2,471 pages get it without touching their markup. */
   function buildMobileNav() {
     var bar = document.querySelector(".site-header .header-inner");
@@ -80,18 +81,40 @@
     drawer.className = "nav-drawer";
     drawer.hidden = true;
     var links = [].map.call(nav.querySelectorAll("a"), function (a) {
+      var isPass = /\/pyq-pass\/?$/.test(a.getAttribute("href") || "");
+      var cls = [];
+      if (a.classList.contains("active")) cls.push("active");
+      if (isPass) cls.push("nd-pass");
       return '<a href="' + a.getAttribute("href") + '"' +
-        (a.classList.contains("active") ? ' class="active"' : "") +
+        (cls.length ? ' class="' + cls.join(" ") + '"' : "") +
         (a.dataset.nav ? ' data-nav="' + a.dataset.nav + '"' : "") +
-        ">" + a.textContent.trim() + "</a>";
+        ">" + a.textContent.trim() + (isPass ? ' <span class="nd-pass-badge">' + (window.YQ_PRICE_LABEL || "₹149") + '</span>' : "") + "</a>";
     }).join("");
     var cta = bar.querySelector(".header-right .btn, .header-inner > .btn:not(.btn-premium)");
-    drawer.innerHTML = '<nav class="nd-links">' + links + "</nav>" +
+    drawer.innerHTML =
+      '<div class="nd-theme" role="group" aria-label="Theme">' +
+        '<button type="button" data-theme-opt="light">☀️ Light</button>' +
+        '<button type="button" data-theme-opt="dark">🌙 Dark</button>' +
+        '<button type="button" data-theme-opt="auto">Auto</button>' +
+      '</div>' +
+      '<nav class="nd-links">' + links + "</nav>" +
       (cta ? '<a class="nd-cta" href="' + (cta.getAttribute("href") || "#") + '"' +
         (cta.dataset.action ? ' data-action="' + cta.dataset.action + '"' : "") +
         (cta.dataset.examPicker ? ' data-exam-picker="' + cta.dataset.examPicker + '"' : "") + ">" +
         cta.textContent.trim() + "</a>" : "");
     document.body.appendChild(drawer);
+
+    function syncThemeRow() {
+      var mode = get();
+      drawer.querySelectorAll("[data-theme-opt]").forEach(function (btn) {
+        btn.classList.toggle("active", btn.dataset.themeOpt === mode);
+      });
+    }
+    syncThemeRow();
+    window.YQTheme.onChange(syncThemeRow);
+    drawer.querySelectorAll("[data-theme-opt]").forEach(function (btn) {
+      btn.addEventListener("click", function () { set(btn.dataset.themeOpt); });
+    });
 
     function close() { drawer.hidden = true; burger.classList.remove("open"); burger.setAttribute("aria-expanded", "false"); document.body.classList.remove("nav-open"); }
     function open() { drawer.hidden = false; burger.classList.add("open"); burger.setAttribute("aria-expanded", "true"); document.body.classList.add("nav-open"); }

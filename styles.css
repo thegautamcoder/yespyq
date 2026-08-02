@@ -1212,46 +1212,51 @@ html,body{overflow-x:hidden}
 .nav-drawer .nd-links a{padding:.8rem .3rem;font-weight:600;color:var(--ink);
   border-bottom:1px solid var(--line)}
 .nav-drawer .nd-links a.active{color:var(--blue-700)}
+.nav-drawer .nd-links a.nd-pass{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+.nd-pass-badge{font-size:.72rem;font-weight:700;letter-spacing:.02em;color:var(--blue-700);
+  background:var(--blue-50);border:1px solid rgba(37,99,235,.25);border-radius:999px;padding:.15rem .55rem}
 .nav-drawer .nd-cta{display:block;margin-top:.9rem;padding:.8rem;border-radius:12px;text-align:center;
   font-weight:800;color:#fff;background:linear-gradient(100deg,var(--blue-600),var(--blue-700))}
+/* Theme switcher — moved out of the crowded top bar into its own row */
+.nd-theme{display:flex;gap:.4rem;padding-bottom:.9rem;margin-bottom:.4rem;border-bottom:1px solid var(--line)}
+.nd-theme button{flex:1;padding:.55rem .4rem;border-radius:10px;border:1px solid var(--line);
+  background:transparent;color:var(--ink);font-size:.84rem;font-weight:600}
+.nd-theme button.active{border-color:var(--blue-500);background:var(--blue-50);color:var(--blue-700)}
+[data-theme="dark"] .nd-theme button.active{background:rgba(37,99,235,.16)}
+[data-theme="dark"] .nd-pass-badge{background:rgba(37,99,235,.16)}
 body.nav-open{overflow:hidden}
 
 @media(max-width:820px){
-  /* Single row: brand | Pass | theme / account | ☰ — links live in the drawer */
+  /* Mobile bar: brand — (account, if signed in) — ☰. That's it. Nav links,
+     the theme switcher and the PYQ Pass entry all live behind the ☰ instead
+     of crowding the top row. */
   .nav-burger{
     display:flex;order:30;flex:none;margin-left:0;align-self:center;
-    width:36px;height:36px;padding:0 8px;gap:4.5px;border-radius:10px
+    width:40px;height:40px;padding:0 9px;gap:5px;border-radius:10px
   }
   .nav-burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
   .nav-burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
   .main-nav{display:none !important}
   .header-inner{
-    flex-wrap:nowrap;align-items:center;gap:.4rem;
-    padding:.65rem 0;min-height:0
+    flex-wrap:nowrap;align-items:center;gap:.5rem;
+    padding:.75rem 0;min-height:0
   }
   .header-inner .brand{margin-right:auto;flex:none;order:0}
-  /* Hide in-bar CTAs — Start Practice / ghost buttons live in the drawer */
-  .header-inner > .btn:not(.btn-premium),
-  .header-right > .btn:not(.btn-premium){display:none !important}
-  .btn-premium{
-    order:10;flex:none;white-space:nowrap;align-self:center;
-    padding:.45rem .7rem;font-size:.8rem;min-height:36px;line-height:1.1;
-    display:inline-flex;align-items:center
-  }
+  /* Start Practice / PYQ Pass pill — both live in the drawer now */
+  .header-inner > .btn,
+  .header-right > .btn{display:none !important}
+  .theme-toggle-header{display:none !important}
   .header-right{
     display:flex;align-items:center;gap:.35rem;
     margin-left:0;order:20;flex:none
   }
-  .theme-toggle-header{
-    order:20;margin-left:0;width:36px;height:36px;font-size:1rem
-  }
   #pay-acct{order:25;margin-left:0;flex:none;position:relative}
   .acct{margin-left:0}
-  .acct-btn{width:36px;height:36px;font-size:.92rem}
+  .acct-btn{width:40px;height:40px;font-size:.95rem}
   /* Full-width sheet under the header so the menu never clips off-screen */
   .acct-menu{
     position:fixed;left:.75rem;right:.75rem;width:auto;max-width:none;
-    top:calc(env(safe-area-inset-top,0px) + 54px);z-index:980;
+    top:calc(env(safe-area-inset-top,0px) + 58px);z-index:980;
     box-shadow:0 22px 50px rgba(15,23,42,.22);padding:1rem .95rem 1.05rem
   }
   .acct-email{font-size:.82rem;margin-bottom:.65rem}
@@ -1260,10 +1265,7 @@ body.nav-open{overflow:hidden}
   .acct-theme .at-opt{min-height:40px;font-size:.85rem}
   /* Keep the page fully visible — no dim overlay when profile is open */
   body.acct-open .site-header{z-index:980}
-  /* Theme lives in the account sheet once signed in — free header space */
-  body:has(#pay-acct) .theme-toggle-header,
-  body:has(#pay-acct) .header-right{display:none !important}
-  .nav-drawer{top:54px}
+  .nav-drawer{top:58px}
 }
 @media(max-width:380px){
   .btn-premium{padding:.4rem .5rem;font-size:.76rem}
@@ -1471,15 +1473,19 @@ body.nav-open{overflow:hidden}
   border-radius:36px;padding:14px 13px 6px;display:flex;flex-direction:column
 }
 
+/* App-bar: badge + question count share a top row, the paper/subject title
+   gets its own full-width line below — no absolute positioning, so nothing
+   can ever collide regardless of screen width. */
+.phone .app-bar{display:flex;flex-direction:column;gap:9px;margin:0 0 16px;flex:none}
+.app-bar-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .demo-exam-pill{
-  position:absolute;top:14px;right:12px;z-index:2;
+  z-index:2;flex:none;
   font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
   color:#fff;background:linear-gradient(120deg,#2563eb,#1d4ed8);
   border-radius:999px;padding:4px 9px;box-shadow:0 6px 16px rgba(37,99,235,.4);
   transition:transform .35s ease,opacity .35s ease
 }
 .demo-exam-pill.swap{transform:scale(.86);opacity:.55}
-.phone .app-bar{display:flex;justify-content:space-between;align-items:center;margin:0 0 16px;padding-right:62px;flex:none;gap:8px}
 .phone .paper{font-size:13px;letter-spacing:.04em;color:#f8fafc;min-width:0}
 .phone .paper small{display:block;font-family:var(--font);font-size:10.5px;color:#94a3b8;
   letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -1823,9 +1829,6 @@ a.chip:hover{border-color:rgba(37,99,235,.45);color:var(--accent);transform:tran
   .hero-notes{gap:.65rem 1rem}
   .phone{width:min(300px,90vw)}
   .phone .screen{min-height:540px;padding:22px 14px 14px}
-  .phone .app-bar{flex-wrap:wrap;row-gap:8px}
-  .phone .paper{flex-basis:100%}
-  .phone .timer-chip{margin-left:0}
   .exams-hero{padding:3.8rem 0 2rem}
   .exams-hero .eyebrow{margin-bottom:1.4rem}
   .exams-hero h1{
