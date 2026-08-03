@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/board/biology/"},{"@type":"ListItem","position":5,"name":"Molecular Basis of Inheritance","item":"https://yespyq.com/exams/board/biology/molecular-basis-of-inheritance/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Molecular Basis of Inheritance</h1>
       <p>17 Board Biology previous year questions on <b>Molecular Basis of Inheritance</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The technique of DNA fingerprinting is based on the principle of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Similarities in DNAsequences</p></span></div><div class="option"><span class="key">b</span><span><p>Differences in DNA. Sequences</p></span></div><div class="option correct"><span class="key">c</span><span><p>Polymorphism in DNA sequences</p></span></div><div class="option"><span class="key">d</span><span><p>Differences in proteins</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a wrong pair?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>G≡C</p></span></div><div class="option"><span class="key">b</span><span><p>T=A</p></span></div><div class="option"><span class="key">c</span><span><p>A=U</p></span></div><div class="option correct"><span class="key">d</span><span><p>T=U</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The sequence of nucleotide in the template strand of a DNA is<br/>3' ATGCATGCATGC 5'<br/>What will be the sequence of nucleotide in the messenger RNA ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> 5' ATGCATGCATGC 3'</p></span></div><div class="option"><span class="key">b</span><span><p>5' AUGCAUGCAUGC 3'</p></span></div><div class="option"><span class="key">c</span><span><p>5' TUCGTUCGUACG 3'</p></span></div><div class="option"><span class="key">d</span><span><p>5' UACGUACGUACG 3' </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>mRNA is synthesized complementary to the template strand and in the 5' → 3' direction.\u003c/p> \u003cp>Base pairing rules:\u003c/p> \u003cul> \u003cli>A → U\u003c/li> \u003cli>T → A\u003c/li> \u003cli>G → C\u003c/li> \u003cli>C → G\u003c/li> \u003c/ul> \u003cp>Therefore:\u003c/p> \u003cp>Template DNA: 3' ATGCATGCATGC 5'\u003cbr/>mRNA: 5' UACGUACGUACG 3'\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a DNA molecule, the cytosine is 18%, then the percentage of adenine will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>64</p></span></div><div class="option"><span class="key">b</span><span><p>36</p></span></div><div class="option"><span class="key">c</span><span><p>82</p></span></div><div class="option"><span class="key">d</span><span><p>32</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct option is D. 32. \u003c/p> \u003cp>Explanation\u003cbr/>According to Chargaff's rules of base pairing in a DNA molecule:\u003cbr/>The amount of cytosine (C) is always equal to the amount of guanine (G).\u003cbr/>The amount of adenine (A) is always equal to the amount of thymine (T).\u003cbr/>All four bases (A, T, C, G) together make up 100% of the DNA. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a termination codon ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>UAG</p></span></div><div class="option"><span class="key">b</span><span><p>UGA</p></span></div><div class="option"><span class="key">c</span><span><p>AUG</p></span></div><div class="option"><span class="key">d</span><span><p>UAA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>C) AUG\u003c/p> \u003cp>Explanation: AUG is a start codon that codes for methionine, while UAA, UAG, and UGA are stop codons that terminate protein synthesis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At which position, in RNA, in every nucleotide residue an additional - OH group is present in the ribose?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5' position</p></span></div><div class="option"><span class="key">b</span><span><p>3' position</p></span></div><div class="option"><span class="key">c</span><span><p> 2' position</p></span></div><div class="option"><span class="key">d</span><span><p>\({4}^{b}\)position</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>RNA contains ribose sugar, which has an additional –OH (hydroxyl) group at the 2′ carbon position. In contrast, DNA contains deoxyribose sugar, which lacks this –OH group at the 2′ position.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a substrate for DNA replication ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> ATP</p></span></div><div class="option"><span class="key">b</span><span><p> DNA polymerase </p></span></div><div class="option"><span class="key">c</span><span><p>Helicase</p></span></div><div class="option"><span class="key">d</span><span><p>Deoxyribonucleoside triphosphate</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During DNA replication substrates used to synthesize a new DNA strand are deoxyribonucleoside triphosphates (dNTPs)\u003c/p> \u003cul> \u003cli>ATP = energy source\u003c/li> \u003cli>DNA polymerase = enzyme\u003c/li> \u003cli>Helicase = unwinds DNA\u003c/li> \u003cli>dNTP = substrate\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Gel electrophoresis is used for</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Isolation of DNA molecules</p></span></div><div class="option"><span class="key">b</span><span><p>Cutting of DNA into fraggents</p></span></div><div class="option"><span class="key">c</span><span><p>Separation of DNA fragments according to their size</p></span></div><div class="option"><span class="key">d</span><span><p>Amplification of gene of</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Gel electrophoresis\u003c/strong> is a technique used to \u003cstrong>separate DNA fragments based on their size\u003c/strong>.\u003c/p> \u003cul> \u003cli>DNA fragments move through an agarose gel under an electric field.\u003c/li> \u003cli>Smaller fragments move faster and travel farther than larger fragments.\u003c/li> \u003cli>This helps in separating and identifying DNA fragments.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In split genes, the exons are displayed as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Introns</p></span></div><div class="option"><span class="key">b</span><span><p>Non-coding sequences</p></span></div><div class="option"><span class="key">c</span><span><p>Coding sequences</p></span></div><div class="option"><span class="key">d</span><span><p>Operons</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In \u003cstrong>split genes\u003c/strong>, there are two types of sequences:\u003c/p> \u003cul> \u003cli>\u003cstrong>Exons\u003c/strong> → \u003cstrong>Coding sequences\u003c/strong> (expressed sequences that remain in mature mRNA)\u003c/li> \u003cli>\u003cstrong>Introns\u003c/strong> → \u003cstrong>Non-coding sequences\u003c/strong> (intervening sequences that are removed during RNA splicing)\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Pyrimidines present in RNA are</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cyrosine and Thymine</p></span></div><div class="option"><span class="key">b</span><span><p>Adenine and Guanine</p></span></div><div class="option"><span class="key">c</span><span><p>Cytosine and Uracil</p></span></div><div class="option"><span class="key">d</span><span><p>Thymine and Uracil</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: ✅ C. Cytosine and Uracil\u003c/p> \u003cp>Explanation:\u003c/p> \u003cp>Pyrimidine bases are small, single-ring nucleotide bases.\u003c/p> \u003cp>In RNA:\u003c/p> \u003cp>Cytosine (C)\u003c/p> \u003cp>Uracil (U)\u003c/p> \u003cp>In DNA:\u003c/p> \u003cp>Cytosine (C)\u003c/p> \u003cp>Thymine (T)\u003c/p> \u003cp>Option Analysis:\u003c/p> \u003cp>A. Cytosine and Thymine → Correct for DNA, ❌ wrong for RNA.\u003c/p> \u003cp>B. Adenine and Guanine → These are purine bases, not pyrimidines.\u003c/p> \u003cp>C. Cytosine and Uracil → ✔ Correct for RNA pyrimidines.\u003c/p> \u003cp>D. Thymine and Uracil → ❌ Wrong, these are never together in a single nucleic acid.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are the three codons which results in the termination of polypeptide chain synthesis ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>UAA, UAG, UGA</p></span></div><div class="option"><span class="key">b</span><span><p>UAA, UAG, GUA</p></span></div><div class="option"><span class="key">c</span><span><p>UAA, UGA, UUA</p></span></div><div class="option"><span class="key">d</span><span><p>UGU, UAG, UGA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>UAA, UAG, UGA\u003c/p> \u003cul> \u003cli>These are the three stop codons (termination codons).\u003c/li> \u003cli>They do not code for any amino acid.\u003c/li> \u003cli>They signal the end of polypeptide chain synthesis.\u003c/li> \u003c/ul> \u003cp>GUA codes for the amino acid Valine\u003c/p> \u003cp>UUA codes for the amino acid Leucine\u003c/p> \u003cp>UGU codes for the amino acid Cysteine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>How many parts are there in the transcription unit of DNA?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Two parts </p></span></div><div class="option"><span class="key">b</span><span><p>Three parts </p></span></div><div class="option"><span class="key">c</span><span><p> Four parts </p></span></div><div class="option"><span class="key">d</span><span><p>Five parts</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>✅ Answer: (b) Three parts\u003cbr/>Explanation: A transcription unit in DNA consists of three parts:\u003c/p> \u003cp>Promoter\u003c/p> \u003cp>Structural gene\u003c/p> \u003cp>Terminator\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A typical nucleosome consists of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>50 base pair of DNA heli</p></span></div><div class="option"><span class="key">b</span><span><p>100 base pair of DNA helix</p></span></div><div class="option"><span class="key">c</span><span><p>150 base pair of DNA helix</p></span></div><div class="option"><span class="key">d</span><span><p>200 base pair of DNA helix</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>A \u003cstrong>nucleosome\u003c/strong> consists of:\u003c/p> \u003cul> \u003cli>A core of \u003cstrong>histone octamer\u003c/strong> (8 histone proteins)\u003c/li> \u003cli>Around \u003cstrong>200 base pairs of DNA\u003c/strong> associated with it\u003c/li> \u003c/ul> \u003cp>Out of these, about \u003cstrong>146 bp DNA\u003c/strong> is wrapped around the histone octamer, while the remaining DNA acts as \u003cstrong>linker DNA\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which enzyme helps in the separation of both strands of DNA in DNA replication?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Helicase</p></span></div><div class="option"><span class="key">b</span><span><p>DNA polymerase</p></span></div><div class="option"><span class="key">c</span><span><p>Topoisomerase </p></span></div><div class="option"><span class="key">d</span><span><p>DNA ligase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During DNA replication, the enzyme Helicase unwinds the DNA double helix and separates the two strands by breaking the hydrogen bonds between complementary bases.\u003c/p> \u003cp>Helicase → Separates DNA strands\u003cbr/>DNA Polymerase → Synthesizes new DNA strands\u003cbr/>Topoisomerase → Relieves twisting/supercoiling of DNA\u003cbr/>DNA Ligase → Joins Okazaki fragments\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For initiation of protein synthesis ribosome binds to the ____ codon of messenger RNA.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>AUG</p></span></div><div class="option"><span class="key">b</span><span><p>UGA</p></span></div><div class="option"><span class="key">c</span><span><p>AGU</p></span></div><div class="option"><span class="key">d</span><span><p>UAG</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>AUG codes for Methionine and functions as the universal start codon.\u003c/p> \u003cp>UAG, UGA, UAA → all are stop codons.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Number of base pairs in haploid set of DNA of human is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.3\times {10}^{9}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6.6\times {10}^{9}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4.6\times {10}^{9}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(9.9\times {10}^{9}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>the human haploid genome (23 chromosomes) contains approximately 3.3 × 10⁹ base pairs (bp) of DNA.\u003c/p> \u003cul> \u003cli>Haploid (n) = 3.3 × 10⁹ bp\u003c/li> \u003cli>Diploid (2n) = 6.6 × 10⁹ bp\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The tcchnique of DNA fingcrprinting was initially developed by</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>G. J. Mendel</p></span></div><div class="option"><span class="key">b</span><span><p>Alcc Jeffreys</p></span></div><div class="option"><span class="key">c</span><span><p>Francois Jacob</p></span></div><div class="option"><span class="key">d</span><span><p>Jacques Monod</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

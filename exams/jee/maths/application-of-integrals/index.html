@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Application of Integrals","item":"https://yespyq.com/exams/jee/maths/application-of-integrals/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Application of Integrals</h1>
       <p>12 JEE Maths previous year questions on <b>Application of Integrals</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area enclosed by the curves \(y=x^3\) and \(y=\sqrt{x}\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{3}\) sq. units</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{5}{4}\) sq. units</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{5}{12}\) sq. units</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{12}{5}\) sq. units</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the area of the region bounded by the curves \(y=4-\frac{{x}^{2}}{4}\) and \(y=\frac{x-4}{2}\) is equal to \(\alpha\), then \(6\alpha\) equals</p> <p> </p> <p>[JEE Main 2025, 7 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>250</p></span></div><div class="option"><span class="key">b</span><span><p>210</p></span></div><div class="option"><span class="key">c</span><span><p>240</p></span></div><div class="option"><span class="key">d</span><span><p>220</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{matrix}\\text{Required Area}={\\int }_{−6}^{4}(4−\\frac{{x}^{2}}{4})−(\\frac{x−4}{2})dx \\\\ \\alpha ={\\int }_{−6}^{4}(6−\\frac{{x}^{2}}{4}−\\frac{x}{2})dx \\\\ ={(6−\\frac{{x}^{3}}{12}−\\frac{{x}^{2}}{4})}^{−4} \\\\ \\alpha =\\frac{125}{3}\\text{ Sq. units} \\\\ 6\\alpha =250\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S={(x,y)\in \mathrm{ℝ}\times \mathrm{ℝ}:x\geq 0,y\geq 0,{y}^{2}\leq 4x,\) \({y}^{2}\leq 12-2x\) and \(3y+\sqrt{8}x\leq 5\sqrt{8}}\). If the area of the region <em>S</em> is \(\alpha \sqrt{2}\), then \(\alpha\) is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{17}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{17}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{17}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{17}{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area enclosed by the curves \(y=x^3\) and \(y=\sqrt{x}\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{3}\) sq. units</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{5}{4}\) sq. units</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{12}\) sq. units</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{12}{5}\) sq. units</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\mathrm{The}\\mathrm{point}\\mathrm{of}\\mathrm{intersection}\\mathrm{of}\\mathrm{these}\\mathrm{curves}\\mathrm{will}\\mathrm{be}\\\\ \\sqrt{\\mathrm{x}}={\\mathrm{x}}^{3}\\\\ \\Rightarrow \\mathrm{x}=0,1\\)\u003c/p> \u003cp>Then, the area is given by\u003c/p> \u003cp>\\(A={\\int }_{0}^{1}\\left(\\sqrt{x}-{x}^{3}\\right)dx\\\\ ={\\left[\\frac{2}{3}{x}^{\\frac{3}{2}}-\\frac{{x}^{4}}{4}\\right]}_{0}^{1}\\\\ =\\frac{2}{3}(1)-\\frac{1}{4}\\\\ =\\frac{5}{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text { The area of region enclosed by the curves } y=e^x, y=\left|e^x-1\right| \text { and } y \text {-axis is (in sq. units) }\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1-ln 2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1+ln 2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(ln 2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,10 +135,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\mathrm{e}^x=1-\\mathrm{e}^x \\\\\u003cbr/>&amp; \\mathrm{e}^x=\\frac{1}{2} \\\\\u003cbr/>&amp; \\mathrm{x}=-\\ln 2 \\\\\u003cbr/>&amp; \\text { required area }=\\int_{-\\ln 2}^0\\left(e^x-\\left(1-e^x\\right)\\right) d x=\\left[2 e^x-x\\right]_{-\\ln 2}^0 \\\\\u003cbr/>&amp; =2-\\left(2 e^{-\\ln 2}+\\ln 2\\right)=2-1-\\ln 2=1-\\ln 2\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& \\mathrm{e}^x=1-\\mathrm{e}^x \\\\& \\mathrm{e}^x=\\frac{1}{2} \\\\& \\mathrm{x}=-\\ln 2 \\\\& \\text { required area }=\\int_{-\\ln 2}^0\\left(e^x-\\left(1-e^x\\right)\\right) d x=\\left[2 e^x-x\\right]_{-\\ln 2}^0 \\\\& =2-\\left(2 e^{-\\ln 2}+\\ln 2\\right)=2-1-\\ln 2=1-\\ln 2\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area of the region \(\left{(\mathrm{x},\mathrm{y}):{\mathrm{x}}^{2}+4\mathrm{x}+2\leq \mathrm{y}\leq |\mathrm{x}+2|\right}\) is equal to </p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7</p></span></div><div class="option"><span class="key">b</span><span><p>24/5</p></span></div><div class="option"><span class="key">c</span><span><p>20/3</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{Given, }\\\\ {x}^{2}+4x+2\\leq y\\leq |x+2|\\\\ y={(x+2)}^{2}-2&y=|x+2|\\)\u003c/p> \u003cp>\\(\\text{Required area}={\\int }_{-2}^{2}|x|dx-{\\int }_{-2}^{2}\\left({x}^{2}-2\\right)dx\\\\ =2{\\int }_{0}^{2}\\left(x\\right)dx-2{\\int }_{0}^{2}\\left({x}^{2}-2\\right)dx\\\\ ={\\left[\\left({x}^{2}\\right)-2\\left(\\frac{{\\left(x\\right)}^{3}}{3}-2x\\right)\\right]}_{0}^{2}\\\\ =\\left[4-2\\left(\\frac{8}{3}-4\\right)\\right]=\\left[4+\\frac{8}{3}\\right]=\\frac{20}{3}\\text{sq. units}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text { The area of region enclosed by the curves } y=e^x, y=\left|e^x-1\right| \text { and } y \text {-axis is (in sq. units) }\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1-ln 2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1+ln 2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(ln 2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,10 +159,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\mathrm{e}^x=1-\\mathrm{e}^x \\\\\u003cbr/>&amp; \\mathrm{e}^x=\\frac{1}{2} \\\\\u003cbr/>&amp; \\mathrm{x}=-\\ln 2 \\\\\u003cbr/>&amp; \\text { required area }=\\int_{-\\ln 2}^0\\left(e^x-\\left(1-e^x\\right)\\right) d x=\\left[2 e^x-x\\right]_{-\\ln 2}^0 \\\\\u003cbr/>&amp; =2-\\left(2 e^{-\\ln 2}+\\ln 2\\right)=2-1-\\ln 2=1-\\ln 2\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& \\mathrm{e}^x=1-\\mathrm{e}^x \\\\& \\mathrm{e}^x=\\frac{1}{2} \\\\& \\mathrm{x}=-\\ln 2 \\\\& \\text { required area }=\\int_{-\\ln 2}^0\\left(e^x-\\left(1-e^x\\right)\\right) d x=\\left[2 e^x-x\\right]_{-\\ln 2}^0 \\\\& =2-\\left(2 e^{-\\ln 2}+\\ln 2\\right)=2-1-\\ln 2=1-\\ln 2\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area of the region bounded by the parabola \((y-2)^2=\) \((x-1)\), the tangent to it at the point whose ordinate is 3 and the \(x\)-axis is:</p> <p>[JEE Main 2021, 27 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>9</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,10 +171,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Given, }(y-2)^2=(x-1) \\\\\u003cbr/>&amp; 2(y-2) \\frac{d y}{d x}=1 \\\\\u003cbr/>&amp; \\left.\\Rightarrow \\frac{d y}{d x}\\right|_{(2,3)}=\\frac{1}{2(3-2)}=\\frac{1}{2}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Equation of tangent at \\(P(2,3)\\) :\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; y-3=\\frac{1}{2}(x-2) \\Rightarrow 2 y-6=x-2 \\Rightarrow x-2 y+4=0 \\\\\u003cbr/>&amp; Q(-4,0) \\\\\u003cbr/>&amp; \\therefore \\quad \\text { Required area }=\\int_0^3\\left((y-2)^2+1-(2 y-4)\\right) d y \\\\\u003cbr/>&amp; \\quad=9 \\text { sq. units }\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\text { Given, }(y-2)^2=(x-1) \\\\& 2(y-2) \\frac{d y}{d x}=1 \\\\& \\left.\\Rightarrow \\frac{d y}{d x}\\right|_{(2,3)}=\\frac{1}{2(3-2)}=\\frac{1}{2}\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Equation of tangent at \\(P(2,3)\\) :\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& y-3=\\frac{1}{2}(x-2) \\Rightarrow 2 y-6=x-2 \\Rightarrow x-2 y+4=0 \\\\& Q(-4,0) \\\\& \\therefore \\quad \\text { Required area }=\\int_0^3\\left((y-2)^2+1-(2 y-4)\\right) d y \\\\& \\quad=9 \\text { sq. units }\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area of the region</p> <p>\(\left{(x,y):0\leq x\leq \frac{9}{4},0\leq y\leq 1,x\geq 3y,x+y\geq 2\right}\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{11}{32}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{35}{96}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{37}{96}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{13}{32}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \u003c/p> \u003cp>The problem asks for the area of the region\u003c/p> \u003cp>defined by the following inequalities:\u003c/p> \u003cp>\\({(x,y):0\\leq x\\leq \\frac{9}{4},0\\leq y\\leq 1,x\\geq 3y,x+y\\geq 2}\\)\u003c/p> \u003cp>First, let's rewrite the inequalities in terms of \\(y\\):\u003c/p> \u003cp>\\(0\\leq x\\leq \\frac{9}{4}\\)\u003c/p> \u003cp>\\(0\\leq y\\leq 1\\)\u003c/p> \u003cp>\\(x\\geq 3y\\text{  }⟹\\text{  }y\\leq \\frac{x}{3}\\)\u003c/p> \u003cp>\\(x+y\\geq 2\\text{  }⟹\\text{  }y\\geq 2−x\\)\u003c/p> \u003cp>Combining these, for a given \\(x\\), the range of \\(y\\) is:\u003c/p> \u003cp>\\(\\max ⁡(0,2−x)\\leq y\\leq \\min ⁡(1,\\frac{x}{3})\\)\u003c/p> \u003cp>For the region to be non-empty,\u003c/p> \u003cp>we must have \\(\\max ⁡(0,2−x)\\leq \\min ⁡(1,\\frac{x}{3})\\).\u003c/p> \u003cp>Let's find the critical points by examining\u003c/p> \u003cp>the intersections of the boundary lines.\u003c/p> \u003cp>Intersection of \\(y=2−x\\) and \\(y=\\frac{x}{3}\\):\u003c/p> \u003cp>\\(\\begin{matrix}2−x & =\\frac{x}{3} \\\\ 6−3x & =x \\\\ 6 & =4x \\\\ x & =\\frac{6}{4}=\\frac{3}{2}\\end{matrix}\\)\u003c/p> \u003cp>At \\(x=\\frac{3}{2}\\), \\(y=2−\\frac{3}{2}=\\frac{1}{2}\\). This point is \\({P}_{1}(\\frac{3}{2},\\frac{1}{2})\\).\u003c/p> \u003cp>This point satisfies \\(0\\leq \\frac{3}{2}\\leq \\frac{9}{4}\\)\u003c/p> \u003cp>(since \\(1.5\\leq 2.25\\)) and \\(0\\leq \\frac{1}{2}\\leq 1\\).\u003c/p> \u003cp>The condition \\(y\\geq 2−x\\) implies that for \\(x\u003c\\frac{3}{2}\\), \\(2−x>\\frac{x}{3}\\),\u003c/p> \u003cp>so the lower bound \\(2−x\\) would be greater than\u003c/p> \u003cp>the upper bound \\(\\frac{x}{3}\\), meaning no region\u003c/p> \u003cp>exists for \\(x\u003c\\frac{3}{2}\\). Thus, the region starts at \\(x=\\frac{3}{2}\\).\u003c/p> \u003cp>The upper limit for \\(x\\) is \\(\\frac{9}{4}\\).\u003c/p> \u003cp>The upper bound for \\(y\\) is \\(y=\\frac{x}{3}\\). Since \\(x\\leq \\frac{9}{4}=2.25\\),\u003c/p> \u003cp>then \\(\\frac{x}{3}\\leq \\frac{9\\mathrm{/}4}{3}=\\frac{3}{4}\\). This is always less than or equal to \\(1\\),\u003c/p> \u003cp>so \\({y}_{upper}=\\frac{x}{3}\\) for the entire \\(x\\)-range of the region.\u003c/p> \u003cp>The lower bound for \\(y\\) is \\(y=\\max ⁡(0,2−x)\\).\u003c/p> \u003cp>If \\(2−x\\geq 0\\text{  }⟹\\text{  }x\\leq 2\\), then \\({y}_{lower}=2−x\\).\u003c/p> \u003cp>If \\(2−x\u003c0\\text{  }⟹\\text{  }x>2\\), then \\({y}_{lower}=0\\).\u003c/p> \u003cp>So we need to split the integral into\u003c/p> \u003cp>two parts based on the lower bound for \\(y\\).\u003c/p> \u003cp>The relevant \\(x\\)-interval is \\([\\frac{3}{2},\\frac{9}{4}]\\).\u003c/p> \u003cp>The critical \\(x\\)-value where\u003c/p> \u003cp>the lower bound changes is \\(x=2\\).\u003c/p> \u003col> \u003cli>Define the integration intervals\u003c/li> \u003c/ol> \u003cp>Interval 1: \\(\\frac{3}{2}\\leq x\\leq 2\\)\u003c/p> \u003cp>In this interval, \\({y}_{upper}=\\frac{x}{3}\\) and \\({y}_{lower}=2−x\\).\u003c/p> \u003cp>Interval 2: \\(2\u003cx\\leq \\frac{9}{4}\\)\u003c/p> \u003cp>In this interval, \\({y}_{upper}=\\frac{x}{3}\\) and \\({y}_{lower}=0\\).\u003c/p> \u003col> \u003cli>Calculate the area for Interval 1\u003c/li> \u003c/ol> \u003cp>The area \\({A}_{1}\\) is given by:\u003c/p> \u003cp>\\(\\begin{matrix}{A}_{1} & ={\\int }_{\\frac{3}{2}}^{2}(\\frac{x}{3}−(2−x))dx \\\\  & ={\\int }_{\\frac{3}{2}}^{2}(\\frac{x}{3}−2+x)dx \\\\  & ={\\int }_{\\frac{3}{2}}^{2}(\\frac{4x}{3}−2)dx \\\\  & ={[\\frac{4}{3}⋅\\frac{{x}^{2}}{2}−2x]}_{\\frac{3}{2}}^{2} \\\\  & ={[\\frac{2{x}^{2}}{3}−2x]}_{\\frac{3}{2}}^{2} \\\\  & =(\\frac{2(2{)}^{2}}{3}−2(2))−(\\frac{2{(\\frac{3}{2})}^{2}}{3}−2(\\frac{3}{2})) \\\\  & =(\\frac{8}{3}−4)−(\\frac{2⋅\\frac{9}{4}}{3}−3) \\\\  & =(\\frac{8}{3}−\\frac{12}{3})−(\\frac{9}{6}−3) \\\\  & =−\\frac{4}{3}−(\\frac{3}{2}−\\frac{6}{2}) \\\\  & =−\\frac{4}{3}−(−\\frac{3}{2}) \\\\  & =−\\frac{4}{3}+\\frac{3}{2} \\\\  & =\\frac{−8+9}{6}=\\frac{1}{6}\\end{matrix}\\)\u003c/p> \u003col> \u003cli>Calculate the area for Interval 2\u003c/li> \u003c/ol> \u003cp>The area \\({A}_{2}\\) is given by:\u003c/p> \u003cp>\\(\\begin{matrix}{A}_{2} & ={\\int }_{2}^{\\frac{9}{4}}(\\frac{x}{3}−0)dx \\\\  & ={\\int }_{2}^{\\frac{9}{4}}\\frac{x}{3}dx \\\\  & ={[\\frac{{x}^{2}}{6}]}_{2}^{\\frac{9}{4}} \\\\  & =\\frac{{(\\frac{9}{4})}^{2}}{6}−\\frac{(2{)}^{2}}{6} \\\\  & =\\frac{\\frac{81}{16}}{6}−\\frac{4}{6} \\\\  & =\\frac{81}{96}−\\frac{64}{96} \\\\  & =\\frac{17}{96}\\end{matrix}\\)\u003c/p> \u003col> \u003cli>Calculate the total area\u003c/li> \u003c/ol> \u003cp>The total area \\(A\\) is the sum of \\({A}_{1}\\) and \\({A}_{2}\\):\u003c/p> \u003cp>\\(\\begin{matrix}A & ={A}_{1}+{A}_{2} \\\\  & =\\frac{1}{6}+\\frac{17}{96} \\\\  & =\\frac{16}{96}+\\frac{17}{96} \\\\  & =\\frac{33}{96}\\end{matrix}\\)\u003c/p> \u003cp>Simplifying the fraction by dividing\u003c/p> \u003cp>the numerator and denominator by 3:\u003c/p> \u003cp>\\(A=\\frac{33\\div 3}{96\\div 3}=\\frac{11}{32}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Area (in sq. units) of the region outside \( \frac{|\mathrm{x}|}{2}+\frac{|\mathrm{y}|}{3}=1 \) and inside the ellipse \( \frac{x^{2}}{4}+\frac{y^{2}}{9}=1 \) is :</p> <p><br/>[JEE Main 2020, 2 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 3(4-\pi) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 6(\pi-2) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 6(4-\pi) \)</p></span></div><div class="option"><span class="key">d</span><span><p> \( 3(\pi-2) \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,10 +195,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{|x|}{2}+\\frac{|y|}{3}=1 \\\\\u003cbr/>&amp; \\frac{x^2}{4}+\\frac{y^2}{9}=1\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Area of Ellipse \\(=\\pi ab=6\\pi\\)\u003cbr/>Required area,\u003c/p> \u003cp>\\(\\\u003cbr/>\\begin{aligned}\u003cbr/>&amp; =\\pi \\times 2 \\times 3-\\text { (Area of quadrilateral) } \\\\\u003cbr/>&amp; =6 \\pi-\\frac{1}{2} 6 \\times 4 \\\\\u003cbr/>&amp; =6 \\pi-12 \\\\\u003cbr/>&amp; =6(\\pi-2)\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\\u003cbr/>$$\\begin{aligned}& \\frac{|x|}{2}+\\frac{|y|}{3}=1 \\\\& \\frac{x^2}{4}+\\frac{y^2}{9}=1\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Area of Ellipse \\(=\\pi ab=6\\pi\\)\u003cbr/>Required area,\u003c/p> \u003cp>\\(\\\u003cbr/>$$\\begin{aligned}& =\\pi \\times 2 \\times 3-\\text { (Area of quadrilateral) } \\\\& =6 \\pi-\\frac{1}{2} 6 \\times 4 \\\\& =6 \\pi-12 \\\\& =6(\\pi-2)\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area, enclosed by the curves \(y=\text{sin}x+\text{cos}x\) and \(y=\left|\text{cos}x−\text{sin}x\right|\) and the lines \(x=0,x=\frac{\pi }{2}\) , is :</p> <p><strong>[JEE Main 2021, 1 Sep (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\sqrt{2}\left(\sqrt{2}−1\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2\left(\sqrt{2}+1\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\left(\sqrt{2}−1\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2\sqrt{2}\left(\sqrt{2}+1\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Required area \u003c/p> \u003cp>\\(A=2{\\int }_{0}^{\\pi /4}((\\sin x+\\cos x)-(\\cos x-\\sin x))dx\\)\u003c/p> \u003cp>\\(=2{\\int }_{0}^{\\pi /4}\\sin xdx\\)\u003c/p> \u003cp>\\(=2\\sqrt{2}(\\sqrt{2}-1)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The area of the region \(A=\left{(x,y):\left|\cos x−\sin x\right|\leq y\leq \sin x,0\leq x\leq \frac{\pi }{2}\right}\) is</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1−\frac{3}{\sqrt{2}}+\frac{4}{\sqrt{5}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{5}+2\sqrt{2}−4.5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{\sqrt{5}}−\frac{3}{\sqrt{2}}+1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{5}−2\sqrt{2}+1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(y=|\\cos x-\\sin x|=\\sqrt{2}\\left|\\cos \\left(x+\\frac{\\pi }{4}\\right)\\right|\\)\u003cbr/>\\(=\\left{\\begin{matrix}\\sqrt{2}\\cos \\left(x+\\frac{\\pi }{4}\\right),0\\leq x\\leq \\frac{\\pi }{4} \\\\ -\\sqrt{2}\\cos \\left(x+\\frac{\\pi }{4}\\right),\\frac{\\pi }{4}\\leq x\\leq \\frac{\\pi }{2}\\end{matrix}\\right.\\)\u003cbr/>Shaded area \\(={\\int }_{{\\tan }^{-1}\\frac{1}{2}}^{\\frac{\\pi }{4}}\\sin x-(\\cos x-\\sin x)dx+{\\int }_{\\frac{\\pi }{4}}^{\\frac{\\pi }{2}}\\sin x+(\\cos x-\\sin x)dx\\)\u003cbr/>\u003cbr/>\\(=[-2\\cos x-\\sin x{]}_{{\\tan }^{-1}\\frac{1}{2}}^{\\pi /4}+[\\sin x{]}_{\\pi /4}^{\\pi /2}=\\sqrt{5}-2\\sqrt{2}+1\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(y=|\\cos x-\\sin x|=\\sqrt{2}\\left|\\cos \\left(x+\\frac{\\pi }{4}\\right)\\right|\\)\u003cbr/>\\(=\\left{$$\\begin{matrix}\\sqrt{2}\\cos \\left(x+\\frac{\\pi }{4}\\right),0\\leq x\\leq \\frac{\\pi }{4} \\\\ -\\sqrt{2}\\cos \\left(x+\\frac{\\pi }{4}\\right),\\frac{\\pi }{4}\\leq x\\leq \\frac{\\pi }{2}\\end{matrix}$$\\right.\\)\u003cbr/>Shaded area \\(={\\int }_{{\\tan }^{-1}\\frac{1}{2}}^{\\frac{\\pi }{4}}\\sin x-(\\cos x-\\sin x)dx+{\\int }_{\\frac{\\pi }{4}}^{\\frac{\\pi }{2}}\\sin x+(\\cos x-\\sin x)dx\\)\u003cbr/>\u003cbr/>\\(=[-2\\cos x-\\sin x{]}_{{\\tan }^{-1}\\frac{1}{2}}^{\\pi /4}+[\\sin x{]}_{\\pi /4}^{\\pi /2}=\\sqrt{5}-2\\sqrt{2}+1\\)\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Maths PYQs</h3>

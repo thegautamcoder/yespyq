@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Respiration in Plants","item":"https://yespyq.com/exams/neet/biology/respiration-in-plants/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Respiration in Plants</h1>
       <p>13 NEET Biology previous year questions on <b>Respiration in Plants</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">What is the net gain of ATP when each molecule of glucose is converted to two molecules of pyruvic acid? [NEET 2022]</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Two</span></div><div class="option"><span class="key">b</span><span>Eight</span></div><div class="option"><span class="key">c</span><span>Four</span></div><div class="option"><span class="key">d</span><span>Six</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Identify the step in tricarboxylic acid cycle, which does not involve oxidation of substrate. [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Isocitrate -ketoglutaric acid</span></div><div class="option"><span class="key">b</span><span>Malic acid Oxaloacetic acid</span></div><div class="option"><span class="key">c</span><span>Succinic acid Malic acid</span></div><div class="option"><span class="key">d</span><span>Succinyl-CoA Succinic acid</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The conversion of Succinyl-CoA to Succinic acid involves substrate-level phosphorylation, producing GTP (which is converted to ATP), and does not involve oxidation. All other steps involve the removal of hydrogen atoms, thus involving oxidation.","fmt":""}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the step in tricarboxylic acid cycle, which does not involve oxidation of substrate.</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Isocitrate \(\to \alpha\) -ketoglutaric acid</p></span></div><div class="option"><span class="key">b</span><span><p>Malic acid \(\to\)Oxaloacetic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Succinic acid\(\to\) Malic acid</p></span></div><div class="option"><span class="key">d</span><span><p>Succinyl-CoA\(\to\)Succinic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The conversion of Succinyl-CoA to Succinic acid involves substrate-level phosphorylation, producing GTP (which is converted to ATP), and does not involve oxidation.\u003c/li> \u003cli>All other steps involve the removal of hydrogen atoms, thus involving oxidation.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the step in tricarboxylic acid cycle, which does not involve oxidation of substrate.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Isocitrate \(\to \alpha\) -ketoglutaric acid</p></span></div><div class="option"><span class="key">b</span><span><p>Malic acid \(\to\)Oxaloacetic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Succinic acid\(\to\) Malic acid</p></span></div><div class="option"><span class="key">d</span><span><p>Succinyl-CoA\(\to\)Succinic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The conversion of Succinyl-CoA to Succinic acid involves substrate-level phosphorylation, producing GTP (which is converted to ATP), and does not involve oxidation.\u003c/li> \u003cli>All other steps involve the removal of hydrogen atoms, thus involving oxidation.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The complex II of mitochondrial electron transport chain is also known as</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cytochrome c oxidase</p></span></div><div class="option"><span class="key">b</span><span><p>NADH dehydrogenase</p></span></div><div class="option"><span class="key">c</span><span><p>Cytochrome bc</p></span></div><div class="option"><span class="key">d</span><span><p>Succinate dehydrogenase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Complex II\u003c/strong> of the mitochondrial \u003cstrong>electron transport chain (ETC)\u003c/strong> is also known as \u003cstrong>Succinate dehydrogenase\u003c/strong>. It is a unique enzyme because it is part of both the \u003cstrong>Krebs cycle\u003c/strong> and the \u003cstrong>ETC\u003c/strong>.\u003c/p> \u003cp>In the \u003cstrong>Krebs cycle\u003c/strong>, it catalyzes the conversion of \u003cstrong>succinate to fumarate\u003c/strong>, producing \u003cstrong>FADH₂\u003c/strong>. In the \u003cstrong>ETC\u003c/strong>, it transfers the electrons from \u003cstrong>FADH₂\u003c/strong> directly to \u003cstrong>ubiquinone (Coenzyme Q)\u003c/strong>, which then carries them to \u003cstrong>Complex III\u003c/strong>.\u003c/p> \u003cp>Unlike Complex I, Complex II does \u003cstrong>not pump protons\u003c/strong>, so it contributes less to ATP generation.\u003c/p> \u003cp>Thus, Complex II = \u003cstrong>Succinate dehydrogenase\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II :</p> <table> <tbody> <tr> <td> <p>List I (Process) </p> </td> <td> <p>List II (Location)</p> </td> </tr> <tr> <td>A. Glycolysis</td> <td>I. Inner mitochondrial membrane</td> </tr> <tr> <td>B. ETS</td> <td>II. Mitochondrial matrix</td> </tr> <tr> <td>C. Accumulation of protons</td> <td>III. Cytoplasm</td> </tr> <tr> <td>D. Krebs' cycle</td> <td>IV. Intermembrane space</td> </tr> </tbody> </table> <p>Choose the<strong> correct</strong> answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-I, B-IV, C-III, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-I, C-IV, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-III, C-IV, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Cellular respiration steps and locations: different stages of respiration occur at specific sites in the cell and mitochondria for efficient energy production\u003c/p> \u003cul> \u003cli>A. Glycolysis → III → takes place in the cytoplasm where glucose is broken down into pyruvate\u003c/li> \u003cli>B. ETS → I → located on the inner mitochondrial membrane where electron carriers help in ATP formation\u003c/li> \u003cli>C. Accumulation of protons → IV → protons are pumped into the intermembrane space creating a gradient for ATP synthesis\u003c/li> \u003cli>D. Krebs' cycle → II → occurs in mitochondrial matrix where acetyl-CoA is oxidised to release CO₂ and energy\u003c/li> \u003c/ul> \u003cp>Thus, the correct matching is: A-III, B-I, C-IV, D-II\u003c/p> \u003cp>Final Answer: Option B\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are correct about cellular respiration?<br/>A. Cellular respiration is the breaking of C - C bonds of complex organic molecules by oxidation.<br/>B. The entire cellular respiration takes place in Mitochondria.<br/>C. Fermentation takes place under anaerobic condition in germinating seeds.<br/>D. The fate of pyruvate formed during glycolysis depends on the type of organism also.<br/>E. Water is formed during respiration as a result of \({O}_{2}\) accepting electrons and getting reduced.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C, D, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C, E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>A. Cellular respiration is the breaking of C-C bonds of complex organic molecules by oxidation. \u003c/strong>This statement is correct. Cellular respiration involves the oxidation of organic molecules to break the carbon-carbon (C-C) bonds and release energy.\u003c/p> \u003cp>\u003cstrong>B. The entire cellular respiration takes place in Mitochondria. \u003c/strong>This statement is incorrect. While the majority of cellular respiration (Krebs cycle and oxidative phosphorylation) occurs in the mitochondria, glycolysis (the first step) takes place in the cytoplasm.\u003c/p> \u003cp>\u003cstrong>C. Fermentation takes place under anaerobic condition in germinating seeds. \u003c/strong>This statement is correct. Fermentation is an anaerobic process that converts sugars to acids, gases, or alcohol, and it can occur in germinating seeds when oxygen is scarce.\u003c/p> \u003cp>\u003cstrong>D. The fate of pyruvate formed during glycolysis depends on the type of organism also. \u003c/strong>This statement is correct. The fate of pyruvate can vary depending on the type of organism and the presence of oxygen. For example, in aerobic conditions, pyruvate enters the mitochondria for the Krebs cycle, whereas in anaerobic conditions, it can be converted to lactate or ethanol, depending on the organism.\u003c/p> \u003cp>\u003cstrong>E. Water is formed during respiration as a result of oxygen accepting electrons and getting reduced. \u003c/strong>This statement is correct. During the electron transport chain in oxidative phosphorylation, oxygen acts as the final electron acceptor and gets reduced to form water .\u003c/p> \u003cp>Based on the analysis, the correct statements are A, C, D, and E. Hence, the correct option is:\u003c/p> \u003cp>\u003cstrong>Option A\u003c/strong>: A, C, D, E only\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are correct about cellular respiration?<br/>A. Cellular respiration is the breaking of C - C bonds of complex organic molecules by oxidation.<br/>B. The entire cellular respiration takes place in Mitochondria.<br/>C. Fermentation takes place under anaerobic condition in germinating seeds.<br/>D. The fate of pyruvate formed during glycolysis depends on the type of organism also.<br/>E. Water is formed during respiration as a resull of \({O}_{2}\) accepting electrons and getting reduced. Choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C, D, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C, E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>A. Cellular respiration is the breaking of C-C bonds of complex organic molecules by oxidation. \u003c/strong>This statement is correct. Cellular respiration involves the oxidation of organic molecules to break the carbon-carbon (C-C) bonds and release energy.\u003c/p> \u003cp>\u003cstrong>B. The entire cellular respiration takes place in Mitochondria. \u003c/strong>This statement is incorrect. While the majority of cellular respiration (Krebs cycle and oxidative phosphorylation) occurs in the mitochondria, glycolysis (the first step) takes place in the cytoplasm.\u003c/p> \u003cp>\u003cstrong>C. Fermentation takes place under anaerobic condition in germinating seeds. \u003c/strong>This statement is correct. Fermentation is an anaerobic process that converts sugars to acids, gases, or alcohol, and it can occur in germinating seeds when oxygen is scarce.\u003c/p> \u003cp>\u003cstrong>D. The fate of pyruvate formed during glycolysis depends on the type of organism also. \u003c/strong>This statement is correct. The fate of pyruvate can vary depending on the type of organism and the presence of oxygen. For example, in aerobic conditions, pyruvate enters the mitochondria for the Krebs cycle, whereas in anaerobic conditions, it can be converted to lactate or ethanol, depending on the organism.\u003c/p> \u003cp>\u003cstrong>E. Water is formed during respiration as a result of oxygen accepting electrons and getting reduced. \u003c/strong>This statement is correct. During the electron transport chain in oxidative phosphorylation, oxygen acts as the final electron acceptor and gets reduced to form water .\u003c/p> \u003cp>Based on the analysis, the correct statements are A, C, D, and E. Hence, the correct option is:\u003c/p> \u003cp>\u003cstrong>Option A\u003c/strong>: A, C, D, E only\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is incorrect?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>In ETC (Electron Transport Chain), one molecule of \(\mathrm{NADH}+{\mathrm{H}}^{+}\)gives rise to 2 ATP molecules, and one \({\mathrm{FADH}}_{2}\) gives rise to 3 ATP molecules.</p></span></div><div class="option"><span class="key">b</span><span><p>ATP is synthesized through complex V.</p></span></div><div class="option"><span class="key">c</span><span><p>Oxidation - reduction reactions produce proton gradient in respiration,</p></span></div><div class="option"><span class="key">d</span><span><p>During aerobic respiration, role of oxygen is limited to the terminal stage.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>One molecule of \\(\\mathrm{NADH}+{\\mathrm{H}}^{+}\\) give rise to \\(3\\mathrm{ATP}\\) while one molecule of \\({\\mathrm{FADH}}_{2}\\) forms 2 ATP molecules. Rest three statements are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R:<br/><strong>Assertion A</strong> : ATP is used at two steps in glycolysis.<br/><strong>Reason R</strong> : First ATP is used in converting glucose into glucose-6-phosphate and second ATP is used in conversion of fructose-6-phosphate into fructose-1-6-bisphosphate.</p> <p>In the light of the above statements, choose the <strong>correct </strong>answer from the options given below :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are true but R is NOT the correct explanation of A.</p></span></div><div class="option"><span class="key">b</span><span><p>A is true but R is false.</p></span></div><div class="option"><span class="key">c</span><span><p>A is false but R is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true and R is the correct explanation of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During glycolysis, two ATP molecules are consumed in the initial phase of the pathway:\u003c/p> \u003col> \u003cli>The first ATP is used when hexokinase catalyzes the phosphorylation of glucose to glucose-6-phosphate.\u003c/li> \u003cli>The second ATP is utilized when phosphofructokinase converts fructose-6-phosphate to fructose-1,6-bisphosphate.\u003c/li> \u003c/ol> \u003cp>These reactions help in activating glucose for further breakdown. Therefore, both statements are correct, and the reason accurately explains the assertion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R:<br/><strong>Assertion A</strong> : ATP is used at two steps in glycolysis.<br/><strong>Reason R</strong> : First ATP is used in converting glucose into glucose-6-phosphate and second ATP is used in conversion of fructose-6-phosphate into fructose-1-6- diphosphate.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are true but R is NOT the correct explanation of A.</p></span></div><div class="option"><span class="key">b</span><span><p>A is true but R is false.</p></span></div><div class="option"><span class="key">c</span><span><p>A is false but R is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true and R is the correct explanation of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During glycolysis, two ATP molecules are consumed in the initial phase of the pathway:\u003c/p> \u003col> \u003cli>The first ATP is used when hexokinase catalyzes the phosphorylation of glucose to glucose-6-phosphate.\u003c/li> \u003cli>The second ATP is utilized when phosphofructokinase converts fructose-6-phosphate to fructose-1,6-bisphosphate.\u003c/li> \u003c/ol> \u003cp>These reactions help in activating glucose for further breakdown. Therefore, both statements are correct, and the reason accurately explains the assertion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of substrate level phosphorylations in one turn of citric acid cycle is</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>zero</p></span></div><div class="option"><span class="key">b</span><span><p>one</p></span></div><div class="option"><span class="key">c</span><span><p>two</p></span></div><div class="option"><span class="key">d</span><span><p>three</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,7 +222,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In one turn of the citric acid cycle (Krebs cycle), there is only one substrate level phosphorylation. This occurs during the conversion of succinyl CoA to succinic acid, where GDP is converted to GTP (or ADP to ATP in some organisms).\u003c/p> \u003cp>All other ATP equivalents produced in the cycle are generated indirectly through oxidative phosphorylation via reduced coenzymes NADH and FADH\u003csub>2\u003c/sub>, not by direct transfer of a phosphate group.\u003c/p> \u003cp>Therefore, the number of substrate level phosphorylations in one turn of the citric acid cycle is one.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Pyruvate dehydrogenase activity during aerobic respiration requires.</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Calcium</p></span></div><div class="option"><span class="key">b</span><span><p>Cobalt</p></span></div><div class="option"><span class="key">c</span><span><p>Iron</p></span></div><div class="option"><span class="key">d</span><span><p>Magnesium</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

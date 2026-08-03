@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/jee/chemistry/"},{"@type":"ListItem","position":5,"name":"The P-Block Elements","item":"https://yespyq.com/exams/jee/chemistry/the-p-block-elements/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>The P-Block Elements</h1>
       <p>65 JEE Chemistry previous year questions on <b>The P-Block Elements</b> — options free on every question; <b>6 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the correct statement(s) among the following</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>is a reducing agent</span></div><div class="option"><span class="key">b</span><span>reacts with to form</span></div><div class="option"><span class="key">c</span><span>A solution of in contains and ions</span></div><div class="option"><span class="key">d</span><span>The reaction of with hot dilute nitric acid to give is a redox reaction</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Aluminium chloride in acidified aqueous solution forms an ion having geometry</p> <p><strong>[JEE Main 2024, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Square planar</p></span></div><div class="option correct"><span class="key">b</span><span><p>Octahedral</p></span></div><div class="option"><span class="key">c</span><span><p>Trigonal bipyramidal</p></span></div><div class="option"><span class="key">d</span><span><p>Tetrahedral</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Aluminium chloride in acidified aqueous solution forms an ion having geometry</p> <p><strong>[JEE Main 2024, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Square planar</p></span></div><div class="option correct"><span class="key">b</span><span><p>Octahedral</p></span></div><div class="option"><span class="key">c</span><span><p>Trigonal bipyramidal</p></span></div><div class="option"><span class="key">d</span><span><p>Tetrahedral</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statements from the following are:</p> <p>A. Ionic radii of trivalent cations of group 13 elements decreases down the group.</p> <p>B. Electronegativity of group 13 elements decreases down the group.</p> <p>C. Among the group 13 elements, Boron has highest first ionisation enthalpy.</p> <p>D. The trichloride and triiodide of group 13 elements are covalent in nature.</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2026, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and C Only</p></span></div><div class="option correct"><span class="key">b</span><span><p>C and D Only</p></span></div><div class="option"><span class="key">c</span><span><p>B and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A and D Only</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The elements of Group 13 with highest and lowest first ionisation enthalpies are respectively:</p> <p><strong>[JEE Main 2025, 4 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B &amp; Ga </p></span></div><div class="option"><span class="key">b</span><span><p>B &amp; Tl </p></span></div><div class="option"><span class="key">c</span><span><p>Tl &amp; B </p></span></div><div class="option correct"><span class="key">d</span><span><p>B &amp; In </p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of neutrons present in the more abundant isotope of boron is 'x'. Amorphous boron upon heating with air forms a product, in which the oxidation state of boron is 'y'. The value of \(x+y\) is</p> <p>[JEE Main 2024, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option correct"><span class="key">c</span><span><p>9</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The atomic number of the element with least melting point in group-14 is</p> <p>(JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6</p></span></div><div class="option"><span class="key">b</span><span><p>14</p></span></div><div class="option"><span class="key">c</span><span><p>50</p></span></div><div class="option"><span class="key">d</span><span><p>82</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Melting Points (in K)\u003cbr/>C Si Ge Sn Pb\u003cbr/>4373 1693 1218 505 600\u003cbr/>Correct order will be\u003cbr/>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>Sn atomic number 50 has least Melting point\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Evaluate the following statements related to group 14 elements for their correctness</p> <p>(A) Covalent radius decreases down the group from \(C\) to \(Pb\) in a regular manner<br/>(B) Electronegativity decreases from \(C\) to \(Pb\) down the group gradually.<br/>(C) Maximum covalence of \(C\) is 4 whereas other elements can expand their covalence due to presence of \(d\) orbitals.<br/>(D) Heavier elements do not form \(p \pi- p \pi\) bonds,<br/>(E) Carbon can exhibit negative oxidation states.</p> <p>Choose the correct answer from the options given below </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B) and (C) Only</p></span></div><div class="option"><span class="key">b</span><span><p>(C), (D) and (E) Only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (B) Only</p></span></div><div class="option"><span class="key">d</span><span><p>(C) and (D) Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A) Incorrect → covalent radius increases down the group\u003c/p> \u003cp>(B) Incorrect → electronegativity trend is irregular\u003c/p> \u003cp>(C) Correct → carbon cannot expand octet, others can due to d-orbitals\u003c/p> \u003cp>(D) Correct → heavier elements cannot form effective pπ–pπ bonds\u003c/p> \u003cp>(E) Correct → carbon shows negative oxidation states (e.g., −4 in CH₄)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Evaluate the following statements related to group 14 elements for their correctness. </p> <p>(A) Covalent radius decreases down the group from C to Pb in a regular manner.</p> <p>(B) Electronegativity decreases from C to Pb down the group gradually.</p> <p>(C) Maximum covalence of C is 4 whereas other elements can expand their covalence due to presence of d orbitals.</p> <p>(D) Heavier elements do not form pπ-p π bonds.</p> <p>(E) Carbon can exhibit negative oxidation states.</p> <p>Choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2024, 06 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(C), (D) and (E) Only</p></span></div><div class="option"><span class="key">b</span><span><p>(A) and (B) Only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) and (C) Only</p></span></div><div class="option"><span class="key">d</span><span><p>(C) and (D) Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A) Down the group; radius increases\u003cbr/>(B) EN does not decrease gradually from C to Pb .\u003cbr/>(C) Correct.\u003cbr/>(D) Correct.\u003cbr/>(E) Range of oxidation state of carbon ; -4 to +4\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements </p> <p><strong>Statement I :</strong> The electronegativity of group 14 elements from \(\mathrm{Si}\) to \(\mathrm{Pb}\), gradually decreases.</p> <p><strong>Statement II :</strong> Group 14 contains non-metallic, metallic, as well as metalloid elements.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p>[JEE Main 2024, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Statement I is false because electronegativity in group 14 does not decrease regularly from Si to Pb; there is an irregular trend due to poor shielding of d and f electrons. Statement II is true because group 14 contains non-metals (C), metalloids (Si, Ge), and metals (Sn, Pb). Hence, the correct answer is that Statement I is false but Statement II is true, making option A correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The atomic number of the element with least melting point in group-14 is</p> <p>(JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6</p></span></div><div class="option"><span class="key">b</span><span><p>14</p></span></div><div class="option"><span class="key">c</span><span><p>50</p></span></div><div class="option"><span class="key">d</span><span><p>82</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Melting Points (in K)\u003cbr/>C Si Ge Sn Pb\u003cbr/>4373 1693 1218 505 600\u003cbr/>Correct order will be\u003cbr/>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>Sn atomic number 50 has least Melting point\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement I : Group 13 trivalent halides get easily hydrolyzed by water due to their covalent nature.</p> <p>Statement II : \({\mathrm{AlCl}}_{3}\) upon hydrolysis in acidified aqueous solution forms octahedral \({\left[\mathrm{Al}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{3+}\) ion.</p> <p>In the light of the above statements, choose the correct answer from the options given below : </p> <p>[JEE Main 2024, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both statement I and statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is false but statement II is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement I and statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement I is true: Group 13 halides are largely covalent, so they undergo hydrolysis easily in water. Due to electron deficiency, these compounds readily react with water molecules.\u003c/p> \u003cp>Statement II is also true: AlCl₃ in aqueous acidic medium forms the octahedral complex [Al(H₂O)₆]³⁺. Aluminium accepts lone pairs from six water molecules, completing its coordination.\u003c/p> \u003cp>Therefore, both statements are correct, and the correct option is that both I and II are true.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statements from the following are :<br/>(A) \({\mathrm{Tl}}^{3+}\) is a powerful oxidising agent<br/>(B) \({\mathrm{Al}}^{3+}\) does not get reduced easily<br/>(C) Both \({\mathrm{Al}}^{3+}\) and \({\mathrm{Tl}}^{3+}\) are very stable in solution<br/>(D) \({\mathrm{Tl}}^{+}\) is more stable than \({\mathrm{Tl}}^{3+}\)<br/>(E) \({\mathrm{Al}}^{3+}\) and \({\mathrm{Tl}}^{+}\)are highly stable<br/>Choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B), (C), (D) and (E)</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B), (D) and (E) only </p></span></div><div class="option"><span class="key">c</span><span><p>(B), (D) and (E) only </p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(i) \u003cstrong>True\u003c/strong> – \\({\\mathrm{Tl}}^{+}\\)is more stable than Tl³⁺ due to inert pair effect; hence \\({\\mathrm{Tl}}^{3+}\\) is a strong oxidising agent.\u003c/p> \u003cp>(ii) \u003cstrong>True\u003c/strong> – \\({E}_{{\\text{Al}}^{3+}\\mathrm{/}\\text{Al}}^{∘}=−1.66\\text{ }\\text{V}\\); \\({\\mathrm{Al}}^{3+}\\) is difficult to reduce, so it is highly stable.\u003c/p> \u003cp>(iii) \u003cstrong>False\u003c/strong> – \\({\\mathrm{Tl}}^{3+}\\)is unstable.\u003c/p> \u003cp>(iv) \u003cstrong>True\u003c/strong> – \\({\\mathrm{Tl}}^{+}\\) is more stable than \\({\\mathrm{Tl}}^{3+}\\).\u003c/p> \u003cp>(v) \u003cstrong>True\u003c/strong> – \\({\\mathrm{Al}}^{3+}\\) and \\({\\mathrm{Tl}}^{+}\\)are highly stable\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Assertion (A): </strong>Melting point of Boron (\(2453\mathrm{K}\)) is unusually high in group \(13\) elements.<br/><strong>Reason (R):</strong> Solid Boron has very strong crystalline lattice.</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both assertion and reason are correct but reason is not the correct explanation of assertion</p></span></div><div class="option"><span class="key">b</span><span><p>Assertion is false but reason is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both assertion and reason are correct and reason is the correct explanation of assertion</p></span></div><div class="option"><span class="key">d</span><span><p>Assertion is true but reason is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Assertion is true: Boron has an unusually high melting point in group 13. Reason is also true: solid boron forms a very strong crystalline lattice. Boron exists as a giant covalent network solid, where atoms are strongly bonded in a three-dimensional structure. Breaking these strong covalent bonds requires very high energy, leading to a high melting point. Therefore, both assertion and reason are correct, and the reason correctly explains the assertion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The group \(14\) elements A and B have the first ionisation enthalpy values of \(708\) and \(715\mathrm{kJ}{\mathrm{mol}}^{-1}\) respectively. The above values are lowest among their group members. The nature of their ions \({\mathrm{A}}^{2+}\) \({\mathrm{B}}^{4+}\) respectively is</p> <p>[JEE Main 2025, 7 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>both reducing</p></span></div><div class="option"><span class="key">b</span><span><p>both oxidising</p></span></div><div class="option"><span class="key">c</span><span><p>reducing and oxidising</p></span></div><div class="option"><span class="key">d</span><span><p>oxidising and reducing</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As per given information of ionisation energy \u003cbr/>A = Sn &amp; B = Pb \u003cbr/>A\u003csup>+2\u003c/sup> = Sn\u003csup>+2\u003c/sup> = Reducing agent \u003cbr/>B\u003csup>+4\u003c/sup> = Pb\u003csup>+4\u003c/sup> = Oxidising agent \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statements from the following are</p> <p>(A) The decreasing order of atomic radii of group 13 elements is \(\mathrm{Tl}>\mathrm{In}>\mathrm{Ga}>\mathrm{Al}>\mathrm{B}\)<br/>(B) Down the group 13 electronegativity decreases from top to bottom.<br/>(C) \(\mathrm{Al}\) dissolves in \(\mathrm{dil}.\mathrm{HCl}\) and liberates \({H}_{2}\) but conc. \(HN{O}_{3}\) renders \(\mathrm{Al}\) passive by forming a protective oxide layer on the surface.<br/>(D) All elements of group 13 exhibits highly stable + 1 oxidation state.<br/>(E) Hybridisation of \(\mathrm{Al}\) in \({\left[\mathrm{Al}{({\mathrm{H}}_{2}\mathrm{O})}_{6}\right]}^{3+}\) ion is \(s{p}^{3}{d}^{2}\).</p> <p>Choose the correct answer from the options given below</p> <p>[JEE Main 2024, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(C) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (C) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (B), (C) and (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A) Given: Tl &gt; In &gt; Ga &gt; Al &gt; B\u003c/p> \u003cp>Actual trend:\u003c/p> \u003cp>Size generally increases down the group\u003cbr/>But Ga is smaller than Al due to d-block contraction\u003c/p> \u003cp>Correct order:\u003cbr/>Tl &gt; In &gt; Al &gt; Ga &gt; B\u003c/p> \u003cp>So (A) is incorrect\u003c/p> \u003cp>(B) Electronegativity trend\u003c/p> \u003cp>General trend: decreases down the group\u003c/p> \u003cp>But in group 13:\u003c/p> \u003cp>Al → Ga → slight increase due to poor shielding of d-electrons\u003c/p> \u003cp>So trend is irregular, not strictly decreasing\u003c/p> \u003cp>Hence (B) is incorrect\u003c/p> \u003cp>(C) Reaction of Al\u003cbr/>With dilute HCl → Al dissolves and releases H₂\u003cbr/>With concentrated HNO₃ → forms oxide layer → becomes passive\u003c/p> \u003cp>So (C) is correct\u003c/p> \u003cp>(D) Stability of +1 oxidation state\u003cbr/>+1 becomes stable only down the group (In, Tl)\u003cbr/>Not for all elements\u003c/p> \u003cp>So (D) is incorrect\u003c/p> \u003cp>(E) Hybridisation of Al in [Al(H₂O)₆]³⁺\u003cbr/>Coordination number = 6\u003cbr/>Geometry = octahedral\u003cbr/>Hybridisation = sp³d²\u003c/p> \u003cp>So (E) is correct\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I :</strong> In group 13, the stability of +1 oxidation state increases down the group.</p> <p><strong>Statement II :</strong> The atomic size of gallium is greater than that of aluminium.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2024, 05 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Group 13 elements:\u003cbr/>B, Al, Ga, In, Tl\u003c/p> \u003cp>Electronic configuration:\u003cbr/>ns² np¹\u003c/p> \u003cp>As we move down the group:\u003c/p> \u003cp>The ns² electrons become more tightly held\u003cbr/>Due to poor shielding by d and f orbitals\u003cbr/>These electrons do not participate in bonding easily\u003c/p> \u003cp>Thus:\u003c/p> \u003cp>+3 oxidation state → involves ns² + np¹\u003cbr/>+1 oxidation state → involves only np¹\u003c/p> \u003cp>Down the group:\u003c/p> \u003cp>ns² pair becomes inert (inactive)\u003c/p> \u003cp>So +1 oxidation state becomes more stable\u003c/p> \u003cp>Example:\u003c/p> \u003cp>Al → +3 stable\u003cbr/>Ga → +3 dominant\u003cbr/>In → +1 starts appearing\u003cbr/>Tl → +1 most stable\u003c/p> \u003cp>Statement II: Incorrect\u003cbr/>Expected trend:\u003c/p> \u003cp>Atomic size should increase down the group\u003c/p> \u003cp>So ideally: Ga &gt; Al\u003c/p> \u003cp>But actual observation: Ga ≈ Al (slightly smaller or similar)\u003c/p> \u003cp>Reason: d-block contraction\u003cbr/>Ga has 3d¹⁰ electrons\u003cbr/>These electrons do not shield effectively\u003c/p> \u003cp>Result: Nuclear charge increases, Electrons are pulled closer, Atomic size decreases\u003c/p> \u003cp>Thus: Ga is not larger than Al\u003c/p> \u003cp>Statement I → Correct\u003cbr/>Statement II → Incorrect\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I :</strong> In group 13, the stability of +1 oxidation state increases down the group.</p> <p><strong>Statement II :</strong> The atomic size of gallium is greater than that of aluminium.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2024, 05 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Group 13 elements:\u003cbr/>B, Al, Ga, In, Tl\u003c/p> \u003cp>Electronic configuration:\u003cbr/>ns² np¹\u003c/p> \u003cp>As we move down the group:\u003c/p> \u003cp>The ns² electrons become more tightly held\u003cbr/>Due to poor shielding by d and f orbitals\u003cbr/>These electrons do not participate in bonding easily\u003c/p> \u003cp>Thus:\u003c/p> \u003cp>+3 oxidation state → involves ns² + np¹\u003cbr/>+1 oxidation state → involves only np¹\u003c/p> \u003cp>Down the group:\u003c/p> \u003cp>ns² pair becomes inert (inactive)\u003c/p> \u003cp>So +1 oxidation state becomes more stable\u003c/p> \u003cp>Example:\u003c/p> \u003cp>Al → +3 stable\u003cbr/>Ga → +3 dominant\u003cbr/>In → +1 starts appearing\u003cbr/>Tl → +1 most stable\u003c/p> \u003cp>Statement II: Incorrect\u003cbr/>Expected trend:\u003c/p> \u003cp>Atomic size should increase down the group\u003c/p> \u003cp>So ideally: Ga &gt; Al\u003c/p> \u003cp>But actual observation: Ga ≈ Al (slightly smaller or similar)\u003c/p> \u003cp>Reason: d-block contraction\u003cbr/>Ga has 3d¹⁰ electrons\u003cbr/>These electrons do not shield effectively\u003c/p> \u003cp>Result: Nuclear charge increases, Electrons are pulled closer, Atomic size decreases\u003c/p> \u003cp>Thus: Ga is not larger than Al\u003c/p> \u003cp>Statement I → Correct\u003cbr/>Statement II → Incorrect\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of ions from the following that are expected to behave as oxidising agent is : \(Sn ^{4+}, Sn ^{2+}, Pb ^{2+}, Tl ^{3+}, Pb ^{4+}, Tl ^{+}\)</p> <p><strong>[JEE Main 2024, 06 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Sn⁴⁺ → reduced to Sn²⁺ (Sn\u003csup>2+\u003c/sup> not much stable so it is not used as a O.A.)\u003c/p> \u003cp>Sn²⁺ → not a good oxidiser (more likely to be oxidised)\u003c/p> \u003cp>Pb²⁺ → not a strong oxidiser in usual conditions\u003c/p> \u003cp>Tl³⁺ → reduced to Tl⁺ (strong oxidising character)\u003c/p> \u003cp>Pb⁴⁺ → reduced to Pb²⁺ (oxidising)\u003c/p> \u003cp>Tl⁺ → not an oxidiser (it is the reduced form)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of ions from the following that are expected to behave as oxidising agent is : \(Sn ^{4+}, Sn ^{2+}, Pb ^{2+}, Tl ^{3+}, Pb ^{4+}, Tl ^{+}\)</p> <p><strong>[JEE Main 2024, 06 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Sn⁴⁺ → reduced to Sn²⁺ (Sn\u003csup>2+\u003c/sup> not much stable so it is not used as a O.A.)\u003c/p> \u003cp>Sn²⁺ → not a good oxidiser (more likely to be oxidised)\u003c/p> \u003cp>Pb²⁺ → not a strong oxidiser in usual conditions\u003c/p> \u003cp>Tl³⁺ → reduced to Tl⁺ (strong oxidising character)\u003c/p> \u003cp>Pb⁴⁺ → reduced to Pb²⁺ (oxidising)\u003c/p> \u003cp>Tl⁺ → not an oxidiser (it is the reduced form)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement - 1:</strong> First ionization energy Ge is greater than Si<br/><strong>Statement - 2: </strong>First ionization energy Pb is greater than Sn</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement -1 is true Statement 2 is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement - 1 and Statement - 2 are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both the Statements are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement - 1 is false Statement - 2 is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As we move down the group, the ionisation energy decreases, due to increase in atomic size, thereby, increasing the distance of the electrons from the nucleus. The first ionisation energy of lead is slightly higher than that of tin. The reason is due to lanthanide contraction.Due to higher charge density, the outer electrons are attracted more by the nucleus in lead and hence, the ionisation energy is more in the case of lead.\u003c/p> \u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The elements of Group 13 with highest and lowest first ionisation enthalpies are respectively:</p> <p>[JEE Main 2025, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B &amp; Ga </p></span></div><div class="option"><span class="key">b</span><span><p>B &amp; Tl </p></span></div><div class="option"><span class="key">c</span><span><p>Tl &amp; B </p></span></div><div class="option"><span class="key">d</span><span><p>B &amp; In </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Ionization energy order:\u003c/strong>\u003c/p> \u003cp>B&gt;Tl&gt;Ga&gt;Al&gt;In​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements.<br/><strong>Statement-I:</strong> The chlorides of \(Be\) and \(Al\) have \(Cl\)-bridged structure. Both are soluble in organic solvents and act as Lewis bases.<br/><strong>Statement-II:</strong> Hydroxides of \(Be\) and \(Al\) dissolve in excess alkali to give beryllate and aluminate ions.<br/>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2022, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement-I and Statement-II are true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is true but Statement-II is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement-I is false but Statement-II is true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Chlorides of \\(Be\\) and \\(Al\\) are electron-deficient in nature and hence act as lewis acid.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of melting point of 14th group elements.</p> <p>(Memory Based JEE Mains 24/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C &gt; Si &gt; Ge &gt; Pb &gt; Sn</p></span></div><div class="option"><span class="key">b</span><span><p>Sn &gt; Pb&gt; Ge &gt; Si &gt; C</p></span></div><div class="option"><span class="key">c</span><span><p>C &gt; Si &gt; Ge &gt; Sn &gt; Pb</p></span></div><div class="option"><span class="key">d</span><span><p>C &gt; Ge &gt; Si &gt; Pb &gt; Sn</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,10 +348,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>\\begin{array}{|l|l|l|l|l|l|}\u003cbr/>\\hline \\text { Melting point/K } &amp; C-4373 &amp; Si-1693 &amp; Ge-1218 &amp; Sn-505 &amp; Pb-600 \\\\\u003cbr/>\\hline\u003cbr/>\\end{array}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>$$\\begin{array}{|l|l|l|l|l|l|}\\hline \\text { Melting point/K } & C-4373 & Si-1693 & Ge-1218 & Sn-505 & Pb-600 \\\\\\hline\\end{array}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of ions from the following that are expected to behave as oxidising agent is : \(Sn ^{4+}, Sn ^{2+}, Pb ^{2+}, Tl ^{3+}, Pb ^{4+}, Tl ^{+}\)</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Sn⁴⁺ → reduced to Sn²⁺ (acts as an oxidising agent)\u003c/p> \u003cp>Sn²⁺ → not a good oxidiser (more likely to be oxidised)\u003c/p> \u003cp>Pb²⁺ → not a strong oxidiser in usual conditions\u003c/p> \u003cp>Tl³⁺ → reduced to Tl⁺ (strong oxidising character)\u003c/p> \u003cp>Pb⁴⁺ → reduced to Pb²⁺ (oxidising)\u003c/p> \u003cp>Tl⁺ → not an oxidiser (it is the reduced form)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statements from the following are:</p> <p>A. Ionic radii of trivalent cations of group 13 elements decreases down the group.</p> <p>B. Electronegativity of group 13 elements decreases down the group.</p> <p>C. Among the group 13 elements, Boron has highest first ionisation enthalpy.</p> <p>D. The trichloride and triiodide of group 13 elements are covalent in nature.</p> <p>Choose the correct answer from the options given below:</p> <p>[JEE Main 2026, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and C Only</p></span></div><div class="option"><span class="key">b</span><span><p>C and D Only</p></span></div><div class="option"><span class="key">c</span><span><p>B and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A and D Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -371,7 +375,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A) B\u003csup>+3\u003c/sup> &lt; Al\u003csup>+3\u003c/sup> &lt; Ga\u003csup>+3\u003c/sup> &lt; In\u003csup>+3\u003c/sup> &lt; Tl\u003csup>+3\u003c/sup> : ionic size\u003c/p> \u003cp>(B) B &gt; Tl &gt; In &gt; Ga &gt; Al : EN\u003c/p> \u003cp>(C) B &gt; Tl &gt; Ga &gt; Al &gt; In : IE\u003c/p> \u003cp>(D) Trichlorides and triiodides of group 13\u003csup>th\u003c/sup> elements are covalent in nature\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following elements In , Tl , Al , Pb , Sn and Ge .<br/>The most stable oxidation states of elements with highest and lowest first ionisation enthalpies, respectively, are</p> <p><strong>[JEE Main 2025, 28 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>+2 and +3</p></span></div><div class="option"><span class="key">b</span><span><p>+4 and +1</p></span></div><div class="option"><span class="key">c</span><span><p>+1 and +4</p></span></div><div class="option"><span class="key">d</span><span><p>+4 and +3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -383,7 +387,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In has lowest I.E and most stable oxidation state is + 3\u003c/p> \u003cp>Ge has highest I.E and most stable oxidation state is + 4\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following elements In , Tl , Al , Pb , Sn and Ge .<br/>The most stable oxidation states of elements with highest and lowest first ionisation enthalpies, respectively, are</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>+2 and +3</p></span></div><div class="option"><span class="key">b</span><span><p>+4 and +1</p></span></div><div class="option"><span class="key">c</span><span><p>+1 and +4</p></span></div><div class="option"><span class="key">d</span><span><p>+4 and +3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -395,7 +399,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In has lowest I.E and most stable oxidation state is + 3\u003c/p> \u003cp>Ge has highest I.E and most stable oxidation state is + 4\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements</p> <p>Statement (I) : \(SiO _2\) and \(GeO _2\) are acidic while \(SnO\) and \(PbO\) are amphoteric in nature.<br/>Statement (II) : Allotropic forms of carbon are due to property of catenation and \(p \pi- d \pi\) bond formation.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below</p> <p>[JEE Main 2024, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -407,7 +411,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>SiO₂ → acidic\u003cbr/>GeO₂ → mainly acidic\u003cbr/>SnO and PbO → amphoteric\u003c/p> \u003cp>Thus, Statement I is correct\u003c/p> \u003cp>Allotropy of carbon is due to:\u003c/p> \u003cp>catenation\u003cbr/>different hybridisation\u003c/p> \u003cp>But carbon has no d-orbitals → cannot form pπ–dπ bonds\u003c/p> \u003cp>Thus, Statement II is incorrect\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The group \(14\) elements A and B have the first ionisation enthalpy values of \(708\) and \(715\mathrm{kJ}{\mathrm{mol}}^{-1}\) respectively. The above values are lowest among their group members. The nature of their ions \({\mathrm{A}}^{2+}\) \({\mathrm{B}}^{4+}\) respectively is</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>both reducing</p></span></div><div class="option"><span class="key">b</span><span><p>both oxidising</p></span></div><div class="option"><span class="key">c</span><span><p>reducing and oxidising</p></span></div><div class="option"><span class="key">d</span><span><p>oxidising and reducing</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -419,7 +423,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As per given information of ionisation energy \u003cbr/>A = Sn &amp; B = Pb \u003cbr/>A\u003csup>+2\u003c/sup> = Sn\u003csup>+2\u003c/sup> = Reducing agent \u003cbr/>B\u003csup>+4\u003c/sup> = Pb\u003csup>+4\u003c/sup> = Oxidising agent \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of the first ionization enthalpy is</p> <p>[JEE Main 2024, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Al &gt; Ga &gt; Tl</p></span></div><div class="option"><span class="key">b</span><span><p>Tl &gt; Ga &gt; Al</p></span></div><div class="option"><span class="key">c</span><span><p>B &gt; Al &gt; Ga</p></span></div><div class="option"><span class="key">d</span><span><p>Ga &gt; Al &gt; B</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -431,7 +435,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We are comparing elements of Group 13: Al, Ga, Tl\u003c/p> \u003cp>General trend: Ionization enthalpy should decrease down the group due to increase in atomic size, and increased shielding\u003c/p> \u003cp>So expected:\u003cbr/>Al &gt; Ga &gt; Tl (not fully correct)\u003c/p> \u003cp>Actual behavior (due to poor shielding):\u003cbr/>Ga vs Al\u003cbr/>Ga has 3d¹⁰ electrons\u003cbr/>d-electrons shield poorly\u003cbr/>→ effective nuclear charge increases\u003cbr/>→ electron removal becomes harder\u003c/p> \u003cp>So: Ga &gt; Al\u003c/p> \u003cp>Tl vs Ga\u003cbr/>Tl has 4f¹⁴ and 5d¹⁰ electrons\u003cbr/>f-electrons shield very poorly\u003cbr/>→ very high effective nuclear charge\u003c/p> \u003cp>Also inert pair effect makes electron removal harder\u003c/p> \u003cp>So: Tl &gt; Ga\u003c/p> \u003cp>Final order: Tl &gt; Ga &gt; Al\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statements from the following are :<br/>(A) \({\mathrm{Tl}}^{3+}\) is a powerful oxidising agent<br/>(B) \({\mathrm{Al}}^{3+}\) does not get reduced easily<br/>(C) Both \({\mathrm{Al}}^{3+}\) and \({\mathrm{Tl}}^{3+}\) are very stable in solution<br/>(D) \({\mathrm{Tl}}^{+}\) is more stable than \({\mathrm{Tl}}^{3+}\)<br/>(E) \({\mathrm{Al}}^{3+}\) and \({\mathrm{Tl}}^{+}\)are highly stable<br/>Choose the correct answer from the options given below:</p> <p>[JEE Main 2025, 7 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B), (C), (D) and (E)</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B), (D) and (E) only </p></span></div><div class="option"><span class="key">c</span><span><p>(B), (D) and (E) only </p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -443,7 +447,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(i) \u003cstrong>True\u003c/strong> – \\({\\mathrm{Tl}}^{+}\\)is more stable than Tl³⁺ due to inert pair effect; hence \\({\\mathrm{Tl}}^{3+}\\) is a strong oxidising agent.\u003c/p> \u003cp>(ii) \u003cstrong>True\u003c/strong> – \\({E}_{{\\text{Al}}^{3+}\\mathrm{/}\\text{Al}}^{∘}=−1.66\\text{ }\\text{V}\\); \\({\\mathrm{Al}}^{3+}\\) is difficult to reduce, so it is highly stable.\u003c/p> \u003cp>(iii) \u003cstrong>False\u003c/strong> – \\({\\mathrm{Tl}}^{3+}\\)is unstable.\u003c/p> \u003cp>(iv) \u003cstrong>True\u003c/strong> – \\({\\mathrm{Tl}}^{+}\\) is more stable than \\({\\mathrm{Tl}}^{3+}\\).\u003c/p> \u003cp>(v) \u003cstrong>True\u003c/strong> – \\({\\mathrm{Al}}^{3+}\\) and \\({\\mathrm{Tl}}^{+}\\)are highly stable\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement - 1:</strong> First ionization energy Ge is greater than Si<br/><strong>Statement - 2: </strong>First ionization energy Pb is greater than Sn</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement -1 is true Statement 2 is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement - 1 and Statement - 2 are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both the Statements are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement - 1 is false Statement - 2 is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -455,7 +459,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As we move down the group, the ionisation energy decreases, due to increase in atomic size, thereby, increasing the distance of the electrons from the nucleus. The first ionisation energy of lead is slightly higher than that of tin. The reason is due to lanthanide contraction.Due to higher charge density, the outer electrons are attracted more by the nucleus in lead and hence, the ionisation energy is more in the case of lead.\u003c/p> \u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement I : Gallium is used in the manufacturing of thermometers.<br/>Statement II : A thermometer containing gallium is useful for measuring the freezing point \((256\mathrm{K})\)of brine solution.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -467,7 +471,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Statement I is true: Gallium is used in thermometers because of its low melting point and wide liquid range. Statement II is false: aluminium is not suitable for thermometers because it has a high melting point and is not liquid near the freezing point of brine solution (256 K). Therefore, gallium is useful for low-temperature measurements, while aluminium cannot be used in such thermometric applications. Hence, Statement I is true but Statement II is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of ions from the following that are expected to behave as oxidising agent is : \(Sn ^{4+}, Sn ^{2+}, Pb ^{2+}, Tl ^{3+}, Pb ^{4+}, Tl ^{+}\)</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -479,7 +483,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Sn⁴⁺ → reduced to Sn²⁺ (acts as an oxidising agent)\u003c/p> \u003cp>Sn²⁺ → not a good oxidiser (more likely to be oxidised)\u003c/p> \u003cp>Pb²⁺ → not a strong oxidiser in usual conditions\u003c/p> \u003cp>Tl³⁺ → reduced to Tl⁺ (strong oxidising character)\u003c/p> \u003cp>Pb⁴⁺ → reduced to Pb²⁺ (oxidising)\u003c/p> \u003cp>Tl⁺ → not an oxidiser (it is the reduced form)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Give below are two statements: One is labelled as Assertion A and the other is labelled as Reason R:<br/>Assertion A: The stability order of +1 oxidation state of \(Ga\), \(\mathrm{In}\) and \(Tl\) is \(Ga &lt; In &lt;\) \(Tl\).<br/>Reason R: The inert pair effect stabilizes the lower oxidation state down the group.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2024, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\) is false but \(R\) is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(A\) and \(R\) are true and \(R\) is the correct explanation of \(A\).</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(A\) and \(R\) are true but \(R\) is NOT the correct explanation of \(A\).</p></span></div><div class="option"><span class="key">d</span><span><p>\(A\) is true but \(R\) is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -491,7 +495,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Assertion A is true: the stability of the +1 oxidation state increases down the group in order Ga &lt; In &lt; Tl. Reason R is also true: the inert pair effect increases down the group, stabilizing the lower oxidation state (+1). Due to poor shielding by d and f electrons, ns² electrons remain less available for bonding. Thus, both A and R are correct, and R correctly explains A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of melting point of 14th group elements.</p> <p>(Memory Based JEE Mains 24/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C &gt; Si &gt; Ge &gt; Pb &gt; Sn</p></span></div><div class="option"><span class="key">b</span><span><p>Sn &gt; Pb&gt; Ge &gt; Si &gt; C</p></span></div><div class="option"><span class="key">c</span><span><p>C &gt; Si &gt; Ge &gt; Sn &gt; Pb</p></span></div><div class="option"><span class="key">d</span><span><p>C &gt; Ge &gt; Si &gt; Pb &gt; Sn</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -500,10 +504,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>\\begin{array}{|l|l|l|l|l|l|}\u003cbr/>\\hline \\text { Melting point/K } &amp; C-4373 &amp; Si-1693 &amp; Ge-1218 &amp; Sn-505 &amp; Pb-600 \\\\\u003cbr/>\\hline\u003cbr/>\\end{array}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>$$\\begin{array}{|l|l|l|l|l|l|}\\hline \\text { Melting point/K } & C-4373 & Si-1693 & Ge-1218 & Sn-505 & Pb-600 \\\\\\hline\\end{array}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The set in which compounds have different nature is:</p> <p>[JEE Main 2021, 20 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(B ( OH )_3\) and \(Al ( OH )_3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(B ( OH )_3\) and \(H _3 PO _3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(NaOH\) and \(Ca ( OH )_2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Be ( OH )_2\) and \(Al ( OH )_3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -515,7 +519,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(B ( OH )_3\\) is orthoboric acid and it is acidic in nature, while \\(Al ( OH )_3\\) has amphoteric nature.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is x in the following reaction?<br/>Al( s) + NaOH(aq) + \({H}_{2}O\)(l) → x + \({H}_{2}\)(g)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(N{a}_{2}{\left[AI{\left(OH\right)}_{4}\right]}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(N{a}^{+}{[Al{(OH)}_{4}]}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(N{a}_{2}{[Al{(OH)}_{6}]}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(N{a}^{+}{[Al{(OH)}_{6}]}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -527,7 +531,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(2AI(s)+2NaOH(aq)+6{H}_{2}O\\to 2N{a}^{+}{[Al{(OH)}_{4}]}^{-}(aq)+3{H}_{2}(g)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the following, the number of halide(s) which is are inert to hydrolysis is</p> <p>[JEE Main 2021, 25 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(BF _3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(SiCl _4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(PCl _5\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(SF _6\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -536,10 +540,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>\u003cbr/>\\end{aligned} \\begin{aligned}\u003cbr/>&amp; BF _3+3 H _2 O \\longrightarrow H _3 BO _3+3 HF \\\\\u003cbr/>&amp; SiCl _4+4 H _2 O \\longrightarrow H _4 SiO _4+4 HCl \\\\\u003cbr/>&amp; PCl _5+ H _2 O \\longrightarrow POCl _3+2 HCl \\\\\u003cbr/>&amp; SF _6+ H _2 O \\longrightarrow X\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Due to presence of steric crowding, \\(SF _6\\) does not undergo hydrolysis.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}\\end{aligned}$$ $$\\begin{aligned}& BF _3+3 H _2 O \\longrightarrow H _3 BO _3+3 HF \\\\& SiCl _4+4 H _2 O \\longrightarrow H _4 SiO _4+4 HCl \\\\& PCl _5+ H _2 O \\longrightarrow POCl _3+2 HCl \\\\& SF _6+ H _2 O \\longrightarrow X\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Due to presence of steric crowding, \\(SF _6\\) does not undergo hydrolysis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Boric acid is solid, whereas \(BF _3\) is gas at room temperature because of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Strong ionic bond in Boric acid</p></span></div><div class="option"><span class="key">b</span><span><p>Strong van der Waal's interaction in Boric acid</p></span></div><div class="option"><span class="key">c</span><span><p>Strong hydrogen bond in Boric acid</p></span></div><div class="option"><span class="key">d</span><span><p>Strong covalent bond in \(BF _3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -551,7 +555,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In contrast to \\(BF _3\\), boric acid possesses strong hydrogen bonds. Therefore, boric acid is solid.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/><strong>Statement-I:</strong> Boron is extremely hard due to its 3D covalent network structure.<br/><strong>Statement-II:</strong> Boron has highest melting and boiling point compared to its other group members.</p> <p>In the light of the above statements, choose the <em>most appropriate</em> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -563,7 +567,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Statement I: \u003c/strong>Correct – Boron is extremely hard due to its 3D covalent network structure.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement II:\u003c/strong> Correct – In group 13, boron has the highest melting and boiling points.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I:</strong> Boron is extremely hard indicating its high lattice energy.</p> <p><strong>Statement II:</strong> Boron has highest melting and boiling point compared to its other group members. In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p><strong>[JEE Main 2023, 12 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -575,7 +579,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Boron is non- metallic in nature. It is extremely hard and black coloured solid. It exits in many allotropic forms. Due to very strong crystalline lattice boron has normally high M.P &amp; B.P\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :</p> <p>Statement-I: The process of producing syn-gas is called gasification of coal.</p> <p>Statement-II: The composition of syn-gas is \(\mathrm{CO}+\mathrm{CO}_{2}\) \(+\mathrm{H}_{2}(1: 1: 1)\)</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 31 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is true but Statement-II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is false but Statement-II is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -584,10 +588,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) Syn-gas is also called water gas which is a mixture of \\(\\left(\\mathrm{CO}+\\mathrm{H}_{2}\\right)\\). It is produced as:\u003c/p> \u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mathrm{C}+\\mathrm{H}_{2} \\mathrm{O} \\longrightarrow \\mathrm{CO}+\\mathrm{H}_{2} \\\\\u003cbr/>&amp; \\text { (Red hot) } \\quad \\text { (steam) } \\quad(1: 1 \\text { mixture) }\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) Syn-gas is also called water gas which is a mixture of \\(\\left(\\mathrm{CO}+\\mathrm{H}_{2}\\right)\\). It is produced as:\u003c/p> \u003cp>\\[\u003cbr/>$$\\begin{aligned}& \\mathrm{C}+\\mathrm{H}_{2} \\mathrm{O} \\longrightarrow \\mathrm{CO}+\\mathrm{H}_{2} \\\\& \\text { (Red hot) } \\quad \\text { (steam) } \\quad(1: 1 \\text { mixture) }\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of bond enthalpy \(\left( kJmol ^{-1}\right)\) is:</p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Si - Si &gt; C - C &gt; Sn - Sn &gt; Ge - Ge\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Si - Si &gt; C - C &gt; Ge - Ge &gt; Sn - Sn\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(C - C &gt; Si - Si &gt; Sn - Sn &gt; Ge - Ge\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C - C &gt; Si - Si &gt; Ge - Ge &gt; Sn - Sn\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -599,7 +603,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(Bond enthalpy order \\(C - C &gt; Si - Si &gt; Ge - Ge &gt;\\) \\(Sn - Sn\\) )\u003cbr/>As we move down the group, bond length increases and bond enthalphy decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a good quality cement, the ratio of lime to the total of the oxides of \(Si , Al\) and \(Fe\) should be as close as to:</p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -611,7 +615,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For a good quality cement the ratio of lime to the total of oxides of silicon \\(\\left( SiO _2\\right)\\), aluminium \\(\\left( Al _2 O _3\\right)\\) and iron \\(\\left( Fe _2 O _3\\right)\\) should be close to 2 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Lewis acid character of boron tri halides follows the order</p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(BBr _3&gt; BI _3&gt; BCl _3&gt; BF _3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(BCl _3&gt; BF _3&gt; BBr _3&gt; BI _3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(BF _3&gt; BCl _3&gt; BBr _3&gt; BI _3\) </p></span></div><div class="option"><span class="key">d</span><span><p>\(BI _3&gt; BBr _3&gt; BCl _3&gt; BF _3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -620,10 +624,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Down the group, extent of back bonding decreases and tendency to act as Lewis acid increases.\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\underset{(2 p -2 p )}{ BF _3}&gt;\\underset{(2 p -3 p )}{ BCl _3}&gt;\\underset{(2 p -4 p )}{ BBr _3}&gt;\\underset{(2 p -5 p )}{ BI _3} \\text { (extent of back bonding) } \\\\\u003cbr/>&amp; BF _3&lt; BCl _3&lt; BBr _3&lt; BI _3 \\quad \\text { (lewis acidic nature) }\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Down the group, extent of back bonding decreases and tendency to act as Lewis acid increases.\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\underset{(2 p -2 p )}{ BF _3}&gt;\\underset{(2 p -3 p )}{ BCl _3}&gt;\\underset{(2 p -4 p )}{ BBr _3}&gt;\\underset{(2 p -5 p )}{ BI _3} \\text { (extent of back bonding) } \\\\& BF _3&lt; BCl _3&lt; BBr _3&lt; BI _3 \\quad \\text { (lewis acidic nature) }\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/><strong>Statements-I:</strong> Boron is extremely hard indicating its high lattice energy<br/><strong>Statements-II:</strong> Boron has highest melting and boiling point compared to its other group members.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2023, 12 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is incorrect but Statement-II is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is correct but Statement-II is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -635,7 +639,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement I is correct: Boron is extremely hard due to its strong covalent network structure, which indicates high lattice energy. Each boron atom is strongly bonded in a three-dimensional arrangement, making the structure rigid. Statement II is also correct: Boron has the highest melting and boiling points among group 13 elements because a large amount of energy is required to break these strong covalent bonds. Therefore, both statements are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement-I:</strong> Group 13 trivalent halides get easily hydrolyzed by water due to their covalent nature.</p> <p><strong>Statement-II:</strong> AlCl<sub>3</sub> upon hydrolysis in acidified aqueous solution forms octahedral [Al(H<sub>2</sub>O)<sub>6</sub>]<sup>3+</sup> ion.</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2024, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Statement-I is true but statement-II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both statement-I and statement-II are ture</p></span></div><div class="option"><span class="key">c</span><span><p> Statement-I is false but statement-II is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement-I and statement-II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -647,7 +651,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In trivalent state most of the compounds being covalent are hydrolysed in water. Trichlorides on hydrolysis in water form tetrahedral \\({\\left[\\mathrm{M}{(\\mathrm{OH})}_{4}\\right]}^{-}\\) species, the hybridisation state of element M is sp\u003csup>3\u003c/sup>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which one of the following molecules, strongest back donation of an electron pair from halide to boron is expected?</p> <p>[JEE Main 2021, 27 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{BBr _3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{BF _3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{BCl _3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{BI _3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -656,10 +660,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The type of back bonding in the following boron halides are:-\u003cbr/>\\[\u003cbr/>\\begin{array}{cccc} \u003cbr/>BF _3 &amp; BCl _3 &amp; BBr _3 &amp; BI _3 \\\\\u003cbr/>(2 p \\pi-2 p \\pi) &amp; (2 p \\pi-3 p \\pi) &amp; (2 p \\pi-4 p \\pi) &amp; (2 p \\pi-5 p \\pi)\u003cbr/>\\end{array}\u003cbr/>\\]\u003c/p> \u003cp>Therefore, the order of back bonding strength:\u003cbr/>\\[\u003cbr/>BF _3&gt; BCl _3&gt; BBr _3&gt; BI _3\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The type of back bonding in the following boron halides are:-\u003cbr/>\\[\u003cbr/>$$\\begin{array}{cccc} BF _3 & BCl _3 & BBr _3 & BI _3 \\\\(2 p \\pi-2 p \\pi) & (2 p \\pi-3 p \\pi) & (2 p \\pi-4 p \\pi) & (2 p \\pi-5 p \\pi)\\end{array}$$\u003cbr/>\\]\u003c/p> \u003cp>Therefore, the order of back bonding strength:\u003cbr/>\\[\u003cbr/>BF _3&gt; BCl _3&gt; BBr _3&gt; BI _3\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement-I: During Electrolytic refining, the pure metal is made to act as anode and its impure metallic form is used as cathode.<br/>Statement-II: During the Hall-Heroult electrolysis process, purified \(Al _2 O _3\) is mixed with \(Na _3 AlF _6\) to lower the melting point of the mixture.</p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is incorrect but Statement-II is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is correct but Statement-II is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II are correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -671,7 +675,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) The cathode and anode in electrolytic refining are made of pure metal and impure metal, respectively. \\(Na _3 AlF _6\\) is added during electrolysis of \\(Al _2 O _3\\) to increase the conductivity and lower the melting point.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion \( \mathrm{A} \) and the other is labelled as Reason \( \mathrm{R} \).</p> <p>Assertion \( \mathrm{A}: \mathrm{TlI}_{3} \), is isomorphous to \( \mathrm{CsI}_{3} \), the metal is present in +1 oxidation state.</p> <p>Reason \( \mathrm{R} \) : Tl metal has fourteen \( \mathrm{f} \) electrons in its electronic configuration.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 26 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is correct but (R) is not correct.</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is not correct but (R) is correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -683,7 +687,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Both (A) and (B) are correct but R is not correct explanation of A. In both TlI\u003csub>3\u003c/sub> and CsI\u003csub>3\u003c/sub> oxidation\u003cbr/>state of metal is +1, also both have similar lattice structure.Tℓ=4f\u003csup>14\u003c/sup>5d\u003csup>10\u003c/sup>6s\u003csup>2\u003c/sup>6p\u003csup>1\u003c/sup>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Diborane \(({\mathrm{B}}_{2}{\mathrm{H}}_{6})\) reacts independently with \({\mathrm{O}}_{2}\) and \({\mathrm{H}}_{2}\mathrm{O}\)to produce,</p> <p>respectively;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{B}}_{2}{\mathrm{O}}_{3}\mathrm{and}{\mathrm{H}}_{3}{\mathrm{BO}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{B}}_{2}{\mathrm{O}}_{3}\mathrm{and}{[{\mathrm{BH}}_{4}]}^{−}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{H}}_{3}{\mathrm{BO}}_{3}\mathrm{and}{\mathrm{B}}_{2}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{HBO}}_{2}\mathrm{and}{\mathrm{H}}_{3}{\mathrm{BO}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -695,7 +699,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{B}}_{2}{\\mathrm{H}}_{6}+3{\\mathrm{O}}_{2}\\to {\\mathrm{B}}_{2}{\\mathrm{O}}_{3}+3{\\mathrm{H}}_{2}\\mathrm{O}\\\\ {\\mathrm{B}}_{2}{\\mathrm{H}}_{6}+6{\\mathrm{H}}_{2}\\mathrm{O}\\to 2{\\mathrm{H}}_{3}{\\mathrm{BO}}_{3}+6{\\mathrm{H}}_{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statement(s) among the following</p> <p>[JEE Advanced 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(SnCl _2 \cdot 2 H _2 O\) is a reducing agent</p></span></div><div class="option"><span class="key">b</span><span><p>\(SnO _2\) reacts with \(KOH\) to not form \(K _2\left[ Sn ( OH )_6\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>A solution of \(PbCl _2\) in \(HCl\) contains \(Pb ^{2+}\) and \(Cl ^{-}\)ions</p></span></div><div class="option"><span class="key">d</span><span><p>The reaction of \(Pb _3 O _4\) with hot dilute nitric acid to give \(PbO _2\) is a redox reaction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -707,7 +711,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(SnCl _2 \\cdot 2 H _2 O\\) is a reducing agent since \\(Sn ^{2+}\\) tends to convert \\(Sn ^{4+}\\).\u003cbr/>(2) \\(SnO _2+2 KOH ( aq )+2 H _2 O \\longrightarrow K _2\\left[ Sn ( OH )_6\\right]\\) (Amphoteric)\u003cbr/>(3) Filterate of first group contain solution of \\(PbCl _2\\) in \\(HCl\\) which contains \\(Pb ^{2+}\\) and \\(Cl ^{-}\\)\u003cbr/>However in conc. \\(HCl\\) it produces \\(H _2\\left[ PbCl _4\\right]\\)\u003cbr/>(4) \\(Pb _3 O _4+4 HNO _3 \\longrightarrow PbO _2 \\downarrow+2 Pb \\left( NO _3\\right)_2+2 H _2 O\\) \\(\\left(2 PbO \\cdot PbO _2\\right.\\) )\u003cbr/>It is not a redox reaction\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Group-13 elements react with \(O _2\) in amorphous form to form oxides of type \(M _2 O _3( M =\) element \()\). Which among the following is the most basic oxide?</p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Al _2 O _3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Ga _2 O _3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Tl _2 O _3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(B _2 O _3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -719,7 +723,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As we move down the group, basic character of oxide increases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the borax bead test with \(\mathrm{CuSO}_4\), a blue green colour of the bead was observed in oxidising flame due to the formation of </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Cu}_3 \mathrm{~B}_2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Cu}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Cu}\left(\mathrm{BO}_2\right)_2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{CuO}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -728,10 +732,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Blue green colour is due to formation of\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mathrm{Cu}\\left(\\mathrm{BO}_2\\right)_2 \\\\\u003cbr/>&amp; \\mathrm{CuSO}_4 \\xrightarrow{\\Delta} \\mathrm{CuO}+\\mathrm{SO}_3 \\\\\u003cbr/>&amp; \\mathrm{CuO}+\\mathrm{B}_2 \\mathrm{O}_3 \\longrightarrow \\mathrm{Cu}\\left(\\mathrm{BO}_2\\right)_2\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Blue green colour is due to formation of\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\mathrm{Cu}\\left(\\mathrm{BO}_2\\right)_2 \\\\& \\mathrm{CuSO}_4 \\xrightarrow{\\Delta} \\mathrm{CuO}+\\mathrm{SO}_3 \\\\& \\mathrm{CuO}+\\mathrm{B}_2 \\mathrm{O}_3 \\longrightarrow \\mathrm{Cu}\\left(\\mathrm{BO}_2\\right)_2\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the formula of Borax is \(Na _2 B _4 O _{ x }( OH )_{ y } \cdot zH _2 O\), then \(x + y + z =\)</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>18</p></span></div><div class="option"><span class="key">b</span><span><p>20</p></span></div><div class="option"><span class="key">c</span><span><p>22</p></span></div><div class="option"><span class="key">d</span><span><p>17</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -743,7 +747,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The chemical formula of borax is \\(Na _2 B _4 O _5( OH )_4 \\cdot 8 H _2 O\\). Therefore, the value of \\(x=5, y=4, z=8\\)\u003cbr/>\\[\u003cbr/>\\therefore x+y+z=17\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Lithium aluminium hydride can be prepared from the reaction of</p> <p><strong>[JEE Main 2023, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(LiCl\) and \(Al _2 H _6\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(LiH\) and \(Al _2 Cl _6\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(LiCl , Al\) and \(H _2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(LiH\) and \(Al ( OH )_3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -755,7 +759,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Lithium aluminum hydride can be prepared by the reaction of lithium hydride with aluminum hydride. The reaction involved is given as,\u003cbr/>\\[\u003cbr/>8 LiH + Al _2 Cl _6 \\rightarrow 2 LiAlH _4+6 LiCl\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I: </strong>The electronegativity of group 14 elements from Si to Pb gradually decreaes.</p> <p><strong>Statement II: </strong>Group 14 contains non-metallic, metallic, as well as metalloid elements.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -767,7 +771,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Group 14 contains non-metallic, metallic, as well as metalloid elements.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Aqueous solution of which of the following boron compounds will be strongly basic in nature?</p> <p>[JEE Main 2022, 29 Jun (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(NaBH _4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(LiBH _4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(B _2 H _6\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Na _2 B _4 O _7\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -779,7 +783,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The borax makes basic buffer solution in an aqueous medium.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following oxide is amphoteric in nature?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{SiO}_{2} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{GeO}_{2} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{CO}_{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{SnO}_{2} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -791,7 +795,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>SnO\u003csub>2\u003c/sub> is an example of an amphoteric oxide as it reacts with both acids and bases.\u003c/p> \u003cp>\u003cstrong>(OLD NCERT 11\u003csup>th\u003c/sup>, Part-I, Page No. 361)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the following, identify the halide which is inert to hydrolysis.</p> <p>[JEE Main 2021, 25 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(BF _3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(SiCl _4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(PCl _5\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(SF _6\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -800,10 +804,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>\u003cbr/>\\end{aligned} \\begin{aligned}\u003cbr/>&amp; BF _3+3 H _2 O \\longrightarrow H _3 BO _3+3 HF \\\\\u003cbr/>&amp; SiCl _4+4 H _2 O \\longrightarrow H _4 SiO _4+4 HCl \\\\\u003cbr/>&amp; PCl _5+ H _2 O \\longrightarrow POCl _3+2 HCl \\\\\u003cbr/>&amp; SF _6+ H _2 O \\longrightarrow X\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Due to presence of steric crowding, \\(SF _6\\) does not undergo hydrolysis.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}\\end{aligned}$$ $$\\begin{aligned}& BF _3+3 H _2 O \\longrightarrow H _3 BO _3+3 HF \\\\& SiCl _4+4 H _2 O \\longrightarrow H _4 SiO _4+4 HCl \\\\& PCl _5+ H _2 O \\longrightarrow POCl _3+2 HCl \\\\& SF _6+ H _2 O \\longrightarrow X\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Due to presence of steric crowding, \\(SF _6\\) does not undergo hydrolysis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R) <br/>Assertion (A): Boron is unable to form \(BF _6^{3-}\)<br/>Reason (R): Size of boron is very small.<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p>[JEE Main 2022, 27 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and( R) are true and (R) is NOT the correct explanation of \(( A )\)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -815,7 +819,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both Assertion (A) and Reason (R) are true but \\(R\\) is not correct explanation of A. Expension of octet not possible for Boron due to unavailability of d-orbital. Therefore, \\(BF _6{ }^{3-}\\) is not possible.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reaction of \( \mathrm{H}_{3} \mathrm{~N}_{3} \mathrm{~B}_{3} \mathrm{Cl}_{3}(\mathrm{~A}) \) with \( \mathrm{LiBH}_{4} \) in tetrahydrofuran gives inorganic benzene (B). Further, the reaction of (A) with (C) leads to \( \mathrm{H}_{3} \mathrm{~N}_{3} \mathrm{~B}_{3}(\mathrm{Me})_{3} \). Compounds (B) and (C) respectively, are :</p> <p> </p> <p>[JEE Main 2020, 9 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Boron nitride and \( \mathrm{MeBr} \)</p></span></div><div class="option"><span class="key">b</span><span><p>Borazine and \( \mathrm{MeMgBr} \)</p></span></div><div class="option"><span class="key">c</span><span><p>Borazine and \( \mathrm{MeBr} \)</p></span></div><div class="option"><span class="key">d</span><span><p>Diborane and \( \mathrm{MeMgBr} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -827,7 +831,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Compound (A) is H₃N₃B₃Cl₃ (borazine derivative). When treated with LiBH₄, Cl atoms are replaced by H, forming borazine (B), called inorganic benzene due to its ring structure. Further, reaction of (A) with methyl Grignard reagent (CH₃MgBr) replaces Cl with CH₃ groups, giving H₃N₃B₃(CH₃)₃. Thus (C) is MeMgBr. Hence, products (B) and (C) are borazine and MeMgBr respectively, so correct option is 2.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Taking stability as the factor, which one of the following represents <strong>correct </strong>relationship?</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{InI}}_{3}>\mathrm{InI}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{AlCl}>{\mathrm{AlCl}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{TlI}&gt;\mathrm{TlI}_3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{TlCl}_3&gt;\mathrm{TlCl}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

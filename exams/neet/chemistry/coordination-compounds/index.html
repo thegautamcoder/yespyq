@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Coordination Compounds","item":"https://yespyq.com/exams/neet/chemistry/coordination-compounds/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Coordination Compounds</h1>
       <p>19 NEET Chemistry previous year questions on <b>Coordination Compounds</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The coordination geometry around the manganese in decacarbonyldimanganese is [JEE Main 2024, 30 Jan (Shift 2)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Trigonal bipyramidal</span></div><div class="option"><span class="key">b</span><span>Square pyramidal</span></div><div class="option correct"><span class="key">c</span><span>Octahedral</span></div><div class="option"><span class="key">d</span><span>Square planar</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ethylene diaminetetraacetate ion is a/an </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>hexadentate ligand</p></span></div><div class="option"><span class="key">b</span><span><p>ambidentate ligand</p></span></div><div class="option"><span class="key">c</span><span><p>monodentate ligand</p></span></div><div class="option"><span class="key">d</span><span><p>bidentate ligand</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements </p> <p><strong>Statement I : </strong>Both \({\left[\mathrm{Co}{\left({\mathrm{NH}}_{3}\right)}_{6}\right]}^{3+}\) and \({\left[{\mathrm{CoF}}_{6}\right]}^{3-}\) complexes are octahedral but differ in their magnetic behaviour.</p> <p><strong>Statement II :</strong> \({\left[\mathrm{Co}{\left({\mathrm{NH}}_{3}\right)}_{6}\right]}^{3+}\) is diamagnetic whereas \({\left[{\mathrm{CoF}}_{6}\right]}^{3-}\) is paramagnetic.</p> <p>In the light of the above statements, choose the <strong>correct </strong>answer from the options given below</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>Both \\([\\text{ }\\mathrm{C}\\mathrm{o}({\\mathrm{N}\\mathrm{H}}_{3}{)}_{6}{]}^{3+}\\) and \\([\\text{ }{\\mathrm{C}\\mathrm{o}\\mathrm{F}}_{6}{]}^{3−}\\) are octahedral but differ in their magnetic properties.\u003c/p> \u003c/li> \u003cli> \u003cp>\\([\\text{ }\\mathrm{C}\\mathrm{o}({\\mathrm{N}\\mathrm{H}}_{3}{)}_{6}{]}^{3+}\\) is a low‐spin (diamagnetic) complex because NH₃ is a strong field ligand, whereas \\([\\text{ }{\\mathrm{C}\\mathrm{o}\\mathrm{F}}_{6}{]}^{3−}\\) is high‐spin (paramagnetic) because F⁻ is a weak field ligand.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statements I : </strong>\({\left[Co{\left(N{H}_{3}\right)}_{6}\right]}^{3+}\) is a homoleptic complex whereas \({\left[Co{\left(N{H}_{3}\right)}_{4}C{l}_{2}\right]}^{+}\)is a heteroleptic complex.<br/><strong>Statements II : </strong>Complex \({\left[Co{\left(N{H}_{3}\right)}_{6}\right]}^{3+}\) has only one kind of ligands but \({\left[Co{\left(N{H}_{3}\right)}_{4}C{l}_{2}\right]}^{+}\) has more than one kind of ligands. In the light of the above statements, choose the correct answer from the options given below: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statements<strong> </strong>I is false but Statements II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statements<strong> </strong>I and Statements II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statements<strong> </strong>I and Statements II are false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statements<strong> </strong>I is true but Statements II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Homoleptic complex – in this only one kind of ligand is attached to cobalt — ammonia\u003c/p> \u003cp>All 6 ligands are NH₃.\u003c/p> \u003cp>Therefore, it is called: homoleptic complex (where \"homo\" means \"same\")\u003c/p> \u003cp>[Co(NH₃)₄Cl₂]⁺ — heteroleptic complex\u003cbr/>In this, two types of ligands are attached to cobalt:\u003c/p> \u003cp>4 ammonia (NH₃)\u003c/p> \u003cp>2 chloride (Cl⁻)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of the wavelength of light absorbed by the following complexes is,<br/>A. \({\left[\mathrm{Co}{\left({\mathrm{NH}}_{3}\right)}_{6}\right]}^{3+}\)<br/>B. \({\left[\mathrm{Co}(\mathrm{CN}{)}_{6}\right]}^{3-}\)<br/>C. \({\left[\mathrm{Cu}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{4}\right]}^{2+}\)<br/>D.\({\left[\mathrm{Ti}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{3+}\)</p> <p>Choose the correct answer from the options given below</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C \(&lt;\) D \(&lt;\) A \(&lt;\) B.</p></span></div><div class="option"><span class="key">b</span><span><p>C \(&lt;\) A \(&lt;\) D \(&lt;\) B</p></span></div><div class="option"><span class="key">c</span><span><p>B \(&lt;\) D \(&lt;\) A \(&lt;\) C</p></span></div><div class="option"><span class="key">d</span><span><p>B \(&lt;\) A \(&lt;\) D \(&lt;\) C</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The higher the crystal field splitting energy (Δ₀) in the complex, the higher will be the energy of light absorbed and the lower will be the wavelength of the absorbed light.\u003cbr/>Ligand strength order:\u003cbr/>CN⁻ &gt; NH₃ &gt; H₂O\u003c/p> \u003cp>Thus, the order of splitting energy will be:\u003cbr/>[Co(CN)₆]³⁻ &gt; [Co(NH₃)₆]³⁺ &gt; [Ti(H₂O)₆]³⁺ &gt; [Cu(H₂O)₄]²⁺\u003c/p> \u003cp>Since wavelength is inversely proportional to energy, the increasing order of wavelength will be:\u003c/p> \u003cp>[Co(CN)₆]³⁻ &lt; [Co(NH₃)₆]³⁺ &lt; [Ti(H₂O)₆]³⁺ &lt; [Cu(H₂O)₄]²⁺\u003c/p> \u003cp>i.e., B &lt; A &lt; D &lt; C\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are paramagnetic?<br/>A. \({\left[\overset{}{{\mathrm{NiCl}}_{4}}\right]}^{2-}\)<br/>B. \(\overset{}{\mathrm{Ni}}(\mathrm{CO}{)}_{4}\)</p> <p>C.\({\left[\mathrm{Ni}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{2+}\)<br/>D. \([{\left.\mathrm{Ni}(\mathrm{CN}{)}_{4}\right]}^{2-}\)<br/>E.\(\mathrm{Ni}{\left({\mathrm{PPh}}_{3}\right)}_{4}\)</p> <p>Choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and D only</p></span></div><div class="option"><span class="key">b</span><span><p>A, D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>A and C only</p></span></div><div class="option"><span class="key">d</span><span><p>B and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd> \u003cp>\u003cstrong>Complex\u003c/strong>\u003c/p> \u003c/td> \u003ctd> \u003cp>\u003cstrong>Electronic configuration\u003c/strong>\u003c/p> \u003c/td> \u003ctd> \u003cp>\u003cstrong>Magneti Behavior\u003c/strong>\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>\\({\\left[NiC{l}_{4}\\right]}^{2−}\\)\u003c/p> \u003c/td> \u003ctd> \u003cp>Nickel (Ni) in +2 state: 3d\u003csup>8\u003c/sup>4s\u003csup>0\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>Paramagnetic (due to weak field ligand Cl\u003csup>–\u003c/sup> and two unpaired electrons)\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>\\(Ni{(CO)}_{4}\\)\u003c/p> \u003c/td> \u003ctd> \u003cp>Nickel (Ni) in 0 state: 3d\u003csup>8\u003c/sup>4s\u003csup>2\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>Diamagnetic (due to strong field ligand CO causing pairing of electrons)\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>\\([{\\left.Ni{(CN)}_{4}\\right]}^{2−}\\)\u003c/p> \u003c/td> \u003ctd> \u003cp>Nickel (Ni) in +2 state: 3d\u003csup>8\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>Diamagnetic (due to strong field ligand CN\u003csup>–\u003c/sup> causing pairing of electrons)\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>\\({\\left[Ni{\\left({H}_{2}O\\right)}_{6}\\right]}^{2+}\\)\u003c/p> \u003c/td> \u003ctd> \u003cp>Nickel (Ni) in +2 state: 3d\u003csup>8\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>Paramagnetic (due to weak field ligand H\u003csub>2\u003c/sub>O and two unpaired electrons)\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>\\(Ni{\\left(PP{h}_{3}\\right)}_{4}\\)\u003c/p> \u003c/td> \u003ctd> \u003cp>Nickel (Ni) in 0 state: 3d\u003csup>8\u003c/sup>4s\u003csup>2\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>Diamagnetic (due to strong field ligand PPh\u003csub>3\u003c/sub> causing pairing of electrons)\u003c/p> \u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>not </strong>an ambidentate ligand?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({C}_{2}{O}_{4}^{2-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(SC{N}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(N{O}_{2}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C{N}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>An ambidentate ligand can coordinate through two different atoms (e.g., SCN⁻ via S or N, NO₂⁻ via N or O, CN⁻ via C or N).\u003c/p> \u003c/li> \u003cli> \u003cp>\\({\\mathrm{C}}_{2}{\\mathrm{O}}_{4}^{2−}\\) (oxalate) is bidentate (binds through two oxygens) but not ambidentate (it does not offer distinct donor atoms for alternative attachment).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>not </strong>an ambidentate ligand?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({C}_{2}{O}_{4}^{2-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(SC{N}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(N{O}_{2}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C{N}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>An ambidentate ligand can coordinate through two different atoms (e.g., SCN⁻ via S or N, NO₂⁻ via N or O, CN⁻ via C or N).\u003c/p> \u003c/li> \u003cli> \u003cp>\\({\\mathrm{C}}_{2}{\\mathrm{O}}_{4}^{2−}\\) (oxalate) is bidentate (binds through two oxygens) but not ambidentate (it does not offer distinct donor atoms for alternative attachment).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A 1 : 3 electrolyte in an aqueous solution is</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\([{\mathrm{CoCl}}_{2}{({\mathrm{NH}}_{3})}_{4}]\mathrm{Cl}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\([\mathrm{CoCl}{({\mathrm{NH}}_{3})}_{5}]{\mathrm{Cl}}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\([\mathrm{Co}{({\mathrm{NH}}_{3})}_{6}]{\mathrm{Cl}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\([\mathrm{Co}{({\mathrm{NH}}_{3})}_{3}{({\mathrm{NO}}_{2})}_{3}]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The aqueous solution of \\([\\mathrm{Co}{({\\mathrm{NH}}_{3})}_{6}]{\\mathrm{Cl}}_{3}\\) is a type of 1 : 3 type electrolyte as it undergoes dissociation into \\({[\\mathrm{Co}{({\\mathrm{NH}}_{3})}_{6}]}^{3+}\\) and \\(3{\\mathrm{Cl}}^{-}\\) ions.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II. </p> <table> <tbody> <tr> <td>List I (Complex)</td> <td>List II (Oxidation Number of Metal) </td> </tr> <tr> <td>A.\(\left[Ni{\left(CO\right)}_{4}\right]\)</td> <td>I.+1</td> </tr> <tr> <td>B.\({\left[Fe{\left({H}_{2}O\right)}_{5}NO\right]}^{+2}\)</td> <td>II.Zero</td> </tr> <tr> <td>C.\({\left[Co{\left(CO\right)}_{5}\right]}^{2-}\)</td> <td>III.-1</td> </tr> <tr> <td>D.\({\left[Cr{\left(CO\right)}_{10}\right]}^{2-}\)</td> <td>IV.-2</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-I, C-IV, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-IV, C-I, D-III</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-III, C-I, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-I, B-II, C-IV, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct match is A-II, B-I, C-IV, D-III. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is the <strong>correct </strong>order of increasing field strength of ligands to form coordination compounds?</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>F \(^{-}&lt;\mathrm{SCN}^{-}&lt;\mathrm{C}_2 \mathrm{O}_4^{2-}&lt;\mathrm{CN}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{CN}^{-}&lt;\mathrm{C}_2 \mathrm{O}_4^{2-}&lt;\mathrm{SCN}^{-}&lt;\mathrm{F}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{SCN}^{-}&lt;\mathrm{F}^{-}&lt;\mathrm{C}_2 \mathrm{O}_4^{2-}&lt;\mathrm{CN}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{SCN}^{-}&lt;\mathrm{F}^{-}&lt;\mathrm{CN}^{-}&lt;\mathrm{C}_2 \mathrm{O}_4^{2-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>From the spectrochemical series, the ligand field strength increases as:\u003c/p> \u003cp>\\({\\mathrm{SCN}}^{−}\u003c{\\mathrm{F}}^{−}\u003c{\\mathrm{C}}_{2}{\\mathrm{O}}_{4}^{2−}\u003c{\\mathrm{CN}}^{−}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following coordination compounds is used to inhibit<br/>the growth of tumours?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Trans-platin</p></span></div><div class="option"><span class="key">b</span><span><p>EDTA complex of calcium</p></span></div><div class="option"><span class="key">c</span><span><p>\([{({\mathrm{Ph}}_{3}\mathrm{P})}_{3}\mathrm{RhCl}]\)</p></span></div><div class="option"><span class="key">d</span><span><p>Cis - platin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Cisplatin \\([\\mathrm{Pt}{({\\mathrm{NH}}_{3})}_{2}{\\mathrm{Cl}}_{2}]\\) is used in cancer treatment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: \(\left[ Mn ( CN )_6\right]^{3-},\left[ Fe ( CN )_6\right]^{3-}\) and \(\left[ Co \left( C _2 O _4\right)_3\right]^{3-}\) are \(d ^2 sp ^3\) hybridised<br/>Statement II: \(\left[ MnCl _6\right]^{3-}\) and \(\left[ FeF _6\right]^{3-}\) are paramagnetic and have 4 and 5 unpaired electrons, respectively.</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,10 +228,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(CN ^{-}\\)is a strong field ligand.\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; {\\left[ Mn ( CN )_6\\right]^{3-} \\Rightarrow Mn ^{3+} \\text { i.e. } 3 d ^4 \\Rightarrow t _{2 g }^{2,2,1}, e _{ g }^{0,0}\\left( d ^2 sp ^3\\right)} \\\\\u003cbr/>&amp; {\\left[ Fe ( CN )_6\\right]^{3-} \\Rightarrow Fe ^{3+} \\text { i.e. } 3 d ^5 \\Rightarrow t _{2 g }^{2,2,1}, e _{ g }^{0,0}\\left( d ^2 sp ^3\\right)} \\\\\u003cbr/>&amp; {\\left[ Co \\left( C _2 O _4\\right)_3\\right]^{3-} \\Rightarrow Co ^{3+} \\text { i.e. } 3 d ^6 \\Rightarrow t _{2 g }^{2,2,1}, e _{ g }^{0,0}\\left( d ^2 sp ^3\\right)}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\(\\left[ MnCl _6\\right]^{3-} \\Rightarrow Mn ^{3+}=3 d ^4 \\Rightarrow t _{2 g }^{1,1,1} e _{ g }^{1,0}\\) (4 unpaired) as \\(Cl ^{-}\\)is a weak field ligand.\u003cbr/>\\(\\left[ FeF _6\\right]^{3-} \\Rightarrow Fe ^{3+}=3 d ^5 \\Rightarrow t _{2 g }^{1,1,1} e _{ g }^{1,1}\\) (5 unpaired) as \\(F ^{-}\\)is a weak field ligand.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(CN ^{-}\\)is a strong field ligand.\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& {\\left[ Mn ( CN )_6\\right]^{3-} \\Rightarrow Mn ^{3+} \\text { i.e. } 3 d ^4 \\Rightarrow t _{2 g }^{2,2,1}, e _{ g }^{0,0}\\left( d ^2 sp ^3\\right)} \\\\& {\\left[ Fe ( CN )_6\\right]^{3-} \\Rightarrow Fe ^{3+} \\text { i.e. } 3 d ^5 \\Rightarrow t _{2 g }^{2,2,1}, e _{ g }^{0,0}\\left( d ^2 sp ^3\\right)} \\\\& {\\left[ Co \\left( C _2 O _4\\right)_3\\right]^{3-} \\Rightarrow Co ^{3+} \\text { i.e. } 3 d ^6 \\Rightarrow t _{2 g }^{2,2,1}, e _{ g }^{0,0}\\left( d ^2 sp ^3\\right)}\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\(\\left[ MnCl _6\\right]^{3-} \\Rightarrow Mn ^{3+}=3 d ^4 \\Rightarrow t _{2 g }^{1,1,1} e _{ g }^{1,0}\\) (4 unpaired) as \\(Cl ^{-}\\)is a weak field ligand.\u003cbr/>\\(\\left[ FeF _6\\right]^{3-} \\Rightarrow Fe ^{3+}=3 d ^5 \\Rightarrow t _{2 g }^{1,1,1} e _{ g }^{1,1}\\) (5 unpaired) as \\(F ^{-}\\)is a weak field ligand.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which complex compound is most stable?</p> <p>[NEET-2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[\mathrm{Co}{\left({\mathrm{NH}}_{3}\right)}_{3}{\left({\mathrm{NO}}_{3}\right)}_{3}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[{\mathrm{CoCl}}_{2}(\mathrm{en}{)}_{2}\right]{\mathrm{NO}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\left[\mathrm{Co}{\left({\mathrm{NH}}_{3}\right)}_{6}\right]}_{2}{\left({\mathrm{SO}}_{4}\right)}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[\mathrm{Co}{\left({\mathrm{NH}}_{3}\right)}_{4}\left({\mathrm{H}}_{2}\mathrm{O}\right)\mathrm{Br}\right]{\left({\mathrm{NO}}_{3}\right)}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Complexes containing polydentate ligands (like ethylenediamine, en) are more stable due to the chelate effect. Thus [CoCl\u003csub>2\u003c/sub>(en)\u003csub>2\u003c/sub>]NO\u003csub>3\u003c/sub> is the most stable among the given options.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following complex will show largest splitting of d-orbitals? [JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[ Fe \left( C _2 O _4\right)_3\right]^{3-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[ FeF _6\right]^{3-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[ Fe ( CN )_6\right]^{3-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[ Fe \left( NH _3\right)_6\right]^{3+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Strong field ligand show larger splitting. According to spectrochemical series, \\(CN ^{-}\\)is a strong field ligand.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The type of hybridisation and magnetic property of the complex \(\left[ MnCl _6\right]^{3-}\), respectively, are:</p> <p>[JEE Main 2021, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(sp ^3 d ^2\) and paramagnetic</p></span></div><div class="option"><span class="key">b</span><span><p>\(d ^2 sp ^3\) and paramagnetic</p></span></div><div class="option"><span class="key">c</span><span><p>\(d ^2 sp ^3\) and diamagnetic</p></span></div><div class="option"><span class="key">d</span><span><p>\(sp ^3 d ^2\) and diamagnetic</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(\\operatorname{Mn}(25) \\rightarrow[ Ar ] 4 s ^2 3 d ^5\\)\u003cbr/>In \\(\\left[ MnCl _6\\right]^{3-}\\), \\(Mn\\) has +3 oxidation state.\u003cbr/>\\(Cl ^{-}\\)is a weak ligand, so, pairing will not take place.\u003cbr/>\\(Mn ^{3+} \\rightarrow 3 d ^4\\) i.e. \\(t _{2 g }^{1,1,1}\\) eg \\(^{1,0}\\)\u003cbr/>Hybridization \\(\\rightarrow sp ^3 d ^2\\) and paramagnetic\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which of the following order the given complex ions are arranged correctly with respect to their decreasing spin only magnetic moment?<br/>(i) \(\left[ FeF _6\right]^{3-}\),<br/>(ii) \(\left[ Co \left( NH _3\right)_6\right]^{3+}\),<br/>(iii) \(\left[ NiCl _4\right]^{2-}\),<br/>(iv) \(\left[ Cu \left( NH _3\right)_4\right]^{2+}\)</p> <p>[JEE Main 2021, 25 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(ii) \(&gt;\) (i) \(&gt;\) (iii) \(&gt;\) (iv)</p></span></div><div class="option"><span class="key">b</span><span><p>(i) \(&gt;\) (iii) \(&gt;\) (iv) \(&gt;\) (ii)</p></span></div><div class="option"><span class="key">c</span><span><p>(ii) \(&gt;\) (iii) \(&gt;\) (i) \(&gt;\) (iv)</p></span></div><div class="option"><span class="key">d</span><span><p>(iii) \(&gt;\) (iv) \(&gt;\) (ii) \(&gt;\) (i)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,10 +276,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (b) } \\text { I }&gt;\\text { III }&gt;\\text { IV }&gt;\\text { II } \\\\ &amp; {\\left[ FeF _6\\right]^{3-} \\rightarrow Fe ^{3+}-3 d ^5 \\text {, unpaired electrons }=5} \\\\ &amp; {\\left[ Co \\left( NH _3\\right)_6\\right]^{3+} \\rightarrow Co ^{3+}-3 d ^6 \\text {, unpaired electrons }=0} \\\\ &amp; {\\left[ NiCl _4\\right]^{2-} \\rightarrow Ni ^{2+}-3 d ^8 \\text {, unpaired electrons }=2 .} \\\\ &amp; {\\left[ Cu \\left( NH _3\\right)_4\\right]^{2+} \\rightarrow Cu ^{++} \\rightarrow 3 d ^9 \\text {, unpaired electron }=1 .} \\\\ &amp; \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (b) } \\text { I }&gt;\\text { III }&gt;\\text { IV }&gt;\\text { II } \\\\ & {\\left[ FeF _6\\right]^{3-} \\rightarrow Fe ^{3+}-3 d ^5 \\text {, unpaired electrons }=5} \\\\ & {\\left[ Co \\left( NH _3\\right)_6\\right]^{3+} \\rightarrow Co ^{3+}-3 d ^6 \\text {, unpaired electrons }=0} \\\\ & {\\left[ NiCl _4\\right]^{2-} \\rightarrow Ni ^{2+}-3 d ^8 \\text {, unpaired electrons }=2 .} \\\\ & {\\left[ Cu \\left( NH _3\\right)_4\\right]^{2+} \\rightarrow Cu ^{++} \\rightarrow 3 d ^9 \\text {, unpaired electron }=1 .} \\\\ & \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the <strong>List-I</strong> with <strong>List-II</strong>.</p> <table> <tbody> <tr> <td> <p><strong>List-I</strong></p> <p><strong>(Complexes)</strong></p> </td> <td> <p><strong>List-II</strong></p> <p><strong>(Hybridisation)</strong></p> </td> </tr> <tr> <td> <p>(A)</p> </td> <td> <p>[Ni(CO)<sub>4</sub>]</p> </td> <td> <p>(I)</p> </td> <td> <p>sp<sup>3</sup></p> </td> </tr> <tr> <td> <p>(B)</p> </td> <td> <p>[Cu(NH<sub>3</sub>)<sub>4</sub>]<sup>2+</sup></p> </td> <td> <p>(II)</p> </td> <td> <p>dsp<sup>2</sup></p> </td> </tr> <tr> <td> <p>(C)</p> </td> <td> <p>[Fe(NH<sub>3</sub>)<sub>6</sub>]<sup>2+</sup></p> </td> <td> <p>(III)</p> </td> <td> <p>sp<sup>3</sup>d<sup>2</sup></p> </td> </tr> <tr> <td> <p>(D)</p> </td> <td> <p>[Fe(H<sub>2</sub>O)<sub>6</sub>]<sup>2+</sup></p> </td> <td> <p>(IV)</p> </td> <td> <p>d<sup>2</sup>sp<sup>3</sup></p> </td> </tr> </tbody> </table> <p>Choose the<strong> correct</strong> answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A - II, B - I, C - III, D - IV</p></span></div><div class="option"><span class="key">b</span><span><p>A - I, B - II, C - III, D - IV</p></span></div><div class="option"><span class="key">c</span><span><p>A - II, B - I, C - IV, D - III</p></span></div><div class="option"><span class="key">d</span><span><p>A - I, B- II, C - IV, D - III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd> \u003cp>[Ni(CO)\u003csub>4\u003c/sub>]\u003c/p> \u003c/td> \u003ctd> \u003cp>sp\u003csup>3\u003c/sup>\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>[Cu(NH\u003csub>3\u003c/sub>)\u003csub>4\u003c/sub>]\u003csup>2+\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>dsp\u003csup>2\u003c/sup>\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>[Fe(NH\u003csub>3\u003c/sub>)\u003csub>6\u003c/sub>]\u003csup>2+\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>d\u003csup>2\u003c/sup>sp\u003csup>3\u003c/sup>\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>[Fe(H\u003csub>2\u003c/sub>O)\u003csub>6\u003c/sub>]\u003csup>2+\u003c/sup>\u003c/p> \u003c/td> \u003ctd> \u003cp>sp\u003csup>3\u003c/sup>d\u003csup>2\u003c/sup>\u003c/p> \u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II.</strong></p> <table> <tbody> <tr> <td> <p><strong>List-I</strong></p> <p><strong>(Complex ion)</strong></p> </td> <td> <p><strong>List-II</strong></p> <p><strong>(Electronic configuration)</strong></p> </td> </tr> <tr> <td>(A)</td> <td>\({\left[\mathrm{Cr}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{3+}\)</td> <td>(I)</td> <td>t<sub>2g</sub><sup>2</sup>e<sub>g</sub><sup>0</sup></td> </tr> <tr> <td>(B)</td> <td>\({\left[\mathrm{Fe}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{3+}\)</td> <td>(II)</td> <td>t<sub>2g</sub><sup>3</sup>e<sub>g</sub><sup>0</sup></td> </tr> <tr> <td>(C)</td> <td>\({\left[\mathrm{Ni}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{2+}\)</td> <td>(III)</td> <td>t<sub>2g</sub><sup>3</sup>e<sub>g</sub><sup>2</sup></td> </tr> <tr> <td>(D)</td> <td>\({\left[\mathrm{V}{\left({\mathrm{H}}_{2}\mathrm{O}\right)}_{6}\right]}^{3+}\)</td> <td>(IV)</td> <td>t<sub>2g</sub><sup>6</sup>e<sub>g</sub><sup>0</sup></td> </tr> </tbody> </table> <p>Choose the <strong>correct </strong>answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{matrix}\text{ A-IV, B-I, C-II, D-III }\end{matrix}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{matrix}\text{ A-IV, B-III, C-I, D-II }\end{matrix}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\text{ A-II, B-III, C-IV, D-I }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\text{ A-III, B-II, C-IV, D-I }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

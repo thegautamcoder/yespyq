@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Human Health and Disease","item":"https://yespyq.com/exams/neet/biology/human-health-and-disease/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Human Health and Disease</h1>
       <p>29 NEET Biology previous year questions on <b>Human Health and Disease</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Identify the site where Wuchereria bancrofti is normally found in the human body.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Muscles of the legs</span></div><div class="option"><span class="key">b</span><span>Blood vessels of the thigh region</span></div><div class="option"><span class="key">c</span><span>Skin between the fingers</span></div><div class="option correct"><span class="key">d</span><span>Lymphatic vessels of the lower limbs</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The cell-mediated immunity inside the human body is carried out by:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Erythrocytes</span></div><div class="option correct"><span class="key">b</span><span>T-lymphocytes</span></div><div class="option"><span class="key">c</span><span>B-lymphocytes</span></div><div class="option"><span class="key">d</span><span>Thrombocytes</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">At which stage of HIV infection does one usually show symptoms of AIDS?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Within 15 days of sexual contact with an infected person.</span></div><div class="option"><span class="key">b</span><span>When the infected retrovirus enters host cells.</span></div><div class="option correct"><span class="key">c</span><span>When HIV damages large number of helper T lymphocytes.</span></div><div class="option"><span class="key">d</span><span>When the viral DNA is produced by reverse transcriptase.</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Drug called Heroin is synthesised by [NEET 2019]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Methylation of morphine</span></div><div class="option"><span class="key">b</span><span>Acetylation of morphine</span></div><div class="option"><span class="key">c</span><span>Glycosylation of morphine</span></div><div class="option"><span class="key">d</span><span>Nitration of morphine</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"(2) Heroin is an Opioid drug. Frequently referred to as smack. It is obtained from the diacetylation of morphine. Morphine as such is an alkaloid obtained from the Poppy plant. Papaver somniferum or poppy is the source to many alkaloids with pharmacological properties. While methylation of morphine yields codeine.","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following immune responses is responsible for rejection of kidney graft?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Auto-immune response</span></div><div class="option"><span class="key">b</span><span>Humoral immune response</span></div><div class="option"><span class="key">c</span><span>Inflammatory immune response</span></div><div class="option"><span class="key">d</span><span>Cell-mediated immune response</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The answer is D – Cell-mediated immune response. Graft rejection is primarily driven by T lymphocytes (T cells) that recognize the transplanted kidney as foreign (non-self). These T cells activate and proliferate, triggering an immune attack against the graft tissue. This is a classic example of a cell- mediated immune response (Type IV hypersensitivity). Humoral immune response (option B) also contributes to rejection (via antibodies), but cell-mediated immunity is the main mechanism. Auto-immune response (option A) refers to the immune system attacking self-antigens, which is different from graft rejection. Inflammatory immune response (option C) is a broader term and not specific to graft rejection.","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The following are the stages of life cycle of <em>Plasmodium</em>. Arrange the stages in the proper order.<br/>A. The parasites reproduce asexually in RBC's, bursting the cells. <br/>B. The parasites reproduce asexually in liver cells, bursting the cells and releasing into blood.<br/>C. Gametocytes develop in RBC's.<br/>D. Sporozoites reach the liver through the blood.<br/>E. Female mosquito injects sporozoites into humans during bite.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C, D, E</p></span></div><div class="option"><span class="key">b</span><span><p>E, D, B, A, C</p></span></div><div class="option"><span class="key">c</span><span><p>C, A, B, D, E</p></span></div><div class="option"><span class="key">d</span><span><p>E, C, D, B, A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>In the life cycle of \u003cem>Plasmodium\u003c/em> in humans, infection begins when an infected female mosquito injects parasites into the bloodstream.\u003c/li> \u003cli>First, sporozoites are injected into humans during the mosquito bite (E).\u003c/li> \u003cli>These sporozoites travel through blood to the liver (D).\u003c/li> \u003cli>In the liver, parasites reproduce asexually and burst liver cells, releasing into blood (B).\u003c/li> \u003cli>They then infect RBCs and reproduce asexually, causing RBCs to burst (A).\u003c/li> \u003cli>Finally, some parasites differentiate into gametocytes in RBCs (C).\u003c/li> \u003cli>Thus, the correct order is: E → D → B → A → C\u003c/li> \u003cli>Therefore, the correct answer is Option B.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are secondary lymphoid organs?</p> <p>(a) Bone marrow</p> <p>(b) Tonsils</p> <p>(c) Spleen</p> <p>(d) Thymus</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(a) and (b) only</p></span></div><div class="option"><span class="key">b</span><span><p>(b) and (c) only</p></span></div><div class="option"><span class="key">c</span><span><p>(b) and (d) only</p></span></div><div class="option"><span class="key">d</span><span><p>(a) and (d) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct answer is \u003cstrong>B. (b) and (c) only\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Primary lymphoid organs:\u003c/strong>\u003c/p> \u003cul> \u003cli>Bone marrow (a)\u003c/li> \u003cli>Thymus (d)\u003c/li> \u003c/ul> \u003cp>These are the sites where lymphocytes are produced and mature.\u003c/p> \u003cp>\u003cstrong>Secondary lymphoid organs:\u003c/strong>\u003c/p> \u003cul> \u003cli>Tonsils (b)\u003c/li> \u003cli>Spleen (c)\u003c/li> \u003c/ul> \u003cp>These are the sites where lymphocytes interact with antigens and initiate immune responses.\u003c/p> \u003cp>\u003cstrong>Answer: B. (b) and (c) only\u003c/strong> (Tonsils and Spleen)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement I: Bone marrow is the main lymphoid organ where all blood cells including lymphocytes are produced.<br/>Statement II : Both bone marrow and thymus provide micro environments for the development and maturation of T-lymphocytes.<br/>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Bone marrow is the primary lymphoid organ where all blood cells, including lymphocytes, are formed. It also provides the microenvironment for the maturation of B-lymphocytes. The thymus is another primary lymphoid organ that provides the environment necessary for the development and maturation of T-lymphocytes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Colostrum, secreted by mother during initial days of lactation, is abundant in _________.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>IgG</p></span></div><div class="option"><span class="key">b</span><span><p>IgM</p></span></div><div class="option"><span class="key">c</span><span><p>IgA</p></span></div><div class="option"><span class="key">d</span><span><p>IgD</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Colostrum is the yellowish milk produced by the mother during the first few days after childbirth. Colostrum contains a very high concentration of antibodies, which provide passive immunity to the newborn.\u003c/p> \u003cp>Among the immunoglobulins present in colostrum, IgA (Immunoglobulin A) is the most abundant. It protects the mucosal surfaces of the infant, particularly the gastrointestinal tract, against infections.\u003c/p> \u003cp>Therefore, colostrum is abundant in IgA.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>After maturation, in primary lymphoid organs, the lymphocytes migrate for interaction with antigens to secondary lymphoid organ(s)/tissue(s) like:<br/>A. thymus</p> <p>B. bone marrow<br/>C. spleen</p> <p>D. lymph nodes<br/>E. Peyer's patches<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E, A, B only</p></span></div><div class="option"><span class="key">b</span><span><p>C, D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>B, C, D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B, C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Primary lymphoid organs\u003c/strong> are where \u003cstrong>lymphocytes mature\u003c/strong>, and they include the \u003cstrong>bone marrow\u003c/strong> (for B cells) and \u003cstrong>thymus\u003c/strong> (for T cells). After maturation, lymphocytes move to \u003cstrong>secondary lymphoid organs\u003c/strong>, where they \u003cstrong>encounter antigens\u003c/strong> and initiate immune responses.\u003c/p> \u003cp>The \u003cstrong>secondary lymphoid organs/tissues\u003c/strong> include:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Spleen (C)\u003c/strong> – filters blood and traps blood-borne antigens.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Lymph nodes (D)\u003c/strong> – filter lymph and are sites of immune cell activation.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Peyer’s patches (E)\u003c/strong> – found in the small intestine and handle gut-associated antigens.\u003c/p> \u003c/li> \u003c/ul> \u003cp>So, the correct secondary lymphoid organs are \u003cstrong>C, D, and E\u003c/strong>, hence \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following type of immunity is present at the time of birth and is a nonspecific type of defence in the human body?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cell-mediated Immunity</p></span></div><div class="option"><span class="key">b</span><span><p>Humoral Immunity</p></span></div><div class="option"><span class="key">c</span><span><p>Acquired Immunity</p></span></div><div class="option"><span class="key">d</span><span><p>Innate Immunity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Innate immunity\u003c/strong> is the \u003cstrong>immunity present from birth\u003c/strong> and provides a \u003cstrong>nonspecific defense\u003c/strong> against all kinds of pathogens. It does not depend on prior exposure to any microorganism. This type of immunity includes \u003cstrong>physical barriers\u003c/strong> (like skin), \u003cstrong>chemical barriers\u003c/strong> (like saliva and stomach acid), and \u003cstrong>cellular defenses\u003c/strong> (like phagocytic white blood cells).\u003c/p> \u003cp>Unlike \u003cstrong>acquired immunity\u003c/strong>, which develops over time and is specific to particular pathogens, innate immunity acts \u003cstrong>quickly\u003c/strong> and is the \u003cstrong>first line of defense\u003c/strong> in the human body. Therefore, the correct answer is \u003cstrong>Option D – Innate Immunity\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct about <em>Plasmodium</em>?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Reproduces sexually in liver cells</p></span></div><div class="option"><span class="key">b</span><span><p>Reproduces sexually in RBCs</p></span></div><div class="option"><span class="key">c</span><span><p>Gametocytes develop in mosquito gut</p></span></div><div class="option"><span class="key">d</span><span><p>Fertilization takes place in mosquito gut</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>\u003cem>\u003cstrong>Plasmodium\u003c/strong>\u003c/em> is the protozoan parasite that causes \u003cstrong>malaria\u003c/strong>.\u003c/li> \u003cli>In the \u003cstrong>human host\u003c/strong>: \u003cul> \u003cli>Asexual reproduction occurs.\u003c/li> \u003cli>\u003cem>Plasmodium\u003c/em> first multiplies in \u003cstrong>liver cells\u003c/strong> and then infects \u003cstrong>RBCs\u003c/strong>.\u003c/li> \u003cli>It produces \u003cstrong>gametocytes\u003c/strong> in RBCs.\u003c/li> \u003c/ul> \u003c/li> \u003cli>In the \u003cstrong>female \u003cem>Anopheles\u003c/em> mosquito (vector)\u003c/strong>: \u003cul> \u003cli>The mosquito takes up gametocytes along with the blood meal.\u003c/li> \u003cli>\u003cstrong>Gametocytes develop into male and female gametes in the mosquito gut.\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Fertilization occurs in the mosquito gut\u003c/strong>, forming a zygote.\u003c/li> \u003c/ul> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II</strong>.<strong> </strong></p> <table> <tbody> <tr> <td><strong>List-II</strong></td> <td><strong>List-I</strong></td> </tr> <tr> <td>(A)</td> <td>Typhoid</td> <td>(I)</td> <td>Fungus </td> </tr> <tr> <td>(B)</td> <td>Malaria</td> <td>(II)</td> <td>Nematode </td> </tr> <tr> <td>(C)</td> <td>Ringworm</td> <td>(III)</td> <td>Protozoa</td> </tr> <tr> <td>(D)</td> <td>Filariasis</td> <td>(IV)</td> <td>Bacteria</td> </tr> </tbody> </table> <p><strong> </strong>Choose the <strong>correct</strong> answer from option given below.</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-IV, C-III, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-I, B-III, C-II, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-III, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-I, C-IV, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd>Typhoid\u003c/td> \u003ctd>Bacteria\u003c/td> \u003c/tr> \u003ctr> \u003ctd>Malaria\u003c/td> \u003ctd>Protozoa \u003c/td> \u003c/tr> \u003ctr> \u003ctd>Ringworm\u003c/td> \u003ctd>Fungus \u003c/td> \u003c/tr> \u003ctr> \u003ctd>Filariasis\u003c/td> \u003ctd>Nematode\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The yellowish fluid colostrum secreted by mammary glands of mother during the initial days of lactation has abundant antibodies (IgA) to protect the infant. This type of immunity is called as:</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Active immunity</p></span></div><div class="option"><span class="key">b</span><span><p>Acquired immunity</p></span></div><div class="option"><span class="key">c</span><span><p>Autoimmunity</p></span></div><div class="option"><span class="key">d</span><span><p>Passive immunity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Colostrum is the yellowish fluid secreted by the mother’s mammary glands during the initial days after childbirth. It is rich in immunoglobulin A (IgA), a type of antibody that provides protection to the newborn against infections. Since the antibodies are directly transferred from the mother to the baby without the baby producing them, this form of immunity is called \u003cstrong>passive immunity\u003c/strong>. Passive immunity offers immediate but short-term protection. Unlike \u003cstrong>active immunity\u003c/strong>, where the body generates its own immune response, passive immunity involves the direct transfer of ready-made antibodies, which is crucial for a newborn’s early defense.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the wrong statement with reference to immunity.</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>When ready-made antibodies are directly given, it is called "Passive immunity".</p></span></div><div class="option"><span class="key">b</span><span><p>Active immunity is quick and gives full response.</p></span></div><div class="option"><span class="key">c</span><span><p>Foetus receives some antibodies from mother, it is an example for passive immunity.</p></span></div><div class="option"><span class="key">d</span><span><p>When exposed to antigen (living or dead) antibodies are produced in the host's body. It is called "Active immunity".</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Active immunity is slow and takes time to give its full effective response.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following pairs is not correctly matched?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Syphilis - <em>Trichuris trichiura</em></p></span></div><div class="option"><span class="key">b</span><span><p>Sleeping sickness - T<em>rypanosoma gambiense</em></p></span></div><div class="option"><span class="key">c</span><span><p>Dengue fever - <em>Arbovirus</em></p></span></div><div class="option"><span class="key">d</span><span><p>Plague - <em>Yersinia pestis</em></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which blood corpuscles, the HIV undergoes replication and produces progeny viruses?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B-lymphocytes</p></span></div><div class="option"><span class="key">b</span><span><p>Basophils</p></span></div><div class="option"><span class="key">c</span><span><p>Eosinophils</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{T}}_{\mathrm{H}}\) cells</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>HIV primarily replicates in \u003cstrong>helper T cells (\\({T}_{H}\\) cells)\u003c/strong>, also known as CD\\({4}^{+}\\) T lymphocytes. These cells are essential for coordinating the immune response. The destruction of these cells by HIV leads to the progressive weakening of the immune system, characteristic of AIDS.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which blood corpuscles, the HIV undergoes replication and produces progeny viruses?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B-lymphocytes</p></span></div><div class="option"><span class="key">b</span><span><p>Basophils</p></span></div><div class="option"><span class="key">c</span><span><p>Eosinophils</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{T}}_{\mathrm{H}}\) cells</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>HIV primarily replicates in \u003cstrong>helper T cells (\\({T}_{H}\\) cells)\u003c/strong>, also known as CD\\({4}^{+}\\) T lymphocytes. These cells are essential for coordinating the immune response. The destruction of these cells by HIV leads to the progressive weakening of the immune system, characteristic of AIDS.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the <strong>incorrect </strong>statement with respect to acquired immunity.</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Acquired immunity is a non-specific type of defense present at the time of birth.</p></span></div><div class="option"><span class="key">b</span><span><p>Primary response is produced when our body encounters a pathogen for the first time.</p></span></div><div class="option"><span class="key">c</span><span><p>Anamnestic response is elicited on subsequent encounters with the same pathogen.</p></span></div><div class="option"><span class="key">d</span><span><p>Anamnestic response is due to memory of first encounter.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Acquired immunity (also called adaptive immunity) is a specific defense mechanism that develops after birth upon exposure to pathogens (e.g., through infection or vaccination). It is not innate or present at birth.\u003c/li> \u003cli>The other statements are correct as primary response occurs during the first encounter with a pathogen.\u003c/li> \u003cli>Anamnestic (secondary) response is faster and stronger upon re-exposure.\u003c/li> \u003cli>This response is due to memory cells from the first encounter.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a pair of viral diseases?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Common cold, AIDS</p></span></div><div class="option"><span class="key">b</span><span><p>Dysentery, common cold</p></span></div><div class="option"><span class="key">c</span><span><p>Typhoid, tuberculosis</p></span></div><div class="option"><span class="key">d</span><span><p>Ringworm, AIDS</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Many viruses also cause diseases in human beings.\u003c/li> \u003cli>Rhino viruses represent one such group of viruses which cause one of the most infectious human ailments – the common cold.\u003c/li> \u003cli>AIDS is caused by the Human Immuno deficiency Virus (HIV), a member of a group of viruses called retrovirus.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>[NCERT (2025-26) Class 12\u003csup>th\u003c/sup> Page no. 131]\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>correct</strong> regarding AIDS causative agent HIV?.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>HIV is an enveloped virus containing one molecule of single-stranded RNA and one molecule of reverse transcriptase.</p></span></div><div class="option"><span class="key">b</span><span><p>HIV is an enveloped virus that contains two identical molecules of single-stranded RNA and two molecules of reverse transcriptase.</p></span></div><div class="option"><span class="key">c</span><span><p>HIV contains unenveloped DNA.</p></span></div><div class="option"><span class="key">d</span><span><p>HIV escapes and attacks the acquired immune responses.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>HIV (Human Immunodeficiency Virus)\u003c/strong> is an \u003cstrong>enveloped retrovirus\u003c/strong> that causes \u003cstrong>AIDS\u003c/strong>. It contains \u003cstrong>two identical single-stranded RNA molecules\u003c/strong> as its genetic material and \u003cstrong>two molecules of reverse transcriptase\u003c/strong>, an enzyme that converts viral RNA into DNA inside host cells. This DNA integrates into the host genome, allowing viral replication. HIV primarily targets \u003cstrong>CD4+ T-cells\u003c/strong>, weakening the immune system. Its envelope helps it \u003cstrong>evade immune responses\u003c/strong>, but option \u003cstrong>D\u003c/strong> is vague and less accurate than option \u003cstrong>B\u003c/strong>, which is scientifically precise.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match<strong> List I</strong> with <strong>List II</strong>.</p> <p> &lt;!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--&gt; </p> <table> <tbody> <tr> <td><strong>List I</strong></td> <td><strong>List II</strong></td> </tr> <tr> <td>A.</td> <td>Heroin</td> <td>I.</td> <td>Effect on cardiovascular system</td> </tr> <tr> <td>B.</td> <td>Marijuana</td> <td>II.</td> <td>Slow down body function</td> </tr> <tr> <td>C.</td> <td>Cocaine</td> <td>III.</td> <td>Painkiller</td> </tr> <tr> <td>D.</td> <td>Morphine</td> <td>IV.</td> <td>Interfere with transport of dopamine</td> </tr> </tbody> </table> <p>Choose the <strong>correct </strong>answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-I, B-II, C-III, D-IV</p></span></div><div class="option"><span class="key">b</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-I, C-IV, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Heroin: Slow down body function\u003cbr/>Marijuana: Effects on cardiovascular system\u003cbr/>Cocaine: Interfere with transport of dopamine\u003cbr/>Morphine: Painkiller\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the <strong>correctly</strong> matched pair.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Syphilis - <em>Treponema pallidum</em></p></span></div><div class="option"><span class="key">b</span><span><p>AIDS - <em>Bacillus conjugalis</em></p></span></div><div class="option"><span class="key">c</span><span><p>Gonorrhoea - <em>Leishmania donovani</em></p></span></div><div class="option"><span class="key">d</span><span><p>Typhoid - <em>Mycobacterium leprae</em></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The infectious stage of <em>Plasmodium</em> that enters the human body is</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Trophozoites</p></span></div><div class="option"><span class="key">b</span><span><p>Sporozoites</p></span></div><div class="option"><span class="key">c</span><span><p>Female gametocytes</p></span></div><div class="option"><span class="key">d</span><span><p>Male gametocytes</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Plasmodium\u003c/strong>, the parasite that causes malaria, is transmitted to humans through the bite of an infected female \u003cstrong>Anopheles mosquito\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>When the mosquito bites, it injects the \u003cstrong>sporozoites\u003c/strong> into the human bloodstream.\u003c/p> \u003c/li> \u003cli> \u003cp>These \u003cstrong>sporozoites\u003c/strong> travel to the \u003cstrong>liver\u003c/strong>, where they mature and multiply before continuing the life cycle in red blood cells.\u003c/p> \u003c/li> \u003c/ul> Other options: \u003cul> \u003cli> \u003cp>\u003cstrong>Trophozoites\u003c/strong>: This is the active, feeding stage in red blood cells, \u003cstrong>not the infectious stage\u003c/strong> entering the human.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Female and Male gametocytes\u003c/strong>: These are sexual forms of Plasmodium \u003cstrong>taken up by the mosquito\u003c/strong> during a blood meal, not the form that infects humans.\u003c/p> \u003c/li> \u003c/ul> \u003cp>So, the \u003cstrong>infectious stage\u003c/strong> that enters the human body is \u003cstrong>sporozoites\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A person suffering from a disease caused by <em>Plasmodium</em>, experiences recurring chill and fever at the time when:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>the sporozoites released from RBCs are being rapidly killed and broken down inside spleen.</p></span></div><div class="option"><span class="key">b</span><span><p>the sporozoites released from WBCs are being killed instantaneously.</p></span></div><div class="option"><span class="key">c</span><span><p>the parasite after its rapid multiplication inside RBCs ruptures them and releases haemozoin. </p></span></div><div class="option"><span class="key">d</span><span><p>the microgametocytes and megagametocytes are being destroyed by the WBCs.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The correct answer is \u003cstrong>C\u003c/strong>.\u003c/p> \u003cp>Malaria is caused by \u003cem>\u003cstrong>Plasmodium\u003c/strong> \u003c/em>species. After entering the human body via a mosquito bite, the parasites first infect the liver, then enter \u003cstrong>red blood cells (RBCs)\u003c/strong>, where they multiply asexually.\u003c/p> \u003cul> \u003cli> \u003cp>When the \u003cstrong>RBCs rupture\u003c/strong>, the parasites are released along with \u003cstrong>haemozoin\u003c/strong>, a toxic by-product of hemoglobin digestion.\u003c/p> \u003c/li> \u003cli> \u003cp>The release of haemozoin into the bloodstream triggers the \u003cstrong>immune response\u003c/strong>, causing \u003cstrong>recurring chills and high fever\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>The cycle of RBC infection, multiplication, and rupture is \u003cstrong>periodic\u003c/strong>, which is why malaria fever recurs every 48–72 hours depending on the \u003cem>Plasmodium\u003c/em> species.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Correct answer: \u003cstrong>C\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The infective stage of malarial parasite, <em>Plasmodium</em> that enters human body is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>merozoite</p></span></div><div class="option"><span class="key">b</span><span><p>sporozoite</p></span></div><div class="option"><span class="key">c</span><span><p>trophozoite</p></span></div><div class="option"><span class="key">d</span><span><p>minuta form</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cell-coded protein that is formed in response to infection, with most animal viruses, is called</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>histone</p></span></div><div class="option"><span class="key">b</span><span><p>antibody</p></span></div><div class="option"><span class="key">c</span><span><p>interferon</p></span></div><div class="option"><span class="key">d</span><span><p>antigen</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cirrhosis of liver is caused by the chronic intake of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Opium</p></span></div><div class="option"><span class="key">b</span><span><p>Alcohol</p></span></div><div class="option"><span class="key">c</span><span><p>Tobacco (chewing )</p></span></div><div class="option"><span class="key">d</span><span><p>Coccaine </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Cirrhosis of the liver\u003c/strong> is primarily caused by the \u003cstrong>chronic intake of alcohol\u003c/strong>. Prolonged alcohol consumption damages liver cells, leading to inflammation and scarring (\u003cstrong>fibrosis\u003c/strong>). Over time, this scarring disrupts the liver's structure and function, resulting in \u003cstrong>cirrhosis\u003c/strong>, which can progress to liver failure if untreated.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The part of life cycle of malarial parasite<em> Plasmodium vivax</em>, that is passed in female <em>Anopheles</em> is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>sexual cycle</p></span></div><div class="option"><span class="key">b</span><span><p>pre-erythrocytic schizogony</p></span></div><div class="option"><span class="key">c</span><span><p>exoerythrocytic schizogony</p></span></div><div class="option"><span class="key">d</span><span><p>post-erythrocytic schizogony.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

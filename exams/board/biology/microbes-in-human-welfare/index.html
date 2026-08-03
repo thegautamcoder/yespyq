@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/board/biology/"},{"@type":"ListItem","position":5,"name":"Microbes in Human Welfare","item":"https://yespyq.com/exams/board/biology/microbes-in-human-welfare/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Microbes in Human Welfare</h1>
       <p>9 Board Biology previous year questions on <b>Microbes in Human Welfare</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The conversion of milk into curd increases its nutritional ability due to increase in</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vitamin C</p></span></div><div class="option"><span class="key">b</span><span><p>Vitamin D</p></span></div><div class="option correct"><span class="key">c</span><span><p>Vitamin \({\mathrm{B}}_{12}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Vitamin \({\mathrm{B}}_{6}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cyclosporin A, used as immuno-suppression agent, is produced from:</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><em>Saccharomyces cerevisiae</em></p></span></div><div class="option"><span class="key">b</span><span><p><em>Penicillium notatum</em></p></span></div><div class="option"><span class="key">c</span><span><p><em>Trichoderma polysporum</em></p></span></div><div class="option"><span class="key">d</span><span><p><em>Monascus purpureus</em></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Cyclosporin A\u003c/strong> is an important immunosuppressive drug used to prevent organ transplant rejection by suppressing the immune response. It is produced by the fungus \u003cem>\u003cstrong>Trichoderma polysporum\u003c/strong>\u003c/em>. Cyclosporin A specifically inhibits the activity of T-cells by blocking the enzyme calcineurin, which is essential for the activation of these immune cells. This helps in minimizing the immune system's attack on transplanted organs. The other options are incorrect: \u003cem>Saccharomyces cerevisiae\u003c/em> is used in alcohol and bread production, \u003cem>Penicillium notatum\u003c/em> produces penicillin, and \u003cem>Monascus purpureus\u003c/em> is used in statin production for lowering cholesterol.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Baculoviruses are pathogens that attack: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Insects</p></span></div><div class="option"><span class="key">b</span><span><p>Roundworms</p></span></div><div class="option"><span class="key">c</span><span><p>Molluscs</p></span></div><div class="option"><span class="key">d</span><span><p>Birds</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Explanation:\u003c/p> \u003cp>Baculoviruses are a group of DNA viruses that specifically infect insects, especially larvae of moths and butterflies.\u003c/p> \u003cp>They are widely used as biological control agents in agriculture because they kill insect pests without harming humans, animals, or plants.\u003c/p> \u003cp>Why are other options incorrect?\u003c/p> \u003cp>B. Roundworms: Not affected by baculoviruses.\u003c/p> \u003cp>C. Molluscs: Not hosts of baculoviruses.\u003c/p> \u003cp>D. Birds: Baculoviruses do not infect birds; other viruses, like avian influenza, affect them.\u003c/p> \u003cp>The correct answer is: A. Insects \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pathogenic viruses, which are used as bio-control agents to attack insects and arthropods are</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Lambda phage</p></span></div><div class="option"><span class="key">b</span><span><p>Tobacco mosaic virus</p></span></div><div class="option"><span class="key">c</span><span><p>\(ϕ\times 174\)</p></span></div><div class="option"><span class="key">d</span><span><p>Baculoviruses</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Baculoviruses are pathogenic viruses that infect insects and other arthropods. They are used as biocontrol agents to control harmful insect pests in crops. They are highly specific to the target pests and are considered environmentally safe.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cyclosporin A, used as immuno-suppressive agent, is produced from:</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><em>Saccharomyces cerevisiae</em></p></span></div><div class="option"><span class="key">b</span><span><p><em>Penicillium notatum</em></p></span></div><div class="option"><span class="key">c</span><span><p><em>Trichoderma polysporum</em></p></span></div><div class="option"><span class="key">d</span><span><p><em>Monascus purpureus</em></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Cyclosporin A\u003c/strong> is an important immunosuppressive drug used to prevent organ transplant rejection by suppressing the immune response. It is produced by the fungus \u003cem>\u003cstrong>Trichoderma polysporum\u003c/strong>\u003c/em>. Cyclosporin A specifically inhibits the activity of T-cells by blocking the enzyme calcineurin, which is essential for the activation of these immune cells. This helps in minimizing the immune system's attack on transplanted organs. The other options are incorrect: \u003cem>Saccharomyces cerevisiae\u003c/em> is used in alcohol and bread production, \u003cem>Penicillium notatum\u003c/em> produces penicillin, and \u003cem>Monascus purpureus\u003c/em> is used in statin production for lowering cholesterol.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II:</strong></p> <table> <tbody> <tr> <td><strong>List-I (Products)</strong></td> <td><strong>List-II (Organisms)</strong></td> </tr> <tr> <td>(A)</td> <td>Statin</td> <td>(I)</td> <td><em>Streptococcus</em></td> </tr> <tr> <td>(B)</td> <td>Clot buster</td> <td>(II)</td> <td><em>Trichoderma</em></td> </tr> <tr> <td>(C)</td> <td>Swiss cheese</td> <td>(III)</td> <td><em>Monascus</em></td> </tr> <tr> <td>(D)</td> <td>Cyclosporin-A</td> <td>(V)</td> <td><em>Propionibacterium</em></td> </tr> </tbody> </table> <p>Choose the <em><strong>correct </strong></em>answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) - (II), (B) - (I), (C) - (IV), (D) - (III)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) - (III), (B) - (I), (C) - (IV), (D) - (II)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) - (III), (B) - (IV), (C) - (II), (D) - (I)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) - (II), (B) - (III), (C) - (I), (D) - (IV)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>(b) The correct matches are:\u003c/strong>\u003cbr/>\u003cstrong>(A) - (III)\u003c/strong>: Statins, produced by the yeast \u003cem>Monascus purpureus\u003c/em>, help lower blood cholesterol levels.\u003cbr/>\u003cstrong>(B) - (I)\u003c/strong>: Clot-busting enzymes like Streptokinase, produced by the bacterium \u003cem>Streptococcus\u003c/em>, aid in dissolving blood clots.\u003cbr/>\u003cstrong>(C) - (IV)\u003c/strong>: Swiss cheese is made using the bacterium \u003cem>Propionibacterium shermanii\u003c/em>, which generates carbon dioxide gas, creating the characteristic holes in the cheese.\u003cbr/>\u003cstrong>(D) - (II)\u003c/strong>: Cyclosporin-A, an immunosuppressive drug produced by the fungus \u003cem>Trichoderma polysporum\u003c/em>, is used in organ transplant surgeries to prevent rejection.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Anabaena and Nostoc are used as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bio-control agents</p></span></div><div class="option"><span class="key">b</span><span><p>Enzymes</p></span></div><div class="option"><span class="key">c</span><span><p>Antibiotics</p></span></div><div class="option"><span class="key">d</span><span><p>Biofertilizers</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Anabaena and Nostoc are cyanobacteria (blue-green algae) that can fix atmospheric nitrogen. They are used as biofertilizers to increase soil fertility\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Antibiotics are mainly obtained form</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Blue-green algae</p></span></div><div class="option"><span class="key">b</span><span><p>Bacteria </p></span></div><div class="option"><span class="key">c</span><span><p>Bryophyta </p></span></div><div class="option"><span class="key">d</span><span><p>Viruses. </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Bacteria \u003c/p> \u003cp>Most antibiotics are produced by bacteria, especially Actinomycetes (e.g., Streptomyces).\u003cbr/>Viruses, bryophytes, and blue-green algae do not produce antibiotics used in medicine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cyanobacteria are useful biofertilizers in the field of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Wheat</p></span></div><div class="option"><span class="key">b</span><span><p>Maize</p></span></div><div class="option"><span class="key">c</span><span><p> Paddy</p></span></div><div class="option"><span class="key">d</span><span><p>Sugarcane</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

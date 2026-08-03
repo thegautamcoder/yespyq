@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"SSC CGL","item":"https://yespyq.com/exams/ssc-cgl/"},{"@type":"ListItem","position":4,"name":"Quantitative Aptitude","item":"https://yespyq.com/exams/ssc-cgl/aptitude/"},{"@type":"ListItem","position":5,"name":"Algebra","item":"https://yespyq.com/exams/ssc-cgl/aptitude/algebra/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Algebra</h1>
       <p>10 SSC CGL Quantitative Aptitude previous year questions on <b>Algebra</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The sum of three numbers is 252 . If the first number is thrice the second and third number is two-third of the first, then the second number is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>41</span></div><div class="option"><span class="key">b</span><span>21</span></div><div class="option correct"><span class="key">c</span><span>42</span></div><div class="option"><span class="key">d</span><span>84</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">If the expression px3-2x2-qx+18 is completely divisible by (x2-9), then what is the ratio between p and q respectively?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>1 : 9</span></div><div class="option"><span class="key">b</span><span>1 : 3</span></div><div class="option"><span class="key">c</span><span>3 : 1</span></div><div class="option"><span class="key">d</span><span>9 : 1</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Given, is completely divisible by So, is a factor of Then, x = 3, – 3 If we put values of x in given expression, we get Hence, Hence, Option A is the correct answer.","fmt":""}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">If the expression px3-qx2-7x-6 is completely divisible by x2-x-6, then what is the value of p and q respectively?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>0,1</span></div><div class="option"><span class="key">b</span><span>1,0</span></div><div class="option"><span class="key">c</span><span>2,1</span></div><div class="option"><span class="key">d</span><span>1,2</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Given, is completely divisible by then, is a factor of So, will roots of will also be the roots of now, So, x = –2 , 3 are the roots of …. (A) If we put the value of x in Eq. (A) …..(i) and, ………(ii) on solving eq. (i) & (ii), we get Hence, Option B is the correct answer.","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The difference between the cubes of two given natural numbers is 6272 , while the positive difference between the two given numbers is 8 . What is the sum of the cubes of the two given numbers?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>9728</span></div><div class="option"><span class="key">b</span><span>9684</span></div><div class="option"><span class="key">c</span><span>8000</span></div><div class="option"><span class="key">d</span><span>9600</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Let, the two natural numbers are and . | | SSC As per the question, - = 6272 (x - y) ( + + xy) = 6272 x - y = 8 Taking square both sides, + - 2xy = 64 + = 64 + 2xy Put the value in equation (1) we get, (8) (64 + 2xy + xy) = 6272 512 + 24xy = 6272 24xy = 6272 - 512 xy = = 240 We know that, = = 64 + 2xy + 2xy ( from equation 3) = 64 + 4xy = 64 + 960 = 1024 x + y = 32.........(4) On solving equation (2) and (4) we get, x = 20 and y = 12 + = = 8000 + 1728= 9,728 Hence, the correct answer is (A).","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The sum of the two numbers is 98 .The difference between the two numbers is 28 .Find one of the two numbers.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>32</span></div><div class="option"><span class="key">b</span><span>62</span></div><div class="option"><span class="key">c</span><span>58</span></div><div class="option"><span class="key">d</span><span>35</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Let, the two numbers are and where . The sum of the two numbers is 98 . (i) The difference between the two numbers is 28 . (ii) From (i) and (ii) we get, 98 63=35 One of the two numbers is 35. Hence, the correct answer is (D).","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The difference between the cubes of two given natural numbers is 6272 , while the positive difference between the two given numbers is 8 . What is the product of the two given numbers?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>160</span></div><div class="option"><span class="key">b</span><span>240</span></div><div class="option"><span class="key">c</span><span>200</span></div><div class="option"><span class="key">d</span><span>320</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Let's denote the two natural numbers as a and b, where a>b. The difference between the cubes of the two numbers is 6272: a³ - b³ = 6272 (i) The positive difference between the two numbers is 8: a - b = 8 (ii) a = b + 8 Substitute this value of a into the first equation: (b+8)³ - b³ = 6272 b³ + 24b² + 192b + 512 - b³ = 6272 24b² + 192b + 512 = 6272 24b² + 192b = 5760 b² + 8b = 240 b² + 8b + 16 = 240 + 16 (b + 4)² = 256 b + 4 = 16 b = 12 b = -20 (which is not possible as we are dealing with natural numbers) Since we are looking for positive difference, we consider b = 12, which leads to ab = 12 x 20 = 240 So, the product of the two given natural numbers is 240. Hence, option B is correct","fmt":""}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The sum of the cubes of two given natural numbers is 9728 , while the sum of the two given numbers is</span><span class="bline stmt">32. What is the positive difference between the cubes of the two given numbers?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>7272</span></div><div class="option"><span class="key">b</span><span>5832</span></div><div class="option"><span class="key">c</span><span>4662</span></div><div class="option"><span class="key">d</span><span>7904</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The sum of the cubes of two given natural numbers is 9728 , while the sum of the two given numbers is 32 . .........(1) x + y = 32 x = 32 - y Put the value of x in equation (1) 32768 - y - 3×y×32(32 - y) + y = 9728 -3072y + 96y = - 23040 y - 32y + 240 = 0 (y - 12) (y - 20) = 20 y = 12, 20 So, x = 32 -12 = 30 Now, x - y = 9000 -1728 = 7272 Hence, the correct option is A.","fmt":""}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">For what value of m will the system of equations 17x+my+102=0 and 23x+299y+138=0 have infinite number of solutions?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>221</span></div><div class="option"><span class="key">b</span><span>223</span></div><div class="option"><span class="key">c</span><span>220</span></div><div class="option"><span class="key">d</span><span>219</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"We know that, When Ax+By=C and Px+Qy=R form a system of liner equation, then it has infinitely many solution if, Since the given system of linear equation is said to have an infinite number of solutions. so, According to the concept, Hence, Hence, Option A is the correct answer.","fmt":""}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The sum of the cubes of two given natural numbers is 9728 , while the sum of the two given numbers is 32 . What is the product of the two given numbers?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>160</span></div><div class="option"><span class="key">b</span><span>320</span></div><div class="option"><span class="key">c</span><span>240</span></div><div class="option"><span class="key">d</span><span>200</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"We have, The sum of the cubes of two numbers (a3 + b3) is 9728 . The sum of the numbers (a + b) is 32. We know that, Hence, the correct answer is (C).","fmt":""}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The square of 72 is equal to the product of 216 and a number. Find the number.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>36</span></div><div class="option"><span class="key">b</span><span>18</span></div><div class="option"><span class="key">c</span><span>24</span></div><div class="option"><span class="key">d</span><span>48</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

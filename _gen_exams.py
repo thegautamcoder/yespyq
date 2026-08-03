@@ -248,7 +248,11 @@ EXTRA_CSS = '''  <style>
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -304,7 +308,7 @@ def head(title, desc, canonical, schema_blocks, extra_head=""):
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
 {schema_blocks}
 {EXTRA_CSS}
@@ -326,6 +330,7 @@ def question_block(x, n, gated, free=False):
     html_mode = x.get("fmt") == "html"
     q_html = x["q"] if html_mode else format_body(x["q"], True)
     year_suffix = f' · {x["y"]}' if x.get("y") else ""
+    pyq_badge = f'<span class="pyq-badge">PYQ {x["y"]}</span>' if x.get("y") else '<span class="pyq-badge">PYQ</span>'
 
     # Options are always public — only the correct answer + explanation are
     # Pass-gated for the ~90% non-preview questions.
@@ -342,7 +347,7 @@ def question_block(x, n, gated, free=False):
         )
         payload = payload.replace("<", "\\u003c")
         return f'''    <div class="qblock" id="q{n}" data-gated="1">
-      <div class="qnum">Q{n}{year_suffix}</div>
+      <div class="qhead"><div class="qnum">Q{n}{year_suffix}</div>{pyq_badge}</div>
       <div class="qtext">{q_html}</div>
       <div class="options qpage-options">{opts_plain}</div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -364,7 +369,7 @@ def question_block(x, n, gated, free=False):
     exp_html = x["exp"] if html_mode else format_body(x["exp"], False)
     free_tag = ' <span class="free-tag">FREE PREVIEW</span>' if (gated and free) else ""
     return f'''    <div class="qblock" id="q{n}">
-      <div class="qnum">Q{n}{year_suffix}{free_tag}</div>
+      <div class="qhead"><div class="qnum">Q{n}{year_suffix}{free_tag}</div>{pyq_badge}</div>
       <div class="qtext">{q_html}</div>
       <div class="options qpage-options">{opts}</div>
       <div class="explain" data-exp>

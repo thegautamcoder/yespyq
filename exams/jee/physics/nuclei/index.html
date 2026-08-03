@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Nuclei","item":"https://yespyq.com/exams/jee/physics/nuclei/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Nuclei</h1>
       <p>48 JEE Physics previous year questions on <b>Nuclei</b> — options free on every question; <b>5 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two nuclei of mass number 3 combine with another nucleus of mass number 4 to yield a nucleus of mass number 10. If the binding energy per nucleon for the mass numbers 3,4 and 10 are 5.6 MeV, 7.4 MeV and 6.1 MeV, respectively, then in the process, \(∆M{c}^{2}=____MeV\). </p> <p> </p> <p>[04 April, 2026 (Shift-I)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6.9</p></span></div><div class="option"><span class="key">b</span><span><p>7.9</p></span></div><div class="option correct"><span class="key">c</span><span><p>2.2</p></span></div><div class="option"><span class="key">d</span><span><p>4.3</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct nuclear process from the below options<br/>[p: proton, n : neutron, \({e}^{-}:\)electron, \({e}^{+}:\) positron, \(\nu\) : neutrino, \(\nu\): antineutrino]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(n\to p+{e}^{-}+\nu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n\to p+{e}^{-}+\nu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n\to p+{e}^{+}+v\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two radioactive substances A and B of mass numbers 200 and 212 respectively, shows spontaneous \(\alpha\)-decay with same Q value of 1 Me V. The ratio of energies of \(\alpha\)-rays produced by A and B is __________</p> <p> </p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{2548}{2650}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2706}{2646}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{2597}{2600}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2862}{2499}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy released when two deuterons \(({{}_{1}\mathrm{H}}^{2})\) fuse to form a helium nucleus \(({{}_{2}\mathrm{He}}^{4})\) is :<br/>(Given : Binding energy per nucleon of \({{}_{1}\mathrm{H}}^{2}=1.1\mathrm{MeV}\) and binding energy per nucleon of \({{}_{2}\mathrm{He}}^{4}=7.0\mathrm{MeV}\) )</p> <p> </p> <p><strong>[JEE Main 2025, 2 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8.1MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.9MeV\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(23.6MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(26.8MeV\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A radioactive nucleus \(\mathrm{n}_2\) has 3 times the decay constant as compared to the decay constant of another radioactive nucleus \(n_1\). If initial number of both nuclei are the same, what is the ratio of number of nuclei of \(n_2\) to the number of nuclei of \(n_1\), after one half-life of \(n_1\) ?</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{8}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{1}{4}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy released if hydrogen atoms are combined to form \({}_{2}^{4}\text{He}\) is _______ MeV.</p> <p>(Take binding energies per nucleon of \({}_{1}^{2}\text{H}\) and \({}_{2}^{4}\text{He}\) as \(1.1\text{ MeV}\) and \(7.2\text{ MeV}\), respectively)</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6.1</p></span></div><div class="option"><span class="key">b</span><span><p>24.4</p></span></div><div class="option"><span class="key">c</span><span><p>26.6</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Two deuterium atoms (\\({}_{1}^{2}\\text{H}\\)) fuse to form one helium atom (\\({}_{2}^{4}\\text{He}\\)):\u003c/p> \\[2 \\ ^2_1\\text{H} \\rightarrow \\ ^4_2\\text{He}\\] \u003cp>Calculate Total Binding Energies\u003c/p> \u003cp>Energy released (\\(\\Delta E\\)) is the difference between the total binding energy of the products and the reactants.\u003c/p> \u003cp>Total BE of Reactants (\\(2\\) deuterium atoms):\u003c/p> \u003cp>Each \\({}_{1}^{2}\\text{H}\\) has \\(2\\) nucleons.\u003c/p>  \\[BE_{\\text{reactants}} = 2 \\text{ atoms} \\times (2 \\text{ nucleons} \\times 1.1\\text{ MeV/nucleon}) = 4.4\\text{ MeV}\\]  \u003cp>Total BE of Product (\\(1\\) helium atom):\u003c/p> \u003cp>Each \\({}_{2}^{4}\\text{He}\\) has \\(4\\) nucleons.\u003c/p>  \\[BE_{\\text{product}} = 1 \\text{ atom} \\times (4 \\text{ nucleons} \\times 7.2\\text{ MeV/nucleon}) = 28.8\\text{ MeV}\\]  \u003cp>Calculate Energy Released (\\(\\Delta E\\))\u003c/p> \\[\\Delta E = BE_{\\text{product}} - BE_{\\text{reactants}}\\] \\[\\Delta E = 28.8\\text{ MeV} - 4.4\\text{ MeV}\\] \\[\\Delta E = 24.4\\text{ MeV}\\] \u003cp>Correct Option: (b) 24.4\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>The binding energy per nucleon is found to be practically independent of the atomic number (A), for nuclei with mass numbers between 30 and 170.<br/><strong>Reason (R) :</strong> Nuclear force is long range.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Nuclear force is short range.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of following reaction is correct ? (Where symbols have their usual meanings)</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\to p+{e}^{−}+\nu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n\to p+{e}^{−}+\nu\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>It is the equation of neutron (n) decays into a proton (p), in which an electron (e⁻) is emitted, and an antineutrino is emitted to conserve lepton number.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy released when two deuterons \(({{}_{1}H}^{2})\) fuse to form a helium nucleus \(({{}_{2}He}^{4})\) is :<br/>(Given : Binding energy per nucleon of \({{}_{1}H}^{2}=1.1MeV\) and binding energy per nucleon of \({{}_{2}He}^{4}=7.0MeV\) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8.1MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.9MeV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(23.6MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(26.8MeV\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cbr/>Binding energy per nucleon of deuteron \\( \\left(^2_1\\text{H}\\right) = 1.1\\, \\text{MeV} \\)\u003cbr/>Binding energy per nucleon of helium-4 \\( \\left(^4_2\\text{He}\\right) = 7.0\\, \\text{MeV} \\)\u003c/p> \u003cp>Two deuterons \\( \\Rightarrow \\) total nucleons = 2 × 2 = 4\u003c/p> \u003cp>\\[\u003cbr/>\\text{BE}_{\\text{reactants}} = 2 \\times (1.1 \\times 2) = 4.4\\, \\text{MeV}\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\text{BE}_{\\text{product}} = 4 \\times 7.0 = 28.0\\, \\text{MeV}\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>Q = \\text{BE}_{\\text{product}} - \\text{BE}_{\\text{reactants}} = 28.0 - 4.4 = \\boxed{23.6\\, \\text{MeV}}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The atomic mass of \({ }_6 C ^{12}\) is \(12.000000 u\) and that of \({ }_6 C ^{13}\) is \(13.003354 u\). The required energy to remove a neutron from \({ }_6 C ^{13}\), if mass of neutron is \(1.008665 u\), will be :</p> <p> </p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(62.5 MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6.25 MeV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(49.5 MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.95 MeV\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Nuclear reaction considered\u003cbr/>\\({{C}_{6}}^{13}+Energy\\to {{C}_{6}}^{12}+{{n}_{0}}^{1}\\)\u003cbr/>Mass defect calculation\u003cbr/>\\(\\Delta M=(12.000000+1.008665)−13.003354\\)\u003cbr/>Value of mass defect\u003cbr/>\\(\\Delta M=−0.00531\\)\u003cbr/>Energy required for reaction\u003cbr/>\\(E=0.00531\\times 931.5\\)\u003cbr/>Final energy required\u003cbr/>\\(E=4.95\\) MeV\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The atomic mass of \({ }_6 C ^{12}\) is \(12.000000 u\) and that of \({ }_6 C ^{13}\) is \(13.003354 u\). The required energy to remove a neutron from \({ }_6 C ^{13}\), if mass of neutron is \(1.008665 u\), will be :</p> <p> </p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(62.5 MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6.25 MeV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(49.5 MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.95 MeV\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Nuclear reaction considered\u003cbr/>\\({{C}_{6}}^{13}+Energy\\to {{C}_{6}}^{12}+{{n}_{0}}^{1}\\)\u003cbr/>Mass defect calculation\u003cbr/>\\(\\Delta M=(12.000000+1.008665)−13.003354\\)\u003cbr/>Value of mass defect\u003cbr/>\\(\\Delta M=−0.00531\\)\u003cbr/>Energy required for reaction\u003cbr/>\\(E=0.00531\\times 931.5\\)\u003cbr/>Final energy required\u003cbr/>\\(E=4.95\\) MeV\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assuming the experimental mass of \({}_{6}^{12}C\) as 12<em>u</em>, the mass defect of \({}_{6}^{12}C\) atom is_____ \(\mathrm{MeV}/{\mathrm{c}}^{2}.\)<br/>(Mass of proton = 1.00727u. mass of neutron = 1.00866u, \(1\mathrm{u}=931.5\mathrm{MeV}/{\mathrm{c}}^{2}\) and c is the speed of the light in vacuum).<br/><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>127.5 </p></span></div><div class="option"><span class="key">b</span><span><p>89.03 </p></span></div><div class="option"><span class="key">c</span><span><p>272.0 </p></span></div><div class="option"><span class="key">d</span><span><p>92.0 </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Mass defect:\u003cbr/>\\(\\Delta m=\\left(6{m}_{p}+6{m}_{n}\\right)-{m}_{C}\\)\u003cbr/>\\(\\Delta m=6(1.00727+1.00866)-12\\)\u003cbr/>\\(\\Delta m=6(2.01593)-12=12.09558-12\\)\u003cbr/>=0.09558 u\u003cbr/>\\(\\Delta m=0.09558\\times 931.5=89.03\\mathrm{MeV}/{\\mathrm{c}}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy equivalent of 1 g of substance is :</p> <p> </p> <p>[JEE Main 2024, 9 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(11.2\times {10}^{24}\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.6\times {10}^{26}\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5.6\times {10}^{12}\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5.6\mathrm{eV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,7 +222,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Convert mass to kilograms:\\(m=1\\,\\text{g}=1\\times 10^{-3}\\,\\text{kg}\\)\u003c/p> \u003cp>Square the speed of light:\\(c^{2}=(3\\times 10^{8}\\,\\text{m/s})^{2}=9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2}\\)\u003c/p> \u003cp>Calculate the energy:\\(E=m\\times c^{2}=(1\\times 10^{-3}\\,\\text{kg})\\times (9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2})=9\\times 10^{13}\\,\\text{J}\\) Other Units The energy can also be expressed in other units:\u003c/p> \u003cp>Approximately \\(2.5\\times 10^{7}\\) kilowatt-hours (kWh).Approximately \\(5.6\\times 10^{26}\\) mega-electron volts (MeV).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy equivalent of 1 g of substance is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(11.2\times {10}^{24}MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.6\times {10}^{26}MeV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5.6\times {10}^{12}MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>5.6 eV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -230,7 +234,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Convert mass to kilograms:\\(m=1\\,\\text{g}=1\\times 10^{-3}\\,\\text{kg}\\)\u003c/p> \u003cp>Square the speed of light:\\(c^{2}=(3\\times 10^{8}\\,\\text{m/s})^{2}=9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2}\\)\u003c/p> \u003cp>Calculate the energy:\\(E=m\\times c^{2}=(1\\times 10^{-3}\\,\\text{kg})\\times (9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2})=9\\times 10^{13}\\,\\text{J}\\) Other Units The energy can also be expressed in other units:\u003c/p> \u003cp>Approximately \\(2.5\\times 10^{7}\\) kilowatt-hours (kWh).Approximately \\(5.6\\times 10^{26}\\) mega-electron volts (MeV).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : The density of the copper \(\left({}_{29}^{64}\mathrm{Cu}\right)\) nucleus is greater than that of the carbon \(\left({}_{6}^{12}\mathrm{C}\right)\) nucleus.<br/>Reason (R): The nucleus of mass number A has a radius proportional to \({\mathrm{A}}^{1/3}\).<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p> </p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,10 +243,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>$$\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\rho=\\frac{M}{V}=\\frac{M_n \\times A}{\\frac{4}{3} \\pi R^3}=\\frac{m_n \\times A}{\\frac{4}{3} \\pi A R_0^3}\\\\\u003cbr/>&amp;\\text { so } \\boldsymbol{\\rho}_{\\text {is almost is constant }}\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; R=R_0 A^{1 / 3} \\\\\u003cbr/>&amp; R \\propto A^{1 / 3}\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>$$\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>$$\u003cbr/>$$\\begin{aligned}&\\rho=\\frac{M}{V}=\\frac{M_n \\times A}{\\frac{4}{3} \\pi R^3}=\\frac{m_n \\times A}{\\frac{4}{3} \\pi A R_0^3}\\\\&\\text { so } \\boldsymbol{\\rho}_{\\text {is almost is constant }}\\\\&\\begin{aligned}& R=R_0 A^{1 / 3} \\\\& R \\propto A^{1 / 3}\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A radioactive nucleus \(\mathrm{n}_2\) has 3 times the decay constant as compared to the decay constant of another radioactive nucleus \(n_1\). If initial number of both nuclei are the same, what is the ratio of number of nuclei of \(n_2\) to the number of nuclei of \(n_1\), after one half-life of \(n_1\) ?</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>\(1/8\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1/4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -254,7 +258,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The number of remaining nuclei after time t can be given by:\u003c/p> \u003cp>\\(N(t)={N}_{0}{e}^{−\\lambda t}\\)\u003c/p> \u003cp>For half-life \\({t}_{1/2}\\) of \\({n}_{1}\\), we know that:\u003c/p> \u003cp>\\({t}_{1/2}=\\frac{\\ln 2}{{\\lambda }_{1}}\\)\u003c/p> \u003cp>At the end of one half-life, the number of \\({n}_{1}\\) nuclei left will be:\u003c/p> \u003cp>\\({N}_{1}=\\frac{{N}_{0}}{2}\\)\u003c/p> \u003cp>For nucleus \\({n}_{2}\\), which has a decay constant 3 times that of \\({n}_{1}\\) the remaining number of nuclei will be:\u003c/p> \u003cp> \u003c/p> \u003cp>\\({N}_{2}={N}_{0}{e}^{-3}{\\lambda }_{1}t\\)\u003c/p> \u003cp>Since \\(t={t}_{1/2}=\\frac{\\ln 2}{{\\lambda }_{1}}\\), we substitute it into the equation for \\({N}_{2}\\) :\u003c/p> \u003cp> \u003c/p> \u003cp>\\({N}_{2}={N}_{0}{e}^{-3{\\lambda }_{1}\\times \\frac{\\ln 2}{{\\lambda }_{1}}}={N}_{0}{e}^{-3\\ln 2}={N}_{0}{\\left(\\frac{1}{2}\\right)}^{3}=\\frac{{N}_{0}}{8}\\)\u003c/p> \u003cp>\u003cbr/>Now, the ratio of the number of nuclei of \\({n}_{2}\\) to \\({n}_{1}\\) after one half-life of \\({n}_{1}\\) is:\u003c/p> \u003cp>\\(\\frac{{N}_{2}}{{N}_{1}}=\\frac{\\frac{{N}_{0}}{8}}{\\frac{{N}_{0}}{2}}=\\frac{1}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct nuclear process from the below options<br/>[p: proton, n : neutron, \({e}^{-}:\)electron, \({e}^{+}:\) positron, \(\nu\) : neutrino, \(\nu\): antineutrino]</p> <p><strong>[JEE Main 2025, 28 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\to p+{e}^{-}+\nu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n\to p+{e}^{-}+\nu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n\to p+{e}^{+}+v\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,7 +270,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(n\\to p+\\overset{¯}{e}+\\overset{¯}{v}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of following reaction is correct ? (Where symbols have their usual meanings)</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\to p+{e}^{−}+\nu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n\to p+{e}^{−}+\nu\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -278,7 +282,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>It is the equation of neutron (n) decays into a proton (p), in which an electron (e⁻) is emitted, and an antineutrino is emitted to conserve lepton number.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a nucleus of mass number A and radius R, the mass density of nucleus can be represented as:</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{A}}^{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({A}^{\frac{1}{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({A}^{\frac{2}{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Independent of A </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -290,7 +294,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{matrix}R={R}_{0}{A}^{\\frac{1}{3}} \\\\ \\mathrm{Density}=\\frac{\\mathrm{Mass}\\mathrm{number}}{\\mathrm{Volume}} \\\\ =\\frac{A}{\\frac{4}{3}\\pi {{R}_{0}}_{3}^{}A} \\\\ =\\mathrm{constant}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The binding energy per nucleon of \({}_{83}^{209}Bi\) is _______ MeV .<br/>[Take \(m\left({}_{83}^{209}Bi\right)=208.980388u,{m}_{p}=1.007825u,{m}_{n}=1.008665u\) \(1u=931MeV/{c}^{2}\) ]</p> <p> </p> <p>[02 April, 2026 (Shift-2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7.48</p></span></div><div class="option"><span class="key">b</span><span><p>7.84</p></span></div><div class="option"><span class="key">c</span><span><p>8.79</p></span></div><div class="option"><span class="key">d</span><span><p>6.94</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -302,7 +306,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Mass defect: \\(\\Delta m=\\left[Z{m}_{p}+(A-Z){m}_{n}\\right]-{m}_{nucleus}\\)\u003c/p> \u003cp>\\(=[83(1.007825)+126(1.008665)]–208.980388\\)\u003c/p> \u003cp>\\(=(83.649+127.092)–208.980388\\approx 1.7606u\\)\u003c/p> \u003cp>Binding energy \\((B=\\Delta m\\times 931)\\):\u003c/p> \u003cp>\\(B=1.7606\\times 931\\approx 1639MeV\\) \u003c/p> \u003cp>Binding energy per nucleon: \\(\\frac{B}{A}=\\frac{1639}{209}\\approx 7.84MeV\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The half-life of \({}^{198}\mathrm{Au}\) is 3 days. If atomic weight of \({}^{198}\mathrm{Au}\) is \(198\mathrm{g}/\mathrm{mol}\) then the activity of \(2\mathrm{mg}\) of \({}^{198}\mathrm{Au}\) is [in disintegration/second]:</p> <p> </p> <p>[JEE Main 2021, 25 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6.06\times {10}^{18}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.67\times {10}^{12}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(16.18\times {10}^{12}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(32.36\times {10}^{12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,10 +315,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given \\(t_{1 / 2}=3\\) days \\(=72\\) hours\u003cbr/>Activity, \\(R=\\left|\\frac{d N}{d t}\\right|=\\lambda N=\\frac{\\ln 2}{t_{1 / 2}} \\times \\frac{6.02 \\times 10^{23}}{198} \\times 2 \\times 10^{-3}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\because N=N_A \\times \\frac{\\text { Weight }}{\\text { Molecular weight }} \\\\\u003cbr/>&amp; R=\\frac{0.693 \\times 6.02 \\times 10^{23} \\times 2 \\times 10^{-3}}{72 \\times 3600 \\times 198}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\(R=16.18 \\times 10^{12}\\) disintegration \\(/\\) second\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given \\(t_{1 / 2}=3\\) days \\(=72\\) hours\u003cbr/>Activity, \\(R=\\left|\\frac{d N}{d t}\\right|=\\lambda N=\\frac{\\ln 2}{t_{1 / 2}} \\times \\frac{6.02 \\times 10^{23}}{198} \\times 2 \\times 10^{-3}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\because N=N_A \\times \\frac{\\text { Weight }}{\\text { Molecular weight }} \\\\& R=\\frac{0.693 \\times 6.02 \\times 10^{23} \\times 2 \\times 10^{-3}}{72 \\times 3600 \\times 198}\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\(R=16.18 \\times 10^{12}\\) disintegration \\(/\\) second\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A free neutron decays into a proton but a free proton does not decay into neutron. This is because:</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>neutron is an uncharged particle</p></span></div><div class="option"><span class="key">b</span><span><p>proton is a charged particle</p></span></div><div class="option"><span class="key">c</span><span><p>neutron is a composite particle made of a proton and an electron</p></span></div><div class="option"><span class="key">d</span><span><p>neutron has larger rest mass than proton</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,7 +330,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As a neutron has more rest mass than a proton, so it will require energy to decay into neutron.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of the density of oxygen nucleus \(\left({}_{8}^{16}\mathrm{O}\right)\) and helium nucleus \(\left({}_{2}^{4}\mathrm{He}\right)\) is</p> <p> </p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4: 1</p></span></div><div class="option"><span class="key">b</span><span><p>8: 1</p></span></div><div class="option"><span class="key">c</span><span><p>1: 1</p></span></div><div class="option"><span class="key">d</span><span><p>2: 1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,7 +342,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(∵\\text{ Nuclear density }=\\frac{Am}{\\frac{4}{3}\\pi {R}^{3}}\\)\u003c/p> \u003cp>Where A is the mass number and m is mass of one nucleon.\u003cbr/>\\(∵R={R}_{0}{A}^{\\frac{1}{3}}\\\\ \\Rightarrow {R}^{3}={R}_{0}^{3}A\\)\u003cbr/>\u003cbr/> Nuclear density \\(=\\frac{Am}{\\frac{4}{3}\\pi {R}_{0}^{3}A}\\)\u003cbr/>Nuclear density \\(=\\frac{3m}{4\\pi {R}_{0}^{3}}\\)\u003cbr/>\\(∴\\) Nuclear density is independent of A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A free neutron decays into a proton but a free proton does not decay into neutron. This is because [JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>neutron is an uncharged particle</p></span></div><div class="option"><span class="key">b</span><span><p>proton is a charged particle</p></span></div><div class="option"><span class="key">c</span><span><p>neutron is a composite particle made of a proton and an electron</p></span></div><div class="option"><span class="key">d</span><span><p>neutron has larger rest mass than proton</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,7 +354,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As a neutron has more rest mass than a proton, so it will require energy to decay into neutron.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mass of proton, neutron and helium nucleus are respectively 1.0073 u, 1.0087 u and 4.0015 น. The binding energy of helium nucleus is:</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>14.2 MeV</p></span></div><div class="option"><span class="key">b</span><span><p>28.4 MeV</p></span></div><div class="option"><span class="key">c</span><span><p>56.8 MeV</p></span></div><div class="option"><span class="key">d</span><span><p>7.1 MeV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,7 +366,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, m\u003csub>P\u003c/sub> = 1.0073u; m\u003csub>N\u003c/sub> = 1.0087u; m\u003csub>He\u003c/sub> = 4.0015u\u003c/p> \u003cp>B.E of Helium = (2m\u003csub>P\u003c/sub> + 2m\u003csub>N\u003c/sub> - m\u003csub>He\u003c/sub>) c\u003csup>2\u003c/sup>\u003c/p> \u003cp> \u003c/p> \u003cp>\\(=(2\\times 1.0073+2\\times 1.0087−4.0015)\\times 931.5\\)\u003c/p> \u003cp>\\(=28.4\\text{MeV}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two radioactive elements A and B initially have same number of atoms. The half life of A is same as the average life of B. If \({\lambda }_{A}\) and \({\lambda }_{B}\) are decay constants of A and B respectively, then choose the correct relation from the given options.</p> <p>[JEE Main 2023, 11 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{A}={\lambda }_{B}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\lambda }_{A}=2{\lambda }_{B}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{A}={\lambda }_{B}\ln 2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{A}ℓn2={\lambda }_{B}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,7 +378,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\left({T}_{\\frac{1}{2}}\\right)}_{A}=(\\tau {)}_{B}\\\\ \\frac{\\ln 2}{{\\lambda }_{A}}=\\frac{1}{{\\lambda }_{B}}\\\\ {\\lambda }_{A}={\\lambda }_{B}\\ln (2)\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>The binding energy per nucleon is found to be practically independent of the atomic number (A), for nuclei with mass numbers between 30 and 170.<br/><strong>Reason (R) :</strong> Nuclear force is long range.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -386,7 +390,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Nuclear force is short range.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following statements:<br/>(A) Atoms of each element emit spectrum.<br/>(B) According to Bohr's Postulate, an electron in a hydrogen atom, revolves in a certain stationary orbit.<br/>(C) The density of nuclear matter depends on the size of the nucleus.<br/>(D) A free neutron is stable but a free proton decay is possible.<br/>(E) Radioactivity is an indication of the instability of nuclei.</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B) and (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (C) and (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C), (D) and (E)</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (B) and (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,7 +402,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(A) Atoms of each element emit characteristic spectrum.\u003cbr/>(B) According to Bohr's Postulate, an electron in a hydrogen atom, revolves in a certain stationary orbit.\u003cbr/>(E) Radioactivity is an indication of the instability of nuclei.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a nucleus \({}_{Z}^{A}X\) having mass number A and atomic number Z<br/>(A) The surface energy per nucleon (b) \(={a}_{1}{\mathrm{A}}^{2/3}\)<br/>(B) The Coulomb contribution to the binding energy<br/>\({b}_{c}=-{a}_{2}\frac{Z(Z-1)}{{A}^{4/3}}\)<br/>(C) The volume energy \({\mathrm{b}}_{\mathrm{v}}={\mathrm{a}}_{3}\mathrm{A}\)<br/>(D) Decrease in the binding energy is proportional to surface area.<br/>(E) While estimating the surface energy, it is assumed that each nucleon interacts with 12 nucleons, \(\left({a}_{1},{a}_{2}\right.\) and \({a}_{3}\) are constants)</p> <p>Choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(C), (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B), (C), (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C), (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -410,7 +414,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\because\\) Mass number \\(A \\propto r^3 \\Rightarrow r \\propto A^{1 / 3}\\).\u003cbr/>\\(\\therefore\\) Surface energy per nucleon \\(\\propto \\frac{r^2}{A} \\propto \\frac{1}{A^{1 / 3}}\\)\u003cbr/>\\(A\\) is incorrect\u003cbr/>Coulomb contribution to the binding energy is \\(b_c=\\frac{-a_2 Z(Z-1)}{A^{1 / 3}} \\Rightarrow B\\) is incorrect\u003cbr/>Volume energy \\(\\propto A \\Rightarrow C\\) is correct\u003cbr/>As we consider only surface energy contribution then option is correct. \\(\\Rightarrow D\\) is correct.\u003cbr/>In case of surface energy, only 3 interactions contribute to surface energy. \\(\\Rightarrow E\\) is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({}_{92}^{238}A\to {}_{90}^{234}B+{}_{2}^{4}D+Q\)</p> <p>In the given nuclear reaction, the approximate amount of energy released will be:<br/>[Given, mass of \({}_{92}^{238}A=238.05079\times 931.5\mathrm{MeV}/{\mathrm{c}}^{2}\), mass of \({}_{90}^{234}B=234.04363\times 931.5\mathrm{MeV}/{\mathrm{c}}^{2},\) mass of \({}_{2}^{4}D=4.00260\times 931.5\mathrm{MeV}/{\mathrm{c}}^{2}\) ] </p> <p> </p> <p>[JEE Main 2023, 13 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.82\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.9\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.12\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.25\mathrm{MeV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,7 +426,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(Q=\\left({m}_{A}-{m}_{B}-{m}_{D}\\right)\\times {\\mathrm{c}}^{2}\\\\ =(238.05079-234.04363-4.00260)\\\\ =\\left(0.00456{\\mathrm{c}}^{2}\\right).u\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp>\\(0.00456{c}^{2}\\cdot 931.5\\frac{\\mathrm{MeV}}{{c}^{2}}\\left[∵1u=931\\frac{\\mathrm{MeV}}{{c}^{2}}\\right]\\\\ \\Rightarrow 4.25\\mathrm{MeV}\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a radioactive element having half-life of \(30\min\) is undergoing beta decay, the fraction of radioactive element that remains undecayed after \(90\min\) will be:</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{8}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{16}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,7 +438,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(∵\\frac{N}{{N}_{0}}={\\left(\\frac{1}{2}\\right)}^{1/{t}_{1}}\\\\ \\Rightarrow \\frac{N}{{N}_{0}}={\\left(\\frac{1}{2}\\right)}^{\\frac{90}{30}}\\\\ \\Rightarrow \\frac{N}{{N}_{0}}=\\frac{1}{8}\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Three specimens \(\mathrm{A},\mathrm{B},\mathrm{C}\) of same radioactive element has activities \(1\) microcurie, \(1\) rutherford and \(1\) becquerel respectively. Which specimen has maximum mass?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{B}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>all have equal masses</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -443,10 +447,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>$$\\begin{aligned}\u003cbr/>&amp; 1 \\text { becquerel }=1 \\mathrm{dis} / \\mathrm{s} \\\\\u003cbr/>&amp; 1 \\text { rutherford }=10^6 \\mathrm{dis} / \\mathrm{s} \\\\\u003cbr/>&amp; 1 \\text { micro curie }=3.7 \\times 10^{4} \\mathrm{dis} / \\mathrm{s}\u003cbr/>\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>$$\\begin{aligned}& 1 \\text { becquerel }=1 \\mathrm{dis} / \\mathrm{s} \\\\& 1 \\text { rutherford }=10^6 \\mathrm{dis} / \\mathrm{s} \\\\& 1 \\text { micro curie }=3.7 \\times 10^{4} \\mathrm{dis} / \\mathrm{s}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Substance A has atomic mass number 16 and half life of 1 day. Another substance B has atomic mass number 32 and half life of \(\frac{1}{2}\) day. If both <em>A</em> and <em>B </em>simultaneously start undergo radioactivity at the same time with initial mass \(320\mathrm{g}\) each, how many total atoms of <em>A</em> and <em>B</em> combined would be left after 2 days.</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.38\times {10}^{24}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6.76\times {10}^{24}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6.76\times {10}^{23}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.69\times {10}^{24}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -458,7 +462,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For substance \\(A\\left(N_0\\right) A=\\frac{320}{16}=20\\) moles\u003cbr/>For substance \\(B\\left(N_0\\right) B=\\frac{320}{32}=10\\) moles\u003cbr/>Number of moles of \\(A\\) after 2 days\u003cbr/>\\[\u003cbr/>N_A=\\frac{\\left(N_0\\right)_A}{(2)^{2 / 1}}=\\frac{20}{4}=5\u003cbr/>\\]\u003c/p> \u003cp>Number of moles of \\(B\\) after 2 days.\u003cbr/>\\[\u003cbr/>N_B=\\frac{\\left(N_0\\right)_B}{(2)^{2 / 0.5}}=\\frac{10}{2^4}=0.625\u003cbr/>\\]\u003c/p> \u003cp>Total number of moles \\(=5.625\\)\u003cbr/>No. of atoms \\(=5.625 \\times 6.023 \\times 10^{23}=3.38 \\times 10^{24}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two radioactive elements A and B initially have same number of atoms. The half life of A is same as the average life of B. If \({\lambda }_{A}\) and \({\lambda }_{B}\) are decay constants of A and B respectively, then choose the correct relation from the given options.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{A}={\lambda }_{B}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\lambda }_{A}=2{\lambda }_{B}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{A}={\lambda }_{B}\ln 2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{A}ℓn2={\lambda }_{B}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -470,7 +474,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\left({T}_{\\frac{1}{2}}\\right)}_{A}=(\\tau {)}_{B}\\\\ \\frac{\\ln 2}{{\\lambda }_{A}}=\\frac{1}{{\\lambda }_{B}}\\\\ {\\lambda }_{A}={\\lambda }_{B}\\ln (2)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two radioactive substances X and Y originally have \({N}_{\text{, }}\) and \({N}_{2}\) nuclei respectively. Half life of X is half of the life of Y. After three half lives of Y, number of nuclei of both are equal.The ratio \(\frac{{N}_{1}}{{N}_{2}}\) will be equal to:</p> <p> </p> <p>[JEE Main 2021, 25 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{8}{1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{8}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,7 +486,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Number of half lives of \\(Y=3\\)\u003cbr/>Therefore, number of half lives of \\(X=6\\)\u003cbr/>[Since half life of \\(X\\) is half of that of \\(Y\\) ]\u003cbr/>After \\(n\\)-half life, number of nucler undecayed \\(N=\\frac{N_0}{2 n}\\) 6 half life of \\(x=3\\) half life of \\(y\\).\u003cbr/>\\[\u003cbr/>\\therefore \\frac{N_1}{2^6}=\\frac{N_2}{2^3} \\Rightarrow \\frac{N_1}{N_2}=8\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R<br/>Assertion A : The binding energy per nucleon is practically independent of the atomic number for nuclei of mass number in the range 30 to 170 .<br/>Reason R : Nuclear force is short ranged.<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2023, 24 Jan (Shift 1)]</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are true but R is not the correct explanation of A</p></span></div><div class="option"><span class="key">b</span><span><p>A is true but R is false</p></span></div><div class="option"><span class="key">c</span><span><p>A is false but R is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true and R is the correct explanation of A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -494,7 +498,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The nuclei ranging from mass number 30 to 170 have binding energy per nucleon almost same\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two radioactive substances X and Y originally have \({N}_{\text{1}}\) and \({N}_{2}\) nuclei respectively. Half life of X is half of the life of Y. After three half lives of Y, number of nuclei of both are equal.The ratio \(\frac{{N}_{1}}{{N}_{2}}\) will be equal to:</p> <p> </p> <p>[JEE Main 2021, 25 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{8}{1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{8}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -506,7 +510,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Number of half lives of \\(Y=3\\)\u003cbr/>Therefore, number of half lives of \\(X=6\\)\u003cbr/>[Since half life of \\(X\\) is half of that of \\(Y\\) ]\u003cbr/>After \\(n\\)-half life, number of nucler undecayed \\(N=\\frac{N_0}{2 n}\\) 6 half life of \\(x=3\\) half life of \\(y\\).\u003cbr/>\\[\u003cbr/>\\therefore \\frac{N_1}{2^6}=\\frac{N_2}{2^3} \\Rightarrow \\frac{N_1}{N_2}=8\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A radioactive sample disintegrates via two independent decay processes having half lives \({\mathrm{T}}_{1/2}^{(1)}\) and \({\mathrm{T}}_{1/2}^{(2)}\) respectively. The effective half-life, \({\mathrm{T}}_{1/2}\) of the nuclei is:</p> <p> </p> <p>[JEE Main 2021, 18 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{T}}_{1/2}=\frac{{\mathrm{T}}_{1/2}^{(1)}{\mathrm{T}}_{1/2}^{(2)}}{{\mathrm{T}}_{1/2}^{(1)}+{\mathrm{T}}_{1/2}^{(2)}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{T}}_{1/2}={\mathrm{T}}_{1/2}^{(1)}+{\mathrm{T}}_{1/2}^{(2)}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{T}}_{1/2}=\frac{{\mathrm{T}}_{1/2}^{(1)}+{\mathrm{T}}_{1/2}^{2}}{{\mathrm{T}}_{1/2}^{(1)}-{\mathrm{T}}_{1/2}^{(2)}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -518,7 +522,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\lambda }_{emt}={\\lambda }_{1}+{\\lambda }_{2}\\Rightarrow \\frac{1}{{T}_{1/2}}=\\frac{1}{{T}_{y/2}^{(1)}}+\\frac{1}{{T}_{1/2}^{(2)}}\\\\ {T}_{1/2}=\\frac{{T}_{1/2}^{(1)}{T}_{1/2}^{(2)}}{{T}_{1/2}^{(1)}+{T}_{1/2}^{(2)}}{\\lambda }_{emt}={\\lambda }_{1}+{\\lambda }_{2}\\Rightarrow \\frac{1}{{T}_{1/2}}=\\frac{1}{{T}_{y/2}^{(1)}}+\\frac{1}{{T}_{1/2}^{(2)}}\\\\ {T}_{1/2}=\\frac{{T}_{1/2}^{(1)}{T}_{1/2}^{(2)}}{{T}_{1/2}^{(1)}+{T}_{1/2}^{(2)}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a radioactive element having half-life of \(30\min\) is undergoing beta decay, the fraction of radioactive element that remains undecayed after \(90\min\) will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{8}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{16}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -530,7 +534,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(∵\\frac{N}{{N}_{0}}={\\left(\\frac{1}{2}\\right)}^{1/{t}_{1}}\\\\ \\Rightarrow \\frac{N}{{N}_{0}}={\\left(\\frac{1}{2}\\right)}^{\\frac{90}{30}}\\\\ \\Rightarrow \\frac{N}{{N}_{0}}=\\frac{1}{8}\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A free neutron decays into a proton but a free proton does not decay into neutron. This is because</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>neutron is an uncharged particle</p></span></div><div class="option"><span class="key">b</span><span><p>proton is a charged particle</p></span></div><div class="option"><span class="key">c</span><span><p>neutron is a composite particle made of a proton and an electron</p></span></div><div class="option"><span class="key">d</span><span><p>neutron has larger rest mass than proton</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -542,7 +546,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As a neutron has more rest mass than a proton, so it will require energy to decay into neutron.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The half life of a radioactive nuclide is 100 hours . The fraction of original activity that will remain after 150 hours would be:</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{2\sqrt{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2}{3\sqrt{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -554,7 +558,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Problem Statement:\u003c/strong> The half-life of a nuclide is 100 hours. Find the fraction of original activity remaining after 150 hours.\u003c/p> \u003cp>\u003cstrong>Solution:\u003c/strong>\u003c/p> \u003col> \u003cli>\u003cstrong>Formula:\u003c/strong> The fraction of activity remaining is given by: \\(\\frac{A}{{A}_{0}}={\\left(\\frac{1}{2}\\right)}^{n}\\)where \\(n=\\frac{t}{{T}_{1/2}}\\).\u003c/li> \u003cli>\u003cstrong>Calculation:\u003c/strong>\u003c/li> \u003c/ol> \u003cul> \u003cli>\\({T}_{1/2}=100\\) hours\u003c/li> \u003cli>\\(t=150\\)hours\u003c/li> \u003cli>\\(n=\\frac{150}{100}=1.5=\\frac{3}{2}\\)\u003c/li> \u003cli>Substitute \u003cem>n \u003c/em>into the formula: \\(\\frac{A}{{A}_{0}}={\\left(\\frac{1}{2}\\right)}^{3/2}=\\frac{1}{{2}^{1.5}}=\\frac{1}{{2}^{1}⋅{2}^{0.5}}=\\frac{1}{2\\sqrt{2}}\\)\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Answer:\u003c/strong> \u003cstrong>(B) \\(\\frac{1}{2\\sqrt{2}}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({}_{92}^{238}A\to {}_{90}^{234}B+{}_{2}^{4}D+Q\)</p> <p>In the given nuclear reaction, the approximate amount of energy released will be:<br/>[Given, mass of \({}_{92}^{238}A=238.05079\times 931.5\mathrm{MeV}/{\mathrm{c}}^{2}\), mass of \({}_{90}^{234}B=234.04363\times 931.5\mathrm{MeV}/{\mathrm{c}}^{2},\mathrm{m}\)ass of \({}_{2}^{4}D=4.00260\times 931.5\mathrm{MeV}/{\mathrm{c}}^{2}\) ] </p> <p> </p> <p>[JEE Main 2023, 13 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.82\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.9\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.12\mathrm{MeV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.25\mathrm{MeV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -566,7 +570,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(Q=\\left({m}_{A}-{m}_{B}-{m}_{D}\\right)\\times {\\mathrm{c}}^{2}\\\\ =(238.05079-234.04363-4.00260)\\\\ =\\left(0.00456{\\mathrm{c}}^{2}\\right).u\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp>\\(0.00456{c}^{2}\\cdot 931.5\\frac{\\mathrm{MeV}}{{c}^{2}}\\left[∵1u=931\\frac{\\mathrm{MeV}}{{c}^{2}}\\right]\\\\ \\Rightarrow 4.25\\mathrm{MeV}\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of the density of oxygen nucleus \({(}_{8}^{16}\mathrm{O})\) and helium nucleus \({(}_{2}^{4}\mathrm{He})\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4 : 1 </p></span></div><div class="option"><span class="key">b</span><span><p>8 : 1 </p></span></div><div class="option"><span class="key">c</span><span><p>1 : 1 </p></span></div><div class="option"><span class="key">d</span><span><p>2 : 1 </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -578,7 +582,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(∵\\) Nuclear density \\(=\\frac{Am}{\\frac{4}{3}\\pi {R}^{3}}\\)\u003c/p> \u003cp> Where \u003cem>A\u003c/em> is the mass number and \u003cem>m\u003c/em> is mass of one nucleon.\u003c/p> \u003cp>\\(\\begin{matrix}∵R={R}_{0}{A}^{\\frac{1}{3}} \\\\ \\Rightarrow {R}^{3}={R}_{0}^{3}A\\end{matrix}\\)\u003c/p> \u003cp>\\(\\Rightarrow\\) Nuclear density = \\(\\frac{Am}{\\frac{4}{3}\\pi {R}_{0}^{3}A}\\)\u003c/p> \u003cp>Nuclear density = \\(\\frac{3m}{4\\pi {R}_{0}^{3}}\\)\u003c/p> \u003cp>\\(∴\\) Nuclear density is independent of A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of the density of oxygen nucleus \(\left({}_{8}^{16}\mathrm{O}\right)\) and helium nucleus \(\left({}_{2}^{4}\mathrm{He}\right)\) is:</p> <p> </p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4: 1</p></span></div><div class="option"><span class="key">b</span><span><p>8: 1</p></span></div><div class="option"><span class="key">c</span><span><p>1: 1</p></span></div><div class="option"><span class="key">d</span><span><p>2: 1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -590,7 +594,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(∵\\text{ Nuclear density }=\\frac{Am}{\\frac{4}{3}\\pi {R}^{3}}\\)\u003c/p> \u003cp>Where A is the mass number and m is mass of one nucleon.\u003cbr/>\\(∵R={R}_{0}{A}^{\\frac{1}{3}}\\\\ \\Rightarrow {R}^{3}={R}_{0}^{3}A\\)\u003cbr/>\u003cbr/> Nuclear density \\(=\\frac{Am}{\\frac{4}{3}\\pi {R}_{0}^{3}A}\\)\u003cbr/>Nuclear density \\(=\\frac{3m}{4\\pi {R}_{0}^{3}}\\)\u003cbr/>\\(∴\\) Nuclear density is independent of A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A radio-active material is reduced to \(1/8\) of its original amount in 3 days. If \(8\times {10}^{-3}\mathrm{kg}\) of the material is left after 5 days. The initial amount of the material is:</p> <p> </p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>64 g</p></span></div><div class="option"><span class="key">b</span><span><p>40 g</p></span></div><div class="option"><span class="key">c</span><span><p>32 g</p></span></div><div class="option"><span class="key">d</span><span><p>256 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -602,7 +606,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(N={N}_{0}{\\left(\\frac{1}{2}\\right)}^{n}\\\\ \\frac{{N}_{0}}{8}={N}_{0}{\\left(\\frac{1}{2}\\right)}^{n}\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp>No, of half lives n=3\u003cbr/>Material pass through 3 half lives in 3 days\u003cbr/>Therefore, 1 half life =1day\u003cbr/>And 5 days =5 half life\u003cbr/>Using the formula.\u003cbr/>\\(N={N}_{0}{\\left(\\frac{1}{2}\\right)}^{n}\\\\ {N}_{0}=N(2{)}^{n}\\\\ =8\\times {10}^{-3}\\times (2{)}^{5}\\\\ {N}_{0}=256\\times {10}^{-3}\\mathrm{kg}\\\\ {N}_{0}=256\\mathrm{g}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A nucleus of mass \( M \) emits \( \gamma \)-ray photon of frequency \( v \) . The loss of internal energy by the nucleus is [Take \( c \) as the speed of electromagnetic wave]</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( h v\left[1-\frac{h v}{2 M c^{2}}\right] \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( h v \)</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>\( h v\left[1+\frac{h v}{2 M c^{2}}\right] \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -614,7 +618,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Momentum of \\(\\gamma\\) ray, \\({p}_{\\tau }=\\frac{h}{\\gamma }=\\frac{hv}{C}\\)\u003c/p> \u003cp>Total momentum is conserved,\u003c/p> \u003cp>\\(\\vec{{P}_{\\gamma }}+\\vec{{P}_{nu}}=0\\\\ \\Rightarrow \\vec{{P}_{\\gamma }}=\\vec{{P}_{nu}}\\\\ \\Rightarrow \\frac{hv}{C}=\\vec{{P}_{nu}}\\\\ \\frac{1}{2}M{v}^{2}=\\frac{1}{2M}{(\\frac{hv}{C})}^{2}\\)\u003c/p> \u003cp>Loss in internal energy,\u003c/p> \u003cp>\\(hv+\\frac{1}{2M}{(\\frac{hv}{C})}^{2}\\\\ hv[1+\\frac{1}{2M}(\\frac{hv}{{C}^{2}})]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A radioactive nucleus undergoes a series of decay according to the scheme</p> <p>\(A \xrightarrow{\alpha} A_1 \xrightarrow{\beta} A_2 \xrightarrow{\alpha} A_3 \xrightarrow{\gamma} A_4\)</p> <p>If the mass number and atomic number of \( A \) are 180 and 72 respectively, then what are these number for \( A_{3} \)</p> <p><strong>[JEE Main 2023, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>174 and 70</p></span></div><div class="option"><span class="key">b</span><span><p>172 and 69</p></span></div><div class="option"><span class="key">c</span><span><p>176 and 69</p></span></div><div class="option"><span class="key">d</span><span><p>176 and 70</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -626,7 +630,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The process is given below: \u003c/p> \u003cp>\\({}_{72}^{180}\\mathrm{A}\\overset{\\alpha }{\\to }{}_{70}^{176}\\mathrm{A}_{1}\\overset{\\beta }{\\to }{}_{71}^{176}\\mathrm{A}_{2}\\overset{\\alpha }{\\to }{}_{69}^{172}\\mathrm{A}_{3}\\overset{\\gamma }{\\to }{}_{69}^{172}\\mathrm{A}_{4}\\)\u003c/p> \u003cp>So, the correct option is B.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> The half-life of \(A{u}^{198}\) is 2.7 days. The activity of 1.50mg of \(A{u}^{198}\) if its atomic weight is 198\(gmo{l}^{-1}\) is, (\({N}_{A}=6\times {10}^{23}/mol\))</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>240 Ci</p></span></div><div class="option"><span class="key">b</span><span><p>357 Ci</p></span></div><div class="option"><span class="key">c</span><span><p>252 Ci</p></span></div><div class="option"><span class="key">d</span><span><p>535 Ci</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

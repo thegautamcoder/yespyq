@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Alternating Current","item":"https://yespyq.com/exams/board/physics/alternating-current/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Alternating Current</h1>
       <p>46 Board Physics previous year questions on <b>Alternating Current</b> — options free on every question; <b>5 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alternating voltage \(V(t)=220 \sin 100 \pi t\) volt is applied to a purely resistive load of \(50 \Omega\). The time taken for the current to rise from half of the peak value to the peak value is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2.2 ms\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(7.2 ms\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(3.3 ms\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5 ms\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bulb is rated \((100\mathrm{W},110\mathrm{V})\). It is operated by current of 1.0 A supplied by a step down transformer. If the input voltage and efficiency of the transformer are 220 V and 0.9 respectively, the input current drawn from the mains is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{8}\mathrm{A}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{5}{9}\mathrm{A}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{4}{7}\mathrm{A}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alternating current is given by \(I={I}_{A}\sin \omega t+{I}_{B}\cos \omega t\). The r.m.s current will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\sqrt{{I}_{A}^{2}+{I}_{B}^{2}}}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\left|{I}_{A}+{I}_{B}\right|}{\sqrt{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{{I}_{A}^{2}+{I}_{B}^{2}}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\sqrt{\frac{{I}_{A}^{2}+{I}_{B}^{2}}{2}}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of resistance \(20\Omega\) and self-inductance 10 mH is connected to an ac source of frequency \(1000/\pi \mathrm{Hz}\). The phase difference between current in the circuit and the source voltage is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(30^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(60^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(75^\circ\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(45^\circ\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>To an ac power supply of \(220\mathrm{V}\) at \(50\mathrm{Hz}\) , a resistor of \(20\Omega\), a capacitor of reactance \(25\Omega\) and an inductor of reactance \(45\Omega\) are connected in series. The corresponding current in the circuit and the phase angle between the current and the voltage is, respectively -</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(15.6\mathrm{A}\) and \(30^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(15.6\mathrm{A}\) and \(45^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(7.5\mathrm{A}\) and \(30^\circ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(7.8\mathrm{A}\) and \(45^\circ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,10 +135,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; X_L=45 \\mathrm{~W}, X_C=25 \\mathrm{~W}, R=20 \\mathrm{~W} \\\\\u003cbr/>&amp; I=\\frac{220}{\\sqrt{\\left(X_L-X_C\\right)^2+R^2}}=\\frac{220}{\\sqrt{(45-25)^2+20^2}} \\\\\u003cbr/>&amp; =\\frac{220}{2 \\sqrt{2}}=\\frac{11}{\\sqrt{2}}=7.779 \\mathrm{~A} \\\\\u003cbr/>&amp; \\tan \\phi=\\frac{X_L-X_C}{R}=\\frac{45-25}{20}=1 \\\\\u003cbr/>&amp; f=45^{\\circ}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}& X_L=45 \\mathrm{~W}, X_C=25 \\mathrm{~W}, R=20 \\mathrm{~W} \\\\& I=\\frac{220}{\\sqrt{\\left(X_L-X_C\\right)^2+R^2}}=\\frac{220}{\\sqrt{(45-25)^2+20^2}} \\\\& =\\frac{220}{2 \\sqrt{2}}=\\frac{11}{\\sqrt{2}}=7.779 \\mathrm{~A} \\\\& \\tan \\phi=\\frac{X_L-X_C}{R}=\\frac{45-25}{20}=1 \\\\& f=45^{\\circ}\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following quantity/quantities remains same in primary andsecondary coils of an ideal transformer ?<br/>Current, Voltage, Power, Magnetic flux</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Current only</p></span></div><div class="option"><span class="key">b</span><span><p>Voltage only</p></span></div><div class="option"><span class="key">c</span><span><p>Power only</p></span></div><div class="option"><span class="key">d</span><span><p>Magnetic flux and Power both</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In an ideal transformer, the quantity that remains the same in the primary and secondary coils is power.\u003cbr/>Explanation:\u003cbr/>Power conservation: An ideal transformer operates on the principle of conservation of energy, meaning the power input to the primary coil is equal to the power output from the secondary coil.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reactance of a capacitor of capacitance \(C\) connected to an ac source of frequency \(\omega\) is ' X '. If the capacitance of the capacitor is doubled and the frequency of the source is tripled, the reactance will become :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{X}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>6 X</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} X\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2} X\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,10 +159,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]\u003cbr/>&amp; C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]\u003cbr/>&amp; \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]\u003cbr/>&amp; \\boxed{X' = \\dfrac{X}{6}}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>$$\\begin{aligned}& \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]& \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]& C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]& \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]& \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]& \\boxed{X' = \\dfrac{X}{6}}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reactance of a capacitor of capacitance \(C\) connected to an ac source of frequency \(\omega\) is ' X '. If the capacitance of the capacitor is doubled and the frequency of the source is tripled, the reactance will become :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{X}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>6 X</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} X\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2} X\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,10 +171,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]\u003cbr/>&amp; C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]\u003cbr/>&amp; \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]\u003cbr/>&amp; \\boxed{X' = \\dfrac{X}{6}}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>$$\\begin{aligned}& \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]& \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]& C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]& \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]& \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]& \\boxed{X' = \\dfrac{X}{6}}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mathrm{i}}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[A=\\omega t\\] \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A resistor and an ideal inductor are connected in series to a \(100\sqrt{2}\mathrm{V}\), 50 Hz ac source. When a voltmeter is connected across the resistor or the inductor, it shows the same reading. The reading of the voltmeter is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(100\sqrt{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>100 V</p></span></div><div class="option"><span class="key">c</span><span><p>\(50\sqrt{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>50 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The reading of the voltmeter is \\(100\\text{ V}\\)\u003cstrong>Sv6Kpe[]Sv6Kpe[]\u003c/strong>. Since the voltmeter shows the same reading across the resistor and the inductor, their RMS voltages must be equal, so \\({V}_{R}={V}_{L}\\) Using the Pythagorean theorem for a series R-L circuit, the total RMS voltage is  \\({V}_{total}=\\sqrt{{V}_{R}^{2}+{V}_{L}^{2}}\\) Substituting \\({V}_{L}={V}_{R}\\) \\({V}_{total}=\\sqrt{{V}_{R}^{2}+{V}_{R}^{2}}=\\sqrt{2{V}_{R}^{2}}={V}_{R}\\sqrt{2}\\) If the source voltage is \\(100\\sqrt{2}\\text{ V}\\)   \\(100\\sqrt{2}={V}_{R}\\sqrt{2}\\), which simplifies to \\({V}_{R}=100v\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An AC voltage \(V=20 \sin 200 \pi t\) is applied to a series LCR circuit which drives a current \(I=10 \sin \left(200 \pi t+\frac{\pi}{3}\right)\). The average power dissipated is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(50 \mathrm{~W}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(200 \mathrm{~W}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(173.2 \mathrm{~W}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(21.6 \mathrm{~W}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({V}_{rms}=\\frac{{V}_{0}}{\\sqrt{2}}=\\frac{20}{\\sqrt{2}},{I}_{rms}=\\frac{{I}_{0}}{\\sqrt{2}}=\\frac{10}{\\sqrt{2}}\\)\u003c/p> \u003cp>\\(\u003cP>=\\frac{20}{\\sqrt{2}}\\times \\frac{10}{\\sqrt{2}}\\times \\cos \\frac{\\pi }{3}\\)\u003c/p> \u003cp>\\(=\\frac{200}{2}\\times \\frac{1}{2}=50W\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,7 +222,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[\\sin A \\sin B=\\frac{1}{2}[\\cos (A-B)-\\cos (A+B)]\\] \\[\\sin (\\omega t) \\sin (\\omega t+\\phi)=\\frac{1}{2}[\\cos (-\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[\\cos (-\\phi)=\\cos (\\phi)\\] \u003cp>, thus:\u003c/p> \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \u003cp>To find the average power over a cycle, integrate this expression over one period\u003c/p> \\[T=\\frac{2 \\pi}{\\omega}\\] \u003cp>, then divide by\u003c/p> \\[T\\] \u003cp>:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following quantity/quantities remains same in primary andsecondary coils of an ideal transformer ?<br/>Current, Voltage, Power, Magnetic flux</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Current only</p></span></div><div class="option"><span class="key">b</span><span><p>Voltage only</p></span></div><div class="option"><span class="key">c</span><span><p>Power only</p></span></div><div class="option"><span class="key">d</span><span><p>Magnetic flux and Power both</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -230,7 +234,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In an ideal transformer, the quantity that remains the same in the primary and secondary coils is power.\u003cbr/>Explanation:\u003cbr/>Power conservation: An ideal transformer operates on the principle of conservation of energy, meaning the power input to the primary coil is equal to the power output from the secondary coil.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reactance of a capacitor of capacitance \(C\) connected to an ac source of frequency \(\omega\) is ' X '. If the capacitance of the capacitor is doubled and the frequency of the source is tripled, the reactance will become :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{X}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>6 X</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} X\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2} X\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,10 +243,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]\u003cbr/>&amp; C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]\u003cbr/>&amp; \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]\u003cbr/>&amp; \\boxed{X' = \\dfrac{X}{6}}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>$$\\begin{aligned}& \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]& \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]& C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]& \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]& \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]& \\boxed{X' = \\dfrac{X}{6}}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A resistor and an ideal inductor are connected in series to a \(100\sqrt{2}\mathrm{V}\), 50 Hz ac source. When a voltmeter is connected across the resistor or the inductor, it shows the same reading. The reading of the voltmeter is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(100\sqrt{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>100 V</p></span></div><div class="option"><span class="key">c</span><span><p>\(50\sqrt{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>50 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -254,7 +258,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The reading of the voltmeter is \\(100\\text{ V}\\)\u003cstrong>Sv6Kpe[]Sv6Kpe[]\u003c/strong>. Since the voltmeter shows the same reading across the resistor and the inductor, their RMS voltages must be equal, so \\({V}_{R}={V}_{L}\\) Using the Pythagorean theorem for a series R-L circuit, the total RMS voltage is  \\({V}_{total}=\\sqrt{{V}_{R}^{2}+{V}_{L}^{2}}\\) Substituting \\({V}_{L}={V}_{R}\\) \\({V}_{total}=\\sqrt{{V}_{R}^{2}+{V}_{R}^{2}}=\\sqrt{2{V}_{R}^{2}}={V}_{R}\\sqrt{2}\\) If the source voltage is \\(100\\sqrt{2}\\text{ V}\\)   \\(100\\sqrt{2}={V}_{R}\\sqrt{2}\\), which simplifies to \\({V}_{R}=100v\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bulb is rated \((100\mathrm{W},110\mathrm{V})\). It is operated by current of 1.0 A supplied by a step down transformer. If the input voltage and efficiency of the transformer are 220 V and 0.9 respectively, the input current drawn from the mains is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{8}\mathrm{A}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{9}\mathrm{A}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{4}{7}\mathrm{A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,7 +270,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The power output of the transformer is the power consumed by the bulb, which is 100 W. The efficiency of the transformer is given as 0.9.\u003c/p> \u003cp>First, we calculate the power input to the transformer using the efficiency formula:\u003c/p> \u003cp>\\(\\eta = \\frac{P_{out}}{P_{in}}\\)\u003c/p> \u003cp>where \\(\\eta\\) is the efficiency, \\(P_{out}\\) is the output power, and \\(P_{in}\\) is the input power.\u003c/p> \u003cp>Rearranging for \\(P_{in}\\):\u003c/p> \u003cp>\\(P_{in} = \\frac{P_{out}}{\\eta}\\)\u003c/p> \u003cp>Substituting the given values:\u003c/p> \u003cp>\\(P_{in} = \\frac{100 \\text{ W}}{0.9} = 111.11 \\text{ W}\\)\u003c/p> \u003cp>Next, we use the input power and input voltage to find the input current. The input voltage is given as 220 V.\u003c/p> \u003cp>Using the power formula:\u003c/p> \u003cp>\\(P_{in} = V_{in} \\times I_{in}\\)\u003c/p> \u003cp>Rearranging for \\(I_{in}\\):\u003c/p> \u003cp>\\(I_{in} = \\frac{P_{in}}{V_{in}}\\)\u003c/p> \u003cp>Substituting the values:\u003c/p> \u003cp>\\(I_{in} = \\frac{111.11 \\text{ W}}{220 \\text{ V}} = 0.505 \\text{ A}\\)\u003c/p> \u003cp>Thus, the input current drawn from the mains is approximately \\(\\frac{5}{9} \\text{ A}\\).\u003cbr/>Identify the power consumed by the bulb: \\(P_{out} = 100 \\text{ W}\\).\u003c/p> \u003cp>Calculate the input power using the efficiency: \\(P_{in} = \\frac{P_{out}}{\\eta} = \\frac{100 \\text{ W}}{0.9} = 111.11 \\text{ W}\\).\u003c/p> \u003cp>\u003cbr/>Identify the input voltage: \\(V_{in}\\) = \\(220 \\text{ V}\\).\u003c/p> \u003cp>Use the power formula to find the input current: \\(P_{in} = V_{in} \\times I_{in}\\).\u003c/p> \u003cp>Rearrange and solve for \\(I_{in}: I_{in} = \\frac{P_{in}}{V_{in}} = \\frac{111.11 \\text{ W}}{220 \\text{ V}} = 0.505 \\text{ A}\\).\u003c/p> \u003cp>final answer: \\(\\frac{5}{9} \\text{ A}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reactance of a capacitor of capacitance \(C\) connected to an ac source of frequency \(\omega\) is ' X '. If the capacitance of the capacitor is doubled and the frequency of the source is tripled, the reactance will become :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{X}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>6 X</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} X\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2} X\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,10 +279,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]\u003cbr/>&amp; C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]\u003cbr/>&amp; \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]\u003cbr/>&amp; \\boxed{X' = \\dfrac{X}{6}}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>$$\\begin{aligned}& \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]& \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]& C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]& \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]& \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]& \\boxed{X' = \\dfrac{X}{6}}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of resistance \(20\Omega\) and self-inductance 10 mH is connected to an ac source of frequency \(1000/\pi \mathrm{Hz}\). The phase difference between current in the circuit and the source voltage is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(30^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(60^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(75^\circ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(45^\circ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -290,7 +294,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Plugging in the values for \\(f\\) and \\(L\\):\u003cbr/>  \\({X}_{L}=2\\pi (\\frac{1000}{\\pi })(10\\times {10}^{-3})\\)3  Sv6Kpe[]  \\({X}_{L}=20\\ \\Omega\\) Calculate the phase difference (\\(ϕ\\)) The phase difference (\\(ϕ\\)) between the current and voltage in an RL circuit is given by the formula     \\(\\tan (ϕ)=\\frac{{X}_{L}}{R}\\) \\(\\tan (ϕ)=\\frac{20}{20}\\) \\(\\tan (ϕ)=1\\)1   Therefore, the phase difference is: \\(ϕ=\\mathrm{arctan}(1)={45}^{∘}\\)or\\(\\frac{\\pi }{4}\\)radians.","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reactance of a capacitor of capacitance \(C\) connected to an ac source of frequency \(\omega\) is ' X '. If the capacitance of the capacitor is doubled and the frequency of the source is tripled, the reactance will become :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{X}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>6 X</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} X\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2} X\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,10 +303,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]\u003cbr/>&amp; C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]\u003cbr/>&amp; \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]\u003cbr/>&amp; \\boxed{X' = \\dfrac{X}{6}}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>$$\\begin{aligned}& \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]& \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]& C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]& \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]& \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]& \\boxed{X' = \\dfrac{X}{6}}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a series LCR circuit, inductance L = 10 mH and capacitance C = 10 nF. The angular frequency of the source when current has maximum amplitude in the circuit is</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{{10}^{4}}{2\pi }rad/s\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{10}^{5}}{2\pi }rad/s\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({10}^{5}rad/s\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({10}^{5}rad/s\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -314,7 +318,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The current has maximum amplitude in an LCR circuit at \u003cstrong>resonance frequency\u003c/strong> (\\({\\omega }_{0}\\)), where:\u003c/p> \u003cp>\\({\\omega }_{0}=\\frac{1}{\\sqrt{L⋅C}}\\)​\u003c/p> \u003cp>Given:\u003c/p> \u003cp>\\(L=10\\text{ }\\text{mH}=10\\times 1{0}^{−3}\\text{ }\\text{H},\\text{ }C=10\\text{ }\\text{nF}=10\\times 1{0}^{−9}\\text{ }\\text{F}\\)\u003c/p> \u003cp>Substitute the values into the formula:\u003c/p> \u003cp>\\({\\omega }_{0}=\\frac{1}{\\sqrt{(10\\times 1{0}^{−3})(10\\times 1{0}^{−9})}}\\)​\u003c/p> \u003cp>Simplify:\u003c/p> \u003cp>\\({\\omega }_{0}=\\frac{1}{\\sqrt{10\\times 1{0}^{−12}}}=\\frac{1}{\\sqrt{1{0}^{−11}}}=1{0}^{5}\\text{ }\\text{rad/s}\\)\u003c/p> \u003cp>Hence, the angular frequency of the source is:\u003cbr/>\u003cstrong>\\(1{0}^{5}\\text{ }\\text{rad/s}\\)\u003c/strong>\u003c/p> \u003cp>Correct option: \u003cstrong>(c)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mathrm{i}}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,7 +330,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[A=\\omega t\\] \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a series LCR circuit, the maximum amplitude of current is \({I}_{0}\) when the resistance is \(R\). What will be the maximum amplitude of current if the resistor is replaced by a resistor of resistance \(R\mathrm{/}2\)?</p> <p>(Shift II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({I}_{0}\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(2{I}_{0}\)</p></span></div><div class="option"><span class="key">c</span><span><p>​\({I}_{0}\mathrm{/}2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2{I}_{0}\mathrm{/}3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,7 +342,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Current has maximu amplitude at the condition of resonance. In resonance the impedence of the circuit is equal to resistance of the circuit. When resistance is halved, then the maximum amplite of current is doubled. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reactance of a capacitor of capacitance \(C\) connected to an ac source of frequency \(\omega\) is ' X '. If the capacitance of the capacitor is doubled and the frequency of the source is tripled, the reactance will become :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{X}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>6 X</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} X\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2} X\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,10 +351,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]\u003cbr/>&amp; C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]\u003cbr/>&amp; \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]\u003cbr/>&amp; \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]\u003cbr/>&amp; \\boxed{X' = \\dfrac{X}{6}}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>$$\\begin{aligned}& \\text{Given: Reactance of a capacitor } X = \\frac{1}{\\omega C} \\\\[4pt]& \\text{If capacitance is doubled and frequency is tripled:} \\\\[2pt]& C' = 2C,\\quad \\omega' = 3\\omega \\\\[4pt]& \\text{New reactance: } X' = \\frac{1}{\\omega' C'} = \\frac{1}{(3\\omega)(2C)} = \\frac{1}{6\\,\\omega C} \\\\[4pt]& \\text{Since } X = \\frac{1}{\\omega C},\\; \\Rightarrow X' = \\frac{X}{6} \\\\[6pt]& \\boxed{X' = \\dfrac{X}{6}}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A series LCR circuit is connected to an alternating source of emf E. The current amplitude at resonant frequency is \(I_0\). If the value of resistance \(R\) becomes twice of its initial value then amplitude of current at resonance will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2{\mathrm{I}}_{0}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({I}_{0}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{\mathrm{I}}_{0}}{\sqrt{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{I}_{0}}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,7 +366,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The initial current amplitude is \\({I}_{0}\\) :\u003c/p> \u003cp>\\({I}_{0}=\\frac{E}{R}\\)\u003c/p> \u003cp>If R becomes twice its initial value, then:\u003c/p> \u003cp>\\({R}^{'}=2R\\)\u003c/p> \u003cp>The new current amplitude \\({I}^{'}\\) will be:\u003c/p> \u003cp>\\({I}^{'}=\\frac{E}{{R}^{'}}=\\frac{E}{2R}=\\frac{{I}_{0}}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :</p> <p><strong>Statement I:</strong> In an LCR series circuit, current is maximum at resonance.<br/><strong>Statement II: </strong>Current in a purely resistive circuit can never be less than that in a series LCR circuit when connected to same voltage source.</p> <p>In the light of the above statements, choose the <strong>correct</strong> from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,7 +378,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Statement I: True. In series LCR, at resonance:\u003c/p> \u003cp>\\({X}_{L}={X}_{C},\\ Z=R\\)\u003c/p> \u003cp>So current is maximum:\u003c/p> \u003cp>\\({I}_{\\max }=\\frac{V}{R}\\)\u003c/p> \u003cp>Statement II: True. A purely resistive circuit has current \\(\\frac{V}{R}\\)​, while series LCR has\u003c/p> \u003cp>\\(I=\\frac{V}{\\sqrt{{R}^{2}+({X}_{L}−{X}_{C}{)}^{2}}}\\)\u003c/p> \u003cp>So LCR current is never greater than purely resistive current for the same \\(R\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A resistor and an ideal inductor are connected in series to a \(100\sqrt{2}\mathrm{V}\), 50 Hz ac source. When a voltmeter is connected across the resistor or the inductor, it shows the same reading. The reading of the voltmeter is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(100\sqrt{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>100 V</p></span></div><div class="option"><span class="key">c</span><span><p>\(50\sqrt{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>50 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -386,7 +390,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The reading of the voltmeter is \\(100\\text{ V}\\)\u003cstrong>Sv6Kpe[]Sv6Kpe[]\u003c/strong>. Since the voltmeter shows the same reading across the resistor and the inductor, their RMS voltages must be equal, so \\({V}_{R}={V}_{L}\\) Using the Pythagorean theorem for a series R-L circuit, the total RMS voltage is  \\({V}_{total}=\\sqrt{{V}_{R}^{2}+{V}_{L}^{2}}\\) Substituting \\({V}_{L}={V}_{R}\\) \\({V}_{total}=\\sqrt{{V}_{R}^{2}+{V}_{R}^{2}}=\\sqrt{2{V}_{R}^{2}}={V}_{R}\\sqrt{2}\\) If the source voltage is \\(100\\sqrt{2}\\text{ V}\\)   \\(100\\sqrt{2}={V}_{R}\\sqrt{2}\\), which simplifies to \\({V}_{R}=100v\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\begin{equation}<br/>\text { If } I=I_A \sin \omega t+I_B \cos \omega t \text {, then find } r m s \text { value of current. }<br/>\end{equation}</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\begin{equation}\mathrm{I}_{\mathrm{rms}}=\mathrm{I}_{\mathrm{A}}+\mathrm{I}_{\mathrm{B}}\end{equation}</p></span></div><div class="option"><span class="key">b</span><span><p>\begin{equation}I_{\mathrm{rms}}=\sqrt{I_A^2+I_B^2}\end{equation}</p></span></div><div class="option"><span class="key">c</span><span><p>\begin{equation}\mathrm{I}_{\mathrm{rms}}=\sqrt{\frac{\mathrm{I}_{\Lambda}^2+\mathrm{I}_B^2}{2}}\end{equation}</p></span></div><div class="option"><span class="key">d</span><span><p>\begin{equation}\mathrm{I}_{\mathrm{rms}}=\frac{1}{2}\sqrt{\mathrm{I}_{\mathrm{A}}^2+\mathrm{I}_{\mathrm{B}}^2}\end{equation}</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,7 +402,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The resulatant peak value is \u003c/p> \u003cp>\\({\\mathrm{I}}_{\\mathrm{o}}=\\sqrt{{\\mathrm{I}}_{\\mathrm{A}}^{2}+{\\mathrm{I}}_{\\mathrm{B}}^{2}}\\)\u003c/p> \u003cp>So, the rms value of current is \u003c/p> \u003cp>\\({\\mathrm{I}}_{\\mathrm{rms}}=\\frac{{\\mathrm{I}}_{\\mathrm{o}}}{\\sqrt{2}}=\\sqrt{\\frac{{\\mathrm{I}}_{\\mathrm{A}}^{2}+{\\mathrm{I}}_{\\mathrm{B}}^{2}}{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -410,7 +414,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[\\sin A \\sin B=\\frac{1}{2}[\\cos (A-B)-\\cos (A+B)]\\] \\[\\sin (\\omega t) \\sin (\\omega t+\\phi)=\\frac{1}{2}[\\cos (-\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[\\cos (-\\phi)=\\cos (\\phi)\\] \u003cp>, thus:\u003c/p> \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \u003cp>To find the average power over a cycle, integrate this expression over one period\u003c/p> \\[T=\\frac{2 \\pi}{\\omega}\\] \u003cp>, then divide by\u003c/p> \\[T\\] \u003cp>:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,7 +426,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[\\sin A \\sin B=\\frac{1}{2}[\\cos (A-B)-\\cos (A+B)]\\] \\[\\sin (\\omega t) \\sin (\\omega t+\\phi)=\\frac{1}{2}[\\cos (-\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[\\cos (-\\phi)=\\cos (\\phi)\\] \u003cp>, thus:\u003c/p> \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \u003cp>To find the average power over a cycle, integrate this expression over one period\u003c/p> \\[T=\\frac{2 \\pi}{\\omega}\\] \u003cp>, then divide by\u003c/p> \\[T\\] \u003cp>:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ac voltage \(\mathrm{v}=\mathrm{v}_0\) sin \(\omega \mathrm{t}\) is applied to a series combination of a resistor \(R\) and an element \(X\). The instantaneous current in the circuit is \(\mathrm{I}=\mathrm{I}_0 \sin \left(\omega \mathrm{t}+\frac{\pi}{4}\right)\). Then which of the following is correct ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{X}\) is a capacitor and \(\mathrm{X}_{\mathrm{C}}=\sqrt{2} \mathrm{R}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{X}\) is an inductor and \(\mathrm{X}_{\mathrm{L}}=\mathrm{R}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{X}\) is an inductor and \(\mathrm{X}_{\mathrm{L}}=\sqrt{2} \mathrm{R}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{X}\) is a capacitor and \(\mathrm{X}_{\mathrm{C}}=\mathrm{R}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,7 +438,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The correct statement is that Sv6Kpe[] \u003cp>X is a capacitor and its capacitive reactance is equal to the resistance (\\({X}_{c}=R\\)Sv6Kpe[]). This is because the current (\\(I={I}_{0}\\sin (\\omega t+\\frac{\\pi }{4})\\) is leading the voltage (\\(v={v}_{0}\\sin (\\omega t)\\)) by a phase angle of \\(\\frac{\\pi }{4}\\), which is characteristic of a capacitive circuit where current leads voltage. The phase angle (\\(ϕ\\)Sv6Kpe[]) in an R-X series circuit is given by\u003c/p>  \\(\\tan (ϕ)=\\frac{X}{R}\\)   \\(\\tan (\\frac{\\pi }{4})=\\frac{X}{R}\\), which simplifies to   \\(1=\\frac{X}{R}\\)and therefore X=R","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\begin{equation}<br/>\text { If } I=I_A \sin \omega t+I_B \cos \omega t \text {, then find } r m s \text { value of current. }<br/>\end{equation}</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\begin{equation}\mathrm{I}_{\mathrm{rms}}=\mathrm{I}_{\mathrm{A}}+\mathrm{I}_{\mathrm{B}}\end{equation}</p></span></div><div class="option"><span class="key">b</span><span><p>\begin{equation}I_{\mathrm{rms}}=\sqrt{I_A^2+I_B^2}\end{equation}</p></span></div><div class="option"><span class="key">c</span><span><p>\begin{equation}\mathrm{I}_{\mathrm{rms}}=\sqrt{\frac{\mathrm{I}_{\Lambda}^2+\mathrm{I}_B^2}{2}}\end{equation}</p></span></div><div class="option"><span class="key">d</span><span><p>\begin{equation}\mathrm{I}_{\mathrm{rms}}=\frac{1}{2}\sqrt{\mathrm{I}_{\mathrm{A}}^2+\mathrm{I}_{\mathrm{B}}^2}\end{equation}</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -446,7 +450,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The resulatant peak value is \u003c/p> \u003cp>\\({\\mathrm{I}}_{\\mathrm{o}}=\\sqrt{{\\mathrm{I}}_{\\mathrm{A}}^{2}+{\\mathrm{I}}_{\\mathrm{B}}^{2}}\\)\u003c/p> \u003cp>So, the rms value of current is \u003c/p> \u003cp>\\({\\mathrm{I}}_{\\mathrm{rms}}=\\frac{{\\mathrm{I}}_{\\mathrm{o}}}{\\sqrt{2}}=\\sqrt{\\frac{{\\mathrm{I}}_{\\mathrm{A}}^{2}+{\\mathrm{I}}_{\\mathrm{B}}^{2}}{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alternating current is given by \(I={I}_{A}\sin \omega t+{I}_{B}\cos \omega t\). The r.m.s current will be</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\sqrt{{I}_{A}^{2}+{I}_{B}^{2}}}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\left|{I}_{A}+{I}_{B}\right|}{\sqrt{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{{I}_{A}^{2}+{I}_{B}^{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{\frac{{I}_{A}^{2}+{I}_{B}^{2}}{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -458,7 +462,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given the current as \\(I={I}_{A}\\sin \\omega t+\\) \\({I}_{B}\\cos \\omega t\\), the r.m.s. current is calculated by integrating the square of the current over time, then taking the square root. i.e.,\u003c/p> \u003cp>\\({i}_{ms}=\\sqrt{\\frac{\\int {I}^{2}dt}{\\int dt}}\\\\ {I}_{rms}=\\sqrt{\\frac{{I}_{A}^{2}+{I}_{B}^{2}}{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mathrm{i}}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -470,7 +474,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[A=\\omega t\\] \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A voltage \(v={v}_{0}\sin \omega t\) applied to a circuit drives a current \(i={i}_{0}\sin (\omega t+ϕ)\) in the circuit. The average power consumed in the circuit over a cycle is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zero</p></span></div><div class="option"><span class="key">b</span><span><p>\({i}_{0}{v}_{0}\cos ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{i}_{0}{v}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mathrm{i}}_{0}{v}_{0}}{2}\cos ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,7 +486,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>To find the average power consumed in the circuit, we begin with the instantaneous power, which is the product of the voltage\u003c/p> \u003cp>\\(v(t)\\)and the current\\(i(t)\\)\u003c/p> \u003cp>:\u003c/p> \\[p(t)=v(t) \\cdot i(t)=\\left(v_0 \\sin (\\omega t)\\right) \\cdot\\left(i_0 \\sin (\\omega t+\\phi)\\right)\\] \\[A=\\omega t\\] \\[p(t)=v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)]\\] \\[P_{\\mathrm{avg}}=\\frac{1}{T} \\int_0^T v_0 i_0 \\frac{1}{2}[\\cos (\\phi)-\\cos (2 \\omega t+\\phi)] d t\\] \u003cp>This separates into two integrals:\u003c/p> \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\] \\[P_{\\mathrm{avg}}=\\frac{v_0 i_0}{2 T}\\left[\\int_0^T \\cos (\\phi) d t-\\int_0^T \\cos (2 \\omega t+\\phi) d t\\right]\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alternating voltage \(V(t)=220 \sin 100 \pi t\) volt is applied to a purely resistive load of \(50 \Omega\). The time taken for the current to rise from half of the peak value to the peak value is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2.2 ms\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(7.2 ms\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.3 ms\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5 ms\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -494,7 +498,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(i(t)={i}_{0}\\sin 100\\pi t\\)\u003c/p> \u003cp>\\(\\frac{{i}_{0}}{2}={i}_{0}\\sin 100\\pi {t}_{1}\\)\u003c/p> \u003cp>\\(\\sin 100\\pi {t}_{1}=\\sin \\frac{\\pi }{6}\\)\u003c/p> \u003cp>\\(100\\pi {t}_{1}=\\frac{\\pi }{6}\\)\u003c/p> \u003cp>\\({t}_{1}=\\frac{1}{600}\\text{sec}\\)\u003c/p> \u003cp>Similarly \\({t}_{2}=\\frac{1}{200}\\text{sec}\\)\u003c/p> \u003cp>\\(t={t}_{2}−{t}_{1}\\)\u003c/p> \u003cp>\\(=\\frac{1}{200}−\\frac{1}{600}\\)\u003c/p> \u003cp>\\(t=\\frac{3−1}{600}=\\frac{1}{300}\\)\u003c/p> \u003cp>\u003cem>t\u003c/em> = 3.3 ms\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of resistance \(20\Omega\) and self-inductance 10 mH is connected to an ac source of frequency \(1000/\pi \mathrm{Hz}\). The phase difference between current in the circuit and the source voltage is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(30^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(60^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(75^\circ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(45^\circ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -506,7 +510,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Plugging in the values for \\(f\\) and \\(L\\):\u003cbr/>  \\({X}_{L}=2\\pi (\\frac{1000}{\\pi })(10\\times {10}^{-3})\\)3  Sv6Kpe[]  \\({X}_{L}=20\\ \\Omega\\) Calculate the phase difference (\\(ϕ\\)) The phase difference (\\(ϕ\\)) between the current and voltage in an RL circuit is given by the formula     \\(\\tan (ϕ)=\\frac{{X}_{L}}{R}\\) \\(\\tan (ϕ)=\\frac{20}{20}\\) \\(\\tan (ϕ)=1\\)1   Therefore, the phase difference is: \\(ϕ=\\mathrm{arctan}(1)={45}^{∘}\\)or\\(\\frac{\\pi }{4}\\)radians.","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following quantity/quantities remains same in primary andsecondary coils of an ideal transformer ?<br/>Current, Voltage, Power, Magnetic flux</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Current only</p></span></div><div class="option"><span class="key">b</span><span><p>Voltage only</p></span></div><div class="option"><span class="key">c</span><span><p>Power only</p></span></div><div class="option"><span class="key">d</span><span><p>Magnetic flux and Power both</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -518,7 +522,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In an ideal transformer, the quantity that remains the same in the primary and secondary coils is power.\u003cbr/>Explanation:\u003cbr/>Power conservation: An ideal transformer operates on the principle of conservation of energy, meaning the power input to the primary coil is equal to the power output from the secondary coil.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The primary and secondary coils of a transformer have 500 turns and 5000 turns respectively. The primary coil is connected to an ac source of \(220\mathrm{V}-50\mathrm{Hz}\). The output across the secondary coil is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(220\mathrm{V}-50\mathrm{Hz}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1100\mathrm{V}-50\mathrm{Hz}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2200\mathrm{V}-5\mathrm{Hz}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2200\mathrm{V}-50\mathrm{Hz}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -530,7 +534,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\mathrm{V}}_{\\mathrm{p}}=220\\mathrm{V},{\\mathrm{N}}_{\\mathrm{p}}=500,{\\mathrm{N}}_{\\mathrm{s}}=5000\\\\ \\frac{{\\mathrm{V}}_{\\mathrm{s}}}{{\\mathrm{V}}_{\\mathrm{p}}}=\\frac{{\\mathrm{N}}_{\\mathrm{s}}}{{\\mathrm{N}}_{\\mathrm{p}}}\\\\ \\frac{{\\mathrm{V}}_{\\mathrm{s}}}{220}=\\frac{5000}{500}\\\\ \\mathrm{Vs}=2200\\mathrm{V}\\)\u003c/p> \u003cp>Frequency remains same. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bulb is rated \((100\mathrm{W},110\mathrm{V})\). It is operated by current of 1.0 A supplied by a step down transformer. If the input voltage and efficiency of the transformer are 220 V and 0.9 respectively, the input current drawn from the mains is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{8}\mathrm{A}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{9}\mathrm{A}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{4}{7}\mathrm{A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -542,7 +546,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The power output of the transformer is the power consumed by the bulb, which is 100 W. The efficiency of the transformer is given as 0.9.\u003c/p> \u003cp>First, we calculate the power input to the transformer using the efficiency formula:\u003c/p> \u003cp>\\(\\eta = \\frac{P_{out}}{P_{in}}\\)\u003c/p> \u003cp>where \\(\\eta\\) is the efficiency, \\(P_{out}\\) is the output power, and \\(P_{in}\\) is the input power.\u003c/p> \u003cp>Rearranging for \\(P_{in}\\):\u003c/p> \u003cp>\\(P_{in} = \\frac{P_{out}}{\\eta}\\)\u003c/p> \u003cp>Substituting the given values:\u003c/p> \u003cp>\\(P_{in} = \\frac{100 \\text{ W}}{0.9} = 111.11 \\text{ W}\\)\u003c/p> \u003cp>Next, we use the input power and input voltage to find the input current. The input voltage is given as 220 V.\u003c/p> \u003cp>Using the power formula:\u003c/p> \u003cp>\\(P_{in} = V_{in} \\times I_{in}\\)\u003c/p> \u003cp>Rearranging for \\(I_{in}\\):\u003c/p> \u003cp>\\(I_{in} = \\frac{P_{in}}{V_{in}}\\)\u003c/p> \u003cp>Substituting the values:\u003c/p> \u003cp>\\(I_{in} = \\frac{111.11 \\text{ W}}{220 \\text{ V}} = 0.505 \\text{ A}\\)\u003c/p> \u003cp>Thus, the input current drawn from the mains is approximately \\(\\frac{5}{9} \\text{ A}\\).\u003cbr/>Identify the power consumed by the bulb: \\(P_{out} = 100 \\text{ W}\\).\u003c/p> \u003cp>Calculate the input power using the efficiency: \\(P_{in} = \\frac{P_{out}}{\\eta} = \\frac{100 \\text{ W}}{0.9} = 111.11 \\text{ W}\\).\u003c/p> \u003cp>\u003cbr/>Identify the input voltage: \\(V_{in}\\) = \\(220 \\text{ V}\\).\u003c/p> \u003cp>Use the power formula to find the input current: \\(P_{in} = V_{in} \\times I_{in}\\).\u003c/p> \u003cp>Rearrange and solve for \\(I_{in}: I_{in} = \\frac{P_{in}}{V_{in}} = \\frac{111.11 \\text{ W}}{220 \\text{ V}} = 0.505 \\text{ A}\\).\u003c/p> \u003cp>final answer: \\(\\frac{5}{9} \\text{ A}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amplitude of the charge oscillating in a circuit decreases exponentially as \(Q={Q}_{0}{e}^{-Rt/2L}\), where \({\mathrm{Q}}_{0}\) is the charge at \(t=0\mathrm{s}\). The time at which charge amplitude decreases to \(0.50{Q}_{0}\) is nearly :<br/>[Given that \(\mathrm{R}=1.5\Omega ,\mathrm{L}=12\mathrm{mH},\ln (2)=0.693\) ]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(19.01\mathrm{ms}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(11.09\mathrm{ms}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(19.01\mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(11.09\mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -554,7 +558,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, \\(Q={Q}_{0}e{−}^{Rt/2L}\\)\u003c/p> \u003cp>\\(R=1.5\\Omega ,L=12mH,\\ln (2)=0.693\\)\u003c/p> \u003cp>\\(Q=0.5,{Q}_{0},t=?\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{1}{2}={e}^{−Rt/2L}\\)\u003c/p> \u003cp>Taking log on both sides\u003c/p> \u003cp>\\(\\ln \\left(\\frac{1}{2}\\right)=\\ln {e}^{−Rt/2L}\\)\u003c/p> \u003cp>\\(t=\\frac{2L\\ln 2}{R}=\\frac{2\\times 12\\times {10}^{−3}\\times 0.693}{1.5}\\)\u003c/p> \u003cp>\\(t=11.09\\mathrm{ms}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A 100 \(\Omega\) resistance, a \(0.1\mu F\) capacitor and an inductor are connected in series across a \(250\mathrm{V}\) supply at variable frequency. Calculate the value of inductance of the inductor at which resonance will occur. Given that the resonant frequency is \(60\mathrm{Hz}\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7.03\times {10}^{-5}\mathrm{H}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(70.3\mathrm{H}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(70.3\mathrm{mH}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0.70\mathrm{H}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -566,7 +570,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\omega =2\\pi f=\\frac{1}{\\sqrt{LC}}\\)\u003c/p> \u003cp>Inductance,\u003c/p> \u003cp>\\(L=\\frac{1}{4{\\pi }^{2}{f}^{2}\\times C}=\\frac{1}{4{\\pi }^{2}\\times (60{)}^{2}\\times {10}^{-7}}\\)\u003cbr/>\\(\\Rightarrow \\mathrm{L}=70.3\\mathrm{H}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An inductor, a capacitor and a resistor are connected in series across an ac source of voltage. If the frequency of the source is decreased gradually, the reactance of :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>both the inductor and the capacitor decreases.</p></span></div><div class="option"><span class="key">b</span><span><p>inductor decreases and the capacitor increases.</p></span></div><div class="option"><span class="key">c</span><span><p>both the inductor and the capacitor increases.</p></span></div><div class="option"><span class="key">d</span><span><p>inductor increases and the capacitor decreases.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -578,7 +582,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Inductive reactance is directly proportional to the frequency: \u003c/p> \u003cp>\\begin{equation}\u003cbr/>X_L=\\omega L=2 \\pi \\nu L\u003cbr/>\\end{equation}\u003c/p> \u003cp>Capacitive reactance is inversely proportional to the frequency: \u003c/p> \u003cp>\\begin{equation}\u003cbr/>X_C=\\frac{1}{\\omega C}=\\frac{1}{2 \\pi \\nu C}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An LCR circuit contains resistance of \(110\Omega\) and a supply of \(220\mathrm{V}\) at \(300\mathrm{rad}/s\) angular frequency. If only capacitance is removed from the circuit, current lags behind the voltage by \(45^\circ\). If on the other hand, only inductor is removed the current leads by \(45^\circ\) with the applied voltage. The rms current flowing in the circuit will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1\mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2\mathrm{A}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1.5\mathrm{A}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2.5\mathrm{A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -590,7 +594,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>When capacitor is removed.\u003cbr/>\\(\\tan 45^\\circ =\\frac{{X}_{L}}{{X}_{R}}\\Rightarrow \\omega L=R\\)\u003c/p> \u003cp>When inductor is removed.\u003cbr/>\\(\\tan 45^\\circ =\\frac{{X}_{C}}{{X}_{R}}\\Rightarrow \\frac{1}{\\omega C}=R\\\\ {i}_{0}=\\frac{{V}_{0}}{\\sqrt{{R}^{2}+{\\left(\\omega L-\\frac{1}{\\omega C}\\right)}^{2}}}=\\frac{{V}_{0}}{R}=\\frac{220}{110}=2\\mathrm{A}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements about a series LCR circuit connected to an ac source is correct?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>If the frequency of the source is increased, the impedance of the circuit first decreases and then increases.</p></span></div><div class="option"><span class="key">b</span><span><p>If the net reactance \(\left({X}_{L}-{X}_{C}\right)\) of circuit becomes equal to its resistance, then the current leads the voltage by \({45}^{0}\).</p></span></div><div class="option"><span class="key">c</span><span><p>At resonance, the voltage drop across the inductor is more than that across the capacitor.</p></span></div><div class="option"><span class="key">d</span><span><p>At resonance, the voltage drop across the capacitor is more than that across the inductor.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -602,7 +606,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For a series LCR circuit \\(Z=\\sqrt{{R}^{2}+({X}_{L}−{X}_{C}{)}^{2}}\\)\u003c/p> \u003cp>​. As frequency increases \\({X}_{L}=\\omega L\\) increases and \\({X}_{C}=\\frac{1}{\\omega C}\\)​ decreases, so \\(\\mathrm{∣}{X}_{L}−{X}_{C}\\mathrm{∣}\\) first falls to zero at resonance (impedance decreases), then grows again beyond resonance (impedance increases).\u003c/p> \u003cp>Other options are incorrect: (B) if \\({X}_{L}−{X}_{C}=R\\)  the phase is \\(\\mathrm{arctan}⁡(1)={45}^{∘}\\), so the \u003cstrong>current lags\u003c/strong> the voltage by \\({45}^{∘}\\) (not leads). (C) and (D) are false because at resonance \\({X}_{L}={X}_{C}\\)​, so magnitude of voltage drops across L and C are equal.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A step down transformer connected to an ac mains supply of \( 220 \mathrm{~V} \) is made to operate at \( 11 \mathrm{~V}, 44 \mathrm{~W} \) lamp. Ignoring power losses in the transformer, what is the current in the primary circuit?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 0.4 \mathrm{~A} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 2 \mathrm{~A} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 4 \mathrm{~A} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 0.2 \mathrm{~A} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

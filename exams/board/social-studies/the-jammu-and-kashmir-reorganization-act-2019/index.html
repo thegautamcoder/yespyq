@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Social Studies","item":"https://yespyq.com/exams/board/social-studies/"},{"@type":"ListItem","position":5,"name":"The Jammu and Kashmir Reorganization Act 2019","item":"https://yespyq.com/exams/board/social-studies/the-jammu-and-kashmir-reorganization-act-2019/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>The Jammu and Kashmir Reorganization Act 2019</h1>
       <p>5 Board Social Studies previous year questions on <b>The Jammu and Kashmir Reorganization Act 2019</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of these is a feature of dictatorship</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>No Constitution</p></span></div><div class="option"><span class="key">b</span><span><p>No value of public opinion</p></span></div><div class="option"><span class="key">c</span><span><p>Monopoly over power</p></span></div><div class="option correct"><span class="key">d</span><span><p>All of these</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of these is better?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Democracy</p></span></div><div class="option"><span class="key">b</span><span><p>Dictatorship</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A)and (B)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct answer is (A) Democracy.\u003c/p> \u003cp>Explanation:\u003c/p> \u003cp>Democracy values people’s participation, equality, and fundamental rights.\u003c/p> \u003cp>Leaders are chosen through free and fair elections, and they remain accountable to the public.\u003c/p> \u003cp>Unlike dictatorship, democracy respects public opinion, limits abuse of power, and protects freedoms.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Who was the first President of "Indian National Congress"?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>W.C Banerjee</p></span></div><div class="option"><span class="key">b</span><span><p>A.O. Hume</p></span></div><div class="option"><span class="key">c</span><span><p>Smt. Annie Besant</p></span></div><div class="option"><span class="key">d</span><span><p>Pt. Moti Lal Nehru</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The Indian National Congress was founded in 1885 by Allan Octavian Hume (A.O. Hume was the founder, not the president).\u003c/p> \u003cp>W.C. Bonnerjee presided over the first session held in Bombay (now Mumbai) in December 1885.\u003c/p> \u003cp>Gandhiji, S.N. Banerjee, and Lala Lajpat Rai became prominent leaders later, but were not the first president.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Union Territory of Jammu and Kashmir was formed in the year :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2017</p></span></div><div class="option"><span class="key">b</span><span><p>2018</p></span></div><div class="option"><span class="key">c</span><span><p> 2019</p></span></div><div class="option"><span class="key">d</span><span><p> 2020</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The correct answer is (C) 2019.\u003c/p> \u003cp>Explanation:\u003c/p> \u003cp>On 5 August 2019, Article 370 was abrogated, revoking the special status of Jammu and Kashmir.\u003c/p> \u003cp>The Jammu and Kashmir Reorganisation Act, 2019 came into effect on 31 October 2019, bifurcating the state into two Union Territories — Jammu &amp; Kashmir and Ladakh.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>............... became the first Sadr-i-Riyasat in 1952 A.D.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Hari Singh</p></span></div><div class="option"><span class="key">b</span><span><p>Karan Singh</p></span></div><div class="option"><span class="key">c</span><span><p>Sheik Abdullah</p></span></div><div class="option"><span class="key">d</span><span><p>Sadiq.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

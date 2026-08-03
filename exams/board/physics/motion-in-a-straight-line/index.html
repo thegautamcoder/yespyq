@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Motion in a Straight Line","item":"https://yespyq.com/exams/board/physics/motion-in-a-straight-line/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,16 +81,16 @@
       <h1>Motion in a Straight Line</h1>
       <p>9 Board Physics previous year questions on <b>Motion in a Straight Line</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body projected vertically upwards with a certain speed from the top of a tower reaches the ground in \(t_1\). If it is projected vertically downwards from the same point with the same speed, it reaches the ground in \(t_2\). Time required to reach the ground, if it is dropped from the top of the tower, is :</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{\frac{{t}_{1}}{{t}_{2}}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{{t}_{1}-{t}_{2}}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\sqrt{{t}_{1}{t}_{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{{t}_{1}+{t}_{2}}\)</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: c) <p>\(\sqrt{{t}_{1}{t}_{2}}\)</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p>Case 1: \(h=-u{t}_{1}+\frac{1}{2}g{t}_{1}^{2}\) ( downward taken positive)</p> <p>Case 2 \(h=u{t}_{2}+\frac{1}{2}g{t}_{2}^{2}\)</p> <p>\begin{equation}<br/>\begin{aligned}<br/>&amp; \text { } t_1=\frac{u+\sqrt{u^2+2 g h}}{g} \\<br/>&amp; t_2=\frac{-u+\sqrt{u^2+2 g h}}{g} \\<br/>&amp; \text{Case 3}\\ t=\frac{\sqrt{2 g h}}{g} \\<br/>&amp; t_1 t_2=\frac{\left(u^2+2 g h\right)-u^2}{g^2}=\frac{2 g h}{g^2}=t^2 \\<br/>&amp; \Rightarrow t=\sqrt{t_1 t_2}<br/>\end{aligned}<br/>\end{equation}</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p>Case 1: \(h=-u{t}_{1}+\frac{1}{2}g{t}_{1}^{2}\) ( downward taken positive)</p> <p>Case 2 \(h=u{t}_{2}+\frac{1}{2}g{t}_{2}^{2}\)</p> <p>\begin{equation}<br/>$$\begin{aligned}& \text { } t_1=\frac{u+\sqrt{u^2+2 g h}}{g} \\& t_2=\frac{-u+\sqrt{u^2+2 g h}}{g} \\& \text{Case 3}\\ t=\frac{\sqrt{2 g h}}{g} \\& t_1 t_2=\frac{\left(u^2+2 g h\right)-u^2}{g^2}=\frac{2 g h}{g^2}=t^2 \\& \Rightarrow t=\sqrt{t_1 t_2}\end{aligned}$$<br/>\end{equation}</p></div>
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A satellite is nine times closer to earth compared to moon. Time period of moon is 27 days then period of satellite is</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 days</p></span></div><div class="option"><span class="key">b</span><span><p>9 days</p></span></div><div class="option"><span class="key">c</span><span><p>1 days</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\sqrt{3days}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Sol.\u003c/strong> The time period of an orbiting body is related to its distance from the central body (Earth in this case) by \u003cstrong>Kepler’s third law\u003c/strong>, which states:\u003c/p> \\({T}^{2}\\propto {R}^{3}\\) \u003cp>Where:\u003c/p> \u003cul> \u003cli>\\(T\\) = time period\u003c/li> \u003cli>\\(R\\) = distance from the central body\u003c/li> \u003c/ul> \u003cp>Given:\u003c/p> \\(\\frac{{R}_{\\text{satellite}}}{{R}_{\\text{moon}}}=\\frac{1}{9}\\ \\text{(satellite is nine times closer to Earth)}\\) \u003cp>Let \\({T}_{\\text{moon}}\\) and \\({T}_{\\text{satellite}}\\)​ be the time periods of the Moon and the satellite, respectively. Using Kepler's law:\u003c/p> \\({(\\frac{{T}_{\\text{satellite}}}{{T}_{\\text{moon}}})}^{2}={(\\frac{{R}_{\\text{satellite}}}{{R}_{\\text{moon}}})}^{3}\\) \u003cp>Substitute values:\u003c/p> \\({(\\frac{{T}_{\\text{satellite}}}{27})}^{2}={(\\frac{1}{9})}^{3}\\) \u003cp>Simplify:\u003c/p> \\({(\\frac{{T}_{\\text{satellite}}}{27})}^{2}=\\frac{1}{729}\\) ​ \\(\\frac{{T}_{\\text{satellite}}}{27}=\\frac{1}{27}\\ \\text{  }⟹\\text{  }\\ {T}_{\\text{satellite}}=27\\times \\frac{1}{27}=1\\text{ }\\text{day}\\) \u003cp>\u003cstrong>Correct answer: (a) 1 day\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A satellite is nine times closer to earth compared to moon. Time period of moon is 27 days then period of satellite is</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 days</p></span></div><div class="option"><span class="key">b</span><span><p>9 days</p></span></div><div class="option"><span class="key">c</span><span><p>1 days</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\sqrt{3days}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Sol.\u003c/strong> The time period of an orbiting body is related to its distance from the central body (Earth in this case) by \u003cstrong>Kepler’s third law\u003c/strong>, which states:\u003c/p> \\({T}^{2}\\propto {R}^{3}\\) \u003cp>Where:\u003c/p> \u003cul> \u003cli>\\(T\\) = time period\u003c/li> \u003cli>\\(R\\) = distance from the central body\u003c/li> \u003c/ul> \u003cp>Given:\u003c/p> \\(\\frac{{R}_{\\text{satellite}}}{{R}_{\\text{moon}}}=\\frac{1}{9}\\ \\text{(satellite is nine times closer to Earth)}\\) \u003cp>Let \\({T}_{\\text{moon}}\\) and \\({T}_{\\text{satellite}}\\)​ be the time periods of the Moon and the satellite, respectively. Using Kepler's law:\u003c/p> \\({(\\frac{{T}_{\\text{satellite}}}{{T}_{\\text{moon}}})}^{2}={(\\frac{{R}_{\\text{satellite}}}{{R}_{\\text{moon}}})}^{3}\\) \u003cp>Substitute values:\u003c/p> \\({(\\frac{{T}_{\\text{satellite}}}{27})}^{2}={(\\frac{1}{9})}^{3}\\) \u003cp>Simplify:\u003c/p> \\({(\\frac{{T}_{\\text{satellite}}}{27})}^{2}=\\frac{1}{729}\\) ​ \\(\\frac{{T}_{\\text{satellite}}}{27}=\\frac{1}{27}\\ \\text{  }⟹\\text{  }\\ {T}_{\\text{satellite}}=27\\times \\frac{1}{27}=1\\text{ }\\text{day}\\) \u003cp>\u003cstrong>Correct answer: (a) 1 day\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle is moving along \(x\)-axis with its position (<em>x</em>) varying with time (<em>t</em>) as \(x=\alpha {t}^{4}+\beta {t}^{2}+\gamma t+\delta\). The ratio of its initial velocity to its initial acceleration, respectively, is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\alpha :\delta\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\gamma :2\delta\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\alpha :\beta\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\gamma :2\beta\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Find initial velocity (v₀) and initial acceleration (a₀) from the position equation x(t).\u003c/li> \u003cli>x = αt⁴ + βt² + γt + δ.\u003c/li> \u003cli>Velocity v = dx/dt = 4αt³ + 2βt + γ. Initial velocity v₀ (at t=0) = γ.\u003c/li> \u003cli>Acceleration a = dv/dt = 12αt² + 2β. Initial acceleration a₀ (at t=0) = 2β.\u003c/li> \u003cli>Ratio v₀ : a₀ = γ : 2β.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Position of an ant ( \(S\) in metres) moving in \(Y-Z\) plane is given by \(S=2 t^2 \hat{j}+5 \hat{k}\) (where \(t\) is in second). The magnitude and direction of velocity of the ant at \(t=1 s\) will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16 m / s\) in \(y\)-direction</p></span></div><div class="option"><span class="key">b</span><span><p>\(4 m / s\) in \(x\)-direction</p></span></div><div class="option"><span class="key">c</span><span><p>\(9 m / s\) in \(z\)-direction</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 m / s\) in \(y\)-direction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,10 +135,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\vec{v}=\\frac{d\\vec{s}}{dt}=4t\\overset{^}{j}\\)\u003c/p> \u003cp>Hence, velocity of ant t = 1 sec \u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\vec{v}=\\frac{d\\vec{s}}{dt}=4t\\hat{j}\\)\u003c/p> \u003cp>Hence, velocity of ant t = 1 sec \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle moving in a straight line covers half the distance with speed \(6\mathrm{m}/\mathrm{s}\). The other half is covered in two equal time intervals with speeds \(9\mathrm{m}/\mathrm{s}\) and \(15\mathrm{m}/\mathrm{s}\) respectively. The average speed of the particle during the motion is :</p> <p>[JEE Main 2024, 9 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9.2\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(8.8\mathrm{m}/\mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({V}_{avg}=\\frac{S}{\\frac{S}{2{v}_{1}}+\\left(\\frac{S}{{v}_{2}+{v}_{3}}\\right)}\\)\u003c/p> \u003cp>\\({V}_{avg}=\\frac{2{v}_{1}\\left({v}_{2}+{v}_{3}\\right)}{{v}_{2}+{v}_{3}+2{v}_{1}}\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Position of an ant ( \(S\) in metres) moving in \(Y-Z\) plane is given by \(S=2 t^2 \hat{j}+5 \hat{k}\) (where \(t\) is in second). The magnitude and direction of velocity of the ant at \(t=1 s\) will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16 m / s\) in \(y\)-direction</p></span></div><div class="option"><span class="key">b</span><span><p>\(4 m / s\) in \(x\)-direction</p></span></div><div class="option"><span class="key">c</span><span><p>\(9 m / s\) in \(z\)-direction</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 m / s\) in \(y\)-direction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,10 +159,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\vec{v}=\\frac{d\\vec{s}}{dt}=4t\\overset{^}{j}\\)\u003c/p> \u003cp>Hence, velocity of ant t = 1 sec \u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\vec{v}=\\frac{d\\vec{s}}{dt}=4t\\hat{j}\\)\u003c/p> \u003cp>Hence, velocity of ant t = 1 sec \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle moving in a straight line covers half the distance with speed \(6\mathrm{m}/\mathrm{s}\). The other half is covered in two equal time intervals with speeds \(9\mathrm{m}/\mathrm{s}\) and \(15\mathrm{m}/\mathrm{s}\) respectively. The average speed of the particle during the motion is :</p> <p>[JEE Main 2024, 9 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9.2\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(8.8\mathrm{m}/\mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({V}_{avg}=\\frac{S}{\\frac{S}{2{v}_{1}}+\\left(\\frac{S}{{v}_{2}+{v}_{3}}\\right)}\\)\u003c/p> \u003cp>\\({V}_{avg}=\\frac{2{v}_{1}\\left({v}_{2}+{v}_{3}\\right)}{{v}_{2}+{v}_{3}+2{v}_{1}}\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bullet is fired into a fixed target looses one third of its velocity after travelling \(4 cm\). It penetrates further \(D \times 10^{-3} m\) before coming to rest. The value of \(D\) is :</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>32</p></span></div><div class="option"><span class="key">b</span><span><p>5</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; v^2-u^2=2 a S \\\\\u003cbr/>&amp; \\left(\\frac{2 u}{3}\\right)^2=u^2+2(-a)\\left(4 \\times 10^{-2}\\right) \\\\\u003cbr/>&amp; \\Rightarrow \\frac{4 u^2}{9}=u^2-2 a\\left(4 \\times 10^{-2}\\right) \\\\\u003cbr/>&amp; \\Rightarrow-\\frac{5 u^2}{9}=-2 a\\left(4 \\times 10^{-2}\\right) \\\\\u003cbr/>&amp; \\Rightarrow 0=\\left(\\frac{2 u}{3}\\right)^2+2(-a)(x) \\\\\u003cbr/>&amp; \\Rightarrow-\\frac{4 u^2}{9}=-2 a x\u003cbr/>\\end{aligned}\\\\\u003cbr/>&amp;\\text { Dividing equation (1) by (2), we get }\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\frac{5}{4}=\\frac{4 \\times 10^{-2}}{x} \\Rightarrow x=\\frac{16}{5} \\times 10^{-2} \\\\\u003cbr/>&amp; \\Rightarrow x=3.2 \\times 10^{-2} \\mathrm{~m}=32 \\times 10^{-3} \\mathrm{~m}\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}&\\begin{aligned}& v^2-u^2=2 a S \\\\& \\left(\\frac{2 u}{3}\\right)^2=u^2+2(-a)\\left(4 \\times 10^{-2}\\right) \\\\& \\Rightarrow \\frac{4 u^2}{9}=u^2-2 a\\left(4 \\times 10^{-2}\\right) \\\\& \\Rightarrow-\\frac{5 u^2}{9}=-2 a\\left(4 \\times 10^{-2}\\right) \\\\& \\Rightarrow 0=\\left(\\frac{2 u}{3}\\right)^2+2(-a)(x) \\\\& \\Rightarrow-\\frac{4 u^2}{9}=-2 a x\\end{aligned}$$\\\\\u003cbr/>&amp;\\text { Dividing equation (1) by (2), we get }\\\\\u003cbr/>&amp;$$\\begin{aligned}& \\frac{5}{4}=\\frac{4 \\times 10^{-2}}{x} \\Rightarrow x=\\frac{16}{5} \\times 10^{-2} \\\\& \\Rightarrow x=3.2 \\times 10^{-2} \\mathrm{~m}=32 \\times 10^{-3} \\mathrm{~m}\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more Board Physics PYQs</h3>

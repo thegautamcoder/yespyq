@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Mineral Nutrition","item":"https://yespyq.com/exams/neet/biology/mineral-nutrition/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Mineral Nutrition</h1>
       <p>4 NEET Biology previous year questions on <b>Mineral Nutrition</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The product(s) of reaction catalyzed by nitrogenase in root nodules of leguminous plants is/are</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ammonia and oxygen</p></span></div><div class="option correct"><span class="key">b</span><span><p>Ammonia and hydrogen</p></span></div><div class="option"><span class="key">c</span><span><p>Ammonia alone</p></span></div><div class="option"><span class="key">d</span><span><p>Nitrate alone</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In <em>Glycine max</em>, the product of biological nitrogen fixation is transported from the root nodules to other parts as</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ureides</p></span></div><div class="option"><span class="key">b</span><span><p>Ammonia</p></span></div><div class="option"><span class="key">c</span><span><p>Glutamate</p></span></div><div class="option"><span class="key">d</span><span><p>Nitrates</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In \u003cstrong>Glycine max\u003c/strong> (soybean), a leguminous plant, the product of \u003cstrong>biological nitrogen fixation\u003c/strong> in the root nodules is primarily \u003cstrong>ammonia (NH₃)\u003c/strong>, which is initially produced by the enzyme nitrogenase. However, ammonia is \u003cstrong>toxic\u003c/strong> in free form, so it is quickly converted into \u003cstrong>ureides\u003c/strong> (mainly allantoin and allantoic acid) for safe and efficient transport through the xylem to other parts of the plant. Ureides are nitrogen-rich compounds ideal for long-distance translocation. While \u003cstrong>glutamate\u003c/strong> and \u003cstrong>nitrates\u003c/strong> are nitrogen carriers in other systems, and ammonia is the raw product, in legumes like soybean, \u003cstrong>ureides\u003c/strong> are the principal transported form.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following elements helps in maintaining the structure of ribosomes?</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Molybdenum</p></span></div><div class="option"><span class="key">b</span><span><p>Magnesium</p></span></div><div class="option"><span class="key">c</span><span><p>Zinc</p></span></div><div class="option"><span class="key">d</span><span><p>Copper</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Magnesium (Mg²⁺)\u003c/strong> plays a vital role in maintaining the \u003cstrong>structure and stability of ribosomes\u003c/strong> in both prokaryotic and eukaryotic cells. Ribosomes are made of ribosomal RNA (rRNA) and proteins, and magnesium ions help stabilize the negative charges on the phosphate backbone of rRNA, allowing proper folding and assembly of ribosomal subunits. Without adequate magnesium, ribosomal subunits cannot associate correctly, impairing protein synthesis. Other elements like \u003cstrong>molybdenum\u003c/strong>, \u003cstrong>zinc\u003c/strong>, and \u003cstrong>copper\u003c/strong> are essential for different enzymatic and metabolic functions but are \u003cstrong>not directly involved in ribosome structural stability\u003c/strong>, making \u003cstrong>magnesium the correct choice\u003c/strong> here.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which micronutrient is required for splitting of water molecule during photosynthesis?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>molybdenum</p></span></div><div class="option"><span class="key">b</span><span><p>magnesium</p></span></div><div class="option"><span class="key">c</span><span><p>copper</p></span></div><div class="option"><span class="key">d</span><span><p>manganese</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

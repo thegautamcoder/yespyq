@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Accountancy","item":"https://yespyq.com/exams/board/accountancy/"},{"@type":"ListItem","position":5,"name":"Accounting for Share Capital","item":"https://yespyq.com/exams/board/accountancy/accounting-for-share-capital/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Accounting for Share Capital</h1>
       <p>25 Board Accountancy previous year questions on <b>Accounting for Share Capital</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Balance of Share Forfeiture A/c is shown in the Balance Sheet under the item</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Share Capital A/c </p></span></div><div class="option"><span class="key">b</span><span><p>Current Liabilities and Provision </p></span></div><div class="option"><span class="key">c</span><span><p>Unsecured loan </p></span></div><div class="option"><span class="key">d</span><span><p>Reserve and Surplus</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Capital included in the Liabilities of a company is called :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Authorised Capital </p></span></div><div class="option"><span class="key">b</span><span><p> Subscribed Capital </p></span></div><div class="option"><span class="key">c</span><span><p>Issued Capital </p></span></div><div class="option correct"><span class="key">d</span><span><p>Paid-up Capital </p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A share of ₹10, on which ₹8 was called up, was forfeited for non-payment of ₹5. This share can be reissued at a minimum price of:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹10</p></span></div><div class="option"><span class="key">b</span><span><p>₹8</p></span></div><div class="option"><span class="key">c</span><span><p>₹11</p></span></div><div class="option"><span class="key">d</span><span><p>₹7</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>When a company reissues forfeited shares, it is legally allowed to offer a discount. However, the \u003cstrong>amount of discount cannot exceed the amount already received (forfeited)\u003c/strong> on those shares.\u003c/p> \u003cp>\u003cstrong>Here,\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>Total Nominal Value: ₹10\u003c/p> \u003c/li> \u003cli> \u003cp>Called-up Capital: ₹8.\u003c/p> \u003c/li> \u003cli> \u003cp>Unpaid Amount (Calls-in-Arrears): ₹5\u003c/p> \u003c/li> \u003cli> \u003cp>Amount Received/Forfeited: ₹3 (Called-up Capital - Unpaid Amount)\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>Finding the Minimum Reissue Price:\u003c/strong>\u003c/p> \u003col> \u003cli> \u003cp>The \u003cstrong>maximum discount\u003c/strong> the company can give is the amount it already received: ₹3.\u003c/p> \u003c/li> \u003cli> \u003cp>To find the \u003cstrong>minimum price\u003c/strong>, maximum discount will be subtracted from the nominal value: ₹7\u003c/p> \u003c/li> \u003c/ol> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A company is incorporated by</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A Special Act of Parliament</p></span></div><div class="option"><span class="key">b</span><span><p>Companies Act</p></span></div><div class="option"><span class="key">c</span><span><p>Agreement of investors</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (B)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer: (D) Both (A) and (B)\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>A company can be formed in two ways:\u003c/p> \u003col> \u003cli> \u003cp>By a Special Act of Parliament — for example, LIC, RBI, which are created by specific laws.\u003c/p> \u003c/li> \u003cli> \u003cp>Under the Companies Act — most companies are registered under the Companies Act, 2013.\u003c/p> \u003c/li> \u003c/ol> \u003cp>Therefore, both options (A) and (B) are correct, so the correct option is (D).\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) By a Special Act of Parliament — Partially correct\u003cbr/>Only some companies are formed this way, not all.\u003c/p> \u003cp>(B) Under the Companies Act — Partially correct\u003cbr/>Most companies are formed under the Companies Act, but not those created by special Acts.\u003c/p> \u003cp>(C) By agreement of investors — Incorrect\u003cbr/>A company cannot be formed merely by agreement; legal registration is compulsory.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The shares of ₹10 was issued at a premium of ₹3 payable as:</p> <p>₹3 on Application</p> <p>₹5 on Allotment (including premium)</p> <p>Balance on First and Final Call.</p> <p>A shareholder, who had applied for 100 shares, was allotted only 50 shares and due to non-payment of allotment money his shares were forfeited. </p> <p>At the time of forfeiture, the amount to be debited to Securities Premium A/c will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹250</p></span></div><div class="option"><span class="key">b</span><span><p>₹50</p></span></div><div class="option"><span class="key">c</span><span><p>₹100</p></span></div><div class="option"><span class="key">d</span><span><p>₹150</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Application Money Received = \\(100\\times 3=₹300\\)\u003c/p> \u003cp>Money Adjusted towards Share Application = \\(50\\times 3=₹150\\)\u003c/p> \u003cp>Money transferred to Allotment = \\(300-150=₹150\\)\u003c/p> \u003cp>Allotment money due = \\(50\\times 5=₹250\\)\u003c/p> \u003cp>Money not received = \\(250-150=₹100\\)\u003c/p> \u003cp>The allotment money was ₹5 per share including premium of ₹3 per share. The excess money received on application is first adjusted towards the par value and then the premium.\u003c/p> \u003cp>Therefore, \u003cstrong>Option C\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>R Limited purchased a building from X Infra for ₹6,00,000 and the payment is to be made by the issue of shares for ₹100 each at a premium of 20%. Calculate the number of shares to be issued.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5,000 shares</p></span></div><div class="option"><span class="key">b</span><span><p>6,000 shares</p></span></div><div class="option"><span class="key">c</span><span><p>10,000 shares</p></span></div><div class="option"><span class="key">d</span><span><p>6,00,000 shares</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Amount to be paid = ₹6,00,000\u003c/p> \u003cp>Issue price per share = Par Value + Premium on issue = ₹120\u003c/p> \u003cp>No. of shares to be issued = \\(\\frac{6,00,000}{120}=5,000\\)\u003c/p> \u003cp>Therefore, \u003cstrong>Option A\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II</p> <table> <tbody> <tr> <td><strong>List I</strong></td> <td><strong>List II</strong></td> </tr> <tr> <td>(A) Share capital</td> <td>(I) Will be called at the time of winding up</td> </tr> <tr> <td>(B) Reserves and surplus</td> <td>(II) Calls in advance</td> </tr> <tr> <td>(C) Reserve capital</td> <td>(III) Subscribed but not fully paid</td> </tr> <tr> <td>(D) Current liabilities</td> <td>(IV) Sinking fund</td> </tr> </tbody> </table> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) - (I), (B) - (II), (C) - (III), (D) - (IV)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) - (I), (B) - (III), (C) - (II), (D) - (IV)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) - (I), (B) - (II), (C) - (IV), (D) - (III)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) - (III), (B) - (IV), (C) - (I), (D) - (II)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd>\u003cstrong>List I\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>List II\u003c/strong>\u003c/td> \u003c/tr> \u003ctr> \u003ctd>(A) Share capital\u003c/td> \u003ctd>Subscribed but not fully paid \u003c/td> \u003c/tr> \u003ctr> \u003ctd>(B) Reserves and surplus\u003c/td> \u003ctd>Sinking fund\u003c/td> \u003c/tr> \u003ctr> \u003ctd>(C) Reserve capital\u003c/td> \u003ctd>Will be called at the time of winding up\u003c/td> \u003c/tr> \u003ctr> \u003ctd>(D) Current liabilities\u003c/td> \u003ctd>Calls in advance \u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A company has :-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Separate Legal entity </p></span></div><div class="option"><span class="key">b</span><span><p> Perpetual Existence </p></span></div><div class="option"><span class="key">c</span><span><p> Limited Liability </p></span></div><div class="option"><span class="key">d</span><span><p>All of the above </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer: (D) All of the above\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>A company has the following main characteristics:\u003c/p> \u003col> \u003cli> \u003cp>Separate Legal Entity —\u003cbr/>A company is legally separate from its members.\u003c/p> \u003c/li> \u003cli> \u003cp>Perpetual Succession —\u003cbr/>The existence of the company does not end with change in members.\u003c/p> \u003c/li> \u003cli> \u003cp>Limited Liability —\u003cbr/>Members are liable only up to the unpaid amount on their shares.\u003c/p> \u003c/li> \u003c/ol> \u003cp>Since all these features apply to a company, the correct answer is:\u003cbr/>(D) All of the above\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Separate Legal Entity — Partially correct\u003cbr/>It states only one feature, not all.\u003c/p> \u003cp>(B) Perpetual Succession — Partially correct\u003cbr/>It is only one characteristic.\u003c/p> \u003cp>(C) Limited Liability — Partially correct\u003cbr/>It is also only one feature, not the complete answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are true with reference to a 'company'?</p> <p>(A) The directors of the company are the owners of the company. </p> <p>(B) A company is an artificial person.</p> <p>(C) A company has its common seal.</p> <p>(D) The liability of the members of the company is limited to the extent of shares held by them.</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B) and (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C) and (D)</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Statement (A) is \u003c/strong>\u003cstrong>Incorrect. \u003c/strong>As\u003cstrong> \u003c/strong>Directors are \u003cstrong>managers/agents\u003c/strong> of the company. \u003cstrong>Shareholders (members)\u003c/strong> are the actual owners of the company.\u003c/p> \u003cp>\u003cstrong>Statement (B)\u003c/strong>\u003cem> \u003c/em>is \u003cstrong>Correct. \u003c/strong>As a company is created by law. It has a separate legal existence, distinct from its members.\u003c/p> \u003cp>\u003cstrong>Statement (C) \u003c/strong>is \u003cstrong>Correct. \u003c/strong>As the common seal is the \u003cstrong>official signature\u003c/strong> of the company.\u003c/p> \u003cp>\u003cstrong>Statement (D)\u003c/strong>\u003cem> \u003c/em>is\u003cem> \u003c/em>\u003cstrong>Correct. \u003c/strong>As in a company limited by shares, members are liable only up to the \u003cstrong>unpaid value of shares\u003c/strong> held.\u003c/p> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount received over and above the par value is credited to which account?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Share Capital A/c</p></span></div><div class="option"><span class="key">b</span><span><p>Calls-in-advance A/c</p></span></div><div class="option"><span class="key">c</span><span><p>Securities Premium A/c</p></span></div><div class="option"><span class="key">d</span><span><p>Share Forfeiture A/c </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) Securities Premium Account\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>Any amount received over and above the face value of shares is called premium.\u003cbr/>As per Section 52 of the Companies Act, 2013, this amount must be credited to the Securities Premium Account and can be used only for specific purposes.\u003cbr/>Therefore, the correct answer is Securities Premium Account.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Share Capital Account — Incorrect\u003cbr/>Only the face value of shares is credited to Share Capital Account, not the premium.\u003c/p> \u003cp>(B) Calls in Advance Account — Incorrect\u003cbr/>This account is used when shareholders pay call money before it is due, not for premium.\u003c/p> \u003cp>(D) Share Forfeiture Account — Incorrect\u003cbr/>This account is credited when shares are forfeited, not when premium is received.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II</p> <table> <tbody> <tr> <td>List I</td> <td>List II</td> </tr> <tr> <td>1) Authorised Capital</td> <td>a) Mentioned in the prospectus</td> </tr> <tr> <td>2) Issued Capital</td> <td>b) Mentioned in the Memorandum of Association</td> </tr> <tr> <td>3) Subscribed Capital</td> <td>c) Called up Capital - Calls-in-arrear</td> </tr> <tr> <td>4) Paid up Capital</td> <td>d) Capital for which application is received</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1(a), 2(b), 3(c), 4(d)</p></span></div><div class="option"><span class="key">b</span><span><p>1(a), 2(c), 3(b), 4(d)</p></span></div><div class="option"><span class="key">c</span><span><p>1(b), 2(a), 3(d), 4(c)</p></span></div><div class="option"><span class="key">d</span><span><p>1(c), 2(d), 3(a), 4(b)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd>List I\u003c/td> \u003ctd>List II\u003c/td> \u003c/tr> \u003ctr> \u003ctd>1) Authorised Capital\u003c/td> \u003ctd>Mentioned in the Memorandum of Association \u003c/td> \u003c/tr> \u003ctr> \u003ctd>2) Issued Capital\u003c/td> \u003ctd>Mentioned in the prospectus\u003c/td> \u003c/tr> \u003ctr> \u003ctd>3) Subscribed Capital\u003c/td> \u003ctd>Capital for which application is received \u003c/td> \u003c/tr> \u003ctr> \u003ctd>4) Paid up Capital\u003c/td> \u003ctd>Called up Capital - Calls-in-arrear\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp>Therefore, \u003cstrong>Option C\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Maximum number of members in a public company is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7 </p></span></div><div class="option"><span class="key">b</span><span><p> 200 </p></span></div><div class="option"><span class="key">c</span><span><p>20 </p></span></div><div class="option"><span class="key">d</span><span><p> No limit </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer: (D) No limit\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>As per the Companies Act, 2013, a public company has no maximum limit on the number of its members.\u003cbr/>Any number of persons can become members of a public company.\u003cbr/>Therefore, the correct answer is (D) No limit.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) 7 — Incorrect\u003cbr/>Seven is the minimum number of members required to form a public company, not the maximum.\u003c/p> \u003cp>(B) 200 — Incorrect\u003cbr/>The limit of 200 members applies to a private company, not a public company.\u003c/p> \u003cp>(C) 20 — Incorrect\u003cbr/>This limit is related to partnership firms, not companies.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A company issues its shares at a premium under which section of Indian Companies Act, 2013?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>78</p></span></div><div class="option"><span class="key">b</span><span><p>52</p></span></div><div class="option"><span class="key">c</span><span><p>53</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Section 52\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>As per Section 52 of the Companies Act, 2013, when a company issues shares at a premium, the premium amount must be transferred to the Securities Premium Account and can be used only for specified purposes.\u003cbr/>Hence, issue of shares at premium is governed by Section 52.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Section 78 — Incorrect\u003cbr/>Section 78 belonged to the Companies Act, 1956, not to the 2013 Act.\u003c/p> \u003cp>(C) Section 53 — Incorrect\u003cbr/>Section 53 deals with issue of shares at discount, not at premium.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Because Section 52 is the correct provision.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following events in proper order.</p> <ol> <li>Transfer to Capital Reserve</li> <li>Forfeiture of Share</li> <li>Calls in Arrear</li> <li>Reissue of Share</li> </ol></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1,2,3,4</p></span></div><div class="option"><span class="key">b</span><span><p>1,2,4,3</p></span></div><div class="option"><span class="key">c</span><span><p>2,1,4,3</p></span></div><div class="option"><span class="key">d</span><span><p>3,2,4,1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>The correct sequence will be:\u003c/strong>\u003c/p> \u003cp>1) Calls in Arrears: This is the first step where a shareholder fails to pay the amount due on a call by the specified deadline.\u003c/p> \u003cp>2) Forfeiture of Shares: If the shareholder fails to settle the arrears after receiving a formal notice, the company cancels their ownership of those shares.\u003c/p> \u003cp>3) Reissue of Shares: The company may then sell these forfeited shares to new investors.\u003c/p> \u003cp>4) Transfer to Capital Reserve: After the reissue is complete, any remaining balance (profit) in the Forfeited Shares account is transferred to the Capital Reserve account, as it represents a capital gain.\u003c/p> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sweat equity shares are issued to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Employees</p></span></div><div class="option"><span class="key">b</span><span><p>Directors</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (B)</p></span></div><div class="option"><span class="key">d</span><span><p>None of them</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) Both (A) and (B)\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>Sweat Equity Shares are issued to persons who provide the company with:\u003cbr/>technical know-how,\u003cbr/>intellectual property rights, or\u003cbr/> value addition through services.\u003c/p> \u003cp>As per the Companies Act, 2013, sweat equity shares can be issued to employees as well as directors of the company.\u003cbr/>Therefore, the correct answer is (C) Both (A) and (B).\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) To employees — Partially correct\u003cbr/>They can also be issued to directors.\u003c/p> \u003cp>(B) To directors — Partially correct\u003cbr/>They can also be issued to employees.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Because sweat equity shares are issued to both employees and directors.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Pro-rata allotment of shares is made when there is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Under-Subscription </p></span></div><div class="option"><span class="key">b</span><span><p>Over-Subscription</p></span></div><div class="option"><span class="key">c</span><span><p> Equal-Subscription </p></span></div><div class="option"><span class="key">d</span><span><p>All of the above </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Oversubscription\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>When the number of shares applied for is more than the number of shares issued,\u003cbr/>it is called oversubscription.\u003c/p> \u003cp>In this case, shares cannot be allotted fully to all applicants,\u003cbr/>so shares are allotted on a pro-rata (proportional) basis to ensure fair distribution.\u003c/p> \u003cp>Therefore, pro-rata allotment is done when there is oversubscription.\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Undersubscription — Incorrect\u003cbr/>When applications are less, all applicants get full shares; no pro-rata allotment is needed.\u003c/p> \u003cp>(C) Full subscription — Incorrect\u003cbr/>When applications equal shares issued, full allotment is made to everyone.\u003c/p> \u003cp>(D) All of the above — Incorrect\u003cbr/>Pro-rata allotment is required only in case of oversubscription.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Securities Premium can be utilised for:</p> <ol> <li>Writing off Preliminary Expenses</li> <li>Issue of Bonus Shares</li> <li>Payment of dividends</li> <li>Buyback of shares</li> </ol></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1,2, and 4 only.</p></span></div><div class="option"><span class="key">b</span><span><p>1,2, and 3 only.</p></span></div><div class="option"><span class="key">c</span><span><p>1,2,3, and 4</p></span></div><div class="option"><span class="key">d</span><span><p>2,3, and 4 only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>As per Section 52(2) of the Companies Act, 2013, the Securities Premium Account can be utilised for: \u003c/p> \u003cul> \u003cli>Writing off Preliminary Expenses\u003c/li> \u003cli>Issue of Bonus Shares (fully paid-up)\u003c/li> \u003cli>Buyback of shares (under Section 68)\u003c/li> \u003cli>Writing off expenses/commission/discount on share/debenture issues\u003c/li> \u003cli>Providing for a premium on redemption of preference shares or debentures \u003c/li> \u003c/ul> \u003cp>Therefore, \u003cstrong>Option A\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Calls–in–arrears is shown in the balance sheet as:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Current Assets</p></span></div><div class="option"><span class="key">b</span><span><p>A deduction from paid-up capital</p></span></div><div class="option"><span class="key">c</span><span><p>Reserve and Surplus</p></span></div><div class="option"><span class="key">d</span><span><p>Current Liability</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Calls-in-arrears refers to the amount of share capital that a company has called up (demanded) from its shareholders but has not yet received.\u003c/p> \u003cp>Balance Sheet Presentation: According to Schedule III of the Companies Act, 2013, calls-in-arrears must be shown as a deduction from the \"Subscribed but not fully paid-up capital\" under the head Shareholders' Funds.\u003c/p> \u003cp>This deduction is necessary to arrive at the actual paid-up capital figure, as it reflects only the capital that has physically been collected by the company. \u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The liability of members in a company is<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Limited.</p></span></div><div class="option"><span class="key">b</span><span><p>Unlimited</p></span></div><div class="option"><span class="key">c</span><span><p>Stable</p></span></div><div class="option"><span class="key">d</span><span><p>Fluctuating</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: (A) Limited\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>In a company, the liability of members (shareholders) is generally limited to the unpaid amount on the shares held by them.\u003cbr/>They are not personally liable for the company’s debts.\u003cbr/>Therefore, the correct answer is Limited.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(B) Unlimited — Incorrect\u003cbr/>Unlimited liability exists in a partnership firm, not in a company (except in rare special cases).\u003c/p> \u003cp>(C) Fixed — Incorrect\u003cbr/>There is no legal concept of “fixed liability” for company members.\u003c/p> \u003cp>(D) Variable — Incorrect\u003cbr/>Members’ liability does not change; it remains limited to the unpaid value of shares.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Discount on issue of share is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Capital gain</p></span></div><div class="option"><span class="key">b</span><span><p>Capital loss</p></span></div><div class="option"><span class="key">c</span><span><p>Revenue gain</p></span></div><div class="option"><span class="key">d</span><span><p>Revenue loss</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Capital Loss\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>Discount on issue of shares means the company receives less than the face value of shares.\u003cbr/>This loss is related to the capital structure of the company, not to its normal business operations.\u003cbr/>Therefore, it is treated as a Capital Loss.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Capital Gain — Incorrect\u003cbr/>Discount is a loss, not a gain.\u003c/p> \u003cp>(C) Revenue Gain — Incorrect\u003cbr/>It is not an operating or trading gain.\u003c/p> \u003cp>(D) Revenue Loss — Incorrect\u003cbr/>It is not a loss from normal business activities; it is related to capital.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reserve Capital is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A kind of capital reserve.</p></span></div><div class="option"><span class="key">b</span><span><p>A part of called-up capital.</p></span></div><div class="option"><span class="key">c</span><span><p>A part of subscribed capital decided not to be called except in the event of winding up of the company.</p></span></div><div class="option"><span class="key">d</span><span><p>A part of capital not yet issued.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Reserve Capital represents a portion of the uncalled capital\u003c/strong> that a company, by special resolution, decides shall not be called up except in the event of the company being wound up (liquidated). It is created under Section 99 of the Companies Act, 2013. Its primary objective is to improve the creditors' confidence by ensuring there is a \"reserve\" of funds available to meet liabilities if the company goes out of business.\u003c/p> \u003cp>\u003cstrong>Kind of capital reserve:\u003c/strong> A Capital Reserve is a \"profit-based\" reserve, whereas Reserve Capital is a \"subscription-based\" uncalled amount.\u003c/p> \u003cp>\u003cstrong>Part of the called-up capital:\u003c/strong> The called-up money is shown as Share Capital. Reserve Capital is specifically the uncalled capital.\u003c/p> \u003cp>\u003cstrong>Part of the capital not yet issued:\u003c/strong> Capital not yet issued is \"Unissued Capital.\" Reserve Capital is part of the Subscribed Capital; the shares have been taken by the public, but the company has simply chosen not to ask for the final payment yet.\u003c/p> \u003cp>Therefore, \u003cstrong>Option C\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In what condition the amount is shown under the head of 'Subscribed and fully paid up Share Capital in balance Sheet of a Company? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>If shares are fully called up and there are calls in arrears. </p></span></div><div class="option"><span class="key">b</span><span><p>If shares are fully called up and there are no calls in arrears. </p></span></div><div class="option"><span class="key">c</span><span><p>If shares are partly called up and there are no calls in arrears. </p></span></div><div class="option"><span class="key">d</span><span><p>If shares are partly called up and there are calls in arrears. </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Subscribed capital refers to the part of issued capital that shareholders have agreed to take.\u003c/p> \u003cp>Fully paid-up means the company has called the entire face value of shares and received it in full.\u003c/p> \u003cp>Shares must be fully called up (no unpaid portion remaining). There must be no calls in arrears, i.e., shareholders have paid the full amount due. Only under this condition can the amount be shown as \u003cstrong>“Subscribed and Fully Paid-up Share Capital”\u003c/strong> in the Balance Sheet.\u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When amount is due on any call but it is not received, then the short <br/>fall is debited to :-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Calls-in-advance </p></span></div><div class="option"><span class="key">b</span><span><p> Calls-in-arrear</p></span></div><div class="option"><span class="key">c</span><span><p> Share Capital </p></span></div><div class="option"><span class="key">d</span><span><p> Suspense Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Calls in Arrears\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>When call money becomes due but is not received from shareholders, the unpaid amount is called Calls in Arrears.\u003cbr/>In accounting, this unpaid amount is debited to the Calls in Arrears Account and the respective call account is credited.\u003cbr/>Hence, the shortfall is debited to Calls in Arrears.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Calls in Advance — Incorrect\u003cbr/>Calls in Advance refers to money received before it is due, not unpaid amounts.\u003c/p> \u003cp>(C) Share Capital — Incorrect\u003cbr/>Share Capital is credited with the amount due, not with the unpaid portion.\u003c/p> \u003cp>(D) Suspense Account — Incorrect\u003cbr/>Suspense Account is not used in this situation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>To whom is dividend given at a fixed rate in a company?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Equity shareholders</p></span></div><div class="option"><span class="key">b</span><span><p>Preference shareholders</p></span></div><div class="option"><span class="key">c</span><span><p>Debenture holders</p></span></div><div class="option"><span class="key">d</span><span><p>Promoters</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Preference Shareholders\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>Preference shareholders are entitled to receive dividend at a fixed rate.\u003cbr/>They are given priority over equity shareholders in the payment of dividend.\u003cbr/>Therefore, dividend at a fixed rate is given to preference shareholders.\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Equity shareholders — Incorrect\u003cbr/>Dividend to equity shareholders is not fixed; it depends on profits.\u003c/p> \u003cp>(C) Debenture holders — Incorrect\u003cbr/>Debenture holders receive interest, not dividend.\u003c/p> \u003cp>(D) Promoters — Incorrect\u003cbr/>Promoters are not a separate class entitled to fixed-rate dividend.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A company issued 10,000 shares of Rs. 10 each at a premium of 10%. The amount of premium will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rs. 10,000</p></span></div><div class="option"><span class="key">b</span><span><p>Rs. 20,000</p></span></div><div class="option"><span class="key">c</span><span><p>Rs. 8,000</p></span></div><div class="option"><span class="key">d</span><span><p>Rs. 5,000</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Defence","item":"https://yespyq.com/exams/defence/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/defence/english/"},{"@type":"ListItem","position":5,"name":"Vocabulary","item":"https://yespyq.com/exams/defence/english/vocabulary/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Vocabulary</h1>
       <p>66 Defence English previous year questions on <b>Vocabulary</b> — options free on every question; <b>7 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Give one word for the following expression: One who does things for pleasure and not for money.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Magician</span></div><div class="option correct"><span class="key">b</span><span>Amateur</span></div><div class="option"><span class="key">c</span><span>Employee</span></div><div class="option"><span class="key">d</span><span>Clown</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the following question, out of the four alternatives, select the one which is SIMILAR in meaning to the given word. Prerogative</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Privilege</span></div><div class="option"><span class="key">b</span><span>Claim</span></div><div class="option"><span class="key">c</span><span>Grant</span></div><div class="option"><span class="key">d</span><span>Afford</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Give one word for the following expression: The expression of spoken sounds by an alphabet.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Alphabet</span></div><div class="option"><span class="key">b</span><span>Alphabetic</span></div><div class="option"><span class="key">c</span><span>Alphabeticiation</span></div><div class="option correct"><span class="key">d</span><span>Alphabetism</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the correct synonym of the word given below. Garner</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Collect</span></div><div class="option"><span class="key">b</span><span>Dispel</span></div><div class="option"><span class="key">c</span><span>Disperse</span></div><div class="option"><span class="key">d</span><span>Dissipate</span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the word OPPOSITE in meaning to the given word. Erratic</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Aberration</span></div><div class="option correct"><span class="key">b</span><span>Normal</span></div><div class="option"><span class="key">c</span><span>Arcade</span></div><div class="option"><span class="key">d</span><span>Sarcastic</span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate meaning of the given idiom. Walking on thin ice</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>walking carefully</span></div><div class="option"><span class="key">b</span><span>performing a ballet</span></div><div class="option"><span class="key">c</span><span>slipping on ice</span></div><div class="option correct"><span class="key">d</span><span>doing something risky</span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Find the meaning of the given idiom. Round peg in a square hole</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Untrustworthy</span></div><div class="option"><span class="key">b</span><span>Invalid</span></div><div class="option"><span class="key">c</span><span>In an unpleasant situation</span></div><div class="option correct"><span class="key">d</span><span>A misfit</span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Insert the correct idiom. Hey, man, you are absolutely_______here because I’m innocent.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>a devil's advocate</span></div><div class="option"><span class="key">b</span><span>an eye candy</span></div><div class="option"><span class="key">c</span><span>set the bar</span></div><div class="option"><span class="key">d</span><span>barking up the wrong tree</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The most fitting idiom for the sentence is: D. barking up the wrong tree D. barking up the wrong tree: This idiom perfectly captures the situation. It means someone is pursuing the wrong course of action or looking in the wrong place. In this case, you're implying that the person accusing you is on the wrong track because you're innocent. Therefore, \"barking up the wrong tree\" is the most appropriate idiom to use.","fmt":""}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the word that is opposite in meaning to the given word. Wrath</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Anger</span></div><div class="option"><span class="key">b</span><span>Happy</span></div><div class="option"><span class="key">c</span><span>Rage</span></div><div class="option"><span class="key">d</span><span>Fury</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"While all the options (A, C, and D) are related to anger, the best opposite for \"wrath\" is B. Happy. Wrath signifies intense or uncontrolled anger, often associated with revenge or punishment. Happy is the complete opposite, representing a state of joy, contentment, and satisfaction. Anger, Rage, and Fury are all synonyms of wrath, indicating varying degrees of intense anger.","fmt":""}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Direction: Choose the most appropriate phrasal verb and fill in the blank: The top and bottom ______ if you pull hard enough.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>come apart</span></div><div class="option"><span class="key">b</span><span>come down with</span></div><div class="option"><span class="key">c</span><span>come forward</span></div><div class="option"><span class="key">d</span><span>come from</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The most appropriate phrasal verb to fill in the blank is: come apart The sentence would be: \"The top and bottom come apart if you pull hard enough.\" Come apart: This phrasal verb means to separate into pieces, typically as a result of force. In the context of the sentence, it suggests that the top and bottom will separate if you pull hard enough. Come down with: This phrasal verb means to become ill with a specific illness or condition. Come forward: This phrasal verb means to move toward the front or offer information. Come from: This phrasal verb is used to indicate the origin or source of something.","fmt":""}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate ANTONYM of the given word. Pensive</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Frivolous</span></div><div class="option"><span class="key">b</span><span>Unreflective</span></div><div class="option"><span class="key">c</span><span>Hollow</span></div><div class="option"><span class="key">d</span><span>Goofy</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The most appropriate antonym for \"pensive\" is: B. Unreflective Pensive describes someone who is engaged in deep or serious thought. Frivolous means lighthearted or carefree. Unreflective directly contradicts the idea of deep thought. It suggests someone who doesn't think deeply or consider things carefully. Hollow can describe a sound or feeling. Goofy implies silliness or foolishness. Therefore, \"unreflective\" best captures the opposite of being in a thoughtful and pensive state.","fmt":""}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate meaning of the given idiom. Ring a bell</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>to worship</span></div><div class="option"><span class="key">b</span><span>to play with a bell</span></div><div class="option"><span class="key">c</span><span>to dance in a party</span></div><div class="option"><span class="key">d</span><span>to evoke a memory</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The most appropriate meaning of the idiom \"ring a bell\" is: D. To evoke a memory Ring a bell means something you hear or see triggers a memory, but you might not recall all the details. It's like a faint echo or reminder of something from the past.","fmt":""}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that can be used as a one- word substitute for the given group of words. The nest of a squirrel, typically in the form of a mass of twigs in a tree</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Drey</span></div><div class="option"><span class="key">b</span><span>Hole</span></div><div class="option"><span class="key">c</span><span>Lair</span></div><div class="option"><span class="key">d</span><span>Burrow</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The most appropriate option is: A. Drey Drey specifically refers to the nest of a squirrel, typically built from twigs and leaves in the branches of a tree. It's a perfect one-word substitute for the given description. Hole is a general term for a hollow place in a solid body or surface. Lair is typically used for the resting place of larger carnivorous mammals like lions or tigers. Burrow refers to a tunnel dug underground by animals like rabbits or foxes, not something built in a tree. Therefore, \"Drey\" accurately matches the specific description of a squirrel's nest.","fmt":""}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given word. GRACEFUL</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Natural</span></div><div class="option"><span class="key">b</span><span>Decorated</span></div><div class="option"><span class="key">c</span><span>Elegant</span></div><div class="option"><span class="key">d</span><span>Artificial</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The most appropriate synonym for \"graceful\" is: C. Elegant Graceful describes movement or form that is elegant, pleasing, and seemingly effortless. Natural suggests something that occurs or exists in nature, not necessarily related to elegance. Decorated means adorned with something decorative, which doesn't directly translate to graceful movement or appearance. Elegant signifies beauty, stylishness, and refinement, which aligns closely with the meaning of graceful. Therefore, \"elegant\" best captures the essence of being graceful.","fmt":""}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the following question, out of the four given options, select the one which best expresses the meaning of the idiom/phrase. Play it by ear.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>To focus on one thing.</span></div><div class="option"><span class="key">b</span><span>Last try before giving up.</span></div><div class="option"><span class="key">c</span><span>Act without preparation.</span></div><div class="option"><span class="key">d</span><span>A fleeting moment.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The most appropriate meaning of the idiom \"play it by ear\" is: C. Act without preparation. Play it by ear refers to dealing with a situation by improvising or figuring things out as you go, without a set plan or prior preparation.","fmt":""}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the phrasal verb that best fits the blank in the given sentence: The sun _________ on the weary travellers, forcing them to seek the shade of a tree.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>beat against</span></div><div class="option"><span class="key">b</span><span>beat up</span></div><div class="option"><span class="key">c</span><span>beat down</span></div><div class="option"><span class="key">d</span><span>beat back</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The best phrasal verb to fill the blank is: C. beat down Beat against implies hitting something repeatedly. Beat up means to physically assault someone. Beat down refers to strong sunlight shining intensely downwards. Beat back means to force something or someone to retreat, which doesn't fit the scenario. Therefore, \"beat down\" vividly describes the sun's intense heat forcing the travelers to seek shade.","fmt":""}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose from the four options, the word that best defines/substitutes the given phrase. "One who does not believe in God"</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Devotee</span></div><div class="option"><span class="key">b</span><span>Theist</span></div><div class="option"><span class="key">c</span><span>Atheist</span></div><div class="option"><span class="key">d</span><span>Anarchist</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The most appropriate option to substitute the phrase \"one who does not believe in God\" is: C. Atheist Devotee refers to someone who is very interested in or enthusiastic about something, often religion. Theist refers to someone who believes in one or more gods. Atheist accurately describes someone who does not believe in the existence of a god or gods. Anarchist is someone who believes in abolishing all forms of government and authority. Therefore, \"atheist\" is the most precise and direct substitute for the given phrase.","fmt":""}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate ANTONYM of the given word. Mitigate</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Appease</span></div><div class="option"><span class="key">b</span><span>Enhance</span></div><div class="option"><span class="key">c</span><span>Allay</span></div><div class="option"><span class="key">d</span><span>Reduce</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The most appropriate antonym for \"mitigate\" is: B. Enhance Mitigate means to lessen, reduce, or make something less severe. Appease can mean to calm or satisfy someone. Enhance means to improve, intensify, or make something greater. This directly opposes the meaning of mitigate. Allay is a synonym for mitigate, meaning to lessen or soothe something. Reduce is very similar to mitigate, but the question asks for the opposite meaning. Therefore, \"enhance\" best captures the opposite concept of making something less severe.","fmt":""}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given word. Melancholy</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Sadness</span></div><div class="option"><span class="key">b</span><span>Intimidate</span></div><div class="option"><span class="key">c</span><span>Slavish</span></div><div class="option"><span class="key">d</span><span>Wit</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The most appropriate synonym for \"melancholy\" is: A. Sadness Melancholy refers to a pensive sadness. Sadness is a general term for a feeling of sorrow or unhappiness, which closely aligns with the meaning of melancholy. Intimidate means to frighten or threaten someone, which is the opposite of melancholy. Slavish means excessively devoted or submissive. Wit refers to mental sharpness and cleverness. Therefore, \"sadness\" best captures the essence of melancholy.","fmt":""}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given word. Berate</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Supervise</span></div><div class="option"><span class="key">b</span><span>Reproach</span></div><div class="option"><span class="key">c</span><span>Indulge</span></div><div class="option"><span class="key">d</span><span>Train</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The most appropriate synonym of the word \"berate\" is: B. Reproach Berate means to scold someone harshly or angrily. Reproach also means to criticize someone in a harsh or disapproving way. Supervise means to oversee or manage someone's work. Indulge means to allow someone to have something they enjoy. Train means to teach someone a specific skill or behavior.","fmt":""}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the phrasal verb that best fits the blank in the given sentence: The Royale Gardens is a pleasant place to _______.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>walk away</span></div><div class="option"><span class="key">b</span><span>walk out</span></div><div class="option"><span class="key">c</span><span>walk around</span></div><div class="option"><span class="key">d</span><span>walk off</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The best phrasal verb to fill the blank is: C. walk around Walk away suggests leaving a place. Walk out implies leaving abruptly. Walk off can mean leaving but also suggests walking away to reduce anger or frustration. Walk around indicates strolling or moving leisurely within a space, which perfectly captures the idea of enjoying The Royale Gardens.","fmt":""}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In questions given below, out of the four alternatives, choose the one which can be substituted for the given words. That which cannot be corrected</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Incorrigible</span></div><div class="option"><span class="key">b</span><span>Tangible</span></div><div class="option"><span class="key">c</span><span>Infallible</span></div><div class="option"><span class="key">d</span><span>Unintangible</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct answer is Option A. Incorrigible- That which cannot be corrected Infallible - never wrong; never making mistakes Tangible - that can be clearly seen to exist Unintangible - difficult to describe, understand or measure","fmt":""}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate meaning of the given idiom: Wet blanket</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Person who spoils other people's fun</span></div><div class="option"><span class="key">b</span><span>A misleading advertisement</span></div><div class="option"><span class="key">c</span><span>A deceptive person</span></div><div class="option"><span class="key">d</span><span>Comforting words</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The most appropriate meaning of the idiom \"Wet blanket\" is: A. Person who spoils other people's fun A \"wet blanket\" metaphorically refers to something that dampens enthusiasm or excitement. It's used to describe someone who brings a negative attitude or discourages others from having fun.","fmt":""}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is nearest in the meaning to the underlined word Pillage</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Pilgrimage</span></div><div class="option"><span class="key">b</span><span>Buffet</span></div><div class="option"><span class="key">c</span><span>Voyage</span></div><div class="option"><span class="key">d</span><span>Plunder</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The correct answer is Option D. Pillage: rob a (place) using violence, especially in wartime. Buffet: A meal consisting of several dishes from which guests serve themselves. Pilgrimage: A journey to a sacred place or shrine, typically for religious reasons. Voyage: A long journey involving travel by sea or in space. Plunder: To steal goods from (a place or person), typically using force and in a time of war or civil disorder. Hence, Plunder is the correct synonym.","fmt":""}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is nearest the meaning to the given word Equanimity</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Composure</span></div><div class="option"><span class="key">b</span><span>Idleness</span></div><div class="option"><span class="key">c</span><span>Simplicity</span></div><div class="option"><span class="key">d</span><span>Adversity</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The option nearest in meaning to the word \"Equanimity\" is: A. Composure Equanimity refers to a state of mental calmness and emotional control, especially in difficult situations. Composure also signifies maintaining a calm and collected demeanor, even under pressure. It's the closest synonym to equanimity. Idleness means laziness or lack of activity. Simplicity refers to being plain or uncomplicated. Adversity signifies misfortune or hardship.","fmt":""}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is opposite in the meaning to the given word. Craving</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Complacency</span></div><div class="option"><span class="key">b</span><span>Dislike</span></div><div class="option"><span class="key">c</span><span>Discomfort</span></div><div class="option"><span class="key">d</span><span>Like</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The given word, 'Craving' means a strong desire for something you like Let's look at the meaning of the other words Complacency- too satisfied to not feeling like doing something/laziness Discomfort - lack of comfort Like - admire/take pleasure in Dislike - feeling of distaste or hostility for something Thus , the nearest word opposite to 'craving' is 'dislike'. Hence, the correct answer is option 'b', ie, 'Dislike'.","fmt":""}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank with the most appropriate word from the given options. The athlete's performance has been _________ of controversy due to allegations of doping.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>under a cloud</span></div><div class="option"><span class="key">b</span><span>an ivory tower</span></div><div class="option"><span class="key">c</span><span>under an influence</span></div><div class="option"><span class="key">d</span><span>at the drop</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct option is:A. under a cloud This phrase means that the athlete's performance has been surrounded by controversy or suspicion. Under a cloud is a common idiom that signifies suspicion, doubt, or uncertainty surrounding something. An ivory tower refers to a state of isolation or detachment from reality. Under an influence suggests being affected by something. At the drop is an idiom meaning \"immediately\" or \"without hesitation,\" and doesn't fit the context of controversy.","fmt":""}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is nearest in the meaning to the underlined word Omnipresent</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Unique</span></div><div class="option"><span class="key">b</span><span>Powerful</span></div><div class="option"><span class="key">c</span><span>Universal</span></div><div class="option"><span class="key">d</span><span>Modern</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The correct answer is Option C. Omnipresent- widely or constantly encountered; widespread. Powerful: Having great power or strength. Unique: Being the only one of its kind. Universal: Including or covering all or a whole collectively or distributively without limit or exception. Modern: Of, relating to, or characteristic of the present or the immediate past. In the context of \"omnipresent,\" the most suitable option would be (C) Universal, as it aligns closely with the meaning of being present everywhere.","fmt":""}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is nearest in the meaning to the underlined word. Asunder</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Bravery</span></div><div class="option"><span class="key">b</span><span>Into pieces</span></div><div class="option"><span class="key">c</span><span>Thunder</span></div><div class="option"><span class="key">d</span><span>Baptism</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The correct answer is Option B. The word \"asunder\" means apart or divided. The option nearest in meaning to \"asunder\" is (B) Into pieces, which also implies being apart or divided into separate pieces. Baptism - Baptism is a religious rite or ceremony in which a person is either immersed in water or water is poured over their head as a symbol of purification or initiation into the Christian Church.","fmt":""}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate meaning of the given idiom: Turn a blind eye</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>To ignore something that you know is wrong</span></div><div class="option"><span class="key">b</span><span>Hide the ugly truth from someone</span></div><div class="option"><span class="key">c</span><span>Stay away from bad habits</span></div><div class="option"><span class="key">d</span><span>to feel happy</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct answer is Option A. TURN A BLIND EYE means choosing to ignore something that you know is wrong or illegal.","fmt":""}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is nearest in the meaning to the underlined word Fret</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Aid</span></div><div class="option"><span class="key">b</span><span>Hinder</span></div><div class="option"><span class="key">c</span><span>Laugh</span></div><div class="option"><span class="key">d</span><span>Worry</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,7 +432,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The correct answer is Option D. Fret- be constantly or visibly anxious. Laugh (A): To make the spontaneous sounds and movements of the face and body that are the instinctive expressions of lively amusement and sometimes also of contempt or derision. This word is opposite in meaning to \"fret,\" which means to worry or be anxious. Hinder (B): To create difficulties for (someone or something), resulting in delay or obstruction. Aid (C): To provide assistance or support. Worry (D): To feel anxious or troubled about actual or potential problems. This word is the closest in meaning to \"fret,\" as both describe a state of anxiety or worry.","fmt":""}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is opposite in the meaning to the underlined word Anathema</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Blessing</span></div><div class="option"><span class="key">b</span><span>Purity</span></div><div class="option"><span class="key">c</span><span>Asthma</span></div><div class="option"><span class="key">d</span><span>Curse</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -440,7 +444,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct answer is Option A. The word \"anathema\" means something or someone that is intensely disliked or cursed. The option that is opposite in meaning to \"anathema\" is (A) Blessing, which means a beneficial thing for which one is grateful; something that brings well-being. \"Blessing\" is the opposite of \"anathema\" because it conveys a positive connotation, while \"anathema\" conveys a negative connotation.","fmt":""}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is nearest the meaning to the given word Ostentatious</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Inconspicuous</span></div><div class="option"><span class="key">b</span><span>Pretentious</span></div><div class="option"><span class="key">c</span><span>Simple</span></div><div class="option"><span class="key">d</span><span>Witty</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -452,7 +456,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The option nearest in meaning to the word \"Ostentatious\" is: B. Pretentious Ostentatious describes something that is intended to attract attention in a showy or brash way, often to impress others. Pretentious refers to something that attempts to impress by affecting greater importance, talent, culture, etc., than is actually possessed. Inconspicuous means not noticeable. Simple refers to being plain or uncomplicated. Witty describes something clever or amusing.","fmt":""}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Mark the synonym of the given word: Innocuous</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Unoffending</span></div><div class="option"><span class="key">b</span><span>Obnoxious</span></div><div class="option"><span class="key">c</span><span>Nauseating</span></div><div class="option"><span class="key">d</span><span>Scabrous</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -464,7 +468,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Innocuous - not harmful or offensive. Unoffending- not offensive Other words are not synonyms of the given word. Obnoxious means very unpleasant or offensive. Nauseating means disgusting or sickening. Scabrous refers to being indecent or offensive in a shocking way.","fmt":""}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is antonym to the meaning of the given word Veracity</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Truthfulness</span></div><div class="option"><span class="key">b</span><span>Deceitfulness</span></div><div class="option"><span class="key">c</span><span>Nefarious</span></div><div class="option"><span class="key">d</span><span>Cupidity</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -476,7 +480,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The option that is the antonym (opposite) of the word \"veracity\" is: B. Deceitfulness Veracity refers to truthfulness, honesty, and accuracy. Deceitfulness signifies the act of deliberately misleading someone or being dishonest. These concepts are directly opposed. Truthfulness is a synonym of veracity and can be eliminated. Nefarious means wicked or evil, which doesn't directly relate to truth or honesty. Cupidity refers to a strong desire for money or possessions.","fmt":""}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the following question there is a related pair of words given. Each pair is followed by four other pairs of words. Choose the pair from the given option the pair of words that best expresses the relationship like the original pair. Abjure: Renounce :: Alleviate:?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Lessen</span></div><div class="option"><span class="key">b</span><span>Amplify</span></div><div class="option"><span class="key">c</span><span>Nationalise</span></div><div class="option"><span class="key">d</span><span>Simplify</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -488,7 +492,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct answer is Option A. The relationship between \"abjure\" and \"renounce\" is that \"abjure\" means to solemnly renounce (a belief, cause, or claim). Similarly, the word \"alleviate\" means to make (suffering, deficiency, or a problem) less severe. So, the pair that best expresses the relationship like the original pair is: A) Lessen Alleviate means to make less severe, which is similar to the meaning of \"lessen.\"","fmt":""}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate meaning of the given idiom: Tuck in</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>To make someone angry</span></div><div class="option"><span class="key">b</span><span>To make someone comfortable in bed</span></div><div class="option"><span class="key">c</span><span>To scold someone</span></div><div class="option"><span class="key">d</span><span>To admire someone</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -500,7 +504,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The most appropriate meaning of the idiom \"Tuck in\" is: B. to make someone comfortable in bed \"Tuck in\" typically refers to pulling the covers around someone to make them warm and cozy in bed, especially a child.","fmt":""}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the following question there is a related pair of words given. Each pair is followed by four other pairs of words. Choose the pair from the given option the pair of words that best expresses the relationship like the original pair. Sculptor:Clay :: Author: ?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>write</span></div><div class="option"><span class="key">b</span><span>story</span></div><div class="option"><span class="key">c</span><span>play</span></div><div class="option"><span class="key">d</span><span>words</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -512,7 +516,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The correct answer is Option D. The relationship between \"sculptor\" and \"clay\" is that a sculptor works with clay to create sculptures. Similarly, an author works with words to create stories, plays, or other written works. So, the pair that best expresses the relationship like the original pair is: D) Words An author works with words to create written works, just as a sculptor works with clay to create sculptures.","fmt":""}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that is opposite in the meaning to the underlined word Laud</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Censure</span></div><div class="option"><span class="key">b</span><span>Praise</span></div><div class="option"><span class="key">c</span><span>Observe</span></div><div class="option"><span class="key">d</span><span>Nullify</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -524,7 +528,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The best option opposite in meaning to the underlined word \"Laud\" is: A. Censure Laud means to praise or express admiration. Censure means to criticize or express disapproval. Therefore, censure has the opposite meaning to laud. Praise is a synonym of laud and can be eliminated. Observe - watching or noticing something. Nullify means to make void or cancel.","fmt":""}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">An idiom is given below, followed by four possible meanings. Select the option that best conveys the meaning of the idiom. To ride on Shank's mare</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>To undertake a journey without adequate preparation</span></div><div class="option"><span class="key">b</span><span>To travel on foot</span></div><div class="option"><span class="key">c</span><span>To move independently without external support</span></div><div class="option"><span class="key">d</span><span>To rely on personal effort rather than material resources</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -536,7 +540,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The correct answer is: B — To travel on foot “To ride on Shank’s mare” is an old idiom where “Shank” means the lower part of the leg (the shin). Since a mare is a horse, the phrase is used humorously to suggest that instead of riding a real horse or using transport, a person is “riding” their own legs. So it literally means using your own legs instead of a horse or vehicle.","fmt":""}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate meaning of the given idiom. In hot waters</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>To be in trouble</span></div><div class="option"><span class="key">b</span><span>To dip in hot water</span></div><div class="option"><span class="key">c</span><span>To be in a hot climate</span></div><div class="option"><span class="key">d</span><span>To feel relaxed</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -548,7 +552,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The most appropriate meaning of the idiom \"in hot waters\" is: A. To be in trouble The idiom \"in hot waters\" refers to a situation where someone is facing difficulty or criticism.","fmt":""}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate ANTONYM of the given word. STIFF</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Strong</span></div><div class="option"><span class="key">b</span><span>Tender</span></div><div class="option"><span class="key">c</span><span>Rigid</span></div><div class="option"><span class="key">d</span><span>Tight</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -560,7 +564,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The best antonym for \"stiff\" is: B. Tender Strong - This refers to having a lot of power or force. Tender - This implies being soft and easily bent or shaped, the direct opposite of stiff. Rigid - inflexible and unyielding. Tight - close-fitting. Therefore, \"tender\" best captures the opposite meaning of \"stiff\" in terms of physical pliability.","fmt":""}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given word. Sovereign</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Paternal</span></div><div class="option"><span class="key">b</span><span>Imperial</span></div><div class="option"><span class="key">c</span><span>God-fearing</span></div><div class="option"><span class="key">d</span><span>Ancestral</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -572,7 +576,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The most appropriate synonym for sovereign is: B. Imperial Sovereign can mean supreme or having the highest authority. Imperial suggests relating to an empire, which is ruled by a sovereign. Paternal means characteristic of a father, fatherly. God-fearing means one who respects God, not necessarily having supreme power. Ancestral means of, belonging to, or inherited from an ancestor or ancestors.","fmt":""}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following definitions best describes the phrasal verb "cut in"?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>To make a sharp object penetrate something</span></div><div class="option"><span class="key">b</span><span>To interrupt or intrude on a conversation or activity</span></div><div class="option"><span class="key">c</span><span>To start running very fast</span></div><div class="option"><span class="key">d</span><span>To physically lift someone or something up</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -584,7 +588,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The best definition for the phrasal verb \"cut in\" is: B. To interrupt or intrude on a conversation or activity.","fmt":""}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the word which is most closely the same to the meaning of the given words: Ambiguous</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Clear</span></div><div class="option"><span class="key">b</span><span>Doubtful</span></div><div class="option"><span class="key">c</span><span>Large</span></div><div class="option"><span class="key">d</span><span>Complicated</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -596,7 +600,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The answer is B. Doubtful. Ambiguous means open to multiple interpretations or having unclear meaning. Clear is the opposite of ambiguous. Doubtful implies uncertainty, which aligns with the multiple possibilities of an ambiguous statement.","fmt":""}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the appropriate antonym for the highlighted word in the given sentence. Incessant rains inundated low lying areas.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Occasional</span></div><div class="option"><span class="key">b</span><span>Uninterrupted</span></div><div class="option"><span class="key">c</span><span>Continual</span></div><div class="option"><span class="key">d</span><span>Ceaseless</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -608,7 +612,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The best antonym for \"incessant\" in the sentence is: A. Occasional Incessant means never-ending or constant. Occasional means happening infrequently or sporadically. Uninterrupted, continual, and ceaseless are synonyms of incessant, meaning they convey the same idea of constant rain. Therefore, \"occasional\" is the opposite of incessant and best fits the sentence.","fmt":""}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank with an appropriate, word chosen from the given alternatives: Rain has _______ normal life of citizens in Mumbai.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>sunk</span></div><div class="option"><span class="key">b</span><span>showered</span></div><div class="option"><span class="key">c</span><span>struck</span></div><div class="option"><span class="key">d</span><span>battered</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -620,7 +624,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The most appropriate word to fill the blank is: C. struck Sunk implies something being submerged underwater. Showered suggests a light rain. Battered can work, but \"struck\" is a more common verb used to describe how a sudden event like heavy rain disrupts daily routines. Struck effectively conveys the idea of the rain's impact on the city's normalcy. It implies a sudden and significant disruption.","fmt":""}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the option that best expresses the meaning of the highlighted idiom/phrase: How can you be as fresh as a daisy so early in the morning?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>energetic</span></div><div class="option"><span class="key">b</span><span>innocent</span></div><div class="option"><span class="key">c</span><span>flushed</span></div><div class="option"><span class="key">d</span><span>delicate</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -632,7 +636,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The best option to express the meaning of \"as fresh as a daisy\" is: A. energetic \"Fresh as a daisy\" is an idiom that means someone is full of energy and alertness. Energetic directly captures this sense of vitality and enthusiasm. Innocent implies a lack of experience. Flushed suggests someone is red- faced or embarrassed. Delicate suggests fragility.","fmt":""}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the most appropriate phrasal verb. I am very excited to meet you, you can _______ on me any time.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>drop off</span></div><div class="option"><span class="key">b</span><span>drop out</span></div><div class="option"><span class="key">c</span><span>drop back</span></div><div class="option"><span class="key">d</span><span>drop in</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -644,7 +648,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The most appropriate phrasal verb here is: D. drop in Drop off - This implies leaving someone or something somewhere. Drop out - This means to quit or stop participating in something. Drop back - This means to fall behind or slow down. Drop in - This signifies arriving at a place for a short visit. So, \"Drop in\" suggests you're welcome to visit them anytime for a casual chat.","fmt":""}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given Exemplary</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Bad</span></div><div class="option"><span class="key">b</span><span>Ordinary</span></div><div class="option"><span class="key">c</span><span>Excellent</span></div><div class="option"><span class="key">d</span><span>Average</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -656,7 +660,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Exemplary means something that is very good and worthy of imitation or praise. So the closest synonym is: C (Excellent)","fmt":""}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that can be used as a one- word substitute for the given group of words. Money collected from people for a cause.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Collection</span></div><div class="option"><span class="key">b</span><span>Deposit</span></div><div class="option"><span class="key">c</span><span>Fund</span></div><div class="option"><span class="key">d</span><span>Savings</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -668,7 +672,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Correct option: C Fund Explanation: A “fund” refers to money collected or set aside for a specific purpose or cause.","fmt":""}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that can be used as a one- word substitute for the given group of words. Loud enough to be heard.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Audible</span></div><div class="option"><span class="key">b</span><span>Audit</span></div><div class="option"><span class="key">c</span><span>Audacious</span></div><div class="option"><span class="key">d</span><span>Audacity</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -680,7 +684,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Correct option: A Audible Explanation: “Audible” means loud enough to be heard. The other options have different meanings.","fmt":""}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given word. Proficient</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Glamorous</span></div><div class="option"><span class="key">b</span><span>Accomplished</span></div><div class="option"><span class="key">c</span><span>Callous</span></div><div class="option"><span class="key">d</span><span>Recalcitrant</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -692,7 +696,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Proficient means skilled, competent, or well- trained in a particular activity. The closest synonym is: B (Accomplished) Option A Glamorous means attractive or stylish, not related to skill. Incorrect. Option B Accomplished means highly skilled or proficient. Correct. Option C Callous means insensitive or unfeeling. Incorrect. Option D Recalcitrant means stubbornly disobedient. Incorrect.","fmt":""}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate ANTONYM of the given word. Excessive</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Moderate</span></div><div class="option"><span class="key">b</span><span>Flow</span></div><div class="option"><span class="key">c</span><span>Inordinate</span></div><div class="option"><span class="key">d</span><span>Desirable</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -704,7 +708,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Excessive means too much or more than necessary. Now the options: Option A Moderate means within reasonable limits or not too much. This is the correct antonym. Option B Flow means smooth movement, unrelated in meaning. Option C Inordinate means also excessive or too much, so it is similar not opposite. Option D Desirable means wanted or pleasing, not an antonym of excessive. Correct answer A Moderate","fmt":""}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the option that can be used as a one- word substitute for the given group of words. One who looks at the bright side of things/situations</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Saint</span></div><div class="option"><span class="key">b</span><span>Optimist</span></div><div class="option"><span class="key">c</span><span>Pessimist</span></div><div class="option"><span class="key">d</span><span>Scientist</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -716,7 +720,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Correct option: B Optimist Explanation: An “optimist” is a person who looks at the positive or bright side of situations.","fmt":""}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the synonym of 'instinctive':</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Artificial</span></div><div class="option"><span class="key">b</span><span>Learned</span></div><div class="option"><span class="key">c</span><span>Intrinsic</span></div><div class="option"><span class="key">d</span><span>Acquired</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -728,7 +732,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Answer: c) Intrinsic Solution: Instinctive means something natural or inherent. Intrinsic matches this meaning. Others (artificial, learned, acquired) imply something gained externally.","fmt":""}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the meaning of the underlined idiom/phrase in the given sentence. He threw cold water over the project that the secretary had prepared.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>rejected</span></div><div class="option"><span class="key">b</span><span>encouraged</span></div><div class="option"><span class="key">c</span><span>cleared</span></div><div class="option"><span class="key">d</span><span>discouraged</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -740,7 +744,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\"Threw cold water\" is an idiom meaning to discourage or reduce enthusiasm for something. Correct Answer: D - discouraged","fmt":""}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the word similar in meaning to the word given below : Doubt</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>ignorance</span></div><div class="option"><span class="key">b</span><span>dullness</span></div><div class="option"><span class="key">c</span><span>mistake</span></div><div class="option"><span class="key">d</span><span>misgiving</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -752,7 +756,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Ignorance means lack of knowledge. Dullness refers to lack of brightness or excitement. Mistake is an error. Misgiving is a feeling of doubt or apprehension. Hence, Misgiving is the answer.","fmt":""}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the word opposite in meaning to the word given below : Reveal</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>appeal</span></div><div class="option"><span class="key">b</span><span>conceal</span></div><div class="option"><span class="key">c</span><span>venal</span></div><div class="option"><span class="key">d</span><span>slake</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -764,7 +768,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The word \"reveal\" means to show or make known. The opposite would be a word that means to hide or keep secret. Appeal means to make a serious request, not the opposite of reveal. Conceal means to hide, which is the opposite of reveal. Venal means corrupt, unrelated to reveal. Slake means to satisfy thirst, unrelated to reveal. Correct Answer: B - Conceal","fmt":""}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate ANTONYM of the given word. Hospitality</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Complaint</span></div><div class="option"><span class="key">b</span><span>Coldness</span></div><div class="option"><span class="key">c</span><span>Cordiality</span></div><div class="option"><span class="key">d</span><span>Wrathful</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -776,7 +780,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Correct Option: B (Coldness) Meaning of correct word: Hospitality: The friendly and generous reception and entertainment of guests or strangers. Example: They showed great hospitality to the visiting delegation. Coldness: Lack of warmth, enthusiasm, or affection. Example: Her coldness towards the new neighbors was apparent. Other options: Complaint: A statement that something is unsatisfactory or unacceptable. Cordiality: Warmth and friendliness. Wrathful: Full of or characterized by intense anger.","fmt":""}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate synonym of the given word. Obligatory</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Unnecessary</span></div><div class="option"><span class="key">b</span><span>Compulsory</span></div><div class="option"><span class="key">c</span><span>Chosen</span></div><div class="option"><span class="key">d</span><span>Optional</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -788,7 +792,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Correct Option: B (Compulsory) Explanation: Obligatory: Required by a legal, moral, or other rule; compulsory. Compulsory: Required by law or a rule; obligatory. Both words mean that something is required or mandatory. Other options: Unnecessary: Not needed. Chosen: Selected as an option. Optional: Available to be chosen but not obligatory.","fmt":""}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the sentence that has the correct use of spellings from the given options.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>In spite of the challenges possed by the pandamic, the company adapted to remotework and successfully maintained productivity levels.</span></div><div class="option"><span class="key">b</span><span>In spite of the challenges posed by the pandamic, the company adapted to remotework and successfuly maintained productvity levels.</span></div><div class="option"><span class="key">c</span><span>In spite of the challenges posed by the pandemic, the company adapted to remotework and successfully maintained productivity levels.</span></div><div class="option"><span class="key">d</span><span>In spite of the challenges possed by the pandemic, the company adapted to remotework and succesfully maintained productevity levels.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -800,7 +804,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Let us understand the given options: Option A- incorrect spelling' possed '& 'pandamic' Option B- incorrect spelling ' pandamic' Option C - all spellings are correct. Option D- incorrect spelling 'possed' Correct spellings would be- 'posed' and 'pandemic' Hence, the sentence that has the correct use of spellings from the given options is: In spite of the challenges posed by the pandemic, the company adapted to remote work and successfully maintained productivity levels. Option C is correct.","fmt":""}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the most appropriate antonym of the given word. AMASS</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>collect</span></div><div class="option"><span class="key">b</span><span>horde</span></div><div class="option"><span class="key">c</span><span>heap</span></div><div class="option"><span class="key">d</span><span>distribute</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -812,7 +816,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Amass is a verb that means to gather or accumulate a large quantity of something. For example: The billionaire had managed to amass a fortune over the years through his business ventures. Let us first understand the given options: Collect is also a verb that means to bring together or gather a group of things. It can also refer to the hobby or practice of accumulating items, such as stamps or coins. Example: My grandmother used to collect vintage postcards from around the world. Horde is a noun that refers to a large group or crowd of people or things, typically with a negative connotation. Example: The horde of mosquitoes made it impossible to enjoy the outdoor picnic. Heap is a noun or verb that means to gather or accumulate a large quantity of something, often in a disorderly or haphazard manner. Example: The clothes were heaped in a messy pile on the floor. Distribute is a verb that means to give out or disperse something among a group or individuals. Example: The charity organization distributes food and clothing to those in need. Hence, “distribute” is the most appropriate antonym for the word “AMASS”.","fmt":""}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Directions: In the following question, a word is given in bold. Choose the option that is the most appropriate synonym of the given word. Predilection</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Dislike</span></div><div class="option"><span class="key">b</span><span>Preference</span></div><div class="option"><span class="key">c</span><span>Ignorance</span></div><div class="option"><span class="key">d</span><span>Apathy</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -824,7 +828,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Correct Answer: B. Preference Explanation: Predilection = a strong liking or special preference for something. Dislike = opposite in meaning (antonym). Ignorance = lack of knowledge, unrelated. Apathy = lack of interest or concern. Preference = closest synonym, since both mean an inclination or fondness for something.","fmt":""}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Directions: In these questions, choose the word opposite in meaning to the word given in the bold. Procrastinate</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Experiment</span></div><div class="option"><span class="key">b</span><span>Expedite</span></div><div class="option"><span class="key">c</span><span>Exclude</span></div><div class="option"><span class="key">d</span><span>Propagate</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -836,7 +840,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Word: Procrastinate Correct Antonym: B) Expedite 🟢 Explanation: Procrastinate means to delay or postpone doing something. Expedite means to speed up a process or make something happen faster. Other options: A) Experiment: to try something C) Exclude: to leave out D) Propagate: to spread ✅ Answer: B) Expedite","fmt":""}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the word which best expresses nearly the same meaning of the given word. MITIGATE</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Heighten</span></div><div class="option"><span class="key">b</span><span>Relieve</span></div><div class="option"><span class="key">c</span><span>Misuse</span></div><div class="option"><span class="key">d</span><span>Pacify</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

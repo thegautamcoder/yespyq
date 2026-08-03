@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Chemical Coordination and Integration","item":"https://yespyq.com/exams/neet/biology/chemical-coordination-and-integration/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Chemical Coordination and Integration</h1>
       <p>26 NEET Biology previous year questions on <b>Chemical Coordination and Integration</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fight-or-flight reactions cause activation of;</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>the parathyroid glands, leading to increased metabolic rate.</span></div><div class="option"><span class="key">b</span><span>the kidney, leading to suppression of reninangiotensin-aldosterone pathway.</span></div><div class="option correct"><span class="key">c</span><span>the adrenal medulla, leading to increased secretion of epinephrine and norepinephrine.</span></div><div class="option"><span class="key">d</span><span>the pancreas leading to a reduction in the blood sugar levels.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The amino acid tryptophan is the precursor for the synthesis of</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Thyroxine and tri-iodothyronine</span></div><div class="option"><span class="key">b</span><span>Estrogen and progesterone</span></div><div class="option"><span class="key">c</span><span>Cortisol and cortisone</span></div><div class="option correct"><span class="key">d</span><span>Melatonin and Serotonin</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the correct statement [NEET 2020]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Glucagon is associated with hypoglycemia.</span></div><div class="option"><span class="key">b</span><span>Insulin acts on pancreatic cells and adipocytes.</span></div><div class="option"><span class="key">c</span><span>Insulin is associated with hyperglycemia.</span></div><div class="option correct"><span class="key">d</span><span>Glucocorticoids stimulate gluconeogenesis.</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the<strong> List-I</strong> with <strong>List-II</strong>.</p> <table> <tbody> <tr> <td> </td> <td><strong>List-I</strong></td> <td> </td> <td><strong>List-II</strong></td> </tr> <tr> <td>A.</td> <td>Exophthalmic goiter </td> <td>I.</td> <td>Excess secretion of cortisol</td> </tr> <tr> <td>B.</td> <td>Acromegaly </td> <td>II.</td> <td>Hypo-secretion of thyroid hormone </td> </tr> <tr> <td>C.</td> <td>Cushing's syndrome</td> <td>III.</td> <td>Hyper secretion of thyroid hormone</td> </tr> <tr> <td>D.</td> <td>Cretinism </td> <td>IV.</td> <td>Excessive secretion of growth hormone. </td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below : </p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-I, B-III, C-II, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-IV, C-II, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>(A) Exophthalmic goiter - (III) Hypersecretion of thyroid hormone &amp; protruding eyeballs\u003c/li> \u003cli>(B) Acromegaly - (IV) Excessive secretion of growth hormone\u003c/li> \u003cli>(C) Cushing’s syndrome - (I) Excess secretion of cortisol, moon face &amp; hyperglycemia\u003c/li> \u003cli>(D) Cretinism - (II) Hyposecretion of thyroid hormone and stunted growth\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements related to pituitary gland are correct?</p> <p>(a) It is divided anatomically into adenohypophysis and neurohypophysis.</p> <p>(b) It secretes follicle stimulating hormone.</p> <p>(c) It secretes melanocyte stimulating hormone.</p> <p>(d) It does not secrete prolactin.</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(a) and (b) only</p></span></div><div class="option"><span class="key">b</span><span><p>(a), (b) and (c) only</p></span></div><div class="option"><span class="key">c</span><span><p>(c) and (d) only</p></span></div><div class="option"><span class="key">d</span><span><p>(b) and (c) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>(a) It is divided anatomically into adenohypophysis and neurohypophysis. \u003cbr/>The pituitary gland is anatomically divided into adenohypophysis (anterior pituitary) and neurohypophysis (posterior pituitary).\u003c/li> \u003cli>(b) It secretes follicle stimulating hormone (FSH). \u003cbr/>FSH is secreted by the anterior pituitary (adenohypophysis) and regulates gamete formation.\u003c/li> \u003cli>(c) It secretes melanocyte stimulating hormone (MSH). \u003cbr/>The pars intermedia of the adenohypophysis secretes melanocyte-stimulating hormone (MSH).\u003c/li> \u003cli>(d) It does not secrete prolactin. \u003cbr/>This statement is incorrect because prolactin (PRL) is secreted by the anterior pituitary gland and stimulates milk production after childbirth.\u003c/li> \u003c/ul> \u003cp>Therefore, statements (a), (b), and (c) are correct, while (d) is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a steroid hormone?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Glucagon</p></span></div><div class="option"><span class="key">b</span><span><p>Cortisol</p></span></div><div class="option"><span class="key">c</span><span><p>Testosterone</p></span></div><div class="option"><span class="key">d</span><span><p>Progesterone</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Glucagon is a \u003cstrong>peptide hormone\u003c/strong> secreted by the alpha cells of the pancreas and helps regulate blood glucose levels. Unlike cortisol, testosterone, and progesterone, which are \u003cstrong>steroid hormones\u003c/strong>, glucagon is \u003cstrong>not a steroid hormone\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II :</p> <table> <tbody> <tr> <td>LIST I</td> <td>LIST II</td> </tr> <tr> <td>A) Epinephrine</td> <td>I) Hyperglycemia</td> </tr> <tr> <td>B) Thyroxine</td> <td>II) Smooth muscle contraction</td> </tr> <tr> <td>C) Oxytocin</td> <td>III) Basal metabolic rate</td> </tr> <tr> <td>D) Glucagon</td> <td>IV) Emergency hormone</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-I, C-IV, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-I, B-IV, C-III, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>\u003cstrong>A) Epinephrine\u003c/strong> is known as the \u003cstrong>emergency hormone\u003c/strong> because it is released in response to stress and prepares the body for a \"fight-or-flight\" response.\u003c/li> \u003cli>\u003cstrong>B) Thyroxine\u003c/strong> is the main hormone secreted by the thyroid gland and plays a crucial role in regulating the body's \u003cstrong>basal metabolic rate\u003c/strong> (BMR).\u003c/li> \u003cli>\u003cstrong>C) Oxytocin\u003c/strong> is involved in the birth process by causing the \u003cstrong>smooth muscle contraction\u003c/strong> of the uterus during labor, and also in milk ejection during breastfeeding.\u003c/li> \u003cli>\u003cstrong>D) Glucagon\u003c/strong> is a peptide hormone produced by the pancreas that raises blood glucose levels by stimulating the liver to convert stored glycogen into glucose (\u003cstrong>hyperglycemia\u003c/strong>).\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the <strong>wrong </strong>statements:<br/>A. Erythropoietin is produced by juxtaglomerular cells of the kidney<br/>B. Leydig cells produce Androgens<br/>C. Atrial Natriuretic factor, a peptide hormone is secreted by the seminiferous tubules of the testes<br/>D. Cholecystokinin is produced by gastrointestinal tract<br/>E. Gastrin acts on intestinal wall and helps in the production of pepsinogen<br/>Choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A and Conly</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>    \u003cstrong>C is wrong:\u003c/strong>  Atrial Natriuretic factor (ANF) is produced by the heart, not the seminiferous tubules of the testes.            \u003c/li> \u003cli>    \u003cstrong>E is wrong:\u003c/strong>  Gastrin acts on the stomach, not the intestinal wall, and stimulates the production of hydrochloric acid, not pepsinogen.     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following statements regarding function of adrenal medullary hormones :<br/>A. It causes pupilary constriction<br/>B. It is a hyperglycemic hormone<br/>C. It causes piloerection<br/>D. It increases strength of heart contraction<br/>Choose the correct answer from the options given below</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C and D Only</p></span></div><div class="option"><span class="key">b</span><span><p>D Only</p></span></div><div class="option"><span class="key">c</span><span><p>C and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C and D Only </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The \u003cstrong>adrenal medulla\u003c/strong> secretes two main hormones — \u003cstrong>adrenaline (epinephrine)\u003c/strong> and \u003cstrong>noradrenaline (norepinephrine)\u003c/strong> — which are part of the \u003cstrong>fight or flight response\u003c/strong>.\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>B. Hyperglycemic hormone\u003c/strong> : These hormones increase \u003cstrong>blood sugar levels\u003c/strong> by stimulating glycogen breakdown, so they are \u003cstrong>hyperglycemic\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Causes piloerection\u003c/strong> : They cause \u003cstrong>piloerection\u003c/strong> (hair standing on end) as part of a stress response.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Increases heart strength\u003c/strong> : Adrenaline increases the \u003cstrong>strength and rate\u003c/strong> of heart contractions.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>A. Pupillary constriction\u003c/strong> : These hormones cause \u003cstrong>pupil dilation\u003c/strong> (not constriction) to improve vision in danger.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, the correct option is \u003cstrong>D: B, C and D only\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a steroid hormone?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Glucagon</p></span></div><div class="option"><span class="key">b</span><span><p>Cortisol</p></span></div><div class="option"><span class="key">c</span><span><p>Testosterone</p></span></div><div class="option"><span class="key">d</span><span><p>Progesterone</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Glucagon is a \u003cstrong>peptide hormone\u003c/strong> secreted by the alpha cells of the pancreas and helps regulate blood glucose levels. Unlike cortisol, testosterone, and progesterone, which are \u003cstrong>steroid hormones\u003c/strong>, glucagon is \u003cstrong>not a steroid hormone\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following hormones released from the pituitary is actually synthesized in the hypothalamus?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Follicle-stimulating hormone (FSH)</p></span></div><div class="option"><span class="key">b</span><span><p>Adenocorticotrophic hormone (ACTH)</p></span></div><div class="option"><span class="key">c</span><span><p>Luteinizing hormone (LH)</p></span></div><div class="option"><span class="key">d</span><span><p>Anti-diuretic hormone (ADH)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Anti-diuretic hormone (ADH)\u003c/strong>, also called \u003cstrong>vasopressin\u003c/strong>, is \u003cstrong>released by the posterior pituitary\u003c/strong>, but it is actually \u003cstrong>synthesized in the hypothalamus\u003c/strong> — specifically in the \u003cstrong>supraoptic and paraventricular nuclei\u003c/strong>. After synthesis, ADH is transported to the \u003cstrong>posterior pituitary\u003c/strong> through nerve fibers and released into the blood. ADH helps in \u003cstrong>water reabsorption\u003c/strong> in the kidneys, reducing water loss in urine.\u003c/p> \u003cp>On the other hand, hormones like \u003cstrong>FSH\u003c/strong>, \u003cstrong>LH\u003c/strong>, and \u003cstrong>ACTH\u003c/strong> are \u003cstrong>synthesized and secreted\u003c/strong> by the \u003cstrong>anterior pituitary\u003c/strong>, not the hypothalamus.\u003c/p> \u003cp> So, the correct answer is \u003cstrong>Option D: ADH\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Why can't insulin be given orally to diabetic patients?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Because of structural variation</p></span></div><div class="option"><span class="key">b</span><span><p>Its bioavailability will be increased</p></span></div><div class="option"><span class="key">c</span><span><p>Human body will elicit strong immune response</p></span></div><div class="option"><span class="key">d</span><span><p>It will be digested in Gastro-Intestinal (GI) tract</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Insulin\u003c/strong> is a \u003cstrong>protein hormone\u003c/strong>, and if it is taken \u003cstrong>orally\u003c/strong>, it will pass through the \u003cstrong>digestive system\u003c/strong>. In the \u003cstrong>stomach and intestines\u003c/strong>, there are \u003cstrong>digestive enzymes\u003c/strong> that break down proteins into \u003cstrong>amino acids\u003c/strong>. This means the insulin would be \u003cstrong>broken down before it can enter the bloodstream\u003c/strong>, making it \u003cstrong>ineffective\u003c/strong>.\u003c/p> \u003cp>That’s why insulin is usually given through \u003cstrong>injections\u003c/strong>, which allow it to go directly into the bloodstream and work properly to control blood sugar levels.\u003c/p> \u003cp>So, the correct answer is \u003cstrong>D — It will be digested in the GI tract\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List - I with List - II.</p> <table> <tbody> <tr> <td> <p><strong>List -I</strong></p> </td> <td> <p><strong>List -II</strong></p> </td> </tr> <tr> <td> <p>A. Progesterone</p> </td> <td> <p>I. Pars intermedia</p> </td> </tr> <tr> <td> <p>B. Relaxin</p> </td> <td> <p>II. Ovary</p> </td> </tr> <tr> <td> <p>C. Melanocyte stimulating hormone</p> </td> <td> <p>III. Adrenal Medulla</p> </td> </tr> <tr> <td> <p>D.Catecholamines</p> </td> <td> <p>IV. Corpus luteum</p> </td> </tr> </tbody> </table> <p><br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> A-II, B-IV, C-I, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-IV, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-II, C-III, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>A. Progesterone – IV. Corpus luteum: Progesterone is mainly secreted by the corpus luteum in the ovary after ovulation. It helps in maintaining the uterine lining for pregnancy.\u003c/p> \u003cp>B. Relaxin – II. Ovary: Relaxin is produced by the ovary during pregnancy. It helps relax the pelvic ligaments and prepare the uterus for childbirth.\u003c/p> \u003cp>C. Melanocyte Stimulating Hormone (MSH) – I. Pars intermedia: MSH is secreted by the pars intermedia of the pituitary gland. It stimulates melanin production in the skin.\u003c/p> \u003cp>D. Catecholamines – III. Adrenal medulla: Catecholamines like adrenaline are secreted by the adrenal medulla during stress.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R :<br/>Assertion A : FSH acts upon ovarian follicles in female and Leydig cells in male.<br/>Reason R : Growing ovarian follicles secrete estrogen in female while interstitial cells secrete androgen in male human being.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is false but R is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are true and R is the correct explanation of A.</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are true but R is NOT the correct explanation of A.</p></span></div><div class="option"><span class="key">d</span><span><p>A is true but R is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>FSH (Follicle Stimulating Hormone) acts on ovarian follicles in females to stimulate follicular growth and estrogen secretion.\u003c/p> \u003cp>However, in males, FSH does not act on Leydig cells. It acts on Sertoli cells in the seminiferous tubules to support spermatogenesis.\u003c/p> \u003cp>Leydig cells are acted upon by LH (Luteinizing Hormone), not FSH.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the <strong>wrong </strong>statements:<br/>A. Erythropoietin is produced by juxtaglomerular cells of the kidney<br/>B. Leydig cells produce Androgens<br/>C. Atrial Natriuretic factor, a peptide hormone is secreted by the seminiferous tubules of the testes<br/>D. Cholecystokinin is produced by gastrointestinal tract<br/>E. Gastrin acts on intestinal wall and helps in the production of pepsinogen<br/>Choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>    \u003cstrong>C is wrong:\u003c/strong>  Atrial Natriuretic factor (ANF) is produced by the heart, not the seminiferous tubules of the testes.     \u003c/li> \u003cli>    \u003cstrong>E is wrong:\u003c/strong>  Gastrin acts on the stomach, not the intestinal wall, and stimulates the production of hydrochloric acid, not pepsinogen.     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a steroid hormone?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Glucagon</p></span></div><div class="option"><span class="key">b</span><span><p>Cortisol</p></span></div><div class="option"><span class="key">c</span><span><p>Testosterone</p></span></div><div class="option"><span class="key">d</span><span><p>Progesterone</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Glucagon is a \u003cstrong>peptide hormone\u003c/strong> secreted by the alpha cells of the pancreas and helps regulate blood glucose levels. Unlike cortisol, testosterone, and progesterone, which are \u003cstrong>steroid hormones\u003c/strong>, glucagon is \u003cstrong>not a steroid hormone\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statements is incorrect?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\alpha\)-cells of pancreas secrete glucagon</p></span></div><div class="option"><span class="key">b</span><span><p>\(\alpha\)-cells of pancreas secrete insulin</p></span></div><div class="option"><span class="key">c</span><span><p>Glucagon stimulates glycogenolysis</p></span></div><div class="option"><span class="key">d</span><span><p>\(\beta\)-cells of pancreas secrete insulin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The endocrine part of the pancreas consists of Islets of Langerhans, containing two main primary types of cells: \\(\\alpha\\)-cells secrete glucagon (a hyperglycemic hormone). Thus statement (A) is correct, and statement (C) is correct because glucagon acts on hepatocytes to stimulate glycogenolysis. \\(\\beta\\)-cells secrete insulin (a hypoglycemic hormone). Thus statement (D) is correct. Statement (B) states that \\(\\alpha\\)-cells secrete insulin, which is entirely false/incorrect. Hence, option (B) is the correct answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the <strong>List</strong><strong>-I </strong>with <strong>List-II.</strong></p> <table> <tbody> <tr> <td> <p><strong>Column-I</strong></p> </td> <td> <p><strong>Column-II</strong></p> </td> </tr> <tr> <td> <p>1.</p> </td> <td> <p>Pituitary hormone</p> </td> <td> <p>(i)</p> </td> <td> <p>Steroid</p> </td> </tr> <tr> <td> <p>2.</p> </td> <td> <p>Epinephrine</p> </td> <td> <p>(ii)</p> </td> <td> <p>Neuropeptides</p> </td> </tr> <tr> <td> <p>3.</p> </td> <td> <p>Endorphins</p> </td> <td> <p>(iii)</p> </td> <td> <p>Peptides, proteins</p> </td> </tr> <tr> <td> <p>4.</p> </td> <td> <p>Cortisol</p> </td> <td> <p>(iv)</p> </td> <td> <p>Biogenic amines</p> </td> </tr> </tbody> </table> <p><strong> </strong></p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1-(iii), 2-(iv), 3-(ii),4-(i)</p></span></div><div class="option"><span class="key">b</span><span><p>1-(iv), 2-(iii), 3-(i), 4-(ii)</p></span></div><div class="option"><span class="key">c</span><span><p>1-(iii), 2-(iv), 3(i), 4-(ii)</p></span></div><div class="option"><span class="key">d</span><span><p>1-(iv), 2-(i), 3-(ii), 4-(iii)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Pituitary hormone\u003c/strong> is a \u003cstrong>peptide or protein\u003c/strong> hormone.\u003c/p> \u003cp>\u003cstrong>Epinephrine\u003c/strong> is a \u003cstrong>biogenic amine\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Endorphins\u003c/strong> are \u003cstrong>neuropeptides\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Cortisol\u003c/strong> is a \u003cstrong>steroid\u003c/strong> hormone.\u003c/p> \u003cp>Therefore, the correct option is \u003cstrong>C\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>1-(iii):\u003c/strong> Pituitary hormones (e.g., GH, TSH) are protein-based.\u003c/p> \u003cp>\u003cstrong>2-(iv):\u003c/strong> Epinephrine (Adrenaline) is a modified amino acid, making it a biogenic amine.\u003c/p> \u003cp>\u003cstrong>3-(ii):\u003c/strong> Endorphins are chains of amino acids (peptides) that act on the nervous system, hence they are neuropeptides.\u003c/p> \u003cp>\u003cstrong>4-(i):\u003c/strong> Cortisol is a steroid hormone derived from cholesterol.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are <strong>not</strong> under the control of thyroid hormone?<br/>I. Influence on maintenance of water and electrolyte balance.<br/>II. Regulation of basal metabolic rate<br/>III. Normal rhythm of sleep-wake cycle<br/>IV. Development of immune system<br/>V. Support the process of R.B.Cs formation</p> <p>Choose the<strong> correct</strong> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>II and III only</p></span></div><div class="option"><span class="key">b</span><span><p>III and IV only</p></span></div><div class="option"><span class="key">c</span><span><p>IV and V only</p></span></div><div class="option"><span class="key">d</span><span><p>I and IV only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Thyroid hormones play an important role in the regulation of the basal metabolic rate.\u003c/li> \u003cli>These hormones also support the process of red blood cell formation.\u003c/li> \u003cli>Thyroid hormones control the metabolism of carbohydrates, proteins and fats.\u003c/li> \u003cli>Maintenance of water and electrolyte balance is also influenced by thyroid hormones. \u003c/li> \u003cli>Melatonin plays a very important role in the regulation of a 24-hour (diurnal) rhythm of our body. For example, it helps in maintaining the normal rhythms of sleep-wake cycle, body temperature.\u003c/li> \u003cli>In addition, melatonin also influences metabolism, pigmentation, the menstrual cycle as well as our defense capability.\u003c/li> \u003cli>The thymus plays a major role in the development of the immune system.\u003c/li> \u003cli>This gland secretes the peptide hormones called thymosins.\u003c/li> \u003cli>Thymosins play a major role in the differentiation of T-lymphocytes, which provide cell-mediated immunity.\u003c/li> \u003cli>In addition, thymosins also promote production of antibodies to provide humoral immunity. \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hormones stored and released from neurohypophysis are</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Oxytocin and Vasopressin</p></span></div><div class="option"><span class="key">b</span><span><p>Follicle stimulating hormone and luteinizing hormone</p></span></div><div class="option"><span class="key">c</span><span><p>Prolactin and Vasopressin</p></span></div><div class="option"><span class="key">d</span><span><p>Thyroid stimulating hormone and oxytocin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Neurohypophysis (pars nervosa) also known as posterior pituitary, stores and releases two hormones called oxytocin and vasopressin, which are actually synthesised by the hypothalamus and are transported axonally to neurohypophysis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Erythropoietin hormone which stimulates R.B.C. formation is produced by:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>juxtaglomerular cells of the kidney.</p></span></div><div class="option"><span class="key">b</span><span><p>alpha cells of pancreas. </p></span></div><div class="option"><span class="key">c</span><span><p>the cells of rostral adenohypophysis. </p></span></div><div class="option"><span class="key">d</span><span><p>the cells of bone marrow. </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Erythropoietin\u003c/strong> is secreted by \u003cstrong>juxtaglomerular cells of the kidney\u003c/strong>, stimulating \u003cstrong>RBC formation (erythropoiesis)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Erythropoietin hormone which stimulates RBC formation is produced by:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>juxtaglomerular cells of the kidney.</p></span></div><div class="option"><span class="key">b</span><span><p>alpha cells of pancreas. </p></span></div><div class="option"><span class="key">c</span><span><p>the cells of rostral adenohypophysis. </p></span></div><div class="option"><span class="key">d</span><span><p>the cells of bone marrow. </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Erythropoietin\u003c/strong> is secreted by \u003cstrong>juxtaglomerular cells of the kidney\u003c/strong>, stimulating \u003cstrong>RBC formation (erythropoiesis)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Presence of which of the following conditions in urine are indicative of diabetes mellitus?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Uremia and Ketonuria</p></span></div><div class="option"><span class="key">b</span><span><p>Uremia and Renal Calculi</p></span></div><div class="option"><span class="key">c</span><span><p>Ketonuria and Glycosuria</p></span></div><div class="option"><span class="key">d</span><span><p>Renal calculi and Hyperglycaemia</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Glycosuria: When blood glucose levels rise above the kidney's threshold (as in Diabetes Mellitus), glucose is excreted in the urine. Ketonuria: In the absence of insulin, cells cannot use glucose for energy and begin breaking down fats. This produces ketone bodies (like acetoacetate) as a byproduct, which are then excreted in the urine. The combination of these two conditions is diagnostic for Diabetes Mellitus.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the following columns and select the correct option.</p> <table> <thead> <tr> <th>List - I</th> <th>List - II</th> </tr> </thead> <tbody> <tr> <td>(1) </td> <td>Pituitary gland</td> <td>(i) </td> <td>Grave's disease</td> </tr> <tr> <td>(2) </td> <td>Thyroid gland</td> <td>(ii) </td> <td>Diabetes mellitus</td> </tr> <tr> <td>(3) </td> <td>Adrenal gland</td> <td>(iii) </td> <td>Diabetes insipidus</td> </tr> <tr> <td> <p>(4) </p> </td> <td>Pancreas</td> <td>(iv) </td> <td>Addison's disease</td> </tr> </tbody> </table> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(a)-(iv), (b)-(iii), (c)-(i), (d)-(ii)</p></span></div><div class="option"><span class="key">b</span><span><p>(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)</p></span></div><div class="option"><span class="key">c</span><span><p>(a)-(iii), (b)-(i), (c)-(iv), (d)-(ii)</p></span></div><div class="option"><span class="key">d</span><span><p>(a)-(ii), (b)-(i), (c)-(iv), (D)-(iii)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>PItuitary gland - Diabetes insipidus happens when damage to a person's hypothalamus or pituitary gland causes disruptions in the normal production, storage, and release of vasopressin. The disruption of vasopressin causes the kidneys to remove too much fluid from the body, leading to an increase in urination. Thyroid gland - Due to an immune system disorder that results in the overproduction of thyroid hormones (hyperthyroidism) that is Grave's disease. Adrenal gland - In Addison's disease, the adrenal glands located just above your kidneys produce too little cortisol and, often, too little aldosterone. Pancreas - Due to the abnormal production of pancreatic hormone named insulin, diabetes mellitus may occur.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are <strong>not</strong> under the control of thyroid hormone?<br/>I. Influence on maintenance of water and electrolyte balance.<br/>II. Regulation of basal metabolic rate<br/>III. Normal rhythm of sleep-wake cycle<br/>IV. Development of immune system<br/>V. Support the process of R.B.Cs formation</p> <p>Choose the<strong> correct</strong> answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>II and III only</p></span></div><div class="option"><span class="key">b</span><span><p>III and IV only</p></span></div><div class="option"><span class="key">c</span><span><p>IV and V only</p></span></div><div class="option"><span class="key">d</span><span><p>I and IV only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Thyroid hormones play an important role in the regulation of the basal metabolic rate.\u003c/li> \u003cli>These hormones also support the process of red blood cell formation.\u003c/li> \u003cli>Thyroid hormones control the metabolism of carbohydrates, proteins and fats.\u003c/li> \u003cli>Maintenance of water and electrolyte balance is also influenced by thyroid hormones. \u003c/li> \u003cli>Melatonin plays a very important role in the regulation of a 24-hour (diurnal) rhythm of our body. For example, it helps in maintaining the normal rhythms of sleep-wake cycle, body temperature.\u003c/li> \u003cli>In addition, melatonin also influences metabolism, pigmentation, the menstrual cycle as well as our defense capability.\u003c/li> \u003cli>The thymus plays a major role in the development of the immune system.\u003c/li> \u003cli>This gland secretes the peptide hormones called thymosins.\u003c/li> \u003cli>Thymosins play a major role in the differentiation of T-lymphocytes, which provide cell-mediated immunity.\u003c/li> \u003cli>In addition, thymosins also promote production of antibodies to provide humoral immunity. \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II :</p> <table> <tbody> <tr> <td>LIST I</td> <td>LIST II</td> </tr> <tr> <td>A) Epinephrine</td> <td>I) Hyperglycemia</td> </tr> <tr> <td>B) Thyroxine</td> <td>II) Smooth muscle contraction</td> </tr> <tr> <td>C) Oxytocin</td> <td>III) Basal metabolic rate</td> </tr> <tr> <td>D) Glucagon</td> <td>IV) Emergency hormone</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-I, C-IV, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-I, B-IV, C-III, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

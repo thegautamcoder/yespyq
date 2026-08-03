@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Geography","item":"https://yespyq.com/exams/board/geography/"},{"@type":"ListItem","position":5,"name":"Transport and Communication: World","item":"https://yespyq.com/exams/board/geography/transport-and-communication-world/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Transport and Communication: World</h1>
       <p>4 Board Geography previous year questions on <b>Transport and Communication: World</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two statements are given below. They are Assertion (A) and Reason (R). Read them carefully and choose the correct option.<br/>Assertion (A): “Waterway is an important mode of transport both for passengers and cargo traffic in India.”<br/>Reason (R): “It is fuel efficient and eco-friendly mode of transport.”</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Both (A) and (R) are correct and (R) is correct explanation of (A).</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct, but (R) is not correct explanation of (A).</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is correct, but (R) is incorrect.</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is incorrect, but (R) is correct.</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the Column-I with Column-II and choose the correct option:</p> <table> <tbody> <tr> <td> <p>Column-I (Railway Zone)</p> </td> <td> <p>Column-II (Headquarters)</p> </td> </tr> <tr> <td> <p>A. Northern</p> </td> <td> <p> (i) Hajipur</p> </td> </tr> <tr> <td> <p>B. South Central</p> </td> <td> <p> (ii) Chennai</p> </td> </tr> <tr> <td> <p>C. Southern</p> </td> <td> <p> (iii) New Delhi</p> </td> </tr> <tr> <td> <p>D. East Central</p> </td> <td> <p>(iv) Secunderabad</p> </td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-(iv), B-(iii), C-(ii), D-(i)</p></span></div><div class="option"><span class="key">b</span><span><p>A-(iii), B-(iv), C-(ii), D- (i)</p></span></div><div class="option"><span class="key">c</span><span><p>A-(i), B-(ii), C-(iii), D-(iv)</p></span></div><div class="option"><span class="key">d</span><span><p>A-(ii), B-(iii), C-(iv), D-(i)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Based on the table of Indian Railways Zones and Headquarters: (a) Northern – New Delhi (iii); (b) South Central – Secunderabad (iv); (c) Southern – Chennai (ii); (d) East Central – Hajipur (i). \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following metro-cities is not linked with the ‘Golden Quadrilateral’?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Mumbai</p></span></div><div class="option"><span class="key">b</span><span><p>Chennai</p></span></div><div class="option"><span class="key">c</span><span><p>Hyderabad</p></span></div><div class="option"><span class="key">d</span><span><p>Delhi</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The Golden Quadrilateral (GQ) connects the four metropolitan cities: Delhi, Mumbai, Chennai, and Kolkata. Hyderabad is not one of these four core cities linked by the Golden Quadrilateral.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following railways is the longest in the world?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Trans-Siberian Railway<strong><br/></strong></p></span></div><div class="option"><span class="key">b</span><span><p>Trans-Canadian Railway</p></span></div><div class="option"><span class="key">c</span><span><p>The Australian Trans-Continental Railway</p></span></div><div class="option"><span class="key">d</span><span><p>The Orient Express Railway</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Ray Optics and Optical Instruments","item":"https://yespyq.com/exams/jee/physics/ray-optics-and-optical-instruments/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Ray Optics and Optical Instruments</h1>
       <p>92 JEE Physics previous year questions on <b>Ray Optics and Optical Instruments</b> — options free on every question; <b>9 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">An astronomical refracting telescope will have large angular magnification and high angular resolution, when it has an objective lens of</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>small focal length and large diameter</span></div><div class="option"><span class="key">b</span><span>large focal length and small diameter</span></div><div class="option correct"><span class="key">c</span><span>large focal length and large diameter</span></div><div class="option"><span class="key">d</span><span>small focal length and small diameter.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The reddish appearance of the sun at sunrise and sunset is due to the-</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>scattering of light.</span></div><div class="option"><span class="key">b</span><span>polarisation of light.</span></div><div class="option"><span class="key">c</span><span>colour of the sun.</span></div><div class="option"><span class="key">d</span><span>colour of the sky.</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin biconvex lens is prepared from the glass \((\mu =1.5)\) both curved surfaces of which have equal radii of 20 cm each. Left side surface of the lens is silvered from outside to make it reflecting. To have the position of image and object at the same place, the object should be placed, from the lens at a distance of _________ cm .</p> <p> </p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>12.5</p></span></div><div class="option"><span class="key">c</span><span><p>13</p></span></div><div class="option"><span class="key">d</span><span><p>13.5</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A convex lens made of glass (refractive index = 1.5 ) has focal length 24 cm in air. When it is totally immersed in water (refractive index = 1.33 ), its focal length changes to:</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(24cm\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(72cm\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(96cm\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(48cm\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A lens having refractive index 1.6 has focal length of 12 cm, when it is in air. Find the focal length of the lens when it is placed in water. (Take refractive index of water as 1.28) </p> <p><strong>[JEE Main 2025, 7 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(355\mathrm{mm}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(288\mathrm{mm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(555\mathrm{mm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(655\mathrm{mm}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the relative decrease in focal length of a lens for an increase in optical power by 0.1 D from 2.5D? ['D' stands for dioptre]</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.1</p></span></div><div class="option correct"><span class="key">b</span><span><p>0.04</p></span></div><div class="option"><span class="key">c</span><span><p>0.01</p></span></div><div class="option"><span class="key">d</span><span><p>0.40</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given is a thin convex lens of glass (refractive index \(\mu\) ) and each side having radius of curvature \(R\). One side is polished for complete reflection. At what distance from the lens, an object be placed on the optic axis so that the image gets formed on the object itself ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mu \mathrm{R}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(R/(2\mu -1)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(R/(2\mu -3)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(R/\mu\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A plano-convex lens having radius of curvature of first surface 2 cm exhibits focal length of \({f}_{1}\) in air. Another plano-convex lens with first surface radius of curvature 3 cm has focal length of \({f}_{2}\) when it is immersed in a liquid of refractive index 1.2 . If both the lenses are made of same glass of refractive index 1.5 , the ratio of \({f}_{1}\) and \({f}_{2}\) will be:</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1:2\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(1:3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3:5\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2:3\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9">
-      <div class="qnum">Q9 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q9 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin convex lens of focal length 5 cm and a thin concave lens of focal length 4 cm are combined together (without any gap) and this combination has magnification <em>m</em><sub>1</sub> when an object is placed 10 cm before the convex lens. Keeping the positions of convex lens and object undisturbed, a gap of 1 cm is introduced between the lenses by moving the concave lens away, which lead to a change in magnification of total lens system to <em>m</em><sub>2</sub>. The value of \(\left|\frac{{m}_{1}}{{m}_{2}}\right|\) is ____.<br/><br/></p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\frac{5}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{25}{27}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{27}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -158,7 +162,7 @@
       </div>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A concave mirror of focal length \(f\) in air is dipped in a liquid of refractive index \(\mu\). Its focal length in the liquid will be:</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mu f\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{f}{(\mu -1)}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{f}{\mu }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(f\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>There is no effect of medium on focal length of Spherical mirror.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given a convex lens of refractive index \({\mu }_{2}\) in a liquid of refractive index \({\mu }_{1},{\mu }_{1}<{\mu }_{2}\) having radii of curvature \({\mathrm{R}}_{1},{\mathrm{R}}_{2}\mathrm{and}{\mathrm{R}}_{2}\) surface is silver polished. Where should an object be placed on the optical axis so that the real and inverted image is formed at the same place. </p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\left({\mu }_{2}+{\mu }_{1}\right)\left|{\mathrm{R}}_{1}\right|}{\left({\mu }_{2}-{\mu }_{1}\right)}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|.\left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\left|{\mathrm{R}}_{2}\right|}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|.\left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(2\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\sqrt{\left|{\mathrm{R}}_{1}\right|\left|{\mathrm{R}}_{2}\right|}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|.\left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\left|{\mathrm{R}}_{1}\right|}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to the formula of silvering of lens \u003c/p> \u003cp>\\(-\\frac{1}{\\mathrm{F}}=\\frac{2}{{f}_{L}}-\\frac{1}{{f}_{m}}\\\\ -\\frac{1}{\\mathrm{F}}=2\\left(\\frac{{\\mu }_{2}}{{\\mu }_{1}}-1\\right)\\left(\\frac{1}{{\\mathrm{R}}_{1}}-\\frac{1}{-{\\mathrm{R}}_{2}}\\right)-\\left(\\frac{1}{-\\frac{{\\mathrm{R}}_{2}}{2}}\\right)\\\\ -\\frac{1}{\\mathrm{F}}=2\\left(\\frac{{\\mu }_{2}-{\\mu }_{1}}{{\\mu }_{1}}\\right)\\left(\\frac{{\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}}{{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}\\right)+\\left(\\frac{2}{{\\mathrm{R}}_{2}}\\right)\\left(\\frac{{\\mu }_{1}{\\mathrm{R}}_{1}}{{\\mu }_{1}{\\mathrm{R}}_{1}}\\right)\\\\ -\\frac{1}{\\mathrm{F}}=\\frac{2}{{\\mu }_{1}{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}\\left[\\left({\\mu }_{2}-{\\mu }_{1}\\right)\\left({\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}\\right)+{\\mu }_{1}{\\mathrm{R}}_{1}\\right]\\\\ -\\frac{1}{\\mathrm{F}}=\\frac{2}{{\\mu }_{1}{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}\\left[{\\mu }_{2}\\left({\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}\\right)-{\\mu }_{1}{\\mathrm{R}}_{2}\\right]\\\\ \\left|-2\\mathrm{F}\\right|=\\frac{{\\mu }_{1}{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}{\\left[{\\mu }_{2}\\left({\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}\\right)-{\\mu }_{1}{\\mathrm{R}}_{2}\\right]}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin prism with angle 5° of refractive index 1.72 is combined with another prism of refractive index 1.9 to produce dispersion without deviation. The angle of second prism is____.</p> <p> [JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6°</p></span></div><div class="option"><span class="key">b</span><span><p>4.5°</p></span></div><div class="option"><span class="key">c</span><span><p>5°</p></span></div><div class="option"><span class="key">d</span><span><p>4°</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\delta }_{\\text{net }}=0\\)\u003c/p> \u003cp>\\({\\delta }_{1}+{\\delta }_{2}=0\\)\u003c/p> \u003cp>\\(\\left({\\mu }_{1}-1\\right){A}_{1}+\\left({\\mu }_{2}-1\\right){A}_{2}=0\\)\u003c/p> \u003cp>\\({A}_{2}=\\frac{\\left({\\mu }_{1}-1\\right){A}_{1}}{\\left({\\mu }_{2}-1\\right)}\\)\u003c/p> \u003cp>\\({A}_{2}=\\frac{(1.72-1)}{(1.9-1)}\\times 5^\\circ =4^\\circ\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a concave mirror, the distance between the object and image is 20 cm , and the magnification is -3 . Find the focal length of the mirror.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 cm</p></span></div><div class="option"><span class="key">b</span><span><p>7.5 cm</p></span></div><div class="option"><span class="key">c</span><span><p>10 cm</p></span></div><div class="option"><span class="key">d</span><span><p>15 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We are given:\u003c/p> \u003cul> \u003cli>\u003cstrong>Distance between object and image\u003c/strong> = \u003cstrong>20 cm\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Magnification\u003c/strong> (\\(m\\)) = \u003cstrong>-3\u003c/strong>\u003c/li> \u003cli>We need to find the \u003cstrong>focal length (f)\u003c/strong>.\u003c/li> \u003c/ul> \u003cstrong>Step 1: Relationship Between Image and Object Distance\u003c/strong> \u003cp>The magnification formula for mirrors is:\u003c/p> \u003cp>\\(m=\\frac{−v}{u}\\)​\u003c/p> \u003cp>Given \\(m=−3\\), we get:\u003c/p> \u003cp>\\(−3=\\frac{−v}{u}\\)\u003c/p> \u003cp> \\(v=3u\\)\u003c/p> \u003cp> \u003c/p> \u003cp>Also, the total distance between the object and image is:\u003c/p> \u003cp>\\(\\mathrm{∣}v−u\\mathrm{∣}=20\\)\u003c/p> \u003cp>Substituting \\(v=3u\\):\u003c/p> \u003cp>\\(3u−u=20\\)\u003c/p> \u003cp> \\(2u=20\\)\u003c/p> \u003cp> \\(u=10\\text{ cm}\\)\u003c/p> \u003cp> \\(v=3(10)=30\\text{ cm}\\)\u003c/p> \u003cstrong>Step 2: Use Mirror Formula\u003c/strong> \u003cp>The \u003cstrong>mirror equation\u003c/strong> is:\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}\\)​\u003c/p> \u003cp>Substituting \\(u=10\\) and \\(v=30\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{10}+\\frac{1}{30}\\)\u003c/p> \u003cp>​ \\(\\frac{1}{f}=\\frac{3+1}{30}=\\frac{4}{30}=\\frac{2}{15}\\)\u003c/p> \u003cp>​ \\(f=\\frac{15}{2}=7.5\\text{ cm}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(f=7.5\\text{ cm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Angle of minimum deviation is equal to the half of the angle of prism in an equilateral prism. The refractive index of the prism is _______.</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.5</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>1.65</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,7 +222,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given Data:\u003c/p> \u003cp>For an equilateral prism, the angle of the prism is \\(A=60^\\circ\\).\u003c/p> \u003cp>The angle of minimum deviation is given as half the angle of the prism: \\({\\delta }_{m}=\\frac{A}{2}=\\frac{60^\\circ }{2}=30^\\circ\\).\u003c/p> \u003cp>Formula:\u003c/p> \u003cp>The refractive index (\\(\\mu\\)) is determined by the prism formula:\u003c/p> \\[\\mu = \\frac{\\sin\\left(\\frac{A + \\delta_m}{2}\\right)}{\\sin\\left(\\frac{A}{2}\\right)}\\] \u003cp>Calculation:\u003c/p> \u003cp>Substitute the values into the formula:\u003c/p> \\[\\mu = \\frac{\\sin\\left(\\frac{60^\\circ + 30^\\circ}{2}\\right)}{\\sin\\left(\\frac{60^\\circ}{2}\\right)}\\] \\[\\mu = \\frac{\\sin(45^\\circ)}{\\sin(30^\\circ)}\\] \u003cp>Using standard trigonometric values (\\(\\sin (45^\\circ )=\\frac{1}{\\sqrt{2}}\\) and \\(\\sin (30^\\circ )=\\frac{1}{2}\\)):\u003c/p> \\[\\mu = \\frac{\\frac{1}{\\sqrt{2}}}{\\frac{1}{2}}\\] \\[\\mu = \\frac{2}{\\sqrt{2}}\\] \\[\\mu = \\sqrt{2}\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The refractive index of the material of a glass prism is \(\sqrt{3}\). The angle of minimum deviation is equal to the angle of the prism. What is the angle of the prism?</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(58^{\circ}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(48^{\circ}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(50^{\circ}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(60^{\circ}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -230,7 +234,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mu =\\frac{\\sin \\left(\\frac{\\mathrm{A}+{\\delta }_{\\min }}{2}\\right)}{\\sin \\left(\\frac{\\mathrm{A}}{2}\\right)}\\\\ \\sqrt{3}=\\frac{\\sin \\left(\\frac{\\mathrm{A}+\\mathrm{A}}{2}\\right)}{\\sin \\left(\\frac{\\mathrm{A}}{2}\\right)}(\\mathrm{as}{\\delta }_{\\min }=\\mathrm{A})\\\\ \\sqrt{3}=\\frac{2\\sin \\left(\\frac{\\mathrm{A}}{2}\\right)\\cos \\left(\\frac{\\mathrm{A}}{2}\\right)}{\\sin \\left(\\frac{\\mathrm{A}}{2}\\right)}\\\\ \\cos \\left(\\frac{\\mathrm{A}}{2}\\right)=\\frac{\\sqrt{3}}{2}\\\\ \\mathrm{A}=60^\\circ \\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If angle of prism is equal to the angle of minimum deviation. Given \(\mu =\sqrt{3}\), then find the angle of prism.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(60^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(30^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(45^\circ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(10^\circ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -242,7 +246,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We are asked to find the angle of the prism (\\(A\\)) when:\u003c/p> \u003col> \u003cli>The angle of the prism is equal to the angle of minimum deviation (\\({D}_{m}=A\\)).\u003c/li> \u003cli>The refractive index of the prism is \\(\\mu =\\sqrt{3}\\)\u003c/li> \u003c/ol> The formula for Minimum Deviation: \u003cp>The relationship between the refractive index \\(\\mu\\), the angle of the prism \\(A\\), and the angle of minimum deviation \\({D}_{m}\\)​ is:\u003c/p> \u003cp>\\(\\mu =\\frac{\\sin ⁡(\\frac{A+{D}_{m}}{2})}{\\sin ⁡(\\frac{A}{2})}\\)​\u003c/p> \u003cp>Since \\({D}_{m}=A\\)substitute \\({D}_{m}=A\\) into the equation:\u003c/p> \u003cp>\\(\\mu =\\frac{\\sin ⁡(A)}{\\sin ⁡(\\frac{A}{2})}\\)​\u003c/p> Given: \\(\\mu =\\sqrt{3}\\)​ \u003cp>Substitute \\(\\mu =\\sqrt{3}\\)​ into the equation:\u003c/p> \u003cp>\\(\\sqrt{3}=\\frac{\\sin ⁡(A)}{\\sin ⁡(\\frac{A}{2})}\\)​\u003c/p> Solve for \\(A\\): \u003col> \u003cli> \u003cp>\u003cstrong>Simplify the equation:\u003c/strong>\u003c/p> \\(\\sin ⁡(A)=\\sqrt{3}⋅\\sin ⁡(\\frac{A}{2})\\)\u003c/li> \u003cli> \u003cp>Use the double-angle identity:\u003c/p> \\(\\sin ⁡(A)=2⋅\\sin ⁡(\\frac{A}{2})⋅\\cos ⁡(\\frac{A}{2})\\) \u003cp>Substitute \\(\\sin ⁡(A)\\)sin(A) into the equation:\u003c/p> \\(2⋅\\sin ⁡(\\frac{A}{2})⋅\\cos ⁡(\\frac{A}{2})=\\sqrt{3}⋅\\sin ⁡(\\frac{A}{2})\\)\u003c/li> \u003cli> \u003cp>Divide through by \\(\\sin ⁡(\\frac{A}{2})\\) (assuming \\(\\sin ⁡(\\frac{A}{2})\\neq 0\\)):\u003c/p> \\(2⋅\\cos ⁡(\\frac{A}{2})=\\sqrt{3}\\)\u003c/li> \u003cli> \u003cp>Solve for \\(\\cos ⁡(\\frac{A}{2})\\):\u003c/p> \\(\\cos ⁡(\\frac{A}{2})=\\frac{\\sqrt{3}}{2}\\)​\u003c/li> \u003cli> \u003cp>From the standard trigonometric values:\u003c/p> \\(\\cos ⁡(\\frac{A}{2})=\\frac{\\sqrt{3}}{2}\\text{  }⟹\\text{  }\\frac{A}{2}=3{0}^{∘}\\)\u003c/li> \u003cli> \u003cp>Solve for \\(A\\):\u003c/p> \\(A=6{0}^{∘}\\)\u003c/li> \u003c/ol> Final Answer: \u003cp>The angle of the prism is:\u003c/p> \u003cp>\\(6{0}^{∘}\\)​\u003c/p> \u003cp>\u003cstrong>Correct Option: A. \\(6{0}^{∘}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When an object is placed 40 cm away from a spherical mirror an image of magnification \(\frac{1}{2}\) produced. To obtain an image with magnification of \(\frac{1}{3}\), the object is to be moved :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>40 cm away from the mirror.</p></span></div><div class="option"><span class="key">b</span><span><p>80 cm away from the mirror. </p></span></div><div class="option"><span class="key">c</span><span><p>20 cm towards the mirror. </p></span></div><div class="option"><span class="key">d</span><span><p>20 cm away from the mirror.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -254,7 +258,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{Using magnification formula (}m=−\\frac{v}{u}\\text{):}\\)\u003c/p> \u003cp>\\({m}_{1}=\\frac{1}{2}\\Rightarrow \\frac{1}{2}=−\\frac{{v}_{1}}{−40}\\Rightarrow {v}_{1}=20\\text{ cm}\\)\u003c/p> \u003cp>\\(\\text{Mirror formula to find focal length (}f\\text{):}\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{{v}_{1}}+\\frac{1}{{u}_{1}}\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{20}−\\frac{1}{40}=\\frac{1}{40}\\Rightarrow f=40\\text{ cm}\\)\u003c/p> \u003cp>\\(\\text{For new magnification }{m}_{2}=\\frac{1}{3}\\text{:}\\)\u003c/p> \u003cp>\\(\\frac{1}{3}=−\\frac{{v}_{2}}{{u}_{2}}\\Rightarrow {v}_{2}=−\\frac{{u}_{2}}{3}\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{{v}_{2}}+\\frac{1}{{u}_{2}}\\)\u003c/p> \u003cp>\\(\\frac{1}{40}=−\\frac{3}{{u}_{2}}+\\frac{1}{{u}_{2}}=−\\frac{2}{{u}_{2}}\\)\u003c/p> \u003cp>\\({u}_{2}=−80\\text{ cm}\\)\u003c/p> \u003cp>\\(\\text{Shift}=\\left|{u}_{2}\\left|−\\right|{u}_{1}\\right|=80−40=40\\text{ cm (away)}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bi-convex lens has radius of curvature of both the surfaces same as\(1/6\mathrm{cm}\). If this lens is required to be replaced by another convex lens having different radii of curvatures on both sides \(\left({\mathrm{R}}_{1}\neq {\mathrm{R}}_{2}\right)\), without any change in lens power then possible combination of \({R}_{1}\) and \({R}_{2}\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{3}\mathrm{cm}\) and \(\frac{1}{3}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{5}\mathrm{cm}\) and \(\frac{1}{7}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{3}\mathrm{cm}\) and \(\frac{1}{7}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{6}\mathrm{cm}\) and \(\frac{1}{9}\mathrm{cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,7 +270,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>To solve this problem, we need to use the lens maker's formula, which relates the power of a lens to its radii of curvature and the refractive index of the material. The lens maker's formula is given by:\u003c/p> \u003cp>\\(\\frac{1}{f}=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)\\)\u003c/p> \u003cp>where:\u003cbr/>- \\(n\\) is the refractive index of the lens material\u003cbr/>- \\(R_1\\) and \\(R_2\\) are the radii of curvature of the lens surfaces\u003cbr/>- \\(f\\) is the focal length of the lens\u003c/p> \u003cp>For a bi-convex lens with equal radii of curvature, \\(R_1=R_2=R\\), the formula modifies to:\u003c/p> \u003cp>\\(\\frac{1}{f}=(n-1)\\left(\\frac{1}{R}-\\frac{1}{-R}\\right)=\\frac{2(n-1)}{R}\\)\u003c/p> \u003cp>\u003cbr/>Given that \\(R=\\frac{1}{6} \\mathrm{~cm}\\), the power \\(P\\) of the original lens can be expressed as:\u003c/p> \u003cp>\\(P=\\frac{1}{f}=\\frac{2(n-1)}{\\frac{1}{6}}=12(n-1)\\)\u003c/p> \u003cp>\u003cbr/>Now, if we replace it with another convex lens having different radii of curvature \\(R_1\\) and \\(R_2\\), keeping the power the same:\u003c/p> \u003cp>\\(\\frac{1}{f}=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)\\)\u003c/p> \u003cp>\u003cbr/>Substituting the known power:\u003c/p> \u003cp>\\(12(n-1)=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)\\)\u003c/p> \u003cp>\u003cbr/>By cancelling \\((n-1)\\) from both sides (assuming \\(n \\neq 1\\) ):\u003c/p> \u003cp>\\(12=\\frac{1}{R_1}-\\frac{1}{R_2}\\)\u003c/p> \u003cp>\u003cbr/>Checking the options:\u003cbr/>- \\(R_1=\\frac{1}{5} \\mathrm{~cm}, R_2=\\frac{1}{7} \\mathrm{~cm}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bi-convex lens has radius of curvature of both the surfaces same as\(1/6\mathrm{cm}\). If this lens is required to be replaced by another convex lens having different radii of curvatures on both sides \(\left({\mathrm{R}}_{1}\neq {\mathrm{R}}_{2}\right)\), without any change in lens power then possible combination of \({R}_{1}\) and \({R}_{2}\) is :</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{3}\mathrm{cm}\) and \(\frac{1}{3}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{5}\mathrm{cm}\) and \(\frac{1}{7}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{3}\mathrm{cm}\) and \(\frac{1}{7}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{6}\mathrm{cm}\) and \(\frac{1}{9}\mathrm{cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -278,7 +282,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>To solve this problem, we need to use the lens maker's formula, which relates the power of a lens to its radii of curvature and the refractive index of the material. The lens maker's formula is given by:\u003c/p> \u003cp>\\(\\frac{1}{f}=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)\\)\u003c/p> \u003cp>where:\u003cbr/>- \\(n\\) is the refractive index of the lens material\u003cbr/>- \\(R_1\\) and \\(R_2\\) are the radii of curvature of the lens surfaces\u003cbr/>- \\(f\\) is the focal length of the lens\u003c/p> \u003cp>For a bi-convex lens with equal radii of curvature, \\(R_1=R_2=R\\), the formula modifies to:\u003c/p> \u003cp>\\(\\frac{1}{f}=(n-1)\\left(\\frac{1}{R}-\\frac{1}{-R}\\right)=\\frac{2(n-1)}{R}\\)\u003c/p> \u003cp>\u003cbr/>Given that \\(R=\\frac{1}{6} \\mathrm{~cm}\\), the power \\(P\\) of the original lens can be expressed as:\u003c/p> \u003cp>\\(P=\\frac{1}{f}=\\frac{2(n-1)}{\\frac{1}{6}}=12(n-1)\\)\u003c/p> \u003cp>\u003cbr/>Now, if we replace it with another convex lens having different radii of curvature \\(R_1\\) and \\(R_2\\), keeping the power the same:\u003c/p> \u003cp>\\(\\frac{1}{f}=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)\\)\u003c/p> \u003cp>\u003cbr/>Substituting the known power:\u003c/p> \u003cp>\\(12(n-1)=(n-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)\\)\u003c/p> \u003cp>\u003cbr/>By cancelling \\((n-1)\\) from both sides (assuming \\(n \\neq 1\\) ):\u003c/p> \u003cp>\\(12=\\frac{1}{R_1}-\\frac{1}{R_2}\\)\u003c/p> \u003cp>\u003cbr/>Checking the options:\u003cbr/>- \\(R_1=\\frac{1}{5} \\mathrm{~cm}, R_2=\\frac{1}{7} \\mathrm{~cm}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A convex lens is made from glass material having refractive index of 1.4 with same radius of curvature on both sides. The ratio of its focal length and radius of curvature is _______.</p> <p> </p> <p>[JEE Main 2026, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.5</p></span></div><div class="option"><span class="key">b</span><span><p>2.5</p></span></div><div class="option"><span class="key">c</span><span><p>0.8</p></span></div><div class="option"><span class="key">d</span><span><p>1.25</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -290,7 +294,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Using Lensmaker's equation:\u003c/p> \u003cp>\\(\\frac{1}{f}=(\\mu -1)\\left(\\frac{1}{{R}_{1}}-\\frac{1}{{R}_{2}}\\right)\\)\u003c/p> \u003cp>For convex lens with same radius of curvature:\u003c/p> \u003cp>\\({R}_{1}=R,{R}_{2}=-R\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=(1.4-1)\\left(\\frac{1}{R}+\\frac{1}{R}\\right)\\)=\\(0.4\\times \\frac{2}{R}\\)\u003c/p> \u003cp>\\(\\frac{f}{R}=\\frac{1}{0.8}=1.25\\)\u003c/p> \u003cp>\\(\\frac{f}{R}=1.25\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Distance between an object and three times magnified real image is 40 cm. The focal length of the mirror used is ____cm.<br/>[JEE Main 2026, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>–15/2</p></span></div><div class="option"><span class="key">b</span><span><p>– 20</p></span></div><div class="option"><span class="key">c</span><span><p>– 10</p></span></div><div class="option"><span class="key">d</span><span><p>– 15</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -302,7 +306,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(m=–3=\\frac{v}{u}\\)\u003c/p> \u003cp>\u003cem>v\u003c/em> = – 3\u003cem>u\u003c/em>\u003c/p> \u003cp>\u003cem>|v| – |u| \u003c/em>= 40\u003c/p> \u003cp>\u003cem>u\u003c/em> = 20 cm\u003c/p> \u003cp>\u003cem>v = \u003c/em>60 cm\u003c/p> \u003cp>\\(∴\\frac{1}{v}+\\frac{1}{u}=\\frac{1}{f}\\)\u003c/p> \u003cp>\\(\\frac{1}{−60}+\\frac{1}{−20}=\\frac{1}{f}\\)\u003c/p> \u003cp>\u003cem>f\u003c/em> = – 15 cm\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At the interface between two materials having refractive indices \({n}_{1}\) and \({n}_{2}\), the critical angle for reflection of an em wave is \({\theta }_{1C}\). The \({n}_{2}\) material is replaced by another material having refractive index \({n}_{3}\) such that the critical angle at the interface between \({n}_{1}\) and \({n}_{3}\) materials is \({\theta }_{2C}\). If \({n}_{3}>{n}_{2}>{n}_{1};\frac{{n}_{2}}{{n}_{3}}=\frac{2}{5}\) and \(\sin {\theta }_{2C}-\sin {\theta }_{1C}=\frac{–1}{2}\), then \({\theta }_{1C}\) is</p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\sin }^{-1}\left(\frac{2}{3}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\sin }^{-1}\left(\frac{1}{6{n}_{1}}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\sin }^{-1}\left(\frac{5}{6}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\sin }^{-1}\left(\frac{1}{3{n}_{1}}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -314,7 +318,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\sin {\\theta }_{1C}=\\frac{{n}_{1}}{{n}_{2}}\\)\u003c/p> \u003cp>\\(\\sin {\\theta }_{2C}=\\frac{{n}_{1}}{{n}_{3}}\\)\u003c/p> \u003cp>\\(\\frac{\\sin {\\theta }_{1C}}{\\sin {\\theta }_{2\\text{C}}}=\\frac{{n}_{3}}{{n}_{2}}\\)\u003c/p> \u003cp>\\(\\sin {\\theta }_{1C}−\\sin {\\theta }_{2C}=\\frac{1}{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sin {\\theta }_{1C}−\\frac{2}{5}\\sin {\\theta }_{1C}=\\frac{1}{2}\\)\u003c/p> \u003cp>\\(\\sin {\\theta }_{1C}=\\frac{5}{6}\\)\u003c/p> \u003cp>\\({\\theta }_{1C}={\\sin }^{−1}\\frac{5}{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin convex lens and a thin concave lens are kept in contact and co-axially. Which statement is correct?<br/><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Behaves as concave lens if \(\left|{f}_{\text{convex }}\right|>\left|{f}_{\text{concave }}\right|\)</p></span></div><div class="option"><span class="key">b</span><span><p>Behaves as concave lens if \(\left|{f}_{\text{convex }}\right|<\left|{f}_{\text{concave }}\right|\)</p></span></div><div class="option"><span class="key">c</span><span><p>Behaves as convex lens if \(\left|{f}_{\text{convex }}\right|>\left|{f}_{\text{concave }}\right|\)</p></span></div><div class="option"><span class="key">d</span><span><p>Focal length of the lens system will change if the positions of two lenses are interchanged</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,7 +330,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) For two thin lenses in contact:\u003cbr/>\\(\\frac{1}{f}=\\frac{1}{{f}_{\\text{convex }}}+\\frac{1}{{f}_{\\text{concave }}}=\\frac{1}{{f}_{1}}-\\frac{1}{{f}_{2}}\\)\u003cbr/>\\(\\text{ If }\\left|{f}_{\\text{convex }}\\right|>\\left|{f}_{\\text{concave }}\\right|\\)\u003cbr/>\\(\\text{ then }\\frac{1}{{f}_{1}}\u003c\\frac{1}{{f}_{2}}\\Rightarrow \\frac{1}{f}\u003c0\\)\u003cbr/>So the combination behaves like a concave lens.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the relative decrease in focal length of a lens for an increase in optical power by 0.1 D from 2.5D? ['D' stands for dioptre]</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.1</p></span></div><div class="option"><span class="key">b</span><span><p>0.04</p></span></div><div class="option"><span class="key">c</span><span><p>0.01</p></span></div><div class="option"><span class="key">d</span><span><p>0.40</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,7 +342,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The focal length F is the reciprocal of optical power P :\u003c/p> \u003cp>\\(F=\\frac{1}{P}\\)\u003c/p> \u003cp>When P =2.5 D,\u003c/p> \u003cp>\\(F=\\frac{1}{2.5}=\\frac{2}{5}\\)\u003c/p> \u003cp>When P increases to 2.6 D ,\u003c/p> \u003cp>\\({F}^{'}=\\frac{1}{2.6}=\\frac{5}{13}\\)\u003c/p> \u003cp>Relative decrease in focal length:\u003c/p> \u003cp>\\(\\frac{F-{F}^{'}}{F}=\\frac{\\frac{2}{5}-\\frac{5}{13}}{\\frac{2}{5}}\\)\u003c/p> \u003cp>Simplifying:\u003c/p> \u003cp>\\(=\\frac{26-25}{26}=\\frac{1}{26}\\approx 0.04\\)\u003c/p> \u003cp>the correct answer is 0.04 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A monochromatic light of frequency \(5\times {10}^{14}\mathrm{Hz}\) travelling through air, is incident on a medium of refractive index '2'. Wavelength of the refracted light will be:</p> <p><strong>[JEE Main 2025, 3 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(300\mathrm{nm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(600\mathrm{nm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(400\mathrm{nm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(500\mathrm{nm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,7 +354,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\\[f \\lambda = v \\lambda_{\\text{medium}} = \\frac{v_{\\text{vacuum}}}{\\mu}\\]   \\[\\lambda_{\\text{medium}} \\Rightarrow \\frac{3 \\times 10^8}{2 \\times 5 \\times 10^{14}} \\Rightarrow 0.3 \\times 10^{-6}\\]   \\[\\Rightarrow 300 \\text{ nm}\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement (I) : When an object is placed at the centre of curvature of a concave lens, image is formed at the centre of curvature of the lens on the other side.<br/>Statement (II) : Concave lens always forms a virtual and erect image.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p><strong>[JEE Main 2024, 09 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,7 +366,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{1}{v}-\\frac{1}{u}=\\frac{1}{f}\\)\u003c/p> \u003cp>\\(\\frac{1}{v}-\\frac{1}{-2f}=\\frac{1}{-f}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{1}{v}=\\frac{-1}{2f}\\Rightarrow v=-2f\\)\u003c/p> \u003cp>\\(\\frac{1}{v}=\\frac{1}{u}+\\frac{1}{f}\\Rightarrow\\) Virtual image of Real object.\u003c/p> \u003cp>In statement II, it is not mentioned that object is real or virtual hence Statement II is true. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement (I) : When an object is placed at the centre of curvature of a concave lens, image is formed at the centre of curvature of the lens on the other side.<br/>Statement (II) : Concave lens always forms a virtual and erect image.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p><strong>[JEE Main 2024, 09 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,7 +378,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{1}{v}-\\frac{1}{u}=\\frac{1}{f}\\)\u003c/p> \u003cp>\\(\\frac{1}{v}-\\frac{1}{-2f}=\\frac{1}{-f}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{1}{v}=\\frac{-1}{2f}\\Rightarrow v=-2f\\)\u003c/p> \u003cp>\\(\\frac{1}{v}=\\frac{1}{u}+\\frac{1}{f}\\Rightarrow\\) Virtual image of Real object.\u003c/p> \u003cp>In statement II, it is not mentioned that object is real or virtual hence Statement II is true. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin prism \({P}_{1}\) with angle 4° made of glass having refractive index 1.54 , is combine with another thin prism \({P}_{2}\) made of glass having refractive index 1.72 to get dispersion without deviation. The angle of the prism \({P}_{2}\) in degrees is</p> <p>(Shift - I Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>16/3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>1.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -386,7 +390,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For dispersion without deviation, \u003c/p> \u003cp>\\({\\delta }_{\\mathrm{net}}={\\delta }_{1}+{\\delta }_{2}\\\\ \\left({\\mu }_{1}-1\\right){\\mathrm{A}}_{1}+\\left({\\mu }_{2}-1\\right){\\mathrm{A}}_{2}=0\\\\ {\\mathrm{A}}_{2}=-\\frac{\\left({\\mu }_{1}-1\\right){\\mathrm{A}}_{1}}{\\left({\\mu }_{2}-1\\right)}\\\\ {\\mathrm{A}}_{2}=-\\frac{\\left(1.54-1\\right)\\times 4}{\\left(1.72-1\\right)}=-3^\\circ\\)\u003c/p> \u003cp>The negative dign shows that P\u003csub>2\u003c/sub> must be oriented in opposite direction of P\u003csub>1\u003c/sub>. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given a thin convex lens (refractive index \(\mu_2\) ), kept in a liquid (refractive index \({\mu }_{1},{\mu }_{1}<{\mu }_{2}\) ) having radii of curvatures \(\left|{\mathrm{R}}_{1}\right|\) and \(\left|{\mathrm{R}}_{2}\right|\). Its second surface is silver polished. Where should an object be placed on the optic axis so that a real and inverted image is formed at the same place?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{{\mu }_{1}\left|{R}_{1}\right|\cdot {R}_{2}∣}{{\mu }_{2}\left(\left|{R}_{1}\right|+\left|{R}_{2}\right|\right)-{\mu }_{1}\left|{R}_{2}\right|}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|\cdot \left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\left|{\mathrm{R}}_{1}\right|}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\left({\mu }_{2}+{\mu }_{1}\right)\left|{\mathrm{R}}_{1}\right|}{\left({\mu }_{2}-{\mu }_{1}\right)}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|\cdot \left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(2\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\sqrt{\left|{\mathrm{R}}_{1}\right|\cdot \left|{\mathrm{R}}_{2}\right|}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,7 +402,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The combined focal length of a lens and a mirror can be derived as:\u003cbr/>\\(\\frac{1}{{f}_{eq}}=\\frac{2}{{f}_{L}}-\\frac{1}{{f}_{m}}\\)\u003cbr/>The focal length of the mirror is given as:\u003cbr/>\\({f}_{m}=\\frac{-\\left|{R}_{2}\\right|}{2}\\)\u003cbr/>Thus, the equivalent focal length becomes:\u003cbr/>\\(\\frac{1}{{f}_{eq}}=\\frac{2}{{f}_{L}}+\\frac{2}{{R}_{2}}\\)\u003cbr/>The focal length \\({f}_{L}\\) of the lens:\u003cbr/>\\(\\frac{1}{{f}_{L}}=\\left(\\frac{{\\mu }_{2}-{\\mu }_{1}}{{\\mu }_{1}}\\right)\\left(\\frac{1}{{R}_{1}}+\\frac{1}{{R}_{2}}\\right)\\)\u003cbr/>Combining the expressions, we obtain the simplified formula for the equivalent focal length:\u003cbr/>\\(\\frac{1}{{f}_{eq}}=\\frac{2\\left({\\mu }_{2}{R}_{1}+{\\mu }_{2}{R}_{2}-{\\mu }_{1}{R}_{2}\\right)}{{\\mu }_{1}{R}_{1}{R}_{2}}\\)\u003cbr/>For same size of image\u003cbr/>\\(u=2f\\)\u003cbr/>Substituting the focal length formula:\u003cbr/>\\(u=\\frac{{\\mu }_{1}{R}_{1}{R}_{2}}{{\\mu }_{2}{R}_{1}+{\\mu }_{2}{R}_{2}-{\\mu }_{1}{R}_{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A telescope with objective diameter R is used to observe a distant star emitting light of wavelength 500 nm , at a resolution of \(5\times {10}^{-7}\) radian. The value of R is_____ cm.</p> <p> </p> <p>[04 April, 2026 (Shift-I)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>61</p></span></div><div class="option"><span class="key">b</span><span><p>122</p></span></div><div class="option"><span class="key">c</span><span><p>244</p></span></div><div class="option"><span class="key">d</span><span><p>305</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -410,7 +414,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> For a circular aperture, the resolving limit is\u003c/p> \u003cp>\\(\\theta =\\frac{1.22\\lambda }{R}\\)\u003c/p> \u003cp>Given , \\(\\theta =5\\times {10}^{-7}rad,\\lambda =500\\times {10}^{-9}m\\)\u003c/p> \u003cp>So,\u003c/p> \u003cp>\\(\\begin{matrix} & R=\\frac{122\\lambda }{1.2}=\\frac{122\\times 500\\times {10}^{−9}}{5\\times {10}^{−7}}\\end{matrix}\\)\u003c/p> \u003cp>\\(\\begin{matrix} & R=1.22\\mathrm{m}=122\\mathrm{cm}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At the interface between two materials having refractive indices \({n}_{1}\) and \({n}_{2}\), the critical angle for reflection of an em wave is \({\theta }_{1C}\). The \({n}_{2}\) material is replaced by another material having refractive index \({n}_{3}\) such that the critical angle at the interface between \({n}_{1}\) and \({n}_{3}\) materials is \({\theta }_{2C}\). If \({n}_{3}>{n}_{2}>{n}_{1};\frac{{n}_{2}}{{n}_{3}}=\frac{2}{5}\) and \(\sin {\theta }_{2C}-\sin {\theta }_{1C}=\frac{–1}{2}\), then \({\theta }_{1C}\) is:</p> <p><strong>[JEE Main 2025, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\sin }^{-1}\left(\frac{2}{3}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\sin }^{-1}\left(\frac{1}{6{n}_{1}}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\sin }^{-1}\left(\frac{5}{6}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\sin }^{-1}\left(\frac{1}{3{n}_{1}}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,7 +426,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\sin {\\theta }_{1C}=\\frac{{n}_{1}}{{n}_{2}}\\)\u003cbr/>\\(\\sin {\\theta }_{2C}=\\frac{{n}_{1}}{{n}_{3}}\\)\u003cbr/>\\(\\frac{\\sin {\\theta }_{1C}}{\\sin {\\theta }_{2\\text{C}}}=\\frac{{n}_{3}}{{n}_{2}}\\)\u003cbr/>\\(\\sin {\\theta }_{1C}−\\sin {\\theta }_{2C}=\\frac{1}{2}\\)\u003cbr/>\\(\\Rightarrow \\sin {\\theta }_{1C}−\\frac{2}{5}\\sin {\\theta }_{1C}=\\frac{1}{2}\\)\u003cbr/>\\(\\sin {\\theta }_{1C}=\\frac{5}{6}\\)\u003cbr/>\\({\\theta }_{1C}={\\sin }^{−1}\\frac{5}{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If angle of prism is equal to the angle of minimum deviation. Given \(\mu =\sqrt{3}\), then find the angle of prism.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(60^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(30^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(45^\circ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(10^\circ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,7 +438,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We are asked to find the angle of the prism (\\(A\\)) when:\u003c/p> \u003col> \u003cli>The angle of the prism is equal to the angle of minimum deviation (\\({D}_{m}=A\\)).\u003c/li> \u003cli>The refractive index of the prism is \\(\\mu =\\sqrt{3}\\)\u003c/li> \u003c/ol> The formula for Minimum Deviation: \u003cp>The relationship between the refractive index \\(\\mu\\), the angle of the prism \\(A\\), and the angle of minimum deviation \\({D}_{m}\\)​ is:\u003c/p> \u003cp>\\(\\mu =\\frac{\\sin ⁡(\\frac{A+{D}_{m}}{2})}{\\sin ⁡(\\frac{A}{2})}\\)​\u003c/p> \u003cp>Since \\({D}_{m}=A\\)substitute \\({D}_{m}=A\\) into the equation:\u003c/p> \u003cp>\\(\\mu =\\frac{\\sin ⁡(A)}{\\sin ⁡(\\frac{A}{2})}\\)​\u003c/p> Given: \\(\\mu =\\sqrt{3}\\)​ \u003cp>Substitute \\(\\mu =\\sqrt{3}\\)​ into the equation:\u003c/p> \u003cp>\\(\\sqrt{3}=\\frac{\\sin ⁡(A)}{\\sin ⁡(\\frac{A}{2})}\\)​\u003c/p> Solve for \\(A\\): \u003col> \u003cli> \u003cp>\u003cstrong>Simplify the equation:\u003c/strong>\u003c/p> \\(\\sin ⁡(A)=\\sqrt{3}⋅\\sin ⁡(\\frac{A}{2})\\)\u003c/li> \u003cli> \u003cp>Use the double-angle identity:\u003c/p> \\(\\sin ⁡(A)=2⋅\\sin ⁡(\\frac{A}{2})⋅\\cos ⁡(\\frac{A}{2})\\) \u003cp>Substitute \\(\\sin ⁡(A)\\)sin(A) into the equation:\u003c/p> \\(2⋅\\sin ⁡(\\frac{A}{2})⋅\\cos ⁡(\\frac{A}{2})=\\sqrt{3}⋅\\sin ⁡(\\frac{A}{2})\\)\u003c/li> \u003cli> \u003cp>Divide through by \\(\\sin ⁡(\\frac{A}{2})\\) (assuming \\(\\sin ⁡(\\frac{A}{2})\\neq 0\\)):\u003c/p> \\(2⋅\\cos ⁡(\\frac{A}{2})=\\sqrt{3}\\)\u003c/li> \u003cli> \u003cp>Solve for \\(\\cos ⁡(\\frac{A}{2})\\):\u003c/p> \\(\\cos ⁡(\\frac{A}{2})=\\frac{\\sqrt{3}}{2}\\)​\u003c/li> \u003cli> \u003cp>From the standard trigonometric values:\u003c/p> \\(\\cos ⁡(\\frac{A}{2})=\\frac{\\sqrt{3}}{2}\\text{  }⟹\\text{  }\\frac{A}{2}=3{0}^{∘}\\)\u003c/li> \u003cli> \u003cp>Solve for \\(A\\):\u003c/p> \\(A=6{0}^{∘}\\)\u003c/li> \u003c/ol> Final Answer: \u003cp>The angle of the prism is:\u003c/p> \u003cp>\\(6{0}^{∘}\\)​\u003c/p> \u003cp>\u003cstrong>Correct Option: A. \\(6{0}^{∘}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider following statements for refraction of light through prism, when angle of deviation is minimum.<br/>(A) The refracted ray inside prism becomes parallel to the base.<br/>(B) Larger angle prisms provide smaller angle of minimum deviation.<br/>(C) Angle of incidence and angle of emergence becomes equal.<br/>(D) There are always two sets of angle of incidence for which deviation will be same except at minimum deviation setting.<br/>(E) Angle of refraction becomes double of prism angle.<br/>Choose the correct answer from the options given below.</p> <p>[JEE Main 2025, 24 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C and D Only</p></span></div><div class="option"><span class="key">b</span><span><p>B, C and D Only </p></span></div><div class="option"><span class="key">c</span><span><p>A, B and E Only</p></span></div><div class="option"><span class="key">d</span><span><p>B, D and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -446,7 +450,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>When a ray passes through a prism, the angle of deviation is given by.\u003cbr/>\\(\\delta =I+e−A\\)\u003cbr/>In general, for a given deviation, there are two different angles of incidence producing the same deviation.\u003cbr/>At the condition of minimum deviation, the path of the ray inside the prism becomes symmetric.\u003cbr/>This implies the angle of incidence equals the angle of emergence.\u003cbr/>\\(I=e\\)\u003cbr/>At minimum deviation, the refracted ray inside the prism is parallel to the base of the prism.\u003cbr/>Hence, statements A, C, and D are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Five persons \({P}_{1},{P}_{2},{P}_{3},{P}_{4}\) and \({P}_{5}\) recorded object distance (<em>u</em>) and image distance (<em>v</em>) using same convex lens having power +5 <em>D</em> as \((25,96),(30,62),(35,37),(45,35)\) and \((50,32)\) respectively. Identify correct statement.<br/>[JEE Main 2026, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Readings recorded by all persons are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Readings recorded by \({P}_{4}\) and \({P}_{5}\)<sub> </sub>persons are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Readings recorded by \({P}_{3}\) person are incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Readings recorded by \({P}_{3}\)<sub> </sub>and \({P}_{2}\)<sub> </sub>persons are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -458,7 +462,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cem>P\u003c/em> = + 5\u003cem>D\u003c/em>\u003c/p> \u003cp>\u003cem>\\(\\frac{1}{f}=5\\Rightarrow f=20\\text{ cm}\\)\u003c/em>\u003c/p> \u003cp>⇒ If object is between \u003cem>f\u003c/em> and 2\u003cem>f\u003c/em> image will be beyond 2\u003cem>f\u003c/em> and magnified.\u003c/p> \u003cp>⇒ If object is beyond 2\u003cem>f\u003c/em>, image will be between \u003cem>f\u003c/em> and 2\u003cem>f\u003c/em> and diminished.\u003c/p> \u003cp>Hence reading of P\u003csub>3\u003c/sub> are incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A convex refracting surface curved towards medium A separates two media A and B, where medium A has a refractive index of 1.3 and medium B has a refractive index of 1.4. An object is placed 26 cm in medium A along the principal axis. If the image is formed at infinity, find the radius of curvature of the surface.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 cm</p></span></div><div class="option"><span class="key">b</span><span><p>50 cm</p></span></div><div class="option"><span class="key">c</span><span><p>60 cm</p></span></div><div class="option"><span class="key">d</span><span><p>70 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -470,7 +474,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>To find the \u003cstrong>radius of curvature\u003c/strong> (\\(R\\)) of the convex refracting surface, we use the \u003cstrong>refraction formula at a spherical surface\u003c/strong>:\u003c/p> \u003cp>\\(\\frac{{n}_{2}}{v}−\\frac{{n}_{1}}{u}=\\frac{{n}_{2}−{n}_{1}}{R}\\)​​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({n}_{1}=1.3\\) (refractive index of medium A),\u003c/li> \u003cli>\\({n}_{2}=1.4\\) (refractive index of medium B),\u003c/li> \u003cli>\\(u=−26\\) (object distance, taken as negative for convex surface),\u003c/li> \u003cli>\\(v=\\mathrm{∞}\\) (image at infinity).\u003c/li> \u003c/ul> \u003cstrong>Step-by-Step Calculation:\u003c/strong> \u003cp>\\(\\frac{1.4}{\\mathrm{∞}}−\\frac{1.3}{−26}=\\frac{1.4−1.3}{R}\\)​\u003c/p> \u003cp>Since \\(\\frac{1.4}{\\mathrm{∞}}=0\\), the equation simplifies to:\u003c/p> \u003cp>\\(\\frac{1.3}{26}=\\frac{0.1}{R}\\)\u003c/p> \u003cp>​ \\(R=\\frac{0.1\\times 26}{1.3}=\\frac{2.6}{1.3}=2\\text{ cm}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(A:2\\text{ cm}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin plano convex lens made of glass of refractive index 1.5 is immersed in a liquid of refractive index 1.2. When the plane side of the lens is silver coated for complete reflection, the lens immersed in the liquid behaves like a concave mirror of focal length 0.2 m. The radius of curvature of the curved surface of the lens is:</p> <p>[JEE Main 2011]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.10m\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.15m\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.25m\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0.20m\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,7 +486,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Lens maker’s formula for a thin lens in a medium:\u003cbr/>\\(\\frac{1}{f}=(\\frac{{n}_{\\mathrm{lens}}}{{n}_{\\mathrm{medium}}}−1)(\\frac{1}{{R}_{1}}−\\frac{1}{{R}_{2}})\\)\u003cbr/>Substituting given values:\u003cbr/>\\(\\frac{1}{f}=(\\frac{1.5}{1.2}−1)(\\frac{1}{R}−0)\\)\u003cbr/>Simplifying:\u003cbr/>\\(\\frac{1}{f}=\\frac{1}{4R}\\)\u003cbr/>Hence focal length of the lens:\u003cbr/>\\(f=4R\\)\u003cbr/>For a lens with silvered plane surface (plane mirror):\u003cbr/>\\(\\frac{1}{F}=\\frac{2}{f}\\)\u003cbr/>Substituting effective focal length:\u003cbr/>\\(\\frac{1}{0.2}=\\frac{2}{4R}\\)\u003cbr/>Solving:\u003cbr/>\\(2R=0.2\\)\u003cbr/>Final Answer:\u003cbr/>\\(R=0.1m\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A plano-convex lens has a radius of curvature of 2 cm and a refractive index of 1.5. Its focal length is \({f}_{1}\)​ in air and \({f}_{2}\)​ in a medium with a refractive index of 1.2. Calculate the ratio \(\frac{{f}_{1}}{{f}_{2}}\)​​.</p> <p>(Shift - I Memory Based)</p> <p>​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1/2</p></span></div><div class="option"><span class="key">b</span><span><p>2/3</p></span></div><div class="option"><span class="key">c</span><span><p>3/4</p></span></div><div class="option"><span class="key">d</span><span><p>1/3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -494,7 +498,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Using the lens maker's formula: \\(\\frac{1}{f}=(n−1)(\\frac{1}{{R}_{1}}−\\frac{1}{{R}_{2}})\\mathrm{.}\\)\u003c/li> \u003cli>In air (\\({n}_{\\text{medium}}=1\\)): \\(\\frac{1}{{f}_{1}}=(\\frac{1.5}{1}−1)\\frac{1}{2}=\\frac{1}{4},\\ {f}_{1}=4\\text{ }\\text{cm}\\mathrm{.}\\)\u003c/li> \u003cli>In a medium with refractive index 1.2: \\({n}_{\\text{relative}}=\\frac{1.5}{1.2}=1.25,\\ \\frac{1}{{f}_{2}}=(1.25−1)\\frac{1}{2}=\\frac{1}{8},\\ {f}_{2}=8\\text{ }\\text{cm}\\mathrm{.}\\)\u003c/li> \u003cli>Ratio: \\(\\frac{{f}_{1}}{{f}_{2}}=\\frac{4}{8}=\\frac{1}{2}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, \\(\\frac{{f}_{1}}{{f}_{2}}=\\frac{1}{2}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A plano-convex lens having radius of curvature of first surface 2 cm exhibits focal length of \({f}_{1}\) in air. Another plano-convex lens with first surface radius of curvature 3 cm has focal length of \({f}_{2}\) when it is immersed in a liquid of refractive index 1.2 . If both the lenses are made of same glass of refractive index 1.5 , the ratio of \({f}_{1}\) and \({f}_{2}\) will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1:2</p></span></div><div class="option"><span class="key">b</span><span><p>1:3</p></span></div><div class="option"><span class="key">c</span><span><p>3:5</p></span></div><div class="option"><span class="key">d</span><span><p>2:3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -506,7 +510,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Using the lens maker's formula\u003c/p> \u003cp>\\(\\frac{1}{{f}_{1}}=\\left({n}_{\\text{glass }}-{n}_{\\text{air }}\\right)\\left(\\frac{1}{{R}_{1}}-\\frac{1}{{R}_{2}}\\right)\\)\u003c/p> \u003cp>Since one surface is flat, \\({R}_{2}\\) is infinity, so\u003c/p> \u003cp>\\(\\frac{1}{{R}_{2}}=0\\)\u003c/p> \u003cp>For the first lens in air (with refractive index 1.5 and radius of curvature 2 cm ):\u003c/p> \u003cp>\\(\\frac{1}{{f}_{1}}=(1.5-1)\\left(\\frac{1}{2}\\right)\\\\ {f}_{1}=4cm\\) \u003c/p> \u003cp>For the second lens:\u003c/p> \u003cp> \\(\\frac{1}{{f}_{2}}=\\left(\\frac{1.5}{1.2}-1\\right)\\left(\\frac{1}{3}-0\\right)\\\\ {f}_{2}=12cm\\)\u003c/p> \u003cp>Ratio of focal lengths:\u003c/p> \u003cp>\\({f}_{1}:{f}_{2}=4:12=1:3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A ray of light passing through an equilateral prism is having velocity \(2.12\times {10}^{8}\) m/s in the prism material, then the minimum angle of deviation is degrees.<br/><br/>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>45°</p></span></div><div class="option"><span class="key">b</span><span><p>30°</p></span></div><div class="option"><span class="key">c</span><span><p>28°</p></span></div><div class="option"><span class="key">d</span><span><p>58°</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -518,7 +522,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Refractive index of the prism material is\u003c/p> \u003cp>\\(\\mu =\\frac{c}{v}=\\frac{3\\times {10}^{8}}{2.12\\times {10}^{8}}=\\sqrt{2}\\)\u003c/p> \u003cp>For an equilateral prism, angle of prism \\(A=60^\\circ\\)\u003c/p> \u003cp>At minimum deviation,\u003c/p> \u003cp>\\(\\mu =\\frac{\\sin \\left(\\frac{A+{\\delta }_{m}}{2}\\right)}{\\sin \\left(\\frac{A}{2}\\right)}\\)\u003c/p> \u003cp>\\(\\sqrt{2}=\\frac{\\sin \\left(\\frac{60+{\\delta }_{m}}{2}\\right)}{\\sin 30^\\circ }=\\frac{\\sin \\left(\\frac{60+{\\delta }_{m}}{2}\\right)}{1/2}\\)\u003c/p> \u003cp>\\(\\sin \\left(\\frac{60+{\\delta }_{m}}{2}\\right)=\\frac{1}{\\sqrt{2}}\\)\u003c/p> \u003cp>\\(\\frac{60+{\\delta }_{m}}{2}=45^\\circ\\)\u003c/p> \u003cp>\\({\\delta }_{m}=30^\\circ\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A mirror is used to produce an image with magnification of \(\frac{1}{4}\). If the distance between object and its image is 40 cm , then the focal length of the mirror is ________ .</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 cm</p></span></div><div class="option"><span class="key">b</span><span><p>12.7 cm</p></span></div><div class="option"><span class="key">c</span><span><p>10.7 cm</p></span></div><div class="option"><span class="key">d</span><span><p>15 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -527,10 +531,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\u003cbr/>\\begin{aligned}\u003cbr/>&amp; m=-\\frac{v}{u}=-\\left(\\frac{v}{-u}\\right)=\\frac{v}{u} \\\\\u003cbr/>&amp; \\frac{1}{4}=\\frac{v}{u} \\Rightarrow u=4 v \\\\\u003cbr/>&amp; v+u=40 \\\\\u003cbr/>&amp; 5 v=40 \\\\\u003cbr/>&amp; v=8 \\mathrm{~cm} \\\\\u003cbr/>&amp; u=32 \\mathrm{~cm} \\\\\u003cbr/>&amp; \\frac{1}{v}+\\frac{v}{u}=\\frac{1}{f} \\\\\u003cbr/>&amp; \\frac{1}{8}-\\frac{1}{32}=\\frac{1}{f} \\\\\u003cbr/>&amp; \\frac{4-1}{32}=\\frac{1}{f} \\\\\u003cbr/>&amp; f=\\frac{32}{3}=10.7 \\mathrm{~cm}\u003cbr/>\\end{aligned}\u003cbr/>$$\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\u003cbr/>$$\\begin{aligned}& m=-\\frac{v}{u}=-\\left(\\frac{v}{-u}\\right)=\\frac{v}{u} \\\\& \\frac{1}{4}=\\frac{v}{u} \\Rightarrow u=4 v \\\\& v+u=40 \\\\& 5 v=40 \\\\& v=8 \\mathrm{~cm} \\\\& u=32 \\mathrm{~cm} \\\\& \\frac{1}{v}+\\frac{v}{u}=\\frac{1}{f} \\\\& \\frac{1}{8}-\\frac{1}{32}=\\frac{1}{f} \\\\& \\frac{4-1}{32}=\\frac{1}{f} \\\\& f=\\frac{32}{3}=10.7 \\mathrm{~cm}\\end{aligned}$$\u003cbr/>$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a concave mirror, the distance between the object and image is 20 cm , and the magnification is -3 . Find the focal length of the mirror.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 cm</p></span></div><div class="option"><span class="key">b</span><span><p>7.5 cm</p></span></div><div class="option"><span class="key">c</span><span><p>10 cm</p></span></div><div class="option"><span class="key">d</span><span><p>15 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -542,7 +546,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We are given:\u003c/p> \u003cul> \u003cli>\u003cstrong>Distance between object and image\u003c/strong> = \u003cstrong>20 cm\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Magnification\u003c/strong> (\\(m\\)) = \u003cstrong>-3\u003c/strong>\u003c/li> \u003cli>We need to find the \u003cstrong>focal length (f)\u003c/strong>.\u003c/li> \u003c/ul> \u003cstrong>Step 1: Relationship Between Image and Object Distance\u003c/strong> \u003cp>The magnification formula for mirrors is:\u003c/p> \u003cp>\\(m=\\frac{−v}{u}\\)​\u003c/p> \u003cp>Given \\(m=−3\\), we get:\u003c/p> \u003cp>\\(−3=\\frac{−v}{u}\\)\u003c/p> \u003cp> \\(v=3u\\)\u003c/p> \u003cp> \u003c/p> \u003cp>Also, the total distance between the object and image is:\u003c/p> \u003cp>\\(\\mathrm{∣}v−u\\mathrm{∣}=20\\)\u003c/p> \u003cp>Substituting \\(v=3u\\):\u003c/p> \u003cp>\\(3u−u=20\\)\u003c/p> \u003cp> \\(2u=20\\)\u003c/p> \u003cp> \\(u=10\\text{ cm}\\)\u003c/p> \u003cp> \\(v=3(10)=30\\text{ cm}\\)\u003c/p> \u003cstrong>Step 2: Use Mirror Formula\u003c/strong> \u003cp>The \u003cstrong>mirror equation\u003c/strong> is:\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{u}+\\frac{1}{v}\\)​\u003c/p> \u003cp>Substituting \\(u=10\\) and \\(v=30\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=\\frac{1}{10}+\\frac{1}{30}\\)\u003c/p> \u003cp>​ \\(\\frac{1}{f}=\\frac{3+1}{30}=\\frac{4}{30}=\\frac{2}{15}\\)\u003c/p> \u003cp>​ \\(f=\\frac{15}{2}=7.5\\text{ cm}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(f=7.5\\text{ cm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A convex lens of focal length 30 cm is placed in contact with a concave lens of focal length 20 cm . An object is placed at 20 cm to the left of this lens system. The distance of the image from the lens in cm is _____.</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(30\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(45\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{60}{7}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(15\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -554,7 +558,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{matrix}\\frac{1}{f}=\\frac{1}{{f}_{1}}+\\frac{1}{{f}_{2}} \\\\ \\frac{1}{f}=\\frac{1}{30}+\\frac{1}{-20} \\\\ \\frac{2-3}{60}=\\frac{-1}{60} \\\\ f=-60 \\\\ \\frac{1}{v}-\\frac{1}{u}=\\frac{1}{f} \\\\ \\frac{1}{v}-\\frac{1}{-20}=\\frac{1}{-60} \\\\ v=-15\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Distance between an object and three times magnified real image is 40 cm. The focal length of the mirror used is ____cm.<br/>[JEE Main 2026, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(–\frac{15}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(–20\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(–10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(–15\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -566,7 +570,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(m=–3=\\frac{v}{u}\\)\u003c/p> \u003cp>\u003cem>v\u003c/em> = – 3\u003cem>u\u003c/em>\u003c/p> \u003cp>\u003cem>|v| – |u| \u003c/em>= 40\u003c/p> \u003cp>\u003cem>u\u003c/em> = 20 cm\u003c/p> \u003cp>\u003cem>v = \u003c/em>60 cm\u003c/p> \u003cp>\\(∴\\frac{1}{v}+\\frac{1}{u}=\\frac{1}{f}\\)\u003c/p> \u003cp>\\(\\frac{1}{−60}+\\frac{1}{−20}=\\frac{1}{f}\\)\u003c/p> \u003cp>\u003cem>f\u003c/em> = – 15 cm\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Critical angle of incidence for a pair of optical media is \(45^{\circ}\). The refractive indices of first and second media are in the ratio:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1: 2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1: \sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{2}: 1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2: 1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -578,7 +582,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{matrix}\\text{Formula for critical angle (}C\\text{):} &  \\\\ \\sin ⁡C & =\\frac{{\\mu }_{2}}{{\\mu }_{1}} \\\\ \\text{Given }C={45}^{∘}\\text{:} &  \\\\ \\sin ⁡({45}^{∘}) & =\\frac{{\\mu }_{2}}{{\\mu }_{1}} \\\\ \\frac{1}{\\sqrt{2}} & =\\frac{{\\mu }_{2}}{{\\mu }_{1}} \\\\ \\text{Ratio of first to second media }(\\frac{{\\mu }_{1}}{{\\mu }_{2}})\\text{:} &  \\\\ \\frac{{\\mu }_{1}}{{\\mu }_{2}} & =\\frac{\\sqrt{2}}{1} \\\\ {\\mu }_{1}:{\\mu }_{2} & =\\sqrt{2}:1\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a thin symmetric prism made of glass (refractive index 1.5), the ratio of incident angle and minimum deviation will be______. </p> <p> </p> <p>[JEE Main 2026, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 : 4 </p></span></div><div class="option"><span class="key">b</span><span><p>3 : 2</p></span></div><div class="option"><span class="key">c</span><span><p>2 : 1 </p></span></div><div class="option"><span class="key">d</span><span><p>1 : 2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -590,7 +594,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For a thin prism: \\(\\delta =(\\mu -1)A\\)\u003c/p> \u003cp>For symmetric condition: \\(i=\\frac{A+\\delta }{2}\\)\u003c/p> \u003cp>So, \\(i=\\frac{A+(\\mu -1)A}{2}=\\frac{\\mu A}{2}\\)\u003c/p> \u003cp>Thus, \\(\\frac{i}{\\delta }=\\frac{\\mu A/2}{(\\mu -1)A}=\\frac{\\mu }{2(\\mu -1)}\\)\u003c/p> \u003cp>For \\(\\mu =1.5:\\)\u003c/p> \u003cp>\\(\\frac{i}{\\delta }=\\frac{1.5}{2(0.5)}=\\frac{1.5}{1}=\\frac{3}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A convex refracting surface curved towards medium A separates two media A and B, where medium A has a refractive index of 1.3 and medium B has a refractive index of 1.4. An object is placed 26 cm in medium A along the principal axis. If the image is formed at infinity, find the radius of curvature of the surface.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 cm</p></span></div><div class="option"><span class="key">b</span><span><p>50 cm</p></span></div><div class="option"><span class="key">c</span><span><p>60 cm</p></span></div><div class="option"><span class="key">d</span><span><p>70 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -602,7 +606,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>To find the \u003cstrong>radius of curvature\u003c/strong> (\\(R\\)) of the convex refracting surface, we use the \u003cstrong>refraction formula at a spherical surface\u003c/strong>:\u003c/p> \u003cp>\\(\\frac{{n}_{2}}{v}−\\frac{{n}_{1}}{u}=\\frac{{n}_{2}−{n}_{1}}{R}\\)​​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({n}_{1}=1.3\\) (refractive index of medium A),\u003c/li> \u003cli>\\({n}_{2}=1.4\\) (refractive index of medium B),\u003c/li> \u003cli>\\(u=−26\\) (object distance, taken as negative for convex surface),\u003c/li> \u003cli>\\(v=\\mathrm{∞}\\) (image at infinity).\u003c/li> \u003c/ul> \u003cstrong>Step-by-Step Calculation:\u003c/strong> \u003cp>\\(\\frac{1.4}{\\mathrm{∞}}−\\frac{1.3}{−26}=\\frac{1.4−1.3}{R}\\)​\u003c/p> \u003cp>Since \\(\\frac{1.4}{\\mathrm{∞}}=0\\), the equation simplifies to:\u003c/p> \u003cp>\\(\\frac{1.3}{26}=\\frac{0.1}{R}\\)\u003c/p> \u003cp>​ \\(R=\\frac{0.1\\times 26}{1.3}=\\frac{2.6}{1.3}=2\\text{ cm}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(A:2\\text{ cm}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A spherical surface of radius of curvature \(R\), separates air from glass (refractive index \(=1.5\) ). The centre of curvature is in the glass medium. A point object ' O ' placed in air on the optic axis of the surface, so that its real image is formed at ' I ' inside glass. The line OI intersects the spherical surface at P and \(\mathrm{PO}=\mathrm{PI}\). The distance PO equals to:</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 R</p></span></div><div class="option"><span class="key">b</span><span><p>1.5 R</p></span></div><div class="option"><span class="key">c</span><span><p>2 R</p></span></div><div class="option"><span class="key">d</span><span><p>5 R</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -614,7 +618,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(\\text{ }PO=u=-x\\\\ PI=v=x\\\\ PO=PI\\)\u003c/p> \u003cp>Using the refraction formula for a spherical surface separating two media, we have:\u003c/p> \u003cp>\\(\\frac{{\\mu }_{2}}{v}-\\frac{{\\mu }_{1}}{u}=\\frac{{\\mu }_{2}-{\\mu }_{1}}{R}\\)\u003c/p> \u003cp>Substituting the values for the refractive indices:\u003c/p> \u003cp>\\(\\frac{1.5}{x}+\\frac{1}{-x}=\\frac{1.5-1}{R}\\)\u003c/p> \u003cp>Simplifying:\u003c/p> \u003cp> \\(\\frac{5}{2x}=\\frac{1}{2R}\\\\ x=5R\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A concave-convex lens of refractive index \(1.5\) and the radii of curvature of its surfaces are \(30\) cm and \(20\) cm , respectively. The concave surface is upwards and is filled with a liquid of refractive index \(1.3\). The focal length of the liquid-glass combination will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{500}{11}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{800}{11}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{700}{11}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{600}{11}\mathrm{cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -626,7 +630,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{matrix}\\frac{1}{f}=\\frac{1.3−1}{1}\\times \\frac{1}{\\infty }−\\frac{1}{−30} \\\\ \\frac{1}{f}=\\frac{1.5−1}{1}\\times \\frac{1}{−30}−\\frac{1}{−30} \\\\ \\frac{1}{f}=\\frac{0.3}{30}+\\frac{0.5}{60} \\\\ \\frac{1}{f}=\\frac{1}{100}+\\frac{1}{120} \\\\ \\frac{1}{f}=\\frac{11}{600} \\\\ f=\\frac{600}{11}cm\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The wavelength of light, while it is passing through water is 540 nm. The refractive index of water is \(\frac{4}{3}\). The wavelength of the same light when it is passing through a transparent medium having refractive index of \(\frac{3}{2}\) is_______nm.<br/>[JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>540</p></span></div><div class="option"><span class="key">b</span><span><p>380</p></span></div><div class="option"><span class="key">c</span><span><p>480</p></span></div><div class="option"><span class="key">d</span><span><p>840</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -638,7 +642,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\left.\\frac{{\\mu }_{1}}{{\\mu }_{2}}=\\frac{{v}_{2}}{{v}_{1}}=\\frac{{\\lambda }_{2}}{{\\lambda }_{1}}\\right|v=f\\lambda\\)\u003c/p> \u003cp>\\(\\frac{{\\mu }_{1}}{{\\mu }_{2}}=\\frac{{\\lambda }_{2}}{{\\lambda }_{1}}\\)\u003c/p> \u003cp>\\(\\frac{{\\mu }_{B}}{3\\text{/}2}=\\frac{\\lambda }{540}\\)\u003c/p> \u003cp>\\(\\lambda =\\left(\\frac{4\\times 2}{3\\times 3}\\times 540\\right)\\)\u003c/p> \u003cp>\\(\\lambda =480\\text{  nm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A concave mirror of focal length \(f\) in air is dipped in a liquid of refractive index \(\mu\). Its focal length in the liquid will be:</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mu f\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{f}{(\mu -1)}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{f}{\mu }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(f\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -650,7 +654,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>There is no effect of medium on focal length of Spherical mirror.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The wavelength of light, while it is passing through water is 540 nm. The refractive index of water is \(\frac{4}{3}\). The wavelength of the same light when it is passing through a transparent medium having refractive index of \(\frac{3}{2}\) is_______nm.<br/>[JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>540</p></span></div><div class="option"><span class="key">b</span><span><p>380</p></span></div><div class="option"><span class="key">c</span><span><p>480</p></span></div><div class="option"><span class="key">d</span><span><p>840</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -662,7 +666,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\left.\\frac{{\\mu }_{1}}{{\\mu }_{2}}=\\frac{{v}_{2}}{{v}_{1}}=\\frac{{\\lambda }_{2}}{{\\lambda }_{1}}\\right|v=f\\lambda\\)\u003c/p> \u003cp>\\(\\frac{{\\mu }_{1}}{{\\mu }_{2}}=\\frac{{\\lambda }_{2}}{{\\lambda }_{1}}\\)\u003c/p> \u003cp>\\(\\frac{{\\mu }_{B}}{3\\text{/}2}=\\frac{\\lambda }{540}\\)\u003c/p> \u003cp>\\(\\lambda =\\left(\\frac{4\\times 2}{3\\times 3}\\times 540\\right)\\)\u003c/p> \u003cp>\\(\\lambda =480\\text{  nm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R)<br/>Assertion (A) : Refractive index of glass is higher than that of air.<br/>Reason (R) : Optical density of a medium is directly proportionate to its mass density which results in a proportionate refractive index.<br/>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -674,7 +678,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Refractive index has no relation with mass density because both have different meaning. Hence reason is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given a thin convex lens (refractive index \(\mu_2\) ), kept in a liquid (refractive index \({\mu }_{1},{\mu }_{1}<{\mu }_{2}\) ) having radii of curvatures \(\left|{\mathrm{R}}_{1}\right|\) and \(\left|{\mathrm{R}}_{2}\right|\). Its second surface is silver polished. Where should an object be placed on the optic axis so that a real and inverted image is formed at the same place?</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{{\mu }_{1}\left|{R}_{1}\right|\cdot {R}_{2}∣}{{\mu }_{2}\left(\left|{R}_{1}\right|+\left|{R}_{2}\right|\right)-{\mu }_{1}\left|{R}_{2}\right|}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|\cdot \left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\left|{\mathrm{R}}_{1}\right|}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\left({\mu }_{2}+{\mu }_{1}\right)\left|{\mathrm{R}}_{1}\right|}{\left({\mu }_{2}-{\mu }_{1}\right)}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|\cdot \left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(2\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\sqrt{\left|{\mathrm{R}}_{1}\right|\cdot \left|{\mathrm{R}}_{2}\right|}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -686,7 +690,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) The combined focal length of a lens and a mirror can be derived as:\u003c/p> \u003cp>\\(\\frac{1}{{f}_{eq}}=\\frac{2}{{f}_{L}}-\\frac{1}{{f}_{m}}\\)\u003c/p> \u003cp>The focal length of the mirror is given as:\u003c/p> \u003cp>\\({f}_{m}=\\frac{-\\left|{R}_{2}\\right|}{2}\\)\u003c/p> \u003cp>Thus, the equivalent focal length becomes:\u003c/p> \u003cp>\\(\\frac{1}{{f}_{eq}}=\\frac{2}{{f}_{L}}+\\frac{2}{{R}_{2}}\\)\u003c/p> \u003cp>The focal length \\({f}_{L}\\) of the lens:\u003c/p> \u003cp>\\(\\frac{1}{{f}_{L}}=\\left(\\frac{{\\mu }_{2}-{\\mu }_{1}}{{\\mu }_{1}}\\right)\\left(\\frac{1}{{R}_{1}}+\\frac{1}{{R}_{2}}\\right)\\)\u003c/p> \u003cp>Combining the expressions, we obtain the simplified formula for the equivalent focal length:\u003c/p> \u003cp>\\(\\frac{1}{{f}_{eq}}=\\frac{2\\left({\\mu }_{2}{R}_{1}+{\\mu }_{2}{R}_{2}-{\\mu }_{1}{R}_{2}\\right)}{{\\mu }_{1}{R}_{1}{R}_{2}}\\)\u003c/p> \u003cp>For same size of image\u003c/p> \u003cp>\\(u=2f\\)\u003c/p> \u003cp>Substituting the focal length formula:\u003c/p> \u003cp>\\(u=\\frac{{\\mu }_{1}{R}_{1}{R}_{2}}{{\\mu }_{2}{R}_{1}+{\\mu }_{2}{R}_{2}-{\\mu }_{1}{R}_{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A plano-convex lens has a radius of curvature of 2 cm and a refractive index of 1.5. Its focal length is \({f}_{1}\)​ in air and \({f}_{2}\)​ in a medium with a refractive index of 1.2. Calculate the ratio \(\frac{{f}_{1}}{{f}_{2}}\)​​.</p> <p>(Shift - I Memory Based)</p> <p>​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1/2</p></span></div><div class="option"><span class="key">b</span><span><p>2/3</p></span></div><div class="option"><span class="key">c</span><span><p>3/4</p></span></div><div class="option"><span class="key">d</span><span><p>1/3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -698,7 +702,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Using the lens maker's formula: \\(\\frac{1}{f}=(n−1)(\\frac{1}{{R}_{1}}−\\frac{1}{{R}_{2}})\\mathrm{.}\\)\u003c/li> \u003cli>In air (\\({n}_{\\text{medium}}=1\\)): \\(\\frac{1}{{f}_{1}}=(\\frac{1.5}{1}−1)\\frac{1}{2}=\\frac{1}{4},\\ {f}_{1}=4\\text{ }\\text{cm}\\mathrm{.}\\)\u003c/li> \u003cli>In a medium with refractive index 1.2: \\({n}_{\\text{relative}}=\\frac{1.5}{1.2}=1.25,\\ \\frac{1}{{f}_{2}}=(1.25−1)\\frac{1}{2}=\\frac{1}{8},\\ {f}_{2}=8\\text{ }\\text{cm}\\mathrm{.}\\)\u003c/li> \u003cli>Ratio: \\(\\frac{{f}_{1}}{{f}_{2}}=\\frac{4}{8}=\\frac{1}{2}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, \\(\\frac{{f}_{1}}{{f}_{2}}=\\frac{1}{2}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Five persons <em>P</em><sub>1</sub>, <em>P</em><sub>2</sub>, <em>P</em><sub>3</sub>, <em>P</em><sub>4</sub> and <em>P</em><sub>5</sub> recorded object distance (<em>u</em>) and image distance (<em>v</em>) using same convex lens having power +5<em>D</em> as (25, 96), (30, 62), (35, 37), (45, 35) and (50, 32) respectively. Identify correct statement.<br/>[JEE Main 2026, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Readings recorded by all persons are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Readings recorded by <em>P</em><sub>4</sub> and <em>P</em><sub>5 </sub>persons are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Readings recorded by <em>P</em><sub>3 </sub>person are incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Readings recorded by <em>P</em><sub>3 </sub>and <em>P</em><sub>2 </sub>persons are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -710,7 +714,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cem>P\u003c/em> = + 5\u003cem>D\u003c/em>\u003c/p> \u003cp>\u003cem>\\(\\frac{1}{f}=5\\Rightarrow f=20\\text{ cm}\\)\u003c/em>\u003c/p> \u003cp>⇒ If object is between \u003cem>f\u003c/em> and 2\u003cem>f\u003c/em> image will be beyond 2\u003cem>f\u003c/em> and magnified.\u003c/p> \u003cp>⇒ If object is beyond 2\u003cem>f\u003c/em>, image will be between \u003cem>f\u003c/em> and 2\u003cem>f\u003c/em> and diminished.\u003c/p> \u003cp>Hence reading of P\u003csub>3\u003c/sub> are incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the lateral shift of a ray refracted through a parallel-sided glass slab of thickness ' \(h\) ' in terms of the angle of incidence ' \(i\) ' and angle of refraction ' \(r\) ', if the glass slab is placed in air medium?</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{h\cos (i-r)}{\sin r}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(h\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\mathrm{htan}(\mathrm{i}-\mathrm{r})}{\mathrm{tanr}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{h\sin (i-r)}{\cos r}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -722,7 +726,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The formula for the lateral shift x of a ray passing through a parallel-sided slab is given by:\u003c/p> \u003cp>\\(x=\\frac{h\\sin (i-r)}{\\cos (r)}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin prism \({P}_{1}\) with angle \(4^\circ\) made of glass having refractive index 1.45 , is combined with another thin prism \({P}_{2}\) made of glass having refractive index 1.60 to get dispersion without deviation. The angle of the prism \({P}_{2}\) in degrees is:</p> <p><strong>[JEE Main 2025, 28 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{16}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>1.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -734,7 +738,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\delta }_{\\text{net }}=0\\\\ \\left({\\mu }_{1}-1\\right){A}_{1}-\\left({\\mu }_{2}-1\\right){A}_{2}=0\\\\ {A}_{2}=\\left(\\frac{{\\mu }_{1}-1}{{\\mu }_{2}-1}\\right){A}_{1}=\\left(\\frac{0.45}{0.60}\\right)4=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A compound microscope is designed with two symmetric biconvex lenses. The objective lens is cut vertically, creating two identical plano-convex lenses. One of them is used in place of original objective lens. To retain same magnification keeping the object distance unchanged, the tube length has to be:<br/><br/>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>increased two times</p></span></div><div class="option"><span class="key">b</span><span><p>increased \(\frac{3}{2}\) times</p></span></div><div class="option"><span class="key">c</span><span><p>decreased two times</p></span></div><div class="option"><span class="key">d</span><span><p>decreased \(\frac{3}{2}\) times</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -746,7 +750,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) From the lens maker’s formula:\u003c/p> \u003cp>\\(\\frac{1}{{f}_{o}}=(n-1)\\left(\\frac{1}{R}-\\frac{1}{-R}\\right)=\\frac{2(n-1)}{R}\\)\u003c/p> \u003cp>When the lens is cut vertically, we get two identical plano-convex lenses. New focal length of one of them\\({f}_{0'}\\) is:\u003cbr/>\\(\\frac{1}{{f}_{o}^{'}}=(n-1)\\left(\\frac{1}{R}-\\frac{1}{\\infty }\\right)=\\frac{n-1}{R}\\)\u003c/p> \u003cp>Comparing the two, we see that:\u003c/p> \u003cp>\\({f}_{o}^{'}=2{f}_{o}\\)\u003c/p> \u003cp>The total magnification M of a compound\u003cbr/>microscope is approximately given by:\u003c/p> \u003cp>\\(M\\approx \\frac{L}{{f}_{o}}\\times \\frac{D}{{f}_{e}}\\)\u003c/p> \u003cp>To keep M constant while \\({f}_{0}\\) is doubled \\(\\left(2{f}_{o}\\right):\\)\u003c/p> \u003cp>\\(\\frac{L}{{f}_{o}}=\\frac{{L}^{'}}{2{f}_{o}}\\)\u003c/p> \u003cp>\\({L}^{'}=2L\\)\u003c/p> \u003cp>To maintain the same magnification, the tube length has to be increased two times.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin prism with angle 5° of refractive index 1.72 is combined with another prism of refractive index 1.9 to produce dispersion without deviation. The angle of second prism is____.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6°</p></span></div><div class="option"><span class="key">b</span><span><p>4.5°</p></span></div><div class="option"><span class="key">c</span><span><p>5°</p></span></div><div class="option"><span class="key">d</span><span><p>4°</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -758,7 +762,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\delta }_{\\text{net }}=0\\)\u003c/p> \u003cp>\\({\\delta }_{1}+{\\delta }_{2}=0\\)\u003c/p> \u003cp>\\(\\left({\\mu }_{1}-1\\right){A}_{1}+\\left({\\mu }_{2}-1\\right){A}_{2}=0\\)\u003c/p> \u003cp>\\({A}_{2}=\\frac{\\left({\\mu }_{1}-1\\right){A}_{1}}{\\left({\\mu }_{2}-1\\right)}\\)\u003c/p> \u003cp>\\({A}_{2}=\\frac{(1.72-1)}{(1.9-1)}\\times 5^\\circ =4^\\circ\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given a convex lens of refractive index \({\mu }_{2}\) in a liquid of refractive index \({\mu }_{1},{\mu }_{1}<{\mu }_{2}\) having radii of curvature \({\mathrm{R}}_{1},{\mathrm{R}}_{2}\mathrm{and}{\mathrm{R}}_{2}\) surface is silver polished. Where should an object be placed on the optical axis so that the real and inverted image is formed at the same place. </p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\left({\mu }_{2}+{\mu }_{1}\right)\left|{\mathrm{R}}_{1}\right|}{\left({\mu }_{2}-{\mu }_{1}\right)}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|.\left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\left|{\mathrm{R}}_{2}\right|}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|.\left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(2\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\sqrt{\left|{\mathrm{R}}_{1}\right|\left|{\mathrm{R}}_{2}\right|}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mu }_{1}\left|{\mathrm{R}}_{1}\right|.\left|{\mathrm{R}}_{2}\right|}{{\mu }_{2}\left(\left|{\mathrm{R}}_{1}\right|+\left|{\mathrm{R}}_{2}\right|\right)-{\mu }_{1}\left|{\mathrm{R}}_{1}\right|}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -770,7 +774,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to the formula of silvering of lens \u003c/p> \u003cp>\\(-\\frac{1}{\\mathrm{F}}=\\frac{2}{{f}_{L}}-\\frac{1}{{f}_{m}}\\\\ -\\frac{1}{\\mathrm{F}}=2\\left(\\frac{{\\mu }_{2}}{{\\mu }_{1}}-1\\right)\\left(\\frac{1}{{\\mathrm{R}}_{1}}-\\frac{1}{-{\\mathrm{R}}_{2}}\\right)-\\left(\\frac{1}{-\\frac{{\\mathrm{R}}_{2}}{2}}\\right)\\\\ -\\frac{1}{\\mathrm{F}}=2\\left(\\frac{{\\mu }_{2}-{\\mu }_{1}}{{\\mu }_{1}}\\right)\\left(\\frac{{\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}}{{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}\\right)+\\left(\\frac{2}{{\\mathrm{R}}_{2}}\\right)\\left(\\frac{{\\mu }_{1}{\\mathrm{R}}_{1}}{{\\mu }_{1}{\\mathrm{R}}_{1}}\\right)\\\\ -\\frac{1}{\\mathrm{F}}=\\frac{2}{{\\mu }_{1}{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}\\left[\\left({\\mu }_{2}-{\\mu }_{1}\\right)\\left({\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}\\right)+{\\mu }_{1}{\\mathrm{R}}_{1}\\right]\\\\ -\\frac{1}{\\mathrm{F}}=\\frac{2}{{\\mu }_{1}{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}\\left[{\\mu }_{2}\\left({\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}\\right)-{\\mu }_{1}{\\mathrm{R}}_{2}\\right]\\\\ \\left|-2\\mathrm{F}\\right|=\\frac{{\\mu }_{1}{\\mathrm{R}}_{1}{\\mathrm{R}}_{2}}{\\left[{\\mu }_{2}\\left({\\mathrm{R}}_{1}+{\\mathrm{R}}_{2}\\right)-{\\mu }_{1}{\\mathrm{R}}_{2}\\right]}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A concave-convex lens of refractive index \(1.5\) and the radii of curvature of its surfaces are \(30\) cm and \(20\) cm , respectively. The concave surface is upwards and is filled with a liquid of refractive index \(1.3\). The focal length of the liquid-glass combination will be:</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{500}{11}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{800}{11}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{700}{11}\mathrm{cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{600}{11}\mathrm{cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -782,7 +786,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{matrix}\\frac{1}{f}=\\frac{1.3−1}{1}\\times \\frac{1}{\\infty }−\\frac{1}{−30} \\\\ \\frac{1}{f}=\\frac{1.5−1}{1}\\times \\frac{1}{−30}−\\frac{1}{−30} \\\\ \\frac{1}{f}=\\frac{0.3}{30}+\\frac{0.5}{60} \\\\ \\frac{1}{f}=\\frac{1}{100}+\\frac{1}{120} \\\\ \\frac{1}{f}=\\frac{11}{600} \\\\ f=\\frac{600}{11}cm\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin prism \({P}_{1}\) with angle 4° made of glass having refractive index 1.54 , is combine with another thin prism \({P}_{2}\) made of glass having refractive index 1.72 to get dispersion without deviation. The angle of the prism \({P}_{2}\) in degrees is</p> <p>(Shift - I Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>16/3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>1.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -794,7 +798,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For dispersion without deviation, \u003c/p> \u003cp>\\({\\delta }_{\\mathrm{net}}={\\delta }_{1}+{\\delta }_{2}\\\\ \\left({\\mu }_{1}-1\\right){\\mathrm{A}}_{1}+\\left({\\mu }_{2}-1\\right){\\mathrm{A}}_{2}=0\\\\ {\\mathrm{A}}_{2}=-\\frac{\\left({\\mu }_{1}-1\\right){\\mathrm{A}}_{1}}{\\left({\\mu }_{2}-1\\right)}\\\\ {\\mathrm{A}}_{2}=-\\frac{\\left(1.54-1\\right)\\times 4}{\\left(1.72-1\\right)}=-3^\\circ\\)\u003c/p> \u003cp>The negative dign shows that P\u003csub>2\u003c/sub> must be oriented in opposite direction of P\u003csub>1\u003c/sub>. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given is a thin convex lens of glass (refractive index \(\mu\)) and each side having radius of curvature \(R\). One side is polished for complete reflection. At what distance from the lens, an object be placed on the optic axis so that the image gets formed on the object itself?</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mu \mathrm{R}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{R}{(2\mu -1)}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{R}{(2\mu -3)}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{R}{\mu }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -806,7 +810,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({P}_{eq}=2{P}_{l}+{P}_{m}\\\\ -\\frac{1}{{f}_{eq}}=\\frac{2}{{f}_{l}}-\\frac{1}{{f}_{m}}\\\\ =\\frac{4(\\mu -1)}{R}-\\frac{2}{-R}=\\frac{1}{R}(4\\mu -4+2)\\\\ -\\frac{1}{{f}_{eq}}=\\frac{1}{R}(4\\mu -2)\\\\ \\Rightarrow \\frac{1}{{f}_{eq}}=\\frac{-1}{R}(4\\mu -2)\\\\ {f}_{eq}=\\frac{R}{2}\\\\ R=2{f}_{eq}=2\\left(\\frac{R}{4\\mu -2}\\right)=\\frac{R}{(2\\mu -1)}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a transparent prism, if the angle of minimum deviation is equal to its refracting angle, the refractive index n of the prism satisfies.<br/>[JEE Main 2026, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\text{ }\geq \text{ }2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{2}\text{ }<\text{ }n\text{ }<\text{ }2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{2}\text{ }<\text{ }n\text{ }<\text{ }2\sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1<n<2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -818,7 +822,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>δ\u003csub>min\u003c/sub> = 2i – A\u003cem> \u003c/em>⇒\u003cem> \u003c/em>i = δ\u003csub>min\u003c/sub> = A\u003c/p> \u003cp>Also\u003cem>, \\(\\mu =\\frac{\\sin \\left(\\frac{{\\delta }_{\\min }+\\mathrm{A}}{2}\\right)}{\\sin \\left(\\frac{\\mathrm{A}}{2}\\right)}\\)\u003c/em>\u003c/p> \u003cp>\u003cem>\\(\\Rightarrow \\mu =\\frac{\\mathrm{sinA}}{\\sin \\frac{\\mathrm{A}}{2}}=2\\cos \\left(\\frac{\\mathrm{A}}{2}\\right)\\)\u003c/em>\u003c/p> \u003cp>1 &lt; μ &lt; 2 \u003cem> ….(1)\u003c/em>\u003c/p> \u003cp>δ\u003csub>min\u003c/sub>\u003cem> = \u003c/em>2i – A\u003c/p> \u003cp>A = 2i – A ⇒ i = A\u003c/p> \u003cp>i \u003cem>&lt; 90° \u003c/em>(grazing incidence)\u003c/p> \u003cp>A &lt; 90°\u003c/p> \u003cp>μ = 2 cos (A/2) and A &lt; 90\u003cem>°\u003c/em>\u003c/p> \u003cp>\u003cem>\\(\\mu >\\sqrt{2}\\) ....\u003c/em>(2)\u003c/p> \u003cp>From (1) and (2)\u003c/p> \u003cp>\u003cem>\\(\\sqrt{2}\u003c\\mu \u003c2\\)\u003c/em>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The optical power of a lens is increased from \(0.1\text{ }\text{D}\) to \(2.5\text{ }\text{D}\). What is the relative shift in the focal length of the lens?</p> <p>(Shift I Memory Based)​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>24/25</p></span></div><div class="option"><span class="key">b</span><span><p>13/10</p></span></div><div class="option"><span class="key">c</span><span><p>21/25</p></span></div><div class="option"><span class="key">d</span><span><p>11/10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -830,7 +834,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Focal length \\(f\\) is related to power \\(P\\) by \\(f=\\frac{100}{P}\\).\u003c/li> \u003cli>Initial focal length \\({f}_{1}=\\frac{100}{0.1}=1000\\text{ }\\text{cm}\\)\u003c/li> \u003cli>Final focal length \\({f}_{2}=\\frac{100}{2.5}=40\\text{ }\\text{cm}\\)\u003c/li> \u003cli>Relative shift: \\(\\frac{{f}_{1}-{f}_{2}}{{f}_{1}}=\\frac{960}{1000}=\\frac{24}{25}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the relative shift in the focal length is \\(\\frac{24}{25}\\)​.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin convex lens of focal length 5 cm and a thin concave lens of focal length 4 cm are combined together (without any gap) and this combination has magnification <em>m</em><sub>1</sub> when an object is placed 10 cm before the convex lens. Keeping the positions of convex lens and object undisturbed, a gap of 1 cm is introduced between the lenses by moving the concave lens away, which lead to a change in magnification of total lens system to <em>m</em><sub>2</sub>. The value of \(\left|\frac{{m}_{1}}{{m}_{2}}\right|\) is ____.<br/>[JEE Main 2026, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{25}{27}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{27}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -842,7 +846,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In Case-1: image is formed at \\(\\frac{20}{3}\\) cm from combination\u003c/p> \u003cp>\\(\\Rightarrow \\left|{m}_{1}\\right|=\\frac{20/3}{10}=\\frac{2}{3}\\)\u003c/p> \u003cp>In Case-2: Image formed at \\(\\frac{36}{5}\\) cm from concave lens\u003c/p> \u003cp>\\(\\Rightarrow \\left|{m}_{\\text{concave}}\\right|=\\frac{36/5}{9}=\\frac{4}{5}\\)\u003c/p> \u003cp>\\(\\left|{m}_{\\text{convex}}\\right|=1\\)\u003c/p> \u003cp>\\(\\Rightarrow \\left|{m}_{2}\\right|=\\frac{4}{5}\\)\u003c/p> \u003cp>\\(\\frac{\\left|{m}_{1}\\right|}{\\left|{m}_{2}\\right|}=\\frac{5}{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The optical power of a lens is increased from \(0.1\text{ }\text{D}\) to \(2.5\text{ }\text{D}\). What is the relative shift in the focal length of the lens?</p> <p>(Shift I Memory Based)​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>24/25</p></span></div><div class="option"><span class="key">b</span><span><p>13/10</p></span></div><div class="option"><span class="key">c</span><span><p>21/25</p></span></div><div class="option"><span class="key">d</span><span><p>11/10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -854,7 +858,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Focal length \\(f\\) is related to power \\(P\\) by \\(f=\\frac{100}{P}\\).\u003c/li> \u003cli>Initial focal length \\({f}_{1}=\\frac{100}{0.1}=1000\\text{ }\\text{cm}\\)\u003c/li> \u003cli>Final focal length \\({f}_{2}=\\frac{100}{2.5}=40\\text{ }\\text{cm}\\)\u003c/li> \u003cli>Relative shift: \\(\\frac{{f}_{1}-{f}_{2}}{{f}_{1}}=\\frac{960}{1000}=\\frac{24}{25}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the relative shift in the focal length is \\(\\frac{24}{25}\\)​.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A spherical surface of radius of curvature \(R\), separates air from glass (refractive index \(=1.5\) ). The centre of curvature is in the glass medium. A point object ' O ' placed in air on the optic axis of the surface, so that its real image is formed at ' I ' inside glass. The line OI intersects the spherical surface at P and \(\mathrm{PO}=\mathrm{PI}\). The distance PO equals to</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 R</p></span></div><div class="option"><span class="key">b</span><span><p>1.5 R</p></span></div><div class="option"><span class="key">c</span><span><p>2 R</p></span></div><div class="option"><span class="key">d</span><span><p>5 R</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -866,7 +870,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(\\text{ }PO=u=-x\\\\ PI=v=x\\\\ PO=PI\\)\u003c/p> \u003cp>Using the refraction formula for a spherical surface separating two media, we have:\u003c/p> \u003cp>\\(\\frac{{\\mu }_{2}}{v}-\\frac{{\\mu }_{1}}{u}=\\frac{{\\mu }_{2}-{\\mu }_{1}}{R}\\)\u003c/p> \u003cp>Substituting the values for the refractive indices:\u003c/p> \u003cp>\\(\\frac{1.5}{x}+\\frac{1}{-x}=\\frac{1.5-1}{R}\\)\u003c/p> \u003cp>Simplifying:\u003c/p> \u003cp> \\(\\frac{5}{2x}=\\frac{1}{2R}\\\\ x=5R\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two thin convex lenses of focal lengths 30 cm and 10 cm are placed coaxially, 10 cm apart. The power of this combination is :</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 D</p></span></div><div class="option"><span class="key">b</span><span><p>1 D</p></span></div><div class="option"><span class="key">c</span><span><p>20 D</p></span></div><div class="option"><span class="key">d</span><span><p>10 D</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -878,7 +882,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Equivalent focal length of two thin lenses separated by distance d is given by : \u003cbr/>\\(\\frac{1}{{f}_{\\mathrm{eq}}}=\\frac{1}{{f}_{1}}+\\frac{1}{{f}_{2}}-\\frac{d}{{f}_{1}{f}_{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a transparent prism, if the angle of minimum deviation is equal to its refracting angle, the refractive index n of the prism satisfies.<br/>[JEE Main 2026, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\text{ }\geq \text{ }2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{2}\text{ }<\text{ }n\text{ }<\text{ }2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{2}\text{ }<\text{ }n\text{ }<\text{ }2\sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1<n<2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -890,7 +894,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\delta }_{\\text{min}}=2i-A\\Rightarrow i={\\delta }_{\\text{min}}=A\\)\u003c/p> \u003cp>\\(\\text{Also, }\\mu =\\frac{\\sin \\left(\\frac{{\\delta }_{\\text{min}}+A}{2}\\right)}{\\sin \\left(\\frac{A}{2}\\right)}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mu =\\frac{\\sin A}{\\sin \\frac{A}{2}}=2\\cos \\left(\\frac{A}{2}\\right)\\)\u003c/p> \u003cp>\\(1\u003c\\mu \u003c2....(1)\\)\u003c/p> \u003cp>\\({\\delta }_{\\text{min}}=2i-A\\)\u003c/p> \u003cp>\\(A=2i-A\\Rightarrow i=A\\)\u003c/p> \u003cp>\\(i\u003c90^\\circ \\text{ (grazing incidence)}\\)\u003c/p> \u003cp>\\(A\u003c90^\\circ\\)\u003c/p> \u003cp>\\(\\mu =2\\cos (A/2)\\text{ and }A\u003c90^\\circ\\)\u003c/p> \u003cp>\\(\\mu >\\sqrt{2}....(2)\\)\u003c/p> \u003cp>\\(\\text{From (1) and (2)}\\)\u003c/p> \u003cp>\\(\\sqrt{2}\u003c\\mu \u003c2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin prism \(P_1\) with an angle \(6^{\circ}\) and made of glass of refractive index 1.54 is combined with another prism \(P_2\) made from glass of refractive index 1.72 to produce dispersion without average deviation. The angle of prism \(P_2\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6^{\circ}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.3^{\circ}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(7.8^{\circ}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.5^{\circ}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -899,10 +903,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For no deviation \\(\\delta_1=\\delta_2\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow 6^{\\circ}(1.54-1)=\\mathrm{A}(1.72-1) \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{A}=\\frac{6^{\\circ} \\times 0.54}{0.72}=\\frac{18^{\\circ}}{4}=4.5^{\\circ}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For no deviation \\(\\delta_1=\\delta_2\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Rightarrow 6^{\\circ}(1.54-1)=\\mathrm{A}(1.72-1) \\\\& \\Rightarrow \\mathrm{A}=\\frac{6^{\\circ} \\times 0.54}{0.72}=\\frac{18^{\\circ}}{4}=4.5^{\\circ}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Car B overtakes another car A at a relative speed of \(40m{s}^{-1}\). How fast will the image of car B appear to move in the mirror of focal length 10 cm fitted in car A, when the car B is 1.9 m away from the car A ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.1m{s}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.2m{s}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4m{s}^{-1}\) </p></span></div><div class="option"><span class="key">d</span><span><p>\(40m{s}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -914,7 +918,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, u=-1.9 m =-190 cm\u003c/p> \u003cp>f=10 cm.\u003cbr/>For mirror\u003cbr/>\\({\\vec{V}}_{IM}=-{m}^{2}{\\vec{V}}_{OM}\\)\u003cbr/>\u003cstrong>\\({\\vec{V}}_{IM}\\to\\) \u003c/strong>Velocity of image w.r.t mirror\u003cbr/>\\({\\vec{V}}_{OM}\\to\\) Velocity of object w.r.t mirror \\(m\\to\\) magnification\u003cbr/>Formula of magnification,\u003cbr/>\\(m=\\frac{f}{f-u}\\\\ =\\frac{10}{10-(-190)}\\\\ =\\frac{10}{200}=\\frac{1}{20}\\\\ \\left|{\\vec{V}}_{IM}\\right|={\\left(\\frac{1}{20}\\right)}^{2}\\left|{\\vec{V}}_{OM}\\right|\\\\ =\\frac{1}{(20{)}^{2}}\\times 40=0.1m/s\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a beam of white light is allowed to pass through convex lens parallel to principal axis, the different colours of light converge at different point on the principle axis after refraction. This is called: </p> <p><strong>[JEE Main 2023, 24 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Scattering</p></span></div><div class="option"><span class="key">b</span><span><p>Chromatic aberration</p></span></div><div class="option"><span class="key">c</span><span><p>Spherical aberration</p></span></div><div class="option"><span class="key">d</span><span><p>Polarisation</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -926,7 +930,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>It is called chromatic aberration.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A monochromatic light wave with wavelength \(\lambda_1\) and frequency \({\nu }_{1}\) in air enters another medium. If the angle of incidence and angle of refraction at the interface are \(45^{\circ}\) and \(30^{\circ}\) respectively, then the wavelength \(\lambda_2\) and frequency \({\nu }_{2}\) of the refracted wave are:</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{2}={\lambda }_{1},{\nu }_{2}=\sqrt{2}{\nu }_{1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\lambda }_{2}=\frac{1}{\sqrt{2}}{\lambda }_{1},{\nu }_{2}={\nu }_{1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{2}=\sqrt{2}{\lambda }_{1},{\nu }_{2}={\nu }_{1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{2}={\lambda }_{1},{\nu }_{2}=\frac{1}{\sqrt{2}}{\nu }_{1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -938,7 +942,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{matrix}{\\mu }_{1}\\sin 45^\\circ ={\\mu }_{2}\\sin 30^\\circ  \\\\ \\frac{{\\mu }_{1}}{{\\mu }_{2}}=\\frac{1}{\\sqrt{2}} \\\\ \\Rightarrow \\frac{{\\mu }_{1}}{{\\mu }_{2}}=\\frac{{\\lambda }_{2}}{{\\lambda }_{1}}=\\frac{1}{\\sqrt{2}} \\\\ \\Rightarrow {\\lambda }_{2}=\\frac{{\\lambda }_{1}}{\\sqrt{2}}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The light rays from an object have been reflected towards an observer from a standard flat mirror, the image observed by the observer are:</p> <p>A. Real</p> <p>B. Erect</p> <p>C. Smaller in size then object</p> <p>D. Laterally inverted</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -950,7 +954,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A plane mirror forms an erect, same sized, laterally inverted and virtual image of a real object.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The critical angle for a denser-rarer interface is \(45^{\circ}\). The speed of light in rarer medium is \(3 \times 10^8 \mathrm{~m} / \mathrm{s}\). The speed of light in the denser medium is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7.5 \times 10^7 \mathrm{~m} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.12 \times 10^8 \mathrm{~m} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.12 \times 10^7 \mathrm{~m} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{2} \times 10^8 \mathrm{~m} / \mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -959,10 +963,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Critical angle, sinc \\(=\\frac{1}{\\mu}=\\frac{1}{\\frac{c}{v}}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow \\mathrm{V}=\\mathrm{C} \\operatorname{sinc} \\\\\u003cbr/>&amp; =3 \\times 10^8 \\times \\sin 45^{\\circ} \\\\\u003cbr/>&amp; =3 \\times 10^8 \\times \\frac{1}{\\sqrt{2}}=2.12 \\times 10^8 \\mathrm{~m} / \\mathrm{s}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Critical angle, sinc \\(=\\frac{1}{\\mu}=\\frac{1}{\\frac{c}{v}}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Rightarrow \\mathrm{V}=\\mathrm{C} \\operatorname{sinc} \\\\& =3 \\times 10^8 \\times \\sin 45^{\\circ} \\\\& =3 \\times 10^8 \\times \\frac{1}{\\sqrt{2}}=2.12 \\times 10^8 \\mathrm{~m} / \\mathrm{s}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Car B overtakes another car A at a relative speed of \(40{\mathrm{ms}}^{-1}\). How fast will the image of car B appear to move in the mirror of focal length 10 cm fitted in car A, when the car B is 1.9 m away from the car A?</p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.1m{s}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.2m{s}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4m{s}^{-1}\) </p></span></div><div class="option"><span class="key">d</span><span><p>\(40m{s}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -974,7 +978,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, u=-1.9 m =-190 cm\u003c/p> \u003cp>f=10 cm.\u003cbr/>For mirror\u003cbr/>\\({\\vec{V}}_{IM}=-{m}^{2}{\\vec{V}}_{OM}\\)\u003cbr/>\u003cstrong>\\({\\vec{V}}_{IM}\\to\\) \u003c/strong>Velocity of image w.r.t mirror\u003cbr/>\\({\\vec{V}}_{OM}\\to\\) Velocity of object w.r.t mirror \\(m\\to\\) magnification\u003cbr/>Formula of magnification,\u003cbr/>\\(m=\\frac{f}{f-u}\\\\ =\\frac{10}{10-(-190)}\\\\ =\\frac{10}{200}=\\frac{1}{20}\\\\ \\left|{\\vec{V}}_{IM}\\right|={\\left(\\frac{1}{20}\\right)}^{2}\\left|{\\vec{V}}_{OM}\\right|\\\\ =\\frac{1}{(20{)}^{2}}\\times 40=0.1m/s\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Your friend is having eye sight problem. She is not able to see clearly a distant uniform window mesh and it appears to her non-uniform and distorted. The doctor diagnosed the problems as:</p> <p> </p> <p>[JEE Main 2021, 18 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Myopia with Astigmatism</p></span></div><div class="option"><span class="key">b</span><span><p>Myopia and hypermetropia</p></span></div><div class="option"><span class="key">c</span><span><p>Astigmatism</p></span></div><div class="option"><span class="key">d</span><span><p>Presbyopia with Astigmatism</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -986,7 +990,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A person with defect of myopia can not see distant objects clearly, while that of astigmatism sees objects non-uniform and distorted.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Car B overtakes another car A at a relative speed of \(40m{s}^{-1}\). How fast will the image of car B appear to move in the mirror of focal length 10 cm fitted in car A, when the car B is 1.9 m away from the car A ?</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.1m{s}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.2m{s}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4m{s}^{-1}\) </p></span></div><div class="option"><span class="key">d</span><span><p>\(40m{s}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -998,7 +1002,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, u=-1.9 m =-190 cm\u003c/p> \u003cp>f=10 cm.\u003cbr/>For mirror\u003cbr/>\\({\\vec{V}}_{IM}=-{m}^{2}{\\vec{V}}_{OM}\\)\u003cbr/>\u003cstrong>\\({\\vec{V}}_{IM}\\to\\) \u003c/strong>Velocity of image w.r.t mirror\u003cbr/>\\({\\vec{V}}_{OM}\\to\\) Velocity of object w.r.t mirror \\(m\\to\\) magnification\u003cbr/>Formula of magnification,\u003cbr/>\\(m=\\frac{f}{f-u}\\\\ =\\frac{10}{10-(-190)}\\\\ =\\frac{10}{200}=\\frac{1}{20}\\\\ \\left|{\\vec{V}}_{IM}\\right|={\\left(\\frac{1}{20}\\right)}^{2}\\left|{\\vec{V}}_{OM}\\right|\\\\ =\\frac{1}{(20{)}^{2}}\\times 40=0.1m/s\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Green light of wavelength \(5460\overset{\mathrm{o}}{\mathrm{A}}\) is incident on an air-glass interface. If the refractive index of glass is \(1.5\), the wavelength of light in glass would be \(\left(\mathrm{c}=3 \times 10^8 \mathrm{~ms}^{-1}\right)\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3640\overset{\mathrm{o}}{\mathrm{A}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5460\overset{\mathrm{o}}{\mathrm{A}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4861\overset{\mathrm{o}}{\mathrm{A}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of the above</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1010,7 +1014,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\lambda \\mathrm{g}=\\frac{\\lambda_{\\mathrm{a}}}{\\mu}=\\frac{5460}{1.5}= \\) \\(3640\\overset{\\mathrm{o}}{\\mathrm{A}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The thickness at the centre of a plano- convex lens is \(3 \mathrm{~mm}\) and the diameter is \(6 \mathrm{~cm}\). If the speed of light in the material of the lens is \(2 \times 10^8 \mathrm{~ms}^{-1}\). The focal length of the lens is:<br/>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(15 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.30 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(30 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.5 \mathrm{~cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1019,10 +1023,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Refractive index of the material,\u003cbr/>\\[\u003cbr/>\\mu_g=\\frac{c}{v_m}=\\frac{3 \\times 10^8}{2 \\times 10^8}=1.5\u003cbr/>\\]\u003c/p> \u003cp>Here \\(\\mathrm{MN}=3 \\mathrm{~mm}=0.3 \\mathrm{~cm}\\),\u003cbr/>\\[\u003cbr/>\\mathrm{AN}=\\mathrm{BN}=3 \\mathrm{~cm}\u003cbr/>\\]\u003c/p> \u003cp>For right angled triangle ANO, we can write\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\left(R^2\\right)=(A N)^2+(O N)^2 \\\\\u003cbr/>&amp; \\Rightarrow R^2=(3)^2+(R-0.3)^2 \\\\\u003cbr/>&amp; \\Rightarrow R^2=9+R^2+0.09-0.6 R \\\\\u003cbr/>&amp; R=\\frac{9.09}{0.6}=15.15 \\mathrm{~cm} \\approx 15 \\mathrm{~cm}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>From the Lens Maker's formula,\u003cbr/>\\[\u003cbr/>\\frac{1}{f}=(\\mu g-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)=\\left(\\frac{1}{15}-\\frac{1}{\\infty}\\right)=\\frac{1}{30} \\Rightarrow f=30 \\mathrm{~cm}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Refractive index of the material,\u003cbr/>\\[\u003cbr/>\\mu_g=\\frac{c}{v_m}=\\frac{3 \\times 10^8}{2 \\times 10^8}=1.5\u003cbr/>\\]\u003c/p> \u003cp>Here \\(\\mathrm{MN}=3 \\mathrm{~mm}=0.3 \\mathrm{~cm}\\),\u003cbr/>\\[\u003cbr/>\\mathrm{AN}=\\mathrm{BN}=3 \\mathrm{~cm}\u003cbr/>\\]\u003c/p> \u003cp>For right angled triangle ANO, we can write\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\left(R^2\\right)=(A N)^2+(O N)^2 \\\\& \\Rightarrow R^2=(3)^2+(R-0.3)^2 \\\\& \\Rightarrow R^2=9+R^2+0.09-0.6 R \\\\& R=\\frac{9.09}{0.6}=15.15 \\mathrm{~cm} \\approx 15 \\mathrm{~cm}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>From the Lens Maker's formula,\u003cbr/>\\[\u003cbr/>\\frac{1}{f}=(\\mu g-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)=\\left(\\frac{1}{15}-\\frac{1}{\\infty}\\right)=\\frac{1}{30} \\Rightarrow f=30 \\mathrm{~cm}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A microscope is focused on an object at the bottom of a bucket. If liquid with refractive index \(\frac{5}{3}\) is poured inside the bucket, then microscope has to be raised by \(30 \mathrm{~cm}\) to focus the object again. The height of the liquid in the bucket is:<br/>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(75 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(50 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(18 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(12 \mathrm{~cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1034,7 +1038,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Using formula, \\(d=h\\left(1-\\frac{1}{\\mu }\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow 30=h\\left(1-\\frac{3}{5}\\right)\\left[∵\\text{Given, }d=30\\text{ cm, }\\mu =\\frac{5}{3}\\right]\\)\u003c/p> \u003cp>\\(\\Rightarrow 30=h\\times \\frac{2}{5}\\)\u003c/p> \u003cp>\\(∴h=75\\text{ cm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R)<br/>Assertion (A): The phase difference of two light waves change if they travel through different media having same thickness, but different indices of refraction.</p> <p>Reason (R): The wavelengths of waves are different in different media.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \(A\) and \(R\) are correct but \(R\) is not the correct explanation of A</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>A \text { is correct but } R \text { is not correct }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(A\) and \(R\) are correct and \(R\) is the correct explanation of \(A\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>A \text { is not correct but } R \text { is correct }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1046,7 +1050,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As indices of refraction changes, wavelength change. And as medium changes, optical path changes.\u003cbr/>\\(\\because\\) Path difference \\(=\\frac{\\lambda}{2 \\pi} \\times\\) Phase difference\u003cbr/>So phase difference changes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q84" data-gated="1">
-      <div class="qnum">Q84</div>
+      <div class="qhead"><div class="qnum">Q84</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An object is placed beyond the centre of curvature \(C\) of the given concave mirror. If the distance of the object is \(d_1\) from \(C\) and the distance of the image formed is \(d_2\) from \(C\), the radius of curvature of this mirror is:</p> <p>[JEE Main 2021, 27 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{2 d_1 d_2}{d_1+d_2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{d_1 d_2}{d_1+d_2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2 d_1 d_2}{d_1-d_2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{d_1 d_2}{d_1-d_2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1055,10 +1059,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Using Newton's formula,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow\\left(f+d_1\\right)\\left(f-d_2\\right)=f^2 \\\\\u003cbr/>&amp; \\Rightarrow f=\\frac{d_1 d_2}{d_1-d_2} \\Rightarrow R=2 f=\\frac{2 d_1 d_2}{d_1-d_2}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Using Newton's formula,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Rightarrow\\left(f+d_1\\right)\\left(f-d_2\\right)=f^2 \\\\& \\Rightarrow f=\\frac{d_1 d_2}{d_1-d_2} \\Rightarrow R=2 f=\\frac{2 d_1 d_2}{d_1-d_2}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q85" data-gated="1">
-      <div class="qnum">Q85</div>
+      <div class="qhead"><div class="qnum">Q85</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A prism of refractive index \(\mu\) and angle of prism \(A\) is placed in the position of minimum angle of deviation. If minimum angle of deviation is also \(A\), then in terms of refractive index value of \(A\) is: <br/>[JEE Main 2021, 25 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2 \cos ^{-1}\left(\frac{\mu}{2}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\cos ^{-1}\left(\frac{\mu}{2}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sin ^{-1}\left(\frac{\mu}{2}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sin ^{-1}\left(\sqrt{\frac{\mu-1}{2}}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1070,7 +1074,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, \\({\\delta }_{m}=A\\)\u003c/p> \u003cp>Prism formula, \\(\\mu =\\frac{\\sin \\left(\\frac{A+{\\delta }_{m}}{2}\\right)}{\\sin (A/2)}\\)\u003c/p> \u003cp>\\(\\mu =\\frac{\\sin A}{\\sin \\left(\\frac{A}{2}\\right)}=\\frac{2\\sin \\left(\\frac{A}{2}\\right)\\cos \\left(\\frac{A}{2}\\right)}{\\sin \\left(\\frac{A}{2}\\right)}\\)\u003c/p> \u003cp>\\(\\mu =2\\cos \\left(\\frac{A}{2}\\right)\\Rightarrow \\frac{\\mu }{2}=\\cos \\frac{A}{2}\\)\u003c/p> \u003cp>\\(A=2{\\cos }^{-1}\\left(\\frac{\\mu }{2}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q86" data-gated="1">
-      <div class="qnum">Q86</div>
+      <div class="qhead"><div class="qnum">Q86</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The light rays from an object have been reflected towards an observer from a standard flat mirror, the image observed by the observer are:<br/>A. Real<br/>B. Erect<br/>C. Smaller in size than object<br/>D. Laterally inverted</p> <p>Choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1082,7 +1086,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A plane mirror forms an erect, same sized, laterally inverted and virtual image of a real object.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q87" data-gated="1">
-      <div class="qnum">Q87</div>
+      <div class="qhead"><div class="qnum">Q87</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A person has been using spectacles of power -1.0 diopter for distant vision and a separate reading glass of power 2.0 diopters. What is the least distance of distinct vision for this person:<br/>[JEE Main 2023, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(10 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(40 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(30 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(50 \mathrm{~cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1094,7 +1098,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\\[\\frac{1}{v} - \\frac{1}{u} = \\frac{1}{f}\\]   \\[P = 2D = 2 \\text{ m}^{-1} \\Rightarrow \\frac{1}{f} = \\frac{2}{100} \\text{ cm}^{-1}\\]   \\[\\frac{1}{v} - \\left(-\\frac{1}{25}\\right) = \\frac{2}{100} \\Rightarrow \\frac{1}{v} = \\frac{1}{50} - \\frac{1}{25} \\Rightarrow v = -50 \\text{ cm}\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q88" data-gated="1">
-      <div class="qnum">Q88</div>
+      <div class="qhead"><div class="qnum">Q88</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The critical angle for a denser-rarer interface is \(45^{\circ}\). The speed of light in rarer medium is \(3 \times 10^8 \mathrm{~m} / \mathrm{s}\). The speed of light in the denser medium is:<br/>[JEE Main 2023, 11 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7.5 \times 10^7 \mathrm{~m} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.12 \times 10^8 \mathrm{~m} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.12 \times 10^7 \mathrm{~m} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{2} \times 10^8 \mathrm{~m} / \mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1106,7 +1110,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Critical angle, \\(\\sin c=\\frac{1}{\\mu }=\\frac{1}{\\frac{c}{v}}\\)\u003cbr/>\\(\\Rightarrow \\mathrm{v}=\\mathrm{C}sinc\\)\u003cbr/>\\(=3\\times {10}^{8}\\times \\sin 45^\\circ\\)\u003cbr/>\\(v=3\\times {10}^{8}\\times \\frac{1}{\\sqrt{2}}=2.12\\times {10}^{8}\\mathrm{m}/\\mathrm{s}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q89" data-gated="1">
-      <div class="qnum">Q89</div>
+      <div class="qhead"><div class="qnum">Q89</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A microscope is focused on an object at the bottom of a bucket. If liquid with refractive index \(\frac{5}{3}\) is poured inside the bucket, then microscope have to be raised by \(30\mathrm{cm}\) to focus the object again. The height of the liquid in the bucket is:</p> <p> </p> <p><strong>[JEE Main 2023, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>75 cm</p></span></div><div class="option"><span class="key">b</span><span><p>50 cm</p></span></div><div class="option"><span class="key">c</span><span><p>18 cm</p></span></div><div class="option"><span class="key">d</span><span><p>12 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1118,7 +1122,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Using formula, \\(d=h\\left(1-\\frac{1}{\\mu }\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow 30=h\\left(1-\\frac{3}{5}\\right)\\left[∵\\right.\\) Given, \\(\\left.d=30\\mathrm{cm},\\mu =\\frac{5}{3}\\right]\\)\u003c/p> \u003cp>\\(\\Rightarrow 30=h\\times \\frac{2}{5}\\)\u003c/p> \u003cp>\\(∴h=75\\mathrm{cm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q90" data-gated="1">
-      <div class="qnum">Q90</div>
+      <div class="qhead"><div class="qnum">Q90</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The refractive index of converging lens is 1.4 . What will be the focal length of this lens, if it is placed in a medium of same refractive index? Assume the radii of curvature of the faces of lens are \(R_1\) and \(R_2\) respectively.</p> <p><strong>[JEE Main 2021, 16 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{R_1 R_2}{R_1-R_2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Infinite</p></span></div><div class="option"><span class="key">d</span><span><p>Zero</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1130,7 +1134,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\frac{1}{f}=\\left(\\frac{{\\mu }_{l}}{{\\mu }_{m}}−1\\right)\\left(\\frac{1}{{R}_{1}}−\\frac{1}{{R}_{2}}\\right)\\)\u003c/p> \u003cp>For \\({\\mu }_{m}={\\mu }_{l},\\)\u003c/p> \u003cp>\\(\\frac{1}{f}=0\\Rightarrow f\\) infinite\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q91" data-gated="1">
-      <div class="qnum">Q91</div>
+      <div class="qhead"><div class="qnum">Q91</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The magnifying power of a telescope with tube length \( 60 \mathrm{~cm} \) is 5 . What is the focal length of its eye piece ?</p> <p>[JEE Main 2020, 2 Sep (Shift 2)]</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 30 \mathrm{~cm} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 10 \mathrm{~cm} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 40 \mathrm{~cm} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 20 \mathrm{~cm} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1142,7 +1146,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given:\u003cbr/>Tube length of telescope, \\(L=60 \\mathrm{~cm}\\)\u003cbr/>Magnifying power, \\(M=5\\)\u003cbr/>Formula for magnifying power of astronomical telescope:\u003cbr/>\\(M=\\frac{{f}_{o}}{{f}_{e}}\\)\u003cbr/>Also,\u003cbr/>\\(L={f}_{o}+{f}_{e}\\)\u003cbr/>Let focal length of eyepiece \\(=f_e\\)\u003cbr/>Then objective focal length \\(f_o=5 f_e\\)\u003cbr/>Substitute into tube length:\u003cbr/>\\({f}_{o}+{f}_{e}=5{f}_{e}+{f}_{e}=6{f}_{e}=60\\Rightarrow {f}_{e}=10\\mathrm{cm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q92" data-gated="1">
-      <div class="qnum">Q92</div>
+      <div class="qhead"><div class="qnum">Q92</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ice cube has a bubble inside. When viewed from one side the apparent distance of the bubble is \(12 \mathrm{~cm}\). when viewed from the opposite side, the apparent distance of the bubble is observed as \(4 \mathrm{~cm}\). If the side of the ice cube is \(24 \mathrm{~cm}\), the refractive index of the ice cube is:<br/>[JEE Main 2023, 12 Apr (Shift 1)]<br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{6}{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

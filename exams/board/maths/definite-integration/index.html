@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/board/maths/"},{"@type":"ListItem","position":5,"name":"Definite Integration","item":"https://yespyq.com/exams/board/maths/definite-integration/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Definite Integration</h1>
       <p>12 Board Maths previous year questions on <b>Definite Integration</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\int_a^b f(x) d x\) is equal to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\int_a^b f(a-x) d x\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\int_a^b f(a+b-x) d x\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\int_{\mathrm{a}}^{\mathrm{b}} \mathrm{f}(\mathrm{x}-(\mathrm{a}+\mathrm{b})) \mathrm{dx}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(\int_{\mathrm{a}}^{\mathrm{b}} \mathrm{f}((\mathrm{a}-\mathrm{x})+(\mathrm{b}-\mathrm{x})) \mathrm{dx}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \({\int }_{-1}^{1}x|x|\mathrm{d}x\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{1}{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(f(x)=x|x|\\)\u003c/p> \u003cp>\\(f(-x)=-x|x|=-f(x)\\)\u003c/p> \u003cp>So, \\(f\\left(x\\right)\\) is an odd function.\u003c/p> \u003cp>We know that if \\(f\\left(x\\right)\\) is an odd function then \\({\\int }_{-a}^{a}f\\left(x\\right)dx=0\\).\u003c/p> \u003cp>Thus, \\({\\int }_{-1}^{1}x|x|\\mathrm{d}x=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\int_0^{\pi / 2} \frac{\sin x-\cos x}{1+\sin x \cos x} d x\) is equal to :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi\)</p></span></div><div class="option"><span class="key">b</span><span><p> Zero (0)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\int_0^{\pi / 2} \frac{2 \sin x}{1+\sin x \cos x} d x\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(\frac{\pi^2}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let, \\(I={\\int }_{0}^{\\pi /2}\\frac{\\sin x-\\cos x}{1+\\sin x\\cos x}dx\\)\u003c/p> \u003cp>Using \\({\\int }_{0}^{a}f\\left(x\\right)dx={\\int }_{0}^{a}f\\left(a-x\\right)dx\\)\u003c/p> \u003cp>\\(\\Rightarrow I={\\int }_{0}^{\\pi /2}\\frac{\\cos x-\\sin x}{1+\\sin x\\cos x}dx\\)\u003c/p> \u003cp>\\(\\Rightarrow I=-{\\int }_{0}^{\\pi /2}\\frac{\\sin x-\\cos x}{1+\\sin x\\cos x}dx=-I\\)\u003c/p> \u003cp>\\(\\Rightarrow 2I=0\\Rightarrow I=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\int_0^{\pi / 2} \frac{\sin x-\cos x}{1+\sin x \cos x} d x\) is equal to :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi\)</p></span></div><div class="option"><span class="key">b</span><span><p> Zero (0)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\int_0^{\pi / 2} \frac{2 \sin x}{1+\sin x \cos x} d x\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(\frac{\pi^2}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(I={\\int }_{0}^{\\pi /2}\\frac{\\sin x-\\cos x}{1+\\sin x\\cos x}dx\\)\u003c/p> \u003cp>Put \\(x↦\\frac{\\pi }{2}-x\\)\u003c/p> \u003cp>\\(\\Rightarrow I={\\int }_{0}^{\\pi /2}\\frac{\\cos x-\\sin x}{1+\\sin x\\cos x}dx\\)\u003c/p> \u003cp>\\(\\Rightarrow I=-{\\int }_{0}^{\\pi /2}\\frac{\\sin x-\\cos x}{1+\\sin x\\cos x}dx=-I\\)\u003c/p> \u003cp>\\(2I=0\\Rightarrow I=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \({\int }_{-1}^{1}x|x|\mathrm{d}x\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{1}{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(f(x)=x|x|\\)\u003c/p> \u003cp>\\(f(-x)=-x|x|=-f(x)\\)\u003c/p> \u003cp>So, \\(f\\left(x\\right)\\) is an odd function.\u003c/p> \u003cp>We know that if \\(f\\left(x\\right)\\) is an odd function then \\({\\int }_{-a}^{a}f\\left(x\\right)dx=0\\).\u003c/p> \u003cp>Thus, \\({\\int }_{-1}^{1}x|x|\\mathrm{d}x=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\int_a^b f(x) d x\) is equal to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\int_a^b f(a-x) d x\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\int_a^b f(a+b-x) d x\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\int_{\mathrm{a}}^{\mathrm{b}} \mathrm{f}(\mathrm{x}-(\mathrm{a}+\mathrm{b})) \mathrm{dx}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(\int_{\mathrm{a}}^{\mathrm{b}} \mathrm{f}((\mathrm{a}-\mathrm{x})+(\mathrm{b}-\mathrm{x})) \mathrm{dx}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\(x=a+b-u\\).\u003c/p> \u003cp>\\(dx=-du.\\)\u003c/p> \u003cp>When \\(x=a, u=b\\); when \\(x=b, u=a\\).\u003c/p> \u003cp>\\({\\int }_{a}^{b}f(x)dx={\\int }_{u=b}^{u=a}f(a+b-u)(-du)\\)\u003c/p> \u003cp>\\(\\Rightarrow {\\int }_{a}^{b}f(x)dx={\\int }_{u=a}^{u=b}f(a+b-u)du\\)\u003c/p> \u003cp>Rename \\(u\\) to \\(x\\) : \\(\\int_a^b f(x) d x=\\int_a^b f(a+b-x) d x\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(f\left(x\right)={[x]}^{2}−\left[x+3\right]−3,\text{ }x\in R,\) where [.] is the greatest integer function. Then</p> <p> </p> <p>[JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(f(x)=0\) for finitely many values of x</p></span></div><div class="option"><span class="key">b</span><span><p>\(f(x)<0\) only for \(x\in [−1,\text{  }3)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(f\left(x\right)=0\) only for \(x\in [4,\text{  }∞)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\int }_{0}^{2}f(x)dx=−6\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(f(x)=[x]^2-[x]-6=([x]+2)([x]-3)\\)\u003c/p> \u003cp> \\(f(x)=0 \\Rightarrow[x]=3\\) or \\([x]=-2\\)\u003c/p> \u003cp> Infinitely many solutions.\u003c/p> \u003cp>\\(f(x)&gt;0 \\Rightarrow[x] \\in(-\\infty,-2) \\cup(3, \\infty)\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\in(-\\infty,-2) \\cup[4, \\infty)\\)\u003c/p> \u003cp> \\(f(x)&lt;0 \\Rightarrow[x] \\in(-2,3)\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\in[-1,3)\\)\u003c/p> \u003cp>\\(\\int_0^2 f(x) d x=\\int_0^1(0-0-6) d x+\\int_1^2(1-1-6) d x\\)\u003c/p> \u003cp>\\(=-6-6 =-12\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of the integral \({\int }_{\frac{\pi }{24}}^{\frac{5\pi }{24}}\frac{\mathrm{d}x}{1+\sqrt[3]{\tan 2x}}\) is:</p> <p> </p> <p>[JEE Main 2026, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{18}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\pi }{12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\( I=\\int_{\\frac{\\pi}{24}}^{\\frac{5 \\pi}{24}} \\frac{d x}{1+\\sqrt[3]{\\tan 2 x}} \\)\u003c/p> \u003cp>\\(I=\\int_{\\frac{\\pi}{24}}^{\\frac{5 \\pi}{24}} \\frac{\\cos ^{1 / 3} 2 x}{\\sin ^{1 / 3} 2 x+\\cos ^{1 / 3} 2 x} d x \\ldots (1)\\)\u003c/p> \u003cp>Using king rule :\u003c/p> \u003cp>\\(I=\\int_{\\frac{\\pi}{24}}^{\\frac{5 \\pi}{24}} \\frac{\\sin ^{1 / 3} 2 x}{\\cos ^{1 / 3} 2 x+\\sin ^{1 / 3} 2 x} \\ldots (2)\\)\u003c/p> \u003cp>adding (1) and (2), we get\u003c/p> \u003cp>\\(2 I=\\int_{\\frac{\\pi}{24}}^{\\frac{5 \\pi}{24}} 1 d x \\)\u003c/p> \u003cp>\\(2 I=\\frac{5 \\pi}{24}-\\frac{\\pi}{24}=\\frac{\\pi}{6} \\)\u003c/p> \u003cp>\\(I=\\frac{\\pi}{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integral \({\int }_{1/4}^{3/4}\cos \left(2co{t}^{-1}\sqrt{\frac{1-x}{1+x}}\right)dx\) is equal to:</p> <p><strong>[JEE Main 2024, 09 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>-1/2</p></span></div><div class="option"><span class="key">b</span><span><p>1/4</p></span></div><div class="option"><span class="key">c</span><span><p>1/2</p></span></div><div class="option"><span class="key">d</span><span><p>-1/4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(I={\\int }_{1/4}^{3/4}\\cos \\left(2co{t}^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)dx\\)\u003c/p> \u003cp>\\({\\int }_{1/4}^{3/4}\\cos \\left(2\\left({\\tan }^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)\\right)dx\\)\u003c/p> \u003cp>\\({\\int }_{1/4}^{3/4}\\frac{1-{\\tan }^{2}\\left({\\tan }^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)}{1+{\\tan }^{2}\\left({\\tan }^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)}dx\\)\u003c/p> \u003cp>\\(={\\int }_{1/4}^{3/4}\\frac{1-\\left(\\frac{1+x}{1-x}\\right)}{1+\\left(\\frac{1+x}{1-x}\\right)}dx{\\int }_{1/4}^{3/4}\\frac{-2x}{2}dx\\)\u003c/p> \u003cp>\\(={\\int }_{1/4}^{3/4}(-x)dx=-{\\left(\\frac{{x}^{2}}{2}\\right)}_{1/4}^{3/4}\\)\u003c/p> \u003cp>\\(=-\\frac{1}{2}\\left[\\frac{9}{16}-\\frac{1}{16}\\right]\\)\u003c/p> \u003cp>\\(=-\\frac{1}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integral \({\int }_{1/4}^{3/4}\cos \left(2co{t}^{-1}\sqrt{\frac{1-x}{1+x}}\right)dx\) is equal to:</p> <p><strong>[JEE Main 2024, 09 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>-1/2</p></span></div><div class="option"><span class="key">b</span><span><p>1/4</p></span></div><div class="option"><span class="key">c</span><span><p>1/2</p></span></div><div class="option"><span class="key">d</span><span><p>-1/4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(I={\\int }_{1/4}^{3/4}\\cos \\left(2co{t}^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)dx\\)\u003c/p> \u003cp>\\({\\int }_{1/4}^{3/4}\\cos \\left(2\\left({\\tan }^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)\\right)dx\\)\u003c/p> \u003cp>\\({\\int }_{1/4}^{3/4}\\frac{1-{\\tan }^{2}\\left({\\tan }^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)}{1+{\\tan }^{2}\\left({\\tan }^{-1}\\sqrt{\\frac{1-x}{1+x}}\\right)}dx\\)\u003c/p> \u003cp>\\(={\\int }_{1/4}^{3/4}\\frac{1-\\left(\\frac{1+x}{1-x}\\right)}{1+\\left(\\frac{1+x}{1-x}\\right)}dx{\\int }_{1/4}^{3/4}\\frac{-2x}{2}dx\\)\u003c/p> \u003cp>\\(={\\int }_{1/4}^{3/4}(-x)dx=-{\\left(\\frac{{x}^{2}}{2}\\right)}_{1/4}^{3/4}\\)\u003c/p> \u003cp>\\(=-\\frac{1}{2}\\left[\\frac{9}{16}-\\frac{1}{16}\\right]\\)\u003c/p> \u003cp>\\(=-\\frac{1}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(f(2a-x)=f(x)\) , then\({\int }_{0}^{2a}f(x)dx\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\int }_{0}^{2a}f\left(\frac{x}{2}\right)dx\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\int }_{0}^{a}f(x)dx\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2{\int }_{a}^{0}f(x)dx\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2{\int }_{0}^{a}f(x)dx\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(I=\\int_0^{2 a} f(x) d x\\)\u003c/p> \u003cp>\\(I=\\int_0^a f(x) d x+\\int_a^{2 a} f(x) d x\\)\u003c/p> \u003cp>In \\(\\int_a^{2 a} f(x) d x\\), put \\(x=2 a-t, d x=-d t\\)\u003c/p> \u003cp>\\(\\int_a^{2 a} f(x) d x=\\int_a^0 f(2 a-t)(-d t)=\\int_0^a f(2 a-t) d t\\)\u003c/p> \u003cp>Given \\(f(2 a-t)=f(t)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\int_a^{2 a} f(x) d x=\\int_0^a f(t) d t\\)\u003c/p> \u003cp>\\(\\Rightarrow I=\\int_0^a f(x) d x+\\int_0^a f(x) d x=2 \\int_0^a f(x) d x\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(f(2a-x)=f(x)\) , then\({\int }_{0}^{2a}f\left(x\right)dx\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\int }_{0}^{2a}f\left(\frac{x}{2}\right)dx\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\int }_{0}^{a}f(x)dx\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2{\int }_{a}^{0}f(x)dx\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2{\int }_{0}^{a}f(x)dx\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

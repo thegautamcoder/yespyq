@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Chemical Bonding and Molecular Structure","item":"https://yespyq.com/exams/board/chemistry/chemical-bonding-and-molecular-structure/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Chemical Bonding and Molecular Structure</h1>
       <p>22 Board Chemistry previous year questions on <b>Chemical Bonding and Molecular Structure</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following has non-zero dipole moment value?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{CCl}}_{4}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\mathrm{HI}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{CO}}_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{BF}}_{3}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In \({\mathrm{SO}}_{2},{\mathrm{NO}}_{2}^{-}\) and \({\mathrm{N}}_{3}^{-}\)the hybridisations at the central atom are, respectively,</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\({\mathrm{sp}}^{2},{\mathrm{sp}}^{2}\) and sp</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{sp}}^{2}\), sp and sp</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{sp}}^{2},{\mathrm{sp}}^{2}\) and \({\mathrm{sp}}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{sp},{\mathrm{sp}}^{2}\) and sp</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following molecules(s) show/s paramagnetic behavior?<br/>(A) \({\mathrm{O}}_{2}\)<br/>(B) \({\mathrm{N}}_{2}\)<br/>(C) \({\mathrm{F}}_{2}\)<br/>(D) \({\mathrm{S}}_{2}\)<br/>(E) \({\mathrm{Cl}}_{2}\)<br/>Choose the <strong>correct</strong> answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B only</p></span></div><div class="option"><span class="key">b</span><span><p>A &amp; C only</p></span></div><div class="option"><span class="key">c</span><span><p>A &amp; E only</p></span></div><div class="option"><span class="key">d</span><span><p>A &amp; D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>• O\u003csub>2\u003c/sub> \\(\\to\\) 16 e; configuration ends with \\(\\pi\\)*(2px)\u003csup>1\u003c/sup>, \\(\\pi\\)*(2py)\u003csup>1\u003c/sup> \\(\\to\\) 2 unpaired electrons paramagnetic\u003cbr/>• N\u003csub>2\u003c/sub> \\(\\to\\) 14 e; fully paired \\(\\to\\) diamagnetic\u003cbr/>• F\u003csub>2\u003c/sub> \\(\\to\\) 18 e; fully paired \\(\\to\\) diamagnetic\u003cbr/>• S\u003csub>2\u003c/sub> \\(\\to\\) 32 e; MO similar to O\u003csub>2\u003c/sub>, unpaired electrons in n* orbitals \\(\\to\\) paramagnetic\u003cbr/>• Cl\u003csub>2\u003c/sub> \\(\\to\\) 34 e; fully paired \\(\\to\\) diamagnetic\u003cbr/>So, paramagnetic molecules are O\u003csub>2\u003c/sub> and S\u003csub>2\u003c/sub>.\u003cbr/>Correct Option: D (A &amp; D only)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Number of \(\sigma \mathrm{and}\pi\) bonds respectively in hex-1-en-4-yne are:</p> <p>Memory Based Question 29/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>13,3</p></span></div><div class="option"><span class="key">b</span><span><p>14,3</p></span></div><div class="option"><span class="key">c</span><span><p>3,14</p></span></div><div class="option"><span class="key">d</span><span><p>14,13</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Hex-1-en-4-yne (C₆H₈) contains:\u003c/p> \u003cul> \u003cli>Sigma (σ) bonds: 14 (4 C–C single bonds, 8 C–H bonds, 1 sigma bond in C=C, and 1 sigma bond in C≡C).\u003c/li> \u003cli>Pi (π) bonds: 3 (one from C=C and two from C≡C).\u003c/li> \u003c/ul> \u003cp>Thus, the correct answer is 14 σ and 3 π bonds.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statement/s about Hydrogen bonding is/are<br/>A. Hydrogen bonding exists when \(\mathrm{H}\) is covalently bonded to the highly electronegative atom.<br/>B. Intermolecular H bonding is present in o-nitro phenol<br/>C. Intramolecular H bonding is present in \(\mathrm{HF}\)<br/>D. The magnitude of H bonding depends on the physical state of the compound.<br/>E. H-bonding has powerful effect on the structure and properties of compounds</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2024, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C only</p></span></div><div class="option"><span class="key">b</span><span><p>A only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, D, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>A – True:\u003c/strong> Hydrogen bonding occurs when \u003cstrong>H is covalently bonded to a highly electronegative atom\u003c/strong> (F, O, N).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B – False:\u003c/strong> \u003cem>o-Nitrophenol\u003c/em> shows \u003cstrong>intramolecular\u003c/strong>, not intermolecular, hydrogen bonding.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C – False:\u003c/strong> \u003cstrong>HF has intermolecular\u003c/strong> hydrogen bonding; intramolecular H-bonding is not possible in a diatomic molecule.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D – True:\u003c/strong> \u003cstrong>Strength of H-bonding depends on physical state\u003c/strong> (solid &gt; liquid &gt; gas).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>E – True:\u003c/strong> Hydrogen bonding strongly affects \u003cstrong>structure and properties\u003c/strong> (boiling point, solubility, etc.).\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong> Hence, A, D and E are correct → Option D.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Total number of lone pair of electron in \( \mathrm{I}_{3}^{-} \)ion is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(9\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(12\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>9\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement-I: </strong>Oxygen-oxygen bond length in ozone is greater than dioxygen</p> <p><strong>Statement-II:</strong> \(\mathrm{O}-\mathrm{O}\) bond order in ozone is 1.5 and \(\mathrm{O}-\mathrm{O}\) bond order in dioxygen is 2.0</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Bond order for Ozone is 1.5 and for oxygen is 2.\u003c/p> \u003cp>Greater bond order, Lesser Bond length\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following linear combination of atomic orbitals will lead to formation of molecular orbitals in homonuclear diatomic molecules [internuclear axis in 𝑧-direction] ?</p> <p>A. \(2{p}_{z}\) and \(2{p}_{x}\)<br/>B. 2s and \(2{p}_{x}\)<br/>C. \(3{d}_{xy}\) and \(3{d}_{{x}^{2}-{y}^{2}}\)<br/>D. 2s and \(2{p}_{z}\)<br/>E. \(2{p}_{z}\) and \(3{d}_{{x}^{2}-{y}^{2}}\)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B Only</p></span></div><div class="option"><span class="key">b</span><span><p>D Only</p></span></div><div class="option"><span class="key">c</span><span><p>C and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Only option D \\(\\left(2s\\right.\\) and \\(\\left.2{p}_{z}\\right)\\) leads to effective molecular orbital formation along the z -axis. The 2 s orbital is spherically symmetric and can overlap with the \\(2{p}_{z}\\) orbital, which lies along the internuclear axis. This type of overlap can contribute to \\(\\sigma\\) molecular orbital formation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The hybridisation scheme for the central atom includes a d-orbital contribution in</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{I}}_{3}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{PCl}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{NO}}_{3}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{H}}_{2}\mathrm{Se}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{I}}_{3}^{-}\\) is linear with central iodine atom undergoing \\(s{p}^{3}d\\)-hybridisation and three lone pairs occupying equatorial position.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct orders against the property mentioned<br/>A. \({\mathrm{H}}_{2}\mathrm{O}>{\mathrm{NH}}_{3}>{\mathrm{CHCl}}_{3}\) - dipole moment<br/>B. \({\mathrm{XeF}}_{4}>{\mathrm{XeO}}_{3}>{\mathrm{XeF}}_{2}\)- number of lone pairs on central atom<br/>C. \(\mathrm{O}-\mathrm{H}>\mathrm{C}-\mathrm{H}>\mathrm{N}-\mathrm{O}\) - bond length<br/>D. \({\mathrm{N}}_{2}>{\mathrm{O}}_{2}>{\mathrm{H}}_{2}-\) bond enthalpy</p> <p>Choose the <strong>correct</strong> answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C only</p></span></div><div class="option"><span class="key">b</span><span><p>B, C only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D only</p></span></div><div class="option"><span class="key">d</span><span><p>B, D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>A (Dipole moment):\u003c/strong> H₂O (1.85 D) &gt; NH₃ (1.47 D) &gt; CHCl₃ (~1.0 D) ✔\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B (Lone pairs on Xe):\u003c/strong> XeF₂ (3) &gt; XeF₄ (2) &gt; XeO₃ (1); given order is wrong ✗\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C (Bond length):\u003c/strong> C–H (~109 pm) &gt; O–H (~96 pm) &lt; N–O (≥120 pm); given order is wrong ✗\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D (Bond enthalpy):\u003c/strong> N≡N (945 kJ/mol) &gt; O=O (498) &gt; H–H (436) ✔\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Total number of sigma \((\sigma )\) ______ and \(pi(\pi )\) _______ bonds respectively present in hex-1-en-4-yne are</p> <p>[JEE Main 2025, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 and 13</p></span></div><div class="option"><span class="key">b</span><span><p>14 and 3</p></span></div><div class="option"><span class="key">c</span><span><p>11 and 3</p></span></div><div class="option"><span class="key">d</span><span><p>13 and 3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Structure of hex-1-en-4-yne:\u003c/p> \u003cp>\\(C{H}_{2}=CH-C{H}_{2}-C\\equiv C-C{H}_{3}\\)\u003c/p> \u003cp>Total Bonds:\u003cbr/>Sigma ( \\(\\sigma\\) ) bonds : 13\u003cbr/>\\(Pi(\\pi )\\) bonds: 3\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The linear combination of atomic orbitals to form molecular orbitals <br/>takes place only when the combining atomic orbitals </p> <p>A. have the same energy <br/>B. have the minimum overlap <br/>C. have same symmetry about the molecular axis <br/>D. have different symmetry about the molecular axis </p> <p>Choose the most appropriate from the options given below: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C only </p></span></div><div class="option"><span class="key">b</span><span><p>A and C only </p></span></div><div class="option"><span class="key">c</span><span><p>B, C, D only </p></span></div><div class="option"><span class="key">d</span><span><p>B and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>To form molecular orbitals by Linear Combination of Atomic Orbitals (LCAO), the following conditions must be satisfied:\u003c/p> \u003ctable> \u003cthead> \u003ctr> \u003cth>Condition\u003c/th> \u003cth>Reason\u003c/th> \u003c/tr> \u003c/thead> \u003ctbody> \u003ctr> \u003ctd>\u003cstrong>A. Same energy\u003c/strong>\u003c/td> \u003ctd>Orbitals must be of similar energy for effective interaction\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>C. Same symmetry\u003c/strong>\u003c/td> \u003ctd>Orbitals must have the \u003cstrong>same symmetry\u003c/strong> about the molecular axis\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>B. Minimum overlap\u003c/strong>\u003c/td> \u003ctd>Wrong — we need \u003cstrong>maximum overlap\u003c/strong> for stronger bonding\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>D. Different symmetry\u003c/strong>\u003c/td> \u003ctd>Wrong — orbitals with different symmetry \u003cstrong>cannot\u003c/strong> combine\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the <strong>correct</strong> statement.</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Three canonical forms can be drawn for \(C{O}_{3}^{2-}\) ion.</p></span></div><div class="option"><span class="key">b</span><span><p>Three resonance structures can be drawn for ozone.</p></span></div><div class="option"><span class="key">c</span><span><p>\(B{F}_{3}\) has non-zero dipole moment.</p></span></div><div class="option"><span class="key">d</span><span><p>Dipole moment of \(N{F}_{3}\) is greater than that of \(N{H}_{3}\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{CO}}_{3}^{2−}\\) indeed has three valid resonance (canonical) forms. O₃ has only two resonance structures. BF₃ is trigonal planar and thus has zero dipole moment. NF₃ has a dipole moment less than NH₃ because the lone-pair orbital dipole opposes the bond dipoles. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which among the following molecules is (a) involved in \({\mathrm{sp}}^{3}\mathrm{d}\) hybridization, (b) has different bond lengths and (c) has lone pair of electrons on the central atom?</p> <p>[JEE Main 2025, 2 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{PF}}_{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{XeF}}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{SF}}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{XeF}}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>SF4 is Sp3d hybridized .it is having 1 lone pair on CA, axial and equitorial bond lenths are not equal ,in PF5 axial and equitorial bond lenths are equal\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statement about \(PCl _5\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(PCl _5\) possesses two different \(Cl - P - Cl\) bond angles.</p></span></div><div class="option"><span class="key">b</span><span><p>All five \(P - Cl\) bonds are identical in length.</p></span></div><div class="option"><span class="key">c</span><span><p>\(PCl _5\) exhibits \(sp ^3 d\) hybridisation.</p></span></div><div class="option"><span class="key">d</span><span><p>\(PCl _5\) consists of five \(P - Cl\) (sigma) bonds.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>All five \\(P - Cl\\) bonds are identical in length.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement-I: </strong>Oxygen-oxygen bond length in ozone is greater than dioxygen</p> <p><strong>Statement-II:</strong> \(\mathrm{O}-\mathrm{O}\) bond order in ozone is 1.5 and \(\mathrm{O}-\mathrm{O}\) bond order in dioxygen is 2.0</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Bond order for Ozone is 1.5 and for oxygen is 2.\u003c/p> \u003cp>Greater bond order, Lesser Bond length\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following compounds in increasing order of their dipole moment : \(\mathrm{HBr},{\mathrm{H}}_{2}\mathrm{S},{\mathrm{NF}}_{3}\mathrm{and}{\mathrm{CHCl}}_{3}\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{H}}_{2}\mathrm{S}<\mathrm{HBr}<{\mathrm{NF}}_{3}<{\mathrm{CHCl}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{CHCl}}_{3}<{\mathrm{NF}}_{3}<\mathrm{HBr}<{\mathrm{H}}_{2}\mathrm{S}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{NF}}_{3}<\mathrm{HBr}<{\mathrm{H}}_{2}\mathrm{S}<{\mathrm{CHCl}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{HBr}<{\mathrm{H}}_{2}\mathrm{S}<{\mathrm{NF}}_{3}<{\mathrm{CHCl}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\mathrm{NF}}_{3}\u003c\\mathrm{HBr}\u003c{\\mathrm{H}}_{2}\\mathrm{S}\u003c{\\mathrm{CHCl}}_{3}\\)\u003c/p> \u003cp>Dipole moment ∝ \\(∆\\mathrm{E}.\\mathrm{N}\\)\u003c/p> \u003cp> ∝ Bond Length\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :</p> <p><strong>Statement (I) : </strong>According to the Law of Octaves, the elements were arranged in the increasing order of their atomic number.</p> <p><strong>Statement (II) : </strong>Meyer observed a periodically repeated pattern upon plotting physical properties of certain elements against their respective atomic numbers.</p> <p>In the light of the above statements, choose the <strong>correct </strong>answer from the options given below: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The Law of Octaves was based on arranging elements in the increasing order of their atomic weight. Lothar Meyer plotted physical properties, such as atomic volume, melting point, and boiling point, against atomic weight.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct increasing order for bond angles among \(B{F}_{3},P{F}_{3}\) and \(Cl{F}_{3}\) is : </p> <p>[JEE Main 2024, 9 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Cl{F}_{3}<P{F}_{3}<B{F}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(B{F}_{3}=P{F}_{3}<Cl{F}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(B{F}_{3}<P{F}_{3}<Cl{F}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(P{F}_{3}<B{F}_{3}<Cl{F}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct increasing order for bond angles among BF₃, PF₃, and ClF₃ is The correct increasing order for bond angles among BF₃, PF₃, and ClF₃ is ClF₃ &lt; PF₃ &lt; BF₃, because BF₃ has a perfect trigonal planar shape (120°) with no lone pairs, PF₃ has one lone pair (angle &lt; 109.5°), and ClF₃ has two lone pairs, squeezing the bond angles to less than 90° (around 86-90°), making its angles the smallest. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement (I): Experimentally determined oxygen-oxygen bond lengths in the \({O}_{3}\) are found to be same and the bond length is greater than that of a O = O (double bond) but less than that of a single (O − O) bond.<br/>Statement (II) : The strong lone pair-lone pair repulsion between oxygen atoms is solely responsible for the fact that the bond length in ozone is smaller than that of a double bond (O = O) but more than that of a single bond (O − O).<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p>[JEE Main 2025, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The central oxygen atom in ozone is \\(s{p}^{2}\\) hybridized containing a lone pair of electron, as a result ozone has an angular structure with a bond angle of \\(117^\\circ\\). It is a resonance hybrid of two resonating structures. Because of resonance, both the oxygen- oxygen bonds have partial double bond character. In other words, both the oxygen-oxygen bonds are equal ( 128 pm ) and lie in between those of oxygen- oxygen double bond length of 121 pm and oxygen-oxygen single bond length of 148 pm .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The molecules having square pyramidal geometry are</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Sb{F}_{5}&PC{l}_{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Sb{F}_{5}&XeO{F}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Br{F}_{5}&PC{l}_{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Br{F}_{5}&XeO{F}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(Br{F}_{5}\\) and \\(XeO{F}_{4}\\) both have \\(s{p}^{3}{d}^{2}\\) hybridization and square pyramidal shape.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among \({\mathrm{SO}}_{2},{\mathrm{NF}}_{3},{\mathrm{NH}}_{3},{\mathrm{XeF}}_{2},{\mathrm{ClF}}_{3}\) and \({\mathrm{SF}}_{4}\), the hybridization of the molecule with non-zero dipole moment and highest number of lone-pairs of electrons on the central atom is</p> <p>[JEE Main 2025, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{sp}}^{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{dsp}}^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{sp}}^{3}{\mathrm{d}}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{sp}}^{3}\mathrm{d}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

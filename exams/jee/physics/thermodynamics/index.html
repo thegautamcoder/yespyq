@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Thermodynamics","item":"https://yespyq.com/exams/jee/physics/thermodynamics/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Thermodynamics</h1>
       <p>80 JEE Physics previous year questions on <b>Thermodynamics</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">500 J of energy is transferred as heat to 0.5 mol of Argon gas at 298 K and 1.00 atm . The final temperature and the change in internal energy respectively are (Given : ) [JEE Main 2025, 29 Jan (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>378 K and 300 J</span></div><div class="option correct"><span class="key">b</span><span>348 K and 300 J</span></div><div class="option"><span class="key">c</span><span>368 K and 500 J</span></div><div class="option"><span class="key">d</span><span>378 K and 500 J</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statements is false?</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Gibbs free energy is path function.</span></div><div class="option"><span class="key">b</span><span>Temperature is a state function.</span></div><div class="option"><span class="key">c</span><span>Change in the state is completely defined when the initial and final states are specified.</span></div><div class="option"><span class="key">d</span><span>Work appears at the boundary of the system.</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following is not correct?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>G is positive for a non-spontaneous reaction</span></div><div class="option correct"><span class="key">b</span><span>G is positive for a spontaneous reaction</span></div><div class="option"><span class="key">c</span><span>G is negative for a spontaneous reaction</span></div><div class="option"><span class="key">d</span><span>G is zero for a reversible reaction</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a process, the pressure of a gas is directly proportional to its temperature. Choose the correct options:</p> <p><strong>A:</strong> The process is isochoric.<br/><strong>B:</strong> Work done in the process is zero.<br/><strong>C:</strong> Internal energy increases with an increase in temperature.</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B are correct.</p></span></div><div class="option"><span class="key">b</span><span><p>A and C are correct.</p></span></div><div class="option correct"><span class="key">c</span><span><p>A,B, and C are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>B and C are correct.</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Assertion:</strong> On increasing the pressure, the <strong>volume decrease</strong> is <strong>more in an isothermal process</strong> than in an adiabatic process.</p> <p><strong>Reason:</strong> The <strong>adiabatic process</strong> is governed by the equation:\(P{V}^{\gamma }=\text{constant}\)</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><strong>Assertion is correct and Reason is false</strong></p></span></div><div class="option correct"><span class="key">b</span><span><p><strong>Assertion is correct and Reason is correct</strong></p></span></div><div class="option"><span class="key">c</span><span><p> <strong>Assertion is false and Reason is correct</strong></p></span></div><div class="option"><span class="key">d</span><span><p><strong>Assertion is false and Reason is false</strong></p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In an adiabatic process, which of the following statements is true ?</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The molar heat capacity is infinite</p></span></div><div class="option"><span class="key">b</span><span><p>Work done by the gas equals the increase in internal energy</p></span></div><div class="option correct"><span class="key">c</span><span><p>The molar heat capacity is zero</p></span></div><div class="option"><span class="key">d</span><span><p>The internal energy of the gas decreases as the temperature increases</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Pressure of an ideal gas, contained in a closed vessel, is increased by 0.4% when heated by 1°C. Its initial temperature must be ;</p> <p><strong>[JEE Main 2025, 3 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>25°C</p></span></div><div class="option"><span class="key">b</span><span><p>2500 K</p></span></div><div class="option correct"><span class="key">c</span><span><p>250 K </p></span></div><div class="option"><span class="key">d</span><span><p>250°C</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water of mass \(m\) gram is slowly heated to increase the temperature from \({T}_{1}\) to \({T}_{2}\). The change in entropy of the water, given specific heat of water is \(1{\mathrm{Jkg}}^{-1}{\mathrm{K}}^{-1}\), is :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\mathrm{mln}\left(\frac{{\mathrm{T}}_{2}}{{\mathrm{T}}_{1}}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>zero</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{m}\left({\mathrm{T}}_{2}-{\mathrm{T}}_{1}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{mln}\left(\frac{{\mathrm{T}}_{1}}{{\mathrm{T}}_{2}}\right)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Initial pressure and volume of a monoatomic ideal gas are P and V. The change in internal energy of this gas in adiabatic expansion to volume \({V}_{\text{final }}=27V\) is <sub>---------------</sub> J.</p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-2PV(3\sqrt{3}-1)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4}{3}PV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{4}{3}PV\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{4}PV\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given: \\({V}_{2}=27V\\)\u003c/p> \u003cp>For adiabatic expansion of a monoatomic gas, \\(\\gamma =\\frac{5}{3}\\)\u003cbr/>Using\u003c/p> \u003cp>\\(P{V}^{5/3}={P}_{2}(27V{)}^{5/3}\\)\u003c/p> \u003cp>\\({P}_{2}=\\frac{P}{{27}^{5/3}}=\\frac{P}{{3}^{5}}=\\frac{P}{243}\\)\u003c/p> \u003cp>\\({P}_{2}{V}_{2}=\\frac{P}{243}\\cdot 27V=\\frac{PV}{9}\\)\u003c/p> \u003cp>Change in internal energy:\u003c/p> \u003cp>\\(\\Delta U=\\frac{{P}_{2}{V}_{2}-{P}_{1}{V}_{1}}{\\gamma -1}\\)\u003c/p> \u003cp>\\(\\Delta U=\\frac{\\frac{FV}{9}-FV}{\\frac{5}{3}-1}-\\frac{-\\frac{8FV}{9}}{\\frac{2}{3}}\\)\u003c/p> \u003cp>\\(\\Delta U=-\\frac{4}{3}PV\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For an ideal monoatomic gas undergoing an isobaric process, what is the ratio \(\frac{\Delta Q}{\Delta U}\)? (Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{7}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>From the first law of thermodynamics for an isobaric process: \\(\\Delta Q=\\Delta U+\\Delta W\\mathrm{.}\\)\u003c/p> \u003cul> \u003cli>For a monoatomic gas: \u003cul> \u003cli>\\(\\Delta U=\\frac{3}{2}nR\\Delta T\\),\u003c/li> \u003cli>\\(\\Delta W=nR\\Delta T\\).\u003c/li> \u003c/ul> \u003c/li> \u003cli>Heat supplied: \\(\\Delta Q=\\frac{3}{2}nR\\Delta T+nR\\Delta T=\\frac{5}{2}nR\\Delta T\\mathrm{.}\\)\u003c/li> \u003cli>Ratio: \\(\\frac{\\Delta Q}{\\Delta U}=\\frac{\\frac{5}{2}}{\\frac{3}{2}}=\\frac{5}{3}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the ratio is \\(\\frac{5}{3}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) :</strong> With the increase in the pressure of an ideal gas, the volume falls off more rapidly in an isothermal process in comparison to the adiabatic process.<br/><strong>Reason (R) </strong>: In isothermal process, PV = constant, while in adiabatic process \(P{V}^{\gamma }=\) constant. Here \(\gamma\) is the ratio of specific heats, P is the pressure and V is the volume of the ideal gas.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The volume decreases more rapidly in an adiabatic process compared to an isothermal process. This is because in the isothermal process, heat exchange allows the gas to expand or compress without changing its temperature, whereas in the adiabatic process, the gas is compressed without heat exchange, causing a sharper decrease in volume.\u003cbr/>Reason (R) is true, as it correctly describes the relationship between pressure and volume in both processes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cylinder with adiabatic walls is closed at both ends and is divided into two compartments by a frictionless adiabatic piston. Ideal gas is filled in both (left and right) the compartments at same P, V, T. Heating is started from left side until pressure changes to \(\frac{27}{8}\mathrm{P}\). If initial volume of each compartment was 9 litres then the final volume in right-hand side compartment is ______ litres. (for this ideal gas \(\frac{{C}_{P}}{{C}_{V}}=1.5\) )</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>14</p></span></div><div class="option"><span class="key">d</span><span><p>9</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Since the walls and the piston are adiabatic, the compression of the gas in the right compartment undergoes a purely adiabatic process. Because the piston is frictionless, the final pressure must be equal in both compartments (\\({P}_{f}=\\frac{27}{8}P\\)).\u003c/p> \u003cp>For the right compartment:\u003c/p> \u003cp>Initial state: \\({P}_{i}=P\\), \\({V}_{i}=9\\)\u003c/p> \u003cp>Final state: \\({P}_{f}=\\frac{27}{8}P\\), \\({V}_{f}=?\\)\u003c/p> \u003cp>Given: \\(\\gamma =\\frac{{C}_{P}}{{C}_{V}}=1.5=\\frac{3}{2}\\)\u003c/p> \u003cp>Using the adiabatic equation \\({P}_{i}{V}_{i}^{\\gamma }={P}_{f}{V}_{f}^{\\gamma }\\):\u003c/p> \\[P(9)^{\\frac{3}{2}} = \\left(\\frac{27}{8}P\\right)(V_f)^{\\frac{3}{2}}\\] \u003cp>Cancel \\(P\\) from both sides and solve for \\({V}_{f}\\):​\u003c/p> \\[(3^2)^{\\frac{3}{2}} = \\frac{27}{8}(V_f)^{\\frac{3}{2}}\\] \\[27 = \\frac{27}{8}(V_f)^{\\frac{3}{2}}\\] \\[1 = \\frac{1}{8}(V_f)^{\\frac{3}{2}}\\] \\[(V_f)^{\\frac{3}{2}} = 8\\] \\[V_f = (8)^{\\frac{2}{3}}\\] \\[V_f = (2^3)^{\\frac{2}{3}}\\] \\[V_f = 2^2 = 4\\] \u003cp>The final volume in the right-hand side compartment is 4 litres.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas at 0°C is suddenly compressed to 1/4 times of its initial volume. If the ratio of molar heat capacity at constant pressure to the molar heat capacity at constant volume is 3/2 find the difference between final temperature and initial temperature.</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>273 K</p></span></div><div class="option"><span class="key">b</span><span><p>546 K</p></span></div><div class="option"><span class="key">c</span><span><p>\(187^\circ \mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(273^\circ \mathrm{C}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The adiabatic relation between the temperature and volume for an ideal gas is:\u003c/p> \u003cp>By the equation of Adiabatic Process:\u003c/p> \u003cp>\\({\\mathrm{T}}_{\\mathrm{f}}{\\mathrm{V}}_{\\mathrm{f}}^{\\gamma -1}={\\mathrm{T}}_{\\mathrm{i}}{\\mathrm{V}}_{\\mathrm{i}}^{\\gamma -1}\\\\ \\mathrm{Subtitute},{\\mathrm{V}}_{\\mathrm{f}}=\\frac{1}{4}{\\mathrm{V}}_{\\mathrm{i}}\\\\ {\\mathrm{T}}_{\\mathrm{f}}{\\left(\\frac{{\\mathrm{V}}_{\\mathrm{i}}}{4}\\right)}^{\\gamma -1}={\\mathrm{T}}_{\\mathrm{i}}{\\mathrm{V}}_{\\mathrm{i}}^{\\gamma -1}\\\\ {\\mathrm{T}}_{\\mathrm{f}}={\\mathrm{T}}_{\\mathrm{i}}{4}^{1.5-1}=273\\times \\sqrt{4}=546\\mathrm{K}\\\\ \\mathrm{Now}\\mathrm{the}\\mathrm{difference},∆\\mathrm{T}={\\mathrm{T}}_{\\mathrm{f}}-{\\mathrm{T}}_{\\mathrm{i}}=546-273=273\\mathrm{K}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>The temperature of a body of mass \(m\) and specific heat capacity \(s\)s is raised slowly from \({T}_{1}\) to \({T}_{2}\)​. The change in entropy of the system is:(Shift - II Memory Based)</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(ms\ln ⁡\frac{{T}_{2}}{{T}_{1}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(ms\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(ms\ln ⁡\frac{{T}_{1}}{{T}_{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Zero</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Entropy change (\\(\\Delta S\\)) is given by the formula: \u003cp>\\(\\Delta S={\\int }_{{T}_{1}}^{{T}_{2}}\\frac{dQ}{T}\\)​\u003c/p> \u003cp>For a system where the temperature is slowly raised and the specific heat capacity is constant, the heat supplied (\\(dQ\\)) is:\u003c/p> \u003cp>\\(dQ=ms\\text{ }dT\\)\u003c/p> \u003cp>Substituting into the entropy formula:\u003c/p> \u003cp>\\(\\Delta S={\\int }_{{T}_{1}}^{{T}_{2}}\\frac{ms\\text{ }dT}{T}\\)​\u003c/p> \u003cp>This simplifies to:\u003c/p> \u003cp>\\(\\Delta S=ms{\\int }_{{T}_{1}}^{{T}_{2}}\\frac{dT}{T}\\)​\u003c/p> \u003cp>The integral of \\(\\frac{1}{T}\\)​ is \\(\\ln ⁡T\\), so:\u003c/p> \u003cp>\\(\\Delta S=ms{[\\ln ⁡T]}_{{T}_{1}}^{{T}_{2}}\\)\u003c/p> \u003cp>​​ \\(\\Delta S=ms(\\ln ⁡{T}_{2}−\\ln ⁡{T}_{1})\\)\u003c/p> \u003cp>Using logarithmic properties:\u003c/p> \u003cp>\\(\\Delta S=ms\\ln ⁡\\frac{{T}_{2}}{{T}_{1}}\\)​​\u003c/p> \u003cp>Thus, the change in entropy is:\u003c/p> \u003cp>\\(ms\\ln ⁡\\frac{{T}_{2}}{{T}_{1}}\\)​​​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas at 0°C is suddenly compressed to 1/4 times of its initial volume. If the ratio of molar heat capacity at constant pressure to the molar heat capacity at constant volume is 3/2 find the difference between final temperature and initial temperature.</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>273 K</p></span></div><div class="option"><span class="key">b</span><span><p>546 K</p></span></div><div class="option"><span class="key">c</span><span><p>\(187^\circ \mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(273^\circ \mathrm{C}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The adiabatic relation between the temperature and volume for an ideal gas is:\u003c/p> \u003cp>By the equation of Adiabatic Process:\u003c/p> \u003cp>\\({\\mathrm{T}}_{\\mathrm{f}}{\\mathrm{V}}_{\\mathrm{f}}^{\\gamma -1}={\\mathrm{T}}_{\\mathrm{i}}{\\mathrm{V}}_{\\mathrm{i}}^{\\gamma -1}\\\\ \\mathrm{Subtitute},{\\mathrm{V}}_{\\mathrm{f}}=\\frac{1}{4}{\\mathrm{V}}_{\\mathrm{i}}\\\\ {\\mathrm{T}}_{\\mathrm{f}}{\\left(\\frac{{\\mathrm{V}}_{\\mathrm{i}}}{4}\\right)}^{\\gamma -1}={\\mathrm{T}}_{\\mathrm{i}}{\\mathrm{V}}_{\\mathrm{i}}^{\\gamma -1}\\\\ {\\mathrm{T}}_{\\mathrm{f}}={\\mathrm{T}}_{\\mathrm{i}}{4}^{1.5-1}=273\\times \\sqrt{4}=546\\mathrm{K}\\\\ \\mathrm{Now}\\mathrm{the}\\mathrm{difference},∆\\mathrm{T}={\\mathrm{T}}_{\\mathrm{f}}-{\\mathrm{T}}_{\\mathrm{i}}=546-273=273\\mathrm{K}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given are statements for certain thermodynamic variables,<br/>(A) Internal energy, volume \((\mathrm{V})\) and mass \((\mathrm{M})\) are extensive variables.<br/>(B) Pressure (P), temperature (T) and density ( \(\rho\) ) are intensive variables.<br/>(C) Volume (V), temperature (T) and density ( \(\rho\) ) are intensive variables.<br/>(D) Mass (M), temperature (T) and internal energy are extensive variables.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) Only</p></span></div><div class="option"><span class="key">b</span><span><p>(D) and (A) Only</p></span></div><div class="option"><span class="key">c</span><span><p>(C) and (D) Only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (C) Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Extensive variables depend on the system size (e.g., mass, volume, and internal energy). Intensive variables do not depend on the system size (e.g., pressure, temperature, and density).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Assertion:</strong> On increasing the pressure, the <strong>volume decrease</strong> is <strong>more in an isothermal process</strong> than in an adiabatic process.</p> <p><strong>Reason:</strong> The <strong>adiabatic process</strong> is governed by the equation:\(P{V}^{\gamma }=\text{constant}\)</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><strong>Assertion is correct and Reason is false</strong></p></span></div><div class="option"><span class="key">b</span><span><p><strong>Assertion is correct and Reason is correct</strong></p></span></div><div class="option"><span class="key">c</span><span><p> <strong>Assertion is false and Reason is correct</strong></p></span></div><div class="option"><span class="key">d</span><span><p><strong>Assertion is false and Reason is false</strong></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Assertion:\u003c/strong> Correct \u003c/p> \u003cul> \u003cli>In an \u003cstrong>isothermal process\u003c/strong> (\\(PV=\\) constant), an increase in \u003cstrong>pressure\u003c/strong> leads to a \u003cstrong>larger decrease in volume\u003c/strong> compared to an \u003cstrong>adiabatic process\u003c/strong> (\\(P{V}^{\\gamma }=\\)constant) because temperature remains constant in the isothermal case.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Reason:\u003c/strong> Correct \u003c/p> \u003cul> \u003cli>The \u003cstrong>adiabatic process\u003c/strong> follows the equation \u003cstrong>\\(P{V}^{\\gamma }=\\) constant\u003c/strong>, which correctly describes its behavior.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Logical Connection:\u003c/strong>\u003c/p> \u003cul> \u003cli>Since the \u003cstrong>reason correctly explains the assertion\u003c/strong>, both are \u003cstrong>correct\u003c/strong>.\u003c/li> \u003c/ul> \u003c/li> \u003c/ul> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(B\\ \\text{Assertion is correct and Reason is correct.}\\)B​Assertion is correct and Reason is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During an adiabatic process, the pressure of a gas is found to be proportional to the cube of its absolute temperature. The ratio of \(\frac{C p}{C v}\) for the gas is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{9}{7}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{7}{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For an adiabatic process:\u003c/p> \\(P{V}^{\\gamma }=\\text{constant}\\) \u003cp>Using the ideal gas equation:\u003c/p> \\(PV=RT\\) \\(V\\propto \\frac{T}{P}\\) \u003cp>Substitute in the adiabatic relation:\u003c/p> \\(P{(\\frac{T}{P})}^{\\gamma }=\\text{constant}\\) \\({P}^{1-\\gamma }{T}^{\\gamma }=\\text{constant}\\) \u003cp>Hence,\u003c/p> \\(P\\propto {T}^{\\frac{\\gamma }{\\gamma -1}}\\) \u003cp>Given:\u003c/p> \\(P\\propto {T}^{3}\\) \u003cp>Compare powers of T:\u003c/p> \\(\\frac{\\gamma }{\\gamma -1}=3\\) \\(\\gamma =3\\gamma -3\\) \\(2\\gamma =3\\) \\(\\gamma =\\frac{3}{2}\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>In an insulated container, a gas is adiabatically shrunk to half of its initial volume. The temperature of the gas decreases.<br/><strong>Reason (R):</strong> Free expansion of an ideal gas is an irreversible and an adiabatic process.<br/>In the light of the above statements, choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For an insulated container:\u003c/p> \\(Q=0\\) \u003cp>During adiabatic compression, work is done on the gas.\u003c/p> \\(\\mathrm{ΔU}=W\\text{(on gas)}\\) \\(\\mathrm{ΔU}>0\\) \\(T\\text{ increases}\\) \u003cp>Therefore, Assertion (A) is false.\u003c/p> \u003cp>For free expansion of an ideal gas:\u003c/p> \\(Q=0\\) \\(W=0\\) \u003cp>It is an irreversible adiabatic process.\u003c/p> \u003cp>Therefore, Reason (R) is true.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For an ideal monoatomic gas undergoing an isobaric process, what is the ratio \(\frac{\Delta Q}{\Delta U}\)? (Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{7}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>From the first law of thermodynamics for an isobaric process: \\(\\Delta Q=\\Delta U+\\Delta W\\mathrm{.}\\)\u003c/p> \u003cul> \u003cli>For a monoatomic gas: \u003cul> \u003cli>\\(\\Delta U=\\frac{3}{2}nR\\Delta T\\),\u003c/li> \u003cli>\\(\\Delta W=nR\\Delta T\\).\u003c/li> \u003c/ul> \u003c/li> \u003cli>Heat supplied: \\(\\Delta Q=\\frac{3}{2}nR\\Delta T+nR\\Delta T=\\frac{5}{2}nR\\Delta T\\mathrm{.}\\)\u003c/li> \u003cli>Ratio: \\(\\frac{\\Delta Q}{\\Delta U}=\\frac{\\frac{5}{2}}{\\frac{3}{2}}=\\frac{5}{3}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the ratio is \\(\\frac{5}{3}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a process, the pressure of a gas is directly proportional to its temperature. Choose the correct options:</p> <p><strong>A:</strong> The process is isochoric.<br/><strong>B:</strong> Work done in the process is zero.<br/><strong>C:</strong> Internal energy increases with an increase in temperature.</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B are correct.</p></span></div><div class="option"><span class="key">b</span><span><p>A and C are correct.</p></span></div><div class="option"><span class="key">c</span><span><p>A,B, and C are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>B and C are correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Solution: \u003col> \u003cli> \u003cp>\u003cstrong>Condition:\u003c/strong>\u003c/p> \u003cul> \u003cli>If pressure \\(P\\propto T\\), this implies: \\(P=kT\\ \\text{(where }k\\text{ is constant)}\\mathrm{.}\\)\u003c/li> \u003cli>This relationship is only valid if the volume \\(V\\) is constant, as per the ideal gas law:\u003c/li> \u003cli>\\(PV=nRT\\ \\text{  }⟹\\text{  }\\ P\\propto T\\ \\text{(if }V\\text{ is constant)}\\mathrm{.}\\).\u003c/li> \u003cli>Thus, the process is \u003cstrong>isochoric\u003c/strong> (the statement \\(A\\) is correct).\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Work Done:\u003c/strong>\u003c/p> \u003cul> \u003cli>In an isochoric process, the volume remains constant (\\(\\Delta V=0\\)), so the work done: \\(W=P\\Delta V=0.\\) Hence, \\(B\\) is also correct.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Internal Energy:\u003c/strong>\u003c/p> \u003cul> \u003cli>The internal energy \\(U\\) of an ideal gas depends on temperature: \\(\\Delta U=n{C}_{v}\\Delta T\\mathrm{.}\\). Since temperature increases, internal energy also increases. Thus, \\(C\\) is correct.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Conclusion:\u003c/strong>\u003c/p> \u003cul> \u003cli>All statements \\(A\\), \\(B\\), and \\(C\\) are correct.\u003c/li> \u003c/ul> \u003c/li> \u003c/ol> \u003cp>\u003cstrong>Answer:\u003c/strong> (3) \\(A,B,\\) and \\(C\\) are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A Carnot engine (E) is working between two temperatures 473 K and 273 K . In a new system two engines - engine \({E}_{1}\) works between 473 K to 373 K and engine \({E}_{2}\) works between 373 K to 273 K . If \({\eta }_{12}\), \({\eta }_{1}\) and \({\eta }_{2}\) are the efficiencies of the engines \(E\), \({E}_{1}\) and \({E}_{2}\), respectively, then</p> <p><strong>[JEE Main 2025, 28 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\eta }_{12}<{\eta }_{1}+{\eta }_{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\eta }_{12}={\eta }_{1}+{\eta }_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\eta }_{12}={\eta }_{1}{\eta }_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\eta }_{12}\geq {\eta }_{1}+{\eta }_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(\\text{ Efficiency }(\\eta )=1-\\frac{{T}_{2}}{{T}_{1}}\\\\ {\\eta }_{12}=1-\\frac{273}{473}=\\frac{200}{473}\\\\ {\\eta }_{1}=1-\\frac{373}{473}=\\frac{100}{473}\\\\ {\\eta }_{2}=1-\\frac{273}{373}\\\\ =\\frac{100}{373}\\\\ {\\eta }_{1}+{\\eta }_{2}>\\frac{200}{473}\\\\ {\\eta }_{1}+{\\eta }_{2}>{\\eta }_{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A total of \(48 \ J\) heat is given to one mole of helium kept in a cylinder. The temperature of helium increases by \(2^{\circ} C\). The work done by the gas is:<br/>Given, \(R =8.3 J K ^{-1} mol ^{-1}\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(72.9 J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(48 J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(23.1 J\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(24.9 J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given:\u003c/p> \\(Q=48\\ \\text{J}\\) \\(n=1\\) \\(\\Delta T=2\\ \\text{K}\\) \u003cp>For helium (monoatomic gas):\u003c/p> \\({C}_{v}=\\frac{3}{2}R\\) \u003cp>Change in internal energy:\u003c/p> \\(\\Delta U=n{C}_{v}\\Delta T\\) \\(\\Delta U=1\\times \\frac{3}{2}\\times 8.3\\times 2\\) \\(\\Delta U=24.9\\ \\text{J}\\) \u003cp>Using the first law of thermodynamics:\u003c/p> \\(Q=\\Delta U+W\\) \\(W=Q-\\Delta U\\) \\(W=48-24.9\\) \\(W=23.1\\ \\text{J}\\) \u003cp>\u003cstrong>Correct answer: C (23.1 J)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas expands such that PT³ = constant. The coefficient of volume expansion of the gas is:<br/><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2/T</p></span></div><div class="option"><span class="key">b</span><span><p>1/T</p></span></div><div class="option"><span class="key">c</span><span><p>4/T</p></span></div><div class="option"><span class="key">d</span><span><p>3/T</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given: \\(P{T}^{3}\\) = constant = C\u003cbr/>For an ideal gas, PV = nRT\u003cbr/>\\(\\text{ Substitute }P=\\frac{C}{{T}^{3}}\\text{ : }\\)\u003cbr/>\\(\\frac{C}{{T}^{3}}V=nRT\\Rightarrow V=\\frac{nR}{C}{T}^{4}\\)\u003cbr/>\\(\\frac{dV}{dT}=\\frac{nR}{C}\\left(4{T}^{3}\\right)\\)\u003cbr/>Coefficient of volume expansion:\u003cbr/>\\(\\gamma =\\frac{1}{V}\\frac{dV}{dT}\\)\u003cbr/>\\(∴\\gamma =\\frac{1}{\\frac{nR}{C}{T}^{4}}\\times \\frac{nR}{C}4{R}^{3}=\\frac{4}{T}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In an adiabatic process, which of the following statements is true ?</p> <p> </p> <p>[JEE Main 2025, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The molar heat capacity is infinite</p></span></div><div class="option"><span class="key">b</span><span><p>Work done by the gas equals the increase in internal energy</p></span></div><div class="option"><span class="key">c</span><span><p>The molar heat capacity is zero</p></span></div><div class="option"><span class="key">d</span><span><p>The internal energy of the gas decreases as the temperature increases</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Molar heat capacity is defined as: \u003cbr/>\\(Q=nC\\Delta T\\) \u003cbr/>For an adiabatic process: \u003cbr/>\\(Q=0\\) \u003cbr/>For non-zero temperature change: \u003cbr/>\\(\\Delta T\\neq 0\\) \u003cbr/>Final Answer: \u003cbr/>\\(C=0\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>The temperature of a body of mass \(m\) and specific heat capacity \(s\)s is raised slowly from \({T}_{1}\) to \({T}_{2}\)​. The change in entropy of the system is:(Shift - II Memory Based)</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(ms\ln ⁡\frac{{T}_{2}}{{T}_{1}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(ms\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(ms\ln ⁡\frac{{T}_{1}}{{T}_{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Zero</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Entropy change (\\(\\Delta S\\)) is given by the formula: \u003cp>\\(\\Delta S={\\int }_{{T}_{1}}^{{T}_{2}}\\frac{dQ}{T}\\)​\u003c/p> \u003cp>For a system where the temperature is slowly raised and the specific heat capacity is constant, the heat supplied (\\(dQ\\)) is:\u003c/p> \u003cp>\\(dQ=ms\\text{ }dT\\)\u003c/p> \u003cp>Substituting into the entropy formula:\u003c/p> \u003cp>\\(\\Delta S={\\int }_{{T}_{1}}^{{T}_{2}}\\frac{ms\\text{ }dT}{T}\\)​\u003c/p> \u003cp>This simplifies to:\u003c/p> \u003cp>\\(\\Delta S=ms{\\int }_{{T}_{1}}^{{T}_{2}}\\frac{dT}{T}\\)​\u003c/p> \u003cp>The integral of \\(\\frac{1}{T}\\)​ is \\(\\ln ⁡T\\), so:\u003c/p> \u003cp>\\(\\Delta S=ms{[\\ln ⁡T]}_{{T}_{1}}^{{T}_{2}}\\)\u003c/p> \u003cp>​​ \\(\\Delta S=ms(\\ln ⁡{T}_{2}−\\ln ⁡{T}_{1})\\)\u003c/p> \u003cp>Using logarithmic properties:\u003c/p> \u003cp>\\(\\Delta S=ms\\ln ⁡\\frac{{T}_{2}}{{T}_{1}}\\)​​\u003c/p> \u003cp>Thus, the change in entropy is:\u003c/p> \u003cp>\\(ms\\ln ⁡\\frac{{T}_{2}}{{T}_{1}}\\)​​​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas exists in a state with pressure \({\mathrm{P}}_{0}\), volume \({\mathrm{V}}_{0}\).It is isothermally expanded to 4 times of its initial volume \(\left({\mathrm{V}}_{0}\right)\), then isobarically compressed to its original volume. Finally the system is heated isochorically to bring it to its initial state. The amount of heat exchanged in this process is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{P}}_{0}{\mathrm{V}}_{0}(2\ln 2-0.75)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{P}}_{0}{\mathrm{V}}_{0}(\ln 2-0.75)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{P}}_{0}{\mathrm{V}}_{0}(\ln 2-0.25)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{P}}_{0}{\mathrm{V}}_{0}(2\ln 2-0.25)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{P}}_{0}{\\mathrm{V}}_{0}(2\\ln 2-0.75)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following statements:<br/>A. Zeroth law of thermodynamics gives concept of temperature<br/>B. First law of thermodynamics gives concept of internal energy<br/>C. In isothermal expansion of ideal gas, ΔQ ≠ ΔW<br/>D. Product of intensive and extensive variables is extensive<br/>E. The ratio of any extensive variable to mass will be an extensive variable<br/>Choose the correct combination of statements:<br/><br/>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and C Only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C and D Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Statement A is correct as the zeroth law establishes the concept of temperature through thermal equilibrium.\u003c/p> \u003cp>Statement B is correct since the first law introduces internal energy via \\(\\Delta Q=\\Delta U+\\Delta W\\)\u003c/p> \u003cp>Statement C is incorrect because in isothermal expansion of an ideal gas, \\(\\Delta U=0\\Rightarrow \\Delta Q=\\Delta W\\)\u003c/p> \u003cp>Statement D is correct since the product of an intensive and an extensive quantity is extensive.\u003c/p> \u003cp>Statement E is incorrect because the ratio of an extensive variable to mass becomes an intensive property (not extensive). Hence, the correct combination is A, B and D only\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The work done in an adiabatic change in an ideal gas depends upon only : </p> <p><strong>[JEE Main 2025, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>change in its specific heat</p></span></div><div class="option"><span class="key">b</span><span><p>change in its pressure</p></span></div><div class="option"><span class="key">c</span><span><p>change in its volume</p></span></div><div class="option"><span class="key">d</span><span><p>change in its temperature</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Work done in adiabatic process for ideal gas is equal to change in internal energy.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A gun fires a lead bullet of temperature 300 K into a wooden block. The bullet having melting temperature of 600 K penetrates into the block and melts down. If the total heat required for the process is 625 J , then the mass of the bullet is ____ grams.<br/>(Latent heat of fusion of lead \(=2.5\times {10}^{4}{\mathrm{JKg}}^{-1}\) and specific heat capacity of lead \(=125{\mathrm{JKg}}^{-1}\) \({\mathrm{K}}^{-1}\) )</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>15</p></span></div><div class="option"><span class="key">b</span><span><p>5</p></span></div><div class="option"><span class="key">c</span><span><p>10</p></span></div><div class="option"><span class="key">d</span><span><p>20</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Heat to raise temperature:\u003c/p> \u003cp>\\({Q}_{1}=ms\\Delta T=m\\times 125\\times 300=37500m\\)\u003c/p> \u003cp>Heat to melt: \\({Q}_{2}=mL=m\\times 25000\\)\u003cbr/>Total heat:\u003c/p> \u003cp>\\(625=37500m+25000m=62500m\\)\u003c/p> \u003cp>Solving for m :\u003c/p> \u003cp>\\(m=\\frac{625}{62500}=0.01kg=10g\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In adiabatic process of closed system, work done by the gas depends explicity on </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Change in volume </p></span></div><div class="option"><span class="key">b</span><span><p>Change in pressure</p></span></div><div class="option"><span class="key">c</span><span><p>Change in temperature</p></span></div><div class="option"><span class="key">d</span><span><p>Change in number of moles</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For an adiabatic system, Q = 0\u003c/p> \u003cp>By the first law of thermodynamics \u003c/p> \u003cp>\\(∆\\mathrm{Q}=∆\\mathrm{W}+∆\\mathrm{U}\\\\ \\mathrm{Here},∆\\mathrm{Q}=0\\\\ \\mathrm{So},∆\\mathrm{W}=-∆\\mathrm{U}\\)\u003c/p> \u003cp>Here, chnage in internal energy is teh function of temperature, so work done by the gas depends on the chnage in temperature. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A gas is kept in a container having walls which are thermally non-conducting. Initially the gas has a volume of \(800{\mathrm{cm}}^{3}\) and temperature \(27^\circ \mathrm{C}\). The change in temperature when the gas is adiabatically compressed to \(200{\mathrm{cm}}^{3}\) is :<br/>(Take \(\gamma =1.5:\gamma\) is the ratio of specific heats at constant pressure and at constant volume)</p> <p><strong>[JEE Main 2025, 3 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(327\mathrm{K}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(600\mathrm{K}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(522\mathrm{K}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(300\mathrm{K}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Adiabatic process relations are used.\u003cbr/>\\(P{V}^{\\gamma }=\\mathrm{constant}\\)\u003cbr/>\\(T{V}^{\\gamma −1}=\\mathrm{constant}\\)\u003cbr/>Given γ = 1.5, so γ − 1 = 0.5.\u003cbr/>\\(300{(800)}^{0.5}=\\mathrm{T}{(200)}^{0.5}\\)\u003cbr/>\\(T=300\\times 2=600K\\)\u003cbr/>Change in temperature is:\u003cbr/>\\(\\Delta T=600−300=300K\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>In an insulated container, a gas is adiabatically shrunk to half of its initial volume. The temperature of the gas decreases.<br/><strong>Reason (R):</strong> Free expansion of an ideal gas is an irreversible and an adiabatic process.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> (A) In adiabatic process\u003cbr/>\\(T{V}^{\\gamma -1}=\\) constant\u003cbr/>So, temperature increases if volume decreases (R) Free expansion occurs fast, so Adiabatic\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the melting of a slab of ice at \(273\) K at atmospheric pressure :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Internal energy of ice-water system remains unchanged.</p></span></div><div class="option"><span class="key">b</span><span><p>Positive work is done by the ice-water system on the atmosphere.</p></span></div><div class="option"><span class="key">c</span><span><p>Internal energy of the ice-water system decreases.</p></span></div><div class="option"><span class="key">d</span><span><p>Positive work is done on the ice-water system by the atmosphere.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During melting of ice, volume decreases, so work is done on the ice–water system by the atmosphere.\u003cbr/>Heat is absorbed by the ice–water system, hence \\(∆Q=(+)ve\\).\u003cbr/>Work done by the ice–water system is negative.\u003cbr/>By the first law of thermodynamics:\u003cbr/>\\(\\Delta U=\\Delta Q-\\Delta W\\)\u003cbr/>Since heat absorbed is positive and work done by the system is negative. This makes the sum positive:\u003cbr/>\\(\\Delta U>0\\)\u003cbr/>Final conclusion:\u003cbr/>Internal energy of the ice–water system increases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given are statements for certain thermodynamic variables,<br/>(A) Internal energy, volume \((\mathrm{V})\) and mass \((\mathrm{M})\) are extensive variables.<br/>(B) Pressure (P), temperature (T) and density ( \(\rho\) ) are intensive variables.<br/>(C) Volume (V), temperature (T) and density ( \(\rho\) ) are intensive variables.<br/>(D) Mass (M), temperature (T) and internal energy are extensive variables.</p> <p>Choose the correct answer from the options given below :</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) Only</p></span></div><div class="option"><span class="key">b</span><span><p>(D) and (A) Only</p></span></div><div class="option"><span class="key">c</span><span><p>(C) and (D) Only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (C) Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Extensive variables depend on the system size (e.g., mass, volume, and internal energy). Intensive variables do not depend on the system size (e.g., pressure, temperature, and density).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The work done in an adiabatic change in an ideal gas depends upon only : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>change in its specific heat</p></span></div><div class="option"><span class="key">b</span><span><p>change in its pressure</p></span></div><div class="option"><span class="key">c</span><span><p>change in its volume</p></span></div><div class="option"><span class="key">d</span><span><p>change in its temperature</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Work done in adiabatic process for ideal gas is equal to change in internal energy.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A monoatomic gas having \(\gamma =\frac{5}{3}\) is stored in a thermally insulated container and the gas is suddenly compressed to \({\left(\frac{1}{8}\right)}^{\text{th }}\) of its initial volume. The ratio of final pressure and initial pressure is: ( \(\gamma\) is the ratio of specific heats of the gas at constant pressure and at constant volume)</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(40\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(28\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({P}_{i}{{V}_{i}}^{\\gamma }={P}_{f}{{V}_{f}}^{\\gamma },\\\\ \\left(\\frac{{P}_{f}}{{P}_{i}}\\right)={\\left(\\frac{{V}_{i}}{{V}_{f}}\\right)}^{\\gamma }\\\\ {8}^{\\frac{5}{3}}=32\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(0.08 \ kg\) air is heated at constant volume through \(5^{\circ} C\). The specific heat of air at constant volume is \(0.17 \ kcal / kg ^{\circ} C\) and \(J =4.18\) joule/cal. The change in its internal energy is approximately.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(318 J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(284 J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(298 J\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(142 J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\Delta U=m{c}_{v}\\Delta T\\) \\(\\Delta U=(0.08\\text{ kg})\\times (0.17\\text{ kcal/kg°C})\\times (5\\text{ °C})\\) \\(\\Delta U=0.068\\text{ kcal}\\) \\(\\Delta U=0.068\\times 1000\\text{ cal}\\) \\(\\Delta U=68\\text{ cal}\\) \\(\\Delta U=68\\text{ cal}\\times 4.18\\text{ J/cal}\\) \\(\\Delta U=284.24\\text{ J}\\) \\(\\Delta U\\approx 284\\text{ J}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The temperature of 1 mole of an ideal monoatomic gas is increased by \(50^\circ C\) at constant pressure. The total heat added and change in internal energy are \({E}_{1}\) and \({E}_{2}\), respectively. If \(\frac{{E}_{1}}{{E}_{2}}=\frac{x}{9}\) then the value of x is</p> <p><strong>[</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>15</p></span></div><div class="option"><span class="key">b</span><span><p>20</p></span></div><div class="option"><span class="key">c</span><span><p>10</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The heat added during an isobaric process is given by:\u003c/p> \u003cp>\\(Q=n{C}_{p}\\Delta T={E}_{1}\\)\u003c/p> \u003cp>The change in internal energy during this process is:\u003c/p> \u003cp>\\(\\Delta U=n{C}_{v}\\Delta T={E}_{2}\\)\u003c/p> \u003cp>Since,\u003c/p> \u003cp>\\(\\gamma =\\frac{{C}_{p}}{{C}_{v}}=1+\\frac{2}{f}\\)\u003c/p> \u003cp>For a monoatomic gas, the degrees of freedom f=3, so:\u003c/p> \u003cp>\\(\\gamma =1+\\frac{2}{3}=\\frac{5}{3}\\)\u003c/p> \u003cp>Therefore,\u003c/p> \u003cp>\\(\\frac{{E}_{1}}{{E}_{2}}=\\frac{{C}_{p}}{{C}_{v}}=\\gamma =\\frac{5}{3}\\)\u003c/p> \u003cp>We are given that \\(\\frac{{E}_{1}}{{E}_{2}}=\\frac{x}{9}\\). Therefore, we can set:\u003c/p> \u003cp>\\(\\frac{5}{3}=\\frac{x}{9}\\\\ x=15\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A monoatomic gas having \(\gamma =\frac{5}{3}\) is stored in a thermally insulated container and the gas is suddenly compressed to \({\left(\frac{1}{8}\right)}^{\text{th }}\) of its initial volume. The ratio of final pressure and initial pressure is: ( \(\gamma\) is the ratio of specific heats of the gas at constant pressure and at constant volume)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(40\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(28\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({P}_{i}{{V}_{i}}^{\\gamma }={P}_{f}{{V}_{f}}^{\\gamma },\\\\ \\left(\\frac{{P}_{f}}{{P}_{i}}\\right)={\\left(\\frac{{V}_{i}}{{V}_{f}}\\right)}^{\\gamma }\\\\ {8}^{\\frac{5}{3}}=32\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pressure and volume of an ideal gas are related as \(PV ^{\frac{3}{2}}= K\) (Constant). The work done when the gas is taken from state \(A \left( P _1, V _1, T _1\right)\) to state \(B \left( P _2, V _2, T _2\right)\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2\left(\sqrt{ P _1} V _1-\sqrt{ P _2} V _2\right)<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>2\left(P_2 V_2-P_1 V_1\right)<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>2\left(P_2 \sqrt{V_2}-P_1 \sqrt{V_1}\right)<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>2\left( P _1 V _1- P _2 V _2\right)<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(4)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) :</strong> With the increase in the pressure of an ideal gas, the volume falls off more rapidly in an isothermal process in comparison to the adiabatic process.<br/><strong>Reason (R) </strong>: In isothermal process, PV = constant, while in adiabatic process \(P{V}^{\gamma }=\) constant. Here \(\gamma\) is the ratio of specific heats, P is the pressure and V is the volume of the ideal gas.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The volume decreases more rapidly in an adiabatic process compared to an isothermal process. This is because in the isothermal process, heat exchange allows the gas to expand or compress without changing its temperature, whereas in the adiabatic process, the gas is compressed without heat exchange, causing a sharper decrease in volume.\u003cbr/>Reason (R) is true, as it correctly describes the relationship between pressure and volume in both processes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas goes from an initial state to final state. During the process, the pressure of gas increases linearly with temperature.<br/>A. The work done by gas during the process is zero.<br/>B. The heat added to gas is different from change in its internal energy<br/>C. The volume of the gas is increased.<br/>D. The internal energy of the gas is increased.<br/>E. The process is isochoric (constant volume process)<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, D, E Only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C, D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> From the equation, we get:\u003c/p> \u003cp>\\(\\frac{P}{T}=\\text{ constant }\\)\u003c/p> \u003cp>Now, let's break down each statement:\u003cbr/>A. The work done by the gas during the process is zero.\u003c/p> \u003cp>Since the volume remains constant, there is no displacement of the gas, and hence no work is done. So, this statement is true.\u003cbr/>B. The heat added to the gas is different from the change in its internal energy.\u003cbr/>This is incorrect. For an isochoric process, the heat added to the system equals the change in the internal energy, as there is no work done. So, this statement is false.\u003cbr/>C. The volume of the gas is increased. Since the process is isochoric (constant volume), this statement is false.\u003cbr/>D. The internal energy of the gas is increased.\u003c/p> \u003cp>Since the temperature increases in this process, and for an ideal gas, the internal energy depends only on temperature, the internal energy increases. So, this statement is true.\u003cbr/>E. The process is isochoric (constant volume process).\u003cbr/>As derived from the relationship P / T = constant, the volume remains constant, making this process isochoric. So, this statement is true.\u003cbr/>The correct answer is A, D, E Only.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A Carnot engine (E) is working between two temperatures 473 K and 273 K . In a new system two engines - engine \({E}_{1}\) works between 473 K to 373 K and engine \({E}_{2}\) works between 373 K to 273 K . If \({\eta }_{12}\), \({\eta }_{1}\) and \({\eta }_{2}\) are the efficiencies of the engines \(E\), \({E}_{1}\) and \({E}_{2}\), respectively, then</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\begin{equation}<br/>\eta_{12}&lt;\eta_1+\eta_2<br/>\end{equation}</p></span></div><div class="option"><span class="key">b</span><span><p>\begin{equation}<br/>\eta_{12}=\eta_1+\eta_2<br/>\end{equation}</p></span></div><div class="option"><span class="key">c</span><span><p>\begin{equation}<br/>\eta_{12}=\eta_1 \eta_2<br/>\end{equation}</p></span></div><div class="option"><span class="key">d</span><span><p>\begin{equation}<br/>\eta_{12} \geq \eta_1+\eta_2<br/>\end{equation}</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(\\text{ Efficiency }(\\eta )=1-\\frac{{T}_{2}}{{T}_{1}}\\\\ {\\eta }_{12}=1-\\frac{273}{473}=\\frac{200}{473}\\\\ {\\eta }_{1}=1-\\frac{373}{473}=\\frac{100}{473}\\\\ {\\eta }_{2}=1-\\frac{273}{373}\\\\ =\\frac{100}{373}\\\\ {\\eta }_{1}+{\\eta }_{2}>\\frac{200}{473}\\\\ {\\eta }_{1}+{\\eta }_{2}>{\\eta }_{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the melting of a slab of ice at \(273\) K at atmospheric pressure :</p> <p> </p> <p>[JEE Main 2025, 3 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Internal energy of ice-water system remains unchanged.</p></span></div><div class="option"><span class="key">b</span><span><p>Positive work is done by the ice-water system on the atmosphere.</p></span></div><div class="option"><span class="key">c</span><span><p>Internal energy of the ice-water system decreases.</p></span></div><div class="option"><span class="key">d</span><span><p>Positive work is done on the ice-water system by the atmosphere.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During melting of ice, volume decreases, so work is done on the ice–water system by the atmosphere.\u003cbr/>Heat is absorbed by the ice–water system, hence \\(∆Q=(+)ve\\).\u003cbr/>Work done by the ice–water system is negative.\u003cbr/>By the first law of thermodynamics:\u003cbr/>\\(\\Delta U=\\Delta Q-\\Delta W\\)\u003cbr/>Since heat absorbed is positive and work done by the system is negative. This makes the sum positive:\u003cbr/>\\(\\Delta U>0\\)\u003cbr/>Final conclusion:\u003cbr/>Internal energy of the ice–water system increases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In adiabatic process of closed system, work done by the gas depends explicity on </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Change in volume </p></span></div><div class="option"><span class="key">b</span><span><p>Change in pressure</p></span></div><div class="option"><span class="key">c</span><span><p>Change in temperature</p></span></div><div class="option"><span class="key">d</span><span><p>Change in number of moles</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -605,7 +609,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For an adiabatic system, Q = 0\u003c/p> \u003cp>By the first law of thermodynamics \u003c/p> \u003cp>\\(∆\\mathrm{Q}=∆\\mathrm{W}+∆\\mathrm{U}\\\\ \\mathrm{Here},∆\\mathrm{Q}=0\\\\ \\mathrm{So},∆\\mathrm{W}=-∆\\mathrm{U}\\)\u003c/p> \u003cp>Here, chnage in internal energy is teh function of temperature, so work done by the gas depends on the chnage in temperature. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Heat is given to an ideal gas in an isothermal process.<br/>A. Internal energy of the gas will decrease.<br/>B. Internal energy of the gas will increase.<br/>C. Internal energy of the gas will not change.<br/>D. The gas will do positive work.<br/>E. The gas will do negative work.</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and E only</p></span></div><div class="option"><span class="key">b</span><span><p>B and D only</p></span></div><div class="option"><span class="key">c</span><span><p>C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -614,10 +618,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; d Q=d U+d W \\Rightarrow d U=n C_v d T \\\\\u003cbr/>&amp; d U=0 \\text { (for isothermal) } \\\\\u003cbr/>&amp; \\therefore U=\\text { constant }\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Also \\(d Q&gt;0\\) (supplied)\u003cbr/>Hence \\(d W&gt;0\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& d Q=d U+d W \\Rightarrow d U=n C_v d T \\\\& d U=0 \\text { (for isothermal) } \\\\& \\therefore U=\\text { constant }\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Also \\(d Q&gt;0\\) (supplied)\u003cbr/>Hence \\(d W&gt;0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A source supplies heat to a system at the rate of \(1000 W\). If the system performs work at a rate of \(200 W\). The rate at which internal energy of the system increases</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1200 W\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(600 W\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(500 W\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(800 W\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -626,10 +630,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>From first law of thermodynamics\u003cbr/>Internal energy \\(( U )=\\) Total energy \\(( Q )-\\) Work done \\(( W )\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{d U}{d t}=\\frac{d Q}{d t}-\\frac{d w}{d t} \\\\\u003cbr/>&amp; \\frac{d U}{d t}=1000-200=800 W\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>From first law of thermodynamics\u003cbr/>Internal energy \\(( U )=\\) Total energy \\(( Q )-\\) Work done \\(( W )\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{d U}{d t}=\\frac{d Q}{d t}-\\frac{d w}{d t} \\\\& \\frac{d U}{d t}=1000-200=800 W\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A gas is compressed adiabatically, which one of the following statement is NOT true.</p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>There is no heat supplied to the system</p></span></div><div class="option"><span class="key">b</span><span><p>The temperature of the gas increases</p></span></div><div class="option"><span class="key">c</span><span><p>The change in the internal energy is equal to the work done on the gas.</p></span></div><div class="option"><span class="key">d</span><span><p>There is no change in the internal energy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -638,10 +642,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(1) \\(\\Delta Q=0\\)\u003cbr/>(2) \\(\\Delta Q=\\Delta U+\\Delta W\\)\u003cbr/>The compression (Volume decreases) is adiabatic so no heat is absorbed and the work done is used to increase the temperature\u003cbr/>Hence internal energy will change and it will equal to the work done on the gas.\u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\Rightarrow \\Delta U=-\\Delta W \\\\ &amp; \\Delta W=-v e \\Rightarrow \\Delta U=+v e \\\\ &amp; \\Delta U \\uparrow \\Rightarrow T \\uparrow \\\\ &amp; \\Delta U \\neq 0\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(1) \\(\\Delta Q=0\\)\u003cbr/>(2) \\(\\Delta Q=\\Delta U+\\Delta W\\)\u003cbr/>The compression (Volume decreases) is adiabatic so no heat is absorbed and the work done is used to increase the temperature\u003cbr/>Hence internal energy will change and it will equal to the work done on the gas.\u003c/p> \u003cp>\\(\\begin{aligned} & \\Rightarrow \\Delta U=-\\Delta W \\\\ & \\Delta W=-v e \\Rightarrow \\Delta U=+v e \\\\ & \\Delta U \\uparrow \\Rightarrow T \\uparrow \\\\ & \\Delta U \\neq 0\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The thermodynamic process, in which internal energy of the system remains constant is </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Isochoric</p></span></div><div class="option"><span class="key">b</span><span><p>Isothermal</p></span></div><div class="option"><span class="key">c</span><span><p>Adiabatic</p></span></div><div class="option"><span class="key">d</span><span><p>Isobaric</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -653,7 +657,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For constant temp. the thermodynamic process is isothermal and\u003cbr/>For constant temp. \\(\\Rightarrow\\) internal energy is constant\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>One mole of an ideal gas expands adiabatically from an initial state (T<sub>A</sub>, V<sub>0</sub>) to final state (T<sub>f</sub>, 5V<sub>0</sub>). Another mole of the same gas expands isothermally from a different initial state (T<sub>B</sub>, V<sub>0</sub>) to the same final state (T<sub>f</sub>, 5V<sub>0</sub>). The ratio of the specific heats at constant pressure and constant volume of this ideal gas is γ. What is the ratio T<sub>A</sub>/T<sub>B</sub>? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5<sup>γ–1</sup></p></span></div><div class="option"><span class="key">b</span><span><p>5<sup>1–</sup><sup>γ</sup></p></span></div><div class="option"><span class="key">c</span><span><p>5<sup>γ</sup></p></span></div><div class="option"><span class="key">d</span><span><p>5<sup>1+</sup><sup>γ</sup></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -665,7 +669,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A Carnot engine operating between two reservoirs has efficiency \(\frac{1}{3}\). When the temperature of cold reservoir is raised by \(x\), its efficiency decreases to \(\frac{1}{6}\). The value of \(x\), if the temperature of hot reservoir is \(99^{\circ} C\), will be:</p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16.5 K\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(33 K\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(66 K\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(62 K\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -674,10 +678,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (d) } T_H=99^{\\circ} C =372 K \\\\ &amp; 1-\\frac{T_C}{T_H}=\\frac{1}{3} \\\\ &amp; \\frac{T_C}{T_H}=\\frac{2}{3} \\\\ &amp; \\Rightarrow T_C=\\frac{2}{3} \\times 372=248 K \\\\ &amp; 1-\\frac{T_C+X}{T_H}=\\frac{1}{6} \\\\ &amp; \\frac{5}{6}=\\frac{T_C+X}{T_H} \\\\ &amp; \\frac{5}{6}=\\frac{248+X}{372} \\\\ &amp; \\Rightarrow X=62 K \\\\ &amp; \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (d) } T_H=99^{\\circ} C =372 K \\\\ & 1-\\frac{T_C}{T_H}=\\frac{1}{3} \\\\ & \\frac{T_C}{T_H}=\\frac{2}{3} \\\\ & \\Rightarrow T_C=\\frac{2}{3} \\times 372=248 K \\\\ & 1-\\frac{T_C+X}{T_H}=\\frac{1}{6} \\\\ & \\frac{5}{6}=\\frac{T_C+X}{T_H} \\\\ & \\frac{5}{6}=\\frac{248+X}{372} \\\\ & \\Rightarrow X=62 K \\\\ & \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Heat energy of \(735 J\) is given to a diatomic gas allowing the gas to expand at constant pressure. Each gas molecule rotates around an internal axis but do not oscillate. The increase in the internal energy of the gas will be:</p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(525 J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(441 J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(572 J\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(735 J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -686,10 +690,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/> Q=n C_p \\Delta T \\\\\u003cbr/>&amp; 735=n \\times \\frac{7 R}{2} \\times \\Delta T \\\\\u003cbr/>&amp; 105=\\frac{n}{2} R \\Delta T \\\\\u003cbr/>&amp;\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Since diatomic gas has degree of freedom \\(=5\\)\u003cbr/>\\[\u003cbr/>\\Delta U=\\frac{5 n}{2} R \\Delta T\u003cbr/>\\]\u003cbr/>from equation \\((i)\\)\u003cbr/>\\[\u003cbr/>\\Delta U=5 \\times\\left(\\frac{n}{2} R \\Delta T\\right)=5 \\times 105=525\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned} Q=n C_p \\Delta T \\\\& 735=n \\times \\frac{7 R}{2} \\times \\Delta T \\\\& 105=\\frac{n}{2} R \\Delta T \\\\&\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Since diatomic gas has degree of freedom \\(=5\\)\u003cbr/>\\[\u003cbr/>\\Delta U=\\frac{5 n}{2} R \\Delta T\u003cbr/>\\]\u003cbr/>from equation \\((i)\\)\u003cbr/>\\[\u003cbr/>\\Delta U=5 \\times\\left(\\frac{n}{2} R \\Delta T\\right)=5 \\times 105=525\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas is in thermodynamic equilibrium. The number of degrees of freedom of a molecule of the gas is \(n\). The internal energy of one mole of the gas is \(U_n\) and the speed of sound in the gas is \(\mathrm{v}_n\). At a fixed temperature and pressure, which of the following is the correct option?</p> <p> </p> <p>[JEE Advanced 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(v_3&lt;v_6\) and \(U_3&gt;U_6\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(v_5&gt;v_3\) and \(U_3&gt;U_5\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(v_5&gt;v_7\) and \(U_5&lt;U_7\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(v_6&lt;v_7\) and \(U_6&lt;U_7\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Compare \\({v}_{n}\\) and \\({U}_{n}\\) for different degrees of freedom \\(n\\).\u003c/p> \u003col> \u003cli>\u003cstrong>Formulas:\u003c/strong>\u003c/li> \u003c/ol> \u003cul> \u003cli>Internal Energy: \\({U}_{n}=\\frac{n}{2}RT\\). For fixed T \\({U}_{n}\\), increases with \\(n\\).\u003c/li> \u003cli>Speed of Sound: \\({v}_{n}=\\sqrt{\\frac{\\gamma RT}{M}}\\), where \\(\\gamma =1+\\frac{2}{n}\\).\u003c/li> \u003cli>As \\(n\\) increases, \\(\\frac{2}{n}\\) decreases, so \\(\\gamma\\) Thus, \\({v}_{n}\\) decreases with increasing \\(n\\).\u003c/li> \u003c/ul> \u003col> \u003cli>\u003cstrong>Evaluate Option (C):\u003c/strong>\u003c/li> \u003c/ol> \u003cul> \u003cli>Compare \\(n=5\\)and \\(n=7\\).\u003c/li> \u003cli>Since \\(5\u003c7\\), \\({U}_{5}\u003c{U}_{7}\\).\u003c/li> \u003cli>Since \\(5\u003c7\\), \\({\\gamma }_{5}>{\\gamma }_{7}\\), so \\({v}_{5}>{v}_{7}\\).\u003c/li> \u003cli>Statement: \"\\({v}_{5}>{v}_{7}\\) and \"\\({U}_{5}\u003c{U}_{7}\\). This is correct.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electric appliance supplies 6000 J/min heat to the system. If the system delivers a power of 90W. How long it would take to increase the internal energy by \(2.5\times {10}^{3}\) J ?</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4.1\times {10}^{1}s\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.4\times {10}^{3}s\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.5\times {10}^{1}s\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2.5\times {10}^{2}s\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>From first law of thermodynamics\u003cbr/>\\(\\Delta U=\\Delta Q-\\Delta W\\\\ \\frac{\\Delta U}{\\Delta t}=\\frac{\\Delta Q}{\\Delta t}-\\frac{\\Delta W}{\\Delta t}=\\frac{6000}{60}-90\\\\ =10J\\\\ t=\\frac{\\Delta U}{10}=\\frac{2.5\\times {10}^{3}}{10}=2.5\\times {10}^{2}\\text{ seconds }\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A diatomic gas (\(\gamma\) = 1.4) does 100 J of work in an isobaric expansion. The heat given to the gas is :</p> <p><strong>[JEE Main 2024, 08 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>150 J</p></span></div><div class="option"><span class="key">b</span><span><p>250 J</p></span></div><div class="option"><span class="key">c</span><span><p>490 J</p></span></div><div class="option"><span class="key">d</span><span><p>350 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -722,10 +726,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(4)\u003c/strong>\u003c/p> \u003cp>Isobaric, diatonic, work done = 100J\u003cbr/>\\(∆\\)Q = nC\u003csub>p\u003c/sub> \\(∆\\)T\u003c/p> \u003cp>= \\(\\mathrm{n}\\left(\\frac{7\\mathrm{R}}{2}\\right)\\mathrm{ΔT}\\left(\\begin{matrix}\\mathrm{pv}=\\mathrm{nRT} \\\\ \\mathrm{pΔy}=\\mathrm{nrΔT}=\\mathrm{work}\\text{  }\\mathrm{done}\\end{matrix}\\right)\\)\u003c/p> \u003cp>\\(\\mathrm{ΔQ}=\\frac{7}{2}\\mathrm{nRΔT}\\)\u003c/p> \u003cp>\\(\\mathrm{ΔQ}=\\frac{7}{2}\\text{ }\\mathrm{work}\\text{ }\\mathrm{done}\\)\u003c/p> \u003cp>\\(\\Delta Q=\\frac{7}{2}\\text{ }\\times 100\\)\u003c/p> \u003cp>\\(\\Delta Q=\\frac{700}{2}\\text{ }\\)\u003c/p> \u003cp>\\(\\Delta Q=350\\text{  }\\mathrm{J}\\)\u003c/p> \u003cp>Heat we need to give to the gas.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(4)\u003c/strong>\u003c/p> \u003cp>Isobaric, diatonic, work done = 100J\u003cbr/>\\(∆\\)Q = nC\u003csub>p\u003c/sub> \\(∆\\)T\u003c/p> \u003cp>= \\(\\mathrm{n}\\left(\\frac{7\\mathrm{R}}{2}\\right)\\mathrm{ΔT}\\left($$\\begin{matrix}\\mathrm{pv}=\\mathrm{nRT} \\\\ \\mathrm{pΔy}=\\mathrm{nrΔT}=\\mathrm{work}\\text{  }\\mathrm{done}\\end{matrix}$$\\right)\\)\u003c/p> \u003cp>\\(\\mathrm{ΔQ}=\\frac{7}{2}\\mathrm{nRΔT}\\)\u003c/p> \u003cp>\\(\\mathrm{ΔQ}=\\frac{7}{2}\\text{ }\\mathrm{work}\\text{ }\\mathrm{done}\\)\u003c/p> \u003cp>\\(\\Delta Q=\\frac{7}{2}\\text{ }\\times 100\\)\u003c/p> \u003cp>\\(\\Delta Q=\\frac{700}{2}\\text{ }\\)\u003c/p> \u003cp>\\(\\Delta Q=350\\text{  }\\mathrm{J}\\)\u003c/p> \u003cp>Heat we need to give to the gas.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The efficiency of a carnot engine depends upon</p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The temperatures of the source and sink</p></span></div><div class="option"><span class="key">b</span><span><p>The volume of the cylinder of the engine</p></span></div><div class="option"><span class="key">c</span><span><p>The temperature of the source only</p></span></div><div class="option"><span class="key">d</span><span><p>The temperature of the sink only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Efficiency depends only on the absolute temperatures of the source and the sink. \u003c/p> \u003cp>\u003cstrong>(NEW NCERT 11\u003csup>th\u003c/sup> Page No. 237, 238 and 239)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The initial pressure and volume of an ideal gas are \(P_0\) and \(V_0\). The final pressure of the gas when the gas is suddenly compressed to volume \(\frac{V_0}{4}\) will be: (Given \(\gamma=\) ratio of specific heats at constant pressure and at constant volume)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(P_0(4)^{\frac{1}{\gamma}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(P_0(4)^\gamma\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(P_0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 P_0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -746,10 +750,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Since gas is suddenly compressed, therefore the processes would be adiabatic. i.e.,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; PV ^\\gamma=\\text { constant. } \\\\\u003cbr/>&amp; \\Rightarrow P_1 V_1^\\gamma=P_2 V_2^\\gamma \\\\\u003cbr/>&amp; \\Rightarrow P_0 V_0^\\gamma=P_2\\left(\\frac{V_0}{4}\\right)^\\gamma \\\\\u003cbr/>&amp; \\Rightarrow P_2=P_0(4)^\\gamma\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Since gas is suddenly compressed, therefore the processes would be adiabatic. i.e.,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& PV ^\\gamma=\\text { constant. } \\\\& \\Rightarrow P_1 V_1^\\gamma=P_2 V_2^\\gamma \\\\& \\Rightarrow P_0 V_0^\\gamma=P_2\\left(\\frac{V_0}{4}\\right)^\\gamma \\\\& \\Rightarrow P_2=P_0(4)^\\gamma\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A hypothetical gas expands adiabatically such that its volume changes from 08 litres to 27 litres. If the ratio of final pressure of the gas to initial pressure of the gas is \(\frac{16}{81}\). Then the ratio of \(\frac{C_P}{C_V}\) will be.</p> <p> </p> <p><strong>[JEE Main 2023, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -758,10 +762,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1) Using equation, \\(P V^\\gamma=\\) Constant,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{P_1}{P_2}=\\left(\\frac{V_2}{V_1}\\right)^\\gamma \\\\\u003cbr/>&amp; \\frac{81}{16}=\\left(\\frac{27}{8}\\right)^\\gamma \\\\\u003cbr/>&amp; \\left(\\frac{3}{2}\\right)^4=\\left(\\frac{3}{2}\\right)^{3 \\gamma} \\Rightarrow \\gamma=\\frac{C_P}{C_V}=\\frac{4}{3}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1) Using equation, \\(P V^\\gamma=\\) Constant,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{P_1}{P_2}=\\left(\\frac{V_2}{V_1}\\right)^\\gamma \\\\& \\frac{81}{16}=\\left(\\frac{27}{8}\\right)^\\gamma \\\\& \\left(\\frac{3}{2}\\right)^4=\\left(\\frac{3}{2}\\right)^{3 \\gamma} \\Rightarrow \\gamma=\\frac{C_P}{C_V}=\\frac{4}{3}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Heat energy of \(735 \ J\) is given to a diatomic gas allowing the gas to expand at constant pressure. Each gas molecule rotates around an internal axis but do not oscillate. The increase in the internal energy of the gas will be:</p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(525 \ J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(441 \ J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(572 \ J\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(735 \ J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -770,10 +774,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/> Q=n C_p \\Delta T \\\\\u003cbr/>&amp; 735=n \\times \\frac{7 R}{2} \\times \\Delta T \\\\\u003cbr/>&amp; 105=\\frac{n}{2} R \\Delta T \\\\\u003cbr/>&amp;\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Since diatomic gas has degree of freedom \\(=5\\)\u003cbr/>\\[\u003cbr/>\\Delta U=\\frac{5 n}{2} R \\Delta T\u003cbr/>\\]\u003cbr/>from equation \\((i)\\)\u003cbr/>\\[\u003cbr/>\\Delta U=5 \\times\\left(\\frac{n}{2} R \\Delta T\\right)=5 \\times 105=525\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned} Q=n C_p \\Delta T \\\\& 735=n \\times \\frac{7 R}{2} \\times \\Delta T \\\\& 105=\\frac{n}{2} R \\Delta T \\\\&\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Since diatomic gas has degree of freedom \\(=5\\)\u003cbr/>\\[\u003cbr/>\\Delta U=\\frac{5 n}{2} R \\Delta T\u003cbr/>\\]\u003cbr/>from equation \\((i)\\)\u003cbr/>\\[\u003cbr/>\\Delta U=5 \\times\\left(\\frac{n}{2} R \\Delta T\\right)=5 \\times 105=525\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion \(A\) and the other is labelled as Reason \(R\).<br/>Assertion A: Efficiency of a reversible heat engine will be highest at \(-273^{\circ} C\) temperature of cold reservoir.<br/>Reason R: The efficiency of a Carnot's engine depends not only on the temperature of cold reservoir but it depends on the temperature of hot reservoir too and is given as \(\eta=\left(1-\frac{T_2}{T_1}\right)\).<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\) is true but \(R\) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(A\) and \(R\) are true but \(R\) is not the correct explanation of \(A\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(A\) is false but \(R\) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(A\) and \(R\) are true and \(R\) is the correct explanation of A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -785,7 +789,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d)Both \\(A\\) and \\(R\\) are true and \\(R\\) is the correct explanation of A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(1 g\) of a liquid is converted to vapour at \(3 \times 10^5 Pa\) pressure. If \(10 \%\) of the heat supplied is used for increasing the volume by \(1600 cm ^3\) during this phase change, then the increase in internal energy in the process will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4320 \ J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(432000 \ J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4800 \ J\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.32 \times 10^8 \ J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -797,7 +801,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Work done during the phase change \\(=P \\Delta V\\)\u003cbr/>\\[\u003cbr/>=3 \\times 10^5 \\times 1600 \\times 10^{-6}=480 J\u003cbr/>\\]\u003c/p> \u003cp>Only \\(10 \\%\\) of heat is used for work done.\u003cbr/>Hence \\(Q=4800 J\\)\u003cbr/>The rest goes in internal energy, which is \\(90 \\%\\) of the heat.\u003c/p> \u003cp>Change in internal energy \\(=0.9 \\times 4800=4320 J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>One mole of an ideal gas expands adiabatically from an initial state \(\left(T_A, V_0\right)\) to final state \(\left(T_f, 5 V_0\right)\). Another mole of the same gas expands isothermally from a different initial state \(\left(T_B, V_0\right)\) to the same final state \(\left(T_f, 5 V_0\right)\). The ratio of the specific heats at constant pressure and constant volume of this ideal gas is \(\gamma\). What is the ratio \(T_A / T_B\).</p> <p>[JEE Advanced 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5^{\gamma-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5^{1-\gamma}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5^\gamma\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5^{1+\gamma}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -809,7 +813,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Find \\({T}_{A}/{T}_{B}\\) given adiabatic expansion from \\({T}_{A}\\) and isothermal expansion from \\({T}_{B}\\) to the same final state.\u003c/p> \u003cp>\u003cstrong>1. Process 1 (Adiabatic):\u003c/strong> \\(\\left({T}_{A},{V}_{0}\\right)\\to \\left({T}_{f},5{V}_{0}\\right)\\).\u003c/p> \u003cul> \u003cli>Relation: \\(T{V}^{\\gamma −1}=\\text{constant}\\).\u003c/li> \u003cli>\\({T}_{A}{V}_{0}^{\\gamma −1}={T}_{f}{(5{V}_{0})}^{\\gamma −1}\\)\u003c/li> \u003cli>\\({T}_{A}={T}_{f}⋅{5}^{\\gamma −1}\\).\u003c/li> \u003c/ul> \u003cp>\u003cstrong>2. \u003c/strong>\u003cstrong>Process 2 (Isothermal):\u003c/strong> \\(\\left({T}_{B},{V}_{0}\\right)\\to \\left({T}_{f},5{V}_{0}\\right)\\).\u003c/p> \u003cul> \u003cli>Relation: \\(T=\\text{constant}\\).\u003c/li> \u003cli>\\({T}_{B}={T}_{f}\\).\u003c/li> \u003c/ul> \u003cp>\u003cstrong>3. Ratio: \\(\\frac{{T}_{A}}{{T}_{B}}=\\frac{{T}_{f}⋅{5}^{\\gamma −1}}{{T}_{f}}={5}^{\\gamma −1}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>1 kg of water at 100ºC is converted into steam at 100ºC by boiling at atmospheric pressure. The volume of water changes from 1.00 × 10<sup>–3</sup> m<sup>3</sup> as a liquid to 1.671 m<sup>3</sup> as steam. The change in internal energy of the system during the process will be (Given latent heat of vaporization = 2257 kJ/kg. Atmospheric pressure = 1 × 10<sup>5</sup> Pa)</p> <p>[JEE Main 2023, 11 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(+2090 kJ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-2090 kJ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-2426 kJ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(+2476 kJ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -818,10 +822,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) From first law of thermodynamics\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Delta U=\\Delta Q-\\Delta W \\\\\u003cbr/>&amp; =m L_v-P \\Delta V \\\\\u003cbr/>&amp; =(1)\\left(2257 \\times 10^3\\right)-\\left(1 \\times 10^5\\right)\\left(1.671-1 \\times 10^{-3}\\right) \\\\\u003cbr/>&amp; =2257 \\times 10^3-167 \\times 10^3=2090 \\times 10^3 J \\\\\u003cbr/>&amp; =2090 kJ\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) From first law of thermodynamics\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Delta U=\\Delta Q-\\Delta W \\\\& =m L_v-P \\Delta V \\\\& =(1)\\left(2257 \\times 10^3\\right)-\\left(1 \\times 10^5\\right)\\left(1.671-1 \\times 10^{-3}\\right) \\\\& =2257 \\times 10^3-167 \\times 10^3=2090 \\times 10^3 J \\\\& =2090 kJ\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A source supplies heat to a system at the rate of \(1000 W\). If the system performs work at a rate of \(200 W\). The rate at which internal energy of the system increases</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1200 W\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(600 W\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(500 W\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(800 W\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -830,10 +834,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>From first law of thermodynamics\u003cbr/>Internal energy \\(( U )=\\) Total energy \\(( Q )-\\) Work done \\(( W )\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{d U}{d t}=\\frac{d Q}{d t}-\\frac{d w}{d t} \\\\\u003cbr/>&amp; \\frac{d U}{d t}=1000-200=800 W\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>From first law of thermodynamics\u003cbr/>Internal energy \\(( U )=\\) Total energy \\(( Q )-\\) Work done \\(( W )\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{d U}{d t}=\\frac{d Q}{d t}-\\frac{d w}{d t} \\\\& \\frac{d U}{d t}=1000-200=800 W\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pressure \((P)\) and temperature \((T)\) relationship of an ideal gas obeys the equation \(P T^2=\) constant. The volume expansion coefficient of the gas will be:</p> <p>[JEE Main 2023, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 T\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{T^2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{T^3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{T}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -845,7 +849,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given the relationship:\u003c/p>  \\[PT^2 = C\\]  \u003cp>(where \\(C\\) is a constant)\u003c/p> \u003cp>From the ideal gas equation, \\(P=\\frac{nRT}{V}\\). Substitute this into the given equation:\u003c/p>  \\[\\left(\\frac{nRT}{V}\\right)T^2 = C\\]   \\[\\frac{nRT^3}{V} = C\\]   \\[V = \\left(\\frac{nR}{C}\\right)T^3\\]  \u003cp>Since \\(\\frac{nR}{C}\\) is a new constant (let's call it \\(k\\)), we can write:\u003c/p>  \\[V = kT^3\\]  \u003cp>Find the Volume Expansion Coefficient\u003c/p> \u003cp>The volume expansion coefficient (\\(\\gamma\\)) is defined as:\u003c/p>  \\[\\gamma = \\frac{1}{V}\\frac{dV}{dT}\\]  \u003cp>Differentiate \\(V = kT^3\\) with respect to \\(T\\):\u003c/p>  \\[\\frac{dV}{dT} = 3kT^2\\]  \u003cp>Substitute \\(V\\) and \\(\\frac{dV}{dT}\\) into the formula for \\(\\gamma\\):\u003c/p>  \\[\\gamma = \\frac{1}{kT^3}(3kT^2) = \\frac{3}{T}\\]  \u003cp>Correct Option: D \\(\\left(\\frac{3}{T}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/><strong>Statement-I:</strong> If heat is added to a system, its temperature must increase.</p> <p><strong>Statement-II:</strong> If positive work is done by a system in a thermodynamic process, its volume must increase.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -857,7 +861,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) If heat is added to a system (Isothermal) then temperature will remain constant. Hence statement-I is false\u003cbr/>Statement-I: is false\u003cbr/>Statement-II: If work done is positive then\u003cbr/>\\[\u003cbr/>\\int P d V&gt;0\u003cbr/>\\]\u003c/p> \u003cp>Hence volume of system must increase during positive work done by the system. So statement II is true\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In thermodynamics , heat and work are :</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>point functions</p></span></div><div class="option"><span class="key">b</span><span><p>path functions</p></span></div><div class="option"><span class="key">c</span><span><p>Intensive thermodynamics state variables</p></span></div><div class="option"><span class="key">d</span><span><p>Extensive thermodynamics state variables</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -869,7 +873,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Heat and work depend on the process path, not just initial and final states.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>One mole of an ideal gas is taken through an adiabatic process where the temperature rises from \(27^{\circ} \mathrm{C}\) to \(37^{\circ} \mathrm{C}\). If the ideal gas is composed of polyatomic molecule that has 4 vibrational modes which of the following is true?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Work done on the gas is close to \(582 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">b</span><span><p>Work done by the gas is close to \(332 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Work done by the gas is close to \(582 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Work done on the gas is close to \(332 \mathrm{~J}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -881,7 +885,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For an adiabatic process:\u003c/p> \\(Q=0\\) \u003cp>Hence,\u003c/p> \\(\\mathrm{ΔU}=W\\text{(on gas)}\\) \u003cp>Degrees of freedom:\u003c/p> \\(f=3+3+2\\times 4\\) \\(f=14\\) \u003cp>Molar heat capacity at constant volume:\u003c/p> \\({C}_{V}=\\frac{f}{2}R\\) \\({C}_{V}=7R\\) \u003cp>Temperature rise:\u003c/p> \\(\\mathrm{ΔT}=37-27=10\\) \u003cp>Change in internal energy:\u003c/p> \\(\\mathrm{ΔU}=n{C}_{V}\\mathrm{ΔT}\\) \\(\\mathrm{ΔU}=1\\times 7\\times 8.31\\times 10\\) \\(\\mathrm{ΔU}\\approx 582\\ \\text{J}\\) \u003cp>Therefore,\u003c/p> \\(W\\text{(on gas)}\\approx 582\\ \\text{J}\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount of heat needed to raise the temperature of 4 moles of a rigid diatomic gas from \(0^{\circ} C\) to \(50^{\circ} C\) when no work is done is . ( \(R\) is the universal gas constant)</p> <p> </p> <p>[JEE Main 2021, 20 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(175 R\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(750 R\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(250 R\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(500 R\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -893,7 +897,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) The given process is isochoric, so the amount of heat required,\u003cbr/>\\[\u003cbr/>Q=n C_V \\Delta T=n\\left(\\frac{f}{2} R\\right) \\Delta T=4\\left(\\frac{5}{2} \\times R\\right)(50)=500 R\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(1 g\) of a liquid is converted to vapour at \(3 \times 10^5 Pa\) pressure. If \(10 \%\) of the heat supplied is used for increasing the volume by \(1600 cm ^3\) during this phase change, then the increase in internal energy in the process will be:</p> <p><strong>[JEE Main 2023, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4320 \ J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(432000 \ J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4800 \ J\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.32 \times 10^8 \ J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -905,7 +909,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Work done during the phase change \\(=P \\Delta V\\)\u003cbr/>\\[\u003cbr/>=3 \\times 10^5 \\times 1600 \\times 10^{-6}=480 J\u003cbr/>\\]\u003c/p> \u003cp>Only \\(10 \\%\\) of heat is used for work done.\u003cbr/>Hence \\(Q=4800 J\\)\u003cbr/>The rest goes in internal energy, which is \\(90 \\%\\) of the heat.\u003c/p> \u003cp>Change in internal energy \\(=0.9 \\times 4800=4320 J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A gas is compressed adiabatically, which one of the following statement is NOT true.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>There is no heat supplied to the system</p></span></div><div class="option"><span class="key">b</span><span><p>The temperature of the gas increases</p></span></div><div class="option"><span class="key">c</span><span><p>The change in the internal energy is equal to the work done on the gas.</p></span></div><div class="option"><span class="key">d</span><span><p>There is no change in the internal energy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -917,7 +921,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For an adiabatic process:\u003c/p> \\(Q=0\\) \u003cp>Using the first law of thermodynamics:\u003c/p> \\(\\mathrm{ΔU}=Q+W\\) \\(\\mathrm{ΔU}=W\\) \u003cp>where W is the work done on the gas.\u003c/p> \u003cp>During adiabatic compression, work is done on the gas, so its internal energy increases and hence its temperature increases.\u003c/p> \u003cp>Therefore:\u003c/p> \u003cul> \u003cli>A: True\u003c/li> \u003cli>B: True\u003c/li> \u003cli>C: True\u003c/li> \u003cli>D: False\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Correct option: D\u003c/strong>\u003c/p> \u003cp>There is a change in internal energy during adiabatic compression; it increases because the work done on the gas is converted into internal energy.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A hypothetical gas expands adiabatically such that its volume changes from 08 litres to 27 litres. If the ratio of final pressure of the gas to initial pressure of the gas is \(\frac{16}{81}\). Then the ratio of \(\frac{C_P}{C_V}\) will be.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -926,10 +930,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1) Using equation, \\(P V^\\gamma=\\) Constant,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{P_1}{P_2}=\\left(\\frac{V_2}{V_1}\\right)^\\gamma \\\\\u003cbr/>&amp; \\frac{81}{16}=\\left(\\frac{27}{8}\\right)^\\gamma \\\\\u003cbr/>&amp; \\left(\\frac{3}{2}\\right)^4=\\left(\\frac{3}{2}\\right)^{3 \\gamma} \\Rightarrow \\gamma=\\frac{C_P}{C_V}=\\frac{4}{3}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1) Using equation, \\(P V^\\gamma=\\) Constant,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{P_1}{P_2}=\\left(\\frac{V_2}{V_1}\\right)^\\gamma \\\\& \\frac{81}{16}=\\left(\\frac{27}{8}\\right)^\\gamma \\\\& \\left(\\frac{3}{2}\\right)^4=\\left(\\frac{3}{2}\\right)^{3 \\gamma} \\Rightarrow \\gamma=\\frac{C_P}{C_V}=\\frac{4}{3}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider two containers \(A\) and \(B\) containing monoatomic gases at the same Pressure \((P)\), Volume \((V)\) and Temperature ( \(T\) ). The gas in A is compressed isothermally to \(\frac{1}{8}\) of its original volume while the gas \(B\) is compressed adiabatically to \(\frac{1}{8}\) of its original volume. The ratio of final pressure of gas in \(B\) to that of gas in \(A\) is:</p> <p>[JEE Main 2023, 10 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>\(8^{\frac{3}{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{8}\)</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -938,10 +942,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For gas A : Isothermal process, \\(\\Rightarrow PV =\\) constant\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; P_1 V_1=P_2 V_2 \\\\\u003cbr/>&amp; P V=P_{ A }( V / 8) \\\\\u003cbr/>&amp; P_{ A }=8 P\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>For gas B :\u003cbr/>Adiabatic process \\(\\Rightarrow PV ^\\gamma\\) constant\u003cbr/>For monoatomic gas \\(\\gamma=\\frac{5}{3}\\).\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; P_1 V_1^\\gamma=P_2 V_2^\\gamma \\\\\u003cbr/>&amp; \\frac{P_B}{P_A}=\\left(\\frac{V_1}{V_2}\\right)^\\gamma=\\left(\\frac{V}{V / 8}\\right)^{\\frac{5}{3}} \\Rightarrow P_B=32 P \\\\\u003cbr/>&amp; \\therefore \\frac{P_B}{P_A}=\\frac{32 P}{8 P}=4\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For gas A : Isothermal process, \\(\\Rightarrow PV =\\) constant\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& P_1 V_1=P_2 V_2 \\\\& P V=P_{ A }( V / 8) \\\\& P_{ A }=8 P\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>For gas B :\u003cbr/>Adiabatic process \\(\\Rightarrow PV ^\\gamma\\) constant\u003cbr/>For monoatomic gas \\(\\gamma=\\frac{5}{3}\\).\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& P_1 V_1^\\gamma=P_2 V_2^\\gamma \\\\& \\frac{P_B}{P_A}=\\left(\\frac{V_1}{V_2}\\right)^\\gamma=\\left(\\frac{V}{V / 8}\\right)^{\\frac{5}{3}} \\Rightarrow P_B=32 P \\\\& \\therefore \\frac{P_B}{P_A}=\\frac{32 P}{8 P}=4\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gas in a cylinder is separated by a piston in such a way that the entropy of one part is \(S_1\) and that of the other part is \(S_2\). Given that \(S_1&gt;S_2\). If the piston is removed then the total entropy of the system will be:</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(S_1-S_2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{S_1}{S_2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(S_1 \times S_2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(S_1+S_2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -953,7 +957,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) \\(S=S_1+S_2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The initial pressure and volume of an ideal gas are P<sub>0</sub> and V<sub>0</sub>. The final pressure of the gas when the gas is suddenly compressed to volume \(\frac{{V}_{0}}{4}\) will be: (Given γ = ratio of specific heats at constant pressure and at constant volume)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({P}_{0}{(4)}^{\frac{1}{\gamma }}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({P}_{0}{(4)}^{\gamma }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({P}_{0}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4{P}_{0}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -965,7 +969,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(P{V}^{\\gamma }=\\text{constant}\\)\u003c/p> \u003cp>\\(\\frac{{P}_{0}}{{P}_{2}}={\\left[\\frac{\\frac{{V}_{0}}{4}}{{V}_{0}}\\right]}^{\\gamma }={\\left(\\frac{1}{4}\\right)}^{\\gamma }\\)\u003c/p> \u003cp>\\({P}_{2}={P}_{0}{(4)}^{\\gamma }\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A sample of gas at temperature \(T\) is adiabatically expanded to double its volume. The work done by the gas in the process is \(\left(\right.\) given, \(\left.\gamma=\frac{3}{2}\right)\) :</p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(W=T R[\sqrt{2}-2]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(W=\frac{T}{R}[\sqrt{2}-2]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(W=\frac{R}{T}[2-\sqrt{2}]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(W=R T[2-\sqrt{2}]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -974,10 +978,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} &amp; T_1 V_1^{\\gamma-1}=T_2 V_2^{\\gamma-1} \\\\ &amp; T V^{1 / 2}=T_2(2 V)^{1 / 2} \\\\ &amp; \\therefore T_2=\\frac{T}{\\sqrt{2}} \\\\ &amp; \\Rightarrow W=\\frac{R\\left(T_1-T_2\\right)}{\\gamma-1}=\\frac{R\\left(T-\\frac{T}{\\sqrt{2}}\\right)}{\\frac{1}{2}}=R T(2-\\sqrt{2})\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} & T_1 V_1^{\\gamma-1}=T_2 V_2^{\\gamma-1} \\\\ & T V^{1 / 2}=T_2(2 V)^{1 / 2} \\\\ & \\therefore T_2=\\frac{T}{\\sqrt{2}} \\\\ & \\Rightarrow W=\\frac{R\\left(T_1-T_2\\right)}{\\gamma-1}=\\frac{R\\left(T-\\frac{T}{\\sqrt{2}}\\right)}{\\frac{1}{2}}=R T(2-\\sqrt{2})\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A sample of \( 1 \) mole of gas at temperature \( T \) is</p> <p>adiabatically expanded to double its volume. The</p> <p>work done by the gas in the process is (given</p> <p>\( \gamma=\frac{3}{2} \) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( W=T R[\sqrt{2}-2] \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( W=\frac{R}{T}[2-\sqrt{2}] \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( W=R T[2-\sqrt{2}] \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( W=\frac{T}{R}[\sqrt{2}-2] \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -986,10 +990,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[ \\omega=\\frac{P_{1} V_{1}-P_{2} V_{2}}{\\gamma-1}=\\frac{n R\\left(T_{1}-T_{2}\\right)}{\\gamma-1} \\]\u003c/p> \u003cp>For an adiabatic process \\( T_{1} V_{1}^{\\gamma-1}=T_{2} V_{2}^{\\gamma-1} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; T \\times V^{\\frac{3}{2}-1}=T_{2} \\times(2 V)^{\\frac{3}{2}-1} \\\\ &amp; \\frac{T}{\\sqrt{2}}=T_{2} \\\\ &amp; W=\\frac{n R\\left(T-\\frac{T}{\\sqrt{2}}\\right)}{\\frac{3}{2}-1} ; \\quad W=\\frac{n R T(\\sqrt{2}-1)}{\\sqrt{2} \\times \\frac{1}{2}} \\\\ &amp; W=n R T(2-\\sqrt{2}) \\end{aligned} \\]\u003c/p> \u003cp>we consider \\( \\mathrm{n}=1 \\) as all options follow the same.\u003c/p> \u003cp>\\[ W=R T(2-\\sqrt{2}) \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[ \\omega=\\frac{P_{1} V_{1}-P_{2} V_{2}}{\\gamma-1}=\\frac{n R\\left(T_{1}-T_{2}\\right)}{\\gamma-1} \\]\u003c/p> \u003cp>For an adiabatic process \\( T_{1} V_{1}^{\\gamma-1}=T_{2} V_{2}^{\\gamma-1} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} & T \\times V^{\\frac{3}{2}-1}=T_{2} \\times(2 V)^{\\frac{3}{2}-1} \\\\ & \\frac{T}{\\sqrt{2}}=T_{2} \\\\ & W=\\frac{n R\\left(T-\\frac{T}{\\sqrt{2}}\\right)}{\\frac{3}{2}-1} ; \\quad W=\\frac{n R T(\\sqrt{2}-1)}{\\sqrt{2} \\times \\frac{1}{2}} \\\\ & W=n R T(2-\\sqrt{2}) \\end{aligned} \\]\u003c/p> \u003cp>we consider \\( \\mathrm{n}=1 \\) as all options follow the same.\u003c/p> \u003cp>\\[ W=R T(2-\\sqrt{2}) \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> A diatomic gas, having \(\ C_P=\frac{7}{2} R\) and \(\ C_V=\frac{5}{2} R\),is heated at constant pressure. The ratio \(\ d U: d Q: d W\) :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\ 5: 7: 2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\ 3: 5: 2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\ 5: 7: 3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\ 3: 7: 2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1001,7 +1005,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>1\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An engine operating between the boiling and freezing points of water will have<br/>1. Efficiency more than \(27 \%\)<br/>2. Efficiency less than the efficiency a Carnot engine operating between the same two temperatures.<br/>3. Efficiency equal to \(27 \%\)<br/>4. Efficiency less than \(27 \%\)</p> <p><strong>[JEE Main 2023, 12 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2,3 and 4 only</p></span></div><div class="option"><span class="key">b</span><span><p>2 and 3 only</p></span></div><div class="option"><span class="key">c</span><span><p>2 and 4 only</p></span></div><div class="option"><span class="key">d</span><span><p>1 and 2 only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1010,7 +1014,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Boiling point is \\(100^{\\circ} C\\)\u003cbr/>\\[\u003cbr/>T_1=100^{\\circ} C =373 K\u003cbr/>\\]\u003cbr/>freezing point is \\(0^{\\circ} C\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; T_2=0^{\\circ} C =273 K \\\\\u003cbr/>&amp; \\eta=\\left(1-\\frac{T_2}{T_1}\\right) \\\\\u003cbr/>&amp; \\eta=\\left(1-\\frac{273}{373}\\right) \\times 100=26.8 \\%\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Boiling point is \\(100^{\\circ} C\\)\u003cbr/>\\[\u003cbr/>T_1=100^{\\circ} C =373 K\u003cbr/>\\]\u003cbr/>freezing point is \\(0^{\\circ} C\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& T_2=0^{\\circ} C =273 K \\\\& \\eta=\\left(1-\\frac{T_2}{T_1}\\right) \\\\& \\eta=\\left(1-\\frac{273}{373}\\right) \\times 100=26.8 \\%\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Physics PYQs</h3>

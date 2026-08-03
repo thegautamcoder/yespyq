@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/jee/chemistry/"},{"@type":"ListItem","position":5,"name":"Biomolecules","item":"https://yespyq.com/exams/jee/chemistry/biomolecules/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Biomolecules</h1>
       <p>77 JEE Chemistry previous year questions on <b>Biomolecules</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following acids is present in Vitamin C?</p> <p> (Memory Based JEE Mains 22/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Saccharic acid</p></span></div><div class="option"><span class="key">b</span><span><p>Aspartic acid </p></span></div><div class="option"><span class="key">c</span><span><p>Adipic acid</p></span></div><div class="option correct"><span class="key">d</span><span><p>Ascorbic acid</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion - Glucose pentaacetate shows 2,4 DNP test.</p> <p>Reason - Commercially, glucose is obtained by hydrolysis of starch at 393 K by heating with dilute sulphuric acid.</p> <p>Memory Based Question 28/Jan/25 Morning shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Assertion and Reason are correct and Reason is the correct explanation of Assertion.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Assertion and Reason are correct and Reason is not the correct explanation of Assertion.</p></span></div><div class="option correct"><span class="key">c</span><span><p>Assertion is incorrect, Reason is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Assertion and Reason are incorrect</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement (I): </strong>On hydrolysis, oligopeptides give rise to fewer number of \(\alpha\)-amino acids while proteins give rise to a large number of \(\beta\)-amino acids.<br/><strong>Statement (II) : </strong>Natural proteins are denatured by acids which convert the water soluble form of fibrous proteins to their water insoluble form.<br/>In the light of the above statements, choose the most appropriate answer from the options given below </p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both statement I and statement II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option correct"><span class="key">c</span><span><p>Both statement I and statement II are incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I:\(\text{ D-(+)-glucose }+\mathrm{D}-(+)\text{ –fructose }\overset{-{\mathrm{H}}_{2}\mathrm{O}}{\to }\text{ sucrose }\)<br/>\(\text{ sucrose }\overset{\text{ Hydrolysis }}{\to }\text{ D-(+)-glucose }+\text{ D-(+)–fructose }\)</strong> <br/>Statement II : Invert sugar is formed during sucrose hydrolysis.<br/>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2025, 7 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option correct"><span class="key">b</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false.</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The carbohydrate "Ribose" present in DNA is:<br/>A. A pentose sugar<br/>B. present in pyranose form<br/>C. in "D" configuration<br/>D. a reducing sugar, when free<br/>E. in \(\alpha\)-anomeric form<br/>Choose the <strong>correct </strong>answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, D and E Only</p></span></div><div class="option correct"><span class="key">c</span><span><p>A, C and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B and E Only</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following acids is a vitamin ?</p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Adipic acid</p></span></div><div class="option correct"><span class="key">b</span><span><p>Ascorbic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Saccharic acid</p></span></div><div class="option"><span class="key">d</span><span><p>Aspartic acid</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is animal starch? (Memory based 29 Jan /2025 morning shift )</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Glycogen</p></span></div><div class="option"><span class="key">b</span><span><p>Lactose</p></span></div><div class="option"><span class="key">c</span><span><p>Amylopectin</p></span></div><div class="option"><span class="key">d</span><span><p>Amylose </p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A tetrapeptide "x" on complete hydrolysis produced glycine (Gly), alanine (Ala), valine (Val), leucine (Leu) in equimolar proportion each. The number of tetrapeptides (sequences) possible involving each of these amino acids is</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(8\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(24\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cheilosis and digestive disorders are due to deficiency of:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vitamin A</p></span></div><div class="option"><span class="key">b</span><span><p>Thiamine</p></span></div><div class="option"><span class="key">c</span><span><p>Riboflavin</p></span></div><div class="option"><span class="key">d</span><span><p>Ascorbic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Deficiency of riboflavin (vitamin \\({B}_{2}\\)) can cause cheilosis and digestive disorder. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I : D-glucose pentaacetate reacts with 2, 4-dinitrophenylhydrazine<br/>Statement II : Starch, on heating with concentrated sulfuric acid at \(100^\circ C\) and 2-3 atmosphere pressure produces glucose.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>2, 4-Dinitrophenylhydrazine (DNPH) reacts specifically with free aldehydes and ketones to form hydrazones.\u003c/p> \u003cp>Since D-glucose pentaacetate does not have a free aldehyde group, it does not react with DNPH.\u003c/p> \u003cp>Therefore, Statement I is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify correct conversion during acidic hydrolysis from the following :<br/>(A) starch gives galactose.<br/>(B) cane sugar gives equal amount of glucose and fructose.<br/>(C) milk sugar gives glucose and galactose.<br/>(D) amylopectin gives glucose and fructose.<br/>(E) amylose gives only glucose.</p> <p>Choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (C) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A),(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C), (D) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>- Starch, upon acidic hydrolysis, gives glucose molecules.\u003cbr/>- Cane sugar (sucrose) is a disaccharide made up of glucose and fructose. Upon hydrolysis, it breaks down into equal amounts of glucose and fructose.\u003cbr/>- Milk sugar (lactose) is a disaccharide made of glucose and galactose. Upon hydrolysis, it breaks down into glucose and galactose.\u003cbr/>- Amylopectin is a polysaccharide composed of glucose units.\u003cbr/>- Amylose, a type of starch, is a polysaccharide made up of glucose units, and upon hydrolysis, it yields only glucose.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Glycosidic linkage between \({C}_{1}\) of α-glucose and \({C}_{2}\) of β-fructose is found in:</p> <p><strong>[JEE Main 2022, 25 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>maltose</p></span></div><div class="option"><span class="key">b</span><span><p>sucrose</p></span></div><div class="option"><span class="key">c</span><span><p>lactose</p></span></div><div class="option"><span class="key">d</span><span><p>amylose</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Maltose is composed of two glucose units . Sucrose has glycosidic linkage between \\({C}_{1}\\) of α-glucose and \\({C}_{2}\\) of β-fructose. . Lactose is composed of galactose and glucose . Amylose has glycosidic linkage between \\({C}_{1}\\) of α-glucose \\({C}_{4}\\) of α-glucose. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify correct conversion during acidic hydrolysis from the following :<br/>(A) starch gives galactose.<br/>(B) cane sugar gives equal amount of glucose and fructose.<br/>(C) milk sugar gives glucose and galactose.<br/>(D) amylopectin gives glucose and fructose.<br/>(E) amylose gives only glucose.</p> <p>Choose the correct answer from the options given below </p> <p>[JEE Main 2025, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (C) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A),(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C), (D) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>- Starch, upon acidic hydrolysis, gives glucose molecules.\u003cbr/>- Cane sugar (sucrose) is a disaccharide made up of glucose and fructose. Upon hydrolysis, it breaks down into equal amounts of glucose and fructose.\u003cbr/>- Milk sugar (lactose) is a disaccharide made of glucose and galactose. Upon hydrolysis, it breaks down into glucose and galactose.\u003cbr/>- Amylopectin is a polysaccharide composed of glucose units.\u003cbr/>- Amylose, a type of starch, is a polysaccharide made up of glucose units, and upon hydrolysis, it yields only glucose.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A linear octasaccharide (molar mass \(=1024 ~g mol ^{-1}\) ) on complete hydrolysis produces three monosaccharides: ribose, 2-deoxyribose and glucose. The amount of 2-deoxyribose formed is \(58.26 \%( w / w )\) of the total amount of the monosaccharides produced in the hydrolyzed products. The number of ribose unit(s) present in one molecule of octasaccharide is________.</p> <p>Use: Molar mass \(\left(\right.\) in g \(\left.mol ^{-1}\right)\) : ribose \(=150,2\)-deoxyribose \(=134\), glucose \(=180\);<br/>Atomic mass (in amu): \(H =1, O =16\)</p> <p>[JEE Advanced 2025, Paper-2]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>9</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let numbers of units be: ribose = n₁, 2-deoxyribose = n₂, glucose = n₃.\u003cbr/>Octasaccharide ⇒ n₁ + n₂ + n₃ = 8.\u003c/p> \u003cp>Total mass of monomers after complete hydrolysis:\u003cbr/>150 n₁ + 134 n₂ + 180 n₃ = 1024 + 7×18 = 1150 g\u003c/p> \u003cp>Given 2-deoxyribose is 58.26% (w/w) of total monomers:\u003cbr/>134 n₂ = 0.5826 × 1150 ≈ 670 ⇒ n₂ = 5\u003c/p> \u003cp>Then n₁ + n₃ = 3 and\u003cbr/>150 n₁ + 180 n₃ = 1150 − 670 = 480\u003c/p> \u003cp>Put n₁ = 3 − n₃:\u003cbr/>150(3 − n₃) + 180 n₃ = 480 ⇒ 450 + 30 n₃ = 480 ⇒ n₃ = 1, n₁ = 2.\u003c/p> \u003cp>Number of ribose units = 2.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The alpha-helix and beta-pleated sheet structures of protein are associated with its</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>quaternary structure</p></span></div><div class="option"><span class="key">b</span><span><p>primary structure</p></span></div><div class="option"><span class="key">c</span><span><p>tertiary structure</p></span></div><div class="option"><span class="key">d</span><span><p>secondary structure</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is (D) Secondary structure.\u003c/p> \u003cp>The α-helix and β-pleated sheet are secondary structures of proteins, stabilized by hydrogen bonds between the amide (−NH) and carbonyl (−C=O) groups of the peptide backbone. These structures provide proteins with stability and specific folding patterns, distinct from primary (sequence), tertiary (3D folding), and quaternary (subunit arrangement) structures.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of possible tripeptides formed involving alanine (ala), glycine (gly) and valine (val), where no amino acid has been used more than once is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Gly ala val\u003c/p> \u003cp>Gly val ala\u003c/p> \u003cp>Val gly ala\u003c/p> \u003cp>Val ala gly\u003c/p> \u003cp>Ala val gly\u003c/p> \u003cp>Ala gly val\u003c/p> \u003cp>Total tri peptides = 6\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A tetrapeptide is made of naturally occurring alanine, serine, glycine, and valine. If the C-terminal amino acid is alanine and the N-terminal amino acid is chiral, the number of possible sequences of the tetrapeptide is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>8</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>12</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since glycine (gly) is achiral, alanine (Ala) is the C-terminal amino acid, therefore N terminal amino acid can be valine (val) or serine (ser). In the view of these condition, the following four sequences for the tetrapeptide is possible. (i) Val-gly-Ser-Ala (ii) Val-Ser-gly-Ala (iii) Ser-gly-Val-Ala (iv) Ser-Val-gly-Ala \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The total number of hydrogen bonds of a DNA-double Helix strand whose one strand has the following sequence of bases is _____ .<br/>\({5}^{'}\text{ - G - G-C-A-A-A-T-C-G-G-C-T-A-3' }\)</p> <p><strong>[JEE Main 2025, 4 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>22</p></span></div><div class="option"><span class="key">b</span><span><p>23</p></span></div><div class="option"><span class="key">c</span><span><p>35</p></span></div><div class="option"><span class="key">d</span><span><p>33</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Two nucleic acid chains are wound about each other and held together by H bonds between pair of \u003cbr/>bases. Adenine from two hydrogen bonds with thymine and Guanine form three hydrogen bond with cytosine. \u003cbr/>5' G–G–C–A–A–A–T–C–G–G–C–T–A–3' \u003cbr/>In given DNA strand total seven guanine and cytosine bases which form total 21 H-bonds and six adenine and thymine base which will form total 12 H-bonds with other DNA strand. \u003cbr/>Total no. of H bonds = 7 × 3 + 6 × 2 = 33 \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sugar which does not give reddish brown precipitate with Fehling's reagent, is :</p> <p>[JEE Main 2024, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sucrose</p></span></div><div class="option"><span class="key">b</span><span><p>Maltose</p></span></div><div class="option"><span class="key">c</span><span><p>Glucose</p></span></div><div class="option"><span class="key">d</span><span><p>Lactose</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct option is Sv6Kpe[] \u003cstrong>A. Sv6Kpe[]\u003c/strong>\u003cstrong>SucroseSv6Kpe[]\u003c/strong>Sv6Kpe[]. Sv6Kpe[[null,null,&amp;quot;a8d8af14-ce9a-4263-9d17-019ce6e2e899&amp;quot;,null,null,1,0,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;]]Sv6Kpe[] Sv6Kpe[[&amp;quot;a8d8af14-ce9a-4263-9d17-019ce6e2e899&amp;quot;,[&amp;quot;30 January Shift-1 - Matrix Sikar&amp;quot;,&amp;quot;3. ल Math List-I with List-II. ... Sol. Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s reagent, is : 5. (1) Gl...&amp;quot;,&amp;quot;https://encrypted-tbn3.gstatic.com/faviconV2?url\\u003dhttps://www.matrixedu.in\\u0026client\\u003dAIM\\u0026size\\u003d128\\u0026type\\u003dFAVICON\\u0026fallback_opts\\u003dTYPE,SIZE,URL&amp;quot;,&amp;quot;https://www.matrixedu.in&amp;quot;,[&amp;quot;matrixedu&amp;quot;],&amp;quot;https://www.matrixedu.in/assets/default/chemistry/30_jan_shift1_2024.pdf&amp;quot;,null,null,&amp;quot;9&amp;quot;,null,[106,null,null,null,null,null,null,null,1],[&amp;quot;https://encrypted-tbn3.gstatic.com/images?q\\u003dtbn:ANd9GcS0SKKqWd3MEq6m1tQiYHosIlN6JIOdpOsj826C5uUeUHaWLF4B&amp;quot;,&amp;quot;&amp;quot;,[null,2],null,null,189,267,&amp;quot;&amp;quot;],0,[[1765312338684851,124209336,2149697082],null,null,null,null,[[0,0,1]]],null,0,null,0,null,[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,&amp;quot;https://www.matrixedu.in/assets/default/chemistry/30_jan_shift1_2024.pdf&amp;quot;,null,null,null,null,[null,null,null,null,null,null,[null,null,null,&amp;quot;/search/about-this-result?origin\\u003dwww.google.com\\u0026req\\u003dCkhodHRwczovL3d3dy5tYXRyaXhlZHUuaW4vYXNzZXRzL2RlZmF1bHQvY2hlbWlzdHJ5LzMwX2phbl9zaGlmdDFfMjAyNC5wZGYSMgomCgIIcQogCF1iHAoMY291bnRyeV9uYW1lEgzgpq3gpr7gp7DgpqQSBAoCCEcaAggAGgAiAhABSABYAGgA\\u0026hl\\u003den-IN\\u0026gl\\u003dIN&amp;quot;],&amp;quot;https://www.google.com&amp;quot;],null,null,null,null,null,null,null,null,[&amp;quot;30 January Shift-1 - Matrix Sikar&amp;quot;,&amp;quot;3. ल Math List-I with List-II. ... Sol. Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s reagent, is : 5. (1) Glucose Question ID: 533543904 Ans.&amp;quot;,&amp;quot;matrixedu&amp;quot;,&amp;quot;https://encrypted-tbn3.gstatic.com/faviconV2?url\\u003dhttps://www.matrixedu.in\\u0026client\\u003dAIM\\u0026size\\u003d128\\u0026type\\u003dFAVICON\\u0026fallback_opts\\u003dTYPE,SIZE,URL&amp;quot;],[null,1,[null,null,5,null,&amp;quot;30 January Shift-1 - Matrix Sikar&amp;quot;,null,&amp;quot;https://www.matrixedu.in/assets/default/chemistry/30_jan_shift1_2024.pdf&amp;quot;],null,null,null,null,[&amp;quot;https://www.matrixedu.in/assets/default/chemistry/30_jan_shift1_2024.pdf&amp;quot;,null,null,null,38,&amp;quot;Source: matrixedu&amp;quot;],2,null,null,[&amp;quot;MAGI_FEATURE&amp;quot;,null,&amp;quot;BLUR&amp;quot;,0,0,0,null,&amp;quot;https://www.matrixedu.in/assets/default/chemistry/30_jan_shift1_2024.pdf&amp;quot;]]],0,null,null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,0],0]] Sv6Kpe[[&amp;quot;a8d8af14-ce9a-4263-9d17-019ce6e2e899&amp;quot;,[&amp;quot;Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s ...&amp;quot;,&amp;quot;Q. Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s reagent, is: [2024] * Sucrose. * Lactose. * Glucose. * Malto...&amp;quot;,&amp;quot;https://encrypted-tbn1.gstatic.com/faviconV2?url\\u003dhttps://smartachievers.online\\u0026client\\u003dAIM\\u0026size\\u003d128\\u0026type\\u003dFAVICON\\u0026fallback_opts\\u003dTYPE,SIZE,URL&amp;quot;,&amp;quot;https://smartachievers.online&amp;quot;,[&amp;quot;Smart Achievers&amp;quot;],&amp;quot;https://smartachievers.online/question-details/sugar-which-does-not-give-reddish-brown-precipitate-with-fehlings-reagent-is&amp;quot;,null,null,&amp;quot;26&amp;quot;,null,[110,null,null,null,null,null,null,null,1],null,0,[[1765312338684851,124209336,2149697082],null,null,null,null,[[0,0,2]]],null,0,null,0,null,[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,&amp;quot;https://smartachievers.online/question-details/sugar-which-does-not-give-reddish-brown-precipitate-with-fehlings-reagent-is&amp;quot;,null,null,null,null,[null,null,null,null,null,null,[null,null,null,&amp;quot;/search/about-this-result?origin\\u003dwww.google.com\\u0026req\\u003dCntodHRwczovL3NtYXJ0YWNoaWV2ZXJzLm9ubGluZS9xdWVzdGlvbi1kZXRhaWxzL3N1Z2FyLXdoaWNoLWRvZXMtbm90LWdpdmUtcmVkZGlzaC1icm93bi1wcmVjaXBpdGF0ZS13aXRoLWZlaGxpbmdzLXJlYWdlbnQtaXMSMgomCgIIcQogCF1iHAoMY291bnRyeV9uYW1lEgzgpq3gpr7gp7DgpqQSBAoCCEcaAggAGgAiAhABSABYAGgA\\u0026hl\\u003den-IN\\u0026gl\\u003dIN&amp;quot;],&amp;quot;https://www.google.com&amp;quot;],null,null,null,null,null,null,null,null,[&amp;quot;Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s ...&amp;quot;,&amp;quot;Q. Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s reagent, is: [2024] * Sucrose. * Lactose. * Glucose. * Maltose.&amp;quot;,&amp;quot;Smart Achievers&amp;quot;,&amp;quot;https://encrypted-tbn1.gstatic.com/faviconV2?url\\u003dhttps://smartachievers.online\\u0026client\\u003dAIM\\u0026size\\u003d128\\u0026type\\u003dFAVICON\\u0026fallback_opts\\u003dTYPE,SIZE,URL&amp;quot;],[null,1,[null,null,5,null,&amp;quot;Sugar which does not give reddish brown precipitate with Fehling&amp;#39;s ...&amp;quot;,null,&amp;quot;https://smartachievers.online/question-details/sugar-which-does-not-give-reddish-brown-precipitate-with-fehlings-reagent-is&amp;quot;],null,null,null,null,[&amp;quot;https://smartachievers.online/question-details/sugar-which-does-not-give-reddish-brown-precipitate-with-fehlings-reagent-is&amp;quot;,null,null,null,38,&amp;quot;Source: Smart Achievers&amp;quot;],2,null,null,[&amp;quot;MAGI_FEATURE&amp;quot;,null,&amp;quot;BLUR&amp;quot;,0,0,0,null,&amp;quot;https://smartachievers.online/question-details/sugar-which-does-not-give-reddish-brown-precipitate-with-fehlings-reagent-is&amp;quot;]]],0,null,null,null,null,null,null,0,null,null,null,null,null,null,null,null,null,0],0]] Sv6Kpe[] Explanation Sv6Kpe[[null,null,&amp;quot;d267e87f-f4ac-4205-876c-ceecdd4b7e9e&amp;quot;,null,null,0,0,&amp;quot;&amp;quot;,&amp;quot;&amp;quot;]]Sv6Kpe[] \u003cul> \u003cli>Fehling's test is used to detect reducing sugars. Reducing sugars have a free anomeric carbon (aldehyde or ketone group) that can reduce the blue copper(II) ions (  \\({\\text{Cu}}^{2+}\\) Cu2+ Sv6Kpe[]) in Fehling's solution to red copper(I) oxide (  \\({\\text{Cu}}_{2}\\text{O}\\) Cu2O Sv6Kpe[]) precipitate.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I: Sucrose is dextrorotatory. However, sucrose upon hydrolysis gives a solution having mixture of products. This solution shows laevorotation.</p> <p>Statement II: Hydrolysis of sucrose gives glucose and fructose. Since the laevorotation of glucose is more than the dextrorotation of fructose, the resulting solution becomes laevorotatory.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2026, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Sucrose is dextrorotatory.\u003cbr/>On hydrolysis, it gives glucose and fructose. The mixture is called invert sugar and shows laevorotation because fructose has stronger optical activity.\u003cbr/>Therefore, Statement I is true.\u003c/p> \u003cp>Statement II: It says laevorotation of glucose is more than dextrorotation of fructose.\u003c/p> \u003cp>This is incorrect because:\u003c/p> \u003cp>Glucose is dextrorotatory (+)\u003cbr/>Fructose is laevorotatory (−)\u003cbr/>Magnitude of fructose rotation is greater than glucose\u003c/p> \u003cp>So the mixture becomes laevorotatory due to fructose dominance, not glucose. Thus, Statement II is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify correct conversion during acidic hydrolysis from the following :<br/>(A) starch gives galactose.<br/>(B) cane sugar gives equal amount of glucose and fructose.<br/>(C) milk sugar gives glucose and galactose.<br/>(D) amylopectin gives glucose and fructose.<br/>(E) amylose gives only glucose.</p> <p>Choose the correct answer from the options given below </p> <p>[JEE Main 2025, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (C) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A),(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C), (D) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>- Starch, upon acidic hydrolysis, gives glucose molecules.\u003cbr/>- Cane sugar (sucrose) is a disaccharide made up of glucose and fructose. Upon hydrolysis, it breaks down into equal amounts of glucose and fructose.\u003cbr/>- Milk sugar (lactose) is a disaccharide made of glucose and galactose. Upon hydrolysis, it breaks down into glucose and galactose.\u003cbr/>- Amylopectin is a polysaccharide composed of glucose units.\u003cbr/>- Amylose, a type of starch, is a polysaccharide made up of glucose units, and upon hydrolysis, it yields only glucose.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Fat soluble vitamins are :<br/>A. Vitamin \({\mathrm{B}}_{1}\)<br/>B. Vitamin C<br/>C. Vitamin E<br/>D. Vitamin \({\mathrm{B}}_{12}\)<br/>E. Vitamin K<br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D Only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>C and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Vitamins A, D, E, and K are fat-soluble vitamins.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I: Sucrose is dextrorotatory. However, sucrose upon hydrolysis gives a solution having mixture of products. This solution shows laevorotation.</p> <p>Statement II: Hydrolysis of sucrose gives glucose and fructose. Since the laevorotation of glucose is more than the dextrorotation of fructose, the resulting solution becomes laevorotatory.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2026, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Sucrose is dextrorotatory.\u003cbr/>On hydrolysis, it gives glucose and fructose. The mixture is called invert sugar and shows laevorotation because fructose has stronger optical activity.\u003cbr/>Therefore, Statement I is true.\u003c/p> \u003cp>Statement II: It says laevorotation of glucose is more than dextrorotation of fructose.\u003c/p> \u003cp>This is incorrect because:\u003c/p> \u003cp>Glucose is dextrorotatory (+)\u003cbr/>Fructose is laevorotatory (−)\u003cbr/>Magnitude of fructose rotation is greater than glucose\u003c/p> \u003cp>So the mixture becomes laevorotatory due to fructose dominance, not glucose. Thus, Statement II is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct statement among the following:</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>All naturally occurring amino acids except glycine contain one chiral centre.</p></span></div><div class="option"><span class="key">b</span><span><p>All naturally occurring amino acids are optically active.</p></span></div><div class="option"><span class="key">c</span><span><p>Glutamic acid is the only amino acid that contains \(-\mathrm{COOH}\) group at the side chain.</p></span></div><div class="option"><span class="key">d</span><span><p>Amino acid, cysteine easily undergo dimerization due to the presence of free SH group.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Only cysteine dimerizes readily via its –SH group to form a disulfide-linked dimer (cystine), while option (1) ignores amino acids with two chiral centers, option (2) neglects achiral glycine, and option (3) overlooks aspartic acid, which also has a side-chain –COOH.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I : D-glucose pentaacetate reacts with 2, 4-dinitrophenylhydrazine<br/>Statement II : Starch, on heating with concentrated sulfuric acid at \(100^\circ C\) and 2-3 atmosphere pressure produces glucose.</p> <p>In the light of the above statements, choose the correct answer from the options given below.</p> <p><strong>[JEE Main 2025, 28 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>2, 4-Dinitrophenylhydrazine (DNPH) reacts specifically with free aldehydes and ketones to form hydrazones.\u003c/p> \u003cp>Since D-glucose pentaacetate does not have a free aldehyde group, it does not react with DNPH.\u003c/p> \u003cp>Therefore, Statement I is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The carbohydrate "Ribose" present in DNA is:<br/>A. A pentose sugar<br/>B. present in pyranose form<br/>C. in "D" configuration<br/>D. a reducing sugar, when free<br/>E. in \(\alpha\)-anomeric form<br/>Choose the <strong>correct </strong>answer from the options given below:</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, D and E Only</p></span></div><div class="option"><span class="key">c</span><span><p>A, C and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The carbohydrate Ribose present in DNA is a pentose sugar, exists in the D-configuration, and functions as a reducing sugar when free. Ribose exists mainly in the furanose (5-membered ring) form.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Both human DNA and RNA are chiral molecules. The chirality in DNA and RNA arises due to the presence of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Base unit</p></span></div><div class="option"><span class="key">b</span><span><p>L–sugar component</p></span></div><div class="option"><span class="key">c</span><span><p>Chiral phosphate unit</p></span></div><div class="option"><span class="key">d</span><span><p>D–sugar component</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>DNA &amp; RNA are chiral molecules due to presence of chiral 2-deoxy-Ribose &amp; Ribose sugar unit respectively.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I:\(\text{ D-(+)-glucose }+\mathrm{D}-(+)\text{ –fructose }\overset{-{\mathrm{H}}_{2}\mathrm{O}}{\to }\text{ sucrose }\)<br/>\(\text{ sucrose }\overset{\text{ Hydrolysis }}{\to }\text{ D-(+)-glucose }+\text{ D-(+)–fructose }\)</strong> <br/>Statement II : Invert sugar is formed during sucrose hydrolysis.<br/>In the light of the above statements, choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>On hydrolysis of sucrose gives D-(+)-glucose and D-(–)-fructose while in Statement I D-(+)-fructose is given evince Statement–I is incorrect. \u003cbr/>Statement–II : It is correct because sucrose on hydrolysis gives invert sugar.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is animal starch? (Memory based 29 Jan /2025 morning shift )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Glycogen</p></span></div><div class="option"><span class="key">b</span><span><p>Lactose</p></span></div><div class="option"><span class="key">c</span><span><p>Amylopectin</p></span></div><div class="option"><span class="key">d</span><span><p>Amylose </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Animal body stores carbohydrate as \u003cstrong>glycogen\u003c/strong>. It is also called animal starch because its structure is similar to amylopectin. It is present in brain, liver and muscles.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the essential amino acids from below :<br/>(A) Valine<br/>(B) Proline<br/>(C) Lysine<br/>(D) Threonine<br/>(E) Tyrosine</p> <p>Choose the correct answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (C) and (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(C), (D) and (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(B), (C) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) and (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Valine, Lysine, and Threonine are essential amino acids, whereas Proline and Tyrosine are non-essential.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which structure of protein remains intact after coagulation of egg white on boiling? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Primary </p></span></div><div class="option"><span class="key">b</span><span><p>Tertiary </p></span></div><div class="option"><span class="key">c</span><span><p>Secondary </p></span></div><div class="option"><span class="key">d</span><span><p>Quaternary </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Boiling an egg causes denaturation of its protein resulting in loss of its quaternary, tertiary and secondary structures, whereas primary structure remains intact. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A tetrapeptide "x" on complete hydrolysis produced glycine (Gly), alanine (Ala), valine (Val), leucine (Leu) in equimolar proportion each. The number of tetrapeptides (sequences) possible involving each of these amino acids is</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(8\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(24\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The number of tetrapeptides possible involving each of these amino acids (glycine, alanine, valine, leucine); It has three (3) peptides linkage the number of permutations in which they can be arranged\u003cbr/> = 4 × 3 × 2 × 1\u003cbr/> = 24\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match column-I with column-II</p> <table> <tbody> <tr> <td> <p> </p> </td> <td> <p><strong>Column-I</strong></p> </td> <td> <p> </p> </td> <td> <p><strong>Column-II</strong></p> </td> </tr> <tr> <td> <p>A</p> </td> <td> <p>Glucose/NaHCO₃/Δ</p> </td> <td> <p>I</p> </td> <td> <p>Gluconic acid</p> </td> </tr> <tr> <td> <p>B</p> </td> <td> <p>Glucose/HNO₃</p> </td> <td> <p>II</p> </td> <td> <p>No reaction</p> </td> </tr> <tr> <td> <p>C</p> </td> <td> <p>Glucose/HI / Δ</p> </td> <td> <p>III</p> </td> <td> <p>n-hexane</p> </td> </tr> <tr> <td> <p>D</p> </td> <td> <p>Glucose/Bromine water</p> </td> <td> <p>IV</p> </td> <td> <p>Saccharic acid</p> </td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below: </p> <p> </p> <p>[JEE Main 2024, 31 Jan (Shift 1)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-I, B-IV, C-III, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-IV, B-I, C-III, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-IV, C-III, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-II, C-I, D-IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>A. Glucose / NaHCO\u003csub>3\u003c/sub> / Δ\u003c/strong>\u003cbr/>Glucose has no -COOH group, so it cannot react with NaHCO\u003csub>3\u003c/sub> (only carboxylic acids release CO\u003csub>2\u003c/sub>).\u003cbr/>A \\(\\to\\) II (No reaction)\u003cbr/>\u003cstrong>B. Glucose / ΗΝΟ\u003csub>3\u003c/sub>\u003c/strong>\u003cbr/>Hot nitric acid is a strong oxidising agent.\u003cbr/>It oxidises both the aldehyde group and the primary alcohol group into dicarboxylic acid.\u003cbr/>Product = \u003cstrong>Saccharic acid\u003c/strong>\u003cbr/>B \\(\\to\\) IV (Saccharic acid)\u003cbr/>\u003cstrong>C. Glucose / ΗΙ/Δ\u003c/strong>\u003cbr/>Hot HI + red P → complete reduction of glucose (all C-O bonds reduced).\u003cbr/>This gives n-hexane.\u003c/p> \u003cp>C \\(\\to\\) III (n-hexane)\u003cbr/>\u003cstrong>D. Glucose / Bromine water\u003c/strong>\u003cbr/>Br\u003csub>2\u003c/sub> water is a mild oxidising agent; it oxidises only the aldehyde group gluconic acid.\u003cbr/>D\\(\\to\\) 1 (Gluconic acid)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List I </strong>with <strong>List II</strong></p> <table> <tbody> <tr> <td> </td> <td>List I (Bio Polymer)</td> <td> </td> <td>List II (Monomer)</td> </tr> <tr> <td>A</td> <td>Starch </td> <td>I</td> <td>nucleotide</td> </tr> <tr> <td>B</td> <td>Cellulose</td> <td>II</td> <td> \(\alpha\)-glucose</td> </tr> <tr> <td>C</td> <td>Nucleic acid</td> <td>III</td> <td>\(\beta\)-glucose</td> </tr> <tr> <td>D</td> <td>Protein</td> <td>IV</td> <td>\(\alpha\)-amino acid</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :-</p> <p><strong>[JEE Main 2024, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-III, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-I, C-III, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-I, B-III, C-IV, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>A-II, B-III, C-I, D-IV\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Alpha helices and beta pleated sheet structure is found in which structure of proteins? </p> <p> (Memory Based JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Primary structure</p></span></div><div class="option"><span class="key">b</span><span><p> Secondary structure</p></span></div><div class="option"><span class="key">c</span><span><p> Tertiary structure</p></span></div><div class="option"><span class="key">d</span><span><p> Quarternary structure</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\alpha\\)-helix and \\(\\beta\\)-pleated sheet structure belong to\u003cbr/>secondary protein or 2° protein.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of possible tripeptides formed involving alanine (ala), glycine (gly) and valine (val), where no amino acid has been used more than once is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Gly ala val\u003c/p> \u003cp>Gly val ala\u003c/p> \u003cp>Val gly ala\u003c/p> \u003cp>Val ala gly\u003c/p> \u003cp>Ala val gly\u003c/p> \u003cp>Ala gly val\u003c/p> \u003cp>Total tri peptides = 6\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following biomolecules does not contain C1-C4 linkage? (memory based jee mains shift-2 28/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Amylopectin</p></span></div><div class="option"><span class="key">b</span><span><p>Maltose</p></span></div><div class="option"><span class="key">c</span><span><p>Lactose</p></span></div><div class="option"><span class="key">d</span><span><p>Sucrose</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The C1-C4 glycosidic linkage is present in maltose, lactose, and amylopectin. However, sucrose has a C1-C2 glycosidic bond between glucose (α-1) and fructose (β-2). Thus, sucrose does not contain a C1-C4 linkage.\u003c/p> \u003cp>Correct answer: (D) Sucrose.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The alpha-helix and beta-pleated sheet structures of protein are associated with its</p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>quaternary structure</p></span></div><div class="option"><span class="key">b</span><span><p>primary structure</p></span></div><div class="option"><span class="key">c</span><span><p>tertiary structure</p></span></div><div class="option"><span class="key">d</span><span><p>secondary structure</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is (D) Secondary structure.\u003c/p> \u003cp>The α-helix and β-pleated sheet are secondary structures of proteins, stabilized by hydrogen bonds between the amide (−NH) and carbonyl (−C=O) groups of the peptide backbone. These structures provide proteins with stability and specific folding patterns, distinct from primary (sequence), tertiary (3D folding), and quaternary (subunit arrangement) structures.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Alpha helices and beta pleated sheet structure is found in which structure of proteins? </p> <p> (Memory Based JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Primary structure</p></span></div><div class="option"><span class="key">b</span><span><p> Secondary structure</p></span></div><div class="option"><span class="key">c</span><span><p> Tertiary structure</p></span></div><div class="option"><span class="key">d</span><span><p> Quarternary structure</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\alpha\\)-helix and \\(\\beta\\)-pleated sheet structure belong to\u003cbr/>secondary protein or 2° protein.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement 1: </strong> Fructose can give Tollens test even though it does not have an aldehyde group.</p> <p><strong>Statement 2: </strong>When reacted with base fructose can undergo rearrangement to produce an aldehyde group. </p> <p>(JEE mains memory based shift-1 23/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement 1 and 2 are true and statement 2 is the correct explanation of statement 1</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement 1 and 2 are true but statement 2 is not the correct explanation of statement 1</p></span></div><div class="option"><span class="key">c</span><span><p>Statement 1 is true and statement 2 is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement 1 and 2 are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Statement 1 is true because fructose can give the Tollens’ test due to its ability to form an aldehyde group in an alkaline medium.\u003c/p> \u003cp>Statement 2 should be: When reacted with a base, fructose undergoes tautomerization to form an aldehyde group.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the essential amino acids from below :<br/>(A) Valine<br/>(B) Proline<br/>(C) Lysine<br/>(D) Threonine<br/>(E) Tyrosine</p> <p>Choose the correct answer from the options given below</p> <p>[JEE Main 2025, 29 Jan (Shift 2)] </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (C) and (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(C), (D) and (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(B), (C) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) and (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Valine, Lysine, and Threonine are essential amino acids, whereas Proline and Tyrosine are non-essential.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cheilosis and digestive disorders are due to deficiency of:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vitamin A</p></span></div><div class="option"><span class="key">b</span><span><p>Thiamine</p></span></div><div class="option"><span class="key">c</span><span><p>Riboflavin</p></span></div><div class="option"><span class="key">d</span><span><p>Ascorbic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Deficiency of riboflavin (vitamin \\({B}_{2}\\)) can cause cheilosis and digestive disorder. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following acids is present in Vitamin C?</p> <p> (Memory Based JEE Mains 22/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Saccharic acid</p></span></div><div class="option"><span class="key">b</span><span><p>Aspartic acid </p></span></div><div class="option"><span class="key">c</span><span><p>Adipic acid</p></span></div><div class="option"><span class="key">d</span><span><p>Ascorbic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Vitamin C (also known as ascorbic acid ) is a water-soluble vitamin found in citrus and other fruits, berries and vegetables. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct statement among the following:</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>All naturally occurring amino acids except glycine contain one chiral centre.</p></span></div><div class="option"><span class="key">b</span><span><p>All naturally occurring amino acids are optically active.</p></span></div><div class="option"><span class="key">c</span><span><p>Glutamic acid is the only amino acid that contains \(-\mathrm{COOH}\) group at the side chain.</p></span></div><div class="option"><span class="key">d</span><span><p>Amino acid, cysteine easily undergo dimerization due to the presence of free SH group.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Only cysteine dimerizes readily via its –SH group to form a disulfide-linked dimer (cystine), while option (1) ignores amino acids with two chiral centers, option (2) neglects achiral glycine, and option (3) overlooks aspartic acid, which also has a side-chain –COOH.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement 1: </strong> Fructose can give Tollens test even though it does not have an aldehyde group.</p> <p><strong>Statement 2: </strong>When reacted with base fructose can undergo rearrangement to produce an aldehyde group. </p> <p>(JEE mains memory based shift-1 23/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement 1 and 2 are true and statement 2 is the correct explanation of statement 1</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement 1 and 2 are true but statement 2 is not the correct explanation of statement 1</p></span></div><div class="option"><span class="key">c</span><span><p>Statement 1 is true and statement 2 is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement 1 and 2 are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Statement 1 is true because fructose can give the Tollens’ test due to its ability to form an aldehyde group in an alkaline medium.\u003c/p> \u003cp>Statement 2 should be: When reacted with a base, fructose undergoes tautomerization to form an aldehyde group.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Fat soluble vitamins are :<br/>A. Vitamin \({\mathrm{B}}_{1}\)<br/>B. Vitamin C<br/>C. Vitamin E<br/>D. Vitamin \({\mathrm{B}}_{12}\)<br/>E. Vitamin K<br/>Choose the correct answer from the options given below:</p> <p>[JEE Main 2025, 3 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D Only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>C and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -605,7 +609,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Vitamins A, D, E, and K are fat-soluble vitamins.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following acids is a vitamin ?</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Adipic acid</p></span></div><div class="option"><span class="key">b</span><span><p>Ascorbic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Saccharic acid</p></span></div><div class="option"><span class="key">d</span><span><p>Aspartic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -617,7 +621,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Ascorbic acid is another name for vitamin C.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The incorrect statements regarding enzymes are :<br/>(A) Enzymes are biocatalysts.<br/>(B) Enzymes are non-specific and can catalyse different kinds of reactions.<br/>(C) Most Enzymes are globular proteins.<br/>(D) Enzyme - oxidase catalyses the hydrolysis of maltose into glucose.</p> <p>Choose the correct answer from the option given below :</p> <p><strong>[JEE Main 2024, 06 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B) and (C)</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (D)</p></span></div><div class="option"><span class="key">c</span><span><p>(B), (C) and (D)</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (C)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -629,7 +633,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let's analyze each statement carefully:\u003c/p> \u003cp>(A) Enzymes are biocatalysts →Correct\u003c/p> \u003cp>(B) Enzymes are non-specific and can catalyse different kinds of reactions → Incorrect\u003cbr/>→ Enzymes are highly specific, not non-specific.\u003c/p> \u003cp>(C) Most enzymes are globular proteins → Correct\u003c/p> \u003cp>(D) Enzyme oxidase catalyses the hydrolysis of maltose into glucose → Incorrect\u003cbr/>→ That reaction is catalyzed by maltase, not oxidase.\u003c/p> \u003cp>Incorrect statements: (B) and (D)\u003c/p> \u003cp>Correct option: B — (B) and (D)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The incorrect statements regarding enzymes are :<br/>(A) Enzymes are biocatalysts.<br/>(B) Enzymes are non-specific and can catalyse different kinds of reactions.<br/>(C) Most Enzymes are globular proteins.<br/>(D) Enzyme - oxidase catalyses the hydrolysis of maltose into glucose.</p> <p>Choose the correct answer from the option given below :</p> <p><strong>[JEE Main 2024, 06 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B) and (C)</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (D)</p></span></div><div class="option"><span class="key">c</span><span><p>(B), (C) and (D)</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (C)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -641,7 +645,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let's analyze each statement carefully:\u003c/p> \u003cp>(A) Enzymes are biocatalysts →Correct\u003c/p> \u003cp>(B) Enzymes are non-specific and can catalyse different kinds of reactions → Incorrect\u003cbr/>→ Enzymes are highly specific, not non-specific.\u003c/p> \u003cp>(C) Most enzymes are globular proteins → Correct\u003c/p> \u003cp>(D) Enzyme oxidase catalyses the hydrolysis of maltose into glucose → Incorrect\u003cbr/>→ That reaction is catalyzed by maltase, not oxidase.\u003c/p> \u003cp>Incorrect statements: (B) and (D)\u003c/p> \u003cp>Correct option: B — (B) and (D)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Both human DNA and RNA are chiral molecules. The chirality in DNA and RNA arises due to the presence of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Base unit</p></span></div><div class="option"><span class="key">b</span><span><p>L–sugar component</p></span></div><div class="option"><span class="key">c</span><span><p>Chiral phosphate unit</p></span></div><div class="option"><span class="key">d</span><span><p>D–sugar component</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -653,7 +657,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>DNA &amp; RNA are chiral molecules due to presence of chiral 2-deoxy-Ribose &amp; Ribose sugar unit respectively.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A tetrapeptide is made of naturally occurring alanine, serine, glycine, and valine. If the C-terminal amino acid is alanine and the N-terminal amino acid is chiral, the number of possible sequences of the tetrapeptide is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>8</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>12</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -665,7 +669,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since glycine (gly) is achiral, alanine (Ala) is the C-terminal amino acid, therefore N terminal amino acid can be valine (val) or serine (ser). In the view of these condition, the following four sequences for the tetrapeptide is possible. (i) Val-gly-Ser-Ala (ii) Val-Ser-gly-Ala (iii) Ser-gly-Val-Ala (iv) Ser-Val-gly-Ala \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion - Glucose pentaacetate shows 2,4 DNP test.</p> <p>Reason - Commercially, glucose is obtained by hydrolysis of starch at 393 K by heating with dilute sulphuric acid.</p> <p>Memory Based Question 28/Jan/25 Morning shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Assertion and Reason are correct and Reason is the correct explanation of Assertion.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Assertion and Reason are correct and Reason is not the correct explanation of Assertion.</p></span></div><div class="option"><span class="key">c</span><span><p>Assertion is incorrect, Reason is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Assertion and Reason are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -677,7 +681,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>No, glucose does not respond to the 2,4-dinitrophenyl hydrazine (2,4-DNP) test, as it does not contain any free aldehydic group in its cyclic form.\u003c/p> \u003cp>Commercially, Glucose is prepared by hydrolysis of starch by boiling it with dil .sulphuric acid.\u003c/p> \u003cp>\\(({\\mathrm{C}}_{6}{\\mathrm{H}}_{10}{\\mathrm{O}}_{5})+{\\mathrm{nH}}_{2}\\mathrm{O}\\overset{\\mathrm{dil}{\\mathrm{H}}_{2}{\\mathrm{SO}}_{4}/373\\mathrm{K}}{\\to }{\\mathrm{nC}}_{6}{\\mathrm{H}}_{12}{\\mathrm{O}}_{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the glycosidic linkage between galactose and glucose is present in lactose?</p> <p>[JEE MAINS 2021,5 March, Shift-1]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{C}-1 \) of glucose and \( \mathrm{C}-6 \) of galactose</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{C}-1 \) of galactose and \( \mathrm{C}-4 \) of glucose</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{C}-1 \) of glucose and \( \mathrm{C}-4 \) of galactose</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{C}-1 \) of galactose and \( \mathrm{C}-6 \) of glucose</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -689,7 +693,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In lactose, the glycosidic linkage is formed between C–1 of galactose and C–4 of glucose. Lactose is a disaccharide composed of one molecule of β-D-galactose and one molecule of D-glucose. These two monosaccharides are connected through a β(1→4) glycosidic bond. This means the anomeric carbon atom, that is C–1 of galactose, joins with the hydroxyl group present on C–4 of glucose. Lactose is commonly known as milk sugar because it is naturally present in milk and dairy products. Therefore, the correct answer is option B, C–1 of galactose and C–4 of glucose.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II</p> <table> <tbody> <tr> <td> <p> </p> </td> <td> <p><strong>Column-I<br/>Enzymatic reaction</strong></p> </td> <td> <p><strong> </strong></p> </td> <td> <p><strong>Column-II<br/>Enzyme</strong></p> </td> </tr> <tr> <td> <p>I</p> </td> <td> <p>Sucrose → Glucose and Fructose</p> </td> <td> <p>P</p> </td> <td> <p>Zymase</p> </td> </tr> <tr> <td> <p>II</p> </td> <td> <p>Glucose → ethyl alcohol and CO<sub>2</sub></p> </td> <td> <p>Q</p> </td> <td> <p>Pepsin</p> </td> </tr> <tr> <td> <p>III</p> </td> <td> <p>Starch → Maltose</p> </td> <td> <p>R</p> </td> <td> <p>Invertase</p> </td> </tr> <tr> <td> <p>IV</p> </td> <td> <p>Proteins → Amino acids</p> </td> <td> <p>S</p> </td> <td> <p>Diastase</p> </td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I-R, II-P, III-Q, IV-S</p></span></div><div class="option"><span class="key">b</span><span><p>I-P, II-S, III-R, IV-Q</p></span></div><div class="option"><span class="key">c</span><span><p>I-R, II-P, III-S, IV-Q</p></span></div><div class="option"><span class="key">d</span><span><p>I-P, II-Q, III-S, IV-R</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>I. Sucrose → Glucose + Fructose\u003cbr/>Hydrolysis of sucrose is catalyzed by Invertase.\u003cbr/>So, I → R\u003c/p> \u003cp>II. Glucose → Ethyl alcohol + CO₂\u003cbr/>Alcoholic fermentation of glucose is catalyzed by Zymase.\u003cbr/>So, II → P\u003c/p> \u003cp>III. Starch → Maltose\u003cbr/>Conversion of starch into maltose is catalyzed by Diastase (amylase).\u003cbr/>So, III → S\u003c/p> \u003cp>IV. Proteins → Amino acids\u003cbr/>Breakdown of proteins into amino acids is catalyzed by Pepsin.\u003cbr/>So, IV → Q\u003c/p> \u003cp>Final Answer:\u003c/p> \u003cp>I–R, II–P, III–S, IV–Q\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sucrose on hydrolysis gives:</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \alpha-\mathrm{D}-\mathrm{Glucose}+\beta-\mathrm{D}-\mathrm{Glucose} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \alpha \)-D-Glucose \( +\beta \)-D-Fructose</p></span></div><div class="option"><span class="key">c</span><span><p>\( \alpha-D \)-Fructose \( +\beta \)-D-Fructose</p></span></div><div class="option"><span class="key">d</span><span><p>\( \beta-D-G l u c o s e+\alpha-D-F r u c t o s e \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\mathrm{Sucrose}\\overset{\\mathrm{hydrolysis}}{\\to }\\alpha −\\mathrm{D}−\\mathrm{Glucose}+\\\\ \\beta −\\mathrm{D}−\\mathrm{fructose}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Seliwanoff test and Xanthoproteic test are used for the identification of _____ and ______ respectively</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Aldoses, ketoses</p></span></div><div class="option"><span class="key">b</span><span><p>Ketoses, aldoses</p></span></div><div class="option"><span class="key">c</span><span><p>Proteins, ketoses</p></span></div><div class="option"><span class="key">d</span><span><p>Ketoses, proteins</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -725,7 +729,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(4)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of chiral carbon(s) present in peptide, I\( \ell \)e-Arg-Pro, is ______.</p> <p>[JEE Main 2020, 5 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The number of chiral carbon(s) present in the peptide Ile-Arg-Pro is 4.\u003c/p> \u003cp>Breakdown of Chiral Carbons: Isoleucine (Ile):\u003c/p> \u003cp>Contains two chiral carbons (one in the backbone alpha-carbon and one in the side chain).\u003c/p> \u003cp>Arginine (Arg): Contains one chiral carbon (alpha -carbon).\u003c/p> \u003cp>Proline (Pro): Contains one chiral carbon (alpha -carbon).\u003c/p> \u003cp>Total = 2 (Ile) + 1 (Arg) + 1 (Pro) = 4 chiral carbons.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statements is not true?</p> <p>[JEE Main 2020, 6 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Lactose contains \(\alpha\)-glycosidic linkage between \(C_1\) of galactose and \(C _4\) of glucose.</p></span></div><div class="option"><span class="key">b</span><span><p>Lactose is a reducing sugar and it gives Fehling's test.</p></span></div><div class="option"><span class="key">c</span><span><p>On acid hydrolysis, lactose gives one molecule of \(D (+)\) - glucose and one molecule of \(D (+)\)-galactose.</p></span></div><div class="option"><span class="key">d</span><span><p>Lactose \(\left( C _{11} H _{22} O _{11}\right)\) is a disaccharide and it contains 8 hydroxyl groups.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -749,7 +753,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Lactose contains \\(\\beta\\)-glycosidic linkage between \\(C_1\\) of galactose and \\(C _4\\) of glucose.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List - I with List - II.</p> <p>List - I List - II <br/>(Saccharides) (Glycosidic-linkages found) <br/>(A) Sucrose (I) \(\alpha 1-4\) <br/>(B) Maltose (II) \(\alpha 1-4\) and \(\alpha 1-6\) <br/>(C) Lactose (III) \(\alpha 1-\beta 2\) <br/>(D) Amylopectin (IV) \(\beta 1-4\) </p> <p>Choose the correct answer from the options given below</p> <p>[JEE Main 2025, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A)-(II), (B)-(IV), (C)-(III), (D)-(I) </p></span></div><div class="option"><span class="key">b</span><span><p>(A)-(I), (B)-(II), (C)-(III), (D)-(IV)</p></span></div><div class="option"><span class="key">c</span><span><p>(A)-(IV), (B)-(II), (C)-(I), (D)-(III)</p></span></div><div class="option"><span class="key">d</span><span><p>(A)-(III), (B)-(I), (C)-(IV), (D)-(II)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,7 +765,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(A) Sucrose \\(\\to {\\alpha }_{1}-{\\beta }_{2}\\) Glycosidic linkage\u003cbr/>(B) Maltose \\(\\to \\alpha\\) 1-4 Glycosidic linkage\u003cbr/>(C) Lactose \\(\\to \\beta\\) 1-4 Glycosidic linkage\u003cbr/>(D) Amlypectin \\(\\to \\alpha\\) 1-4 and \\(\\alpha\\) 1-6 Glycosidic linkage\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An indicator ' X ' is used for studying the effect of variation in concentration of iodide on the rate of reaction of iodide ion with \({\mathrm{H}}_{2}{\mathrm{O}}_{2}\) at room temp. The indicator ' X ' forms blue coloured complex with compound 'A' present in the solution. The indicator ' X ' and compound ' A ' respectively are</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Starch and iodine</p></span></div><div class="option"><span class="key">b</span><span><p>Methyl orange and \({\mathrm{H}}_{2}{\mathrm{O}}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Starch and \({\mathrm{H}}_{2}{\mathrm{O}}_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Methyl orange and iodine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -773,7 +777,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{I}}^{-}+{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}⟶{\\mathrm{I}}_{2}+{\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/p> \u003cp>\\({\\mathrm{I}}_{2}+\\underset{\\text{ (Indicator) }}{\\text{ Starch }}⟶\\) Blue\u003c/p> \u003cp>Starch forms blue colour complex with iodine\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following acts as an antioxidant in edible oils</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vitamin B</p></span></div><div class="option"><span class="key">b</span><span><p>Vitamin C</p></span></div><div class="option"><span class="key">c</span><span><p>Vitamin D</p></span></div><div class="option"><span class="key">d</span><span><p>Vitamin E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -785,7 +789,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Vitamin E is an antioxidant present in edible oils.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one among the following chemical tests is used to distinguish monosaccharide from disaccharide?</p> <p>[JEE Main 2021, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Seliwanoffs test</p></span></div><div class="option"><span class="key">b</span><span><p>lodine test</p></span></div><div class="option"><span class="key">c</span><span><p>Barfoed test</p></span></div><div class="option"><span class="key">d</span><span><p>Tollens test</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -797,7 +801,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is NOT an example of fibrous protein?</p> <p>[JEE Main 2021, 31 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Keratin</p></span></div><div class="option"><span class="key">b</span><span><p>Albumin</p></span></div><div class="option"><span class="key">c</span><span><p>Collagen</p></span></div><div class="option"><span class="key">d</span><span><p>Myosin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -809,7 +813,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Albumin is not an example of fibrous protein.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Fructose reduces Tollen's reagent due to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>enolisation of fructose followed by conversion to glucose (having aldehydic group) by the base present in Tollen's reagent</p></span></div><div class="option"><span class="key">b</span><span><p>asymmetric carbons</p></span></div><div class="option"><span class="key">c</span><span><p>primary alcoholic group</p></span></div><div class="option"><span class="key">d</span><span><p>secondary alcoholic group</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -821,7 +825,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>All aldehydes generally reduces tollens reagent thus fructose also Tollens reagent. Finally we conclude that fructose reduces Tollen's reagent due to enolisation of fructose followed by conversion to aldehyde by base.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The one that does not stabilize 2<sup>o</sup> and 3<sup>o</sup> structures of proteins is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>H -bonding</p></span></div><div class="option"><span class="key">b</span><span><p>-S-S-linkage</p></span></div><div class="option"><span class="key">c</span><span><p>-O-O-linkage</p></span></div><div class="option"><span class="key">d</span><span><p>Van der Waals forces</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -833,7 +837,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>2\u003csup>o\u003c/sup> and 3\u003csup>o\u003c/sup> structure of proteins are stabilized by hydrogen bonding, disulphide linkages, Van der Waals force of attraction and electrostatic force of attraction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A short peptide on complete hydrolysis produces 3 moles of glycine (G), two moles of leucine (L) and two moles of valine \(( V )\) per mole of peptide. The number of peptide linkages in it are</p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -845,7 +849,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Number of peptide linkage in it \\(=(\\) amino acid -1\\()\\) \\(=7-1=6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion (A): \(\alpha\)-halocarboxylic acid on reaction with dil. \(NH _3\) gives good yield of \(\alpha\)-amino carboxylic acid whereas the yield of amines is very low when prepared from alkyl halides.<br/>Reason (R): Amino acids exist in zwitter ion form in aqueous medium.</p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A).</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A).</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is correct but ( \(R\) ) is not correct.</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is not correct but ( \(R )\) is correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -857,7 +861,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>\u003cstrong>α-Halocarboxylic Acid and Dilute NH₃:\u003c/strong> α-Halocarboxylic acids on reaction with dilute ammonia (NH₃) give good yields of α-amino carboxylic acids (amino acids).\u003c/li> \u003cli>When alkyl halides react with ammonia to form amines, the yield is generally low due to side reactions and the formation of multiple alkylated amines.\u003c/li> \u003cli>\u003cstrong>Amino Acids:\u003c/strong> Amino acids, when in aqueous solutions, typically exist in zwitterion form, where the amino group is protonated (NH₃⁺) and the carboxyl group is deprotonated (COO⁻).\u003c/li> \u003cli>Reason is also correct but it is not the explanation of assertion .\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The helical structure of protein is stabilized by</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>dipeptide bonds</p></span></div><div class="option"><span class="key">b</span><span><p>hydrogen bonds</p></span></div><div class="option"><span class="key">c</span><span><p>ether bonds</p></span></div><div class="option"><span class="key">d</span><span><p>peptide bonds</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -869,7 +873,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The α-helix structure is formed when the chain of α-amino acids coils as a right handed screw (called α-helix) because of the formation of hydrogen bonds between amide groups of the same peptide chain, i.e., NH group in one unit is linked to carbonyl oxygen of the third unit by hydrogen bonding. This hydrogen bonding between different units is responsible for holding helix in a position.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements, one is assertion, other is reason</p> <p>Assertion(A): Sucrose is dissacharide and non-reducing sugar.</p> <p>Reason(R): Sucrose involves glycosidic linkage between \({C}_{1}\) of beta-glucose and \({C}_{2}\) of alpha-fructose</p> <p>[JEE Main 2023, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true and reason is true explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and reason is not the true explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is true but (R) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -881,7 +885,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Sucrose is disaccharide and non reducing sugar\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following tests is used for the identification of functional groups in organic compounds does not use copper reagent?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Barfoed's test</p></span></div><div class="option"><span class="key">b</span><span><p>Seliwanoff's test</p></span></div><div class="option"><span class="key">c</span><span><p>Benedict's test</p></span></div><div class="option"><span class="key">d</span><span><p>Biuret test for peptide bond</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -893,7 +897,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In Seliwanoff's reagent, Cu is not present. In Barfoed, Biuret and Benedict's reagent Cu is present.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A peptide synthesized by the reactions of one molecule each of Glycine, Leucine, Aspartic acid and Histidine will have ____ peptide linkages</p> <p><strong>[JEE Main 2021, 1 Sep (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -905,7 +909,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Peptide contains four amino acid i.e glycine, aspartic acid and histidine, so it will have three peptide linkage \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A): Ketoses give Seliwanoff's test faster than Aldoses.</p> <p>Reason (R): Ketoses undergo \(\beta\)-elimination followed by formation of furfural.<br/>In the light of the above statements, choose the correct answer from the options given below: </p> <p> </p> <p><strong>[JEE Main 2023, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true but (R) is not the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -917,7 +921,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Seliwanoff's test is a chemical test which distinguish between Ketose and aldose. This test relies on the principle that the keto hexose are more rapidly dehydrated to form 5-hydroxy methyl furfural when heated in acidic medium which on condensation with resorcinol, Cherry red or brown red coloured complex is formed rapidly indicating a positive test.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following rections:<br/>(i) Glucose \(+ ROH \xrightarrow{\text { dry } HCl }\) Acetal \(\xrightarrow[\left( CH _3 CO \right)_2 O ]{\text { x eq.of }}\) Acetyl derivative<br/>(ii) Glucose \(\xrightarrow{ Ni / H _2} A \xrightarrow[\left( CH _3 CO \right)_2 O ]{\text { y eq.of }}\) Acetyl derivative<br/>(iii) Glucose \(\xrightarrow[\left( CH _3 CO \right)_2 O ]{\text { z eq.of }}\) Acetyl derivative ' \(x\) ', ' \(y\) ' and ' \(z\) ' in these reactions are respectively:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4, 5 and 5 </p></span></div><div class="option"><span class="key">b</span><span><p>4, 6 and 5</p></span></div><div class="option"><span class="key">c</span><span><p>5, 4 and 5</p></span></div><div class="option"><span class="key">d</span><span><p>5,6 and 5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -929,7 +933,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sulphur (S) containing amino acids from the following are:<br/>(I) isoleucine</p> <p>(II) cysteine</p> <p>(III) lysine</p> <p>(IV) methionine</p> <p>(V) glutamic acid</p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I, IV </p></span></div><div class="option"><span class="key">b</span><span><p>II, IV</p></span></div><div class="option"><span class="key">c</span><span><p>II, III, V</p></span></div><div class="option"><span class="key">d</span><span><p>I, II, III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -941,7 +945,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Sulphur (S) containing amino acids are those which have sulphur in their structure.\u003c/p> \u003cp>Isoleucine → does not contain sulphur\u003c/p> \u003cp>Cysteine → contains sulphur (–SH group)\u003c/p> \u003cp>Lysine → does not contain sulphur\u003c/p> \u003cp>Methionine → contains sulphur (–S– group)\u003c/p> \u003cp>Glutamic acid → does not contain sulphur\u003c/p> \u003cp>Therefore, the correct answer is:\u003cbr/>B: II, IV\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Number of compounds from the following which will not produce orange red precipitate with Benedict solution is .......... .</p> <p>Glucose, Maltose, Sucrose, Ribose, 2-Deoxyribose, Amylose, Lactose</p> <p>[JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -953,7 +957,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Glucose: Reducing sugar (will react with Benedict's solution).\u003cbr/>Maltose: Reducing sugar (will react with Benedict’s solution).\u003cbr/>Sucrose: Non-reducing sugar (will NOT react with Benedict's solution).\u003cbr/>Rlbose: Reducing sugar (will react with Benedict’s solution).\u003cbr/>2-Deoxyribose: Reducing sugar (will react with Benedict's solution).\u003cbr/>Amylose: Non-reducing sugar (will NOT react with Benedict's solution).\u003cbr/>Lactose: Reducing sugar (will react with Benedict's solution).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Compound A gives D-Galactose and D-Glucose on hydrolysis. The compound A is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Amylose</p></span></div><div class="option"><span class="key">b</span><span><p>Sucrose</p></span></div><div class="option"><span class="key">c</span><span><p>Maltose</p></span></div><div class="option"><span class="key">d</span><span><p>Lactose</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -965,7 +969,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Lactose is a disaccharide which is formed by forming C\u003csub>1\u003c/sub>−C\u003csub>4\u003c/sub> glycosidic linkage between D-galactose and D- glucose.\u003c/p> \u003cp>\\(Lactose\\overset{Hydrolysis}{\\to }D-galactose+D-glu\\cos e\\)\u003c/p> \u003cp>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Deficiency of vitamin K causes:</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cheilosis</p></span></div><div class="option"><span class="key">b</span><span><p>Increase in blood clotting time</p></span></div><div class="option"><span class="key">c</span><span><p>Decrease in blood clotting time</p></span></div><div class="option"><span class="key">d</span><span><p>Increase in fragility of RBC's</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

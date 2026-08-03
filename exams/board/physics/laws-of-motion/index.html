@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Laws of Motion","item":"https://yespyq.com/exams/board/physics/laws-of-motion/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Laws of Motion</h1>
       <p>3 Board Physics previous year questions on <b>Laws of Motion</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A massless spring gets elongated by amount \({x}_{1}\) under a tension of 5 N . Its elongation is \({x}_{2}\) under the tension of 7 N . For the elongation of \(\left(5{x}_{1}-2{x}_{2}\right)\), the tension in the spring will be,</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>39 N</p></span></div><div class="option"><span class="key">b</span><span><p>15 N</p></span></div><div class="option"><span class="key">c</span><span><p>20 N</p></span></div><div class="option correct"><span class="key">d</span><span><p>11 N</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A balloon of mass M is ascending with an acceleration a. What fraction of its mass should be dropped so that it starts moving upward with an acceleration of 3 a ?</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{2 a}{g+3 a}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{a}{g+2 a}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2 a M}{g+3 a}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{a M}{g+2 a}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let:\u003c/p> \u003cul> \u003cli>\\(M\\) be the initial mass of the balloon.\u003c/li> \u003cli>\\(T\\) be the tension (upward force) acting on the balloon.\u003c/li> \u003c/ul> \u003cstrong>Step 1: Initial Equation of Motion\u003c/strong> \u003cp>Using Newton’s second law for the initial state:\u003c/p> \u003cp>\\(T−Mg=Ma\\)\u003c/p> \u003cp>\\(T=M(g+a)\\)\u003c/p> \u003cstrong>Step 2: After Dropping Mass\u003c/strong> \u003cp>Let \\(m\\) be the mass that is dropped. The new mass of the balloon becomes \\((M−m)\\). The equation of motion after dropping mass:\u003c/p> \u003cp>\\(T−(M−m)g=(M−m)⋅3a\\)\u003c/p> \u003cp>Substituting \\(T=M(g+a)\\):\u003c/p> \u003cp>\\(M(g+a)−(M−m)g=(M−m)⋅3a\\)\u003c/p> \u003cp>Expanding:\u003c/p> \u003cp>\\(Mg+Ma−Mg+mg=3a(M−m)\\)\u003c/p> \u003cp> \\(Ma+mg=3aM−3am\\)\u003c/p> \u003cp>Rearrange terms:\u003c/p> \u003cp>\\(Ma−3aM=−mg−3am\\)\u003c/p> \u003cp> \\(Ma−3aM=−m(g+3a)\\)\u003c/p> \u003cstrong>Step 3: Solve for \\(m\\)\u003c/strong> \u003cp>\\(m=\\frac{2aM}{g+3a}\\)​\u003c/p> \u003cstrong>Answer:\u003c/strong> \u003cp>The mass that should be dropped is \u003cstrong>\\(\\frac{2aM}{g+3a}\\).\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A ball of mass \(0.15\ kg\) is dropped from a height \(10\ m\), strikes the ground and rebounds to the same height. The magnitude of impulse imparted to the ball is (\(g = 10\ m/s^{2}\)) nearly:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2.1\mathrm{kg}\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.4\mathrm{kg}\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1.1\mathrm{kg}\mathrm{m}/\mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4.2\mathrm{kg}\mathrm{m}/\mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

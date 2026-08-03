@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Accountancy","item":"https://yespyq.com/exams/board/accountancy/"},{"@type":"ListItem","position":5,"name":"Dissolution of Partnership Firm","item":"https://yespyq.com/exams/board/accountancy/dissolution-of-partnership-firm/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Dissolution of Partnership Firm</h1>
       <p>25 Board Accountancy previous year questions on <b>Dissolution of Partnership Firm</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On dissolution of partnership, goodwill account is transferred to :</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>The debit side of Realisation Account</p></span></div><div class="option"><span class="key">b</span><span><p>The credit side of Realisation Account</p></span></div><div class="option"><span class="key">c</span><span><p>The credit side of Partner's Capital/Current Account</p></span></div><div class="option"><span class="key">d</span><span><p>The debit side of Partner's Capital/Current Account</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On dissolution of a firm, out of the proceeds received from the sale of <br/>the assets will be paid first of all to :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Partners Capitals </p></span></div><div class="option"><span class="key">b</span><span><p>Partners additional capital </p></span></div><div class="option"><span class="key">c</span><span><p>Partners loan to firm </p></span></div><div class="option correct"><span class="key">d</span><span><p> Outside creditors</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On Dissolution of partnership firm out of total debtors of ₹2,50,000, ₹10,000 became bad and the rest realised 70%. In the given case Bank A/c will be debited by:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹1,75,000</p></span></div><div class="option"><span class="key">b</span><span><p>₹1,08,000</p></span></div><div class="option"><span class="key">c</span><span><p>₹1,62,000</p></span></div><div class="option"><span class="key">d</span><span><p>₹1,68,000</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Option D\u003c/strong>\u003c/p> \u003cp>The bank account will be debited by the amount actually realised from the debtors.\u003c/p> \u003cp>Book Value of Debtors = ₹2,50,000\u003c/p> \u003cp>Bad Debts = ₹10,000\u003c/p> \u003cp>Remaining Debtors = ₹2,40,000\u003c/p> \u003cp>Cash realised from debtors = \\(2,40,000\\times \\frac{70}{100}=₹1,68,000\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Unrecorded Liabilities when paid are shown in :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Debit side of Realisation Account </p></span></div><div class="option"><span class="key">b</span><span><p> Debit side of Bank Account </p></span></div><div class="option"><span class="key">c</span><span><p> Credit side of Realisation Account </p></span></div><div class="option"><span class="key">d</span><span><p>Credit side of Bank Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: (A) Debit side of Realisation Account\u003c/p> \u003cp>English Explanation\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>Unrecorded liabilities are not shown in books earlier, so when they are paid at the time of dissolution, the payment is treated as an expense of realisation.\u003cbr/>Therefore, the amount is debited to Realisation Account and credited to Bank/Cash Account.\u003c/p> \u003cp>Journal Entry:\u003cbr/>Realisation A/c Dr.\u003cbr/> To Bank/Cash A/c\u003c/p> \u003cp>Why Others Are Incorrect?\u003c/p> \u003cp>(B) Debit side of Bank Account — Wrong\u003cbr/>Bank Account is credited, not debited, because cash is paid out.\u003c/p> \u003cp>(C) Credit side of Realisation Account — Wrong\u003cbr/>Credit side of Realisation A/c is used for liabilities transferred or sale of assets, not for payment of unrecorded liabilities.\u003c/p> \u003cp>(D) Credit side of Bank Account — Wrong (in context of question)\u003cbr/>Though Bank A/c is credited in the journal entry, the question asks where it is shown, and it is shown on the debit side of Realisation A/c.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At the time of dissolution of firm, book value of assets is recorded in which side of Realisation Account ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Debit</p></span></div><div class="option"><span class="key">b</span><span><p>Credit</p></span></div><div class="option"><span class="key">c</span><span><p>Liability</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: (A) Debit\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>At the time of dissolution, all assets are transferred to the Debit side of the Realisation Account at their book values because the firm is giving up the assets for sale or distribution.\u003cbr/>Realisation Account is debited with assets to close the Asset Accounts.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>(B) Credit — Wrong\u003cbr/>Credit side of Realisation Account is used for liabilities, not for assets.\u003c/p> \u003cp>(C) Liability — Wrong\u003cbr/>This is not an accounting side; it is a category. Assets are not recorded under liabilities.\u003c/p> \u003cp>(D) None of these — Wrong\u003cbr/>Assets are clearly recorded on the Debit side, so this option is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An unrecorded asset is taken over by a creditor in full settlement. In such a case:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Realisation account is debited.</p></span></div><div class="option"><span class="key">b</span><span><p>Realisation account is credited.</p></span></div><div class="option"><span class="key">c</span><span><p>The creditors' account is debited.</p></span></div><div class="option"><span class="key">d</span><span><p>Not recorded anywhere.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>When an unrecorded asset is taken over by a creditor in full settlement of their claim during the dissolution of a firm, no entry is passed in the firm's books. This is because the asset and the liability are adjusted against each other outside the main accounts, and neither cash nor any other recorded asset/liability is involved in the transaction. The Realisation Account is only used when assets are sold for cash or taken over by a partner, or when liabilities are paid off in cash or assumed by a partner. \u003c/p> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reconstruction of partnership does not involve:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Admission of partner</p></span></div><div class="option"><span class="key">b</span><span><p>Dissolution of firm</p></span></div><div class="option"><span class="key">c</span><span><p>Death of partner</p></span></div><div class="option"><span class="key">d</span><span><p>Retirement of partner</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Reconstruction of partnership\u003c/strong> means \u003cstrong>reorganisation of the partnership firm\u003c/strong> without closing the business.\u003c/p> \u003cp>The firm \u003cstrong>continues its business\u003c/strong>, but with changes in:\u003c/p> \u003cul> \u003cli>partners, or\u003c/li> \u003cli>profit-sharing ratio.\u003c/li> \u003c/ul> \u003cp>Reconstruction may involve:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Admission of a partner\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Retirement of a partner\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Death of a partner\u003c/strong>\u003c/p> \u003c/li> \u003c/ul> \u003cp>These events change the partnership structure but \u003cstrong>do not end the business\u003c/strong>. \u003cstrong>Dissolution of firm\u003c/strong> means \u003cstrong>complete closure of the partnership business\u003c/strong>. Once dissolved, the firm no longer exists, so reconstruction is not possible. Hence, dissolution is \u003cstrong>not\u003c/strong> part of reconstruction.\u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a partner takes responsibility to make payment of any outside liability of the firm, the account credited will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Realisation A/c</p></span></div><div class="option"><span class="key">b</span><span><p>Cash A/c</p></span></div><div class="option"><span class="key">c</span><span><p>Partner's Capital A/c</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) Partner’s Capital A/c\u003c/p> \u003cp> \u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>When a partner takes responsibility for paying an outside liability, the firm no longer has to pay it.\u003cbr/>So the liability is transferred to the partner, and Partner’s Capital A/c is credited because the partner’s capital increases by the amount of liability taken over.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>(A) Realisation A/c — Wrong\u003cbr/>Realisation A/c is used when liability is paid or settled through realisation, not when it is taken over by a partner.\u003c/p> \u003cp>(B) Cash A/c — Wrong\u003cbr/>Cash A/c is credited only when actual cash is paid by the firm, which is not the case here.\u003c/p> \u003cp>(D) None of these — Wrong\u003cbr/>Since Partner’s Capital A/c is correctly credited, this option is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On dissolution of a firm, the amount of loan taken from a partner by the firm will be transferred to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bank Account</p></span></div><div class="option"><span class="key">b</span><span><p>Realisation Account</p></span></div><div class="option"><span class="key">c</span><span><p>Partner's Current Account</p></span></div><div class="option"><span class="key">d</span><span><p>Loan from Partner's Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>When a firm is dissolved, the loan taken by the firm from a partner is a liability of the firm that is paid off after external liabilities, but before the partners' capital is returned. \u003cbr/>It is treated as a separate account and is not transferred to the Realisation Account or the Partner's Current/Capital Account. \u003cbr/>The payment is typically made through the Bank Account, and the amount itself is transferred from the 'Loan from Partner Account' to settle the liability.\u003c/p> \u003cp>Therefore, \u003cstrong>Option A \u003c/strong>is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A firm can be voluntarily dissolved by the partners :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>On majority basis </p></span></div><div class="option"><span class="key">b</span><span><p>On ¾ members decision</p></span></div><div class="option"><span class="key">c</span><span><p>On ½ members decision </p></span></div><div class="option"><span class="key">d</span><span><p> None of these </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: \u003cstrong>(A) On majority basis\u003c/strong>\u003c/p> \u003cp>English Explanation\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>A firm can be dissolved \u003cstrong>by the partners on the basis of majority decision\u003c/strong>, when dissolution is by \u003cstrong>mutual agreement\u003c/strong> among partners as per the Partnership Act.\u003cbr/>Hence, dissolution can take place if \u003cstrong>majority of partners agree\u003c/strong>, so Option (A) is correct.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>\u003cstrong>(B) On ¾ members decision — Wrong\u003c/strong>\u003cbr/>Law does not specify ¾ majority; only majority consent is required.\u003c/p> \u003cp>\u003cstrong>(C) On ½ members decision — Wrong\u003c/strong>\u003cbr/>Half members do not constitute majority, so this is not sufficient.\u003c/p> \u003cp>\u003cstrong>(D) None of these — Wrong\u003c/strong>\u003cbr/>Since dissolution can be done on majority basis, this option is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When realisation expenses are paid by the partner on behalf of a firm, which account will be credited?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Realisation Account</p></span></div><div class="option"><span class="key">b</span><span><p>Partner's Capital Account</p></span></div><div class="option"><span class="key">c</span><span><p>Partner's Loan Account</p></span></div><div class="option"><span class="key">d</span><span><p>Bank Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Realisation expenses\u003c/strong> are expenses incurred at the time of \u003cstrong>dissolution\u003c/strong> of the firm. If these expenses are \u003cstrong>paid by a partner on behalf of the firm\u003c/strong>, it means: The firm becomes \u003cstrong>liable to the partner and \u003c/strong>the partner should be \u003cstrong>credited\u003c/strong> for the amount paid.\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Realisation Account\u003c/strong> → \u003cstrong>Debited\u003c/strong> (because it is an expense of dissolution)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Partner’s Capital Account\u003c/strong> → \u003cstrong>Credited\u003c/strong> (because the firm owes the partner)\u003c/p> \u003c/li> \u003c/ul> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On the happening of certain contingencies, Subject to contract between the partners, a firm is dissolved,<br/>(A) If constituted for a fixed term, by the expiry of that term.<br/>(B) If constituted to carry out one or more ventures, by the completion thereof.<br/>(C) By the death of a partner<br/>(D) By the adjudication of a partner as an insolvent<br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B) and (C) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C) and (D)</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>According to the Indian Partnership Act, 1932 (and general partnership principles):\u003c/p> \u003cul> \u003cli>A firm constituted for a fixed term is dissolved by the expiry of that term (Section 40).\u003c/li> \u003cli>A firm constituted to carry out one or more ventures is dissolved by the completion thereof (Section 40).\u003c/li> \u003cli>A firm is dissolved by the death of a partner (Section 41).\u003c/li> \u003cli>A firm is dissolved by the adjudication of a partner as an insolvent (Section 41).\u003c/li> \u003c/ul> \u003cp>Therefore, \u003cstrong>Option C\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>According to Indian Partnership Act, 1932, when the firm is dissolved, cash received on sale of assets are applied in following order:<br/>(A) Paying to each partner proportionately what is due to him/her on account of capital<br/>(B) In paying the secured debts of the firm to the third parties<br/>(C) In paying each partner proportionately what is due to him/her from the firm for advances as distinguished from capital<br/>(D) The residue, if any shall be divided among the partner's in their profit sharing ratio<br/>(E) In paying unsecured debt of firm to third parties</p> <p>Choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(C), (B), (D), (A), (E)</p></span></div><div class="option"><span class="key">b</span><span><p>(B), (E), (C), (A), (D)</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C), (D), (E)</p></span></div><div class="option"><span class="key">d</span><span><p>(D), (C), (B), (A), (E)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Option B\u003c/strong>\u003c/p> \u003cp>According to Section 48 of the Indian Partnership Act, 1932, the assets of the firm (including sums contributed by partners to make up deficiencies) must be applied in a specific legal order upon dissolution. This order prioritises external liabilities before internal claims by partners: \u003cbr/>Paying the debts of the firm to third parties:\u003cbr/>First, secured debts are paid as they have a primary claim on specific assets. (B)\u003cbr/>Next, unsecured debts to third parties are settled. (E)\u003cbr/>Paying partner advances: Repaying each partner proportionately for any advances or loans made to the firm, distinct from their capital contribution. (C)\u003cbr/>Paying partner capital: Returning each partner's capital contribution proportionately. (A)\u003cbr/>Dividing the residue: Any remaining surplus is divided among partners according to their profit-sharing ratio. (D) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Rohit a partner paid the realisation expenses of ₹10,000 and he was to get a remuneration of ₹12,000 for completing the dissolution process and realisation expenses were borne by Rohit. The amount transferred to his capital \(\mathrm{A}/\mathrm{c}\) will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹12,000</p></span></div><div class="option"><span class="key">b</span><span><p>₹10,000</p></span></div><div class="option"><span class="key">c</span><span><p>₹ 22,000</p></span></div><div class="option"><span class="key">d</span><span><p>₹2,000</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Option A\u003c/strong>\u003c/p> \u003cp>When a partner (Rohit) is assigned the dissolution work for a fixed remuneration and agrees to bear the realisation expenses himself, only the agreed remuneration (₹12,000) is credited to his capital account. The actual expenses paid by him (₹10,000) are irrelevant to the firm's accounting as they are not borne by the firm. \u003cbr/>Remuneration to be credited: ₹ 12,000\u003cbr/>Realisation Expenses borne by: Rohit\u003cbr/>Net Effect: Only the remuneration is credited to Rohit’s Capital A/c. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Unrecorded assets when taken over by a partner are shown in :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Debit side of Realisation A/C </p></span></div><div class="option"><span class="key">b</span><span><p>Debit side of Bank A/C </p></span></div><div class="option"><span class="key">c</span><span><p>Credit side of Realisation A/C </p></span></div><div class="option"><span class="key">d</span><span><p> Credit side of Bank Account </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) Credit side of Realisation A/c\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>Unrecorded assets are not in the books, so they are not transferred to Realisation A/c.\u003cbr/>When such assets are taken over by a partner, it is treated like a sale of asset, and the value is credited to the Realisation Account and debited to Partner’s Capital Account.\u003c/p> \u003cp>Journal Entry:\u003cbr/>Partner’s Capital A/c Dr.\u003cbr/> To Realisation A/c\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>(A) Debit side of Realisation A/c — Wrong\u003cbr/>Debit side is used when recorded assets are transferred or expenses are paid, not when unrecorded assets are taken over.\u003c/p> \u003cp>(B) Debit side of Bank A/c — Wrong\u003cbr/>Bank Account is involved only when cash is received, but here no cash is received.\u003c/p> \u003cp>(D) Credit side of Bank Account — Wrong\u003cbr/>No bank transaction occurs when a partner takes over the asset.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On dissolution, if a partner undertakes to make a payment of a Liability <br/>of the firm, the amount to be debited is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Profit &amp; Loss A/C </p></span></div><div class="option"><span class="key">b</span><span><p> Realisation A/C </p></span></div><div class="option"><span class="key">c</span><span><p> Partners Capital A/C</p></span></div><div class="option"><span class="key">d</span><span><p>Cash Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Realisation A/c\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>When a partner undertakes to pay a liability of the firm, the liability is treated as settled through the Realisation Account.\u003cbr/>Therefore, the amount of liability taken over by the partner is debited to Realisation A/c and credited to Partner’s Capital A/c.\u003c/p> \u003cp>Journal Entry:\u003cbr/>Realisation A/c Dr.\u003cbr/> To Partner’s Capital A/c\u003c/p> \u003cp>This is because Realisation Account records all settlements of liabilities during dissolution.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>(A) Profit &amp; Loss A/c — Wrong\u003cbr/>P&amp;L Account is not used at the time of dissolution; instead, Realisation A/c is prepared.\u003c/p> \u003cp>(C) Partner’s Capital A/c — Wrong\u003cbr/>Partner’s Capital A/c is credited, not debited, when he takes over liability.\u003c/p> \u003cp>(D) Cash Account — Wrong\u003cbr/>Cash A/c is used only when actual payment is made by the firm, which is not the case here.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If at the time of dissolution nothing is said about liabilities, then</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Never paid</p></span></div><div class="option"><span class="key">b</span><span><p>Fully paid</p></span></div><div class="option"><span class="key">c</span><span><p>Partly paid</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: \u003cstrong>(B) Fully paid\u003c/strong>\u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>If nothing is mentioned about liabilities at the time of dissolution, it is assumed that \u003cstrong>all outside liabilities are fully paid\u003c/strong>.\u003cbr/>Therefore, no separate treatment is required in the accounts.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>\u003cstrong>(A) Never paid — Wrong\u003c/strong>\u003cbr/>Liabilities must be settled at the time of dissolution; they cannot remain unpaid.\u003c/p> \u003cp>\u003cstrong>(C) Partly paid — Wrong\u003c/strong>\u003cbr/>Partial payment is recorded only when it is specifically mentioned in the question.\u003c/p> \u003cp>\u003cstrong>(D) None of these — Wrong\u003c/strong>\u003cbr/>Since the correct assumption is that liabilities are fully paid, this option is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Section 49 of the Indian Partnership Act 1932, deals with:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Treatment of losses</p></span></div><div class="option"><span class="key">b</span><span><p>Application of assets</p></span></div><div class="option"><span class="key">c</span><span><p>Provision of Indian Partnership Act 1932</p></span></div><div class="option"><span class="key">d</span><span><p>Private debts and firm's debts</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Section 49 specifically provides the rules for situations where both the firm and the individual partners have outstanding debts.\u003c/strong> \u003c/p> \u003cp>When a firm is dissolved, a conflict often arises between the creditors of the firm and the private creditors of the individual partners. Section 49 resolves this by establishing a clear hierarchy of payment:\u003c/p> \u003cp>\u003cstrong>A. Application of the Firm’s Property\u003c/strong>\u003c/p> \u003cul> \u003cli>The property of the firm must be applied first to pay the debts of the firm.\u003c/li> \u003cli>If there is any surplus remaining after paying all firm debts, that surplus is distributed among the partners according to their rights (capital/profit ratio).\u003c/li> \u003cli>This surplus can then be used by a partner to pay off their private debts.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>B. Application of Private Property\u003c/strong>\u003c/p> \u003cul> \u003cli>The private property of any partner must be applied first to pay their own private debts.\u003c/li> \u003cli>If there is any surplus remaining after the partner's private creditors are satisfied, that surplus can be used to pay the firm’s debts, provided the firm's assets are insufficient.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Treatment of losses:\u003c/strong> This is primarily covered under \u003cstrong>Section 48(a)\u003c/strong>, which dictates that losses, including deficiencies of capital, shall be paid first out of profits, then out of capital, and lastly by partners individually in their profit-sharing ratio.\u003c/p> \u003cp>\u003cstrong>Application of assets:\u003c/strong> This is covered under \u003cstrong>Section 48(b)\u003c/strong>, which outlines the sequence of payments during dissolution (paying outside creditors, then partners' loans, then capital).\u003c/p> \u003cp>Therefore, \u003cstrong>Option D \u003c/strong>is correct\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On dissolution, when a partner takes over an asset, which account is <br/>debited ? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Realisation Account </p></span></div><div class="option"><span class="key">b</span><span><p>Partners Capital Account </p></span></div><div class="option"><span class="key">c</span><span><p> Cash Account </p></span></div><div class="option"><span class="key">d</span><span><p> Asset Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: \u003cstrong>(B) Partner’s Capital Account\u003c/strong>\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>When a partner takes over an asset, it is treated as if the asset is \u003cstrong>sold to the partner\u003c/strong>.\u003cbr/>So the partner becomes debtor to the firm, and therefore \u003cstrong>Partner’s Capital A/c is debited\u003c/strong> and Realisation A/c is credited.\u003c/p> \u003cp>\u003cstrong>Journal Entry:\u003c/strong>\u003cbr/>Partner’s Capital A/c Dr.\u003cbr/> To Realisation A/c\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>\u003cstrong>(A) Realisation Account — Wrong\u003c/strong>\u003cbr/>Realisation A/c is \u003cstrong>credited\u003c/strong>, not debited, when an asset is taken over by a partner.\u003c/p> \u003cp>\u003cstrong>(C) Cash Account — Wrong\u003c/strong>\u003cbr/>Cash A/c is debited only when cash is received, but here no cash is received.\u003c/p> \u003cp>\u003cstrong>(D) Asset Account — Wrong\u003c/strong>\u003cbr/>At dissolution, asset accounts are already transferred to Realisation A/c, so they are not debited again.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the items in List I with those in List II</p> <table> <tbody> <tr> <td>List I (Accounting Standards and Sections of Act)</td> <td>List II (Issues)</td> </tr> <tr> <td>1) AS - 3</td> <td>a) Settlement of Accounts</td> </tr> <tr> <td>2) AS - 26</td> <td>b) Firm's debt and Private debt</td> </tr> <tr> <td>3) Section 48 of Indian Partnership Act</td> <td>c) Cash Flow Statement</td> </tr> <tr> <td>4) Section 49 of Indian Partnership Act</td> <td>d) Treatment of Goodwill</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1(a), 2(b), 3(c), 4(d)</p></span></div><div class="option"><span class="key">b</span><span><p>1(a), 2(c), 3(b), 4(d)</p></span></div><div class="option"><span class="key">c</span><span><p>1(a), 2(b), 3(d), 4(c)</p></span></div><div class="option"><span class="key">d</span><span><p>1(c), 2(d), 3(a), 4(b)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd>List I (Accounting Standards and Sections of Act)\u003c/td> \u003ctd>List II (Issues)\u003c/td> \u003c/tr> \u003ctr> \u003ctd>1) AS - 3\u003c/td> \u003ctd>Cash Flow Statement \u003c/td> \u003c/tr> \u003ctr> \u003ctd>2) AS - 26\u003c/td> \u003ctd>Treatment of Goodwill \u003c/td> \u003c/tr> \u003ctr> \u003ctd>3) Section 48 of Indian Partnership Act\u003c/td> \u003ctd>Settlement of Accounts\u003c/td> \u003c/tr> \u003ctr> \u003ctd>4) Section 49 of Indian Partnership Act\u003c/td> \u003ctd>Firm's debt and Private debt\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Anubha looked after the dissolution work for remuneration of ₹8,500 and agreed to bear dissolution expenses up to ₹6,000. Actual expenses paid by her were ₹7,600. What will be the journal entry for remuneration payable to Anubha?<br/>(A) Realisation A/c is debited by ₹8,500<br/>(B) Anubha's Capital A/c is credited by ₹8,500.<br/>(C) Realisation A/c is debited by ₹13,600.<br/>(D) Anubha's Capital is credited by ₹13,600.<br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C) and (D)</p></span></div><div class="option"><span class="key">d</span><span><p>(C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The journal entry for remuneration payable to Anubha only considers the amount of remuneration agreed upon, which is ₹8,500. The actual expenses paid by her (₹7,600) are irrelevant to the entry for paying her remuneration because she agreed to bear expenses up to ₹6,000 as part of her agreement. The firm is only liable for the agreed remuneration, not the actual expenses she incurred beyond the limit.\u003c/p> \u003cp>Realisation A/c is debited by ₹8,500 to record the expense of dissolution.\u003c/p> \u003cp>Anubha's Capital A/c is credited by ₹8,500 to record the liability owed to her.\u003c/p> \u003cp>Therefore, \u003cstrong>Option A\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Amount realised from sales of assets, on dissolution of firm is recorded in</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Realisation A/c</p></span></div><div class="option"><span class="key">b</span><span><p>Liabilities A/c</p></span></div><div class="option"><span class="key">c</span><span><p>Expenses A/c</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: \u003cstrong>(A) Realisation A/c\u003c/strong>\u003c/p> \u003cp> \u003c/p> \u003cp>Why Correct?\u003c/p> \u003cp>Amount realised from the sale of assets is \u003cstrong>credited to the Realisation Account\u003c/strong> because Realisation A/c is prepared to record all items related to \u003cstrong>sale of assets and settlement of liabilities\u003c/strong> during dissolution.\u003cbr/>Sale proceeds increase Realisation A/c and help in calculating profit or loss on realisation.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>\u003cstrong>(B) Liabilities A/c — Wrong\u003c/strong>\u003cbr/>Liabilities Account is used to record settlement of liabilities, not sale of assets.\u003c/p> \u003cp>\u003cstrong>(C) Expenses A/c — Wrong\u003c/strong>\u003cbr/>Expenses Account records dissolution expenses, not sale proceeds of assets.\u003c/p> \u003cp>\u003cstrong>(D) None of these — Wrong\u003c/strong>\u003cbr/>Since the correct account is Realisation A/c, this option is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On dissolution of the firm, partners Capital Accounts are closed <br/>through :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Realisation Account </p></span></div><div class="option"><span class="key">b</span><span><p> Bank Account </p></span></div><div class="option"><span class="key">c</span><span><p>Drawing Account </p></span></div><div class="option"><span class="key">d</span><span><p> Loan Account </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Bank Account\u003c/p> \u003cp> Why Correct?\u003c/p> \u003cp>After transferring all assets, liabilities, and realisation profit or loss, the final balances of partners’ Capital Accounts are settled by paying or receiving cash through the Bank Account.\u003cbr/>Therefore, Capital Accounts are closed through Bank A/c.\u003c/p> \u003cp> Why Others Are Incorrect?\u003c/p> \u003cp>(A) Realisation Account — Wrong\u003cbr/>Realisation A/c is used to transfer assets, liabilities, and to determine profit or loss on dissolution, not to close Capital Accounts.\u003c/p> \u003cp>(C) Drawing Account — Wrong\u003cbr/>Drawings Account is closed to Capital Account, not used to close Capital Accounts at dissolution.\u003c/p> \u003cp>(D) Loan Account — Wrong\u003cbr/>Loan Account is used for settlement of loans, not for closing Capital Accounts.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Unrecorded Debtors, which are realised at the time of dissolution of a Partnership Firm, will be shown in:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Partners' Capital Account</p></span></div><div class="option"><span class="key">b</span><span><p>Credit of Realisation Account</p></span></div><div class="option"><span class="key">c</span><span><p>Credit of Bank Account</p></span></div><div class="option"><span class="key">d</span><span><p>Debit of Realisation Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>When unrecorded debtors are realised at the time of dissolution of a partnership firm, the cash received is debited to the Bank Account and credited to the Realisation Account because the purpose of the Realisation Account is to record all gains and losses on the realisation of assets and settlement of liabilities. \u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order to be followed in preparation of the realisation account is</p> <p>(A) Realisation of the assets</p> <p>(B) Transfer assets and liabilities to realisation account</p> <p>(C) Ascertainment of profit or loss on realisation </p> <p>(D) Payment of liabilities</p> <p>Choose the correct answer from the options given below: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B), (C), (D) </p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B), (D), (C)</p></span></div><div class="option"><span class="key">c</span><span><p>(B), (A), (D), (C)</p></span></div><div class="option"><span class="key">d</span><span><p>(C), (B), (D), (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

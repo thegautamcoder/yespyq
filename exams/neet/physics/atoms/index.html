@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Atoms","item":"https://yespyq.com/exams/neet/physics/atoms/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Atoms</h1>
       <p>16 NEET Physics previous year questions on <b>Atoms</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The significant result deduced from the Rutherford's scattering experiment is that</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>whole of the positive charge is concentrated at the centre of atom</span></div><div class="option"><span class="key">b</span><span>there are neutrons inside the nucleus</span></div><div class="option"><span class="key">c</span><span>- particles are helium nuclei</span></div><div class="option"><span class="key">d</span><span>electrons are embedded in the atom</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle of mass m is moving around the origin with a constant force F pulling it towards the origin. If Bohr model is used to describe its motion, the radius of the \({\mathrm{n}}^{\text{th }}\) orbit and the particle's speed v in the orbit depend on n as</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{2/3};\mathrm{v}\propto {\mathrm{n}}^{1/3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{4/3};\mathrm{v}\propto {\mathrm{n}}^{-1/3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{1/3};\mathrm{v}\propto {\mathrm{n}}^{1/3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{1/3};\mathrm{v}\propto {\mathrm{n}}^{2/3}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the first excited state of hydrogen atom, the energy of its electron is –3.4 eV. The radial distance of the electron from the hydrogen nucleus in this case is approximately :</p> <p>(Take 1 eV = 1.6 × 10<sup>–19</sup> J, e = 1.6 × 10<sup>–19</sup> C and \(\frac{1}{4\pi {\epsilon }_{0}}\) = 9 × 10<sup>9</sup> N m<sup>2</sup>/C<sup>2</sup>)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2.1\times {10}^{−8}\mathrm{m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.1\times {10}^{−11}\mathrm{m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.1\times {10}^{−9}\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2.1\times {10}^{−10}\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{E}=\\frac{{\\mathrm{kq}}_{1}{\\mathrm{q}}_{2}}{2\\mathrm{r}}\\\\ 3.4=\\frac{9\\times {10}^{9}\\times {\\left(1.6\\times {10}^{-19}\\right)}^{2}}{2\\times \\mathrm{r}}\\\\ \\mathrm{r}=2.1\\times {10}^{-10}\\mathrm{m}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List I </p> <table> <tbody> <tr> <td>List I (Electromagnetic wave)</td> <td>List II (Production)</td> </tr> <tr> <td>A. Microwave</td> <td>I. Electrons in atoms emit light when they move from a higher energy level to a lower energy level</td> </tr> <tr> <td>B. Visible light</td> <td>II. Radioactive decay of nucleus</td> </tr> <tr> <td>C. Gamma rays </td> <td>III. Vibration of atoms and molecules</td> </tr> <tr> <td>D. Infra-red rays</td> <td>IV. Klystron valve or magnetron valve</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-I, C-II, D-IV</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-IV, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-I, C-II, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>A. Microwaves\u003cbr/>IV. Klystron valve or magnetron valve\u003cbr/>B. Visible light\u003cbr/>C. Gamma rays\u003cbr/>I. Electrons in atoms emit light when they move from a higher energy level to a lower energy level\u003cbr/>II. Radioactive decay of nucleus\u003cbr/>D. Infra-red rays\u003cbr/>III. Vibration of atoms and molecules\u003c/p> \u003cp>\\(\\mathrm{A} \\rightarrow \\mathrm{IV} ; \\mathrm{B} \\rightarrow \\mathrm{I} ; \\mathrm{C} \\rightarrow \\mathrm{II} ; \\mathrm{D} \\rightarrow \\mathrm{III}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The atomic hydrogen emits a line spectrum consisting of various series. Which series of hydrogen atomic spectra is lying in the visible region? </p> <p> </p> <p>[JEE Main 2021, 17 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\text { Paschen series }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\text { Balmer series }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\text { Lyman series }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Brackett series }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\text { Balmer series lies in the visible region. }\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The wavelength of the photon emitted by a hydrogen atom when an electron makes a transition from \(n=2\) to \(n=1\) state is:</p> <p>[JEE Main 2021, 25 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>121.8 nm<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>194.8 nm<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>490.7 nm<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>913.3 nm<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,10 +144,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{1}{\\lambda}=R\\left[\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right] \\\\\u003cbr/>&amp; \\therefore \\frac{1}{\\lambda}=109677.6 cm ^{-1} \\times\\left[\\frac{1}{1}-\\frac{1}{2^2}\\right] \\\\\u003cbr/>&amp; \\Rightarrow \\lambda=\\frac{1}{82258.2} cm =121.8 nm\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\frac{1}{\\lambda}=R\\left[\\frac{1}{n_1^2}-\\frac{1}{n_2^2}\\right] \\\\& \\therefore \\frac{1}{\\lambda}=109677.6 cm ^{-1} \\times\\left[\\frac{1}{1}-\\frac{1}{2^2}\\right] \\\\& \\Rightarrow \\lambda=\\frac{1}{82258.2} cm =121.8 nm\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius of electron's second stationary orbit in Bohr's atom is \(R\). The radius of 3rd orbit will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>R / 3<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>2.25 R<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3 R<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>9 R<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,10 +156,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We know that, Radius of \\(n^{\\text {th }}\\) orbit, \\(\\mathrm{R}=0.529\\frac{{\\mathrm{n}}^{2}}{\\mathrm{Z}}\\overset{\\mathrm{o}}{\\mathrm{A}}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{R_3}{R_2}=\\frac{9}{4} \\\\\u003cbr/>&amp; R_3=\\frac{9}{4} R_2 \\\\\u003cbr/>&amp; \\therefore R_3=2.25 R\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We know that, Radius of \\(n^{\\text {th }}\\) orbit, \\(\\mathrm{R}=0.529\\frac{{\\mathrm{n}}^{2}}{\\mathrm{Z}}\\overset{\\mathrm{o}}{\\mathrm{A}}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{R_3}{R_2}=\\frac{9}{4} \\\\& R_3=\\frac{9}{4} R_2 \\\\& \\therefore R_3=2.25 R\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius of inner most orbit of hydrogen atom is \(5.3 \times 10^{-11} \mathrm{~m}\). What is the radius of third allowed orbit of hydrogen atom?</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.06Å</p></span></div><div class="option"><span class="key">b</span><span><p>1.59Å</p></span></div><div class="option"><span class="key">c</span><span><p>4.77Å</p></span></div><div class="option"><span class="key">d</span><span><p>0.53Å</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Radius of \\(n^{\\text {th }}\\) orbit in Hydrogen Atom\u003c/p> \u003cp>\\({r}_{n}=0.53\\times \\frac{{n}^{2}}{Z}\\mathrm{Å}\\)\u003c/p> \u003cp>So, radius of third orbit\u003c/p> \u003cp>\\(\\begin{matrix}{r}_{3}=0.53\\times \\frac{(3{)}^{2}}{(1)}\\mathrm{Å} \\\\ =4.77\\mathrm{Å}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Speed of an electron in Bohr's \(7^{\text {th }}\) orbit for Hydrogen atom is \(3.6 \times 10^6 m / s\). The corresponding speed of the electron in \(3^{\text {rd }}\) orbit, in \(m / s\) is:</p> <p>[JEE Main 2023, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\left(1.8 \times 10^6\right)<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\left(7.5 \times 10^6\right)<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\left(3.6 \times 10^6\right)<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\left(8.4 \times 10^6\right)<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,10 +180,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V_n \\propto \\frac{Z}{n} \\\\\u003cbr/>&amp; Z=1, \\therefore V_n \\propto \\frac{1}{n} \\\\\u003cbr/>&amp; \\therefore \\frac{V_3}{V_7}=\\frac{7}{3} \\\\\u003cbr/>&amp; \\therefore V_3=\\frac{7}{3} V_7 \\\\\u003cbr/>&amp; =\\frac{7}{3} \\times 3.6 \\times 10^6 m / s \\\\\u003cbr/>&amp; =8.4 \\times 10^6 m / s\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& V_n \\propto \\frac{Z}{n} \\\\& Z=1, \\therefore V_n \\propto \\frac{1}{n} \\\\& \\therefore \\frac{V_3}{V_7}=\\frac{7}{3} \\\\& \\therefore V_3=\\frac{7}{3} V_7 \\\\& =\\frac{7}{3} \\times 3.6 \\times 10^6 m / s \\\\& =8.4 \\times 10^6 m / s\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy required to break one bond in DNA is \( 10^{-20} \mathrm{~J} \). This value in \( \mathrm{eV} \) is nearly.</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 0.6 \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( 0.06 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 0.006 \)</p></span></div><div class="option"><span class="key">d</span><span><p> 6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{array}{l}1 eV =1.6 \\times 10^{-19} J \\\\ 1 J=\\frac{1}{1.6 \\times 10^{-19}} eV \\\\ 10^{-20} J=\\frac{10^{-20}}{1.6 \\times 10^{-19}} eV \\\\ =0.06 eV \\end{array}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I :</strong> Atoms are electrically neutral as they contain equal number of positive and negative charges.</p> <p><strong>Statement II :</strong> Atoms of each element are stable and emit their characteristic spectrum.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>Atoms have equal numbers of protons (+) and electrons (–) making them electrically neutral.\u003c/li> \u003cli>Incorrect (strictly). Atoms are stable only in their ground state (and some isotopes are radioactive). \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 297, 298, 299)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron of a hydrogen like atom, having \(Z=4\), jumps from \(4^{\text {th }}\) energy state to \(2^{\text {nd }}\) energy state, The energy released in this process, will be:<br/>(Given \(R c h=13.6 eV\) ) Where \(R=\) Rydberg constant, \(c=\) Speed of light in vacuum, \(h=\) Planck's constant.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>13.6 eV<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>10.5 eV<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3.4 eV<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>40.8 eV<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,10 +216,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\because E_n=-\\frac{13.6 Z^2}{n^2} eV \\\\\u003cbr/>&amp; \\Rightarrow \\Delta E=13.6 Z^2\\left[\\frac{1}{2^2}-\\frac{1}{4^2}\\right] eV \\\\\u003cbr/>&amp; =13.6 \\times(4)^2\\left(\\frac{1}{4}-\\frac{1}{16}\\right) eV \\\\\u003cbr/>&amp; \\Rightarrow \\Delta E=40.8 eV\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\because E_n=-\\frac{13.6 Z^2}{n^2} eV \\\\& \\Rightarrow \\Delta E=13.6 Z^2\\left[\\frac{1}{2^2}-\\frac{1}{4^2}\\right] eV \\\\& =13.6 \\times(4)^2\\left(\\frac{1}{4}-\\frac{1}{16}\\right) eV \\\\& \\Rightarrow \\Delta E=40.8 eV\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For which one of the following, Bohr model is not valid?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Hydrogen atom</p></span></div><div class="option"><span class="key">b</span><span><p>Singly ionised helium atom (\(H{e}^{+}\))</p></span></div><div class="option"><span class="key">c</span><span><p>Deuteron atom</p></span></div><div class="option"><span class="key">d</span><span><p>Singly ionised neon atom (\(N{e}^{+}\))</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The Bohr model is strictly applicable only to single-electron species (also known as hydrogenic or hydrogen-like atoms). Its formulation considers only the electrostatic force between a single electron and a positively charged nucleus, failing to account for the complex electron-electron repulsions present in multi-electron systems.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The total energy of an electron in the \( \mathrm{n}^{\text {th }} \) stationary orbit of the hydrogen atom can be obtained by. </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{E}_{\mathrm{n}}=-\frac{13.6}{\mathrm{n}^{2}} \mathrm{eV} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{E}_{\mathrm{n}}=-\frac{1.36}{\mathrm{n}^{2}} \mathrm{eV} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{E}_{\mathrm{n}}=-13.6 \times \mathrm{n}^{2} \mathrm{eV} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{E}_{\mathrm{n}}=\frac{13.6}{\mathrm{n}^{2}} \mathrm{eV} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The total energy of an electron in the \\(n^{\\text {th }}\\) stationary orbit of the hydrogen atom can be obtained by the formula \\(E _{ n }=-\\frac{ 1 3 . 6 }{ n ^{ 2 }} ~ e V\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The minimum wavelength of X-rays produced by an electron accelerated through a potential difference of \(V\) volts is proportional to :</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{\sqrt{V}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({V}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{V}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>By the law of photo-electric effect\u003c/p> \u003cp>\\(\\frac{h c}{\\lambda}=e V \\text { or } \\lambda=\\frac{h c}{e V} \\propto \\frac{1}{V}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II.</p> <table> <tbody> <tr> <td> </td> <td><strong>List-I</strong></td> <td> </td> <td><strong>List-II</strong></td> </tr> <tr> <td> </td> <td>(Spectral Lines of Hydrogen for transitions from)</td> <td> </td> <td>(Wavelengths(nm))</td> </tr> <tr> <td> <p><strong>1.</strong></p> </td> <td>\({n}_{2}=3\mathrm{to}{n}_{1}=2\)</td> <td> <p><strong>P.</strong></p> </td> <td> <p>410.2</p> </td> </tr> <tr> <td> <p><strong>2.</strong></p> </td> <td>\({n}_{2}=4\mathrm{to}{n}_{1}=2\)</td> <td> <p><strong>Q.</strong></p> </td> <td> <p>434.1</p> </td> </tr> <tr> <td> <p><strong>3.</strong></p> </td> <td>\({n}_{2}=5\mathrm{to}{n}_{1}=2\)</td> <td> <p><strong>R.</strong></p> </td> <td> <p>656.3</p> </td> </tr> <tr> <td> <p><strong>4.</strong></p> </td> <td>\({n}_{2}=6\mathrm{to}{n}_{1}=2\)</td> <td> <p><strong>S.</strong></p> </td> <td> <p>486.1</p> </td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1-Q, 2-P, 3-S, 4-R</p></span></div><div class="option"><span class="key">b</span><span><p>1-R, 2-S, 3-Q, 4-P</p></span></div><div class="option"><span class="key">c</span><span><p>1-S, 2-R, 3-P, 4-Q</p></span></div><div class="option"><span class="key">d</span><span><p>1-P, 2-Q, 3-R, 4-S</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

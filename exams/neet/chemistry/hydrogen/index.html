@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Hydrogen","item":"https://yespyq.com/exams/neet/chemistry/hydrogen/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Hydrogen</h1>
       <p>10 NEET Chemistry previous year questions on <b>Hydrogen</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>(A) \(\mathrm{HOCl}+\mathrm{H}_{2} \mathrm{O}_{2} \longrightarrow \mathrm{H}_{3} \mathrm{O}++\mathrm{Cl}^{-}+\mathrm{O}_{2}\)</p> <p>(B) \(\mathrm{I}_{2}+\mathrm{H}_{2} \mathrm{O}_{2}+2 \mathrm{OH}^{-} \longrightarrow 2 \mathrm{I}^{-}+2 \mathrm{H}_{2} \mathrm{O}+\mathrm{O}_{2}\)</p> <p>Choose the correct option</p> <p>[JEE Main 2021, 24 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{H}_{2} \mathrm{O}_{2}\) acts as oxidizing agent in equations (A) and (B)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{H}_{2} \mathrm{O}_{2}\) act as oxidizing and reducing agent respectively in equations \((\mathrm{A})\) and \((\mathrm{B})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{H}_{2} \mathrm{O}_{2}\) acts as reducing and oxidizing agent respectively in equations (A) and (B)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\mathrm{H}_{2} \mathrm{O}_{2}\) acts as reducing agent in equations (A) and (B)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct statement about \(\mathrm{H}_{2} \mathrm{O}_{2}\) are:</p> <p>(A) Used in the treatment of effluents.</p> <p>(B) Used as both oxidizing and reducing agents</p> <p>(C) The two hydroxyl groups lie in the same plane.</p> <p>(D) Miscible with water.</p> <p>Choose the correct answer from the options given below:</p> <p>[JEE Main 2021, 16 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (C) and (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (C) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) and (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (B), (C) and (D)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) In \\(\\mathrm{H}_{2} \\mathrm{O}_{2}\\), it looks like open book structure and contains two \\(-\\mathrm{OH}\\) groups in different plane as shown below:\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement-I: Permutite process is more efficient compared to the synthetic resin method for the softening of water.</p> <p>Statement-II: Synthetic resin method results in the formation of soluble sodium salts.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both the Statement-I and Statement-II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is correct but Statement-II is incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is incorrect but Statement-II is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both the Statement-I and Statement-II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Today, synthetic ion exchangers are used to soften hard water. This approach is more effective than the zeolite or Permutite processes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>There are two statements one is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p>Assertion (A): The dihedral angles in \(\mathrm{H}_{2} \mathrm{O}_{2}\) in gaseous phase is \(90.2^{\circ}\) and in solid phase is \(111.5^{\circ}\).</p> <p>Reason (R): The change in dihedral angle in solid and gaseous phase is due to the difference in the intermolecular forces.</p> <p>Choose the most appropriate answer from the options given below</p> <p>[JEE Main 2021, 20 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is correct but (R) is not correct.</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A).</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of \((\mathrm{A})\)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is not correct but (R) is correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) In gas phase, dihedral angle is \\(111.5^{\\circ}\\) while in solid base, it is \\(90.2^{\\circ}\\).\u003c/p> \u003cp>Change in angle is due to the change of intermolecular interaction in different phases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount of \({\mathrm{H}}_{2}{\mathrm{O}}_{2}\) present in 1 liter of 1.5 N \({\mathrm{H}}_{2}{\mathrm{O}}_{2}\) solution is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>25.5 g</p></span></div><div class="option"><span class="key">b</span><span><p>3.0g</p></span></div><div class="option"><span class="key">c</span><span><p>8.0 g</p></span></div><div class="option"><span class="key">d</span><span><p>2.5 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(\\mathrm{Molecular}\\mathrm{weight}\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}=34\\\\ \\mathrm{eq}\\mathrm{wt}\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}=17\\\\ 1\\mathrm{L}\\mathrm{of}1\\mathrm{N}\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}=17\\mathrm{g}\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}\\\\ 1\\mathrm{L}\\mathrm{of}1.5\\mathrm{N}\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}\\mathrm{has}=1.5\\times 17\\mathrm{g}\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}=25.5\\mathrm{of}{\\mathrm{H}}_{2}{\\mathrm{O}}_{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are<strong> NOT</strong> correct?</p> <p>A. Hydrogen is used to reduce heavy metal oxides to metals.</p> <p>B. Heavy water is used to study reaction mechanism.</p> <p>C. Hydrogen is used to make saturated fats from oils</p> <p>D. The \(\mathrm{H}-\mathrm{H}\) bond dissociation enthalpy is lowest as compared to a single bond between two atoms of any element.</p> <p>E. Hydrogen reduces oxides of metals that are more active than iron.</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B,D only</p></span></div><div class="option"><span class="key">b</span><span><p>D,E only</p></span></div><div class="option"><span class="key">c</span><span><p>A,B,C only</p></span></div><div class="option"><span class="key">d</span><span><p>B,C,D,E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(D) H-H bond strength/bond dissociation energy/bond energy of H can not be lowest because bond formed between hydrogen atoms is due to overlapping of 1s-1s orbital.\u003c/p> \u003cp>(E) Hydrogen can not reduces oxides of highly reactive metal.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are<strong> NOT</strong> correct?</p> <p>A. Hydrogen is used to reduce heavy metal oxides to metals.</p> <p>B. Heavy water is used to study reaction mechanism.</p> <p>C. Hydrogen is used to make saturated fats from oils</p> <p>D. The H–H bond dissociation enthalpy is lowest as compared to a single bond between two atoms of any element.</p> <p>E. Hydrogen reduces oxides of metals that are more active than iron.</p> <p>Choose the most appropriate answer from the options given below:</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, D only</p></span></div><div class="option"><span class="key">b</span><span><p>D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(D) H-H bond strength/bond dissociation energy/bond energy of H can not be lowest because bond formed between hydrogen atoms is due to overlapping of 1s-1s orbital.\u003c/p> \u003cp>(E) Hydrogen can not reduces oxides of highly reactive metal.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following can reduce decomposition of \(\mathrm{H}_{2} \mathrm{O}_{2}\) on exposure to light</p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Alkali</p></span></div><div class="option"><span class="key">b</span><span><p>Urea</p></span></div><div class="option"><span class="key">c</span><span><p>Dust</p></span></div><div class="option"><span class="key">d</span><span><p>Glass containers</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) \\(\\mathrm{H}_{2} \\mathrm{O}_{2}\\) decomposes slowly on exposure to light. \\(2 \\mathrm{H}_{2} \\mathrm{O}_{2}(l) \\rightarrow 2 \\mathrm{H}_{2} \\mathrm{O}(l)+\\mathrm{O}_{2}(\\mathrm{~g})\\). In the presence of metal surface, or traces of alkali, reaction is catalysd, Therefore, it is stored in glass / plastic vessel in dark. Here, urea can be added as a stabilizer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In basic medium, \(\mathrm{H}_{2} \mathrm{O}_{2}\) exhibits which of the following reactions?</p> <p>(A) \(\mathrm{Mn}^{2+} \longrightarrow \mathrm{Mn}^{4+}\)<br/>(C) \(\mathrm{PbS} \longrightarrow \mathrm{PbSO}_{4}\)<br/>(B) \(\mathrm{I}_{2} \longrightarrow \mathrm{I}^{-}\)</p> <p>Choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 18 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (C) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) \\(\\mathrm{H}_{2} \\mathrm{O}_{2}\\) can behave as both reducing oxidising agent in basic medium, so it can reduce \\(\\mathrm{I}_{2}\\) to \\(\\mathrm{I}^{-}\\)and can oxidize \\(\\mathrm{Mn}^{2+}\\) to \\(\\mathrm{Mn}^{4+}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The water gas on reacting with cobalt as a catalyst forms</p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ethanol</p></span></div><div class="option"><span class="key">b</span><span><p>Methanoic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Methanal</p></span></div><div class="option"><span class="key">d</span><span><p>Methanol</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

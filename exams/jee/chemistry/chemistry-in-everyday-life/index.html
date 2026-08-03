@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/jee/chemistry/"},{"@type":"ListItem","position":5,"name":"Chemistry in Everyday Life","item":"https://yespyq.com/exams/jee/chemistry/chemistry-in-everyday-life/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Chemistry in Everyday Life</h1>
       <p>24 JEE Chemistry previous year questions on <b>Chemistry in Everyday Life</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which one of the following statements is not true?.</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Ampicillin is a natural antibiotic.</span></div><div class="option"><span class="key">b</span><span>Aspirin is both analgesic and antipyretic.</span></div><div class="option"><span class="key">c</span><span>Sulphadiazine is a synthetic antibacterial drug.</span></div><div class="option"><span class="key">d</span><span>Some disinfectants can be used as antiseptics</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement-I: Noradrenaline is a neurotransmitter. Statement-II: Low level of noradrenaline is not the cause of depression in human. In the light of the above statements, choose the correct answer from the options given below [JEE Main 2023, 24 Jan (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Statement-I is correct but Statement-II is incorrect</span></div><div class="option"><span class="key">b</span><span>Statement-I is incorrect but Statement-II is correct</span></div><div class="option"><span class="key">c</span><span>Both Statement-I and Statement-II are correct</span></div><div class="option"><span class="key">d</span><span>Both Statement-I and Statement-II are incorrect</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statements about Enzyme Inhibitor Drugs are given below:<br/>(A) There are Competitive and Non-competitive inhibitor drugs.<br/>(B) These can bind at the active sites and allosteric sites.<br/>(C) Competitive Drugs are allosteric site blocking drugs.<br/>(D) Non- competitive Drugs are active site blocking drugs.</p> <p>Choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2022, 28 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (B), (C) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Enzyme inhibitors are said to be competitive inhibitors if they inhibit the attachment of substrate on active site of enzyme. If enzyme inhibitors change the active site of enzyme after binding at allosteric site, then they are non-competitive in nature.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arsenic containing medicine used for the treatment of syphilis, is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>erythromycin</p></span></div><div class="option"><span class="key">b</span><span><p>ofloxacin</p></span></div><div class="option"><span class="key">c</span><span><p>tetracycline</p></span></div><div class="option"><span class="key">d</span><span><p>salvarsan</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Salvarsan or arsphenamine is a medicine containing arsenic and is used for the treatment of syphilis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cetyltrimethyl ammonium bromide is a popular</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>anionic detergent</p></span></div><div class="option"><span class="key">b</span><span><p>cationic detergent</p></span></div><div class="option"><span class="key">c</span><span><p>non-ionic detergent</p></span></div><div class="option"><span class="key">d</span><span><p>sweetener</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Cetyltrimethylammonium bromide is a quaternary ammonium surfactant. It is a popular \u003cstrong>cationic detergent\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>With respect to drug-enzyme interaction, identify the wrong statement. [JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Competitive inhibitor binds to the enzyme's active site</p></span></div><div class="option"><span class="key">b</span><span><p>Allosteric inhibitor changes to the enzyme's active site</p></span></div><div class="option"><span class="key">c</span><span><p>Non-competitive inhibitor binds to the allosteric site</p></span></div><div class="option"><span class="key">d</span><span><p>Allosteric inhibitor competes with the enzyme's active site</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Competitive inhibitors are the inhibitors which bind to the active sites of enzymes. Non-competitive inhibitors are the inhibitors which bind to allosteric site, hence changes the shape of active site.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement-I : Morphine is a narcotic analgesis. It helps in relieving pain without producing sleep.<br/>Statement-II : Morphine and its derivatives are obtained from opium poppy.<br/>In the light of the above statements, choose the correct answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Statement-I: Morphine relieves in pain and produce sleep (incorrect)\u003cbr/>Statement-II: Morphine and its derivatives obtained from the resin of opium poppy, papaver somiferum.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I and with List-II.</p> <p><strong>List-I List-II</strong></p> <p><strong>(Class of Chemicals) (Example)</strong></p> <p>(A) Antifertility drug (i) Meprobamate</p> <p>(B) Antibiotic (ii) Alitame</p> <p>(C) Tranquilizer (iii) Norethindrone</p> <p>(D) Artificial Sweetener (iv) Salvarsan</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A→iii; B→iv; C→i; D→ii</p></span></div><div class="option"><span class="key">b</span><span><p>A→iv; B→iii; C→ii; D→i</p></span></div><div class="option"><span class="key">c</span><span><p>A→ii; B→iv; C→i; D→iii</p></span></div><div class="option"><span class="key">d</span><span><p>A→ii; B→iv; C→i; D→iii</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Antifertility drug → Norethindrone\u003c/p> \u003cp>Antibiotic → Salvarsan\u003c/p> \u003cp>Tranquilizer → Meprobamate\u003c/p> \u003cp>Artificial Sweetener → Alitame\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following chemicals can be added for sweetening of food<br/>items at cooking temperature and does not provides calories?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sucrose</p></span></div><div class="option"><span class="key">b</span><span><p>Glucose</p></span></div><div class="option"><span class="key">c</span><span><p>Aspartame</p></span></div><div class="option"><span class="key">d</span><span><p>Sucralose</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Sucralose is trichloro derivative of sucrose. It is stable at cooking temperture. It does not provide calories.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement-I : Morphine is a narcotic analgesis. It helps in relieving pain without producing sleep.<br/>Statement-II : Morphine and its derivatives are obtained from opium poppy.<br/>In the light of the above statements, choose the correct answer from the options given below. </p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Statement-I: Morphine relieves in pain and produce sleep (incorrect)\u003cbr/>Statement-II: Morphine and its derivatives obtained from the resin of opium poppy, papaver somiferum.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The drug used as an antidepressant is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Luminol</p></span></div><div class="option"><span class="key">b</span><span><p>Tofranil</p></span></div><div class="option"><span class="key">c</span><span><p>Mescaline</p></span></div><div class="option"><span class="key">d</span><span><p>Sulphadiazine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Tofranil is used for the treatment of antidepressant.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following artificial sweeteners has the highest sweetness value in comparison to cane sugar? </p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Aspartame</p></span></div><div class="option"><span class="key">b</span><span><p>Sucralose</p></span></div><div class="option"><span class="key">c</span><span><p>Alitame</p></span></div><div class="option"><span class="key">d</span><span><p>Saccharin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Order of sweetness in relation to cane sugar is:\u003cbr/>Alitame \\(&gt;\\) Sucralose \\(&gt;\\) Saccharin \\(&gt;\\) Aspartame\u003cbr/>Hence, Alitame has the highest sweetness.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following compounds are not used as disinfectants?<br/>(A) Chloroxylenol<br/>(B) Bithionol<br/>(C) Veronal<br/>(D) Prontosil<br/>(E) Terpineol</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A , B , E\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(A , B \)</p></span></div><div class="option"><span class="key">c</span><span><p>\(B , D , E\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C , D \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Veronal is neurological medicine belongs to important class of tranquilizers, known as barbiturates. Prontosil belong to the class of antibiotic, so, these two are not used as disinfectants.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A chemist has 4 samples of artificial sweetener A,B, C and D. To identify these samples, he performed certain experiments and noted the following observations :</p> <p>(i) \( \mathrm{A} \) and \( \mathrm{D} \) both form blue-violet colour with ninhydrin.</p> <p>(ii) Lassaigne extract of \( \mathrm{C} \) gives positive \( \mathrm{AgNO}_{3} \) test and negative \( \mathrm{Fe}_{4}\left[\mathrm{Fe}(\mathrm{CN})_{6}\right]_{3} \) test.</p> <p>(iii) Lassaigne extract of \( \mathrm{B} \) and \( \mathrm{D} \) gives positive sodium nitroprusside test.<br/><br/>Based on these observations which option is correct ?</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A : Alitame ; B : Saccharin ; C : Aspartame; D : Sucralose</p></span></div><div class="option"><span class="key">b</span><span><p>A : Aspartame; B : Alitame ; C : Saccharin ; D : Sucralose</p></span></div><div class="option"><span class="key">c</span><span><p>A : Aspartame; B : Saccharin ; C : Sucralose ; D : Alitame</p></span></div><div class="option"><span class="key">d</span><span><p>A : Saccharin ; B : Alitame ; C: Sucralose ; D : Aspartame</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(i) Blue voilet color with Ninhydrine → amino acid derivative. So it cannot be saccharide or sucralose.\u003cbr/>(ii) Lassaigne extract give +ve test with AgNO\u003csub>3​\u003c/sub>. So Cl is present, -ve test with Fe\u003csub>4\u003c/sub>​[Fe(CN)\u003csub>6\u003c/sub>​]\u003csub>3\u003c/sub>​ means N is absent. So it can't be Aspartame or Saccharine or Alitame, so C is sucralose.\u003cbr/>(iii) Lassaigne solution of B and D given +ve sodium nitroprusside test, so it is having S, so it is Saccharine and Alitame.\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>With respect to drug-enzyme interaction, identify the wrong statement. </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Competitive inhibitor binds to the enzyme's active site</p></span></div><div class="option"><span class="key">b</span><span><p>Allosteric inhibitor changes to the enzyme's active site</p></span></div><div class="option"><span class="key">c</span><span><p>Non-competitive inhibitor binds to the allosteric site</p></span></div><div class="option"><span class="key">d</span><span><p>Allosteric inhibitor competes with the enzyme's active site</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Competitive inhibitors are the inhibitors which bind to the active sites of enzymes. Non-competitive inhibitors are the inhibitors which bind to allosteric site, hence changes the shape of active site.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reaction used for preparation of soap from fat is:</p> <p><strong>[JEE Main 2023, 10 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>reduction reaction</p></span></div><div class="option"><span class="key">b</span><span><p>alkaline hydrolysis reaction</p></span></div><div class="option"><span class="key">c</span><span><p>an addition reaction</p></span></div><div class="option"><span class="key">d</span><span><p>an oxidation reaction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,8 +267,8 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) The process of preparation of soap from fats is called saponification which involves hydrolysis of fats with alkali.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
-      <div class="qtext"><p>In the given reaction scheme, P is a phenyl alkyl ether, Q is an aromatic compound; R and S are the major products.</p> <p>\(\mathrm{P}\overset{\mathrm{HI}}{\to }\mathrm{Q}\overset{\begin{matrix}(\mathrm{i})\text{ }\mathrm{NaOH} \\ (\mathrm{ii})\text{ }{\mathrm{CO}}_{2}\end{matrix}}{\underset{(\mathrm{iii})\text{ }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\mathrm{R}\overset{(\mathrm{i}){({\mathrm{CH}}_{3}\mathrm{CO})}_{2}\mathrm{O}}{\underset{(\mathrm{ii})\text{ }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\mathrm{S}\)</p> <p>The correct statement about S is</p></div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>In the given reaction scheme, P is a phenyl alkyl ether, Q is an aromatic compound; R and S are the major products.</p> <p>\(\mathrm{P}\overset{\mathrm{HI}}{\to }\mathrm{Q}\overset{$$\begin{matrix}(\mathrm{i})\text{ }\mathrm{NaOH} \\ (\mathrm{ii})\text{ }{\mathrm{CO}}_{2}\end{matrix}$$}{\underset{(\mathrm{iii})\text{ }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\mathrm{R}\overset{(\mathrm{i}){({\mathrm{CH}}_{3}\mathrm{CO})}_{2}\mathrm{O}}{\underset{(\mathrm{ii})\text{ }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\mathrm{S}\)</p> <p>The correct statement about S is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>It primarily inhibits noradrenaline degrading enzymes.</p></span></div><div class="option"><span class="key">b</span><span><p>It inhibits the synthesis of prostaglandin.</p></span></div><div class="option"><span class="key">c</span><span><p>It is a narcotic drug.</p></span></div><div class="option"><span class="key">d</span><span><p>It is ortho-acetylbenzoic acid.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the following, the number of tranquilizers is/are</p> <p>(A) Chloroliazepoxide</p> <p>(B) Veronal</p> <p>(C) Valium</p> <p>(D) Salvarsan </p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>[3] Chlorodiazepoxide, Veronal, Valium are tranquilizers while salvarsan is an antibiotic.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements, one is labelled as Assertion (A) and the other is labelled as Reason (R)</p> <p>Assertion (A): Butylated hydroxyl anisole when added to butter increases its shelf life.</p> <p>Reason (R): Butylated hydroxyl anisole is more reactive towards oxygen than food.<br/>In the light of the above statements, choose the most appropriate answer from the options given below: </p> <p>[JEE Main 2023, 25 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \(A\) and \(R\) are correct and \(R\) is the correct explanation of \(A\).</p></span></div><div class="option"><span class="key">b</span><span><p>\(A\) is correct but \(R\) is not correct.</p></span></div><div class="option"><span class="key">c</span><span><p>\(A\) is not correct but \(R\) is correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(A\) and \(R\) are correct but \(R\) is NOT the correct explanation of \(A\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Butylated hydroxyl anisole is an antioxidant.\u003cbr/>Antioxidation are used for food preservation BHA reacts with \\(O _2\\) present in air in preference to butter.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement/s which are true about antagonists from the following is/are</p> <p>(A) They bind to the receptor site.<br/>(B) Get transferred inside the cell for their action.<br/>(C) Inhibit the natural communication of the body.<br/>(D) Mimic the natural messenger.</p> <p>Choose the correct answer from the options given below: </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and D</p></span></div><div class="option"><span class="key">c</span><span><p>A and B</p></span></div><div class="option"><span class="key">d</span><span><p>A and C</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>(A) They bind to the receptor site:\u003c/strong> \u003cstrong>True.\u003c/strong> Antagonists are drugs designed to bind tightly to the active binding site of a specific receptor.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(B) Get transferred inside the cell for their action:\u003c/strong> \u003cstrong>False.\u003c/strong> Antagonists do not need to enter the cell. They perform their function completely on the extracellular surface by blocking the surface receptor site.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(C) Inhibit the natural communication of the body:\u003c/strong> \u003cstrong>True.\u003c/strong> By physically blocking the binding site, an antagonist prevents the body's natural chemical messengers (like hormones or neurotransmitters) from binding to that receptor. This completely shuts down or inhibits that specific natural communication pathway.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(D) Mimic the natural messenger:\u003c/strong> \u003cstrong>False.\u003c/strong> Drugs that bind to a receptor and mimic the natural messenger to switch \u003cem>on\u003c/em> a response are called \u003cstrong>agonists\u003c/strong>. Antagonists simply block the site without activating it.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The element playing significant role in neuromuscular function and interneuronal transmission is:</p> <p> </p> <p><strong>[JEE Main 2023, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Be\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Ca\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Li\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Mg\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Among the given options, Calcium plays important role in neuromuscular function and interneuronal transmission. It is required to trigger the contraction of muscles.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: One is labelled as Assertion A and the other labelled as Reason R.<br/>Assertion A: Antihistamines do not affect the secretion of acid in stomach.<br/>Reason R: Antiallergic and antacid drugs work on different receptors.<br/>In the light of the above statements, choose the correct answer from the options given below: </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\text{ is false but }R\text{ is true }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\text{ Both }A\text{ and }R\text{ are true and }R\text{ is the correct explanation of }A\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(A\text{ is true but }R\text{ is false }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\text{ Both }A\text{ and }R\text{ are true but }R\text{ is not the correct explanation of }A\text{. }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both statements are factually correct. The Reason provides the exact molecular explanation for the Assertion.\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mechanism of action of "Terfenadine" (Seldane) is : </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Inhibits the secretion of histamine</p></span></div><div class="option"><span class="key">b</span><span><p>Helps in the secretion of histamine</p></span></div><div class="option"><span class="key">c</span><span><p>Activates the histamine receptor</p></span></div><div class="option"><span class="key">d</span><span><p>Inhibits the action of histamine receptor</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Terfenadine\u003c/strong> (commonly known by its brand name, Seldane) is a well-known \u003cstrong>antihistamine\u003c/strong> drug used to treat allergy symptoms such as sneezing, runny nose, and itchy eyes.\u003c/p> Mechanism of Action- Terfenadine does not actually stop or inhibit the body from \u003cem>secreting\u003c/em> histamine. Instead, it works by competing directly with histamine for the \\(\\text{H}_1\\) receptor sites located on the surfaces of cells (like those in blood vessels and respiratory tracts). \u003cp>By binding tightly to these receptors without activating them, terfenadine acts as an antagonist—effectively blocking or \u003cstrong>inhibiting the action of histamine at the receptor level\u003c/strong>. This prevents histamine from triggering the inflammatory cascade that causes classic allergy symptoms.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A doctor prescribed the drug Equanil to a patient. The patient was likely to have symptoms of which disease? </p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Stomach ulcers</p></span></div><div class="option"><span class="key">b</span><span><p>Hyperacidity</p></span></div><div class="option"><span class="key">c</span><span><p>Anxiety and stress</p></span></div><div class="option"><span class="key">d</span><span><p>Depression and hypertension</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Circular Motion","item":"https://yespyq.com/exams/jee/physics/circular-motion/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Circular Motion</h1>
       <p>10 JEE Physics previous year questions on <b>Circular Motion</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A car moving with a speed of 54 km / h takes a turn of radius 20 m . A simple pendulum is suspended from the ceiling of the car. Determine the angle made by the string of the pendulum with the vertical during the turning. (Take \(g=10m/{s}^{2}\) )</p> <p> </p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\tan }^{-1}(0.5)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\tan }^{-1}(0.75)\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\({\tan }^{-1}(1.125)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\tan }^{-1}(0.25)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A train is moving with a speed of \(12 m / s\) on rails which are \(1.5 m\) apart. To negotiate a curve of radius \(400 m\), the height by which the outer rail should be raised with respect to the inner rail is: (Given, \(g =10 m / s ^2\)):</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5.4 cm</p></span></div><div class="option"><span class="key">b</span><span><p>4.2 cm</p></span></div><div class="option"><span class="key">c</span><span><p>6.0 cm</p></span></div><div class="option"><span class="key">d</span><span><p>4.8 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Banking angle formula: \u003c/p> \u003cp>\\(\\tan \\theta =\\frac{{v}^{2}}{rg}\\)\u003c/p> \u003cp>From geometry (small angles:)\u003c/p> \u003cp>\\(\\tan \\theta \\approx \\sin \\theta =\\frac{h}{l}\\)\u003c/p> \u003cp>Equating the two expressions:\u003c/p> \u003cp>\\(\\frac{h}{l}=\\frac{{v}^{2}}{rg}\\Rightarrow h=\\frac{{v}^{2}l}{rg}\\)\u003c/p> \u003cp>Substituting the values:\u003c/p> \u003cp>\\(h=\\frac{{(12)}^{2}\\times 1.5}{400\\times 10}\\)\u003c/p> \u003cp>\\(h=\\frac{144\\times 1.5}{4000}\\)\u003c/p> \u003cp>\\(h=\\frac{216}{4000}=0.054\\text{ m}\\)\u003c/p> \u003cp>Convert to cm:\u003c/p> \u003cp>\\(h=0.054\\times 100=5.4\\text{ cm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A stone of mass \(900g\) is tied to a string and moved in a vertical circle of radius\(1m\) making\(10rpm\). The tension in the string, when the stone is at the lowest point is (if \({\pi }^{2}=9.8\) and \(g=9.8m/{s}^{2}\)):</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8.82 N</p></span></div><div class="option"><span class="key">b</span><span><p>97 N</p></span></div><div class="option"><span class="key">c</span><span><p>9.8 N</p></span></div><div class="option"><span class="key">d</span><span><p>17.8 N</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\omega =2\\pi f=2\\pi (\\frac{1}{6})=\\frac{\\pi }{3}\\text{ rad/s}\\) \\(T-mg=\\frac{m{v}^{2}}{r}=m{\\omega }^{2}r\\) \\(T=mg+m{\\omega }^{2}r\\) \\(T=m(g+{\\omega }^{2}r)\\) \\(T=0.9[9.8+{(\\frac{\\pi }{3})}^{2}(1)]\\) \\(T=0.9[9.8+\\frac{{\\pi }^{2}}{9}]\\) \\(T=0.9[9.8+\\frac{9.8}{9}]\\) \\(T=0.9\\times 9.8(1+\\frac{1}{9})\\) \\(T=0.9\\times 9.8\\times (\\frac{10}{9})\\) \\(T=1\\times 9.8=9.8\\text{ N}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An object is performing vertical circular motion. If its velocity at the topmost point is given by:</p> <p>\({v}_{\text{top}}=n\sqrt{gl},\ n>1\)</p> <p>Determine the ratio of the kinetic energy at the bottom to that at the top.​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{{n}^{2}+4}{{n}^{2}}\)​</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{n}^{2}}{{n}^{2}+4}\)​</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{n}^{2}+2}{{n}^{2}}\)​</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{n}^{2}}{{n}^{2}+2}\)​</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cstrong>Step 1: Understanding the Motion\u003c/strong> \u003cp>In a \u003cstrong>vertical circular motion\u003c/strong>, energy conservation is used to relate the velocities at the \u003cstrong>topmost\u003c/strong> and \u003cstrong>bottommost\u003c/strong> points.\u003c/p> \u003cul> \u003cli> \u003cp>Given \u003cstrong>velocity at the topmost point\u003c/strong>:\u003c/p> \\({v}_{\\text{top}}=n\\sqrt{gl},\\ n>1\\)\u003c/li> \u003cli> \u003cp>Let \u003cstrong>velocity at the bottommost point\u003c/strong> be \\({v}_{\\text{bottom}}\\)\u003c/p> \u003c/li> \u003cli> \u003cp>Applying \u003cstrong>energy conservation\u003c/strong> between the top and bottom points:\u003c/p> Total Energy at the Top = Total Energy at the Bottom\u003c/li> \u003c/ul> \u003cstrong>Step 2: Applying Energy Conservation\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Total energy at the topmost point:\u003c/strong>\u003c/p> \\({E}_{\\text{top}}=K{E}_{\\text{top}}+P{E}_{\\text{top}}\\) \\(=\\frac{1}{2}m{v}_{\\text{top}}^{2}+mg(2l)\\) \u003cp>Since \\({v}_{\\text{top}}=n\\sqrt{gl}\\)​we substitute:\u003c/p> \\(K{E}_{\\text{top}}=\\frac{1}{2}m({n}^{2}gl)=\\frac{1}{2}m{n}^{2}gl\\)\u003c/li> \u003cli> \\({E}_{\\text{top}}=\\frac{1}{2}m{n}^{2}gl+2mgl\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Total energy at the bottommost point:\u003c/strong>\u003c/p> \\({E}_{\\text{bottom}}=K{E}_{\\text{bottom}}+P{E}_{\\text{bottom}}\\)​ \u003cp>Since \u003cstrong>at the bottommost point\u003c/strong>, \u003cstrong>PE = 0\u003c/strong>, we get:\u003c/p> \\({E}_{\\text{bottom}}=K{E}_{\\text{bottom}}=\\frac{1}{2}m{v}_{\\text{bottom}}^{2}\\)​\u003c/li> \u003cli> \u003cp>\u003cstrong>By energy conservation:\u003c/strong>\u003c/p> \\({E}_{\\text{bottom}}={E}_{\\text{top}}\\)\u003c/li> \u003cli> \\(\\frac{1}{2}m{v}_{\\text{bottom}}^{2}=\\frac{1}{2}m{n}^{2}gl+2mgl\\) \u003cp>Canceling \\(m\\)m and multiplying by 2:\u003c/p> \\({v}_{\\text{bottom}}^{2}={n}^{2}gl+4gl\\)\u003c/li> \u003cli> \\({v}_{\\text{bottom}}^{2}=({n}^{2}+4)gl\\)\u003c/li> \u003cli> \\({v}_{\\text{bottom}}=\\sqrt{({n}^{2}+4)gl}\\)\u003c/li> \u003c/ul> \u003cstrong>Step 3: Finding the Ratio of KE (Bottom/Top)\u003c/strong> \u003cp>\\(\\frac{K{E}_{\\text{bottom}}}{K{E}_{\\text{top}}}=\\frac{\\frac{1}{2}m{v}_{\\text{bottom}}^{2}}{\\frac{1}{2}m{v}_{\\text{top}}^{2}}\\)​​\u003c/p> \u003cp>Canceling \\(\\frac{1}{2}m\\):\u003c/p> \u003cp>\\(\\frac{K{E}_{\\text{bottom}}}{K{E}_{\\text{top}}}=\\frac{({n}^{2}+4)gl}{{n}^{2}gl}\\) \\(=\\frac{{n}^{2}+4}{{n}^{2}}\\)​\u003c/p> \u003cp>Comparing with the options, the correct answer is:\u003c/p> \u003cp>A.\\(\\frac{{n}^{2}+4}{{n}^{2}}\\)​​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A stone of mass \(1\mathrm{kg}\) is tied to end of a massless string of length \(1\mathrm{m}\). If the breaking tension of the string is \(400\mathrm{N}\), then maximum linear velocity, the stone can have without breaking the string, while rotating in horizontal plane, is:</p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(20{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(40{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(400{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(10{\mathrm{ms}}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since, Tension in string = Centrifugal force\u003cbr/>\\(\\Rightarrow \\mathrm{T}=\\frac{m{v}^{2}}{r}\\Rightarrow v=\\sqrt{\\frac{Tr}{m}}\\\\ v=\\sqrt{\\frac{400\\times 1}{1}}=20{\\mathrm{ms}}^{-1}\\\\ [∵T=400\\mathrm{N},r=1\\mathrm{m},m=1\\mathrm{kg}]\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A stone of mass \(1\mathrm{kg}\) is tied to end of a massless string of length \(1\mathrm{m}\). If the breaking tension of the string is \(400\mathrm{N}\), then maximum linear velocity, the stone can have without breaking the string, while rotating in horizontal plane, is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(20{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(40{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(400{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(10{\mathrm{ms}}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since, Tension in string = Centrifugal force\u003cbr/>\\(\\Rightarrow \\mathrm{T}=\\frac{m{v}^{2}}{r}\\Rightarrow v=\\sqrt{\\frac{Tr}{m}}\\\\ v=\\sqrt{\\frac{400\\times 1}{1}}=20{\\mathrm{ms}}^{-1}\\\\ [∵T=400\\mathrm{N},r=1\\mathrm{m},m=1\\mathrm{kg}]\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A car is moving on a horizontal curved road with radius \(50 m\). The approximate maximum speed of car will be, if friction coefficient between tyres and road is 0.34 . [Take \(g=10 ms ^{-2}\) ]</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.4 ms ^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(22.4 ms ^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(13 ms ^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(17 ms ^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,10 +159,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For maximum speed in safe turning,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{m V_{\\max }^2}{r}=\\mu m g \\\\\u003cbr/>&amp; \\Rightarrow V_{\\max }=\\sqrt{\\mu r g} \\\\\u003cbr/>&amp; =\\sqrt{0.34 \\times 50 \\times 10} \\approx 13 m / s\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For maximum speed in safe turning,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{m V_{\\max }^2}{r}=\\mu m g \\\\& \\Rightarrow V_{\\max }=\\sqrt{\\mu r g} \\\\& =\\sqrt{0.34 \\times 50 \\times 10} \\approx 13 m / s\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle moves such that its position vector \(\vec{r}(t)=\cos \omega t \hat{i}+\sin \omega t \hat{j}\) where \(\omega\) is a constant and \(t\) is time. Then which of the following statements is true for the velocity \(\vec{v}(t)\) and acceleration \(\vec{a}(t)\) of the particle:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\vec{v}\) is perpendicular to \(\vec{r}\) and \(\vec{a}\) is directed towards the origin.</p></span></div><div class="option"><span class="key">b</span><span><p>\(\vec{v}\) and \(\vec{a}\) both are parallel to \(\vec{r}\).</p></span></div><div class="option"><span class="key">c</span><span><p>\(\vec{v}\) is perpendicular to \(\vec{r}\) and \(\vec{a}\) is directed away from the origin.</p></span></div><div class="option"><span class="key">d</span><span><p>\(\vec{v}\) and \(\vec{a}\) both are perpendicular to \(\vec{r}\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,10 +171,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\\begin{aligned}\u003cbr/>&amp; \\vec{r}=\\cos \\omega t \\hat{i}+\\sin \\omega t \\hat{j} \\\\\u003cbr/>&amp; \\vec{v}=\\frac{d \\vec{r}}{d t}=\\omega(-\\sin \\omega t \\hat{i}+\\cos \\omega t \\hat{j}) \\\\\u003cbr/>&amp; \\vec{a}=\\frac{d \\vec{v}}{d t}=-\\omega^2(\\cos \\omega t \\hat{i}+\\sin \\omega t \\hat{j}) \\\\\u003cbr/>&amp; \\vec{a}=-\\omega^2 \\vec{r}\u003cbr/>\\end{aligned}\\]\u003cbr/>\\(\\therefore \\vec{a}\\) is antiparallel to \\(\\vec{r}\\)\u003cbr/>\\(\\vec{v} \\cdot \\vec{r}=\\omega(-\\sin \\omega t \\quad \\cos \\omega t+\\cos \\omega t \\sin \\omega t)=0\\)\u003cbr/>so \\(\\vec{v} \\perp \\vec{r}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\\begin{aligned}& \\vec{r}=\\cos \\omega t \\hat{i}+\\sin \\omega t \\hat{j} \\\\& \\vec{v}=\\frac{d \\vec{r}}{d t}=\\omega(-\\sin \\omega t \\hat{i}+\\cos \\omega t \\hat{j}) \\\\& \\vec{a}=\\frac{d \\vec{v}}{d t}=-\\omega^2(\\cos \\omega t \\hat{i}+\\sin \\omega t \\hat{j}) \\\\& \\vec{a}=-\\omega^2 \\vec{r}\\end{aligned}\\]\u003cbr/>\\(\\therefore \\vec{a}\\) is antiparallel to \\(\\vec{r}\\)\u003cbr/>\\(\\vec{v} \\cdot \\vec{r}=\\omega(-\\sin \\omega t \\quad \\cos \\omega t+\\cos \\omega t \\sin \\omega t)=0\\)\u003cbr/>so \\(\\vec{v} \\perp \\vec{r}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A child of mass \(5 kg\) is going round a merry-go-round that makes 1 rotation in \(3.14 s\). The radius of the merry-go-round is \(2 m\). The centrifugal force on the child will be:</p> <p> </p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(80 N\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(50 N\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(100 N\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(40 N\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\omega =\\frac{2\\pi }{T}\\) \\(=\\frac{2\\pi }{3.14}=2rad/s\\)\u003cbr/>F\u003csub>centrifugal\u003c/sub> \\(=M{\\omega }^{2}R=5\\times (2{)}^{2}\\times 2=40N\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement I:</strong> A cyclist is moving on an unbanked road with a speed of \(7 kmh ^{-1}\) and takes a sharp circular turn along a path of radius of \(2 m\) without reducing the speed. The static friction coefficient is 0.2 . The cyclist will not slip and pass the curve. \(\left(g=9.8 m / s ^2\right)\)<br/><strong>Statement II:</strong> If the road is banked at an angle of \(45^{\circ}\), cyclist can cross the curve of \(2 m\) radius with the speed of \(18.5 kmh ^{-1}\) without slipping.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p>[JEE Main 2021, 16 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct and Statement II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect and Statement II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

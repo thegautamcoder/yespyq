@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Gravitation","item":"https://yespyq.com/exams/jee/physics/gravitation/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Gravitation</h1>
       <p>85 JEE Physics previous year questions on <b>Gravitation</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mass of the moon is \(\frac{1}{144}\) times the mass of a planet and its diameter is \(\frac{1}{16}\) times the diameter of a planet. If the escape velocity on the planet is \(v\), the escape velocity on the moon will be :</p> <p><strong>[JEE Main 2024, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{v}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p><em>\(\frac{v}{12}\)</em></p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{v}{4}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{v}{3}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mass of the moon is \(\frac{1}{144}\) times the mass of a planet and its diameter is \(\frac{1}{16}\) times the diameter of a planet. If the escape velocity on the planet is \(v\), the escape velocity on the moon will be :</p> <p><strong>[JEE Main 2024, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{v}{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p><em>\(\frac{v}{12}\)</em></p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{v}{4}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{v}{3}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assuming the earth to be a sphere of uniform mass density, a body weighed \(300 \ N\) on the surface of earth. How much it would weigh at \(\frac{R}{4}\) depth under surface of earth ?</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(225 \ N\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(75 \ N\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(300 \ N\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(375 \ N\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A planet \(\left({P}_{1}\right)\) is moving around the star of mass 2M in the orbit of radius R. Another planet \(\left({P}_{2}\right)\) is moving around another star of mass 4 M in a orbit of radius 2 R . Ratio of time periods of revolution of \({P}_{2}\) and \({P}_{1}\) is_________</p> <p> </p> <p>[JEE Main 2026, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{4}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : The radius vector from the Sun to a planet sweeps out equal areas in equal intervals of time and thus areal velocity of planet is constant.<br/>Reason (R) : For a central force field the angular momentum is a constant.<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is not correct but (R) is correct</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In hydrogen like system the ratio of coulombian force and gravitational force between an electron and a proton is in the order of :</p> <p> </p> <p>[JEE Main 2024, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({10}^{19}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({10}^{36}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({10}^{29}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\({10}^{39}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a star of mass \(m_2 kg\) revolving in a circular orbit around another star of mass \(m_1 kg\) with \(m_1 \gg m_2\). The heavier star slowly acquires mass from the lighter star at a constant rate of \(\gamma kg / s\). In this transfer process, there is no other loss of mass. If the separation between the centers of the stars is \(r\), then its relative rate of change \(\frac{1}{r} \frac{d r}{d t}\) (in \(s ^{-1}\) ) is given by:</p> <p>[JEE Advanced 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-\frac{3\gamma }{2{m}_{2}}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(-\frac{2\gamma }{{m}_{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{2\gamma }{{m}_{1}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-\frac{3\gamma }{2{m}_{1}}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle of mass m is under the influence of the gravitational field of a body of mass M(≫ m). The particle is moving in a circular orbit of radius r<sub>0</sub> with time period T<sub>0</sub> around the mass M. Then, the particle is subjected to an additional central force, corresponding to the potential energy V<sub>c</sub>(r) = mα/r<sup>3</sup>, where α is a positive constant of suitable dimensions and r is the distance from the center of the orbit. If the particle moves in the same circular orbit of radius r<sub>0</sub> in the combined gravitational potential due to M and V<sub>c</sub>(r), but with a new time period T<sub>1</sub>, then\(\left({\mathrm{T}}_{1}^{2}-{\mathrm{T}}_{0}^{2}/{\mathrm{T}}_{1}^{2}\right)\) is given by<br/>[G is the gravitational constant.]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\frac{3\alpha }{{\mathrm{GMr}}_{0}^{2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\alpha }{2{\mathrm{GMr}}_{0}^{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\alpha }{{\mathrm{GMr}}_{0}^{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2\alpha }{{\mathrm{GMr}}_{0}^{2}}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body of mass m is taken from Earth's surface to a height equal to twice the radius of Earth (Rₑ). The increase in potential energy will be:<br/><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}mg{R}_{e}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{4}mg{R}_{e}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}mg{R}_{e}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2}{3}mg{R}_{e}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Initial potential energy at Earth’s surface:\u003cbr/>\\({U}_{1}=-\\frac{GMm}{{R}_{e}}\\)\u003c/p> \u003cp>Final height is \\(2{R}_{e}\\) above the surface, so final distance from Earth’s center is \\(3{R}_{e}\\):\u003cbr/>\\({U}_{2}=-\\frac{GMm}{3{R}_{e}}\\)\u003cbr/>Increase in potential energy:\u003cbr/>\\(\\Delta U={U}_{2}-{U}_{1}\\)\u003cbr/>\\(=-\\frac{GMm}{3{R}_{e}}+\\frac{GMm}{{R}_{e}}=\\frac{2GMm}{3{R}_{e}}\\)\u003cbr/>Using\u003cbr/>\\(g=\\frac{GM}{{R}_{e}^{2}}\\Rightarrow GM=g{R}_{e}^{2}\\)\u003cbr/>\\(\\Delta U=\\frac{2}{3}mg{R}_{e}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The height in terms of radius of the earth \((\mathrm{R})\), at which the acceleration due to gravity becomes \(\frac{g}{9}\) where \(g\) is acceleration due to gravity on earth's surface, is _______ .</p> <p><br/>[JEE Main 2026, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{3}R\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2\sqrt{2}R\)</p></span></div><div class="option"><span class="key">c</span><span><p>2 R</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{4}{9}R\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({g}^{'}=\\frac{g}{{\\left(1+\\frac{h}{R}\\right)}^{2}}\\)\u003c/p> \u003cp>\\(\\frac{g}{9}=\\frac{g}{{\\left(1+\\frac{h}{R}\\right)}^{2}}\\)\u003c/p> \u003cp>\\({\\left(1+\\frac{h}{R}\\right)}^{2}=9\\)\u003c/p> \u003cp>\\(1+\\frac{h}{R}=3\\)\u003c/p> \u003cp>\\(\\frac{h}{R}=2\\)\u003c/p> \u003cp>\\(∴h=2R\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When one moves from a point 16 km below the earth's surface to a point 16 km above the earth's surface, the change in g is approximately α%. The value of α is____. <br/>(Take radius of the earth = 6400 km):</p> <p>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.12</p></span></div><div class="option"><span class="key">b</span><span><p>0.25</p></span></div><div class="option"><span class="key">c</span><span><p>0.50</p></span></div><div class="option"><span class="key">d</span><span><p>0.75</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Acceleration due to gravity at a depth\u003c/p> \u003cp>(d) below the surface is \\({g}_{d}=g\\left(1-\\frac{d}{R}\\right)\\)\u003c/p> \u003cp>At a height (h) above the surface is\u003cbr/>\\({g}_{h}=g\\left(1-\\frac{2h}{R}\\right)\\)\u003c/p> \u003cp>Here d = h = 16 km and R = 6400 km.\u003cbr/>Thus,\u003cbr/>\\({g}_{d}=g\\left(1-\\frac{16}{6400}\\right)=g\\left(1-\\frac{1}{400}\\right)\\)\u003c/p> \u003cp>\\({g}_{d}=g\\left(1-\\frac{16}{6400}\\right)=g\\left(1-\\frac{1}{400}\\right)\\)\u003c/p> \u003cp>\\(\\Delta g={g}_{d}-{g}_{h}=g\\left(\\frac{1}{200}-\\frac{1}{400}\\right)=\\frac{g}{400}\\)\u003c/p> \u003cp>\\(\\frac{\\Delta g}{g}\\times 100=\\frac{1}{400}\\times 100=0.25%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Satellite A is launched into a circular orbit of radius R. Satellite B is launched into a circular orbit of radius 1.03R. By approximately what percentage is the time period of B greater than that of A?</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9%</p></span></div><div class="option"><span class="key">b</span><span><p>4.5%</p></span></div><div class="option"><span class="key">c</span><span><p>3%</p></span></div><div class="option"><span class="key">d</span><span><p>2.5%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>By Kepler's Third Law, \\(T\\propto {R}^{3\\mathrm{/}2}\\).\u003c/p> \u003cul> \u003cli>Time period ratio: \\(\\frac{{T}_{B}}{{T}_{A}}={(\\frac{{R}_{B}}{{R}_{A}})}^{3\\mathrm{/}2}=(1.03{)}^{3\\mathrm{/}2}\\mathrm{.}\\)\u003c/li> \u003cli>Using binomial approximation, \\((1.03{)}^{3\\mathrm{/}2}\\approx 1+\\frac{3}{2}(0.03)=1.045\\)\u003c/li> \u003cli>Percentage increase: \\(\\Delta T\\mathrm{%}=(1.045−1)\\times 100=4.5\\mathrm{%}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the time period of \\(B\\) is approximately \u003cstrong>4.5%\u003c/strong> greater than that of \\(A\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two planet A and B are revolving around a massive star such that \(r_A=2 r_B\) and \(m_A=4 \sqrt{3} m_B\). Find ratio of angular momentum of planet B to planet A.(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8 \sqrt{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{4 \sqrt{6}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2 \sqrt{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{3 \sqrt{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Understanding Angular Momentum in Circular Orbits\u003c/strong> \u003cp>The \u003cstrong>angular momentum\u003c/strong> (\\(L\\)) of a planet revolving around a massive star in a circular orbit is given by:\u003c/p> \u003cp>\\(L=mrv\\)\u003c/p> \u003cp>From Kepler’s laws, the orbital velocity \\(v\\) is given by:\u003c/p> \u003cp>\\(v=\\sqrt{\\frac{GM}{r}}\\)\u003c/p> \u003cp>Substituting this into the angular momentum equation:\u003c/p> \u003cp>\\(L=mr\\sqrt{\\frac{GM}{r}}\\)\u003c/p> \u003cp>​ \\(L=m\\sqrt{GMr}\\)​\u003c/p> \u003cstrong>Step 2: Finding Ratio \\(\\frac{{L}_{B}}{{L}_{A}}\\)​​\u003c/strong> \u003cp>For planets \u003cstrong>A\u003c/strong> and \u003cstrong>B\u003c/strong>, we have:\u003c/p> \u003cul> \u003cli>\u003cstrong>\\({r}_{A}=2{r}_{B}\\)​\u003c/strong>\u003c/li> \u003cli>\u003cstrong>\\({m}_{A}=4\\sqrt{3}{m}_{B}\\)​\u003c/strong>\u003c/li> \u003c/ul> \u003cp>Since \\(L\\) depends on \\(m\\) and \\(\\sqrt{r}\\)​:\u003c/p> \u003cp>\\({L}_{A}={m}_{A}\\sqrt{GM{r}_{A}}=(4\\sqrt{3}{m}_{B})\\sqrt{GM(2{r}_{B})}\\)\u003c/p> \u003cp>​ \\(=4\\sqrt{3}{m}_{B}\\times \\sqrt{2}\\times \\sqrt{GM{r}_{B}}\\)\u003c/p> \u003cp>​ \\(=4\\sqrt{6}{m}_{B}\\sqrt{GM{r}_{B}}\\)\u003c/p> \u003cp>Similarly, for planet \u003cstrong>B\u003c/strong>:\u003c/p> \u003cp>\\({L}_{B}={m}_{B}\\sqrt{GM{r}_{B}}\\)\u003c/p> \u003cstrong>Step 3: Calculating the Ratio\u003c/strong> \u003cp>\\(\\frac{{L}_{B}}{{L}_{A}}=\\frac{{m}_{B}\\sqrt{GM{r}_{B}}}{4\\sqrt{6}{m}_{B}\\sqrt{GM{r}_{B}}}\\)​​ \\(=\\frac{1}{4\\sqrt{6}}\\)​\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(B\\ \\frac{1}{4\\sqrt{6}}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A satellite is launched into a circular orbit of radius ' R ' around the earth. A second satellite is launched into an orbit of radius 1.03 R . The time period of revolution of the second satellite is larger than the first one approximately by.</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5%</p></span></div><div class="option"><span class="key">b</span><span><p>3%</p></span></div><div class="option"><span class="key">c</span><span><p>4.5%</p></span></div><div class="option"><span class="key">d</span><span><p>9%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> Fime-Period Relatien: The time period T of a satellite in orbit is related to the radius R of its orbit by the equation:\u003c/p> \u003cp>\\({T}^{2}\\propto {R}^{3}\\)\u003c/p> \u003cp>Therefore,\u003c/p> \u003cp>\\(\\frac{{T}_{2}^{2}}{{T}_{1}^{2}}=\\frac{(1.03R{)}^{3}}{{R}^{3}}\\)\u003c/p> \u003cp>Simplifying:\u003c/p> \u003cp>\\(\\frac{{T}_{2}}{{T}_{1}}=(1.03{)}^{3/2}\\approx 1.045\\)\u003c/p> \u003cp>Therefore, the increase in the time period is approximately:\u003c/p> \u003cp>\\(\\frac{\\Delta T}{T}=\\frac{1.045-1}{1}\\times 100=4.5%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a satellite orbiting the Earth is 9 times closer to the Earth than the Moon, what is the time period of rotation of the satellite? Given rotational time period of Moon is 27 days and gravitational attraction between the satellite and the moon is neglected.</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>81 days</p></span></div><div class="option"><span class="key">b</span><span><p>27 days</p></span></div><div class="option"><span class="key">c</span><span><p>1 day</p></span></div><div class="option"><span class="key">d</span><span><p>3 days</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> \\({T}^{2}\\propto {R}^{3}\\\\ {\\left(\\frac{{T}_{1}}{{T}_{2}}\\right)}^{2}={\\left(\\frac{{R}_{1}}{{R}_{2}}\\right)}^{3}\\\\ {T}_{1}=27\\text{ days }{R}_{1}=R{R}_{2}=R/9\\\\ {\\left(\\frac{27}{{T}_{2}}\\right)}^{2}={\\left(\\frac{R}{R/9}\\right)}^{3}\\\\ {T}_{2}^{2}=\\frac{27\\times 27}{9\\times 9\\times 9}\\\\ {T}_{2}^{2}=\\frac{3\\times 3}{9}\\)\u003c/p> \u003cp>\\({T}_{2}=1day\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a satellite orbiting the Earth is 9 times closer to the Earth than the Moon, what is the time period of rotation of the satellite? Given rotational time period of Moon =27 days and gravitational attraction between the satellite and the moon is neglected.</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>81 days</p></span></div><div class="option"><span class="key">b</span><span><p>27 days</p></span></div><div class="option"><span class="key">c</span><span><p>1 day</p></span></div><div class="option"><span class="key">d</span><span><p>3 days</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> \\({T}^{2}\\propto {R}^{3}\\\\ {\\left(\\frac{{T}_{1}}{{T}_{2}}\\right)}^{2}={\\left(\\frac{{R}_{1}}{{R}_{2}}\\right)}^{3}\\\\ {T}_{1}=27\\text{ days }{R}_{1}=R{R}_{2}=R/9\\\\ {\\left(\\frac{27}{{T}_{2}}\\right)}^{2}={\\left(\\frac{R}{R/9}\\right)}^{3}\\\\ {T}_{2}^{2}=\\frac{27\\times 27}{9\\times 9\\times 9}\\\\ {T}_{2}^{2}=\\frac{3\\times 3}{9}\\)\u003c/p> \u003cp>\\({T}_{2}=1day\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The escape velocity from the surface of the Earth is \(11.2 \mathrm{~km} / \mathrm{s}\). Find the escape velocity from a planet whose radius is 2 times that of Earth and mass is 8 times that of Earth.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(15.8 \mathrm{~km} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(22.4 \mathrm{~km} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5.6 \mathrm{~km} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(11.2 \mathrm{~km} / \mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Formula for Escape Velocity\u003c/strong> \u003cp>Escape velocity (\\({v}_{e}\\)​) is given by:\u003c/p> \u003cp>\\({v}_{e}=\\sqrt{\\frac{2GM}{R}}\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(G\\) is the gravitational constant.\u003c/li> \u003cli>\\(M\\) is the mass of the planet.\u003c/li> \u003cli>\\(R\\) is the radius of the planet.\u003c/li> \u003c/ul> \u003cp>For Earth:\u003c/p> \u003cp>\\({v}_{e,\\text{Earth}}=11.2\\text{ km/s}\\)\u003c/p> \u003cstrong>Step 2: Ratio of Escape Velocities\u003c/strong> \u003cp>The escape velocity of a planet compared to Earth is:\u003c/p> \u003cp>\\(\\frac{{v}_{e,\\text{Planet}}}{{v}_{e,\\text{Earth}}}=\\sqrt{\\frac{{M}_{\\text{Planet}}\\mathrm{/}{M}_{\\text{Earth}}}{{R}_{\\text{Planet}}\\mathrm{/}{R}_{\\text{Earth}}}}\\)\u003c/p> \u003cstrong>Step 3: Given Data\u003c/strong> \u003cul> \u003cli>The mass of the planet is \u003cstrong>8 times\u003c/strong> the mass of Earth: \\({M}_{\\text{Planet}}=8{M}_{\\text{Earth}}\\)​\u003c/li> \u003cli>The radius of the planet is \u003cstrong>2 times\u003c/strong> the radius of Earth: \\({R}_{\\text{Planet}}=2{R}_{\\text{Earth}}\\)​\u003c/li> \u003c/ul> \u003cstrong>Step 4: Substituting the Values\u003c/strong> \u003cp>\\(\\frac{{v}_{e,\\text{Planet}}}{{v}_{e,\\text{Earth}}}=\\sqrt{\\frac{8{M}_{\\text{Earth}}}{2{R}_{\\text{Earth}}}}\\)​ \\(=\\sqrt{\\frac{8}{2}}=\\sqrt{4}=2\\)\u003c/p> \u003cp>​ \\({v}_{e,\\text{Planet}}=2\\times 11.2=22.4\\text{ km/s}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(22.4\\text{ km/s}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a star of mass \(m_2 \ kg\) revolving in a circular orbit around another star of mass \(m_1 \ kg\) with \(m_1 \gg m_2\). The heavier star slowly acquires mass from the lighter star at a constant rate of \(\gamma \ kg / s\). In this transfer process, there is no other loss of mass. If the separation between the centers of the stars is \(r\), then its relative rate of change \(\frac{1}{r} \frac{d r}{d t}\) (in \(s ^{-1}\) ) is given by:</p> <p><strong>[JEE Advanced 2025]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3\gamma }{2{m}_{2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2\gamma }{{m}_{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2\gamma }{{m}_{1}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3\gamma }{2{m}_{1}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Conservation of Angular Momentum\u003c/p> \u003cp>For conservative mass transfer, the total orbital angular momentum (\\(L\\)) remains constant.\u003c/p>  \\[L = \\mu \\sqrt{GMr} = \\frac{m_1 m_2}{\\sqrt{m_1 + m_2}} \\sqrt{Gr} = \\text{constant}\\]  \u003cp>(where total mass \\(M={m}_{1}+{m}_{2}\\) is constant).\u003c/p> \u003cp>Logarithmic Differentiation\u003c/p> \u003cp>Taking the natural logarithm of both sides to easily separate the variables:\u003c/p>  \\[\\ln L = \\ln m_1 + \\ln m_2 + \\frac{1}{2} \\ln r + \\text{constant}\\]  \u003cp>Differentiating with respect to time \\(t\\):\u003c/p>  \\[0 = \\frac{1}{m_1}\\frac{dm_1}{dt} + \\frac{1}{m_2}\\frac{dm_2}{dt} + \\frac{1}{2r}\\frac{dr}{dt}\\]  \u003cp>Apply Given Conditions\u003c/p> \u003cp>The heavier star gains mass (\\(\\frac{d{m}_{1}}{dt}=\\gamma\\)) and the lighter star loses mass (\\(\\frac{d{m}_{2}}{dt}=-\\gamma\\)). Substitute these rates:\u003c/p>  \\[0 = \\frac{\\gamma}{m_1} - \\frac{\\gamma}{m_2} + \\frac{1}{2r}\\frac{dr}{dt}\\]  \u003cp>Since \\({m}_{1}≫{m}_{2}\\), the term \\(\\frac{\\gamma }{{m}_{1}}\\) is negligibly small compared to \\(\\frac{\\gamma }{{m}_{2}}\\):\u003c/p>  \\[0 \\approx -\\frac{\\gamma}{m_2} + \\frac{1}{2r}\\frac{dr}{dt}\\]  \u003cp>Final Rearrangement\u003c/p>  \\[\\frac{1}{2r}\\frac{dr}{dt} = \\frac{\\gamma}{m_2}\\]   \\[\\frac{1}{r}\\frac{dr}{dt} = \\frac{2\\gamma}{m_2}\\]  \u003cp>Correct Option: B\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle of mass m is under the influence of the gravitational field of a body of mass M(≫ m). The particle is moving in a circular orbit of radius r<sub>0</sub> with time period T<sub>0</sub> around the mass M. Then, the particle is subjected to an additional central force, corresponding to the potential energy V<sub>c</sub>(r) = mα/r<sup>3</sup>, where α is a positive constant of suitable dimensions and r is the distance from the center of the orbit. If the particle moves in the same circular orbit of radius r<sub>0</sub> in the combined gravitational potential due to M and V<sub>c</sub>(r), but with a new time period T<sub>1</sub>, then\(\left({\mathrm{T}}_{1}^{2}-{\mathrm{T}}_{0}^{2}/{\mathrm{T}}_{1}^{2}\right)\) is given by<br/>[G is the gravitational constant.]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3\alpha }{{\mathrm{GMr}}_{0}^{2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\alpha }{2{\mathrm{GMr}}_{0}^{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\alpha }{{\mathrm{GMr}}_{0}^{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2\alpha }{{\mathrm{GMr}}_{0}^{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\frac{\\mathrm{GMm}}{{\\mathrm{r}}_{0}^{2}}={\\mathrm{mω}}^{2}{\\mathrm{r}}_{0}\\)\u003c/p> \u003cp>\\(\\omega =\\sqrt{\\frac{\\mathrm{GM}}{{\\mathrm{r}}_{0}^{3}}}\\) \u003c/p> \u003cp>\\({\\mathrm{T}}_{0}^{2}=4{\\pi }^{2}(\\frac{{\\mathrm{r}}_{0}^{3}}{\\mathrm{GM}})\\) .....(1)\u003c/p> \u003cp>\\(\\mathrm{F}=−\\frac{{\\mathrm{dv}}_{\\mathrm{c}}(\\mathrm{r})}{\\mathrm{dr}}\\)\u003c/p> \u003cp>\\(\\mathrm{F}=\\frac{3\\mathrm{mα}}{{\\mathrm{r}}^{4}}\\)\u003c/p> \u003cp>Net force\u003c/p> \u003cp>\\(\\frac{\\mathrm{GMm}}{{\\mathrm{r}}_{0}^{2}}−\\frac{3\\mathrm{mα}}{{\\mathrm{r}}_{0}^{4}}={\\mathrm{mω}}^{2}{\\mathrm{r}}_{0}\\)\u003c/p> \u003cp>\\({\\omega }^{2}=\\frac{\\mathrm{GM}}{{\\mathrm{r}}_{0}^{3}}−\\frac{3\\alpha }{{\\mathrm{r}}_{0}^{5}}\\)\u003c/p> \u003cp>We know \\(\\omega =\\frac{2\\pi }{{\\mathrm{T}}_{1}}\\)\u003c/p> \u003cp>\\(\\frac{4{\\pi }^{2}}{{\\mathrm{T}}_{1}^{2}}=\\frac{\\mathrm{GM}}{{\\mathrm{r}}_{0}^{3}}−\\frac{3\\alpha }{{\\mathrm{r}}_{0}^{5}}\\)\u003c/p> \u003cp>\\({\\mathrm{T}}_{1}^{2}=\\frac{4{\\pi }^{2}}{\\frac{\\mathrm{GM}}{{\\mathrm{r}}_{0}^{3}}−\\frac{3\\alpha }{{\\mathrm{r}}_{0}^{5}}}\\) ......(2)\u003c/p> \u003cp>From equation (1) and (2) \u003c/p> \u003cp>\\(\\frac{{\\mathrm{T}}_{1}^{2}−{\\mathrm{T}}_{0}^{2}}{{\\mathrm{T}}_{1}^{2}}=\\frac{3\\alpha }{{\\mathrm{GMr}}_{0}^{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A light planet is revolving around a massive star in a circular orbit of radius \(R\) with a period of revolution \(T\). If the force of attraction between planet and star is proportional to \(R ^{-3 / 2}\) then choose the correct option :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(T ^2 \propto R ^{7 / 2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(T ^2 \propto R ^{5 / 2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(T ^2 \propto R ^{3 / 2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(T ^2 \propto R ^3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>2\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In hydrogen like system the ratio of coulomb force and gravitational force between an electron and a proton is in the order of :[JEE Main 2024, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({10}^{19}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({10}^{36}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({10}^{29}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({10}^{39}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>key concept= Coulomb's Law + Law of gravitation\u003c/p> \u003cp>\\({F}_{e}=\\frac{k{r}_{1}{r}_{2}}{{r}^{2}}=\\frac{9\\times {10}^{9}\\times {\\left(1.6\\times {10}^{-19}\\right)}^{2}}{{r}^{2}}\\)\u003c/p> \u003cp>\\({F}_{g}=\\frac{G{m}_{1}{m}_{2}}{{r}^{2}}=\\frac{6.67\\times {10}^{-11}\\times 9.1\\times {10}^{-31}\\times 1.67\\times {10}^{-27}}{{r}^{2}}\\)\u003c/p> \u003cp>\\(∴\\frac{{\\mathrm{F}}_{\\mathrm{e}}}{{\\mathrm{F}}_{\\mathrm{g}}}=2.2\\times {10}^{39}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R <br/> <strong>Assertion A :</strong> The kinetic energy needed to project a body of mass m from earth surface to infinity is \(\frac{1}{2}\mathrm{mgR}\), where R is the radius of earth. <br/><strong>Reason R :</strong> The maximum potential energy of a body is zero when it is projected to infinity from earth surface. <br/>In the light of the above statements, choose the correct answer from the option given below </p> <p>[JEE Main 2023, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A False but R is true </p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are true and R is the correct explanation of A </p></span></div><div class="option"><span class="key">c</span><span><p>A is true but R is false </p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true but R is NOT the correct explanation of A </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given kinetic energy expression written in the assertion.\u003cbr/>\\(\\mathrm{KE}=\\frac{1\\times m}{2}\\times (\\frac{2Gm}{R})\\)\u003cbr/>Comparing with gravitational potential energy term used in the assertion.\u003cbr/>\\(\\mathrm{KE}=mgR\\)\u003cbr/>This equality is incorrect because gravitational potential energy is not defined as m g R in this context.\u003cbr/>At infinite distance, gravitational potential energy is taken as zero.\u003cbr/>\\(U=0\\)\u003cbr/>Hence the assertion is incorrect.\u003cbr/>The reason stating potential energy is zero at infinity is correct.\u003cbr/>Final conclusion: assertion is wrong but reason is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The acceleration due to gravity on the surface of earth is g. If the diameter of earth reduces to half of its original value and mass remains constant, then acceleration due to gravity on the surface of earth would be:</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{g}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>2<em>g</em></p></span></div><div class="option"><span class="key">c</span><span><p>\(4g\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{g}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,10 +330,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; g=\\frac{G M}{R^2} \\Rightarrow g \\propto \\frac{1}{R^2} \\\\\u003cbr/>&amp; \\frac{g_2}{g_1}=\\frac{R_1^2}{R_2^2} \\\\\u003cbr/>&amp; g_2=4 g_1\\left(R_2=\\frac{R_1}{2}\\right)\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\\begin{aligned}& g=\\frac{G M}{R^2} \\Rightarrow g \\propto \\frac{1}{R^2} \\\\& \\frac{g_2}{g_1}=\\frac{R_1^2}{R_2^2} \\\\& g_2=4 g_1\\left(R_2=\\frac{R_1}{2}\\right)\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The acceleration due to gravity on the surface of earth is g. If the diameter of earth reduces to half of its original value and mass remains constant, then acceleration due to gravity on the surface of earth would be:</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{g}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>2<em>g</em></p></span></div><div class="option"><span class="key">c</span><span><p>\(4g\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{g}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,10 +342,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; g=\\frac{G M}{R^2} \\Rightarrow g \\propto \\frac{1}{R^2} \\\\\u003cbr/>&amp; \\frac{g_2}{g_1}=\\frac{R_1^2}{R_2^2} \\\\\u003cbr/>&amp; g_2=4 g_1\\left(R_2=\\frac{R_1}{2}\\right)\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\\begin{aligned}& g=\\frac{G M}{R^2} \\Rightarrow g \\propto \\frac{1}{R^2} \\\\& \\frac{g_2}{g_1}=\\frac{R_1^2}{R_2^2} \\\\& g_2=4 g_1\\left(R_2=\\frac{R_1}{2}\\right)\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The acceleration due to gravity on the surface of earth is \(g\). If the diameter of earth reduces to half of its original value and mass remains constant, then acceleration due to gravity on the surface of earth would be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{g}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2 g\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4 g\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{g}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity is:\u003c/p> \\(g=\\frac{GM}{{R}^{2}}\\) \u003cp>If the diameter becomes half, then radius also becomes half:\u003c/p> \\({R}_{2}=\\frac{{R}_{1}}{2}\\) \u003cp>Mass remains constant.\u003c/p> \u003cp>New acceleration due to gravity:\u003c/p> \\({g}_{2}=\\frac{GM}{{R}_{2}^{2}}\\) \u003cp>Substitute the new radius:\u003c/p> \\({g}_{2}=\\frac{GM}{{(\\frac{R}{2})}^{2}}\\) \\({g}_{2}=\\frac{GM}{{R}^{2}/4}\\) \\({g}_{2}=4\\frac{GM}{{R}^{2}}\\) \\({g}_{2}=4g\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>The angular speed of the moon in its orbit about the earth is more than the angular speed of the earth in its orbit about the sun.</p> <p><strong>Reason \(( R )\) : </strong>The moon takes less time to move around the earth than the time taken by the earth to move around the sun.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(( A )\) and \(( R )\) are correct and \(( R )\) is the correct explanation of \(( A )\)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is correct but (R) is not correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Angular speed is inversely proportional to time period\u003cbr/>\\(\\omega \\propto \\frac{1}{T}\\)\u003cbr/>Time period of revolution of moon\u003cbr/>\\({T}_{\\mathrm{moon}}=365+\\frac{4}{24}\\)\u003cbr/>Comparison of angular speeds\u003cbr/>\\({\\omega }_{\\mathrm{moon}}>{\\omega }_{\\mathrm{earth}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>The angular speed of the moon in its orbit about the earth is more than the angular speed of the earth in its orbit about the sun.</p> <p><strong>Reason \(( R )\) : </strong>The moon takes less time to move around the earth than the time taken by the earth to move around the sun.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(( A )\) and \(( R )\) are correct and \(( R )\) is the correct explanation of \(( A )\)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is correct but (R) is not correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Angular speed is inversely proportional to time period\u003cbr/>\\(\\omega \\propto \\frac{1}{T}\\)\u003cbr/>Time period of revolution of moon\u003cbr/>\\({T}_{\\mathrm{moon}}=365+\\frac{4}{24}\\)\u003cbr/>Comparison of angular speeds\u003cbr/>\\({\\omega }_{\\mathrm{moon}}>{\\omega }_{\\mathrm{earth}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Satellite A is launched into a circular orbit of radius R. Satellite B is launched into a circular orbit of radius 1.03R. By approximately what percentage is the time period of B greater than that of A?</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9%</p></span></div><div class="option"><span class="key">b</span><span><p>4.5%</p></span></div><div class="option"><span class="key">c</span><span><p>3%</p></span></div><div class="option"><span class="key">d</span><span><p>2.5%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>By Kepler's Third Law, \\(T\\propto {R}^{3\\mathrm{/}2}\\).\u003c/p> \u003cul> \u003cli>Time period ratio: \\(\\frac{{T}_{B}}{{T}_{A}}={(\\frac{{R}_{B}}{{R}_{A}})}^{3\\mathrm{/}2}=(1.03{)}^{3\\mathrm{/}2}\\mathrm{.}\\)\u003c/li> \u003cli>Using binomial approximation, \\((1.03{)}^{3\\mathrm{/}2}\\approx 1+\\frac{3}{2}(0.03)=1.045\\)\u003c/li> \u003cli>Percentage increase: \\(\\Delta T\\mathrm{%}=(1.045−1)\\times 100=4.5\\mathrm{%}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the time period of \\(B\\) is approximately \u003cstrong>4.5%\u003c/strong> greater than that of \\(A\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The escape velocity from the surface of the Earth is \(11.2 \mathrm{~km} / \mathrm{s}\). Find the escape velocity from a planet whose radius is 2 times that of Earth and mass is 8 times that of Earth.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(15.8 \mathrm{~km} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(22.4 \mathrm{~km} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5.6 \mathrm{~km} / \mathrm{s}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(11.2 \mathrm{~km} / \mathrm{s}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Formula for Escape Velocity\u003c/strong> \u003cp>Escape velocity (\\({v}_{e}\\)​) is given by:\u003c/p> \u003cp>\\({v}_{e}=\\sqrt{\\frac{2GM}{R}}\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(G\\) is the gravitational constant.\u003c/li> \u003cli>\\(M\\) is the mass of the planet.\u003c/li> \u003cli>\\(R\\) is the radius of the planet.\u003c/li> \u003c/ul> \u003cp>For Earth:\u003c/p> \u003cp>\\({v}_{e,\\text{Earth}}=11.2\\text{ km/s}\\)\u003c/p> \u003cstrong>Step 2: Ratio of Escape Velocities\u003c/strong> \u003cp>The escape velocity of a planet compared to Earth is:\u003c/p> \u003cp>\\(\\frac{{v}_{e,\\text{Planet}}}{{v}_{e,\\text{Earth}}}=\\sqrt{\\frac{{M}_{\\text{Planet}}\\mathrm{/}{M}_{\\text{Earth}}}{{R}_{\\text{Planet}}\\mathrm{/}{R}_{\\text{Earth}}}}\\)\u003c/p> \u003cstrong>Step 3: Given Data\u003c/strong> \u003cul> \u003cli>The mass of the planet is \u003cstrong>8 times\u003c/strong> the mass of Earth: \\({M}_{\\text{Planet}}=8{M}_{\\text{Earth}}\\)​\u003c/li> \u003cli>The radius of the planet is \u003cstrong>2 times\u003c/strong> the radius of Earth: \\({R}_{\\text{Planet}}=2{R}_{\\text{Earth}}\\)​\u003c/li> \u003c/ul> \u003cstrong>Step 4: Substituting the Values\u003c/strong> \u003cp>\\(\\frac{{v}_{e,\\text{Planet}}}{{v}_{e,\\text{Earth}}}=\\sqrt{\\frac{8{M}_{\\text{Earth}}}{2{R}_{\\text{Earth}}}}\\)​ \\(=\\sqrt{\\frac{8}{2}}=\\sqrt{4}=2\\)\u003c/p> \u003cp>​ \\({v}_{e,\\text{Planet}}=2\\times 11.2=22.4\\text{ km/s}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(22.4\\text{ km/s}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two planet A and B are revolving around a massive star such that \(r_A=2 r_B\) and \(m_A=4 \sqrt{3} m_B\). Find ratio of angular momentum of planet B to planet A.(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8 \sqrt{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{4 \sqrt{6}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2 \sqrt{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{3 \sqrt{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Understanding Angular Momentum in Circular Orbits\u003c/strong> \u003cp>The \u003cstrong>angular momentum\u003c/strong> (\\(L\\)) of a planet revolving around a massive star in a circular orbit is given by:\u003c/p> \u003cp>\\(L=mrv\\)\u003c/p> \u003cp>From Kepler’s laws, the orbital velocity \\(v\\) is given by:\u003c/p> \u003cp>\\(v=\\sqrt{\\frac{GM}{r}}\\)\u003c/p> \u003cp>Substituting this into the angular momentum equation:\u003c/p> \u003cp>\\(L=mr\\sqrt{\\frac{GM}{r}}\\)\u003c/p> \u003cp>​ \\(L=m\\sqrt{GMr}\\)​\u003c/p> \u003cstrong>Step 2: Finding Ratio \\(\\frac{{L}_{B}}{{L}_{A}}\\)​​\u003c/strong> \u003cp>For planets \u003cstrong>A\u003c/strong> and \u003cstrong>B\u003c/strong>, we have:\u003c/p> \u003cul> \u003cli>\u003cstrong>\\({r}_{A}=2{r}_{B}\\)​\u003c/strong>\u003c/li> \u003cli>\u003cstrong>\\({m}_{A}=4\\sqrt{3}{m}_{B}\\)​\u003c/strong>\u003c/li> \u003c/ul> \u003cp>Since \\(L\\) depends on \\(m\\) and \\(\\sqrt{r}\\)​:\u003c/p> \u003cp>\\({L}_{A}={m}_{A}\\sqrt{GM{r}_{A}}=(4\\sqrt{3}{m}_{B})\\sqrt{GM(2{r}_{B})}\\)\u003c/p> \u003cp>​ \\(=4\\sqrt{3}{m}_{B}\\times \\sqrt{2}\\times \\sqrt{GM{r}_{B}}\\)\u003c/p> \u003cp>​ \\(=4\\sqrt{6}{m}_{B}\\sqrt{GM{r}_{B}}\\)\u003c/p> \u003cp>Similarly, for planet \u003cstrong>B\u003c/strong>:\u003c/p> \u003cp>\\({L}_{B}={m}_{B}\\sqrt{GM{r}_{B}}\\)\u003c/p> \u003cstrong>Step 3: Calculating the Ratio\u003c/strong> \u003cp>\\(\\frac{{L}_{B}}{{L}_{A}}=\\frac{{m}_{B}\\sqrt{GM{r}_{B}}}{4\\sqrt{6}{m}_{B}\\sqrt{GM{r}_{B}}}\\)​​ \\(=\\frac{1}{4\\sqrt{6}}\\)​\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(B\\ \\frac{1}{4\\sqrt{6}}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The time period of a satellite of earth is 24 hours. If the separation between the earth and the satellite is decreased to one fourth of the previous value, then its new time period will be,</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>4 \text { hours }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>6 \text { hours }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>12 \text { hours }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>3 \text { hours }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,10 +426,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Using kepler's law of planetary motion,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{T_1^2}{T_2^2}=\\frac{R_1^3}{R_2^3} \\\\\u003cbr/>&amp; \\Rightarrow\\left(\\frac{T_1}{T_2}\\right)^2=\\left(\\frac{R}{\\frac{R}{4}}\\right)^3 \\\\\u003cbr/>&amp; \\Rightarrow T_2^2=\\frac{T_1^2}{64} \\\\\u003cbr/>&amp; \\therefore T_2=\\frac{24}{8}=3 \\text { hours }\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Using kepler's law of planetary motion,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{T_1^2}{T_2^2}=\\frac{R_1^3}{R_2^3} \\\\& \\Rightarrow\\left(\\frac{T_1}{T_2}\\right)^2=\\left(\\frac{R}{\\frac{R}{4}}\\right)^3 \\\\& \\Rightarrow T_2^2=\\frac{T_1^2}{64} \\\\& \\therefore T_2=\\frac{24}{8}=3 \\text { hours }\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.<br/><strong>Assertion (A):</strong> Earth has atmosphere whereas moon doesn't have any atmosphere.<br/><strong>Reason (R): </strong>The escape velocity on moon is very small as compared to that on earth.<br/>In the light of the above statement, choose the correct answer from the options given below :</p> <p>[JEE Main 2023, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>A \text { is true but } R \text { is false }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>A \text { is false but } R \text { is true }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(A\) and \(R\) are correct but \(R\) is NOT the correct explanation of A</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(A\) and \(R\) are correct and \(R\) is correct explanation of \(A\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As gravity of the Moon is \\(\\left(\\frac{1}{6}\\right)^{t h}\\) of the earth. the rms velocity of molecules is higher than the escape velocity at the Moon due to the low escape velocity. As a result, molecules escape and Moon has no atmosphere.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Inside a uniform spherical shell :<br/>(A) the gravitational field is zero<br/>(B) the gravitational potential is zero<br/>(C) the gravitational field is same everywhere<br/>(D) the gravitational potential is same everywhere<br/>(E) all the above</p> <p>Choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(E\) only</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>A,C \text { and }D \text { only }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>B,C \text { and }D \text { only }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>A,B \text { and }C \text { only }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Inside a uniform spherical shell, the gravitational field is zero everywhere due to the symmetry of the mass distribution. This means the field is the same everywhere (zero). The gravitational potential (\\(V\\)) is constat. (A) The gravitational field is zero: This is correct.     \u003cp>(B) The gravitational potential is zero: This is incorrect; the potential is constant but non-zero. \u003c/p> \u003cp>(C) The gravitational field is same everywhere: This is correct, as it is uniformly zero. \u003c/p> \u003cp>(D) The gravitational potential is same everywhere: This is correct, as it is constant. \u003c/p> \u003cp>(E) All the above: This is incorrect because option (B) is false. \u003c/p>     Therefore, options (A), (C), and (D) are correct.","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two satellites P and Q are moving in different circular orbits around the Earth (radius R). The heights of P and Q from the Earth surface are h<sub>P</sub> and h<sub>Q</sub>, respectively, where h<sub>P</sub> = R/3. The accelerations of P and Q due to Earth’s gravity are g<sub>P</sub> and g<sub>Q</sub>, respectively. If \(\frac{{g}_{P}}{{g}_{Q}}=\frac{36}{25},\) what is the value of \({h}_{Q}\)? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3R/5</p></span></div><div class="option"><span class="key">b</span><span><p>R/6</p></span></div><div class="option"><span class="key">c</span><span><p>6R/5</p></span></div><div class="option"><span class="key">d</span><span><p>5R/6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The weight of a body on the surface of the earth is \(100 N\). The gravitational force on it when taken at a height, from the surface of earth, equal to one fourth the radius of the earth is:</p> <p> </p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>100 N<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>64 N<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>50 N<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>25 N<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -470,10 +474,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow g^{\\prime}=\\frac{g R^2}{\\left(R+\\frac{R}{4}\\right)^2}=\\frac{16 g}{25} \\\\\u003cbr/>&amp; \\therefore \\text { Weight }=M g^{\\prime}=\\frac{16}{25} \\times 100=64 N\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow g^{\\prime}=\\frac{g R^2}{\\left(R+\\frac{R}{4}\\right)^2}=\\frac{16 g}{25} \\\\& \\therefore \\text { Weight }=M g^{\\prime}=\\frac{16}{25} \\times 100=64 N\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The height ' \(h\) ' at which the weight of a body will be the same as that at the same depth ' \(h\) ' from the surface of the earth is (Radius of the earth is \(R\) and effect of the rotation of the earth is neglected)</p> <p>[JEE Main 2020, 2 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{\sqrt{5} R-R}{2}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{\sqrt{3} R-R}{2}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{R}{2}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{\sqrt{5}}{2} R-R<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,10 +486,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{G M}{(h+R)^2}=\\frac{G M}{R^2}\\left(1-\\frac{h}{R}\\right) \\\\\u003cbr/>&amp; R^3=(h+R)^2(R-h) \\\\\u003cbr/>&amp; \\text { Solving } h=\\frac{\\sqrt{5}-1}{2} R\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\frac{G M}{(h+R)^2}=\\frac{G M}{R^2}\\left(1-\\frac{h}{R}\\right) \\\\& R^3=(h+R)^2(R-h) \\\\& \\text { Solving } h=\\frac{\\sqrt{5}-1}{2} R\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(R_E\) be the radius of Earth, then the ratio between the acceleration due to gravity at a depth ' \(r\) ' below and a height \(' r '\) above the earth surface is:</p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1+\frac{r}{R_E}+\frac{r^2}{R_E^2}+\frac{r^3}{R_E^3}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>1-\frac{r}{R_E}-\frac{r^2}{R_E^2}-\frac{r^3}{R_E^3}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>1+\frac{r}{R_E}-\frac{r^2}{R_E^2}-\frac{r^3}{R_E^3}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>1+\frac{r}{R_E}-\frac{r^2}{R_E^2}+\frac{r^3}{R_E^3}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity at \\(r\\) height is \\(=\\frac{g}{\\left(1+\\frac{r}{R}\\right)^2}\\) Acceleration due to gravity at \\(r\\) depth is \\(=\\frac{g}{\\left(1-\\frac{r}{R}\\right)}\\) So, required ratio \\(=\\frac{g_{\\text {depth }}}{g_{\\text {height }}}=1+\\frac{r}{R}-\\frac{r^2}{R^2}-\\frac{r^3}{R^3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement-I:</strong> For a planet, if the ratio of mass of the planet to its radius increases, the escape velocity from the planet also increases.<br/><strong>Statement-II:</strong> Escape velocity is independent of the radius of the planet.<br/>In the light of above statements, choose the most appropriate answer from the options given below</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\text { Both Statement-I and Statement-II are incorrect }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\text { Statement-I is correct but Statement-II is incorrect }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\text { Statement-I is incorrect but Statement-II is correct }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Both Statement-I and Statement-II are correct }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>v_e=\\sqrt{\\frac{2 G M_p}{R_p}} \\Rightarrow v_e \\propto \\sqrt{\\frac{M_p}{R_p}}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The escape velocities of two planets \(A\) and \(B\) are in the ratio \(1: 2\). If the ratio of their radii respectively is \(1: 3\), then the ratio of acceleration due to gravity of planet \(A\) to the acceleration of gravity of planet \(B\) will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{4}{3}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{3}{2}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{2}{3}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{3}{4}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -518,10 +522,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Escape velocity is given by\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V_e=\\sqrt{\\frac{2 G M}{R}}=\\sqrt{\\frac{2 G \\rho \\frac{4}{3} \\pi R^3}{R}}=C \\sqrt{\\rho} \\cdot R \\\\\u003cbr/>&amp; \\Rightarrow \\frac{V_{e_1}}{V_{e_2}}=\\frac{R_1}{R_2} \\sqrt{\\frac{\\rho_1}{\\rho_2}}=\\frac{1}{2} \\\\\u003cbr/>&amp; \\frac{R_1^2}{R_2^2} \\times \\frac{\\rho_1}{\\rho_2}=\\frac{1}{4}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Given, \\(\\frac{R_1}{R_2}=\\frac{1}{3}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; g=\\frac{G M}{R^2}=\\frac{G \\frac{4}{3} \\pi R^3 \\times \\rho}{R^2} \\\\\u003cbr/>&amp; \\Rightarrow \\frac{g_1}{g_2}=\\frac{\\rho_1 R_1}{\\rho_2 R_2}=\\frac{1}{4} \\frac{R_2^2}{R_1^2} \\times \\frac{R_1}{R_2}=\\frac{3}{4}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Escape velocity is given by\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V_e=\\sqrt{\\frac{2 G M}{R}}=\\sqrt{\\frac{2 G \\rho \\frac{4}{3} \\pi R^3}{R}}=C \\sqrt{\\rho} \\cdot R \\\\& \\Rightarrow \\frac{V_{e_1}}{V_{e_2}}=\\frac{R_1}{R_2} \\sqrt{\\frac{\\rho_1}{\\rho_2}}=\\frac{1}{2} \\\\& \\frac{R_1^2}{R_2^2} \\times \\frac{\\rho_1}{\\rho_2}=\\frac{1}{4}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Given, \\(\\frac{R_1}{R_2}=\\frac{1}{3}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& g=\\frac{G M}{R^2}=\\frac{G \\frac{4}{3} \\pi R^3 \\times \\rho}{R^2} \\\\& \\Rightarrow \\frac{g_1}{g_2}=\\frac{\\rho_1 R_1}{\\rho_2 R_2}=\\frac{1}{4} \\frac{R_2^2}{R_1^2} \\times \\frac{R_1}{R_2}=\\frac{3}{4}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body of mass \(m\) is taken from the earth surface to a height \(h\) equal to twice the radius of earth \(\left(R_e\right)\), the increase in potential energy will be: \((g=\) acceleration due to gravity on the surface of Earth)[JEE Main 2023, 25 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>3 mg R_e<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{1}{3} m g R_e<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{2}{3} m g R_e<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{1}{2} m g R_e<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -530,10 +534,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>U=\\frac{-G M_e m}{r}\u003cbr/>\\]\u003c/p> \u003cp>Initial gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_i=\\frac{-G M_e m}{R_e}\u003cbr/>\\]\u003c/p> \u003cp>Final gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_f=\\frac{-G M_e m}{\\left(R_e+h\\right)}=\\frac{-G M_e m}{R_e+2 R_e}=\\frac{-G M_e m}{3 R_e}\u003cbr/>\\]\u003c/p> \u003cp>Increase in internal energy \\(\\Delta U=U_f-U_i\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; =\\frac{2}{3} \\frac{G M_e m}{R_e} \\\\\u003cbr/>&amp; =\\frac{2}{3} m g R_e\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>U=\\frac{-G M_e m}{r}\u003cbr/>\\]\u003c/p> \u003cp>Initial gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_i=\\frac{-G M_e m}{R_e}\u003cbr/>\\]\u003c/p> \u003cp>Final gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_f=\\frac{-G M_e m}{\\left(R_e+h\\right)}=\\frac{-G M_e m}{R_e+2 R_e}=\\frac{-G M_e m}{3 R_e}\u003cbr/>\\]\u003c/p> \u003cp>Increase in internal energy \\(\\Delta U=U_f-U_i\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& =\\frac{2}{3} \\frac{G M_e m}{R_e} \\\\& =\\frac{2}{3} m g R_e\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The planet Mars has two moons, if one of them has a period 7 hours, 30 minutes and an orbital radius of \(9.0 \times\) \(10^3 km\). Find the mass of Mars. (\(\text{Given }\frac{4{\pi }^{2}}{G}=6\times {10}^{11}{N}^{-1}{m}^{-2}k{g}^{2}\))</p> <p> </p> <p>[JEE Main 2021, 27 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>3.25 \times 10^{21} kg<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>6.00 \times 10^{23} kg<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>5.96 \times 10^{19} kg<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>7.02 \times 10^{25} kg<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Time period of revolution, \\(T^2=\\frac{4 \\pi^2 r^3}{G M}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow M=\\frac{4 \\pi^2 r^3}{G \\times T^2}=\\frac{6 \\times 10^{11} \\times\\left(9 \\times 10^6\\right)^3}{(450 \\times 60)^2}=6 \\times 10^{23} kg\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The time period of a satellite of earth is 24 hours. If the separation between the earth and the satellite is decreased to one fourth of the previous value, then its new time period will be,</p> <p>[JEE Main 2023, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>4 \text { hours }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>6 \text { hours }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>12 \text { hours }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>3 \text { hours }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -554,10 +558,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Using kepler's law of planetary motion,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{T_1^2}{T_2^2}=\\frac{R_1^3}{R_2^3} \\\\\u003cbr/>&amp; \\Rightarrow\\left(\\frac{T_1}{T_2}\\right)^2=\\left(\\frac{R}{\\frac{R}{4}}\\right)^3 \\\\\u003cbr/>&amp; \\Rightarrow T_2^2=\\frac{T_1^2}{64} \\\\\u003cbr/>&amp; \\therefore T_2=\\frac{24}{8}=3 \\text { hours }\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Using kepler's law of planetary motion,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{T_1^2}{T_2^2}=\\frac{R_1^3}{R_2^3} \\\\& \\Rightarrow\\left(\\frac{T_1}{T_2}\\right)^2=\\left(\\frac{R}{\\frac{R}{4}}\\right)^3 \\\\& \\Rightarrow T_2^2=\\frac{T_1^2}{64} \\\\& \\therefore T_2=\\frac{24}{8}=3 \\text { hours }\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An object is allowed to fall from a height \(R\) above the earth, where \(R\) is the radius of earth. Its velocity when it strikes the earth's surface, ignoring air resistance, will be</p> <p> </p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2 \sqrt{g R}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\sqrt{g R}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\sqrt{\frac{g R}{2}}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\sqrt{2 g R}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -566,10 +570,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Loss in \\(PE =\\) Gain in \\(KE\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\left(-\\frac{ GMm }{2 R }\\right)-\\left(-\\frac{ GMm }{ R }\\right)=\\frac{1}{2} mv ^2 \\\\\u003cbr/>&amp; \\Rightarrow v ^2=\\frac{G M}{R}=g R \\\\\u003cbr/>&amp; \\Rightarrow v =\\sqrt{g R}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Loss in \\(PE =\\) Gain in \\(KE\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\left(-\\frac{ GMm }{2 R }\\right)-\\left(-\\frac{ GMm }{ R }\\right)=\\frac{1}{2} mv ^2 \\\\& \\Rightarrow v ^2=\\frac{G M}{R}=g R \\\\& \\Rightarrow v =\\sqrt{g R}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The escape velocity from the Earths surface is \( v \). The escape velocity from the surface of another planet having a radius, four times that of Earth and same mass density is</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 4 v \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( v \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2 v \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 3 v \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The escape velocity from the earth's surface is \\(v\\).\u003c/p> \u003cp>By using the formula,\u003c/p> \u003cp>\\({v}_{e}=\\sqrt{\\frac{2GM}{R}}\\)\u003c/p> \u003cp>So,\u003c/p> \u003cp>\\(=\\sqrt{\\frac{2G}{R}\\times \\frac{4}{3}\\pi {R}^{3}\\rho }\\)\u003c/p> \u003cp>\\(=\\sqrt{\\frac{8\\pi \\mathrm{G}\\rho }{3}{\\mathrm{R}}^{2}}\\)\u003c/p> \u003cp>Now,\u003c/p> \u003cp>\\(\\Rightarrow {v}_{e}\\propto R\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{v}_{e}}{v}=\\frac{4R}{R}\\)\u003c/p> \u003cp>Here we get,\u003c/p> \u003cp>\\(\\Rightarrow {v}_{e}=4v\\)\u003c/p> \u003cp>Therefore, the four times that of Earth and the same mass density is \\(4v\\).\u003c/p> \u003cp>Hence, the correct answer is option (A). i.e. \\(4v\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the incorrect statement from the following: [JEE Main 2023, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The speed of satellite in a given circular orbit remains constant.</p></span></div><div class="option"><span class="key">b</span><span><p>For a planet revolving around the sun in an elliptical orbit, the total energy of the planet remains constant.</p></span></div><div class="option"><span class="key">c</span><span><p>When a body fall towards earth, the displacement of earth towards the body is negligible.</p></span></div><div class="option"><span class="key">d</span><span><p>The linear speed of a planet revolving around the sun remains constant.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For a planet revolving around the Sun, the orbit is generally elliptical, so its distance \\( r \\) from the Sun keeps changing. By conservation of angular momentum, \\( mvr = \\text{constant} \\). Hence, when \\( r \\) changes, the linear speed \\( v \\) must change, so the linear speed of the planet does not remain constant. Therefore, option D is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a binary star system of star A and star B with masses \(m_A\) and \(m_B\), revolving in a circular orbit of radii \(r_A\) and \(r_B\), respectively. If \(T_A\) and \(T_B\) are the time period of star \(A\) and star \(B\), respectively, then:</p> <p>[JEE Main 2021, 20 July (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{T_A}{T_B}=\left(\frac{r_A}{r_B}\right)^{\frac{3}{2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(T_A=T_B\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(T_A&gt;T_B\left(\right.\) if \(\left.m_A&gt;m_B\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(T_A&gt;T_B\left(\right. if \left.r_A&gt;r_B\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -605,7 +609,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body is released from a height equal to the radius \((R)\) of the earth. The velocity of the body when it strikes the surface of the earth will be :<br/>(Given \(g=\) acceleration due to gravity on the earth.)</p> <p>[JEE Main 2021, 26 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\sqrt{g R}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\sqrt{4 g R}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\sqrt{2 g R}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\sqrt{\frac{g R}{2}}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -617,7 +621,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let the body be released from a height \\( h = R \\) (where \\( R \\) is the radius of the earth).\u003c/p> \u003cp>Initial potential energy at height \\( R \\) above the surface:\u003cbr/>\\( U_i = -\\dfrac{G M m}{2R} \\)\u003c/p> \u003cp>Final potential energy at the surface:\u003cbr/>\\( U_f = -\\dfrac{G M m}{R} \\)\u003c/p> \u003cp>By conservation of energy,\u003cbr/>Initial energy = Final energy,\u003cbr/>\\( U_i = U_f + \\dfrac{1}{2} m v^2 \\)\u003c/p> \u003cp>So,\u003cbr/>\\[\u003cbr/>-\\dfrac{G M m}{2R} = -\\dfrac{G M m}{R} + \\dfrac{1}{2} m v^2\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>-\\dfrac{G M m}{2R} + \\dfrac{G M m}{R} = \\dfrac{1}{2} m v^2\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\dfrac{G M m}{2R} = \\dfrac{1}{2} m v^2\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>v^2 = \\dfrac{G M}{R}\u003cbr/>\\]\u003c/p> \u003cp>But, \\( g = \\dfrac{G M}{R^2} \\implies G M = g R^2 \\)\u003c/p> \u003cp>So,\u003cbr/>\\[\u003cbr/>v^2 = g R\u003cbr/>\\implies v = \\sqrt{g R}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body weight \(W\), is projected vertically upwards from earth's surface to reach a height above the earth which is equal to nine times the radius of earth. The weight of the body at that height will be:</p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{W}{91}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{W}{100}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{W}{9}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{W}{3}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -626,10 +630,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We know that, if \\(g_0\\) be the value of gravity constant at the surface of earth, then value of gravity constant at distance \\(r\\) from surface of earth is,\u003c/p> \u003cp>\\({g}^{'}=\\frac{{g}_{0}}{{\\left(\\frac{r}{R}\\right)}^{2}}=\\frac{{g}_{0}}{{10}^{2}}[∴r=10R]\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; =\\frac{g_0}{100} \\\\\u003cbr/>&amp; \\Rightarrow W ^{\\prime}=\\frac{W}{100}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We know that, if \\(g_0\\) be the value of gravity constant at the surface of earth, then value of gravity constant at distance \\(r\\) from surface of earth is,\u003c/p> \u003cp>\\({g}^{'}=\\frac{{g}_{0}}{{\\left(\\frac{r}{R}\\right)}^{2}}=\\frac{{g}_{0}}{{10}^{2}}[∴r=10R]\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& =\\frac{g_0}{100} \\\\& \\Rightarrow W ^{\\prime}=\\frac{W}{100}\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body of mass <em>m</em> is taken from earth surface to the height h equal to twice the radius of earth (<em>R</em><sub>e</sub>), the increase in potential energy will be:</p> <p>(<em>g </em>= acceleration due to gravity on the surface of Earth)</p> <p> </p> <p><strong>[JEE Main 2023, 25 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}mg{R}_{e}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3mg{R}_{e}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}mg{R}_{e}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{3}mg{R}_{e}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -638,10 +642,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} &amp; U_{i}=\\frac{-G M_{e} m}{R_{e}} \\\\ &amp; U_{F}=\\frac{-G M_{e} m}{3 R_{e}} \\\\ &amp; \\Delta U=U_{F}-U_{i}=\\frac{2 G M_{e} m}{3 R_{e}} \\\\ &amp; =\\frac{2 G M_{\\mathrm{e}} m}{3 R_{\\mathrm{e}}} \\times \\frac{R_{\\mathrm{e}}}{R_{\\mathrm{e}}}=\\frac{2}{3} m g R_{\\mathrm{e}} \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} & U_{i}=\\frac{-G M_{e} m}{R_{e}} \\\\ & U_{F}=\\frac{-G M_{e} m}{3 R_{e}} \\\\ & \\Delta U=U_{F}-U_{i}=\\frac{2 G M_{e} m}{3 R_{e}} \\\\ & =\\frac{2 G M_{\\mathrm{e}} m}{3 R_{\\mathrm{e}}} \\times \\frac{R_{\\mathrm{e}}}{R_{\\mathrm{e}}}=\\frac{2}{3} m g R_{\\mathrm{e}} \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are statements : One is labelled as Assertion A and the other is labelled as Reason R.<br/>Assertion A : Earth has atmosphere whereas moon doesn’t have any atmosphere.<br/>Reason R : The escape velocity on moon is very small as compared to that on earth.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is true but R is false</p></span></div><div class="option"><span class="key">b</span><span><p>A is false but R is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are correct but R is NOT the correct explanation of A</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are correct and R is the correct explanation of A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -653,7 +657,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>At moon, due to the low escape velocity, the rms velocity of molecules is greater than escape velocity. Hence, molecules escape and there is no atmosphere at moon. Thus both Assertion and Reason are correct and reason is correct explanation of Assertion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two planets \(A\) and \(B\) of radii \(R\) and \(1.5 R\) have densities \(\rho\) and \(\rho / 2\) respectively. The ratio of acceleration due to gravity at the surface of \(B\) to \(A\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2: 3<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>2: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3: 4<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>4: 3<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -662,10 +666,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity \\(g=\\frac{G M}{R^2}=\\frac{4}{3} \\pi G \\rho R\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\left(\\because M=\\rho \\times \\frac{4}{3} \\pi R^3\\right) \\\\\u003cbr/>&amp; \\therefore \\frac{g_2}{g_1}=\\frac{\\rho_2}{\\rho_1} \\times \\frac{R_2}{R_1}=\\frac{1}{2} \\times 1.5=\\frac{3}{4}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity \\(g=\\frac{G M}{R^2}=\\frac{4}{3} \\pi G \\rho R\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\left(\\because M=\\rho \\times \\frac{4}{3} \\pi R^3\\right) \\\\& \\therefore \\frac{g_2}{g_1}=\\frac{\\rho_2}{\\rho_1} \\times \\frac{R_2}{R_1}=\\frac{1}{2} \\times 1.5=\\frac{3}{4}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider two satellites \(S_{1}\) and \(S_{2}\) with periods of revolution \(1hr\ \)and 8 hr respectively revolving around a planet in circular orbits. The ratio of angular velocity of satellite \(S_{1}\) to the angular velocity of \(S_{2}\)</p> <p>[JEE Main 2021, 24 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2:1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1:8\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1:4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(8:1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -677,7 +681,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As given from the question, two time periods of revolutions of a satellites and given as T\u003csub>1\u003c/sub>=\\(1\\ hr\\) and T\u003csub>2\u003c/sub>=\\(8\\ hr\\), we know that\u003c/p> \u003cp>\\(\\omega =\\frac{2\\pi }{T}\\)\u003c/p> \u003cp>\\(∴\\frac{{T}_{2}}{{T}_{1}}=\\frac{{\\omega }_{1}}{{\\omega }_{2}}=\\frac{8}{1}\\)\u003c/p> \u003cp>Therefore the ratio of angular velocities given by 8:1.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the incorrect statement from the following :</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The speed of satellite in a given circular orbit remains constant.</p></span></div><div class="option"><span class="key">b</span><span><p>When a body falls towards earth, the displacement of earth towards the body is negligible.</p></span></div><div class="option"><span class="key">c</span><span><p>For a planet revolving around the sun in an elliptical orbit, the total energy of the planet remains constant.</p></span></div><div class="option"><span class="key">d</span><span><p>The linear speed of a planet revolving around the sun remains constant.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -689,7 +693,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Since planets revolve around the sun in elliptical path, so, its linear speed is not constant. Thus, it is incorrect statement.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Suppose the law of gravitational attraction suddenly changes and becomes an inverse cube law i.e. \(\mathrm{F}\propto \frac{1}{{\mathrm{r}}^{3}}\), but still remaining a central force. Then</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Kepler's law of area still holds</p></span></div><div class="option"><span class="key">b</span><span><p>Kepler's law of period still holds</p></span></div><div class="option"><span class="key">c</span><span><p>Kepler's law of area and period still holds</p></span></div><div class="option"><span class="key">d</span><span><p>neither the law of area, nor the law of period still holds</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>According to kepler's law of area\u003c/p> \u003cp>\\( \\frac{\\mathrm{dA}}{\\mathrm{dt}}=\\frac{\\mathrm{L}}{2 \\mathrm{~m}} \\)\u003c/p> \u003cp>\u003cbr/>For central forces, torque \\(=0\\)\u003cbr/>\\(\\therefore \\mathrm{L}=\\) constant\u003c/p> \u003cp>\\( \\therefore \\frac{\\mathrm{dA}}{\\mathrm{dt}}=\\text { constant } \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A satellite is launched into a circular orbit of radius \( r \) around earth while a second satellite is launched into an orbit of radius \( 1.02 \mathrm{r} \). The percentage difference in the time period of the two satellites is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>\( 1.0 \)</p></span></div><div class="option"><span class="key">c</span><span><p>15</p></span></div><div class="option"><span class="key">d</span><span><p>\( 0.7 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({T}^{2}\\propto {r}^{3}\\Rightarrow T\\propto {r}^{3/2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body of mass \(m\) is taken from the earth surface to a height \(h\) equal to twice the radius of earth \(\left(R_e\right)\), the increase in potential energy will be: \((g=\) acceleration due to gravity on the surface of Earth)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>3 mg R_e<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{1}{3} m g R_e<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{2}{3} m g R_e<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{1}{2} m g R_e<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -722,10 +726,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>U=\\frac{-G M_e m}{r}\u003cbr/>\\]\u003c/p> \u003cp>Initial gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_i=\\frac{-G M_e m}{R_e}\u003cbr/>\\]\u003c/p> \u003cp>Final gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_f=\\frac{-G M_e m}{\\left(R_e+h\\right)}=\\frac{-G M_e m}{R_e+2 R_e}=\\frac{-G M_e m}{3 R_e}\u003cbr/>\\]\u003c/p> \u003cp>Increase in internal energy \\(\\Delta U=U_f-U_i\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; =\\frac{2}{3} \\frac{G M_e m}{R_e} \\\\\u003cbr/>&amp; =\\frac{2}{3} m g R_e\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>U=\\frac{-G M_e m}{r}\u003cbr/>\\]\u003c/p> \u003cp>Initial gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_i=\\frac{-G M_e m}{R_e}\u003cbr/>\\]\u003c/p> \u003cp>Final gravitational potential energy of the object\u003cbr/>\\[\u003cbr/>U_f=\\frac{-G M_e m}{\\left(R_e+h\\right)}=\\frac{-G M_e m}{R_e+2 R_e}=\\frac{-G M_e m}{3 R_e}\u003cbr/>\\]\u003c/p> \u003cp>Increase in internal energy \\(\\Delta U=U_f-U_i\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& =\\frac{2}{3} \\frac{G M_e m}{R_e} \\\\& =\\frac{2}{3} m g R_e\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/><strong>Statement-I:</strong> Rotation of the earth shows effect on the value of acceleration due to gravity \((g)\).<br/><strong>Statement-II:</strong> The effect of rotation of the earth on the value of ' \(g\) ' at the equator is minimum and that at the pole is maximum.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is false but Statement-II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is true but Statement-II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement-I and Statement-II are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Due to rotation, gravity \\(g^{\\prime}=g-r \\omega^2 \\cos ^2 \\lambda\\)\u003cbr/>At pole \\(g^{\\prime}=g\\)\u003cbr/>\\[\u003cbr/>\\left(\\because \\lambda=90^{\\circ}\\right)\u003cbr/>\\]\u003c/p> \u003cp>At equator \\(g^{\\prime}=g_{ s }-r \\omega^2 \\cos ^2 \\lambda=g_{ s }-r \\omega^2\\)\u003cbr/>Effect is maximum at equator.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At a certain depth " \(d\) " below surface of earth. value of acceleration due to gravity becomes four times that of its value at a height \(3 R\) above earth surface. Where \(R\) is Radius of earth (Take \(R=6400 km\) ). The depth \(d\) is equal to;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>5260 km<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>640 km<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>2560 km<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>4800 km<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -746,10 +750,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; g\\left(1-\\frac{d}{R}\\right)=4 \\times \\frac{g}{\\left(1+\\frac{3 R}{R}\\right)^2} \\\\\u003cbr/>&amp; \\Rightarrow 1-\\frac{d}{R}=\\frac{1}{4} \\\\\u003cbr/>&amp; \\Rightarrow d=4800 km\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& g\\left(1-\\frac{d}{R}\\right)=4 \\times \\frac{g}{\\left(1+\\frac{3 R}{R}\\right)^2} \\\\& \\Rightarrow 1-\\frac{d}{R}=\\frac{1}{4} \\\\& \\Rightarrow d=4800 km\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>T is the time period of a simple pendulum on the earth's surface. Its time period becomes x T when taken to a height R (equal to earth's radius) above the surface of earth. Then, the value of x will be:</p> <p><strong>[JEE Main 2023, 25 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,7 +765,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At the surface of earth time period, \\(T=2\\pi \\sqrt{\\frac{ℓ}{g}}\\)\u003c/p> \u003cp>At a height h above the surface of earth =R\u003c/p> \u003cp>\\({g}^{'}=\\frac{g}{{\\left(1+\\frac{h}{R}\\right)}^{2}}=\\frac{g}{4}\\)\u003c/p> \u003cp>\\(\\Rightarrow xT=2\\pi \\sqrt{\\frac{ℓ}{(g/4)}}\\)\u003c/p> \u003cp>\\(\\Rightarrow xT=2T\\)\u003c/p> \u003cp>\\(\\Rightarrow x=2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/><strong>Statement-I: </strong>Acceleration due to gravity is different at different places on the surface of earth.<br/><strong>Statement-II: </strong>Acceleration due to gravity increases as we go down below the earth's surface.<br/>In the light of the above statements, choose the correct answer from the options given below</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement-I and Statement-II are true </p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are false </p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is true but Statement-II is false </p></span></div><div class="option"><span class="key">d</span><span><p>Statement-I is false but Statement-II is true </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -773,7 +777,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Effective acceleration due to gravity due to rotation of earth \\(g_{e f f}=g-\\omega^2 R_e \\sin ^2 \\theta\\), where, \\(\\theta\\) is co-latitude angle \\(g_{e f f}=g\\left(1-\\frac{d}{R_e}\\right)\\) here \\(d\\) is depth\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two planets \(A\) and \(B\) of radii \(R\) and \(1.5 R\) have densities \(\rho\) and \(\rho / 2\) respectively. The ratio of acceleration due to gravity at the surface of \(B\) to \(A\) is :</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2: 3<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>2: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3: 4<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>4: 3<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -782,10 +786,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity \\(g=\\frac{G M}{R^2}=\\frac{4}{3} \\pi G \\rho R\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\left(\\because M=\\rho \\times \\frac{4}{3} \\pi R^3\\right) \\\\\u003cbr/>&amp; \\therefore \\frac{g_2}{g_1}=\\frac{\\rho_2}{\\rho_1} \\times \\frac{R_2}{R_1}=\\frac{1}{2} \\times 1.5=\\frac{3}{4}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity \\(g=\\frac{G M}{R^2}=\\frac{4}{3} \\pi G \\rho R\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\left(\\because M=\\rho \\times \\frac{4}{3} \\pi R^3\\right) \\\\& \\therefore \\frac{g_2}{g_1}=\\frac{\\rho_2}{\\rho_1} \\times \\frac{R_2}{R_1}=\\frac{1}{2} \\times 1.5=\\frac{3}{4}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the angular momentum of a planet of mass \( m \), moving around the sun in a circular orbit is \( L \), about the center of the sun, its areal velocity is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{2 L}{m} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{4 L}{m} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{L}{2 m} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{L}{m} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -797,7 +801,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The areal velocity is given by \u003cbr/>\\[\u003cbr/>\\text{Areal velocity} = \\frac{1}{2} r v\u003cbr/>\\]\u003cbr/>The angular momentum of the planet is \\( L = m v r \\).\u003c/p> \u003cp>So, \u003cbr/>\\[\u003cbr/>\\text{Areal velocity} = \\frac{1}{2} r v = \\frac{1}{2} \\cdot \\frac{L}{m}\u003cbr/>\\].\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two satellites A and B move round the earth in the same orbit. The mass of A is twice the mass of B. The quantity which is same for the two satellites will be:[JEE Main 2023, 12 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Potential energy</p></span></div><div class="option"><span class="key">b</span><span><p>Total energy</p></span></div><div class="option"><span class="key">c</span><span><p>Kinetic energy</p></span></div><div class="option"><span class="key">d</span><span><p>Speed</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -806,10 +810,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let the mass of the satellites be \\(M_{ A } \\&amp; M_{ B }\\) and Mass and radius of earth be \\(M_{ e }\\) and \\(R_{ e }\\) respectively\u003cbr/>Then,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; P . E=-\\frac{G M_e M_A}{R_e} \\Rightarrow P . E \\propto M_e \\cdot M_A \\\\\u003cbr/>&amp; K . E=+\\frac{G M_e M_A}{2 R_e} \\Rightarrow K . E \\propto M_e \\cdot M_A \\\\\u003cbr/>&amp; T . E=-\\frac{G M_e M_A}{2 R_e} \\Rightarrow T . E \\propto M_e \\cdot M_A \\\\\u003cbr/>&amp; \\text { Speed }=v=\\sqrt{\\frac{G M_e}{R_e}} \\Rightarrow v \\propto \\sqrt{M_e}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Speed of satellite is Independent of mass of satellite \\(\\left(M_{ A }\\right.\\) or \\(\\left.M_{ B }\\right)\\).\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let the mass of the satellites be \\(M_{ A } \\&amp; M_{ B }\\) and Mass and radius of earth be \\(M_{ e }\\) and \\(R_{ e }\\) respectively\u003cbr/>Then,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& P . E=-\\frac{G M_e M_A}{R_e} \\Rightarrow P . E \\propto M_e \\cdot M_A \\\\& K . E=+\\frac{G M_e M_A}{2 R_e} \\Rightarrow K . E \\propto M_e \\cdot M_A \\\\& T . E=-\\frac{G M_e M_A}{2 R_e} \\Rightarrow T . E \\propto M_e \\cdot M_A \\\\& \\text { Speed }=v=\\sqrt{\\frac{G M_e}{R_e}} \\Rightarrow v \\propto \\sqrt{M_e}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Speed of satellite is Independent of mass of satellite \\(\\left(M_{ A }\\right.\\) or \\(\\left.M_{ B }\\right)\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At a certain depth "<em>d</em>" below surface of earth, value of acceleration due to gravity becomes four times that of its value at a height 3<em>R</em> above earth surface. Where <em>R</em> is Radius of earth (Take <em>R</em> = 6400km). The depth <em>d</em> is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5260 km</p></span></div><div class="option"><span class="key">b</span><span><p>640 km</p></span></div><div class="option"><span class="key">c</span><span><p>2560 km</p></span></div><div class="option"><span class="key">d</span><span><p>4800 km</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -821,7 +825,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>According to question, we can write\u003c/p> \u003cp>\\({\\mathrm{g}}^{'}=\\mathrm{g}\\left(1-\\frac{\\mathrm{d}}{\\mathrm{R}}\\right)=\\frac{\\mathrm{g}}{4}\\text{ and }{\\mathrm{g}}^{'}=\\mathrm{g}{\\left(\\frac{1}{1+\\frac{\\mathrm{h}}{\\mathrm{R}}}\\right)}^{2}=\\frac{\\mathrm{g}}{16}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{3}{4}=\\frac{\\mathrm{d}}{\\mathrm{R}}\\Rightarrow \\mathrm{d}=\\frac{3}{4}\\mathrm{R}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider two satellites \(S_{1}\) and \(S_{2}\) with periods of revolution \(1 \ hr\ \)and 8 hr respectively revolving around a planet in circular orbits. The ratio of angular velocity of satellite \(S_{1}\) to the angular velocity of \(S_{2}\).</p> <p>[JEE Main 2021, 24 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2:1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1:8\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1:4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(8:1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -833,7 +837,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As given from the question, two time periods of revolutions of a satellites and given as T\u003csub>1\u003c/sub>=\\(1\\ hr\\) and T\u003csub>2\u003c/sub>=\\(8\\ hr\\), we know that\u003c/p> \u003cp>\\(\\omega =\\frac{2\\pi }{T}\\)\u003c/p> \u003cp>\\(∴\\frac{{T}_{2}}{{T}_{1}}=\\frac{{\\omega }_{1}}{{\\omega }_{2}}=\\frac{8}{1}\\)\u003c/p> \u003cp>Therefore the ratio of angular velocities given by 8:1.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the angular velocity of earth's spin is increased such that the bodies at the equator start floating, the duration of the day would be approximately:<br/>[Take \(g=10 ms ^{-2}\), the radius of earth, \(R=6400 \times 10^3 m\), Take \(\pi=3.14]\)</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1200 \text { minutes }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\text {Does not change }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>60 \text { minutes }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>84 \text { minutes }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -842,10 +846,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>According to the question, bodies at equator start floating.\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore g_e=g-\\omega^2 R \\Rightarrow 0=g-\\omega^2 R \\Rightarrow \\omega=\\sqrt{\\frac{g}{R}} \\\\\u003cbr/>&amp; \\Rightarrow T=\\frac{2 \\pi}{\\omega}=2 \\pi \\sqrt{\\frac{R}{g}}=2 \\times 3.14 \\times \\sqrt{\\frac{6400 \\times 10^3}{10}} \\approx 84 min .\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>According to the question, bodies at equator start floating.\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\therefore g_e=g-\\omega^2 R \\Rightarrow 0=g-\\omega^2 R \\Rightarrow \\omega=\\sqrt{\\frac{g}{R}} \\\\& \\Rightarrow T=\\frac{2 \\pi}{\\omega}=2 \\pi \\sqrt{\\frac{R}{g}}=2 \\times 3.14 \\times \\sqrt{\\frac{6400 \\times 10^3}{10}} \\approx 84 min .\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Every planet revolves around the sun in an elliptical orbit.</p> <p>1. the force acting on planet is inversely proportional to square of distance from sun.</p> <p>2. Force acting on planet is inversely proportional to product of the masses of the planet and the sun.</p> <p>3. The Centripetal force acting on the planet is directed away from the sun.</p> <p>4. The square of time period of revolution of planet around sun is directly proportional to cube of semi-major axis of elliptical orbit.</p> <p>Choose the <strong>most appropriate</strong> answer from the options given below:</p> <p> </p> <p><strong>[JEE Main 2023, 25 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1 and 4 only</p></span></div><div class="option"><span class="key">b</span><span><p>2 and 3 only</p></span></div><div class="option"><span class="key">c</span><span><p>1 and 3 only</p></span></div><div class="option"><span class="key">d</span><span><p>3 and 4 only </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -857,7 +861,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Every planet revolve around the sun in an elliptical path and gravitational force acting on the planet is directly proportional to the product of mass of the planet (m) and mass of sun (M) and inversely proportional to the square of distance (r) between sun and planet.\u003c/p> \u003cp>\\(\\text{ i.e. }F\\propto \\frac{Mm}{{r}^{2}}\\Rightarrow F=\\frac{GMm}{{r}^{2}}\\)\u003c/p> \u003cp>When a planet revolve around the sun, then centripetal force acting on the planet is directed towards the sun. Thus, statement 3 is incorrect. According to Kepler's third law.\u003c/p> \u003cp>\\({T}^{2}\\propto {a}^{3}\\)\u003c/p> \u003cp>Thus, statement 1, 4 are correct but statement 2, 3 are incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body is projected vertically upwards from the surface of earth with a velocity sufficient enough to carry it to infinity. The time taken by it to reach height \(h\) is _______ s.</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\sqrt{\frac{2 R_e}{g}}\left[\left(1+\frac{h}{R_e}\right)^{3 / 2}-1\right]<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{1}{3} \sqrt{\frac{2 R_e}{g}}\left[\left(1+\frac{h}{R_e}\right)^{3 / 2}-1\right]<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{1}{3} \sqrt{\frac{R_e}{2 g}}\left[\left(1+\frac{h}{R_e}\right)^{3 / 2}-1\right]<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\sqrt{\frac{R_e}{2 g}}\left[\left(1+\frac{h}{R_e}\right)^{3 / 2}-1\right]<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -866,10 +870,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At the surface, escape velocity \\(=\\sqrt{\\frac{2 G M}{R_e}}\\)\u003cbr/>Applying conservation of energy:\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow \\frac{-G M m}{R_e}+\\frac{1}{2} m\\left(\\sqrt{\\frac{2 G M}{R_e}}\\right)^2=\\frac{-G M m}{r}+\\frac{1}{2} m v^2 \\\\\u003cbr/>&amp; \\Rightarrow \\frac{1}{2} m v^2=\\frac{G M m}{r} \\Rightarrow v^2=\\frac{2 G M}{r} \\\\\u003cbr/>&amp; \\Rightarrow v=\\sqrt{\\frac{2 G M}{r}} \\\\\u003cbr/>&amp; \\Rightarrow \\frac{d r}{d t}=\\sqrt{\\frac{2 G M}{r}}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Time \\(t\\) taken by body to reach at height \\(h\\).\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\int_{R_e}^{R_e+h} r^{1 / 2} d r=\\sqrt{2 G M} \\int_0^t d t \\\\\u003cbr/>&amp; \\Rightarrow \\frac{2}{3}\\left[\\left(R_e+h\\right)^{3 / 2}-R_e^{3 / 2}\\right]=\\sqrt{2 G M} t \\\\\u003cbr/>&amp; \\Rightarrow t=\\frac{1}{3} \\sqrt{\\frac{2 R_e}{g}}\\left[\\left(1+\\frac{h}{R_e}\\right)^{3 / 2}-1\\right]\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At the surface, escape velocity \\(=\\sqrt{\\frac{2 G M}{R_e}}\\)\u003cbr/>Applying conservation of energy:\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Rightarrow \\frac{-G M m}{R_e}+\\frac{1}{2} m\\left(\\sqrt{\\frac{2 G M}{R_e}}\\right)^2=\\frac{-G M m}{r}+\\frac{1}{2} m v^2 \\\\& \\Rightarrow \\frac{1}{2} m v^2=\\frac{G M m}{r} \\Rightarrow v^2=\\frac{2 G M}{r} \\\\& \\Rightarrow v=\\sqrt{\\frac{2 G M}{r}} \\\\& \\Rightarrow \\frac{d r}{d t}=\\sqrt{\\frac{2 G M}{r}}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Time \\(t\\) taken by body to reach at height \\(h\\).\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\therefore \\int_{R_e}^{R_e+h} r^{1 / 2} d r=\\sqrt{2 G M} \\int_0^t d t \\\\& \\Rightarrow \\frac{2}{3}\\left[\\left(R_e+h\\right)^{3 / 2}-R_e^{3 / 2}\\right]=\\sqrt{2 G M} t \\\\& \\Rightarrow t=\\frac{1}{3} \\sqrt{\\frac{2 R_e}{g}}\\left[\\left(1+\\frac{h}{R_e}\\right)^{3 / 2}-1\\right]\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two satellites of masses \(m\) and \(3 m\) revolve around the earth in circular orbits of radii <em>r</em> &amp; 3<em>r</em> respectively. The ratio of orbital speeds of the satellites respectively is:</p> <p>[JEE Main 2023, 10 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1: 1<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>3: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\sqrt{3}: 1<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>9: 1<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -881,7 +885,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Orbital speed, \\(v=\\sqrt{\\frac{G M}{r}}( M :\\) Mass of Earth \\()\\)\u003cbr/>\\(\\Rightarrow\\) Orbital speed is independent of mass of the satellite.\u003cbr/>\\(v \\propto \\frac{1}{\\sqrt{ r }}\\)\u003cbr/>\\(\\Rightarrow \\frac{v_1}{v_2}=\\sqrt{\\frac{ r _2}{ r _1}}=\\sqrt{\\frac{3 r }{ r }}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(R_E\) be the radius of Earth, then the ratio between the acceleration due to gravity at a depth ' \(r\) ' below and a height \(' r '\) above the earth surface is:</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1+\frac{r}{R_E}+\frac{r^2}{R_E^2}+\frac{r^3}{R_E^3}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>1-\frac{r}{R_E}-\frac{r^2}{R_E^2}-\frac{r^3}{R_E^3}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>1+\frac{r}{R_E}-\frac{r^2}{R_E^2}-\frac{r^3}{R_E^3}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>1+\frac{r}{R_E}-\frac{r^2}{R_E^2}+\frac{r^3}{R_E^3}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -893,7 +897,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Acceleration due to gravity at \\(r\\) height is \\(=\\frac{g}{\\left(1+\\frac{r}{R}\\right)^2}\\) Acceleration due to gravity at \\(r\\) depth is \\(=\\frac{g}{\\left(1-\\frac{r}{R}\\right)}\\) So, required ratio \\(=\\frac{g_{\\text {depth }}}{g_{\\text {height }}}=1+\\frac{r}{R}-\\frac{r^2}{R^2}-\\frac{r^3}{R^3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A planet has double the mass of the earth. Its average density is equal to the that of the earth. An object weighing \(W\) on earth will weight on that planet:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2^{2 / 3} W<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>W<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>2^{1 / 3} W<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>2 W<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -902,10 +906,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know thas mass\u003cbr/>\\[\u003cbr/>m=\\rho \\times \\frac{4}{3} \\pi R^3\u003cbr/>\\]\u003c/p> \u003cp>\\(∴R\\propto {m}^{\\frac{1}{3}}(∵\\text{ Density is equal })\\)\u003c/p> \u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Weight }=W \\propto g \\propto \\frac{m}{R^2} \\\\\u003cbr/>&amp; \\therefore W \\propto \\frac{m}{m^{2 / 3}} \\propto m^{1 / 3} \\\\\u003cbr/>&amp; \\frac{W}{W_1}=\\left(\\frac{m}{2 m}\\right)^{1 / 3}=\\left(\\frac{1}{2}\\right)^{1 / 3}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So, \\(W_1=2^{1 / 3} W\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know thas mass\u003cbr/>\\[\u003cbr/>m=\\rho \\times \\frac{4}{3} \\pi R^3\u003cbr/>\\]\u003c/p> \u003cp>\\(∴R\\propto {m}^{\\frac{1}{3}}(∵\\text{ Density is equal })\\)\u003c/p> \u003cp>\\[\u003cbr/>$$\\begin{aligned}& \\text { Weight }=W \\propto g \\propto \\frac{m}{R^2} \\\\& \\therefore W \\propto \\frac{m}{m^{2 / 3}} \\propto m^{1 / 3} \\\\& \\frac{W}{W_1}=\\left(\\frac{m}{2 m}\\right)^{1 / 3}=\\left(\\frac{1}{2}\\right)^{1 / 3}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So, \\(W_1=2^{1 / 3} W\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The escape velocities of two planets A and B are in the ratio 1: 2. If the ratio of their radii respectively is 1: 3, then the ratio of acceleration due to gravity of planet A to the acceleration of gravity of planet B will be:</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -917,7 +921,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Escape velocity is given by\u003c/p> \u003cp>\\({V}_{e}=\\sqrt{\\frac{2GM}{R}}=\\sqrt{\\frac{2G\\rho \\frac{4}{3}\\pi {R}^{3}}{R}}=C\\sqrt{\\rho }\\cdot R\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{V}_{{e}_{1}}}{{V}_{{e}_{2}}}=\\frac{{R}_{1}}{{R}_{2}}\\sqrt{\\frac{{\\rho }_{1}}{{\\rho }_{2}}}=\\frac{1}{2}\\)\u003c/p> \u003cp>\\(\\frac{{R}_{1}^{2}}{{R}_{2}^{2}}\\times \\frac{{\\rho }_{1}}{{\\rho }_{2}}=\\frac{1}{4}\\)\u003c/p> \u003cp>Given, \\(\\frac{{R}_{1}}{{R}_{2}}=\\frac{1}{3}\\)\u003c/p> \u003cp>\\(g=\\frac{GM}{{R}^{2}}=\\frac{G\\frac{4}{3}\\pi {R}^{3}\\times \\rho }{{R}^{2}}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{g}_{1}}{{g}_{2}}=\\frac{{\\rho }_{1}{R}_{1}}{{\\rho }_{2}{R}_{2}}=\\frac{1}{4}\\frac{{R}_{2}^{2}}{{R}_{1}^{2}}\\times \\frac{{R}_{1}}{{R}_{2}}=\\frac{3}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the angular momentum of a planet of mass \( m \), moving around the sun in a circular orbit is \( L \), about the center of the sun, its areal velocity is:[JEE Main 2021, 18 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{2 L}{m} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{4 L}{m} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{L}{2 m} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{L}{m} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -929,7 +933,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The areal velocity is given by \u003cbr/>\\[\u003cbr/>\\text{Areal velocity} = \\frac{1}{2} r v\u003cbr/>\\]\u003cbr/>The angular momentum of the planet is \\( L = m v r \\).\u003c/p> \u003cp>So, \u003cbr/>\\[\u003cbr/>\\text{Areal velocity} = \\frac{1}{2} r v = \\frac{1}{2} \\cdot \\frac{L}{m}\u003cbr/>\\].\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The escape velocities of two planets \(A\) and \(B\) are in the ratio \(1: 2\). If the ratio of their radii respectively is \(1: 3\), then the ratio of acceleration due to gravity of planet \(A\) to the acceleration of gravity of planet \(B\) will be:[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{4}{3}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{3}{2}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{2}{3}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{3}{4}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -938,10 +942,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Escape velocity is given by\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V_e=\\sqrt{\\frac{2 G M}{R}}=\\sqrt{\\frac{2 G \\rho \\frac{4}{3} \\pi R^3}{R}}=C \\sqrt{\\rho} \\cdot R \\\\\u003cbr/>&amp; \\Rightarrow \\frac{V_{e_1}}{V_{e_2}}=\\frac{R_1}{R_2} \\sqrt{\\frac{\\rho_1}{\\rho_2}}=\\frac{1}{2} \\\\\u003cbr/>&amp; \\frac{R_1^2}{R_2^2} \\times \\frac{\\rho_1}{\\rho_2}=\\frac{1}{4}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Given, \\(\\frac{R_1}{R_2}=\\frac{1}{3}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; g=\\frac{G M}{R^2}=\\frac{G \\frac{4}{3} \\pi R^3 \\times \\rho}{R^2} \\\\\u003cbr/>&amp; \\Rightarrow \\frac{g_1}{g_2}=\\frac{\\rho_1 R_1}{\\rho_2 R_2}=\\frac{1}{4} \\frac{R_2^2}{R_1^2} \\times \\frac{R_1}{R_2}=\\frac{3}{4}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Escape velocity is given by\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V_e=\\sqrt{\\frac{2 G M}{R}}=\\sqrt{\\frac{2 G \\rho \\frac{4}{3} \\pi R^3}{R}}=C \\sqrt{\\rho} \\cdot R \\\\& \\Rightarrow \\frac{V_{e_1}}{V_{e_2}}=\\frac{R_1}{R_2} \\sqrt{\\frac{\\rho_1}{\\rho_2}}=\\frac{1}{2} \\\\& \\frac{R_1^2}{R_2^2} \\times \\frac{\\rho_1}{\\rho_2}=\\frac{1}{4}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Given, \\(\\frac{R_1}{R_2}=\\frac{1}{3}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& g=\\frac{G M}{R^2}=\\frac{G \\frac{4}{3} \\pi R^3 \\times \\rho}{R^2} \\\\& \\Rightarrow \\frac{g_1}{g_2}=\\frac{\\rho_1 R_1}{\\rho_2 R_2}=\\frac{1}{4} \\frac{R_2^2}{R_1^2} \\times \\frac{R_1}{R_2}=\\frac{3}{4}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of escape velocity of a planet to the escape velocity of earth will be:<br/>Given : Mass of the planet is 16 times mass of earth and radius of the planet is 4 times the radius of earth.</p> <p> [JEE Main 2023, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>4: 1<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>2: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>1: \sqrt{2}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>1: 4<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -950,10 +954,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Given, } M_{ p }=16 M_{ E } \\text { and } R_{ p }=4 R_{ E } \\\\\u003cbr/>&amp; v_{\\text {escape }}=\\sqrt{\\frac{2 G M}{R}} \\Rightarrow v_e \\propto \\sqrt{\\frac{M}{R}} \\\\\u003cbr/>&amp; \\frac{\\left(v_e\\right)_p}{\\left(v_e\\right)_E}=\\sqrt{\\frac{M_p}{M_e} \\times \\frac{R_E}{R_p}}=\\sqrt{16 \\times \\frac{1}{4}}=2\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\text { Given, } M_{ p }=16 M_{ E } \\text { and } R_{ p }=4 R_{ E } \\\\& v_{\\text {escape }}=\\sqrt{\\frac{2 G M}{R}} \\Rightarrow v_e \\propto \\sqrt{\\frac{M}{R}} \\\\& \\frac{\\left(v_e\\right)_p}{\\left(v_e\\right)_E}=\\sqrt{\\frac{M_p}{M_e} \\times \\frac{R_E}{R_p}}=\\sqrt{16 \\times \\frac{1}{4}}=2\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assuming the earth to be a sphere of uniform mass density, the weight of a body at a depth \(d=\frac{R}{2}\) from the surface of earth, if its weight on the surface of earth is \(200 N\), will be:<br/>(Given <em>R</em> = Radius of earth) [JEE Main 2023, 10 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>400 N<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>500 N<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>300 N<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>100 N<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -965,7 +969,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Gravity at depth \\(d \\left(=\\frac{R}{2}\\right)\\)\u003cbr/>\\[\u003cbr/>g^{\\prime}=g\\left(1-\\frac{R / 2}{R}\\right)=\\frac{g}{2}=5 m / s ^2\u003cbr/>\\]\u003c/p> \u003cp>Weight at depth \\(R / 2=\\frac{200}{10} \\times 5=100 N\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mass density of a spherical galaxy varies as \( \frac{\mathrm{K}}{\mathrm{r}} \) over a large distance \( r \) from it's centre. In that region, a small star is in a circular orbit of radius \( \mathrm{R} \). Then the period of revolution, \( \mathrm{T} \) depends on \( \mathrm{R} \) as</p> <p>[JEE Main 2020, 2 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( \mathrm{T}^{2} \propto \frac{1}{\mathrm{R}^{3}} \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( T^{2} \propto R \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{T} \propto \mathrm{R} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{T}^{2} \propto \mathrm{R}^{3} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -977,7 +981,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The mass is the volume integral of the density \\(\\rho =\\frac{K}{r}\\):\u003c/p>  \\[M = \\int_{0}^{R} \\rho (4\\pi r^2) dr\\]   \\[M = \\int_{0}^{R} \\left(\\frac{K}{r}\\right) (4\\pi r^2) dr\\]   \\[M = 4\\pi K \\int_{0}^{R} r dr = 4\\pi K \\left[\\frac{r^2}{2}\\right]_{0}^{R}\\]   \\[M = 2\\pi K R^2\\]  \u003cp>From this, we see that \\(M\\propto {R}^{2}\\).\u003c/p> \u003cp>Apply the condition for a circular orbit:\u003c/p> \u003cp>Gravitational force provides the necessary centripetal force:\u003c/p>  \\[\\frac{GMm}{R^2} = m\\omega^2 R\\]  \u003cp>Substitute \\(\\omega =\\frac{2\\pi }{T}\\):\u003c/p>  \\[\\frac{GM}{R^2} = \\left(\\frac{4\\pi^2}{T^2}\\right) R\\]   \\[T^2 = \\frac{4\\pi^2 R^3}{GM}\\]  \u003cp>Substitute the mass proportionality:\u003c/p> \u003cp>Since \\(M\\propto {R}^{2}\\), substitute this into the \\({T}^{2}\\) equation:\u003c/p>  \\[T^2 \\propto \\frac{R^3}{R^2}\\]   \\[T^2 \\propto R\\]  \u003cp>Correct Answer: B\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A planet has double the mass of the earth. Its average density is equal to that of the earth. An object weighing W on earth will weight on that planet:</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2W</p></span></div><div class="option"><span class="key">b</span><span><p>2<sup>2/3</sup> W</p></span></div><div class="option"><span class="key">c</span><span><p>2<sup>1/3</sup> W</p></span></div><div class="option"><span class="key">d</span><span><p>W</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -989,7 +993,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\((\\mathrm{wt}{)}_{\\text{on earth }}=\\mathrm{w}={\\mathrm{mg}}_{\\mathrm{e}}\\)\u003c/p> \u003cp>\\((\\mathrm{wt})\\text{ on planet }={\\mathrm{w}}^{'}={\\mathrm{mg}}_{\\mathrm{p}}\\)\u003c/p> \u003cp>\\(∴\\frac{{w}^{'}}{w}=\\frac{{\\mathrm{mg}}_{\\mathrm{p}}}{{\\mathrm{mg}}_{\\mathrm{e}}}=\\frac{\\frac{4}{3}\\pi {\\rho }_{\\mathrm{p}}{\\mathrm{GR}}_{\\mathrm{p}}}{\\frac{4}{3}\\pi {\\rho }_{\\mathrm{e}}{\\mathrm{GR}}_{\\mathrm{e}}}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{W}^{'}}{W}=\\frac{{\\rho }_{P}}{{\\rho }_{e}}\\times \\frac{{R}_{P}}{{R}_{e}}=1\\times {2}^{1/3}\\)\u003c/p> \u003cp>\\({w}^{'}={2}^{1/3}w\\)\u003c/p> \u003cp>Since, \u003c/p> \u003cp>\\({M}_{P}=2{M}_{e}={\\rho }_{P}\\cdot \\frac{4}{3}\\pi {R}_{P}^{3}&Me={\\rho }_{e}\\frac{4}{3}\\pi {R}_{e}^{3}\\)\u003c/p> \u003cp>\\({\\rho }_{p}\\cdot \\frac{4}{3}\\pi {R}_{p}^{3}=2{\\rho }_{e}\\frac{4}{3}\\pi {R}_{e}^{3}\\)\u003c/p> \u003cp>\\({R}_{P}={2}^{1/3}Re\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two particle of equal mass ‘<em>m</em>’ move in a circle of radius ‘<em>r</em>’ under the action of their mutual gravitational attraction. The speed of each particle will be:</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2R}\sqrt{\frac{1}{Gm}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{\frac{Gm}{2R}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2}\sqrt{\frac{Gm}{R}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{\frac{4Gm}{R}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1001,7 +1005,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({F}_{G}={F}_{C}\\\\ \\frac{G{m}^{2}}{{(2r)}^{2}}=\\frac{m{v}^{2}}{r}\\\\ \\Rightarrow v=\\sqrt{\\frac{Gm}{4r}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The weight of a body on the earth is \(400 N\). Then weight of the body when taken to a depth half of the radius of the earth will be:[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\text { Zero }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>300 N<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>100 N<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>200 N<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1013,7 +1017,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Gravity at depth\u003cbr/>\\[\u003cbr/>g^{\\prime}=g\\left(1-\\frac{d}{R}\\right)=g\\left(1-\\frac{R}{2 R}\\right)=\\frac{g}{2}\u003cbr/>\\]\u003c/p> \u003cp>So weight, \\(W^{\\prime}=m g^{\\prime}=\\frac{m g}{2}=200 N\\)\u003cbr/>\\[\u003cbr/>\\{\\because m g=400 N\\}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The weight of a body on the surface of the earth is \(100 N\). The gravitational force on it when taken at a height, from the surface of earth, equal to one fourth the radius of the earth is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>100 N<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>64 N<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>50 N<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>25 N<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1022,10 +1026,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow g^{\\prime}=\\frac{g R^2}{\\left(R+\\frac{R}{4}\\right)^2}=\\frac{16 g}{25} \\\\\u003cbr/>&amp; \\therefore \\text { Weight }=M g^{\\prime}=\\frac{16}{25} \\times 100=64 N\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow g^{\\prime}=\\frac{g R^2}{\\left(R+\\frac{R}{4}\\right)^2}=\\frac{16 g}{25} \\\\& \\therefore \\text { Weight }=M g^{\\prime}=\\frac{16}{25} \\times 100=64 N\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At a certain depth " \(d\) " below surface of earth. value of acceleration due to gravity becomes four times that of its value at a height \(3 R\) above earth surface. Where \(R\) is Radius of earth (Take \(R=6400 km\) ). The depth \(d\) is equal to:</p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>5260 km<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>640 km<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>2560 km<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>4800 km<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1034,10 +1038,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; g\\left(1-\\frac{d}{R}\\right)=4 \\times \\frac{g}{\\left(1+\\frac{3 R}{R}\\right)^2} \\\\\u003cbr/>&amp; \\Rightarrow 1-\\frac{d}{R}=\\frac{1}{4} \\\\\u003cbr/>&amp; \\Rightarrow d=4800 km\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& g\\left(1-\\frac{d}{R}\\right)=4 \\times \\frac{g}{\\left(1+\\frac{3 R}{R}\\right)^2} \\\\& \\Rightarrow 1-\\frac{d}{R}=\\frac{1}{4} \\\\& \\Rightarrow d=4800 km\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \({V}_{0}\) is the gravitational potential due to sphere of uniform density on it's surface, then it's value at \(r=\frac{R}{2}\) of sphere will be: (Radius of sphere = <em>R</em>)[JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{11{V}_{0}}{8}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{11}{7}{V}_{0}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{14{V}_{0}}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{13{V}_{0}}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1049,7 +1053,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Formula of gravitational potential\u003cbr/>\\[\u003cbr/>V=\\frac{-G M}{2 R^3}\\left(3 R^2-r^2\\right)\u003cbr/>\\]\u003cbr/>\\(\\therefore\\) At surface, \\(r=R\\),\u003cbr/>\\[\u003cbr/>V=\\left(\\frac{-G M}{R}\\right)\u003cbr/>\\]\u003c/p> \u003cp>At \u003cem>r\u003c/em> = \\(\\frac{R}{2}\\)\u003cbr/>\\(∴\\text{ }{V}_{0}=\\frac{−11GM}{8R}=\\left(\\frac{11V}{8}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q84" data-gated="1">
-      <div class="qnum">Q84</div>
+      <div class="qhead"><div class="qnum">Q84</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A body weight W, is projected vertically upwards from earth's surface to reach a height above the earth which is equal to nine times the radius of earth. The weight of the body at that height will be:</p> <p> </p> <p><strong>[JEE Main 2023, 31 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{W}{91}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{W}{100}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{W}{9}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{W}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1061,7 +1065,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(c) Acceleration due to gravity at height h above the surface of earth.\u003c/p> \u003cp>\\({g}^{'}=\\frac{g}{{\\left(1+\\frac{h}{R}\\right)}^{2}}\\)\u003c/p> \u003cp>\\(\\begin{matrix}{g}^{'}=\\frac{GM}{{(10R)}^{2}}=(\\frac{g}{100}) \\\\ \\end{matrix}\\)\u003c/p> \u003cp>\\({W}^{'}=(\\frac{W}{100})\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q85" data-gated="1">
-      <div class="qnum">Q85</div>
+      <div class="qhead"><div class="qnum">Q85</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A planet has double the mass of the earth. Its average density is equal to the that of the earth. An object weighing \(W\) on earth will weight on that planet:</p> <p>[JEE Main 2019, 12 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2^{2 / 3} W<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>W<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>2^{1 / 3} W<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>2 W<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1070,7 +1074,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know thas mass\u003cbr/>\\[\u003cbr/>m=\\rho \\times \\frac{4}{3} \\pi R^3\u003cbr/>\\]\u003c/p> \u003cp>\\(∴R\\propto {m}^{\\frac{1}{3}}(∵\\text{ Density is equal })\\)\u003c/p> \u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Weight }=W \\propto g \\propto \\frac{m}{R^2} \\\\\u003cbr/>&amp; \\therefore W \\propto \\frac{m}{m^{2 / 3}} \\propto m^{1 / 3} \\\\\u003cbr/>&amp; \\frac{W}{W_1}=\\left(\\frac{m}{2 m}\\right)^{1 / 3}=\\left(\\frac{1}{2}\\right)^{1 / 3}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So, \\(W_1=2^{1 / 3} W\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know thas mass\u003cbr/>\\[\u003cbr/>m=\\rho \\times \\frac{4}{3} \\pi R^3\u003cbr/>\\]\u003c/p> \u003cp>\\(∴R\\propto {m}^{\\frac{1}{3}}(∵\\text{ Density is equal })\\)\u003c/p> \u003cp>\\[\u003cbr/>$$\\begin{aligned}& \\text { Weight }=W \\propto g \\propto \\frac{m}{R^2} \\\\& \\therefore W \\propto \\frac{m}{m^{2 / 3}} \\propto m^{1 / 3} \\\\& \\frac{W}{W_1}=\\left(\\frac{m}{2 m}\\right)^{1 / 3}=\\left(\\frac{1}{2}\\right)^{1 / 3}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So, \\(W_1=2^{1 / 3} W\\)\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Physics PYQs</h3>

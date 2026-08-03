@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Accountancy","item":"https://yespyq.com/exams/board/accountancy/"},{"@type":"ListItem","position":5,"name":"Goodwill","item":"https://yespyq.com/exams/board/accountancy/goodwill/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Goodwill</h1>
       <p>5 Board Accountancy previous year questions on <b>Goodwill</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If Average Capital Employed in a firm is ₹9,00,000, Average Profits ₹2,80,000, and Normal rate of return is 20%, then the value of goodwill as per capitalisation of super profits is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹ 1,24,000</p></span></div><div class="option correct"><span class="key">b</span><span><p>₹ 5,00,000</p></span></div><div class="option"><span class="key">c</span><span><p>₹ 45,00,000</p></span></div><div class="option"><span class="key">d</span><span><p>₹ 3,36,000</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match items given in List I with those in List II</p> <table> <tbody> <tr> <td>List I (Types of Goodwill)</td> <td>List II (Treatment to be done)</td> </tr> <tr> <td>1) Existing Goodwill</td> <td>a) No Entry Passed</td> </tr> <tr> <td>2) Goodwill Premium</td> <td>b) Inferred from the capital arrangement.</td> </tr> <tr> <td>3) Goodwill paid privately.</td> <td>c) Written off</td> </tr> <tr> <td>4) Hidden goodwill</td> <td>d) Credited to the sacrificing partner.</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1(a), 2(b), 3(c), 4(d)</p></span></div><div class="option"><span class="key">b</span><span><p>1(a), 2(c), 3(b), 4(d)</p></span></div><div class="option"><span class="key">c</span><span><p>1(a), 2(b), 3(d), 4(c)</p></span></div><div class="option"><span class="key">d</span><span><p>1(c), 2(d), 3(a), 4(b)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd>List I (Types of Goodwill)\u003c/td> \u003ctd>List II (Treatment to be done)\u003c/td> \u003c/tr> \u003ctr> \u003ctd>1) Existing Goodwill\u003c/td> \u003ctd>Written off \u003c/td> \u003c/tr> \u003ctr> \u003ctd>2) Goodwill Premium\u003c/td> \u003ctd>Credited to the sacrificing partner. \u003c/td> \u003c/tr> \u003ctr> \u003ctd>3) Goodwill paid privately.\u003c/td> \u003ctd>No Entry Passed\u003c/td> \u003c/tr> \u003ctr> \u003ctd>4) Hidden goodwill\u003c/td> \u003ctd>Inferred from the capital arrangement.\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>As per AS-26, assets like goodwill should be written off: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>As early as possible</p></span></div><div class="option"><span class="key">b</span><span><p>As early as possible but not exceeding estimated life</p></span></div><div class="option"><span class="key">c</span><span><p>As early as possible but not exceeding its estimated life, which normally should not be beyond 10 years </p></span></div><div class="option"><span class="key">d</span><span><p>Within the useful life of assets, irrespective of number of years </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>As per \u003cstrong>Accounting Standard (AS)-26 – Intangible Assets\u003c/strong>, goodwill is an intangible asset.\u003c/p> \u003c/li> \u003cli> \u003cp>It should be \u003cstrong>amortised over its useful (estimated) life\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Normally\u003c/strong>, the useful life of goodwill \u003cstrong>should not exceed 10 years\u003c/strong>, unless a longer life can be justified.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Therefore, \u003cstrong>Option C \u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which accounting standard is applicable for recognizing Intangible assets?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>AS-32</p></span></div><div class="option"><span class="key">b</span><span><p>AS-25</p></span></div><div class="option"><span class="key">c</span><span><p>AS-26</p></span></div><div class="option"><span class="key">d</span><span><p>AS-01</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>AS-26 is the accounting standard in India that deals with the accounting treatment for intangible assets. It prescribes the criteria for recognition and measurement of intangible assets, and requires disclosures about them. The other options are incorrect:\u003cbr/>AS-32 relates to Financial Instruments: Disclosures.\u003cbr/>AS-25 relates to Interim Financial Reporting.\u003cbr/>AS-01 relates to Disclosure of Accounting Policies.\u003c/p> \u003cp>Therefore, \u003cstrong>Option C\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Net Capital Employed is equal to :<br/>(A) Fixed Assets + Current Assets - Long term liabilities<br/>(B) Non current Assets + Current Assets - Current liabilities<br/>(C) Fixed Assets + Current Assets - Equity<br/>(D) Equity + Debt<br/>(E) Current Assets-Current liabilities</p> <p>Choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C) and (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

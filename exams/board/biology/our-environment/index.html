@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/board/biology/"},{"@type":"ListItem","position":5,"name":"Our Environment","item":"https://yespyq.com/exams/board/biology/our-environment/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Our Environment</h1>
       <p>11 Board Biology previous year questions on <b>Our Environment</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a renewable resource?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Coal</p></span></div><div class="option correct"><span class="key">b</span><span><p>Forest</p></span></div><div class="option"><span class="key">c</span><span><p>Petroleum</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which among the following is a non-biodegradable material ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Paper</p></span></div><div class="option"><span class="key">b</span><span><p>Sewage</p></span></div><div class="option"><span class="key">c</span><span><p>Wood</p></span></div><div class="option"><span class="key">d</span><span><p>DDT</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Option: D — DDT\u003c/p> \u003cp>DDT is a chemical pesticide that cannot be decomposed by microorganisms, hence it is non-biodegradable.\u003cbr/>It remains in the environment for a long time and accumulates in food chains, causing biological magnification.\u003cbr/>Paper, sewage, and wood are biodegradable materials.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Which of the following constitutes a food chain?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Grass, Wheat and Mango</p></span></div><div class="option"><span class="key">b</span><span><p>Grass, Goat and Human</p></span></div><div class="option"><span class="key">c</span><span><p>Goat, Cow and Elephant</p></span></div><div class="option"><span class="key">d</span><span><p>Grass, Fish and Goat</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>A food chain is a sequence showing the transfer of energy from producers to consumers. In option (B), grass acts as a producer, goat as a primary consumer, and human as a secondary consumer. The other options do not represent a proper feeding relationship. Hence, the correct answer is (B) Grass, Goat and Human.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The chemical showing biomagnification is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>CFC</p></span></div><div class="option"><span class="key">b</span><span><p>DDT</p></span></div><div class="option"><span class="key">c</span><span><p>NADP</p></span></div><div class="option"><span class="key">d</span><span><p>ATP</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Option: B — DDT\u003c/p> \u003cp>DDT is a non-biodegradable pesticide. It accumulates in organisms and its concentration increases at each trophic level of the food chain. This phenomenon is called biomagnification.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which forms the first trophic level in food chain ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Producers </p></span></div><div class="option"><span class="key">b</span><span><p>Secondary consumers </p></span></div><div class="option"><span class="key">c</span><span><p>Primary consumers </p></span></div><div class="option"><span class="key">d</span><span><p>Tertiary consumers</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct answer: (A) Producers\u003c/p> \u003cp>Producers (green plants) form the first trophic level because they prepare their own food using sunlight through photosynthesis and supply energy to all other organisms in the food chain.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is the main component of biogas?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Carbon dioxide</p></span></div><div class="option"><span class="key">b</span><span><p>Hydrogen sulphide</p></span></div><div class="option"><span class="key">c</span><span><p>Water vapour</p></span></div><div class="option"><span class="key">d</span><span><p>Methane</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Biogas is produced by \u003cstrong>anaerobic digestion\u003c/strong> of organic matter like animal dung, kitchen waste or sewage.\u003c/p> \u003ctable> \u003ctbody> \u003ctr> \u003ctd>Carbon Dioxide\u003c/td> \u003ctd>35-45%\u003c/td> \u003c/tr> \u003ctr> \u003ctd>Hydrogen Sulphide\u003c/td> \u003ctd>Small trace Amount\u003c/td> \u003c/tr> \u003ctr> \u003ctd>Water Vapour\u003c/td> \u003ctd>Not found\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>Methane\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>55-75%\u003c/strong>\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The chemical which shows biomagnification is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>CFC</p></span></div><div class="option"><span class="key">b</span><span><p>ADP</p></span></div><div class="option"><span class="key">c</span><span><p>ATP</p></span></div><div class="option"><span class="key">d</span><span><p>DDT</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Answer: D — DDT ✅\u003cbr/>Explanation:\u003c/p> \u003cp>DDT accumulates in organisms and concentrates at higher trophic levels of the food chain.\u003c/p> \u003cp>Other options like CFC, ADP, ATP do not show biomagnification.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Primary consumers are called</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Decomposer</p></span></div><div class="option"><span class="key">b</span><span><p>Omnivorous</p></span></div><div class="option"><span class="key">c</span><span><p>Carnivorous</p></span></div><div class="option"><span class="key">d</span><span><p>Vegetarian</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Answer: D — Vegetarian (Herbivores) ✅\u003cbr/>Explanation:\u003c/p> \u003cp>Primary consumers feed on producers (plants).\u003c/p> \u003cp>Examples: cows, rabbits, grasshoppers.\u003c/p> \u003cp>Carnivores feed on other animals, decomposers break down dead matter.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the percentage of CO<sub>2</sub> in the atmosphere ?<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.3 %</p></span></div><div class="option"><span class="key">b</span><span><p>0.03 %</p></span></div><div class="option"><span class="key">c</span><span><p>0.003 %</p></span></div><div class="option"><span class="key">d</span><span><p>0.0003 %</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Option: B — 0.03 %\u003c/p> \u003cp>Carbon dioxide forms about 0.03–0.04% of the Earth’s atmosphere.\u003cbr/>Although present in small amount, CO₂ is essential for photosynthesis and helps maintain Earth’s temperature through the greenhouse effect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>CFC is widely used in</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Jet engines</p></span></div><div class="option"><span class="key">b</span><span><p>Refrigerators</p></span></div><div class="option"><span class="key">c</span><span><p>Air conditioners</p></span></div><div class="option"><span class="key">d</span><span><p>All of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Answer: D — All of these ✅\u003cbr/>Explanation:\u003c/p> \u003cp>CFCs (Chlorofluorocarbons) are used in:\u003c/p> \u003cp>Jet engines (as propellants)\u003c/p> \u003cp>Refrigerators\u003c/p> \u003cp>Air conditioners\u003c/p> \u003cp>Hence, all of these is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The main component of domestic gas (LPG) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ethane</p></span></div><div class="option"><span class="key">b</span><span><p>Propane</p></span></div><div class="option"><span class="key">c</span><span><p>Butane</p></span></div><div class="option"><span class="key">d</span><span><p>Methane</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Some Basic Concepts of Chemistry","item":"https://yespyq.com/exams/neet/chemistry/some-basic-concepts-of-chemistry/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Some Basic Concepts of Chemistry</h1>
       <p>16 NEET Chemistry previous year questions on <b>Some Basic Concepts of Chemistry</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A metal chloride contains 55.0% of chlorine by weight. 100 mL vapours of the metal chloride at STP weigh 0.57 g. The molecular formula of the metal chloride is (Given: Atomic mass of chlorine is 35.5 u)</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>MCl2</span></div><div class="option"><span class="key">b</span><span>MCl4</span></div><div class="option"><span class="key">c</span><span>MCl3</span></div><div class="option"><span class="key">d</span><span>MCl</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A compound X contains \(32%\) of A , \(20%\) of B and remaining percentage of C. Then, the empirical formula of X is <br/>(Given atomic masses of \(\mathrm{A}=64\mathrm{u};\mathrm{B}=40\mathrm{u};\mathrm{C}=32\mathrm{u}\)) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(AB{C}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({A}_{2}B{C}_{2}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(AB{C}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(A{B}_{2}{C}_{2}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The highest number of helium atoms is in </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2.271098\mathrm{L}\) of helium at STP</p></span></div><div class="option"><span class="key">b</span><span><p>\(4\) mol of helium</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\mathrm{u}\) of helium</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\mathrm{g}\) of helium</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At standard temperature and pressure (STP):\u003c/p> \u003cp>Volume of 1 mole of gas = 22.7 L\u003c/p> \u003cp>2.27 L ≈ 0.1 mole\u003c/p> \u003cp>Therefore, 4 moles of helium have the maximum number of atoms\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If 200 ml of 0.1 M Na<sub>2</sub>SO<sub>4</sub> is mixed with 200 ml of 0.2 M BaCl<sub>2</sub> solution. Total number of moles of all type of ions in the final solution is </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.18</p></span></div><div class="option"><span class="key">b</span><span><p>0.12</p></span></div><div class="option"><span class="key">c</span><span><p>0.14</p></span></div><div class="option"><span class="key">d</span><span><p>0.22</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Na2SO4 + BaCl2 \\(\\overset{}{\\to }\\) BaSO4 \\(↓\\) + 2NaCl\u003c/p> \u003cp> 0.02 0.04\u003c/p> \u003cp>Remaining 0.02 0.04\u003c/p> \u003cp> Na+ + Cl¯ + Ba+2 + 2Cl¯\u003c/p> \u003cp>0.04 0.04 0. 02 0.04 = 0.14]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On complete combustion, \(0.3 g\) of an organic compound gave \(0.2 g\) of \(CO _2\) and \(0.1 g\) of \(H _2 O\). The percentage composition of carbon and hydrogen in the compound, respectively are:</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4.07 \%\) and \(15.02 \%\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(18.18 \%\) and \(3.70 \%\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(15.02 \%\) and \(4.07 \%\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3.70 \%\) and \(18.18 \%\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>From CO\u003csub>2\u003c/sub>:\u003cbr/>Mass of C = (12 / 44) × 0.2 = 0.0545 g\u003c/p> \u003cp>Percentage of C = (0.0545 / 0.3) × 100 = 18.18%\u003c/p> \u003cp>From H\u003csub>2\u003c/sub>O:\u003cbr/>Mass of H = (2 / 18) × 0.1 = 0.0111 g\u003c/p> \u003cp>Percentage of H = (0.0111 / 0.3) × 100 = 3.70%\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>1 gram of sodium hydroxide was treated with \(25\mathrm{mL}\) of \(0.75\mathrm{M}\mathrm{HCl}\) solution, the mass of sodium hydroxide left unreacted is equal to</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>200 mg</p></span></div><div class="option"><span class="key">b</span><span><p>750 mg</p></span></div><div class="option"><span class="key">c</span><span><p>250 mg</p></span></div><div class="option"><span class="key">d</span><span><p>0 mg</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Molar mass of NaOH = 40\u003c/p> \u003cp>Moles = 1 / 40 = 0.025 mol\u003c/p> \u003cp>Moles of HCl = 0.75 × 0.025 = 0.01875 mol\u003c/p> \u003cp>Reaction:\u003cbr/>NaOH + HCl → NaCl + H₂O\u003c/p> \u003cp>NaOH remaining = 0.025 − 0.01875 = 0.00625 mol\u003c/p> \u003cp>Mass = 0.00625 × 40 = 0.25 g = 250 mg\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Dalton's Atomic theory could not explain which of the following?</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Law of multiple proportion</p></span></div><div class="option"><span class="key">b</span><span><p>Law of gaseous volume</p></span></div><div class="option"><span class="key">c</span><span><p>Law of conservation of mass</p></span></div><div class="option"><span class="key">d</span><span><p>Law of constant proportion</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Dalton’s atomic theory could explain the following laws:\u003c/p> \u003cp>Law of conservation of mass\u003cbr/>Law of definite proportions\u003cbr/>Law of multiple proportions\u003c/p> \u003cp>However, it could not explain the law of gaseous volumes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>1.0 g of \(H _2\) has same number of molecules as in</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(14 g\) of \(N _2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(18 g\) of \(H _2 O\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(16 g\) of \(CO\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(28 g\) of \(N _2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Molar mass of H\u003csub>2\u003c/sub> = 2\u003c/p> \u003cp>Moles of 1 g H\u003csub>2\u003c/sub> = 1 / 2 = 0.5 mol\u003c/p> \u003cp>Moles of 14 g N\u003csub>2\u003c/sub> = 14 / 28 = 0.5 mol\u003c/p> \u003cp>Hence, both have equal number of molecules (same moles)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If 0.2 gram of an organic compound containing carbon, hydrogen and oxygen, on combustion yielded 0.147 grams of carbon dioxide and 0.12 grams of water. What will be the content of oxygen in the substance?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> 73.29% </p></span></div><div class="option"><span class="key">b</span><span><p> 78.45%</p></span></div><div class="option"><span class="key">c</span><span><p> 83.23% </p></span></div><div class="option"><span class="key">d</span><span><p>89.50%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(%ofC=\\frac{12}{44}\\times \\frac{0.147}{0.2}\\times 100=20.045%\\\\ %ofH=\\frac{2}{18}\\times \\frac{0.12}{0.2}\\times 100=6.66%\\\\ %ofO=100-(20.045+6.66)=73.29%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An ideal gaseous mixture of ethane (\({\mathrm{C}}_{2}{\mathrm{H}}_{6}\)) and ethene (\({\mathrm{C}}_{2}{\mathrm{H}}_{4}\)) occupies 28 liter at 1 atm and 273 K. The mixture reacts completely with 128 g \({\mathrm{O}}_{2}\)to produce \({\mathrm{CO}}_{2}\) and \({\mathrm{H}}_{2}\mathrm{O}\). The mole fraction at \({\mathrm{C}}_{2}{\mathrm{H}}_{6}\) in the mixture is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.6</p></span></div><div class="option"><span class="key">b</span><span><p>0.4</p></span></div><div class="option"><span class="key">c</span><span><p>0.5</p></span></div><div class="option"><span class="key">d</span><span><p>0.8</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{C}}_{2}{\\mathrm{H}}_{6}+3.5{\\mathrm{O}}_{2}\\to 2{\\mathrm{CO}}_{2}+3{\\mathrm{H}}_{2}\\mathrm{O}\\\\ {\\mathrm{C}}_{2}{\\mathrm{H}}_{4}+3{\\mathrm{O}}_{2}\\to 2{\\mathrm{CO}}_{2}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\ \\mathrm{Let}\\mathrm{volume}\\mathrm{of}\\mathrm{ethane}\\mathrm{is}\\mathrm{x}\\mathrm{litre}\\\\ 22.4\\times 4=3.5\\mathrm{x}+3(28-\\mathrm{x})\\\\ \\mathrm{x}=11.2\\mathrm{L}\\\\ \\mathrm{At}\\mathrm{constant}\\mathrm{t}\\mathrm{and}\\mathrm{P},\\mathrm{V}\\alpha \\mathrm{n}\\\\ \\mathrm{Mole}\\mathrm{fractio}\\mathrm{of}{\\mathrm{C}}_{2}{\\mathrm{H}}_{6}\\mathrm{in}\\mathrm{the}\\mathrm{mixture}\\mathrm{is}=\\frac{11.2}{28}=0.4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a hydrocarbon \(\mathrm{A}\) undergoes combustion in the presence of air, it requires 9.5 equivalents of oxygen and produces 3 equivalents of water. What is the molecular formula of A?</p> <p> </p> <p>[JEE Main 2023, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{C}_{8} \mathrm{H}_{6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{C}_{9} \mathrm{H}_{9}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{C}_{6} \mathrm{H}_{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{C}_{9} \mathrm{H}_{6}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{C}_{\\mathrm{x}} \\mathrm{H}_{\\mathrm{y}}+\\left(\\mathrm{x}+\\frac{\\mathrm{y}}{4}\\right) \\mathrm{O}_{2} \\rightarrow \\mathrm{xCO}_{2}+\\frac{\\mathrm{y}}{2} \\mathrm{H}_{2} \\mathrm{O}\\)\u003c/p> \u003cp>\\(\\mathrm{x}+\\frac{\\mathrm{y}}{4}=9.5\\)\u003c/p> \u003cp>\\(\\frac{\\mathrm{y}}{2}=3 \\quad(\\therefore\\) given 3 equivalents of water \\()\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{x}=8, \\mathrm{y}=6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the followings has maximum number of atoms?</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 1 \mathrm{~g} \) of \( \mathrm{Ag}~{(s)} \) [Atomic mass of \( \mathrm{Ag}=108 \) ]</p></span></div><div class="option"><span class="key">b</span><span><p>\( 1 \mathrm{~g} \) of \( \mathrm{Mg}~{(s)} \) [Atomic mass of \( \mathrm{Mg}=24 \) ]</p></span></div><div class="option"><span class="key">c</span><span><p>\( 1 \mathrm{~g} \) of \( \mathrm{O}_{2}~{(g)} \) [Atomic mass of \( \mathrm{O}=16 \) ]</p></span></div><div class="option"><span class="key">d</span><span><p>\( 1 \mathrm{~g} \) of \( \mathrm{Li}~{(s)} \) [Atomic mass of \( \left.\mathrm{Li}=7\right] \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{n}=\\frac{\\mathrm{w}}{\\mathrm{M}}\\\\ \\text{Ag: }\\mathrm{n}=\\frac{1}{108}\\\\ \\text{Mg: }\\mathrm{n}=\\frac{1}{24}\\\\ \\text{O₂: }\\mathrm{n}=\\frac{1}{32}\\times 2=\\frac{1}{16}\\\\ \\text{Li: }\\mathrm{n}=\\frac{1}{7}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II.</p> <table> <tbody> <tr> <td>List - I</td> <td>List - II</td> </tr> <tr> <td>(A) \(16 \mathrm{~g}\) of \(\mathrm{CH}_{4}(\mathrm{~g})\)</td> <td>(I) Weighs \(28 \mathrm{~g}\)</td> </tr> <tr> <td>(B) \(1 \mathrm{~g}\) of \(\mathrm{H}_{2}(\mathrm{~g})\)</td> <td>(II) \(60.2 \times 10^{23}\) electrons</td> </tr> <tr> <td>(C) 1 mole of \(\mathrm{N}_{2}(\mathrm{~g})\)</td> <td>(III) Weighs \(32 \mathrm{~g}\)</td> </tr> <tr> <td>(D) \(0.5 \mathrm{~mol}\) of \(\mathrm{SO}_{2}(\mathrm{~g})\)</td> <td>(IV) Occupies \(11.4 \mathrm{~L}\) volume at STP</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A)-(I), B-(III), C-(II), D-(IV)</p></span></div><div class="option"><span class="key">b</span><span><p>(A)-(II), B-(III), C-(IV), D-(I)</p></span></div><div class="option"><span class="key">c</span><span><p>(A)-(II), B-(IV), C-(III), D-(I)</p></span></div><div class="option"><span class="key">d</span><span><p>(A)-(II), B-(IV), C-(I), D-(III)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{n}=\\frac{\\text { Weight }}{\\text { Molar mass }}\\)\u003c/p> \u003cp>\\(16 \\mathrm{~g} \\mathrm{CH}_{4}=1 \\mathrm{~mole}\\)\u003c/p> \u003cp>1 mole \\(\\mathrm{CH}_{4} \\rightarrow 10 \\times 6.02 \\times 10^{23}\\) electrons\u003c/p> \u003cp>\\(=60.2 \\times 10^{23}\\) electrons\u003c/p> \u003cp>1g \\(\\mathrm{H}_{2}=0.5 \\mathrm{~mole}\\)\u003c/p> \u003cp>1 mole \\(\\mathrm{H}_{2}\\) at STP \\(\\rightarrow 22.4 \\mathrm{~L}\\)\u003c/p> \u003cp>0.5 mole \\({N}_{2}\\) at STP \\(\\rightarrow 11.2 \\mathrm{~L} \\approx 11.4 \\mathrm{~L}\\)\u003c/p> \u003cp>1 mole of \\(\\mathrm{N}_{2}=28 \\mathrm{~g}\\)\u003c/p> \u003cp>\\(\\left(\\because \\mathrm{M}_{\\mathrm{N}_{2}}=28 \\mathrm{~g} / \\mathrm{mol}\\right)\\)\u003c/p> \u003cp>0.5 mole of \\(\\mathrm{SO}_{2}=32 \\mathrm{~g}\\)\u003c/p> \u003cp>\\(\\left(\\because \\mathrm{M}_{\\mathrm{SO}_{2}}=64 \\mathrm{~g} / \\mathrm{mol}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>One mole of carbon atom weighs \( 12 \mathrm{~g} \), the number of atoms in it is equal to (Mass of carbon- 12 is \( 1.9926 \times 10^{-23} \mathrm{~g} \) ) </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 6.022 \times 10^{22} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 12 \times 10^{22} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 6.022 \times 10^{23} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 12 \times 10^{23} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In one mole of carbon, the number of atoms = Avogadro’s number = 6.022 × 10\u003csup>23\u003c/sup> atoms\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The <strong>correct</strong> option for the mass of \(\mathrm{CO}_2\) produced by heating \(20 \mathrm{~g}\) of \(20 \%\) pure limestone is<br/>(Atomic mass of \(\mathrm{Ca}=40\)u)<br/>\(\left[{\mathrm{CaCO}}_{3}\overset{1200\mathrm{K}}{\to }\mathrm{CaO}+{\mathrm{CO}}_{2}\right]\)</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.76 g</p></span></div><div class="option"><span class="key">b</span><span><p>2.64 g</p></span></div><div class="option"><span class="key">c</span><span><p>1.32 g</p></span></div><div class="option"><span class="key">d</span><span><p>1.12 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Mass of \\({\\mathrm{CO}}_{2}=\\frac{20\\times 0.2\\times 44}{100}=1.76\\) g\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An organic compound contains 78% (by wt.) carbon and remaining percentage of hydrogen. The right option for the empirical formula of this compound is: [Atomic wt. of \( \mathrm{C} \) is \( 12, \mathrm{H} \) is 1\( ] \) </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{CH}_{2} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{CH}_{3} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{CH}_{4} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{CH} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

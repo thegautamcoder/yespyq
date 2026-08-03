@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Electrostatic Potential and Capacitance","item":"https://yespyq.com/exams/neet/physics/electrostatic-potential-and-capacitance/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Electrostatic Potential and Capacitance</h1>
       <p>23 NEET Physics previous year questions on <b>Electrostatic Potential and Capacitance</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The capacitance of a capacitor with charge and a potential difference depends on :</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>both and</span></div><div class="option correct"><span class="key">b</span><span>the geometry of the capacitor</span></div><div class="option"><span class="key">c</span><span>q only</span></div><div class="option"><span class="key">d</span><span>V only</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of electric potential at a distance of 9 cm from the point charge \(4\times {10}^{-7}\mathrm{C}\) is [Given \(\left.\frac{1}{4\pi {\epsilon }_{0}}=9\times {10}^{9}{\mathrm{Nm}}^{2}{\mathrm{C}}^{-2}\right]\) :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\times {10}^{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(44.4\mathrm{V}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4.4\times {10}^{5}\mathrm{V}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(4\times {10}^{4}\mathrm{V}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct?<br/>A. Inside a conductor, the electrostatic field is zero.<br/>B. Electric field at the surface of a charged conductor does not depend on its surface charge density.<br/>C. The interior of a charged conductor can have no excess charge in the static situation.<br/>D. At the surface of a charged conductor, the electrostatic field must be normal to the surface at every point.<br/>E. The electrostatic potential is zero everywhere inside a charged conductor.<br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and D only</p></span></div><div class="option"><span class="key">c</span><span><p>A, C and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>A. Inside conductor, electrostatic field =0\u003cbr/>B. E.F at the surface of the conductor \\(E=\\frac{\\sigma}{\\epsilon_0}\\) depends on ' \\(\\sigma\\) '\u003cbr/>C. \\(\\mathrm{E}_{\\text {interior }}\\) excess charge =0\u003cbr/>D. At surface of the conductor\u003c/p> \u003cp>E is ⟂ to surface\u003cbr/>E. \\(\\mathrm{E}_{\\mathrm{in}}=0\\)\u003c/p> \u003cp>So \\(\\mathrm{V}_{\\mathrm{in}}=\\) constant\u003cbr/>not zero\u003cbr/>Ans. (A, C, D)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The capacitance of a capacitor with charge \(\mathrm{q}\) and a potential difference \(V\) depends on :[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>both \(q\) and \(V\)</p></span></div><div class="option"><span class="key">b</span><span><p>the geometry of the capacitor</p></span></div><div class="option"><span class="key">c</span><span><p>q only</p></span></div><div class="option"><span class="key">d</span><span><p>V only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The capacitance of a capacitor depends on the geometry of the capacitor, which includes the size and shape of the plates and the distance between them. The capacitance is independent of the charge (q) or potential difference (V)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The capacitance of a capacitor with charge \(\mathrm{q}\) and a potential difference \(V\) depends on :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>both \(q\) and \(V\)</p></span></div><div class="option"><span class="key">b</span><span><p>the geometry of the capacitor</p></span></div><div class="option"><span class="key">c</span><span><p>q only</p></span></div><div class="option"><span class="key">d</span><span><p>V only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The capacitance of a capacitor depends on the geometry of the capaciitor, which includes the size and shape of the plates and the distance between them. The capacitance is independent of the charge (q) or potential difference (V)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of electric potential at a distance of 9 cm from the point charge \(4\times {10}^{-7}\mathrm{C}\) is [Given \(\left.\frac{1}{4\pi {\epsilon }_{0}}=9\times {10}^{9}{\mathrm{Nm}}^{2}{\mathrm{C}}^{-2}\right]\) :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\times {10}^{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(44.4\mathrm{V}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4.4\times {10}^{5}\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\times {10}^{4}\mathrm{V}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(V=\\frac{9\\times {10}^{9}\\times 4\\times {10}^{-7}}{9\\times {10}^{-2}}\\\\ V=4\\times {10}^{4}V\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the plates of a parallel plate capacitor connected to a battery are moved close to each other, then</p> <p>A. the charge stored in it, increases.</p> <p>B. the energy stored in it, decreases.</p> <p>C. its capacitance increases.</p> <p>D. the ratio of charge to its potential remains the same.</p> <p>E. the product of charge and voltage increases.</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and E only</p></span></div><div class="option"><span class="key">c</span><span><p>B, D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Battery connected means Voltage (\u003cem>V\u003c/em>) is constant. Capacitance \u003cem>C\u003c/em> = ε\u003csub>0\u003c/sub>\u003cem>A\u003c/em>/\u003cem>d\u003c/em>.\u003c/p> \u003cp>Charge \u003cem>Q\u003c/em> = \u003cem>CV\u003c/em>. Energy \u003cem>U\u003c/em> = \\(\\frac{1}{2}\\)\u003cem>CV\u003c/em>\u003csup>2\u003c/sup>.\u003c/p> \u003cp>Plates moved closer \\(\\Rightarrow\\)\u003cem> d\u003c/em> decreases \\(\\Rightarrow\\)\u003cem>C\u003c/em> increases. Since \u003cem>V\u003c/em> is constant, \u003cem>Q \u003c/em>= \u003cem>CV\u003c/em> increases.\u003cem> U\u003c/em>=\\(\\frac{1}{2}\\)\u003cem>CV\u003c/em>² increases. The product \u003cem>Q \u003c/em>×\u003cem> V\u003c/em> = \u003cem>CV\u003c/em>² increases. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider two uncharged capacitors of equal capacitance 200 pF. One of them is charged by a 100 V supply and disconnected. Now this capacitor is connected to the uncharged capacitor. The amount of electrostatic energy lost in the process is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.0 × 10<sup>–6</sup> J</p></span></div><div class="option"><span class="key">b</span><span><p>0.5 × 10<sup>–6</sup> J</p></span></div><div class="option"><span class="key">c</span><span><p>0.5 J</p></span></div><div class="option"><span class="key">d</span><span><p>1.0 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Heat loss (ΔH) = (1/2) × [C₁C₂ / (C₁ + C₂)] (V₁ − V₂)²\u003c/p> \u003cp>= (1/2) × [(200 × 200) / (200 + 200)] × (100 − 0)² × 10⁻¹² J\u003c/p> \u003cp>= 50 × 10⁴ × 10⁻¹² J\u003c/p> \u003cp>= 5 × 10⁻⁷ J\u003c/p> \u003cp>= 0.5 × 10⁻⁶ J\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of electric potential at a distance of 9 cm from the point charge \(4\times {10}^{-7}\mathrm{C}\) is [Given \(\left.\frac{1}{4\pi {\epsilon }_{0}}=9\times {10}^{9}{\mathrm{Nm}}^{2}{\mathrm{C}}^{-2}\right]\) :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\times {10}^{2}\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(44.4\mathrm{V}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4.4\times {10}^{5}\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\times {10}^{4}\mathrm{V}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(V=\\frac{9\\times {10}^{9}\\times 4\\times {10}^{-7}}{9\\times {10}^{-2}}\\\\ V=4\\times {10}^{4}V\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A \(12\mathrm{pF}\) capacitor is connected to a \(50\mathrm{V}\) battery, the electrostatic energy stored in the capacitor in \(\mathrm{nJ}\) is </p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>15</p></span></div><div class="option"><span class="key">b</span><span><p>7.5</p></span></div><div class="option"><span class="key">c</span><span><p>0.3</p></span></div><div class="option"><span class="key">d</span><span><p>150</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Electrostatic energy stored in the capacitor is given by the relation,\u003c/p> \u003cp>\\(\\begin{matrix}\\mathrm{E}=\\frac{1}{2}{\\mathrm{CV}}^{2} \\\\ =\\frac{1}{2}\\times 12\\times {10}^{-12}\\times (50{)}^{2} \\\\ =1.5\\times {10}^{-8}\\mathrm{J}=15\\mathrm{nJ}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The capacitance of a parallel plate capacitor with air as medium is \(3\mu F\). With the introduction of a dielectric medium between the plates, the capacitance becomes \(15\mu F\). The permittivity of the medium is</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5{ C }^{ 2 }{ N }^{ -1 }{ m }^{ -2 }\quad \)</p></span></div><div class="option"><span class="key">b</span><span><p>\(10{ C }^{ 2 }{ N }^{ -1 }{ m }^{ -2 }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.44\times { 10 }^{ -10 }{ C }^{ 2 }{ N }^{ -1 }{ m }^{ -2 }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(8.854\times { 10 }^{ -11 }{ C }^{ 2 }{ N }^{ -1 }{ m }^{ -2 }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Capacitance of a parallel capacitor with air is \\(C=\\cfrac { { \\varepsilon}_{ 0 }A }{ d } \\)\u003c/p> \u003cp>Capacitance of a same parallel plate capacitor with the introduction of a dielectric medium is \\(C'=\\cfrac { { K\\varepsilon}_{ 0 }A }{ d } \\)\u003c/p> \u003cp>where \\(K\\) is the dielectric constant of a medium\u003c/p> \u003cp>or \\(\\cfrac { C' }{ C } =K\\quad or\\quad K=\\cfrac { 15 }{ 3 } =5\\quad or\\quad K=\\cfrac { \\varepsilon}{ { \\varepsilon}_{ 0 } } \\quad \\)\u003c/p> \u003cp>or \\(\\varepsilon =K{ \\varepsilon}_{ 0 }=5\\times 8.854\\times { 10 }^{ -12 }=0.44\\times { 10 }^{ -10 }{ C }^{ 2 }{ N }^{ -1 }{ m }^{ -2 }\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two capacitors of capacities \(2 C\) and \(C\) are joined in parallel and charge up to potential \(V\). The battery is removed and the capacitor of capacity \(C\) is filled completely with a medium of dielectric constant \(K\). The potential difference across the capacitors will now be:</p> <p> </p> <p>[JEE Main 2021, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3 V}{K}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{V}{K}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{V}{K+2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3 V}{K+2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,10 +216,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Formula of common potential\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V_C=\\frac{Q_1+Q_2}{C_1+C_2}=\\frac{C_1 V_1+C_2 V_2}{C_1+C_2} \\\\\u003cbr/>&amp; V_c=\\frac{2 C V+C V}{K C+2 C}=\\frac{3 C V}{(K+2) C}=\\frac{3 V}{K+2}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Formula of common potential\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V_C=\\frac{Q_1+Q_2}{C_1+C_2}=\\frac{C_1 V_1+C_2 V_2}{C_1+C_2} \\\\& V_c=\\frac{2 C V+C V}{K C+2 C}=\\frac{3 C V}{(K+2) C}=\\frac{3 V}{K+2}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two charged spherical conductors of radius <em>R</em><sub>1</sub> and <em>R</em><sub>2</sub> are connected by a wire. Then the ratio of surface charge densities of the spheres \(\left(\frac{{\sigma }_{1}}{{\sigma }_{2}}\right)\) is:</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( \frac{R_{1}^{2}}{R_{2}^{2}} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{R_{1}}{R_{2}} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{R_{2}}{R_{1}} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \sqrt{\left(\frac{R_{1}}{R_{2}}\right)} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>When two spherical conductors are connected by a wire, their potentials become equal:\u003c/p> \u003cp>\\(\\frac{k{Q}_{1}}{{R}_{1}}=\\frac{k{Q}_{2}}{{R}_{2}}\\)\u003c/p> \u003cp>\\(\\frac{{Q}_{1}}{{Q}_{2}}=\\frac{{R}_{1}}{{R}_{2}}\\)\u003c/p> \u003cp>Surface charge density:\u003c/p> \u003cp>\\(\\sigma =\\frac{Q}{4\\pi {R}^{2}}\\)\u003c/p> \u003cp>\\(\\frac{{\\sigma }_{1}}{{\\sigma }_{2}}=\\frac{{Q}_{1}}{{Q}_{2}}⋅\\frac{{R}_{2}^{2}}{{R}_{1}^{2}}=\\frac{{R}_{1}}{{R}_{2}}⋅\\frac{{R}_{2}^{2}}{{R}_{1}^{2}}=\\frac{{R}_{2}}{{R}_{1}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Twenty seven drops of same size are charged at \( 220 \mathrm{~V} \) each. They combine to form a bigger drop. Calculate the potential of the bigger drop.</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 1320 \mathrm{~V} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 1520 \mathrm{~V} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 1980 \mathrm{~V} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 660 \mathrm{~V} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>If each drop has a charge ' q ' and radius ' r '.\u003cbr/>Then from conservation of charge, charge on the big drop is nq = 27q(n = 27) from conservation of volume \\(\\frac{4}{3}\\pi {r}^{3}n=\\frac{4}{3}\\pi {R}^{3}\\)\u003c/p> \u003cp>R = n\u003csup>1/3\u003c/sup> r\u003c/p> \u003cp>Now potential of the small drop \\(V=\\frac{q}{4\\pi {ϵ}_{0}r}=220\\text{ V}\\)\u003cbr/>Potential of the big drop,\u003c/p> \u003cp>\\(V=\\frac{nq}{4\\pi {ϵ}_{0}R}=\\frac{nq}{4\\pi {ϵ}_{0}{n}^{1/3}r}={n}^{2/3}\\frac{q}{4\\pi {ϵ}_{0}r}\\)\u003c/p> \u003cp>\\(V={(27)}^{2/3}\\times 220\\text{ V}\\)\u003c/p> \u003cp>\\(=9\\times 220=1980\\text{ V}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The angle between the electric lines of force and the equipotential surface is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(180{^\circ}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0{^\circ}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(45{^\circ}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(90{^\circ}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>We know that,\u003c/p> \u003cp>Potential difference \\(= \\ - \\ \\overrightarrow{E}\\text{.d}\\overrightarrow{r}\\ \\ \\ \\ \\ \\ ......(1)\\)\u003c/p> \u003cp>So, \\(dV = \\ - \\ \\overrightarrow{E}\\text{.d}\\overrightarrow{r}\\ = 0\\)\u003c/p> \u003cp>Hence, we get \\(E_{\\text{per}}.dr\\ = 0\\)\u003c/p> \u003cp>It states that the scalar product of normal component of electric field and distance is zero.\u003c/p> \u003cp>The normal component of the electric field is \\(\\text{E\\ cos}\\theta\\).\u003c/p> \u003cp>Now, \\(\\text{E\\ cos}\\theta\\ = \\ 0\\)\u003c/p> \u003cp>and \\(\\text{E\\ cos}\\theta.dr\\ = 0\\)\u003c/p> \u003cp>Which means, \\(E\\) and \\(\\text{dr}\\) are non-zero values.\u003c/p> \u003cp>So, \\(\\cos\\theta\\ = \\ 0\\)\u003c/p> \u003cp>\\(\\Rightarrow \\ \\theta = 90{^\\circ}\\)\u003c/p> \u003cp>\\(\\ \\theta = 90{^\\circ}\\) indicates that the angle between electric lines of forces or electric field and equipotential surface is \\(90{^\\circ}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The distance between two plates of a capacitor is \(d\) and its capacitance is \(C_1\), when air is the medium between the plates. If a metal sheet of thickness \(\frac{2 d}{3}\) and of same area as plate is introduced between the plates, the capacitance of the capacitor becomes \(C_2\). The ratio \(\frac{C_2}{C_1}\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 : 1</p></span></div><div class="option"><span class="key">b</span><span><p>4 : 1`</p></span></div><div class="option"><span class="key">c</span><span><p>3 : 1 </p></span></div><div class="option"><span class="key">d</span><span><p>1 : 1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,10 +264,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; K_{\\text {metal }}=\\infty, t=\\frac{2 d}{3} \\\\\u003cbr/>&amp; C_1=\\frac{\\in_0 A}{d}=C \\\\\u003cbr/>&amp; C_2=\\frac{\\epsilon_0 A}{d-t+\\frac{t}{k_{\\text {metal }}}}=\\frac{\\epsilon_0 A}{d-\\frac{2 d}{3}+0}=3 C_1=3 C \\\\\u003cbr/>&amp; \\frac{C_2}{C_1}=\\frac{3 C}{C}=\\frac{3}{1}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\\begin{aligned}& K_{\\text {metal }}=\\infty, t=\\frac{2 d}{3} \\\\& C_1=\\frac{\\in_0 A}{d}=C \\\\& C_2=\\frac{\\epsilon_0 A}{d-t+\\frac{t}{k_{\\text {metal }}}}=\\frac{\\epsilon_0 A}{d-\\frac{2 d}{3}+0}=3 C_1=3 C \\\\& \\frac{C_2}{C_1}=\\frac{3 C}{C}=\\frac{3}{1}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electric potential \(V\) is given as a function of distance \(\times\) (metre) by \(V=\left(5 x^2+10 x-4\right)\) volt. Value of electric field at \(x=1 \mathrm{~m}\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-23\mathrm{V}/\mathrm{m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(11\mathrm{V}/\mathrm{m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6\mathrm{V}/\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-20\mathrm{V}/\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,11 +276,11 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>$$ \\begin{aligned}\u003cbr/>&amp; \\mathrm{V}=5 \\mathrm{x}^2+10 \\mathrm{x}-4 \\\\\u003cbr/>&amp; \\mathrm{E}=\\frac{-\\mathrm{dV}}{\\mathrm{dx}}=-(10 \\mathrm{x}+10) \\\\\u003cbr/>&amp; \\text { At } \\mathrm{x}=1 \\mathrm{~m}, \\mathrm{E}=-20 \\mathrm{~V} / \\mathrm{m}\u003cbr/>\\end{aligned} $$\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>$$ \\begin{aligned}& \\mathrm{V}=5 \\mathrm{x}^2+10 \\mathrm{x}-4 \\\\& \\mathrm{E}=\\frac{-\\mathrm{dV}}{\\mathrm{dx}}=-(10 \\mathrm{x}+10) \\\\& \\text { At } \\mathrm{x}=1 \\mathrm{~m}, \\mathrm{E}=-20 \\mathrm{~V} / \\mathrm{m}\\end{aligned} $$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
-      <div class="qtext"><p>A parallel plate capacitor with plate area ' \(A\) ' and distance of separation ' \(d\) ' is filled with a dielectric. What is the capacity of the capacitor when permittivity of the dielectric varies as:<br/>\[<br/>\begin{aligned}<br/>&amp; \varepsilon(x)=\varepsilon_0+k x, \text { for }\left(0&lt;x \leq \frac{d}{2}\right) \\<br/>&amp; \varepsilon(x)=\varepsilon_0+k(d-x), \text { for }\left(\frac{d}{2} \leq x \leq d\right)<br/>\end{aligned}<br/>\]</p></div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>A parallel plate capacitor with plate area ' \(A\) ' and distance of separation ' \(d\) ' is filled with a dielectric. What is the capacity of the capacitor when permittivity of the dielectric varies as:<br/>\[<br/>$$\begin{aligned}& \varepsilon(x)=\varepsilon_0+k x, \text { for }\left(0&lt;x \leq \frac{d}{2}\right) \\& \varepsilon(x)=\varepsilon_0+k(d-x), \text { for }\left(\frac{d}{2} \leq x \leq d\right)\end{aligned}$$<br/>\]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{k A}{2} \ell n\left(\frac{2 \varepsilon_0}{2 \varepsilon_0-k d}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{k A}{2 \ell n\left(\frac{2 \varepsilon_0+k d}{2 \varepsilon_0}\right)}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left(\varepsilon_0+\frac{k d}{2}\right)^{2 / k A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -284,10 +288,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) For \\(0&lt;x \\leq \\frac{d}{2}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; d C_1=\\frac{\\left(\\varepsilon_0+k x\\right) A}{d x} \\\\\u003cbr/>&amp; \\int \\frac{1}{d C_1}=\\int \\frac{d x}{\\left(\\varepsilon_0+k x\\right) A} \\\\\u003cbr/>&amp; \\frac{1}{C_1}=\\frac{1}{A} \\frac{\\left[\\ln \\left(\\varepsilon_0+k x\\right)\\right]_0^{d / 2}}{k}=\\frac{1}{k A} \\ln \\left(1+\\frac{k d}{2 \\varepsilon_0}\\right) \\\\\u003cbr/>&amp; C_1=\\frac{k A}{\\ln \\left(1+\\frac{k d}{2 \\varepsilon_0}\\right)}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Similarly, For \\(\\frac{d}{2}&lt;x \\leq d, d C_2=\\frac{\\left[\\varepsilon_0+k(d-x)\\right] A}{d x}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\int \\frac{1}{d C_2}=\\int_{d / 2}^d \\frac{d x}{\\left[\\varepsilon_0+k(d-x)\\right] A}=\\frac{\\left[\\ln \\left\\{\\varepsilon_0+k(d-x)\\right\\}\\right]_{d / 2}^d}{-k A} \\\\\u003cbr/>&amp; C_2=\\frac{k A}{\\ln \\left(1+\\frac{k d}{2 \\varepsilon_0}\\right)}=C_1\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>let, \\(C_1=C_2=C\\)\u003cbr/>then equivalent capacitance\u003cbr/>\\[\u003cbr/>=\\frac{C_1 C_2}{C_1+C_2}=\\frac{C}{2}=\\frac{k A}{2 \\ln \\left(\\frac{2 \\varepsilon_0+k d}{2 \\varepsilon_0}\\right)}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) For \\(0&lt;x \\leq \\frac{d}{2}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& d C_1=\\frac{\\left(\\varepsilon_0+k x\\right) A}{d x} \\\\& \\int \\frac{1}{d C_1}=\\int \\frac{d x}{\\left(\\varepsilon_0+k x\\right) A} \\\\& \\frac{1}{C_1}=\\frac{1}{A} \\frac{\\left[\\ln \\left(\\varepsilon_0+k x\\right)\\right]_0^{d / 2}}{k}=\\frac{1}{k A} \\ln \\left(1+\\frac{k d}{2 \\varepsilon_0}\\right) \\\\& C_1=\\frac{k A}{\\ln \\left(1+\\frac{k d}{2 \\varepsilon_0}\\right)}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Similarly, For \\(\\frac{d}{2}&lt;x \\leq d, d C_2=\\frac{\\left[\\varepsilon_0+k(d-x)\\right] A}{d x}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\int \\frac{1}{d C_2}=\\int_{d / 2}^d \\frac{d x}{\\left[\\varepsilon_0+k(d-x)\\right] A}=\\frac{\\left[\\ln \\left\\{\\varepsilon_0+k(d-x)\\right\\}\\right]_{d / 2}^d}{-k A} \\\\& C_2=\\frac{k A}{\\ln \\left(1+\\frac{k d}{2 \\varepsilon_0}\\right)}=C_1\\end{aligned}$$\u003cbr/>\\]\u003cbr/>let, \\(C_1=C_2=C\\)\u003cbr/>then equivalent capacitance\u003cbr/>\\[\u003cbr/>=\\frac{C_1 C_2}{C_1+C_2}=\\frac{C}{2}=\\frac{k A}{2 \\ln \\left(\\frac{2 \\varepsilon_0+k d}{2 \\varepsilon_0}\\right)}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two identical electric point dipoles have dipole moments \(\overrightarrow{p_1}=p \hat{i}\) and \(\overrightarrow{p_2}=-p \hat{i}\) are held on the \(x\) axis at distance ' \(a\) ' from each other. When released, they move along the \(x\)-axis with the direction of their dipole moments remaining unchanged. If the mass of each dipole is ' \(m\) ', their speed when they are infinitely far apart is:</p> <p> </p> <p>[JEE Main 2020, 6 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{p}{a} \sqrt{\frac{1}{\pi \in_0 m a}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{p}{a} \sqrt{\frac{1}{2 \pi \in_0 m a}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{p}{a} \sqrt{\frac{2}{\pi \in_0 m a}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{p}{a} \sqrt{\frac{3}{2 \pi \in_0 m a}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Here,\u003cbr/>\\((K.E.+P.E.{)}_{\\text{initial }}=(K.E.+P.E.{)}_{\\text{final }}\\\\ 0+\\left(\\frac{1}{4\\pi {\\in }_{0}}\\frac{2P}{{a}^{3}}\\right)\\times P=2\\times \\frac{1}{2}m{v}^{2}+0\\\\ v=\\sqrt{\\frac{{P}^{2}}{2\\pi {\\in }_{0}m{a}^{3}}}=\\frac{P}{a}\\sqrt{\\frac{1}{2\\pi {\\in }_{0}ma}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Polar molecules are the molecules:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Acquire a dipole moment only in the presence of electric field due to displacement of charges.</p></span></div><div class="option"><span class="key">b</span><span><p>Acquire a dipole moment only when magnetic field is absent.</p></span></div><div class="option"><span class="key">c</span><span><p>Having a permanent electric dipole moment.</p></span></div><div class="option"><span class="key">d</span><span><p>Having zero dipole moment.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Polar molecules have centres of positive and negative charges apart by a certain distance which means positive and negative polarity arises. So, the polar molecules have permanent dipole moment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two capacitors of capacities \(2 C\) and \(C\) are joined in parallel and charge up to potential \(V\). The battery is removed and the capacitor of capacity \(C\) is filled completely with a medium of dielectric constant \(K\). The potential difference across the capacitors will now be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3 V}{K}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{V}{K}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{V}{K+2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3 V}{K+2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,10 +324,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Formula of common potential\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V_C=\\frac{Q_1+Q_2}{C_1+C_2}=\\frac{C_1 V_1+C_2 V_2}{C_1+C_2} \\\\\u003cbr/>&amp; V_c=\\frac{2 C V+C V}{K C+2 C}=\\frac{3 C V}{(K+2) C}=\\frac{3 V}{K+2}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Formula of common potential\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V_C=\\frac{Q_1+Q_2}{C_1+C_2}=\\frac{C_1 V_1+C_2 V_2}{C_1+C_2} \\\\& V_c=\\frac{2 C V+C V}{K C+2 C}=\\frac{3 C V}{(K+2) C}=\\frac{3 V}{K+2}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a certain region of space with volume \( 0.2 \mathrm{~m}^{3} \), the electric potential is found to be \( 5 \mathrm{~V} \) throughout. The magnitude of electric field in this region is:</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.5</p></span></div><div class="option"><span class="key">b</span><span><p>1</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>ZERO</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Since electric potential is found throughout constant, hence electric field,\u003c/p> \u003cp>\\(E=−\\frac{dV}{dr}=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two isolated metallic solid spheres of radii \(R\) and \(2 R\) are charged such that both have same charge density \(\sigma\). The spheres are then connected by a thin conducting wire. If the new charge density of the bigger sphere is \(\sigma^{\prime}\). The ratio \(\frac{\sigma^{\prime}}{\sigma}\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{9}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{6}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

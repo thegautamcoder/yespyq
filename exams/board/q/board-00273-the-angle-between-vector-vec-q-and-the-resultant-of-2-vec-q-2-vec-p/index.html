@@ -20,10 +20,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"The angle between vector \\(\\vec{Q}\\) and the resultant of \\((2\\vec{Q}+2\\vec{P})\\) and \\((2\\vec{Q}-2\\vec{P})\\) is","text":"The angle between vector \\(\\vec{Q}\\) and the resultant of \\((2\\vec{Q}+2\\vec{P})\\) and \\((2\\vec{Q}-2\\vec{P})\\) is","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: a) \\(0^\\circ\\). Let the resultant of both the vectors be \\(\\vec{R}\\), then \\begin{equation} \\begin{aligned} &amp;\\begin{aligned} \\vec{R} &amp; =(2 \\vec{Q}+2 \\vec{P})+(2 \\vec{Q}-2 \\vec{P}) \\\\ \\vec{R} &amp; =4 \\vec{Q} \\end{aligned}\\\\ &amp;\\text { Angle between } \\vec{Q} \\text { and } \\vec{R} \\text { is zero } \\end{aligned} \\end{equation}","url":"https://yespyq.com/exams/board/q/board-00273-the-angle-between-vector-vec-q-and-the-resultant-of-2-vec-q-2-vec-p/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
+  {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"The angle between vector \\(\\vec{Q}\\) and the resultant of \\((2\\vec{Q}+2\\vec{P})\\) and \\((2\\vec{Q}-2\\vec{P})\\) is","text":"The angle between vector \\(\\vec{Q}\\) and the resultant of \\((2\\vec{Q}+2\\vec{P})\\) and \\((2\\vec{Q}-2\\vec{P})\\) is","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: a) \\(0^\\circ\\). Let the resultant of both the vectors be \\(\\vec{R}\\), then \\begin{equation} $$\\begin{aligned}&\\begin{aligned}\\vec{R} & =(2 \\vec{Q}+2 \\vec{P})+(2 \\vec{Q}-2 \\vec{P}) \\\\\\vec{R} & =4 \\vec{Q}\\end{aligned}$$\\\\ &amp;\\text { Angle between } \\vec{Q} \\text { and } \\vec{R} \\text { is zero } \\end{aligned} \\end{equation}","url":"https://yespyq.com/exams/board/q/board-00273-the-angle-between-vector-vec-q-and-the-resultant-of-2-vec-q-2-vec-p/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Mathematical Tools and Vectors","item":"https://yespyq.com/exams/board/physics/mathematical-tools-and-vectors/"},{"@type":"ListItem","position":6,"name":"Question","item":"https://yespyq.com/exams/board/q/board-00273-the-angle-between-vector-vec-q-and-the-resultant-of-2-vec-q-2-vec-p/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,12 +80,12 @@
       <div class="qtags"><span class="qtag">Board</span><span class="qtag">Physics</span></div>
       <h1>The angle between vector \(\vec{Q}\) and the resultant of \((2\vec{Q}+2\vec{P})\) and \((2\vec{Q}-2\vec{P})\) is</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The angle between vector \(\vec{Q}\) and the resultant of \((2\vec{Q}+2\vec{P})\) and \((2\vec{Q}-2\vec{P})\) is </p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(0^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\tan }^{-1}\frac{P}{Q}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\tan }^{-1}\left(\frac{2\vec{Q}-2\vec{P}}{2\vec{Q}+2\vec{P}}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\tan }^{-1}(2Q/P)\)</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: a) <p>\(0^\circ\)</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p> Let the resultant of both the vectors be \(\vec{R}\), then</p> <p>\begin{equation}<br/>\begin{aligned}<br/>&amp;\begin{aligned}<br/>\vec{R} &amp; =(2 \vec{Q}+2 \vec{P})+(2 \vec{Q}-2 \vec{P}) \\<br/>\vec{R} &amp; =4 \vec{Q}<br/>\end{aligned}\\<br/>&amp;\text { Angle between } \vec{Q} \text { and } \vec{R} \text { is zero }<br/>\end{aligned}<br/>\end{equation}</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p> Let the resultant of both the vectors be \(\vec{R}\), then</p> <p>\begin{equation}<br/>$$\begin{aligned}&\begin{aligned}\vec{R} & =(2 \vec{Q}+2 \vec{P})+(2 \vec{Q}-2 \vec{P}) \\\vec{R} & =4 \vec{Q}\end{aligned}$$\\<br/>&amp;\text { Angle between } \vec{Q} \text { and } \vec{R} \text { is zero }<br/>\end{aligned}<br/>\end{equation}</p></div>
       </div>
     </div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/board/q/board-01829-what-will-be-the-projection-of-vector-vec-a-hat-i-hat-j-hat-k-on-vec/">Next question →</a></div>

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Accountancy","item":"https://yespyq.com/exams/board/accountancy/"},{"@type":"ListItem","position":5,"name":"Reconstitution of a Partnership Firm: Admission of Partner","item":"https://yespyq.com/exams/board/accountancy/reconstitution-of-a-partnership-firm-admission-of-partner/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Reconstitution of a Partnership Firm: Admission of Partner</h1>
       <p>17 Board Accountancy previous year questions on <b>Reconstitution of a Partnership Firm: Admission of Partner</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following assets is compulsorily revalued at the time of <br/>admission of a new partner ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Stock </p></span></div><div class="option"><span class="key">b</span><span><p>Investment </p></span></div><div class="option"><span class="key">c</span><span><p>Fixed assets </p></span></div><div class="option correct"><span class="key">d</span><span><p>Goodwill</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a new partner does not bring his share of goodwill in cash, then the amount is debited to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cash A/c</p></span></div><div class="option"><span class="key">b</span><span><p>Premium A/c</p></span></div><div class="option correct"><span class="key">c</span><span><p>New Partner's Capital A/c</p></span></div><div class="option"><span class="key">d</span><span><p>Capital A/c of Old Partners</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assets and Liabilities are shown at their revalued value in :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> New Balance Sheet </p></span></div><div class="option"><span class="key">b</span><span><p>All partners capital A/C </p></span></div><div class="option"><span class="key">c</span><span><p> Revaluation A/C </p></span></div><div class="option"><span class="key">d</span><span><p> Realisation A/C</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer / सही उत्तर:\u003cbr/>(A) (New Balance Sheet)\u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>After reconstitution of a partnership, assets and liabilities are shown at their revalued amounts in the New Balance Sheet.\u003cbr/>The Revaluation Account is only used to calculate profit or loss due to revaluation; it does not display assets and liabilities.\u003c/p>  \u003cp>Why other options are incorrect \u003c/p> \u003cul> \u003cli>(B) Revaluation Account:\u003cbr/>It records the profit or loss from revaluation, not the assets and liabilities at revised values.\u003c/li> \u003cli>(C) Partners’ Capital Accounts:\u003cbr/>Capital accounts record partners’ shares of profit or loss, not the revalued assets and liabilities.\u003c/li> \u003cli>(D) Realisation Account:\u003cbr/>It is prepared at the time of dissolution, not for showing revalued figures.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A, B &amp; C were sharing profits &amp; losses in the ratio of 3: 2: 1. They decided to share profits &amp; losses equally in future. General reserve was appearing in their books at ₹60,000 . Goodwill was valued at ₹1,20,000. The partners do not want to disturb the general reserve.<br/>The adjusting entry will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A's capital A/C Dr. 1,80,000</p> <p> To C's Capital A/C 1,80,000</p></span></div><div class="option"><span class="key">b</span><span><p>A's capital A/C Dr. 1,80,000</p> <p> To B's Capital A/C 1,20,000</p> <p> To C's Capital A/C 60,000</p></span></div><div class="option"><span class="key">c</span><span><p>C' s capital A/C Dr. 30,000</p> <p> To A's Capital A/C 30,000</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{C}}^{'}\) s capital A/C Dr. 1,80,000</p> <p> To A's Capital A/C 1,20,000</p> <p> To B's Capital A/C 60,000</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Option C\u003c/strong>\u003c/p> \u003cp>Amount to be adjusted = General Reserve + Valued Goodwill = ₹1,80,000\u003c/p> \u003cp>Calculation of Gaining and Sacrificing Ratio\u003c/p> \u003cp>A = \\(\\frac{3}{6}-\\frac{1}{3}=\\frac{1}{6}\\) (Sacrificing)\u003c/p> \u003cp>B = \\(\\frac{2}{6}-\\frac{1}{3}=0\\)\u003c/p> \u003cp>C = \\(\\frac{1}{6}-\\frac{1}{3}=-\\frac{1}{6}\\) (Gaining)\u003c/p> \u003cp>The journal entry will be:\u003c/p> \u003cp>C' s capital A/C Dr. 30,000 (1/6 of 1,80,000)\u003c/p> \u003cp> To A's Capital A/C 30,000\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On the admission of a new partner<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Old firm is dissolved</p></span></div><div class="option"><span class="key">b</span><span><p>Old partnership is reconstituted</p></span></div><div class="option"><span class="key">c</span><span><p>Both old partnership and firm are dissolved<br/><br/></p></span></div><div class="option"><span class="key">d</span><span><p>Neither partnership nor firm is dissolved</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct Answer\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Option B — Old partnership is reconstituted\u003c/strong>\u003c/p>  \u003cp> Why option B is correct:\u003c/p> \u003cp>On the \u003cstrong>admission of a new partner\u003c/strong>, the \u003cstrong>old partnership comes to an end\u003c/strong> and a \u003cstrong>new partnership agreement is formed\u003c/strong> among the existing partners and the new partner.\u003cbr/>However, the \u003cstrong>firm continues its business\u003c/strong>, so the firm is \u003cstrong>not dissolved\u003c/strong>.\u003c/p> \u003cp>This situation is known as \u003cstrong>reconstitution of partnership\u003c/strong>, not dissolution of the firm.\u003c/p> \u003cp>Hence, \u003cstrong>Option B is correct\u003c/strong>.\u003c/p>  \u003cp>Why other options are incorrect:\u003c/p> \u003cp>\u003cstrong>Option A — Old firm is dissolved\u003c/strong>\u003cbr/>The firm continues to exist; only the partnership changes.\u003c/p> \u003cp>\u003cstrong>Option C — Both old partnership and firm are dissolved\u003c/strong>\u003cbr/>The firm is not dissolved on admission of a new partner.\u003c/p> \u003cp>\u003cstrong>Option D — Neither partnership nor firm is dissolved\u003c/strong>\u003cbr/>The partnership does change, so this statement is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Decrease in the Liabilities is :-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Liability </p></span></div><div class="option"><span class="key">b</span><span><p> Loss</p></span></div><div class="option"><span class="key">c</span><span><p> Expense </p></span></div><div class="option"><span class="key">d</span><span><p> Profit</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer \u003cbr/>(D) (Profit)\u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>A decrease in liabilities means the firm has to pay less obligation in the future.\u003cbr/>This reduction results in a gain to the business, which is treated as profit.\u003c/p>  \u003cp>Why other options are incorrect\u003c/p> \u003cul> \u003cli>(A) Liability:\u003cbr/>It is the item being reduced, not the result of reduction.\u003c/li> \u003cli>(B) Loss:\u003cbr/>Loss occurs when liabilities increase, not when they decrease.\u003c/li> \u003cli>(C) Expense:\u003cbr/>Expense is a cost incurred, not a reduction in liability.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Change in profit sharing ratio of existing partners results in :-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Revaluation of firm </p></span></div><div class="option"><span class="key">b</span><span><p>Reconstitution of firm</p></span></div><div class="option"><span class="key">c</span><span><p> Dissolution of firm </p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer / सही उत्तर:\u003cbr/>(B) Reconstitution of firm\u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>A change in the profit-sharing ratio among existing partners does not close the business; it only changes the internal agreement.\u003cbr/>Such a change results in reconstitution of the firm, not dissolution or revaluation.\u003c/p>  \u003cp>Why other options are incorrect \u003c/p> \u003cul> \u003cli> \u003cp>(A) Revaluation of the firm:\u003cbr/>Revaluation may be done during reconstitution, but it is not the result; it is only an accounting adjustment.\u003c/p> \u003c/li> \u003cli> \u003cp>(C) Dissolution of the firm:\u003cbr/>Dissolution means complete closure of the firm, which does not occur merely due to a change in profit-sharing ratio.\u003c/p> \u003c/li> \u003cli> \u003cp>(D) None of these:\u003cbr/>Incorrect because the correct outcome is clearly reconstitution of the firm.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Change in the partnership agreement results in :-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Reconstitution of firm </p></span></div><div class="option"><span class="key">b</span><span><p> Dissolution of firm</p></span></div><div class="option"><span class="key">c</span><span><p> Amalgamation of firm </p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer \u003cbr/>(A) Reconstitution of firm \u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>Any change in the partnership agreement (such as admission, retirement, death of a partner, or change in profit-sharing ratio) leads to reconstitution of the firm, not its dissolution.\u003cbr/>Therefore, a change in the partnership deed results in reconstitution of the firm.\u003c/p>  \u003cp>Why other options are incorrect \u003c/p> \u003cul> \u003cli>(B) Dissolution of the firm:\u003cbr/>Dissolution means complete closure of the business, which does not happen merely due to a change in the partnership agreement.\u003c/li> \u003cli>(C) Amalgamation of the firm:\u003cbr/>Amalgamation refers to the merger of two or more firms, not a change in the partnership deed.\u003c/li> \u003cli>(D) None of these:\u003cbr/>Incorrect because the correct outcome is clearly reconstitution of the firm.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The balance of Revaluation Account is transferred to old partner’s<br/>Capital Account in their :-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Old Profit-Loss Ratio </p></span></div><div class="option"><span class="key">b</span><span><p> New Profit-Loss Ratio</p></span></div><div class="option"><span class="key">c</span><span><p> Equal Ratio</p></span></div><div class="option"><span class="key">d</span><span><p> None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer \u003cbr/>(A) Old Profit-Loss Ratio \u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>The balance of the Revaluation Account (profit or loss) arises due to revaluation of assets and liabilities before the change in partnership.\u003cbr/>Therefore, it belongs to the old partners and is transferred to their Capital Accounts in the old profit-sharing ratio.\u003c/p>  \u003cp>Why other options are incorrect \u003c/p> \u003cul> \u003cli>(B) New profit-sharing ratio:\u003cbr/>The new ratio applies after reconstitution; revaluation profit/loss relates to the period before the change.\u003c/li> \u003cli>(C) Equal ratio:\u003cbr/>The balance is not shared equally unless the old ratio itself is equal.\u003c/li> \u003cli>(D) None of these:\u003cbr/>Incorrect because the correct treatment is clearly in the old profit-sharing ratio.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On the admission of a new partner, increase in the value of assets is <br/>debited to which account ? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Revaluation Account </p></span></div><div class="option"><span class="key">b</span><span><p>Assets Account </p></span></div><div class="option"><span class="key">c</span><span><p> Old partner’s capital Account </p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct Answer\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Option B — Assets Account\u003c/strong>\u003c/p> \u003cp>Why option B is correct:\u003c/p> \u003cp>On the \u003cstrong>admission of a new partner\u003c/strong>, when there is an \u003cstrong>increase in the value of assets\u003c/strong>, the \u003cstrong>Assets Account is debited\u003c/strong> and the \u003cstrong>Revaluation Account is credited\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Journal Entry:\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Assets A/c Dr.\u003c/strong>\u003cbr/> \u003cstrong>To Revaluation A/c\u003c/strong>\u003c/p> \u003cp>Since the question asks \u003cstrong>to which account the increase in value of assets is debited\u003c/strong>, the correct answer is \u003cstrong>Assets Account\u003c/strong>.\u003c/p> \u003cp>Hence, \u003cstrong>Option B is correct\u003c/strong>.\u003c/p>  \u003cp> Why other options are incorrect:\u003c/p> \u003cp>\u003cstrong>A. Revaluation Account — Incorrect\u003c/strong>\u003cbr/>Revaluation Account is \u003cstrong>credited\u003c/strong>, not debited, when asset value increases.\u003c/p> \u003cp>\u003cstrong>C. Old Partners’ Capital Account — Incorrect\u003c/strong>\u003cbr/>Capital accounts are affected only after revaluation profit is transferred.\u003c/p> \u003cp>\u003cstrong>D. None of these — Incorrect\u003c/strong>\u003cbr/>Assets Account is clearly debited.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a new partner bring his share of goodwill in cash, the amount is debited to<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Goodwill A/c<br/><br/></p></span></div><div class="option"><span class="key">b</span><span><p>Capital A/c of the new partner<br/><br/></p></span></div><div class="option"><span class="key">c</span><span><p>Cash A/c<br/><br/></p></span></div><div class="option"><span class="key">d</span><span><p>Capital A/cs of the old partners</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: Option C — Cash A/c\u003c/p>  Why option C is correct: \u003cp>When a new partner brings his share of goodwill in cash, the firm receives cash.\u003cbr/>An increase in cash is always debited to the Cash Account.\u003c/p> \u003cp>Therefore, the amount of goodwill brought in cash is debited to Cash A/c.\u003cbr/>Hence, Option C is correct.\u003c/p>  Why other options are incorrect: \u003cp>A. Goodwill Account — Incorrect\u003cbr/>Goodwill Account is not debited; goodwill is adjusted through capital accounts.\u003c/p> \u003cp>B. New Partner’s Capital Account — Incorrect\u003cbr/>The capital account is credited, not debited.\u003c/p> \u003cp>D. Old Partners’ Capital Accounts — Incorrect\u003cbr/>Old partners’ capital accounts are credited, not debited.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Abhiram and Ragini are partners sharing profits in the ratio of 3:2. They admit Arun as a new partner for 1/5th share in the future profits of the firm, which he gets equally from Abhiram and Ragini. Calculate the new profit-sharing ratio of Abhiram, Ragini and Arun.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5:2:3</p></span></div><div class="option"><span class="key">b</span><span><p>5:3:2</p></span></div><div class="option"><span class="key">c</span><span><p>2:3:5</p></span></div><div class="option"><span class="key">d</span><span><p>4:3:3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Share sacrificed by:\u003c/p> \u003cp>Abhiram = \\(\\frac{1}{5}\\times \\frac{1}{2}=\\frac{1}{10}\\)\u003c/p> \u003cp>Ragini = \\(\\frac{1}{5}\\times \\frac{1}{2}=\\frac{1}{10}\\)\u003c/p> \u003cp>New Share of:\u003c/p> \u003cp>Abhiram = \\(\\frac{3}{5}-\\frac{1}{10}=\\frac{5}{10}\\)\u003c/p> \u003cp>Ragini = \\(\\frac{2}{5}-\\frac{1}{10}=\\frac{3}{10}\\)\u003c/p> \u003cp>Arun = \\(\\frac{1}{5}\\times \\frac{2}{2}=\\frac{2}{10}\\)\u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the right to get a share in future profits of a partnership firm, a newly admitted partner will have to bring:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The amount of his liabilities.</p></span></div><div class="option"><span class="key">b</span><span><p>The amount of his assets.</p></span></div><div class="option"><span class="key">c</span><span><p>The amount of his obligation.</p></span></div><div class="option"><span class="key">d</span><span><p>The amount of his premium for goodwill.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>When a new partner is admitted, they generally bring two distinct amounts of money (or assets) to secure two different rights:\u003c/p> \u003cul> \u003cli>\u003cstrong>Capital:\u003c/strong> Brought in to acquire a share in the assets of the firm.\u003c/li> \u003cli>\u003cstrong>Premium for Goodwill:\u003c/strong> Brought in to compensate the sacrificing (old) partners for the share in future profits that the new partner will now receive.\u003c/li> \u003c/ul> \u003cp>When a new partner enters, the old partners give up (sacrifice) a portion of the profits they used to earn. Since the firm has built a reputation (Goodwill) over the years, the new partner is expected to pay for it. \u003c/p> \u003cp>The Premium for Goodwill brought by the new partner is distributed among the old partners in their \u003cstrong>Sacrificing Ratio\u003c/strong>. \u003c/p> \u003cp>Therefore, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Revaluation Account is like a : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Profit-Loss Adjustment Account</p></span></div><div class="option"><span class="key">b</span><span><p> Profit-Loss Account</p></span></div><div class="option"><span class="key">c</span><span><p> (A) and (B) both </p></span></div><div class="option"><span class="key">d</span><span><p> Realisation Account</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer \u003cbr/>(C) (A) and (B) both \u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>A Revaluation Account is similar to both the Profit and Loss Adjustment Account and the Profit and Loss Account because it is prepared to determine profit or loss arising from revaluation of assets and liabilities.\u003cbr/>Like the Profit and Loss Account, it records gains and losses; and like the Profit and Loss Adjustment Account, it is prepared at the time of reconstitution.\u003c/p> \u003cp>Why other options are incorrect \u003c/p> \u003cul> \u003cli> \u003cp>(A) Profit and Loss Adjustment Account:\u003cbr/>This option is partly correct, but it is not complete on its own because Revaluation Account is also similar to the Profit and Loss Account.\u003c/p> \u003c/li> \u003cli> \u003cp>(B) Profit and Loss Account:\u003cbr/>This option is also partly correct, but it ignores the adjustment nature of revaluation.\u003c/p> \u003c/li> \u003cli> \u003cp>(D) Realisation Account:\u003cbr/>Realisation Account is prepared at the time of dissolution, not reconstitution.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Gaining ratio is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> New Ratio – Sacrifice Ratio </p></span></div><div class="option"><span class="key">b</span><span><p>Old Ratio – Sacrifice Ratio</p></span></div><div class="option"><span class="key">c</span><span><p> New Ratio – Old Ratio </p></span></div><div class="option"><span class="key">d</span><span><p> Old Ratio – New Ratio </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer / सही उत्तर:\u003cbr/>(C) \u003c/p> \u003cp> New Ratio – Old Ratio \u003c/p>  \u003cp>Why this option is correct \u003c/p> \u003cp>Gaining Ratio = New Profit Sharing Ratio − Old Profit Sharing Ratio\u003c/p> \u003cp>When a new partner is admitted, the existing partners sacrifice a part of their profit share.\u003cbr/>The gain of the incoming partner is exactly equal to the difference between the new ratio and the old ratio of the continuing partners.\u003cbr/>Hence, the gaining ratio is calculated as New Ratio minus Old Ratio.\u003c/p>  \u003cp>Why other options are incorrect \u003c/p> \u003cul> \u003cli>(A) New Ratio − Sacrificing Ratio:\u003cbr/>Sacrificing ratio is already a derived figure. Subtracting it from the new ratio gives no meaningful accounting result.\u003c/li> \u003cli>(B) Old Ratio − Sacrificing Ratio:\u003cbr/>This does not represent gain; sacrificing ratio itself is calculated from old and new ratios.\u003c/li> \u003cli>(D) Old Ratio − New Ratio:\u003cbr/>This gives a negative value and represents sacrifice, not gain.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which ratio, the cash brought in for goodwill by the new partner is shared by the existing partners?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Profit sharing ratio</p></span></div><div class="option"><span class="key">b</span><span><p>Capital ratio</p></span></div><div class="option"><span class="key">c</span><span><p>Sacrificing ratio</p></span></div><div class="option"><span class="key">d</span><span><p>Old ratio</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer\u003c/p> \u003cp>Option C — Sacrificing Ratio\u003c/p> \u003cp> Why option C is correct:\u003c/p> \u003cp>When a new partner brings cash for goodwill, it is paid to the existing partners as compensation for the sacrifice of their share of profits.\u003cbr/>Therefore, the amount of goodwill is shared by the old partners in their Sacrificing Ratio.\u003c/p> \u003cp>Hence, Option C is correct.\u003c/p> \u003cp> Why other options are incorrect:\u003c/p> \u003cp>A. Profit Sharing Ratio — Incorrect\u003cbr/>Goodwill is not shared in the profit-sharing ratio but in the ratio of sacrifice made by old partners.\u003c/p> \u003cp>B. Capital Ratio — Incorrect\u003cbr/>Capital ratio has no relevance to the distribution of goodwill.\u003c/p> \u003cp>D. Old Ratio — Incorrect\u003cbr/>Old ratio is not used unless it is specifically equal to the sacrificing ratio.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Revaluation Account is prepared at the time of<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Admission</p></span></div><div class="option"><span class="key">b</span><span><p>Retirement</p></span></div><div class="option"><span class="key">c</span><span><p>Death</p></span></div><div class="option"><span class="key">d</span><span><p>All of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

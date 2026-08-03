@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Locomotion and Movement","item":"https://yespyq.com/exams/neet/biology/locomotion-and-movement/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Locomotion and Movement</h1>
       <p>28 NEET Biology previous year questions on <b>Locomotion and Movement</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following muscular disorder is inherited?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Tetany</span></div><div class="option correct"><span class="key">b</span><span>Muscular dystrophy</span></div><div class="option"><span class="key">c</span><span>Myasthenia gravis</span></div><div class="option"><span class="key">d</span><span>Botulism</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Number of cervical vertebrae in camel is:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>More than that of rabbit</span></div><div class="option"><span class="key">b</span><span>Less than that of rabbit</span></div><div class="option correct"><span class="key">c</span><span>Same as that of whale</span></div><div class="option"><span class="key">d</span><span>More than that of horse</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Select the correct statement regarding the specific disorder of muscular or skeletal system:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Gout-Inflammation of joints due to extra deposition of calcium</span></div><div class="option"><span class="key">b</span><span>Muscular dystrophy-Age-related shortening of muscles</span></div><div class="option correct"><span class="key">c</span><span>Osteoporosis-Decrease in bone mass and higher chances of fractures with advancing age</span></div><div class="option"><span class="key">d</span><span>Myasthenia gravis-Auto-immune disorder which inhibits sliding of myosin filaments</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Glenoid cavity articulates:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>clavicle with scapula.</span></div><div class="option"><span class="key">b</span><span>humerus with scapula.</span></div><div class="option"><span class="key">c</span><span>clavicle with acromion.</span></div><div class="option"><span class="key">d</span><span>scapula with acromion.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"(2) Below the acromion is a depression called the glenoid cavity which articulates with the head of the humerus to form the shoulder joint. [New NCERT Class 11th Page no. 226]","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Lack of relaxation between successive stimuli in sustained muscle contraction is known as</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Fatigue</span></div><div class="option"><span class="key">b</span><span>Tetanus</span></div><div class="option"><span class="key">c</span><span>Tonus</span></div><div class="option"><span class="key">d</span><span>Spasm</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Tetanus is a condition where muscle contractions are sustained without relaxation due to rapid, repeated stimuli. This occurs because the muscle does not get enough time to relax between successive impulses, leading to a continuous contraction. Option A (Incorrect - Fatigue): Muscle fatigue occurs when muscles lose their ability to contract due to prolonged activity and energy depletion. Option C (Incorrect - Tonus): Tonus refers to the partial contraction of muscles in a resting state, maintaining posture. Option D (Incorrect - Spasm): A spasm is a sudden, involuntary muscle contraction, which is usually brief and localized. Thus, the correct term for sustained muscle contraction without relaxation is Tetanus.","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Calcium is important in skeletal muscle contraction because it:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>detaches the myosin head from the actin filament.</span></div><div class="option"><span class="key">b</span><span>activates the myosin ATPase by binding to it.</span></div><div class="option"><span class="key">c</span><span>binds to troponin to remove the masking of active sites on actin for myosin.</span></div><div class="option"><span class="key">d</span><span>prevents the formation of bonds between the myosin cross bridges and the actin filament.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"The correct answer is: C. binds to troponin to remove the masking of active sites on actin for myosin. Explanation: Calcium ions bind to troponin, causing a conformational change that moves tropomyosin away from the active sites on actin. This exposes the binding sites for myosin heads, allowing muscle contraction to proceed. Without calcium, the active sites remain blocked, and contraction cannot occur.","fmt":""}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following are autoimmune disorders? I. Myasthenia gravis II. Rheumatoid arthritis III. Gout IV. Muscular dystrophy V. Systemic Lupus Erythematosus (SLE) Choose the most appropriate answer from the options given below: [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>II, III &amp; IV only</span></div><div class="option"><span class="key">b</span><span>III, IV &amp; V only</span></div><div class="option"><span class="key">c</span><span>I, II &amp; IV only</span></div><div class="option"><span class="key">d</span><span>I, II &amp; V only</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Myasthenia gravis: Auto immune disorder affecting neuromuscular junction leading to fatigue, weakening and paralysis of skeletal muscle. Rheumatoid Arthritis: Autoimmune disease that primarily affects the joints, causing inflammation and pain. Systemic Lupus Erythematosus (SLE): Chronic autoimmune disease that can affect various organs and tissues in the body, causing a wide range of symptoms.","fmt":""}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Sliding filament theory can be best explained as:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>actin and myosin filaments do not shorten but rather slide pass each other.</span></div><div class="option"><span class="key">b</span><span>when myofilaments slide pass each other, myosin filaments shorten while actin filaments do not shorten.</span></div><div class="option"><span class="key">c</span><span>when myofilaments slide pass each other actin filaments shorten while myosin filaments do not shorten.</span></div><div class="option"><span class="key">d</span><span>actin and myosin filaments shorten and slide pass each other.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Mechanism of muscle contraction is best explained by the sliding filament theory which states that contraction of a muscle fibre takes place by the sliding of the thin filaments over the thick filaments.","fmt":""}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the correct statements regarding mechanism of muscle contraction.<br/>A. It is initiated by a signal sent by CNS via sensory neuron.<br/>B. Neurotransmitter generates action potential in the sarcolemma.<br/>C. Increased \(\mathrm{Ca}^{++}\)level leads to the binding of calcium with troponin on actin filaments.<br/>D. Masking of active site for actin is activated.<br/>E. Utilising the energy from ATP hydrolysis to form cross bridge.</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, C and E only</p></span></div><div class="option"><span class="key">b</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>A and D only</p></span></div><div class="option"><span class="key">d</span><span><p>B, D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Muscle contraction is initiated by a signal sent by the central nervous system via a motor neuron.In the mechanism of muscle contraction, the neurotransmitter (usually acetylcholine) is released at the neuromuscular junction and generates an action potential in the sarcolemma. This leads to an increase in intracellular calcium ion (Ca²⁺) levels, which bind to troponin on the actin filaments, causing a conformational change that exposes the active sites. Using energy from ATP hydrolysis, myosin heads form cross-bridges with actin, resulting in contraction. Statement A is incorrect because motor neurons (not sensory neurons) initiate the signal, and statement D is misleading as contraction involves unmasking of actin sites, not masking.\u003cstrong> \u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is the correct order of arrangement of vertebrate column from the head to toe?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cervical vertebra, thoracic vertebra, sacrum, lumbar vertebra</p></span></div><div class="option"><span class="key">b</span><span><p>Sacrum, lumbar vertebra, thoracic vertebra, cervical vertebra</p></span></div><div class="option"><span class="key">c</span><span><p>Cervical vertebra, lumbar vertebra, thoracic vertebra, sacrum</p></span></div><div class="option"><span class="key">d</span><span><p>Cervical vertebra, thoracic vertebra, lumbar vertebra, sacrum</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The vertebral column is arranged from head to lower body in the following order:\u003c/p> \u003col> \u003cli>\u003cstrong>Cervical vertebrae\u003c/strong> (neck region)\u003c/li> \u003cli>\u003cstrong>Thoracic vertebrae\u003c/strong> (chest region)\u003c/li> \u003cli>\u003cstrong>Lumbar vertebrae\u003c/strong> (lower back)\u003c/li> \u003cli>\u003cstrong>Sacrum\u003c/strong> (pelvic region)\u003c/li> \u003cli>(followed by coccyx)\u003c/li> \u003c/ol> Conclusion: \u003cp>The correct sequence from head to toe is:\u003cbr/>\u003cstrong>Cervical → Thoracic → Lumbar → Sacrum\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Muscle contraction is initiated by a signal sent by the central nervous system by the release of __________.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>acetyl choline</p></span></div><div class="option"><span class="key">b</span><span><p>acetyl coenzyme A</p></span></div><div class="option"><span class="key">c</span><span><p>cyclic guanine monophosphate</p></span></div><div class="option"><span class="key">d</span><span><p>cyclic adenine monophosphate</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Muscle contraction begins at the \u003cstrong>neuromuscular junction\u003c/strong> where a nerve impulse arrives.\u003c/p> \u003cul> \u003cli>The motor neuron releases \u003cstrong>acetylcholine (ACh)\u003c/strong>\u003c/li> \u003cli>ACh binds to receptors on the muscle membrane\u003c/li> \u003cli>This initiates an electrical impulse that leads to contraction\u003c/li> \u003c/ul> Why other options are incorrect: \u003cul> \u003cli>\u003cstrong>Acetyl coenzyme A\u003c/strong> → involved in respiration (Krebs cycle)\u003c/li> \u003cli>\u003cstrong>cGMP and cAMP\u003c/strong> → secondary messengers, not directly responsible for initiating muscle contraction\u003c/li> \u003c/ul> Conclusion: \u003cp>The signal for muscle contraction is initiated by release of \u003cstrong>acetylcholine\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct with reference to human endoskeleton?<br/>A. Human skull is monocondylic.<br/>B. The joint between any two adjoining vertebrae is a cartilaginous joint.<br/>C. In human beings, the number of cervical vertebrae is seven.<br/>D. All ribs except the last 2 pairs are bicephalic.<br/>E. The occipital bone of skull is articulated with atlas vertebra.<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B and D only </p></span></div><div class="option"><span class="key">b</span><span><p>B and E only</p></span></div><div class="option"><span class="key">c</span><span><p>B, C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>C, D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>In the human endoskeleton, different bones and joints show specific structural features.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement A is incorrect. The human skull is dicondylic (has two occipital condyles), not monocondylic.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement B is incorrect. The joints between adjoining vertebrae are slightly movable (cartilaginous) only between vertebral bodies, while facet joints are synovial; hence not entirely cartilaginous.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement C is correct. Humans have seven cervical vertebrae.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement D is correct. All ribs except the last two pairs (floating ribs) are bicephalic (having two articulation points).\u003c/p> \u003c/li> \u003cli> \u003cp>Statement E is correct. The occipital bone articulates with the atlas vertebra.\u003c/p> \u003c/li> \u003cli> \u003cp>Thus, the correct statements are C, D and E.\u003c/p> \u003c/li> \u003cli> \u003cp>Therefore, the correct answer is Option D: C, D and E only.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sperm motility is due to _______.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>flagellar movement</p></span></div><div class="option"><span class="key">b</span><span><p>ciliary movement</p></span></div><div class="option"><span class="key">c</span><span><p>amoeboid movement</p></span></div><div class="option"><span class="key">d</span><span><p>muscular movement</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Sperm moves with the help of a tail-like structure called \u003cstrong>flagellum\u003c/strong>. This flagellum beats like a whip and pushes the sperm forward so it can reach the egg. Other options are incorrect because Ciliary movement is seen in respiratory tract cells, amoeboid movement is seen in WBCs, and muscular movement does not help sperm.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are autoimmune disorders?<br/>I. Myasthenia gravis<br/>II. Rheumatoid arthritis<br/>III. Gout<br/>IV. Muscular dystrophy<br/>V. Systemic Lupus Erythematosus (SLE) </p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>II, III &amp; IV only</p></span></div><div class="option"><span class="key">b</span><span><p>III, IV &amp; V only</p></span></div><div class="option"><span class="key">c</span><span><p>I, II &amp; IV only</p></span></div><div class="option"><span class="key">d</span><span><p>I, II &amp; V only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Myasthenia gravis: Auto immune disorder affecting neuromuscular junction leading to fatigue, weakening and paralysis of skeletal muscle.\u003c/li> \u003cli>Rheumatoid Arthritis: Autoimmune disease that primarily affects the joints, causing inflammation and pain.\u003c/li> \u003cli>Systemic Lupus Erythematosus (SLE): Chronic autoimmune disease that can affect various organs and tissues in the body, causing a wide range of symptoms.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are autoimmune disorders?<br/>I. Myasthenia gravis<br/>II. Rheumatoid arthritis<br/>III. Gout<br/>IV. Muscular dystrophy<br/>V. Systemic Lupus Erythematosus (SLE) </p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>II, III &amp; IV only</p></span></div><div class="option"><span class="key">b</span><span><p>III, IV &amp; V only</p></span></div><div class="option"><span class="key">c</span><span><p>I, II &amp; IV only</p></span></div><div class="option"><span class="key">d</span><span><p>I, II &amp; V only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Myasthenia gravis: Auto immune disorder affecting neuromuscular junction leading to fatigue, weakening and paralysis of skeletal muscle.\u003c/li> \u003cli>Rheumatoid Arthritis: Autoimmune disease that primarily affects the joints, causing inflammation and pain.\u003c/li> \u003cli>Systemic Lupus Erythematosus (SLE): Chronic autoimmune disease that can affect various organs and tissues in the body, causing a wide range of symptoms. \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II :</p> <table> <tbody> <tr> <td>List I (Location of Joint)</td> <td>List II (Type of Joint)</td> </tr> <tr> <td>A) Joint between humerus and pectoral girdle </td> <td>I) Gliding Joint</td> </tr> <tr> <td>B) Knee Joint</td> <td>II) Ball and Socket Joint</td> </tr> <tr> <td>C) Joint between atlas and axis</td> <td>III) Hinge Joint</td> </tr> <tr> <td>D) Joint between carpals</td> <td>IV) Pivot Joint</td> </tr> </tbody> </table> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-III, C-IV, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-I, B-IV, C-III, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-I, C-III, D-IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003col> \u003cli>A) Joint between humerus and pectoral girdle → Ball and Socket Joint (II) (allows multi-axial movement, e.g., shoulder joint).\u003c/li> \u003cli>B) Knee Joint → Hinge Joint (III) (permits movement in one plane, like flexion/extension).\u003c/li> \u003cli>C) Joint between atlas and axis → Pivot Joint (IV) (enables rotational movement, e.g., neck rotation).\u003c/li> \u003cli>D) Joint between carpals → Gliding Joint (I) (allows limited sliding/gliding movements).\u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statements regarding muscle contraction.<br/>A. A motor neuron carries a signal sent by the Central Nervous System (CNS) to the sarcolemma of the muscle fibre.<br/>B. The neural signal generates an action potential which causes the release of \({\mathrm{Ca}}^{++}\) into sarcoplasm.<br/>C. Increase in \({\mathrm{Ca}}^{++}\) inactivates the actin for breaking cross bridges.<br/>D. Actin binds to the myosin head to form a cross bridge.<br/>E. Shortening of sarcomere takes place, by pulling actin filaments towards the centre of ' A ' band.<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>C and D only</p></span></div><div class="option"><span class="key">c</span><span><p>C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A and B only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Muscle contraction is explained by the sliding filament theory, where actin and myosin filaments interact under neural control.\u003c/li> \u003cli>Statement A is correct. A motor neuron transmits impulses from the CNS to the sarcolemma (muscle membrane) at the neuromuscular junction, initiating contraction.\u003c/li> \u003cli>Statement B is correct. The action potential spreads through the sarcolemma and T-tubules, causing the sarcoplasmic reticulum to release Ca²⁺ into the sarcoplasm.\u003c/li> \u003cli>Statement C is incorrect. Ca²⁺ binds to troponin, which shifts tropomyosin and exposes active sites on actin, thereby activating actin for cross-bridge formation (not inactivating it).\u003c/li> \u003cli>Statement D is correct. The myosin head binds to exposed active sites on actin, forming cross-bridges essential for contraction.\u003c/li> \u003cli>Statement E is correct. During contraction, actin filaments slide inward, pulling towards the centre of the A band, leading to shortening of sarcomere (I-band shortens, A-band remains constant).\u003c/li> \u003cli>Thus, the correct statements are A, B, D and E.\u003c/li> \u003cli>Therefore, the correct answer is Option A: A, B, D and E only.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the correct statements regarding mechanism of muscle contraction.<br/>A. It is initiated by a signal sent by CNS via sensory neuron.<br/>B. Neurotransmitter generates action potential in the sarcolemma.<br/>C. Increased \(\mathrm{Ca}^{++}\)level leads to the binding of calcium with troponin on actin filaments.<br/>D. Masking of active site for actin is activated.<br/>E. Utilising the energy from ATP hydrolysis to form cross bridge.</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, C and E only</p></span></div><div class="option"><span class="key">b</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>A and D only</p></span></div><div class="option"><span class="key">d</span><span><p>B, D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In the mechanism of muscle contraction, the neurotransmitter (usually acetylcholine) is released at the neuromuscular junction and generates an action potential in the sarcolemma. This leads to an increase in intracellular calcium ion (Ca²⁺) levels, which bind to troponin on the actin filaments, causing a conformational change that exposes the active sites. Using energy from ATP hydrolysis, myosin heads form cross-bridges with actin, resulting in contraction. Statement A is incorrect because motor neurons (not sensory neurons) initiate the signal, and statement D is misleading as contraction involves unmasking of actin sites, not masking.\u003cstrong> \u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of vertebrae in a human is:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>26</p></span></div><div class="option"><span class="key">d</span><span><p>206</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The vertebral column (backbone) of an adult human consists of 26 vertebrae. It is divided into five regions:\u003c/p> \u003cul> \u003cli>7 cervical vertebrae in the neck region\u003c/li> \u003cli>12 thoracic vertebrae in the chest region\u003c/li> \u003cli>5 lumbar vertebrae in the abdominal region\u003c/li> \u003cli>1 sacrum, formed by the fusion of 5 sacral vertebrae\u003c/li> \u003cli>1 coccyx, formed by the fusion of 4 coccygeal vertebrae\u003c/li> \u003c/ul> \u003cp>Thus, the total number of vertebrae in an adult human is:\u003c/p> \u003cp>7 + 12 + 5 + 1 + 1 = 26\u003c/p> \u003cp>Therefore, the correct answer is (C) 26.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are <strong>correct</strong> regarding skeletal muscle?<br/>A. Muscle bundles are held together by collagenous connective tissue layer called fascicle.<br/>B. Sarcoplasmic reticulum of muscle fibre is a store house of calcium ions.<br/>C. Striated appearance of skeletal muscle fibre is due to distribution pattern of actin and myosin proteins.<br/>D. M line is considered as functional unit of contraction called sarcomere.</p> <p>Choose the most appropriate answer from the options given below.</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and C only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and D only</p></span></div><div class="option"><span class="key">c</span><span><p>C and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct answer is: \u003cstrong>(A) B and C only\u003c/strong>\u003c/p> \u003cul> \u003cli>Sarcoplasmic reticulum of muscle fiber is a storehouse of calcium ions. Striated appearance of skeletal muscle fiber is due to the distribution pattern of actin and myosin proteins.\u003c/li> \u003cli>The connective tissue layer is called fascia, not fascicle.\u003c/li> \u003cli>The sarcomere is the functional unit of contraction, lying between\u003cstrong> \u003c/strong>two Z-lines,\u003cstrong> n\u003c/strong>ot the M line.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During muscular contraction which of the following events occur?</p> <p>(A) H zone disappears.</p> <p>(B) A band widens.</p> <p>(C) I band reduces in width.</p> <p>(D) Myosin hydrolyzes ATP, releasing the ADP and Pi</p> <p>(E) Z-lines attached to actins are pulled inwards.</p> <p>Choose the <strong>correct </strong>answer from the options given below.</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (D), (E), (A) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (C), (D), (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C), (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C), (D), (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A) H zone disappears. → True. During contraction, actin filaments slide over myosin, reducing the H zone until it disappears.\u003c/p> \u003cp>(B) A band widens. → False. The A band remains constant in length because it represents the length of the myosin filament, which doesn’t change.\u003c/p> \u003cp>(C) I band reduces in width. → True. The I band shortens as actin filaments slide inward.\u003c/p> \u003cp>(D) Myosin hydrolyzes ATP, releasing the ADP and Pi. → True. The myosin head hydrolyzes ATP to ADP + Pi, providing energy for the power stroke.\u003c/p> \u003cp>(E) Z-lines attached to actins are pulled inwards. → True. The Z-lines move closer together as sarcomeres shorten during contraction.\u003c/p> \u003cp>Therefore, correct combination: (A), (C), (D), and (E) → Option 2.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During muscular contraction which of the following events occur?<br/>A. 'H' zone disappears<br/>B. 'A' band widens<br/>C. 'I' band reduces in width<br/>D. Myosin hydrolyzes ATP, releasing the ADP and Pi<br/>E. Z-lines attached to actins are pulled inwards<br/>Choose the correct answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C, D only</p></span></div><div class="option"><span class="key">b</span><span><p>B, C, D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>B, D, E, A only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C, D, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During muscular contraction, the globular head of myosin acts as ATPase. It hydrolyzes ATP that leads to the formation of cross bridge. This pulls the attached actin filaments towards the centre of \\(A\\) band. The ' \\(Z\\) ' line attached to these actins are also pulled inwards thereby causing a shortening of the sarcomere, i.e., contraction. Thus, during shortening of the muscle, i.e., contraction, the ' \\(I\\) ' bands get reduced, whereas the 'A' bands retain the length. H-zone disappear during maximum contraction. The myosin then releases ADP and \\(Pi\\), and goes back to its relaxed state.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is <strong>correct </strong>pairing of a body part and the kind of muscle tissue that moves it?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Biceps of upper arm - Smooth muscle fibres</p></span></div><div class="option"><span class="key">b</span><span><p>Abdominal wall - Cardiac muscle fibres </p></span></div><div class="option"><span class="key">c</span><span><p>Iris - Smooth muscle fibres</p></span></div><div class="option"><span class="key">d</span><span><p>Heart wall - Involuntary unstriated muscle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Iris - Smooth muscle fibres\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II</strong> :</p> <table> <tbody> <tr> <td><strong><br/></strong><strong>List I (Location of Joint)</strong></td> <td><strong><br/></strong><strong>List II (Type of Joint)</strong></td> </tr> <tr> <td>(A)</td> <td>Joint between humerus and pectoral girdle </td> <td>(I)</td> <td>Gliding Joint</td> </tr> <tr> <td>(B)</td> <td>Knee Joint</td> <td>(II)</td> <td>Ball and Socket Joint</td> </tr> <tr> <td>(C)</td> <td>Joint between atlas and axis</td> <td>(III)</td> <td>Hinge Joint</td> </tr> <tr> <td>(D)</td> <td>Joint between carpals</td> <td>(IV)</td> <td>Pivot Joint</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-III, C-IV, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-I, B-IV, C-III, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-I, C-III, D-IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003col> \u003cli>A) Joint between humerus and pectoral girdle → Ball and Socket Joint (II) (allows multi-axial movement, e.g., shoulder joint).\u003c/li> \u003cli>B) Knee Joint → Hinge Joint (III) (permits movement in one plane, like flexion/extension).\u003c/li> \u003cli>C) Joint between atlas and axis → Pivot Joint (IV) (enables rotational movement, e.g., neck rotation).\u003c/li> \u003cli>D) Joint between carpals → Gliding Joint (I) (allows limited sliding/gliding movements).\u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct regarding skeletal muscle? <br/>A. Muscle bundles are held together by collagenous connective tissue layer called fascicle.<br/>B. Sarcoplasmic reticulum of muscle fibre is a store house of calcium ions.<br/>C. Striated appearance of skeletal muscle fibre is due to distribution pattern of actin and myosin proteins.<br/>D. M line is considered as functional unit of contraction called sarcomere.<br/>Choose the most appropriate answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Fascicle (Muscle bundles) are formed by many muscle fibres and covered by perimysium and all of it held by epimysium. The thick filaments in A-band are also held together in the middle of this band by a thin fibrous membrane called M-line.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During muscular contraction which of the following events occur?</p> <p>(A) H zone disappears.</p> <p>(B) A band widens.</p> <p>(C) I band reduces in width.</p> <p>(D) Myosin hydrolyzes ATP, releasing the ADP and Pi</p> <p>(E) Z-lines attached to actins are pulled inwards.</p> <p>Choose the <strong>correct </strong>answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (D), (E), (A) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (C), (D), (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C), (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C), (D), (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A) H zone disappears. → True. During contraction, actin filaments slide over myosin, reducing the H zone until it disappears.\u003c/p> \u003cp>(B) A band widens. → False. The A band remains constant in length because it represents the length of the myosin filament, which doesn’t change.\u003c/p> \u003cp>(C) I band reduces in width. → True. The I band shortens as actin filaments slide inward.\u003c/p> \u003cp>(D) Myosin hydrolyzes ATP, releasing the ADP and Pi. → True. The myosin head hydrolyzes ATP to ADP + Pi, providing energy for the power stroke.\u003c/p> \u003cp>(E) Z-lines attached to actins are pulled inwards. → True. The Z-lines move closer together as sarcomeres shorten during contraction.\u003c/p> \u003cp>Therefore, correct combination: (A), (C), (D), and (E) → Option 2.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Chronic auto immune disorder affecting neuromuscular junction leading to fatigue, weakening and paralysis of skeletal muscle is called as</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Muscular dystrophy</p></span></div><div class="option"><span class="key">b</span><span><p>Myasthenia gravis</p></span></div><div class="option"><span class="key">c</span><span><p>Gout</p></span></div><div class="option"><span class="key">d</span><span><p>Arthritis</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer:\u003c/strong> \u003cstrong>B) Myasthenia gravis\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Myasthenia gravis\u003c/strong> is a \u003cstrong>chronic autoimmune disorder\u003c/strong> that affects the \u003cstrong>neuromuscular junction\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>A) Muscular dystrophy\u003c/strong> → Genetic disorder causing progressive degeneration of muscle fibers.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C) Gout\u003c/strong> → Deposition of uric acid crystals in joints.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D) Arthritis\u003c/strong> → Inflammation of joints.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II</strong>.</p> <table> <tbody> <tr> <td><strong>List-I</strong></td> <td><strong>List-II</strong></td> </tr> <tr> <td>(A)</td> <td>Scapula</td> <td>(I)</td> <td>Cartilaginous joints</td> </tr> <tr> <td>(B)</td> <td>Cranium</td> <td>(II)</td> <td>Flat bone</td> </tr> <tr> <td>(C)</td> <td>Sternum</td> <td>(III)</td> <td>Fibrous joints</td> </tr> <tr> <td>(D)</td> <td>Vertebral column</td> <td>(IV)</td> <td>Triangular flat bone</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below.</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-I, B-III, C-II, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-III, C-IV, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-II, C-III, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

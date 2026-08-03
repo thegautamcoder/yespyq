@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"SSC CGL","item":"https://yespyq.com/exams/ssc-cgl/"},{"@type":"ListItem","position":4,"name":"Quantitative Aptitude","item":"https://yespyq.com/exams/ssc-cgl/aptitude/"},{"@type":"ListItem","position":5,"name":"Volume and Surface Area","item":"https://yespyq.com/exams/ssc-cgl/aptitude/volume-and-surface-area/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Volume and Surface Area</h1>
       <p>4 SSC CGL Quantitative Aptitude previous year questions on <b>Volume and Surface Area</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The curved surface area of a right cylinder is 3696 cm</span><span class="bline stmt">2. Its height is three times its radius. What is the capacity (in litres) of the cylinder? (Take π = )</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>25.872</span></div><div class="option"><span class="key">b</span><span>30.87</span></div><div class="option"><span class="key">c</span><span>29.75</span></div><div class="option"><span class="key">d</span><span>19.008</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The height of a solid cylinder is 30 cm and the diameter of its base is 10 cm. Two identical conical holes each of radius 5 cm and height 12 cm are drilled out. What is the surface area (in cm2) of the remaining solid?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>430π</span></div><div class="option"><span class="key">b</span><span>230π</span></div><div class="option"><span class="key">c</span><span>330π</span></div><div class="option"><span class="key">d</span><span>120π</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Slant height of (l) of cones = = = = 13 cm Surface area of the remaining solid = Curved surface area of cylinder + 2 × Curved surface area of cone that are drilled out on both sides = 2πr1h1 + 2πr2l = 2π × 5 × 30 + 2π × 5 × 13 = 300π + 130π = 430π cm2","fmt":""}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The radii of two right circular cylinders are in the ratio 3 : 2 and the ratio of their volumes is 27 :</span><span class="bline stmt">16. What is the ratio of their heights?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>8 : 9</span></div><div class="option"><span class="key">b</span><span>3 : 4</span></div><div class="option"><span class="key">c</span><span>4 : 3</span></div><div class="option"><span class="key">d</span><span>9 : 8</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Let the radii of the cylinders be 3x and 2x and heights be h­1 & h2 Now, ratio of volumes = Þ = Þ = Þ = Hence, ratio of heights is 3 : 4.","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The area of the base of a right circular cone is 81π cm2 and its height is 12 cm. What is the curved surface area (in cm2) of the cone?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>126 π</span></div><div class="option"><span class="key">b</span><span>135 π</span></div><div class="option"><span class="key">c</span><span>108 π</span></div><div class="option"><span class="key">d</span><span>144 π</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

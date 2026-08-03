@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Electromagnetic Induction","item":"https://yespyq.com/exams/jee/physics/electromagnetic-induction/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Electromagnetic Induction</h1>
       <p>41 JEE Physics previous year questions on <b>Electromagnetic Induction</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Self-inductance of a solenoid depends on </p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Only on geometry</p></span></div><div class="option"><span class="key">b</span><span><p>Only on medium property</p></span></div><div class="option correct"><span class="key">c</span><span><p>Geometry and medium property</p></span></div><div class="option"><span class="key">d</span><span><p>Value of current through inductor</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A solenoid of radius 10 cm carrying current 0.29 A and having total 200 turns. If magnetic field inside solenoid is\( 2.9 \times 10^{-4} \mathrm{~T}\). Find length of solenoid.(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6 \pi \mathrm{~cm}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(8 \pi \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>4.5 cm</p></span></div><div class="option"><span class="key">d</span><span><p> 16 cm</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of area A and N turns is rotating with angular velocity \(\omega\) in a uniform magnetic field \(\vec{B}\) about an axis perpendicular to \(\vec{B}\). Magnetic flux \(\phi\) and induced emf \(\epsilon\) across it, at an instant when \(\vec{B}\) is parallel to the plane of coil, are : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\phi =AB,\epsilon =0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\phi =0,\epsilon =0\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\phi =0,\epsilon =NAB\omega\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\phi =AB,\epsilon =NAB\omega\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A solenoid of radius 10 cm carrying current 0.29 A and having total 200 turns. If magnetic field inside solenoid is\( 2.9 \times 10^{-4} \mathrm{~T}\). Find length of solenoid.(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6 \pi \mathrm{~cm}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(8 \pi \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>4.5 cm</p></span></div><div class="option"><span class="key">d</span><span><p> 16 cm</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : Choke coil is simply a coil having a large inductance but a small resistance. Choke coils are used with fluorescent mercury-tube fittings. If household electric power is directly connected to a mercury tube, the tube will be damaged.<br/>Reason (R): By using the choke coil, the voltage across the tube is reduced by a factor \(\left(R/\sqrt{{R}^{2}+{\omega }^{2}{L}^{2}}\right)\), where \(\omega\) is frequency of the supply across resistor R and inductor L. If the choke coil were not used, the voltage across the resistor would be the same as the applied voltage.<br/>In the light of the above statements, choose the most appropriate answer from the options given below: </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both ( A ) and ( R ) are true but ( R ) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both ( A ) and ( R ) are true and ( R ) is the correct explanation of ( A )</p></span></div><div class="option"><span class="key">c</span><span><p>( A ) is false but ( R ) is true</p></span></div><div class="option"><span class="key">d</span><span><p>( A ) is true but ( R ) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both ( A ) and ( R ) are true and ( R ) is the correct explanation of ( A )\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A metal rod of length L rotates about one end at origin with a uniform angular velocity ω. The magnetic field radially falls off as \(\mathrm{B}(\mathrm{r})={\mathrm{B}}_{∘}{\mathrm{e}}^{-\lambda \mathrm{r}};\lambda\) being a positive constant. The induced emf (neglecting centripetal force on electrons in the rod) is:<br/><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({B}_{o}\omega \left[\frac{1}{{\lambda }^{2}}-{e}^{-\lambda L}\left(\frac{1}{{\lambda }^{2}}+\frac{L}{\lambda }\right)\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({B}_{o}\omega \left[\frac{1}{{\lambda }^{2}}+{e}^{-\lambda L}\left(\frac{1}{{\lambda }^{2}}+\frac{L}{\lambda }\right)\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({B}_{o}\omega \left[\frac{4}{{\lambda }^{2}}-{e}^{-2\lambda L}\left(\frac{1}{{\lambda }^{2}}+\frac{2L}{\lambda }\right)\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({B}_{o}\omega \left[\frac{3}{{\lambda }^{2}}-{e}^{-3\lambda L}\left(\frac{3}{{\lambda }^{2}}+\frac{L}{\lambda }\right)\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{ Given: }B(r)={B}_{0}{e}^{-\\lambda \\mathrm{r}}\\)\u003cbr/>Motional emf across the rod\u003cbr/>\\(e={\\int }_{0}^{L}B(r)\\omega rdr\\)\u003cbr/>\\(\\text{ So, }e={B}_{0}\\omega {\\int }_{0}^{L}r{e}^{-\\lambda r}dr\\)\u003cbr/>Using integration by parts,\u003cbr/>\\(\\int r{e}^{-\\lambda r}dr=-\\frac{r}{\\lambda }{e}^{-\\lambda r}-\\frac{1}{{\\lambda }^{2}}{e}^{-\\lambda r}\\)\u003cbr/>Applying limits 0 to L \u003cbr/>\\(e={B}_{0}\\omega \\left[\\frac{1}{{\\lambda }^{2}}-{e}^{-\\lambda L}\\left(\\frac{1}{{\\lambda }^{2}}+\\frac{L}{\\lambda }\\right)\\right]\\):\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A square loop of side 2 cm is placed in a time varying magnetic field with magnitude as B = 0.4 sin (300t) Tesla. The normal to the plane of loop makes an angle of 60° with the field. The maximum induced emf produced in the loop is ______ mV.</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12</p></span></div><div class="option"><span class="key">b</span><span><p>18</p></span></div><div class="option"><span class="key">c</span><span><p>21</p></span></div><div class="option"><span class="key">d</span><span><p>24</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given Data\u003c/p> \u003cp>Side of the square loop \\((a)=2cm=\\)\\(2\\times {10}^{-2}\\text{ m}\\)\u003c/p> \u003cp>Area of the loop (\\(A\\)) = \\({a}^{2}=(2\\times {10}^{-2}{)}^{2}=4\\times {10}^{-4}{\\text{ m}}^{2}\\)\u003c/p> \u003cp>Magnetic field (\\(B\\)) = \\(0.4\\sin (300t)\\text{ T}\\)\u003c/p> \u003cp>Angle between the normal to the loop and the magnetic field (\\(\\theta\\)) = \\(60^\\circ\\)\u003c/p> \u003cp>Concept &amp; Formula\u003c/p> \u003cp>According to Faraday's Law of Electromagnetic Induction, the induced emf (\\(e\\)) is the negative rate of change of magnetic flux (\\(\\Phi\\)):\u003c/p> \\[e = -\\frac{d\\Phi}{dt}\\] \u003cp>Where magnetic flux is given by:\u003c/p> \\[\\Phi = BA\\cos(\\theta)\\] \u003cp>Calculation\u003c/p> \u003cp>First, substitute the given values into the flux equation:\u003c/p> \\[\\Phi = (0.4 \\sin(300t)) \\times (4 \\times 10^{-4}) \\times \\cos(60^\\circ)\\] \\[\\Phi = 0.4 \\times (4 \\times 10^{-4}) \\times 0.5 \\times \\sin(300t)\\] \\[\\Phi = 0.8 \\times 10^{-4} \\sin(300t)\\text{ Wb}\\] \u003cp>Next, differentiate the flux with respect to time (\\(t\\)) to find the induced emf:\u003c/p> \\[e = -\\frac{d}{dt} [0.8 \\times 10^{-4} \\sin(300t)]\\] \\[e = -0.8 \\times 10^{-4} \\times 300 \\cos(300t)\\] \\[e = -240 \\times 10^{-4} \\cos(300t)\\] \\[e = -24 \\times 10^{-3} \\cos(300t)\\text{ V}\\] \u003cp>The maximum induced emf (\\({e}_{max}\\)) occurs when \\(\\cos (300t)=1\\):\u003c/p> \\[e_{max} = 24 \\times 10^{-3}\\text{ V}\\] \\[e_{max} = 24\\text{ mV}\\] \u003cp>Final Answer: 24 mV\u003c/p> \u003cp>Correct Option: D\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of area A and N turns is rotating with angular velocity \(\omega\) in a uniform magnetic field \(\vec{B}\) about an axis perpendicular to \(\vec{B}\). Magnetic flux \(\phi\) and induced emf \(\epsilon\) across it, at an instant when \(\vec{B}\) is parallel to the plane of coil, are : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\phi =AB,\epsilon =0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\phi =0,\epsilon =0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\phi =0,\epsilon =NAB\omega\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\phi =AB,\epsilon =NAB\omega\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(ϕ=BAN\\cdot \\cos (\\omega t)\\)\u003c/p> \u003cp>\\(\\epsilon =\\frac{-dϕ}{dt}=BA\\omega N\\cdot \\sin (\\omega t)\\)\u003c/p> \u003cp>When B is parallel to plane, \\(\\omega t=\\frac{\\pi }{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow ϕ=0,\\epsilon =BA\\omega N\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : Choke coil is simply a coil having a large inductance but a small resistance. Choke coils are used with fluorescent mercury-tube fittings. If household electric power is directly connected to a mercury tube, the tube will be damaged.<br/>Reason (R): By using the choke coil, the voltage across the tube is reduced by a factor \(\left(R/\sqrt{{R}^{2}+{\omega }^{2}{L}^{2}}\right)\), where \(\omega\) is frequency of the supply across resistor R and inductor L. If the choke coil were not used, the voltage across the resistor would be the same as the applied voltage.<br/>In the light of the above statements, choose the most appropriate answer from the options given below: </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both ( A ) and ( R ) are true but ( R ) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>Both ( A ) and ( R ) are true and ( R ) is the correct explanation of ( A )</p></span></div><div class="option"><span class="key">c</span><span><p>( A ) is false but ( R ) is true</p></span></div><div class="option"><span class="key">d</span><span><p>( A ) is true but ( R ) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both ( A ) and ( R ) are true and ( R ) is the correct explanation of ( A )\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A disc is rotating with an angular velocity \(\omega=10 \pi \mathrm{rad} / \mathrm{s}\) in a uniform magnetic field of \(B=0.4 \mathrm{~T}\), which is directed perpendicular to the plane of the disc. The radius of the disc is 20 cm . Find the potential difference between the centre and the rim of the disc.<br/>(Take \(\pi=3.14\) )</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.25 V</p></span></div><div class="option"><span class="key">b</span><span><p>0.5 V</p></span></div><div class="option"><span class="key">c</span><span><p>1 V</p></span></div><div class="option"><span class="key">d</span><span><p>2 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The given problem involves a rotating disc in the presence of a uniform magnetic field, requiring us to determine the \u003cstrong>potential difference between the center and the rim\u003c/strong>.\u003c/p> \u003cstrong>Step 1: Understanding the Given Data\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Angular velocity\u003c/strong>: \\(\\omega =10\\pi\\)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Magnetic field\u003c/strong>: \\(B=0.4\\) (pointing perpendicular to the plane)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Radius of the disc\u003c/strong>: \\(R=20\\)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Formula to be used\u003c/strong>: The induced potential difference (emf) between the center and the rim of a rotating disc in a magnetic field is given by:\u003c/p> \\(V=\\frac{1}{2}B\\omega {R}^{2}\\)\u003c/li> \u003c/ul> \u003cstrong>Step 2: Substituting the Given Values\u003c/strong> \u003cp>\\(V=\\frac{1}{2}\\times (0.4)\\times (10\\pi )\\times (0.2{)}^{2}\\)\u003c/p> \u003cstrong>Step 3: Simplifying the Expression\u003c/strong> \u003cp>\\(V=\\frac{1}{2}\\times 0.4\\times 10\\pi \\times 0.04\\)\u003c/p> \u003cp>\\(V=\\frac{1}{2}\\times 0.16\\pi\\)\u003c/p> \u003cp> \\(V=0.08\\pi\\)\u003c/p> \u003cstrong>Step 4: Calculating the Final Value\u003c/strong> \u003cp>Using \\(\\pi \\approx 3.14\\)\u003c/p> \u003cp>\\(V=0.08\\times 3.14\\)\u003c/p> \u003cp>\\(V\\approx 0.251\\text{ V}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\u003cstrong>The potential difference between the center and the rim of the disc is approximately 0.251 V.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Regarding self-inductance:<br/>A. The self-inductance of the coil depends on its geometry.<br/>B. Self-inductance does not depend on the permeability of the medium.<br/>C. Self-induced e.m.f. opposes any change in the current in a circuit.<br/>D. Self-inductance is electromagnetic analogue of mass in mechanics.<br/>E. Work needs to be done against self-induced e.m.f. in establishing the current.</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B , C, D, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C, D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C, D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B, C, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> Self inductance of coil \u003cbr/>\\(L=\\frac{{\\mu }_{0}{N}^{2}A}{2\\pi R}\\) \u003c/p> \u003cp>B is incorrect because Self-inductance depends on the permeability of the medium through which the coil is wound. Higher permeability increases inductance\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Regarding self-inductance:<br/>A. The self-inductance of the coil depends on its geometry.<br/>B. Self-inductance does not depend on the permeability of the medium.<br/>C. Self-induced e.m.f. opposes any change in the current in a circuit.<br/>D. Self-inductance is electromagnetic analogue of mass in mechanics.<br/>E. Work needs to be done against self-induced e.m.f. in establishing the current.</p> <p>Choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B , C, D, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C, D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C, D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B, C, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> Self inductance of coil \u003cbr/>\\(L=\\frac{{\\mu }_{0}{N}^{2}A}{2\\pi R}\\) \u003c/p> \u003cp>B is incorrect because Self-inductance depends on the permeability of the medium through which the coil is wound. Higher permeability increases inductance\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A disc is rotating with an angular velocity \(\omega=10 \pi \mathrm{rad} / \mathrm{s}\) in a uniform magnetic field of \(B=0.4 \mathrm{~T}\), which is directed perpendicular to the plane of the disc. The radius of the disc is 20 cm . Find the potential difference between the centre and the rim of the disc.<br/>(Take \(\pi=3.14\) )</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.25 V</p></span></div><div class="option"><span class="key">b</span><span><p>0.5 V</p></span></div><div class="option"><span class="key">c</span><span><p>1 V</p></span></div><div class="option"><span class="key">d</span><span><p>2 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The given problem involves a rotating disc in the presence of a uniform magnetic field, requiring us to determine the \u003cstrong>potential difference between the center and the rim\u003c/strong>.\u003c/p> \u003cstrong>Step 1: Understanding the Given Data\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Angular velocity\u003c/strong>: \\(\\omega =10\\pi\\)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Magnetic field\u003c/strong>: \\(B=0.4\\) (pointing perpendicular to the plane)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Radius of the disc\u003c/strong>: \\(R=20\\)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Formula to be used\u003c/strong>: The induced potential difference (emf) between the center and the rim of a rotating disc in a magnetic field is given by:\u003c/p> \\(V=\\frac{1}{2}B\\omega {R}^{2}\\)\u003c/li> \u003c/ul> \u003cstrong>Step 2: Substituting the Given Values\u003c/strong> \u003cp>\\(V=\\frac{1}{2}\\times (0.4)\\times (10\\pi )\\times (0.2{)}^{2}\\)\u003c/p> \u003cstrong>Step 3: Simplifying the Expression\u003c/strong> \u003cp>\\(V=\\frac{1}{2}\\times 0.4\\times 10\\pi \\times 0.04\\)\u003c/p> \u003cp>\\(V=\\frac{1}{2}\\times 0.16\\pi\\)\u003c/p> \u003cp> \\(V=0.08\\pi\\)\u003c/p> \u003cstrong>Step 4: Calculating the Final Value\u003c/strong> \u003cp>Using \\(\\pi \\approx 3.14\\)\u003c/p> \u003cp>\\(V=0.08\\times 3.14\\)\u003c/p> \u003cp>\\(V\\approx 0.251\\text{ V}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\u003cstrong>The potential difference between the center and the rim of the disc is approximately 0.251 V.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A 30 cm long solenoid has 10 turns per cm and area of \(5c{m}^{2}\). The current through the solenoid coil varies from 2A to 4A in 3.14 s. The e.m.f. induced in the coil is \(\alpha \times {10}^{-5}V\). The value \(\alpha\) is ___________.</p> <p> </p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>60</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>120</p></span></div><div class="option"><span class="key">d</span><span><p>34</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Current change:\u003c/p> \u003cp>\\(\\frac{di}{dt}=\\frac{4-2}{3.14}=\\frac{2}{3.14}\\)\u003c/p> \u003cp>Self-inductance of a solenoid:\u003c/p> \u003cp>\\(L={\\mu }_{0}{n}^{2}Aℓ\\)\u003c/p> \u003cp>\\(=4\\pi \\times {10}^{-7}\\times (1000{)}^{2}\\times 5\\times {10}^{-4}\\times 0.3\\)\u003c/p> \u003cp>\\(L=6\\pi \\times {10}^{-5}H\\)\u003c/p> \u003cp>Induced emf:\u003c/p> \u003cp>\\(\\epsilon =L\\frac{di}{dt}\\)\u003c/p> \u003cp>\\(\\epsilon =6\\pi \\times {10}^{-5}\\times \\frac{2}{3.14}\\approx 12\\times {10}^{-5}V\\)\u003c/p> \u003cp>Hence, \\(\\alpha =12\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of area A and N turns is rotating with angular velocity \(\omega\) in a uniform magnetic field \(\vec{B}\) about an axis perpendicular to \(\vec{B}\). Magnetic flux \(\phi\) and induced emf \(\epsilon\) across it, at an instant when \(\vec{B}\) is parallel to the plane of coil, are : </p> <p><strong>[JEE Main 2025, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\phi =AB,\epsilon =0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\phi =0,\epsilon =0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\phi =0,\epsilon =NAB\omega\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\phi =AB,\epsilon =NAB\omega\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(ϕ=BAN\\cdot \\cos (\\omega t)\\)\u003c/p> \u003cp>\\(\\epsilon =\\frac{-dϕ}{dt}=BA\\omega N\\cdot \\sin (\\omega t)\\)\u003c/p> \u003cp>When B is parallel to plane, \\(\\omega t=\\frac{\\pi }{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow ϕ=0,\\epsilon =BA\\omega N\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil of area A and N turns is rotating with angular velocity \(\omega\) in a uniform magnetic field \(\vec{B}\) about an axis perpendicular to \(\vec{B}\). Magnetic flux \(\phi\) and induced emf \(\epsilon\) across it, at an instant when \(\vec{B}\) is parallel to the plane of coil, are : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\phi =AB,\epsilon =0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\phi =0,\epsilon =0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\phi =0,\epsilon =NAB\omega\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\phi =AB,\epsilon =NAB\omega\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(ϕ=BAN\\cdot \\cos (\\omega t)\\)\u003c/p> \u003cp>\\(\\epsilon =\\frac{-dϕ}{dt}=BA\\omega N\\cdot \\sin (\\omega t)\\)\u003c/p> \u003cp>When B is parallel to plane, \\(\\omega t=\\frac{\\pi }{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow ϕ=0,\\epsilon =BA\\omega N\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider \({I}_{1}\) and \({I}_{2}\) are the currents flowing simultaneously in two nearby coils 1 &amp; 2, respectively. If \({L}_{1}=\) self inductance of coil \(1,{M}_{12}=\) mutual inductance of coil 1 with respect to coil 2 , then the value of induced emf in coil 1 will be:</p> <p><strong>[JEE Main 2025, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\epsilon }_{1}=-{L}_{1}\frac{d{I}_{1}}{dt}+{M}_{12}\frac{d{I}_{2}}{dt}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\epsilon }_{1}=-{L}_{1}\frac{d{I}_{1}}{dt}-{M}_{12}\frac{d{I}_{2}}{dt}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\epsilon }_{1}=-{L}_{1}\frac{d{I}_{1}}{dt}-{M}_{12}\frac{d{I}_{1}}{dt}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\epsilon }_{1}=-{L}_{1}\frac{d{I}_{2}}{dt}-{M}_{12}\frac{d{I}_{1}}{dt}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{ }{ϕ}_{1}={L}_{1}{I}_{1}+{M}_{12}{I}_{2}\\\\ {\\epsilon }_{1}=-\\frac{d{ϕ}_{1}}{dt}=-{L}_{1}\\frac{d{I}_{1}}{dt}-{M}_{12}\\frac{d{I}_{2}}{dt}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a coil is placed in a time dependent magnetic field the power dissipated in it is P . The number of turns, area of the coil and radius of the coil wire are N, A and r respectively. For a second coils number of turns, area of the coil and radius of the coil wire are 2 N , 2A and 3 r respectively. When the first coil is replaced with second coil the power dissipated in it is \(\sqrt{2\alpha P}\). The value of \(\alpha\) is _____</p> <p> </p> <p>[JEE Main 2026, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>36</p></span></div><div class="option"><span class="key">b</span><span><p>\(128\sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>16</p></span></div><div class="option"><span class="key">d</span><span><p>64</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Induced emf: \\(E\\propto NA\\)\u003c/p> \u003cp>Power dissipated: \\(P=\\frac{{E}^{2}}{R}\\)\u003cbr/>Length of wire: \\(ℓ=N\\times 2\\pi r\\)\u003c/p> \u003cp>\\(\\Rightarrow l\\propto N\\times \\sqrt{A}\\)\u003c/p> \u003cp>Resistance: \\(R\\propto \\frac{ℓ}{{r}^{2}}\\propto \\frac{N\\sqrt{A}}{{r}^{2}}\\)\u003c/p> \u003cp>Thus, \u003c/p> \u003cp>Power: \\(P=\\frac{{E}^{2}}{R}\\propto \\frac{{N}^{2}{A}^{2}}{N\\sqrt{A}/{r}^{2}}=N{A}^{3/2}{r}^{2}\\)\u003cbr/>For second coil:\u003c/p> \u003cp>\\(N\\to 2N,A\\to 2A,r\\to 3r\\)Now apply changes:\u003c/p> \u003cp>\\({P}_{2}\\propto (2N)(2A{)}^{3/2}(3r{)}^{2}\\)\u003c/p> \u003cp>\\(=2N\\cdot {2}^{3/2}{A}^{3/2}\\cdot 9{r}^{2}=18\\cdot {2}^{3/2}N{A}^{3/2}{r}^{2}\\)\u003c/p> \u003cp>\\(=36\\sqrt{2}{P}_{1}\\)\u003c/p> \u003cp>Given:\u003c/p> \u003cp>\\({P}_{2}=\\sqrt{2}\\alpha {P}_{1}\\)\u003c/p> \u003cp>\\(36\\sqrt{2}=\\sqrt{2}\\alpha \\Rightarrow \\alpha =36\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Self-inductance of a solenoid depends on </p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Only on geometry</p></span></div><div class="option"><span class="key">b</span><span><p>Only on medium property</p></span></div><div class="option"><span class="key">c</span><span><p>Geometry and medium property</p></span></div><div class="option"><span class="key">d</span><span><p>Value of current through inductor</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Self Inductance depends on the geometry of the conductor and the property of material medium.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An emf of \(0.08\mathrm{V}\) is induced in a metal rod of length \(10\mathrm{cm}\) held normal to a uniform magnetic field of 0.4 T, when moves with a velocity of:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3.2{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.5{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(20{\mathrm{ms}}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given length of rod, \\(l=10\\mathrm{cm}=0.10\\mathrm{m}\\)\u003cbr/>Magnetic field, \\(B=0.4\\mathrm{T}\\)\u003cbr/>e.m.f. \\(\\epsilon =0.08\\mathrm{V}\\)\u003c/p> \u003cp>Induced \\(emf\\epsilon =Blv\\)\u003cbr/>\\(∴v=\\frac{\\epsilon }{Bl}\\\\ \\Rightarrow v=\\left(\\frac{0.08}{0.4\\times 0.10}\\right)=2\\mathrm{m}/\\mathrm{s}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Certain galvanometers have a fixed core made of non magnetic metallic material. The function of this metallic material is:</p> <p> </p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>to oscillate the coil in magnetic field for longer period of time</p></span></div><div class="option"><span class="key">b</span><span><p>to bring the coil to rest quickly</p></span></div><div class="option"><span class="key">c</span><span><p>to produce large deflecting torque on the coil</p></span></div><div class="option"><span class="key">d</span><span><p>to make the magnetic field radial</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The eddy currents are setup due to motion of coil which oppose the motion of coil thus bringing the coil to rest.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bar magnet is released from rest along the axis of a very long vertical copper tube. After some time the magnet will</p> <p> </p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Move down with almost constant speed</p></span></div><div class="option"><span class="key">b</span><span><p>Oscillate inside the tube</p></span></div><div class="option"><span class="key">c</span><span><p>Move down with an acceleration greater than g</p></span></div><div class="option"><span class="key">d</span><span><p>Move down with an acceleration equal to g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>After some time, the magnet will move with constant speed because of two equal force on magnet.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A metal disc of radius \(100\mathrm{cm}\) is rotated at a constant angular speed of \(60 \mathrm{rad} / \mathrm{s}\) in a plane at right angles to an external field of magnetic induction \(0.05 \mathrm{~Wb} / \mathrm{m}^2\). The emf induced between the centre and a point on the rim will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.5\mathrm{V}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(9\mathrm{V}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,10 +342,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Induced emf produced between the centre and a point on the disc is given by\u003c/p> \u003cp>$$ \\begin{aligned}\u003cbr/>&amp; \\mathrm{e}=\\frac{1}{2} \\omega \\mathrm{BR}^2 \\\\\u003cbr/>&amp; \\omega=60 \\mathrm{rad} / \\mathrm{s}, \\mathrm{~B}=0.05 \\mathrm{~Wb} / \\mathrm{m}^2 \\\\\u003cbr/>&amp; \\text { and } \\mathrm{R}=100 \\mathrm{~cm}=1 \\mathrm{~m}\u003cbr/>\\end{aligned} $$\u003c/p> \u003cp>We get \\(\\mathrm{e}=\\frac{1}{2} \\times 60 \\times 0.05 \\times(1)^2=1.5 \\mathrm{~V}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Induced emf produced between the centre and a point on the disc is given by\u003c/p> \u003cp>$$ \\begin{aligned}& \\mathrm{e}=\\frac{1}{2} \\omega \\mathrm{BR}^2 \\\\& \\omega=60 \\mathrm{rad} / \\mathrm{s}, \\mathrm{~B}=0.05 \\mathrm{~Wb} / \\mathrm{m}^2 \\\\& \\text { and } \\mathrm{R}=100 \\mathrm{~cm}=1 \\mathrm{~m}\\end{aligned} $$\u003c/p> \u003cp>We get \\(\\mathrm{e}=\\frac{1}{2} \\times 60 \\times 0.05 \\times(1)^2=1.5 \\mathrm{~V}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Spherical insulating ball and a spherical metallic ball of same size and mass are dropped from the same height. Choose the correct statement out of the following ( Assume negligible air friction )</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Time taken by them to reach the earth's surface will be independent of the properties of their materials</p></span></div><div class="option"><span class="key">b</span><span><p>Insulating ball will reach the earth's surface earlier than the metal ball</p></span></div><div class="option"><span class="key">c</span><span><p>Both will reach the earth's surface simultaneously</p></span></div><div class="option"><span class="key">d</span><span><p>Metal ball will reach the earth's surface earlier than the insulating ball.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>When the metallic ball passes through the earth's magnetic field, eddy current will be produced and it will oppose the motion of the metallic ball, so it will take more time.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A square loop of area \(25 cm ^2\) has a resistance of \(10 \Omega\). The square loop is placed in a uniform magnetic field of magnitude \(40.0 T\). The plane of the loop is perpendicular to the magnetic field. The work done in pulling the loop out of the magnetic field slowly and uniformly in \(1.0 sec\), will be</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(2.5 \times 10^{-3} J\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.0 \times 10^{-3} J\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1.0 \times 10^{-4} J\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(5 \times 10^{-3} J\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,10 +366,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Length of each side of the loop, \\(\\ell=5 cm\\) and, \\(t=1 sec\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore v=\\frac{0.05}{1}=0.05 m / s \\\\\u003cbr/>&amp; i=\\frac{B \\ell v}{R}=\\frac{40 \\times 0.05 \\times 0.05}{10}=0.01 A \\\\\u003cbr/>&amp; \\therefore F=i \\ell B=40 \\times 0.01 \\times 0.05=0.02 N \\\\\u003cbr/>&amp; \\therefore W=0.02 \\times \\ell=0.02 \\times .05=1 \\times 10^{-3} J\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Length of each side of the loop, \\(\\ell=5 cm\\) and, \\(t=1 sec\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\therefore v=\\frac{0.05}{1}=0.05 m / s \\\\& i=\\frac{B \\ell v}{R}=\\frac{40 \\times 0.05 \\times 0.05}{10}=0.01 A \\\\& \\therefore F=i \\ell B=40 \\times 0.01 \\times 0.05=0.02 N \\\\& \\therefore W=0.02 \\times \\ell=0.02 \\times .05=1 \\times 10^{-3} J\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The time taken for the magnetic energy to reach \(25 \%\) of its maximum value, when a solenoid of resistance \(R\) and inductance \(L\) is connected to a battery, is:</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\mathrm{L}}{\mathrm{R}}(\ln 2)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\mathrm{L}}{\mathrm{R}}(\ln 10)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Infinite}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\mathrm{L}}{\mathrm{R}}(\ln 5)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,10 +378,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We know that, magnetic energy,\u003cbr/>\\[\u003cbr/>U=\\frac{1}{2} L i^2\u003cbr/>\\]\u003cbr/>When circuit has maximum current, maximum value of magnetic energy\u003cbr/>\\[\u003cbr/>U_0=\\frac{1}{2} L i_0^2\u003cbr/>\\]\u003cbr/>Given,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; U=25 \\% \\text { of } U_0 \\\\\u003cbr/>&amp; \\Rightarrow \\frac{1}{2} L i^2=\\frac{1}{4} \\times \\frac{1}{2} L i_0^2 \\\\\u003cbr/>&amp; \\Rightarrow i=\\frac{i_0}{2}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>We know that\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow i=i_0\\left(1-e^{-\\frac{R t}{L}}\\right) \\\\\u003cbr/>&amp; \\Rightarrow \\frac{i_0}{2}=i_0\\left(1-e^{-\\frac{R t}{L}}\\right) \\\\\u003cbr/>&amp; \\Rightarrow \\frac{1}{2}=1-e^{-\\frac{R t}{L}} \\Rightarrow-e^{-\\frac{R t}{L}}=-\\frac{1}{2} \\\\\u003cbr/>&amp; \\Rightarrow e^{\\frac{R t}{L}}=2 \\\\\u003cbr/>&amp; \\Rightarrow t=\\frac{L}{R}(\\ln 2)\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We know that, magnetic energy,\u003cbr/>\\[\u003cbr/>U=\\frac{1}{2} L i^2\u003cbr/>\\]\u003cbr/>When circuit has maximum current, maximum value of magnetic energy\u003cbr/>\\[\u003cbr/>U_0=\\frac{1}{2} L i_0^2\u003cbr/>\\]\u003cbr/>Given,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& U=25 \\% \\text { of } U_0 \\\\& \\Rightarrow \\frac{1}{2} L i^2=\\frac{1}{4} \\times \\frac{1}{2} L i_0^2 \\\\& \\Rightarrow i=\\frac{i_0}{2}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>We know that\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Rightarrow i=i_0\\left(1-e^{-\\frac{R t}{L}}\\right) \\\\& \\Rightarrow \\frac{i_0}{2}=i_0\\left(1-e^{-\\frac{R t}{L}}\\right) \\\\& \\Rightarrow \\frac{1}{2}=1-e^{-\\frac{R t}{L}} \\Rightarrow-e^{-\\frac{R t}{L}}=-\\frac{1}{2} \\\\& \\Rightarrow e^{\\frac{R t}{L}}=2 \\\\& \\Rightarrow t=\\frac{L}{R}(\\ln 2)\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An inductor coil stores \(64\mathrm{J}\) of magnetic field energy and dissipates energy at the rate of \(640\mathrm{W}\) when a current of 8 A is passed through it. If this coil is joined across an ideal battery, find the time constant of the circuit in ..... seconds :</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.8</p></span></div><div class="option"><span class="key">b</span><span><p>0.2</p></span></div><div class="option"><span class="key">c</span><span><p>0.125</p></span></div><div class="option"><span class="key">d</span><span><p>0.4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Formula of Magnetic field energy\u003cbr/>\\({U}_{B}=\\frac{1}{2}L{I}^{2}\\)\u003c/p> \u003cp>Formula of energy dissipated, \\(P={I}^{2}R\\)\u003cbr/>\\(640=(8{)}^{2}R\\Rightarrow R=10\\Omega\\)\u003c/p> \u003cp>From (i) \\(64=\\frac{1}{2}\\times L\\times (8{)}^{2}\\Rightarrow L=2H\\)\u003cbr/>Therefore, time constant\u003cbr/>\\(\\tau =\\frac{L}{R}=\\frac{2}{10}=0.2\\text{ seconds. }\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Spherical insulating ball and a spherical metallic ball of same size and mass are dropped from the same height. Choose the correct statement out of the following: ( Assume negligible air friction )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Time taken by them to reach the earth's surface will be independent of the properties of their materials</p></span></div><div class="option"><span class="key">b</span><span><p>Insulating ball will reach the earth's surface earlier than the metal ball</p></span></div><div class="option"><span class="key">c</span><span><p>Both will reach the earth's surface simultaneously</p></span></div><div class="option"><span class="key">d</span><span><p>Metal ball will reach the earth's surface earlier than the insulating ball.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>When the metallic ball passes through the earth's magnetic field, eddy current will be produced and it will oppose the motion of the metallic ball, so it will take more time.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A coil is placed in magnetic field such that plane of coil is perpendicular to the direction of magnetic field. The magnetic flux through a coil can be changed:<br/>A. By changing the magnitude of the magnetic field within the coil.<br/>B. By changing the area of coil within the magnetic field.<br/>C. By changing the angle between the direction of magnetic field and the plane of the coil.<br/>D. By reversing the magnetic field direction abruptly without changing its magnitude.</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Magnetic flux, \\(ϕ=\\vec{B}\\cdot \\vec{A}\\)\u003cbr/>\\(=BA\\cos \\theta\\)\u003c/p> \u003cp>Most suitable ans is (b)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A \(12\mathrm{V}\) battery connected to a coil of resistance \(6\Omega\) through a switch, drives a constant current in the circuit. The switch is opened in \(1\mathrm{ms}\) . The emf induced across the coil is \(20\mathrm{V}\). The inductance of the coil is:</p> <p>[JEE Main 2023, 15 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5\mathrm{mH}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(12\mathrm{mH}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(8\mathrm{mH}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(10\mathrm{mH}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Current in the circuit, \\(I=\\frac{12}{6}=2\\mathrm{A}\\)\u003cbr/>\\(\\text{ Induced }emf=-L\\frac{dI}{dt}\\\\ \\Rightarrow 20=-L\\frac{(0-2)}{{10}^{-3}}\\\\ \\Rightarrow L=10\\mathrm{mH}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.<br/>Assertion A: A bar magnet dropped through a metallic cylindrical pipe takes more time to come down compared to a non-magnetic bar with same geometry and mass.</p> <p>Reason R: For the magnetic bar, Eddy currents are produced in the metallic pipe which oppose the motion of the magnetic bar.<br/>In the light of the above statements, choose the correct answer from the options given below</p> <p> </p> <p>[JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Both A and R are true and R is the correct explanation of A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An aeroplane, with its wings spread \(10\mathrm{m}\), is flying at a speed of \(180\mathrm{km}/\mathrm{h}\) in a horizontal direction. The total intensity of earth's field at that part is \(2.5\times {10}^{-4}\mathrm{Wb}/{\mathrm{m}}^{2}\) and the angle of dip is \(60^\circ\). The emf induced between the tips of the plane wings will be</p> <p> </p> <p>[JEE Main 2021, 26 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(88.37\mathrm{mV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(54.125\mathrm{mV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(62.50\mathrm{mV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(108.25\mathrm{mV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Induced emf between the wings of plane,\u003cbr/>\\(\\epsilon ={B}_{\\mathrm{v}}\\times (\\vec{v}\\times \\vec{B})\\cdot \\vec{ℓ}\\\\ \\epsilon =2.5\\times {10}^{-4}\\times \\frac{\\sqrt{3}}{2}\\times 180\\times \\frac{5}{18}\\times 1\\\\ \\epsilon =2.5\\times 25\\times \\sqrt{3}\\times {10}^{-4}=108.25\\times {10}^{-3}\\mathrm{V}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An inductor coil stores \(64\mathrm{J}\) of magnetic field energy and dissipates energy at the rate of \(640\mathrm{W}\) when a current of 8 A is passed through it. If this coil is joined across an ideal battery, find the time constant of the circuit in _______ seconds.</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.8</p></span></div><div class="option"><span class="key">b</span><span><p>0.2</p></span></div><div class="option"><span class="key">c</span><span><p>0.125</p></span></div><div class="option"><span class="key">d</span><span><p>0.4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Formula of Magnetic field energy\u003cbr/>\\({U}_{B}=\\frac{1}{2}L{I}^{2}\\)\u003c/p> \u003cp>Formula of energy dissipated, \\(P={I}^{2}R\\)\u003cbr/>\\(640=(8{)}^{2}R\\Rightarrow R=10\\Omega\\)\u003c/p> \u003cp>From (i) \\(64=\\frac{1}{2}\\times L\\times (8{)}^{2}\\Rightarrow L=2H\\)\u003cbr/>Therefore, time constant\u003cbr/>\\(\\tau =\\frac{L}{R}=\\frac{2}{10}=0.2\\text{ seconds. }\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The induced emf can be produced in a coil by<br/>A. moving the coil with uniform speed inside uniform magnetic field<br/>B. moving the coil with non uniform speed inside uniform magnetic field<br/>C. rotating the coil inside the uniform magnetic field<br/>D. changing the area of the coil inside the uniform magnetic field<br/>Choose the correct answer from the options given below:</p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A and C only</p></span></div><div class="option"><span class="key">d</span><span><p>C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In a coil, the induced emf is produced only if the flux through it changes w.r.t time in a magnetic field. Thus, for uniform field, flux can be changed either by rotating the coil or by changing the area of the coil.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A conducting loop of radius \(\frac{10}{\sqrt{\pi}} cm\) is placed perpendicular to a uniform magnetic field of \(0.5 T\). The magnetic field is decreased to zero in \(0.5 s\) at a steady rate. The induced emf in the circular loop at \(0.25 s\) is: </p> <p><strong>[JEE Main 2023, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(e m f=1 mV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(e m f=10 mV\)</p></span></div><div class="option"><span class="key">c</span><span><p>emf \(=100 mV\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(e m f=5 mV\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Using Faraday's Law of EMI, EMF \\(=\\frac{d \\phi}{d t}=\\frac{B A-0}{t}\\) \\(A=\\pi r^2=\\pi\\left(\\frac{0.1^2}{\\pi}\\right)=0.01 m ^2\\) and\u003c/p> \u003cp>\\(B=0.5 T\\) \\(\\Rightarrow E M F=\\frac{(0.5)(0.01)}{0.5}=10 mV\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.<br/>Assertion A: A bar magnet dropped through a metallic cylindrical pipe takes more time to come down compared to a non-magnetic bar with same geometry and mass.</p> <p>Reason R: For the magnetic bar, Eddy currents are produced in the metallic pipe which opposes the motion of the magnetic bar.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p> </p> <p>[JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is false but (R) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Both A and R are true and R is the correct explanation of A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a moving coil galvanometer, the deflection in the coil is 0.05rad when a current of is passed through it. If the torsional constant of the suspension wire is \(4.0\times {10}^{-5}\), the magnetic field is 0.01T and the number of turns in the coil is 200 , the area of each turn (in \(c{m}^{2}\) ) is:</p> <p><strong>[JEE Main 2023, 25 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> 2.0 </p></span></div><div class="option"><span class="key">b</span><span><p> 1.0</p></span></div><div class="option"><span class="key">c</span><span><p> 1.5 </p></span></div><div class="option"><span class="key">d</span><span><p> 0.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> Formula k \\(ϕ\\)=NIAB\u003c/p> \u003cp>Given K= 4\\(\\times {10}^{-5}\\) Nm \\(ra{d}^{-1}\\)\u003c/p> \u003cp>\\(ϕ=0.05\\) rad\u003c/p> \u003cp>N=200\u003c/p> \u003cp>I=\\({10}^{-2}A\\)\u003c/p> \u003cp>B=0.01T\u003c/p> \u003cp>\\(4\\times {10}^{-5}\\times 0.05=200\\times {10}^{-2}\\times A\\times 0.01\\)\u003c/p> \u003cp>A=\\({10}^{-4}{m}^{2}=1c{m}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Spherical insulating ball and a spherical metallic ball of same size and mass are dropped from the same height. Choose the correct statement out of the following {Assume negligible air friction}</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Time taken by them to reach the earth's surface will be independent of the properties of their materials</p></span></div><div class="option"><span class="key">b</span><span><p>Insulating ball will reach the earth's surface earlier than the metal ball</p></span></div><div class="option"><span class="key">c</span><span><p>Both will reach the earth's surface simultaneously</p></span></div><div class="option"><span class="key">d</span><span><p>Metal ball will reach the earth's surface earlier than the insulating ball.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) When the metallic ball passes through the earth's magnetic field, eddy current will be produced and it will oppose the motion of the metallic ball, so it will take more time.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A conducting loop of radius \(\frac{10}{\sqrt{\pi }}\mathrm{cm}\) is placed perpendicular to a uniform magnetic field of \(0.5T\). The magnetic field is decreased to zero in \(0.5\mathrm{s}\) at a steady rate. The induced \(\mathrm{emf}\) in the circular loop at \(0.25s\) is: </p> <p>[JEE mains 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(emf=1\mathrm{mV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(emf=10\mathrm{mV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(emf=100\mathrm{mV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(emf=5\mathrm{mV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Using Faraday's Law of EMI, \\(EMF=\\frac{dϕ}{dt}=\\frac{BA-0}{t}\\)\u003cbr/>\\(A=\\pi {r}^{2}=\\pi \\left(\\frac{0.{1}^{2}}{\\pi }\\right)=0.01{\\mathrm{m}}^{2}\\text{ and }B=0.5T\\\\ \\Rightarrow EMF=\\frac{(0.5)(0.01)}{0.5}=10\\mathrm{mV}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A rod with circular cross-section area 2cm<sup>2</sup> and length 40cm is wound uniformly with 400 turns of an insulated wire. If a current of 0.4 A flows in the wire windings, the total magnetic flux produced inside windings is 4π × 10<sup>–6</sup> Wb. The relative permeability of the rod is (Given: Permeability of vacuum μ<sub>0 </sub>= 4π × 10<sup>–7</sup> NA<sup>–2</sup>)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12.5</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{32}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(125\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{16}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given: \u003cbr/>\\(A=2\\text{ cm²}=2\\times {10}^{-4}\\text{ m²}\\) \u003cbr/>\\(l=40\\text{ cm}=0.4\\text{ m}\\) \u003cbr/>\\(N=400\\) \u003cbr/>\\(I=0.4\\text{ A}\\) \u003cbr/>\\(Nϕ=4\\pi \\times {10}^{-6}\\text{ Wb}\\) \u003cbr/>\\({\\mu }_{0}=4\\pi \\times {10}^{-7}\\) \u003cbr/>Flux per turn: \u003cbr/>\\(ϕ=\\frac{4\\pi \\times {10}^{-6}}{400}=\\pi \\times {10}^{-8}\\text{ Wb}\\) \u003cbr/>\\(B=\\frac{ϕ}{A}=\\frac{\\pi \\times {10}^{-8}}{2\\times {10}^{-4}}=\\frac{\\pi }{2}\\times {10}^{-4}\\) \u003cbr/>\\(B={\\mu }_{0}\\mu r\\frac{N}{l}I\\) \u003cbr/>\\(\\frac{\\pi }{2}\\times {10}^{-4}=4\\pi \\times {10}^{-7}\\mu r\\frac{400}{0.4}0.4\\) \u003cbr/>\\(\\frac{400}{0.4}=1000\\) \u003cbr/>\\(1000\\times 0.4=400\\) \u003cbr/>\\(4\\pi \\times {10}^{-7}\\times 400\\mu r=16\\pi \\times {10}^{-5}\\mu r\\) \u003cbr/>\\(\\frac{1}{2}\\times {10}^{-4}=16\\times {10}^{-5}\\mu r\\) \u003cbr/>\\(5\\times {10}^{-5}=16\\times {10}^{-5}\\mu r\\) \u003cbr/>\\(\\mu r=\\frac{5}{16}\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An emf of \(0.08\mathrm{V}\) is induced in a metal rod of length \(10\mathrm{cm}\) held normal to a uniform magnetic field of 0.4 T, when moves with a velocity of:</p> <p>[JEE Main 2023, 8 April (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3.2{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.5{\mathrm{ms}}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(20{\mathrm{ms}}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

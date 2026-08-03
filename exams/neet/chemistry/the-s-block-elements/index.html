@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"The S-Block Elements","item":"https://yespyq.com/exams/neet/chemistry/the-s-block-elements/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>The S-Block Elements</h1>
       <p>10 NEET Chemistry previous year questions on <b>The S-Block Elements</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: One is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p><strong>Assertion (A):</strong> Lithium halides are some what covalent is nature.<br/><strong>Reason (R):</strong> Lithium possess high polarisation capability. In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but ( \(R )\) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but (R) is true</p></span></div><div class="option correct"><span class="key">d</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p><strong>Assertion (A):</strong> Barium carbonate is insoluble in water and is highly stable.<br/><strong>Reason (R):</strong> The thermal stability of the carbonates increases with increasing cationic size.<br/>Choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 26 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is false but (R) is true.</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is true but (R) is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true but (R) is not the true explanation of (A).</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true and (R) is the true explanation of (A).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Thermal stability of carbonates increases down the group in alkaline earth metals due to increase in cationic size down the group.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Assertion (A):</strong> An aqueous solution of \(KOH\) when for volumetric analysis, its concentration should be checked before the use.</p> <p><strong>Reason (R):</strong> On aging, \(KOH\) solution absorbs atmospheric \(CO _2\).</p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is correct but ( \(R )\) is not correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(KOH\\) absorb \\(CO _2\\), so its concentration must be checked before titration.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The magnetic behaviour of \(Li _2 O , Na _2 O _2\) and \(KO _2\), respectively, are</p> <p>[JEE Main 2023, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Diamagnetic, paramagnetic and diamagnetic</p></span></div><div class="option"><span class="key">b</span><span><p>Paramagnetic, paramagnetic and diamagnetic</p></span></div><div class="option"><span class="key">c</span><span><p>Paramagnetic, diamagnetic and paramagnetic</p></span></div><div class="option"><span class="key">d</span><span><p>Diamagnetic, diamagnetic and paramagnetic</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(Li _2 O \\rightarrow O ^{2-} \\rightarrow\\) diamagnetic\u003cbr/>\\(Na _2 O _2 \\rightarrow O _2^{2-} \\rightarrow\\) diamagnetic\u003cbr/>\\(KO _2 \\rightarrow O _2^{-} \\rightarrow\\) paramagnetic\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following reaction is correct?</p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(2 LiNO _3 \xrightarrow{\Delta} 2 LiNO _2+ O _2\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(4 LiNO _3 \xrightarrow{\Delta} 2 Li _2 O +2 N _2 O _4+ O _2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4 LiNO _3 \xrightarrow{\Delta} 2 Li _2 O +4 NO _2+ O _2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2 LiNO _3 \xrightarrow{\Delta} 2 Li +2 NO _2+ O _2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The correct decomposition reaction for the lithium nitrate is:\u003cbr/>\\[\u003cbr/>4 LiNO _3 \\xrightarrow{\\Delta} 2 Li _2 O +4 NO _2+ O _2\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reaction of \(BeO\) with ammonia and hydrogen fluoride gives ' \(A\) ' which on thermal decomposition gives \(BeF _2\) and \(NH _4 F\). What is 'A'?</p> <p>[JEE Main 2023, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left( NH _4\right)_2 BeF _4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(H _3 NBeF _3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left( NH _4\right) BeF _3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left( NH _4\right) Be _2 F _5\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,10 +147,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; BeO +2 NH _3+4 HF \\rightarrow\\left( NH _4\\right)_2 BeF _4+ H _2 O \\\\\u003cbr/>&amp; \\left( NH _4\\right)_2 BeF _4 \\xrightarrow{\\Delta} BeF _2+ NH _4 F\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& BeO +2 NH _3+4 HF \\rightarrow\\left( NH _4\\right)_2 BeF _4+ H _2 O \\\\& \\left( NH _4\\right)_2 BeF _4 \\xrightarrow{\\Delta} BeF _2+ NH _4 F\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On combustion of \(Li , Na\) and \(K\) in excess of air, the major oxides formed, respectively, are:</p> <p>[JEE Main 2020, 4 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Li _2 O , Na _2 O _2\) and \(K _2 O\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Li _2 O , Na _2 O _2\) and \(KO _2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Li _2 O , Na _2 O\) and \(K _2 O _2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Li _2 O , Na _2 O _2\) and \(K _2 O _2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,10 +159,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(Li\\) forms normal oxide, \\(Na\\) forms peroxide while \\(K\\) forms superoxide.\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; 4 Li + O _2 \\longrightarrow 2 Li _2 O \\\\\u003cbr/>&amp; 2 Na + O _2 \\longrightarrow Na _2 O _2 \\\\\u003cbr/>&amp; K + O _2 \\longrightarrow KO _2\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(Li\\) forms normal oxide, \\(Na\\) forms peroxide while \\(K\\) forms superoxide.\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& 4 Li + O _2 \\longrightarrow 2 Li _2 O \\\\& 2 Na + O _2 \\longrightarrow Na _2 O _2 \\\\& K + O _2 \\longrightarrow KO _2\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statement from the following</p> <p>[NEET 2022]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The oxidation number of \(\mathrm{K}\) in \(\mathrm{KO}_2\) is +4</p></span></div><div class="option"><span class="key">b</span><span><p>Ionisation enthalpy of alkali metals decreases from top to bottom in the group.</p></span></div><div class="option"><span class="key">c</span><span><p>Lithium is the strongest reducing agent among the alkali metals.</p></span></div><div class="option"><span class="key">d</span><span><p>Alkali metals react with water to form their hydroxides.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The oxidation number of \\(\\mathrm{K}\\) in \\(\\mathrm{KO}_2\\) is +4\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of conductivity of ions in water is:</p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Rb ^{+}&gt; Na ^{+}&gt; K ^{+}&gt; Li ^{+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Cs ^{+}&gt; Rb ^{+}&gt; K ^{+}&gt; Na ^{+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(K ^{+}&gt; Na ^{+}&gt; Cs ^{+}&gt; Rb ^{+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Na ^{+}&gt; K ^{+}&gt; Rb ^{+}&gt; Cs ^{+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>All alkali metal cations gets converted into hydrated form in an aqueous medium. More the +ve charge on cation, more it will be hydrated.\u003c/p> \u003cp>It will result in the increase in size of the cation. Therefore, \\(Li ^{+}\\)cation has larger size in hydrated form and least conductivity.\u003cbr/>Thus, the correct order of conductivity of alkali metal ions are: \\(Li ^{+}&lt; Na ^{+}&lt; K ^{+}&lt; Rb ^{+}&lt; Cs ^{+}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statement(s): <br/>(A) Beryllium oxide is purely acidic in nature.<br/>(B) Beryllium carbonate is kept in the atmosphere of \(CO _2\).<br/>(C) Beryllium sulphate is readily soluble in water.<br/>(D) Beryllium shows anomalous behavior.</p> <p>Choose the correct answer from the options given below:</p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B) and (C) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B), (C) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

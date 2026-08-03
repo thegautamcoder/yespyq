@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Mechanical Properties of Fluids","item":"https://yespyq.com/exams/neet/physics/mechanical-properties-of-fluids/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Mechanical Properties of Fluids</h1>
       <p>10 NEET Physics previous year questions on <b>Mechanical Properties of Fluids</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A submarine is designed to withstand an absolute pressure of 100 atm. How deep can it go below the water surface?</p> <p>(Consider the density of water = 1000 kg m<sup>–3</sup>, 1 atm = 1 × 10<sup>5 </sup>Pa and gravitational acceleration g = 10 m/s<sup>2</sup>)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9900 m</p></span></div><div class="option"><span class="key">b</span><span><p>99 m</p></span></div><div class="option"><span class="key">c</span><span><p>9000 m</p></span></div><div class="option correct"><span class="key">d</span><span><p>990 m</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The venturi-meter works on:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bernoulli's principle.</p></span></div><div class="option"><span class="key">b</span><span><p>Pascal's law</p></span></div><div class="option"><span class="key">c</span><span><p>excess pressure.</p></span></div><div class="option"><span class="key">d</span><span><p>capillary action</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A Venturi-meter measures fluid flow speed by utilizing the relationship between pressure and velocity in a fluid. It works on bernoulli equation\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A raindrop with radius \(\mathrm{R}=0.2 \mathrm{~mm}\) falls from a cloud at a height \(h=2000 \mathrm{~m}\) above the ground. Assume that the drop is spherical through its fall and the force of buoyance may be neglected, then the terminal speed attained by the raindrop is :</p> <p>[Density of water \(f_{\mathrm{w}}=1000 \mathrm{kg m}^{-3}\) and Density of air \(f_{\mathrm{a}}=1.2 \mathrm{~kg}^{-3}, g=10 \mathrm{~m} / \mathrm{s}^{2}\), Coefficient of viscosity of air \(\left.=1.8 \times 10^{-5} \mathrm{Nsm}^{-2}\right]\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4.94 \mathrm{~ms}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(14.4 \mathrm{~ms}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(43.56 \mathrm{~ms}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(250.6 \mathrm{~ms}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) At terminal speed\u003c/p> \u003cp>\\(M g=F v=6 \\pi \\eta R v\\)\u003c/p> \u003cp>\\(\\Rightarrow v=\\frac{m g}{6 \\pi \\eta R}\\)\u003c/p> \u003cp>\\(v=\\frac{\\delta \\times \\frac{4}{3} \\pi R^{3} g}{6 \\pi \\eta R}\\)\u003c/p> \u003cp>\\(=\\frac{2 \\times \\delta R^{3} \\times g}{9 \\eta}\\)\u003c/p> \u003cp>\\(=\\frac{2 \\times 1000 \\times\\left(0.2 \\times 10^{-3}\\right)^{3} \\times 10}{9 \\times 1.8 \\times 10^{-5}}=\\frac{400}{81}=4.94 \\mathrm{~m} / \\mathrm{s}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An air bubble of volume \(1 \mathrm{~cm}^{3}\) rises from the bottom of a lake \(40 \mathrm{~m}\) deep to the surface at a temperature of \(12^{\circ} \mathrm{C}\). The atmospheric pressure is \(1 \times 10^{5} \mathrm{~Pa}\), the density of water is \(1000 \mathrm{~kg} / \mathrm{m}^{3}\) and \(\mathrm{g}=10 \mathrm{~m} / \mathrm{s}^{2}\). There is no difference of the temperature of water at the depth of \(40 \mathrm{~m}\) and on the surface. The volume of air bubble when it reaches the surface will be</p> <p> </p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5 \mathrm{~cm}^{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2 \mathrm{~cm}^{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4 \mathrm{~cm}^{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3 \mathrm{~cm}^{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,10 +123,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(P=P_{0}+\\rho g h=10^{5}+10^{3} \\times 10 \\times 40=5 \\times 10^{5} P a\\) and temperature is constant\u003c/p> \u003cp>\\(\\begin{aligned} \\Rightarrow &amp; P V=P_0 V_0 \\\\ &amp; 5 \\times 10^5 \\times 1 \\mathrm{~cm}^3=10^5 \\times \\mathrm{V}_0 \\\\ \\Rightarrow &amp; \\mathrm{V}_0=5 \\mathrm{~cm}^3\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(P=P_{0}+\\rho g h=10^{5}+10^{3} \\times 10 \\times 40=5 \\times 10^{5} P a\\) and temperature is constant\u003c/p> \u003cp>\\(\\begin{aligned} \\Rightarrow & P V=P_0 V_0 \\\\ & 5 \\times 10^5 \\times 1 \\mathrm{~cm}^3=10^5 \\times \\mathrm{V}_0 \\\\ \\Rightarrow & \\mathrm{V}_0=5 \\mathrm{~cm}^3\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A fully loaded aircraft has a mass of \(5.4 \times 10^{5} \mathrm{~kg}\). Its total wing area is \(500 \mathrm{~m}^{2}\). It is in level flight with a speed of \(1080 \mathrm{~km} / \mathrm{h}\). If the density of air is \(1.2 \mathrm{~kg} \mathrm{~m}^{-3}\), the fractional increase in the speed of the air on the upper surface of the wings relative to the lower surface in percentage will be \(\left(g=10 \mathrm{~m} / \mathrm{s}^{2}\right)\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>16</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,10 +135,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\left(P_{2}-P_{1}\\right) A=m g\\)\u003c/p> \u003cp>\\(\\Rightarrow P_{2}-P_{1}=\\frac{5.4 \\times 10^{6}}{500}\\)\u003c/p> \u003cp>\\(\\Rightarrow P_{2}-P_{1}=10.8 \\times 10^{3} \\mathrm{~N} / \\mathrm{m}^{2}\\)\u003c/p> \u003cp>Using Bernoulli's theorem,\u003c/p> \u003cp>\\(\\begin{aligned} &amp; P_2+0+\\frac{1}{2} \\rho v_2^2=P_1+0+\\frac{1}{2} \\rho v_1^2 \\\\ &amp; P_2-P_1=\\frac{1}{2} \\rho\\left(v_1-v_2\\right)\\left(v_1+v_2\\right) \\\\ &amp; 10.8 \\times 10^3=\\frac{1}{2} \\times 1.2\\left(v_1-v_2\\right) \\times 2 \\times 3 \\times 10^2 \\\\ &amp; \\Rightarrow v_1-v_2=30 \\\\ &amp; \\therefore\\left(\\frac{v_1-v_2}{v}\\right) \\times 100=\\frac{30}{300} \\times 100=10 \\%\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\left(P_{2}-P_{1}\\right) A=m g\\)\u003c/p> \u003cp>\\(\\Rightarrow P_{2}-P_{1}=\\frac{5.4 \\times 10^{6}}{500}\\)\u003c/p> \u003cp>\\(\\Rightarrow P_{2}-P_{1}=10.8 \\times 10^{3} \\mathrm{~N} / \\mathrm{m}^{2}\\)\u003c/p> \u003cp>Using Bernoulli's theorem,\u003c/p> \u003cp>\\(\\begin{aligned} & P_2+0+\\frac{1}{2} \\rho v_2^2=P_1+0+\\frac{1}{2} \\rho v_1^2 \\\\ & P_2-P_1=\\frac{1}{2} \\rho\\left(v_1-v_2\\right)\\left(v_1+v_2\\right) \\\\ & 10.8 \\times 10^3=\\frac{1}{2} \\times 1.2\\left(v_1-v_2\\right) \\times 2 \\times 3 \\times 10^2 \\\\ & \\Rightarrow v_1-v_2=30 \\\\ & \\therefore\\left(\\frac{v_1-v_2}{v}\\right) \\times 100=\\frac{30}{300} \\times 100=10 \\%\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capillary tube of radius \( r \) is immersed in water and water rises in it to a height \( h \). The mass of the water in the capillary is \( 5 \mathrm{~g} \). Another capillary tube of radius \( 2 r \) is immersed in water. The mass of water that will rise in this tube is:</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 5.0 \mathrm{~g} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 10.0 \mathrm{~g} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 20.0 \mathrm{~g} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 2.5 \mathrm{~g} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(h=\\frac{2S\\cos \\theta }{r\\rho g}\\)\u003c/p> \u003cp>mass of water in the first tube\u003c/p> \u003cp>\\(m=\\pi {r}^{2}h\\rho =\\pi {r}^{2}\\times \\left(\\frac{2S\\cos \\theta }{r\\rho g}\\right)\\times \\rho \\\\ =\\frac{2\\pi rS\\cos \\theta }{g}\\\\ ∴m\\propto r.\\)\u003c/p> \u003cp>Hence, \\(\\frac{m'}{m}=\\frac{2r}{r}=2\\\\ orm'=2\\times 5g=10g\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The velocity of a small ball of mass \( M \) and density \( d \), when dropped in a container filled with glycerine becomes constant after some time. If the density of glycerine is \( \frac{d}{2} \), then the viscous force acting on the ball will be:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 2 M g \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{M g}{2} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( M g \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{3}{2} M g \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>(2)\u003c/strong>\u003c/p> \u003cp>Density of ball is \\(d.\\)\u003cbr/>Density of glycerine is \\(\\frac{d}{2}.\\)\u003c/p> \u003cp>\\({\\mathrm{F}}_{\\mathrm{B}}={\\mathrm{V}}_{\\mathrm{S}}{\\rho }_{l}\\mathrm{g}=\\mathrm{V}\\frac{\\mathrm{d}}{2}\\mathrm{g}\\\\ {\\mathrm{F}}_{\\mathrm{g}}=\\mathrm{Mg}=\\mathrm{Vdg}\\)\u003c/p> \u003cp>for constant velocity, \\({F}_{net}=0.\\)\u003c/p> \u003cp>\\(∴{\\mathrm{F}}_{\\mathrm{B}}+{\\mathrm{F}}_{\\mathrm{V}}=\\mathrm{Mg}\\\\ {\\mathrm{F}}_{\\mathrm{V}}=\\mathrm{Mg}-{\\mathrm{F}}_{\\mathrm{B}}=\\mathrm{Vdg}-\\frac{\\mathrm{Vdg}}{2}\\\\ =\\frac{\\mathrm{Vdg}}{2}=\\frac{\\mathrm{Mg}}{2}.\\)\u003c/p> \u003cp>Therefore option 2 is correct from all of them.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A liquid does not wet the solid surface if angle of contact is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Equal to \( 60^{\circ} \)</p></span></div><div class="option"><span class="key">b</span><span><p>Greater than \( 90^{\circ} \)</p></span></div><div class="option"><span class="key">c</span><span><p>Zero</p></span></div><div class="option"><span class="key">d</span><span><p>Equal to \( 45^{\circ} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>If a liquid doesn't wet the solid surface which means the interaction of liquid molecules is greater than the interaction between the liquid and solid molecule, these lead to an obtuse angle of contact.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A barometer is constructed using a liquid(density\(=760\mathrm{kg}/{\mathrm{m}}^{3}\)). What would be the height of the liquid column, when a mercury barometer reads \(76\mathrm{cm}\)? (density of mercury \(=13600\mathrm{kg}/{\mathrm{m}}^{3}\))</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(13.6\mathrm{m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(136\mathrm{m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.76\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.36\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>According to the question\u003c/p> \u003cp>\\(76\\mathrm{cm}\\times {\\rho }_{\\mathrm{Hg}}\\times \\mathrm{g}=\\mathrm{h}\\times {\\rho }_{\\mathrm{L}}\\times \\mathrm{g}\\)\u003c/p> \u003cp>\\(\\mathrm{h}=76\\mathrm{cm}\\times \\frac{{\\rho }_{\\mathrm{Hg}}}{{\\rho }_{\\mathrm{L}}}=76\\mathrm{cm}\\times \\frac{13600}{760}=13.6\\mathrm{m}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount of energy required to form a soap bubble of radius \(2\mathrm{cm}\) from a soap solution is nearly: (surface tension of soap solution \(=0.03\mathrm{N}{\mathrm{m}}^{-1}\) )</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5.06\times {10}^{-4}\mathrm{J}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3.01\times {10}^{-4}\mathrm{J}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(50.1\times {10}^{-4}\mathrm{J}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(30.16\times {10}^{-4}\mathrm{J}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

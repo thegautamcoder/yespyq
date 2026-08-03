@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Environmental Issues","item":"https://yespyq.com/exams/neet/biology/environmental-issues/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Environmental Issues</h1>
       <p>10 NEET Biology previous year questions on <b>Environmental Issues</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A river with an inflow of domestic sewage rich in organic waste may result in:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Increased population of aquatic food web organisms</span></div><div class="option"><span class="key">b</span><span>An increased production of fish due to biodegradable nutrients</span></div><div class="option correct"><span class="key">c</span><span>Death of fish due to lack of oxygen</span></div><div class="option"><span class="key">d</span><span>Drying of the river very soon due to algal bloom</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Dobson units are used to measure thickness of:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>CFCs</p></span></div><div class="option"><span class="key">b</span><span><p>Stratosphere</p></span></div><div class="option"><span class="key">c</span><span><p>Ozone</p></span></div><div class="option"><span class="key">d</span><span><p>Troposphere</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer:\u003c/strong> \u003cstrong>C) Ozone\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Dobson Units (DU)\u003c/strong> are used to measure the \u003cstrong>thickness or concentration of the ozone layer\u003c/strong> in the atmosphere.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>1 Dobson Unit\u003c/strong> represents a layer of ozone that would be \u003cstrong>0.01 mm thick\u003c/strong> if all the ozone in a column of air were compressed to standard temperature and pressure (STP).\u003c/p> \u003c/li> \u003cli> \u003cp>The normal ozone layer thickness ranges between \u003cstrong>300–500 DU\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I : Electrostatic precipitator is most widely used in thermal power plant.<br/>Statement II : Electrostatic precipitator in thermal power plant removes ionising radiations<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>    \u003cstrong>Statement I is correct:\u003c/strong>  Electrostatic precipitators are commonly used in thermal power plants to remove particulate matter (like dust and ash) from the flue gases emitted during combustion.    \u003c/li> \u003cli>    \u003cstrong>Statement II is incorrect:\u003c/strong>  Electrostatic precipitators are designed to remove particulate matter, not ionizing radiations.     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Air (Prevention and Control of Pollution) Act was amended in 1987 to include among pollutants</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Particulates of size 2.5 micrometer or below</p></span></div><div class="option"><span class="key">b</span><span><p>Vehicular exhaust</p></span></div><div class="option"><span class="key">c</span><span><p>Allergy causing pollen</p></span></div><div class="option"><span class="key">d</span><span><p>Noise</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The \u003cstrong>Air (Prevention and Control of Pollution) Act\u003c/strong>, originally enacted in \u003cstrong>1981\u003c/strong>, aimed to control and reduce air pollution from industrial and vehicular sources. However, it was \u003cstrong>amended in 1987\u003c/strong> to \u003cstrong>broaden its scope\u003c/strong> by including \u003cstrong>noise as an air pollutant\u003c/strong>. This amendment legally recognized \u003cstrong>noise pollution\u003c/strong> as harmful to the environment and public health. It empowered the \u003cstrong>Central and State Pollution Control Boards\u003c/strong> to regulate noise levels and take action against sources exceeding permissible limits. The inclusion of noise acknowledged its serious impact on \u003cstrong>human well-being\u003c/strong>, such as \u003cstrong>hearing loss, stress, and sleep disturbances\u003c/strong>, making the act more comprehensive.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The thickness of ozone in a column of air in the atmosphere is measured in terms of </p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Decibels</p></span></div><div class="option"><span class="key">b</span><span><p>Decameter</p></span></div><div class="option"><span class="key">c</span><span><p>Kilobase</p></span></div><div class="option"><span class="key">d</span><span><p>Dobson units</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The \u003cstrong>thickness of the ozone layer\u003c/strong> (total amount of ozone in a column of air from the ground to the top of the atmosphere) is measured in \u003cstrong>Dobson Units (DU)\u003c/strong>.\u003c/li> \u003cli> \u003cp>\u003cstrong>1 Dobson Unit (DU)\u003c/strong> corresponds to a layer of pure ozone 0.01 mm thick at standard temperature and pressure.\u003c/p> \u003c/li> \u003cli> \u003cp>Average ozone layer thickness: about \u003cstrong>300 DU\u003c/strong> (≈ 3 mm if compressed to STP).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statements is NOT correct?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Algal blooms caused by excess of organic matter in water improve water quality and promote fisheries.</p></span></div><div class="option"><span class="key">b</span><span><p>Water hyacinth grows abundantly in eutrophic water bodies and leads to an imbalance in the ecosystem dynamics of the water body.</p></span></div><div class="option"><span class="key">c</span><span><p>The amount of some toxic substances of industrial waste water increases in the organisms at successive trophic levels.</p></span></div><div class="option"><span class="key">d</span><span><p>The micro-organisms involved in biodegradation of organic matter in a sewage polluted water body consume a lot oxygen causing the death of aquatic organisms.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>A.\u003c/strong> Algal blooms caused by excess of organic matter in water improve water quality and promote fisheries.\u003cbr/>\u003cstrong>Incorrect.\u003c/strong> Algal blooms \u003cstrong>deteriorate water quality\u003c/strong>, deplete oxygen, and often release toxins — harming aquatic life instead of promoting fisheries.\u003c/p> \u003cp>\u003cstrong>B.\u003c/strong> Water hyacinth grows abundantly in eutrophic water bodies and leads to an imbalance in the ecosystem dynamics of the water body.\u003cbr/>\u003cstrong>Correct.\u003c/strong> Water hyacinth overgrowth blocks sunlight and reduces oxygen, disrupting ecosystem balance.\u003c/p> \u003cp>\u003cstrong>C.\u003c/strong> The amount of some toxic substances of industrial waste water increases in the organisms at successive trophic levels.\u003cbr/>\u003cstrong>Correct.\u003c/strong> This is \u003cstrong>biomagnification\u003c/strong> — toxins accumulate at higher trophic levels.\u003c/p> \u003cp>\u003cstrong>D.\u003c/strong> The micro-organisms involved in biodegradation of organic matter in a sewage polluted water body consume a lot oxygen causing the death of aquatic organisms.\u003cbr/>\u003cstrong>Correct.\u003c/strong> This describes \u003cstrong>oxygen depletion (high BOD)\u003c/strong> leading to fish kills.\u003c/p> \u003cp>\u003cstrong>Correct answer:\u003c/strong> \u003cstrong>A.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>According to Central Pollution Control Board [CPCB] what size (in diameter) of particulate is responsible for causing greater harm to human health?</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3.0 micrometers</p></span></div><div class="option"><span class="key">b</span><span><p>3.5 micrometers</p></span></div><div class="option"><span class="key">c</span><span><p>2.5 micrometers</p></span></div><div class="option"><span class="key">d</span><span><p>4.0 micrometers</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>According to the \u003cstrong>Central Pollution Control Board (CPCB)\u003c/strong> and global health agencies, \u003cstrong>particulate matter with a diameter of 2.5 micrometers or less (PM2.5)\u003c/strong> poses the \u003cstrong>greatest health risk\u003c/strong>. These tiny particles are small enough to \u003cstrong>bypass the nasal passages and respiratory defenses\u003c/strong>, penetrating \u003cstrong>deep into the lungs\u003c/strong> and even entering the \u003cstrong>bloodstream\u003c/strong>. Long-term exposure to PM2.5 is linked to \u003cstrong>respiratory diseases\u003c/strong>, \u003cstrong>cardiovascular problems\u003c/strong>, and even \u003cstrong>premature death\u003c/strong>. Because of their small size, PM2.5 particles remain \u003cstrong>suspended in the air longer\u003c/strong> and are \u003cstrong>not filtered\u003c/strong> effectively by the upper respiratory tract, making them especially dangerous to human health.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Snow-blindness in Antarctic region is due to</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>High reflection of light from snow</p></span></div><div class="option"><span class="key">b</span><span><p>Damage to retina caused by infra-red rays</p></span></div><div class="option"><span class="key">c</span><span><p>Freezing of fluids in the eye by low temperature</p></span></div><div class="option"><span class="key">d</span><span><p>Inflammation of cornea due to high dose of UV-B radiation</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Snow-blindness\u003c/strong> is a condition medically known as \u003cstrong>photokeratitis\u003c/strong>, which is a \u003cstrong>painful inflammation of the cornea\u003c/strong>.\u003c/p> \u003cul> \u003cli> \u003cp>It occurs due to \u003cstrong>overexposure to ultraviolet-B (UV-B) radiation\u003c/strong>, especially in \u003cstrong>snow-covered regions\u003c/strong> like Antarctica.\u003c/p> \u003c/li> \u003cli> \u003cp>Snow reflects up to \u003cstrong>80% of UV rays\u003c/strong>, intensifying the exposure.\u003c/p> \u003c/li> \u003cli> \u003cp>The result is a \u003cstrong>temporary loss of vision\u003c/strong> or severe discomfort in the eyes, described as a \u003cstrong>\"sunburn of the eyes\"\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> Why other options are incorrect: \u003cul> \u003cli> \u003cp>\u003cstrong>A. High reflection of light from snow\u003c/strong> – This contributes to the intensity of UV exposure but is \u003cstrong>not the direct cause\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B. Damage to retina caused by infra-red rays\u003c/strong> – \u003cstrong>Infrared rays do not cause snow-blindness\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Freezing of fluids in the eye by low temperature\u003c/strong> – Eye fluids do not freeze under normal conditions in humans; \u003cstrong>not the cause\u003c/strong> of snow-blindness.\u003c/p> \u003c/li> \u003c/ul> Final Answer: \u003cstrong>D. Inflammation of cornea due to high dose of UV-B radiation\u003c/strong> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The thickness of ozone in a column of air in the atmosphere is measured in terms of </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Decibels</p></span></div><div class="option"><span class="key">b</span><span><p>Decameter</p></span></div><div class="option"><span class="key">c</span><span><p>Kilobase</p></span></div><div class="option"><span class="key">d</span><span><p>Dobson units</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The \u003cstrong>thickness of the ozone layer\u003c/strong> (total amount of ozone in a column of air from the ground to the top of the atmosphere) is measured in \u003cstrong>Dobson Units (DU)\u003c/strong>.\u003c/li> \u003cli> \u003cp>\u003cstrong>1 Dobson Unit (DU)\u003c/strong> corresponds to a layer of pure ozone 0.01 mm thick at standard temperature and pressure.\u003c/p> \u003c/li> \u003cli> \u003cp>Average ozone layer thickness: about \u003cstrong>300 DU\u003c/strong> (≈ 3 mm if compressed to STP).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct ?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Biomagnification refers to increase in concentration of the toxicant at successive trophic levels.</p></span></div><div class="option"><span class="key">b</span><span><p>Presence of large amount of nutrients in water restricts 'Algal Bloom'</p></span></div><div class="option"><span class="key">c</span><span><p>Algal Bloom decreases fish mortality</p></span></div><div class="option"><span class="key">d</span><span><p>Eutrophication refers to increase in domestic sewage and waste water in lakes.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Reproductive Health","item":"https://yespyq.com/exams/neet/biology/reproductive-health/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Reproductive Health</h1>
       <p>31 NEET Biology previous year questions on <b>Reproductive Health</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statements is correct with reference to a test tube baby?</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Fertilisation of the egg is effected outside the body; the fertilised egg is then placed in the womb of the mother where the gestation is completed.</span></div><div class="option"><span class="key">b</span><span>Fertilisation of the egg is effected in the female genital tract; It is then taken out and grown in a large test tube.</span></div><div class="option"><span class="key">c</span><span>A prematurely born baby is reared in an incubator.</span></div><div class="option"><span class="key">d</span><span>Fertilisation of the egg and growth of the embryo are affected in a large test tube.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The most important component of the oral contraceptive pills is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>thyroxine</span></div><div class="option"><span class="key">b</span><span>luteinising hormone</span></div><div class="option correct"><span class="key">c</span><span>progesterone</span></div><div class="option"><span class="key">d</span><span>growth hormone.</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The technique called Gamete Intra Fallopian Transfer (GIFT) is recommended for those females:</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>who cannot produce an ovum.</span></div><div class="option"><span class="key">b</span><span>who cannot retain the fetus inside uterus.</span></div><div class="option"><span class="key">c</span><span>whose cervical canal is too narrow to allow passage for the sperms.</span></div><div class="option"><span class="key">d</span><span>who cannot provide suitable environment for fertilisation.</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Artificial Insemination means.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>artificial introduction of sperms of a healthy donor into the vagina</span></div><div class="option"><span class="key">b</span><span>introduction of sperms of a healthy donor directly into the ovary</span></div><div class="option"><span class="key">c</span><span>transfer of sperms of a healthy donor to a test tube containing ova</span></div><div class="option"><span class="key">d</span><span>transfer of sperms of husband to a test tube containing ova.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct option is A. artificial introduction of sperms of a healthy donor into the vagina. Artificial Insemination (AI) is a procedure used to help people conceive a pregnancy. It involves the deliberate introduction of sperm into a female's reproductive tract (usually the vagina or uterus) using artificial means (like a syringe or catheter) rather than through sexual intercourse. This method can be used with semen collected from the woman's partner (AIH - Artificial Insemination Husband) or from a healthy donor (AID - Artificial Insemination Donor). Option A specifically describes Artificial Insemination Donor (AID), where donor sperm is introduced into the vagina.","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The stage transferred into the uterus after induced fertilisation of ovum in the laboratory is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>embryo at 4 blastomeres stage</span></div><div class="option"><span class="key">b</span><span>embryo at 2 blastomeres stage</span></div><div class="option"><span class="key">c</span><span>morula</span></div><div class="option"><span class="key">d</span><span>zygote</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Correct option: C (Morula) After induced fertilisation of the ovum in the laboratory (in vitro fertilisation), the stage that is transferred into the uterus is an embryo with more than 8 blastomeres. Early embryos such as the zygote, 2-cell, or 4-cell stages are usually transferred into the fallopian tube through ZIFT. A morula is a later embryonic stage (about 16 blastomeres) and is therefore suitable for intra-uterine transfer (IUT), where it can implant and continue normal development. Hence, among the given options, the morula is the correct stage transferred into the uterus.","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Embryo with more than blastomeres formed due to in vitro fertilization is transferred into:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>uterus</span></div><div class="option"><span class="key">b</span><span>fallopian tube</span></div><div class="option"><span class="key">c</span><span>fimbriae</span></div><div class="option"><span class="key">d</span><span>cervix</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"In in vitro fertilization (IVF), when the embryo develops beyond the 16-cell stage (called the morula stage), it is ready for implantation. At this stage, it is transferred into the uterus, where natural implantation occurs. The uterus provides the necessary environment for the embryo to attach to the endometrium and continue developing. Earlier-stage embryos (like the 8-cell stage) may be transferred into the fallopian tube, but embryos with more than 16 blastomeres are transferred directly into the uterus for successful pregnancy.","fmt":""}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement I: Intra Cytoplasmic Sperm Injection (ICSI) is another specialised procedure of in-vivo fertilisation. Statement II: Infertility cases due to inability of the male partner to inseminate female can be corrected by artificial insemination (AI). In the light of the above statements, choose the correct answer from the options given below:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Statement I is correct but statement II is incorrect</span></div><div class="option"><span class="key">b</span><span>Statement I is incorrect but Statement II is correct</span></div><div class="option"><span class="key">c</span><span>Both Statement I and Statement II are correct</span></div><div class="option"><span class="key">d</span><span>Both Statement I and Statement II are incorrect.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"(2) Intra Cytoplasmic Sperm Injection (ICSI) is another specialised procedure of in-vitro fertilisation. [New NCERT Class 12th Page No. 48]","fmt":""}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following is not a natural/traditional contraceptive method? [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Vaults</span></div><div class="option"><span class="key">b</span><span>Coitus interruptus</span></div><div class="option"><span class="key">c</span><span>Periodic abstinence</span></div><div class="option"><span class="key">d</span><span>Lactational amenorrhea</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Natural or traditional contraceptive methods are those that do not involve the use of devices or chemicals. These include periodic abstinence i.e., avoiding intercourse during the fertile window (days 10–17 of the menstrual cycle), coitus interruptus (withdrawal of penis before ejaculation) and lactational amenorrhea (natural infertility during the intense breastfeeding phase post- delivery). In contrast, vaults are barrier methods — they are rubber devices inserted into the female reproductive tract to cover the cervix during coitus, and hence are not classified as natural/traditional methods.","fmt":""}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>not </strong>a natural/traditional contraceptive method?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vaults</p></span></div><div class="option"><span class="key">b</span><span><p>Coitus interruptus</p></span></div><div class="option"><span class="key">c</span><span><p>Periodic abstinence</p></span></div><div class="option"><span class="key">d</span><span><p>Lactational amenorrhea</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Natural or traditional contraceptive methods are those that do not involve the use of devices or chemicals.\u003c/li> \u003cli>These include periodic abstinence i.e., avoiding intercourse during the fertile window (days 10–17 of the menstrual cycle), coitus interruptus (withdrawal of penis before ejaculation) and lactational amenorrhea (natural infertility during the intense breastfeeding phase post-delivery).\u003c/li> \u003cli>In contrast, vaults are barrier methods — they are rubber devices inserted into the female reproductive tract to cover the cervix during coitus, and hence are not classified as natural/traditional methods.\u003c/li> \u003c/ul> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>not </strong>a natural/traditional contraceptive method?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vaults</p></span></div><div class="option"><span class="key">b</span><span><p>Coitus interruptus</p></span></div><div class="option"><span class="key">c</span><span><p>Periodic abstinence</p></span></div><div class="option"><span class="key">d</span><span><p>Lactational amenorrhea</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Natural or traditional contraceptive methods are those that do not involve the use of devices or chemicals.\u003c/li> \u003cli>These include periodic abstinence i.e., avoiding intercourse during the fertile window (days 10–17 of the menstrual cycle), coitus interruptus (withdrawal of penis before ejaculation) and lactational amenorrhea (natural infertility during the intense breastfeeding phase post-delivery).\u003c/li> \u003cli>In contrast, vaults are barrier methods — they are rubber devices inserted into the female reproductive tract to cover the cervix during coitus, and hence are not classified as natural/traditional methods.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>(NCERT Edition 2025-26 Class 12\u003csup>th\u003c/sup> Page No. 43)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What are the potential drawbacks in adoption of the IVF method?<br/>A. High fatality risk to mother<br/>B. Expensive instruments and reagents<br/>C. Husband/wife necessary for being donors<br/>D. Less adoption of orphans<br/>E. Not available in India <br/>F. Possibility that the early embryo does not survive<br/>Choose the correct answer given below:</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C, D only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B, C, E, F only</p></span></div><div class="option"><span class="key">c</span><span><p>B, D, F only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C, D, F only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>A. High fatality risk to mother\u003c/strong> \\(\\to\\) Incorrect. IVF does not carry a high fatality risk.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B. Expensive instruments and reagents\u003c/strong> \\(\\to\\) Correct. IVF is costly.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Husband/wife necessary for being donors\u003c/strong> \\(\\to\\) Not necessary; donor sperm or eggs can be used.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Less adoption of orphans\u003c/strong> \\(\\to\\) Correct. IVF preference may reduce adoption.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>E. Not available in India\u003c/strong> \\(\\to\\) Wrong. IVF is available in India.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>F. Possibility that the early embryo does not survive\u003c/strong> → Correct. IVF has limited success rates.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>not </strong>a natural/traditional contraceptive method?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vaults</p></span></div><div class="option"><span class="key">b</span><span><p>Coitus interruptus</p></span></div><div class="option"><span class="key">c</span><span><p>Periodic abstinence</p></span></div><div class="option"><span class="key">d</span><span><p>Lactational amenorrhea</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Natural or traditional contraceptive methods are those that do not involve the use of devices or chemicals.\u003c/li> \u003cli>These include periodic abstinence i.e., avoiding intercourse during the fertile window (days 10–17 of the menstrual cycle), coitus interruptus (withdrawal of penis before ejaculation) and lactational amenorrhea (natural infertility during the intense breastfeeding phase post-delivery).\u003c/li> \u003cli>In contrast, vaults are barrier methods — they are rubber devices inserted into the female reproductive tract to cover the cervix during coitus, and hence are not classified as natural/traditional methods.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>(NCERT Edition 2025-26 Class 12\u003csup>th\u003c/sup> Page No. 43)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The method of directly injecting a sperm into ovum in assisted reproductive technology is called:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gamete intra fallopian transfer (GIFT)</p></span></div><div class="option"><span class="key">b</span><span><p>Zygote intra fallopian transfer (ZIFT)</p></span></div><div class="option"><span class="key">c</span><span><p>Intra cytoplasmic sperm injection (ICSI)</p></span></div><div class="option"><span class="key">d</span><span><p>Embryo transfer (ET)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>Intra cytoplasmic sperm injection (ICSI) is a specialized procedure to form an embryo in the laboratory in which a sperm is directly injected into the ovum.\u003c/li> \u003cli>GIFT involves transferring unfertilized gametes into the fallopian tube.\u003c/li> \u003cli>ZIFT involves transferring a zygote into the fallopian tube.\u003c/li> \u003cli>ET is the broader term for transferring embryos into the uterus/fallopian tube.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following disease is not sexually transmitted?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Syphilis</p></span></div><div class="option"><span class="key">b</span><span><p>Tuberculosis</p></span></div><div class="option"><span class="key">c</span><span><p>Gonorrhoea</p></span></div><div class="option"><span class="key">d</span><span><p>Genital warts</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>The correct answer is B. Tuberculosis.\u003c/li> \u003cli>Syphilis, gonorrhoea and genital warts are sexually transmitted diseases that spread mainly through sexual contact with an infected person. Syphilis is caused by \u003cem>Treponema pallidum\u003c/em>, gonorrhoea by \u003cem>Neisseria gonorrhoeae\u003c/em>, and genital warts by human papillomavirus (HPV).\u003c/li> \u003cli>Tuberculosis, on the other hand, is not sexually transmitted. It is caused by \u003cem>Mycobacterium tuberculosis\u003c/em> and spreads through air droplets when an infected person coughs or sneezes.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following in the list of STD's. Select the diseases which are not completely curable.<br/>A. Genital warts<br/>B. Genital herpes<br/>C. Syphilis<br/>D. Hepatitis-B<br/>E. Trichomoniasis</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and D only</p></span></div><div class="option"><span class="key">c</span><span><p>A and C only</p></span></div><div class="option"><span class="key">d</span><span><p>D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Except for hepatitis-B, genital herpes and HIV infections, other diseases are completely curable if detected early and treated properly.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II relating to examples of various kind of IUDs and barrier :</p> <table> <tbody> <tr> <td>LIST I</td> <td>LIST II</td> </tr> <tr> <td>A) Copper releasing IUD</td> <td>I) Vaults</td> </tr> <tr> <td>B) Non medicated IUD</td> <td>II) Multiload 375</td> </tr> <tr> <td>C) Contraceptive barrier</td> <td>III) LNG-20</td> </tr> <tr> <td>D) Hormone releasing IUD</td> <td>IV) Lippes loop</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-IV, C-III, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-IV, B-III, C-I, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-I, C-III, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-IV, C-I, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>    \u003cstrong>A) Copper releasing IUD:\u003c/strong>  Multiload 375 is an example of a copper releasing IUD. It releases copper ions into the uterus, which prevents sperm from fertilizing an egg.            \u003c/li> \u003cli>    \u003cstrong>B) Non-medicated IUD:\u003c/strong>  The Lippes loop is a non-medicated IUD. It doesn't contain any hormones or other medications, and it works primarily by preventing implantation of a fertilized egg.            \u003c/li> \u003cli>    \u003cstrong>C) Contraceptive barrier:\u003c/strong>  Vaults is an example of a contraceptive barrier. It is a dome-shaped cap that is placed over the cervix before intercourse.    \u003c/li> \u003cli>    \u003cstrong>D) Hormone releasing IUD:\u003c/strong>  LNG-20 is an example of a hormone releasing IUD. It releases the hormone levonorgestrel, which prevents ovulation and thickens cervical mucus.     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II. </p> <table> <tbody> <tr> <td><strong>List-I</strong></td> <td><strong>List-II</strong></td> </tr> <tr> <td>(A)</td> <td>Non-medicated IUD</td> <td>(I)</td> <td>Multiload 375</td> </tr> <tr> <td>(B)</td> <td>Copper releasing IUD</td> <td>(II)</td> <td>Progestogens</td> </tr> <tr> <td>(C)</td> <td>Hormone releasing IUD</td> <td>(III)</td> <td>Lippes loop</td> </tr> <tr> <td>(D)</td> <td>Implants</td> <td>(IV)</td> <td>LNG-20</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-I, C-IV, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-I, C-II, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-I, B-III, C-IV, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-I, C-II, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>\u003cstrong>A. Non-medicated IUD:\u003c/strong> \u003cstrong>Lippes loop (III)\u003c/strong> – A non-medicated intrauterine device that prevents implantation.\u003c/li> \u003cli>\u003cstrong>B. Copper releasing IUD:\u003c/strong> \u003cstrong>Multiload 375 (I)\u003c/strong> – Releases copper ions that suppress sperm motility and fertilizing capacity.\u003c/li> \u003cli>\u003cstrong>C. Hormone releasing IUD:\u003c/strong> \u003cstrong>LNG-20 (IV)\u003c/strong> – Releases \u003cstrong>Levonorgestrel\u003c/strong>, a hormone that thickens cervical mucus and inhibits sperm.\u003c/li> \u003cli>\u003cstrong>D. Implants:\u003c/strong> \u003cstrong>Progestogens (II)\u003c/strong> – Subdermal implants releasing \u003cstrong>progesterone\u003c/strong> that inhibits ovulation.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statement regarding GIFT to overcome infertility. </p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ova collected from a female donor are transferred to the uterus of an infertile female.</p></span></div><div class="option"><span class="key">b</span><span><p>It is the transfer of an ovum collected from a donor into the fallopian tube of another female who cannot produce ovum but can provide suitable environment for fertilization and development.</p></span></div><div class="option"><span class="key">c</span><span><p>Early embryos with up to 8 blastomeres are transferred to the uterus of an infertile female.</p></span></div><div class="option"><span class="key">d</span><span><p>Early embryos with up to 8 blastomeres are transferred into the fallopian tube of an infertile female.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>GIFT (Gamete Intra Fallopian Transfer) is an assisted reproductive technique used to treat infertility.\u003c/li> \u003cli>In GIFT, both male and female gametes are transferred into the fallopian tube, allowing fertilization to occur inside the female body (in vivo fertilization).\u003c/li> \u003cli>It is specifically suitable for women who cannot produce ova but have a normal reproductive tract and can support fertilization and development.\u003c/li> \u003cli>The technique involves placing a donor ovum along with sperm into the fallopian tube, where natural fertilization takes place.\u003c/li> \u003cli>Option A describes egg donation and uterine transfer, which is incorrect.\u003c/li> \u003cli>Option C and D describe ETT (Embryo Transfer Technique), not GIFT, since they involve embryos (up to 8 blastomeres).\u003c/li> \u003cli>Therefore, the correct statement is Option B.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II :</p> <table> <tbody> <tr> <td>List I</td> <td>List II</td> </tr> <tr> <td>A. Progestasert</td> <td>I. Barrier made of rubber used by females</td> </tr> <tr> <td>B. Multiload 375</td> <td>II. Oral contraceptive</td> </tr> <tr> <td>C. Diaphragm</td> <td>III. Hormone-releasing IUD</td> </tr> <tr> <td>D. Saheli</td> <td>IV. Copper-releasing IUD</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-IV, C-II, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-III, C-I, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Progestasert\u003c/strong> is a hormone-releasing intrauterine device (IUD) that releases progesterone to prevent implantation → A–III.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Multiload 375\u003c/strong> is a copper-releasing IUD that decreases sperm motility and prevents fertilization → B–IV.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Diaphragm\u003c/strong> is a female barrier method made of rubber/silicone placed over cervix to block sperm entry → C–I.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Saheli\u003c/strong> is a non-steroidal oral contraceptive pill developed in India, used once a week → D–II.\u003c/p> \u003c/li> \u003cli> \u003cp>Therefore, the correct matching is A–III, B–IV, C–I, D–II.\u003c/p> \u003c/li> \u003cli> \u003cp>Hence, the correct answer is \u003cstrong>Option A\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following in the list of STD's. Select the diseases which are not completely curable.<br/>A. Genital warts<br/>B. Genital herpes<br/>C. Syphillis<br/>D. Hepatitis-B<br/>E. Trichomoniasis</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and D only</p></span></div><div class="option"><span class="key">c</span><span><p>A and Conly</p></span></div><div class="option"><span class="key">d</span><span><p>D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Except for hepatitis-B, genital herpes and HIV infections, other diseases are completely curable if detected early and treated properly.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Venereal diseases can spread through:</p> <p>(a) Using sterile needles</p> <p>(b) Transfusion of blood from infected person</p> <p>(c) Infected mother to foetus</p> <p>(d) Kissing</p> <p>(e) Inheritance</p> <p>Choose the correct answer from the options given below.</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(b) and (c) only</p></span></div><div class="option"><span class="key">b</span><span><p>(a) and (c) only</p></span></div><div class="option"><span class="key">c</span><span><p>(a), (b) and (c)</p></span></div><div class="option"><span class="key">d</span><span><p>(b), (c) and (d)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(1)\u003c/strong>\u003c/p> \u003cp>Infections known as venereal diseases or sexually transmitted diseases (STDs) are spread from one individual to another by sexual contact. For instance, syphilis, chlamydia, and HIV/AIDS.\u003c/p> \u003cp>● Blood transfusions from an infected person, or by sharing unsterilized needles for tattoos, body piercings equipment, or using same drug-injecting syringes are mode for transmission of STDs.\u003c/p> \u003cp>● Some STDs like gonorrhea, chlamydia, syphilis, HIV, herpes, HPV etc., can be transferred from mother to child either during pregnancy or childbirth.\u003c/p> \u003cp>● In terms of STDs, kissing is typically seen as a low-risk behaviour. Also, STDs are neither genetically transmitted from parents to children.\u003c/p> \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 47)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is an example of Hormone releasing IUD? </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>LNG 20 </p></span></div><div class="option"><span class="key">b</span><span><p>Cu7 </p></span></div><div class="option"><span class="key">c</span><span><p>Multiload 375 </p></span></div><div class="option"><span class="key">d</span><span><p>CuT</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> (a) LNG 20 is an example of hormone releasing IUD. CuT, Cu7 and multiload 375 are examples of copper releasing IUDs.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following STDs are not curable?</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Chlamydiasis, Syphilis, Genital warts </p></span></div><div class="option"><span class="key">b</span><span><p>HIV, Gonorrhoea, Trichomoniasis </p></span></div><div class="option"><span class="key">c</span><span><p>Gonorrhoea, Trichomoniasis, Hepatitis B </p></span></div><div class="option"><span class="key">d</span><span><p>Genital herpes, Hepatitis B, HIV infection </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Diseases or infections which are transmitted through sexual intercourse are collectively called sexually transmitted diseases (STD). Except for hepatitis-B, genital herpes and HIV infections, other diseases are completely curable if detected early and treated properly. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which of the following techniques, the embryos are transferred to assist those females who cannot conceive?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>GIFT and ZIFT</p></span></div><div class="option"><span class="key">b</span><span><p>ICSI and ZIFT</p></span></div><div class="option"><span class="key">c</span><span><p>GIFT and ICSI</p></span></div><div class="option"><span class="key">d</span><span><p>ZIFT and IUT</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In Zygote Intra Fallopian Transfer (ZIFT), a zygote formed outside the body is transferred into the fallopian tube, while in Intra Uterine Transfer (IUT), an embryo is transferred directly into the uterus. Both techniques involve embryo transfer, which helps females who cannot conceive naturally by allowing the early-stage embryo to implant and develop within the reproductive tract. GIFT and ICSI do not involve embryo transfer—GIFT transfers gametes, and ICSI involves fertilization but not transfer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R):<br/><strong>Assertion A </strong>: Amniocentesis for sex determination is one of the strategies of Reproductive and Child Health Care Programme.<br/><strong>Reason R</strong> : Ban on amniocentesis checks increasing menace of female foeticide.<br/>In the light of the above statements, choose the <strong>correct</strong> answer from the options given below.</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are true and R is not the correct explaination of A.</p></span></div><div class="option"><span class="key">b</span><span><p>A is true but R is false.</p></span></div><div class="option"><span class="key">c</span><span><p>A is false but R is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true and R is the correct explaination of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>(3)\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Assertion (A):\u003c/strong> \u003cem>Amniocentesis for sex determination is one of the strategies of Reproductive and Child Health (RCH) Programme.\u003c/em>\u003c/p> \u003cul> \u003cli>This statement is \u003cstrong>false\u003c/strong> because the \u003cstrong>RCH Programme\u003c/strong> does \u003cstrong>not\u003c/strong> promote amniocentesis for \u003cstrong>sex determination\u003c/strong>. In fact, \u003cstrong>sex determination\u003c/strong> using amniocentesis is \u003cstrong>prohibited\u003c/strong> in India under the \u003cstrong>PCPNDT Act\u003c/strong> due to its misuse for \u003cstrong>female foeticide\u003c/strong>.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Reason (R):\u003c/strong> \u003cem>Ban on amniocentesis checks increasing menace of female foeticide.\u003c/em>\u003c/p> \u003cul> \u003cli>This statement is \u003cstrong>true\u003c/strong> because the \u003cstrong>ban on prenatal sex determination\u003c/strong> through amniocentesis has been a \u003cstrong>legal measure\u003c/strong> to prevent \u003cstrong>female foeticide\u003c/strong> and improve the \u003cstrong>female sex ratio\u003c/strong> in India.\u003c/li> \u003c/ul> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the option including all sexually transmitted diseases </p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gonorrhoea, Malaria, Genital herpes </p></span></div><div class="option"><span class="key">b</span><span><p>AIDS, Malaria, Filaria </p></span></div><div class="option"><span class="key">c</span><span><p>Cancer, AIDS, Syphilis </p></span></div><div class="option"><span class="key">d</span><span><p>Gonorrhoea, Syphilis, Genital herpes </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Infections or diseases which are transmitted through sexual intercourse are collectively called sexually transmitted infections (STI) or venereal diseases (VD) or reproductive tract infections (RTI).\u003c/li> \u003cli>Gonorrhoea, syphilis, genital herpes, chlamydiasis, genital warts, trichomoniasis, hepatitis-B and, HIV leading to AIDS are some of the common STIs. \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Progestogens alone or in combination with estrogens can be used as a contraceptive in the form of-</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Injections only</p></span></div><div class="option"><span class="key">b</span><span><p>Pills, injections and implants</p></span></div><div class="option"><span class="key">c</span><span><p>Pills only</p></span></div><div class="option"><span class="key">d</span><span><p>Implants only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Progestogens\u003c/strong>, alone or combined with \u003cstrong>estrogens\u003c/strong>, are widely used as contraceptives in the form of \u003cstrong>oral pills, injections, and implants\u003c/strong>. They work by inhibiting ovulation, thickening cervical mucus, and altering the uterine lining, making it unsuitable for implantation. These multiple delivery methods offer flexible and long-term contraception options.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the option including all sexually transmitted diseases.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gonorrhoea, Syphilis, Genital herpes</p></span></div><div class="option"><span class="key">b</span><span><p>Gonorrhoea, Malaria, Genital herpes</p></span></div><div class="option"><span class="key">c</span><span><p>AIDS, Malaria, Filaria</p></span></div><div class="option"><span class="key">d</span><span><p>Cancer, AIDS, Syphilis</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>- Gonorrhoea, syphilis, Genital herpes are all sexually transmitted diseases.\u003cbr/>- Malaria is a protozoan disease caused due to \u003cem>Plasmodium.\u003c/em>\u003cbr/>- Filaria is a helminthic disease caused by \u003cem>Wuchereria\u003c/em>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following common sexually transmitted diseases is completely curable when detected early and treated properly?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gonorrhoea</p></span></div><div class="option"><span class="key">b</span><span><p>Hepatitis-B </p></span></div><div class="option"><span class="key">c</span><span><p>HIV Infection</p></span></div><div class="option"><span class="key">d</span><span><p>Genital herpes</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>\u003cstrong>Gonorrhoea\u003c/strong> is a bacterial sexually transmitted disease (STD) caused by \u003cem>Neisseria gonorrhoeae\u003c/em>. It is \u003cstrong>completely curable\u003c/strong> when detected early and treated properly with antibiotics.\u003c/li> \u003cli>\u003cstrong>Hepatitis-B (Option B)\u003c/strong> is a viral infection that \u003cstrong>cannot be completely cured\u003c/strong> in chronic cases, although vaccines are available for prevention.\u003c/li> \u003cli>\u003cstrong>HIV infection (Option C)\u003c/strong> is caused by the Human Immunodeficiency Virus (HIV) and \u003cstrong>has no cure\u003c/strong>, though antiretroviral therapy (ART) can help manage the disease.\u003c/li> \u003cli>\u003cstrong>Genital herpes (Option D)\u003c/strong> is caused by the \u003cstrong>Herpes simplex virus (HSV)\u003c/strong> and \u003cstrong>is not completely curable\u003c/strong>, as the virus remains in the body for life, causing recurrent outbreaks.\u003c/li> \u003c/ul> \u003cp>Since \u003cstrong>gonorrhoea is the only completely curable STD when treated early\u003c/strong>, \u003cstrong>option A is correct\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List II.</p> <table> <tbody> <tr> <td>List-I</td> <td>List-II</td> </tr> <tr> <td>A.</td> <td>Vasectomy</td> <td>I.</td> <td>Oral method</td> </tr> <tr> <td>B.</td> <td>Coitus interruptus</td> <td>II.</td> <td>Barrier method</td> </tr> <tr> <td>C.</td> <td>Cervical caps</td> <td>III.</td> <td>Surgical method</td> </tr> <tr> <td>D.</td> <td>Saheli</td> <td>IV.</td> <td>Natural method</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-III, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-I, C-IV, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,7 +432,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(1)\u003c/strong>\u003c/p> \u003ctable> \u003ctbody> \u003ctr> \u003ctd>A.\u003c/td> \u003ctd>Vasectomy\u003c/td> \u003ctd>I.\u003c/td> \u003ctd>Surgical method \u003c/td> \u003c/tr> \u003ctr> \u003ctd>B.\u003c/td> \u003ctd>Coitus interruptus\u003c/td> \u003ctd>II.\u003c/td> \u003ctd>Natural method \u003c/td> \u003c/tr> \u003ctr> \u003ctd>C.\u003c/td> \u003ctd>Cervical caps\u003c/td> \u003ctd>III.\u003c/td> \u003ctd>Barrier method\u003c/td> \u003c/tr> \u003ctr> \u003ctd>D.\u003c/td> \u003ctd>Saheli\u003c/td> \u003ctd>IV.\u003c/td> \u003ctd>Oral method\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: </p> <p><strong>Statement I</strong>: Intra Cytoplasmic Sperm Injection (ICSI) is another specialised procedure of in-vivo fertilisation.<br/><strong>Statement II</strong>: Infertility cases due to inability of the male partner to inseminate female can be corrected by artificial insemination (AI).</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but statement II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Human Reproduction","item":"https://yespyq.com/exams/neet/biology/human-reproduction/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Human Reproduction</h1>
       <p>37 NEET Biology previous year questions on <b>Human Reproduction</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Signals from the fully developed fetus and placenta ultimately lead to parturition which requires the release of:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Estrogen from placenta</span></div><div class="option"><span class="key">b</span><span>Oxytocin from foetal pituitary</span></div><div class="option correct"><span class="key">c</span><span>Oxytocin from maternal pituitary</span></div><div class="option"><span class="key">d</span><span>Relaxin from placenta</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following cell layers/structures around the female gamete, from outer to inner side :</p> <p>A. Zona pellucida</p> <p>B. Perivitelline space</p> <p>C. Corona radiata</p> <p>D. Plasma membrane of ovum</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, A, D, B</p></span></div><div class="option correct"><span class="key">b</span><span><p>C, A, B, D</p></span></div><div class="option"><span class="key">c</span><span><p>D, B, A, C</p></span></div><div class="option"><span class="key">d</span><span><p>A, C, B, D</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following:<br/>A. The reductive division for the human female gametogenesis starts earlier than that of the male gametogenesis.<br/>B. The gap between the first meiotic division and the second meiotic division is much shorter for males compared to females.<br/>C. The first polar body is associated with the formation of the primary oocyte.<br/>D. Luteinizing Hormone (LH) surge leads to disintegration of the endometrium and onset of menstrual bleeding.<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and D are true</p></span></div><div class="option"><span class="key">b</span><span><p>B and C are true</p></span></div><div class="option correct"><span class="key">c</span><span><p>A and B are true</p></span></div><div class="option"><span class="key">d</span><span><p>A and C are true</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following parts in human Mammary gland, traversing the route of milk ejection.<br/>A. Mammary duct<br/>B. Lactiferous duct</p> <p>C Mammary alveolus<br/>D. Ampulla<br/>E. Mammary tubule</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{D}\to \mathrm{C}\to \mathrm{E}\to \mathrm{A}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{C}\to \mathrm{E}\to \mathrm{B}\to \mathrm{A}\to \mathrm{D}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\mathrm{C}\to \mathrm{E}\to \mathrm{A}\to \mathrm{D}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{A}\to \mathrm{C}\to \mathrm{E}\to \mathrm{D}\to \mathrm{B}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following structure is not a part of the male reproductive system?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rete testis</p></span></div><div class="option"><span class="key">b</span><span><p>Epididymis</p></span></div><div class="option"><span class="key">c</span><span><p>Vasa efferentia</p></span></div><div class="option"><span class="key">d</span><span><p>Infundibulum</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The Infundibulum is a funnel-shaped part of the fallopian tube (oviduct) adjacent to the ovary, which belongs to the female reproductive system. Rete testis, Epididymis, and Vasa efferentia are all male sex accessory ducts.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Find the correct statements:<br/>A. In human pregnancy, the major organ systems are formed at the end of 12 weeks.<br/>B. In human pregnancy the major organ systems are formed at the end of 8 weeks.<br/>C. In human pregnancy heart is formed after one month of gestation.<br/>D. In human pregnancy, limbs and digits develop by the end of second month.<br/>E. In human pregnancy the appearance of hair is usually observed in the fifth month.<br/>Choose the correct answer from the options given below: </p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, C, D and E Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C, D and E Only </p></span></div><div class="option"><span class="key">c</span><span><p>A and E Only</p></span></div><div class="option"><span class="key">d</span><span><p>C and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In \u003cstrong>human pregnancy\u003c/strong>, the \u003cstrong>major organ systems\u003c/strong> are formed by the end of the \u003cstrong>12\u003csup>th\u003c/sup> week (3 months)\u003c/strong>, not just by 8 weeks. So:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>A.\u003c/strong> Correct – Major organ systems are well-formed by \u003cstrong>12 weeks\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B.\u003c/strong> Incorrect – 8 weeks marks the end of the \u003cstrong>embryonic stage\u003c/strong>, but full organ formation completes by \u003cstrong>12 weeks\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C.\u003c/strong> Correct – The \u003cstrong>heart\u003c/strong> begins to form early and starts beating by the \u003cstrong>end of the first month\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D.\u003c/strong> Correct – \u003cstrong>Limbs and digits\u003c/strong> form by the \u003cstrong>end of the second month\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>E.\u003c/strong> Correct – \u003cstrong>Hair appears\u003c/strong> by the \u003cstrong>fifth month\u003c/strong> of gestation.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Thus, \u003cstrong>statements A, C, D, and E are correct\u003c/strong>, making \u003cstrong>Option B the correct answer\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R.<br/>Assertion A: During menstrual cycle, the ovulation takes place approximately on \({14}^{\text{th }}\) day.<br/>Reason R : Rapid secretion of LH in the middle of menstrual cycle induces rupture of Graafian follicle and thereby the release of ovum.<br/>In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is correct but R is not correct.</p></span></div><div class="option"><span class="key">b</span><span><p>A is not correct but R is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are correct and R is the correct explanation of A.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are correct but R is NOT the correct explanation of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ovulation usually occurs around the 14\u003csup>th\u003c/sup> day of a 28-day menstrual cycle, marking the release of an ovum from the mature Graafian follicle. This process is triggered by a sudden surge in Luteinizing Hormone (LH) levels during the mid-cycle. The LH surge causes the rupture of the Graafian follicle, which leads to ovulation. Thus, both the assertion and the reason are correct, and the reason accurately explains the assertion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II related to embryonic development at various months of pregnancy :</p> <table> <tbody> <tr> <td>List I</td> <td>List II</td> </tr> <tr> <td>A. The foetus movement starts and hair appears on the head</td> <td>I. 24 weeks of pregnancy</td> </tr> <tr> <td>B. The foetus develops limbs and digits</td> <td>II. 20 weeks of pregnancy</td> </tr> <tr> <td>C. The foetus develops external genital organs</td> <td>III. 8 weeks of pregnancy</td> </tr> <tr> <td>D. The foetus body is covered with fine hair; eyelids separate and eyelashes are formed</td> <td>IV. 12 weeks of pregnancy</td> </tr> </tbody> </table> Choose the <strong>correct</strong> answer from the options given below :   [NEET 2026]</div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-II, C-IV, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-IV, C-III, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-II, C-III, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-III, C-IV, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>Human embryonic and foetal development proceeds in a highly coordinated chronological sequence with distinct morphological milestones.\u003c/p> \u003c/li> \u003cli> \u003cp>At 8 weeks of pregnancy, the embryo is now termed a foetus; major organ systems are formed and limbs and digits develop, marking early structural differentiation.\u003c/p> \u003c/li> \u003cli> \u003cp>At 12 weeks, external genital organs begin to differentiate, allowing early sex determination in development.\u003c/p> \u003c/li> \u003cli> \u003cp>At 20 weeks, the mother can first feel foetal movements and hair starts appearing on the head, indicating active growth.\u003c/p> \u003c/li> \u003cli> \u003cp>At 24 weeks, significant maturation occurs; the body is covered with fine hair (lanugo), and eyelids separate with eyelashes formation, showing advanced sensory and protective development.\u003c/p> \u003c/li> \u003cli> \u003cp>These stages reflect progressive organ maturation and functional preparation for birth.\u003c/p> \u003c/li> \u003cli> \u003cp>Hence, the correct matching is A-II, B-III, C-IV, D-I, corresponding to Option D.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Twins are born to a family that lives next door to you. The twins are a boy and a girl. Which of the following must be true?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>They were conceived through in vitro fertilization.</p></span></div><div class="option"><span class="key">b</span><span><p>They are monozygotic twins.</p></span></div><div class="option"><span class="key">c</span><span><p>They have 75% identical genetic content.</p></span></div><div class="option"><span class="key">d</span><span><p>They are fraternal twins.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>When a \u003cstrong>boy and a girl\u003c/strong> are born as twins, they \u003cstrong>must be fraternal twins\u003c/strong> (also called \u003cstrong>dizygotic twins\u003c/strong>). This is because \u003cstrong>identical (monozygotic) twins\u003c/strong> come from the \u003cstrong>same fertilized egg\u003c/strong> and \u003cstrong>always have the same genetic material\u003c/strong>, meaning they are always the \u003cstrong>same sex\u003c/strong>.\u003c/p> \u003cp>Fraternal twins develop from \u003cstrong>two separate eggs\u003c/strong> fertilized by \u003cstrong>two different sperm\u003c/strong>. They \u003cstrong>can be of different sexes\u003c/strong> and are \u003cstrong>genetically like regular siblings\u003c/strong>, sharing about \u003cstrong>50% of their DNA\u003c/strong>.\u003c/p> \u003cp>So, if the twins are a \u003cstrong>boy and a girl\u003c/strong>, they \u003cstrong>cannot be identical\u003c/strong>, and the correct answer is \u003cstrong>D — fraternal twins\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The first menstruation is called :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Diapause </p></span></div><div class="option"><span class="key">b</span><span><p>Ovulation</p></span></div><div class="option"><span class="key">c</span><span><p>Menopause </p></span></div><div class="option"><span class="key">d</span><span><p>Menarche </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The first menstruation in a girl's life is called \u003cstrong>menarche\u003c/strong>. It usually happens between the ages of 10 and 14 and marks the beginning of her reproductive years. This is when the body starts releasing eggs (ovulation) and the menstrual cycle begins. Menarche is a natural part of puberty and is controlled by hormones like estrogen and progesterone. It indicates that the reproductive system is becoming active.\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Diapause\u003c/strong> is a period of suspended development in some animals.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Ovulation\u003c/strong> is the release of an egg from the ovary.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Menopause\u003c/strong> is when menstruation permanently stops in older women.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following hormone is not secreted by human placenta?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>hCG</p></span></div><div class="option"><span class="key">b</span><span><p>Estrogen</p></span></div><div class="option"><span class="key">c</span><span><p>Progesterone</p></span></div><div class="option"><span class="key">d</span><span><p>LH</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The human placenta acts as an endocrine tissue and secretes several hormones, including:\u003c/p> \u003cul> \u003cli>hCG (Human Chorionic Gonadotropin)\u003c/li> \u003cli>hPL (Human Placental Lactogen)\u003c/li> \u003cli>Estrogens\u003c/li> \u003cli>Progesterone\u003c/li> \u003c/ul> \u003cp>LH (Luteinizing Hormone) is not secreted by the placenta. It is secreted by the anterior pituitary gland.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a component of Fallopian tube?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ampulla</p></span></div><div class="option"><span class="key">b</span><span><p>Isthmus</p></span></div><div class="option"><span class="key">c</span><span><p>Uterine fundus</p></span></div><div class="option"><span class="key">d</span><span><p>Infundibulum</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The Fallopian tube consists of several distinct regions: the infundibulum (funnel-shaped opening near the ovary), the ampulla (site of fertilization), and the isthmus (narrow region connecting to the uterus). However, the uterine fundus is not part of the Fallopian tube; it is the uppermost portion of the uterus itself.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement I : The presence or absence of hymen is not a reliable indicator of virginity.<br/>Statement II : The hymen is torn during the first coitus only.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The hymen can tear due to activities like cycling, sports, or medical procedures, so its presence or absence is not a reliable indicator of virginity. It is not torn only during first coitus.\u003cbr/>\u003cstrong>Correct answer: (4)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following parts in human Mammary gland, traversing the route of milk ejection.<br/>A. Mammary duct<br/>B. Lactiferous duct</p> <p>C Mammary alveolus<br/>D. Ampulla<br/>E. Mammary tubule</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{D}\to \mathrm{C}\to \mathrm{E}\to \mathrm{A}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{C}\to \mathrm{E}\to \mathrm{B}\to \mathrm{A}\to \mathrm{D}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{C}\to \mathrm{E}\to \mathrm{A}\to \mathrm{D}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{A}\to \mathrm{C}\to \mathrm{E}\to \mathrm{D}\to \mathrm{B}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The cells of alveoli secrete milk, which is stored in the cavities (lumens) of alveoli. The alveoli open into mammary tubules. The tubules of each lobe join to form a mammary duct. Several mammary ducts join to form a wider mammary ampulla which is connected to lactiferous duct through which milk is sucked out.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a component of Fallopian tube?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ampulla</p></span></div><div class="option"><span class="key">b</span><span><p>Isthmus</p></span></div><div class="option"><span class="key">c</span><span><p>Uterine fundus</p></span></div><div class="option"><span class="key">d</span><span><p>Infundibulum</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The Fallopian tube consists of several distinct regions: the infundibulum (funnel-shaped opening near the ovary), the ampulla (site of fertilization), and the isthmus (narrow region connecting to the uterus). However, the uterine fundus is not part of the Fallopian tube; it is the uppermost portion of the uterus itself.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I: Ovulation is caused by LH surge leading to rupture of Graafian follicles.</p> <p>Statement II: Graafian follicle remaining after ovulation transform into corpus luteum and secretes large amount of estrogen.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ovulation is precisely triggered by a rapid mid-cycle surge in Luteinizing Hormone (LH), which reliably induces the rupture of the mature Graafian follicle, making Statement I completely accurate. Following this crucial biological event, the ruptured follicular remnants successfully transform into a temporary endocrine structure strictly known as the corpus luteum. However, Statement II is factually incorrect because the primary physiological function of the newly formed corpus luteum is to secrete large quantities of progesterone, not estrogen. Progesterone is absolutely essential for the continuous maintenance and stabilization of the endometrium to facilitate potential embryonic implantation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Spermatogonia undergo a series of cell divisions to produce sperms. Select the correct statements from the following :<br/>A. Spermatogonia always undergo meiotic cell division.<br/>B. Primary spermatocytes divide mitotically to produce secondary-spermatocytes.<br/>C. Secondary spermatocytes, through their second meiotic division, produce haploid spermatids.<br/>D. Spermatids produce spermatozoa through mitosis.<br/>E. Spermatids transform into spermatozoa by spermiogenesis. <br/>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and E only</p></span></div><div class="option"><span class="key">c</span><span><p>B, C and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>Spermatogenesis is a process in which diploid spermatogonia give rise to haploid spermatozoa through mitotic and meiotic divisions followed by differentiation.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement A is incorrect because spermatogonia do not directly undergo meiosis; they first multiply by mitosis to maintain their population.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement B is incorrect as primary spermatocytes do not divide mitotically; instead, they undergo meiosis I to form secondary spermatocytes.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement C is correct because each secondary spermatocyte undergoes meiosis II to produce haploid spermatids.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement D is incorrect since spermatids do not divide mitotically; they are non-dividing cells.\u003c/p> \u003c/li> \u003cli> \u003cp>Statement E is correct as spermatids transform into mature spermatozoa through spermiogenesis, involving structural and functional differentiation.\u003c/p> \u003c/li> \u003cli> \u003cp>Therefore, only statements C and E are correct, making Option A the correct answer.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The covering of ovum at ovulation is ______.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>endometrium</p></span></div><div class="option"><span class="key">b</span><span><p>zona radiata</p></span></div><div class="option"><span class="key">c</span><span><p>zona pellucida</p></span></div><div class="option"><span class="key">d</span><span><p>chorion</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>At ovulation, the ovary releases a \u003cstrong>secondary oocyte\u003c/strong>.\u003c/li> \u003cli>The secondary oocyte is surrounded by a \u003cstrong>zona pellucida\u003c/strong> and an outer layer of follicular cells called \u003cstrong>corona radiata\u003c/strong>.\u003c/li> \u003cli>Among the given options, only \u003cstrong>zona pellucida\u003c/strong> is a correct covering of the ovulated secondary oocyte.\u003c/li> \u003cli>Endometrium is the uterine lining, and chorion is an extra-embryonic membrane formed after fertilization.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Answer: C) Zona pellucida\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R :<br/>Assertion A: Breast-feeding during initial period of infant growth is recommended by doctors for bringing a healthy baby.<br/>Reason R : Colostrum contains several antibodies absolutely essential to develop resistance for the new born baby.<br/>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is not correct but R is correct.</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are correct and R is the correct explanation of A.</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are correct but R is NOT the correct explanation of A.</p></span></div><div class="option"><span class="key">d</span><span><p>A is correct but R is not correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Breast feeding during initial periods of infants growth is recommended by doctors for bringing a healthy baby because colostrum contains several antibodies absolutely essential for develop resistance for new born.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following secretes the hormone, relaxin during the later phase of pregnancy</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Corpus luteum</p></span></div><div class="option"><span class="key">b</span><span><p>Foetus</p></span></div><div class="option"><span class="key">c</span><span><p>Uterus</p></span></div><div class="option"><span class="key">d</span><span><p>Graafian follicle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During the later phase of pregnancy, the \u003cstrong>corpus luteum\u003c/strong> secretes the hormone \u003cstrong>relaxin\u003c/strong>. This hormone plays a vital role in preparing the body for childbirth. It helps \u003cstrong>relax the pelvic ligaments\u003c/strong> and \u003cstrong>softens the cervix\u003c/strong>, allowing easier passage of the baby during delivery. In humans, the \u003cstrong>placenta\u003c/strong> may also secrete relaxin, but the \u003cstrong>corpus luteum\u003c/strong> is its primary source.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In human beings, at the end of 12 weeks (first trimester) of pregnancy, the following is observed</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Most of the major organ systems are formed</p></span></div><div class="option"><span class="key">b</span><span><p>The head is covered with fine hair</p></span></div><div class="option"><span class="key">c</span><span><p>Movement of the foetus</p></span></div><div class="option"><span class="key">d</span><span><p>Eyelids and eyelashes are formed</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>By the \u003cstrong>end of 12 weeks (first trimester)\u003c/strong> of pregnancy:\u003c/li> \u003cli> \u003cul> \u003cli>\u003cstrong>Most major organ systems are formed\u003c/strong>, including the heart, liver, kidneys, and brain.\u003c/li> \u003cli>\u003cstrong>The limbs and external genital organs\u003c/strong> are well developed.\u003c/li> \u003c/ul> \u003c/li> \u003cli>\u003cstrong>Other options occur later\u003c/strong>: \u003cul> \u003cli>\u003cstrong>Fine hair (lanugo) covers the head\u003c/strong> around \u003cstrong>24 weeks\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>Foetal movements\u003c/strong> start being noticeable around \u003cstrong>18-20 weeks\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>Eyelids and eyelashes form\u003c/strong> around \u003cstrong>24-26 weeks\u003c/strong>.\u003c/li> \u003c/ul> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the correct option of haploid cells from the following groups.</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Primary oocyte, secondary oocyte, spermatid</p></span></div><div class="option"><span class="key">b</span><span><p>Secondary spermatocyte, first polar body, ovum</p></span></div><div class="option"><span class="key">c</span><span><p>Spermatogonia, primary spermatocyte, spermatid</p></span></div><div class="option"><span class="key">d</span><span><p>Primary spermatocyte, secondary spermatocyte, second polar body</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct answer is \u003cstrong>B. Secondary spermatocyte, first polar body, ovum.\u003c/strong>\u003cbr/>In gametogenesis, cells shift from diploid (2n) to haploid (n) after meiosis. \u003cstrong>Spermatogonia and primary spermatocytes\u003c/strong> in males, and \u003cstrong>oogonia and primary oocytes\u003c/strong> in females, are diploid because they undergo growth and DNA replication before meiosis. After meiosis I, the resulting cells—\u003cstrong>secondary spermatocytes in males\u003c/strong> and \u003cstrong>secondary oocyte with the first polar body in females\u003c/strong>—are haploid (n). Further division through meiosis II produces \u003cstrong>spermatids and spermatozoa in males\u003c/strong> and the \u003cstrong>ovum with polar bodies in females\u003c/strong>, all of which remain haploid. Thus, the group containing \u003cstrong>secondary spermatocyte, first polar body, and ovum\u003c/strong> consists entirely of haploid cells, making option \u003cstrong>B\u003c/strong> correct. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Extrusion of second polar body from egg occurs<br/><br/>[NEET 2019]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>simultaneously with first cleavage</p></span></div><div class="option"><span class="key">b</span><span><p>after entry of sperm but before fertilisation</p></span></div><div class="option"><span class="key">c</span><span><p>after fertilisation</p></span></div><div class="option"><span class="key">d</span><span><p>before the entry of sperm into ovum.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>When sperm enters the secondary oocyte, the meiotic division of the secondary oocyte is completed. The second meiotic division is uneven, resulting in the development of a haploid ovum and a second polar body (ootid). The haploid nuclei of the sperm and the ovum fuse together to form a diploid zygote.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following hormone levels will cause release of ovum (ovulation) from the Graafian follicle?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>High concentration of Estrogen</p></span></div><div class="option"><span class="key">b</span><span><p>High concentration of Progesterone</p></span></div><div class="option"><span class="key">c</span><span><p>Low concentration of LH</p></span></div><div class="option"><span class="key">d</span><span><p>Low concentration of FSH</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>During the \u003cstrong>menstrual cycle\u003c/strong>, rising estrogen levels (produced by the growing \u003cstrong>Graafian follicle\u003c/strong>) play a key role in triggering ovulation.\u003c/p> \u003c/li> \u003cli> \u003cp>When \u003cstrong>estrogen reaches a high concentration\u003c/strong>, it causes a \u003cstrong>positive feedback\u003c/strong> effect on the \u003cstrong>anterior pituitary\u003c/strong>, leading to a \u003cstrong>surge in LH (Luteinizing Hormone)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>This \u003cstrong>LH surge\u003c/strong> is directly responsible for the \u003cstrong>rupture of the Graafian follicle\u003c/strong> and the \u003cstrong>release of the ovum\u003c/strong>, a process known as \u003cstrong>ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> Let's examine the other options: \u003cul> \u003cli> \u003cp>\u003cstrong>B. High concentration of Progesterone\u003c/strong> → Progesterone mainly maintains the endometrium after ovulation and \u003cstrong>does not cause ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Low concentration of LH\u003c/strong> → A \u003cstrong>high LH surge\u003c/strong>, not low LH, is essential for ovulation.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Low concentration of FSH\u003c/strong> → FSH helps in follicle development. \u003cstrong>Low FSH would not cause ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> Therefore, the correct answer is: \u003cp>\u003cstrong>A. High concentration of Estrogen\u003c/strong> (which \u003cstrong>induces LH surge\u003c/strong>, leading to ovulation)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following hormone levels will cause release of ovum (ovulation) from the Graffian follicle?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>High concentration of Estrogen</p></span></div><div class="option"><span class="key">b</span><span><p>High concentration of Progesterone</p></span></div><div class="option"><span class="key">c</span><span><p>Low concentration of LH</p></span></div><div class="option"><span class="key">d</span><span><p>Low concentration of FSH</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>During the \u003cstrong>menstrual cycle\u003c/strong>, rising estrogen levels (produced by the growing \u003cstrong>Graafian follicle\u003c/strong>) play a key role in triggering ovulation.\u003c/p> \u003c/li> \u003cli> \u003cp>When \u003cstrong>estrogen reaches a high concentration\u003c/strong>, it causes a \u003cstrong>positive feedback\u003c/strong> effect on the \u003cstrong>anterior pituitary\u003c/strong>, leading to a \u003cstrong>surge in LH (Luteinizing Hormone)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>This \u003cstrong>LH surge\u003c/strong> is directly responsible for the \u003cstrong>rupture of the Graafian follicle\u003c/strong> and the \u003cstrong>release of the ovum\u003c/strong>, a process known as \u003cstrong>ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> Let's examine the other options: \u003cul> \u003cli> \u003cp>\u003cstrong>B. High concentration of Progesterone\u003c/strong> → Progesterone mainly maintains the endometrium after ovulation and \u003cstrong>does not cause ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Low concentration of LH\u003c/strong> → A \u003cstrong>high LH surge\u003c/strong>, not low LH, is essential for ovulation.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Low concentration of FSH\u003c/strong> → FSH helps in follicle development. \u003cstrong>Low FSH would not cause ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> Therefore, the correct answer is: \u003cp>\u003cstrong>A. High concentration of Estrogen\u003c/strong> (which \u003cstrong>induces LH surge\u003c/strong>, leading to ovulation)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Receptors for sperm binding in mammals are present on.</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vitelline membrane</p></span></div><div class="option"><span class="key">b</span><span><p>Perivitelline space</p></span></div><div class="option"><span class="key">c</span><span><p>Zona pellucida</p></span></div><div class="option"><span class="key">d</span><span><p>Corona radiata</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In mammals, the zona pellucida is a glycoprotein layer surrounding the oocyte that contains specific receptors for sperm binding. This interaction is crucial for species-specific fertilization, as the sperm must recognize and bind to these receptors to penetrate the oocyte. The vitelline membrane and perivitelline space are not involved in sperm binding, while the corona radiata is a layer of follicular cells that the sperm must pass through but does not contain the primary binding receptors. Thus, the zona pellucida is the key site for sperm-egg recognition and binding.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R.<br/><strong>Assertion A</strong> : Endometrium is necessary for implantation of blastocyst.<br/><strong>Reason R</strong> : In the absence of fertilization, the corpus luteum degenerates that causes disintegration of endometrium.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are true but R is NOT the correct explanation of A.</p></span></div><div class="option"><span class="key">b</span><span><p>A is true but R is false.</p></span></div><div class="option"><span class="key">c</span><span><p>A is false but R is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true and R is the correct explanation of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The endometrium, the inner lining of the uterus, provides a nourishing and receptive environment for the blastocyst to implant\u003cstrong>, \u003c/strong>therefore it is necessary for implantation.\u003c/p> \u003cp>If fertilization does not occur, the corpus luteum degenerates, leading to a drop in progesterone levels, which causes the endometrium to shed (menstruation).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are <strong>correct</strong> regarding female reproductive cycle?<br/>A. In non-primate mammals, cyclical changes during reproductive life are called estrous cycle.<br/>B. First menstrual cycle begins at puberty and is called menopause.<br/>C. Lack of menstruation may be indicative of pregnancy.<br/>D. Cyclic menstruation extends between menarche and menopause.</p> <p>Choose the most appropriate answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and C </p></span></div><div class="option"><span class="key">c</span><span><p>A, C and D only </p></span></div><div class="option"><span class="key">d</span><span><p>A and D </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>    \u003cstrong>Statement A is correct:\u003c/strong>  In non-primate mammals, the reproductive cycle is called the estrous cycle, while in primates like humans, it's called the menstrual cycle.            \u003c/li> \u003cli>    \u003cstrong>Statement B is incorrect:\u003c/strong>  The first menstrual cycle is called menarche, not menopause. Menopause is the cessation of menstruation.            \u003c/li> \u003cli>    \u003cstrong>Statement C is correct:\u003c/strong>  A lack of menstruation can be a sign of pregnancy, as the hormonal changes during pregnancy inhibit ovulation and menstruation.            \u003c/li> \u003cli>    \u003cstrong>Statement D is correct:\u003c/strong>  The menstrual cycle extends from the first menstruation (menarche) until menopause    \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Receptors for sperm binding in mammals are present on:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vitelline membrane</p></span></div><div class="option"><span class="key">b</span><span><p>Perivitelline space</p></span></div><div class="option"><span class="key">c</span><span><p>Zona pellucida</p></span></div><div class="option"><span class="key">d</span><span><p>Corona radiata</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following secretes the hormone, relaxin during the later phase of pregnancy?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Corpus luteum</p></span></div><div class="option"><span class="key">b</span><span><p>Foetus</p></span></div><div class="option"><span class="key">c</span><span><p>Uterus</p></span></div><div class="option"><span class="key">d</span><span><p>Graafian follicle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During the later phase of pregnancy, the \u003cstrong>corpus luteum\u003c/strong> secretes the hormone \u003cstrong>relaxin\u003c/strong>. This hormone plays a vital role in preparing the body for childbirth. It helps \u003cstrong>relax the pelvic ligaments\u003c/strong> and \u003cstrong>softens the cervix\u003c/strong>, allowing easier passage of the baby during delivery. In humans, the \u003cstrong>placenta\u003c/strong> may also secrete relaxin, but the \u003cstrong>corpus luteum\u003c/strong> is its primary source.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Meiotic division of the secondary oocyte is completed</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>At the time of copulation</p></span></div><div class="option"><span class="key">b</span><span><p>After zygote formation</p></span></div><div class="option"><span class="key">c</span><span><p>At the time of fusion of a sperm with an ovum</p></span></div><div class="option"><span class="key">d</span><span><p>Prior to ovulation</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>In human females, the process of \u003cstrong>oogenesis\u003c/strong> includes two meiotic divisions.\u003c/p> \u003c/li> \u003cli> \u003cp>The \u003cstrong>primary oocyte\u003c/strong> completes \u003cstrong>meiosis I\u003c/strong> at the time of puberty to form a \u003cstrong>secondary oocyte\u003c/strong> and a polar body.\u003c/p> \u003c/li> \u003cli> \u003cp>The \u003cstrong>secondary oocyte\u003c/strong> is arrested in \u003cstrong>metaphase II\u003c/strong> of \u003cstrong>meiosis II\u003c/strong> and is released from the ovary during \u003cstrong>ovulation\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Meiosis II is completed only if the sperm fertilizes the secondary oocyte.\u003c/strong>\u003c/p> \u003c/li> \u003c/ul> Summary of stages: \u003cul> \u003cli> \u003cp>\u003cstrong>Prior to ovulation\u003c/strong> → Meiosis I is complete, secondary oocyte is formed.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>At ovulation\u003c/strong> → Secondary oocyte is arrested in metaphase II.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>At the time of sperm fusion (fertilization)\u003c/strong> → Meiosis II is completed → Ovum + second polar body are formed.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Therefore, the \u003cstrong>correct option is C: At the time of fusion of a sperm with an ovum.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I</strong> : Vas deferens receives a duct from seminal vesicle and opens into urethra as the ejaculatory duct.<br/><strong>Statement II</strong> : The cavity of the cervix is called cervical canal which along with vagina forms birth canal.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is correct but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I incorrect but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Both Statement I and Statement II are true. Statement I is correct because the vas deferens and the duct from the seminal vesicle form the ejaculatory duct, which then opens into the urethra. Statement II is true because the cavity of the cervix is known as the cervical canal, and this canal, along with the vagina, forms the birth canal. \u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of these is not an important component of initiation of parturition in humans</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Synthesis of prostaglandins</p></span></div><div class="option"><span class="key">b</span><span><p>Release of Oxytocin</p></span></div><div class="option"><span class="key">c</span><span><p>Release of Prolactin</p></span></div><div class="option"><span class="key">d</span><span><p>Increase in estrogen and progesterone ratio</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Prolactin is primarily involved in lactation and not in the initiation of parturition. The initiation of labor in humans is triggered by an increase in the estrogen-to-progesterone ratio, which enhances uterine contractions. Prostaglandins stimulate cervical ripening and contractions, while oxytocin, released from the posterior pituitary, reinforces uterine contractions through a positive feedback mechanism.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of these is not an important component of initiation of parturition in humans?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Synthesis of prostaglandins</p></span></div><div class="option"><span class="key">b</span><span><p>Release of Oxytocin</p></span></div><div class="option"><span class="key">c</span><span><p>Release of Prolactin</p></span></div><div class="option"><span class="key">d</span><span><p>Increase in estrogen and progesterone ratio</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Prolactin is primarily involved in lactation and not in the initiation of parturition. The initiation of labor in humans is triggered by an increase in the estrogen-to-progesterone ratio, which enhances uterine contractions. Prostaglandins stimulate cervical ripening and contractions, while oxytocin, released from the posterior pituitary, reinforces uterine contractions through a positive feedback mechanism.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are <strong>correct</strong> regarding female reproductive cycle?<br/>A. In non-primate mammals, cyclical changes during reproductive life are called estrous cycle.<br/>B. First menstrual cycle begins at puberty and is called menopause.<br/>C. Lack of menstruation may be indicative of pregnancy.<br/>D. Cyclic menstruation extends between menarche and menopause.</p> <p>Choose the most appropriate answer from the options given below.</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and C </p></span></div><div class="option"><span class="key">c</span><span><p>A, C and D only </p></span></div><div class="option"><span class="key">d</span><span><p>A and D </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>    \u003cstrong>Statement A is correct:\u003c/strong>  In non-primate mammals, the reproductive cycle is called the estrous cycle, while in primates like humans, it's called the menstrual cycle.            \u003c/li> \u003cli>    \u003cstrong>Statement B is incorrect:\u003c/strong>  The first menstrual cycle is called menarche, not menopause. Menopause is the cessation of menstruation.            \u003c/li> \u003cli>    \u003cstrong>Statement C is correct:\u003c/strong>  A lack of menstruation can be a sign of pregnancy, as the hormonal changes during pregnancy inhibit ovulation and menstruation.            \u003c/li> \u003cli>    \u003cstrong>Statement D is correct:\u003c/strong>  The menstrual cycle extends from the first menstruation (menarche) until menopause    \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason R.<br/>Assertion A: During menstrual cycle, the ovulation takes place approximately on \({14}^{\text{th }}\) day.<br/>Reason R : Rapid secretion of LH in the middle of menstrual cycle induces rupture of Graffian follicle and thereby the release of ovum.<br/>In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is correct but R is not correct.</p></span></div><div class="option"><span class="key">b</span><span><p>A is not correct but R is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are correct and R is the correct explanation of A.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are correct but R is NOT the correct explanation of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ovulation usually occurs around the 14\u003csup>th\u003c/sup> day of a 28-day menstrual cycle, marking the release of an ovum from the mature Graafian follicle. This process is triggered by a sudden surge in Luteinizing Hormone (LH) levels during the mid-cycle. The LH surge causes the rupture of the Graafian follicle, which leads to ovulation. Thus, both the assertion and the reason are correct, and the reason accurately explains the assertion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I</strong> : Vas deferens receives a duct from seminal vesicle and opens into urethra as the ejaculatory duct.<br/><strong>Statement II</strong> : The cavity of the cervix is called cervical canal which along with vagina forms birth canal.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is correct but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I incorrect but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

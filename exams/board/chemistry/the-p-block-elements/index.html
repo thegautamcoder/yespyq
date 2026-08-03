@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"The P-Block Elements","item":"https://yespyq.com/exams/board/chemistry/the-p-block-elements/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>The P-Block Elements</h1>
       <p>5 Board Chemistry previous year questions on <b>The P-Block Elements</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement - 1:</strong> First ionization energy Ge is greater than Si<br/><strong>Statement - 2: </strong>First ionization energy Pb is greater than Sn</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement -1 is true Statement 2 is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement - 1 and Statement - 2 are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both the Statements are true</p></span></div><div class="option correct"><span class="key">d</span><span><p>Statement - 1 is false Statement - 2 is true</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The atomic number of the element with least melting point in group-14 is</p> <p>(JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6</p></span></div><div class="option"><span class="key">b</span><span><p>14</p></span></div><div class="option"><span class="key">c</span><span><p>50</p></span></div><div class="option"><span class="key">d</span><span><p>82</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Melting Points (in K)\u003cbr/>C Si Ge Sn Pb\u003cbr/>4373 1693 1218 505 600\u003cbr/>Correct order will be\u003cbr/>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>Sn atomic number 50 has least Melting point\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following elements In , Tl , Al , Pb , Sn and Ge .<br/>The most stable oxidation states of elements with highest and lowest first ionisation enthalpies, respectively, are</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>+2 and +3</p></span></div><div class="option"><span class="key">b</span><span><p>+4 and +1</p></span></div><div class="option"><span class="key">c</span><span><p>+1 and +4</p></span></div><div class="option"><span class="key">d</span><span><p>+4 and +3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In has lowest I.E and most stable oxidation state is + 3\u003c/p> \u003cp>Ge has highest I.E and most stable oxidation state is + 4\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The <strong>correct</strong> statements from the following are :<br/>(A) \({\mathrm{Tl}}^{3+}\) is a powerful oxidising agent.<br/>(B) \({\mathrm{Al}}^{3+}\) does not get reduced easily.<br/>(C) Both \({\mathrm{Al}}^{3+}\) and \({\mathrm{Tl}}^{3+}\) are very stable in solution.<br/>(D) \({\mathrm{Tl}}^{+}\) is more stable than \({\mathrm{Tl}}^{3+}\).<br/>(E) \({\mathrm{Al}}^{3+}\) and \({\mathrm{Tl}}^{+}\)are highly stable.<br/>Choose the <strong>correct</strong> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (B), (C), (D) and (E)</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B), (D) and (E) only </p></span></div><div class="option"><span class="key">c</span><span><p>(B), (D) and (E) only </p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A), (B), (D) and (E) only \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of melting point of 14th group elements.</p> <p>(Memory Based JEE Mains 24/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C &gt; Si &gt; Ge &gt; Pb &gt; Sn</p></span></div><div class="option"><span class="key">b</span><span><p>Sn &gt; Pb&gt; Ge &gt; Si &gt; C</p></span></div><div class="option"><span class="key">c</span><span><p>C &gt; Si &gt; Ge &gt; Sn &gt; Pb</p></span></div><div class="option"><span class="key">d</span><span><p>C &gt; Ge &gt; Si &gt; Pb &gt; Sn</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>\\begin{array}{|l|l|l|l|l|l|}\u003cbr/>\\hline \\text { Melting point/K } &amp; C-4373 &amp; Si-1693 &amp; Ge-1218 &amp; Sn-505 &amp; Pb-600 \\\\\u003cbr/>\\hline\u003cbr/>\\end{array}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C &gt; Si &gt; Ge &gt; Pb &gt; Sn\u003c/p> \u003cp>$$\\begin{array}{|l|l|l|l|l|l|}\\hline \\text { Melting point/K } & C-4373 & Si-1693 & Ge-1218 & Sn-505 & Pb-600 \\\\\\hline\\end{array}$$\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more Board Chemistry PYQs</h3>

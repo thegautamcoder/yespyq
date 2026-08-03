@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"For \\(0&lt;c&lt;b&lt;a\\), let \\((a+b-2 c) x^2+(b+c-2 a) x+(c+a-2 b)=0\\) and \\(\\alpha \\neq 1\\) be one of its root. Then, among the two statements (I) If \\(\\alpha \\in(-1,0)\\), then \\(b\\) cannot be the geometric mean of \\(a\\) and \\(c\\) (II) If \\(\\alpha \\in(0,1)\\), then \\(b\\) may be the geometric mean of \\(a\\) and \\(c\\) [JEE Main 2024, 31 Jan (Shift 1)]","text":"For \\(0&lt;c&lt;b&lt;a\\), let \\((a+b-2 c) x^2+(b+c-2 a) x+(c+a-2 b)=0\\) and \\(\\alpha \\neq 1\\) be one of its root. Then, among the two statements (I) If \\(\\alpha \\in(-1,0)\\), then \\(b\\) cannot be the geometric mean of \\(a\\) and \\(c\\) (II) If \\(\\alpha \\in(0,1)\\), then \\(b\\) may be the geometric mean of \\(a\\) and \\(c\\) [JEE Main 2024, 31 Jan (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: c) Both (I) and (II) are true. Given \\((a+b-2c)x^2+(b+c-2a)x+(c+a-2b)=0\\) Observe that \\((a+b-2c)+(b+c-2a)+(c+a-2b)=0\\) Hence \\(x=1\\) is always a root. Since \\(\\alpha\\ne1\\) is the other root, \\(\\alpha=\\dfrac{c+a-2b}{a+b-2c}\\). Let \\(p=a-b&gt;0,\\quad q=b-c&gt;0\\). Then \\(a=b+p,\\quad c=b-q\\). Substituting, \\(\\alpha=\\dfrac{(b-q)+(b+p)-2b}{(b+p)+b-2(b-q)} =\\dfrac{p-q}{p+2q}\\). Since \\(p,q&gt;0\\), \\(-1&lt;\\dfrac{p-q}{p+2q}&lt;1\\). Thus \\(\\alpha\\in(-1,1)\\). Now let \\(b\\) be the geometric mean of \\(a\\) and \\(c\\): \\(b^2=ac=(b+p)(b-q)\\). This gives \\(b(p-q)=pq\\). Since \\(b&gt;0\\), \\(p-q=\\dfrac{pq}{b}&gt;0\\). Hence \\(\\alpha=\\dfrac{p-q}{p+2q}&gt;0\\). Therefore, if \\(b\\) is the geometric mean of \\(a\\) and \\(c\\), then necessarily \\(\\alpha\\in(0,1)\\). So: (I) If \\(\\alpha\\in(-1,0)\\), then \\(b\\) cannot be the geometric mean of \\(a\\) and \\(c\\). True. (II) If \\(\\alpha\\in(0,1)\\), then \\(b\\) may be the geometric mean of \\(a\\) and \\(c\\). True. For example, take \\(a=4,\\ b=2,\\ c=1\\) \\((b=\\sqrt{ac})\\). Then \\(\\alpha=\\dfrac{4+1-4}{4+2-2} =\\dfrac14\\in(0,1)\\). Hence both statements are true","url":"https://yespyq.com/exams/jee/q/jee-00405-for-0-lt-c-lt-b-lt-a-let-a-b-2-c-x-2-b-c-2-a-x-c-a-2-b-0-and-alpha-neq/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>For \(0&amp;lt;c&amp;lt;b&amp;lt;a\), let \((a+b-2 c) x^2+(b+c-2 a) x+(c+a-2 b)=0\) and \(\alpha \neq 1\) be one of its root. Then, …</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For \(0&lt;c&lt;b&lt;a\), let \((a+b-2 c) x^2+(b+c-2 a) x+(c+a-2 b)=0\) and \(\alpha \neq 1\) be one of its root. Then, among the two statements<br/>(I) If \(\alpha \in(-1,0)\), then \(b\) cannot be the geometric mean of \(a\) and \(c\)<br/>(II) If \(\alpha \in(0,1)\), then \(b\) may be the geometric mean of \(a\) and \(c\)</p> <p> </p> <p>[JEE Main 2024, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>only (II) is true </p></span></div><div class="option"><span class="key">b</span><span><p>only (I) is true</p></span></div><div class="option correct"><span class="key">c</span><span><p>Both (I) and (II) are true</p></span></div><div class="option"><span class="key">d</span><span><p>Neither (I) nor (II) is true</p></span></div></div>
       <div class="explain" data-exp>

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/board/english/"},{"@type":"ListItem","position":5,"name":"Article Writing","item":"https://yespyq.com/exams/board/english/article-writing/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Article Writing</h1>
       <p>5 Board English previous year questions on <b>Article Writing</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Q2. The author of this passage is _______ [Passage: 'I cried aloud...wooden puppet'] <br/>Instruction: (Fill in the blank)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Kamala Das</p></span></div><div class="option correct"><span class="key">b</span><span><p>Zitkala-Sa</p></span></div><div class="option"><span class="key">c</span><span><p>Bama</p></span></div><div class="option"><span class="key">d</span><span><p>Sarojini Naidu</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Select and write the most appropriate responses<br/><br/> Function: Making Supposition <br/><br/>Hetal: How strangely Mohan talks. Kanu: ___________</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>He always talks rudely.</p></span></div><div class="option"><span class="key">b</span><span><p>He talks as if he were a mad man</p></span></div><div class="option"><span class="key">c</span><span><p>He talks like the manager of the factory.</p></span></div><div class="option"><span class="key">d</span><span><p>He talks if he were the prince</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(-) He always talks rudely. WRONG. A plain factual statement about a habit. It does NOT imagine any unreal scenario — no supposition at all. \u003cbr/>(+) He talks as if he were a mad man. CORRECT. 'As if + were (subjunctive)' is the exact grammatical structure for making a supposition. 'Were' is used for ALL persons in this construction.Opt. Option Text Explanation / Why\u003cbr/>(-) He talks like the manager of the factory. WRONG. 'Like' makes a simple comparison of manner, not a supposition. 'As if' is required for the supposition function. \u003cbr/>(-) He talks if he were the prince. WRONG. Grammatically incorrect — 'if he were' is an incomplete conditional clause. 'As if' must precede it to make sense as a suppositio\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select and write the most appropriate responses<br/><br/>Function: Comparing <br/>Pinku: How is your new bungalow?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>It is better than any other bungalow.</p></span></div><div class="option"><span class="key">b</span><span><p>It is really very beautiful.</p></span></div><div class="option"><span class="key">c</span><span><p>It is convenient than any other bungalow.</p></span></div><div class="option"><span class="key">d</span><span><p>Very few bungalows are as beautiful as mine.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>CORRECT. Uses comparative 'better than', directly comparing the bungalow to all others. This is the required comparing function. \u003cbr/>(-) It is really very beautiful. WRONG. A simple description / exclamation. It does NOT compare the bungalow with anything else. \u003cbr/>(-) It is convenient than any other bungalow. WRONG. Grammatically incorrect — 'convenient' is a multi-syllable adjective requiring 'more convenient than', not 'convenient than'.\u003cbr/>(-) Very few bungalows are as beautiful as mine. WRONG. Though it implies comparison, it uses superlative logic ('very few are as...'), not a direct comparative. Also doesn't directly answer 'How is your bungalow?'\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the most appropriate question for the underlined answer<br/><br/>Sentence: The most ferocious kind of ants are the driver ants of Africa</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sentence: The most ferocious kind of ants are the driver ants of Africa</p></span></div><div class="option"><span class="key">b</span><span><p>Which kind of ants are the most ferocious one?</p></span></div><div class="option"><span class="key">c</span><span><p>What kind of driver ants of Africa are?</p></span></div><div class="option"><span class="key">d</span><span><p>Which are the most ferocious ants of Africa?</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(-) Who are the most ferocious ants? WRONG. 'Who' is used for PEOPLE, not things or types of animals/insects. \u003cbr/>(+) Which kind of ants are the most ferocious one? CORRECT. The answer identifies a specific 'kind' (driver ants of Africa), so 'Which kind' is exactly the right question structure.\u003cbr/>(-) What kind of driver ants of Africa are? WRONG. Grammatically incorrect sentence structure. The word order is completely wrong.\u003cbr/>(-) Which are the most ferocious ants of Africa? WRONG. This limits the question to Africa only, whereas the answer identifies them as the most ferocious universally (they just happen to be from Africa).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select and write the most appropriate responses<br/><br/> Function: Indicating Contrast <br/>Sonam: Mira mam is too strict to talk. Don't you think so? Shilpa: ___________</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I don't think, she is very strict.</p></span></div><div class="option"><span class="key">b</span><span><p>Though she is strict, she is kind at heart.</p></span></div><div class="option"><span class="key">c</span><span><p>In spite of Mira mam is strict, she is soft at heart.</p></span></div><div class="option"><span class="key">d</span><span><p>I think, you are quite wrong in your opinion.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

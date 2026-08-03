@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Mechanical Properties of Solids","item":"https://yespyq.com/exams/jee/physics/mechanical-properties-of-solids/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Mechanical Properties of Solids</h1>
       <p>35 JEE Physics previous year questions on <b>Mechanical Properties of Solids</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A \(3\) m long wire of radius \(3\) mm shows an extension of \(0.1\) mm when loaded vertically by a mass of \(50\) kg in an experiment to determine Young's modulus. The value of Young's modulus of the wire as per this experiment is \(\mathrm{P}\times {10}^{11}{\mathrm{Nm}}^{-2}\), where the value of P is: ( Take \(\mathrm{g}=3\pi \mathrm{m}/{\mathrm{s}}^{2}\))</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(25\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2.5\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Young's modulus is determined by the equation given by \(Y =49000 \frac{ M }{ l } \frac{\text { dyne }}{ cm ^2}\) where \(M\) is the mass and \(l\) is the extension of wire used in the experiment. Now error in Young modulus \((Y)\) is estimated by taking data from \(M-l\) plot in graph paper. The smallest scale divisions are \(5 g\) and \(0.02 cm\) along load axis and extension axis respectively. If the value of \(M\) and \(l\) are \(500 g\) and \(2 cm\) respectively then percentage error of \(Y\) is :</p> <p><strong>[JEE Main 2024, 08 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.5 \%\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.02 \%\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.2 \%\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(2\%\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Young's modulus is determined by the equation given by \(Y =49000 \frac{ M }{ l } \frac{\text { dyne }}{ cm ^2}\) where \(M\) is the mass and \(l\) is the extension of wire used in the experiment. Now error in Young modulus \((Y)\) is estimated by taking data from \(M-l\) plot in graph paper. The smallest scale divisions are \(5 g\) and \(0.02 cm\) along load axis and extension axis respectively. If the value of \(M\) and \(l\) are \(500 g\) and \(2 cm\) respectively then percentage error of \(Y\) is :</p> <p><strong>[JEE Main 2024, 08 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.5 \%\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.02 \%\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.2 \%\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(2\%\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,16 +108,16 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> A string A of length 0.314 m and Young's modulus \(2\times {10}^{10}N/{m}^{2}\) is connected to another string B of length and Young's modulus both twice of those of A. this series combination of string is then suspended from a rigid support and its free end is fixed to a load of mass 0.8 kg . The net change in length of the combination is _____ mm (radius of both the strings is 0.2 mm and acceleration due to gravity \(=10m/{s}^{2})\) <br/>(Mass of both strings is to be neglected as compared to the mass of load) </p> <p> </p> <p>[04 April, 2026 (Shift-I)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option correct"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>1.9</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: b) <p>2</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p>For string A :</p> <p>\(L=l,Y=Y\)</p> <p>For string B :</p> <p>\(L=2l,Y=2Y\)</p> <p>total extension is</p> <p>\(\overset{^}{L}l=\overset{^}{L}{l}_{A}+\overset{^}{L}{l}_{g}\)</p> <p>\(=\frac{\mathrm{m}g}{\mathrm{AV}}+\frac{\mathrm{m}(2n)}{\mathrm{A}(2\mathrm{V})}=\frac{2\mathrm{mg}}{\mathrm{AV}}\)</p> <p>\(=\frac{2\times 0.8\times 10\times (0314)}{3.14\times {\left(2\times {10}^{-4}\right)}^{2}\times 2\times {10}^{10}}\)</p> <p>\(\Delta l=2\times {10}^{-3}\mathrm{m}=2\mathrm{mm}\)</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p>For string A :</p> <p>\(L=l,Y=Y\)</p> <p>For string B :</p> <p>\(L=2l,Y=2Y\)</p> <p>total extension is</p> <p>\(\hat{L}l=\hat{L}{l}_{A}+\hat{L}{l}_{g}\)</p> <p>\(=\frac{\mathrm{m}g}{\mathrm{AV}}+\frac{\mathrm{m}(2n)}{\mathrm{A}(2\mathrm{V})}=\frac{2\mathrm{mg}}{\mathrm{AV}}\)</p> <p>\(=\frac{2\times 0.8\times 10\times (0314)}{3.14\times {\left(2\times {10}^{-4}\right)}^{2}\times 2\times {10}^{10}}\)</p> <p>\(\Delta l=2\times {10}^{-3}\mathrm{m}=2\mathrm{mm}\)</p></div>
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two wires A and B are made of same material having ratio of lengths \(\frac{{\mathrm{L}}_{\mathrm{A}}}{{\mathrm{L}}_{\mathrm{B}}}=\frac{1}{3}\) and their diameters ratio \(\frac{{\mathrm{d}}_{\mathrm{A}}}{{\mathrm{d}}_{\mathrm{B}}}=2\). If both the wires are stretched using same force, what would be the ratio of their respective elongations?</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1:6\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1:12\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3:4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1:3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given ratios\u003cbr/>\\(\\frac{{L}_{A}}{{L}_{B}}=\\frac{1}{3}\\)\u003cbr/>\\(\\frac{{d}_{A}}{{d}_{B}}=2\\)\u003cbr/>Elongation formula\u003cbr/>\\(\\mathrm{ΔL}=\\frac{FL}{AY}\\)\u003cbr/>Same force and material imply\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{{L}_{A}{A}_{B}}{{L}_{B}{A}_{A}}\\)\u003cbr/>Area–diameter relation\u003cbr/>\\(A=\\frac{\\pi }{4}{d}^{2}\\)\u003cbr/>Substitute areas\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{{L}_{A}}{{L}_{B}}{\\left(\\frac{{d}_{B}}{{d}_{A}}\\right)}^{2}\\)\u003cbr/>Apply given ratios\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{1}{3}\\times \\frac{1}{4}\\)\u003cbr/>Final ratio\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{1}{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A ball descends to the bottom of a sea with a depth of 2.5 km, experiencing a decrease of x% in its volume due to the surrounding pressure. Given that the bulk modulus of the ball's material is \(2\times 1{0}^{9}\), determine the value of \(x\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.23%</p></span></div><div class="option"><span class="key">b</span><span><p>2.45%</p></span></div><div class="option"><span class="key">c</span><span><p>1%</p></span></div><div class="option"><span class="key">d</span><span><p>1.75%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cstrong>Step 1: Understanding the Given Data\u003c/strong> \u003cul> \u003cli>Depth of the sea = \u003cstrong>\\(h=2.5\\)km\u003c/strong> = \\(2500\\) m\u003c/li> \u003cli>The bulk modulus of the material of the ball = \u003cstrong>\\(B=2\\times 1{0}^{9}\\)Pa\u003c/strong>\u003c/li> \u003cli>The volume decrease percentage (\\(x\\)) is related to the bulk modulus using the formula:\u003c/li> \u003c/ul> \u003cp>\\(B=\\frac{\\text{Applied Pressure}(\\Delta P)}{\\text{Volumetric Strain}(\\frac{\\Delta V}{V})}\\)​\u003c/p> \u003cp>Since the pressure at depth \u003cstrong>\\(h\\)\u003c/strong> is given by:\u003c/p> \u003cp>\\(\\Delta P=\\rho gh\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(\\rho\\) = \u003cstrong>Density of seawater\u003c/strong> = \\(1000\\) kg/m³\u003c/li> \u003cli>\\(g\\) = \u003cstrong>Acceleration due to gravity\u003c/strong> = \\(9.8\\) m/s²\u003c/li> \u003cli>\\(h=2500\\) m\u003c/li> \u003c/ul> \u003cp>\\(\\Delta P=(1000)(9.8)(2500)\\) \\(=2.45\\times 1{0}^{7}\\text{ Pa}\\)\u003c/p> \u003cstrong>Step 2: Calculate the Volumetric Strain\u003c/strong> \u003cp>Using the bulk modulus formula:\u003c/p> \u003cp>\\(\\frac{\\Delta V}{V}=\\frac{\\Delta P}{B}\\)​ \\(=\\frac{2.45\\times 1{0}^{7}}{2\\times 1{0}^{9}}\\)​ \\(=1.225\\times 1{0}^{−2}\\)\u003c/p> \u003cstrong>Step 3: Convert to Percentage\u003c/strong> \u003cp>\\(x=1.225\\times 1{0}^{−2}\\times 100\\)\u003c/p> \u003cp> \\(x\\approx 1.23\\mathrm{%}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(1.23\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The increase in the pressure required to decrease the volume \((∆V)\) of water is \(6.3\times {10}^{7}N/{m}^{2}\). The percentage decrease in the volume is _____. (Bulk modulus of water = \(2.1\times {10}^{9}N/{m}^{2}).\) </p> <p> </p> <p>[04 April, 2026 (Shift-I)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2%</p></span></div><div class="option"><span class="key">b</span><span><p>3%</p></span></div><div class="option"><span class="key">c</span><span><p>6%</p></span></div><div class="option"><span class="key">d</span><span><p>4%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Bulk modulus is given by\u003c/p> \u003cp>\\(B=−\\frac{\\Delta P}{\\Delta V/V}\\)\u003c/p> \u003cp>Hence \\(\\frac{∆V}{V}=\\frac{∆P}{B}\\)\u003c/p> \u003cp>\u003cbr/>Substituting the given values,\u003c/p> \u003cp>\\(\\frac{\\Delta V}{V}=−\\frac{6.3\\times {10}^{7}}{2.1\\times {10}^{9}}=−3\\times {10}^{−2}\\)\u003c/p> \u003cp>Therefore, the percentage decrease in volume is 3%\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cube of side 10 cm having bulk modulus of \(1.4 \times 10^{11} \mathrm{~Pa}\) is placed in atmosphere. Now it is subjected to extra pressure of \(7 \times 10^6 \mathrm{~Pa}\) then magnitude of change in volume of cube is</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\quad 0.03 \mathrm{~mL}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\quad 0.3 \mathrm{~mL}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\quad 0.05 \mathrm{~mL}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\quad 0.2 \mathrm{~mL}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We use the formula for \u003cstrong>bulk modulus (B)\u003c/strong>:\u003c/p> \u003cp>\\(B=\\frac{\\text{Pressure Change}(\\Delta P)}{\\frac{\\Delta V}{V}}\\)​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\u003cstrong>B = 1.4 × 10¹¹ Pa\u003c/strong> (Bulk modulus)\u003c/li> \u003cli>\u003cstrong>ΔP = 7 × 10⁶ Pa\u003c/strong> (Applied pressure)\u003c/li> \u003cli>\u003cstrong>V = a³ = (10 cm)³ = (0.1 m)³ = 10⁻³ m³\u003c/strong> (Initial volume of cube)\u003c/li> \u003c/ul> \u003cp>Rearranging for \u003cstrong>ΔV\u003c/strong>:\u003c/p> \u003cp>\\(\\Delta V=\\frac{\\Delta P}{B}\\times V\\)\u003c/p> \u003cp>Substituting the values:\u003c/p> \u003cp>\\(\\Delta V=\\frac{(7\\times 1{0}^{6})}{(1.4\\times 1{0}^{11})}\\times (1{0}^{−3})\\)\u003c/p> \u003cp> \\(\\Delta V=\\frac{7}{1.4}\\times 1{0}^{−8}\\)\u003c/p> \u003cp>\\(\\Delta V=5\\times 1{0}^{−8}\\text{ m³}\\)\u003c/p> \u003cp>Converting to \u003cstrong>mL\u003c/strong>:\u003c/p> \u003cp>\\(\\Delta V=0.05\\text{ mL}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\u003cstrong>Correct option: (C) 0.05 mL\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cube of side 10 cm having bulk modulus of \(1.4 \times 10^{11} \mathrm{~Pa}\) is placed in atmosphere. Now it is subjected to extra pressure of \(7 \times 10^6 \mathrm{~Pa}\) then magnitude of change in volume of cube is</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\quad 0.03 \mathrm{~mL}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\quad 0.3 \mathrm{~mL}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\quad 0.05 \mathrm{~mL}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\quad 0.2 \mathrm{~mL}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We use the formula for \u003cstrong>bulk modulus (B)\u003c/strong>:\u003c/p> \u003cp>\\(B=\\frac{\\text{Pressure Change}(\\Delta P)}{\\frac{\\Delta V}{V}}\\)​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\u003cstrong>B = 1.4 × 10¹¹ Pa\u003c/strong> (Bulk modulus)\u003c/li> \u003cli>\u003cstrong>ΔP = 7 × 10⁶ Pa\u003c/strong> (Applied pressure)\u003c/li> \u003cli>\u003cstrong>V = a³ = (10 cm)³ = (0.1 m)³ = 10⁻³ m³\u003c/strong> (Initial volume of cube)\u003c/li> \u003c/ul> \u003cp>Rearranging for \u003cstrong>ΔV\u003c/strong>:\u003c/p> \u003cp>\\(\\Delta V=\\frac{\\Delta P}{B}\\times V\\)\u003c/p> \u003cp>Substituting the values:\u003c/p> \u003cp>\\(\\Delta V=\\frac{(7\\times 1{0}^{6})}{(1.4\\times 1{0}^{11})}\\times (1{0}^{−3})\\)\u003c/p> \u003cp> \\(\\Delta V=\\frac{7}{1.4}\\times 1{0}^{−8}\\)\u003c/p> \u003cp>\\(\\Delta V=5\\times 1{0}^{−8}\\text{ m³}\\)\u003c/p> \u003cp>Converting to \u003cstrong>mL\u003c/strong>:\u003c/p> \u003cp>\\(\\Delta V=0.05\\text{ mL}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\u003cstrong>Correct option: (C) 0.05 mL\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A \(3\) m long wire of radius \(3\) mm shows an extension of \(0.1\) mm when loaded vertically by a mass of \(50\) kg in an experiment to determine Young's modulus. The value of Young's modulus of the wire as per this experiment is \(\mathrm{P}\times {10}^{11}{\mathrm{Nm}}^{-2}\), where the value of P is:</p> <p>(Take \(\mathrm{g}=3\pi \mathrm{m}/{\mathrm{s}}^{2}\))</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(25\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2.5\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{matrix}Y=\\frac{F\\times L}{A\\times \\Delta l} \\\\ F=50\\times 3\\pi  \\\\ A=\\pi \\times {\\left({3\\times 10}^{-3}\\right)}^{2} \\\\ =5\\times {10}^{11} \\\\ P=5\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The two wires \(A\) and \(B\) of equal cross-section but of different materials are joined together. The ratio of Young's modulus of wire \(A\) and wire \(B\) is 20/11. When the joined wire is kept under certain tension the elongations in the wires \(A\) and \(B\) are equal. If the length of wire \(A\) is 2.2 m , then the length of wire \(B\) is _______ m.</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.1</p></span></div><div class="option"><span class="key">b</span><span><p>2.22</p></span></div><div class="option"><span class="key">c</span><span><p>1.21</p></span></div><div class="option"><span class="key">d</span><span><p>4.44</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) From \\(Y=\\frac{FL}{A\\Delta L}\\), we can see that \\(L\\propto Y\\) when \\(F,A\\), and \\(\\Delta L\\) are constant. As per the equation, \\(F,A\\) and are identical for both wires.\u003c/p> \u003cp>\u003cbr/>\\(\\frac{{L}_{A}}{{L}_{B}}=\\frac{{Y}_{A}}{{Y}_{B}}\\\\\\)\u003cbr/>\\(\\frac{2.2}{{L}_{B}}=\\frac{20}{11}\\\\\\)\u003cbr/>\\({L}_{B}=\\frac{24.2}{20}=1.21m\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>With rise in temperature, the Young's modulus of elasticity</p> <p>[JEE Main 2024, 01 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\text { increases }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\text { changes erratically }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\text { decreases }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { remains unchanged }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>(3)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A ball descends to the bottom of a sea with a depth of 2.5 km, experiencing a decrease of x% in its volume due to the surrounding pressure. Given that the bulk modulus of the ball's material is \(2\times 1{0}^{9}\), determine the value of \(x\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.23%</p></span></div><div class="option"><span class="key">b</span><span><p>2.45%</p></span></div><div class="option"><span class="key">c</span><span><p>1%</p></span></div><div class="option"><span class="key">d</span><span><p>1.75%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cstrong>Step 1: Understanding the Given Data\u003c/strong> \u003cul> \u003cli>Depth of the sea = \u003cstrong>\\(h=2.5\\)km\u003c/strong> = \\(2500\\) m\u003c/li> \u003cli>The bulk modulus of the material of the ball = \u003cstrong>\\(B=2\\times 1{0}^{9}\\)Pa\u003c/strong>\u003c/li> \u003cli>The volume decrease percentage (\\(x\\)) is related to the bulk modulus using the formula:\u003c/li> \u003c/ul> \u003cp>\\(B=\\frac{\\text{Applied Pressure}(\\Delta P)}{\\text{Volumetric Strain}(\\frac{\\Delta V}{V})}\\)​\u003c/p> \u003cp>Since the pressure at depth \u003cstrong>\\(h\\)\u003c/strong> is given by:\u003c/p> \u003cp>\\(\\Delta P=\\rho gh\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(\\rho\\) = \u003cstrong>Density of seawater\u003c/strong> = \\(1000\\) kg/m³\u003c/li> \u003cli>\\(g\\) = \u003cstrong>Acceleration due to gravity\u003c/strong> = \\(9.8\\) m/s²\u003c/li> \u003cli>\\(h=2500\\) m\u003c/li> \u003c/ul> \u003cp>\\(\\Delta P=(1000)(9.8)(2500)\\) \\(=2.45\\times 1{0}^{7}\\text{ Pa}\\)\u003c/p> \u003cstrong>Step 2: Calculate the Volumetric Strain\u003c/strong> \u003cp>Using the bulk modulus formula:\u003c/p> \u003cp>\\(\\frac{\\Delta V}{V}=\\frac{\\Delta P}{B}\\)​ \\(=\\frac{2.45\\times 1{0}^{7}}{2\\times 1{0}^{9}}\\)​ \\(=1.225\\times 1{0}^{−2}\\)\u003c/p> \u003cstrong>Step 3: Convert to Percentage\u003c/strong> \u003cp>\\(x=1.225\\times 1{0}^{−2}\\times 100\\)\u003c/p> \u003cp> \\(x\\approx 1.23\\mathrm{%}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(1.23\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The fractional compression \(\left(\frac{\Delta V}{V}\right)\) of water at the depth of 2.5 km below the sea level is ______ %.</p> <p>Given, the Bulk modulus of water \(=2\times {10}^{9}N{m}^{-2}\), density of water \(={10}^{3}\) \(kg{m}^{-3}\), acceleration due to gravity \(=g=10m{s}^{-2}\). </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.75</p></span></div><div class="option"><span class="key">b</span><span><p>1.25</p></span></div><div class="option"><span class="key">c</span><span><p>1.5</p></span></div><div class="option"><span class="key">d</span><span><p>1.0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{ }B=\\frac{\\rho gh}{\\left(\\frac{\\Delta v}{v}\\right)}\\\\ \\frac{\\Delta v}{v}\\times 100=\\frac{\\rho gh}{B}\\times 100\\\\ =\\frac{1000\\times 10\\times 2.5\\times {10}^{3}}{2\\times {10}^{9}}\\times 100%\\\\ =1.25%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two wires A and B are made of same material having ratio of lengths \(\frac{{\mathrm{L}}_{\mathrm{A}}}{{\mathrm{L}}_{\mathrm{B}}}=\frac{1}{3}\) and their diameters ratio \(\frac{{\mathrm{d}}_{\mathrm{A}}}{{\mathrm{d}}_{\mathrm{B}}}=2\). If both the wires are stretched using same force, what would be the ratio of their respective elongations?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1:6\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1:12\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3:4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1:3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given ratios\u003cbr/>\\(\\frac{{L}_{A}}{{L}_{B}}=\\frac{1}{3}\\)\u003cbr/>\\(\\frac{{d}_{A}}{{d}_{B}}=2\\)\u003cbr/>Elongation formula\u003cbr/>\\(\\mathrm{ΔL}=\\frac{FL}{AY}\\)\u003cbr/>Same force and material imply\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{{L}_{A}{A}_{B}}{{L}_{B}{A}_{A}}\\)\u003cbr/>Area–diameter relation\u003cbr/>\\(A=\\frac{\\pi }{4}{d}^{2}\\)\u003cbr/>Substitute areas\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{{L}_{A}}{{L}_{B}}{\\left(\\frac{{d}_{B}}{{d}_{A}}\\right)}^{2}\\)\u003cbr/>Apply given ratios\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{1}{3}\\times \\frac{1}{4}\\)\u003cbr/>Final ratio\u003cbr/>\\(\\frac{{\\mathrm{ΔL}}_{A}}{{\\mathrm{ΔL}}_{B}}=\\frac{1}{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a force of 5N is applied extension in the spring is found to be \({x}_{1}\), extension becomes \({x}_{2}\) when the force applied is 7N. Calculate the tension in spring when extension is \(5{x}_{1}-2{x}_{2}\)</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>11N</p></span></div><div class="option"><span class="key">b</span><span><p>12N</p></span></div><div class="option"><span class="key">c</span><span><p>22N</p></span></div><div class="option"><span class="key">d</span><span><p>24N</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The relationship between force (\\(F\\)) and extension (\\(x\\)) in a spring follows \u003cstrong>Hooke’s law\u003c/strong>:\u003c/p> \u003cp>\\(F=kx\\)\u003c/p> \u003cp>Where:\u003c/p> \u003cul> \u003cli>\\(k\\) is the spring constant.\u003c/li> \u003cli>\\(F\\) is the applied force.\u003c/li> \u003cli>\\(x\\) is the extension.\u003c/li> \u003c/ul> \u003col> \u003cli>\u003cstrong>From the given data:\u003c/strong>\u003cbr/>For \\(F=5\\text{ }\\text{N}\\):\u003c/li> \u003c/ol> \u003cp>\\(5=k{x}_{1}\\ \\Rightarrow \\ k=\\frac{5}{{x}_{1}}\\)​\u003c/p> \u003cp>For \\(F=7\\text{ }\\text{N}\\):\u003c/p> \u003cp>\\(7=k{x}_{2}\\ \\Rightarrow \\ k=\\frac{7}{{x}_{2}}\\)​\u003c/p> \u003cp>Equating \\(k\\):\u003c/p> \u003cp>\\(\\frac{5}{{x}_{1}}=\\frac{7}{{x}_{2}}\\ \\Rightarrow \\ {x}_{2}=\\frac{7}{5}{x}_{1}\\)\u003c/p> \u003col> \u003cli>\u003cstrong>Find the tension for the extension \\(5{x}_{1}−2{x}_{2}\\)\u003c/strong>\u003cbr/>Substitute \\({x}_{2}=\\frac{7}{5}{x}_{1}\\)\u003c/li> \u003c/ol> \u003cp>\\(5{x}_{1}−2{x}_{2}=5{x}_{1}−2(\\frac{7}{5}{x}_{1})=5{x}_{1}−\\frac{14}{5}{x}_{1}=\\frac{25{x}_{1}−14{x}_{1}}{5}=\\frac{11{x}_{1}}{5}\\)​​\u003c/p> \u003cp>The corresponding force (tension) is:\u003c/p> \u003cp>\\(F=kx=k⋅\\frac{11{x}_{1}}{5}\\)​​\u003c/p> \u003cp>Substitute \\(k=\\frac{5}{{x}_{1}}\\):\u003c/p> \u003cp>\\(F=\\frac{5}{{x}_{1}}⋅\\frac{11{x}_{1}}{5}=11\\text{ }\\text{N}\\)\u003c/p> \u003cp>Correct answer: (a) 11N\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Young's modulus of steel wire of radius r and length L is Y. If the radius r and length L of the wire are doubled then the value of Y:<br/><br/>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>increases by two times</p></span></div><div class="option"><span class="key">b</span><span><p>reduces by half</p></span></div><div class="option"><span class="key">c</span><span><p>remains unchanged</p></span></div><div class="option"><span class="key">d</span><span><p>becomes one fourth</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Young’s modulus is a material property given by\u003c/p> \u003cp>\\(Y=\\frac{\\text{ stress }}{\\text{ strain }}=\\frac{F/A}{\\Delta L/L}=\\frac{FL}{A\\Delta L}\\)\u003c/p> \u003cp>It depends only on the nature of the material and is independent of the dimensions (r) and (L).\u003c/p> \u003cp>Hence, even if radius and length are doubled, the value of (Y) remains unchanged.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The fractional compression \(\left(\frac{\Delta V}{V}\right)\) of water at the depth of 2.5 km below the sea level is ______ %.</p> <p>Given, the Bulk modulus of water \(=2\times {10}^{9}N{m}^{-2}\), density of water \(={10}^{3}\) \(kg{m}^{-3}\), acceleration due to gravity \(=g=10m{s}^{-2}\). </p> <p><strong>[JEE Main 2025, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.75</p></span></div><div class="option"><span class="key">b</span><span><p>1.25</p></span></div><div class="option"><span class="key">c</span><span><p>1.5</p></span></div><div class="option"><span class="key">d</span><span><p>1.0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{ }B=\\frac{\\rho gh}{\\left(\\frac{\\Delta v}{v}\\right)}\\\\ \\frac{\\Delta v}{v}\\times 100=\\frac{\\rho gh}{B}\\times 100\\\\ =\\frac{1000\\times 10\\times 2.5\\times {10}^{3}}{2\\times {10}^{9}}\\times 100%\\\\ =1.25%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : The property of body, by virtue of which it tends to regain its original shape when the external force is removed, is Elasticity.</p> <p>Reason (R) : The restoring force depends upon the bonded inter atomic and inter molecular force of solid.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \((A)\) and \((R)\) are true but \((R)\) is not the correct explanation of \((A)\)</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(( A )\) and \(( R )\) are true and \(( R )\) is the correct explanation of \(( A )\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((A)\) is false but \((R)\) is true</p></span></div><div class="option"><span class="key">d</span><span><p>\((A)\) is true but \((R)\) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Assertion (A) is a definition of elasticity (a macroscopic property).\u003cbr/>Reason (R) describes the microscopic origin of restoring force, not the definition of elasticity itself.\u003cbr/>Elasticity refers to the ability to regain original shape, whereas the restoring force is a consequence of elasticity, not its explanation.\u003cbr/>So, although both statements are true, R does not directly explain A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : The property of body, by virtue of which it tends to regain its original shape when the external force is removed, is Elasticity.</p> <p>Reason (R) : The restoring force depends upon the bonded inter atomic and inter molecular force of solid.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \((A)\) and \((R)\) are true but \((R)\) is not the correct explanation of \((A)\)</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(( A )\) and \(( R )\) are true and \(( R )\) is the correct explanation of \(( A )\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((A)\) is false but \((R)\) is true</p></span></div><div class="option"><span class="key">d</span><span><p>\((A)\) is true but \((R)\) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Assertion (A) is a definition of elasticity (a macroscopic property).\u003cbr/>Reason (R) describes the microscopic origin of restoring force, not the definition of elasticity itself.\u003cbr/>Elasticity refers to the ability to regain original shape, whereas the restoring force is a consequence of elasticity, not its explanation.\u003cbr/>So, although both statements are true, R does not directly explain A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A material has a bulk modulus of 25 × 10<sup>11</sup> N/m<sup>2</sup>. If it undergoes a volumetric strain of 0.2%, what is the excess pressure applied ?</p> <p>(Shift -II Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 × 10<sup>8</sup> N/m<sup>2</sup></p></span></div><div class="option"><span class="key">b</span><span><p>5 × 10<sup>9</sup> N/m<sup>2</sup></p></span></div><div class="option"><span class="key">c</span><span><p>5 × 10<sup>10</sup> N/m<sup>2</sup></p></span></div><div class="option"><span class="key">d</span><span><p>5 × 10<sup>11</sup> N/m<sup>2</sup></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\mathrm{Bulk}\\mathrm{Modulus}\\mathrm{is}\\mathrm{given}\\mathrm{by}\\\\ \\mathrm{B}=\\frac{\\mathrm{P}\\mathrm{V}}{∆\\mathrm{V}}\\\\ \\mathrm{so},\\\\ \\mathrm{P}=\\frac{\\mathrm{B}∆\\mathrm{V}}{\\mathrm{V}}\\\\ \\mathrm{P}=25\\times {10}^{11}\\times \\frac{0.2}{100}=5\\times {10}^{9}\\mathrm{N}/{\\mathrm{m}}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A material has a bulk modulus of 25 × 10<sup>11</sup> N/m<sup>2</sup>. If it undergoes a volumetric strain of 0.2%, what is the excess pressure applied ?</p> <p>(Shift -II Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 × 10<sup>8</sup> N/m<sup>2</sup></p></span></div><div class="option"><span class="key">b</span><span><p>5 × 10<sup>9</sup> N/m<sup>2</sup></p></span></div><div class="option"><span class="key">c</span><span><p>5 × 10<sup>10</sup> N/m<sup>2</sup></p></span></div><div class="option"><span class="key">d</span><span><p>5 × 10<sup>11</sup> N/m<sup>2</sup></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\mathrm{Bulk}\\mathrm{Modulus}\\mathrm{is}\\mathrm{given}\\mathrm{by}\\\\ \\mathrm{B}=\\frac{\\mathrm{P}\\mathrm{V}}{∆\\mathrm{V}}\\\\ \\mathrm{so},\\\\ \\mathrm{P}=\\frac{\\mathrm{B}∆\\mathrm{V}}{\\mathrm{V}}\\\\ \\mathrm{P}=25\\times {10}^{11}\\times \\frac{0.2}{100}=5\\times {10}^{9}\\mathrm{N}/{\\mathrm{m}}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a force of 5N is applied extension in the spring is found to be \({x}_{1}\), extension becomes \({x}_{2}\) when the force applied is 7N. Calculate the tension in spring when extension is \(5{x}_{1}-2{x}_{2}\)</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>11N</p></span></div><div class="option"><span class="key">b</span><span><p>12N</p></span></div><div class="option"><span class="key">c</span><span><p>22N</p></span></div><div class="option"><span class="key">d</span><span><p>24N</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The relationship between force (\\(F\\)) and extension (\\(x\\)) in a spring follows \u003cstrong>Hooke’s law\u003c/strong>:\u003c/p> \u003cp>\\(F=kx\\)\u003c/p> \u003cp>Where:\u003c/p> \u003cul> \u003cli>\\(k\\) is the spring constant.\u003c/li> \u003cli>\\(F\\) is the applied force.\u003c/li> \u003cli>\\(x\\) is the extension.\u003c/li> \u003c/ul> \u003col> \u003cli>\u003cstrong>From the given data:\u003c/strong>\u003cbr/>For \\(F=5\\text{ }\\text{N}\\):\u003c/li> \u003c/ol> \u003cp>\\(5=k{x}_{1}\\ \\Rightarrow \\ k=\\frac{5}{{x}_{1}}\\)​\u003c/p> \u003cp>For \\(F=7\\text{ }\\text{N}\\):\u003c/p> \u003cp>\\(7=k{x}_{2}\\ \\Rightarrow \\ k=\\frac{7}{{x}_{2}}\\)​\u003c/p> \u003cp>Equating \\(k\\):\u003c/p> \u003cp>\\(\\frac{5}{{x}_{1}}=\\frac{7}{{x}_{2}}\\ \\Rightarrow \\ {x}_{2}=\\frac{7}{5}{x}_{1}\\)\u003c/p> \u003col> \u003cli>\u003cstrong>Find the tension for the extension \\(5{x}_{1}−2{x}_{2}\\)\u003c/strong>\u003cbr/>Substitute \\({x}_{2}=\\frac{7}{5}{x}_{1}\\)\u003c/li> \u003c/ol> \u003cp>\\(5{x}_{1}−2{x}_{2}=5{x}_{1}−2(\\frac{7}{5}{x}_{1})=5{x}_{1}−\\frac{14}{5}{x}_{1}=\\frac{25{x}_{1}−14{x}_{1}}{5}=\\frac{11{x}_{1}}{5}\\)​​\u003c/p> \u003cp>The corresponding force (tension) is:\u003c/p> \u003cp>\\(F=kx=k⋅\\frac{11{x}_{1}}{5}\\)​​\u003c/p> \u003cp>Substitute \\(k=\\frac{5}{{x}_{1}}\\):\u003c/p> \u003cp>\\(F=\\frac{5}{{x}_{1}}⋅\\frac{11{x}_{1}}{5}=11\\text{ }\\text{N}\\)\u003c/p> \u003cp>Correct answer: (a) 11N\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Under isothermal condition, the pressure of a gas is given by \(P=a V^{-3}\), where \(a\) is a constant and \(V\) is the volume of the gas. The bulk modulus at constant temperature is equal to</p> <p> </p> <p>[JEE Main 2023, 13 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(P / 2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3 P\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2 P\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(P\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,10 +354,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Given, \\(P=a V^{-3} \\Rightarrow P V^3=a\\)\u003cbr/>Differentiating w.r.t to pressure\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V^3+3 P V^2 \\frac{d V}{d P}=0 \\\\\u003cbr/>&amp; V=-3 \\frac{P d V}{d P}=0 \\Rightarrow \\frac{d P V}{d V}=-3 P\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Bulk Modulus\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; B=-\\frac{d P}{d V / V} \\\\\u003cbr/>&amp; \\therefore B=-\\left(\\frac{d P V}{d V}\\right)=-(-3 P)=3 P\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Given, \\(P=a V^{-3} \\Rightarrow P V^3=a\\)\u003cbr/>Differentiating w.r.t to pressure\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V^3+3 P V^2 \\frac{d V}{d P}=0 \\\\& V=-3 \\frac{P d V}{d P}=0 \\Rightarrow \\frac{d P V}{d V}=-3 P\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Bulk Modulus\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& B=-\\frac{d P}{d V / V} \\\\& \\therefore B=-\\left(\\frac{d P V}{d V}\\right)=-(-3 P)=3 P\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct relationship between Poisson ratio \((\sigma)\). bulk modulus \((K)\) and modulus of rigidity \((\eta)\) of a given solid object:</p> <p>[JEE Main 2021, 25 July (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sigma=\frac{3 K-2 \eta}{6 K+2 \eta}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sigma=\frac{6 K+2 \eta}{3 K-2 \eta}\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\sigma=\frac{3 K+2 \eta}{6 K+2 \eta}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sigma=\frac{6 K-2 \eta}{3 K-2 \eta}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(Y=2 \\eta(1+\\sigma)\\)\u003c/p> \u003cp>\\(Y=3 K(1- 2 \\sigma)\\)\u003c/p> \u003cp>\\(\\Rightarrow 2 \\eta(1+\\sigma)=3 K(1-2 \\sigma)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sigma=\\left(\\frac{3 K-2 \\eta}{6 K+2 \\eta}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion \(A\) and the other is labelled as Reason \(R\)</p> <p>Assertion \(A\): Steel is used in the construction of buildings and bridges.</p> <p>Reason \(R\): Steel is more elastic and its elastic limit is high.</p> <p>In the light of above statements,choose the most appropriate answer from the options given below.</p> <p><strong>[JEE Main 2023, 24 Jan (Shift 2)]</strong></p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\) and \(R\) both are not correct</p></span></div><div class="option"><span class="key">b</span><span><p>\(A\) is not correct but \(R\) is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(A\) and \(R\) are correct and \(R\) is the correct explanation of \(A\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(A\) is correct but \(R\) is not correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Concept based\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Young's modulus of a steel wire of length 6 m and cross-sectional area 3 mm<sup>2</sup>, is 2 × 11<sup>11 </sup>N/m<sup>2</sup>. The wire is suspended from its support on a given planet. A block of mass 4 kg is attached to the free end of the wire. The acceleration due to gravity on the planet is \(\frac{1}{4}\) of its value on the earth. The elongation of wire is (Take <em>g</em> on the earth =10 m/s<sup>2</sup>)</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1 cm</p></span></div><div class="option"><span class="key">b</span><span><p>1 mm</p></span></div><div class="option"><span class="key">c</span><span><p>0.1 mm</p></span></div><div class="option"><span class="key">d</span><span><p>0.1 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Tension (\u003cem>F\u003c/em>) = \u003cem>mg\u003c/em>\u003c/p> \u003cp> \\(=4\\times \\frac{10}{4}=10\\text{N}\\) \u003c/p> \u003cp>Elongation produced in the wire is,\u003c/p> \u003cp> \\(\\Delta L=\\frac{FL}{AY}\\)\u003c/p> \u003cp>\\(=\\frac{10\\times 6}{3\\times {10}^{−6}\\times 2\\times {10}^{11}}=0.1\\text{mm}\\)\u003c/p> \u003cp> \u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct relationship between Poisson ratio \((\sigma)\). bulk modulus \((K)\) and modulus of rigidity \((\eta)\) of a given solid object:</p> <p> </p> <p>[JEE Main 2023, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sigma=\frac{3 K-2 \eta}{6 K+2 \eta}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sigma=\frac{6 K+2 \eta}{3 K-2 \eta}\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\sigma=\frac{3 K+2 \eta}{6 K+2 \eta}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sigma=\frac{6 K-2 \eta}{3 K-2 \eta}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(Y=2 \\eta(1+\\sigma)\\)\u003c/p> \u003cp>\\(Y=3 K(1- 2 \\sigma)\\)\u003c/p> \u003cp>\\(\\Rightarrow 2 \\eta(1+\\sigma)=3 K(1-2 \\sigma)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sigma=\\left(\\frac{3 K-2 \\eta}{6 K+2 \\eta}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At \( 40^{\circ} \mathrm{C} \), a brass wire of \( 1 \mathrm{~mm} \) radius is hung from the ceiling. A small mass \( M \) is hung from the free end of the wire. When the wire is cooled down from \( 40^{\circ} \mathrm{C} \) to \( 20^{\circ} \mathrm{C} \), it regains its original length of \( 0.2 \mathrm{~m} \). The value of \( M \) is close to [Coefficient of linear expansion and Youngs modulus of brass are \( 10^{-5} /{ }^{\circ} \mathrm{C} \) and \( 10^{11} \mathrm{~N} / \mathrm{m}^{2} \) respectively, \( g=10 \mathrm{~ms}^{-2} \) ]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 9 \mathrm{~kg} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 0.5 \mathrm{~kg} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 1.5 \mathrm{~kg} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 0.9 \mathrm{~kg} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Under the same load, wire \(A\) having length \(5.0 \mathrm{~m}\) and cross section \(2.5 \times 10^{-5} \mathrm{~m}^{2}\) stretches uniformly by the same amount as another wire \(B\) of length \(6.0 \mathrm{~m}\) and a cross section of \(3.0 \times 10^{-5} \mathrm{~m}^{2}\) stretches. The ratio of the Young's modulus of wire \(A\) to that of wire \(B\) will be:</p> <p>[JEE Main 2021, 20 July (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1: 4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1: 1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1: 10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1: 2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2) We know that,\u003c/p> \u003cp>stress \\(\\propto\\) strain\u003c/p> \u003cp>\\(\\frac{F}{A}=Y \\frac{\\Delta L}{L}\\)\u003c/p> \u003cp>\u003cbr/>\\(\\Rightarrow \\frac{F_{1}}{A_{1}}=Y_{1} \\times \\frac{\\Delta L}{L_{1}}\\)............(i)\u003c/p> \u003cp>And \\(\\frac{F_{2}}{A_{2}}=Y_{2} \\times \\frac{\\Delta L}{L_{2}}\\)...........(ii)\u003c/p> \u003cp>from equation \\((i)\\) and (ii),\u003c/p> \u003cp>\\(\\frac{F_{1} L_{1}}{A_{1} Y_{1}}=\\frac{F_{2} L_{2}}{A_{2} Y_{2}}\\)\u003c/p> \u003cp>\\(\\frac{5}{2.5 \\times 10^{-5} \\times Y_{1}}=\\frac{6}{3 \\times 10^{-5} \\times Y_{2}}\\)\u003c/p> \u003cp>\\(\\frac{Y_{1}}{Y_{2}}=1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Under isothermal condition, the pressure of a gas is given by \(P=a V^{-3}\), where \(a\) is a constant and \(V\) is the volume of the gas. The bulk modulus at constant temperature is equal to:</p> <p>[JEE Main 2021, 31 August (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{P}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3 P\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2 P\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(P\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,10 +438,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2) Given, \\(P=a V^{-3} \\Rightarrow P V^3=a\\)\u003cbr/>Differentiating w.r.t to pressure\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V^3+3 P V^2 \\frac{d V}{d P}=0 \\\\\u003cbr/>&amp; V=-3 \\frac{P d V}{d P}=0 \\Rightarrow \\frac{d P V}{d V}=-3 P\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Bulk Modulus\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; B=-\\frac{d P}{d V / V} \\\\\u003cbr/>&amp; \\therefore B=-\\left(\\frac{d P V}{d V}\\right)=-(-3 P)=3 P\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2) Given, \\(P=a V^{-3} \\Rightarrow P V^3=a\\)\u003cbr/>Differentiating w.r.t to pressure\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V^3+3 P V^2 \\frac{d V}{d P}=0 \\\\& V=-3 \\frac{P d V}{d P}=0 \\Rightarrow \\frac{d P V}{d V}=-3 P\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Bulk Modulus\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& B=-\\frac{d P}{d V / V} \\\\& \\therefore B=-\\left(\\frac{d P V}{d V}\\right)=-(-3 P)=3 P\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Young's modulus of a steel wire of length \(6 \mathrm{~m}\) and cross-sectional area \(3 \mathrm{~mm}^{2}\), is \(2 \times 10^{11} \mathrm{~N} / \mathrm{m}^{2}\). The wire is suspended from its support on a given planet. A block of mass \(4 \mathrm{~kg}\) is attached to the free end of the wire. The acceleration due to gravity on the planet is \(\frac{1}{4}\) of its value on the earth. The elongation of wire is (Take \(g\) on the earth \(\left.=10 \mathrm{~m} / \mathrm{s}^{2}\right)\)</p> <p>[JEE Main 2024, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(1 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1 \mathrm{~mm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.1 \mathrm{~mm}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(0.1 \mathrm{~cm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -446,10 +450,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Tension \\((F)=m g\\)\u003c/p> \u003cp>\\(=4 \\times \\frac{10}{4}=10 \\mathrm{~N}\\)\u003c/p> \u003cp>Elongation produced in the wire is,\u003c/p> \u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Delta L=\\frac{F L}{A Y} \\\\\u003cbr/>&amp; =\\frac{10 \\times 6}{3 \\times 10^{-6} \\times 2 \\times 10^{11}}=0.1 \\mathrm{~mm}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Tension \\((F)=m g\\)\u003c/p> \u003cp>\\(=4 \\times \\frac{10}{4}=10 \\mathrm{~N}\\)\u003c/p> \u003cp>Elongation produced in the wire is,\u003c/p> \u003cp>\\[\u003cbr/>$$\\begin{aligned}& \\Delta L=\\frac{F L}{A Y} \\\\& =\\frac{10 \\times 6}{3 \\times 10^{-6} \\times 2 \\times 10^{11}}=0.1 \\mathrm{~mm}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The restoring force per unit area is known as:</p> <p>[JEE Main 2021, 27 August (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>strain</p></span></div><div class="option"><span class="key">b</span><span><p>elasticity</p></span></div><div class="option"><span class="key">c</span><span><p>stress</p></span></div><div class="option"><span class="key">d</span><span><p>plasticity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>(3)\u003c/strong>\u003c/p> \u003cp>Conceptual\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Young's moduli of the material of wires \(A\) and \(B\) are in the ratio of \(1: 4\), while its area of cross sections are in the ratio of \(1: 3\). If the same amount of load is applied to both the wires, the amount of elongation produced in the wires \(A\) and \(B\) will be in the ratio of [Assume length of wires \(A\) and \(B\) are same]</p> <p>[JEE Main 2021, 27 July (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(36: 1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(12: 1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1: 36\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1: 12\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Elongation, \\(\\Delta L=\\frac{F L}{A Y} \\Rightarrow \\Delta L \\propto \\frac{1}{A y}\\)\u003c/p> \u003cp>\\[\u003cbr/>\\therefore \\frac{\\Delta L_{A}}{\\Delta L_{B}}=\\left(\\frac{A_{B}}{A_{A}}\\right)\\left(\\frac{Y_{B}}{Y_{A}}\\right)=\\left(\\frac{3}{1}\\right)\\left(\\frac{4}{1}\\right)=\\frac{12}{1}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A \(100 \mathrm{~m}\) long wire having cross-sectional area \(6.25 \times 10^{-4} \mathrm{~m}^{2}\) and Young's modulus is \(10^{10} \mathrm{Nm}^{-2}\) is subjected to a load of \(250 \mathrm{~N}\), then the elongation in the wire will be:</p> <p>[JEE Main 2022, 26 July (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6.25 \times 10^{-3} \mathrm{~m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4 \times 10^{-4} \mathrm{~m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6.25 \times 10^{-6} \mathrm{~m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 \times 10^{-3} \mathrm{~m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

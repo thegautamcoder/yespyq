@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Molecular Basis of Inheritance","item":"https://yespyq.com/exams/neet/biology/molecular-basis-of-inheritance/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Molecular Basis of Inheritance</h1>
       <p>84 NEET Biology previous year questions on <b>Molecular Basis of Inheritance</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A segment of DNA has 120 adenine and 120 cytosine bases. The total number of nucleotides present in the segment is:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>120</span></div><div class="option"><span class="key">b</span><span>240</span></div><div class="option"><span class="key">c</span><span>60</span></div><div class="option correct"><span class="key">d</span><span>480</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The process of translation is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>ribosome synthesis</span></div><div class="option correct"><span class="key">b</span><span>protein synthesis</span></div><div class="option"><span class="key">c</span><span>DNA synthesis</span></div><div class="option"><span class="key">d</span><span>RNA synthesis</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which one of the following is the genetic material of prokaryotic cell?</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Non-histonic double stranded DNA</span></div><div class="option"><span class="key">b</span><span>Histonic double stranded DNA</span></div><div class="option"><span class="key">c</span><span>Histone &amp; DNA both are absent</span></div><div class="option"><span class="key">d</span><span>Histone without DNA</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Transformation experiment was first performed on which bacteria?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>E. coli</span></div><div class="option correct"><span class="key">b</span><span>Diplococcus pneumoniae</span></div><div class="option"><span class="key">c</span><span>Salmonella</span></div><div class="option"><span class="key">d</span><span>Pasteurella pestis</span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Semi-conservative replication of DNA was first demonstrated in;</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Escherichia coli.</span></div><div class="option"><span class="key">b</span><span>Streptococcus pneumoniae.</span></div><div class="option"><span class="key">c</span><span>Salmonella typhimurium.</span></div><div class="option"><span class="key">d</span><span>Drosophila melanogaster.</span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which one of the following is not a part of a transcription unit in DNA?</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>The inducer</span></div><div class="option"><span class="key">b</span><span>A terminator</span></div><div class="option"><span class="key">c</span><span>A promoter</span></div><div class="option"><span class="key">d</span><span>The structural gene</span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Transformation was discovered by;</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Meselson and Stahl.</span></div><div class="option"><span class="key">b</span><span>Hershey and Chase.</span></div><div class="option correct"><span class="key">c</span><span>Griffith.</span></div><div class="option"><span class="key">d</span><span>Watson and Crick.</span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Identify the correct order of organisation of genetic material from largest to smallest:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Genome, chromosome, nucleotide, gene</span></div><div class="option correct"><span class="key">b</span><span>Genome, chromosome, gene, nucleotide</span></div><div class="option"><span class="key">c</span><span>Chromosome, genome, nucleotide, gene</span></div><div class="option"><span class="key">d</span><span>Chromosome, gene, genome, nucleotide</span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Taylor conducted the experiments to prove semiconservative mode of chromosome replication on;</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Vinca rosea.</span></div><div class="option"><span class="key">b</span><span>Vicia faba.</span></div><div class="option"><span class="key">c</span><span>Drosophila melanogaster.</span></div><div class="option"><span class="key">d</span><span>E. coli.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Taylor and his colleagues conducted experiments on root tip cells of Vicia faba (broad bean) to demonstrate the semiconservative mode of chromosome replication in eukaryotes. They used radioactive thymidine (^3H-thymidine) to label newly synthesized DNA and tracked it through successive cell divisions using autoradiography. The results showed that after one replication cycle, only one chromatid was labeled, and after two cycles, only half the chromatids were labeled — supporting semiconservative replication, where each new DNA molecule consists of one parental and one newly synthesized strand. In contrast, E. coli was used in Meselson and Stahl’s famous DNA replication experiment.","fmt":""}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A molecule that can act as a genetic material must fulfill the traits given below, except;</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>it should be able to express itself in the form of Mendelian characters.</span></div><div class="option"><span class="key">b</span><span>it should be able to generate its replica.</span></div><div class="option"><span class="key">c</span><span>it should be unstable structurally and chemically.</span></div><div class="option"><span class="key">d</span><span>it should provide the scope for slow changes that are required for evolution.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"A genetic material must be structurally and chemically stable to preserve the integrity of genetic information across generations. It must also be capable of replication, expression (producing traits), and allowing slow, heritable variations for evolution. DNA fulfills all these criteria. An unstable molecule would degrade or mutate rapidly, disrupting genetic continuity. Therefore, instability is not a desirable trait for genetic material, making option C the correct answer as the exception among the listed traits.","fmt":""}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The association of histone H1 with a nucleosome indicates that</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>DNA replication is occurring</span></div><div class="option"><span class="key">b</span><span>the DNA is condensed into a chromatin fibre</span></div><div class="option"><span class="key">c</span><span>the DNA double helix is exposed</span></div><div class="option"><span class="key">d</span><span>transcription is occurring</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Nucleosomes are the structural units of chromatin, consisting of DNA wrapped around histone proteins. Histone H1 is a linker histone that binds to the DNA between nucleosomes, helping pack the chromatin into a more condensed form. Its association indicates a more compact form of DNA. Hence, the correct answer is option B.","fmt":""}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline stmt">E. coli has only base pairs and completes the process of replication within 18 minutes; then the average rate of polymerisation is approximately-</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>3000 base pairs/second</span></div><div class="option"><span class="key">b</span><span>4000 base pairs/second</span></div><div class="option"><span class="key">c</span><span>1000 base pairs/second</span></div><div class="option"><span class="key">d</span><span>2000 base pairs/second</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"E. coli that has only completes the process of replication within 18 minutes; that means the average rate of polymerisation has to be approximately 2000 bp per second.","fmt":""}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The term 'Nuclein' for the genetic material was used by: [Re-NEET 2020]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Miescher</span></div><div class="option"><span class="key">b</span><span>Chargaff</span></div><div class="option"><span class="key">c</span><span>Mendel</span></div><div class="option"><span class="key">d</span><span>Franklin</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The term \"Nuclein\" for the genetic material was first used by Friedrich Miescher in 1869 when he discovered the substance in the nucleus of white blood cells. This term was later changed to nucleic acid as the molecular structure of DNA was understood.","fmt":""}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The first phase of translation is:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Recognition of DNA molecule</span></div><div class="option"><span class="key">b</span><span>Aminoacylation of tRNA</span></div><div class="option"><span class="key">c</span><span>Recognition of an anti-codon</span></div><div class="option"><span class="key">d</span><span>Binding of mRNA to ribosome</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"In the first phase of translation, amino acids are activated in the presence of ATP and linked to their cognate tRNA – a process commonly called as charging of tRNA or aminoacylation of tRNA.","fmt":""}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statements is correct?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Adenine pairs with thymine through two H- bonds.</span></div><div class="option"><span class="key">b</span><span>Adenine pairs with thymine through one H- bond.</span></div><div class="option"><span class="key">c</span><span>Adenine pairs with thymine through three H-bonds.</span></div><div class="option"><span class="key">d</span><span>Adenine does not pair with thymine.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"In the DNA double helix, base pairing occurs via hydrogen bonds: Adenine (A) pairs with Thymine (T) through two hydrogen bonds. Cytosine (C) pairs with Guanine (G) through three hydrogen bonds. [New NCERT Class 12th Page No. 81]","fmt":""}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Ten E.coli with - dsDNA are incubated in medium containing nucleotide. After 60 minutes, how many E.coli cells will have DNA totally free from ?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>80 cells</span></div><div class="option"><span class="key">b</span><span>20 cells</span></div><div class="option"><span class="key">c</span><span>40 cells</span></div><div class="option"><span class="key">d</span><span>60 cells</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The bacterium E. coli can divide in every . In other words, after every 20 minutes, the number of cells becomes doubled. When -dsDNA is incubated in medium containing nucleotide, the first generation has intermediates only . Second generation (after 20 minutes) will produce two hybrid strands, i.e., in equal proportion, so the ratio is 1:1. Third generation (after 20 minutes) will produce 2 hybrid strands and 2 light strands containing only. Fourth generation (after 20 minutes) will produce 2 hybrid strands and 6 light strands. So, after 60 minutes there will be 6 light strands totally free from . Total number of E.coli cells cells cells.","fmt":""}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement I : In prokaryotes, the positively charged DNA is held with some negatively charged proteins in a region called nucleoid. Statement II : In eukaryotes, the negatively charged DNA is wrapped around the positively charged histone octamer to form nucleosome. In the light of the above statements, choose the correct answer from the options given below : [NEET 2023]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Both Statement I and Statement II are false.</span></div><div class="option"><span class="key">b</span><span>Statement I is correct but Statement II is false.</span></div><div class="option"><span class="key">c</span><span>Statement I incorrect but Statement II is true.</span></div><div class="option"><span class="key">d</span><span>Both Statement I and Statement II are true.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"In prokaryotes, such as, E. coli, though they do not have a defined nucleus, the DNA is not scattered throughout the cell. DNA (being negatively charged) is held with some proteins (that have positive charges) in a region termed as ‘nucleoid’. The DNA in nucleoid is organised in large loops held by proteins. In eukaryotes, this organisation is much more complex. There is a set of positively charged, basic proteins called histones. A protein acquires charge depending upon the abundance of amino acids residues with charged side chains. Histones are rich in the basic amino acid residues lysine and arginine. Both the amino acid residues carry positive charges in their side chains. Histones are organised to form a unit of eight molecules called histone octamer. The negatively charged DNA is wrapped around the positively charged histone octamer to form a structure called nucleosome.","fmt":""}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Statement I: RNA mutates at a faster rate. Statement II: Viruses having RNA genome and shorter life span mutate and evolve faster. In the light of the above statements, choose the correct answer from the options given below.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Statement I false but Statement II is true.</span></div><div class="option"><span class="key">b</span><span>Both Statement I and Statement II are true.</span></div><div class="option"><span class="key">c</span><span>Both Statement I and Statement II are false.</span></div><div class="option"><span class="key">d</span><span>Statement I is true but Statement II is false.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"RNA mutates at a faster rate because it is unstable. Therefore, viruses having RNA genome and shorter life span allow them to mutate and evolve at faster rates.","fmt":""}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">What is the role of RNA polymerase III in the process of transcription in Eukaryotes?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Transcription of tRNA, 5 srRNA and snRNA</span></div><div class="option"><span class="key">b</span><span>Transcription of precursor of mRNA</span></div><div class="option"><span class="key">c</span><span>Transcription of only snRNAs</span></div><div class="option"><span class="key">d</span><span>Transcription of rRNAs (28S, 18S and 5.8S )</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"RNA polymerase III in eukaryotes is responsible for transcribing tRNA, 5S rRNA, and small nuclear RNAs (snRNA). It does not transcribe precursor mRNA or rRNA subunits like 28S, 18S, and 5.8S, which are transcribed by RNA polymerase I. RNA polymerase II is responsible for transcribing precursor mRNA. RNA polymerase I transcribes the major rRNAs (28S, 18S, and 5.8S).","fmt":""}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">How many different proteins does the ribosome consist of?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>60</span></div><div class="option"><span class="key">b</span><span>40</span></div><div class="option"><span class="key">c</span><span>20</span></div><div class="option"><span class="key">d</span><span>80</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The ribosome is composed of approximately 80 different proteins, along with rRNA. These proteins are part of the large and small subunits of the ribosome, which work together during protein synthesis (translation). The small subunit contains about 30 proteins, while the large subunit contains around 50 proteins, contributing to the total of approximately 80 proteins.","fmt":""}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statement is correct regarding the process of replication in E.coli ? [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>The DNA dependent DNA polymerase catalyses polymerization in 5' ' direction.</span></div><div class="option"><span class="key">b</span><span>The DNA dependent DNA polymerase catalyses polymerization in one direction that is '.</span></div><div class="option"><span class="key">c</span><span>The DNA dependent RNA polymerase catalyses polymerization in one direction, that is .</span></div><div class="option"><span class="key">d</span><span>The DNA dependent DNA polymerase catalyses polymerization in as well as ' direction.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"During DNA replication in E. coli, the enzyme DNA-dependent DNA polymerase catalyzes the polymerization of deoxynucleotides in the 5′→3′ direction. This means that nucleotides are added to the 3′-OH end of the growing DNA strand. The leading strand is synthesized continuously in this direction, while the lagging strand is synthesized discontinuously, forming Okazaki fragments, which are later joined by DNA ligase. Thus, the correct option is A.","fmt":""}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The lactose present in the growth medium of bacteria is transported to the cell by the action of: [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>polymerase.</span></div><div class="option"><span class="key">b</span><span>beta-galactosidase.</span></div><div class="option"><span class="key">c</span><span>transacetylase.</span></div><div class="option"><span class="key">d</span><span>permease.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"In the lac operon of bacteria, permease is responsible for transporting lactose into the bacterial cell. Beta-galactosidase (option B) is the enzyme that breaks down lactose into glucose and galactose once it has entered the cell, but it does not transport lactose. Permease specifically facilitates the transport of lactose across the cell membrane.","fmt":""}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A transcription unit in DNA is defined primarily by the three regions in DNA and these are with respect to upstream and down stream end; [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Promotor, Structural gene, Terminator</span></div><div class="option"><span class="key">b</span><span>Repressor, Operator gene, Structural gene</span></div><div class="option"><span class="key">c</span><span>Structural gene, Transposons, Operator gene</span></div><div class="option"><span class="key">d</span><span>Inducer, Repressor, Structural gene</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"A transcription unit in DNA consists of three primary regions: 1. Promoter: The region where RNA polymerase binds to initiate transcription. 2. Structural gene: The region that codes for the RNA molecule to be transcribed. 3. Terminator: The region that signals the end of transcription. These elements define the transcription unit and help regulate the process of transcription in both prokaryotes and eukaryotes.","fmt":""}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The lactose present in the growth medium of bacteria is transported to the cell by the action of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>polymerase.</p></span></div><div class="option"><span class="key">b</span><span><p>beta-galactosidase.</p></span></div><div class="option"><span class="key">c</span><span><p>transacetylase.</p></span></div><div class="option"><span class="key">d</span><span><p>permease.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In the lac operon of bacteria, permease is responsible for transporting lactose into the bacterial cell.\u003c/p> \u003cp>Beta-galactosidase (option B) is the enzyme that breaks down lactose into glucose and galactose once it has entered the cell, but it does not transport lactose.\u003c/p> \u003cp>Permease specifically facilitates the transport of lactose across the cell membrane.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the <em>lac </em>operon, the z gene codes for : </p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>transacetylase</p></span></div><div class="option"><span class="key">b</span><span><p>the repressor of <em>lac</em> operon</p></span></div><div class="option"><span class="key">c</span><span><p>permease</p></span></div><div class="option"><span class="key">d</span><span><p>beta-galactosidase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Lac operon genes and functions: structural genes z, y and a code for enzymes involved in lactose metabolism\u003c/p> \u003cul> \u003cli>Option A: Incorrect → transacetylase is coded by a gene\u003c/li> \u003cli>Option B: Incorrect → repressor is coded by regulatory gene i\u003c/li> \u003cli>Option C: Incorrect → permease is coded by y gene\u003c/li> \u003cli>Option D: Correct → z gene codes for beta-galactosidase, which breaks lactose into glucose and galactose\u003c/li> \u003c/ul> \u003cp>Thus, the correct answer is: beta-galactosidase\u003c/p> \u003cp>Final Answer: Option D\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: In the <em>lac</em> operon, the \(z\) gene codes for beta-galactosidase which is primarily responsible for the hydrolysis of lactose into galactose and glucose.<br/>Statement II : In addition to lactose, glucose or galactose can also induce <em>lac</em> operon.<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Statement I is true, and Statement II is false. The \\(z\\) gene of the lac operon codes for beta-galactosidase, which hydrolyzes lactose into glucose and galactose, and only lactose (or its isomer allolactose) acts as an inducer, while glucose represses the operon. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct with reference to packaging of DNA helix ?</p> <p>A. Histones are organized to form a unit of eight molecules called histone octamer.</p> <p>B. Histones are negatively charged basic proteins.</p> <p>C. Histones are rich in the basic amino acid residues - lysine and arginine.</p> <p>D. The positively charged DNA is wrapped around the histone octamer to form nucleosome.</p> <p>E. The packaging of chromatin at higher levels requires an additional set of proteins called non-histone chromosomal proteins.</p> <p>Choose the <strong>correct </strong>answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B and D only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and E only</p></span></div><div class="option"><span class="key">c</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>DNA packaging in eukaryotes: DNA is wrapped around positively charged histone octamers to form nucleosomes, and higher level packing involves non-histone proteins:\u003c/p> \u003cul> \u003cli>Statement A: Correct → histones form an octamer consisting of eight molecules\u003c/li> \u003cli>Statement B: Incorrect → histones are positively charged basic proteins, not negatively charged\u003c/li> \u003cli>Statement C: Correct → histones are rich in lysine and arginine residues\u003c/li> \u003cli>Statement D: Incorrect → DNA is negatively charged, not positively charged\u003c/li> \u003cli>Statement E: Correct → higher level chromatin packaging requires non-histone chromosomal proteins\u003c/li> \u003c/ul> \u003cp>Thus, the correct statements are: A, C and E\u003c/p> \u003cp>Final Answer: Option 2\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are the post - transcriptional events in an eukaryotic cell?</p> <p>A. Transport of pre-mRNA to cytoplasm prior to splicing</p> <p>B. Removal of introns and joining of exons.</p> <p>C. Addition of methyl group at 5' end of hnRNA.</p> <p>D. Addition of adenine residues at 3' end of hnRNA.</p> <p>E. Base pairing of two complementary RNAs.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B,C,E only</p></span></div><div class="option"><span class="key">b</span><span><p>C,D,E only</p></span></div><div class="option"><span class="key">c</span><span><p>A,B,C only</p></span></div><div class="option"><span class="key">d</span><span><p>B,C,D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In eukaryotic cells, \u003cstrong>post-transcriptional events\u003c/strong> occur after the primary RNA transcript (hnRNA) is formed and \u003cstrong>before\u003c/strong> it becomes functional mRNA. These include:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>B. Removal of introns and joining of exons\u003c/strong>: This is called \u003cstrong>splicing\u003c/strong>, where non-coding introns are removed and coding exons are joined.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Addition of methyl group at 5' end\u003c/strong>: This is called \u003cstrong>5' capping\u003c/strong>, which protects mRNA and helps in ribosome binding.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Addition of adenine residues at 3' end\u003c/strong>: Known as \u003cstrong>polyadenylation\u003c/strong>, it adds a poly-A tail to stabilize the mRNA.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>Option A\u003c/strong> is incorrect as splicing occurs in the \u003cstrong>nucleus\u003c/strong>, not after transport.\u003cbr/>\u003cstrong>Option E\u003c/strong> (base pairing of two RNAs) is not a typical post-transcriptional modification.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements regarding RNA polymerase in prokaryotes.<br/>Statement I : In prokaryotes, RNA polymerase is capable of catalysing the process of elongation during transcription.<br/>Statement II : RNA polymerase associate transiently with 'Rho' factor to initiate transcription.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Statement I:\u003c/strong> True.\u003cbr/>In prokaryotes, the core RNA polymerase enzyme can carry out \u003cstrong>elongation\u003c/strong> during transcription by adding nucleotides to the growing RNA strand.\u003c/p> \u003cp>\u003cstrong>Statement II:\u003c/strong> False.\u003cbr/>RNA polymerase does \u003cstrong>not\u003c/strong> associate with the \u003cem>Rho\u003c/em> factor to \u003cstrong>initiate\u003c/strong> transcription. Initiation requires the \u003cstrong>sigma (σ) factor\u003c/strong>, which helps RNA polymerase recognize the promoter.\u003cbr/>\u003cem>Rho\u003c/em> factor is involved in \u003cstrong>termination\u003c/strong>, not initiation.\u003c/p> \u003cp>\u003cstrong>Correct answer: A — Statement I is true but Statement II is false.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which chromosome in the human genome has the highest number of genes?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Chromosome 1</p></span></div><div class="option"><span class="key">b</span><span><p>Chromosome 10</p></span></div><div class="option"><span class="key">c</span><span><p>Chromosome X</p></span></div><div class="option"><span class="key">d</span><span><p>Chromosome Y</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Chromosome 1 in the human genome has the highest number of genes. It is the largest human chromosome and contains around 2,000 to 2,100 genes, which are responsible for many important body functions. These genes play roles in development, immunity, metabolism, and more.\u003c/p> \u003cp>Chromosome 10 has fewer genes than chromosome 1.\u003c/p> \u003cp>Chromosome X has many genes but still fewer than chromosome 1.\u003c/p> \u003cp>Chromosome Y has the least number of genes, as it is small and mainly carries genes related to male sex determination.\u003c/p> \u003cp>So, Chromosome 1 holds the most genes in our genome.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A transcription unit in DNA is defined primarily by the three regions in DNA and these are with respect to upstream and down stream end;</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Promoter, Structural gene, Terminator</p></span></div><div class="option"><span class="key">b</span><span><p>Repressor, Operator gene, Structural gene</p></span></div><div class="option"><span class="key">c</span><span><p>Structural gene, Transposons, Operator gene</p></span></div><div class="option"><span class="key">d</span><span><p>Inducer, Repressor, Structural gene</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A transcription unit in DNA consists of three primary regions:\u003c/p> \u003col> \u003cli>Promoter: The region where RNA polymerase binds to initiate transcription.\u003c/li> \u003cli>Structural gene: The region that codes for the RNA molecule to be transcribed.\u003c/li> \u003cli>Terminator: The region that signals the end of transcription.\u003c/li> \u003c/ol> \u003cp>These elements define the transcription unit and help regulate the process of transcription in both prokaryotes and eukaryotes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List I </strong>with <strong>List II </strong>:</p> <table> <tbody> <tr> <td>List I</td> <td>List II</td> </tr> <tr> <td>A. RNA polymerase III</td> <td>I. snRNPs</td> </tr> <tr> <td>B. Termination of transcription</td> <td>II. Promoter</td> </tr> <tr> <td>C. Splicing of Exons</td> <td>III. Rho factor</td> </tr> <tr> <td>D. TATA box</td> <td>IV. SnRNAs, tRNA</td> </tr> </tbody> </table> <p>Choose the <strong>correct </strong>answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-III, C-I, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-IV, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-IV, C-I, D-III</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-IV, C-I, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A. \u003cstrong>RNA polymerase III\u003c/strong> → synthesizes \u003cstrong>snRNAs and tRNAs\u003c/strong> → \u003cstrong>(IV)\u003c/strong>\u003cbr/>B. \u003cstrong>Termination of transcription\u003c/strong> → involves \u003cstrong>Rho factor\u003c/strong> → \u003cstrong>(III)\u003c/strong>\u003cbr/>C. \u003cstrong>Splicing of exons\u003c/strong> → carried out by \u003cstrong>snRNPs (small nuclear ribonucleoproteins)\u003c/strong> → \u003cstrong>(I)\u003c/strong>\u003cbr/>D. \u003cstrong>TATA box\u003c/strong> → is a \u003cstrong>promoter region\u003c/strong> → \u003cstrong>(II)\u003c/strong>\u003c/p> \u003cp>Correct matching: A–IV, B–III, C–I, D–II\u003c/p> \u003cp>Answer: Option A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I : In eukaryotes there are three RNA polymerases in the nucleus in addition to the RNA polymerase found in the organelles.<br/>Statement II : All the three RNA polymerases in eukaryotic nucleus have different roles.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer: C — Both Statement I and Statement II are correct\u003c/strong>\u003c/p> \u003cstrong>Explanation:\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Statement I:\u003c/strong> \u003cem>True\u003c/em>\u003cbr/>In \u003cstrong>eukaryotes\u003c/strong>, there are \u003cstrong>three distinct nuclear RNA polymerases\u003c/strong> —\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>RNA polymerase I\u003c/strong> → synthesizes \u003cstrong>rRNA\u003c/strong> (except 5S rRNA)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>RNA polymerase II\u003c/strong> → synthesizes \u003cstrong>mRNA\u003c/strong> (and some snRNA)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>RNA polymerase III\u003c/strong> → synthesizes \u003cstrong>tRNA\u003c/strong>, \u003cstrong>5S rRNA\u003c/strong>, and other small RNAs\u003cbr/>Additionally, \u003cstrong>mitochondria and chloroplasts\u003c/strong> have their own \u003cstrong>RNA polymerases\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement II:\u003c/strong> \u003cem>True\u003c/em>\u003cbr/>Each of these three nuclear RNA polymerases performs \u003cstrong>different roles\u003c/strong> in transcription, as described above.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, \u003cstrong>both statements are correct.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statement is correct regarding the process of replication in <em>E.coli ?</em></p> <p> </p> <p><em>[NEET 2024]</em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The DNA dependent DNA polymerase catalyses polymerization in 5' \(\to 3\) ' direction.</p></span></div><div class="option"><span class="key">b</span><span><p>The DNA dependent DNA polymerase catalyses polymerization in one direction that is \({3}^{'}\to 5\) '.</p></span></div><div class="option"><span class="key">c</span><span><p>The DNA dependent RNA polymerase catalyses polymerization in one direction, that is \({5}^{'}\to {3}^{'}\).</p></span></div><div class="option"><span class="key">d</span><span><p>The DNA dependent DNA polymerase catalyses polymerization in \({5}^{'}\to {3}^{'}\) as well as \({3}^{'}\to 5\)' direction.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During DNA replication in \u003cem>E. coli\u003c/em>, the enzyme DNA-dependent DNA polymerase catalyzes the polymerization of deoxynucleotides in the 5′→3′ direction.\u003c/p> \u003cp>This means that nucleotides are added to the 3′-OH end of the growing DNA strand. The leading strand is synthesized continuously in this direction, while the lagging strand is synthesized discontinuously, forming Okazaki fragments, which are later joined by DNA ligase.\u003c/p> \u003cp>Thus, the correct option is A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statement is correct regarding the process of replication in <em>E.coli ?</em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The DNA dependent DNA polymerase catalyses polymerization in 5' \(\to 3\)' direction.</p></span></div><div class="option"><span class="key">b</span><span><p>The DNA dependent DNA polymerase catalyses polymerization in one direction that is \({3}^{'}\to 5\)'.</p></span></div><div class="option"><span class="key">c</span><span><p>The DNA dependent RNA polymerase catalyses polymerization in one direction, that is \({5}^{'}\to {3}^{'}\).</p></span></div><div class="option"><span class="key">d</span><span><p>The DNA dependent DNA polymerase catalyses polymerization in \({5}^{'}\to {3}^{'}\) as well as \({3}^{'}\to 5\)' direction.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During DNA replication in \u003cem>E. coli\u003c/em>, the enzyme DNA-dependent DNA polymerase catalyzes the polymerization of deoxynucleotides in the 5′→3′ direction.\u003c/p> \u003cp>This means that nucleotides are added to the 3′-OH end of the growing DNA strand. The leading strand is synthesized continuously in this direction, while the lagging strand is synthesized discontinuously, forming Okazaki fragments, which are later joined by DNA ligase.\u003c/p> \u003cp>Thus, the correct option is 1.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A transcription unit in DNA is defined primarily by the three regions in DNA and these are with respect to upstream and down stream end;</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Promotor, Structural gene, Terminator</p></span></div><div class="option"><span class="key">b</span><span><p>Repressor, Operator gene, Structural gene</p></span></div><div class="option"><span class="key">c</span><span><p>Structural gene, Transposons, Operator gene</p></span></div><div class="option"><span class="key">d</span><span><p>Inducer, Repressor, Structural gene</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A transcription unit in DNA consists of three primary regions:\u003c/p> \u003col> \u003cli>Promoter: The region where RNA polymerase binds to initiate transcription.\u003c/li> \u003cli>Structural gene: The region that codes for the RNA molecule to be transcribed.\u003c/li> \u003cli>Terminator: The region that signals the end of transcription.\u003c/li> \u003c/ol> \u003cp>These elements define the transcription unit and help regulate the process of transcription in both prokaryotes and eukaryotes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II:</p> <table> <thead> <tr> <th><strong>List–I</strong></th> <th><strong>List–II</strong></th> </tr> </thead> <tbody> <tr> <td>A Histones</td> <td>I. Loosely packed chromatin</td> </tr> <tr> <td>B Nucleosome</td> <td>II. Densely packed chromatin</td> </tr> <tr> <td>C Euchromatin</td> <td>III. Positively charged basic proteins</td> </tr> <tr> <td>D Heterochromatin</td> <td>IV. DNA wrapped around histone octamer</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-I, C-IV, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-III, C-IV, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-IV,C-I, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cstrong>Explanation:\u003c/strong> \u003ctable> \u003cthead> \u003ctr> \u003cth>\u003cstrong>List-I\u003c/strong>\u003c/th> \u003cth>\u003cstrong>List-II\u003c/strong>\u003c/th> \u003cth>\u003cstrong>Explanation\u003c/strong>\u003c/th> \u003c/tr> \u003c/thead> \u003ctbody> \u003ctr> \u003ctd>\u003cstrong>Histones\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>III. Positively charged basic proteins\u003c/strong>\u003c/td> \u003ctd>Histones are basic proteins with positive charge that help in DNA packaging.\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>Nucleosome\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>IV. DNA wrapped around histone octamer\u003c/strong>\u003c/td> \u003ctd>A nucleosome consists of DNA wrapped around a histone octamer (H2A, H2B, H3, H4) × 2).\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>Euchromatin\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>I. Loosely packed chromatin\u003c/strong>\u003c/td> \u003ctd>Euchromatin is transcriptionally active and loosely packed.\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>Heterochromatin\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>II. Densely packed chromatin\u003c/strong>\u003c/td> \u003ctd>Heterochromatin is tightly packed and transcriptionally inactive.\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements about lac-operon is correct?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gene i is constitutively expressed</p></span></div><div class="option"><span class="key">b</span><span><p>Lactose activates repressor to bind to the operator</p></span></div><div class="option"><span class="key">c</span><span><p>Genes i, z, y and a share single common promoter</p></span></div><div class="option"><span class="key">d</span><span><p>Galactose can act as an inducer of lac operon</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>The \u003cstrong>lac operon\u003c/strong> consists of structural genes (\u003cstrong>z, y, a\u003c/strong>) and a regulatory gene (\u003cstrong>i\u003c/strong>)\u003c/li> \u003cli>\u003cstrong>Gene i (regulator gene)\u003c/strong> continuously produces the \u003cstrong>repressor protein\u003c/strong> → hence it is \u003cstrong>constitutively expressed\u003c/strong>\u003c/li> \u003c/ul> Why other options are incorrect: \u003cul> \u003cli>\u003cstrong>B.\u003c/strong> Lactose does \u003cstrong>not activate\u003c/strong> the repressor; it \u003cstrong>inactivates\u003c/strong> it (by binding → prevents it from attaching to operator)\u003c/li> \u003cli>\u003cstrong>C.\u003c/strong> Gene \u003cstrong>i has its own promoter\u003c/strong>, separate from z, y, a\u003c/li> \u003cli>\u003cstrong>D.\u003c/strong> \u003cstrong>Allolactose (derived from lactose)\u003c/strong> acts as inducer, not galactose\u003c/li> \u003c/ul> \u003cp>Correct answer: A - Gene i is constitutively expressed\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct with reference to a transcription unit?<br/>A. Transcription unit in DNA is defined primarily by three regions : promoter, structural gene and terminator.<br/>B. The promoter is said to be located towards the 5'-end of the structural gene.<br/>C. The promoter is a DNA sequence that provides binding site for RNA polymerase.<br/>D. The promoter defines the template and coding strands.<br/>E. The terminator is located towards the 3'-end of the coding strand and it defines the end of the process of transcription.<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C, D and E</p></span></div><div class="option"><span class="key">b</span><span><p>B, C, D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, C, D and E only </p></span></div><div class="option"><span class="key">d</span><span><p>A, B, C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A transcription unit in DNA consists of three main regions: promoter, structural gene, and terminator.\u003c/p> \u003cul> \u003cli>Statement A: Correct\u003cbr/>→ It clearly states that a transcription unit has promoter, structural gene, and terminator\u003c/li> \u003cli>Statement B: Correct\u003cbr/>→ The promoter is located towards the 5′-end (upstream) of the structural gene\u003c/li> \u003cli>Statement C: Correct\u003cbr/>→ The promoter provides the binding site for RNA polymerase\u003c/li> \u003cli>Statement D: Correct\u003cbr/>→ The promoter determines which strand will act as template and which as coding strand\u003c/li> \u003cli>Statement E: Correct\u003cbr/>→ The terminator lies towards the 3′-end of the coding strand and signals the end of transcription\u003c/li> \u003c/ul> \u003cp>Thus, all statements are correct.\u003c/p> \u003cp>Correct answer: Option A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The lactose present in the growth medium of bacteria is transported to the cell by the action of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>polymerase.</p></span></div><div class="option"><span class="key">b</span><span><p>beta-galactosidase.</p></span></div><div class="option"><span class="key">c</span><span><p>transacetylase.</p></span></div><div class="option"><span class="key">d</span><span><p>permease.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In the lac operon of bacteria, permease is responsible for transporting lactose into the bacterial cell.\u003c/p> \u003cp>Beta-galactosidase (option B) is the enzyme that breaks down lactose into glucose and galactose once it has entered the cell, but it does not transport lactose.\u003c/p> \u003cp>Permease specifically facilitates the transport of lactose across the cell membrane.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II</p> <table> <tbody> <tr> <td> List I </td> <td>List II </td> </tr> <tr> <td>A. Frederick Griffith</td> <td>I. Genetic code</td> </tr> <tr> <td>B. Francois Jacob &amp; Jacque Monod</td> <td>II. Semi-conservative mode of DNA replication</td> </tr> <tr> <td>C. Har Gobind Khorana</td> <td>III. Transformation</td> </tr> <tr> <td>D . Meselson &amp; Stahl</td> <td>IV. Lac operon</td> </tr> </tbody> </table> <p>Choose the <strong>correct </strong>answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-I, C-II, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-III, C-IV, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cstrong>Explanation:\u003c/strong> \u003col> \u003cli> \u003cp>\u003cstrong>Frederick Griffith \\(\\to\\) Transformation (III)\u003c/strong>\u003c/p> \u003cul> \u003cli>Griffith's experiment (1928) demonstrated bacterial transformation, showing that genetic material can be transferred between bacteria.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Francois Jacob &amp; Jacque Monod \\(\\to\\) Lac operon (IV)\u003c/strong>\u003c/p> \u003cul> \u003cli>They discovered the Lac operon, which explains gene regulation in prokaryotes.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Har Gobind Khorana \\(\\to\\) Genetic code (I)\u003c/strong>\u003c/p> \u003cul> \u003cli>Khorana helped decode the genetic code by synthesizing artificial RNA sequences.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Meselson &amp; Stahl \\(\\to\\) Semi-conservative mode of DNA replication (II)\u003c/strong>\u003c/p> \u003cul> \u003cli>Their 1958 experiment provided evidence that DNA replicates via the semi-conservative model.\u003c/li> \u003c/ul> \u003c/li> \u003c/ol> \u003cp>Thus, the correct matching is A-III, B-IV, C-I, D-II, corresponding to option C.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: In the <em>lac</em> operon, the \(z\) gene codes for beta-galactosidase which is primarily responsible for the hydrolysis of lactose into galactose and glucose.<br/>Statement II : In addition to lactose, glucose or galactose can also induce <em>lac</em> operon.<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Statement I is true, and Statement II is false. The \\(z\\) gene of the lac operon codes for beta-galactosidase, which hydrolyzes lactose into glucose and galactose, and only lactose (or its isomer allolactose) acts as an inducer, while glucose represses the operon. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following steps of DNA fingerprinting in a correct sequence.<br/>A. Isolation of DNA and its digestion by restriction endonucleases.<br/>B. Hybridisation using a labelled VNTR probe.<br/>C. Transferring of separated DNA fragments to synthetic membranes.<br/>D. Detection of hybridised DNA fragments by autoradiography.<br/>E. Separation of DNA fragments by electrophoresis.<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, E, C, B, D</p></span></div><div class="option"><span class="key">b</span><span><p>A, E, B, C, D</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, D, C, E</p></span></div><div class="option"><span class="key">d</span><span><p>A, D, B, E, C</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>DNA fingerprinting involves identifying specific DNA sequences (VNTRs) through a series of well-defined steps.\u003c/p> \u003cul> \u003cli>Initially, DNA is isolated and cut into fragments using restriction endonucleases (A).\u003c/li> \u003cli>These fragments are then separated based on size by electrophoresis (E).\u003c/li> \u003cli>After separation, the DNA fragments are transferred onto a synthetic membrane (C) by the process of blotting (Southern blotting).\u003c/li> \u003cli>Next, hybridisation is carried out using a labelled VNTR probe (B), which binds to complementary DNA sequences present on the membrane.\u003c/li> \u003cli>Finally, the hybridised fragments are detected using autoradiography (D), producing characteristic banding patterns.\u003c/li> \u003c/ul> \u003cp>Thus, the correct sequence is - \u003cstrong>A → E → C → B → D (Option A)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one is the <strong>correct </strong>product of DNA dependent RNA polymerase to the given template?<br/>3'TACATGGCAAATATCCATTCA5'</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5'ATGTACCGTTTATAGGTAAGT3'</p></span></div><div class="option"><span class="key">b</span><span><p>5'AUGUACCGUUUAUAGGUAAGU3'</p></span></div><div class="option"><span class="key">c</span><span><p>5'AUGUAAAGUUUAUAGGUAAGU3'</p></span></div><div class="option"><span class="key">d</span><span><p>5'AUGUACCGUUUAUAGGGAAGU3'</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct answer is \u003cstrong>B. 5'AUGUACCGUUUAUAGGUAAGU3'\u003c/strong>. RNA polymerase synthesizes mRNA using the DNA template strand by complementary base pairing. Here, the DNA template strand is 3' to 5', so the RNA is transcribed in the 5' to 3' direction with uracil replacing thymine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one is the <strong>correct </strong>product of DNA dependent RNA polymerase to the given template?<br/>3'TACATGGCAAATATCCATTCA5'</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5'ATGTACCGTTTATAGGTAAGT3'</p></span></div><div class="option"><span class="key">b</span><span><p>5'AUGUACCGUUUAUAGGUAAGU3'</p></span></div><div class="option"><span class="key">c</span><span><p>5'AUGUAAAGUUUAUAGGUAAGU3'</p></span></div><div class="option"><span class="key">d</span><span><p>5'AUGUACCGUUUAUAGGGAAGU3'</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct answer is \u003cstrong>B. 5'AUGUACCGUUUAUAGGUAAGU3'\u003c/strong>. RNA polymerase synthesizes mRNA using the DNA template strand by complementary base pairing. Here, the DNA template strand is 3' to 5', so the RNA is transcribed in the 5' to 3' direction with uracil replacing thymine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I : In eukaryotes there are three RNA polymerases in the nucleus in addition to the RNA polymerase found in the organelles.<br/>Statement II : All the three RNA polymerases in eukaryotic nucleus have different roles.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -605,7 +609,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer: C — Both Statement I and Statement II are correct\u003c/strong>\u003c/p> \u003cstrong>Explanation:\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Statement I:\u003c/strong> \u003cem>True\u003c/em>\u003cbr/>In \u003cstrong>eukaryotes\u003c/strong>, there are \u003cstrong>three distinct nuclear RNA polymerases\u003c/strong> —\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>RNA polymerase I\u003c/strong> → synthesizes \u003cstrong>rRNA\u003c/strong> (except 5S rRNA)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>RNA polymerase II\u003c/strong> → synthesizes \u003cstrong>mRNA\u003c/strong> (and some snRNA)\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>RNA polymerase III\u003c/strong> → synthesizes \u003cstrong>tRNA\u003c/strong>, \u003cstrong>5S rRNA\u003c/strong>, and other small RNAs\u003cbr/>Additionally, \u003cstrong>mitochondria and chloroplasts\u003c/strong> have their own \u003cstrong>RNA polymerases\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement II:\u003c/strong> \u003cem>True\u003c/em>\u003cbr/>Each of these three nuclear RNA polymerases performs \u003cstrong>different roles\u003c/strong> in transcription, as described above.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, \u003cstrong>both statements are correct.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which factor is important for termination of transcription?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\rho (\mathrm{rho})\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\gamma (\mathrm{gamma})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\alpha (\mathrm{alpha})\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sigma (\mathrm{sigma})\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -617,7 +621,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The \u003cstrong>ρ (rho) factor\u003c/strong> is a \u003cstrong>protein\u003c/strong> that plays an important role in the \u003cstrong>termination of transcription\u003c/strong> in \u003cstrong>prokaryotes\u003c/strong> (like bacteria). It binds to the growing RNA chain and moves along it until it reaches the RNA polymerase. When it catches up, it causes the RNA polymerase to \u003cstrong>detach from the DNA\u003c/strong>, stopping transcription.\u003c/p> \u003cp>There are two types of transcription termination in prokaryotes:\u003c/p> \u003col> \u003cli> \u003cp>\u003cstrong>Rho-dependent\u003c/strong> – requires the \u003cstrong>ρ factor\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Rho-independent\u003c/strong> – relies on a \u003cstrong>GC-rich hairpin loop\u003c/strong> in RNA\u003c/p> \u003c/li> \u003c/ol> \u003cp>Other options:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>σ (sigma)\u003c/strong> helps \u003cstrong>start transcription\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>α and γ\u003c/strong> are not involved in transcription termination\u003c/p> \u003c/li> \u003c/ul> \u003cp>So, the correct answer is \u003cstrong>A — ρ (rho).\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements regarding RNA polymerase in prokaryotes.<br/>Statement I : In prokaryotes, RNA polymerase is capable of catalysing the process of elongation during transcription.<br/>Statement II : RNA polymerase associate transiently with 'Rho' factor to initiate transcription.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -629,7 +633,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Statement I:\u003c/strong> True.\u003cbr/>In prokaryotes, the core RNA polymerase enzyme can carry out \u003cstrong>elongation\u003c/strong> during transcription by adding nucleotides to the growing RNA strand.\u003c/p> \u003cp>\u003cstrong>Statement II:\u003c/strong> False.\u003cbr/>RNA polymerase does \u003cstrong>not\u003c/strong> associate with the \u003cem>Rho\u003c/em> factor to \u003cstrong>initiate\u003c/strong> transcription. Initiation requires the \u003cstrong>sigma (σ) factor\u003c/strong>, which helps RNA polymerase recognize the promoter.\u003cbr/>\u003cem>Rho\u003c/em> factor is involved in \u003cstrong>termination\u003c/strong>, not initiation.\u003c/p> \u003cp>\u003cstrong>Correct answer: A — Statement I is true but Statement II is false.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Unequivocal proof that DNA is the genetic material was first proposed by</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Wilkins and Franklin</p></span></div><div class="option"><span class="key">b</span><span><p>Frederick Griffith</p></span></div><div class="option"><span class="key">c</span><span><p>Alfred Hershey and Martha Chase</p></span></div><div class="option"><span class="key">d</span><span><p>Avery, MacLeod and McCarty</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -641,7 +645,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The unequivocal proof that DNA is the genetic material came from the experiments of Alfred Hershey and Martha Chase (1952). They worked with viruse that inject bacteria called bacteriophages.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which is the basis of genetic mapping of human genome as well as DNA finger printing? </p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Single nucleotide polymorphism </p></span></div><div class="option"><span class="key">b</span><span><p>Polymorphism in hnRNA sequence </p></span></div><div class="option"><span class="key">c</span><span><p>Polymorphism in RNA sequence </p></span></div><div class="option"><span class="key">d</span><span><p>Polymorphism in DNA sequence </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -653,7 +657,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>DNA fingerprinting is a technique to find out variations in individuals of a population at DNA level. It works on the principle of polymorphism in DNA sequences. It has immense applications in the field of forensic science, genetic biodiversity and evolutionary biology. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>With reference to Hershey and Chase experiments. Select the correct statements.<br/>A. Viruses grown in the presence of radioactive phosphorus contained radioactive DNA.<br/>B. Viruses grown on radioactive sulphur contained radioactive proteins.<br/>C. Viruses grown on radioactive phosphorus contained radioactive protein.<br/>D. Viruses grown on radioactive sulphur contained radioactive DNA.<br/>E. Viruses grown on radioactive protein contained radioactive DNA.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(D) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (C) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -665,7 +669,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A) and (B) only\u003c/p> \u003cp>The Hershey and Chase experiments demonstrated that DNA is the genetic material, not protein. Viruses grown in the presence of radioactive phosphorus had radioactive DNA, and those grown on radioactive sulphur had radioactive proteins.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The genetics code that codes for Methionine is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>UUU</p></span></div><div class="option"><span class="key">b</span><span><p>AUG</p></span></div><div class="option"><span class="key">c</span><span><p>ACG</p></span></div><div class="option"><span class="key">d</span><span><p>AAA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -677,7 +681,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>AUG is consider as the \"Start codon\" in protein synthesis \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Unequivocal proof that DNA is the genetic material was first proposed by</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Alfred Hershey and Martha Chase</p></span></div><div class="option"><span class="key">b</span><span><p>Avery, Macleoid and McCarthy</p></span></div><div class="option"><span class="key">c</span><span><p>Wilkins and Franklin</p></span></div><div class="option"><span class="key">d</span><span><p>Frederick Griffith</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -689,7 +693,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cstrong>Explanation:\u003c/strong> \u003cul> \u003cli>The \u003cstrong>Hershey and Chase experiment (1952)\u003c/strong> provided \u003cstrong>definitive proof\u003c/strong> that \u003cstrong>DNA is the genetic material\u003c/strong> using bacteriophages (viruses that infect bacteria).\u003c/li> \u003cli>They used \u003cstrong>radioactive isotopes\u003c/strong>: \u003cul> \u003cli>\u003cstrong>³²P (Phosphorus-32) to label DNA\u003c/strong>\u003c/li> \u003cli>\u003cstrong>³⁵S (Sulfur-35) to label protein\u003c/strong>\u003c/li> \u003c/ul> \u003c/li> \u003cli>After infection of bacteria, \u003cstrong>only ³²P-labeled DNA entered the bacterial cells\u003c/strong>, while \u003cstrong>³⁵S-labeled protein remained outside\u003c/strong>.\u003c/li> \u003cli>This confirmed that \u003cstrong>DNA carries genetic information\u003c/strong>, not protein.\u003c/li> \u003c/ul> \u003cstrong>Why other options are incorrect?\u003c/strong> \u003cul> \u003cli>\u003cstrong>B (Avery, MacLeod, and McCarty):\u003c/strong> \u003cul> \u003cli>Their \u003cstrong>1944 experiment\u003c/strong> provided strong evidence that \u003cstrong>DNA is the genetic material\u003c/strong>, but it was not universally accepted.\u003c/li> \u003c/ul> \u003c/li> \u003cli>\u003cstrong>C (Wilkins and Franklin):\u003c/strong> \u003cul> \u003cli>Used \u003cstrong>X-ray diffraction\u003c/strong> to study \u003cstrong>DNA structure\u003c/strong>, but did not prove DNA as genetic material.\u003c/li> \u003c/ul> \u003c/li> \u003cli>\u003cstrong>D (Frederick Griffith):\u003c/strong> \u003cul> \u003cli>Discovered \u003cstrong>bacterial transformation (1928)\u003c/strong> but did not identify DNA as the genetic material.\u003c/li> \u003c/ul> \u003c/li> \u003c/ul> \u003cstrong>Final Conclusion:\u003c/strong> \u003cp>Since \u003cstrong>Hershey and Chase provided unequivocal proof that DNA is the genetic material\u003c/strong>, the correct answer is:\u003c/p> \u003cstrong>A (Alfred Hershey and Martha Chase).\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Expressed Sequence Tags (ESTs) refers to:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>all genes that do not expressed as proteins.</p></span></div><div class="option"><span class="key">b</span><span><p>all genes whether expressed or unexpressed.</p></span></div><div class="option"><span class="key">c</span><span><p>certain important expressed genes.</p></span></div><div class="option"><span class="key">d</span><span><p>all genes that are expressed as RNA.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Expressed Sequence Tags (ESTs) refers to all genes that are expressed as RNA.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The term 'Nuclein' for the genetic material was used by:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Miescher</p></span></div><div class="option"><span class="key">b</span><span><p>Chargaff</p></span></div><div class="option"><span class="key">c</span><span><p>Mendel</p></span></div><div class="option"><span class="key">d</span><span><p>Franklin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>DNA as an acidic substance present in nucleus was first identified by Friedrich Meischer in 1869. He named it as 'Nuclein'.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Name the enzyme that facilitates opening of DNA helix during transcription.</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>DNA helicase</p></span></div><div class="option"><span class="key">b</span><span><p>DNA polymerase</p></span></div><div class="option"><span class="key">c</span><span><p>RNA polymerase</p></span></div><div class="option"><span class="key">d</span><span><p>DNA ligase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -725,7 +729,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>During \u003cstrong>transcription\u003c/strong>, the DNA double helix needs to \u003cstrong>unwind\u003c/strong> to expose the template strand.\u003c/p> \u003c/li> \u003cli> \u003cp>This unwinding is \u003cstrong>facilitated by the enzyme RNA polymerase\u003c/strong> itself, which binds to the promoter region and causes \u003cstrong>local unwinding of the DNA helix\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>RNA polymerase\u003c/strong> then uses one strand of DNA as a template to synthesize RNA.\u003c/p> \u003c/li> \u003c/ul> Why not the other options? \u003cul> \u003cli> \u003cp>\u003cstrong>A. DNA helicase\u003c/strong>: This enzyme unwinds DNA during \u003cstrong>DNA replication\u003c/strong>, \u003cstrong>not transcription\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B. DNA polymerase\u003c/strong>: Involved in \u003cstrong>DNA replication\u003c/strong>, not RNA synthesis.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. DNA ligase\u003c/strong>: Joins DNA fragments (Okazaki fragments) during \u003cstrong>replication\u003c/strong>, not involved in transcription.\u003c/p> \u003c/li> \u003c/ul> Final Answer: \u003cstrong>C. RNA polymerase\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>DNA fingerprinting involves identifying differences in some specific regions in DNA sequence, called as :</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Repetitive DNA</p></span></div><div class="option"><span class="key">b</span><span><p>Single nucleotides</p></span></div><div class="option"><span class="key">c</span><span><p>Polymorphic DNA</p></span></div><div class="option"><span class="key">d</span><span><p>Satellite DNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>DNA fingerprinting involves identifying differences in some specific regions in DNA sequence called repetitive DNA, because in these sequences, a small stretch of DNA is repeated many times.\u003c/p> \u003cp>Final Answer -: (A)Repetitive DNA.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If Adenine makes \(30 \%\) of the DNA molecule, what will be the percentage of Thymine, Guanine and Cytosine in it?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{T}: 20 ; \mathrm{G}: 20 ; \mathrm{C}: 30\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{T}: 30 ; \mathrm{G}: 20 ; \mathrm{C}: 20\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{T}: 20 ; \mathrm{G}: 25 ; \mathrm{C}: 25\)</p></span></div><div class="option"><span class="key">d</span><span><p>T: \(20 ; \mathrm{G}: 30 ; \mathrm{C}: 20\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -746,10 +750,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to Chargaff's rule, for a dsDNA,\u003cbr/>\\[\u003cbr/>\\frac{\\mathrm{A}+\\mathrm{T}}{\\mathrm{G}+\\mathrm{C}}=1 \\text { (constant) }\u003cbr/>\\]\u003c/p> \u003cp>Or, \\([\\mathrm{A}]=[\\mathrm{T}]\\) and \\([\\mathrm{G}]=[\\mathrm{C}]\\)\u003cbr/>Adenine \\([\\mathrm{A}]=30 \\%\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mathrm{A}+\\mathrm{T}=100-[\\mathrm{G}+\\mathrm{C}] \\Rightarrow 30+30=100-[2 \\mathrm{G}] \\\\\u003cbr/>&amp; \\Rightarrow 2 \\mathrm{G}=100-60 \\Rightarrow \\mathrm{G}=20\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Thus, \\([\\mathrm{A}]=[\\mathrm{T}]=30 \\%\\)\u003cbr/>and, \\([\\mathrm{G}]=[\\mathrm{C}]=20 \\%\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to Chargaff's rule, for a dsDNA,\u003cbr/>\\[\u003cbr/>\\frac{\\mathrm{A}+\\mathrm{T}}{\\mathrm{G}+\\mathrm{C}}=1 \\text { (constant) }\u003cbr/>\\]\u003c/p> \u003cp>Or, \\([\\mathrm{A}]=[\\mathrm{T}]\\) and \\([\\mathrm{G}]=[\\mathrm{C}]\\)\u003cbr/>Adenine \\([\\mathrm{A}]=30 \\%\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\mathrm{A}+\\mathrm{T}=100-[\\mathrm{G}+\\mathrm{C}] \\Rightarrow 30+30=100-[2 \\mathrm{G}] \\\\& \\Rightarrow 2 \\mathrm{G}=100-60 \\Rightarrow \\mathrm{G}=20\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Thus, \\([\\mathrm{A}]=[\\mathrm{T}]=30 \\%\\)\u003cbr/>and, \\([\\mathrm{G}]=[\\mathrm{C}]=20 \\%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the role of RNA ploymerase III in the process of transcription in eukaryotes? </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Transcribes tRNA, 5s rRNA and sn RNA</p></span></div><div class="option"><span class="key">b</span><span><p>Transcribes precursor of mRNA</p></span></div><div class="option"><span class="key">c</span><span><p>Transcribes only snRNAs </p></span></div><div class="option"><span class="key">d</span><span><p>Transcribes rRNAs (28S, 18S and 5.8S) </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,7 +765,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>RNA polymerase III is responsible for transcription of tRNA, 5srRNA and snRNA.\u003c/p> \u003cp>RNA polymerase II is responsible for transcription of mRNA precursor, the heterogenous nuclear RNA (hnRNA).\u003c/p> \u003cp>RNA polymerase I is responsible for transcription of 28S, 18S and 5.8S rRNA. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which scientist conducted an experiment with \({ }^{32} \mathrm{P}\) and \({ }^{35} \mathrm{~S}\) labelled phages for demonstrating that DNA is the genetic material?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>James D. Watson and F.H.C. Crick</p></span></div><div class="option"><span class="key">b</span><span><p>A. D Hershey and M.J. Chase</p></span></div><div class="option"><span class="key">c</span><span><p>F. Griffith</p></span></div><div class="option"><span class="key">d</span><span><p>O.T. Avery, C.M. MacLeod and M. McCarty</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -773,7 +777,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>A. D Hershey and M.J. Chase\u003c/p> \u003cp>The scientists who used \\({ }^{32} \\mathrm{P}\\) and \\({ }^{35} \\mathrm{~S}\\) labelled phages to demonstrate that DNA is the genetic material were Alfred Hershey and Martha Chase. Their experiment conclusively showed that DNA, not protein, is the molecule of inheritance.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which is the “Only enzyme” that has “Capability” to catalyse Initiation, Elongation and Termination in the process of transcription in prokaryotes ? </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>DNA dependent RNA polymerase </p></span></div><div class="option"><span class="key">b</span><span><p>DNA Ligase </p></span></div><div class="option"><span class="key">c</span><span><p>DNase</p></span></div><div class="option"><span class="key">d</span><span><p>DNA dependent DNA polymerase </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -785,7 +789,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>In prokaryotes, single DNA-dependent RNA polymerase catalyses initiation, elongation and termination in the process of transcription.\u003c/li> \u003cli>DNA ligase facilitates the joining of the fragments of DNA.\u003c/li> \u003cli>DNase is an endonuclease enzyme which catalyses the eakdown of single- or double stranded DNA.\u003c/li> \u003cli>DNA dependent RNA polymerase cayalyses polymerization of DNA during replication of DNA. Capping of methyl guanosine triphosphate takes place at 5′ end of hnRNA. \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is the sequence on corresponding coding strand, if the sequence on mRNA formed is as follows<br/>5' AUCGAUCGAUCGAUCGAUCGAUCGAUCG 3'?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3' UAGCUAGCUAGCUAGCUAGCUAGCUAGC 5'</p></span></div><div class="option"><span class="key">b</span><span><p>5' ATCGATCGATCGATCGATCGATCGATCG 3'</p></span></div><div class="option"><span class="key">c</span><span><p>3' ATCGATCGATCGATCGATCGATCGATCG 5'</p></span></div><div class="option"><span class="key">d</span><span><p>5' UAGCUAGCUAGCUAGCUAGCUAGC UAGC 3'</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -797,7 +801,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>To find the sequence on the \u003cstrong>coding strand\u003c/strong>, you need to remember that the \u003cstrong>coding strand\u003c/strong> of DNA is identical to the \u003cstrong>mRNA\u003c/strong> sequence, except for the replacement of \u003cstrong>uracil (U)\u003c/strong> with \u003cstrong>thymine (T)\u003c/strong>.\u003c/p> \u003cp>Given the mRNA sequence:\u003cbr/>\u003cstrong>5' AUCGAUCGAUCGAUCGAUCGAUCGAUCG 3'\u003c/strong>\u003c/p> \u003cp>The corresponding \u003cstrong>coding strand\u003c/strong> of DNA will be:\u003cbr/>\u003cstrong>5' ATCGATCGATCGATCGATCGATCGATCG 3'\u003c/strong>, which is identical to the mRNA sequence but with \u003cstrong>U replaced by T\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the distance between two consecutive base pairs is \(0.34 \mathrm{~nm}\) and the total number of base pairs of a DNA double helix in a typical mammalian cell is \(6.6 \times 10^{9} \mathrm{bp}\), then the length of the DNA is approximately:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2.5 meters</p></span></div><div class="option"><span class="key">b</span><span><p>2.2 meters</p></span></div><div class="option"><span class="key">c</span><span><p>2.7 meters</p></span></div><div class="option"><span class="key">d</span><span><p>2.0 meters</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -809,7 +813,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given that,\u003c/p> \u003cp>Distance between two consecutive base pairs \\(=0.34 \\mathrm{~nm}=\\) \\(0.34 \\times 10^{-9} \\mathrm{~m}\\)\u003cbr/>Total number of base pairs \\(=6.6 \\times 10^{\\circ} \\mathrm{bp}\\)\u003cbr/>Length of DNA \\(=\\) Distance between two consecutive base pairs \\(x\\) Total number of base pairs\u003cbr/>\\[\u003cbr/>=\\left[0.34 \\times 10^{-9}\\right] \\mathrm{m} \\times 6.6 \\times 10^9 \\mathrm{bp}=2.2 \\mathrm{~m}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><em>E.coli</em> has only \( 4.6 \times 10^{6} \) base pairs and completes the process of replication within 18 minutes, then the average rate of polymerisation is aproximately</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 2000 \mathrm{bp} / \mathrm{s} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 3000 \mathrm{bp} / \mathrm{s} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 4000 \mathrm{bp} / \mathrm{s} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 1000 \mathrm{bp} / \mathrm{s} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -821,7 +825,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cem>E. coli\u003c/em> has a circular DNA of approximately \u003cstrong>4.6 × 10⁶ base pairs\u003c/strong>, and it completes \u003cstrong>replication in about 18 minutes\u003c/strong> (which is \u003cstrong>1080 seconds\u003c/strong>). Since replication is \u003cstrong>bidirectional\u003c/strong>, the total number of base pairs is divided between \u003cstrong>two replication forks\u003c/strong>.\u003c/p> \u003cp>So, total base pairs per fork = 4.6 × 10⁶ / 2 = 2.3 × 10⁶ bp\u003cbr/>Now, rate of polymerisation per fork = 2.3 × 10⁶ bp / 1080 s ≈ \u003cstrong>2130 bp/s\u003c/strong>, which is approximately \u003cstrong>2000 bp/s\u003c/strong>.\u003c/p> \u003cp>Therefore, the \u003cstrong>average rate of polymerisation is about 2000 x 2 strands = 4000 base pairs per second\u003c/strong>, making \u003cstrong>Option c\u003c/strong> the correct answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><em>E. coli</em> has only \(4.6 \times 10^6\) base pairs and completes the process of replication within 18 minutes; then the average rate of polymerisation is approximately-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3000 base pairs/second</p></span></div><div class="option"><span class="key">b</span><span><p>4000 base pairs/second</p></span></div><div class="option"><span class="key">c</span><span><p>1000 base pairs/second</p></span></div><div class="option"><span class="key">d</span><span><p>2000 base pairs/second</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -833,7 +837,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cem>E. coli\u003c/em> that has only \\(4.6 \\times 10^6 \\mathrm{bp}\\) completes the process of replication within 18 minutes; that means the average rate of polymerisation has to be approximately 2000 bp per second.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Adenine pairs with thymine through one H-bond</p></span></div><div class="option"><span class="key">b</span><span><p>Adenine pairs with thymine through three H-bonds.</p></span></div><div class="option"><span class="key">c</span><span><p>Adenine does not pair with thymine</p></span></div><div class="option"><span class="key">d</span><span><p>Adenine pairs with thymine through two H-bonds</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -845,7 +849,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Adenine forms complementary pair with thymine by forming two hydrogen bonds.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following RNAs is not required for the synthesis of protein?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>tRNA</p></span></div><div class="option"><span class="key">b</span><span><p>rRNA</p></span></div><div class="option"><span class="key">c</span><span><p>siRNA</p></span></div><div class="option"><span class="key">d</span><span><p>mRNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -857,7 +861,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>tRNA (transfer RNA) is required for bringing amino acids to the ribosome during translation.\u003c/li> \u003cli>rRNA (ribosomal RNA) is a component of the ribosome, which is essential for protein synthesis.\u003c/li> \u003cli>mRNA (messenger RNA) carries the genetic code from the DNA to the ribosome for protein synthesis.\u003c/li> \u003c/ul> \u003cp>siRNA (small interfering RNA), however, is involved in RNA interference (RNAi), which regulates gene expression by degrading mRNA or inhibiting translation, but it is not directly involved in protein synthesis.\u003c/p> \u003cp>Thus, the correct answer is C) siRNA.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><em>E.coli</em> has only \( 4.6 \times 10^{6} \) base pairs and completes the process of replication within 18 minutes, then the average rate of polymerisation is approximately</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 2000 \mathrm{bp} / \mathrm{s} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 3000 \mathrm{bp} / \mathrm{s} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 4000 \mathrm{bp} / \mathrm{s} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 1000 \mathrm{bp} / \mathrm{s} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -869,7 +873,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cem>E. coli\u003c/em> has a circular DNA of approximately \u003cstrong>4.6 × 10⁶ base pairs\u003c/strong>, and it completes \u003cstrong>replication in about 18 minutes\u003c/strong> (which is \u003cstrong>1080 seconds\u003c/strong>). Since replication is \u003cstrong>bidirectional\u003c/strong>, the total number of base pairs is divided between \u003cstrong>two replication forks\u003c/strong>.\u003c/p> \u003cp>So, total base pairs per fork = 4.6 × 10⁶ / 2 = 2.3 × 10⁶ bp\u003cbr/>Now, rate of polymerisation per fork = 2.3 × 10⁶ bp / 1080 s ≈ \u003cstrong>2130 bp/s\u003c/strong>, which is approximately \u003cstrong>2000 bp/s\u003c/strong>.\u003c/p> \u003cp>Therefore, the \u003cstrong>average rate of polymerisation is about 2000 x 2 strands = 4000 base pairs per second\u003c/strong>, making \u003cstrong>Option c\u003c/strong> the correct answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If Adenine makes 30% of the DNA molecule, what will be the percentage of Thymine, Guanine and Cytosine in it? </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>T : 20; G : 20; C : 30 </p></span></div><div class="option"><span class="key">b</span><span><p>T : 30; G : 20; C : 20</p></span></div><div class="option"><span class="key">c</span><span><p>T : 20; G : 25; C : 25 </p></span></div><div class="option"><span class="key">d</span><span><p>T : 20; G : 30; C : 20 </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -878,10 +882,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to Chargaff’s rule, for a dsDNA, \u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\frac{A+T}{G+C}=1(\\text { constant }) \\\\ &amp; \\text { Or, }[A]=[T] \\text { and }[\\mathrm{G}]=[\\mathrm{C}] \\\\ &amp; \\text { Adenine }[\\mathrm{A}]=30 \\% \\\\ &amp; \\mathrm{~A}+\\mathrm{T}=100-[\\mathrm{G}+\\mathrm{C}] \\Rightarrow 30+30=100-[2 \\mathrm{G}] \\\\ &amp; \\Rightarrow 2 \\mathrm{G}=100-60 \\Rightarrow \\mathrm{G}=20 \\\\ &amp; \\text { Thus, }[\\mathrm{A}]=[\\mathrm{T}]=30 \\% \\\\ &amp; \\text { and, }[\\mathrm{G}]=[\\mathrm{C}]=20 \\%\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to Chargaff’s rule, for a dsDNA, \u003c/p> \u003cp>\\(\\begin{aligned} & \\frac{A+T}{G+C}=1(\\text { constant }) \\\\ & \\text { Or, }[A]=[T] \\text { and }[\\mathrm{G}]=[\\mathrm{C}] \\\\ & \\text { Adenine }[\\mathrm{A}]=30 \\% \\\\ & \\mathrm{~A}+\\mathrm{T}=100-[\\mathrm{G}+\\mathrm{C}] \\Rightarrow 30+30=100-[2 \\mathrm{G}] \\\\ & \\Rightarrow 2 \\mathrm{G}=100-60 \\Rightarrow \\mathrm{G}=20 \\\\ & \\text { Thus, }[\\mathrm{A}]=[\\mathrm{T}]=30 \\% \\\\ & \\text { and, }[\\mathrm{G}]=[\\mathrm{C}]=20 \\%\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct statement</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>RNA polymerase binds with Rho factor to terminate the process of transcription in bacteria</p></span></div><div class="option"><span class="key">b</span><span><p>The coding strand in transcription unit is copied to an mRNA. </p></span></div><div class="option"><span class="key">c</span><span><p>Split gene arrangement is characteristic of prokaryotes. </p></span></div><div class="option"><span class="key">d</span><span><p>In capping, methyl guanosine triphosphate is added to the 3′ end of hnRNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -893,7 +897,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The RNA polymerase binds with sigma factor (σ) for initiation and with rho factor (ρ) for termination of transcription.\u003c/p> \u003cp>Template strand (non-coding strand) is copied to mRNA.\u003c/p> \u003cp>In eukaryotes, the monocistronic structural genes have interrupted coding sequences (exons) thus the genes in eukaryotes are split\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I : RNA mutates at a faster rate.<br/>Statement II : Viruses having RNA genome and shorter life span mutate and evolve faster.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false. </p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I false but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -905,7 +909,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cstrong>Explanation:\u003c/strong> \u003cstrong>Statement I: RNA mutates at a faster rate → True\u003c/strong> \u003cul> \u003cli>\u003cstrong>RNA is chemically less stable than DNA\u003c/strong> due to the presence of an \u003cstrong>additional hydroxyl (-OH) group at the 2' carbon of ribose\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>RNA-dependent RNA polymerase (used in RNA viruses) lacks proofreading ability\u003c/strong>, leading to a \u003cstrong>higher mutation rate\u003c/strong> compared to DNA replication.\u003c/li> \u003c/ul> \u003cstrong>Statement II: Viruses having RNA genome and shorter life span mutate and evolve faster → True\u003c/strong> \u003cul> \u003cli>\u003cstrong>RNA viruses (e.g., HIV, Influenza, SARS-CoV-2, etc.)\u003c/strong> have a \u003cstrong>shorter replication cycle\u003c/strong> and lack effective proofreading mechanisms.\u003c/li> \u003cli>This leads to \u003cstrong>rapid mutations\u003c/strong>, increasing their \u003cstrong>evolutionary adaptability\u003c/strong>, making them harder to control with vaccines or treatments.\u003c/li> \u003c/ul> \u003cstrong>Why other options are incorrect?\u003c/strong> \u003cul> \u003cli>\u003cstrong>A (Both false):\u003c/strong> Incorrect, as both statements are true.\u003c/li> \u003cli>\u003cstrong>B (I true, II false):\u003c/strong> Incorrect, as \u003cstrong>RNA viruses do mutate and evolve faster\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>C (I false, II true):\u003c/strong> Incorrect, because \u003cstrong>RNA indeed mutates at a faster rate\u003c/strong>.\u003c/li> \u003c/ul> \u003cstrong>Final Conclusion:\u003c/strong> \u003cp>Since \u003cstrong>both statements are scientifically correct\u003c/strong>, the correct answer is:\u003c/p> \u003cstrong>D (Both Statement I and Statement II are true).\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statement about histones is wrong?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The \(\mathrm{pH}\) of histones is slightly acidic.</p></span></div><div class="option"><span class="key">b</span><span><p>Histones are rich in amino acids - Lysine and Arginine.</p></span></div><div class="option"><span class="key">c</span><span><p>Histones carry positive charge in the side chain.</p></span></div><div class="option"><span class="key">d</span><span><p>Histones are organized to form a unit of 8 molecules.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -917,7 +921,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Eukaryotes have a set of positively charged, basic proteins called histones. Histones are rich in the basic amino acids namely lysine and arginine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement I: </strong>RNA being unstable, mutate at a faster rate.<br/><strong>Statement II: </strong>RNA can directly code for synthesis of proteins hence can easily express the characters.<br/>In the light of the above statements, choose the <strong>correct </strong>answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -929,7 +933,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Both Statement-I and Statement-II are correct.\u003c/p> \u003cp>RNA being unstable tends to mutate quickly. RNA's ability to directly code for proteins allows for rapid expression of genetic information.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statement about histones is <strong>wrong?</strong> </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The pH of histones is slightly acidic. </p></span></div><div class="option"><span class="key">b</span><span><p>Histones are rich in amino acids lysine and arginine.</p></span></div><div class="option"><span class="key">c</span><span><p>Histones carry positive charge in the side chain.</p></span></div><div class="option"><span class="key">d</span><span><p>Histones are organized to form a unit of 8 molecules.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -941,7 +945,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Eukaryotes have a set of positively charged, basic proteins called histones. Histones are rich in the basic amino acids namely lysine and arginine. Histones form an octamer (H2A, H2B, H3, H4 × 2) core around which DNA is wrapped to form nucleosomes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the polynucleotide chain of DNA, a nitrogenous base is linked to the \(-\mathrm{OH}\) of:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3^{\prime} \mathrm{C}\) pentose sugar</p></span></div><div class="option"><span class="key">b</span><span><p>\(5^{\prime} \mathrm{C}\) pentose sugar</p></span></div><div class="option"><span class="key">c</span><span><p>\(1^{\prime} \mathrm{C}\) pentose sugar</p></span></div><div class="option"><span class="key">d</span><span><p>\(2^{\prime} \mathrm{C}\) pentose sugar</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -953,7 +957,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>A nitrogenous base is linked to the pentose sugar through a N-glycosidic linkage to form a nucleoside. The nitrogenous bases are purines or pyrimidines. Nitrogen base is attached to the \\(\\mathrm{C}-1\\) of the pentose sugar.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I : In prokaryotes, the positively charged DNA is held with some negatively charged proteins in a region called nucleoid.<br/>Statement II : In eukaryotes, the negatively charged DNA is wrapped around the positively charged histone octamer to form nucleosome.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is correct but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -965,7 +969,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In prokaryotes, such as, \u003cem>E. coli\u003c/em>, though they do not have a defined nucleus, the DNA is not scattered throughout the cell. DNA (being negatively charged) is held with some proteins (that have positive charges) in a region termed as ‘nucleoid’. The DNA in nucleoid is organised in large loops held by proteins.\u003cbr/>In eukaryotes, this organisation is much more complex. There is a set of positively charged, basic proteins called histones. A protein acquires charge depending upon the abundance of amino acids residues with charged side chains. Histones are rich in the basic amino acid residues lysine and arginine. Both the amino acid residues carry positive charges in their side chains. Histones are organised to form a unit of eight molecules called histone octamer. The negatively charged DNA is wrapped around the positively charged histone octamer to form a structure called nucleosome.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>How many different proteins does the ribosome consist of?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>60</p></span></div><div class="option"><span class="key">b</span><span><p>40</p></span></div><div class="option"><span class="key">c</span><span><p>20</p></span></div><div class="option"><span class="key">d</span><span><p>80</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -977,7 +981,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The \u003cstrong>ribosome\u003c/strong> is composed of approximately \u003cstrong>80 different proteins\u003c/strong>, along with \u003cstrong>rRNA\u003c/strong>. These proteins are part of the \u003cstrong>large\u003c/strong> and \u003cstrong>small subunits\u003c/strong> of the ribosome, which work together during protein synthesis (translation).\u003c/p> \u003cul> \u003cli>The \u003cstrong>small subunit\u003c/strong> contains about \u003cstrong>30 proteins\u003c/strong>, while the \u003cstrong>large subunit\u003c/strong> contains around \u003cstrong>50 proteins\u003c/strong>, contributing to the total of approximately \u003cstrong>80 proteins\u003c/strong>.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The first phase of translation is:</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Recognition of DNA molecule </p></span></div><div class="option"><span class="key">b</span><span><p>Aminoacylation of tRNA </p></span></div><div class="option"><span class="key">c</span><span><p>Recognition of an anti-codon </p></span></div><div class="option"><span class="key">d</span><span><p>Binding of mRNA to ribosome </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -989,7 +993,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In the first phase of translation, amino acids are activated in the presence of ATP and linked to their cognate tRNA – a process commonly called as charging of tRNA or aminoacylation of tRNA. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the role of RNA polymerase III in the process of transcription in Eukaryotes?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Transcription of tRNA, 5 srRNA and snRNA</p></span></div><div class="option"><span class="key">b</span><span><p>Transcription of precursor of mRNA</p></span></div><div class="option"><span class="key">c</span><span><p>Transcription of only snRNAs</p></span></div><div class="option"><span class="key">d</span><span><p>Transcription of rRNAs (28S, 18S and 5.8S )</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1001,7 +1005,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>\u003cstrong>RNA polymerase III\u003c/strong> in eukaryotes is responsible for transcribing \u003cstrong>tRNA\u003c/strong>, \u003cstrong>5S rRNA\u003c/strong>, and \u003cstrong>small nuclear RNAs (snRNA)\u003c/strong>. It does not transcribe precursor mRNA or rRNA subunits like 28S, 18S, and 5.8S, which are transcribed by \u003cstrong>RNA polymerase I\u003c/strong>.\u003c/p> \u003cul> \u003cli>\u003cstrong>RNA polymerase II\u003c/strong> is responsible for transcribing \u003cstrong>precursor mRNA\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>RNA polymerase I\u003c/strong> transcribes the major rRNAs (28S, 18S, and 5.8S).\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the role of RNA polymerase III in the process of transcription in eukaryotes? </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Transcribes tRNA, 5s rRNA and sn RNA</p></span></div><div class="option"><span class="key">b</span><span><p>Transcribes precursor of mRNA</p></span></div><div class="option"><span class="key">c</span><span><p>Transcribes only snRNAs </p></span></div><div class="option"><span class="key">d</span><span><p>Transcribes rRNAs (28S, 18S and 5.8S) </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1013,7 +1017,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>RNA polymerase III is responsible for transcription of tRNA, 5srRNA and snRNA.\u003c/p> \u003cp>RNA polymerase II is responsible for transcription of mRNA precursor, the heterogenous nuclear RNA (hnRNA).\u003c/p> \u003cp>RNA polymerase I is responsible for transcription of 28S, 18S and 5.8S rRNA. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement I: In prokaryotes, the positively charged DNA is held with some negatively charged proteins in a region called nucleoid.<br/>Statement II: In eukaryotes, the negatively charged DNA is wrapped around the positively charged histone octamer to form nucleosome.<br/>In the light of the above statements, choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is incorrect but Statement II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement \(\mathrm{I}\) is correct but Statement II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1025,7 +1029,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In prokaryotes, such as, \u003cem>E. coli\u003c/em>, though they do not have a defined nucleus, the DNA is not scattered throughout the cell. DNA (being negatively charged) is held with some proteins (that have positive charges) in a region termed as 'nucleoid'. The DNA in nucleoid is organised in large loops held by proteins.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I: </strong>RNA mutates at a faster rate.</p> <p><strong>Statement II: </strong>Viruses having RNA genome and shorter life span mutate and evolve faster.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1037,7 +1041,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>RNA mutates at a faster rate because it is unstable. Therefore, viruses having RNA genome and shorter life span allow them to mutate and evolve at faster rates.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the distance between two consecutive base pairs is \( 0.34 \mathrm{~nm} \) and the total number of base pairs of DNA double helix in a typical mammalian cell is \( 6.6 \times \) \( 10^{9} \mathrm{~bp} \). Then the length of the DNA is approximately</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 2.5 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 2.2 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2.7 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 2.0 \mathrm{~m} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1049,7 +1053,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The distance between any two base pairs is 0.34 nm.\u003c/p> \u003cp>That is,\u003c/p> \u003cp>\\(0.34\\mathrm{nm}=0.34\\times {10}^{-9}\\mathrm{m}\\)\u003c/p> \u003cp>And, \\(6.6\\times {10}^{9}\\mathrm{bp}\\) make up the whole DNA double helix in a normal mammalian cell.\u003c/p> \u003cp>The distance between two consecutive base pairs multiplied by the total number of base pairs is the length of the DNA.\u003c/p> \u003cp>Thus, the length is,\u003c/p> \u003cp>\\(\\left[0.34\\times {10}^{-9}\\right]\\mathrm{m}\\times 6.6\\times {10}^{9}\\mathrm{bp}=2.2\\mathrm{m}\\)\u003c/p> \u003cp>The length of the DNA is approximately 2.2 m.\u003c/p> \u003cp>Hence, option (B) is correct, i.e., 2.2 m.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q84" data-gated="1">
-      <div class="qnum">Q84</div>
+      <div class="qhead"><div class="qnum">Q84</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><em>E. Coli</em> has only \(4.6 \times 10^6\) base pairs and completes the process of replication within 18 minutes; then the average rate of polymerisation is approximately:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3000 base pairs/second.</p></span></div><div class="option"><span class="key">b</span><span><p>4000 base pairs/second.</p></span></div><div class="option"><span class="key">c</span><span><p>1000 base pairs/second.</p></span></div><div class="option"><span class="key">d</span><span><p>2000 base pairs/second.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

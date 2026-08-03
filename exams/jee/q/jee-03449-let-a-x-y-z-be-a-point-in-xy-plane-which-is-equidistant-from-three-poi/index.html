@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(A(x, y, z)\\) be a point in \\(xy-\\)plane, which is equidistant from three points \\((0, 3, 2), (2, 0, 3)\\) and \\((0, 0, 1).\\) Let \\(B = (1, 4, \u20131)\\) and \\(C = (2, 0, \u20132).\\) Then among the statements \\((S_1) : \\Delta ABC\\) is an isosceles right angled triangle and \\((S_2) :\\) the area of \\(\u2206\\mathrm{ABC}\\text{ is }\\frac{9\\sqrt{2}}{2}.\\) [JEE Main 2025, 28 Jan (Shift 1)]","text":"Let \\(A(x, y, z)\\) be a point in \\(xy-\\)plane, which is equidistant from three points \\((0, 3, 2), (2, 0, 3)\\) and \\((0, 0, 1).\\) Let \\(B = (1, 4, \u20131)\\) and \\(C = (2, 0, \u20132).\\) Then among the statements \\((S_1) : \\Delta ABC\\) is an isosceles right angled triangle and \\((S_2) :\\) the area of \\(\u2206\\mathrm{ABC}\\text{ is }\\frac{9\\sqrt{2}}{2}.\\) [JEE Main 2025, 28 Jan (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Options are free to see. Unlock the correct answer and full explanation with PYQ Pass.","url":"https://yespyq.com/exams/jee/q/jee-03449-let-a-x-y-z-be-a-point-in-xy-plane-which-is-equidistant-from-three-poi/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let \(A(x, y, z)\) be a point in \(xy-\)plane, which is equidistant from three points \((0, 3, 2), (2, 0, 3)\) and \((0,…</h1>
     <div class="qblock" id="q1" data-gated="1">
-      <div class="qnum">Q1</div>
+      <div class="qhead"><div class="qnum">Q1</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A(x, y, z)\) be a point in \(xy-\)plane, which is equidistant from three points \((0, 3, 2), (2, 0, 3)\) and \((0, 0, 1).\)<br/>Let \(B = (1, 4, –1)\) and \(C = (2, 0, –2).\) Then among the statements</p> <p>\((S_1) : \Delta ABC\) is an isosceles right angled triangle and<br/>\((S_2) :\) the area of \(∆\mathrm{ABC}\text{ is }\frac{9\sqrt{2}}{2}.\)</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>both are true</p></span></div><div class="option"><span class="key">b</span><span><p>only \((S_1)\) is true</p></span></div><div class="option"><span class="key">c</span><span><p>only \((S_2)\) is true</p></span></div><div class="option"><span class="key">d</span><span><p>both are false </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -87,7 +91,7 @@
       <div class="explain hidden" data-exp></div>
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, Point A is equidistant from \\(\\mathrm{D}(0,3,2), \\mathrm{E}(2,0,3)\\) and \\(\\mathrm{F}(0,0,1)\\)\u003cbr/>Let point \\(\\mathrm{A}(x, y, 0)\\)\u003cbr/>now, \\(A D=A E=A F\\)\u003cbr/>Take \\(A D=A E\\)\u003cbr/>on squaring both sides, we get\u003c/p> \u003cp>\\( A D^2=A E^2 \\)\u003cbr/>\\( x^2+(y-3)^2+(0-2)^2= (x-2)^2+y^2+(0-3)^2 \\ldots (i)\\)\u003c/p> \u003cp>Take, \\(A E=A F\\)\u003cbr/>On squaring both sides, we get\u003c/p> \u003cp>\\( A E^2=A F^2 \\)\u003cbr/>\\( (x-2)^2+y^2+(0-3)^2= x^2+y^2+(0-1)^2 \\ldots (ii)\\)\u003c/p> \u003cp>On solving, equation (i) &amp; (ii) we get\u003c/p> \u003cp>\\(x=3\\) &amp; \\(y=2\\)\u003c/p> \u003cp>Now, point \\(A (3,2,0), \\mathrm{B}(1,4,-1)\\) and \\( \\mathrm{C}(2,0,-2)\\)\u003c/p> \u003cp>length of \\(\\mathrm{AB}=\\sqrt{4+4+1}=3\\)\u003cbr/>length of \\(\\mathrm{AC}=\\sqrt{4+4+1}=3\\)\u003c/p> \u003cp> length of \\( B C=\\sqrt{1+16+1}=\\sqrt{18}\\)\u003c/p> \u003cp>Here \\(\\mathrm{AB}=\\mathrm{AC}\\)\u003c/p> \u003cp>So, \\(\\triangle \\mathrm{ABC}\\) is an isosceles triangle.\u003cbr/>Also these lengths satisfies the pythagoras theorem, so it is right angled triangle also.\u003cbr/>Now, Area of triangle \\(=\\frac{1}{2} \\times\\) base × height\u003c/p> \u003cp>\\(=\\frac{1}{2} \\times 3 \\times 3=\\frac{9}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
-      <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-03374-let-vec-a-2-overset-i-overset-j-overset-k-vec-b-overset-i-3-overset-j/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-03480-let-overset-u-and-overset-v-be-unit-vectors-inclined-at-an-acute-angle/">Next question →</a></div>
+      <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-03374-let-vec-a-2-hat-i-hat-j-hat-k-vec-b-hat-i-3-hat-j-hat-k-and-vec-c-2-ha/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-03480-let-hat-u-and-hat-v-be-unit-vectors-inclined-at-an-acute-angle-such-th/">Next question →</a></div>
       <div class="cta-box">
         <h3>Practice more JEE Maths PYQs</h3>
         <p>See every question on Vector Algebra, or browse the full JEE question bank.</p>

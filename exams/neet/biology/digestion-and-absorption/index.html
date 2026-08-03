@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Digestion and Absorption","item":"https://yespyq.com/exams/neet/biology/digestion-and-absorption/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Digestion and Absorption</h1>
       <p>10 NEET Biology previous year questions on <b>Digestion and Absorption</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following guards the opening of hepatopancreatic duct into the duodenum?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Ileocaecal valve</span></div><div class="option"><span class="key">b</span><span>Pyloric sphincter</span></div><div class="option correct"><span class="key">c</span><span>Sphincter of oddi</span></div><div class="option"><span class="key">d</span><span>Semilunar valve</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Succus entericus is referred to as:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Pancreatic juice</p></span></div><div class="option"><span class="key">b</span><span><p>Intestinal juice</p></span></div><div class="option"><span class="key">c</span><span><p>Gastric juice</p></span></div><div class="option"><span class="key">d</span><span><p>Chyme</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Succus entericus is the term used for intestinal juice. It is secreted by the intestinal glands and contains a variety of enzymes like disaccharidases, dipeptidases, lipases, and nucleosidases, which aid in the digestion of nutrients in the small intestine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The enzyme enterokinase helps in conversion of</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>caseinogen into casein</p></span></div><div class="option"><span class="key">b</span><span><p>pepsinogen into pepsin</p></span></div><div class="option"><span class="key">c</span><span><p>protein into polypeptides</p></span></div><div class="option"><span class="key">d</span><span><p>trypsinogen into trypsin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>Enterokinase is an enzyme secreted by the intestinal mucosa. It activates trypsinogen into trypsin, which then helps in the digestion of proteins by activating other proteolytic enzymes in the pancreatic juice.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The proteolytic enzyme rennin is found in :</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Pancreatic juice</p></span></div><div class="option"><span class="key">b</span><span><p>Intestinal juice</p></span></div><div class="option"><span class="key">c</span><span><p>Bile juice</p></span></div><div class="option"><span class="key">d</span><span><p>Gastric juice</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>Rennin is a proteolytic enzyme found in the gastric juice of infants. It helps in the digestion of milk proteins by curdling milk, making it easier for pepsin to act on it.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Once the undigested and unabsorbed substances enter the caecum, their backflow is prevented by -</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ileo - caecal valve</p></span></div><div class="option"><span class="key">b</span><span><p>Gastro - oesophageal sphincter</p></span></div><div class="option"><span class="key">c</span><span><p>Pyloric sphincter</p></span></div><div class="option"><span class="key">d</span><span><p>Sphincter of Oddi</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The ileocecal valve is a muscular sphincter located at the junction of the ileum (the last part of the small intestine) and the caecum (the first part of the large intestine). Its primary function is to prevent the backflow of digested material from the large intestine into the small intestine. This ensures that chyme (partially digested food) can move forward into the large intestine for further processing and absorption, but it cannot flow back. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Carrier ions like Na<sup>+</sup> facilitate the absorption of substances like</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>amino acids and glucose</p></span></div><div class="option"><span class="key">b</span><span><p>glucose and fatty acids</p></span></div><div class="option"><span class="key">c</span><span><p>fatty acids and glycerol</p></span></div><div class="option"><span class="key">d</span><span><p>fructose and some amino acids.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Fructose is absorbed into the blood through mucosa cells of intestine by the process called</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>active transport</p></span></div><div class="option"><span class="key">b</span><span><p>facilitated transport</p></span></div><div class="option"><span class="key">c</span><span><p>simple diffusion</p></span></div><div class="option"><span class="key">d</span><span><p>co-transport mechanism.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct Answer: B — Facilitated transport (Facilitated diffusion)\u003c/strong>\u003c/p> Explanation: \u003cp>\u003cstrong>Fructose\u003c/strong> absorption in the small intestine occurs by \u003cstrong>facilitated transport\u003c/strong>, not by active transport.\u003c/p> Mechanism: \u003cul> \u003cli> \u003cp>Fructose enters the intestinal mucosal (epithelial) cells through a \u003cstrong>specific carrier protein (GLUT-5)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>This process:\u003c/p> \u003cul> \u003cli> \u003cp>Does \u003cstrong>not require energy (ATP)\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>Occurs \u003cstrong>along the concentration gradient\u003c/strong>\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>From the mucosal cell, fructose enters the blood via \u003cstrong>GLUT-2\u003c/strong> transporter.\u003c/p> \u003c/li> \u003c/ul> Option-wise analysis: \u003cul> \u003cli> \u003cp>\u003cstrong>A. Active transport ❌\u003c/strong>\u003cbr/>→ Requires ATP; fructose absorption does not use energy.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B. Facilitated transport ✅\u003c/strong>\u003cbr/>→ Correct. Uses carrier proteins without energy.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Simple diffusion ❌\u003c/strong>\u003cbr/>→ Fructose is not lipid-soluble, so it cannot diffuse freely.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Co-transport mechanism ❌\u003c/strong>\u003cbr/>→ Co-transport (Na⁺-dependent) is used for \u003cstrong>glucose and amino acids\u003c/strong>, not fructose.\u003c/p> \u003c/li> \u003c/ul> ✔ Final Answer: \u003cstrong>B — Facilitated transport\u003c/strong> \u003cp>If you want, I can also give a \u003cstrong>pure Hindi explanation\u003c/strong> or a \u003cstrong>quick comparison table (glucose vs fructose absorption)\u003c/strong> for exam revision.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sphincter of oddi is present at:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ileo-caecal junction</p></span></div><div class="option"><span class="key">b</span><span><p>Junction of hepato-pancreatic duct and duodenum</p></span></div><div class="option"><span class="key">c</span><span><p>Gastro-oesophageal junction</p></span></div><div class="option"><span class="key">d</span><span><p>Junction of jejunum and duodenum</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The Sphincter of Oddi is located at the junction of the hepato-pancreatic duct and the duodenum. It regulates the flow of bile and pancreatic juice into the duodenum.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Intrinsic factor that helps in the absorption of vitamin \(B_{12}\) is secreted by</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Chief cells</p></span></div><div class="option"><span class="key">b</span><span><p>Goblet cells</p></span></div><div class="option"><span class="key">c</span><span><p>Hepatic Cells</p></span></div><div class="option"><span class="key">d</span><span><p>Oxyntic cells</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>Oxyntic cells, also known as parietal cells, are present in the gastric glands of the stomach. They secrete hydrochloric acid (HCl) and intrinsic factor, which is essential for the absorption of vitamin B₁₂ in the small intestine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The proteolytic enzyme rennin is found in :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Pancreatic juice</p></span></div><div class="option"><span class="key">b</span><span><p>Intestinal juice</p></span></div><div class="option"><span class="key">c</span><span><p>Bile juice</p></span></div><div class="option"><span class="key">d</span><span><p>Gastric juice</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let the coefficients of three consecutive terms in the binomial expansion of \\((1+2x{)}^{n}\\) be in the ratio 2: 5: 8. Then the coefficient of the term, which is in the middle of these three terms, is ._____","text":"Let the coefficients of three consecutive terms in the binomial expansion of \\((1+2x{)}^{n}\\) be in the ratio 2: 5: 8. Then the coefficient of the term, which is in the middle of these three terms, is ._____","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Options are free to see. Unlock the correct answer and full explanation with PYQ Pass.","url":"https://yespyq.com/exams/jee/q/jee-04037-let-the-coefficients-of-three-consecutive-terms-in-the-binomial-expans/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let the coefficients of three consecutive terms in the binomial expansion of \((1+2x{)}^{n}\) be in the ratio 2: 5: 8. T…</h1>
     <div class="qblock" id="q1" data-gated="1">
-      <div class="qnum">Q1</div>
+      <div class="qhead"><div class="qnum">Q1</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the coefficients of three consecutive terms in the binomial expansion of \((1+2x{)}^{n}\) be in the ratio 2: 5: 8. Then the coefficient of the term, which is in the middle of these three terms, is ._____</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1120</p></span></div><div class="option"><span class="key">b</span><span><p>4333</p></span></div><div class="option"><span class="key">c</span><span><p>2221</p></span></div><div class="option"><span class="key">d</span><span><p>1111</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -85,7 +89,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(t_{r+1}={ }^n C_r(2 x)^r\\)\u003c/p> \u003cp>Let \\(t_r, t_{r+1}, t_{r+2}\\) are in the ratio \\(2: 5: 8\\)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\because \\frac{t_r}{t_{r+1}}=\\frac{2}{5} \\\\ &amp; \\Rightarrow \\frac{{ }^n C_{r-1}(2)^{r-1}}{{ }^n C_r(2)^r}=\\frac{2}{5} \\\\ &amp; \\Rightarrow \\frac{\\frac{n !}{(r-1) !(n-r+1) !}}{\\frac{n !(2)}{r !(n-r) !}}=\\frac{2}{5} \\\\ &amp; \\Rightarrow \\frac{r}{n-r+1}=\\frac{4}{5} \\Rightarrow 5 r=4 n-4 r+4\\end{aligned}\\)\u003c/p> \u003cp>\\(\\Rightarrow 9 r=4(n+1)\\).....(i)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\because \\frac{t_{r+1}}{t_{r+2}}=\\frac{5}{8} \\\\ &amp; \\Rightarrow \\frac{{ }^n C_r(2)^r}{{ }^n C_{r+1}(2)^{r+1}}=\\frac{5}{8} \\\\ &amp; \\Rightarrow \\frac{\\frac{n !}{r !(n-r) !}}{\\frac{n !}{(r+1) !(n-r-1) !}}=\\frac{5}{4} \\Rightarrow \\frac{r+1}{n-r}=\\frac{5}{4}\\end{aligned}\\)\u003c/p> \u003cp>\\(\\Rightarrow 4 r+4=5 n-5 r \\Rightarrow 5 n-4=9 r\\).....(ii)\u003c/p> \u003cp>From equ (i) and equ (ii), we get\u003cbr/>\\(\u003cbr/>\\Rightarrow 4 n+4=5 n-4 \\Rightarrow n=8\u003cbr/>\\)\u003c/p> \u003cp>From equ (i) \\(r=4\\)\u003cbr/>So, coefficient of middle term is\u003cbr/>\\(\u003cbr/>{ }^8 C_4 2^4=16 \\times \\frac{8 \\times 7 \\times 6 \\times 5}{4 \\times 3 \\times 2 \\times 1}=16 \\times 70=1120\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(t_{r+1}={ }^n C_r(2 x)^r\\)\u003c/p> \u003cp>Let \\(t_r, t_{r+1}, t_{r+2}\\) are in the ratio \\(2: 5: 8\\)\u003c/p> \u003cp>\\(\\begin{aligned} & \\because \\frac{t_r}{t_{r+1}}=\\frac{2}{5} \\\\ & \\Rightarrow \\frac{{ }^n C_{r-1}(2)^{r-1}}{{ }^n C_r(2)^r}=\\frac{2}{5} \\\\ & \\Rightarrow \\frac{\\frac{n !}{(r-1) !(n-r+1) !}}{\\frac{n !(2)}{r !(n-r) !}}=\\frac{2}{5} \\\\ & \\Rightarrow \\frac{r}{n-r+1}=\\frac{4}{5} \\Rightarrow 5 r=4 n-4 r+4\\end{aligned}\\)\u003c/p> \u003cp>\\(\\Rightarrow 9 r=4(n+1)\\).....(i)\u003c/p> \u003cp>\\(\\begin{aligned} & \\because \\frac{t_{r+1}}{t_{r+2}}=\\frac{5}{8} \\\\ & \\Rightarrow \\frac{{ }^n C_r(2)^r}{{ }^n C_{r+1}(2)^{r+1}}=\\frac{5}{8} \\\\ & \\Rightarrow \\frac{\\frac{n !}{r !(n-r) !}}{\\frac{n !}{(r+1) !(n-r-1) !}}=\\frac{5}{4} \\Rightarrow \\frac{r+1}{n-r}=\\frac{5}{4}\\end{aligned}\\)\u003c/p> \u003cp>\\(\\Rightarrow 4 r+4=5 n-5 r \\Rightarrow 5 n-4=9 r\\).....(ii)\u003c/p> \u003cp>From equ (i) and equ (ii), we get\u003cbr/>\\(\u003cbr/>\\Rightarrow 4 n+4=5 n-4 \\Rightarrow n=8\u003cbr/>\\)\u003c/p> \u003cp>From equ (i) \\(r=4\\)\u003cbr/>So, coefficient of middle term is\u003cbr/>\\(\u003cbr/>{ }^8 C_4 2^4=16 \\times \\frac{8 \\times 7 \\times 6 \\times 5}{4 \\times 3 \\times 2 \\times 1}=16 \\times 70=1120\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-04027-let-the-number-22-2022-2022-22-leave-the-remainder-alpha-when-divided/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-04058-the-sum-of-the-coefficients-of-three-consecutive-terms-in-the-binomial/">Next question →</a></div>
       <div class="cta-box">

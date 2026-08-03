@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Redox Reactions","item":"https://yespyq.com/exams/board/chemistry/redox-reactions/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Redox Reactions</h1>
       <p>12 Board Chemistry previous year questions on <b>Redox Reactions</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The species which does not undergo disproportionation reaction is</p> <p>[JEE Main 2025, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\({{\mathrm{ClO}}_{4}}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{ClO}}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({{\mathrm{ClO}}_{2}}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({{\mathrm{ClO}}_{3}}^{-}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Chlorine undergoes disproportionation in alkaline medium as shown below </p> <p>\(\mathrm{a}{\mathrm{Cl}}_{2}(\mathrm{g})+\mathrm{b}{\mathrm{OH}}^{-}(\mathrm{aq})\to \mathrm{c}{\mathrm{ClO}}_{3}^{−}(\mathrm{aq})+\mathrm{d}{\mathrm{Cl}}^{-}(\mathrm{aq})+\mathrm{e}{\mathrm{H}}_{2}\mathrm{O}(\mathrm{l})\)</p> <p>The values of \(a, b, c\) and \(d\) in a balanced redox reaction are respectively </p> <p> </p> <p>[JEE Main 2024, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2, 4, 1 and 3</p></span></div><div class="option"><span class="key">b</span><span><p>3, 6, 1 and 5</p></span></div><div class="option"><span class="key">c</span><span><p>3, 4, 4 and 2</p></span></div><div class="option"><span class="key">d</span><span><p>2, 2, 1 and 3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>(2)\u003c/strong>\u003c/p> \u003cp>\u003cstrong>\\(3{\\mathrm{Cl}}_{2}+6{\\mathrm{OH}}^{−}\\to 5{\\mathrm{Cl}}^{−}+{\\mathrm{ClO}}_{3}^{−}+3{\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which reaction is <strong>NOT </strong>a redox reaction? <br/><br/></p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(BaC{l}_{2}+N{a}_{2}S{O}_{4}\to BaS{O}_{4}+2NaCl\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Zn+CuS{O}_{4}\to ZnS{O}_{4}+Cu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2KCl{O}_{3}+{I}_{2}\to 2KI{O}_{3}+C{l}_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({H}_{2}+C{l}_{2}\to 2HCl\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>BaCl₂ + Na₂SO₄ → BaSO₄ + 2NaCl is a double displacement reaction with no change in oxidation states, so it is not a redox reaction. In the other options, there is a clear change in oxidation numbers indicating redox processes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following does not show disproportionation reaction? (memory based jee mains shift-2 22/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{ClO}}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({{\mathrm{ClO}}_{2}}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{ClO}}_{3}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{ClO}}_{4}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({{\\mathrm{ClO}}_{4}}^{-}\\) → chlorine is in its highest oxidation state i.e., +7.\u003cbr/>Chlorine can exhibit a –1 to +7 oxidation state.\u003cbr/>The oxidation states of chlorine which can undergo disproportionation are : 0, +1, +3, and +5.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following cannot function as an oxidising agent?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\text{N}}^{3−}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\text{SO}}_{4}^{2−}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\text{BrO}}_{3}^{−}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\text{MnO}}_{4}^{−}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Oxidising agent wahi ban sakta hai jo khud reduce ho sake. N³⁻ me nitrogen ki oxidation state −3 hoti hai jo minimum hoti hai, aur ye aur reduce nahi ho sakta. Baaki ions (SO₄²⁻, BrO₃⁻, MnO₄⁻) me central atom ki high oxidation state hoti hai jo reduce ho sakti hai, isliye wo oxidising agent ho sakte hain.\u003c/p> \u003cp>Correct answer: N³⁻ cannot function as oxidising agent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the preparation of Mohr's salt solution (Ferrous ammonium sulphate), which of the following acid is added to prevent hydrolysis of \(F{e}^{2+}\) ion? </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>dilute sulphuric acid</p></span></div><div class="option"><span class="key">b</span><span><p>dilute hydrochloric acid</p></span></div><div class="option"><span class="key">c</span><span><p>concentrated sulphuric acid</p></span></div><div class="option"><span class="key">d</span><span><p>dilute nitric acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Mohr’s salt (ferrous ammonium sulphate) is commonly dissolved in slightly acidic solution (using dilute H₂SO₄) to prevent oxidation and hydrolysis of Fe²⁺ ions. The acidic medium suppresses Fe²⁺→Fe³⁺ conversion and formation of insoluble iron hydroxides, ensuring the stable, clear solution of Mohr’s salt.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following does not show disproportionation reaction? (memory based jee mains shift-2 22/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{ClO}}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({{\mathrm{ClO}}_{2}}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{ClO}}_{3}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{ClO}}_{4}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({{\\mathrm{ClO}}_{4}}^{-}\\) → chlorine is in its highest oxidation state i.e., +7.\u003cbr/>Chlorine can exhibit a –1 to +7 oxidation state.\u003cbr/>The oxidation states of chlorine which can undergo disproportionation are : 0, +1, +3, and +5.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Volume of M/8 \(KMn{O}_{4}\) solution required to react completely with 25.0 \(c{m}^{3}\) of M/4 \(FeS{O}_{4}\) in acidic medium is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8.0 mL</p></span></div><div class="option"><span class="key">b</span><span><p>5.0 mL</p></span></div><div class="option"><span class="key">c</span><span><p>15.0 mL</p></span></div><div class="option"><span class="key">d</span><span><p>10.0 mL</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The reaction is\u003c/p> \u003cp>\\({\\mathrm{MnO}}_{4}^{-}\\) + 5Fe\u003csup>2+\u003c/sup> + 8H\u003csup>+\u003c/sup> → Mn\u003csup>2+\u003c/sup> + 5Fe\u003csup>3+\u003c/sup> + 4H₂O.\u003c/p> \u003cp>Using N₁V₁ = N₂V₂,\u003c/p> \u003cp>\\(\\frac{1}{8}\\times 5{V}_{1}=\\frac{1}{4}\\times 25\\)\u003c/p> \u003cp>Solving, V₁ = 10 mL.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Thiosulphate reacts differently with iodine and bromine in the reaction given below:</p> <p>\(2{\text{S}}_{2}{{\text{O}}_{3}}^{2−}+{\text{I}}_{2}\to {\text{S}}_{4}{{\text{O}}_{6}}^{2−}+2{\text{I}}^{−}\)</p> <p>\({\text{S}}_{2}{{\text{O}}_{3}}^{2−}+5{\mathrm{Br}}_{2}+5{\text{H}}_{2}\text{O}\to 2{\mathrm{SO}}_{4}^{2−}+4{\mathrm{Br}}^{−}+10{\text{H}}^{+}\)</p> <p>Which of the following statement justifies the above dual behaviour of thiosulphate? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bromine undergoes oxidation and iodine undergoes reduction by iodine in these reactions</p></span></div><div class="option"><span class="key">b</span><span><p>Thiosulphate undergoes oxidation by bromine and reduction by iodine in these reaction</p></span></div><div class="option"><span class="key">c</span><span><p>Bromine is a stronger oxidant than iodine</p></span></div><div class="option"><span class="key">d</span><span><p>Bromine is a weaker oxidant than iodine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct explanation: Bromine is a stronger oxidising agent than iodine, isliye Br₂ thiosulphate ko oxidise karta hai jabki I₂ usse reduce hota hai. Isliye thiosulphate ka behaviour Br₂ aur I₂ ke saath alag hota hai.\u003c/p> \u003cp>Correct option: C – Bromine is a stronger oxidant than iodine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: In the oxalic acid vs \(KMn{O}_{4}\) (in the presence of dil \({H}_{2}S{O}_{4}\) ) titration the solution needs to be heated initially to \(60^\circ C\), but no heating is required in Ferrous ammonium sulphate (FAS) vs \(KMn{O}_{4}\) titration (in the presence of dil \({H}_{2}S{O}_{4}\) )</p> <p>Statement II: In oxalic acid vs \(KMn{O}_{4}\) titration, the initial formation of \(MnS{O}_{4}\) takes place at high temperature, which then acts as catalyst for further reaction. In the case of FAS vs \(KMn{O}_{4}\), heating oxidizes \(F{e}^{2+}\) into \(F{e}^{3+}\) by oxygen of air and error may be introduced in the experiment.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In the oxalic acid \\(\\left({H}_{2}{C}_{2}{O}_{4}\\right)\\) vs \\(KMn{O}_{4}\\) titration, the oxidation of oxalate \\(\\left({C}_{2}{{O}_{4}}^{2-}\\right)\\) to \\(C{O}_{2}\\) is slow at room temperature.\u003c/p> \u003cp>\\(5{C}_{2}{O}_{4}^{2-}+2Mn{O}_{4}^{-}+16{H}^{+}\\to 10C{O}_{2}+\\)\u003cbr/> \\(2M{n}^{2+}+8{H}_{2}O\\)\u003cbr/>Why heating is needed?\u003cbr/>- The initial formation of \\(M{n}^{2+}\\) from \\(KMn{O}_{4}\\) is slow at room temperature.\u003cbr/>- \\(M{n}^{2+}\\) formed acts as a catalyst, accelerating the rest of the reaction.\u003cbr/>- Hence, the solution is heated to around \\(60^\\circ C\\) to speed up the reaction.\u003cbr/>In \\(FAS\\left(F{e}^{2+}\\right)\\) vs \\(KMn{O}_{4}\\) titration, the reaction proceeds quickly at room temperature:\u003c/p> \u003cp>\\(5F{e}^{2+}+Mn{O}_{4}^{-}+8{H}^{+}\\to 5F{e}^{3+}+M{n}^{2+}+4{H}_{2}O\\)\u003c/p> \u003cp>\u003cbr/>Why no heating is needed?\u003cbr/>- The oxidation of \\(F{e}^{2+}\\) is already fast at room temperature.\u003cbr/>- Heating can cause \\(F{e}^{2+}\\) to be oxidized to \\(F{e}^{3+}\\) by air, leading to errors.\u003cbr/>Hence, both statements are true.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Chlorine undergoes disproportionation in alkaline medium as shown below:</p> <p>\({\mathrm{aCl}}_{2}(\mathrm{g})+{\mathrm{bOH}}^{−}(\mathrm{aq})\to {\mathrm{cClO}}^{−}(\mathrm{aq})+{\mathrm{dCl}}^{−}(\mathrm{aq})+{\mathrm{eH}}_{2}\mathrm{O}(\mathrm{l})\)</p> <p>The values of a, b, c and d in a balanced redox reaction are respectively:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1, 2, 1 and 1</p></span></div><div class="option"><span class="key">b</span><span><p>2, 2, 1 and 3</p></span></div><div class="option"><span class="key">c</span><span><p>3, 4, 4 and 2</p></span></div><div class="option"><span class="key">d</span><span><p>2, 4, 1 and 3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Balanced redox equation in alkaline medium:\u003c/p> \u003cp>Cl₂ + 2OH⁻ → ClO⁻ + Cl⁻ + H₂O\u003c/p> \u003cp>To balance:\u003c/p> \u003cp>Unbalanced form given in question:\u003c/p> \u003cp>aCl₂ + bOH⁻ → cClO⁻ + dCl⁻ + eH₂O\u003c/p> \u003cp>Balanced form:\u003c/p> \u003cp>a = 1, b = 2, c = 1, d = 1, e = 1\u003c/p> \u003cp>Hence, the correct option is: A (1, 2, 1, 1).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following reaction(s) is/are correct?</p> <p>(a) \(F{e}^{3+}+{I}^{-}⟶{I}_{2}+F{e}^{2+}\)<br/>(b) \(F{e}^{3+}+{I}^{-}⟶Fe{I}_{3}\)<br/>(c) \(F{e}^{2+}+{S}_{2}{O}_{8}^{2-}⟶Fe+2S{O}_{4}^{2-}\)<br/>(d) \(F{e}^{2+}+{S}_{2}{O}_{8}^{2-}⟶F{e}^{3+}+2S{O}_{4}^{2-}\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(a) only</p></span></div><div class="option"><span class="key">b</span><span><p>(b) and (c) only</p></span></div><div class="option"><span class="key">c</span><span><p>(a) and (d) only</p></span></div><div class="option"><span class="key">d</span><span><p>(b) and (d) only </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

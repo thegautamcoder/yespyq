@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Wave Optics","item":"https://yespyq.com/exams/neet/physics/wave-optics/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Wave Optics</h1>
       <p>23 NEET Physics previous year questions on <b>Wave Optics</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a Young's double-slit experiment, the screen is moved away from the plane of the slits. What will be its effect on the following? (i) Angular separation of the fringes. (ii) Fringe-width.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Both (i) and (ii) remain constant.</span></div><div class="option"><span class="key">b</span><span>(i) remains constant, but (ii) decreases.</span></div><div class="option correct"><span class="key">c</span><span>(i) remains constant, but (ii) increases.</span></div><div class="option"><span class="key">d</span><span>Both (i) and (ii) increase.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a single-slit diffraction experiment, the width of the slit is halved. The width of the central maximum, in the diffraction pattern, will become :</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>half</span></div><div class="option correct"><span class="key">b</span><span>twice</span></div><div class="option"><span class="key">c</span><span>four times</span></div><div class="option"><span class="key">d</span><span>one-fourth</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two slits in Young's double slit experiment are \(1.5\mathrm{mm}\) apart and the screen is placed at a distance of \(1\mathrm{m}\) from the slits. If the wavelength of light used is \(600\times {10}^{-9}\mathrm{m}\) then the fringe separation is :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\times {10}^{-5}\mathrm{m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\times {10}^{-8}\mathrm{m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\times {10}^{-7}\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\times {10}^{-4}\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Fringe separation (β) in YDSE = λD / d.\u003c/li> \u003cli>β = (600 × 10⁻⁹ m) × (1 m) / (1.5 × 10⁻³ m) = (600 / 1.5) × 10⁻⁶ m = 400 × 10⁻⁶ m = 4 × 10⁻⁴ m. \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265, 266)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An unpolarised light beam strikes a glass surface at Brewster's angle. Then</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>the reflected light will be partially polarised.</p></span></div><div class="option"><span class="key">b</span><span><p>the reflected light will be completely polarised.</p></span></div><div class="option"><span class="key">c</span><span><p>both the reflected and refracted light will be completely polarised.</p></span></div><div class="option"><span class="key">d</span><span><p>the reflected light will be completely polarised but the refracted light will be partially polarised.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>At Brewster’s angle the parallel (p-) component of the electric field is not reflected at all, leaving only the perpendicular (s-) component in the reflected beam. Hence the reflected light is \u003cstrong>completely plane-polarised\u003c/strong>, while the transmitted (refracted) beam still contains both components and is therefore only \u003cstrong>partially polarised\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In interference and diffraction, the light energy is redistributed. If it reduces in one region, producing a dark fringe, it increases in another region, producing a bright fringe.<br/> A. As there is no gain or loss of energy, these phenomena are consistent with the principle of conservation of energy.<br/> B. Diffraction and interference are characteristics exhibited only by light waves.<br/>Choose the <strong>correct</strong> answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is true, but B is false</p></span></div><div class="option"><span class="key">b</span><span><p>A is true and B is also true</p></span></div><div class="option"><span class="key">c</span><span><p>A is false, but B is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and B are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>A is true:\u003c/strong> In interference/diffraction, energy is only redistributed. Dark fringes have less energy and bright fringes have more energy, so conservation of energy is obeyed.\u003c/p> \u003cp>\u003cstrong>B is false:\u003c/strong> Interference and diffraction are wave phenomena, not exclusive to light. Sound waves, water waves, etc. also show them.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two slits in Young's double slit experiment are \(1.5\mathrm{mm}\) apart and the screen is placed at a distance of \(1\mathrm{m}\) from the slits. If the wavelength of light used is \(600\times {10}^{-9}\mathrm{m}\) then the fringe separation is :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\times {10}^{-5}\mathrm{m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\times {10}^{-8}\mathrm{m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\times {10}^{-7}\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\times {10}^{-4}\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Fringe separation (β) in YDSE = λD / d.\u003c/li> \u003cli>β = (600 × 10⁻⁹ m) × (1 m) / (1.5 × 10⁻³ m) = (600 / 1.5) × 10⁻⁶ m = 400 × 10⁻⁶ m = 4 × 10⁻⁴ m. \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265, 266)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the monochromatic source in Young's double slit experiment is replaced by white light, then</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>interference pattern will disappear.</p></span></div><div class="option"><span class="key">b</span><span><p>there will be a central dark fringe surrounded by a few coloured fringes.</p></span></div><div class="option"><span class="key">c</span><span><p>there will be a central bright white fringe surrounded by a few coloured fringes.</p></span></div><div class="option"><span class="key">d</span><span><p>all bright fringes will be of equal width.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>In YDSE with white light, the central fringe (path difference = 0) is white because all colours interfere constructively. Fringes on either side are coloured due to different path differences for different wavelengths.\u003c/li> \u003cli>Central bright white fringe surrounded by coloured fringes. \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265, 266)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two slits in Young's double slit experiment are \(1.5\mathrm{mm}\) apart and the screen is placed at a distance of \(1\mathrm{m}\) from the slits. If the wavelength of light used is \(600\times {10}^{-9}\mathrm{m}\) then the fringe separation is :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\times {10}^{-5}\mathrm{m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\times {10}^{-8}\mathrm{m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\times {10}^{-7}\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\times {10}^{-4}\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Fringe separation (β) in YDSE = λD / d.\u003c/li> \u003cli>β = (600 × 10⁻⁹ m) × (1 m) / (1.5 × 10⁻³ m) = (600 / 1.5) × 10⁻⁶ m = 400 × 10⁻⁶ m = 4 × 10⁻⁴ m. \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265, 266)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the monochromatic source in Young's double slit experiment is replaced by white light, then</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>interference pattern will disappear.</p></span></div><div class="option"><span class="key">b</span><span><p>there will be a central dark fringe surrounded by a few coloured fringes.</p></span></div><div class="option"><span class="key">c</span><span><p>there will be a central bright white fringe surrounded by a few coloured fringes.</p></span></div><div class="option"><span class="key">d</span><span><p>all bright fringes will be of equal width.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>In YDSE with white light, the central fringe (path difference = 0) is white because all colours interfere constructively. Fringes on either side are coloured due to different path differences for different wavelengths.\u003c/li> \u003cli>Central bright white fringe surrounded by coloured fringes. \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265, 266)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The intensity of transmitted light when a polaroid sheet, placed between two crossed polaroids at \(22.5^\circ\) from the polarization axis of one of the polaroid is ( \({\mathrm{I}}_{0}\) is the intensity of polarised light, after passing through the first polaroid):</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{{\mathrm{I}}_{0}}{8}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{\mathrm{I}}_{0}}{16}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{{\mathrm{I}}_{0}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{{\mathrm{I}}_{0}}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>When light passes through a polaroid at an angle \\(\\theta\\) from the original polarization direction, the transmitted intensity is given by:\u003c/p> \u003cp>\\(I=I_0 \\times \\cos ^2 \\theta\\)\u003c/p> \u003cp>Since there are two polaroids with one in between at \\(22.5^{\\circ}\\), the intensity after the first polaroid becomes \\(I _0\\).\u003cbr/>After the second polaroid (placed at \\(22.5^{\\circ}\\) to the first):\u003c/p> \u003cp>\\(I _1= I _0 \\times \\cos ^2\\left(22.5^{\\circ}\\right)\\)\u003c/p> \u003cp>After the third polaroid (crossed with the first, i.e., \\(90^{\\circ}\\) apart, and thus \\(67.5^{\\circ}\\) from the middle one):\u003c/p> \u003cp>\\(I_2=I_1 \\times \\cos ^2\\left(67.5^{\\circ}\\right)\\)\u003c/p> \u003cp>So final intensity \\(= I _0 \\times \\cos ^2\\left(22.5^{\\circ}\\right) \\times \\cos ^2\\left(67.5^{\\circ}\\right)\\)\u003c/p> \u003cp>\\(\\begin{array}{l}\\cos \\left(22.5^{\\circ}\\right) \\approx 0.924, \\cos ^2\\left(22.5^{\\circ}\\right) \\approx 0.853 \\\\ \\cos \\left(67.5^{\\circ}\\right) \\approx 0.383, \\cos ^2\\left(67.5^{\\circ}\\right) \\approx 0.146\\end{array}\\)\u003c/p> \u003cp>Final intensity \\(\\approx I _0 \\times 0.853 \\times 0.146 \\approx I _0 \\times 0.124 \\approx I _0 / 8\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young's double slits experiment, the position of \(5^{\text {th }}\) bright fringe from the central maximum is \(5 cm\). The distance between slits and the screen is \(1 m\) and wavelength of monochromatic light used is \(600 nm\). The separation between the slits is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>60 \mu m<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>48 \mu m<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>12 \mu m<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>36 \mu m<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,10 +204,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\because y_{n^{th}}=\\frac{n \\lambda D}{d} \\\\\u003cbr/>&amp; \\Rightarrow \\frac{5 \\times 600 \\times 10^{-9} \\times 1}{d}=5 \\times 10^{-2} \\\\\u003cbr/>&amp; \\Rightarrow d=60 \\mu m\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\because y_{n^{th}}=\\frac{n \\lambda D}{d} \\\\& \\Rightarrow \\frac{5 \\times 600 \\times 10^{-9} \\times 1}{d}=5 \\times 10^{-2} \\\\& \\Rightarrow d=60 \\mu m\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young's double slit experiment, if the separation between coherent sources is halved and the distance of the screen from the coherent sources is doubled, then the fringe width becomes :</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Half</p></span></div><div class="option"><span class="key">b</span><span><p>Four times</p></span></div><div class="option"><span class="key">c</span><span><p>One-fourth</p></span></div><div class="option"><span class="key">d</span><span><p>Double</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>New fringe width β' = λD'/d' = λ(2D) / (d/2) = 4 * (λD/d) = 4β.\u003c/p> \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the source of light used in a Young's double slit experiment is changed from red to violet:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>the fringes will become brighter</p></span></div><div class="option"><span class="key">b</span><span><p>consecutive fringes will come closer</p></span></div><div class="option"><span class="key">c</span><span><p>the intensity of minima will increase</p></span></div><div class="option"><span class="key">d</span><span><p>the central bright fringe will become a dark fringe.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>If the light in a Young's double-slit experiment is changed from red to violet, the consecutive fringes will come closer because the fringe width decreases due to violet light having a shorter wavelength than red light.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The width of one of the two slits in a Young's double slit experiment is 4 times that of the other slit. The ratio of the maximum to the minimum intensity in the interference pattern is:EndFragment </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1 : 1</p></span></div><div class="option"><span class="key">b</span><span><p>16 : 1</p></span></div><div class="option"><span class="key">c</span><span><p>9 : 1</p></span></div><div class="option"><span class="key">d</span><span><p>4 : 1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Width ratio \\(w_1:w_2=4:1\\).\u003c/p> \u003cp>Intensity is proportional to slit width, so \\(I_1:I_2=4:1\\).\u003cbr/>Let \\(I_2=I\\), then \\(I_1=4I\\).\u003c/p> \u003cp>\\(I_{max}=(\\sqrt{I_1}+\\sqrt{I_2})^2=(2\\sqrt{I}+\\sqrt{I})^2=9I\\)\u003c/p> \u003cp>\\(I_{min}=(\\sqrt{I_1}-\\sqrt{I_2})^2=(2\\sqrt{I}-\\sqrt{I})^2=I\\)\u003c/p> \u003cp>Ratio \\(I_{max}:I_{min}=9:1\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assume that light of wavelength \( 600 \mathrm{~nm} \) is coming from a star. The limit of resolution of telescope whose objective has a diameter of \( 2 \mathrm{~m} \) is :</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 1.83 \times 10^{-7} \mathrm{rad} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 7.32 \times 10^{-7} \mathrm{rad} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 6.00 \times 10^{-7} \mathrm{rad} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 3.66 \times 10^{-7} \mathrm{rad} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\lambda=600 \\times 10^{-9} m, d=2 m\\)\u003c/p> \u003cp>\u003cbr/>As we know, \\(\\theta_R=1.22 \\frac{\\lambda}{d}\\)\u003cbr/>Now, by putting the values in equation (1) we get;\u003c/p> \u003cp>\\(\\begin{array}{l}\\theta_R=1.22 \\frac{\\lambda}{d} \\\\ \\theta_R=\\frac{1.22 \\times 600 \\times 10^{-9}}{2} \\\\ \\theta=3.66 \\times 10^{-7} rad \\end{array}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The width of fringe is \(2 mm\) on the screen in a double slits experiment for the light of wavelength of \(400 nm\). The width of the fringe for the light of wavelength 600 nm will be:</p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>4 mm<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>1.33 mm<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3 mm<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>2 mm<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,10 +264,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Formula of fringe width \\((\\beta)=\\frac{D \\lambda}{d} \\Rightarrow \\beta \\propto \\lambda\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\Rightarrow \\frac{\\beta_2}{\\beta_1}=\\frac{\\lambda_2}{\\lambda_1} \\Rightarrow \\beta_2=\\frac{\\lambda_2}{\\lambda_1} \\times \\beta_1 \\\\\u003cbr/>&amp; \\Rightarrow \\beta_2=\\frac{600 nm }{400 nm } \\times 2 mm \\\\\u003cbr/>&amp; \\Rightarrow \\beta_2=3 mm\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Formula of fringe width \\((\\beta)=\\frac{D \\lambda}{d} \\Rightarrow \\beta \\propto \\lambda\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\therefore \\Rightarrow \\frac{\\beta_2}{\\beta_1}=\\frac{\\lambda_2}{\\lambda_1} \\Rightarrow \\beta_2=\\frac{\\lambda_2}{\\lambda_1} \\times \\beta_1 \\\\& \\Rightarrow \\beta_2=\\frac{600 nm }{400 nm } \\times 2 mm \\\\& \\Rightarrow \\beta_2=3 mm\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young's double slit experiment, if the source of light changes from orange to blue then:</p> <p>[JEE Main 2021, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The distance between consecutive fringes will decrease.</p></span></div><div class="option"><span class="key">b</span><span><p>The distance between consecutive fringes will increase.</p></span></div><div class="option"><span class="key">c</span><span><p>The central bright fringe will become a dark fringe.</p></span></div><div class="option"><span class="key">d</span><span><p>The intensity of the minima will increase.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\beta=\\frac{\\lambda D}{d}\u003cbr/>\\]\u003c/p> \u003cp>From formula, fringe width is directly proportional to wavelength and wavelength of orange light is greater than the blue light therefore,\u003cbr/>So, \\(\\beta_{\\text {Orange }}&gt;\\beta_{\\text {Blue }}\\)\u003cbr/>Hence, distance between consecutive fringes will decrease.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>' \(n\) ' polarizing sheets are arranged such that each makes an angle \(45^{\circ}\) with the preceeding sheet. An unpolarized light of intensity \(I\) is incident into this arrangement. The output intensity is found to be \(\frac{I}{64}\). The value of \(n\) will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,10 +288,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Intensity of light after passing through the first sheet\u003cbr/>\\[\u003cbr/>I_1=\\frac{I}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the second sheet\u003cbr/>\\[\u003cbr/>I_2=I_1 \\cos ^2\\left(45^{\\circ}\\right)=\\frac{I}{4}\u003cbr/>\\]\u003c/p> \u003cp>After passing through \\(n^{\\text {th }}\\) sheet\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_{ n }=\\frac{I}{2^{ n }}=\\frac{I}{64} \\\\\u003cbr/>&amp; \\Rightarrow n=6\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Intensity of light after passing through the first sheet\u003cbr/>\\[\u003cbr/>I_1=\\frac{I}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the second sheet\u003cbr/>\\[\u003cbr/>I_2=I_1 \\cos ^2\\left(45^{\\circ}\\right)=\\frac{I}{4}\u003cbr/>\\]\u003c/p> \u003cp>After passing through \\(n^{\\text {th }}\\) sheet\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& I_{ n }=\\frac{I}{2^{ n }}=\\frac{I}{64} \\\\& \\Rightarrow n=6\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Brewsters angle \({i}_{b}\)for an interface should be :</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(30^\circ <{\mathrm{i}}_{\mathrm{b}}<45^\circ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(45^\circ <{\mathrm{i}}_{\mathrm{b}}<90^\circ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({i}_{b}=90^\circ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0^\circ <{\mathrm{i}}_{\mathrm{b}}<30^\circ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) \\(\\tan {i}_{b}=\\frac{{\\mu }_{2}}{{\\mu }_{1}}=\\frac{{\\mu }_{2}}{1}\\)\u003cbr/>\\(∴\\tan {i}_{b}>1\\) \u003cbr/>\\(∴90^\\circ >{i}_{b}>45^\\circ\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion (A) : In Young's double slit experiment, the fringes produced by red light are closer as compared to those produced by blue light.<br/>Reason (R) : The fringe width is directly proportional to the wavelength of light.<br/>In the light of the above statements, choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but (R) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> The fringe width \\(\\beta\\) is given by:\u003c/p> \u003cp>\\(\\beta =\\frac{\\lambda D}{d}\\)\u003c/p> \u003cp>From this equation, fringe width \\(\\beta\\) is directly proportional to the wavelength \\(\\lambda\\).\u003cbr/>\\(\\beta \\propto \\lambda\\)\u003cbr/>\\({\\lambda }_{R}>{\\lambda }_{b}\\)\u003cbr/>\\(∴{\\beta }_{R}>{\\beta }_{b}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two polaroids \(A\) and \(B\) are placed in such a way that the pass-axis of polaroids are perpendicular to each other. Now, another polaroid \(C\) is placed between \(A\) and \(B\) bisecting the angle between them. If intensity of unpolarised light is \(I_0\) then intensity of transmitted light after passing through polaroid B will be:</p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{I_0}{4}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{I_0}{2}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{I_0}{8}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Zero }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,10 +324,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Intensity of light after passing through the polariser\u003cbr/>\\[\u003cbr/>I_A=\\frac{I_o}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the polariserc\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_C=\\frac{I_o}{2} \\cos ^2 45=\\frac{I_o}{4} \\\\\u003cbr/>&amp; \\Rightarrow I_B=I_C \\cos ^2 45=\\frac{I_o}{8}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Intensity of light after passing through the polariser\u003cbr/>\\[\u003cbr/>I_A=\\frac{I_o}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the polariserc\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& I_C=\\frac{I_o}{2} \\cos ^2 45=\\frac{I_o}{4} \\\\& \\Rightarrow I_B=I_C \\cos ^2 45=\\frac{I_o}{8}\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the diffraction pattern obtained from the sunlight incident on a pinhole of diameter \(0.1 \mu m\). If the diameter of the pinhole is slightly increased, it will affect the diffraction pattern such that:</p> <p>[JEE Main 2021, 25 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\text { Its size increases, but intensity decreases }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\text { Its size increases, and intensity increases }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\text { Its size decreases, but intensity increases }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Its size decreases, and intensity decreases }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know that, \\(\\sin \\theta=\\frac{n \\lambda}{a}\\) if \\(a \\uparrow \\rightarrow \\theta \\downarrow\\)\u003cbr/>So width decrease as a result intensity increases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>' \(n\) ' polarizing sheets are arranged such that each makes an angle \(45^{\circ}\) with the preceding sheet. An unpolarized light of intensity \(I\) is incident into this arrangement. The output intensity is found to be \(\frac{I}{64}\). The value of \(n\) will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Intensity of light after passing through the first sheet\u003cbr/>\\[\u003cbr/>I_1=\\frac{I}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the second sheet\u003cbr/>\\[\u003cbr/>I_2=I_1 \\cos ^2\\left(45^{\\circ}\\right)=\\frac{I}{4}\u003cbr/>\\]\u003c/p> \u003cp>After passing through \\(n^{\\text {th }}\\) sheet\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_{ n }=\\frac{I}{2^{ n }}=\\frac{I}{64} \\\\\u003cbr/>&amp; \\Rightarrow n=6\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Intensity of light after passing through the first sheet\u003cbr/>\\[\u003cbr/>I_1=\\frac{I}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the second sheet\u003cbr/>\\[\u003cbr/>I_2=I_1 \\cos ^2\\left(45^{\\circ}\\right)=\\frac{I}{4}\u003cbr/>\\]\u003c/p> \u003cp>After passing through \\(n^{\\text {th }}\\) sheet\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& I_{ n }=\\frac{I}{2^{ n }}=\\frac{I}{64} \\\\& \\Rightarrow n=6\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more NEET Physics PYQs</h3>

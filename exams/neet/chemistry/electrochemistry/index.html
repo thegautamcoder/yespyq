@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Electrochemistry","item":"https://yespyq.com/exams/neet/chemistry/electrochemistry/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Electrochemistry</h1>
       <p>21 NEET Chemistry previous year questions on <b>Electrochemistry</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">From the following select the one which is not an example of corrosion? [Re-NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Rusting of iron object</span></div><div class="option correct"><span class="key">b</span><span>Production of hydrogen by electrolysis of water</span></div><div class="option"><span class="key">c</span><span>Tarnishing of silver</span></div><div class="option"><span class="key">d</span><span>Development of green coating on copper and bronze ornaments</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The role of fluorspar, which is added in small quantities in the electrolysis reduction of alumina dissolved in fused cryolite, is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>as a catalyst</span></div><div class="option correct"><span class="key">b</span><span>to make fused mixture conducting</span></div><div class="option"><span class="key">c</span><span>to lower the melting temperature of the mixture</span></div><div class="option"><span class="key">d</span><span>to decrease the rate of oxidation of carbon at anode</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>From the following select the one which is not an example of corrosion?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rusting of iron object</p></span></div><div class="option"><span class="key">b</span><span><p>Production of hydrogen by electrolysis of water</p></span></div><div class="option"><span class="key">c</span><span><p>Tarnishing of silver</p></span></div><div class="option"><span class="key">d</span><span><p>Development of green coating on copper and bronze ornaments</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The option that is not an example of corrosion is:\u003c/p> \u003cp>\u003cstrong>B. Production of hydrogen by electrolysis of water\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli>\u003cstrong>A. Rusting of iron object\u003c/strong> is a type of corrosion where iron reacts with oxygen and moisture to form iron oxides (rust).\u003c/li> \u003cli>\u003cstrong>C. Tarnishing of silver\u003c/strong> involves the formation of silver sulfide on the surface of silver items due to a reaction with sulfur compounds in the air.\u003c/li> \u003cli>\u003cstrong>D. Development of green coating on copper and bronze ornaments\u003c/strong> is caused by the formation of copper carbonate or copper chloride, known as patina, which is also a form of corrosion.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Option B\u003c/strong> refers to a chemical reaction in which water is split into hydrogen and oxygen gases through electrolysis, and is not related to the process of corrosion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The standard cell potential of the following cell </p> <p>\(Zn|Z{n}^{{2}^{+}}(aq)||F{e}^{2+}(aq)∣Fe\)<br/>is \(0.32 V\). Calculate the standard Gibbs energy change for the reaction:<br/>\(Zn(s)+F{e}^{2+}(aq)\to Z{n}^{2+}(aq)+Fe(s)\)<br/>(Given : \(1 F =96487 C\) )</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-61.75kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(+5.006kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-5.006kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(+61.75kJmo{l}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{ΔG}}^{∘}=–\\mathrm{nFE}^\\circ\\)\u003c/p> \u003cp> = –2 × 96487 × 0.32\u003c/p> \u003cp> = –61750.4 J/mol\u003c/p> \u003cp> = –61.75 kJ/mol\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Mass in grams of copper deposited by passing \(9.6487\mathrm{A}\) current through a voltmeter containing copper sulphate solution for \(100\) seconds is (Given : Molar mass of \(\mathrm{Cu}:63{\mathrm{gmol}}^{-1}\), \(1\mathrm{F}=96487\mathrm{C})\) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.0315 g</p></span></div><div class="option"><span class="key">b</span><span><p>3.15 g</p></span></div><div class="option"><span class="key">c</span><span><p>0.315 g</p></span></div><div class="option"><span class="key">d</span><span><p>31.5 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{matrix}\\mathrm{W}=\\frac{\\mathrm{M}}{\\mathrm{nF}}\\times \\mathrm{It} \\\\ \\mathrm{W}=\\frac{63\\times 9.6487\\times 100}{2\\times 96487} \\\\ \\mathrm{W}=0.315\\text{ }\\mathrm{g}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The standard cell potential of the following cell </p> <p>\(Zn|Z{n}^{{2}^{+}}(aq)||F{e}^{2+}(aq)∣Fe\)<br/>is \(0.32 V\). Calculate the standard Gibbs energy change for the reaction:<br/>\(Zn(s)+F{e}^{2+}(aq)\to Z{n}^{2+}(aq)+Fe(s)\)<br/>(Given : \(1 F =96487 C\) )</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-61.75kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(+5.006kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-5.006kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(+61.75kJmo{l}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{ΔG}}^{∘}=–\\mathrm{nFE}^\\circ\\)\u003c/p> \u003cp> = –2 × 96487 × 0.32\u003c/p> \u003cp> = –61750.4 J/mol\u003c/p> \u003cp> = –61.75 kJ/mol\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>From the following select the one which is not an example of corrosion?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rusting of iron object</p></span></div><div class="option"><span class="key">b</span><span><p>Production of hydrogen by electrolysis of water</p></span></div><div class="option"><span class="key">c</span><span><p>Tarnishing of silver</p></span></div><div class="option"><span class="key">d</span><span><p>Development of green coating on copper and bronze ornaments</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The option that is not an example of corrosion is:\u003c/p> \u003cp>\u003cstrong>B. Production of hydrogen by electrolysis of water\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli>\u003cstrong>A. Rusting of iron object\u003c/strong> is a type of corrosion where iron reacts with oxygen and moisture to form iron oxides (rust).\u003c/li> \u003cli>\u003cstrong>C. Tarnishing of silver\u003c/strong> involves the formation of silver sulfide on the surface of silver items due to a reaction with sulfur compounds in the air.\u003c/li> \u003cli>\u003cstrong>D. Development of green coating on copper and bronze ornaments\u003c/strong> is caused by the formation of copper carbonate or copper chloride, known as patina, which is also a form of corrosion.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Option B\u003c/strong> refers to a chemical reaction in which water is split into hydrogen and oxygen gases through electrolysis, and is not related to the process of corrosion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Mass in grams of copper deposited by passing \(9.6487\mathrm{A}\) current through a voltmeter containing copper sulphate solution for \(100\) seconds is (Given : Molar mass of \(\mathrm{Cu}:63\mathrm{g}{\mathrm{mol}}^{-1}\), \(1\mathrm{F}=96487\mathrm{C})\) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.0315 g</p></span></div><div class="option"><span class="key">b</span><span><p>3.15 g</p></span></div><div class="option"><span class="key">c</span><span><p>0.315 g</p></span></div><div class="option"><span class="key">d</span><span><p>31.5 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{matrix}\\mathrm{W}=\\frac{\\mathrm{M}}{\\mathrm{nF}}\\times \\mathrm{It} \\\\ \\mathrm{W}=\\frac{63\\times 9.6487\\times 100}{2\\times 96487} \\\\ \\mathrm{W}=0.315\\text{ }\\mathrm{g}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reaction \(\frac{1}{2} \mathrm{H}_{2}(\mathrm{~g})+\mathrm{AgCl}(\mathrm{s}) \rightleftharpoons \mathrm{H}^{+}(\mathrm{aq})+\mathrm{Cl}^{-}(\mathrm{aq})+\mathrm{Ag}(\mathrm{s})\) occurs in which of the given galvanic cell.</p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Pt}\left|\mathrm{H}_{2}(\mathrm{~g})\right| \mathrm{KCl}\left(\mathrm{sol}^{\mathrm{n}}\right)|\mathrm{AgCl}(\mathrm{s})| \mathrm{Ag}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Pt}\left|\mathrm{H}_{2}(\mathrm{~g})\right| \mathrm{HCl}\left(\mathrm{sol}^{\mathrm{n}}\right)|\mathrm{AgCl}(\mathrm{s})| \mathrm{Ag}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Ag}|\mathrm{AgCl}(\mathrm{s})| \mathrm{KCl}\left(\mathrm{sol}^{\mathrm{n}}\right)|\mathrm{AgCl}(\mathrm{s})| \mathrm{Ag}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Pt}\left|\mathrm{H}_{2}(\mathrm{~g})\right| \mathrm{HCl}\left(\mathrm{sol}^{\mathrm{n}}\right)\left|\mathrm{AgNO}_{3}\left(\mathrm{sol}^{\mathrm{n}}\right)\right| \mathrm{Ag}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> At anode oxidation will take place:\u003c/p> \u003cp>\\(\\frac{1}{2} \\mathrm{H}_{2}(\\mathrm{~g}) \\rightleftharpoons \\mathrm{H}^{+}(\\mathrm{aq})+\\mathrm{e}^{-}\\)\u003c/p> \u003cp>At cathode reduction will take place\u003c/p> \u003cp>\\(\\mathrm{AgCl}(\\mathrm{s})+\\mathrm{e}^{-} \\rightleftharpoons \\mathrm{Ag}(\\mathrm{s})+\\mathrm{Cl}^{-}(\\mathrm{aq})\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The product, which is not obtained during the electrolysis of brine solution is</p> <p>[JEE Main 2023, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(NaOH\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Cl _2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(H _2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(HCl\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) An aqueous solution of \\(NaCl\\) is called brine.\u003cbr/>\\[\u003cbr/>NaCl ( aq ) \\rightarrow Na ^{+}+ Cl ^{-}\u003cbr/>\\]\u003c/p> \u003cp>At cathode, \\(H _2\\) is released\u003cbr/>\\[\u003cbr/>2 H _2 O +2 e ^{-} \\xrightarrow{\\text { reduction }} H _{2( g )}+2 OH\u003cbr/>\\]\u003c/p> \u003cp>At anode, \\(Cl _2\\) is released\u003cbr/>\\[\u003cbr/>2 Cl ^{-} \\xrightarrow{\\text { oxidation }} Cl _{2(g)}+2 e\u003cbr/>\\]\u003c/p> \u003cp>Therefore, \\(HCl\\) will not form during electrolysis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of Faradays (F) required to produce \(20\mathrm{g}\) of calcium from molten \({\mathrm{CaCl}}_{2}\) (Atomic mass of \(\left.\mathrm{Ca}=40\mathrm{g}{\mathrm{mol}}^{-1}\right)\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Moles of Ca = 20 g / 40 g mol⁻¹ = 0.5 mol\u003cbr/>Each Ca²⁺→Ca requires 2 e⁻ ⇒ 2 F per mole Ca\u003cbr/>Total F = 0.5 mol×2 F mol⁻¹ = 1 F\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The conductivity of centimolar solution of \(\mathrm{KCl}\) at \(25^\circ \mathrm{C}\) is \(0.0210{\mathrm{ohm}}^{-1}{\mathrm{cm}}^{-1}\) and the resistance of the cell containing the solution at \(25^\circ \mathrm{C}\) is \(60\mathrm{ohm}\). The value of cell constant is -</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.28{\mathrm{cm}}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.26{\mathrm{cm}}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.34{\mathrm{cm}}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.34{\mathrm{cm}}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,8 +219,8 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Centimolar solution = \\(\\frac{1}{100}M=0.01M\\)\u003c/p> \u003cp>Conductivity (k) = 0.0210 ohm\u003csup>–1\u003c/sup> cm\u003csup>–1\u003c/sup>\u003c/p> \u003cp>Resistance (R) = 60 ohm\u003c/p> \u003cp>\\(k=\\frac{1}{R}\\left(\\frac{l}{A}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }0.0210=\\frac{1}{60}\\left(\\frac{l}{A}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }\\frac{l}{A}=1.26\\text{ }c{m}^{−1}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
-      <div class="qtext"><p>The molar conductivity of 0.007 M acetic acid is \(20{\mathrm{Scm}}^{2}{\mathrm{mol}}^{-1}\). What is the dissociation constant of acetic acid? Choose the <strong>correct </strong>option</p> <p>\(\left[\begin{matrix}{\Lambda }_{{H}^{+}}^{º}=350Sc{m}^{2}mo{l}^{-1} \\ {\Lambda }_{C{H}_{3}CO{O}^{-}}^{º}=50Sc{m}^{2}mo{l}^{-1}\end{matrix}\right]\\\) </p> <p>[NEET 2021]</p></div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>The molar conductivity of 0.007 M acetic acid is \(20{\mathrm{Scm}}^{2}{\mathrm{mol}}^{-1}\). What is the dissociation constant of acetic acid? Choose the <strong>correct </strong>option</p> <p>\(\left[$$\begin{matrix}{\Lambda }_{{H}^{+}}^{º}=350Sc{m}^{2}mo{l}^{-1} \\ {\Lambda }_{C{H}_{3}CO{O}^{-}}^{º}=50Sc{m}^{2}mo{l}^{-1}\end{matrix}$$\right]\\\) </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2.50\times {10}^{-4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.75\times {10}^{-5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.50\times {10}^{-5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.75\times {10}^{-4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -224,10 +228,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \u003c/p> \u003cp>\\(\\begin{matrix}{\\Lambda }_{\\mathrm{m}}=20\\text{ }{\\mathrm{Scm}}^{2}{\\mathrm{mol}}^{−1} \\\\ {\\Lambda }_{\\mathrm{m}({\\mathrm{CH}}_{3}\\mathrm{COOH})}^{\\mathrm{o}}={\\Lambda }_{\\mathrm{m}({\\mathrm{CH}}_{3}{\\mathrm{COO}}^{–})}^{\\mathrm{o}}+{\\Lambda }_{\\mathrm{m}({\\mathrm{H}}^{+})}^{\\mathrm{o}} \\\\ \\text{     }=50+350=400\\text{ }{\\mathrm{Scm}}^{2}{\\mathrm{mol}}^{−1}\\end{matrix}\\)\u003c/p> \u003cp>\\(\\alpha =\\frac{{\\Lambda }_{m}}{{\\Lambda }_{m}^{0}}=\\frac{20}{400}=\\frac{1}{20}\\)\u003cbr/>Dissociation constant \\(K _{ a }\\), for weak electrolyte like acetic acid is calculated as,\u003cbr/>\\[K _{ a }=\\frac{ C \\alpha^2}{1-\\alpha} \\simeq C \\alpha^2=7 \\times 10^{-3} \\times\\left(\\frac{1}{20}\\right)^2\\]\u003c/p> \u003cp>\\(\\begin{aligned} &amp; =7 \\times 10^{-3} \\times \\frac{1}{4} \\times 10^{-2} \\\\ &amp; K _{ a }=1.75 \\times 10^{-5} mol L ^{-1} \\\\ &amp; \\text { Dissociation constant }=1.75 \\times 10^{-5}\\end{aligned}\\) \u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \u003c/p> \u003cp>\\(\\begin{matrix}{\\Lambda }_{\\mathrm{m}}=20\\text{ }{\\mathrm{Scm}}^{2}{\\mathrm{mol}}^{−1} \\\\ {\\Lambda }_{\\mathrm{m}({\\mathrm{CH}}_{3}\\mathrm{COOH})}^{\\mathrm{o}}={\\Lambda }_{\\mathrm{m}({\\mathrm{CH}}_{3}{\\mathrm{COO}}^{–})}^{\\mathrm{o}}+{\\Lambda }_{\\mathrm{m}({\\mathrm{H}}^{+})}^{\\mathrm{o}} \\\\ \\text{     }=50+350=400\\text{ }{\\mathrm{Scm}}^{2}{\\mathrm{mol}}^{−1}\\end{matrix}\\)\u003c/p> \u003cp>\\(\\alpha =\\frac{{\\Lambda }_{m}}{{\\Lambda }_{m}^{0}}=\\frac{20}{400}=\\frac{1}{20}\\)\u003cbr/>Dissociation constant \\(K _{ a }\\), for weak electrolyte like acetic acid is calculated as,\u003cbr/>\\[K _{ a }=\\frac{ C \\alpha^2}{1-\\alpha} \\simeq C \\alpha^2=7 \\times 10^{-3} \\times\\left(\\frac{1}{20}\\right)^2\\]\u003c/p> \u003cp>\\(\\begin{aligned} & =7 \\times 10^{-3} \\times \\frac{1}{4} \\times 10^{-2} \\\\ & K _{ a }=1.75 \\times 10^{-5} mol L ^{-1} \\\\ & \\text { Dissociation constant }=1.75 \\times 10^{-5}\\end{aligned}\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Electrode potential data are given below:<br/>\(F{e}^{+3}(aq)+{e}^{-}\to F{e}^{+2}(aq);E^\circ =+0.77V\) \(A{l}^{+3}(aq)+3{e}^{-}\to Al(s);E^\circ =-1,66V\) \(B{r}_{2}(aq)+2{e}^{-}\to 2B{r}^{-}(aq);E^\circ =+1.08V\)<br/>Based on the data, the reducing power of \(F{e}^{+2}\), Al and \(B{r}^{-}\) will increase in the order</p> <p><strong>(PYQ-2023)</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(B{r}^{-}<F{e}^{+2}<Al\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(F{e}^{+2}<Al<B{r}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Al<B{r}^{-}<F{e}^{+2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Al<F{e}^{+2}<B{r}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Lower the reduction potential, more is the reducing power. \\(B{r}^{-}\u003cF{e}^{+2}\u003cAl\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of Faradays \( (\mathrm{F}) \) required to produce \( 20 \mathrm{~g} \) of calcium from molten \( \mathrm{CaCl}_{2} \) (Atomic mass of \( \mathrm{Ca}=40 \mathrm{~g} \mathrm{~mol}^{-1} \) ) is</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\underset{40\\mathrm{g}}{{\\mathrm{Ca}}_{(\\mathrm{aq})}^{2+}}+\\underset{2\\mathrm{F}}{2{\\mathrm{e}}^{−}}\\to {\\mathrm{Ca}}_{(\\mathrm{s})}\\)\u003c/p> \u003cp>Thus, one Faraday is required to produce 20 g of calcium from molten CaCl\u003csub>2\u003c/sub>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Amongst the following, the form of water with the lowest ionic conductance at \( 298 \mathrm{~K} \) is :</p> <p>[JEE Main 2020, 9 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>distilled water</p></span></div><div class="option"><span class="key">b</span><span><p>sea water</p></span></div><div class="option"><span class="key">c</span><span><p>water from a well</p></span></div><div class="option"><span class="key">d</span><span><p>saline water used for intravenous injection</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The form of water with the lowest ionic conductance at 298 K is distilled water.\u003c/p> \u003cp>Explanation: Distilled water is purified to remove impurities, meaning it has the lowest concentration of ions compared to other options like seawater, which contains dissolved salts, or water from a well, which can also have dissolved minerals.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion \(\mathbf{A}\) and the other is labelled as Reason \(\mathbf{R}\) :</p> <p>Assertion A : In equation \(\Delta_r \mathrm{G}=-\mathrm{nFE}_{\mathrm{cell}}\), value of \(\Delta_r \mathrm{G}\) depends on n.</p> <p>Reasons \(\mathbf{R}\) : \(\mathrm{E}_{\text {cell }}\) is an intensive property and \(\Delta_r \mathrm{G}\) is an extensive property.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \(\mathbf{A}\) and \(\mathbf{R}\) are true and \(\mathbf{R}\) is NOT the correct explanation of \(\mathbf{A}\).</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathbf{A}\) is true but \(\mathbf{R}\) is false</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathbf{A}\) is false but \(\mathrm{R}\) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(\mathbf{A}\) and \(\mathbf{R}\) are true and \(\mathbf{R}\) is the correct explanation of \(\mathbf{A}\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Assertion is true: \\({\\Delta }_{r}G=−nF{E}_{\\text{cell}}\\), so it depends on \u003cstrong>n\u003c/strong>.\u003cbr/>Reason is also true: \\({E}_{\\text{cell}}\\) is \u003cstrong>intensive\u003c/strong>, while \\({\\Delta }_{r}G\\) is \u003cstrong>extensive\u003c/strong>.\u003cbr/>Thus, \u003cstrong>R is the correct explanation of A\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II</strong>:</p> <table> <tbody> <tr> <td> <p><strong>List-I</strong></p> <p><strong>(Conversion)</strong></p> </td> <td> <p><strong>List-II</strong></p> <p><strong>(Number of Faraday required)</strong></p> </td> </tr> <tr> <td> <p>(A)</p> </td> <td>1 mol of \({\mathrm{H}}_{2}\mathrm{O}\mathrm{to}{\mathrm{O}}_{2}\)</td> <td> <p>(I)</p> </td> <td>3F</td> </tr> <tr> <td> <p>(B)</p> </td> <td>1 mol of \({\mathrm{MnO}}_{4}^{-}\mathrm{to}{\mathrm{Mn}}^{2+}\)</td> <td> <p>(II)</p> </td> <td>2F</td> </tr> <tr> <td> <p>(C)</p> </td> <td>1.5 mol of Ca from molten CaCl<sub>2</sub></td> <td> <p>(III)</p> </td> <td>1F</td> </tr> <tr> <td> <p>(D)</p> </td> <td>1 mol of FeO to Fe<sub>2</sub>O<sub>3</sub></td> <td> <p>(IV)</p> </td> <td>5F</td> </tr> </tbody> </table> <p>Choose the <strong>correct </strong>answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-IV, C-I, D-III</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-III, C-I, D-IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>A. H₂O → O₂ per 1 mol H₂O = 2 F ⇒ \u003cstrong>II\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>B. MnO₄⁻ to Mn²⁺ involves 5e⁻ ⇒ 1 mol = \u003cstrong>5F\u003c/strong> ⇒ \u003cstrong>IV\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>C. 1.5 mol Ca = 3 mol e⁻ = \u003cstrong>3F\u003c/strong> ⇒ \u003cstrong>I\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>D. FeO to Fe₂O₃: Fe²⁺ → Fe³⁺ (1e⁻), total = \u003cstrong>1F\u003c/strong> ⇒ \u003cstrong>III\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion \(\mathbf{A}\) and the other is labelled as Reason \(\mathbf{R}\) :</p> <p>Assertion A : In equation \(\Delta_r \mathrm{G}=-\mathrm{nFE}_{\mathrm{cell}}\), value of \(\Delta_r \mathrm{G}\) depends on \(\mathrm{n}\).</p> <p>Reasons \(\mathbf{R}\) : \(\mathrm{E}_{\text {cell }}\) is an intensive property and \(\Delta_r \mathrm{G}\) is an extensive property.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \(\mathbf{A}\) and \(\mathbf{R}\) are true and \(\mathbf{R}\) is NOT the correct explanation of \(\mathbf{A}\).</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathbf{A}\) is true but \(\mathbf{R}\) is false</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathbf{A}\) is false but \(\mathrm{R}\) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(\mathbf{A}\) and \(\mathbf{R}\) are true and \(\mathbf{R}\) is the correct explanation of \(\mathbf{A}\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Assertion is true: \\({\\Delta }_{r}G=−nF{E}_{\\text{cell}}\\), so it depends on \u003cstrong>n\u003c/strong>.\u003cbr/>Reason is also true: \\({E}_{\\text{cell}}\\) is \u003cstrong>intensive\u003c/strong>, while \\({\\Delta }_{r}G\\) is \u003cstrong>extensive\u003c/strong>.\u003cbr/>Thus, \u003cstrong>R is the correct explanation of A\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the reaction from following having top position in EMF series (Standard reduction potential) according to their electrode potential at \(298 \) K</p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Fe ^{2+}+2 e ^{-} \rightarrow Fe ( s )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Au ^{3+}+3 e ^{-} \rightarrow Au ( s )\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(K ^{+}+1 e ^{-} \rightarrow K ( s )\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Mg ^{2+}+2 e ^{-} \rightarrow Mg ( s )\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,10 +312,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { } Au ^{3+}+3 e ^{-} \\rightarrow Au ( s ) E ^{\\circ}=1.40 V \\\\\u003cbr/>&amp; Fe ^{2+}+2 e ^{-} \\rightarrow Fe ( s ) E ^{\\circ}=-0.44 V \\\\\u003cbr/>&amp; Mg ^{2+}+2 e ^{-} \\rightarrow Mg ( s ) E ^{\\circ}=-2.36 V \\\\\u003cbr/>&amp; K ^{+}+1 e ^{-} \\rightarrow K ( s ) E ^{\\circ}=-2.93 V\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\(Au ^{3+}\\) occupies the top position in the electrochemical series\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}& \\text { } Au ^{3+}+3 e ^{-} \\rightarrow Au ( s ) E ^{\\circ}=1.40 V \\\\& Fe ^{2+}+2 e ^{-} \\rightarrow Fe ( s ) E ^{\\circ}=-0.44 V \\\\& Mg ^{2+}+2 e ^{-} \\rightarrow Mg ( s ) E ^{\\circ}=-2.36 V \\\\& K ^{+}+1 e ^{-} \\rightarrow K ( s ) E ^{\\circ}=-2.93 V\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\(Au ^{3+}\\) occupies the top position in the electrochemical series\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a typical fuel cell, the reactants \(( R )\) and product \(( P )\) are </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(R = H _{2( g )}, O _{2( g )} ; P = H _2 O _{(\ell)}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(R = H _{2( g )}, O _{2( g )}, Cl _{2( g )} ; P = HClO _{4( aq )}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(R = H _{2( g )}, N _{2( g )} ; P = NH _{3( aq )}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(R = H _{2( g )}, O _{2( g )} ; P = H _2 O _{2(\ell)}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

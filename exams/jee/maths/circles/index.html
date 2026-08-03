@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Circles","item":"https://yespyq.com/exams/jee/maths/circles/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Circles</h1>
       <p>39 JEE Maths previous year questions on <b>Circles</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Four distinct points \((2 k, 3 k),(1,0),(0,1)\) and \((0,0)\) lie on a circle for \(k\) equal to</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{13}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{13}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{5}{13}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{13}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Four distinct points \((2 k, 3 k),(1,0),(0,1)\) and \((0,0)\) lie on a circle for \(k\) equal to</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{13}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{13}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{5}{13}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{13}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let a circle pass through the origin and its centre be the point of intersection of two mutually perpendicular lines \(x+(k-1)y+3=0\) and \(2x+{k}^{2}y-4=0\). If the line \(x-y+2=0\) intersects the circle at the points \(A\) and \(B,\) then \((AB{)}^{2}\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 2 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(27\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(18\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(34\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(y=x\) be the equation of a chord of the circle \({C}_{1}\) (in the closed half-plane\(x\geq 0\)) of diameter \(10\) passing through the origin. Let \({C}_{2}\) be another circle described on the given chord as its diameter. If the equation of the chord of the circle \({C}_{2}\), which passes through the point \((2,3)\) and is farthest from the center of \({C}_{2},\) is \(x+ay+b=0\), then \(a–b\) is equal to</p> <p> </p> <p>[JEE Main 2026, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(–2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(–6\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Circle lie in the second quadrant with radius 2 and touching both coordinate axes. Another circle with centres \((2,6)\) exactly intersect the first circle at two points then range of it's radius is \((\mathrm{a}, \mathrm{b})\) then find \((\mathrm{a}+\mathrm{b})\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8\sqrt{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4\sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\left|{r}_{1}-{r}_{2}\\right|\u003c{C}_{1}{C}_{2}\u003c{r}_{1}+{r}_{2}\\\\ Let{C}_{1}(2,2)&{r}_{1}=2\\\\ {C}_{2}(2,6)\\\\ Now\\left|{r}_{1}-{r}_{2}\\right|\u003c{C}_{1}{C}_{2}\u003c{r}_{1}+{r}_{2}\\\\ \\left|{r}_{2}-2\\right|\u003c4\\sqrt{2}\u003c2+{r}_{2}\\\\ Fromabove\\\\ {r}_{2}>4\\sqrt{2}-2\\\\ &\\left|{r}_{2}-2\\right|\u003c4\\sqrt{2}\\\\ -4\\sqrt{2}\u003c{r}_{2}-2\u003c4\\sqrt{2}\\\\ {r}_{2}\u003c4\\sqrt{2}+2\\\\ {r}_{2}[4\\sqrt{2}-2,4\\sqrt{2}+2]\\\\ a=[4\\sqrt{2}-2,b=4\\sqrt{2}+2\\\\ a+b=4\\sqrt{2}-2+4\\sqrt{2}+2\\\\ a+b=8\\sqrt{2}\\\\ \\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Circle lie in the second quadrant with radius 2 and touching both coordinate axes. Another circle with centres \((2,6)\) exactly intersect the first circle at two points then range of it's radius is \((\mathrm{a}, \mathrm{b})\) then find \((\mathrm{a}+\mathrm{b})\). <em><strong>(22 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8\sqrt{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4\sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\left|{r}_{1}-{r}_{2}\\right|\u003c{C}_{1}{C}_{2}\u003c{r}_{1}+{r}_{2}\\\\ Let{C}_{1}(2,2)&{r}_{1}=2\\\\ {C}_{2}(2,6)\\\\ Now\\left|{r}_{1}-{r}_{2}\\right|\u003c{C}_{1}{C}_{2}\u003c{r}_{1}+{r}_{2}\\\\ \\left|{r}_{2}-2\\right|\u003c4\\sqrt{2}\u003c2+{r}_{2}\\\\ Fromabove\\\\ {r}_{2}>4\\sqrt{2}-2\\\\ &\\left|{r}_{2}-2\\right|\u003c4\\sqrt{2}\\\\ -4\\sqrt{2}\u003c{r}_{2}-2\u003c4\\sqrt{2}\\\\ {r}_{2}\u003c4\\sqrt{2}+2\\\\ {r}_{2}[4\\sqrt{2}-2,4\\sqrt{2}+2]\\\\ a=[4\\sqrt{2}-2,b=4\\sqrt{2}+2\\\\ a+b=4\\sqrt{2}-2+4\\sqrt{2}+2\\\\ a+b=8\\sqrt{2}\\\\ \\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the points of intersection of the ellipses \({x}^{2}+2{y}^{2}−6x−12y+23=0\) and \(4{x}^{2}+2{y}^{2}−20x−12y+35=0\) lie on a circle of radius \(r\) and centre \((a,b),\) then the value of \(ab+18{r}^{2}\)<sup> </sup>is</p> <p> </p> <p>[JEE Main 2026, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(52\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(53\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(55\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(51\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>By family of curve equation of circle will be\u003c/p> \u003cp>\\(\\Rightarrow {S}_{1}+\\lambda {S}_{2}=0\\)\u003c/p> \u003cp>\\(\\Rightarrow ({x}^{2}+2{y}^{2}−6x−12y+23)\\)\\(+\\lambda (4{x}^{2}+2{y}^{2}−20x−12y+35)=0\\)\u003c/p> \u003cp>⇒ for circle coeff. of \\({x}^{2}=\\) coeff. of \\({y}^{2}\\)\u003c/p> \u003cp>\u003csup>\\(\\Rightarrow \\lambda =\\frac{1}{2}\\)\u003c/sup>\u003c/p> \u003cp>So equation of circle is\u003c/p> \u003cp>\\(\\Rightarrow {x}^{2}+{y}^{2}−\\frac{16}{3}x−6y+\\frac{27}{2}=0\\)\u003c/p> \u003cp>Centre \\(\\left(\\frac{8}{3},3\\right):\\) Radius \\(r=\\sqrt{\\frac{47}{18}}\\)\u003c/p> \u003cp>\\(∴ab+18{r}^{2}=8+47=55\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the four distinct points \((4,6),(-1,5),(0,0)\)and \((\mathrm{k},3\mathrm{k})\) lie on a circle of radius \(r\), then \(10\mathrm{k}+{\mathrm{r}}^{2}\) is equal to</p> <p> </p> <p>[JEE Main 2025, 3 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(33\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(34\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(35\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(A(4,6), B(-1,5)\\) and \\(C(0,0)\\)\u003cbr/>\\(m_{A B}=\\frac{1}{5}\\) and \\(m_{B C}=-5\\)\u003cbr/>\\(\\Rightarrow A C\\) is diameter\u003c/p> \u003cp>Equation of circle is \u003c/p> \u003cp>\\((x-4)(x-0)+(y-6)(y-0)=0\\)\u003c/p> \u003cp>\\(x^2+y^2-4 x-6 y=0\\)\u003c/p> \u003cp>Point \\((k,3k)\\) lies on the circle, therefore\u003c/p> \u003cp>\\(10 k^2-22 k=0\\)\u003c/p> \u003cp>\\(k=\\frac{11}{5}\\)\u003c/p> \u003cp>and radius \\(r=\\frac{1}{2} \\sqrt{52}\\)\u003c/p> \u003cp>Now \\(10 k+r^2=10 \\times \\frac{11}{5}+\\frac{1}{4} \\times 52=35\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the four distinct points \((4,6),(-1,5),(0,0)\)and \((\mathrm{k},3\mathrm{k})\) lie on a circle of radius \(r\), then \(10\mathrm{k}+{\mathrm{r}}^{2}\) is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(33\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(34\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(35\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(LetA=\\left(4,6\\right),B=(-1,5)andC=\\left(0,0\\right)\\\\ {m}_{AB}=\\frac{1}{5}and{m}_{BC}=-5\\\\ \\Rightarrow ACisdiameter\\\\ Eqofcircleis{x}^{2}+{y}^{2}-4x-6y=0\\\\ \\Rightarrow 10k+{r}^{2}=35\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({x}^{2}+{y}^{2}-\alpha x-\beta y+\gamma =0\), this circle touches \(x\) axis at \((a,0)\) and it's \(Y\) intercept is \(b\). Find \(\left(2a,{b}^{2}\right)\) in terms of \(\alpha ,\beta ,\gamma\). <em><strong>(28 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\alpha ,{\beta }^{2}-4\gamma )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((\alpha ,{\beta }^{2})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\alpha ,-4r)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\alpha ,r)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({x}^{2}+{y}^{2}-\\alpha x-\\beta y+\\gamma =0\\\\ g=\\frac{-\\alpha }{2},f=\\frac{-\\beta }{2}\\\\ centre\\left(\\frac{\\alpha }{2},\\frac{\\beta }{2}\\right)\\\\ Nowa=\\frac{\\alpha }{2}\\Rightarrow \\alpha =2a\\\\ &b=2\\sqrt{\\frac{{\\beta }^{2}}{4}-\\gamma }\\Rightarrow {b}^{2}={\\beta }^{2}-4\\gamma \\\\ Hence,(2a,{b}^{2})=(\\alpha ,{\\beta }^{2}-4\\gamma )\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the circle \({x}^{2}+{y}^{2}=4\) intersect \(x\)-axis at the points \(A(a,0),a>0\) and \(B(b,0)\). Let \(P(2\cos \alpha ,2\sin \alpha ),\)and \(Q(2\cos \beta ,2\sin \beta )\) be two points such that \(\left(\alpha −\beta \right)=\frac{\pi }{2}.\) Then the point of intersection of \(AQ\) and \(BP\) lies on:</p> <p> </p> <p>[JEE Main 2026, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({x}^{2}+{y}^{2}−4y−4=0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({x}^{2}+{y}^{2}−4x−4=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({x}^{2}+{y}^{2}−4x−4y=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({x}^{2}+{y}^{2}−4x−4y−4=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given \\(x^2+y^2=4\\)\u003c/p> \u003cp>Put \\(y=0\\) we get \\(x=\\pm 4\\)\u003c/p> \u003cp>we get \\(A(2,0), B(-2,0)\\)\u003c/p> \u003cp>Let point of intersection \\(R(h,k)\\)\u003c/p> \u003cp>\\({m}_{BR}={m}_{BP}\\Rightarrow \\frac{k}{h+2}=\\frac{2\\sin \\alpha }{2\\cos \\alpha +2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{k}{h+2}=\\tan \\frac{\\alpha }{2}\\)\u003c/p> \u003cp>\\({m}_{AR}={m}_{AQ}\\Rightarrow \\frac{k}{h−2}=\\frac{2\\sin \\beta }{2\\cos \\beta −2}=\\frac{\\sin \\beta }{\\cos \\beta −1}\\)\u003c/p> \u003cp>\\(=−\\cot \\frac{\\beta }{2}\\)\u003c/p> \u003cp>Now, \\(\\frac{\\alpha }{2}−\\frac{\\beta }{2}=\\frac{\\pi }{4}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\tan \\left(\\frac{\\alpha }{2}−\\frac{\\beta }{2}\\right)=\\tan \\frac{\\pi }{4}=1\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{\\tan \\frac{\\alpha }{2}−\\tan \\frac{\\beta }{2}}{1+\\tan \\frac{\\alpha }{2}\\tan \\frac{\\beta }{2}}=1\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{\\frac{k}{h+2}+\\frac{h−2}{k}}{1+\\left(\\frac{k}{h+2}\\right)\\left(\\frac{2−h}{k}\\right)}=1\\\\ \\Rightarrow \\frac{{k}^{2}+{h}^{2}−4}{k(h+2)+k\\left(2-h\\right)}=1\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{h}^{2}+{k}^{2}−4}{4k}=1\\)\u003c/p> \u003cp>Hence locus is\u003c/p> \u003cp>\\({x}^{2}+{y}^{2}–4y–4=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A circle \(C\) of radius \(2\) lies in the second quadrant and touches both the coordinate axes. Let \(r\) be the radius of a circle that has centre at the point \((2, 5)\) and intersects the circle \(C\) at exactly two points. If the set of all possible values of \(r\) is the interval \((\alpha ,\beta )\) then \(3\beta -2\alpha\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>15</p></span></div><div class="option"><span class="key">b</span><span><p>14</p></span></div><div class="option"><span class="key">c</span><span><p>12</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The circle \\({C}_{1}\\) has a radius of 2 and touches\u003c/p> \u003cp>both coordinate axes in the second quadrant.\u003c/p> \u003cp>Therefore, its center is (-2, 2).\u003c/p> \u003cp>The equation of circle \\({C}_{1}\\) is\u003c/p> \u003cp> \\({\\left(x+2\\right)}^{2}+{\\left(y-2\\right)}^{2}={2}^{2}\\)\u003c/p> \u003cp>Let the circle \\({C}_{2}\\) with center (2, 5) and radius r.\u003c/p> \u003cp>\\({\\left(x-2\\right)}^{2}+{\\left(y-5\\right)}^{2}={r}^{2}\\)\u003c/p> \u003cp>The distance between the centers of\u003c/p> \u003cp>circles \\({C}_{1}\\)and \\({C}_{2}\\)is:\u003cbr/>\\(d=\\sqrt{{\\left(2-\\left(-2\\right)\\right)}^{2}+{\\left(5-2\\right)}^{2}}=5\\)\u003c/p> \u003cp>For the circles to intersect at exactly two points,\u003c/p> \u003cp>the following condition must hold: \u003c/p> \u003cp>\\(|r-2|\u003c5\u003cr+2\\)\u003c/p> \u003cp>\\(|r-2|\u003c5\\Rightarrow -3\u003cr\u003c7\\) \u003c/p> \u003cp>\\(5\u003cr+2\\Rightarrow r>3\\)\u003c/p> \u003cp>On combining, we get \\(3\u003cr\u003c7.\\)\u003c/p> \u003cp>\\(\\text{From the inequality}3\u003cr\u003c7\\\\ \\text{we can identify}\\alpha =3\\text{and}\\beta =7.\\)\u003c/p> \u003cp>\\(\\Rightarrow 3\\beta -2\\alpha =3(7)-2(3)=15\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({x}^{2}+{y}^{2}-\alpha x-\beta y+\gamma =0\), this circle touches \(x\) axis at \((a,0)\) and it's \(Y\) intercept is \(b\). Find \(\left(2a,{b}^{2}\right)\) in terms of \(\alpha ,\beta ,\gamma\). <em><strong>(28 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\alpha ,{\beta }^{2}-4\gamma )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((\alpha ,{\beta }^{2})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\alpha ,-4r)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\alpha ,r)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({x}^{2}+{y}^{2}-\\alpha x-\\beta y+\\gamma =0\\\\ g=\\frac{-\\alpha }{2},f=\\frac{-\\beta }{2}\\\\ centre\\left(\\frac{\\alpha }{2},\\frac{\\beta }{2}\\right)\\\\ Nowa=\\frac{\\alpha }{2}\\Rightarrow \\alpha =2a\\\\ &b=2\\sqrt{\\frac{{\\beta }^{2}}{4}-\\gamma }\\Rightarrow {b}^{2}={\\beta }^{2}-4\\gamma \\\\ Hence,(2a,{b}^{2})=(\\alpha ,{\\beta }^{2}-4\\gamma )\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Let the circle \(S: 36 x^{2}+36 y^{2}-108 x+120 y+C=0\) be such that it neither intersects nor touches the co-ordinate axes. If the point of intersection of the lines, \(x-2 y=4\) and \(2 x-y=5\) lies inside the circle \(S\), then :</p> <p><strong>[JEE Main 2021, 22 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{25}{9}&lt;C&lt;\frac{13}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(100&lt;C&lt;165\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(81&lt;C&lt;156\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(100&lt;C&lt;156\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given, \\(36 x^{2}+36 y^{2}-108 x+120 y+c=0\\)\u003c/p> \u003cp>\\(\\Rightarrow x^{2}+y^{2}-3 x+\\frac{10}{3} y+\\frac{c}{36}=0\\)\u003c/p> \u003cp>The circle not interesting either axes\u003c/p> \u003cp>\\(\\therefore \\mathrm{g}^{2}&lt;\\mathrm{c} \\&amp; \\mathrm{f}^{2}&lt;\\mathrm{c}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{9}{4}&lt;\\frac{c}{36} \\Rightarrow c&gt;81\\)\u003c/p> \u003cp>And \\(\\frac{25}{9}&lt;\\frac{c}{36} \\Rightarrow c&gt;100\\)\u003c/p> \u003cp>From eq. (i) and eqn. (ii) we get, \\(\\Rightarrow c&gt;100 \\ldots\\)... (iii)\u003c/p> \u003cp>Point of intersection between \\(x-2 y-4=0 \\&amp; 2 x-y\\) \\(-5=0\\) is \\((2,-1)\\) lies inside the circle.\u003c/p> \u003cp>\\(\\therefore 4+1-6-\\frac{10}{3}+\\frac{c}{36}&lt;0 \\Rightarrow c&lt;156\\)\u003c/p> \u003cp>From eq. (iii) and eqn. (iv), we get, \\(\\Rightarrow 100&lt;c&lt;156\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two tangents are drawn from a point \(P\) to the circle \(x^2+y^2-2 x-4 y+4=0\), such that the angle between these tangents is \(\tan ^{-1}\left(\frac{12}{5}\right)\) where \(\tan ^{-1}\left(\frac{12}{5}\right) \in(0, \pi)\) If the centre of the circle is denoted by \(C\) and these tangents touch the circle at points \(A\) and \(B\), then the ratio of the areas of \(\triangle P A B\) and \(\triangle C A B\) is:</p> <p>[JEE Main 2021, 17 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(9: 4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3: 1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2: 1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(11: 4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -242,10 +246,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(x^2+y^2-2 x-4 y+4=0\\) and\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\theta=\\tan ^{-1} \\frac{12}{5} \\\\\u003cbr/>&amp; \\Rightarrow \\tan \\theta=\\frac{12}{5}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\\frac{2 \\tan \\frac{\\theta}{2}}{1-\\left(\\tan \\frac{\\theta}{2}\\right)^2}=\\frac{12}{5}\\) \u003c/p> \u003cp>\\(\\left[\\because \\tan \\theta=\\frac{2 \\tan \\frac{\\theta}{2}}{1-\\tan ^2 \\frac{\\theta}{2}}\\right]\\)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\Rightarrow \\tan \\frac{\\theta}{2}=\\frac{2}{3},-\\frac{3}{2} \\text { (rejected) } \\\\ &amp; \\Rightarrow \\tan \\frac{\\theta}{2}=\\frac{A C}{A P}=\\frac{2}{3} \\\\ &amp; \\frac{\\text { area of triangle } \\triangle P A B}{\\text { area of triangle } \\triangle A B C}=\\frac{\\frac{1}{2} A P^2 \\sin \\theta}{\\frac{1}{2} A C^2 \\sin (\\pi-\\theta)} \\\\ &amp; =\\left(\\frac{A P}{A C}\\right)^2=\\frac{9}{4}\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(x^2+y^2-2 x-4 y+4=0\\) and\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\theta=\\tan ^{-1} \\frac{12}{5} \\\\& \\Rightarrow \\tan \\theta=\\frac{12}{5}\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\\(\\frac{2 \\tan \\frac{\\theta}{2}}{1-\\left(\\tan \\frac{\\theta}{2}\\right)^2}=\\frac{12}{5}\\) \u003c/p> \u003cp>\\(\\left[\\because \\tan \\theta=\\frac{2 \\tan \\frac{\\theta}{2}}{1-\\tan ^2 \\frac{\\theta}{2}}\\right]\\)\u003c/p> \u003cp>\\(\\begin{aligned} & \\Rightarrow \\tan \\frac{\\theta}{2}=\\frac{2}{3},-\\frac{3}{2} \\text { (rejected) } \\\\ & \\Rightarrow \\tan \\frac{\\theta}{2}=\\frac{A C}{A P}=\\frac{2}{3} \\\\ & \\frac{\\text { area of triangle } \\triangle P A B}{\\text { area of triangle } \\triangle A B C}=\\frac{\\frac{1}{2} A P^2 \\sin \\theta}{\\frac{1}{2} A C^2 \\sin (\\pi-\\theta)} \\\\ & =\\left(\\frac{A P}{A C}\\right)^2=\\frac{9}{4}\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the lengths of intercepts on \(x\)-axis and \(y\)-axis made by the circle \(x^2+y^2+a x+2 a y+c=0,(a&lt;0)\) be \(2 \sqrt{2}\) and \(2 \sqrt{5}\), respectively. Then the shortest distance from origin to a tangent to this circle which is perpendicular to the line \(x+2 y=0\), is equal to :</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{6}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{11}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{10}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Circle: \\(x^2+y^2+ax+2ay+c=0\\).\u003c/p> \u003cp>Intercept on \\(x\\)-axis: put \\(y=0\\)\u003c/p> \u003cp>\\(x^2+ax+c=0\\)\u003c/p> \u003cp>Length of intercept \\(=2\\sqrt{2}\\)\u003c/p> \u003cp>\\(|x_1-x_2|=\\sqrt{a^2-4c}=2\\sqrt{2}\\)\u003c/p> \u003cp>\\(a^2-4c=8\\) ......(1)\u003c/p> \u003cp>Intercept on \\(y\\)-axis: put \\(x=0\\)\u003c/p> \u003cp>\\(y^2+2ay+c=0\\)\u003c/p> \u003cp>\\(|y_1-y_2|=\\sqrt{4a^2-4c}=2\\sqrt{5}\\)\u003c/p> \u003cp>\\(4a^2-4c=20\\Rightarrow a^2-c=5\\) ......(2)\u003c/p> \u003cp>From (1): \\(c=\\dfrac{a^2-8}{4}\\)\u003c/p> \u003cp>Substitute in (2):\u003c/p> \u003cp>\\(a^2-\\dfrac{a^2-8}{4}=5\\)\u003c/p> \u003cp>\\(\\dfrac{3a^2+8}{4}=5\\)\u003c/p> \u003cp>\\(3a^2=12\\Rightarrow a^2=4\\)\u003c/p> \u003cp>\\(a=-2\\) (since \\(a&lt;0\\))\u003c/p> \u003cp>\\(c=\\dfrac{4-8}{4}=-1\\)\u003c/p> \u003cp>Circle: \\(x^2+y^2-2x-4y-1=0\\)\u003c/p> \u003cp>\\((x-1)^2+(y-2)^2=6\\)\u003c/p> \u003cp>Centre \\(C(1,2)\\), radius \\(r=\\sqrt{6}\\).\u003c/p> \u003cp>Required tangent is perpendicular to \\(x+2y=0\\)\u003c/p> \u003cp>Slope \\(=\\;2\\)\u003c/p> \u003cp>Equation of tangent: \\(y=2x+k\\)\u003c/p> \u003cp>\\(2x-y+k=0\\)\u003c/p> \u003cp>Distance from centre to tangent \\(=r\\)\u003c/p> \u003cp>\\(\\dfrac{|2(1)-2+k|}{\\sqrt{5}}=\\sqrt{6}\\)\u003c/p> \u003cp>\\(|k|=\\sqrt{30}\\)\u003c/p> \u003cp>Distance from origin to tangent:\u003c/p> \u003cp>\\(\\dfrac{|k|}{\\sqrt{5}}=\\dfrac{\\sqrt{30}}{\\sqrt{5}}=\\sqrt{6}\\)\u003c/p> \u003cp>Shortest distance \\(=\\sqrt{6}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of common tangents, to the circles \(x^2+y^2\) \(-18 x-15 y+131=0\) and \(x^2+y^2-6 x-6 y-7=0\), is:</p> <p> </p> <p>[JEE Main 2023, 15 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given equations is \\(x^2+y^2-18 x-15 y+131=0\\)\u003c/p> \u003cp>\\(\\Rightarrow x^2+y^2-2(9) x-2\\left(\\frac{15}{2}\\right) y+131=0\\)\u003cbr/>Hence, center is \\((-g,-f)\\) and Radius is \\(\\sqrt{g^2+f^2-c}\\)\u003c/p> \u003cp>\\(\u003cbr/>C_1\\left(9, \\frac{15}{2}\\right) \\text { and } r_1=\\sqrt{81+\\frac{225}{4}-131}=\\frac{5}{2}\u003cbr/>\\)\u003c/p> \u003cp>Similarly, equation of \\(2^{\\text {nd }}\\) circle can be writhe as, \\(x^2+y^2-2(3) x-2(3) y-7=0\\)\u003cbr/>\\(\u003cbr/>C_2(3,3) \\text { and } r_2=5\u003cbr/>\\)\u003c/p> \u003cp>Now, we need to find the distance \\(C_1 C_2=\\sqrt{6^2+\\frac{81}{4}}=\\frac{15}{2}\\) Also, \\(r_1+r_2=\\frac{15}{2} \\Rightarrow C_1 C_2=r_1+r_2\\)\u003cbr/>Since circle touches each other externally. Therefore, number of common tangents \\(=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The line \(2 x-y+1=0\) is a tangent to the circle at the point \((2,5)\) and the centre of the circle lies on \(x-2 y=4\). Then, the radius of the circle is:</p> <p> </p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5 \sqrt{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4 \sqrt{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5 \sqrt{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3 \sqrt{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given equation of tangent is \\(2 x-y+1=0\\)\u003c/p> \u003cp>equation of normal is \\(x+2 y=k\\)\u003c/p> \u003cp>putting \\(x=2\\) and \\(y=5\\) we get \\(k=12\\)\u003cbr/>\\(\\therefore\\) equation of normal is \\(x+2 y=12\\)\u003cbr/>Solving with \\(x-2 y=4\\) we get centre at \\((8,2)\\)\u003c/p> \u003cp>radius\u003c/p> \u003cp>\\(=\\sqrt{{\\left(8-2\\right)}^{2}+{\\left(2-5\\right)}^{2}}\\\\ =\\sqrt{36+9}=3\\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the coordinates at one end of a diameter of the circle \(x^2+y^2-8 x-4 y+c=0\) are \((-3,2)\), then the coordinates at the other end are</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((5,3)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((6,2)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((1,-8)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((11,2)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The centre of the given circle is \\(\\mathrm{C} \\equiv(4,2)\\)\u003c/p> \u003cp>Let \\(A \\equiv(-3,2)\\)\u003c/p> \u003cp>If \\((\\alpha, \\beta)\\) are the coordinates of the other end of the diameter, then, as the middle ploint of the diameter is the centre,\u003c/p> \u003cp>\\(\u003cbr/>\\therefore \\quad \\frac{\\alpha-3}{2}=4 \\text { and } \\frac{\\beta+2}{2}=2 \\Rightarrow \\alpha=11, \\beta=2\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Thus, the coordinates of the other end of diameter are \\((11,2)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A circle with centre \((2,3)\) and radius 4 intersects the line \(x+y=3\) at the points \(P\) and \(Q\). If the tangents at \(P\) and \(Q\) intersect at the point \(S(\alpha, \beta)\), then \(4 \alpha-7 \beta\) is equal to</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12</p></span></div><div class="option"><span class="key">b</span><span><p>11</p></span></div><div class="option"><span class="key">c</span><span><p>16</p></span></div><div class="option"><span class="key">d</span><span><p>20</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Equation of circle having centre \\((2,3)\\) and radius 4 is \\(x^{2}+y^{2}-4 x-6 y-3=0\\)\u003c/p> \u003cp>Equation of chord of contact is \\(T_{(\\mathrm{a}, \\mathrm{b})}=0\\)\u003c/p> \u003cp>\\(\\alpha x+\\beta y-2(x+\\alpha)-3(y+\\beta)-3=0\\)\u003c/p> \u003cp>\\(\\Rightarrow(\\alpha-2) x+(\\beta-3) y-(2 \\alpha+3 \\beta+3)=0\\)\u003c/p> \u003cp>But the equation of chord of contact is given\u003c/p> \u003cp>as : \\(x+y-3=0\\)\u003c/p> \u003cp>On comparing, we get\u003c/p> \u003cp>\\(\\frac{\\alpha-2}{1}=\\frac{\\beta-3}{1}=-\\left(\\frac{2 \\alpha+3 \\beta+3}{-3}\\right)\\)\u003c/p> \u003cp>On solving \\(\\alpha=-6, \\beta=-5\\)\u003c/p> \u003cp>\\(\\therefore 4 \\alpha-7 \\beta=11\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a circle \(C_1: x^2+y^2-4 x-2 y=\alpha-5\). Let its mirror image in the line \(y=2 x+1\) be another circle \(C_2: 5 x^2+5 y^2-10 f x-10 g y+36=0\). Let \(r\) be the radius of \(C_2\). Then \(\alpha+r\) is equal to ________</p> <p> </p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>1</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -314,10 +318,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} &amp; C _1: x^2+y^2-4 x-2 y+(5-\\alpha)=0 \\\\ &amp; \\text { Centre } O_1=(2,1), \\operatorname{radius}\\left(r_1\\right)=\\sqrt{\\alpha} \\\\ &amp; C_2: x^2+y^2-2 f x-2 g y+\\frac{36}{5}=0\\end{aligned}\\)\u003c/p> \u003cp>Centre \\(O _2=(f, g)\\) radius \\(\\left(r_2\\right)=\\sqrt{f^2+g^2-\\frac{36}{5}}\\) \\(\\Rightarrow \\frac{f-2}{2}=\\frac{g-1}{-1}=-2 \\cdot\\left(\\frac{2 \\times 2-1+1}{2^2+1^2}\\right)=\\frac{-8}{5}\\) \\(\\Rightarrow f=\\frac{-6}{5}\\) and \\(g=\\frac{13}{5}\\) \\(\\Rightarrow \\alpha=1\\) and \\(r=1\\)\u003cbr/>Hence, \\(\\alpha+r=2\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} & C _1: x^2+y^2-4 x-2 y+(5-\\alpha)=0 \\\\ & \\text { Centre } O_1=(2,1), \\operatorname{radius}\\left(r_1\\right)=\\sqrt{\\alpha} \\\\ & C_2: x^2+y^2-2 f x-2 g y+\\frac{36}{5}=0\\end{aligned}\\)\u003c/p> \u003cp>Centre \\(O _2=(f, g)\\) radius \\(\\left(r_2\\right)=\\sqrt{f^2+g^2-\\frac{36}{5}}\\) \\(\\Rightarrow \\frac{f-2}{2}=\\frac{g-1}{-1}=-2 \\cdot\\left(\\frac{2 \\times 2-1+1}{2^2+1^2}\\right)=\\frac{-8}{5}\\) \\(\\Rightarrow f=\\frac{-6}{5}\\) and \\(g=\\frac{13}{5}\\) \\(\\Rightarrow \\alpha=1\\) and \\(r=1\\)\u003cbr/>Hence, \\(\\alpha+r=2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>. Let the tangents at the points \(A(4,-11)\) and \(B(8,-5)\) on the circle \(x^{2}+y^{2}-3 x+10 y-15=0\), intersect at the point \(C\). Then the radius of the circle, whose centre is \(C\) and the line joining \(A\) and \(B\) is its tangent, is equal to</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3 \sqrt{3}}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2 \sqrt{13}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{13}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(\frac{2 \sqrt{13}}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Equation of tangent at \\(A(4,-11)\\) on circle is\u003c/p> \u003cp>\\(\\Rightarrow 4 x-11 y-3\\left(\\frac{x+4}{2}\\right)+10\\left(\\frac{y-11}{2}\\right)-15=0\\)\u003c/p> \u003cp>\\(\\Rightarrow 5 x-12 y-152=0\\)\u003c/p> \u003cp>Equation of tangent at \\(B(8,-5)\\) on circle is\u003c/p> \u003cp>\\(\\Rightarrow 8 x-5 y-3\\left(\\frac{x+8}{2}\\right)+10\\left(\\frac{y-5}{2}\\right)-15=0\\)\u003c/p> \u003cp>\\(\\Rightarrow 13 x-104=0 \\Rightarrow x=8\\)\u003c/p> \u003cp>On putting \\(x=8\\) in equ. (i) \\(\\Rightarrow y=\\frac{28}{3}\\)\u003c/p> \u003cp>Point \\(C \\equiv\\left(8, \\frac{-28}{3}\\right)\\)\u003c/p> \u003cp>Equation of tangent \\(\\mathrm{AB}\\) :\u003c/p> \u003cp>\\(y+11=\\frac{-5+11}{8-4}(x-4) \\Rightarrow 3 x-2 y-34=0\\)\u003c/p> \u003cp>Hence, \\(r=\\left|\\frac{3.8+\\frac{2.28}{3}-34}{\\sqrt{13}}\\right|=\\frac{2 \\sqrt{13}}{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A circle C touches the line \(x=2y\) at the point (2,1) and intersects the circle \({C}_{1}:{x}^{2}+{y}^{2}+2y-5=\) 0 at two points P and Q such that PQ is a diameter of \({C}_{1}\). Then the diameter of C is</p> <p><strong>[JEE Main 2021, 26 Aug (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7\sqrt{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4\sqrt{15}\)</p></span></div><div class="option"><span class="key">c</span><span><p>15</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{285}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of required circle\u003c/p> \u003cp>\\(C:(x-2{)}^{2}+(y-1{)}^{2}+\\lambda (2y-x)=0\\)\u003c/p> \u003cp>Intersect \\({C}_{1}:{x}^{2}+{y}^{2}+2y-5=0\\)\u003c/p> \u003cp>\\(Equationofradicalaxis\\)\u003c/p> \u003cp>\\(-4x-4y+10+\\lambda (2y-x)=0\\)\u003c/p> \u003cp>Centre of \\({C}_{1}(0,-1)\\) lies on------ (ii)\u003c/p> \u003cp>\\(\\Rightarrow 4+10-2\\lambda =0\\Rightarrow \\lambda =7\\)\u003c/p> \u003cp>\\(\\text{ Equation of circle }C\\text{ is }\\)\u003c/p> \u003cp>\\({x}^{2}+{y}^{2}-11x+12y+5=0\\)\u003c/p> \u003cp>\\(\\text{ Diameter }=\\sqrt{245}=7\\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A line segment \(A B\) of length \(\lambda\) moves such that the points \(A\) and \(B\) remain on the periphery of a circle of radius \(\lambda\). Then the locus of the point, that divides the line segment \(A B\) in the ratio \(2: 3\), is circle of radius</p> <p><br/>[JEE Main 2023, 10 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{5} \lambda\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\sqrt{19}}{7} \lambda\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} \lambda\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\sqrt{19}}{5} \lambda\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let the circle have centre O and radius λ. Given chord AB has fixed length |AB|=λ. \u003cbr/>For a circle with radius λ, chord length \\[s=2λ\\sin(\\tfrac{\\theta}{2})\\], where θ=∠AOB.\u003cbr/>\\[\u003cbr/>s=\\lambda \\Rightarrow 2\\lambda\\sin\\frac{\\theta}{2}=\\lambda \\Rightarrow \\sin\\frac{\\theta}{2}=\\frac12 \\Rightarrow \\theta=\\frac{\\pi}{3}\\]\u003cbr/>Place O at origin. Let \\[OA=λ\\mathbf u, OB=λ\\mathbf v \\ with \\ |\\mathbf u|=|\\mathbf v|=1 \\ and \\ \\mathbf u\\cdot\\mathbf v=\\cos\\theta=\\frac12.\\]\u003c/p> \u003cp>Point \\(P\\) divides \\(AB\\) in the ratio \\(2:3\\) internally, so\u003cbr/>\\[\u003cbr/>P=\\frac{3A+2B}{5}=\\frac{\\lambda}{5}\\,(3\\mathbf u+2\\mathbf v)\\]\u003cbr/>Hence\u003cbr/>\\[\u003cbr/>|OP|^2=\\left(\\frac{\\lambda}{5}\\right)^2|3\\mathbf u+2\\mathbf v|^2\u003cbr/>=\\frac{\\lambda^2}{25}\\big(9|\\mathbf u|^2+4|\\mathbf v|^2+12\\,\\mathbf u\\cdot\\mathbf v\\big)\u003cbr/>=\\frac{\\lambda^2}{25}(9+4+12\\cdot\\tfrac12)=\\frac{19\\lambda^2}{25}\\]\u003cbr/>Therefore the locus is a circle (concentric with the given circle) with radius\u003cbr/>\\[\u003cbr/>|OP|=\\frac{\\sqrt{19}}{5}\\,\\lambda\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the tangents at the points \(A(4,-11)\) and \(B(8,-5)\) on the circle \(x^2+y^2-3 x+10 y-15=0\), intersect at the point \(C\). Then the radius of the circle, whose centre is \(C\) and the line joining \(A\) and \(B\) is its tangent, is equal to</p> <p> </p> <p>[JEE Main 2023, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3 \sqrt{3}}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2 \sqrt{13}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{13}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2 \sqrt{13}}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,10 +366,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Equation of tangent at \\(A(4,-11)\\) on circle is\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow 4 x-11 y-3\\left(\\frac{x+4}{2}\\right)+10\\left(\\frac{y-11}{2}\\right)-15=0 \\\\\u003cbr/>&amp; \\Rightarrow 5 x-12 y-152=0.......(i)\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Equation of tangent at \\(B(8,-5)\\) on circle is\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow 8 x-5 y-3\\left(\\frac{x+8}{2}\\right)+10\\left(\\frac{y-5}{2}\\right)-15=0 \\\\\u003cbr/>&amp; \\Rightarrow 13 x-104=0 \\Rightarrow x=8\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>On putting \\(x=8\\) in equ. ( \\(i) \\Rightarrow y=\\frac{28}{3}\\)\u003cbr/>Point \\(C \\equiv\\left(8, \\frac{-28}{3}\\right)\\)\u003cbr/>Equation of tangent \\(AB\\) :\u003cbr/>\\(\u003cbr/>y+11=\\frac{-5+11}{8-4}(x-4) \\Rightarrow 3 x-2 y-34=0\u003cbr/>\\)\u003c/p> \u003cp>Hence, \\(r=\\left|\\frac{3.8+\\frac{2.28}{3}-34}{\\sqrt{13}}\\right|=\\frac{2 \\sqrt{13}}{3}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Equation of tangent at \\(A(4,-11)\\) on circle is\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow 4 x-11 y-3\\left(\\frac{x+4}{2}\\right)+10\\left(\\frac{y-11}{2}\\right)-15=0 \\\\& \\Rightarrow 5 x-12 y-152=0.......(i)\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Equation of tangent at \\(B(8,-5)\\) on circle is\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow 8 x-5 y-3\\left(\\frac{x+8}{2}\\right)+10\\left(\\frac{y-5}{2}\\right)-15=0 \\\\& \\Rightarrow 13 x-104=0 \\Rightarrow x=8\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>On putting \\(x=8\\) in equ. ( \\(i) \\Rightarrow y=\\frac{28}{3}\\)\u003cbr/>Point \\(C \\equiv\\left(8, \\frac{-28}{3}\\right)\\)\u003cbr/>Equation of tangent \\(AB\\) :\u003cbr/>\\(\u003cbr/>y+11=\\frac{-5+11}{8-4}(x-4) \\Rightarrow 3 x-2 y-34=0\u003cbr/>\\)\u003c/p> \u003cp>Hence, \\(r=\\left|\\frac{3.8+\\frac{2.28}{3}-34}{\\sqrt{13}}\\right|=\\frac{2 \\sqrt{13}}{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A circle with centre \((2,3)\) and radius 4 intersects the line \(x+y=3\) at the points \(P\) and \(Q\). If the tangents at \(P\) and \(Q\) intersect at the point \(S(\alpha, \beta)\), then \(4 \alpha-7 \beta\) is equal to__________</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>11</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>13</p></span></div><div class="option"><span class="key">d</span><span><p>14</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,10 +378,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of circle having centre \\((2,3)\\) and radius 4 is\u003cbr/>\\(\u003cbr/>x^2+y^2-4 x-6 y-3=0\u003cbr/>\\)\u003c/p> \u003cp>Equation of chord of contact is \\(T_{( a , b )}=0\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\alpha x+\\beta y-2(x+\\alpha)-3(y+\\beta)-3=0 \\\\\u003cbr/>&amp; \\Rightarrow(\\alpha-2) x+(\\beta-3) y-(2 \\alpha+3 \\beta+3)=0\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>But the equation of chord of contact is given\u003cbr/>\\(\u003cbr/>\\text { as : } x+y-3=0\u003cbr/>\\)\u003c/p> \u003cp>On comparing, we get\u003cbr/>\\(\u003cbr/>\\frac{\\alpha-2}{1}=\\frac{\\beta-3}{1}=-\\left(\\frac{2 \\alpha+3 \\beta+3}{-3}\\right)\u003cbr/>\\)\u003c/p> \u003cp>On solving \\(\\alpha=-6, \\beta=-5\\)\u003cbr/>\\(\u003cbr/>\\therefore 4 \\alpha-7 \\beta=11\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of circle having centre \\((2,3)\\) and radius 4 is\u003cbr/>\\(\u003cbr/>x^2+y^2-4 x-6 y-3=0\u003cbr/>\\)\u003c/p> \u003cp>Equation of chord of contact is \\(T_{( a , b )}=0\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\alpha x+\\beta y-2(x+\\alpha)-3(y+\\beta)-3=0 \\\\& \\Rightarrow(\\alpha-2) x+(\\beta-3) y-(2 \\alpha+3 \\beta+3)=0\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>But the equation of chord of contact is given\u003cbr/>\\(\u003cbr/>\\text { as : } x+y-3=0\u003cbr/>\\)\u003c/p> \u003cp>On comparing, we get\u003cbr/>\\(\u003cbr/>\\frac{\\alpha-2}{1}=\\frac{\\beta-3}{1}=-\\left(\\frac{2 \\alpha+3 \\beta+3}{-3}\\right)\u003cbr/>\\)\u003c/p> \u003cp>On solving \\(\\alpha=-6, \\beta=-5\\)\u003cbr/>\\(\u003cbr/>\\therefore 4 \\alpha-7 \\beta=11\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A circle \(C\) touches the line \(x=2 y\) at the point \((2,1)\) and intersects the circle \(C_1: x^2+y^2+2 y-5=0\) at two points \(P\) and \(Q\) such that \(P Q\) is a diameter of \(C_1\). Then the diameter of \(C\) is</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7 \sqrt{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4 \sqrt{15}\)</p></span></div><div class="option"><span class="key">c</span><span><p>15</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{285}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since circle \\(C\\) touches the line \\(x=2 y\\) at the point \\((2,1)\\)\u003c/p> \u003cp>Therefore\u003c/p> \u003cp>\\(C: (x-2)^2+(y-1)^2+\\lambda(x-2 y)=0\\)\u003c/p> \u003cp>\\(C: x^2+y^2+x(\\lambda-4)+y(-2-2 \\lambda)+5=0\\)\u003c/p> \u003cp>\\(C_1: x^2+y^2+2 y-5=0\\)\u003c/p> \u003cp>Since circle \\(C\\) intersect \\(C_1\\) at point \\(P\\) and \\(Q\\)\u003c/p> \u003cp>Therefore equation of \\(PQ\\) is \u003c/p> \u003cp>\\(C-C_1=0\\)\u003c/p> \u003cp>\\((\\lambda-4) x-(2 \\lambda+4) y+10=0\\)\u003c/p> \u003cp>since \\(PQ\\) is a diameter of \\(C_1\\), so it passes through the centre of \\(C_1\\)\u003c/p> \u003cp>It passes through \\((0,-1)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\lambda=-7\\)\u003c/p> \u003cp>\\(C: x^2+y^2-11 x+12 y+5=0\\)\u003c/p> \u003cp>Now radius \\(r=\\frac{\\sqrt{245}}{2}\\)\u003c/p> \u003cp>Diameter \\(=7 \\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the lengths of intercepts on \(x\)-axis and \(y\)-axis made by the circle \(x^2+y^2+a x+2 a y+c=0,(a&lt;0)\) be \(2 \sqrt{2}\) and \(2 \sqrt{5}\), respectively. Then the shortest distance from origin to a tangent to this circle which is perpendicular to the line \(x+2 y=0\), is equal to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{6}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{11}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{10}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,10 +402,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, that equation of circle \\(x^2+y^2+a x+2 a y+c=0\\)\u003cbr/>\\(\\text { ; } a&lt;0\\)\u003c/p> \u003cp>Now, \\(x\\) - intercept \\(=2 \\sqrt{g^2-c}=2 \\sqrt{2}\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow \\sqrt{\\left(\\frac{a}{2}\\right)^2-c}=\\sqrt{2} \\\\\u003cbr/>&amp; \\Rightarrow \\frac{a^2}{4}-c=2 \\\\\u003cbr/>&amp; \\Rightarrow a^2=8+4 c....(i)\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Also, since \\(y\\)-intercept\\(=2 \\sqrt{5}\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow f^2-c=5 \\\\\u003cbr/>&amp; \\Rightarrow a^2-c=5 \\\\\u003cbr/>&amp; \\therefore a^2=5+c....(ii), we get\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>From (i) and (ii)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; 8+4 c=5+c \\\\\u003cbr/>&amp; \\Rightarrow 3 c=-3\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow c=-1 \\\\\u003cbr/>&amp; \\Rightarrow a^2=5+(-1) \\\\\u003cbr/>&amp; \\Rightarrow a^2=4 \\Rightarrow a= \\pm 2 \\\\\u003cbr/>&amp; \\text { as } a&lt;0 \\Rightarrow a=-2\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Therefore, equation of circle is\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; x^2+y^2-2 x-4 y-1=0 \\\\\u003cbr/>&amp; \\Rightarrow(x-1)^2+(y-2)^2=6\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Equation of tangent to the circle is perpendicular to the line \\(x+2 y=0\\) \\(\\Rightarrow\\)slope of the tangent \\(=2\\)\u003cbr/>Therefore, equation of tangent:\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; (y-2)=2(x-1) \\pm \\sqrt{6} \\sqrt{1+4} \\\\\u003cbr/>&amp; \\Rightarrow 2 x-y \\pm \\sqrt{30}=0\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>∴ Shortest distance from (0, 0)\\(=\\frac{\\sqrt{30}}{\\sqrt{5}}=\\sqrt{6}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, that equation of circle \\(x^2+y^2+a x+2 a y+c=0\\)\u003cbr/>\\(\\text { ; } a&lt;0\\)\u003c/p> \u003cp>Now, \\(x\\) - intercept \\(=2 \\sqrt{g^2-c}=2 \\sqrt{2}\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow \\sqrt{\\left(\\frac{a}{2}\\right)^2-c}=\\sqrt{2} \\\\& \\Rightarrow \\frac{a^2}{4}-c=2 \\\\& \\Rightarrow a^2=8+4 c....(i)\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Also, since \\(y\\)-intercept\\(=2 \\sqrt{5}\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow f^2-c=5 \\\\& \\Rightarrow a^2-c=5 \\\\& \\therefore a^2=5+c....(ii), we get\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>From (i) and (ii)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& 8+4 c=5+c \\\\& \\Rightarrow 3 c=-3\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow c=-1 \\\\& \\Rightarrow a^2=5+(-1) \\\\& \\Rightarrow a^2=4 \\Rightarrow a= \\pm 2 \\\\& \\text { as } a&lt;0 \\Rightarrow a=-2\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Therefore, equation of circle is\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& x^2+y^2-2 x-4 y-1=0 \\\\& \\Rightarrow(x-1)^2+(y-2)^2=6\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Equation of tangent to the circle is perpendicular to the line \\(x+2 y=0\\) \\(\\Rightarrow\\)slope of the tangent \\(=2\\)\u003cbr/>Therefore, equation of tangent:\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& (y-2)=2(x-1) \\pm \\sqrt{6} \\sqrt{1+4} \\\\& \\Rightarrow 2 x-y \\pm \\sqrt{30}=0\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>∴ Shortest distance from (0, 0)\\(=\\frac{\\sqrt{30}}{\\sqrt{5}}=\\sqrt{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S_1: x^2+y^2=9\) and \(S _2:(x-2)^2+y^2=1\). Then the locus of center of a variable circle \(S\) which touches \(S_1\) internally and \(S_2\) externally always passes through the points:</p> <p> </p> <p>[JEE Main 2021, 18 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left(\frac{1}{2}, \pm \frac{\sqrt{5}}{2}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((0, \pm \sqrt{3})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((1, \pm 2)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left(2, \pm \frac{3}{2}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(S_1: x^2+y^2=9 \\ (O_1=(0,0),R_1=3),\\quad \\)\u003cbr/>\\(S_2:(x-2)^2+y^2=1 \\ (O_2=(2,0),R_2=1).\\)\u003c/p> \u003cp>Let the variable circle S have centre (h,k) and radius r.\u003cbr/>Touching \\(S_1\\) internally ⇒ \u003cbr/>\\[\u003cbr/>O_1S=3-r \\ \\Rightarrow\\ \\sqrt{h^2+k^2}=3-r. \u003cbr/>\\]\u003cbr/>Touching \\(S_2\\) externally ⇒ \u003cbr/>\\[\u003cbr/>O_2S=r+1 \\ \\Rightarrow\\ \\sqrt{(h-2)^2+k^2}=r+1.\u003cbr/>\\]\u003cbr/>Eliminate r:\u003cbr/>\\[\u003cbr/>\\sqrt{(h-2)^2+k^2}=4-\\sqrt{h^2+k^2}.\u003cbr/>\\]\u003cbr/>Hence\u003cbr/>\\[\u003cbr/>\\sqrt{(x-2)^2+y^2}+\\sqrt{x^2+y^2}=4,\u003cbr/>\\]\u003cbr/>which is an ellipse with foci at (0,0) and (2,0).\u003c/p> \u003cp>Check the given points:\u003c/p> \u003cp>- For \\((2,\\pm \\tfrac{3}{2})\\): \u003cbr/>\\[\u003cbr/>\\sqrt{(2-2)^2+\\left(\\tfrac{3}{2}\\right)^2}+\\sqrt{2^2+\\left(\\tfrac{3}{2}\\right)^2}\u003cbr/>=\\tfrac{3}{2}+\\tfrac{5}{2}=4\u003cbr/>\\]\u003cbr/>so these lie on the ellipse.\u003c/p> \u003cp>The other options do not satisfy the sum \\(=4\\).\u003c/p> \u003cp>Therefore, the locus always passes through \\(\\boxed{(2,\\pm \\tfrac{3}{2})}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the lengths of intercepts on <em>x</em>–axis and <em>y</em>-axis made by the circle <em>x</em><sup>2</sup> + <em>y</em><sup>2</sup> + <em>ax</em> + 2<em>ay</em> + <em>c</em> = 0, <br/>(<em>a</em> &lt; 0) be \(2\sqrt{2}\) and \(2\sqrt{5},\) respectively. Then the shortest distance from origin to a tangent to this circle which is perpendicular to the line <em>x</em> + 2<em>y</em> = 0, is equal to</p> <p><strong>[JEE Main 2021, 16 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{6}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{11}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{10}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({x}^{2}+{y}^{2}+ax+2ay+c=0\\)\u003c/p> \u003cp>\\(2\\sqrt{{g}^{2}−c}=2\\sqrt{\\frac{{a}^{2}}{4}−c}=2\\sqrt{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{a}^{2}}{4}−c=2\\)\u003c/p> \u003cp>\\(2\\sqrt{{\\text{f}}^{2}−\\text{c}}=2\\sqrt{{\\text{a}}^{2}−\\text{c}}=2\\sqrt{5}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }{a}^{2}−c=5\\)\u003c/p> \u003cp>(1) &amp; (2)\u003c/p> \u003cp>\\(\\frac{3{a}^{2}}{4}=3\\Rightarrow a=−2\\text{ }(a\u003c0)\\)\u003c/p> \u003cp>\\(∴\\text{ }c=−1\\)\u003c/p> \u003cp>Circle \\(\\Rightarrow {x}^{2}+{y}^{2}−2x−4y−1=0\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }{(x−1)}^{2}+{(y−2)}^{2}=6\\)\u003c/p> \u003cp>Given \\(x+2y=0\\Rightarrow m=−\\frac{1}{2}\\)\u003c/p> \u003cp>\\({\\text{m}}_{\\text{tangent }}=2\\)\u003c/p> \u003cp>Equation of tangent\u003c/p> \u003cp>\\(\\Rightarrow (y−2)=2(x−1)\\pm \\sqrt{6}\\sqrt{1+4}\\)\u003c/p> \u003cp>\\(\\Rightarrow 2x−y\\pm \\sqrt{30}=0\\)\u003c/p> \u003cp>Perpendicular distance from\u003c/p> \u003cp>\\(\\left(0.0\\right)=\\left|\\frac{\\pm \\sqrt{30}}{\\sqrt{4+1}}\\right|=\\sqrt{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A circle \(C\) touches the line \(x=2 y\) at the point \((2,1)\) and intersects the circle \(C_1: x^2+y^2+2 y-5=0\) at two points \(P\) and \(Q\) such that \(P Q\) is a diameter of \(C_1\). Then the diameter of \(C\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7 \sqrt{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4 \sqrt{15}\)</p></span></div><div class="option"><span class="key">c</span><span><p>15</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{285}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,10 +438,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of required circle\u003cbr/>\\(C:(x-2)^2+(y-1) 2+\\lambda(2 y-x)=0\\).........(i)\u003c/p> \u003cp>Intersects \\(C_1: x^2+y^2+2 y-5=0\\)\u003cbr/>\\(\\therefore\\) Equation of radical axis: \\(C-C_1=0\\)\u003cbr/>\\(\u003cbr/>-4 x-4 y+10+\\lambda(2 y-x)=0.....(ii)\u003cbr/>\\)\u003c/p> \u003cp>Centre of \\(C_1(0,-1)\\) lies on equ (ii)\u003cbr/>\\(\u003cbr/>\\Rightarrow 4+10-2 \\lambda=0 \\Rightarrow \\lambda=7\u003cbr/>\\)\u003c/p> \u003cp>Equation of circle \\(C\\) is \\(x^2+y^2-11 x+12 y+5=0\\)\u003cbr/>Here, \\(g=\\frac{-11}{2}, f=6, C=5\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; r=\\sqrt{g^2+f^2-C}=\\sqrt{\\left(\\frac{-11}{2}\\right)^2+(6)^2-5} \\\\\u003cbr/>&amp; =\\sqrt{\\frac{245}{2}}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Diameter \\((D)=\\sqrt{245}=7 \\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of required circle\u003cbr/>\\(C:(x-2)^2+(y-1) 2+\\lambda(2 y-x)=0\\).........(i)\u003c/p> \u003cp>Intersects \\(C_1: x^2+y^2+2 y-5=0\\)\u003cbr/>\\(\\therefore\\) Equation of radical axis: \\(C-C_1=0\\)\u003cbr/>\\(\u003cbr/>-4 x-4 y+10+\\lambda(2 y-x)=0.....(ii)\u003cbr/>\\)\u003c/p> \u003cp>Centre of \\(C_1(0,-1)\\) lies on equ (ii)\u003cbr/>\\(\u003cbr/>\\Rightarrow 4+10-2 \\lambda=0 \\Rightarrow \\lambda=7\u003cbr/>\\)\u003c/p> \u003cp>Equation of circle \\(C\\) is \\(x^2+y^2-11 x+12 y+5=0\\)\u003cbr/>Here, \\(g=\\frac{-11}{2}, f=6, C=5\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& r=\\sqrt{g^2+f^2-C}=\\sqrt{\\left(\\frac{-11}{2}\\right)^2+(6)^2-5} \\\\& =\\sqrt{\\frac{245}{2}}\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Diameter \\((D)=\\sqrt{245}=7 \\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A\) be the point \((1,2)\) and \(B\) be any point on the curve \(x^2+y^2=16\). If the centre of the locus of the point \(P\), which divides the line segment \(A B\) in the ratio \(3: 2\) is the point \(C\) \((\alpha, \beta)\), then the length of the line segment \(A C\) is<br/><br/>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{6 \sqrt{5}}{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4 \sqrt{5}}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2 \sqrt{5}}{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3 \sqrt{5}}{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let O be the origin. Circle: \\(x^2+y^2=16\\) has centre O(0,0), radius 4.\u003cbr/>A=(1,2) and B is any point on the circle. \u003cbr/>If P divides AB in the ratio 3:2 (AP:PB=3:2), then\u003cbr/>\\[\u003cbr/>\\vec{OP}=\\frac{2\\vec{OA}+3\\vec{OB}}{5}=\\frac{2}{5}\\vec{OA}+\\frac{3}{5}\\vec{OB}\\]\u003cbr/>As B moves on the circle, \\(\\vec{OB}\\) sweeps all vectors of length 4 about O.\u003cbr/>Hence the locus of P is a circle with\u003cbr/>\\[\u003cbr/>\\text{centre }C:\\ \\vec{OC}=\\frac{2}{5}\\vec{OA}=\\left(\\frac{2}{5},\\frac{4}{5}\\right),\\quad\u003cbr/>\\text{radius } \\frac{3}{5}\\cdot 4=\\frac{12}{5}\u003cbr/>\\]\u003cbr/>Therefore the required length\u003cbr/>\\[\u003cbr/>AC=\\left\\|\\,(1,2)-\\left(\\frac{2}{5},\\frac{4}{5}\\right)\\right\\|\u003cbr/>=\\sqrt{\\left(\\frac{3}{5}\\right)^2+\\left(\\frac{6}{5}\\right)^2}\u003cbr/>=\\frac{3\\sqrt{5}}{5}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the incorrect statement about the two circles whose equations are given below :</p> <p>\(x^2+y^2-10 x-10 y+41=0\) and \(x^2+y^2-16 x-10 y+80=0 \) </p> <p> </p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Distance between two centres is the average of radii of both the circles.</p></span></div><div class="option"><span class="key">b</span><span><p>Both circles' centres lie inside region of one another.</p></span></div><div class="option"><span class="key">c</span><span><p>Circles have two intersection points.</p></span></div><div class="option"><span class="key">d</span><span><p>Both circles pass through the centre of each other.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\( S_1=x^2+y^2-10 x-10 y+41=0 .....(i)\\)\u003cbr/>centre \\(C_1(5,5)\\) and radius \\(r_1=3 \\)\u003cbr/>\\( S_2=x^2+y^2-16 x-10 y+80=0 .....(ii)\\)\u003cbr/>centre \\(C_2(8,5)\\) and radius \\( r_2=3\\)\u003c/p> \u003cp>Now \\(C_1 C_2=3, r_1=3, r_2=3\\)\u003c/p> \u003cp>Putting \\((8,5)\\) in eq (i) , \\(S_1=64+25-80-50+41=0\\)\u003cbr/>and \\( C_1(5,5)\\) in eq (ii), \\(S_2=25+25-80-50+80=0\\)\u003c/p> \u003cp>Both circles pass through the centre of each other.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a chord of the circle \(x^2+y^2=8\) makes equal intercets of length \(a\) on the coordinate axes, then</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(|\mathrm{a}|&lt;8\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(|\mathrm{a}|&lt;4 \sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(|\mathrm{a}|&lt;4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mid a \mid&gt;4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Since the chord makes equal intercepts of length a on the coordinate axes. So, its equation can be written as \\(\\left|x\\right|+\\left|y\\right|=a\\) . This line meets\u003cbr/>the given circle at two distinct points.So, the length of the perpendicular from the center (0, 0) of the given circle must be less than the radius.\u003c/p> \u003cp>\\(\\left| \\pm \\frac{\\mathrm{a}}{\\sqrt{2}}\\right|&lt;\\sqrt{8} \\Rightarrow \\mathrm{a}^2&lt;16 \\Rightarrow|\\mathrm{a}|&lt;4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let</p> <p>\(A=\left{(x,y)\in R\times R∣2{x}^{2}+2{y}^{2}-2x-2y=1\right}\\ B=\left{(x,y)\in R\times R∣4{x}^{2}+4{y}^{2}-16y+7=0\right}\text{ and }\\ C=\left{(x,y)\in R\times R∣{x}^{2}+{y}^{2}-4x-2y+5\leq {r}^{2}\right}\)<br/>Then the minimum value of \(|r|\) such that \(A\cup B\subseteq C\) is equal to :</p> <p><strong>[JEE Main 2021, 27 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1+\sqrt{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3+2\sqrt{5}}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3+\sqrt{10}}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2+\sqrt{10}}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({S}_{1}:{x}^{2}+{y}^{2}-x-y-\\frac{1}{2}=0{C}_{1}:\\left(\\frac{1}{2},\\frac{1}{2}\\right)\\\\ {r}_{1}=\\sqrt{\\frac{1}{4}+\\frac{1}{4}+\\frac{1}{2}}=1\\\\ {S}_{2}:{x}^{2}+{y}^{2}-4y+\\frac{7}{4}=0{C}_{2}:(0,2)\\\\ {r}_{2}=\\sqrt{4-\\frac{7}{4}}=\\frac{3}{2}\\\\ {S}_{3}:{x}^{2}+{y}^{2}-4x-2y+5-{r}^{2}=0{C}_{3}:(2,1)\\\\ {r}_{3}=\\sqrt{4+1-5+{r}^{2}}=|r|\\\\ {C}_{1}{C}_{3}=\\sqrt{\\frac{5}{2}},{C}_{2}{C}_{3}=\\sqrt{5}{S}_{1}\\text{ must be inside }{S}_{3}∴\\sqrt{\\frac{5}{2}}\\leq |r-1|\\text{ and also }{S}_{2}\\text{ must be inside }{S}_{3}∴\\sqrt{5}\\leq \\left|r-\\frac{3}{2}\\right|\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a chord of the circle \({x}^{2}+{y}^{2}=8\) makes equal intercepts of length a on the coordinate axes, then</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(|a|<8\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(|a|<4\sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(|a|<4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(|a|>4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> Since the chord makes equal intercepts of length a on the coordinate axes.\u003c/p> \u003cp>So, its equation can be written as \\(x\\pm y=\\pm a\\) .\u003c/p> \u003cp>This line meets the given circle at two distinct points.\u003c/p> \u003cp>So, length of the perpendicular from the centre (0,0) of the given circle must be less than the radius.\u003c/p> \u003cp>i.e. \\(\\left|\\left.\\pm \\frac{a}{\\sqrt{2}}\\right|\u003c\\sqrt{8}\\Rightarrow {a}^{2}\u003c16\\Rightarrow \\text{ }|a|\u003c4\\right.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(B\) be the centre of the circle \(x^{2} + y^{2} - 2x + 4y + 1 = 0\). Let the tangents at two points \(P\) and \(Q\) on the circle intersect at the point \(A(3,1)\). Then \(8.\left( \frac{\text{area } \bigtriangleup \text{APQ}}{\text{area } \bigtriangleup \text{BPQ}} \right)\) is equal to</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12</p></span></div><div class="option"><span class="key">b</span><span><p>18</p></span></div><div class="option"><span class="key">c</span><span><p>11</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Circle: \\(x^2+y^2-2x+4y+1=0\\)\u003c/p> \u003cp>\\((x-1)^2+(y+2)^2=4\\)\u003c/p> \u003cp>Centre \\(B(1,-2)\\), radius \\(r=2\\).\u003c/p> \u003cp>Given, \\(A(3,1)\\)\u003c/p> \u003cp>For tangents from \\(A\\), chord of contact \\(PQ\\) is\u003c/p> \u003cp>\\(T=0\\)\u003c/p> \u003cp>\\(xx_1+yy_1-(x+x_1)+2(y+y_1)+1=0\\)\u003c/p> \u003cp>Substitute \\(A(3,1)\\):\u003c/p> \u003cp>\\(3x+y-(x+3)+2(y+1)+1=0\\)\u003c/p> \u003cp>\\(2x+3y=0\\) (line \\(PQ\\))\u003c/p> \u003cp>Area ratio using same base \\(PQ\\):\u003c/p> \u003cp>\\(\\dfrac{\\text{area }\\triangle APQ}{\\text{area }\\triangle BPQ}=\\dfrac{\\text{distance}(A,PQ)}{\\text{distance}(B,PQ)}\\)\u003c/p> \u003cp>Distance of \\(A(3,1)\\) from \\(2x+3y=0\\)\u003c/p> \u003cp>\\(\\dfrac{|2(3)+3(1)|}{\\sqrt{13}}=\\dfrac{9}{\\sqrt{13}}\\)\u003c/p> \u003cp>Distance of \\(B(1,-2)\\) from \\(2x+3y=0\\)\u003c/p> \u003cp>\\(\\dfrac{|2(1)+3(-2)|}{\\sqrt{13}}=\\dfrac{4}{\\sqrt{13}}\\)\u003c/p> \u003cp>\\(\\dfrac{\\text{area }\\triangle APQ}{\\text{area }\\triangle BPQ}=\\dfrac{9}{4}\\)\u003c/p> \u003cp>\\(8\\left(\\dfrac{\\text{area }\\triangle APQ}{\\text{area }\\triangle BPQ}\\right)=8\\cdot\\dfrac{9}{4}=18\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of common tangents, to the circles \(x^{2}+y^{2}\) \(-18 x-15 y+131=0\) and \(x^{2}+y^{2}-6 x-6 y-7=0\), is:</p> <p><strong>[JEE Main 2023, 15 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) Given equations is \\(x^{2}+y^{2}-18 x-15 y+131=0\\)\u003c/p> \u003cp>\\(\\Rightarrow x^{2}+y^{2}-2(9) x-2\\left(\\frac{15}{2}\\right) y+131=0\\)\u003c/p> \u003cp>Hence, center is \\((-g,-f)\\) and Radius is \\(\\sqrt{g^{2}+f^{2}-c}\\)\u003c/p> \u003cp>\\[\u003cbr/>C_{1}\\left(9, \\frac{15}{2}\\right) \\text { and } r_{1}=\\sqrt{81+\\frac{225}{4}-131}=\\frac{5}{2}\u003cbr/>\\]\u003c/p> \u003cp>Similarly, equation of \\(2^{\\text {nd }}\\) circle can be writhe as, \\(x^{2}+y^{2}-2(3) x-2(3) y-7=0\\)\u003c/p> \u003cp>\\(C_{2}(3,3)\\) and \\(r_{2}=5\\)\u003c/p> \u003cp>Now, we need to find the distance \\(C_{1} C_{2}=\\sqrt{6^{2}+\\frac{81}{4}}=\\frac{15}{2}\\)\u003c/p> \u003cp>Also, \\(r_{1}+r_{2}=\\frac{15}{2} \\Rightarrow C_{1} C_{2}=r_{1}+r_{2}\\)\u003c/p> \u003cp>Since circle touches each other externally. Therefore, number of common tangents \\(=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statement about two circles whose equations are given below: \(x^{2}+y^{2}-10 x-10 y+41=0\), \(x^{2}+y^{2}-22 x-10 y+137=0\)</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Circle have same centre</p></span></div><div class="option"><span class="key">b</span><span><p>Circles have no meeting point</p></span></div><div class="option"><span class="key">c</span><span><p>Circles have only one meeting point</p></span></div><div class="option"><span class="key">d</span><span><p>Circles have two meeting points</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

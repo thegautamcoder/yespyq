@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"The value of \\(\\ \\int \\cos (\\log x) d x \\) is : [JEE Main 2021]","text":"The value of \\(\\ \\int \\cos (\\log x) d x \\) is : [JEE Main 2021]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Options are free to see. Unlock the correct answer and full explanation with PYQ Pass.","url":"https://yespyq.com/exams/jee/q/jee-04044-the-value-of-int-cos-log-x-d-x-is-jee-main-2021/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>The value of \(\ \int \cos (\log x) d x \) is : [JEE Main 2021]</h1>
     <div class="qblock" id="q1" data-gated="1">
-      <div class="qnum">Q1</div>
+      <div class="qhead"><div class="qnum">Q1</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \(\ \int \cos (\log x) d x \) is :</p> <p>[JEE Main 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\ \frac{1}{2}[\sin (\log x)+\cos (\log x)]+C \)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\ \frac{x}{2}[\sin (\log x)+\cos (\log x)]+C \)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\ \frac{x}{2}[\sin (\log x)-\cos (\log x)]+C \)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\ \frac{1}{2}[\sin (\log x)-\cos (\log x)]+C \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -85,7 +89,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, \\(\\int \\cos (\\log x) d x\\)\u003cbr/>Let, \\(\\log \\mathrm{x}=\\mathrm{t}\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>\\Rightarrow \\mathrm{x} &amp; =\\mathrm{e}^{\\mathrm{t}} \\\\\u003cbr/>\\text { and } \\frac{1}{\\mathrm{f}} \\mathrm{dx} &amp; =\\mathrm{dt} \\\\\u003cbr/>\\Rightarrow \\mathrm{dx} &amp; =\\mathrm{xdt} \\\\\u003cbr/>\\Rightarrow \\mathrm{dx} &amp; =\\mathrm{e}^{\\mathrm{t}} \\mathrm{dt}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>So, we can write the integral as\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\int \\cos (\\log x) d x \\\\\u003cbr/>&amp; =\\int \\cos (t) e^t d t \\\\\u003cbr/>&amp; =\\frac{1}{2} \\int e^t(2 \\cos t) d t \\\\\u003cbr/>&amp; =\\frac{1}{2} \\int e^t[(\\sin t+\\cos t)+(\\cos t-\\sin t)] d t\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>We know that, \\(\\int e^t\\left[f(t)+f^{\\prime}(t)\\right] d t=e^t[f(t)]+C\\)\u003cbr/>Thus, \\(f(t)=\\sin t+\\cos t\\) and \\(f^{\\prime}(t)=\\cos t-\\sin t\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\frac{1}{2} \\int e^t[(\\sin t+\\cos t)+(\\cos t-\\sin t)] d t \\\\\u003cbr/>&amp; =\\left(\\frac{1}{2}\\right) e^t[\\sin t+\\cos t]+C \\\\\u003cbr/>&amp; =\\frac{1}{2} x[\\sin (\\log x)+\\cos (\\log x)]+C\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Hence, \\(\\int \\cos (\\log x) d x=\\frac{1}{2} x[\\sin (\\log x)+\\cos (\\log x)]+C\\).\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, \\(\\int \\cos (\\log x) d x\\)\u003cbr/>Let, \\(\\log \\mathrm{x}=\\mathrm{t}\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}\\Rightarrow \\mathrm{x} & =\\mathrm{e}^{\\mathrm{t}} \\\\\\text { and } \\frac{1}{\\mathrm{f}} \\mathrm{dx} & =\\mathrm{dt} \\\\\\Rightarrow \\mathrm{dx} & =\\mathrm{xdt} \\\\\\Rightarrow \\mathrm{dx} & =\\mathrm{e}^{\\mathrm{t}} \\mathrm{dt}\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>So, we can write the integral as\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\int \\cos (\\log x) d x \\\\& =\\int \\cos (t) e^t d t \\\\& =\\frac{1}{2} \\int e^t(2 \\cos t) d t \\\\& =\\frac{1}{2} \\int e^t[(\\sin t+\\cos t)+(\\cos t-\\sin t)] d t\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>We know that, \\(\\int e^t\\left[f(t)+f^{\\prime}(t)\\right] d t=e^t[f(t)]+C\\)\u003cbr/>Thus, \\(f(t)=\\sin t+\\cos t\\) and \\(f^{\\prime}(t)=\\cos t-\\sin t\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\therefore \\frac{1}{2} \\int e^t[(\\sin t+\\cos t)+(\\cos t-\\sin t)] d t \\\\& =\\left(\\frac{1}{2}\\right) e^t[\\sin t+\\cos t]+C \\\\& =\\frac{1}{2} x[\\sin (\\log x)+\\cos (\\log x)]+C\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Hence, \\(\\int \\cos (\\log x) d x=\\frac{1}{2} x[\\sin (\\log x)+\\cos (\\log x)]+C\\).\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-03995-if-int-frac-cos-theta-5-7-sin-theta-2-cos-2-theta-d-theta-a-log-e-b-th/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-04271-let-i-left-x-right-int-frac-x-2-left-x-sec-2-x-tan-x-right-x-tan-x-1-2/">Next question →</a></div>
       <div class="cta-box">

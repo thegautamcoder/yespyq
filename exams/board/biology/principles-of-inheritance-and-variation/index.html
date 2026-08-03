@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/board/biology/"},{"@type":"ListItem","position":5,"name":"Principles of Inheritance and Variation","item":"https://yespyq.com/exams/board/biology/principles-of-inheritance-and-variation/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Principles of Inheritance and Variation</h1>
       <p>9 Board Biology previous year questions on <b>Principles of Inheritance and Variation</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>To determine the genotype of a tall plant at \({F}_{2}\), Mendel crossed the tall plant from with a dwarf plant. This is called a</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Monohybrid cross</p></span></div><div class="option"><span class="key">b</span><span><p>Dihybrid cross</p></span></div><div class="option correct"><span class="key">c</span><span><p>Test cross</p></span></div><div class="option"><span class="key">d</span><span><p>Self cross</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The phenotypic and genotypic ratio is same i.e. 1:2:1 in </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Monohybride cross</p></span></div><div class="option"><span class="key">b</span><span><p>Dihybride cross</p></span></div><div class="option"><span class="key">c</span><span><p>Incomplete dominance </p></span></div><div class="option"><span class="key">d</span><span><p>Test cross</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In incomplete dominance, neither allele is completely dominant over the other, so the heterozygote shows an intermediate phenotype.\u003c/p> \u003cp>Example: Flower color in Mirabilis jalapa\u003c/p> \u003cp>RR = Red flowers(1)\u003cbr/>rr = White flowers(1)\u003cbr/>Rr = Pink flowers(2)\u003c/p> \u003cul> \u003cli>Genotypic ratio = 1 : 2 : 1\u003c/li> \u003cli>Phenotypic ratio = 1 : 2 : 1\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Genes which code for a pair of contrasting traits are known as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Jumping genes</p></span></div><div class="option"><span class="key">b</span><span><p>Alleles</p></span></div><div class="option"><span class="key">c</span><span><p>Split genes</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Genes that control two opposite forms of the same trait are known as\u003cstrong> \u003c/strong>alleles. They are simply different versions of the same gene that occupy the same position on a pair of homologous chromosomes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the pattern of inheritance for polygenic trait?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Autosomal dominant pattern</p></span></div><div class="option"><span class="key">b</span><span><p>X-linked recessive inheritance pattern</p></span></div><div class="option"><span class="key">c</span><span><p>Mendelian inheritance pattern</p></span></div><div class="option"><span class="key">d</span><span><p>Non-mendelian inheritance pattern</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Polygenic traits\u003c/strong> are controlled by \u003cstrong>multiple genes\u003c/strong>, not just one. These traits show \u003cstrong>continuous variation\u003c/strong> in the population, such as \u003cstrong>height, skin color, and eye color\u003c/strong> in humans. Because more than one gene influences the outcome, the inheritance does \u003cstrong>not follow simple Mendelian rules\u003c/strong> (like dominant or recessive patterns). Instead, it shows a \u003cstrong>non-Mendelian inheritance pattern\u003c/strong> where the combined effect of several genes results in a range of expressions.\u003c/p> \u003cp>So, polygenic inheritance is \u003cstrong>non-Mendelian\u003c/strong>, and the trait is influenced by \u003cstrong>additive effects\u003c/strong> of many genes.\u003c/p> \u003cp> Correct option: \u003cstrong>4. Non-mendelian inheritance pattern\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>More than two alternate forms of a gene present on the same locus are called as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Multiple alleles</p></span></div><div class="option"><span class="key">b</span><span><p>Epistatic genes</p></span></div><div class="option"><span class="key">c</span><span><p>Supplementary genes</p></span></div><div class="option"><span class="key">d</span><span><p>Linked genes</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>When a gene has more than two alternative forms (alleles) at the same locus in a population, they are called multiple alleles.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following options will express intermediate skin colour in an individual? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(AABBCC\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(aabbcc\)</p></span></div><div class="option"><span class="key">c</span><span><p>AaBbCc</p></span></div><div class="option"><span class="key">d</span><span><p>aaBbcc</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Explanation\u003cbr/>Human skin colour is a polygenic trait controlled by multiple genes, typically considered to be three pairs (A, B, C) in this model, where each dominant allele contributes additively to the darkness of the skin. \u003cbr/>The genotype with all dominant alleles (AABBCC) results in the darkest skin colour.\u003cbr/>The genotype with all recessive alleles (aabbcc) results in the lightest skin colour.\u003cbr/>An individual with the genotype AaBbCc has an equal number of dominant and recessive alleles (three of each), leading to an intermediate skin colour (also called mulatto). \u003cstrong>The correct option is C. AaBbCc. \u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When the genotype of an organism contains two identical allele the organism is considered as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Homozygous</p></span></div><div class="option"><span class="key">b</span><span><p>Hetrozygous </p></span></div><div class="option"><span class="key">c</span><span><p>Hemizygous</p></span></div><div class="option"><span class="key">d</span><span><p>Pleiotropy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>When the genotype of an organism contains two identical alleles for a trait (for example, TT or tt), the organism is called Homozygous\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Incomplete dominance is observed in</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Pea plant</p></span></div><div class="option"><span class="key">b</span><span><p>Snapdragon</p></span></div><div class="option"><span class="key">c</span><span><p> Dragonfly.</p></span></div><div class="option"><span class="key">d</span><span><p>Human blood group </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Incomplete dominance is observed in Snapdragon (Antirrhinum). When a red-flowered plant is crossed with a white-flowered plant, the F₁ generation shows pink flowers, which is an intermediate phenotype.\u003c/p> \u003cul> \u003cli>Incomplete Dominance → Snapdragon (Antirrhinum), Mirabilis jalapa (Four O'clock Plant)\u003c/li> \u003cli>Codominance → Human ABO Blood Group\u003c/li> \u003cli>Complete Dominance → Pea Plant (Pisum sativum)\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Crosses between F_1 offspring and either of their parents are called as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Inbreeding</p></span></div><div class="option"><span class="key">b</span><span><p>Back cross</p></span></div><div class="option"><span class="key">c</span><span><p>Dihybrid cross</p></span></div><div class="option"><span class="key">d</span><span><p>Test cross</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

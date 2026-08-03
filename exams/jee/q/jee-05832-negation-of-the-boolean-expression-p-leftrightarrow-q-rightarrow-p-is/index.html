@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Negation of the Boolean expression \\(p \\Leftrightarrow(q \\Rightarrow p)\\) is :","text":"Negation of the Boolean expression \\(p \\Leftrightarrow(q \\Rightarrow p)\\) is :","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Options are free to see. Unlock the correct answer and full explanation with PYQ Pass.","url":"https://yespyq.com/exams/jee/q/jee-05832-negation-of-the-boolean-expression-p-leftrightarrow-q-rightarrow-p-is/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Negation of the Boolean expression \(p \Leftrightarrow(q \Rightarrow p)\) is :</h1>
     <div class="qblock" id="q1" data-gated="1">
-      <div class="qnum">Q1</div>
+      <div class="qhead"><div class="qnum">Q1</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Negation of the Boolean expression \(p \Leftrightarrow(q \Rightarrow p)\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim p) \wedge q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((\mathrm{p}) \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim p) \vee(\sim q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\sim p) \wedge(\sim q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -85,7 +89,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\text { Given expression is } p \\Leftrightarrow(q \\Rightarrow p)\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\\u003cbr/>&amp; \\sim(p \\leftrightarrow q)=(p \\wedge \\sim q) \\vee(q \\wedge \\sim p) \\\\\u003cbr/>&amp; \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\\u003cbr/>&amp; =(p \\wedge \\sim(q \\rightarrow p)) \\vee((q \\rightarrow p) \\wedge \\sim p) \\\\\u003cbr/>&amp; (p \\wedge \\sim(q \\rightarrow p))=p \\wedge(q \\wedge \\sim p) \\\\\u003cbr/>&amp; =(p \\wedge \\sim p) \\wedge q=c \\\\\u003cbr/>&amp; (q \\rightarrow p) \\wedge \\sim p=(\\sim q \\vee p) \\wedge \\sim p \\\\\u003cbr/>&amp; =\\sim p \\wedge(\\sim q \\vee p) \\\\\u003cbr/>&amp; =(\\sim p \\wedge \\sim q) \\vee(\\sim p \\wedge p)=\\sim p \\wedge \\sim q \\\\\u003cbr/>&amp; \\sim(p \\leftrightarrow(q \\rightarrow p))=c \\vee(\\sim p \\wedge \\sim q)=\\sim p \\wedge \\sim q\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>$$\\begin{aligned}&\\text { Given expression is } p \\Leftrightarrow(q \\Rightarrow p)\\\\&\\begin{aligned}& \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\& \\sim(p \\leftrightarrow q)=(p \\wedge \\sim q) \\vee(q \\wedge \\sim p) \\\\& \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\& =(p \\wedge \\sim(q \\rightarrow p)) \\vee((q \\rightarrow p) \\wedge \\sim p) \\\\& (p \\wedge \\sim(q \\rightarrow p))=p \\wedge(q \\wedge \\sim p) \\\\& =(p \\wedge \\sim p) \\wedge q=c \\\\& (q \\rightarrow p) \\wedge \\sim p=(\\sim q \\vee p) \\wedge \\sim p \\\\& =\\sim p \\wedge(\\sim q \\vee p) \\\\& =(\\sim p \\wedge \\sim q) \\vee(\\sim p \\wedge p)=\\sim p \\wedge \\sim q \\\\& \\sim(p \\leftrightarrow(q \\rightarrow p))=c \\vee(\\sim p \\wedge \\sim q)=\\sim p \\wedge \\sim q\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-05804-the-only-statement-among-the-following-that-is-a-tautology-is/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-05901-if-p-and-q-are-two-statement-then-which-of-the-following-compound-stat/">Next question →</a></div>
       <div class="cta-box">

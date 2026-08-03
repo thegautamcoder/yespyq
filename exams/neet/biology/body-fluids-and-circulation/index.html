@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Body Fluids and Circulation","item":"https://yespyq.com/exams/neet/biology/body-fluids-and-circulation/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Body Fluids and Circulation</h1>
       <p>46 NEET Biology previous year questions on <b>Body Fluids and Circulation</b> — options free on every question; <b>5 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The pacemaker of the human heart is called:</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Sino-atrial node (SAN)</span></div><div class="option"><span class="key">b</span><span>Atrio-ventriuclar node (AVN)</span></div><div class="option"><span class="key">c</span><span>Purkinje fibres</span></div><div class="option"><span class="key">d</span><span>Papillary muscle</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Globulins contained in human blood plasma are primarily involved in:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Clotting of blood</span></div><div class="option"><span class="key">b</span><span>Osmotic balance of body fluids</span></div><div class="option correct"><span class="key">c</span><span>Defense mechanism of body</span></div><div class="option"><span class="key">d</span><span>Oxygen transport in blood</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A person with unknown blood group under ABO system, has suffered much blood loss in an accident and needs immediate blood transfusion. His friend who has valid certificate of his own blood type, offers for blood donation without delay. What would have been the type of blood group of the donor friend?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Type B</span></div><div class="option"><span class="key">b</span><span>Type AB</span></div><div class="option correct"><span class="key">c</span><span>Type O</span></div><div class="option"><span class="key">d</span><span>Type A</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Compared to those of humans, the erythrocytes in frog are:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>nucleated and without haemoglobin.</span></div><div class="option"><span class="key">b</span><span>without nucleus but with haemoglobin.</span></div><div class="option correct"><span class="key">c</span><span>nucleated and with haemoglobin.</span></div><div class="option"><span class="key">d</span><span>very much smaller and fewer.</span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The QRS complex in a standard ECG represents: [NEET 2020]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>repolarisation of auricles.</span></div><div class="option"><span class="key">b</span><span>depolarisation of auricles.</span></div><div class="option correct"><span class="key">c</span><span>depolarisation of ventricles.</span></div><div class="option"><span class="key">d</span><span>repolarisation of ventricles.</span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement I: Fatty acids and glycerols cannot be absorbed into the blood. Statement II: Specialized lymphatic capillaries called lacteals carry chylomicrons into lymphatic vessels and ultimately into the blood. In the light of the above statements, choose the most appropriate answer from the options given below:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Statement I is incorrect but Statement II is correct.</span></div><div class="option"><span class="key">b</span><span>Both Statement I and Statement II are correct.</span></div><div class="option"><span class="key">c</span><span>Both Statement I and Statement II are incorrect.</span></div><div class="option"><span class="key">d</span><span>Statement I is correct but Statement II is incorrect.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Fatty acids and glycerol, being hydrophobic, cannot be directly absorbed into the blood. Instead, they are converted into chylomicrons within the intestinal cells. These chylomicrons are then absorbed by specialized lymphatic capillaries called lacteals present in the intestinal villi. The lacteals transport them through the lymphatic system, which eventually drains into the bloodstream. Hence, both statements are correct.","fmt":""}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The WBC count of a person's blood sample is \(8000/\mathrm{cu}.\mathrm{mm}\). How many eosinophils and lymphocytes would be in the same blood sample approximately?</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(160-240/\mathrm{cu}.\mathrm{mm}\) and \(1600-2000/\mathrm{cu}.\mathrm{mm}\), respectively</p></span></div><div class="option"><span class="key">b</span><span><p>\(100-120/\mathrm{cu}.\mathrm{mm}\) and \(160-200/\mathrm{cu}.\mathrm{mm}\), respectively</p></span></div><div class="option"><span class="key">c</span><span><p>\(300-500/\mathrm{cu}.\mathrm{mm}\) and \(500-700/\mathrm{cu}.\mathrm{mm}\), respectively </p></span></div><div class="option"><span class="key">d</span><span><p>\(300-500/\mathrm{cu}.\mathrm{mm}\) and \(1200-1500/\mathrm{cu}.\mathrm{mm}\), respectively</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The normal total WBC count in human blood is about 6000–8000 cells/cu.mm. The differential count shows the approximate percentage of different types of WBCs:\u003c/p> \u003cul> \u003cli>Eosinophils: 2–3%\u003c/li> \u003cli>Lymphocytes: 20–25%\u003c/li> \u003c/ul> \u003cp>For a total WBC count of 8000/cu.mm:\u003c/p> \u003cul> \u003cli>Eosinophils = 2–3% of 8000 = 160–240/cu.mm\u003c/li> \u003cli>Lymphocytes = 20–25% of 8000 = 1600–2000/cu.mm\u003c/li> \u003c/ul> \u003cp>Option A gives values of 160–240/cu.mm (eosinophils) and 1600–2000/cu.mm (lymphocytes), which match the calculated ranges.\u003c/p> \u003cp>Therefore, the correct answer is Option A: 160–240/cu.mm and 1600–2000/cu.mm, respectively.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mother has \({\mathrm{A}}^{+}\) blood group, the father has \({\mathrm{B}}^{+}\) and the child is \({\mathrm{A}}^{+}\). What can be the possible genotypes of all three, respectively?<br/>\(A.{I}^{A}{I}^{A}\left|{I}^{B}i\right|{I}^{B}i\) </p> <p>B. \({\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}|{\mathrm{I}}^{\mathrm{B}}\mathrm{i}|{\mathrm{I}}^{\mathrm{A}}\mathrm{i}\)<br/>C. \({\mathrm{I}}^{\mathrm{B}}\mathrm{i}|{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}|{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{B}}\)<br/>D. \({I}^{\mathrm{A}}{I}^{\mathrm{A}}∣{I}^{\mathrm{B}}{I}^{\mathrm{B}}∣{I}^{A}i\)<br/>E. \({I}^{A}i{I}^{B}i{I}^{A}i\)</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D</p></span></div><div class="option"><span class="key">b</span><span><p>D and A</p></span></div><div class="option"><span class="key">c</span><span><p>A and B</p></span></div><div class="option"><span class="key">d</span><span><p>B and E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The child’s blood group is \u003cstrong>A⁺\u003c/strong>, so genotype must be \u003cstrong>Iᴬi\u003c/strong> (receiving \u003cstrong>Iᴬ\u003c/strong> from one parent and \u003cstrong>i\u003c/strong> from the other).\u003c/p> \u003cul> \u003cli> \u003cp>The \u003cstrong>father\u003c/strong> has \u003cstrong>B⁺\u003c/strong>, so genotype must be \u003cstrong>Iᴮi\u003c/strong> (since he provides the \u003cstrong>i\u003c/strong> allele).\u003c/p> \u003c/li> \u003cli> \u003cp>The \u003cstrong>mother\u003c/strong> has \u003cstrong>A⁺\u003c/strong>, so genotype can be either \u003cstrong>IᴬIᴬ\u003c/strong> or \u003cstrong>Iᴬi\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, both these combinations are possible:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Option B:\u003c/strong> Mother \u003cstrong>IᴬIᴬ\u003c/strong>, Father \u003cstrong>Iᴮi\u003c/strong>, Child \u003cstrong>Iᴬi\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Option E:\u003c/strong> Mother \u003cstrong>Iᴬi\u003c/strong>, Father \u003cstrong>Iᴮi\u003c/strong>, Child \u003cstrong>Iᴬi\u003c/strong>\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>Therefore, correct answer = D (B and E)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following are the stages of pathway for conduction of an action potential through the heart:<br/>A. AV bundle<br/>B. Purkinje fibres<br/>C. AV node<br/>D. Bundle branches<br/>E. SA node</p> <p>Choose the correct sequence of pathway from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E-A-D-B-C</p></span></div><div class="option"><span class="key">b</span><span><p>E-C-A-D-B</p></span></div><div class="option"><span class="key">c</span><span><p>A-E-C-B-D</p></span></div><div class="option"><span class="key">d</span><span><p>B-D-E-C-A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct sequence for the conduction of an action potential through the heart is E-C-A-D-B, i.e., SA node → AV node → AV bundle → Bundle branches → Purkinje fibres.\u003c/p> \u003cp>The SA node, located in the right atrium, initiates the impulse, which spreads to the AV node.\u003c/p> \u003cp>From the AV node, the impulse travels to the AV bundle (Bundle of His), then down the right and left bundle branches, and finally reaches the Purkinje fibres, which distribute the impulse to the ventricular muscles, causing contraction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the incorrect statements with reference to Rh grouping.<br/>A. Erythroblastosis foetalis is a condition observed having foetus with \({\mathrm{Rh}}^{-\mathrm{ve}}\) blood and mother with \({\mathrm{Rh}}^{+\mathrm{ve}}\) blood.<br/>B. Rh antigen is observed on RBC's in the majority of human beings.<br/>C. Before blood transfusion, Rh group should also be matched.<br/>D. Rh incompatibility is observed when a pregnant mother is \({\mathrm{Rh}}^{-\mathrm{ve}}\) and the foetus is \({\mathrm{Rh}}^{+\mathrm{ve}}\).<br/>E. Erythroblastosis foetalis can be avoided by administering anti-Rh antibodies to the mother immediately after the delivery of the second child.<br/>Choose the answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Rh grouping is based on the presence or absence of Rh antigen on RBCs.\u003c/li> \u003cli>Statement A is incorrect. Erythroblastosis foetalis occurs when the mother is Rh\u003csup>-ve\u003c/sup> and the foetus is Rh\u003csup>+ve\u003c/sup>.\u003c/li> \u003cli>Statement B is correct. Rh antigen is present in the majority of humans (Rh\u003csup>+ve\u003c/sup>).\u003c/li> \u003cli>Statement C is correct. Rh compatibility must be checked before blood transfusion.\u003c/li> \u003cli>Statement D is correct. Rh incompatibility arises when Rh\u003csup>-ve\u003c/sup> mother carries Rh\u003csup>+ve\u003c/sup> foetus.\u003c/li> \u003cli>Statement E is incorrect. Anti-Rh antibodies should be administered after the first delivery (or sensitizing event), not after the second child.\u003c/li> \u003cli>Thus, the incorrect statements are A and E.\u003c/li> \u003cli>Therefore, the correct answer is option A: A and E only.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mother has \({\mathrm{A}}^{+}\) blood group, the father has \({\mathrm{B}}^{+}\) and the child is \({\mathrm{A}}^{+}\). What can be the possible genotypes of all three, respectively?<br/>\(A.{I}^{A}{I}^{A}\left|{I}^{B}i\right|{I}^{B}i\) </p> <p>B. \({\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}|{\mathrm{I}}^{\mathrm{B}}\mathrm{i}|{\mathrm{I}}^{\mathrm{A}}\mathrm{i}\)<br/>C. \({\mathrm{I}}^{\mathrm{B}}\mathrm{i}|{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}|{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{B}}\)<br/>D. \({I}^{\mathrm{A}}{I}^{\mathrm{A}}∣{I}^{\mathrm{B}}{I}^{\mathrm{B}}∣{I}^{A}i\)<br/>E. \({I}^{A}i{I}^{B}i{I}^{A}i\)</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D</p></span></div><div class="option"><span class="key">b</span><span><p>D and A</p></span></div><div class="option"><span class="key">c</span><span><p>A and B</p></span></div><div class="option"><span class="key">d</span><span><p>B and E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The child’s blood group is \u003cstrong>A⁺\u003c/strong>, so genotype must be \u003cstrong>Iᴬi\u003c/strong> (receiving \u003cstrong>Iᴬ\u003c/strong> from one parent and \u003cstrong>i\u003c/strong> from the other).\u003c/p> \u003cul> \u003cli> \u003cp>The \u003cstrong>father\u003c/strong> has \u003cstrong>B⁺\u003c/strong>, so genotype must be \u003cstrong>Iᴮi\u003c/strong> (since he provides the \u003cstrong>i\u003c/strong> allele).\u003c/p> \u003c/li> \u003cli> \u003cp>The \u003cstrong>mother\u003c/strong> has \u003cstrong>A⁺\u003c/strong>, so genotype can be either \u003cstrong>IᴬIᴬ\u003c/strong> or \u003cstrong>Iᴬi\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, both these combinations are possible:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Option B:\u003c/strong> Mother \u003cstrong>IᴬIᴬ\u003c/strong>, Father \u003cstrong>Iᴮi\u003c/strong>, Child \u003cstrong>Iᴬi\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Option E:\u003c/strong> Mother \u003cstrong>Iᴬi\u003c/strong>, Father \u003cstrong>Iᴮi\u003c/strong>, Child \u003cstrong>Iᴬi\u003c/strong>\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>Therefore, correct answer = D (B and E)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A person with blood group \({\mathrm{ARh}}^{-}\) can receive the blood transfusion from which of the following types?<br/>A. \(BR{h}^{-}\)<br/>B. \({\mathrm{ABRh}}^{-}\)<br/>C. \({\mathrm{ORh}}^{-}\)<br/>D. \({\mathrm{ARh}}^{-}\)<br/>E. \({\mathrm{ARh}}^{+}\)</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>D only</p></span></div><div class="option"><span class="key">c</span><span><p>A and B only</p></span></div><div class="option"><span class="key">d</span><span><p>C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>A person with blood group A⁻ (ARh⁻) can receive blood from:\u003c/p> \u003cul> \u003cli> \u003cp>A⁻ (same group, Rh-negative) → compatible.\u003c/p> \u003c/li> \u003cli> \u003cp>O⁻ (universal donor for Rh-negative) → compatible.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>They cannot receive B⁻, AB⁻, or A⁺ because of ABO or Rh incompatibility.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>'Lub' sound of Heart is caused by the ______</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Closure of the semilunar valves</p></span></div><div class="option"><span class="key">b</span><span><p>Opening of tricuspid and bicuspid valves</p></span></div><div class="option"><span class="key">c</span><span><p>Opening of the semilunar valves</p></span></div><div class="option"><span class="key">d</span><span><p>Closure of the tricuspid and bicuspid valves</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,7 +222,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The “lub” sound of the heart, also known as the first heart sound, is produced by the closure of the atrioventricular (AV) valves—namely the tricuspid and bicuspid (mitral) valves—at the beginning of ventricular systole. This prevents the backflow of blood into the atria when the ventricles contract. It is followed by the “dub” sound, which results from the closure of the semilunar valves.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following are the stages of pathway for conduction of an action potential through the heart:<br/>A. AV bundle<br/>B. Purkinje fibres<br/>C. AV node<br/>D. Bundle branches<br/>E. SA node</p> <p>Choose the correct sequence of pathway from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E-A-D-B-C</p></span></div><div class="option"><span class="key">b</span><span><p>E-C-A-D-B</p></span></div><div class="option"><span class="key">c</span><span><p>A-E-C-B-D</p></span></div><div class="option"><span class="key">d</span><span><p>B-D-E-C-A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -230,7 +234,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct sequence for the conduction of an action potential through the heart is E-C-A-D-B, i.e., SA node → AV node → AV bundle → Bundle branches → Purkinje fibres.\u003c/p> \u003cp>The SA node, located in the right atrium, initiates the impulse, which spreads to the AV node.\u003c/p> \u003cp>From the AV node, the impulse travels to the AV bundle (Bundle of His), then down the right and left bundle branches, and finally reaches the Purkinje fibres, which distribute the impulse to the ventricular muscles, causing contraction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of action potentials generated by sino-atrial node (SAN) in a healthy human is ________ per minute.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>28 - 30</p></span></div><div class="option"><span class="key">b</span><span><p>70 - 75</p></span></div><div class="option"><span class="key">c</span><span><p>100 - 110</p></span></div><div class="option"><span class="key">d</span><span><p>120 - 140</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -242,7 +246,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The sinoatrial node (SAN) is the natural pacemaker of the human heart. It can generate the maximum number of action potentials, i.e., about 70–75 per minute, and is responsible for initiating and maintaining the rhythmic contractile activity of the heart. This determines the average heart rate of a healthy human (approx. 72 beats per minute). Hence, option (B) is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A person with blood group \({\mathrm{ARh}}^{-}\) can receive the blood transfusion from which of the following types?<br/>A. \(BR{h}^{-}\)<br/>B. \({\mathrm{ABRh}}^{-}\)<br/>C. \({\mathrm{ORh}}^{-}\)<br/>D. \({\mathrm{ARh}}^{-}\)<br/>E. \({\mathrm{ARh}}^{+}\)</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>D only</p></span></div><div class="option"><span class="key">c</span><span><p>A and B only</p></span></div><div class="option"><span class="key">d</span><span><p>C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -254,7 +258,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>A person with blood group A⁻ (ARh⁻) can receive blood from:\u003c/p> \u003cul> \u003cli> \u003cp>A⁻ (same group, Rh-negative) → compatible.\u003c/p> \u003c/li> \u003cli> \u003cp>O⁻ (universal donor for Rh-negative) → compatible.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>They cannot receive B⁻, AB⁻, or A⁺ because of ABO or Rh incompatibility.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>'Lub' sound of Heart is caused by the ______</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Closure of the semilunar valves</p></span></div><div class="option"><span class="key">b</span><span><p>Opening of tricuspid and bicuspid valves</p></span></div><div class="option"><span class="key">c</span><span><p>Opening of the semilunar valves</p></span></div><div class="option"><span class="key">d</span><span><p>Closure of the tricuspid and bicuspid valves</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,7 +270,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The “lub” sound of the heart, also known as the first heart sound, is produced by the closure of the atrioventricular (AV) valves—namely the tricuspid and bicuspid (mitral) valves—at the beginning of ventricular systole. This prevents the backflow of blood into the atria when the ventricles contract. It is followed by the “dup” sound, which results from the closure of the semilunar valves.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>'Lub' sound of Heart is caused by the ______</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Closure of the semilunar valves</p></span></div><div class="option"><span class="key">b</span><span><p>Opening of tricuspid and bicuspid valves</p></span></div><div class="option"><span class="key">c</span><span><p>Opening of the semilunar valves</p></span></div><div class="option"><span class="key">d</span><span><p>Closure of the tricuspid and bicuspid valves</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -278,7 +282,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The “lub” sound of the heart, also known as the first heart sound, is produced by the closure of the atrioventricular (AV) valves—namely the tricuspid and bicuspid (mitral) valves—at the beginning of ventricular systole. This prevents the backflow of blood into the atria when the ventricles contract. It is followed by the “dup” sound, which results from the closure of the semilunar valves.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cardiac activities of the heart are regulated by:<br/>A. Nodal tissue<br/>B. A special neural centre in the medulla oblongata<br/>C. Adrenal medullary hormones<br/>D. Adrenal cortical hormones<br/>Choose the correct answer given below:</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C and D Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, В and D Only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B and C Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B, C and D</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -290,7 +294,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The \u003cstrong>cardiac activities of the heart\u003c/strong> are regulated by:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>A. Nodal tissue\u003c/strong>: Includes the \u003cstrong>SA node\u003c/strong> (pacemaker) and \u003cstrong>AV node\u003c/strong>, which generate and conduct electrical impulses to regulate heartbeat.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B. A special neural centre in the medulla oblongata\u003c/strong>: This brain region \u003cstrong>controls heart rate\u003c/strong> through the \u003cstrong>autonomic nervous system\u003c/strong> (sympathetic increases, parasympathetic decreases heart rate).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Adrenal medullary hormones\u003c/strong>: Hormones like \u003cstrong>adrenaline and noradrenaline\u003c/strong> increase heart rate and force of contraction.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Adrenal cortical hormones\u003c/strong> are mainly involved in \u003cstrong>metabolism and electrolyte balance\u003c/strong>, not directly in heart rate regulation.\u003c/p> \u003c/li> \u003c/ul> \u003cp> So, the correct answer is \u003cstrong>C — A, B, and C only\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is incorrect ?</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Blood coagulates in response to an injury</p></span></div><div class="option"><span class="key">b</span><span><p>Blood clot consists of fibrins</p></span></div><div class="option"><span class="key">c</span><span><p>Fibrin is produced from fibrinogen</p></span></div><div class="option"><span class="key">d</span><span><p>Fibrinogen is produced from fibrin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -302,7 +306,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Evaluating cascading statements for coagulation of blood:\u003c/p> \u003cp>(A) Blood coagulates in response to an injury: Correct, it prevents excessive loss of blood.\u003c/p> \u003cp>(B) Blood clot consists of fibrins: Correct, clots are formed mainly of a network of threads called fibrins.\u003c/p> \u003cp>(C) Fibrin is produced from fibrinogen: Correct, inactive fibrinogen is converted into active fibrins by the enzyme thrombin.\u003c/p> \u003cp>(D) Fibrinogen is produced from fibrin: Incorrect, it is the reverse. Fibrinogen is synthesized in the liver and floats in plasma, which is converted to fibrin during clotting.\u003c/p> \u003cp>Therefore, statement (D) is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A person with blood group \({\mathrm{ARh}}^{-}\) can receive the blood transfusion from which of the following types?<br/>A. \(BR{h}^{-}\)<br/>B. \({\mathrm{ABRh}}^{-}\)<br/>C. \({\mathrm{ORh}}^{-}\)<br/>D. \({\mathrm{ARh}}^{-}\)<br/>E. \({\mathrm{ARh}}^{+}\)</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>D only</p></span></div><div class="option"><span class="key">c</span><span><p>A and B only</p></span></div><div class="option"><span class="key">d</span><span><p>C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -314,7 +318,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>A person with blood group A⁻ (ARh⁻) can receive blood from:\u003c/p> \u003cul> \u003cli> \u003cp>A⁻ (same group, Rh-negative) → compatible.\u003c/p> \u003c/li> \u003cli> \u003cp>O⁻ (universal donor for Rh-negative) → compatible.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>They cannot receive B⁻, AB⁻, or A⁺ because of ABO or Rh incompatibility.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mother has \({\mathrm{A}}^{+}\) blood group, the father has \({\mathrm{B}}^{+}\) and the child is \({\mathrm{A}}^{+}\). What can be the possible genotypes of all three, respectively?<br/>A. \({\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{B}}\mathrm{i}{\mathrm{I}}^{\mathrm{B}}\mathrm{i}\) </p> <p>B. \({\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{B}}\mathrm{i}{\mathrm{I}}^{\mathrm{A}}\mathrm{i}\)</p> <p>C. \({\mathrm{I}}^{\mathrm{B}}\mathrm{i}{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{B}}\)</p> <p>D. \({\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{A}}{\mathrm{I}}^{\mathrm{B}}{\mathrm{I}}^{\mathrm{B}}{\mathrm{I}}^{\mathrm{A}}\mathrm{i}\)</p> <p>E. \({\mathrm{I}}^{\mathrm{A}}\mathrm{i}{\mathrm{I}}^{\mathrm{B}}\mathrm{i}{\mathrm{I}}^{\mathrm{A}}\mathrm{i}\)</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D</p></span></div><div class="option"><span class="key">b</span><span><p>D and A</p></span></div><div class="option"><span class="key">c</span><span><p>A and B</p></span></div><div class="option"><span class="key">d</span><span><p>B and E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,7 +330,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The child’s blood group is \u003cstrong>A⁺\u003c/strong>, so genotype must be \u003cstrong>Iᴬi\u003c/strong> (receiving \u003cstrong>Iᴬ\u003c/strong> from one parent and \u003cstrong>i\u003c/strong> from the other).\u003c/p> \u003cul> \u003cli> \u003cp>The \u003cstrong>father\u003c/strong> has \u003cstrong>B⁺\u003c/strong>, so genotype must be \u003cstrong>Iᴮi\u003c/strong> (since he provides the \u003cstrong>i\u003c/strong> allele).\u003c/p> \u003c/li> \u003cli> \u003cp>The \u003cstrong>mother\u003c/strong> has \u003cstrong>A⁺\u003c/strong>, so genotype can be either \u003cstrong>IᴬIᴬ\u003c/strong> or \u003cstrong>Iᴬi\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, both these combinations are possible:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Option B:\u003c/strong> Mother \u003cstrong>IᴬIᴬ\u003c/strong>, Father \u003cstrong>Iᴮi\u003c/strong>, Child \u003cstrong>Iᴬi\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Option E:\u003c/strong> Mother \u003cstrong>Iᴬi\u003c/strong>, Father \u003cstrong>Iᴮi\u003c/strong>, Child \u003cstrong>Iᴬi\u003c/strong>\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>Therefore, correct answer = D (B and E)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The opening between the right atrium and the right ventricle is guarded by ___________.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>bicuspid valve</p></span></div><div class="option"><span class="key">b</span><span><p>tricuspid valve</p></span></div><div class="option"><span class="key">c</span><span><p>semilunar valve</p></span></div><div class="option"><span class="key">d</span><span><p>sino-atrial node</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,7 +342,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The opening between the \u003cstrong>right atrium\u003c/strong> and the \u003cstrong>right ventricle\u003c/strong> is guarded by the \u003cstrong>tricuspid valve\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Correct Answer: Option B - tricuspid valve\u003c/strong>\u003c/p> Explanation: \u003cul> \u003cli>\u003cstrong>Tricuspid valve\u003c/strong> → present between right atrium and right ventricle.\u003c/li> \u003cli>\u003cstrong>Bicuspid (mitral) valve\u003c/strong> → between left atrium and left ventricle.\u003c/li> \u003cli>\u003cstrong>Semilunar valves\u003c/strong> → present at the bases of aorta and pulmonary artery.\u003c/li> \u003cli>\u003cstrong>Sino-atrial node\u003c/strong> → pacemaker of the heart, not a valve.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II :</p> <table> <tbody> <tr> <td> <p><strong>List I</strong></p> </td> <td> <p><strong>List II</strong></p> </td> </tr> <tr> <td> <p>A.</p> </td> <td> <p>P wave</p> </td> <td> <p>I.</p> </td> <td> <p>Heart muscles are electrically silent.</p> </td> </tr> <tr> <td> <p>B.</p> </td> <td> <p>QRS complex</p> </td> <td> <p>II.</p> </td> <td> <p>Depolarisation of ventricles.</p> </td> </tr> <tr> <td> <p>C.</p> </td> <td> <p>T wave</p> </td> <td> <p>III.</p> </td> <td> <p>Depolarisation of atria.</p> </td> </tr> <tr> <td> <p>D.</p> </td> <td> <p>T-P gap</p> </td> <td> <p>IV.</p> </td> <td> <p>Repolarisation of ventricles.</p> </td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-II, C-I, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-I, B-III, C-IV, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-II, C-IV, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-III, C-I, D-IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,7 +354,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003col> \u003cli>P wave represents depolarisation of atria (Atria contract due to electrical excitation).\u003c/li> \u003cli>QRS complex represents depolarisation of ventricles (Ventricles contract due to electrical excitation).\u003c/li> \u003cli>T wave represents repolarisation of ventricles (Ventricles return to their resting state).\u003c/li> \u003cli>T-P gap represents electrical silence of heart muscles, meaning no electrical activity occurs in this phase.\u003c/li> \u003c/ol> \u003cp>Thus, the correct matching is:\u003c/p> \u003cul> \u003cli>A → III\u003c/li> \u003cli>B → II\u003c/li> \u003cli>C → IV\u003c/li> \u003cli>D → I\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following conditions cause erythroblastosis foetalis?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Mother \({\mathrm{Rh}}^{–\mathrm{ve}}\) and foetus \({\mathrm{Rh}}^{+\mathrm{ve}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>Both mother and foetus \({\mathrm{Rh}}^{–\mathrm{ve}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Both mother and foetus \({\mathrm{Rh}}^{+\mathrm{ve}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Mother \({\mathrm{Rh}}^{+\mathrm{ve}}\) and foetus \({\mathrm{Rh}}^{–\mathrm{ve}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,7 +366,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During subsequent pregnancies, the Rh antibodies from the mother (Rh–ve) can leak into the blood of the foetus (Rh+ve) and destroy the foetal RBCs. This could be fatal to the foetus or could cause severe anaemia and jaundice to the baby. This condition is called erythroblastosis foetalis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct?<br/>A.Basophils are most abundant cell of the total WBCs<br/>B. Basophils secrete histamine, serotonin and heparin<br/>C. Basophils are involved in inflammatory response<br/>D.Basophils have kidney shaped nucleus<br/>E. Basophils are agranulocyte<br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,7 +378,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Neutrophils are the most abundant cells (60-65%) of the total WBCs and basophils are the least (0.5-1%). Basophils have S-shaped nucleus. Neutrophils, eosinophils and basophils are different types of granulocytes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is associated with decrease in cardiac output?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Parasympathetic neural signals</p></span></div><div class="option"><span class="key">b</span><span><p>Pneumotaxic centre</p></span></div><div class="option"><span class="key">c</span><span><p>Adrenal medullary hormones</p></span></div><div class="option"><span class="key">d</span><span><p>Sympathetic nerves</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -386,7 +390,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Parasympathetic neural signals (another component of ANS) decrease the rate of heart beat, speed of conduction of action potential and thereby the cardiac output.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Serum differs from blood in</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>lacking globulins</p></span></div><div class="option"><span class="key">b</span><span><p>lacking albumins</p></span></div><div class="option"><span class="key">c</span><span><p>lacking clotting factors</p></span></div><div class="option"><span class="key">d</span><span><p>lacking antibodies.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,7 +402,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Serum\u003c/strong> is the clear, yellowish fluid that remains after blood has \u003cstrong>clotted\u003c/strong> and the \u003cstrong>clotting factors\u003c/strong>, like \u003cstrong>fibrinogen\u003c/strong>, have been removed. It differs from \u003cstrong>plasma\u003c/strong>, which still contains these clotting proteins. Serum retains important components like \u003cstrong>albumins, globulins\u003c/strong>, and \u003cstrong>antibodies\u003c/strong>, but \u003cstrong>lacks clotting factors\u003c/strong>, making it useful in diagnostic tests and medical research. Blood, in contrast, includes both cellular elements and plasma, which has all clotting proteins. Thus, the absence of clotting factors distinguishes serum from whole blood.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which enzyme is responsible for the conversion of inactive fibrinogens to fibrins?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Renin</p></span></div><div class="option"><span class="key">b</span><span><p>Epinephrine</p></span></div><div class="option"><span class="key">c</span><span><p>Thrombokinase</p></span></div><div class="option"><span class="key">d</span><span><p>Thrombin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -410,7 +414,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>During blood coagulation, an enzyme complex called thrombokinase helps in the conversion of prothrombin into thrombin.\u003c/p> \u003cp>Thrombin enzyme is responsible for the conversion of inactive fibrinogens into fibrins in the plasma. Renin is secreted by JG cells in response to fall in glomerular blood flow (GFR), which converts angiotensinogen in blood to angiotensin-I and further to angiotensin-II. Epinephrine hormone is secreted by adrenal medulla during emergency situations.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which enzyme is responsible for the conversion of inactive fibrinogens to fibrins?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Renin</p></span></div><div class="option"><span class="key">b</span><span><p>Epinephrine</p></span></div><div class="option"><span class="key">c</span><span><p>Thrombokinase</p></span></div><div class="option"><span class="key">d</span><span><p>Thrombin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,7 +426,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer:\u003c/strong> \u003cstrong>D. Thrombin\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>During \u003cstrong>blood coagulation\u003c/strong>, \u003cstrong>fibrinogen (soluble plasma protein)\u003c/strong> is converted into \u003cstrong>fibrin (insoluble threads)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>This conversion is catalyzed by the enzyme \u003cstrong>thrombin\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Thrombokinase (prothrombin activator)\u003c/strong> helps convert \u003cstrong>prothrombin → thrombin\u003c/strong>, but \u003cstrong>thrombin\u003c/strong> itself acts directly on \u003cstrong>fibrinogen → fibrin\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Persons with <strong>'AB'</strong> blood group are called as "universal recipients". This is due to:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>absence of antigens A and B in plasma.</p></span></div><div class="option"><span class="key">b</span><span><p>presence of antibodies, anti-A and anti-B, on RBCs.</p></span></div><div class="option"><span class="key">c</span><span><p>absence of antibodies, anti-A and anti-B, in plasma.</p></span></div><div class="option"><span class="key">d</span><span><p>absence of antigens A and B on the surface of RBCs.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,7 +438,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Persons with ' \\(A B\\) ' group lack antibodies, anti-A and anti-B, in plasma and thus, these persons can accept blood from persons with \\(AB\\) as well as the other groups of blood. Therefore, such persons are called 'universal recipients'.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the following columns and select the correct option</p> <p> &lt;!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--&gt; </p> <table> <tbody> <tr> <td><strong>Column-I</strong></td> <td><strong>Column-II</strong></td> </tr> <tr> <td>1.</td> <td>Eosinophils</td> <td>(i)</td> <td>  Immune response  </td> </tr> <tr> <td>2.</td> <td>Basophils</td> <td>(ii)</td> <td>Phagocytosis</td> </tr> <tr> <td>3.</td> <td>Neutrophils</td> <td>(iii)</td> <td>  Release histaminase,<br/>destructive enzymes  </td> </tr> <tr> <td>4.</td> <td>Lymphocytes</td> <td>(iv)</td> <td>  Release granules containing histamine  </td> </tr> </tbody> </table> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1-(iv); 2-(i); 3-(ii); 4-(iii) </p></span></div><div class="option"><span class="key">b</span><span><p>1-(i); 2-(ii); 3-(iv); 4-(iii) </p></span></div><div class="option"><span class="key">c</span><span><p>1-(ii); 2-(i); 3-(iii); 4-(iv) </p></span></div><div class="option"><span class="key">d</span><span><p>1-(iii); 2-(iv); 3-(ii); 4-(i) </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -446,7 +450,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Eosinophils- Release histamines, destructive enzymes \u003cbr/>Basophils- Release granules containing histamine \u003cbr/>Neutrophils- Phagocytosis \u003cbr/>Lymphocytes- Immune response\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following conditions cause erythroblastosis foetalis? </p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Mother \(Rh ^{- ve }\) and foetus \(Rh ^{+ ve }\)</p></span></div><div class="option"><span class="key">b</span><span><p>Both mother and foetus \(Rh ^{-v e}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Both mother and foetus \(Rh ^{+ ve }\)</p></span></div><div class="option"><span class="key">d</span><span><p>Mother \(Rh ^{+ ve }\) and foetus \(Rh ^{- ve }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -458,7 +462,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(1)\u003c/strong>\u003c/p> \u003cp>During subsequent pregnancies, the \\(Rh\\) antibodies from the mother \\(\\left( Rh ^{- ve }\\right)\\) can leak into the blood of the foetus \\(\\left( Rh ^{+ ve }\\right)\\) and destroy the foetal RBCs. This could be fatal to the foetus or could cause severe anaemia and jaundice to the baby. This condition is called erythroblastosis foetalis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Name the blood cells, whose reduction in number can cause clotting disorder, leading to excessive loss of blood from the body.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Erythrocytes</p></span></div><div class="option"><span class="key">b</span><span><p>Leucocytes</p></span></div><div class="option"><span class="key">c</span><span><p>Neutrophils</p></span></div><div class="option"><span class="key">d</span><span><p>Thrombocytes</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -470,7 +474,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Thrombocytes, also known as \u003cstrong>platelets\u003c/strong>, are essential blood cells responsible for blood clotting. A reduction in their number, a condition called \u003cstrong>thrombocytopenia\u003c/strong>, can lead to impaired clot formation. As a result, even minor injuries may cause prolonged or excessive bleeding. Platelets help form a platelet plug at the site of injury and release chemicals that activate clotting factors, stabilizing the clot. Without adequate thrombocytes, the body cannot effectively prevent blood loss, leading to a serious clotting disorder.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Persons with ‘AB’ blood group are called as “Universal recipients”. This is due to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Absence of antigens A and B in plasma</p></span></div><div class="option"><span class="key">b</span><span><p>Presence of antibodies, anti-A and anti-B, on RBCs</p></span></div><div class="option"><span class="key">c</span><span><p>Absence of antibodies, anti-A and anti-B, in plasma</p></span></div><div class="option"><span class="key">d</span><span><p>Absence of antigens A and B on the surface of RBCs</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,7 +486,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Persons with ‘AB’ group lack antibodies, anti-A and anti-B, in plasma and thus, these persons can accept blood from persons with AB as well as the other groups of blood. Therefore, such persons are called ‘universal recipients’.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct?<br/>A. Basophils are most aboundant cell of the total WBCS.<br/>B. Basophils secrete histamine, serotonin, and heparin.<br/>C. Basophils are involved in inflammatory response.<br/>D. Basophils have kidney shaped nucleus.<br/>E. Basophils are agranulocyte.</p> <p>Choose the correct answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -494,7 +498,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Explanation: \u003col> \u003cli> \u003cp>\u003cstrong>Statement A (Incorrect)\u003c/strong>:\u003c/p> \u003cul> \u003cli>\u003cstrong>Basophils are the least abundant WBCs (0.5-1%)\u003c/strong>, not the most abundant.\u003c/li> \u003cli>\u003cstrong>Neutrophils (60-65%)\u003c/strong> are the most abundant WBCs.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement B (Correct)\u003c/strong>:\u003c/p> \u003cul> \u003cli>\u003cstrong>Basophils secrete histamine, serotonin, and heparin\u003c/strong>, which play a role in inflammatory and allergic responses.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement C (Correct)\u003c/strong>:\u003c/p> \u003cul> \u003cli>\u003cstrong>Basophils are involved in inflammatory responses\u003c/strong> by releasing histamine, which causes vasodilation and attracts other immune cells.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement D (Incorrect)\u003c/strong>:\u003c/p> \u003cul> \u003cli>Basophils \u003cstrong>do not have a kidney-shaped nucleus\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>Monocytes\u003c/strong> (a type of agranulocyte) have a \u003cstrong>kidney-shaped nucleus\u003c/strong>.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement E (Incorrect)\u003c/strong>:\u003c/p> \u003cul> \u003cli>Basophils are \u003cstrong>granulocytes\u003c/strong>, not agranulocytes.\u003c/li> \u003cli>\u003cstrong>Lymphocytes and monocytes\u003c/strong> are \u003cstrong>agranulocytes\u003c/strong>.\u003c/li> \u003c/ul> \u003c/li> \u003c/ol> Conclusion: \u003cul> \u003cli>\u003cstrong>Correct statements: B and C\u003c/strong>.\u003c/li> \u003cli>\u003cstrong>Correct option: D (B and C only).\u003c/strong>\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct?<br/>A. Basophils are most abundant cells of the total WBCs<br/>B. Basophils secrete histamine, serotonin and heparin<br/>C. Basophils are involved in inflammatory response<br/>D. Basophils have kidney shaped nucleus<br/>E. Basophils are agranulocytes</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and E only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A and B only</p></span></div><div class="option"><span class="key">d</span><span><p>D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -506,7 +510,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Basophils are not the most abundant WBCs; they are the least abundant, so statement A is incorrect.\u003c/li> \u003cli>They secrete histamine, serotonin, and heparin, which are involved in allergic and inflammatory responses, making statements B and C correct.\u003c/li> \u003cli>However, basophils have a lobed nucleus, not kidney-shaped (which is typical of monocytes), and they are granulocytes, not agranulocytes—so statements D and E are incorrect.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are <strong>correct</strong>?<br/>A. Basophils are most abundant cells of the total WBCs<br/>B. Basophils secrete histamine, serotonin and heparin<br/>C. Basophils are involved in inflammatory response<br/>D. Basophils have kidney shaped nucleus<br/>E. Basophils are agranulocytes</p> <p>Choose the <strong>correct</strong> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and E only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A and B only</p></span></div><div class="option"><span class="key">d</span><span><p>D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -518,7 +522,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Basophils are not the most abundant WBCs; they are the least abundant, so statement A is incorrect.\u003c/li> \u003cli>They secrete histamine, serotonin, and heparin, which are involved in allergic and inflammatory responses, making statements B and C correct.\u003c/li> \u003cli>However, basophils have a lobed nucleus, not kidney-shaped (which is typical of monocytes), and they are granulocytes, not agranulocytes—so statements D and E are incorrect.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is associated with decrease in cardiac output? </p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Parasympathetic neural signals</p></span></div><div class="option"><span class="key">b</span><span><p>Pneumotaxic centre</p></span></div><div class="option"><span class="key">c</span><span><p>Adrenal medullary hormones</p></span></div><div class="option"><span class="key">d</span><span><p>Sympathetic nerves</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -530,7 +534,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(1)\u003c/strong>\u003c/p> \u003cp>Parasympathetic neural signals (another component of ANS) decrease the rate of heart beat, speed of conduction of action potential and thereby the cardiac output.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II.</p> <p> &lt;!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--&gt; </p> <table> <tbody> <tr> <td><strong>List I</strong></td> <td><strong>List II</strong></td> </tr> <tr> <td>A.</td> <td>P-wave</td> <td>I.</td> <td>Beginning of systole</td> </tr> <tr> <td>B.</td> <td>Q - wave</td> <td>II.</td> <td>Repolarisation of ventricles</td> </tr> <tr> <td>C.</td> <td>QRS complex</td> <td>III.</td> <td>Depolarisation of atria</td> </tr> <tr> <td>D.</td> <td>T-wave</td> <td>IV.</td> <td>Depolarisation of ventricles</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-III, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-IV, C-I, D-III</p></span></div><div class="option"><span class="key">c</span><span><p>A-I, B-II, C-III, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-III, B-I, C-IV, D-II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -542,7 +546,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The P-wave represents the electrical excitation (or depolarisation) of the atria, which leads to the contraction of both the atria.\u003c/li> \u003cli>The contraction starts shortly after Q and marks the beginning of the systole.\u003c/li> \u003cli>The QRS complex represents the depolarisation of the ventricles, which initiates the ventricular contraction.\u003c/li> \u003cli>The T-wave represents the return of the ventricles from excited to normal state (repolarisation). The end of the T-wave marks the end of systole.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Persons with 'AB' blood group are called as "Universal recipients". This is due to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>absence of antibodies, anti-A and anti-B, in plasma</p></span></div><div class="option"><span class="key">b</span><span><p>absence of antigens A and B on the surface of RBCs</p></span></div><div class="option"><span class="key">c</span><span><p>absence of antigens A and B in plasma</p></span></div><div class="option"><span class="key">d</span><span><p>presence of antibodies, anti-A and anti-B, on RBCs.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -554,7 +558,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>People with blood group AB are called \"Universal Recipients\" because they can receive blood from any ABO blood group without agglutination.\u003c/li> \u003cli>This is due to the absence of anti-A and anti-B antibodies in their plasma, which prevents any immune reaction when receiving blood from any other group.\u003c/li> \u003cli>A (Absence of antigens A and B in plasma) - Incorrect \u003cul> \u003cli>The plasma does not contain antigens; antigens are present on RBCs.\u003c/li> \u003c/ul> \u003c/li> \u003cli>B (Presence of antibodies, anti-A and anti-B, on RBCs) - Incorrect \u003cul> \u003cli>AB blood group does NOT have anti-A or anti-B antibodies; that is why they can receive blood from any group.\u003c/li> \u003c/ul> \u003c/li> \u003cli>D (Absence of antigens A and B on the surface of RBCs) - Incorrect \u003cul> \u003cli>AB blood group has both A and B antigens on RBCs.\u003c/li> \u003c/ul> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct?<br/>A. Basophils are most abundant cells of the total WBCs<br/>B. Basophils secrete histamine, serotonin and heparin<br/>C. Basophils are involved in inflammatory response<br/>D. Basophils have kidney shaped nucleus<br/>E. Basophils are agranulocytes</p> <p>Choose the <strong>correct</strong> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and E only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>A and B only</p></span></div><div class="option"><span class="key">d</span><span><p>D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -566,7 +570,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Basophils are not the most abundant WBCs; they are the least abundant, so statement A is incorrect.\u003c/li> \u003cli>They secrete histamine, serotonin, and heparin, which are involved in allergic and inflammatory responses, making statements B and C correct.\u003c/li> \u003cli>However, basophils have a lobed nucleus, not kidney-shaped (which is typical of monocytes), and they are granulocytes, not agranulocytes—so statements D and E are incorrect.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is<strong> correct</strong> for blood group O?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>No antigens but both anti-a and anti-b antibodies are present.</p></span></div><div class="option"><span class="key">b</span><span><p>A antigen and b antibody present.</p></span></div><div class="option"><span class="key">c</span><span><p>Antigen and antibody both absent.</p></span></div><div class="option"><span class="key">d</span><span><p>A and B antigens and a, b antibodies present.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -578,7 +582,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In blood group ‘O’,\u003cstrong> \u003c/strong>there are no antigens but both A and B antibodies are present.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>QRS complex in a standard ECG represents;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>depolarisation of auricles.</p></span></div><div class="option"><span class="key">b</span><span><p>depolarisation of ventricles.</p></span></div><div class="option"><span class="key">c</span><span><p>repolarisation of ventricles.</p></span></div><div class="option"><span class="key">d</span><span><p>repolarisation of auricles.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -590,7 +594,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Explanation: \u003cp>The \u003cstrong>QRS complex\u003c/strong> in a standard ECG represents the \u003cstrong>depolarization of ventricles\u003c/strong>, which leads to \u003cstrong>ventricular contraction (systole)\u003c/strong>. This is the largest wave in the ECG due to the strong electrical activity of the ventricles.\u003c/p> \u003cp>\u003cstrong>[New NCERT Class 11 Page No. 300]\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement-I: The coagulum is formed of network of threads called thrombins</p> <p>Statement-II: Spleen is the graveyard of erythrocytes</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p> </p> <p>[NEET 2022]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is incorrect but Statement-II is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both statement-I and statement-II are incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement-I is correct but Statement-II is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -602,7 +606,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer:\u003c/strong> \u003cstrong>A) Statement-I is incorrect but Statement-II is correct\u003c/strong>\u003c/p> \u003cp>Explanation: Statement-I: The coagulum is formed of network of threads called thrombins. → Incorrect.\u003cbr/>The coagulum (blood clot) is formed of a network of fibrin threads, not thrombin.\u003c/p> \u003cul> \u003cli> \u003cp>Thrombin is an enzyme that converts fibrinogen → fibrin, which then forms the clot.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Statement-II: Spleen is the graveyard of erythrocytes. → Correct.\u003cbr/>The spleen removes old and worn-out red blood cells (RBCs) — hence it is called the graveyard of erythrocytes. Therefore, Statement-I is incorrect but Statement-II is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is <strong>correct </strong>w.r.t the location of atrio-ventricular node in the human heart?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Right upper corner of right atrium</p></span></div><div class="option"><span class="key">b</span><span><p>Lower left corner of the right atrium</p></span></div><div class="option"><span class="key">c</span><span><p>Right lower corner of left atrium</p></span></div><div class="option"><span class="key">d</span><span><p>Lower left corner of left atrium</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

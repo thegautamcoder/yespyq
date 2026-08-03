@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(f: \\mathbb{R} \\rightarrow \\mathbb{R}\\) be a differentiable function such that \\(f\\left(\\frac{x+y}{3}\\right)=\\frac{f(x)+f(y)}{3}\\) for all \\(x, y \\in \\mathbb{R}\\), and \\(f^{\\prime}(0)=3\\). Then the minimum value of the function \\(g(x)=3+e^x f(x)\\) is: [JEE Main 2026, 5 Apr (Shift 1)]","text":"Let \\(f: \\mathbb{R} \\rightarrow \\mathbb{R}\\) be a differentiable function such that \\(f\\left(\\frac{x+y}{3}\\right)=\\frac{f(x)+f(y)}{3}\\) for all \\(x, y \\in \\mathbb{R}\\), and \\(f^{\\prime}(0)=3\\). Then the minimum value of the function \\(g(x)=3+e^x f(x)\\) is: [JEE Main 2026, 5 Apr (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: b) \\(3\\left(\\frac{e-1}{e}\\right)\\). \\(\\mathrm{f}\\left(\\frac{\\mathrm{x}+\\mathrm{y}}{3}\\right)=\\frac{\\mathrm{f}(\\mathrm{x})+\\mathrm{f}(\\mathrm{y})}{3}\\) Put \\(\\mathrm{x}=\\mathrm{y}=0\\) \\( f(0)=\\frac{2 f(0)}{3}\\) \\(\\Rightarrow f(0)=0 \\ldots(1) \\) \\(\\mathrm{f}^{\\prime}\\left(\\frac{\\mathrm{x}+\\mathrm{y}}{3}\\right) \\cdot \\frac{1}{3}=\\frac{1}{3} \\mathrm{f}^{\\prime}(\\mathrm{x}) \\) Put \\( \\mathrm{x}=0 \\) \\( f^{\\prime}\\left(\\frac{\\mathrm{y}}{3}\\right) \\frac{1}{3}=\\frac{1}{3} \\times 3\\) \\( \\mathrm{f}^{\\prime}\\left(\\frac{\\mathrm{y}}{3}\\right)=3 \\) Put \\( \\mathrm{y}=3 \\mathrm{x}\\) \\( \\mathrm{f}^{\\prime}(\\mathrm{x})=3\\) Integrate both sides: \\(f(x)=3 x+C\\), and from \\(f(0)=0, C=0\\), so \\(f(x)=3 x\\) Now, \\( \\mathrm{g}(\\mathrm{x})=3+\\mathrm{e}^{\\mathrm{x}} \\cdot 3 \\mathrm{x}\\) \\( \\mathrm{g}^{\\prime}(\\mathrm{x})=3\\left[\\mathrm{e}^{\\mathrm{x}}+\\mathrm{x} \\cdot \\mathrm{e}^{\\mathrm{x}}\\right]\\) \\(=3 \\mathrm{e}^{\\mathrm{x}}(\\mathrm{x}+1)\\) \\( \\mathrm{g}^{\\prime}(\\mathrm{x})=0\\), at \\( \\mathrm{x}=-1\\) Now, \\(g^{\\prime \\prime}(x)=3 e^x(2+x)\\) \\(g^{\\prime \\prime}(-1)=3 e^{-1}(1)=\\frac{3}{e}&g","url":"https://yespyq.com/exams/jee/q/jee-00955-let-f-mathbb-r-rightarrow-mathbb-r-be-a-differentiable-function-such-t/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a differentiable function such that \(f\left(\frac{x+y}{3}\right)=\frac{…</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(f: \mathbb{R} \rightarrow \mathbb{R}\) be a differentiable function such that \(f\left(\frac{x+y}{3}\right)=\frac{f(x)+f(y)}{3}\) for all \(x, y \in \mathbb{R}\), and \(f^{\prime}(0)=3\). Then the minimum value of the function \(g(x)=3+e^x f(x)\) is:<br/><br/>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3\left(\frac{e+1}{e}\right)\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(3\left(\frac{e-1}{e}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3-e}{e}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3e\)</p></span></div></div>
       <div class="explain" data-exp>

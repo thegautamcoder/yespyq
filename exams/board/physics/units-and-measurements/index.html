@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Units and Measurements","item":"https://yespyq.com/exams/board/physics/units-and-measurements/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Units and Measurements</h1>
       <p>41 Board Physics previous year questions on <b>Units and Measurements</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I:</strong> In a vernier callipers, one vernier scale division is always smaller than one main scale division.<br/><strong>Statement II:</strong> The vernier constant is given by one main scale division multiplied by the number of vernier scale divisions.<br/>In the light of the above statements, choose the <strong>correct </strong>answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option correct"><span class="key">b</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the dimensions of \(\frac{B}{\mu_0}\) (Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>[AL]</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\left[{\mathrm{AL}}^{-1}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>[MAL]</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{\mathrm{MALT}}^{-1}\right]\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The displacement of a particle as a function of time is given by:\(x(t)=A\sin ⁡(t)+B{\cos ⁡}^{2}(t)+C{t}^{2}+D\).</p> <p>Find the dimension of \(\frac{ABC}{D}\)</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[{\mathrm{L}}^{2}\right]\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\left[{\mathrm{L}}^{2}{\mathrm{T}}^{−2}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[{\mathrm{LT}}^{−2}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{\mathrm{L}}^{3}\mathrm{T}\right]\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,16 +108,16 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the dimensional formula of \(a{b}^{-1}\) in the equation \(\left(P+\frac{a}{{V}^{2}}\right)(V-b)=RT\), where letters have their usual meaning.</p> <p> </p> <p>[JEE Main 2024, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[{M}^{0}{L}^{3}{T}^{-2}\right]\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\left[M{L}^{2}{T}^{-2}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[{M}^{-1}{L}^{5}{T}^{3}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{M}^{6}{L}^{7}{T}^{4}\right]\)</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: b) <p>\(\left[M{L}^{2}{T}^{-2}\right]\)</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p>\begin{equation}<br/>\begin{aligned}<br/>&amp;\begin{aligned}<br/>&amp; {[P]=\left[\frac{a}{v^2}\right]} \\<br/>&amp; \Rightarrow[a]=\left[P V^2\right] \\<br/>&amp; {[a]=\left[M L^{-1} T^{-2} L^6\right]=\left[M L^5 T^{-2}\right]}<br/>\end{aligned}\\<br/>&amp;\text { Now, }[v]=[b]\\<br/>&amp;\begin{aligned}<br/>&amp; {[b]=\left[L^3\right]} \\<br/>&amp; \therefore\left[a b^{-1}\right]=\left[M L^5 T^{-2} L^{-3}\right]=\left[M L^2 T^{-2}\right]<br/>\end{aligned}<br/>\end{aligned}<br/>\end{equation}</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p>\begin{equation}<br/>$$\begin{aligned}&\begin{aligned}& {[P]=\left[\frac{a}{v^2}\right]} \\& \Rightarrow[a]=\left[P V^2\right] \\& {[a]=\left[M L^{-1} T^{-2} L^6\right]=\left[M L^5 T^{-2}\right]}\end{aligned}$$\\<br/>&amp;\text { Now, }[v]=[b]\\<br/>&amp;$$\begin{aligned}& {[b]=\left[L^3\right]} \\& \therefore\left[a b^{-1}\right]=\left[M L^5 T^{-2} L^{-3}\right]=\left[M L^2 T^{-2}\right]\end{aligned}$$<br/>\end{aligned}<br/>\end{equation}</p></div>
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the correct dimensional formula for the capacitance in terms of M, L, T and C, where they stand for units of mass, length, time, and charge.</p> <p>(Shift II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\([{M}^{−1}{L}^{−2}{T}^{4}{C}^{2}]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\([{M}^{−1}{L}^{−2}{T}^{2}{C}^{2}]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\([{M}^{−1}{L}^{−1}{T}^{3}C]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\([{M}^{0}{L}^{1}{T}^{−1}{C}^{−1}]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Capaciatnce is given by \u003c/p> \u003cp>\\(\\mathrm{C}=\\frac{\\mathrm{Q}}{\\mathrm{V}}\\\\ \\mathrm{C}=\\frac{\\mathrm{Q}\\times \\mathrm{Q}}{\\mathrm{W}}\\\\ \\mathrm{Dimensions}\\mathrm{of}\\mathrm{C}=\\frac{[{\\mathrm{C}}^{2}]}{[{\\mathrm{ML}}^{2}{\\mathrm{T}}^{-2}]}=[{\\mathrm{M}}^{-1}{\\mathrm{L}}^{-2}{\\mathrm{T}}^{2}{\\mathrm{C}}^{2}]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List - I with List - II.</p> <table> <tbody> <tr> <td>List - I</td> <td>List - II</td> </tr> <tr> <td>(A) Permeability of free space</td> <td>(I) \(\left[{\mathrm{ML}}^{2}{\mathrm{T}}^{-2}\right]\)</td> </tr> <tr> <td>(B) Magnetic field</td> <td>(II) \(\left[{\mathrm{MT}}^{-2}{\mathrm{A}}^{-1}\right]\)</td> </tr> <tr> <td>(C) Magnetic moment</td> <td>(III) \(\left[{\mathrm{MLT}}^{-2}{\mathrm{A}}^{-2}\right]\)</td> </tr> <tr> <td>(D) Torsional constant</td> <td>(IV) \(\left[{\mathrm{L}}^{2}\mathrm{A}\right]\)</td> </tr> </tbody> </table> <p><br/>Choose the correct answer from the options given below :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A)-(IV), (B)-(III), (C)-(I), (D)-(II)</p></span></div><div class="option"><span class="key">b</span><span><p>(A)-(III), (B)-(II), (C)-(IV), (D)-(I)</p></span></div><div class="option"><span class="key">c</span><span><p>(A)-(II), (B)-(I), (C)-(III), (D)-(IV)</p></span></div><div class="option"><span class="key">d</span><span><p>(A)-(I), (B)-(IV), (C)-(II), (D)-(III)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \u003c/p> \u003cp> \\(\\tau =C\\theta \\\\ c=\\left[M{L}^{2}{T}^{-2}\\right]\\)\u003c/p> \u003cp> \u003c/p> \u003cp> \\(M=NIA\\\\ M=\\left[{L}^{2}A\\right]\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp> \\(\\text{  }F=qVB\\\\ \\left[ML{T}^{-2}\\right]=[AT]\\left[L{T}^{-1}\\right]B\\\\ B=\\left[M{T}^{-2}{A}^{-1}\\right]\\)\u003c/p> \u003cp> \u003c/p> \u003cp>\\(B=\\frac{{\\mu }_{0}i}{2r}\\\\ {\\mu }_{0}=\\frac{\\left[M{T}^{-2}{A}^{-1}\\right][L]}{[A]}\\)\u003c/p> \u003cp>\\({\\mu }_{0}=\\left[ML{T}^{-2}{A}^{-2}\\right]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\epsilon_{ o }\) is the permittivity of free space and \(E\) is the electric field, then \(\epsilon_{ o } E ^2\) has the dimensions : </p> <p> </p> <p>[JEE Main 2024, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[ M L ^{-1} T ^{-2}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[ M L ^2 T ^{-2}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[ M ^{\circ} L ^{-2} T A \right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[ M ^{-1} L ^{-3} T ^4 A ^2\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,10 +150,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { } E=\\frac{Q}{4 \\pi \\varepsilon_0 R^2} \\Rightarrow \\varepsilon_0=\\frac{Q}{4 \\pi R^2 E} \\\\\u003cbr/>&amp; \\text { Now, } \\varepsilon_0 E^2=\\frac{Q}{4 \\pi R^2 E} \\cdot E^2=\\frac{Q}{4 \\pi R^2} \\cdot E \\\\\u003cbr/>&amp; {\\left[\\varepsilon_0 E^2\\right]=\\left[\\frac{Q E}{R^2}\\right]=\\frac{[Q][E]}{\\left[R^2\\right]}=\\frac{[Q]}{\\left[R^2\\right][Q][R]}[W]} \\\\\u003cbr/>&amp; =\\frac{[W]}{\\left[R^3\\right]}=\\frac{M L^2 T^{-2}}{L^3}=M L^{-1} T^{-2}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}& \\text { } E=\\frac{Q}{4 \\pi \\varepsilon_0 R^2} \\Rightarrow \\varepsilon_0=\\frac{Q}{4 \\pi R^2 E} \\\\& \\text { Now, } \\varepsilon_0 E^2=\\frac{Q}{4 \\pi R^2 E} \\cdot E^2=\\frac{Q}{4 \\pi R^2} \\cdot E \\\\& {\\left[\\varepsilon_0 E^2\\right]=\\left[\\frac{Q E}{R^2}\\right]=\\frac{[Q][E]}{\\left[R^2\\right]}=\\frac{[Q]}{\\left[R^2\\right][Q][R]}[W]} \\\\& =\\frac{[W]}{\\left[R^3\\right]}=\\frac{M L^2 T^{-2}}{L^3}=M L^{-1} T^{-2}\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The velocity of a particle moving along a straight line varies with time as:</p> <p>\(v=A{t}^{2}+\frac{Bt}{C+t}\)​</p> <p>where A, B, and C are constants. Determine the dimensional formula of ABC.</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({L}^{2}{T}^{−2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({L}^{2}{T}^{−1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({L}^{2}{T}^{−3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({L}^{2}{T}^{−4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\mathrm{v}={\\mathrm{At}}^{2}+\\frac{\\mathrm{Bt}}{\\mathrm{C}+\\mathrm{t}}\\)\u003c/p> \u003cp>Dimensions of C is same as the dimensions of t. \u003c/p> \u003cp>\\(\\left[\\mathrm{C}\\right]=\\left[\\mathrm{T}\\right]\\)\u003c/p> \u003cp>\\(\\mathrm{Dimensions}\\mathrm{of}\\mathrm{Bt}\\mathrm{is}\\mathrm{same}\\mathrm{as}\\mathrm{the}\\mathrm{dimensions}\\mathrm{of}\\mathrm{v}\\mathrm{t}\\\\ \\mathrm{So},\\left[\\mathrm{B}\\right]=\\left[{\\mathrm{LT}}^{-1}\\right]\\\\ \\mathrm{Dimensions}\\mathrm{of}{\\mathrm{At}}^{2}\\mathrm{is}\\mathrm{same}\\mathrm{as}\\mathrm{dimensions}\\mathrm{of}\\mathrm{v}\\\\ \\mathrm{So},\\left[\\mathrm{A}\\right]=\\left[{\\mathrm{LT}}^{-3}\\right]\\\\ \\mathrm{Thus},\\mathrm{the}\\mathrm{dimensions}\\mathrm{of}\\left[\\mathrm{ABC}\\right]=\\left[{\\mathrm{LT}}^{-3}\\right]\\left[{\\mathrm{LT}}^{-1}\\right]\\left[\\mathrm{T}\\right]=\\left[{\\mathrm{L}}^{2}{\\mathrm{T}}^{-3}\\right]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Time periods of oscillation of the same simple pendulum measured using four different measuring clocks were recorded as 4.62s , 4.632s , 4.6s and 4.64s. The arithmetic mean of these readings in correct significant figure is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4.623s</p></span></div><div class="option"><span class="key">b</span><span><p>4.62s</p></span></div><div class="option"><span class="key">c</span><span><p>4.6s</p></span></div><div class="option"><span class="key">d</span><span><p>5s</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> Sum of number by considering significant digit sum =4.6+4.6+4.6+4.6=18.4\u003c/p> \u003cp>Arithmetic Mean = \\(\\frac{sum}{4}=\\frac{18.4}{4}=4.6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The measurements for a wire are given as:</p> <ul> <li>Mass, \(m=(0.60\pm 0.003)\text{ }\text{g}\),</li> <li>Radius, \(r=(0.50\pm 0.01)\text{ }\text{cm}\),</li> <li>Length, \(l=(10.00\pm 0.05)\text{ }\text{cm}\).</li> </ul> <p>Find the <strong>maximum percentage error</strong> in the measurement of the density of the wire.</p> <p>(Shift II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2%</p></span></div><div class="option"><span class="key">b</span><span><p>3%</p></span></div><div class="option"><span class="key">c</span><span><p>4%</p></span></div><div class="option"><span class="key">d</span><span><p>5%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The density of the wire is calculated using the formula:\u003c/p> \u003cp>\\(\\rho =\\mathrm{m}/\\mathrm{V}\\\\ \\mathrm{where},\\mathrm{V}={\\mathrm{πr}}^{2}\\mathrm{l}\\)\u003c/p> \u003cp>\\(\\rho =\\frac{\\mathrm{m}}{{\\mathrm{πr}}^{2}\\mathrm{l}}\\)\u003c/p> \u003cp>Now, the percentage error in density is given by the sum of the relative percentage errors of the individual measurements:\u003c/p> \u003cp>\\(\\frac{∆\\rho }{\\rho }\\times 100=\\frac{∆\\mathrm{m}}{m}\\times 100+2\\times \\frac{∆\\mathrm{r}}{r}\\times 100+\\frac{∆\\mathrm{l}}{l}\\times 100\\\\ \\frac{∆\\rho }{\\rho }\\times 100=\\left(\\frac{0.003}{0.6}\\times 100\\right)+2\\times \\left(\\frac{0.01}{0.5}\\times 100\\right)+\\left(\\frac{0.05}{10}\\times 100\\right)\\\\ \\frac{∆\\rho }{\\rho }\\times 100=0.5+4+0.5=5%\\\\ \\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The expression given below shows the variation of velocity (v) with time (t), \(v=A{t}^{2}+\frac{Bt}{C+t}\). The dimension of ABC is : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[{M}^{0}{L}^{2}{T}^{-2}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[{M}^{0}{L}^{1}{T}^{-3}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[{M}^{0}{L}^{2}{T}^{-3}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{M}^{0}{L}^{1}{T}^{-2}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{ }\\left[L{T}^{-1}\\right]=[A]\\left[{T}^{2}\\right]=\\frac{[B][T]}{[C]+[T]}\\\\ [C]=[T]\\\\ [A]=\\left[L{T}^{-3}\\right]\\\\ [B]=\\left[L{T}^{-1}\\right]\\\\ [ABC]=\\left[{L}^{2}{T}^{-3}\\right]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>10 divisions on the main scale of a Vernier calliper coincide with 11 divisions on the Vernier scale. If each division on the main scale is of 5 units, the least count of the instrument is :</p> <p> </p> <p>[JEE Main 2024, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{1}{2}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{5}{11}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{50}{11}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{10}{11}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,10 +210,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Given: } 10 \\mathrm{MSD}=11 \\mathrm{VSD} \\\\\u003cbr/>&amp; \\Rightarrow 1 \\mathrm{VSD}=\\frac{10}{11} \\mathrm{MSD} \\\\\u003cbr/>&amp; \\text { As, } \\mathrm{LC}=1 \\mathrm{MSD}-1 \\mathrm{VSD} \\\\\u003cbr/>&amp; =1 \\mathrm{MSD}-\\frac{10}{11} \\mathrm{MSD}=\\frac{1 \\mathrm{MSD}}{11} \\\\\u003cbr/>&amp; =\\frac{5}{11} \\text { units }\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}& \\text { Given: } 10 \\mathrm{MSD}=11 \\mathrm{VSD} \\\\& \\Rightarrow 1 \\mathrm{VSD}=\\frac{10}{11} \\mathrm{MSD} \\\\& \\text { As, } \\mathrm{LC}=1 \\mathrm{MSD}-1 \\mathrm{VSD} \\\\& =1 \\mathrm{MSD}-\\frac{10}{11} \\mathrm{MSD}=\\frac{1 \\mathrm{MSD}}{11} \\\\& =\\frac{5}{11} \\text { units }\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following pairs of physical quantities have the same dimensions?(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Angular momentum and Planck's constant</p></span></div><div class="option"><span class="key">b</span><span><p>Torque and moment of inertia</p></span></div><div class="option"><span class="key">c</span><span><p> Impulse and surface tension</p></span></div><div class="option"><span class="key">d</span><span><p> Momentum and work done</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We analyze the dimensions of each pair of physical quantities to determine which have the same dimensions.\u003c/p> \u003cstrong>Option A: Angular Momentum and Planck's Constant\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Angular momentum (\\(L\\))\u003c/strong>:\u003c/p> \\(L=mvr=\\text{mass}\\times \\text{velocity}\\times \\text{distance}\\) \\(=[M][L{T}^{−1}][L]=[M{L}^{2}{T}^{−1}]\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Planck's constant (\\(h\\))\u003c/strong>:\u003cbr/>Planck’s constant is defined in the equation:\u003c/p> \\(E=hf\\) \u003cp>where \\(E\\) is energy and \\(f\\) is frequency.\u003cbr/>Since energy has dimension \u003cstrong>\\([M{L}^{2}{T}^{−2}]\\)\u003c/strong> and frequency \u003cstrong>\\([{T}^{−1}]\\)\u003c/strong>, we get:\u003c/p> \\([h]=\\frac{[E]}{[f]}=\\frac{[M{L}^{2}{T}^{−2}]}{[{T}^{−1}]}=[M{L}^{2}{T}^{−1}]\\)\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Both have the same dimensions\u003c/strong>: \\([M{L}^{2}{T}^{−1}]\\).\u003c/p> \u003cstrong>Option B: Torque and Moment of Inertia\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Torque (\\(\\tau\\))\u003c/strong>:\u003c/p> \\(\\tau =r\\times F=[L]\\times [ML{T}^{−2}]=[M{L}^{2}{T}^{−2}]\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Moment of inertia (\\(I\\))\u003c/strong>:\u003c/p> \\(I=m{r}^{2}=[M][{L}^{2}]=[M{L}^{2}]\\)\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Different dimensions\u003c/strong>.\u003c/p> \u003cstrong>Option C: Impulse and Surface Tension\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Impulse (\\(J\\))\u003c/strong>:\u003c/p> \\(J=\\text{Force}\\times \\text{time}=[ML{T}^{−2}][T]=[ML{T}^{−1}]\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Surface tension (\\(T\\))\u003c/strong>:\u003c/p> \\(T=\\frac{\\text{Force}}{\\text{Length}}=\\frac{[ML{T}^{−2}]}{[L]}=[M{T}^{−2}]\\)\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Different dimensions\u003c/strong>.\u003c/p> \u003cstrong>Option D: Momentum and Work Done\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Momentum (\\(p\\))\u003c/strong>:\u003c/p> \\(p=mv=[M][L{T}^{−1}]=[ML{T}^{−1}]\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Work Done (\\(W\\))\u003c/strong>:\u003c/p> \\(W=\\text{Force}\\times \\text{Distance}=[ML{T}^{−2}][L]=[M{L}^{2}{T}^{−2}]\\)\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Different dimensions\u003c/strong>.\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(A\\ \\text{Angular momentum and Planck’s constant}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A physical quantity <strong>\(Q\)</strong> is given by:\(Q=\frac{a{b}^{4}}{cd}\)​.If the <strong>percentage errors</strong> in <strong>\(a,b,c\)</strong> and <strong>\(d\)</strong> are <strong>2%</strong>, <strong>1%</strong>, <strong>2%</strong>, and <strong>1%</strong> respectively, determine the <strong>percentage error in \(Q\)</strong>.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2%</p></span></div><div class="option"><span class="key">b</span><span><p>5%</p></span></div><div class="option"><span class="key">c</span><span><p>9%</p></span></div><div class="option"><span class="key">d</span><span><p>6%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We are given the equation:\u003c/p> \u003cp>\\(Q=\\frac{a{b}^{4}}{cd}\\)​\u003c/p> \u003cp>To determine the \u003cstrong>percentage error \\(Q\\)\u003c/strong>, we use the \u003cstrong>error propagation rule\u003c/strong>:\u003c/p> \u003cp>\\(\\frac{\\Delta Q}{Q}=\\frac{\\Delta a}{a}+4\\frac{\\Delta b}{b}+\\frac{\\Delta c}{c}+\\frac{\\Delta d}{d}\\)​\u003c/p> \u003cstrong>Step 1: Substituting Given Errors\u003c/strong> \u003cul> \u003cli>\u003cstrong>Percentage error in a = 2%\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Percentage error in b = 1%\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Percentage error in c = 2%\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Percentage error in d = 1%\u003c/strong>\u003c/li> \u003c/ul> \u003cp>Now, substituting these values into the equation:\u003c/p> \u003cp>\\(\\text{Percentage error in }Q=2+4(1)+2+1\\) \\(=2+4+2+1=9\\mathrm{%}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(C\\ 9\\mathrm{%}\\)C​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A temperature difference can generate e.m.f. in some materials. Let \(S\) be the e.m.f. produced per unit temperature difference between the ends of a wire, \(\sigma\) the electrical conductivity and \(\kappa\) the thermal conductivity of the material of the wire. Taking \(M, L, T, I\) and \(K\) as dimensions of mass, length, time, current and temperature, respectively, the dimensional formula of the quantity \(Z=\frac{S^2 \sigma}{\kappa}\) is:</p> <p>[JEE Advanced 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[{M}^{0}{L}^{0}{T}^{0}{I}^{0}{K}^{0}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[{M}^{0}{L}^{0}{T}^{0}{I}^{0}{K}^{-1}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[{M}^{1}{L}^{2}{T}^{-2}{I}^{-1}{K}^{-1}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{M}^{1}{L}^{2}{T}^{-4}{I}^{-1}{K}^{-1}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Problem Statement:\u003c/strong> Find the dimensional formula for \\(Z=\\frac{{S}^{2}\\sigma }{κ}\\).\u003c/p> \u003cp>\u003cstrong>Solution:\u003c/strong>\u003c/p> \u003col> \u003cli>\u003cstrong>Determine Dimensions of Constituent Quantities:\u003c/strong>\u003c/li> \u003c/ol> \u003cul> \u003cul> \u003cli>\u003cstrong>Seebeck Coefficient (\u003c/strong>\u003cem>S\u003c/em>\u003cstrong>):\u003c/strong> Defined as EMF per unit temperature.\\(\\left[S\\right]=\\frac{\\left[V\\right]}{\\left[\\text{Δ}T\\right]}=\\frac{\\left[W\\right]/\\left[Q\\right]}{\\left[K\\right]}=\\frac{\\left[M{L}^{2}{T}^{−2}\\right]/\\left[IT\\right]}{\\left[K\\right]}=\\left[M{L}^{2}{T}^{−3}{I}^{−1}{K}^{−1}\\right]\\)\u003c/li> \u003cli>\u003cstrong>Electrical Conductivity (\\(\\sigma\\)\u003c/strong>\u003cstrong>):\u003c/strong> Inverse of resistivity (\\(\\rho\\)). \\(R=\\rho \\frac{L}{A}\\left[\\rho \\right]=\\left[R\\right]\\frac{\\left[A\\right]}{\\left[L\\right]}=\\frac{\\left[V\\right]}{\\left[I\\right]}\\left[L\\right]=\\left[M{L}^{2}{T}^{−3}{I}^{−2}\\left]\\left[L\\right]=\\right[M{L}^{3}{T}^{−3}{I}^{−2}\\right]\\)\\(\\left[\\sigma \\right]=\\frac{1}{\\left[\\rho \\right]}=\\left[{M}^{−1}{L}^{−3}{T}^{3}{I}^{2}\\right]\\)\u003c/li> \u003cli>\u003cstrong>Thermal Conductivity (\\(κ\\)\u003c/strong>\u003cstrong>):\u003c/strong> From Power flow equation \\(P=\\frac{κA\\text{Δ}T}{L}\\).\\(\\left[κ\\right]=\\frac{\\left[P\\right]\\left[L\\right]}{\\left[A\\right]\\left[\\text{Δ}T\\right]}=\\frac{\\left[M{L}^{2}{T}^{−3}\\right]\\left[L\\right]}{\\left[{L}^{2}\\right]\\left[K\\right]}=\\left[ML{T}^{−3}{K}^{−1}\\right]\\)\u003c/li> \u003c/ul> \u003c/ul> \u003cp>\u003cstrong>2. Calculate Dimensions of \\(Z\\)\u003c/strong>\u003cstrong>: \\(Z=\\frac{{S}^{2}\\sigma }{κ}\\)\u003c/strong>\u003c/p> \u003cp> First, calculate \\(\\left[{S}^{2}\\right]\\): \\(\\left[{S}^{2}\\left]=\\right[M{L}^{2}{T}^{−3}{I}^{−1}{K}^{−1}{]}^{2}=\\right[{M}^{2}{L}^{4}{T}^{−6}{I}^{−2}{K}^{−2}]\\)\u003c/p> \u003cp> Multiply by \\(\\left[\\sigma \\right]\\): \\(\\left[{S}^{2}\\sigma \\left]=\\right[{M}^{2}{L}^{4}{T}^{−6}{I}^{−2}{K}^{−2}\\left]\\times \\right[{M}^{−1}{L}^{−3}{T}^{3}{I}^{2}\\left]=\\right[{M}^{1}{L}^{1}{T}^{−3}{I}^{0}{K}^{−2}\\right]\\)\u003c/p> \u003cp> Divide by \\(\\left[κ\\right]\\): \\(\\left[Z\\right]=\\frac{\\left[ML{T}^{−3}{K}^{−2}\\right]}{\\left[ML{T}^{−3}{K}^{−1}\\right]}\\) \u003c/p> \u003cp> \\(\\left[Z\\right]=\\left[{M}^{1−1}{L}^{1−1}{T}^{−3−\\left(−3\\right)}{I}^{0}{K}^{−2−\\left(−1\\right)}\\right]\\) \\(\\left[Z\\right]=\\left[{M}^{0}{L}^{0}{T}^{0}{I}^{0}{K}^{−1}\\right]\\)\u003c/p> \u003cp>\u003cstrong>Correct Option:\u003c/strong> \u003cstrong>(B) \\(\\left[{M}^{0}{L}^{0}{T}^{0}{I}^{0}{K}^{−1}\\right]\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List - I with List - II.</p> <p>List - I List - II <br/>(A) Young's Modulus (I) \(M{L}^{-1}{T}^{-1}\) <br/>(B) Torque (II) \(M{L}^{-1}{T}^{-2}\) <br/>(C) Coefficient of Viscosity (III) \({M}^{-1}{L}^{3}{T}^{-2}\) <br/>(D) Gravitational Constant (IV) \(M{L}^{2}{T}^{-2}\) </p> <p>Choose the correct answer from the options given below : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A)-(II), (B)-(IV), (C)-(I), (D)-(III)</p></span></div><div class="option"><span class="key">b</span><span><p>(A)-(II), (B)-(I), (C)-(IV), (D)-(III)</p></span></div><div class="option"><span class="key">c</span><span><p>(A)-(IV), (B)-(II), (C)-(III), (D)-(I)</p></span></div><div class="option"><span class="key">d</span><span><p>(A)-(I), (B)-(III), (C)-(II), (D)-(IV)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{ (A) }[Y]=\\frac{F}{A\\left(\\frac{\\Delta ℓ}{ℓ}\\right)}=M{L}^{-1}{T}^{-2}\\left(\\frac{\\Delta ℓ}{ℓ}\\right.=\\text{ Dimensionless })\\)\u003c/p> \u003cp>(B) Torque\u003c/p> \u003cp>\\((\\vec{\\tau })=\\vec{r}\\times \\vec{F}=L\\times ML{T}^{-2}=M{L}^{2}{T}^{-2}\\)\u003c/p> \u003cp>(C) Coefficient of viscosity \\(\\Rightarrow \\frac{F}{A\\cdot \\frac{dv}{dt}}\\)\u003c/p> \u003cp>\\(\\eta \\to Pa\\text{ sec. }\\\\ [\\eta ]=\\frac{ML{T}^{-2}}{{L}^{2}}\\times T=M{L}^{-1}{T}^{-1}\\)\u003c/p> \u003cp> \\(\\text{ (D) Gravitational constant ( }G\\text{ ) }\\\\ [G]=\\frac{F\\cdot {r}^{2}}{{m}_{1}{m}_{2}}=\\frac{ML{T}^{-2}\\times {L}^{2}}{{M}^{2}}={M}^{-1}{L}^{3}{T}^{-2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pair of physical quantities not having same dimensions is : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Pressure and Young's modulus</p></span></div><div class="option"><span class="key">b</span><span><p>Surface tension and impulse</p></span></div><div class="option"><span class="key">c</span><span><p>Angular momentum and Planck's constant</p></span></div><div class="option"><span class="key">d</span><span><p>Torque and energy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Dimensions of surface tension is [MT\u003csup>-2\u003c/sup>]\u003c/p> \u003cp>Dimensions of Impulse is [MLT\u003csup>-1\u003c/sup>]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the dimensions of \(\frac{B}{\mu_0}\) (Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>[AL]</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[{\mathrm{AL}}^{-1}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>[MAL]</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{\mathrm{MALT}}^{-1}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Magnetic field B :\u003cbr/>The dimensional formula for B is derived from the Lorentz force law:\u003c/p> \u003cp>\\(\u003cbr/>F=q v B \\quad \\Rightarrow \\quad B=\\frac{F}{q v}\u003cbr/>\\)\u003c/p> \u003cp>1. Force (F) has the dimensional formula:\u003c/p> \u003cp>\\(\u003cbr/>[F]=\\left[\\mathrm{MLT}^{-2}\\right]\u003cbr/>\\)\u003c/p> \u003cp>2. Charge (q) has the dimensional formula:\u003c/p> \u003cp>\\(\u003cbr/>[q]=[\\mathrm{AT}]\u003cbr/>\\)\u003c/p> \u003cp>3. Velocity (v) has the dimensional formula:\u003c/p> \u003cp>\\(\u003cbr/>[v]=\\left[\\mathrm{LT}^{-1}\\right]\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Thus, the dimensional formula for B is:\u003c/p> \u003cp>\\(\u003cbr/>[B]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{[\\mathrm{AT}]\\left[\\mathrm{LT}^{-1}\\right]}=\\frac{[\\mathrm{M}]\\left[\\mathrm{T}^{-2}\\right]}{[\\mathrm{A}]}=[\\mathrm{M}]\\left[\\mathrm{A}^{-1}\\right]\\left[\\mathrm{T}^{-2}\\right]\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Magnetic permeability ( \\(\\mu_0\\) ):\u003cbr/>The dimensional formula of \\(\\mu_0\\) is:\u003c/p> \u003cp>\\(\u003cbr/>\\left[\\mu_0\\right]=[\\mathrm{M}][\\mathrm{L}]\\left[\\mathrm{T}^{-2}\\right]\\left[\\mathrm{A}^{-2}\\right]\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Dimensions of \\(\\frac{B}{\\mu_0}\\) :\u003cbr/>Using the formula:\u003c/p> \u003cp>\\(\u003cbr/>\\frac{B}{\\mu_0}=\\frac{[\\mathrm{M}]\\left[\\mathrm{A}^{-1}\\right]\\left[\\mathrm{T}^{-2}\\right]}{[\\mathrm{M}][\\mathrm{L}]\\left[\\mathrm{T}^{-2}\\right]\\left[\\mathrm{A}^{-2}\\right]}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Cancel the terms:\u003c/p> \u003cp>\\(\u003cbr/>\\frac{B}{\\mu_0}=[\\mathrm{A}]\\left[\\mathrm{L}^{-1}\\right]\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The maximum percentage error in the measurment of density of a wire is<br/>[Given, mass of wire \(=(0.60\pm 0.003)\mathrm{g}\)<br/>radius of wire \(=(0.50\pm 0.01)\mathrm{cm}\)<br/>length of wire \(=(10.00\pm 0.05)\mathrm{cm}]\)</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>8</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>7</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\rho =\\frac{M}{\\pi {r}^{2}l}\\)\u003c/p> \u003cp>The maximum percentage error in the measurement of the density of a wire\u003c/p> \u003cp> \\(\\frac{\\Delta \\rho }{\\rho }=\\frac{\\Delta M}{M}+2\\frac{\\Delta r}{r}+\\frac{\\Delta l}{l}\\\\ \\Rightarrow \\frac{\\Delta \\rho }{\\rho }=\\left(\\frac{0.003}{0.6}+\\frac{2\\times 0.01}{0.5}+\\frac{0.05}{10}\\right)100\\)\u003c/p> \u003cp>Total error =0.5 %+4 %+0.5 %=5 %\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List - I with List - II.</p> <p>List - I List - II <br/>(A) Young's Modulus (I) \(M{L}^{-1}{T}^{-1}\) <br/>(B) Torque (II) \(M{L}^{-1}{T}^{-2}\) <br/>(C) Coefficient of Viscosity (III) \({M}^{-1}{L}^{3}{T}^{-2}\) <br/>(D) Gravitational Constant (IV) \(M{L}^{2}{T}^{-2}\) </p> <p>Choose the correct answer from the options given below : </p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A)-(II), (B)-(IV), (C)-(I), (D)-(III)</p></span></div><div class="option"><span class="key">b</span><span><p>(A)-(II), (B)-(I), (C)-(IV), (D)-(III)</p></span></div><div class="option"><span class="key">c</span><span><p>(A)-(IV), (B)-(II), (C)-(III), (D)-(I)</p></span></div><div class="option"><span class="key">d</span><span><p>(A)-(I), (B)-(III), (C)-(II), (D)-(IV)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{ (A) }[Y]=\\frac{F}{A\\left(\\frac{\\Delta ℓ}{ℓ}\\right)}=M{L}^{-1}{T}^{-2}\\left(\\frac{\\Delta ℓ}{ℓ}\\right.=\\text{ Dimensionless })\\)\u003c/p> \u003cp>(B) Torque\u003c/p> \u003cp>\\((\\vec{\\tau })=\\vec{r}\\times \\vec{F}=L\\times ML{T}^{-2}=M{L}^{2}{T}^{-2}\\)\u003c/p> \u003cp>(C) Coefficient of viscosity \\(\\Rightarrow \\frac{F}{A\\cdot \\frac{dv}{dt}}\\)\u003c/p> \u003cp>\\(\\eta \\to Pa\\text{ sec. }\\\\ [\\eta ]=\\frac{ML{T}^{-2}}{{L}^{2}}\\times T=M{L}^{-1}{T}^{-1}\\)\u003c/p> \u003cp> \\(\\text{ (D) Gravitational constant ( }G\\text{ ) }\\\\ [G]=\\frac{F\\cdot {r}^{2}}{{m}_{1}{m}_{2}}=\\frac{ML{T}^{-2}\\times {L}^{2}}{{M}^{2}}={M}^{-1}{L}^{3}{T}^{-2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy in a system varies with position and time as E(x, t) = \({x}^{3}\) \({e}^{–\beta t}\), where β = 0.3 \(se{c}^{–1}\). Given that the P% error in x = 1.2 % and that the % error in t = 1.6%. Find the maximum % error in E at t = 5 sec.</p> <p>(Shift - II Memory Based)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1%</p></span></div><div class="option"><span class="key">b</span><span><p>2%</p></span></div><div class="option"><span class="key">c</span><span><p>3%</p></span></div><div class="option"><span class="key">d</span><span><p>6%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The formula for percentage error propagation in a function is:\u003c/p> \\(\\Delta {E}_{\\mathrm{%}}=∣\\frac{\\mathrm{∂}E}{\\mathrm{∂}x}∣\\Delta {x}_{\\mathrm{%}}+∣\\frac{\\mathrm{∂}E}{\\mathrm{∂}t}∣\\Delta {t}_{\\mathrm{%}}\\)​ \u003cp>Given:\u003c/p> \\(E(x,t)={x}^{3}{e}^{−\\beta t}\\) Step 1: Find percentage errors due to \\(x\\) and \\(t\\) \u003col> \u003cli> \u003cp>\u003cstrong>For \\({x}^{3}\\):\u003c/strong> The percentage error for \\({x}^{3}\\) is:\u003c/p> \\(\\Delta {E}_{\\mathrm{%}\\text{ }x}=3⋅\\Delta {x}_{\\mathrm{%}}\\)​ \u003cp>Substituting \\(\\Delta {x}_{\\mathrm{%}}=1.2\\mathrm{%}\\)\u003c/p> \\(\\Delta {E}_{\\mathrm{%}\\text{ }x}=3⋅1.2=3.6\\mathrm{%}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>For \\({e}^{−\\beta t}\\):\u003c/strong> The percentage error due to \\(t\\)t comes from the exponential term. Using:\u003c/p> \\(\\Delta {E}_{\\mathrm{%}\\text{ }t}=\\beta ⋅t⋅\\Delta {t}_{\\mathrm{%}}\\)​ \u003cp>Substituting \\(\\beta =0.3\\text{ }{\\text{s}}^{−1},t=5\\text{ }\\text{s},\\Delta {t}_{\\mathrm{%}}=1.6\\mathrm{%}\\)\u003c/p> \\(\\Delta {E}_{\\mathrm{%}\\text{ }t}=0.3⋅5⋅1.6=2.4\\mathrm{%}\\)\u003c/li> \u003c/ol> Step 2: Combine percentage errors \u003cp>The total percentage error in \\(E\\)E is:\u003c/p> \\(\\Delta {E}_{\\mathrm{%}}=\\Delta {E}_{\\mathrm{%}\\text{ }x}+\\Delta {E}_{\\mathrm{%}\\text{ }t}\\)​ \u003cp>Substituting the values:\u003c/p> \\(\\Delta {E}_{\\mathrm{%}}=3.6+2.4=6.0\\mathrm{%}\\) \u003cp>\u003cstrong>Correct answer: (d) 6%\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If 50 Vernier divisions are equal to 49 main scale divisions of a travelling microscope and one smallest reading of main scale is 0.5 mm, the Vernier constant of travelling microscope is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.1 mm</p></span></div><div class="option"><span class="key">b</span><span><p>0.1 cm</p></span></div><div class="option"><span class="key">c</span><span><p>0.01 cm</p></span></div><div class="option"><span class="key">d</span><span><p>0.01 mm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,10 +330,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\text { (d) } 50 \\mathrm{~V}+\\mathrm{S}=49 \\mathrm{~S}+\\mathrm{S} \\\\\u003cbr/>&amp; \\mathrm{~S}=50(\\mathrm{~S}-\\mathrm{V}) \\\\\u003cbr/>&amp; 0.5=50(\\mathrm{~S}-\\mathrm{V})\u003cbr/>\\end{aligned}\u003cbr/>The Vernier constant of travelling microscope is \\(S-V=\\frac{0.5}{50}=\\frac{1}{100}=0.01mm\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>$$\\begin{aligned}& \\text { (d) } 50 \\mathrm{~V}+\\mathrm{S}=49 \\mathrm{~S}+\\mathrm{S} \\\\& \\mathrm{~S}=50(\\mathrm{~S}-\\mathrm{V}) \\\\& 0.5=50(\\mathrm{~S}-\\mathrm{V})\\end{aligned}$$\u003cbr/>The Vernier constant of travelling microscope is \\(S-V=\\frac{0.5}{50}=\\frac{1}{100}=0.01mm\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For an experimental expression \(y=\frac{32.3\times 1125}{27.4}\), where all the digits are significant. Then to report the value of y we should write</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>y = 1326.19</p></span></div><div class="option"><span class="key">b</span><span><p>y = 1326.2</p></span></div><div class="option"><span class="key">c</span><span><p>y = 1326.186</p></span></div><div class="option"><span class="key">d</span><span><p>y = 1330</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(\\text{ }y=\\frac{32.3\\times 1125}{27.4}\\\\ y=1326.186\\)\u003c/p> \u003cp>Significant Figures Rule:\u003cbr/>The given numbers have 3 significant digits.\u003cbr/>The result must also be rounded to 3 significant digits.\u003cbr/>Rounding 1326.186 to 3 significant digits:\u003cbr/>\\(1326.186\\to 1330\\) (since 1326 rounds up to 1330 )\u003cbr/>the correct answer is 1330 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\epsilon_{ o }\) is the permittivity of free space and \(E\) is the electric field, then \(\epsilon_{ o } E ^2\) has the dimensions : </p> <p> </p> <p>[JEE Main 2024, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[ M L ^{-1} T ^{-2}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[ M L ^2 T ^{-2}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[ M ^{\circ} L ^{-2} T A \right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[ M ^{-1} L ^{-3} T ^4 A ^2\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,10 +354,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { } E=\\frac{Q}{4 \\pi \\varepsilon_0 R^2} \\Rightarrow \\varepsilon_0=\\frac{Q}{4 \\pi R^2 E} \\\\\u003cbr/>&amp; \\text { Now, } \\varepsilon_0 E^2=\\frac{Q}{4 \\pi R^2 E} \\cdot E^2=\\frac{Q}{4 \\pi R^2} \\cdot E \\\\\u003cbr/>&amp; {\\left[\\varepsilon_0 E^2\\right]=\\left[\\frac{Q E}{R^2}\\right]=\\frac{[Q][E]}{\\left[R^2\\right]}=\\frac{[Q]}{\\left[R^2\\right][Q][R]}[W]} \\\\\u003cbr/>&amp; =\\frac{[W]}{\\left[R^3\\right]}=\\frac{M L^2 T^{-2}}{L^3}=M L^{-1} T^{-2}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}& \\text { } E=\\frac{Q}{4 \\pi \\varepsilon_0 R^2} \\Rightarrow \\varepsilon_0=\\frac{Q}{4 \\pi R^2 E} \\\\& \\text { Now, } \\varepsilon_0 E^2=\\frac{Q}{4 \\pi R^2 E} \\cdot E^2=\\frac{Q}{4 \\pi R^2} \\cdot E \\\\& {\\left[\\varepsilon_0 E^2\\right]=\\left[\\frac{Q E}{R^2}\\right]=\\frac{[Q][E]}{\\left[R^2\\right]}=\\frac{[Q]}{\\left[R^2\\right][Q][R]}[W]} \\\\& =\\frac{[W]}{\\left[R^3\\right]}=\\frac{M L^2 T^{-2}}{L^3}=M L^{-1} T^{-2}\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the dimensions of \(\frac{B}{\mu_0}\) (Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>[AL]</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[{\mathrm{AL}}^{-1}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>[MAL]</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[{\mathrm{MALT}}^{-1}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Magnetic field B :\u003cbr/>The dimensional formula for B is derived from the Lorentz force law:\u003c/p> \u003cp>\\(\u003cbr/>F=q v B \\quad \\Rightarrow \\quad B=\\frac{F}{q v}\u003cbr/>\\)\u003c/p> \u003cp>1. Force (F) has the dimensional formula:\u003c/p> \u003cp>\\(\u003cbr/>[F]=\\left[\\mathrm{MLT}^{-2}\\right]\u003cbr/>\\)\u003c/p> \u003cp>2. Charge (q) has the dimensional formula:\u003c/p> \u003cp>\\(\u003cbr/>[q]=[\\mathrm{AT}]\u003cbr/>\\)\u003c/p> \u003cp>3. Velocity (v) has the dimensional formula:\u003c/p> \u003cp>\\(\u003cbr/>[v]=\\left[\\mathrm{LT}^{-1}\\right]\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Thus, the dimensional formula for B is:\u003c/p> \u003cp>\\(\u003cbr/>[B]=\\frac{\\left[\\mathrm{MLT}^{-2}\\right]}{[\\mathrm{AT}]\\left[\\mathrm{LT}^{-1}\\right]}=\\frac{[\\mathrm{M}]\\left[\\mathrm{T}^{-2}\\right]}{[\\mathrm{A}]}=[\\mathrm{M}]\\left[\\mathrm{A}^{-1}\\right]\\left[\\mathrm{T}^{-2}\\right]\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Magnetic permeability ( \\(\\mu_0\\) ):\u003cbr/>The dimensional formula of \\(\\mu_0\\) is:\u003c/p> \u003cp>\\(\u003cbr/>\\left[\\mu_0\\right]=[\\mathrm{M}][\\mathrm{L}]\\left[\\mathrm{T}^{-2}\\right]\\left[\\mathrm{A}^{-2}\\right]\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Dimensions of \\(\\frac{B}{\\mu_0}\\) :\u003cbr/>Using the formula:\u003c/p> \u003cp>\\(\u003cbr/>\\frac{B}{\\mu_0}=\\frac{[\\mathrm{M}]\\left[\\mathrm{A}^{-1}\\right]\\left[\\mathrm{T}^{-2}\\right]}{[\\mathrm{M}][\\mathrm{L}]\\left[\\mathrm{T}^{-2}\\right]\\left[\\mathrm{A}^{-2}\\right]}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Cancel the terms:\u003c/p> \u003cp>\\(\u003cbr/>\\frac{B}{\\mu_0}=[\\mathrm{A}]\\left[\\mathrm{L}^{-1}\\right]\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(B\) is magnetic field and \({\mu }_{0}\) is permeability of free space, then the dimensions of \(\left(B/{\mu }_{0}\right)\) is</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{ML}}^{2}{\mathrm{T}}^{-2}{\mathrm{A}}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{MT}}^{-2}{\mathrm{A}}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{LT}}^{-2}{\mathrm{A}}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{L}}^{-1}\mathrm{A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\left[\\frac{B}{{\\mu }_{0}}\\right]=[ni]={L}^{-1}{A}^{1}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Electric flux \(ϕ\) is related to linear charge density \(\lambda\)and surface charge density \(\sigma\) as \(ϕ=\alpha \lambda +\beta \sigma\), where \(\alpha\) and \(\beta\) are constants. The dimensions of \((\beta \mathrm{/}\alpha )\) are:</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Displacement</p></span></div><div class="option"><span class="key">b</span><span><p>Area</p></span></div><div class="option"><span class="key">c</span><span><p> Electric field</p></span></div><div class="option"><span class="key">d</span><span><p>Velocity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The dimensions of \\((\\beta \\mathrm{/}\\alpha )\\) are derived by ensuring dimensional consistency. The term \\(ϕ=\\alpha \\lambda\\) gives the dimensions of \\(\\alpha\\)α as \\([M{L}^{4}{T}^{−4}{A}^{−2}]\\),and \\(ϕ=\\beta \\sigma\\) gives the dimensions of \\(\\beta\\) as \\([M{L}^{5}{T}^{−4}{A}^{−2}]\\). The ratio \\((\\beta \\mathrm{/}\\alpha )\\) simplifies to \\([L]\\), which corresponds to \u003cstrong>displacement\u003c/strong> as it is a measure of length.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The position of a particle moving on x -axis is given by \(\mathrm{x}(\mathrm{t})=\mathrm{Asint}+{\mathrm{Bcos}}^{2}\mathrm{t}+{\mathrm{Ct}}^{2}+\mathrm{D}\), where \(t\) is time. The dimension of \(\frac{ABC}{D}\) is</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({{}^{\text{ }}\mathrm{L}}^{3}{\mathrm{T}}^{-2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({L}^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{L}}^{2}{\mathrm{T}}^{-2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(L\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(x(t)=A\\sin (t)+{Bcos}^{2}(t)+C{t}^{2}+D\\)\u003c/p> \u003cp>Here, A, B, C, and D are constants, and t is time.\u003c/p> \u003cp>\\([A]=L,[B]=L,[C]=\\frac{L}{{T}^{2}},[D]=L\\\\ \\left[\\frac{ABC}{D}\\right]=\\left[\\frac{L\\times L\\times L{T}^{-2}}{L}\\right]=\\left[{L}^{2}{T}^{-2}\\right]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The position of a particle moving on x -axis is given by \(\mathrm{x}(\mathrm{t})=\mathrm{Asint}+{\mathrm{Bcos}}^{2}\mathrm{t}+{\mathrm{Ct}}^{2}+\mathrm{D}\), where \(t\) is time. The dimension of \(\frac{ABC}{D}\) is</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({{}^{\text{ }}\mathrm{L}}^{3}{\mathrm{T}}^{-2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({L}^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{L}}^{2}{\mathrm{T}}^{-2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(L\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(x(t)=A\\sin (t)+{Bcos}^{2}(t)+C{t}^{2}+D\\)\u003c/p> \u003cp>Here, A, B, C, and D are constants, and t is time.\u003c/p> \u003cp>\\([A]=L,[B]=L,[C]=\\frac{L}{{T}^{2}},[D]=L\\\\ \\left[\\frac{ABC}{D}\\right]=\\left[\\frac{L\\times L\\times L{T}^{-2}}{L}\\right]=\\left[{L}^{2}{T}^{-2}\\right]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>While measuring diameter of a wire using a screw gauge the following readings were noted Main scale reading is 1 mm and circular scale reading is equal to 42 division Pitch of screw gauge is 1 mm and it has 100 divisions on circular scale The diameter of wire is x/50 mm The value of x is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>142</p></span></div><div class="option"><span class="key">b</span><span><p>71</p></span></div><div class="option"><span class="key">c</span><span><p>42</p></span></div><div class="option"><span class="key">d</span><span><p>21</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,10 +426,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\begin{aligned}\u003cbr/>&amp; L C=\\frac{\\text { pitch }}{\\text { No. of CSD }}=\\left(\\frac{1}{100}\\right) \\\\\u003cbr/>&amp; =0.01 \\mathrm{~mm}\u003cbr/>\\end{aligned}\u003cbr/>\\(Diameter=MSR+LC\\times CSD\\\\ Diameter=1+(0.01)\\times 42mm\\)\u003c/p> \u003cp>therefore, \\(\\frac{x}{50}=1.42\\)\u003c/p> \u003cp>x=71\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>$$\\begin{aligned}& L C=\\frac{\\text { pitch }}{\\text { No. of CSD }}=\\left(\\frac{1}{100}\\right) \\\\& =0.01 \\mathrm{~mm}\\end{aligned}$$\u003cbr/>\\(Diameter=MSR+LC\\times CSD\\\\ Diameter=1+(0.01)\\times 42mm\\)\u003c/p> \u003cp>therefore, \\(\\frac{x}{50}=1.42\\)\u003c/p> \u003cp>x=71\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A physical quantity \(Q\) is found to depend on quantities \(a,b,c\) by the relation \(Q=\frac{{a}^{4}{b}^{3}}{{c}^{2}}\). The percentage error in \(a,b\) and \(c\) are \(3%,4%\) and \(5%\)respectively. Then, the percentage error in \(Q\) is :</p> <p> </p> <p>[JEE Main 2024, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>34%</p></span></div><div class="option"><span class="key">b</span><span><p>43%</p></span></div><div class="option"><span class="key">c</span><span><p>14%</p></span></div><div class="option"><span class="key">d</span><span><p>66%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,10 +438,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\frac{\\Delta Q}{Q}=4 \\frac{\\Delta a}{a}+3 \\frac{\\Delta b}{b}+2 \\frac{\\Delta c}{c}\u003cbr/>\\end{equation} \u003c/p> \u003cp>\\begin{aligned}\u003cbr/>&amp; \\frac{\\Delta Q}{Q} \\times 100=4\\left(\\frac{\\Delta a}{a} \\times 100\\right)+ \\\\\u003cbr/>&amp; 3\\left(\\frac{\\Delta b}{b} \\times 100\\right)+2\\left(\\frac{\\Delta c}{c} \\times 100\\right)\u003cbr/>\\end{aligned}\u003c/p> \u003cp> % error in Q \\(=4\\times 3%+3\\times 4%+2\\times 5%=34%\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\frac{\\Delta Q}{Q}=4 \\frac{\\Delta a}{a}+3 \\frac{\\Delta b}{b}+2 \\frac{\\Delta c}{c}\u003cbr/>\\end{equation} \u003c/p> \u003cp>$$\\begin{aligned}& \\frac{\\Delta Q}{Q} \\times 100=4\\left(\\frac{\\Delta a}{a} \\times 100\\right)+ \\\\& 3\\left(\\frac{\\Delta b}{b} \\times 100\\right)+2\\left(\\frac{\\Delta c}{c} \\times 100\\right)\\end{aligned}$$\u003c/p> \u003cp> % error in Q \\(=4\\times 3%+3\\times 4%+2\\times 5%=34%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider two physical quantities A and B related to each other as \(E=\frac{B−{x}^{2}}{At}\)<br/>= where E, x and t have dimensions of energy, length and time respectively. The dimension of AB is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({L}^{–2}{M}^{1}{T}^{0}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({L}^{2}{M}^{–1}{T}^{1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({L}^{–2}{M}^{–1}{T}^{1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({L}^{0}{M}^{–1}{T}^{1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Dimension formula for [B] = \\({L}^{2}\\) \u003c/p> \u003cp>\\(A=\\frac{{x}^{2}}{Et}=\\frac{{L}^{2}}{TM{L}^{2}{T}^{-2}}=\\frac{1}{M{T}^{-1}}\\) \u003c/p> \u003cp>Dimension formula for [A] = \\({M}^{-1}T\\)\u003c/p> \u003cp>dimension formula for [B] = \\({L}^{2}{M}^{-1}T\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a vernier calipers, (N+1) divisions of vernier scale coincide with N divisions of main scale. If 1 MSD represents 0.1 mm, the vernier constant (in cm) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{10\mathrm{N}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{100(\mathrm{N}+1)}\)</p></span></div><div class="option"><span class="key">c</span><span><p>100N</p></span></div><div class="option"><span class="key">d</span><span><p>10(N+1)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Vernier Constant = MSD - VSD\u003c/p> \u003cp>\\(\\begin{matrix} & =MSD−\\frac{N}{N+1}MSD \\\\  & =\\frac{1}{N+1}MSD \\\\  & =\\frac{1}{N+1}(0.01)\\mathrm{cm} \\\\  & =\\frac{1}{100(N+1)}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List - I with List - II.</p> <table> <tbody> <tr> <td>List - I</td> <td>List - II</td> </tr> <tr> <td>(A) Permeability of free space</td> <td>(I) \(\left[{\mathrm{ML}}^{2}{\mathrm{T}}^{-2}\right]\)</td> </tr> <tr> <td>(B) Magnetic field</td> <td>(II) \(\left[{\mathrm{MT}}^{-2}{\mathrm{A}}^{-1}\right]\)</td> </tr> <tr> <td>(C) Magnetic moment</td> <td>(III) \(\left[{\mathrm{MLT}}^{-2}{\mathrm{A}}^{-2}\right]\)</td> </tr> <tr> <td>(D) Torsional constant</td> <td>(IV) \(\left[{\mathrm{L}}^{2}\mathrm{A}\right]\)</td> </tr> </tbody> </table> <p><br/>Choose the correct answer from the options given below :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A)-(IV), (B)-(III), (C)-(I), (D)-(II)</p></span></div><div class="option"><span class="key">b</span><span><p>(A)-(III), (B)-(II), (C)-(IV), (D)-(I)</p></span></div><div class="option"><span class="key">c</span><span><p>(A)-(II), (B)-(I), (C)-(III), (D)-(IV)</p></span></div><div class="option"><span class="key">d</span><span><p>(A)-(I), (B)-(IV), (C)-(II), (D)-(III)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \u003c/p> \u003cp> \\(\\tau =C\\theta \\\\ c=\\left[M{L}^{2}{T}^{-2}\\right]\\)\u003c/p> \u003cp> \u003c/p> \u003cp> \\(M=NIA\\\\ M=\\left[{L}^{2}A\\right]\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp> \\(\\text{  }F=qVB\\\\ \\left[ML{T}^{-2}\\right]=[AT]\\left[L{T}^{-1}\\right]B\\\\ B=\\left[M{T}^{-2}{A}^{-1}\\right]\\)\u003c/p> \u003cp> \u003c/p> \u003cp>\\(B=\\frac{{\\mu }_{0}i}{2r}\\\\ {\\mu }_{0}=\\frac{\\left[M{T}^{-2}{A}^{-1}\\right][L]}{[A]}\\)\u003c/p> \u003cp>\\({\\mu }_{0}=\\left[ML{T}^{-2}{A}^{-2}\\right]\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pitch of an error free screw gauge is \(1\mathrm{mm}\) and there are 100 divisions on the circular scale. While measuring the diameter of a thick wire, the pitch scale reads \(1\mathrm{mm}\) and \({63}^{\text{rd }}\) division on the circular scale coincides with the reference line. The diameter of the wire is:</p> <p>[Re-NEET 2024] </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1.63\mathrm{cm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.163\mathrm{cm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.163\mathrm{m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.63\mathrm{m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,10 +486,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Least count of screw gauge }=\\frac{\\text { Pitch }}{\\text { No. of divisions on circular scale }} \\\\\u003cbr/>&amp; \\Rightarrow \\text { Least count }=\\frac{1}{100}=0.01 \\mathrm{~mm} \\\\\u003cbr/>&amp; \\text { diameter of wire}=\\mathrm{MSR}+\\mathrm{CSR} \\times \\text { L.C. } \\\\\u003cbr/>&amp; =1 \\mathrm{~mm}+(63)(0.01) \\mathrm{mm} \\\\\u003cbr/>&amp; =1.63 \\mathrm{~mm} \\\\\u003cbr/>&amp; =0.163 \\mathrm{~cm}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \\begin{equation}\u003cbr/>$$\\begin{aligned}& \\text { Least count of screw gauge }=\\frac{\\text { Pitch }}{\\text { No. of divisions on circular scale }} \\\\& \\Rightarrow \\text { Least count }=\\frac{1}{100}=0.01 \\mathrm{~mm} \\\\& \\text { diameter of wire}=\\mathrm{MSR}+\\mathrm{CSR} \\times \\text { L.C. } \\\\& =1 \\mathrm{~mm}+(63)(0.01) \\mathrm{mm} \\\\& =1.63 \\mathrm{~mm} \\\\& =0.163 \\mathrm{~cm}\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy of a system is given as \(\mathrm{E}(\mathrm{t})={\alpha }^{3}{e}^{-\beta t}\), where \(t\) is the time and \(\beta =0.3{\mathrm{s}}^{-1}\). The errors in the measurement of \(\alpha\) and \(t\) are\(1.2%\) and \(1.6%\), respectively. At \(t=5\mathrm{s}\), maximum percentage error in the energy is :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6%\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(11.6%\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(8.4%\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4%\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(E(t)={\\alpha }^{3}{e}^{-\\beta t}\\\\ dE(t)=3{\\alpha }^{2}{e}^{-\\beta t}d\\alpha -\\beta {\\alpha }^{3}{e}^{-\\beta t}dt\\\\ \\frac{dE(t)}{E(t)}=\\frac{3{\\alpha }^{2}{e}^{-\\beta t}d\\alpha }{E(t)}+\\frac{\\beta {\\alpha }^{3}{e}^{-\\beta t}dt}{E(t)}\\\\ \\frac{\\Delta E}{E}=\\frac{3\\Delta \\alpha }{\\alpha }+\\beta \\Delta t\\\\ \\frac{\\Delta t}{t}\\times \\frac{100}{E}=1.6\\\\ \\frac{\\Delta t}{5}=0.016\\Rightarrow \\Delta t=0.08\\)\u003c/p> \u003cp> \\(\\frac{\\Delta E}{E}=3\\times 0.012+0.3\\times 0.08\\\\ \\frac{\\Delta E}{E}=0.036+0.024\\Rightarrow \\frac{\\Delta E}{E}=0.06\\\\ %E=6%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In an experiment to measure focal length (f) of convex lens, the least counts of the measuring scales for the position of object (u) and for the position of image (v) are \(∆\)u and \(∆\)v, respectively. The error in the measurement of the focal length of the convex lens will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{∆u}{u}+\frac{∆v}{v}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({f}^{2}\left[\frac{∆u}{{u}^{2}}+\frac{∆v}{{v}^{2}}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2f\left[\frac{∆u}{u}+\frac{∆v}{v}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(f\left[\frac{∆u}{u}+\frac{∆v}{n}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -506,10 +510,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\frac{1}{f}=\\frac{1}{v}-\\frac{1}{u} \\Rightarrow f^{-1}=v^{-1}-u^{-1}\\\\\u003cbr/>&amp;\\text { differentiating w.r.t } f\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\Rightarrow-f^{-2} d f=-v^{-2} d v-u^{-2} d u \\\\\u003cbr/>&amp; \\Rightarrow \\frac{d f}{f^2}=\\frac{d v}{v^2}+\\frac{d u}{u^2} \\\\\u003cbr/>&amp; \\Rightarrow d f=f^2\\left[\\frac{d v}{v^2}+\\frac{d u}{u^2}\\right]\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}&\\frac{1}{f}=\\frac{1}{v}-\\frac{1}{u} \\Rightarrow f^{-1}=v^{-1}-u^{-1}\\\\&\\text { differentiating w.r.t } f\\\\&\\begin{aligned}& \\Rightarrow-f^{-2} d f=-v^{-2} d v-u^{-2} d u \\\\& \\Rightarrow \\frac{d f}{f^2}=\\frac{d v}{v^2}+\\frac{d u}{u^2} \\\\& \\Rightarrow d f=f^2\\left[\\frac{d v}{v^2}+\\frac{d u}{u^2}\\right]\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is the correct dimensional formula for the capacitance (F) in terms of M, L, T and \(C\) stand for unit of mass, length, time and charge,</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\([\mathrm{F}]=\left[{\mathrm{C}}^{2}{\mathrm{M}}^{-1}{\mathrm{L}}^{-2}{\mathrm{T}}^{2}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\([\mathrm{F}]=\left[{\mathrm{CM}}^{-2}{\mathrm{L}}^{-2}{\mathrm{T}}^{-2}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\([\mathrm{F}]=\left[{\mathrm{CM}}^{-1}{\mathrm{L}}^{-2}{\mathrm{T}}^{2}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\([\mathrm{F}]=\left[{\mathrm{C}}^{2}{\mathrm{M}}^{-2}{\mathrm{L}}^{2}{\mathrm{T}}^{2}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Capacitance is defined as:\u003c/p> \u003cp>\\(C=\\frac{Q}{V}\\)\u003c/p> \u003cp>- Charge Q has dimensional formula:\u003c/p> \u003cp>\\([Q]=[C]\\)\u003c/p> \u003cp>- Voltage V is energy per charge:\u003c/p> \u003cp>\\(V=\\frac{W}{Q}=\\frac{M{L}^{2}{T}^{-2}}{C}=M{L}^{2}{T}^{-2}{C}^{-1}\\)\u003c/p> \u003cp>Now, substituting in \\(C=\\frac{Q}{V}\\) :\u003c/p> \u003cp>\\([C]=\\frac{C}{M{L}^{2}{T}^{-2}{C}^{-1}}={C}^{2}{M}^{-1}{L}^{-2}{T}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A physical quantity <strong>\(Q\)</strong> is given by:\(Q=\frac{a{b}^{4}}{cd}\)​.If the <strong>percentage errors</strong> in <strong>\(a,b,c\)</strong> and <strong>\(d\)</strong> are <strong>2%</strong>, <strong>1%</strong>, <strong>2%</strong>, and <strong>1%</strong> respectively, determine the <strong>percentage error in \(Q\)</strong>.</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2%</p></span></div><div class="option"><span class="key">b</span><span><p>5%</p></span></div><div class="option"><span class="key">c</span><span><p>9%</p></span></div><div class="option"><span class="key">d</span><span><p>6%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We are given the equation:\u003c/p> \u003cp>\\(Q=\\frac{a{b}^{4}}{cd}\\)​\u003c/p> \u003cp>To determine the \u003cstrong>percentage error \\(Q\\)\u003c/strong>, we use the \u003cstrong>error propagation rule\u003c/strong>:\u003c/p> \u003cp>\\(\\frac{\\Delta Q}{Q}=\\frac{\\Delta a}{a}+4\\frac{\\Delta b}{b}+\\frac{\\Delta c}{c}+\\frac{\\Delta d}{d}\\)​\u003c/p> \u003cstrong>Step 1: Substituting Given Errors\u003c/strong> \u003cul> \u003cli>\u003cstrong>Percentage error in a = 2%\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Percentage error in b = 1%\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Percentage error in c = 2%\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Percentage error in d = 1%\u003c/strong>\u003c/li> \u003c/ul> \u003cp>Now, substituting these values into the equation:\u003c/p> \u003cp>\\(\\text{Percentage error in }Q=2+4(1)+2+1\\) \\(=2+4+2+1=9\\mathrm{%}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(C\\ 9\\mathrm{%}\\)C​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If force \( (\mathrm{F}) \), velocity (V) and time \( (\mathrm{T}) \) are taken as fundamental units, then the dimensions of mass are</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( \left[\mathrm{F} \mathrm{V} \mathrm{T}^{-1}\right] \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \left[\mathrm{F} \mathrm{V} \mathrm{T}^{-2}\right] \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \left[\mathrm{F} \mathrm{V}^{-1} \mathrm{~T}^{-1}\right] \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \left[\mathrm{F} \mathrm{V}^{-1} \mathrm{~T}\right] \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Momentum = Mass × Velocity\u003c/p> \u003cp>P = mv\u003c/p> \u003cp>\\(F=\\frac{mv}{t}\\)\u003c/p> \u003cp>Dimensionally\u003c/p> \u003cp>\\(F=\\frac{MV}{T}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }M=\\frac{FT}{V}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }M=FT{V}^{−1}=FT{V}^{−1}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If force (<em>F</em>), length (<em>L</em>) and time (<em>T</em>) are taken as the fundamental quantities, then what will be the dimension of density?</p> <p>[JEE Main 2021, 27 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left[F{L}^{-3}{T}^{2}\right]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left[F{L}^{-5}{T}^{2}\right]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left[F{L}^{-4}{T}^{2}\right]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left[F{L}^{-3}{T}^{3}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

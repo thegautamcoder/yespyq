@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Consider the sets \\(\\mathrm{A}=\\left{(\\mathrm{x},\\mathrm{y})\\in \\mathrm{\u211d}\\times \\mathrm{\u211d}:{\\mathrm{x}}^{2}+{\\mathrm{y}}^{2}=25\\right}\\), \\(\\mathrm{B}=\\left{(\\mathrm{x},\\mathrm{y})\\in \\mathrm{\u211d}\\times \\mathrm{\u211d}:{\\mathrm{x}}^{2}+9{\\mathrm{y}}^{2}=144\\right},\\)\\(\\mathrm{C}={(\\mathrm{x},\\mathrm{y})\\)\\(\\left.\\in \\mathrm{\u2124}\\times \\mathrm{\u2124}:{x}^{2}+{y}^{2}\\leq 4\\right}\\), and \\(\\mathrm{D}=\\mathrm{A}\\cap \\mathrm{B}\\). The total number of one-one functions from the set D to the set C is: [JEE Main 2025, 4 Apr (Shift 1)]","text":"Consider the sets \\(\\mathrm{A}=\\left{(\\mathrm{x},\\mathrm{y})\\in \\mathrm{\u211d}\\times \\mathrm{\u211d}:{\\mathrm{x}}^{2}+{\\mathrm{y}}^{2}=25\\right}\\), \\(\\mathrm{B}=\\left{(\\mathrm{x},\\mathrm{y})\\in \\mathrm{\u211d}\\times \\mathrm{\u211d}:{\\mathrm{x}}^{2}+9{\\mathrm{y}}^{2}=144\\right},\\)\\(\\mathrm{C}={(\\mathrm{x},\\mathrm{y})\\)\\(\\left.\\in \\mathrm{\u2124}\\times \\mathrm{\u2124}:{x}^{2}+{y}^{2}\\leq 4\\right}\\), and \\(\\mathrm{D}=\\mathrm{A}\\cap \\mathrm{B}\\). The total number of one-one functions from the set D to the set C is: [JEE Main 2025, 4 Apr (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: c) \\(17160\\). \\(\\begin{matrix}A={(x,y)\\in R\\times R:{x}^{2}+{y}^{2}=25}, \\\\ \\\\ B={(x,y)\\in \\mathrm{\u211d}\\times \\mathrm{\u211d}:{x}^{2}+9{y}^{2}=144}\\end{matrix}\\) \\({x}^{2}+9{y}^{2}\u2212({x}^{2}+{y}^{2})=144\u221225\\) Plug in \\({y}^{2}=\\frac{119}{8}\\) into either equation to find x. \\(\\begin{matrix}{x}^{2}=25\u2212\\frac{119}{8} \\\\ {x}^{2}=\\frac{200\u2212119}{8} \\\\ {x}^{2}=\\frac{81}{8} \\\\ x=\\pm \\sqrt{\\frac{81}{8}},y=\\pm \\sqrt{\\frac{119}{8}}\\end{matrix}\\) Now, \\(C={(x,y)\\in Z\\times Z:{x}^{2}+{y}^{2}\\leq 4}\\) Valid points are \\((\u22122,0),(\u22121,\u22121),(\u22121,0),(\u22121,1),(0,\u22122),\\) \\((0,\u22121),(0,0),(0,1),(0,2),(1,\u22121),(1,0),(1,1)\\) \\(\u2234\\) Total valid points in \\(C=13\\) \\(\\Rightarrow\\) There are 4 distinct real points in set D \\(\u2234\\) The number of one-one functions from D to C \\(\\begin{matrix}\\Rightarrow 13{P}_{4}\\Rightarrow \\frac{13!}{(13\u22124)!}=\\frac{13!}{9!}=17160\\end{matrix}\\)","url":"https://yespyq.com/exams/jee/q/jee-00332-consider-the-sets-mathrm-a-left-mathrm-x-mathrm-y-in-mathrm-times-math/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Consider the sets \(\mathrm{A}=\left{(\mathrm{x},\mathrm{y})\in \mathrm{ℝ}\times \mathrm{ℝ}:{\mathrm{x}}^{2}+{\mathrm{y}…</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the sets \(\mathrm{A}=\left{(\mathrm{x},\mathrm{y})\in \mathrm{ℝ}\times \mathrm{ℝ}:{\mathrm{x}}^{2}+{\mathrm{y}}^{2}=25\right}\), \(\mathrm{B}=\left{(\mathrm{x},\mathrm{y})\in \mathrm{ℝ}\times \mathrm{ℝ}:{\mathrm{x}}^{2}+9{\mathrm{y}}^{2}=144\right},\)\(\mathrm{C}={(\mathrm{x},\mathrm{y})\)\(\left.\in \mathrm{ℤ}\times \mathrm{ℤ}:{x}^{2}+{y}^{2}\leq 4\right}\), and \(\mathrm{D}=\mathrm{A}\cap \mathrm{B}\). The total number of one-one functions from the set D to the set C is:</p> <p> </p> <p>[JEE Main 2025, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(15120\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(19320\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(17160\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(18290\)</p></span></div></div>
       <div class="explain" data-exp>

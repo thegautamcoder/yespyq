@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Nuclei","item":"https://yespyq.com/exams/board/physics/nuclei/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Nuclei</h1>
       <p>25 Board Physics previous year questions on <b>Nuclei</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of following reaction is correct ? (Where symbols have their usual meanings)</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\to p+{e}^{−}+\nu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(n\to p+{e}^{−}+\nu\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy released when two deuterons \(({{}_{1}H}^{2})\) fuse to form a helium nucleus \(({{}_{2}He}^{4})\) is :<br/>(Given : Binding energy per nucleon of \({{}_{1}H}^{2}=1.1MeV\) and binding energy per nucleon of \({{}_{2}He}^{4}=7.0MeV\) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8.1MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.9MeV\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(23.6MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(26.8MeV\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The difference in mass of \({ }^7 \mathrm{X}\) nucleus and total mass of its constituent nucleons is \(21.00 \mathrm{u}\). The binding energy per nucleon for this nucleus is equal to the energy equivalent of :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 \mathrm{u}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3.5 \mathrm{u}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(7 \mathrm{u}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(21 \mathrm{u}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The binding energy per nucleon for this nucleus is \\(\\frac{21}{7}=3u\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Isotones are nuclides having :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>same number of neutrons but different number of protons</p></span></div><div class="option"><span class="key">b</span><span><p>same number of protons but different number of neutrons</p></span></div><div class="option"><span class="key">c</span><span><p>same number of protons and also same number of neutrons</p></span></div><div class="option"><span class="key">d</span><span><p>different number of protons and also different number of neutrons</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The term Isotones refers to nuclides (atoms of different elements) that have the same number of neutrons (\\(\\mathbf{N}\\)) but a different number of protons (\\(\\mathbf{Z}\\)).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The potential energy between two nucleons inside a nucleus is minimum at a distance of about</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.8 fm</p></span></div><div class="option"><span class="key">b</span><span><p>1.6 fm</p></span></div><div class="option"><span class="key">c</span><span><p>2.0 fm</p></span></div><div class="option"><span class="key">d</span><span><p>2.8 fm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In a nucleus, the potential energy between two nucleons is lowest at a distance of roughly 0.8 fm . The force turns repulsive as the distance decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Isotones are nuclides having :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>same number of neutrons but different number of protons</p></span></div><div class="option"><span class="key">b</span><span><p>same number of protons but different number of neutrons</p></span></div><div class="option"><span class="key">c</span><span><p>same number of protons and also same number of neutrons</p></span></div><div class="option"><span class="key">d</span><span><p>different number of protons and also different number of neutrons</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The term Isotones refers to nuclides (atoms of different elements) that have the same number of neutrons (\\(\\mathbf{N}\\)) but a different number of protons (\\(\\mathbf{Z}\\)).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A radioactive nucleus \(\mathrm{n}_2\) has 3 times the decay constant as compared to the decay constant of another radioactive nucleus \(n_1\). If initial number of both nuclei are the same, what is the ratio of number of nuclei of \(n_2\) to the number of nuclei of \(n_1\), after one half-life of \(n_1\) ?</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>\(1/8\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1/4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The number of remaining nuclei after time t can be given by:\u003c/p> \u003cp>\\(N(t)={N}_{0}{e}^{−\\lambda t}\\)\u003c/p> \u003cp>For half-life \\({t}_{1/2}\\) of \\({n}_{1}\\), we know that:\u003c/p> \u003cp>\\({t}_{1/2}=\\frac{\\ln 2}{{\\lambda }_{1}}\\)\u003c/p> \u003cp>At the end of one half-life, the number of \\({n}_{1}\\) nuclei left will be:\u003c/p> \u003cp>\\({N}_{1}=\\frac{{N}_{0}}{2}\\)\u003c/p> \u003cp>For nucleus \\({n}_{2}\\), which has a decay constant 3 times that of \\({n}_{1}\\) the remaining number of nuclei will be:\u003c/p> \u003cp> \u003c/p> \u003cp>\\({N}_{2}={N}_{0}{e}^{-3}{\\lambda }_{1}t\\)\u003c/p> \u003cp>Since \\(t={t}_{1/2}=\\frac{\\ln 2}{{\\lambda }_{1}}\\), we substitute it into the equation for \\({N}_{2}\\) :\u003c/p> \u003cp> \u003c/p> \u003cp>\\({N}_{2}={N}_{0}{e}^{-3{\\lambda }_{1}\\times \\frac{\\ln 2}{{\\lambda }_{1}}}={N}_{0}{e}^{-3\\ln 2}={N}_{0}{\\left(\\frac{1}{2}\\right)}^{3}=\\frac{{N}_{0}}{8}\\)\u003c/p> \u003cp>\u003cbr/>Now, the ratio of the number of nuclei of \\({n}_{2}\\) to \\({n}_{1}\\) after one half-life of \\({n}_{1}\\) is:\u003c/p> \u003cp>\\(\\frac{{N}_{2}}{{N}_{1}}=\\frac{\\frac{{N}_{0}}{8}}{\\frac{{N}_{0}}{2}}=\\frac{1}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Isotones are nuclides having :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>same number of neutrons but different number of protons</p></span></div><div class="option"><span class="key">b</span><span><p>same number of protons but different number of neutrons</p></span></div><div class="option"><span class="key">c</span><span><p>same number of protons and also same number of neutrons</p></span></div><div class="option"><span class="key">d</span><span><p>different number of protons and also different number of neutrons</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The term Isotones refers to nuclides (atoms of different elements) that have the same number of neutrons (\\(\\mathbf{N}\\)) but a different number of protons (\\(\\mathbf{Z}\\)).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is not true for nuclear forces?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>They are stronger than Coulomb forces.</p></span></div><div class="option"><span class="key">b</span><span><p>They have about the same magnitude for different pairs of nucleons.</p></span></div><div class="option"><span class="key">c</span><span><p>They are always attractive.</p></span></div><div class="option"><span class="key">d</span><span><p>They saturate as the separation between two nucleons increases.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>A) They are stronger than Coulomb forces.\u003cbr/>True — Nuclear forces are much stronger than electrostatic (Coulomb) forces between protons.\u003c/p> \u003cp>(B) They have about the same magnitude for different pairs of nucleons (n–n, p–p, n–p).\u003cbr/>True — Nuclear forces are approximately charge-independent.\u003c/p> \u003cp>(C) They are always attractive.\u003cbr/>Not true — At very small distances (below about 0.5 fm), nuclear forces become repulsive to prevent nucleons from collapsing into each other.\u003c/p> \u003cp>(D) They saturate as the separation between two nucleons increases.\u003cbr/>True — Each nucleon interacts only with nearby ones; the force has a short range and saturates.\u003c/p> \u003cp>C) They are always attractive.​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The potential energy between two nucleons inside a nucleus is minimum at a distance of about</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.8 fm</p></span></div><div class="option"><span class="key">b</span><span><p>1.6 fm</p></span></div><div class="option"><span class="key">c</span><span><p>2.0 fm</p></span></div><div class="option"><span class="key">d</span><span><p>2.8 fm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In a nucleus, the potential energy between two nucleons is lowest at a distance of roughly 0.8 fm . The force turns repulsive as the distance decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy equivalent of 1 g of substance is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(11.2\times {10}^{24}MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.6\times {10}^{26}MeV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5.6\times {10}^{12}MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>5.6 eV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Convert mass to kilograms:\\(m=1\\,\\text{g}=1\\times 10^{-3}\\,\\text{kg}\\)\u003c/p> \u003cp>Square the speed of light:\\(c^{2}=(3\\times 10^{8}\\,\\text{m/s})^{2}=9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2}\\)\u003c/p> \u003cp>Calculate the energy:\\(E=m\\times c^{2}=(1\\times 10^{-3}\\,\\text{kg})\\times (9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2})=9\\times 10^{13}\\,\\text{J}\\) Other Units The energy can also be expressed in other units:\u003c/p> \u003cp>Approximately \\(2.5\\times 10^{7}\\) kilowatt-hours (kWh).Approximately \\(5.6\\times 10^{26}\\) mega-electron volts (MeV).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy equivalent of 1 g of substance is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(11.2\times {10}^{24}MeV\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5.6\times {10}^{26}MeV\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5.6\times {10}^{12}MeV\)</p></span></div><div class="option"><span class="key">d</span><span><p>5.6 eV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Convert mass to kilograms:\\(m=1\\,\\text{g}=1\\times 10^{-3}\\,\\text{kg}\\)\u003c/p> \u003cp>Square the speed of light:\\(c^{2}=(3\\times 10^{8}\\,\\text{m/s})^{2}=9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2}\\)\u003c/p> \u003cp>Calculate the energy:\\(E=m\\times c^{2}=(1\\times 10^{-3}\\,\\text{kg})\\times (9\\times 10^{16}\\,\\text{m}^{2}/\\text{s}^{2})=9\\times 10^{13}\\,\\text{J}\\) Other Units The energy can also be expressed in other units:\u003c/p> \u003cp>Approximately \\(2.5\\times 10^{7}\\) kilowatt-hours (kWh).Approximately \\(5.6\\times 10^{26}\\) mega-electron volts (MeV).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct nuclear process from the below options<br/>[p: proton, n : neutron, \({e}^{-}:\)electron, \({e}^{+}:\) positron, \(\nu\) : neutrino, \(\nu\): antineutrino]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n\to p+{e}^{-}+\nu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n\to p+{e}^{-}+\nu\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n\to p+{e}^{+}+\nu\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n\to p+{e}^{+}+v\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(n\\to P+\\overset{¯}{e}+\\overset{¯}{v}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Isotones are nuclides having :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>same number of neutrons but different number of protons</p></span></div><div class="option"><span class="key">b</span><span><p>same number of protons but different number of neutrons</p></span></div><div class="option"><span class="key">c</span><span><p>same number of protons and also same number of neutrons</p></span></div><div class="option"><span class="key">d</span><span><p>different number of protons and also different number of neutrons</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The term Isotones refers to nuclides (atoms of different elements) that have the same number of neutrons (\\(\\mathbf{N}\\)) but a different number of protons (\\(\\mathbf{Z}\\)).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The potential energy between two nucleons inside a nucleus is minimum at a distance of about</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.8 fm</p></span></div><div class="option"><span class="key">b</span><span><p>1.6 fm</p></span></div><div class="option"><span class="key">c</span><span><p>2.0 fm</p></span></div><div class="option"><span class="key">d</span><span><p>2.8 fm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In a nucleus, the potential energy between two nucleons is lowest at a distance of roughly 0.8 fm . The force turns repulsive as the distance decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of the nuclear densities of two nuclei having mass numbers 64 and 125 is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{64}{125}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Nuclear density \\(\\rho\\) is given by\u003c/p> \u003cp>\\(\\rho =\\frac{\\text{Mass of nucleus}}{\\text{Volume of nucleus}}\\)​\u003c/p> \u003cp>Now,\u003c/p> \u003cp>\\(R={R}_{0}{A}^{1\\mathrm{/}3}\\)R\u003c/p> \u003cp>where A = mass number.\u003c/p> \u003cp>So,\u003c/p> \u003cp>\\(\\rho =\\frac{A{m}_{N}}{\\frac{4}{3}\\pi {R}^{3}}=\\frac{A{m}_{N}}{\\frac{4}{3}\\pi ({R}_{0}^{3}A)}=\\frac{3{m}_{N}}{4\\pi {R}_{0}^{3}}\\)​​\u003c/p>  \u003cstrong>Observation:\u003c/strong> \u003cp>Since \\(\\rho\\) does \u003cstrong>not depend on \\(A\\)\u003c/strong>\u003cbr/>the \u003cstrong>nuclear density is the same\u003c/strong> for all nuclei.\u003c/p>  \u003cp>\u003cstrong>Final Answer:\u003c/strong>\u003c/p> \u003cp>\\(\\text{Option D – 1}\\)​​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy equivalent of \( 0.5 \mathrm{~g} \) of a substance is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 4.5 \times 10^{13} \mathrm{~J} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 1.5 \times 10^{13} \mathrm{~J} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 0.5 \times 10^{13} \mathrm{~J} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 4.5 \times 10^{16} \mathrm{~J} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>From mass-energy equivalence,\u003c/p> \u003cp>\\(\\begin{matrix}E=m{c}^{2} \\\\ =0.5\\times {10}^{−3}\\times 9\\times {10}^{16} \\\\ =4.5\\times {10}^{13}\\text{ J}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion (A) and Reason (R) type questions. Two statements are given — one labelled Assertion (A) and the other labelled Reason (R).<br/>Select the correct answer from the codes (A), (B), (C) and (D)as given below.</p> <p>Assertion (A) : Nuclear fission reactions are responsible for energy generation in the Sun.</p> <p>Reason (R) : Light nuclei fuse together in the nuclear fission reactions.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p></span></div><div class="option"><span class="key">b</span><span><p>Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).</p></span></div><div class="option"><span class="key">c</span><span><p>Assertion (A) is true, but Reason (R) is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Assertion (A) and Reason (R) are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Both Assertion (A) and Reason (R) are incorrect.\u003c/p> \u003cp>Summary:\u003cbr/>The primary concept here is the distinction between nuclear fission and fusion. Fission involves splitting heavy nuclei, while fusion involves combining light nuclei. The Sun generates energy through fusion, not fission. Understanding this distinction is crucial in astrophysics and nuclear energy applications.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mass density of a nucleus of mass number \(A\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>proportional to \(A ^{1 / 3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>proportional to \(A ^{2 / 3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>proportional to \(A ^3\)</p></span></div><div class="option"><span class="key">d</span><span><p>independent of A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Nuclear radius relation\u003c/p> \u003cp>\\(R={R}_{0}{A}^{1\\mathrm{/}3}\\)\u003c/p> \u003cp>Volume of nucleus\u003c/p> \u003cp>\\(V=\\frac{4}{3}\\pi {R}^{3}=\\frac{4}{3}\\pi {R}_{0}^{3}A\\)\u003c/p> \u003cp>Mass of nucleus\u003c/p> \u003cp>\\(M\\propto A\\)\u003c/p> \u003cp>Mass density\u003c/p> \u003cp>\\(\\rho =\\frac{M}{V}\\propto \\frac{A}{A}=\\text{constant}\\)\u003c/p> \u003cp>Therefore, the mass density of a nucleus is independent of the mass number A.​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion (A): The nucleus \({ }_3^7 X\) is more stable than the nucleus \({ }_3^4 Y\).<br/>Reason (R): \(\quad{ }_3^7 X\) contains more number of protons.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of the Assertion (A).</p></span></div><div class="option"><span class="key">b</span><span><p>Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of the Assertion (A).</p></span></div><div class="option"><span class="key">c</span><span><p>Assertion (A) is true, but Reason (R) is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Assertion (A) is false and Reason (R) is also false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>True. Nuclear stability is generally measured by the Binding Energy per Nucleon (\\(BE/A\\)). A higher \\(BE/A\\) indicates greater stability.\u003c/p> \u003cp>The stability of light nuclei is strongly influenced by the Neutron-to-Proton (\\(N/Z\\)) ratio and the tendency to form complete shells (magic numbers) or structures like the alpha particle.\u003c/p> \u003cp>The nucleus \\(\\text{Y}^{4}_{3}\\) (Lithium-4) is highly unstable and decays almost immediately. It has a significantly lower number of neutrons than protons (\\(N=1\\), \\(Z=3\\)), which makes it extremely proton-rich and unstable.\u003c/p> \u003cp>The nucleus \\({X}_{3}^{4}\\) (Lithium-7) is a stable isotope of Lithium and is the most abundant one. Its \\(N/Z\\) ratio is much closer to the optimum value for light nuclei (\\(\\approx 1\\)). \u003c/p> \u003cp>False. Both nuclei have the same number of protons (Z=3 ).\u003cbr/>\\({X}_{3}^{4}\\) has Z = 3 protons.\u003cbr/>\\({Y}_{3}^{4}\\) has Z = 3 protons.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The half life of a radioactive nuclide is 100 hours . The fraction of original activity that will remain after 150 hours would be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{2\sqrt{2}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2}{3\sqrt{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Problem Statement:\u003c/strong> The half-life of a nuclide is 100 hours. Find the fraction of original activity remaining after 150 hours.\u003c/p> \u003cp>\u003cstrong>Solution:\u003c/strong>\u003c/p> \u003col> \u003cli>\u003cstrong>Formula:\u003c/strong> The fraction of activity remaining is given by: \\(\\frac{A}{{A}_{0}}={\\left(\\frac{1}{2}\\right)}^{n}\\)where \\(n=\\frac{t}{{T}_{1/2}}\\).\u003c/li> \u003cli>\u003cstrong>Calculation:\u003c/strong>\u003c/li> \u003c/ol> \u003cul> \u003cli>\\({T}_{1/2}=100\\) hours\u003c/li> \u003cli>\\(t=150\\)hours\u003c/li> \u003cli>\\(n=\\frac{150}{100}=1.5=\\frac{3}{2}\\)\u003c/li> \u003cli>Substitute \u003cem>n \u003c/em>into the formula: \\(\\frac{A}{{A}_{0}}={\\left(\\frac{1}{2}\\right)}^{3/2}=\\frac{1}{{2}^{1.5}}=\\frac{1}{{2}^{1}⋅{2}^{0.5}}=\\frac{1}{2\\sqrt{2}}\\)\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Answer:\u003c/strong> \u003cstrong>(B) \\(\\frac{1}{2\\sqrt{2}}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a nucleus of mass number A and radius R, the mass density of nucleus can be represented as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{A}}^{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({A}^{\frac{1}{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({A}^{\frac{2}{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Independent of A </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{matrix}R={R}_{0}{A}^{\\frac{1}{3}} \\\\ \\mathrm{Density}=\\frac{\\mathrm{Mass}\\mathrm{number}}{\\mathrm{Volume}} \\\\ =\\frac{A}{\\frac{4}{3}\\pi {{R}_{0}}_{3}^{}A} \\\\ =\\mathrm{constant}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The curve of binding energy per nucleon as a function of atomic mass number has a sharp peak for helium nucleus. This implies that helium nucleus is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>radioactive</p></span></div><div class="option"><span class="key">b</span><span><p>unstable</p></span></div><div class="option"><span class="key">c</span><span><p>easily fissionable</p></span></div><div class="option"><span class="key">d</span><span><p>more stable nucleus than its neighbours</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> The binding energy per nucleon is a measure of the stability of a nucleus. A higher binding energy per nucleon indicates greater stability. The sharp peak for the helium nucleus on the curve indicates that it has a significantly high binding energy per nucleon compared to its immediate neighbours (hydrogen and lithium), making it a very stable configuration.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The half life of a radioactive substance is 20 minutes. In how much time, the activity of substance drops to \({\left(\frac{1}{16}\right)}^{\mathrm{th}}\) of its initial value?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>40 minutes</p></span></div><div class="option"><span class="key">b</span><span><p>60 minutes</p></span></div><div class="option"><span class="key">c</span><span><p>80 minutes</p></span></div><div class="option"><span class="key">d</span><span><p>20 minutes</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Half life T = 20 min\u003cbr/>Left fraction of activity \\(\\frac{1}{16}\\)\u003c/p> \u003cp>\\(\\begin{array}{l}\\because \\frac{R}{R_0}=\\left(\\frac{1}{2}\\right)^{t / 2} \\\\ \\frac{1}{16}=\\left(\\frac{1}{2}\\right)^{t / 20} \\\\ \\left(\\frac{1}{2}\\right)^4=\\left(\\frac{1}{2}\\right)^{t / 20} \\\\ 4=\\frac{t}{20}\\end{array}\\)\u003c/p> \u003cp>\u003cem>t\u003c/em> = 80 min\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Binding energy of a certain nucleus is 18 × 10<sup>8</sup> J. How much is the difference between total mass of all the nucleons and nuclear mass of the given nucleus;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.2 \(\mathrm{μg}\)</p></span></div><div class="option"><span class="key">b</span><span><p>20 \(\mathrm{μg}\)</p></span></div><div class="option"><span class="key">c</span><span><p>2 \(\mathrm{μg}\)</p></span></div><div class="option"><span class="key">d</span><span><p>10 \(\mathrm{μg}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

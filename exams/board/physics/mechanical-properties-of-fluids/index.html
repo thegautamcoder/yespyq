@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Mechanical Properties of Fluids","item":"https://yespyq.com/exams/board/physics/mechanical-properties-of-fluids/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Mechanical Properties of Fluids</h1>
       <p>24 Board Physics previous year questions on <b>Mechanical Properties of Fluids</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the pressure difference of an air bubble of radius 2 cm formed 20 cm below an open water surface and atmospheric pressure.<br/>(<em>Given surface tension of water = \(70\times 1{0}^{−3}\text{ }\text{N/m}\)</em>)(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.3\times 1{0}^{5}\text{ }{\text{N/m}}^{2}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(0.02\times 1{0}^{5}\text{ }{\text{N/m}}^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.03\times 1{0}^{5}\text{ }{\text{N/m}}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.03\times 1{0}^{5}\text{ }{\text{N/m}}^{2}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the experiment for measurement of viscosity '\(\eta\)' of given liquid with a ball having radius '\(R\)', consider following statements.<br/>A. Graph between terminal velocity V and R will be a parabola.<br/>B. The terminal velocities of different diameter balls are constant for a given liquid.<br/>C. Measurement of terminal velocity is dependent on the temperature.<br/>D. This experiment can be utilized to assess the density of a given liquid.<br/>E. If balls are dropped with some initial speed, the value of '\(\eta\)' will change.</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E only </p></span></div><div class="option"><span class="key">b</span><span><p>B, D and E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B and E only</p></span></div><div class="option correct"><span class="key">d</span><span><p>A, C and D only</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement 1: </strong>Surface tension of soap is greater than water.</p> <p><strong>Statement 2: </strong>Hot water flows faster than cold water.</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true and Statement II is false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false and Statement II is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both the statements are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both the statements are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Statement 1: \u003c/strong>False, as the surface tension of soap is less than water.\u003c/p> \u003cp>\u003cstrong>Statement 2: \u003c/strong>True\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A light hollow cube of side length 10 cm and mass 10 g , is floating in water. It is pushed down and released to execute simple harmonic oscillations. The time period of oscillations is \(y\pi \times {10}^{-2}\mathrm{s}\), where the value of \(y\) is<br/>(Acceleration due to gravity, \(g=10\mathrm{m}/{\mathrm{s}}^{2}\), density of water \(={10}^{3}\mathrm{kg}/{\mathrm{m}}^{3}\) )</p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The equation for the time period T of the oscillations is given as:\u003c/p> \u003cp>\\(T=2\\pi \\sqrt{\\frac{m}{{L}^{2}\\rho g}}\\)\u003c/p> \u003cp>Using\u003c/p> \u003cp>\\({a}^{2}xrg=m{a}_{\\text{net }}\\\\ \\frac{{L}^{2}\\rho g}{m}x={a}_{\\text{net }}\\\\ m=10g,L=10cm,\\rho =1000kg/{m}^{3}\\)\u003c/p> \u003cp>and putting values in equation\u003c/p> \u003cp> \\(T=2\\pi \\times {10}^{-2}S\\\\ y=2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A sphere of mass \(M\) is dropped into glycerin. The density of glycerin is half the density of the sphere. After some time, the sphere moves down with constant velocity. What is the viscous force acting on the sphere?</p> <p>(Shift II Memory Based)​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{Mg}{2}\)​</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{Mg}{3}\)​</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{Mg}{4}\)​</p></span></div><div class="option"><span class="key">d</span><span><p>​\(\frac{Mg}{6}\)​</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Key Concept: \u003cp>At terminal velocity (constant velocity), the net force acting on the sphere is zero. The forces acting on the sphere are:\u003c/p> \u003col> \u003cli>\u003cstrong>Gravitational Force (\\({F}_{g}\\)):\u003c/strong> Downward force due to the weight of the sphere. \\({F}_{g}=Mg\\)\u003c/li> \u003cli>\u003cstrong>Buoyant Force (\\({F}_{b}\\)​):\u003c/strong> Upward force due to the displaced glycerin. \\({F}_{b}={\\rho }_{\\text{glycerin}}Vg\\) where \\({\\rho }_{\\text{glycerin}}\\)is the density of glycerin, \\(V\\) is the volume of the sphere, and \\(g\\) is the acceleration due to gravity.\u003c/li> \u003cli>\u003cstrong>Viscous Force (\\({F}_{v}\\)​):\u003c/strong> Upward force due to the viscosity of glycerin. This balances the remaining downward force at terminal velocity.\u003c/li> \u003c/ol> \u003cp>From equilibrium at terminal velocity:\u003c/p> \u003cp>\\({F}_{v}={F}_{g}−{F}_{b}\\)​\u003c/p>  Step 1: Relationship Between Densities \u003cp>The density of glycerin (\\({\\rho }_{\\text{glycerin}}\\)) is half the density of the sphere (\\({\\rho }_{\\text{sphere}}\\)):\u003c/p> \u003cp>\\({\\rho }_{\\text{glycerin}}=\\frac{{\\rho }_{\\text{sphere}}}{2}\\)​​\u003c/p> \u003cp>The mass \\(M\\) of the sphere is related to its density and volume:\u003c/p> \u003cp>\\(M={\\rho }_{\\text{sphere}}V\\)\u003c/p> \u003cp>Substitute \\({\\rho }_{\\text{glycerin}}=\\frac{{\\rho }_{\\text{sphere}}}{2}\\)​​ into \\({F}_{b}\\):\u003c/p> \u003cp>\\({F}_{b}=\\frac{{\\rho }_{\\text{sphere}}}{2}Vg=\\frac{M}{2}g\\)\u003c/p>  Step 2: Calculate the Viscous Force \u003cp>Using \\({F}_{v}={F}_{g}−{F}_{b}\\):\u003c/p> \u003cp>\\({F}_{v}=Mg−\\frac{M}{2}g\\)\u003c/p> \u003cp>Simplify:\u003c/p> \u003cp>\\({F}_{v}=\\frac{M}{2}g\\)\u003c/p>  Final Answer: \u003cp>The viscous force acting on the sphere is:\u003c/p> \u003cp>\\(\\frac{Mg}{2}\\)​​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> An air bubble of radius 0.1 cm lies at a depth of 20 cm below the free surface of a liquid of density \(1000kg/{m}^{3}\). If the pressure inside the bubble is \(2100N/{m}^{2}\) greater than the atmospheric pressure, then the surface tension of the liquid in SI unit is (use g\(=10m/{s}^{2}\))</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.25</p></span></div><div class="option"><span class="key">b</span><span><p>0.1</p></span></div><div class="option"><span class="key">c</span><span><p>0.02</p></span></div><div class="option"><span class="key">d</span><span><p>0.05</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Pressure in the air bubble:\u003c/p> \u003cp>\\({P}_{inside}={P}_{0}+\\rho gh+\\frac{2T}{R}\\)\u003c/p> \u003cp>Given:\u003c/p> \u003cp>\\({P}_{inside}-{P}_{0}=2100\\)\u003c/p> \u003cp>Hydrostatic pressure:\u003c/p> \u003cp> \\({P}_{\\text{inside }}-{P}_{0}=\\rho gh+\\frac{2T}{R}\\\\ 2100=1000\\times 10\\times 0.2+\\frac{2T}{0.001}\\\\ 2100=2000+\\frac{2T}{0.001}\\\\ T=\\frac{1}{20}=0.05\\)\u003c/p> \u003cp>\u003cbr/>Thus, the correct answer is 0.05 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> An air bubble at a depth of 20 cm in water has a radius of 1 mm. If the inner pressure of the bubble is greater than the atmospheric pressure by \(2100\mathrm{N}/{\mathrm{m}}^{2}\), find the surface tension of the bubble.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\text{0.025 }\text{N/m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.25\text{ }\text{N/m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\text{0.5 }\text{N/m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\text{0.05 }\text{N/m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Here, P\u003csub>i\u003c/sub> - P\u003csub>o\u003c/sub> = 2100 ... (1) \u003c/p> \u003cp>Let the pressure at the depth is P\u003csub>o\u003c/sub>'. \u003c/p> \u003cp>\\({\\mathrm{P}}_{\\mathrm{o}}^{'}={\\mathrm{P}}_{\\mathrm{o}}+\\rho \\mathrm{g}\\mathrm{h}\\\\ \\mathrm{So},\\\\ {\\mathrm{P}}_{\\mathrm{i}}-{\\mathrm{P}}_{\\mathrm{o}}^{'}=\\frac{2\\mathrm{T}}{\\mathrm{R}}\\\\ {\\mathrm{P}}_{\\mathrm{i}}={\\mathrm{P}}_{\\mathrm{o}}+\\rho \\mathrm{g}\\mathrm{h}+\\frac{2\\mathrm{T}}{\\mathrm{R}}\\\\ {\\mathrm{P}}_{\\mathrm{o}}+2100={\\mathrm{P}}_{\\mathrm{o}}+1000\\times 10\\times 0.2+\\frac{2\\mathrm{T}}{{10}^{-3}}\\)\u003c/p> \u003cp>\\(100=\\frac{2T}{R}\\)\u003c/p> \u003cp>\\(\\Rightarrow T=\\frac{100\\times {10}^{-2}}{20}\\)\u003c/p> \u003cp>= 0.05 N/m\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Pressure inside a soap bubble is greater than the pressure outside by an amount :<br/>(given : \(R =\) Radius of bubble, \(S =\) Surface tension of bubble)</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{4 S }{ R }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{ S }{ R }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2 S}{R}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{4 R }{ S }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>There are two liquid-air surfaces in bubble so\u003c/p> \u003cp>\\(\\Delta P=2\\left(\\frac{2S}{R}\\right)=\\frac{4S}{R}\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount of work done to break a big water drop of radius ' R ' into 27 small drops of equal radius is 10 J. The work done required to break the same big drop into 64 small drops of equal radius will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 J</p></span></div><div class="option"><span class="key">b</span><span><p>10 J</p></span></div><div class="option"><span class="key">c</span><span><p>15 J</p></span></div><div class="option"><span class="key">d</span><span><p>20 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(W=S\\times 4\\pi {R}^{2}\\times \\left({n}^{1/3}-1\\right)\\)\u003cbr/>where n is the number of small drops.\u003cbr/>For 27 drops:\u003c/p> \u003cp>\\(\\text{ Since }{27}^{1/3}=3,\\\\ 10=S4\\pi {R}^{2}(3-1)=S4\\pi {R}^{2}\\times 2\\)\u003cbr/>For 64 Drops:\u003cbr/>Similarly,\u003c/p> \u003cp> \\({W}^{'}=S4\\pi {R}^{2}\\left({64}^{1/3}-1\\right)\\\\ \\text{ Therefore, }\\\\ \\frac{{W}^{'}}{W}=\\frac{4-1}{3-1}=\\frac{3}{2}\\\\ {W}^{'}=10\\times \\frac{3}{2}=15J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Statement 1: </strong>Surface tension of soap is greater than water.</p> <p><strong>Statement 2: </strong>Hot water flows faster than cold water.</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true and Statement II is false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false and Statement II is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both the statements are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both the statements are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Statement 1: \u003c/strong>False, as the surface tension of soap is less than water.\u003c/p> \u003cp>\u003cstrong>Statement 2: \u003c/strong>True\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bubble of radius R is split into 27 drops of equal radius, and the work done is 10J. If the same bubble is split into 64 equal drops, the work done is:</p> <p>(Shift 1 Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 J</p></span></div><div class="option"><span class="key">b</span><span><p>15 J</p></span></div><div class="option"><span class="key">c</span><span><p>20 J</p></span></div><div class="option"><span class="key">d</span><span><p>25 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The work done is proportional to the change in surface area. The surface area of a sphere is \\(4\\pi {r}^{2}\\).\u003c/p> \u003col> \u003cli> \u003cp>\u003cstrong>Initial bubble area:\u003c/strong>\u003cbr/>The radius of the bubble is \\(R\\). Its surface area is:\u003c/p> \\({A}_{\\text{initial}}=4\\pi {R}^{2}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>For 27 drops:\u003c/strong>\u003c/p> \u003cul> \u003cli>Each drop has radius \\({r}_{1}\\) such that the volume of the bubble equals the total volume of the drops: \\(\\frac{4}{3}\\pi {R}^{3}=27⋅\\frac{4}{3}\\pi {r}_{1}^{3}\\text{  }⟹\\text{  }{r}_{1}=\\frac{R}{3}\\)​\u003c/li> \u003cli>Total surface area of 27 drops: \\({A}_{\\text{27 drops}}=27⋅4\\pi {r}_{1}^{2}=27⋅4\\pi {(\\frac{R}{3})}^{2}=12\\pi {R}^{2}\\)\u003c/li> \u003cli>Change in surface area: \\(\\Delta A={A}_{\\text{27 drops}}−{A}_{\\text{initial}}=12\\pi {R}^{2}−4\\pi {R}^{2}=8\\pi {R}^{2}\\)\u003c/li> \u003cli>Work done is proportional to \\(\\Delta A\\): \\({W}_{1}=k\\Delta A\\text{  }⟹\\text{  }k=\\frac{10}{8\\pi {R}^{2}}\\)​\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>For 64 drops:\u003c/strong>\u003c/p> \u003cul> \u003cli>Each drop has radius \\({r}_{2}\\)​ such that: \\(\\frac{4}{3}\\pi {R}^{3}=64⋅\\frac{4}{3}\\pi {r}_{2}^{3}\\text{  }⟹\\text{  }{r}_{2}=\\frac{R}{4}\\)​\u003c/li> \u003cli>Total surface area of 64 drops: \\({A}_{\\text{64 drops}}=64⋅4\\pi {r}_{2}^{2}=64⋅4\\pi {(\\frac{R}{4})}^{2}=16\\pi {R}^{2}\\)\u003c/li> \u003cli>Change in surface area: \\(\\Delta A={A}_{\\text{64 drops}}−{A}_{\\text{initial}}=16\\pi {R}^{2}−4\\pi {R}^{2}=12\\pi {R}^{2}\\)\u003c/li> \u003cli>Work done: \\({W}_{2}=k\\Delta A=\\frac{10}{8\\pi {R}^{2}}⋅12\\pi {R}^{2}=15\\text{ }\\text{J}\\)\u003c/li> \u003c/ul> \u003c/li> \u003c/ol> \u003cp>Thus, the work done when splitting into 64 drops is \u003cstrong>15 J\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> An air bubble of radius 0.1 cm lies at a depth of 20 cm below the free surface of a liquid of density \(1000kg/{m}^{3}\). If the pressure inside the bubble is \(2100N/{m}^{2}\) greater than the atmospheric pressure, then the surface tension of the liquid in SI unit is (use g\(=10m/{s}^{2}\))</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.25</p></span></div><div class="option"><span class="key">b</span><span><p>0.1</p></span></div><div class="option"><span class="key">c</span><span><p>0.02</p></span></div><div class="option"><span class="key">d</span><span><p>0.05</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Pressure in the air bubble:\u003c/p> \u003cp>\\({P}_{inside}={P}_{0}+\\rho gh+\\frac{2T}{R}\\)\u003c/p> \u003cp>Given:\u003c/p> \u003cp>\\({P}_{inside}-{P}_{0}=2100\\)\u003c/p> \u003cp>Hydrostatic pressure:\u003c/p> \u003cp> \\({P}_{\\text{inside }}-{P}_{0}=\\rho gh+\\frac{2T}{R}\\\\ 2100=1000\\times 10\\times 0.2+\\frac{2T}{0.001}\\\\ 2100=2000+\\frac{2T}{0.001}\\\\ T=\\frac{1}{20}=0.05\\)\u003c/p> \u003cp>\u003cbr/>Thus, the correct answer is 0.05 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A horizontal pipe of variable cross-section has a fluid of density \(\rho\) flowing through it. At cross-sections A and B, the velocities are \({V}_{A}\)​ and \({V}_{B}\), and the pressures are \({P}_{A}\)​ and \({P}_{B}\)​. Find the correct relation between velocities.</p> <p>(Shift - II Memory Based)​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({V}_{A}−{V}_{B}=\frac{\rho }{2({P}_{B}^{2}−{P}_{A}^{2})}\)​</p></span></div><div class="option"><span class="key">b</span><span><p>\({V}_{A}−{V}_{B}=\frac{2({P}_{A}−{P}_{B})}{\rho }\)​</p></span></div><div class="option"><span class="key">c</span><span><p>​\({V}_{A}^{2}−{V}_{B}^{2}=\frac{2({P}_{B}−{P}_{A})}{\rho }\)​</p></span></div><div class="option"><span class="key">d</span><span><p> \({V}_{A}^{2}−{V}_{B}^{2}=\frac{2({P}_{A}−{P}_{B})}{\rho }\)​</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>This question is based on \u003cstrong>Bernoulli's equation\u003c/strong>, which states:\u003c/p> \\(P+\\frac{1}{2}\\rho {V}^{2}+\\rho gh=\\text{constant}\\) \u003cp>Since the pipe is horizontal (\\(h\\)h is constant), the equation simplifies to:\u003c/p> \\(P+\\frac{1}{2}\\rho {V}^{2}=\\text{constant}\\) \u003cp>For points A and B:\u003c/p> \\({P}_{A}+\\frac{1}{2}\\rho {V}_{A}^{2}={P}_{B}+\\frac{1}{2}\\rho {V}_{B}^{2}\\)​ \u003cp>Rearranging:\u003c/p> \\(\\frac{1}{2}\\rho {V}_{A}^{2}−\\frac{1}{2}\\rho {V}_{B}^{2}={P}_{B}−{P}_{A}\\),   ​ \\(\\frac{\\rho }{2}({V}_{A}^{2}−{V}_{B}^{2})={P}_{B}−{P}_{A}\\)​ \u003cp>Divide through by \\(\\rho \\mathrm{/}2\\):\u003c/p> \\({V}_{A}^{2}−{V}_{B}^{2}=\\frac{2({P}_{B}−{P}_{A})}{\\rho }\\)​ \u003cstrong>Final Relation\u003c/strong>: \u003cp>The correct option is:\u003c/p> \\({V}_{A}^{2}−{V}_{B}^{2}=\\frac{2({P}_{B}−{P}_{A})}{\\rho }\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A small rigid spherical ball of mass M is dropped in a long vertical tube containing glycerine. The velocity of the ball becomes constant after some time. If the density of glycerine is half of the density of the ball, then the viscous force acting on the ball will be (consider g as acceleration due to gravity)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Mg</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{2}\mathrm{Mg}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2Mg\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\mathrm{Mg}}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>At terminal velocity, forces balance: Weight D = D Buoyant force + Viscous force\u003c/p> \u003cp>\\(Mg={F}_{\\text{buoyancy }}+{F}_{\\text{viscous }}\\)\u003c/p> \u003cp>\u003cbr/>Buoyant force: Since glycerine's density is half of the ball's density:\u003c/p> \u003cp>\\({F}_{\\text{buayancy }}=\\frac{1}{2}Mg\\)\u003c/p> \u003cp>\u003cbr/>Viscous force:\u003c/p> \u003cp>\\({F}_{\\text{visceus }}=Mg-\\frac{1}{2}Mg=\\frac{Mg}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following statements:<br/>Statement 1: The surface tension of soap solution is greater than that of water.<br/>Statement 2: Hot water flows faster than cold water.</p> <p>Which of the following is correct?(shift 1 Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement 1 and Statement 2 are true, and Statement 2 is the correct explanation of Statement 1.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement 1 and Statement 2 are true, but Statement 2 is not the correct explanation of Statement 1.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement 1 is true, but Statement 2 is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement 1 is false, but Statement 2 is true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The surface tension of soap solution is less than that of water because soap reduces the cohesive forces between water molecules. However, hot water flows faster than cold water due to its lower viscosity, which decreases with an increase in temperature.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> An air bubble at a depth of 20 cm in water has a radius of 1 mm. If the inner pressure of the bubble is greater than the atmospheric pressure by \(2100\mathrm{N}/{\mathrm{m}}^{2}\), find the surface tension of the bubble.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\text{0.025 }\text{N/m}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.25\text{ }\text{N/m}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\text{0.5 }\text{N/m}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\text{0.05 }\text{N/m}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Here, P\u003csub>i\u003c/sub> - P\u003csub>o\u003c/sub> = 2100 ... (1) \u003c/p> \u003cp>Let the pressure at the depth is P\u003csub>o\u003c/sub>'. \u003c/p> \u003cp>\\({\\mathrm{P}}_{\\mathrm{o}}^{'}={\\mathrm{P}}_{\\mathrm{o}}+\\rho \\mathrm{g}\\mathrm{h}\\\\ \\mathrm{So},\\\\ {\\mathrm{P}}_{\\mathrm{i}}-{\\mathrm{P}}_{\\mathrm{o}}^{'}=\\frac{2\\mathrm{T}}{\\mathrm{R}}\\\\ {\\mathrm{P}}_{\\mathrm{i}}={\\mathrm{P}}_{\\mathrm{o}}+\\rho \\mathrm{g}\\mathrm{h}+\\frac{2\\mathrm{T}}{\\mathrm{R}}\\\\ {\\mathrm{P}}_{\\mathrm{o}}+2100={\\mathrm{P}}_{\\mathrm{o}}+1000\\times 10\\times 0.2+\\frac{2\\mathrm{T}}{{10}^{-3}}\\)\u003c/p> \u003cp>\\(100=\\frac{2T}{R}\\)\u003c/p> \u003cp>\\(\\Rightarrow T=\\frac{100\\times {10}^{-2}}{20}\\)\u003c/p> \u003cp>= 0.05 N/m\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider following statements:<br/>A. Surface tension arises due to extra energy of the molecules at the interior as compared to the molecules at the surface, of a liquid.<br/>B. As the temperature of liquid rises, the coefficient of viscosity increases.<br/>C. As the temperature of gas increases, the coefficient of viscosity increases<br/>D. The onset of turbulence is determined by Reynold's number.<br/>E. In a steady flow two stream lines never intersect.</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C only</p></span></div><div class="option"><span class="key">b</span><span><p>C, D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D, E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Surface tension is property of surface molecules not interior molecules. In case of liquid as temperature increases surface tension decreases. In case of gases due to increase in temperature collision will be more frequent hence viscosity increases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount of work done to break a big water drop of radius ' R ' into 27 small drops of equal radius is 10 J. The work done required to break the same big drop into 64 small drops of equal radius will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 J</p></span></div><div class="option"><span class="key">b</span><span><p>10 J</p></span></div><div class="option"><span class="key">c</span><span><p>15 J</p></span></div><div class="option"><span class="key">d</span><span><p>20 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(W=S\\times 4\\pi {R}^{2}\\times \\left({n}^{1/3}-1\\right)\\)\u003cbr/>where n is the number of small drops.\u003cbr/>For 27 drops:\u003c/p> \u003cp>\\(\\text{ Since }{27}^{1/3}=3,\\\\ 10=S4\\pi {R}^{2}(3-1)=S4\\pi {R}^{2}\\times 2\\)\u003cbr/>For 64 Drops:\u003cbr/>Similarly,\u003c/p> \u003cp> \\({W}^{'}=S4\\pi {R}^{2}\\left({64}^{1/3}-1\\right)\\\\ \\text{ Therefore, }\\\\ \\frac{{W}^{'}}{W}=\\frac{4-1}{3-1}=\\frac{3}{2}\\\\ {W}^{'}=10\\times \\frac{3}{2}=15J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water flows in a horizontal pipe whose one end is closed with a valve. The reading of the pressure gauge attached to the pipe is \(P_1\). The reading of the pressure gauge falls to \(P_2\) when the valve is opened. The speed of water flowing in the pipe is proportional to</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\left({P}_{1}-{P}_{2}\right)}^{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({P}_{1}-{P}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\left({P}_{1}-{P}_{2}\right)}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{{P}_{1}-{P}_{2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\text{ Apply Bernoulli's eqn }\\\\ \\frac{{P}_{1}}{\\rho g}+\\frac{{V}_{1}^{2}}{2g}=\\frac{{P}_{2}}{\\rho g}+\\frac{{V}_{2}^{2}}{2g}\\\\ \\frac{{P}_{1}}{\\rho g}+0=\\frac{{P}_{2}}{\\rho g}+\\frac{{v}^{2}}{2g}\\\\ V=\\sqrt{2\\gamma \\left({P}_{1}-{P}_{2}\\right)}\\\\ V\\propto \\sqrt{\\left({P}_{1}-{P}_{2}\\right)}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A small rigid spherical ball of mass M is dropped in a long vertical tube containing glycerine. The velocity of the ball becomes constant after some time. If the density of glycerine is half of the density of the ball, then the viscous force acting on the ball will be (consider g as acceleration due to gravity)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Mg</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{2}\mathrm{Mg}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2Mg\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\mathrm{Mg}}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>At terminal velocity, forces balance: Weight D = D Buoyant force + Viscous force\u003c/p> \u003cp>\\(Mg={F}_{\\text{buoyancy }}+{F}_{\\text{viscous }}\\)\u003c/p> \u003cp>\u003cbr/>Buoyant force: Since glycerine's density is half of the ball's density:\u003c/p> \u003cp>\\({F}_{\\text{buayancy }}=\\frac{1}{2}Mg\\)\u003c/p> \u003cp>\u003cbr/>Viscous force:\u003c/p> \u003cp>\\({F}_{\\text{visceus }}=Mg-\\frac{1}{2}Mg=\\frac{Mg}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capillary tube of radius \( r \) is immersed in water and water rises in it to a height \( h \). The mass of the water in the capillary is \( 5 \mathrm{~g} \). Another capillary tube of radius \( 2 r \) is immersed in water. The mass of water that will rise in this tube is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 5.0 \mathrm{~g} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 10.0 \mathrm{~g} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 20.0 \mathrm{~g} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 2.5 \mathrm{~g} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,10 +324,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>h=\\frac{2 S \\cos \\theta}{r \\rho g}\u003cbr/>\\end{equation} \u003c/p> \u003cp>mass of water in the first tube\u003c/p> \u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; m=\\pi r^2 h \\rho=\\pi r^2 \\times\\left(\\frac{2 S \\cos \\theta}{r \\rho g}\\right) \\times \\rho \\\\\u003cbr/>&amp; \\quad=\\frac{2 \\pi r S \\cos \\theta}{g} \\\\\u003cbr/>&amp; \\therefore \\quad m \\propto r . \\text { Hence, } \\frac{m^{\\prime}}{m}=\\frac{2 r}{r}=2 \\\\\u003cbr/>&amp; \\text { or } \\quad m^{\\prime}=2 m=2 \\times 5 g=10 g\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>h=\\frac{2 S \\cos \\theta}{r \\rho g}\u003cbr/>\\end{equation} \u003c/p> \u003cp>mass of water in the first tube\u003c/p> \u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}& m=\\pi r^2 h \\rho=\\pi r^2 \\times\\left(\\frac{2 S \\cos \\theta}{r \\rho g}\\right) \\times \\rho \\\\& \\quad=\\frac{2 \\pi r S \\cos \\theta}{g} \\\\& \\therefore \\quad m \\propto r . \\text { Hence, } \\frac{m^{\\prime}}{m}=\\frac{2 r}{r}=2 \\\\& \\text { or } \\quad m^{\\prime}=2 m=2 \\times 5 g=10 g\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement-I:</strong> Pressure in a reservoir of water is same at all points at the same level of water.</p> <p><strong>Statement-II:</strong> The pressure applied to enclosed water is transmitted in all directions equally.</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is false but Statement-II is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are true</p></span></div><div class="option"><span class="key">c</span><span><p> Statement-I is true but Statement-II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At any point on the same horizontal level the pressure in a static liquid will be the same.\u003c/p> \u003cp>\\(\\therefore P=P_{\\mathrm{atm}}+\\rho g h\\)\u003c/p> \u003cp>Pascal law: Same pressure applied to enclosed water is transmitted in all directions equally.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The height of liquid column raised in a capillary tube of certain radius when dipped in liquid A vertically is, \(5 \mathrm{~cm}\). If the tube is dipped in a similar manner in another liquid B of surface tension and density double the values of liquid \(A\), the height of liquid column raised in liquid \(B\) would be m.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.20</p></span></div><div class="option"><span class="key">b</span><span><p>0.5</p></span></div><div class="option"><span class="key">c</span><span><p>0.05</p></span></div><div class="option"><span class="key">d</span><span><p>0.10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> (c) \\(h=\\frac{2 S \\cos \\theta}{r \\rho g}\\)\u003c/p> \u003cp>\\(\\therefore \\frac{h_{1}}{h_{2}}=\\frac{S_{1}}{S_{2}} \\frac{\\rho_{2}}{\\rho_{1}}\\)\u003c/p> \u003cp>\\(\\frac{5}{h_{2}}=\\left[\\frac{1}{2}\\right]\\left[\\frac{2}{1}\\right] \\Rightarrow h_{2}=5 \\mathrm{~cm}=0.05 \\mathrm{~m}\\)\u003c/p> \u003cp>\\{Info about angle of contact not there so most appropriate is 3 \\}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amount of energy required to form a soap bubble of radius \(2\mathrm{cm}\) from a soap solution is nearly: (surface tension of soap solution \(=0.03\mathrm{N}{\mathrm{m}}^{-1}\) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5.06\times {10}^{-4}\mathrm{J}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3.01\times {10}^{-4}\mathrm{J}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(50.1\times {10}^{-4}\mathrm{J}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(30.16\times {10}^{-4}\mathrm{J}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

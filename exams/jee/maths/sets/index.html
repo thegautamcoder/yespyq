@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Sets","item":"https://yespyq.com/exams/jee/maths/sets/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Sets</h1>
       <p>25 JEE Maths previous year questions on <b>Sets</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A={1,2,3,\ldots \ldots .,10}\) and \(B={\frac{m}{n}:m,n\in A,m<n\text{ and }\gcd (m,n)=1}\)</p> <p>Then \(n(B)\) is equal to</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>31</p></span></div><div class="option"><span class="key">b</span><span><p>36</p></span></div><div class="option"><span class="key">c</span><span><p>37</p></span></div><div class="option"><span class="key">d</span><span><p>29</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A={(\alpha ,\beta )\in \mathrm{R}\times \mathrm{R}:|\alpha -1|\leq 4\text{ and }|\beta -5|\leq 6}\) and \(B=\left{(\alpha ,\beta )\in \mathrm{R}\times \mathrm{R}:16(\alpha -2{)}^{2}+9(\beta -6{)}^{2}\leq 144\right}\). Then </p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\mathrm{B}\subset \mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(A \cup B=\{(x, y):-4 \leq x \leq 4,-1 \leq y \leq 11\}\)</p></span></div><div class="option"><span class="key">c</span><span><p>neither \(\mathrm{A}\subset \mathrm{B}\) nor \(\mathrm{B}\subset \mathrm{A}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{A}\subset \mathrm{B}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A\) and \(B\) be two finite sets with \(m\) and \(n\) elements, respectively. The total number of subsets of the set \(A\) is \(56\) more than the total number of subsets of \(B\). Then the distance of the point \(P(m, n)\) from the point \(Q(-2,-3)\) is:</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 2)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -104,10 +108,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; 2^{\\mathrm{m}}-2^{\\mathrm{n}}=56 \\\\\u003cbr/>&amp; 2^{\\mathrm{n}}\\left(2^{\\mathrm{m}-\\mathrm{n}}-1\\right)=2^3 \\times 7 \\\\\u003cbr/>&amp; 2^{\\mathrm{n}}=2^3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}-1=7 \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{n}=3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}=8 \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}-\\mathrm{n}=3 \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}=6 \\\\\u003cbr/>&amp; \\mathrm{P}(6,3) \\text { and } \\mathrm{Q}(-2,-3) \\\\\u003cbr/>&amp; \\mathrm{PQ}=\\sqrt{8^2+6^2}=\\sqrt{100}=10\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}& 2^{\\mathrm{m}}-2^{\\mathrm{n}}=56 \\\\& 2^{\\mathrm{n}}\\left(2^{\\mathrm{m}-\\mathrm{n}}-1\\right)=2^3 \\times 7 \\\\& 2^{\\mathrm{n}}=2^3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}-1=7 \\\\& \\Rightarrow \\mathrm{n}=3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}=8 \\\\& \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}-\\mathrm{n}=3 \\\\& \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}=6 \\\\& \\mathrm{P}(6,3) \\text { and } \\mathrm{Q}(-2,-3) \\\\& \\mathrm{PQ}=\\sqrt{8^2+6^2}=\\sqrt{100}=10\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A\) and \(B\) be two finite sets with \(m\) and \(n\) elements, respectively. The total number of subsets of the set \(A\) is \(56\) more than the total number of subsets of \(B\). Then the distance of the point \(P(m, n)\) from the point \(Q(-2,-3)\) is:</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 2)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,10 +120,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; 2^{\\mathrm{m}}-2^{\\mathrm{n}}=56 \\\\\u003cbr/>&amp; 2^{\\mathrm{n}}\\left(2^{\\mathrm{m}-\\mathrm{n}}-1\\right)=2^3 \\times 7 \\\\\u003cbr/>&amp; 2^{\\mathrm{n}}=2^3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}-1=7 \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{n}=3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}=8 \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}-\\mathrm{n}=3 \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}=6 \\\\\u003cbr/>&amp; \\mathrm{P}(6,3) \\text { and } \\mathrm{Q}(-2,-3) \\\\\u003cbr/>&amp; \\mathrm{PQ}=\\sqrt{8^2+6^2}=\\sqrt{100}=10\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}& 2^{\\mathrm{m}}-2^{\\mathrm{n}}=56 \\\\& 2^{\\mathrm{n}}\\left(2^{\\mathrm{m}-\\mathrm{n}}-1\\right)=2^3 \\times 7 \\\\& 2^{\\mathrm{n}}=2^3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}-1=7 \\\\& \\Rightarrow \\mathrm{n}=3 \\text { and } 2^{\\mathrm{m}-\\mathrm{n}}=8 \\\\& \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}-\\mathrm{n}=3 \\\\& \\Rightarrow \\mathrm{n}=3 \\text { and } \\mathrm{m}=6 \\\\& \\mathrm{P}(6,3) \\text { and } \\mathrm{Q}(-2,-3) \\\\& \\mathrm{PQ}=\\sqrt{8^2+6^2}=\\sqrt{100}=10\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A={1,2,3,\ldots \ldots .,10}\) and \(B=\left\{\frac{m}{n}: m, n \in A, m&lt;n\right.\) and \(\left.\operatorname{gcd}(m, n)=1\right\}\). Then \(n(B)\) is equal to</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>31</p></span></div><div class="option"><span class="key">b</span><span><p>36</p></span></div><div class="option"><span class="key">c</span><span><p>37</p></span></div><div class="option"><span class="key">d</span><span><p>29</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{for}m=1\\Rightarrow \\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\ldots \\ldots \\ldots \\frac{1}{10}\\to 9\\\\ \\text{for}m=2\\Rightarrow \\frac{2}{3},\\frac{2}{5},\\frac{2}{7},\\frac{2}{9}\\to 4\\\\ \\text{for}m=3\\Rightarrow \\frac{3}{4},\\frac{3}{5},\\frac{3}{7},\\frac{3}{8},\\frac{3}{10}\\to 5\\\\ \\text{for}m=4\\Rightarrow \\frac{4}{5},\\frac{4}{7},\\frac{4}{9}\\to 3\\\\ \\text{for}m=5\\Rightarrow \\frac{5}{6},\\frac{5}{7},\\frac{5}{8},\\frac{5}{9}\\to 4\\\\ \\text{for}m=6\\Rightarrow \\frac{6}{7}\\to 1\\\\ \\text{for}m=7\\Rightarrow \\frac{7}{8},\\frac{7}{9},\\frac{7}{10}\\to 3\\\\ \\text{for}m=8\\Rightarrow \\frac{8}{9}\\to 1\\\\ \\text{for}m=9\\Rightarrow \\frac{9}{10}\\to 1\\\\ \\text{So,}n(B)=31\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S =\left\{x \in R :(\sqrt{3}+\sqrt{2})^x+(\sqrt{3}-\sqrt{2})^x=10\right\}\). Then the number of elements in \(S\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\({(\\sqrt{3}+\\sqrt{2})}^{x}=t\\)\u003c/p> \u003cp>\\(\\Rightarrow {\\left(\\frac{1}{\\sqrt{3}−\\sqrt{2}}\\right)}^{x}=t\\)\u003c/p> \u003cp>\\(\\Rightarrow {(\\sqrt{3}−\\sqrt{2})}^{x}=\\frac{1}{t}\\)\u003c/p> \u003cp>Now, \\({(\\sqrt{3}+\\sqrt{2})}^{x}+{(\\sqrt{3}−\\sqrt{2})}^{x}=10\\)\u003c/p> \u003cp>\\(\\Rightarrow t+\\frac{1}{t}=10\\)\u003c/p> \u003cp>\\(\\Rightarrow {t}^{2}−10t+1=0\\)\u003c/p> \u003cp>\\(\\Rightarrow t=\\frac{10\\pm \\sqrt{100−4}}{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow t=5\\pm 2\\sqrt{6}\\) \u003c/p> \u003cp>\\(\\Rightarrow {(\\sqrt{3}+\\sqrt{2})}^{x}=(5\\pm 2\\sqrt{6})\\)\u003c/p> \u003cp>So, \\(x = 2, x = –2\\)\u003c/p> \u003cp>So, number of elements is \\(2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a statistical investigation of 1003 families of Calcutta, it was found that 63 families have neither a radio nor a TV, 794 families have a radio, and 187 have a TV. The number of families having both a radio and a TV is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>36</p></span></div><div class="option"><span class="key">b</span><span><p>41</p></span></div><div class="option"><span class="key">c</span><span><p>32</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{Given, total no. of families =1003}\\\\ \\text{Let TV be set A and radio be set B}\\\\ \\mathrm{n}(\\mathrm{A})=187,\\mathrm{n}(\\mathrm{B})=794\\\\ \\mathrm{n}(A\\cap B)=63\\\\ ∴\\mathrm{n}(\\mathrm{A}\\cup \\mathrm{B})=1003-63=940\\)\u003c/p> \u003cp>\\(\\mathrm{n}(\\mathrm{A}\\cap \\mathrm{B})=\\mathrm{n}(\\mathrm{A})+\\mathrm{n}(\\mathrm{B})-\\mathrm{n}(\\mathrm{A}\\cap \\mathrm{B})\\\\ 940=187+794-n(A\\cap B)\\\\ n(A\\cap B)=41\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\mathrm{A}={1,6,11,16,\ldots }\) and \(\mathrm{B}={9,16,23,30,\ldots }\) be the sets consisting of the first \(2025\) terms of two arithmetic progressions. Then \(n(A\cup B)\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3814\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4027\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3761\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4003\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Set A is an AP with:\u003c/p> \u003cp>first term = 1, common difference = 5\u003c/p> \u003cp>General term of A:\u003c/p> \u003cp>a = 1 + 5k\u003c/p> \u003cp>Set \u003cem>B\u003c/em> is an AP with:\u003c/p> \u003cp>first term = 9, common difference = 7\u003c/p> \u003cp>General term of B:\u003c/p> \u003cp>B = 9+7m\u003c/p> \u003cp>Number of elements in A = 2025\u003c/p> \u003cp>Number of elements in B = 2025\u003c/p> \u003cp>To find common elements, solve:\u003c/p> \u003cp>1+5k = 9+7m\u003c/p> \u003cp>5k – 7m = 8\u003c/p> \u003cp>One solution is k = 3, m = 1 giving common element 16 .\u003c/p> \u003cp>LCM of 5 and 7 = 35, so common elements form an AP:\u003c/p> \u003cp>16, 51, 86, …\u003c/p> \u003cp>Largest common element possible within first 2025 terms:\u003c/p> \u003cp>Last term of A = 1+2024 × 5 = 10121\u003c/p> \u003cp>Common terms are \\(16+35r\\leq 10121\\)\u003c/p> \u003cp>\\(35r\\leq 10105\\)\u003c/p> \u003cp>\\(\\text{r}\\leq 288\\)\u003c/p> \u003cp>Hence number of common elements = 289.\u003c/p> \u003cp>Therefore,\u003c/p> \u003cp>\\(n\\left(A\\cup B\\right)=n\\left(A\\right)+n\\left(B\\right)−n\\left(A\\cap B\\right)\\)\u003c/p> \u003cp>= 2025 + 2025 –289 = 3761\u003c/p> \u003cp>Answer: 3761\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\mathrm{A}={1,6,11,16,\ldots }\) and \(\mathrm{B}={9,16,23,30,\ldots }\) be the sets consisting of the first \(2025\) terms of two arithmetic progressions. Then \(n(A\cup B)\) is</p> <p> </p> <p>[JEE Main 2025, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3814\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4027\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3761\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4003\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ａ＝｛1,６,１1,１6,２1,２6,３1,３6,４1,４6,５1,５6,６1,６6,７1,７6,８1,８6,９1,．．．．．｝\u003c/p> \u003cp>Ｂ＝｛9,１6,２3,３0,３7,４４,５1,５8,６5,７２,７9,８6,９3,１00,．．．．．．\u003c/p> \u003cp>Ａ ∩ Ｂ ＝ ｛１6,５１,８６,．．．．｝\u003c/p> \u003cp>For set ′Ａ′ ⇒ \\({\\mathrm{T}}_{2025}\\) ＝１＋(2025 －１)(５) ＝ 10121\u003c/p> \u003cp>For set \\({B}^{'}\\Rightarrow {T}_{2025}=9+(2025−1)(7)=14177\\)\u003c/p> \u003cp>So, for \\((A\\cap B)\\Rightarrow {T}_{n}=16+(n−1)(35)\\leq 10121\\)\u003c/p> \u003cp>\\((n−1)\\leq \\frac{10121−16}{35}=288.71\\)\u003c/p> \u003cp>\\(n\\leq 289.71\\Rightarrow n=289\\)\u003c/p> \u003cp>\\(∴n(A\\cup B)=n(A)+n(B)−n(A\\cap B)\\)\\(=2025+2025−289=3761\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A=\{n \in[100,700] \cap N: n\) is neither a multiple of 3 nor a multiple of 4\(\}\). Then the number of elements in \(A\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>280</p></span></div><div class="option"><span class="key">b</span><span><p>300</p></span></div><div class="option"><span class="key">c</span><span><p>310</p></span></div><div class="option"><span class="key">d</span><span><p>290</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The total number of integers is \\(700-100+1=601\\)\u003c/p> \u003cp>The number of multiples of 3 between 100 and 700 \\(=200\\)\u003c/p> \u003cp>The number of multiples of 4 between 100 and 700 \\(=151\\)\u003c/p> \u003cp>The number of multiples of 12 between 100 and 700 \\(=50\\)\u003c/p> \u003cp>Required Count is \\(601-200-151+50=300\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text{ Let }A={n\in [100,700]\cap N:n\text{ is neither a multiple of }3\text{ nor a multiple of }4}\text{.}\)</p> <p>then the number of elements in A is</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>280</p></span></div><div class="option"><span class="key">b</span><span><p>300</p></span></div><div class="option"><span class="key">c</span><span><p>310</p></span></div><div class="option"><span class="key">d</span><span><p>290</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The total number of integers is 700-100+1=601\u003c/p> \u003cp>The number of multiples of 3 between 100 and 700 is =200\u003c/p> \u003cp>The number of multiples of 4 between 100 and 700 is =151\u003c/p> \u003cp>The number of multiples of 12 between 100 and 700 is =50\u003c/p> \u003cp>The number of integers is 601-200-151+50=300.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A={1,2,3,\ldots \ldots .,10}\) and \(B={\frac{m}{n}:m,n\in A,m<n\text{ and }\gcd (m,n)=1}\)</p> <p>Then \(n(B)\) is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>31</p></span></div><div class="option"><span class="key">b</span><span><p>36</p></span></div><div class="option"><span class="key">c</span><span><p>37</p></span></div><div class="option"><span class="key">d</span><span><p>29</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{for}m=1\\Rightarrow \\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\ldots \\ldots \\ldots \\frac{1}{10}\\to 9\\\\ \\text{for}m=2\\Rightarrow \\frac{2}{3},\\frac{2}{5},\\frac{2}{7},\\frac{2}{9}\\to 4\\\\ \\text{for}m=3\\Rightarrow \\frac{3}{4},\\frac{3}{5},\\frac{3}{7},\\frac{3}{8},\\frac{3}{10}\\to 5\\\\ \\text{for}m=4\\Rightarrow \\frac{4}{5},\\frac{4}{7},\\frac{4}{9}\\to 3\\\\ \\text{for}m=5\\Rightarrow \\frac{5}{6},\\frac{5}{7},\\frac{5}{8},\\frac{5}{9},\\to 4\\\\ \\text{for}m=6\\Rightarrow \\frac{6}{7}\\to 1\\\\ \\text{for}m=7\\Rightarrow \\frac{7}{8},\\frac{7}{9},\\frac{7}{10},\\to 3\\\\ \\text{for}m=8\\Rightarrow \\frac{8}{9}\\to 1\\\\ \\text{for}m=9\\Rightarrow \\frac{9}{10}\\to 1\\\\ \\text{then}n(B)=31\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A={1,2,3,\ldots \ldots .,10}\) and \(B={\frac{m}{n}:m,n\in A,m<n\text{ and }\gcd (m,n)=1}\)</p> <p>Then \(n(B)\) is equal to</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>31</p></span></div><div class="option"><span class="key">b</span><span><p>36</p></span></div><div class="option"><span class="key">c</span><span><p>37</p></span></div><div class="option"><span class="key">d</span><span><p>29</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{for}m=1\\Rightarrow \\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\ldots \\ldots \\ldots \\frac{1}{10}\\to 9\\\\ \\text{for}m=2\\Rightarrow \\frac{2}{3},\\frac{2}{5},\\frac{2}{7},\\frac{2}{9}\\to 4\\\\ \\text{for}m=3\\Rightarrow \\frac{3}{4},\\frac{3}{5},\\frac{3}{7},\\frac{3}{8},\\frac{3}{10}\\to 5\\\\ \\text{for}m=4\\Rightarrow \\frac{4}{5},\\frac{4}{7},\\frac{4}{9}\\to 3\\\\ \\text{for}m=5\\Rightarrow \\frac{5}{6},\\frac{5}{7},\\frac{5}{8},\\frac{5}{9},\\to 4\\\\ \\text{for}m=6\\Rightarrow \\frac{6}{7}\\to 1\\\\ \\text{for}m=7\\Rightarrow \\frac{7}{8},\\frac{7}{9},\\frac{7}{10},\\to 3\\\\ \\text{for}m=8\\Rightarrow \\frac{8}{9}\\to 1\\\\ \\text{for}m=9\\Rightarrow \\frac{9}{10}\\to 1\\\\ \\text{then}n(B)=31\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A set A has 3 elements and another set B has 6 elements. Then</p> <p>[JEE Main 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 3 \leq n(A \cup B) \leq 6 \)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3 \leq n(A \cup B) \leq 9\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6 \leq n(A \cup B) \leq 9\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0 \leq n(A \cup B) \leq 9\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,10 +240,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\text { We have }\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\min n(A \\cup B)=\\max \\{n(A), n(B)\\}=\\max \\{3,6\\}=6 \\\\\u003cbr/>&amp; \\operatorname{Max} n(A \\cup B)=n(A)+n(B)=9 \\\\\u003cbr/>&amp; \\therefore 6 \\leq n(A \\cup B) \\leq 9\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>$$\\begin{aligned}&\\text { We have }\\\\&\\begin{aligned}& \\min n(A \\cup B)=\\max \\{n(A), n(B)\\}=\\max \\{3,6\\}=6 \\\\& \\operatorname{Max} n(A \\cup B)=n(A)+n(B)=9 \\\\& \\therefore 6 \\leq n(A \\cup B) \\leq 9\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a class of 140 students numbered 1 to 140 , all even numbered students opted Mathematics course, those whose number is divisible by 3 opted Physics course and those whose number is divisible by 5 opted Chemistry course. Then the number of students who did not opt for any of the three courses is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>102</p></span></div><div class="option"><span class="key">b</span><span><p>42</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>38</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let's assume \\(n(A)=\\)  number of students opted Mathematics \\(=70\\)\u003c/p> \u003cp>\\(n(B)=\\)number of students opted Physics \\(=46\\),\u003c/p> \u003cp>\\(n(C)=\\)number of students opted Chemistry\\(=28\\),\u003c/p> \u003cp>\\(n(A\\cap B)=23\\\\ n(B\\cap C)=9\\\\ n(\\mathrm{A}\\cap C)=14\\\\ n(A\\cap B\\cap C)=4\\)\u003c/p> \u003cp>\\(\\text{ Now }n(A\\cup B\\cup C)\\\\ =n(A)+n(B)+n(C)-n(A\\cap B)-n(B\\cap C)-n(A\\cap C)+n(A\\cap B\\cap C)\\\\ =70+46+28-23-9-14+4\\\\ =102\\)\u003c/p> \u003cp>So, the number of students who did not opt for any of the three courses is\u003c/p> \u003cp>\\(=\\text{ Total -}n(A\\cup B\\cup C)\\\\ =140-102\\\\ =38\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \( S=\{1,2,3, \ldots, 100\} \). The number of non-empty subsets \( A \) of \( S \) such that the product of elements in \( A \) is even, is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 2^{50}\left(2^{50}-1\right) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 2^{50}–1 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2^{50}+1 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 2^{100}-1 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Here, \\(S=\\{1,2,3, \\ldots .100\\}\\)\u003c/p> \u003cp>In set \\(S\\) there are \\(50\\) odd numbers and \\(50\\) even numbers \u003c/p> \u003cp>So the number of non- empty subsets \\(A\\) of \\(S\\) such that the product of elements in \\(A\\) is even \\(=\\) Total subsets - subsets with product of element is odd\u003c/p> \u003cp>\\(=2^{100}-2^{50}\\)\u003c/p> \u003cp>\\(=2^{50}\\left(2^{50}-1\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(A=\{x \in R:|x|&lt;2\}\) and \(B=\{x \in R:|x-2| \geq 3\}\) : then:</p> <p>[JEE Main 2020, 9 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(B-A=R-(-2,5)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(A \cap B=(-2,-1)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(A-B=[-1,2)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(A \cup B=R-(2,5)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A = {x ∈ R: |x| &lt; 2},\u003cbr/>⇒ A = {x ∈ R: -2 &lt; x &lt; 2}\u003cbr/>B = {x ∈ R : |x – 2| ≥ 3}\u003cbr/>⇒ B = {x ∈ R: (x – 2) ∈ (-∞, -3]∪[3, ∞)}\u003cbr/>={x ∈ R: x ∈ (-∞, -1] ∪ [5, ∞]\u003cbr/>∴ B – A = R – (–2, 5)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(A = \{ x \in R:|x - 2| &gt; 1\}\), \(B=\left{x\in R:\sqrt{{x}^{2}-3}>1\right}\) and \(\ C = \{ x \in R:|x - 4| \geq 2\}\) and \(Z\) is the set of all integers, then the number of subsets of the set \((A \cap B \cap C)^{c} \cap Z\) is</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(128\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(256\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(64\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(512\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,10 +288,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; A=\\{x \\in R:|x-2|&gt;1\\} \\\\\u003cbr/>&amp; \\Rightarrow A=(-\\infty, 1) \\cup(3, \\infty) \\\\\u003cbr/>&amp; B=\\left\\{x \\in R: \\sqrt{x^2-3}&gt;1\\right\\} \\\\\u003cbr/>&amp; \\Rightarrow B=(-\\infty,-2) \\cup(2, \\infty) \\\\\u003cbr/>&amp; C=\\{x \\in R:|x-4| \\geq 2\\} \\\\\u003cbr/>&amp; \\Rightarrow C=(-\\infty, 2] \\cup[6, \\infty) \\\\\u003cbr/>&amp; \\Rightarrow A \\cap B \\cap C=(-\\infty,-2) \\cup[6, \\infty) \\\\\u003cbr/>&amp; \\Rightarrow(A \\cap B \\cap C)^C=[-2,6) \\\\\u003cbr/>&amp; \\therefore(A \\cap B \\cap C)^C \\cap Z=\\{-2,-1,0,1,2,3,4,5\\}\u003cbr/>\\end{aligned}\\)\u003c/p> \u003cp>Number of subsets of \\( (A \\cap B \\cap C)^{C} \\cap Z\\ = \\ 2^{8} = 256\\ \\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& A=\\{x \\in R:|x-2|&gt;1\\} \\\\& \\Rightarrow A=(-\\infty, 1) \\cup(3, \\infty) \\\\& B=\\left\\{x \\in R: \\sqrt{x^2-3}&gt;1\\right\\} \\\\& \\Rightarrow B=(-\\infty,-2) \\cup(2, \\infty) \\\\& C=\\{x \\in R:|x-4| \\geq 2\\} \\\\& \\Rightarrow C=(-\\infty, 2] \\cup[6, \\infty) \\\\& \\Rightarrow A \\cap B \\cap C=(-\\infty,-2) \\cup[6, \\infty) \\\\& \\Rightarrow(A \\cap B \\cap C)^C=[-2,6) \\\\& \\therefore(A \\cap B \\cap C)^C \\cap Z=\\{-2,-1,0,1,2,3,4,5\\}\\end{aligned}\\)\u003c/p> \u003cp>Number of subsets of \\( (A \\cap B \\cap C)^{C} \\cap Z\\ = \\ 2^{8} = 256\\ \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An organization awarded 48 medals in event \(A\), 25 in event \(B\) and 18 in event \(C\). If these medals went to total 60 men and only five men got medals in all the three events, then, how many received medals in exactly two of three events?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>9</p></span></div><div class="option"><span class="key">c</span><span><p>21</p></span></div><div class="option"><span class="key">d</span><span><p>15</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let \\(x\\) \u003cbr/>= number of people who received medals in exactly two events. \u003cbr/>Let \\(y\\) \u003cbr/>= number of people who received medals in exactly one event. \u003cbr/>\u003cbr/>Number of people receiving medals in all three events \\(=5\\) \u003cbr/>\u003cbr/>Total medals distributed: \u003cbr/>\\(48+25+18=91\\) \u003cbr/>\u003cbr/>Counting medals using participation: \u003cbr/>People in exactly one event contribute \\(1\\) \u003cbr/>medal each. \u003cbr/>People in exactly two events contribute \\(2\\) \u003cbr/>medals each. \u003cbr/>People in all three events contribute \\(3\\) \u003cbr/>medals each. \u003cbr/>\u003cbr/>Therefore, \u003cbr/>\u003cbr/>\\(y+2x+3(5)=91\\) \u003cbr/>\\(y+2x=76...(1)\\) \u003cbr/>\u003cbr/>Total number of men: \u003cbr/>\\(y+x+5=60\\) \u003cbr/>\\(y+x=55...(2)\\) \u003cbr/>\u003cbr/>Subtracting \\((2)\\) \u003cbr/>from \\((1)\\) \u003cbr/>: \\((y+2x)−(y+x)=76−55\\) \u003cbr/>\\(x=21\\) \u003cbr/>\u003cbr/>Answer: \\(21\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \( \bigcup_{i=1}^{50} X_{i}=\bigcup_{i=1}^{n} Y_{i}=T \), where each \( X_{i} \) contains \(10\) elements and each \( Y_{i} \) contains \(5\) elements. If each element of the set \( T \) is an element of exactly \(20\) of sets \( X_{i}'s \) and exactly 6 of sets \( Y_{i}'s \) then \( n \) is equal to</p> <p> </p> <p>[JEE Main 2020, 4 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>50</p></span></div><div class="option"><span class="key">b</span><span><p>15</p></span></div><div class="option"><span class="key">c</span><span><p>30</p></span></div><div class="option"><span class="key">d</span><span><p>45</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Counting incidences between elements of \\(T\\) and the sets \\(X_i\\)\u003c/p> \u003cp>\\(50\\cdot10=20|T|\\)\u003c/p> \u003cp>\\(|T|=25\\)\u003c/p> \u003cp>Now counting incidences between elements of \\(T\\) and the sets \\(Y_i\\)\u003c/p> \u003cp>\\(n\\cdot5=6|T|\\)\u003c/p> \u003cp>\\(5n=6\\cdot25=150\\)\u003c/p> \u003cp>\\(n=30\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\overset{50}{\underset{i=1}{\cup }}{X}_{i}=\overset{50}{\underset{i=1}{\cup }}{Y}_{i}=T\) where each <em>X<sub>i</sub></em> contains 10 elements and each <em>Y<sub>i</sub></em> contains 5 elements. If each element of the set <em>T</em> is an element of exactly 20 of sets <em>X<sub>i</sub>'s </em>and exactly 6 of sets <em>Y<sub>i</sub>'s</em>, then <em>n</em> is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>50</p></span></div><div class="option"><span class="key">b</span><span><p>15</p></span></div><div class="option"><span class="key">c</span><span><p>30</p></span></div><div class="option"><span class="key">d</span><span><p>45</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let the number of elements in \\(T\\) \u003cbr/>be \\(m\\) \u003cbr/>\u003cbr/>Counting element occurrences in \\({X}_{i}\\) \u003cbr/>: There are \\(50\\) \u003cbr/>sets \\({X}_{i}\\) \u003cbr/>each having \\(10\\) \u003cbr/>elements. \u003cbr/>Total occurrences \\(=50\\times 10=500\\) \u003cbr/>\u003cbr/>Since every element belongs to exactly \\(20\\) \u003cbr/>sets \\({X}_{i}\\) \u003cbr/>: \\(20m=500\\) \u003cbr/>\\(m=25\\) \u003cbr/>\u003cbr/>Counting element occurrences in \\({Y}_{i}\\) \u003cbr/>: There are \\(n\\) \u003cbr/>sets \\({Y}_{i}\\) \u003cbr/>each having \\(5\\) \u003cbr/>elements. \u003cbr/>Total occurrences \\(=5n\\) \u003cbr/>\u003cbr/>Since every element belongs to exactly \\(6\\) \u003cbr/>sets \\({Y}_{i}\\) \u003cbr/>: \\(6m=5n\\) \u003cbr/>\u003cbr/>Putting \\(m=25\\) \u003cbr/>: \\(6\\times 25=5n\\) \u003cbr/>\\(150=5n\\) \u003cbr/>\\(n=30\\) \u003cbr/>\u003cbr/>Answer: \\(30\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A survey shows that \(63 \%\) of the people in a city read newspaper \(A\) whereas \(76 \%\) read newspaper \(B\). If \(x\%\) of the people read both the newspapers, then a possible value of \(x\) can be:</p> <p> </p> <p>[JEE Main 2020, 4 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(37\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(55\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(29\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(65\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\(n(A)=63 \\%\\) be the percentage of people who read newspaper \\(A\\) and\u003c/p> \u003cp>\\(n(B)=76 \\%\\) be those who read newspaper \\(B\\)\u003c/p> \u003cp>Now \\(n(A \\cup B)=n(A)+n(B)-n(A \\cap B)\\)\u003c/p> \u003cp>\\(n(A \\cup B)=63+76-x=139-x\\)\u003c/p> \u003cp>Since the union of both sets, \\(n(A \\cup B)\\), cannot exceed \\(100 \\%\\)\u003c/p> \u003cp>Therefore \\(n(A \\cup B) \\leq 100\\)\u003c/p> \u003cp>\\(139-x \\leq 100 \\Rightarrow x \\geq 39\\)\u003c/p> \u003cp>Also \\(x \\leq n(A)\\) and \\(x \\leq n(B)\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\leq \\min (63,76)=63\\)\u003c/p> \u003cp>Hence \\(39 \\leq x \\leq 63\\)\u003c/p> \u003cp>The possible value of \\(x\\) can be \\(55\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let <em>Z</em>, be the set of all integers,</p> <p>\(A=\left{\left(x,y\right)\in Z\times Z:{\left(x-2\right)}^{2}+{y}^{2}\leq 4\right}\\ B=\left{\left(x,y\right)\in Z\times Z:{x}^{2}+{y}^{2}\leq 4\right}\\ C=\left{\left(x,y\right)\in Z\times Z:{\left(x-2\right)}^{2}+{(y-2)}^{2}\leq 4\right}\)</p> <p>If the total number of relations from \(A\cap B\) to \(A\cap C\) is 2<sup><em>p</em></sup>, then the value of <em>p</em> is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>49</p></span></div><div class="option"><span class="key">b</span><span><p>9</p></span></div><div class="option"><span class="key">c</span><span><p>16</p></span></div><div class="option"><span class="key">d</span><span><p>25</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Number of elements in \\(A \\cap B\\) which is\u003cbr/>\\[\u003cbr/>(0,0)(1,0)(1,1)(1,-1)(2,0)\u003cbr/>\\]\u003c/p> \u003cp>Similarly, number of elements in \\(A \\cap C=5\\) which is\u003cbr/>\\[\u003cbr/>(2,0)(2,2)(1,1)(2,1)(3,1)\u003cbr/>\\]\u003c/p> \u003cp>Hence number of relation from \\((A \\cap B)\\) to \\((A \\cap C)\\)\u003cbr/>\\[\u003cbr/>=2^{5 \\times 5}=2^{25}\u003cbr/>\\]\u003cbr/>also, it is equal to \\(2^p\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow p=25\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A survey shows that \(73 \%\) of the persons working in an office like coffee, whereas \(65 \%\) like tea. If \(x\) denotes the percentage of them, who like both coffee and tea, then \(x\) cannot be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(63\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(36\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(38\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(54\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\(n(A)=73 \\%\\) be the percentage of people who like coffee and\u003c/p> \u003cp>\\(n(B)=65 \\%\\) be those who like tea\u003c/p> \u003cp>Now \\(n(A \\cup B)=n(A)+n(B)-n(A \\cap B)\\)\u003c/p> \u003cp>\\(n(A \\cup B)=73+65-x=138-x\\)\u003c/p> \u003cp>Since the union of both sets, \\(n(A \\cup B)\\), cannot exceed \\(100 \\%\\)\u003c/p> \u003cp>Therefore \\(n(A \\cup B) \\leq 100\\)\u003c/p> \u003cp>\\(138-x \\leq 100 \\Rightarrow x \\geq 38\\)\u003c/p> \u003cp>Also \\(x \\leq n(A)\\) and \\(x \\leq n(B)\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\leq \\min (73,65)=65\\)\u003c/p> \u003cp>Hence \\(38 \\leq x \\leq 65\\)\u003c/p> \u003cp>The value of \\(x\\) can not be \\(36\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the number of elements in sets <em>A</em> and <em>B</em> be five and two respectively. Then the number of subsets of <em>A</em> × <em>B</em> each having at least 3 and at most 6 elements is:</p> <p><strong>[JEE Main 2023, 08 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>752</p></span></div><div class="option"><span class="key">b</span><span><p>772</p></span></div><div class="option"><span class="key">c</span><span><p>782</p></span></div><div class="option"><span class="key">d</span><span><p>792</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

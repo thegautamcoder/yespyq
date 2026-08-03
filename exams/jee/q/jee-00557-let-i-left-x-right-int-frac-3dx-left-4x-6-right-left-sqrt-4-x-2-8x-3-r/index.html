@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(I\\left(x\\right)=\\int \\frac{3dx}{\\left(4x+6\\right)\\left(\\sqrt{4{x}^{2}+8x+3}\\right)}\\) and \\(I\\left(0\\right)=\\frac{\\sqrt{3}}{4}+20\\). If \\(I\\left(\\frac{1}{2}\\right)=\\frac{a\\sqrt{2}}{b}+c\\), where \\(a,b,c\\in \u2115,\\text{gcd}\\left(a,b\\right)=1\\), then \\(a+b+c\\) is equal to [JEE Main 2026, 23 Jan (Shift 2)]","text":"Let \\(I\\left(x\\right)=\\int \\frac{3dx}{\\left(4x+6\\right)\\left(\\sqrt{4{x}^{2}+8x+3}\\right)}\\) and \\(I\\left(0\\right)=\\frac{\\sqrt{3}}{4}+20\\). If \\(I\\left(\\frac{1}{2}\\right)=\\frac{a\\sqrt{2}}{b}+c\\), where \\(a,b,c\\in \u2115,\\text{gcd}\\left(a,b\\right)=1\\), then \\(a+b+c\\) is equal to [JEE Main 2026, 23 Jan (Shift 2)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: d) 31. Let \\(4x+6=\\frac{1}{t}\\Rightarrow x=\\frac{\\frac{1}{t}\u22126}{4}\\) \\(4dx=\u2212\\frac{dt}{{t}^{2}}\\) \\(\\int \\frac{3dx}{(4x+6)\\sqrt{4{(x+1)}^{2}\u22121}}\\) \\(=\\int \\frac{3(\u2212dt)}{4{t}^{2}\\times \\frac{1}{t}\\sqrt{4{\\left(\\frac{\\frac{1}{t}\u22122}{4}\\right)}^{2}\u22121}}\\) \\(=\u2212\\frac{3}{4}\\int \\frac{dt}{t\\sqrt{\\frac{{(1\u22122t)}^{2}}{4{t}^{2}}\u22121}}\\) \\(=\u2212\\frac{3}{4}\\int \\frac{dt(2t)}{t\\sqrt{1\u22124t}}\\) \\(=\u2212\\frac{3}{2}\\int \\frac{dt}{\\sqrt{1\u22124t}}=\u2212\\frac{3}{2}\\left(\\frac{\\sqrt{1\u22124t}}{\\frac{1}{2}\\times \u22124}\\right)+c\\) \\(=\\frac{3}{4}\\sqrt{1\u22124t}+c\\) \\(\\left(\u2235t=\\frac{1}{4x+6}\\right)\\) \\(=\\frac{3}{4}\\sqrt{1\u22124\\left(\\frac{1}{4x+6}\\right)}+c\\) \\(=\\frac{3}{4}\\sqrt{\\frac{4x+6\u22124}{4x+6}}+c\\) \\(I\\left(x\\right)=\\frac{3}{4}\\sqrt{\\frac{4x+2}{4x+6}}+c\\) Now, \\(I\\left(0\\right)=\\frac{3}{4}\\sqrt{\\frac{2}{6}}+c\\) \\(I\\left(0\\right)=\\frac{\\sqrt{3}}{4}+c=\\frac{\\sqrt{3}}{4}+20\\left(given\\right)\\\\ \\Rightarrow c=20\\) Hence, \\(I\\left(x\\right)=\\frac{3}{4}\\sqrt{\\frac{4x+2}{4x+6}}+20\\) \\(I\\left(\\frac{1}{2}\\right)=\\frac{3}{4}\\sqrt{\\frac{4}{8}}+20=\\frac{3}{4\\sqrt{2}}+20=\\frac{3\\sqrt{2}}{8}+20\\) Thus, \\(a+b+c=3+8+20=31\\)","url":"https://yespyq.com/exams/jee/q/jee-00557-let-i-left-x-right-int-frac-3dx-left-4x-6-right-left-sqrt-4-x-2-8x-3-r/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let \(I\left(x\right)=\int \frac{3dx}{\left(4x+6\right)\left(\sqrt{4{x}^{2}+8x+3}\right)}\) and \(I\left(0\right)=\frac{…</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(I\left(x\right)=\int \frac{3dx}{\left(4x+6\right)\left(\sqrt{4{x}^{2}+8x+3}\right)}\) and \(I\left(0\right)=\frac{\sqrt{3}}{4}+20\). If \(I\left(\frac{1}{2}\right)=\frac{a\sqrt{2}}{b}+c\), where \(a,b,c\in ℕ,\text{gcd}\left(a,b\right)=1\), then \(a+b+c\) is equal to</p> <p> </p> <p>[JEE Main 2026, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>30</p></span></div><div class="option"><span class="key">b</span><span><p>28</p></span></div><div class="option"><span class="key">c</span><span><p>29</p></span></div><div class="option correct"><span class="key">d</span><span><p>31</p></span></div></div>
       <div class="explain" data-exp>

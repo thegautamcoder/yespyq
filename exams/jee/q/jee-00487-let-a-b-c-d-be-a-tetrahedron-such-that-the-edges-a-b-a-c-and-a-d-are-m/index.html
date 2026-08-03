@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(A B C D\\) be a tetrahedron such that the edges \\(A B, A C\\) and \\(A D\\) are mutually perpendicular. Let the areas of the triangles \\(A B C, A C D\\) and \\(A D B\\) be 5,6 and 7 square units respectively. Then the area (in square units) of the \\(\\triangle \\mathrm{BCD}\\) is equal to : [JEE Main 2025, 2 Apr (Shift 1)]","text":"Let \\(A B C D\\) be a tetrahedron such that the edges \\(A B, A C\\) and \\(A D\\) are mutually perpendicular. Let the areas of the triangles \\(A B C, A C D\\) and \\(A D B\\) be 5,6 and 7 square units respectively. Then the area (in square units) of the \\(\\triangle \\mathrm{BCD}\\) is equal to : [JEE Main 2025, 2 Apr (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: c) \\(\\sqrt{110}\\). Since edges AB, AC, AD are mutually perpendicular, we can place point \\(A\\) at the origin \\((0,0,0)\\), and assign coordinates along the 3 axes: Let \\(AB=x\\), \\(AC=y\\), \\(AD=z\\) Coordinates: \\(A(0,0,0)\\), \\(B(x,0,0)\\), \\(C(0,y,0)\\), \\(D(0,0,z)\\) \\(\\text{Area of }\\Delta ABC=\\frac{1}{2}xy=5\\text{ \u21d2 xy=10}\\) \\(\\text{Area of }\\Delta ACD=\\frac{1}{2}yz=6\\text{ \u21d2 yz=12}\\) \\(\\text{Area of }\\Delta ADB=\\frac{1}{2}zx=7\\text{ \u21d2 zx=14}\\) For a tetrahedron with 3 mutually perpendicular edges from a vertex, we know that the square of the area of the opposite face (\\(\\Delta BCD\\)) is equal to the sum of squares of the areas of the three adjacent right faces. \\({(\\text{Area of }\\Delta BCD)}^{2}={(\\text{Area of }\\Delta ABC)}^{2}+{(\\text{Area of }\\Delta ACD)}^{2}+{(\\text{Area of }\\Delta ADB)}^{2}\\) \\({(\\text{Area})}^{2}={5}^{2}+{6}^{2}+{7}^{2}=25+36+49=110\\)","url":"https://yespyq.com/exams/jee/q/jee-00487-let-a-b-c-d-be-a-tetrahedron-such-that-the-edges-a-b-a-c-and-a-d-are-m/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let \(A B C D\) be a tetrahedron such that the edges \(A B, A C\) and \(A D\) are mutually perpendicular. Let the areas …</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A B C D\) be a tetrahedron such that the edges \(A B, A C\) and \(A D\) are mutually perpendicular. Let the areas of the triangles \(A B C, A C D\) and \(A D B\) be 5,6 and 7 square units respectively. Then the area (in square units) of the \(\triangle \mathrm{BCD}\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{340}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(12\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\sqrt{110}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(7\sqrt{3}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -84,7 +88,7 @@
         <div class="exp-body"><span class="lbl">Explanation</span><p>Since edges AB, AC, AD are mutually perpendicular,</p> <p>we can place point \(A\) at the origin \((0,0,0)\), and assign coordinates along the 3 axes:</p> <p>Let \(AB=x\), \(AC=y\), \(AD=z\)</p> <p>Coordinates: \(A(0,0,0)\), \(B(x,0,0)\), \(C(0,y,0)\), \(D(0,0,z)\)</p> <p>\(\text{Area of }\Delta ABC=\frac{1}{2}xy=5\text{ ⇒ xy=10}\)</p> <p>\(\text{Area of }\Delta ACD=\frac{1}{2}yz=6\text{ ⇒ yz=12}\)</p> <p>\(\text{Area of }\Delta ADB=\frac{1}{2}zx=7\text{ ⇒ zx=14}\)</p> <p>For a tetrahedron with 3 mutually perpendicular edges from a vertex,</p> <p>we know that the square of the area of the opposite face<strong> (\(\Delta BCD\))</strong> is equal to the sum of squares of the areas of the three adjacent right faces.</p> <p>\({(\text{Area of }\Delta BCD)}^{2}={(\text{Area of }\Delta ABC)}^{2}+{(\text{Area of }\Delta ACD)}^{2}+{(\text{Area of }\Delta ADB)}^{2}\)</p> <p>\({(\text{Area})}^{2}={5}^{2}+{6}^{2}+{7}^{2}=25+36+49=110\)</p></div>
       </div>
     </div>
-      <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-00485-vec-a-2-overset-i-overset-j-3-overset-k-overset-b-3-overset-i-5-overse/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-00496-let-vec-a-text-vec-b-be-two-vectors-and-let-p-q-and-r-be-the-points-wi/">Next question →</a></div>
+      <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-00485-vec-a-2-hat-i-hat-j-3-hat-k-overset-b-3-hat-i-5-hat-j-hat-k-if-vec-a-t/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-00496-let-vec-a-text-vec-b-be-two-vectors-and-let-p-q-and-r-be-the-points-wi/">Next question →</a></div>
       <div class="cta-box">
         <h3>Practice more JEE Maths PYQs</h3>
         <p>See every question on Vector Algebra, or browse the full JEE question bank.</p>

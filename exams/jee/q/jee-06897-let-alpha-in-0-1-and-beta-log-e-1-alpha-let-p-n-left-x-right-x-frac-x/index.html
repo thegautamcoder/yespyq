@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(\\alpha \\in (0,1)\\) and \\(\\beta ={\\log }_{e}(1-\\alpha )\\).Let \\({P}_{n}\\left(x\\right)=x+\\frac{{x}^{2}}{2}+\\frac{{x}^{3}}{3}+\\ldots ..+\\frac{{x}^{n}}{n},x\\in \\left(0,1\\right)\\).Then the integral \\({\\int }_{0}^{\\alpha }\\frac{{t}^{50}}{1-t}dt\\) is equal to [JEE Main 2023, 31 Jan (Shift 1)]","text":"Let \\(\\alpha \\in (0,1)\\) and \\(\\beta ={\\log }_{e}(1-\\alpha )\\).Let \\({P}_{n}\\left(x\\right)=x+\\frac{{x}^{2}}{2}+\\frac{{x}^{3}}{3}+\\ldots ..+\\frac{{x}^{n}}{n},x\\in \\left(0,1\\right)\\).Then the integral \\({\\int }_{0}^{\\alpha }\\frac{{t}^{50}}{1-t}dt\\) is equal to [JEE Main 2023, 31 Jan (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Options are free to see. Unlock the correct answer and full explanation with PYQ Pass.","url":"https://yespyq.com/exams/jee/q/jee-06897-let-alpha-in-0-1-and-beta-log-e-1-alpha-let-p-n-left-x-right-x-frac-x/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let \(\alpha \in (0,1)\) and \(\beta ={\log }_{e}(1-\alpha )\).Let \({P}_{n}\left(x\right)=x+\frac{{x}^{2}}{2}+\frac{{x}…</h1>
     <div class="qblock" id="q1" data-gated="1">
-      <div class="qnum">Q1</div>
+      <div class="qhead"><div class="qnum">Q1</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\alpha \in (0,1)\) and \(\beta ={\log }_{e}(1-\alpha )\).Let \({P}_{n}\left(x\right)=x+\frac{{x}^{2}}{2}+\frac{{x}^{3}}{3}+\ldots ..+\frac{{x}^{n}}{n},x\in \left(0,1\right)\).Then the integral \({\int }_{0}^{\alpha }\frac{{t}^{50}}{1-t}dt\) is equal to</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\beta -{P}_{50}(\alpha )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-\left(\beta +{P}_{50}(\alpha )\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({P}_{50}(\alpha )-\beta s\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\beta +{P}_{50}(\alpha )\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -85,7 +89,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\int_0^\\alpha \\frac{t^{50}-1+1}{1-t} d t=-\\int_0^\\alpha\\left(1+t+\\ldots .+t^{49}\\right) d t+\\int_0^\\alpha \\frac{1}{1-t} d t \\\\ &amp; =-\\left(\\frac{\\alpha^{50}}{50}+\\frac{\\alpha^{49}}{49}+\\ldots .+\\frac{\\alpha^1}{1}\\right)+\\left(\\frac{\\ln (1-t)}{-1}\\right)_0^\\alpha \\\\ &amp; =-P_{50}(\\alpha)-\\ln (1-\\alpha) \\\\ &amp; =-P_{50}(\\alpha)-\\beta=-\\left(\\beta+P_{50}(\\alpha)\\right)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned} & \\int_0^\\alpha \\frac{t^{50}-1+1}{1-t} d t=-\\int_0^\\alpha\\left(1+t+\\ldots .+t^{49}\\right) d t+\\int_0^\\alpha \\frac{1}{1-t} d t \\\\ & =-\\left(\\frac{\\alpha^{50}}{50}+\\frac{\\alpha^{49}}{49}+\\ldots .+\\frac{\\alpha^1}{1}\\right)+\\left(\\frac{\\ln (1-t)}{-1}\\right)_0^\\alpha \\\\ & =-P_{50}(\\alpha)-\\ln (1-\\alpha) \\\\ & =-P_{50}(\\alpha)-\\beta=-\\left(\\beta+P_{50}(\\alpha)\\right)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/jee/q/jee-06842-let-a-differentiable-function-f-satisfy-f-x-int-3-x-frac-f-t-t-d-t-sqr/">← Previous question</a><a class="btn btn-ghost" href="/exams/jee/q/jee-06909-the-value-of-frac-e-frac-pi-4-int-0-frac-pi-4-e-x-tan-50-x-d-x-int-0-f/">Next question →</a></div>
       <div class="cta-box">

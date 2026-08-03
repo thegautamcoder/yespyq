@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Thermal Properties of Matter","item":"https://yespyq.com/exams/neet/physics/thermal-properties-of-matter/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Thermal Properties of Matter</h1>
       <p>12 NEET Physics previous year questions on <b>Thermal Properties of Matter</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement I: The hot water flows faster than cold water Statement II: Soap water has higher surface tension as compared to fresh water. In the light of above statements, choose the correct answer from the options given below [JEE Main 2025, 23 Jan (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Both Statement I and Statement II are false</span></div><div class="option"><span class="key">b</span><span>Statement I is false but Statement II is true</span></div><div class="option"><span class="key">c</span><span>Both Statement I and Statement II are true</span></div><div class="option correct"><span class="key">d</span><span>Statement I is true but Statement II is false</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : One is labelled as Assertion A and the other is labelled as Reason (R).<br/>Assertion A : Houses made of concrete roofs overlaid with foam keep the room hotter during summer.<br/>Reason R : The layer of foam insulation prohibits heat transfer, as it contains air pockets.<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is true but (R) is false.</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{A}\) is false but (R) is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A).</p></span></div><div class="option"><span class="key">d</span><span><p> Both (A) and (R) are true but \(R\) is NOT the correct explanation of (A).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Foam is an insulator. It prevents heat entry in summer, keeping the room cooler, not hotter. Assertion is false.\u003c/li> \u003cli>Foam contains trapped air pockets, which makes it a good thermal insulator, prohibiting heat transfer. Reason is true.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>According to the law of equipartition of energy, the number of vibrational modes of a polyatomic gas at constant \(\gamma =\frac{{C}_{p}}{{C}_{v}}\) is (where \({C}_{p}\) and \({C}_{v}\) are th specific heat capacities of the gas at constant pressure and constant volume, respectively):</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{4+3\gamma }{\gamma -1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3+4\gamma }{\gamma -1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{4-3\gamma }{\gamma -1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3-4\gamma }{\gamma -1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>A polyatomic gas has 3 translational, 3 rotational and f vibration modes\u003c/p> \u003cp>\\(U=\\frac{3}{2}{k}_{B}T+\\frac{3}{2}{k}_{B}T+f{k}_{B}T\\)\u003c/p> \u003cp>\\(U=(3+f){k}_{B}T\\)\u003c/p> \u003cp>\\({C}_{V}=(3+f)R\\)\u003c/p> \u003cp>\\({C}_{P}=(4+f)R\\)\u003c/p> \u003cp>\\(\\frac{{C}_{P}}{{C}_{V}}=\\frac{4+f}{3+f}=\\gamma\\)\u003c/p> \u003cp>\\(4+f=3\\gamma +f\\gamma\\)\u003c/p> \u003cp>\\(4−3\\gamma =f(\\gamma −1)\\)\u003c/p> \u003cp>\\(\\Rightarrow f=\\frac{4−3\\gamma }{\\gamma −1}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A metallic bar of Young's modulus \(0.5\times {10}^{11}N{m}^{-2}\), and the coefficient of linear thermal expansion \({10}^{-5}{{}^{∘}\mathrm{C}}^{-1}\), length 1 m and area of cross-section \({10}^{-3}{\mathrm{m}}^{2}\) is heated from \(0^\circ \mathrm{C}\) to \(100^\circ \mathrm{C}\) without expansion or bending. The compressive force developed in it is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5\times {10}^{3}\mathrm{N}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(50\times {10}^{3}\mathrm{N}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(100\times {10}^{3}\mathrm{N}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2\times {10}^{3}\mathrm{N}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Y = 0.5 × 10¹¹ Nm⁻², A = 10⁻³ m², α = 10⁻⁵ °C⁻¹, ΔT = 100 °C\u003c/p> \u003cp>F = (0.5 × 10¹¹) × (10⁻³) × (10⁻⁵) × 100\u003c/p> \u003cp>F = 0.5 × 10\u003csup>11-3-5+2\u003c/sup> = 0.5 × 10⁵ N = 50 × 10³ N\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water is used as a coolant in a nuclear reactor because of its:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>high thermal expansion coefficient</p></span></div><div class="option"><span class="key">b</span><span><p>high specific heat capacity</p></span></div><div class="option"><span class="key">c</span><span><p>low density</p></span></div><div class="option"><span class="key">d</span><span><p>low boiling point</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Water is used as a coolant in a nuclear reactor primarily because of its high specific heat capacity\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water is used as a coolant in a nuclear reactor because of its:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>high thermal expansion coefficient</p></span></div><div class="option"><span class="key">b</span><span><p>high specific heat capacity</p></span></div><div class="option"><span class="key">c</span><span><p>low density</p></span></div><div class="option"><span class="key">d</span><span><p>low boiling point</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Water is used as a coolant in a nuclear reactor primarily because of its high specific heat capacity\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The quantities of heat required to raise the temperature of two solid copper sphere of radii \( r_{1} \) and \( r_{2}\left(r_{1}=1.5 r_{2}\right) \) through \( 1 \mathrm{~K} \) are in the ratio :</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{9}{4} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{3}{2} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{5}{3} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{27}{8} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Heat supplied \\(\\text{Δ}Q=MS\\text{Δ}T\\)\u003cbr/>For same material 's' remains the same\u003c/p> \u003cp>\\(\\text{Δ}Q\\propto M\\text{ and }M=\\frac{4}{3}\\pi {r}^{3}\\rho\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{\\text{Δ}{Q}_{1}}{\\text{Δ}{Q}_{2}}\\)\u003c/p> \u003cp>\\(={\\left(\\frac{{r}_{1}}{{r}_{2}}\\right)}^{3}\\)\u003c/p> \u003cp>\\(={\\left(\\frac{1.5}{1}\\right)}^{3}\\)\u003c/p> \u003cp>\\(=\\frac{27}{8}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Three stars \( A, B, C \) have surface temperatures \( T_{A}, T_{B}, T_{C} \) respectively. Star \(A\) appears bluish, star \(B\) appears reddish and star \(C\) yellowish. Hence,</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{T}_{\mathrm{B}}&gt;\mathrm{T}_{\mathrm{C}}&gt;\mathrm{T}_{\mathrm{A}} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( T_{C}&gt;T_{B}&gt;T_{A} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{T}_{\mathrm{A}}&gt;\mathrm{T}_{\mathrm{C}}&gt;\mathrm{T}_{\mathrm{B}} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( T_{A}&gt;T_{B}&gt;T_{C} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The appearance of a star depends of the wavelength \\(({\\lambda }_{m})\\) at which it radiates maximum energy. This depends inversely on the surface temperature (T) of the star. Now \\({\\lambda }_{\\text{blue}}\u003c{\\lambda }_{\\text{yellow}}\u003c{\\lambda }_{\\text{red}}\\). Thus, star A (bluish) radiates the shortest \\(\\lambda\\) and must be at the highest temperature, while star B (raddish) must be at the lowest temperature.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The quantities of heat required to raise the temperature of two solid copper spheres of radii \( r_{1} \) and \( r_{2}\left(r_{1}=1.5 r_{2}\right) \) through \( 1 \mathrm{~K} \) are in the ratio</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{27}{8} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{9}{4} \)</p></span></div><div class="option"><span class="key">c</span><span><p> \( \frac{3}{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{5}{3} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Identify the given data\u003c/strong>: Two copper spheres of radii \\({r}_{1}\\) and \\({r}_{2}\\), where \\({r}_{1}=1.5\\text{ }{r}_{2}\\). Both are heated through 1 K.\u003c/p> \u003cp>\u003cstrong>Relevant formula\u003c/strong>:\u003cbr/>Heat required \\(Q\\propto \\rho \\text{ }(\\text{Volume})\\text{ }(\\Delta T)\\).\u003cbr/>For a sphere, \\(\\text{Volume}\\propto {r}^{3}\\).\u003c/p> \u003cp>\u003cstrong>Compute the volume ratio\u003c/strong>:\u003c/p> \u003cp>\\(\\frac{{V}_{1}}{{V}_{2}}\\text{  }=\\text{  }(\\frac{{r}_{1}}{{r}_{2}}{)}^{3}\\text{  }=\\text{  }(1.5{)}^{3}\\text{  }=\\text{  }\\frac{27}{8}\\mathrm{.}\\)\u003c/p> \u003cp>\u003cstrong>Conclusion\u003c/strong>: Since both have the same material and the same temperature rise,\u003c/p> \u003cp>\\(\\frac{{Q}_{1}}{{Q}_{2}}\\text{  }=\\text{  }\\frac{{V}_{1}}{{V}_{2}}\\text{  }=\\text{  }\\frac{27}{8}\\mathrm{.}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of coefficient of volume expansion of glycerin is \( 5 \times 10^{-4} \mathrm{~K}^{-1} \). The fractional change in the density of glycerin for a rise of \( 40^{\circ} \mathrm{C} \) in its temperature, is:-</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 0.025 \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 0.010 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 0.015 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 0.020 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{∆P}{P}=\\gamma ∆T\\)\u003c/p> \u003cp>= 5 ×10\u003csup>–4\u003c/sup> ×40\u003c/p> \u003cp>= 0.02\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two thin metallic spherical shells of radii \( r_{1} \) and \( r_{2}\left(r_{1}&lt;r_{2}\right) \) are placed with their centres coinciding. A material of thermal conductivity \( K \) is filled in the space between the shells. The inner shell is maintained at temperature \( \theta_{1} \) and the outer shell at temperature \( \theta_{2}\left(\theta_{1}&lt;\theta_{2}\right) \). The rate at which heat flows radially through the material is</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{K\left(\theta_{2}-\theta_{1}\right)}{r_{2}-r_{1}} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{K\left(\theta_{2}-\theta_{1}\right)\left(r_{2}-r_{1}\right)}{4 \pi r_{1} r_{2}} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{4 \pi K r_{1} r_{2}\left(\theta_{2}-\theta_{1}\right)}{r_{2}-r_{1}} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{\pi r_{1} r_{2}\left(\theta_{2}-\theta_{1}\right)}{r_{2}-r_{1}} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Considering two spherical shells of radii x and x+dx concentric with given system.Let the temperature at these shells be \\(\\theta \\mathrm{and}\\mathrm{dθ}+\\theta\\) . The amount of heat flowing radially inward through the material between x and x+dx is:\u003c/p> \u003cp>\\(\\frac{∆\\mathrm{Q}}{∆\\mathrm{t}}=\\frac{\\mathrm{K}4{\\mathrm{πx}}^{2}\\mathrm{dθ}}{\\mathrm{dx}},\\mathrm{thus}\\\\ \\mathrm{K}4\\pi {\\int }_{{\\theta }_{1}}^{{\\theta }_{2}}\\mathrm{dθ}=\\frac{∆\\mathrm{Q}}{∆\\mathrm{t}}{\\int }_{{\\mathrm{r}}_{1}}^{{\\mathrm{r}}_{2}}\\frac{\\mathrm{dx}}{{\\mathrm{x}}^{2}}\\\\ \\mathrm{i}.\\mathrm{e}\\mathrm{K}4\\pi \\left({\\theta }_{2}-{\\theta }_{1}\\right)=\\frac{∆\\mathrm{Q}}{∆\\mathrm{t}}\\left(\\frac{1}{{\\mathrm{r}}_{1}}-\\frac{1}{{\\mathrm{r}}_{2}}\\right)\\\\ \\frac{∆\\mathrm{Q}}{∆\\mathrm{t}}=\\frac{\\mathrm{K}4\\pi \\left({\\theta }_{2}-{\\theta }_{1}\\right){\\mathrm{r}}_{1}{\\mathrm{r}}_{2}}{{\\mathrm{r}}_{2}-{\\mathrm{r}}_{1}}\\\\ \\\\\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The temperature of equal masses of three different liquids \(x, y\) and \(z\) are \(10^{\circ} C , 20^{\circ} C\) and \(30^{\circ} C\) respectively. The temperature of mixture when \(x\) is mixed with \(y\) is \(16^{\circ} C\) and that when \(y\) is mixed with \(z\) is \(26^{\circ} C\). The temperature of mixture when \(x\) and \(z\) are mixed will be:</p> <p>[JEE Main 2021, 26 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(28.32^{\circ} C\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(23.84^{\circ} C\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(25.62^{\circ} C\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(20.28^{\circ} C\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to the question,\u003cbr/>Heat gained by liquid \\(x=\\) Heat lost by liquid \\(y\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; m s_{ x }(16-10)=m s_y(20-16) \\\\\u003cbr/>&amp; \\Rightarrow \\frac{s_x}{s_y}=\\frac{2}{3} \\\\\u003cbr/>&amp; m s_y(26-20)=m s_z(30-26) \\\\\u003cbr/>&amp; \\Rightarrow \\frac{s_y}{s_z}=\\frac{2}{3}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>From equation (i) and (ii)\u003cbr/>\\[\u003cbr/>\\frac{s_x}{s_z}=\\frac{s_x}{s_y} \\times \\frac{x_y}{s_z}=\\frac{2}{3} \\times \\frac{2}{3}=\\frac{4}{9}\u003cbr/>\\]\u003c/p> \u003cp>When liquid \\(x\\) and \\(z\\) are intermixed\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; m s_x(T-10)=m s_z(30-T) \\\\\u003cbr/>&amp; \\Rightarrow 4(T-10)=9(30-T) \\quad \\text { [from }(i i)] \\\\\u003cbr/>&amp; \\Rightarrow T =23.84^{\\circ} C\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>According to the question,\u003cbr/>Heat gained by liquid \\(x=\\) Heat lost by liquid \\(y\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& m s_{ x }(16-10)=m s_y(20-16) \\\\& \\Rightarrow \\frac{s_x}{s_y}=\\frac{2}{3} \\\\& m s_y(26-20)=m s_z(30-26) \\\\& \\Rightarrow \\frac{s_y}{s_z}=\\frac{2}{3}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>From equation (i) and (ii)\u003cbr/>\\[\u003cbr/>\\frac{s_x}{s_z}=\\frac{s_x}{s_y} \\times \\frac{x_y}{s_z}=\\frac{2}{3} \\times \\frac{2}{3}=\\frac{4}{9}\u003cbr/>\\]\u003c/p> \u003cp>When liquid \\(x\\) and \\(z\\) are intermixed\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& m s_x(T-10)=m s_z(30-T) \\\\& \\Rightarrow 4(T-10)=9(30-T) \\quad \\text { [from }(i i)] \\\\& \\Rightarrow T =23.84^{\\circ} C\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more NEET Physics PYQs</h3>

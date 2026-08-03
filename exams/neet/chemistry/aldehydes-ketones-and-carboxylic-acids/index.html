@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Aldehydes, Ketones and Carboxylic Acids","item":"https://yespyq.com/exams/neet/chemistry/aldehydes-ketones-and-carboxylic-acids/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Aldehydes, Ketones and Carboxylic Acids</h1>
       <p>7 NEET Chemistry previous year questions on <b>Aldehydes, Ketones and Carboxylic Acids</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The structure of protein that is unaffected by heating is:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Secondary structure</span></div><div class="option"><span class="key">b</span><span>tertiary structure</span></div><div class="option correct"><span class="key">c</span><span>Primary structure</span></div><div class="option"><span class="key">d</span><span>Quaternary structure</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Fehling's solution ' A ' is</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>aqueous sodium citrate</p></span></div><div class="option"><span class="key">b</span><span><p>aqueous copper sulphate</p></span></div><div class="option"><span class="key">c</span><span><p>alkaline copper sulphate</p></span></div><div class="option"><span class="key">d</span><span><p>alkaline solution of sodium potassium tartrate (Rochelle's salt)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Fehling’s solution is prepared by mixing two separate solutions in equal amounts:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Fehling’s solution A\u003c/strong> = Aqueous copper sulphate solution\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Fehling’s solution B\u003c/strong> = Alkaline solution of sodium potassium tartrate (Rochelle’s salt).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reaction between benzaldehyde and acetophenone in presence of dilute \( \mathrm{NaOH} \) is known as: </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Aldol condensation</p></span></div><div class="option"><span class="key">b</span><span><p>Cannizzaro's reaction</p></span></div><div class="option"><span class="key">c</span><span><p>Cross Cannizaro's reaction</p></span></div><div class="option"><span class="key">d</span><span><p>Cross aldol reaction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Benzaldehyde (no α‑hydrogen) and acetophenone (with α‑hydrogens) react under dilute base to form a product via \u003cstrong>cross aldol\u003c/strong> condensation. The enolate from acetophenone attacks the aldehydic carbon of benzaldehyde, leading to the cross aldol product. Cannizzaro reactions require an aldehyde with no α‑hydrogen \u003cem>alone\u003c/em>, whereas here a ketone with α‑hydrogen is also present.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II</p> <table> <tbody> <tr> <td>List-I (Name of reaction)</td> <td>List-II (Reagent used)</td> </tr> <tr> <td>(A) Hell-Volhard-Zelinsky reaction</td> <td>(I) \(\mathrm{NaOH}+{\mathrm{I}}_{2}\)</td> </tr> <tr> <td>(B) Iodoform reaction</td> <td>(II) (i) \({\mathrm{CrO}}_{2}{\mathrm{Cl}}_{2},{\mathrm{CS}}_{2}\)<br/>(ii) \({\mathrm{H}}_{2}\mathrm{O}\)</td> </tr> <tr> <td>(C) Etard reaction</td> <td>(III) (i) \({\mathrm{Br}}_{2}/\) red phosphorus<br/>(ii) \({\mathrm{H}}_{2}\mathrm{O}\)</td> </tr> <tr> <td>(D) Gatterman-Koch</td> <td>(IV)\(\mathrm{CO},\mathrm{HCl}\), anhyd. \({\mathrm{AlCl}}_{3}\)</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p> <p>[JEE Main 2023, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) - (III), (B) - (II), (C) - (I), (D) - (IV)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) - (III), (B) - (I), (C) - (IV), (D) - (II)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) - (I), (B) - (II), (C) - (III), (D) - (IV)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) - (III), (B) - (I), (C) - (II), (D) - (IV)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{HVZ}\\) reactions \\(={\\mathrm{Br}}_{2}/\\) red P\u003c/p> \u003cp>Iodoform reaction \\(=\\mathrm{NaOH}+{\\mathrm{I}}_{2}\\)\u003c/p> \u003cp>Etard reaction = (i) \\({\\mathrm{CrO}}_{2}{\\mathrm{Cl}}_{2},{\\mathrm{CS}}_{2}\\) (ii) \\({\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/p> \u003cp>Gatterman-Koch Reaction \\(=\\mathrm{CO},\\mathrm{HCl}\\),\u003c/p> \u003cp>Anhydrous, \\({\\mathrm{AlCl}}_{3}\\) used to convert benzene into benzaldehyde.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reaction between acetone and methylmagnesium chloride followed by hydrolysis will give :</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sec. butyl alcohol</p></span></div><div class="option"><span class="key">b</span><span><p>Tert. butyl alcohol</p></span></div><div class="option"><span class="key">c</span><span><p>Isobutyl alcohol</p></span></div><div class="option"><span class="key">d</span><span><p>Isopropyl alcohol</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Propanone is a ketone. The Grignard reagent acts as a nucleophile and attacks the carbonyl carbon. When hydrolyzed with water, the magnesium ion is removed, and tertiary-butyl alcohol is formed.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\mathrm{RMgX}+\mathrm{CO}_2 \xrightarrow{\text { dry ether }} \mathrm{Y} \xrightarrow{\mathrm{H}_3 \mathrm{O}^{+}} \mathrm{RCOOH}\)</p> <p>What is \(\mathrm{Y}\) in the above reaction ?</p> <p>[NEET 2022]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{R}_3 \mathrm{CO}^{-} \mathrm{Mg}^{+} \mathrm{X}\) </p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{RCOO}}^{+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\mathrm{RCOO}{)}_{2}\mathrm{Mg}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{RCOO}}^{-}{\mathrm{Mg}}^{+}\mathrm{X}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Grignard reagent (RMgX) adds to CO₂ to form the \u003cstrong>magnesium carboxylate\u003c/strong> complex \u003cstrong>RCOO\u003csup>–\u003c/sup>Mg⁺X\u003c/strong>. On acid hydrolysis, this intermediate yields the free carboxylic acid (RCOOH).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\[R-\mathrm{CN} \underset{\text { } \mathrm{H}_{2} \mathrm{O}-\mathrm{DIBAL-H}}{\longrightarrow} R-Y\]</p> <p>Consider the above reaction and identify \( Y \)</p> <p>[JEE Main 2021, 27 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( -\mathrm{CONH}_{2} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( -\mathrm{CHO} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( -\mathrm{COOH} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( -\mathrm{CH}_{2} \mathrm{NH}_{2} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

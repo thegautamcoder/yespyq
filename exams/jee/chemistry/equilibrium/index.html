@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/jee/chemistry/"},{"@type":"ListItem","position":5,"name":"Equilibrium","item":"https://yespyq.com/exams/jee/chemistry/equilibrium/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Equilibrium</h1>
       <p>112 JEE Chemistry previous year questions on <b>Equilibrium</b> — options free on every question; <b>11 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">pH of water is 7 at 25 degree celsius. If water is heated to 80 degree celsius, it's pH will:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Increase</span></div><div class="option"><span class="key">b</span><span>Hydrogen ion concentration increases, hydroxyl ion concentration decreases</span></div><div class="option correct"><span class="key">c</span><span>Decrease</span></div><div class="option"><span class="key">d</span><span>Remains the same</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">pH of water is 7 at 25 degree celsius. If water is heated to 80 degree celsius, it's pH will be : [JEE Main 2025, 23 Jan (Shift 2)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Increase</span></div><div class="option"><span class="key">b</span><span>Hydrogen ion concentration increases, hydroxyl ion concentration decreases</span></div><div class="option correct"><span class="key">c</span><span>Decrease</span></div><div class="option"><span class="key">d</span><span>Remains the same</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A vessel at 1000 K contains carbon dioxide with a pressure of 0.5 atm. Some of carbon dioxide is converted into carbon monoxide on addition of graphite. If total pressure at equilibrium is 0.8 atm, then \({\mathrm{K}}_{\mathrm{p}}\) is</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 atm</p></span></div><div class="option correct"><span class="key">b</span><span><p>1.8 atm</p></span></div><div class="option"><span class="key">c</span><span><p>0.18 atm</p></span></div><div class="option"><span class="key">d</span><span><p>0.3 atm</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If equal volumes of \({\mathrm{AB}}_{2}\) and XY (both are salts) aqueous solutions are mixed, which of the following combination will give a precipitate of \({\mathrm{AY}}_{2}\) at \(300\) K ?<br/>\((\mathrm{Given}{\mathrm{K}}_{\mathrm{sp}}(\mathrm{at}300\mathrm{K})\)\(\mathrm{for}{\mathrm{AY}}_{2}=5.2\times {10}^{-7})\)</p> <p>[JEE Main 2025, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.6\times {10}^{-3}\mathrm{M}{\mathrm{AB}}_{2},5.0\times {10}^{-4}\mathrm{M}\mathrm{XY}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.0\times {10}^{-4}\mathrm{M}{\mathrm{AB}}_{2},0.8\times {10}^{-3}\mathrm{M}\mathrm{XY}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(2.0\times {10}^{-2}\mathrm{M}{\mathrm{AB}}_{2},2.0\times {10}^{-2}\mathrm{M}\mathrm{XY}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.5\times {10}^{-4}\mathrm{M}{\mathrm{AB}}_{2},1.5\times {10}^{-3}\mathrm{M}\mathrm{XY}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A weak acid HA has degree of dissociation x. Which option gives the correct expression of (\(\mathrm{pH}-{\mathrm{pk}}_{\mathrm{b}}\))</p> <p>(Memory-based Question 28/ Jan/25 morning shift )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>\((\log \left(1+2x)\right)\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\log \left(\frac{x}{1-x}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\log \left(\frac{1-x}{x}\right)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An aqueous solution of HCl with pH 1.0 is diluted by adding equal volume of water (ignoring dissociation of water). The pH of HCl solution would <br/>(Given log 2 = 0.30)</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>reduce to 0.5 </p></span></div><div class="option correct"><span class="key">b</span><span><p>increase to 1.3 </p></span></div><div class="option"><span class="key">c</span><span><p>remain same</p></span></div><div class="option"><span class="key">d</span><span><p>increase to 2</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pH of a \(0.01\) M weak acid \(\mathrm{HX}\left({\mathrm{K}}_{\mathrm{a}}=4\times {10}^{-10}\right)\) is found to be 5 . Now the acid solution is diluted with excess of water so that the pH of the solution changes to \(6\) . The new concentration of the diluted weak acid is given as \(x\times {10}^{-4}\mathrm{M}\). The value of x is ______ (nearest integer)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>20</p></span></div><div class="option correct"><span class="key">b</span><span><p>25</p></span></div><div class="option"><span class="key">c</span><span><p>30</p></span></div><div class="option"><span class="key">d</span><span><p>35</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What will be the effect on pH of water when it is heated </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Increases</p></span></div><div class="option correct"><span class="key">b</span><span><p>Decrease</p></span></div><div class="option"><span class="key">c</span><span><p>Remains same </p></span></div><div class="option"><span class="key">d</span><span><p>pH increses and then decreses</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9">
-      <div class="qnum">Q9 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q9 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\mathrm{CO}}_{2}(\mathrm{g})+\mathrm{C}(\mathrm{s})⇌2\mathrm{CO}(\mathrm{g})\)</p> <p>If initial pressure of \({\mathrm{CO}}_{2}\)is 0.6 atm and after equilibrium is established, total pressure is 0/8 atm. Then, find \({\mathrm{K}}_{\mathrm{p}}\).</p> <p> (Memory Based JEE Mains 22/01/2025, Shift -1)</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>0.4</p></span></div><div class="option"><span class="key">b</span><span><p>0.2</p></span></div><div class="option"><span class="key">c</span><span><p>0.6</p></span></div><div class="option"><span class="key">d</span><span><p>0.8</p></span></div></div>
       <div class="explain" data-exp>
@@ -158,7 +162,7 @@
       </div>
     </div>
     <div class="qblock" id="q10">
-      <div class="qnum">Q10 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q10 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A weak acid HA has degree of dissociation x. Which option gives the correct expression of (\(\mathrm{pH}-{\mathrm{pk}}_{\mathrm{b}}\))</p> <p>(Memory-based Question 28/ Jan/25 morning shift )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>\((\log \left(1+2x)\right)\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\log \left(\frac{x}{1-x}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\log \left(\frac{1-x}{x}\right)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -167,7 +171,7 @@
       </div>
     </div>
     <div class="qblock" id="q11">
-      <div class="qnum">Q11 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q11 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a reaction, \({N}_{2}{O}_{5(g)}\to 2N{O}_{2(g)}+\frac{1}{2}{O}_{2(g)}\) in a constant volume container, no products were present initially. The final pressure of the system when 50 % of reaction gets completed is</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7/2 times of initial pressure</p></span></div><div class="option"><span class="key">b</span><span><p>5 times of initial pressure</p></span></div><div class="option"><span class="key">c</span><span><p>5/2 times of initial pressure</p></span></div><div class="option correct"><span class="key">d</span><span><p>7/4 times of initial pressure</p></span></div></div>
       <div class="explain" data-exp>
@@ -176,7 +180,7 @@
       </div>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The solubility of barium iodate in an aqueous solution prepared by mixing 200 mL of 0.010 M barium nitrate with 100 mL of 0.10 M sodium iodate is \(X \times 10^{-6} mol dm ^{-3}\). The value of \(X\) is________ .</p> <p>Use: Solubility product constant ( \(K_{ sp }\) ) of barium iodate \(=1.58 \times 10^{-9}\)</p> <p>[JEE Advanced 2025, Paper-2]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>8</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let the sparingly soluble salt be\u003cbr/>Ba(IO₃)₂(s) ⇌ Ba²⁺(aq) + 2 IO₃⁻(aq)\u003c/p> \u003cp>Given: Ksp = 1.58 × 10⁻⁹\u003c/p> \u003cp>\u003cstrong>Step 1: Moles after mixing\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>Ba(NO₃)₂:\u003cbr/>Moles of Ba²⁺ = 0.010 mol L⁻¹ × 0.200 L = 2.00 × 10⁻³ mol\u003c/p> \u003c/li> \u003cli> \u003cp>NaIO₃:\u003cbr/>Moles of IO₃⁻ = 0.10 mol L⁻¹ × 0.100 L = 1.00 × 10⁻² mol\u003c/p> \u003c/li> \u003c/ul> \u003cp>Total volume after mixing = 200 mL + 100 mL = 300 mL = 0.300 L\u003c/p> \u003cp>Initial concentrations in the mixed solution (before precipitation):\u003cbr/>[Ba²⁺]₀ = (2.00 × 10⁻³) / 0.300 = 6.67 × 10⁻³ M\u003cbr/>[IO₃⁻]₀ = (1.00 × 10⁻²) / 0.300 = 3.33 × 10⁻² M\u003c/p> \u003cp>To consume all Ba²⁺, moles of IO₃⁻ required = 2 × 2.00 × 10⁻³ = 4.00 × 10⁻³ mol\u003c/p> \u003cp>Hence IO₃⁻ in excess after (almost complete) precipitation:\u003cbr/>= 1.00 × 10⁻² − 4.00 × 10⁻³ = 6.00 × 10⁻³ mol\u003c/p> \u003cp>So, in 0.300 L,\u003cbr/>[IO₃⁻] ≈ (6.00 × 10⁻³) / 0.300 = 2.00 × 10⁻² M\u003c/p> \u003cp>Because Ksp is very small, the change in [IO₃⁻] due to the small solubility is negligible, so we take [IO₃⁻] ≈ 0.020 M at equilibrium.\u003c/p> \u003cp>\u003cstrong>Step 2: Use Ksp\u003c/strong>\u003c/p> \u003cp>Ksp = [Ba²⁺][IO₃⁻]²\u003c/p> \u003cp>Let the solubility of Ba(IO₃)₂ in this medium be S mol dm⁻³.\u003cbr/>Then [Ba²⁺] = S and [IO₃⁻] ≈ 0.020 M, so\u003c/p> \u003cp>S × (0.020)² = 1.58 × 10⁻⁹\u003c/p> \u003cp>S = 1.58 × 10⁻⁹ / (4.0 × 10⁻⁴)\u003cbr/>= (1.58 / 4.0) × 10⁻⁵\u003cbr/>= 0.395 × 10⁻⁵\u003cbr/>= 3.95 × 10⁻⁶ mol dm⁻³\u003c/p> \u003cp>Given S = X × 10⁻⁶ mol dm⁻³,\u003c/p> \u003cp>\u003cstrong>X = 3.95\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A vessel at 1000 K contains carbon dioxide with a pressure of 0.5 atm. Some of carbon dioxide is converted into carbon monoxide on addition of graphite. If total pressure at equilibrium is 0.8 atm, then \({\mathrm{K}}_{\mathrm{p}}\)is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 atm</p></span></div><div class="option"><span class="key">b</span><span><p>1.8 atm</p></span></div><div class="option"><span class="key">c</span><span><p>0.18 atm</p></span></div><div class="option"><span class="key">d</span><span><p>0.3 atm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{CO}}_{2}(\\mathrm{g})+\\mathrm{C}(\\mathrm{s})⇌2\\mathrm{CO}(\\mathrm{g})\\\\ 0.5-\\\\ 0.5-\\mathrm{x}2\\mathrm{x}\\\\ {\\mathrm{P}}_{\\mathrm{T}}=0.5+\\mathrm{x}=0.8\\\\ \\mathrm{x}=0.8-0.5=0.3\\\\ {\\mathrm{K}}_{\\mathrm{P}}=\\frac{{(0.6)}^{2}}{0.2}=1.8\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A weak acid HA has degree of dissociation x. Which option gives the correct expression of ( \(pH-\) \(\left.p{K}_{a}\right)\) ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\log (1+2x)\)</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(\log \left(\frac{x}{1-x}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\log \left(\frac{1-x}{x}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know the dissociation equation for a weak acid HA :\u003c/p> \u003cp>\\({K}_{a}=\\frac{\\left[{H}^{+}\\right]\\left[{A}^{-}\\right]}{[HA]}\\)\u003c/p> \u003cp>Since \\(\\left[{H}^{+}\\right]=Cx\\) and \\(\\left[{A}^{-}\\right]=Cx\\), while [HA] \\(=C(1-x)\\), we get:\u003c/p> \u003cp>\\({K}_{a}=\\frac{C{x}^{2}}{1-x}\\)\u003c/p> \u003cp>Taking \\(\\log\\) on both sides:\u003c/p> \u003cp>\\(\\log {K}_{a}=\\log C+2\\log x-\\log (1-x)\\)\u003c/p> \u003cp>Since \\(pH=-\\log \\left[{H}^{+}\\right]\\), we get:\u003c/p> \u003cp>\\(pH=-\\log C-\\log x\\)\u003c/p> \u003cp>Similarly, \\(p{K}_{a}=-\\log {K}_{\\alpha }\\), so:\u003c/p> \u003cp>\\(p{K}_{a}=-\\log C-2\\log x+\\log (1-x)\\)\u003c/p> \u003cp>Now, subtracting:\u003c/p> \u003cp>\\(pH-p{K}_{a}=(-\\log C-\\log x)-(-\\log C-\\\\ 2\\log x+\\log (1-x))=\\log x-\\log (1-x)\\\\ =\\log \\frac{x}{1-x}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Le-Chatelier’s principle is not applicable to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({H}_{2}(g)+{I}_{2}(g)⇌2HI(g)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Fe(s)+S(s)⇌FeS(s)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({N}_{2}(g)+3{H}_{2}(g)⇌2N{H}_{3}(g)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({N}_{2}(g)+{O}_{2}(g)⇌2NO(g)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Le-Chatelier’s principle applies to equilibrium involving gases or solutions. It is not applicable to \u003cstrong>Fe(s) + S(s) ⇌ FeS(s)\u003c/strong>as solids do not affect equilibrium. Correct answer: \u003cstrong>(B)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The molar solubility(s) of zirconium phosphate with molecular formula \({\left(\mathrm{Zr}\right)}_{3}{\left(P{O}_{4}\right)}_{4}\) is given by relation</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{5348}\right)}^{\frac{1}{6}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{9612}\right)}^{\frac{1}{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{6912}\right)}^{\frac{1}{7}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{8435}\right)}^{\frac{1}{7}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\left(\\mathrm{Zr}\\right)}_{3}{\\left(P{O}_{4}\\right)}_{4}\\to 3{(\\mathrm{Zr})}^{4+}+4(P{{O}_{4})}^{-3}\\\\ 3\\mathrm{s}4\\mathrm{s}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{sp}}={(3\\mathrm{s})}^{3}{(4\\mathrm{s})}^{4}=6912{\\mathrm{s}}^{7}\\\\ \\mathrm{s}={\\left(\\frac{{\\mathrm{K}}_{\\mathrm{sp}}}{6912}\\right)}^{\\frac{1}{7}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement 1: On passing \({\mathrm{HCl}}_{(\mathrm{g})}\) through a saturated solution of \({\mathrm{BaCl}}_{2}\), at room temperature white turbidity appears</p> <p>Statement II : When \(\mathrm{HCl}\) gas is passed through a saturated solution of \(\mathrm{NaCl}\), sodium chloride is precipitated due to common ion effect.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below: </p> <p><strong>[JEE Main 2024, 05 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{BaCl}}_{2},\\mathrm{NaCl}\\) are soluble but on adding \\(\\mathrm{HCl}(\\mathrm{g})\\) to \\({\\mathrm{BaCl}}_{2},\\mathrm{NaCl}\\) solutions, Sodium or Barium chlorides may precipitate out, as a consequence of the law of mass action.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement 1: On passing \({\mathrm{HCl}}_{(\mathrm{g})}\) through a saturated solution of \({\mathrm{BaCl}}_{2}\), at room temperature white turbidity appears</p> <p>Statement II : When \(\mathrm{HCl}\) gas is passed through a saturated solution of \(\mathrm{NaCl}\), sodium chloride is precipitated due to common ion effect.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below: </p> <p><strong>[JEE Main 2024, 05 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{BaCl}}_{2},\\mathrm{NaCl}\\) are soluble but on adding \\(\\mathrm{HCl}(\\mathrm{g})\\) to \\({\\mathrm{BaCl}}_{2},\\mathrm{NaCl}\\) solutions, Sodium or Barium chlorides may precipitate out, as a consequence of the law of mass action.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the equilibrium</p> <p>\(CO(g)+3{H}_{2}(g)⇌C{H}_{4}(g)+{H}_{2}O(g)\)</p> <p>If the pressure applied over the system increases by two fold at constant temperature then<br/>(A) Concentration of reactants and products increases.<br/>(B) Equilibrium will shift in forward direction.<br/>(C) Equilibrium constant increases since concentration of products increases.<br/>(D) Equilibrium constant remains unchanged as concentration of reactants and products remain same.<br/>Choose the <strong>correct </strong>answer from the options given below. </p> <p><strong>[JEE Main 2023, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) and (C) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (B) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since pressure is doubled at constant temperature, the concentration of gases increases proportionally (PV = nRT). So, both reactants and products increase in concentration.\u003cbr/>Since fewer moles of gas are on the right side (products), the equilibrium will shift forward to reduce the total pressure.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ice and water are placed in a closed container at a pressure at 1 atm and temperature 273.15 K .<br/>If the pressure of the container increases 2 times and the temperature is kept constant, than identify the correct observation from the following.</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The amount of ice decreases</p></span></div><div class="option"><span class="key">b</span><span><p>Volume of system increases</p></span></div><div class="option"><span class="key">c</span><span><p>Liquid phase disappear completely</p></span></div><div class="option"><span class="key">d</span><span><p>Solid phase (ice) disappear completely</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{Ice}⇌\\mathrm{water}\\)\u003c/p> \u003cp>According to le Chateliar principle, On increasing pressure, the equilibrium shifts towards the substances having more density. The density of water is more than ice , then the reaction procced in a forward reaction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(x\mathrm{mg}\) of \(\mathrm{Mg}(\mathrm{OH}{)}_{2}\) (molar mass = 58) is required to be dissolved in 1.0 L of water to produce a pH of 10.0 at 298 K . The value of x is ______ mg. (Nearest integer)<br/>(Given : \(\mathrm{Mg}(\mathrm{OH}{)}_{2}\) is assumed to dissociate completely in \({\mathrm{H}}_{2}\mathrm{O}\) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>pH = 10 ⇒ pOH = 4\u003c/p> \\([{\\text{OH}}^{−}]={10}^{−4}\\text{ M}\\)  \u003cp>Moles of OH⁻ = \\({10}^{−4}\\)\u003c/p> \\({\\text{Moles of Mg(OH)}}_{2}=\\frac{{10}^{−4}}{2}=5\\times {10}^{−5}\\)   \\({\\text{Mass of Mg(OH)}}_{2}=5\\times {10}^{−5}\\times 58\\times {10}^{3}=2.9\\text{ mg}\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the following system, \({\mathrm{PCl}}_{5}(\mathrm{g})⇌{\mathrm{PCl}}_{3}(\mathrm{g})+{\mathrm{Cl}}_{2}(\mathrm{g})\) at equilibrium, upon addition of xenon gas at constant T &amp; P, the concentration of</p> <p><strong>[JEE Main 2025, 3 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{PCl}}_{5}\) will increase</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Cl}}_{2}\) will decrease</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{PCl}}_{5},{\mathrm{PCl}}_{3}&{\mathrm{Cl}}_{2}\) remain constant</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{PCl}}_{3}\) will increase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>On addition of inert gas at constant P &amp; T, reaction moves in the direction of greater number of moles so it will shift in forward direction, so mole of [PCl\u003csub>5\u003c/sub>] decrease and [PCl\u003csub>3\u003c/sub>] &amp; [Cl\u003csub>2\u003c/sub>] will increase.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What will be the effect on pH of water when it is heated </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Increases</p></span></div><div class="option"><span class="key">b</span><span><p>Decrease</p></span></div><div class="option"><span class="key">c</span><span><p>Remains same </p></span></div><div class="option"><span class="key">d</span><span><p>pH increses and then decreses</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>As water is heated degree of ionisation increases\u003cbr/>[H+] ion concentration increases pH decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the following system, \({\mathrm{PCl}}_{5}(\mathrm{g})⇌{\mathrm{PCl}}_{3}(\mathrm{g})+{\mathrm{Cl}}_{2}(\mathrm{g})\) at equilibrium, upon addition of xenon gas at constant T &amp; P, the concentration of</p> <p>[JEE Main 2025, 3 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{PCl}}_{5}\) will increase</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Cl}}_{2}\) will decrease</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{PCl}}_{5},{\mathrm{PCl}}_{3}&{\mathrm{Cl}}_{2}\) remain constant</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{PCl}}_{3}\) will increase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>On addition of inert gas at constant P &amp; T, reaction moves in the direction of greater number of moles so it will shift in forward direction, so mole of [PCl\u003csub>5\u003c/sub>] decrease and [PCl\u003csub>3\u003c/sub>] &amp; [Cl\u003csub>2\u003c/sub>] will increase.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a sparingly soluble salt \(A{B}_{2}\), the equilibrium concentrations of \({A}^{2+}\) ions and \({B}^{-}\)ions are \(1.2\times {10}^{-4}M\) and \(0.24\times {10}^{-3}M\), respectively. The solubility product of \(A{B}_{2}\) is :</p> <p>[JEE Main 2024, 9 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.276\times {10}^{-12}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(27.65\times {10}^{-12}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.069\times {10}^{-12}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.91\times {10}^{-12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(A{B}_{2(s)}\\Leftrightarrow {A}_{(aq)}^{+2}+2{A}_{(aq)}^{-}\\)\u003c/p> \u003cp>\\({K}_{sp}=[A]{[{B}^{-}]}^{2}\\)\u003c/p> \u003cp>\\(=1.2\\times {10}^{4}\\times {(2.4\\times {10}^{-4})}^{2}\\)\u003c/p> \u003cp>\\(=6.91\\times {10}^{-12}{M}^{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>pH of water is 7 at 25 degree celsius. If water is heated to 80 degree celsius, it's pH will:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Increase</p></span></div><div class="option"><span class="key">b</span><span><p>Hydrogen ion concentration increases, hydroxyl ion concentration decreases</p></span></div><div class="option"><span class="key">c</span><span><p>Decrease</p></span></div><div class="option"><span class="key">d</span><span><p>Remains the same</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As water is heated to 80°C, the auto-ionization of water (\\({\\mathrm{K}}_{\\mathrm{w}}\\)) increases, leading to a higher H⁺ concentration. Since pH = -log[H⁺], an increase in H⁺ results in a lower pH, though water remains neutral as [H⁺] = [OH⁻].\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A weak acid HA has degree of dissociation x. Which option gives the correct expression of (\(\mathrm{pH}-{\mathrm{pk}}_{\mathrm{b}}\))</p> <p>(Memory-based Question 28/ Jan/25 morning shift )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>\((\log \left(1+2x)\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\log \left(\frac{x}{1-x}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\log \left(\frac{1-x}{x}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\mathrm{HA}(\\mathrm{aq})⇌{\\mathrm{H}}^{+}(\\mathrm{aq})+{\\mathrm{A}}^{-}(\\mathrm{aq})\\\\ \\mathrm{C}--\\\\ \\mathrm{C}-\\mathrm{Cx}\\mathrm{Cx}\\mathrm{Cx}\\\\ {\\mathrm{K}}_{\\mathrm{a}}=\\frac{\\left[{\\mathrm{H}}^{+}\\right]\\left[{\\mathrm{A}}^{-}\\right]}{\\mathrm{HA}}=\\frac{\\mathrm{Cα}\\times \\mathrm{Cα}}{\\mathrm{C}(1-\\mathrm{x})}\\\\ \\left[{\\mathrm{H}}^{+}\\right]=\\mathrm{Cα}=\\frac{{\\mathrm{K}}_{\\mathrm{a}}(1-\\mathrm{x})}{\\mathrm{x}}\\\\ \\mathrm{pH}=-\\log \\left[{\\mathrm{H}}^{+}\\right]=-\\log \\frac{\\left[{\\mathrm{K}}_{\\mathrm{a}}(1-\\mathrm{x})\\right]}{\\mathrm{x}}\\\\ \\mathrm{pH}={\\mathrm{PK}}_{\\mathrm{a}}-\\log \\frac{(1-\\mathrm{x})}{\\mathrm{x}}\\\\ \\mathrm{pH}-{\\mathrm{PK}}_{\\mathrm{a}}=\\log \\frac{\\mathrm{x}}{1-\\mathrm{x}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If equal volumes of \({\mathrm{AB}}_{2}\) and XY (both are salts) aqueous solutions are mixed, which of the following combination will give a precipitate of \({\mathrm{AY}}_{2}\) at \(300\) K ?<br/>\((\mathrm{Given}{\mathrm{K}}_{\mathrm{sp}}(\mathrm{at}300\mathrm{K})\)\(\mathrm{for}{\mathrm{AY}}_{2}=5.2\times {10}^{-7})\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3.6\times {10}^{-3}\mathrm{M}{\mathrm{AB}}_{2},5.0\times {10}^{-4}\mathrm{M}\mathrm{XY}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2.0\times {10}^{-4}\mathrm{M}{\mathrm{AB}}_{2},0.8\times {10}^{-3}\mathrm{M}\mathrm{XY}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.0\times {10}^{-2}\mathrm{M}{\mathrm{AB}}_{2},2.0\times {10}^{-2}\mathrm{M}\mathrm{XY}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.5\times {10}^{-4}\mathrm{M}{\mathrm{AB}}_{2},1.5\times {10}^{-3}\mathrm{M}\mathrm{XY}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For precipitation of AY₂:\u003cbr/>Ksp = [A²⁺][Y⁻]² = 5.2 × 10⁻⁷\u003c/p> \u003cp>Check option C:\u003cbr/>[A²⁺] = 2.0 × 10⁻²\u003cbr/>[Y⁻] = 2.0 × 10⁻²\u003c/p> \u003cp>Ion product = 8.0 × 10⁻⁶ &gt; Ksp\u003cbr/>⇒ Precipitation occurs\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({K}_{sp}\) for \(Cr(OH{)}_{3}\) is \(1.6\times {10}^{-30}\). What is the molar solubility of this salt in water?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1.8\times {10}^{-30}}{27}\) </p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt[4]{\frac{1.6\times {10}^{-30}}{27}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt[2]{1.6\times {10}^{-30}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt[5]{1.8\times {10}^{-30}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The given compound is \\(Cr(OH{)}_{3}\\), which dissociates in water as:\u003c/p> \u003cp>\\(Cr(OH{)}_{3}⇌C{r}^{3+}+3O{H}^{-}\\)\u003c/p> \u003cp>The solubility product constant ( \\({K}_{\\text{sp }}\\) ) expression for \\(Cr(OH{)}_{3}\\) is:\u003c/p> \u003cp>\\({K}_{sp}=\\left[C{r}^{3+}\\right]{\\left[O{H}^{-}\\right]}^{3}\\)\u003c/p> \u003cp>If S is the molar solubility of \\(Cr(OH{)}_{3}\\), then:\u003c/p> \u003cp>\\(\\left[C{r}^{3+}\\right]=S,\\left[O{H}^{-}\\right]=3S\\)\u003c/p> \u003cp>Substituting these in the above expression:\u003c/p> \u003cp>\\({K}_{sp}=S\\times 27{S}^{3}\\\\ {K}_{sp}=27{S}^{4}\\)\u003c/p> \u003cp>Solving for S :\u003c/p> \u003cp>\\(S=\\sqrt[4]{\\frac{{K}_{sp}}{27}}\\)\u003c/p> \u003cp>\u003cbr/>Given \\({K}_{sp}=1.6\\times {10}^{-30}\\), we get:\u003c/p> \u003cp>\\(S=\\sqrt[4]{\\frac{1.6\\times {10}^{-30}}{27}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({K}_{sp}\) for \(Cr(OH{)}_{3}\) is \(1.6\times {10}^{-30}\). What is the molar solubility of this salt in water?</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1.8\times {10}^{-30}}{27}\) </p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt[4]{\frac{1.6\times {10}^{-30}}{27}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt[2]{1.6\times {10}^{-30}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt[5]{1.8\times {10}^{-30}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The given compound is \\(Cr(OH{)}_{3}\\), which dissociates in water as:\u003c/p> \u003cp>\\(Cr(OH{)}_{3}⇌C{r}^{3+}+3O{H}^{-}\\)\u003c/p> \u003cp>The solubility product constant ( \\({K}_{\\text{sp }}\\) ) expression for \\(Cr(OH{)}_{3}\\) is:\u003c/p> \u003cp>\\({K}_{sp}=\\left[C{r}^{3+}\\right]{\\left[O{H}^{-}\\right]}^{3}\\)\u003c/p> \u003cp>If S is the molar solubility of \\(Cr(OH{)}_{3}\\), then:\u003c/p> \u003cp>\\(\\left[C{r}^{3+}\\right]=S,\\left[O{H}^{-}\\right]=3S\\)\u003c/p> \u003cp>Substituting these in the above expression:\u003c/p> \u003cp>\\({K}_{sp}=S\\times 27{S}^{3}\\\\ {K}_{sp}=27{S}^{4}\\)\u003c/p> \u003cp>Solving for S :\u003c/p> \u003cp>\\(S=\\sqrt[4]{\\frac{{K}_{sp}}{27}}\\)\u003c/p> \u003cp>\u003cbr/>Given \\({K}_{sp}=1.6\\times {10}^{-30}\\), we get:\u003c/p> \u003cp>\\(S=\\sqrt[4]{\\frac{1.6\\times {10}^{-30}}{27}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At temperature T, compound \(A{B}_{2(g)}\) dissociates as \(A{B}_{2(g)}⇌AB(g)+\frac{1}{2}{B}_{2(g)}\) having degree of dissociation x (small compared to unity). The correct expression for x in terms of \({K}_{p}\) and p is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt[3]{\frac{2{K}_{p}^{2}}{p}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{{K}_{p}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt[3]{\frac{2{K}_{p}}{p}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt[4]{\frac{2{K}_{p}}{p}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(A{B}_{2}\\left(g\\right)⇌AB\\left(g\\right)+\\frac{1}{2}{B}_{2}\\left(g\\right)\\\\ {t}_{\\text{eq. }}=\\frac{\\left(1-x\\right)}{1+\\frac{x}{2}}p\\cdot \\frac{xp}{1+\\frac{x}{2}}\\cdot \\frac{\\frac{x}{2}p}{1+\\frac{x}{2}}\\)\u003cbr/>Since \\(x≪1\\), the approximations \\(1+\\frac{x}{2}\\approx 1\\) and \\(1-x\\approx 1\\) hold, simplifying the expression. Rewriting the equilibrium constant expression:\u003c/p> \u003cp>\\({K}_{p}=\\frac{(xp)\\cdot {\\left(\\frac{xp}{2}\\right)}^{\\frac{1}{2}}}{p}\\\\ {K}_{p}^{2}={x}^{2}\\cdot \\frac{xp}{2}\\\\ x=\\sqrt[3]{\\frac{2{K}_{p}^{2}}{p}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A weak acid HA has degree of dissociation x. Which option gives the correct expression of ( \(pH-\) \(\left.p{K}_{a}\right)\)?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\log (1+2x)\)</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(\log \left(\frac{x}{1-x}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\log \left(\frac{1-x}{x}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,7 +432,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>We know the dissociation equation for a weak acid HA :\u003c/p> \u003cp>\\({K}_{a}=\\frac{\\left[{H}^{+}\\right]\\left[{A}^{-}\\right]}{[HA]}\\)\u003c/p> \u003cp>\u003cbr/>Since \\(\\left[{H}^{+}\\right]=Cx\\) and \\(\\left[{A}^{-}\\right]=Cx\\), while [HA] \\(=C(1-x)\\), we get:\u003c/p> \u003cp>\\({K}_{a}=\\frac{C{x}^{2}}{1-x}\\)\u003c/p> \u003cp>\u003cbr/>Taking \\(\\log\\) on both sides:\u003c/p> \u003cp>\\(\\log {K}_{a}=\\log C+2\\log x-\\log (1-x)\\)\u003c/p> \u003cp>\u003cbr/>Since \\(pH=-\\log \\left[{H}^{+}\\right]\\), we get:\u003c/p> \u003cp>\\(pH=-\\log C-\\log x\\)\u003c/p> \u003cp>\u003cbr/>Similarly, \\(p{K}_{a}=-\\log {K}_{\\alpha }\\), so:\u003c/p> \u003cp>\\(p{K}_{a}=-\\log C-2\\log x+\\log (1-x)\\)\u003c/p> \u003cp>\u003cbr/>Now, subtracting:\u003c/p> \u003cp>\\(pH-p{K}_{a}=(-\\log C-\\log x)-(-\\log C-\\\\ 2\\log x+\\log (1-x))=\\log x-\\log (1-x)\\\\ =\\log \\frac{x}{1-x}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equilibrium constant for the reaction<br/>\(S{O}_{3}(g)⇌S{O}_{2}(g)+\frac{1}{2}{O}_{2}(g)\)<br/>is \({K}_{c}=4.9\times {10}^{-2}\). The value of \({K}_{c}\) for the reaction given below is \(2S{O}_{2}(g)+{O}_{2}(g)⇌2S{O}_{3}(g)\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4.9</p></span></div><div class="option"><span class="key">b</span><span><p>49</p></span></div><div class="option"><span class="key">c</span><span><p>41.6</p></span></div><div class="option"><span class="key">d</span><span><p>416</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -440,7 +444,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(4)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pH of 1 N aqueous solutions of HCl, \(C{H}_{3}COOH\) and HCOOH follows the order:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(HCl>HCOOH>C{H}_{3}COOH\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(HCl=HCOOH>C{H}_{3}COOH\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(C{H}_{3}COOH>HCOOH>HCl\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C{H}_{3}COOH=HCOOH>HCl\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -452,7 +456,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Strong acid \u003cstrong>HCl\u003c/strong> fully ionizes, giving the lowest \u003cstrong>pH\u003c/strong>. Weak acids \u003cstrong>HCOOH\u003c/strong> and \u003cstrong>CH₃COOH\u003c/strong> partially ionize, with \u003cstrong>CH₃COOH\u003c/strong> being weaker. Order: \u003cstrong>HCl &lt; HCOOH &lt; CH₃COOH\u003c/strong>. Correct answer: \u003cstrong>(C)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At \(25^\circ \mathrm{C}\), the concentration of \({\mathrm{H}}^{+}\) ions in \(1.00\times {10}^{-3}\mathrm{M}\) aqueous solution of a weak monobasic acid having acid dissociation constant \(\left({K}_{\mathrm{a}}\right)\) of \(4.00\times {10}^{-11}\) is \(X\times {10}^{-7}\mathrm{M}\). The value of \(X\) is (nearest integer)___________<br/>Use: Ionic product of water \(\left({K}_{\mathrm{w}}\right)=1.00\times {10}^{-14}\) at \(25^\circ \mathrm{C}\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -464,7 +468,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>C (acid concentration) = 1.00 × 10⁻³ M\u003cbr/>\\({\\mathrm{K}}_{\\mathrm{a}}\\) = 4.00 × 10⁻¹¹\u003cbr/>\\({\\mathrm{K}}_{\\mathrm{w}}\\) (25 °C) = 1.00 × 10⁻¹⁴\u003c/p> \u003cp>The acid is extremely weak, so [H⁺] is of the order of 10⁻⁷ M and the auto-ionization of water cannot be neglected.\u003c/p> \u003cp>Let [H⁺] = h.\u003c/p> \u003cp>For the very weak monoprotic acid HA, and using C ≫ h (so [HA] ≈ C), we have\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{a}}\\approx ({[\\mathrm{H}⁺]}^{2}−{\\mathrm{K}}_{\\mathrm{w}})/\\mathrm{C}\\\\ \\Rightarrow {[\\mathrm{H}⁺]}^{2}−{\\mathrm{K}}_{\\mathrm{w}}\\approx {\\mathrm{K}}_{\\mathrm{a}}\\mathrm{C}\\\\ \\Rightarrow {[\\mathrm{H}⁺]}^{2}\\approx {\\mathrm{K}}_{\\mathrm{w}}+{\\mathrm{K}}_{\\mathrm{a}}\\mathrm{C}\\)\u003c/p> \u003cp>Now substitute the values:\u003c/p> \u003cp> \u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{a}}\\mathrm{C}=(4.00\\times {10}^{-11})(1.00\\times {10}^{-3})=4.00\\times {10}^{-14}\\\\ {\\mathrm{K}}_{\\mathrm{w}}+{\\mathrm{K}}_{\\mathrm{a}}\\mathrm{C}=1.00\\times {10}^{-14}+4.00\\times {10}^{-14}=5.00\\times {10}^{-14}\\)\u003c/p> \u003cp> \u003c/p> \u003cp>Thus\u003c/p> \u003cp>[H⁺] ≈ √(5.00 × 10⁻¹⁴)\u003cbr/>= √5 × 10⁻⁷ M\u003cbr/>≈ 2.24 × 10⁻⁷ M\u003c/p> \u003cp>Given [H⁺] = X × 10⁻⁷ M,\u003c/p> \u003cp>\u003cstrong>X = √5 ≈ 2.24.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The molar solubility(s) of zirconium phosphate with molecular formula \({\left({\mathrm{Zr}}^{4+}\right)}_{3}{\left(P{{O}_{4}}^{-3}\right)}_{4}\) is given by relation</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{5348}\right)}^{\frac{1}{6}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{9612}\right)}^{\frac{1}{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{6912}\right)}^{\frac{1}{7}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\left(\frac{{\mathrm{K}}_{\mathrm{sp}}}{8435}\right)}^{\frac{1}{7}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -476,7 +480,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\left({\\mathrm{Zr}}^{4+}\\right)}_{3}{\\left(P{{O}_{4}}^{-3}\\right)}_{4}\\to 3{(\\mathrm{Zr})}^{4+}+4(P{{O}_{4})}^{-3}\\\\ 3\\mathrm{s}4\\mathrm{s}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{sp}}={(3\\mathrm{s})}^{3}{(4\\mathrm{s})}^{4}=6912{\\mathrm{s}}^{7}\\\\ \\mathrm{s}={\\left(\\frac{{\\mathrm{K}}_{\\mathrm{sp}}}{6912}\\right)}^{\\frac{1}{7}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Le-Chatelier’s principle is not applicable to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({H}_{2}(g)+{I}_{2}(g)⇌2HI(g)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Fe(s)+S(s)⇌FeS(s)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({N}_{2}(g)+3{H}_{2}(g)⇌2N{H}_{3}(g)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({N}_{2}(g)+{O}_{2}(g)⇌2NO(g)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -488,7 +492,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Le-Chatelier’s principle applies to equilibrium involving gases or solutions. It is not applicable to \u003cstrong>Fe(s) + S(s) ⇌ FeS(s)\u003c/strong>as solids do not affect equilibrium. Correct answer: \u003cstrong>(B)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the given following reaction </p> <p>\({\mathrm{X}}_{2}\mathrm{Y}(\mathrm{s})⇌{\mathrm{X}}_{2}(\mathrm{g})+1/2{\mathrm{Y}}_{2}(\mathrm{g}).\mathrm{If}\alpha\) is the degree of dissociation. Calculate \({\mathrm{K}}_{\mathrm{p}}\)in the terms of P total pressure. (Memory Based JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\frac{2{\mathrm{P}}^{3/2}}{{3}^{3/2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\frac{2{\mathrm{P}}^{3/2}}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\sqrt{\frac{2\mathrm{P}}{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\frac{\sqrt{2}\mathrm{P}}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -500,7 +504,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{X}}_{2}\\mathrm{Y}\\left(\\mathrm{s}\\right)⇌{\\mathrm{X}}_{2}\\left(\\mathrm{g}\\right)+\\frac{1}{2}{\\mathrm{Y}}_{2}\\left(\\mathrm{g}\\right)\\\\ ....\\mathrm{P}'\\frac{\\mathrm{P}'}{2}\\\\ {\\mathrm{P}}_{\\mathrm{T}}=\\frac{3\\mathrm{P}'}{2}\\Rightarrow \\mathrm{P}'=\\frac{2{\\mathrm{P}}_{\\mathrm{T}}}{3}\\\\ {\\mathrm{K}}_{\\mathrm{p}}=\\left({\\mathrm{P}}_{{\\mathrm{X}}_{2}}\\right){\\left({\\mathrm{P}}_{{\\mathrm{X}}_{2}}\\right)}^{\\frac{1}{2}}\\\\ {\\mathrm{K}}_{\\mathrm{p}}=\\mathrm{P}'{\\left(\\frac{\\mathrm{P}'}{2}\\right)}^{\\frac{1}{2}}=\\frac{{\\left(\\mathrm{P}'\\right)}^{\\frac{3}{2}}}{\\sqrt{2}}=\\frac{{\\left(\\frac{2\\mathrm{P}}{3}\\right)}^{\\frac{3}{2}}}{\\sqrt{2}}=\\frac{2{\\mathrm{P}}^{\\frac{3}{2}}}{{3}^{\\frac{3}{2}}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following in increasing order of solubility product : \(Ca(OH{)}_{2},AgBr,PbS,HgS\)</p> <p><strong>[JEE Main 2025, 28 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(PbS<HgS<Ca(OH{)}_{2}<AgBr\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(HgS<AgBr<PbS<Ca(OH{)}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Ca(OH{)}_{2}<AgBr<HgS<PbS\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(HgS<PbS<AgBr<Ca(OH{)}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -512,7 +516,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Compounds with higher \\({K}_{sp}\\) values are more soluble in water, while compounds with lower \\({K}_{sp}\\) values are less soluble.\u003cbr/>Based on the \\({K}_{sp}\\) values, the increasing order of solubility product is:\u003c/p> \u003cp>\\(HgS\u003cPbS\u003cAgBr\u003cCa(OH{)}_{2}.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At temperature T, compound \(A{B}_{2(g)}\) dissociates as \(A{B}_{2(g)}⇌AB(g)+\frac{1}{2}{B}_{2(g)}\) having degree of dissociation x (small compared to unity). The correct expression for x in terms of \({K}_{p}\) and p is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt[3]{\frac{2{K}_{p}^{2}}{p}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{{K}_{p}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt[3]{\frac{2{K}_{p}}{p}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt[4]{\frac{2{K}_{p}}{p}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -524,7 +528,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \\(A{B}_{2}(g)⇌AB(g)+\\frac{1}{2}{B}_{2}(g)\\\\ {t}_{\\text{eq. }}=\\frac{(1-x)}{1+\\frac{x}{2}}p\\cdot \\frac{xp}{1+\\frac{x}{2}}\\cdot \\frac{\\frac{x}{2}p}{1+\\frac{x}{2}}\\)\u003cbr/>Since \\(x≪1\\), the approximations \\(1+\\frac{x}{2}\\approx 1\\) and \\(1-x\\approx 1\\) hold, simplifying the expression. Rewriting the equilibrium constant expression:\u003c/p> \u003cp>\\({K}_{p}=\\frac{(xp)\\cdot {\\left(\\frac{xp}{2}\\right)}^{\\frac{1}{2}}}{p}\\\\ {K}_{p}^{2}={x}^{2}\\cdot \\frac{xp}{2}\\\\ x=\\sqrt[3]{\\frac{2{K}_{p}^{2}}{p}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following chemical equilibrium of the gas phase reaction at a constant temperature :<br/>\(\mathrm{A}(\mathrm{g})⇌\mathrm{B}(\mathrm{g})+\mathrm{C}(\mathrm{g})\)<br/>If p being the total pressure, \({\mathrm{K}}_{\mathrm{p}}\) is the pressure equilibrium constant and \(\alpha\) is the degree of dissociation, then which of the following is true at equilibrium ?</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>If \(\mathrm{p}\) value is extremely high compared to \({\mathrm{K}}_{\mathrm{p}},\alpha \approx 1\)</p></span></div><div class="option"><span class="key">b</span><span><p>When p increases \(\alpha\) decreases</p></span></div><div class="option"><span class="key">c</span><span><p>If \({\mathrm{k}}_{\mathrm{p}}\) value is extremely high compared to \(\mathrm{p},\alpha\) becomes much less than unity</p></span></div><div class="option"><span class="key">d</span><span><p>When \(\mathrm{p}\) increases \(\alpha\) increases</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -536,7 +540,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>On increasing pressure, equilibrium shifts towards fewer moles of gas → degree of dissociation decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ice and water are placed in a closed container at a pressure at 1 atm and temperature 273.15 K .<br/>If the pressure of the container increases 2 times and the temperature is kept constant, than identify the correct observation from the following.</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The amount of ice decreases</p></span></div><div class="option"><span class="key">b</span><span><p>Volume of system increases</p></span></div><div class="option"><span class="key">c</span><span><p>Liquid phase disappear completely</p></span></div><div class="option"><span class="key">d</span><span><p>Solid phase (ice) disappear completely</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -548,7 +552,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{Ice}⇌\\mathrm{water}\\)\u003c/p> \u003cp>According to le Chateliar principle, On increasing pressure, the equilibrium shifts towards the substances having more density. The density of water is more than ice , then the reaction procced in a forward reaction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>pH of water is 7 at 25 degree celsius. If water is heated to 80 degree celsius, it's pH will be :</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Increase</p></span></div><div class="option"><span class="key">b</span><span><p>Hydrogen ion concentration increases, hydroxyl ion concentration decreases</p></span></div><div class="option"><span class="key">c</span><span><p>Decrease</p></span></div><div class="option"><span class="key">d</span><span><p>Remains the same</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -560,7 +564,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As water is heated to 80°C, the auto-ionization of water (\\({\\mathrm{K}}_{\\mathrm{w}}\\)) increases, leading to a higher H⁺ concentration. Since pH = -log[H⁺], an increase in H⁺ results in a lower pH, though water remains neutral as [H⁺] = [OH⁻].\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pH of 1 N aqueous solutions of HCl, \(C{H}_{3}COOH\) and HCOOH follows the order:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(HCl>HCOOH>C{H}_{3}COOH\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(HCl=HCOOH>C{H}_{3}COOH\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(C{H}_{3}COOH>HCOOH>HCl\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C{H}_{3}COOH=HCOOH>HCl\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -572,7 +576,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Strong acid \u003cstrong>HCl\u003c/strong> fully ionizes, giving the lowest \u003cstrong>pH\u003c/strong>. Weak acids \u003cstrong>HCOOH\u003c/strong> and \u003cstrong>CH₃COOH\u003c/strong> partially ionize, with \u003cstrong>CH₃COOH\u003c/strong> being weaker. Order: \u003cstrong>HCl &lt; HCOOH &lt; CH₃COOH\u003c/strong>. Correct answer: \u003cstrong>(C)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a reaction, \({N}_{2}{O}_{5(g)}\to 2N{O}_{2(g)}+\frac{1}{2}{O}_{2(g)}\) in a constant volume container, no products were present initially. The final pressure of the system when 50 % of reaction gets completed is</p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7/2 times of initial pressure</p></span></div><div class="option"><span class="key">b</span><span><p>5 times of initial pressure</p></span></div><div class="option"><span class="key">c</span><span><p>5/2 times of initial pressure</p></span></div><div class="option"><span class="key">d</span><span><p>7/4 times of initial pressure</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -584,7 +588,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({N}_{2}{O}_{5}(g)\\to 2N{O}_{2}(g)+\\frac{1}{2}{O}_{2}(g)\\)\u003c/p> \u003cp>Let the initial pressure of \\({N}_{2}{O}_{5}\\) be \\({P}_{0}\\).\u003cbr/>Initial moles: Only \\({N}_{2}{O}_{5}\\) is present \\(\\to {n}_{0}\\) \\(={P}_{0}\\) (as per ideal gas law).\u003cbr/>Let x be the fraction of reaction completed.\u003cbr/>For 1 mole of \\({N}_{2}{O}_{5}\\) decomposing:\u003cbr/>2 moles of \\(N{O}_{2}\\) are formed.\u003cbr/>0.5 moles of \\({O}_{2}\\) are formed.\u003c/p> \u003cp>Given that 50 % of the reaction is completed (x =0.5):\u003cbr/>\\({N}_{2}{O}_{5}\\) decomposed: \\(0.5{P}_{0}\\)\u003cbr/>\\(N{O}_{2}\\) formed: \\(2\\times 0.5{P}_{0}={P}_{0}\\)\u003cbr/>\\({O}_{2}\\) formed: \\(0.5\\times 0.5{P}_{0}=0.25{P}_{0}\\)\u003cbr/>Remaining \\({N}_{2}{O}_{5}:{P}_{0}-0.5{P}_{0}=0.5{P}_{0}\\)\u003cbr/>\\({P}_{\\text{final }}={P}_{{N}_{2}{O}_{5}}+{P}_{N{O}_{2}}+{P}_{{O}_{2}}\\)\u003cbr/>\\({P}_{\\text{final }}=0.5{P}_{0}+{P}_{0}+0.25{P}_{0}\\)\\(=1.75{P}_{0}=\\frac{7}{4}{P}_{0}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not correct?</p> <p>[JEE Main 2024, 29 Jan (Shift 1)]</p> <p>(A) \(\Delta \mathrm{G}\) is positive for a spontaneous reaction</p> <p>(B) \(\Delta \mathrm{G}\) is positive for a non-spontaneous reaction</p> <p>(C) \(\Delta \mathrm{G}\) is zero for a reversible reaction</p> <p>(D) \(\Delta \mathrm{G}\) is equal to zero for a spontaneous reaction</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A ,D</p></span></div><div class="option"><span class="key">b</span><span><p>A,B,C</p></span></div><div class="option"><span class="key">c</span><span><p>A,B</p></span></div><div class="option"><span class="key">d</span><span><p>A,C</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -596,7 +600,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For a spontaneous reaction, ΔG is negative, not positive.\u003cbr/>So statement A is incorrect.\u003cbr/>For a non-spontaneous reaction, ΔG is positive → correct.\u003cbr/>For a reversible reaction (at equilibrium), ΔG = 0 → correct.\u003c/p> \u003cp>Final Answer: (A) and (D) are not correct\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Only one litre buffer solution was prepared by adding \(0.10\) mol each of \({\mathrm{NH}}_{3}\) and \({\mathrm{NH}}_{4}\mathrm{Cl}\) in deionised water. The change in pH on addition of \(0.05\) mol of \(\mathrm{HCl}\) to the above solution is ____ \(\times {10}^{-2}\), (Nearest integer) (Given : \({\mathrm{pK}}_{\mathrm{b}}\)of \({\mathrm{NH}}_{3}=4.745\) and \({\log }_{10}3=0.477\) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>45</p></span></div><div class="option"><span class="key">b</span><span><p>48</p></span></div><div class="option"><span class="key">c</span><span><p>51</p></span></div><div class="option"><span class="key">d</span><span><p>54</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -608,7 +612,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{pOH}=\\text{p}{K}_{b}+\\log ⁡\\frac{[{\\text{NH}}_{4}^{+}]}{[{\\text{NH}}_{3}]}\\)\u003c/p> \u003cp>Initial pOH = \u003cstrong>4.745\u003c/strong>\u003c/p> \u003cp>After adding \u003cstrong>0.05 mol HCl\u003c/strong>:\u003c/p> \u003cp>\\({\\text{NH}}_{3}+{\\text{H}}^{+}\\to {\\text{NH}}_{4}^{+}\\)\u003c/p> \u003cp>\\({\\text{NH}}_{3}=0.05,\\ {\\text{NH}}_{4}^{+}=0.15\\)\u003c/p> \u003cp>\\({\\text{pOH}}^{′}=4.745+\\log ⁡3\\)\u003c/p> \u003cp>\\(\\Delta \\text{pOH}=0.477\\Rightarrow \\Delta \\text{pH}=0.477\\)\u003c/p> \u003cp>ΔpH≈0.48​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I :</strong> When a system containing ice in equilibrium with water (liquid) is heated, heat is absorbed by the system and there is no change in the temperature of the system until whole ice gets melted.<br/><strong>Statement II :</strong> At melting point of ice, there is absorption of heat in order to overcome intermolecular forces of attraction within the molecules of water in ice and kinetic energy of molecules is not increased at melting point.<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2025, 3 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -620,8 +624,8 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>At the melting point, when ice melts, the supplied heat is used to overcome intermolecular attractions between molecules; therefore, the temperature remains constant.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
-      <div class="qtext"><p>For the given hypothetical reactions, the equilibrium constants are as follows :<br/>\(<br/>\begin{aligned}<br/>&amp; X \rightleftharpoons Y ; K _1=1.0 \\<br/>&amp; Y \rightleftharpoons Z ; K _2=2.0 \\<br/>&amp; Z \rightleftharpoons W ; K _3=4.0<br/>\end{aligned}<br/>\)</p> <p>The equilibrium constant for the reaction \(X \rightleftharpoons W\) is</p></div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>For the given hypothetical reactions, the equilibrium constants are as follows :<br/>\(<br/>$$\begin{aligned}& X \rightleftharpoons Y ; K _1=1.0 \\& Y \rightleftharpoons Z ; K _2=2.0 \\& Z \rightleftharpoons W ; K _3=4.0\end{aligned}$$<br/>\)</p> <p>The equilibrium constant for the reaction \(X \rightleftharpoons W\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6.0 </p></span></div><div class="option"><span class="key">b</span><span><p>12.0</p></span></div><div class="option"><span class="key">c</span><span><p>8.0</p></span></div><div class="option"><span class="key">d</span><span><p>7.0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -632,7 +636,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a sparingly soluble salt \(A{B}_{2}\), the equilibrium concentrations of \({A}^{2+}\) ions and \({B}^{-}\)ions are \(1.2\times {10}^{-4}M\) and \(0.24\times {10}^{-3}M\), respectively. The solubility product of \(A{B}_{2}\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.276\times {10}^{-12}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(27.65\times {10}^{-12}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(0.069\times {10}^{-12}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.91\times {10}^{-12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -644,7 +648,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(A{B}_{2(s)}\\Leftrightarrow {A}_{(aq)}^{+2}+2{A}_{(aq)}^{-}\\)\u003c/p> \u003cp>\\({K}_{sp}=[A]{[{B}^{-}]}^{2}\\)\u003c/p> \u003cp>\\(=1.2\\times {10}^{4}\\times {(2.4\\times {10}^{-4})}^{2}\\)\u003c/p> \u003cp>\\(=6.91\\times {10}^{-12}{M}^{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An aqueous solution of HCl with pH 1.0 is diluted by adding equal volume of water (ignoring dissociation of water). The pH of HCl solution would <br/>(Given log 2 = 0.30)</p> <p>[JEE Main 2025, 7 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>reduce to 0.5 </p></span></div><div class="option"><span class="key">b</span><span><p>increase to 1.3 </p></span></div><div class="option"><span class="key">c</span><span><p>remain same</p></span></div><div class="option"><span class="key">d</span><span><p>increase to 2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -656,7 +660,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>HCl(aq) pH = 1; [H\u003csup>+]\u003c/sup> = 10\u003csup>–1\u003c/sup> \u003cbr/>If equal volume of water is added concentration will become half \u003cbr/>\\({[{\\mathrm{H}}^{+}]}_{\\mathrm{sol}}=\\frac{{10}^{-1}}{2}\\)\u003cbr/> pH = 1.3\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the equilibrium</p> <p>\(CO(g)+3{H}_{2}(g)⇌C{H}_{4}(g)+{H}_{2}O(g)\)</p> <p>If the pressure applied over the system increases by two fold at constant temperature then<br/>(A) Concentration of reactants and products increases.<br/>(B) Equilibrium will shift in forward direction.<br/>(C) Equilibrium constant increases since concentration of products increases.<br/>(D) Equilibrium constant remains unchanged as concentration of reactants and products remain same.<br/>Choose the <strong>correct </strong>answer from the options given below </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) and (C) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (B) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -668,7 +672,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since pressure is doubled at constant temperature, the concentration of gases increases proportionally (PV = nRT). So, both reactants and products increase in concentration.\u003cbr/>Since fewer moles of gas are on the right side (products), the equilibrium will shift forward to reduce the total pressure.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following equilibrium, \(\mathrm{CO}(\mathrm{g})+2{\mathrm{H}}_{2}(\mathrm{g})⇌{\mathrm{CH}}_{3}\mathrm{OH}(\mathrm{g})\),\(0.1\)mol of \(\mathrm{CO}\)along with a catalyst is present in a \(2{\mathrm{dm}}^{3}\) flask maintained at \(500\) K . Hydrogen is introduced into the flask until the pressure is 5 bar and \(0.04\) mol of \({\mathrm{CH}}_{3}\mathrm{OH}\) is formed. The \({\mathrm{K}}_{\mathrm{p}}^{0}\) is _________ \(\times {10}^{-3}\) (nearest integer).<br/>Given : \(\mathrm{R}=0.08{\mathrm{dm}}^{3}\mathrm{bar}{\mathrm{K}}^{-1}{\mathrm{mol}}^{-1}\) bar \({\mathrm{K}}^{-1}{\mathrm{mol}}^{-1}\)<br/>Assume only methanol is formed as the product and the system follows ideal gas behaviour.</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>70</p></span></div><div class="option"><span class="key">b</span><span><p>72</p></span></div><div class="option"><span class="key">c</span><span><p>74</p></span></div><div class="option"><span class="key">d</span><span><p>76</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -680,7 +684,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Reaction:\u003cbr/>\\(CO(g)+2{H}_{2}(g)⇌C{H}_{3}OH(g)\\)\u003c/p> \u003cp>Initial moles:\u003cbr/>CO = 0.10 mol\u003cbr/>\\({H}_{2}\\) = 0.10 mol (introduced till pressure = 5 bar)\u003cbr/>\\(C{H}_{3}OH\\) formed = 0.04 mol\u003c/p> \u003cp>At equilibrium:\u003cbr/>CO = 0.10 − 0.04 = 0.06 mol\u003cbr/>\\({H}_{2}\\) = 0.10 − 0.08 = 0.02 mol\u003cbr/>\\(C{H}_{3}OH\\) = 0.04 mol\u003c/p> \u003cp>Volume = 2 \\(d{m}^{3}\\), T = 500 K\u003c/p> \u003cp>Using\u003cbr/>\\({K}_{p}=\\frac{{P}_{C{H}_{3}OH}}{{P}_{CO}X{P}_{{H}_{2}}^{2}}\\)\u003c/p> \u003cp>Substituting partial pressures using\u003cbr/>P = nRT / V\u003c/p> \u003cp>Calculated value:\u003cbr/>\\({{K}_{P}^{^\\circ }}_{}\\approx 74\\times {10}^{-3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the given following reaction </p> <p>\({\mathrm{X}}_{2}\mathrm{Y}(\mathrm{s})⇌{\mathrm{X}}_{2}(\mathrm{g})+1/2{\mathrm{Y}}_{2}(\mathrm{g}).\mathrm{If}\alpha\) is the degree of dissociation. Calculate \({\mathrm{K}}_{\mathrm{p}}\)in the terms of P total pressure. (Memory Based JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\frac{2{\mathrm{P}}^{3/2}}{{3}^{3/2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\frac{2{\mathrm{P}}^{3/2}}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\sqrt{\frac{2\mathrm{P}}{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{K}}_{\mathrm{p}}=\frac{\sqrt{2}\mathrm{P}}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -692,7 +696,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{X}}_{2}\\mathrm{Y}\\left(\\mathrm{s}\\right)⇌{\\mathrm{X}}_{2}\\left(\\mathrm{g}\\right)+\\frac{1}{2}{\\mathrm{Y}}_{2}\\left(\\mathrm{g}\\right)\\\\ ....\\mathrm{P}'\\frac{\\mathrm{P}'}{2}\\\\ {\\mathrm{P}}_{\\mathrm{T}}=\\frac{3\\mathrm{P}'}{2}\\Rightarrow \\mathrm{P}'=\\frac{2{\\mathrm{P}}_{\\mathrm{T}}}{3}\\\\ {\\mathrm{K}}_{\\mathrm{p}}=\\left({\\mathrm{P}}_{{\\mathrm{X}}_{2}}\\right){\\left({\\mathrm{P}}_{{\\mathrm{X}}_{2}}\\right)}^{\\frac{1}{2}}\\\\ {\\mathrm{K}}_{\\mathrm{p}}=\\mathrm{P}'{\\left(\\frac{\\mathrm{P}'}{2}\\right)}^{\\frac{1}{2}}=\\frac{{\\left(\\mathrm{P}'\\right)}^{\\frac{3}{2}}}{\\sqrt{2}}=\\frac{{\\left(\\frac{2\\mathrm{P}}{3}\\right)}^{\\frac{3}{2}}}{\\sqrt{2}}=\\frac{2{\\mathrm{P}}^{\\frac{3}{2}}}{{3}^{\\frac{3}{2}}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following chemical equilibrium of the gas phase reaction at a constant temperature :<br/>\(\mathrm{A}(\mathrm{g})⇌\mathrm{B}(\mathrm{g})+\mathrm{C}(\mathrm{g})\)<br/>If p being the total pressure, \({\mathrm{K}}_{\mathrm{p}}\) is the pressure equilibrium constant and \(\alpha\) is the degree of dissociation, then which of the following is true at equilibrium ?</p> <p>[JEE Main 2025, 2 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>If \(\mathrm{p}\) value is extremely high compared to \({\mathrm{K}}_{\mathrm{p}},\alpha \approx 1\)</p></span></div><div class="option"><span class="key">b</span><span><p>When p increases \(\alpha\) decreases</p></span></div><div class="option"><span class="key">c</span><span><p>If \({\mathrm{k}}_{\mathrm{p}}\) value is extremely high compared to \(\mathrm{p},\alpha\) becomes much less than unity</p></span></div><div class="option"><span class="key">d</span><span><p>When \(\mathrm{p}\) increases \(\alpha\) increases</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -704,7 +708,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>On increasing pressure, equilibrium shifts towards fewer moles of gas → degree of dissociation decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following in increasing order of solubility product : \(Ca(OH{)}_{2},AgBr,PbS,HgS\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(PbS<HgS<Ca(OH{)}_{2}<AgBr\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(HgS<AgBr<PbS<Ca(OH{)}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Ca(OH{)}_{2}<AgBr<HgS<PbS\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(HgS<PbS<AgBr<Ca(OH{)}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -716,7 +720,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Compounds with higher \\({K}_{sp}\\) values are more soluble in water, while compounds with lower \\({K}_{sp}\\) values are less soluble.\u003cbr/>Based on the \\({K}_{sp}\\) values, the increasing order of solubility product is:\u003c/p> \u003cp>\\(HgS\u003cPbS\u003cAgBr\u003cCa(OH{)}_{2}.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the value of solubility of zirconium phosphate with formula \(\left[{\mathrm{Zr}}_{3}{\left({\mathrm{PO}}_{4}\right)}_{4}\right]\) in terms of solubility product Ksp</p> <p>(memory based jee mains shift-2 22/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{s}={\left(\frac{\mathrm{Ksp}}{6912}\right)}^{1/7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{s}=\mathrm{Ksp}\times {4352}^{4/3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{s}={\left(\frac{6912}{\mathrm{ksp}}\right)}^{4/5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{s}={\left(\frac{2345}{\mathrm{Ksp}}\right)}^{5/3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -728,7 +732,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(Z{r}_{3}{(P{O}_{4})}_{4}(s)⇌3{\\mathrm{Zr}}^{4+}(\\mathrm{aq})+4{{\\mathrm{PO}}_{4}}^{3-}(\\mathrm{aq})\\\\ 3\\mathrm{s}3\\mathrm{s}\\\\ {\\mathrm{K}}_{\\mathrm{sp}}={(3\\mathrm{s})}^{3}{(4\\mathrm{s})}^{4}=6912{\\mathrm{s}}^{7}\\\\ \\mathrm{s}={(\\frac{{\\mathrm{K}}_{\\mathrm{sp}}}{6912})}^{1/7}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ice and water are placed in a closed container at a pressure of 1 atm and temperature 273.15 K . If pressure of the system is increased 2 times, keeping temperature constant, then identify correct observation from following </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Liquid phase disappears completely.</p></span></div><div class="option"><span class="key">b</span><span><p>The amount of ice decreases.</p></span></div><div class="option"><span class="key">c</span><span><p>The solid phase (ice) disappears completely.</p></span></div><div class="option"><span class="key">d</span><span><p>Volume of system increases .</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -740,7 +744,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ice (solid) has a greater volume than water (liquid). When pressure is increased, the equilibrium will shift towards the phase with the lower volume to minimize the effect of the pressure increase.\u003c/p> \u003cp>Since water has a lower volume than ice, the equilibrium will shift towards the formation of more water.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ice and water are placed in a closed container at a pressure of 1 atm and temperature 273.15 K. If pressure of the system is increased 2 times, keeping temperature constant, then identify correct observation from following</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Liquid phase disappears completely.</p></span></div><div class="option"><span class="key">b</span><span><p>The amount of ice decreases.</p></span></div><div class="option"><span class="key">c</span><span><p>The solid phase (ice) disappears completely.</p></span></div><div class="option"><span class="key">d</span><span><p>Volume of system increases .</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -752,7 +756,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ice (solid) has a greater volume than water (liquid). When pressure is increased, the equilibrium will shift towards the phase with the lower volume to minimize the effect of the pressure increase.\u003c/p> \u003cp>Since water has a lower volume than ice, the equilibrium will shift towards the formation of more water.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following reaction (memory based jee mains shift-1 29/01/2025)</p> <p>\({\mathrm{A}}_{2}\mathrm{B}\left(\mathrm{g}\right)⇌{\mathrm{A}}_{2}\left(\mathrm{g}\right)+\frac{1}{2}{\mathrm{B}}_{2}\left(\mathrm{g}\right)\)</p> <p>If 'P' is the total pressure at equilibrium and K is the equilibrium constant, then \(\alpha\) in terms of K and P will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\alpha ={\left(\frac{2{{\mathrm{K}}_{\mathrm{p}}}^{2}}{\mathrm{P}}\right)}^{1/3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\alpha =\frac{2{\mathrm{K}}_{\mathrm{p}}}{\mathrm{P}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\alpha ={\left(\frac{2{\mathrm{K}}_{\mathrm{p}}}{\mathrm{P}}\right)}^{1/3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\alpha ={\left(\frac{3{\mathrm{K}}_{\mathrm{p}}}{2}\right)}^{1/2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,10 +765,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; A_2 B(g) \\rightleftharpoons A_2(g)+\\frac{1}{2} B_2(g) \\\\\u003cbr/>&amp; t=0 ~p_0 \\\\\u003cbr/>&amp; t=t_{\\text {eq }} ~p_0(1-\\alpha) \\quad p_0 \\alpha \\quad p_0 \\frac{\\alpha}{2} \\\\\u003cbr/>&amp; P=p_0+p_0 \\frac{\\alpha}{2} \\\\\u003cbr/>&amp; P=p_0\\left(1+\\frac{\\alpha}{2}\\right) \\quad\\left(P \\approx p_0\\right)\u003cbr/>\\end{aligned}\\)\u003c/p> \u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\text { At equilibrium } K_p=\\frac{\\left(p_{A_2}\\right)\\left(p_{B_2}\\right)}{\\left(p_{A_2 B}\\right)}=(\\alpha \\ll 1) \\\\\u003cbr/>&amp; k_p=\\frac{\\left(p_0 \\alpha\\right)\\left(p_0 \\frac{\\alpha}{2}\\right)^{\\frac{1}{2}}}{p_0(1-\\alpha)}=k_p=\\alpha\\left(p \\frac{\\alpha}{2}\\right)^{\\frac{1}{2}} \\\\\u003cbr/>&amp; \\frac{K_p}{p^{\\frac{1}{2}}}=\\frac{\\alpha^{3 / 2}}{2^{1 / 2}} \\\\\u003cbr/>&amp; \\frac{2 K_p^2}{P}=\\alpha^3 \\\\\u003cbr/>&amp; \\sqrt[3]{\\frac{2 K_p^2}{P}}=\\alpha\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}& A_2 B(g) \\rightleftharpoons A_2(g)+\\frac{1}{2} B_2(g) \\\\& t=0 ~p_0 \\\\& t=t_{\\text {eq }} ~p_0(1-\\alpha) \\quad p_0 \\alpha \\quad p_0 \\frac{\\alpha}{2} \\\\& P=p_0+p_0 \\frac{\\alpha}{2} \\\\& P=p_0\\left(1+\\frac{\\alpha}{2}\\right) \\quad\\left(P \\approx p_0\\right)\\end{aligned}\\)\u003c/p> \u003cp>\\(\\begin{aligned}& \\text { At equilibrium } K_p=\\frac{\\left(p_{A_2}\\right)\\left(p_{B_2}\\right)}{\\left(p_{A_2 B}\\right)}=(\\alpha \\ll 1) \\\\& k_p=\\frac{\\left(p_0 \\alpha\\right)\\left(p_0 \\frac{\\alpha}{2}\\right)^{\\frac{1}{2}}}{p_0(1-\\alpha)}=k_p=\\alpha\\left(p \\frac{\\alpha}{2}\\right)^{\\frac{1}{2}} \\\\& \\frac{K_p}{p^{\\frac{1}{2}}}=\\frac{\\alpha^{3 / 2}}{2^{1 / 2}} \\\\& \\frac{2 K_p^2}{P}=\\alpha^3 \\\\& \\sqrt[3]{\\frac{2 K_p^2}{P}}=\\alpha\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following compound CANNOT act as a Lewis base?</p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{CIF}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{PCl}}_{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{NF}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{SF}}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -776,7 +780,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) \\({\\mathrm{PCl}}_{5}\\) cannot act as Lewis base, due to non-availability of lone pair on P.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following solutions in the decreasing order of \(\mathrm{pOH}\)</p> <p>(1) \(0.01\text{M}\mathrm{HCl}\)<br/>(2) \(0.01\text{M}\mathrm{NaOH}\)<br/>(3) \(0.01\text{M}{\mathrm{CH}}_{3}\mathrm{COONa}\)<br/>(4) \(0.01\text{M}\mathrm{NaCl}\)<br/><br/><br/>[JEE Main 2020, 6 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(2) &gt; (4) &gt; (3) &gt; (1)</p></span></div><div class="option"><span class="key">b</span><span><p>(2) &gt; (3) &gt; (4) &gt; (1)</p></span></div><div class="option"><span class="key">c</span><span><p>(1) &gt; (3) &gt; (4) &gt; (2)</p></span></div><div class="option"><span class="key">d</span><span><p>(1) &gt; (4) &gt; (3) &gt; (2)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -788,7 +792,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> pOH \\(\\alpha\\) Acidic strength.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On decreasing the pH from 7 to 2, the solubility of a sparingly soluble salt (MX) of a weak acid (HX) increased from 10<sup>–4</sup> mol L<sup>–1</sup> to 10<sup>–3</sup> mol L<sup>–</sup><sup>1</sup>. The pK<sub>a</sub> of HX is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -800,7 +804,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At pH = 7:S = 10\u003csup>–4\u003c/sup>\u003c/p> \u003cp>Since \\(\\mathrm{pH}≫{\\mathrm{pK}}_{\\mathrm{a}}\\) (likely), hydrolysis is negligible or we treat as simple salt\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{sp}}=\\left[{\\mathrm{M}}^{+}\\right]\\left[{\\mathrm{X}}^{−}\\right]={\\mathrm{S}}^{2}={({10}^{−4})}^{2}={10}^{−8}\\)\u003c/p> \u003cp>At pH = 2: Solubility \\({\\mathrm{S}}^{'}={10}^{−3}\\). [M\u003csup>+\u003c/sup>] = s' = 10\u003csup>–3\u003c/sup>\u003c/p> \u003cp>Total \\(\\left[\\mathrm{X}\\right]=\\left[{\\mathrm{X}}^{−}\\right]+\\left[\\mathrm{HX}\\right]={\\mathrm{S}}^{'}={10}^{−3}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{sp}}=\\left[{\\mathrm{M}}^{+}\\right][{\\mathrm{X}}^{−}][{\\mathrm{X}}^{−}]={\\mathrm{K}}_{\\mathrm{sp}}/[{\\mathrm{M}}^{+}]\\)\u003c/p> \u003cp>\\(={10}^{−8}/{10}^{−3}={10}^{−5}\\)\u003c/p> \u003cp>So, \\(\\left[\\mathrm{HX}\\right]={\\mathrm{S}}^{'}−\\left[{\\mathrm{X}}^{−}\\right]={10}^{−3}−{10}^{−5}\\approx {10}^{−3}\\)\u003c/p> \u003cp>For weak acid HX: \\({\\mathrm{K}}_{\\mathrm{a}}=\\frac{\\left[{\\mathrm{H}}^{+}\\right]\\left[{\\mathrm{X}}^{−}\\right]}{\\left[\\mathrm{HX}\\right]}\\)\u003c/p> \u003cp>Given pH = 2,\u003c/p> \u003cp>\\(\\left[{\\mathrm{H}}^{+}\\right]={10}^{−2}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{a}}=\\frac{{10}^{−2}\\times {10}^{−5}}{{10}^{−3}}={10}^{−4}\\)\u003c/p> \u003cp>\\({\\mathrm{pK}}_{\\mathrm{a}}=−\\text{log}\\left({10}^{−4}\\right)=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the following Assertion and Reason, the correct option is:</p> <p>Assertion (A): The pH of water increase with increase in temperature.</p> <p>Reason (R): The dissociation of water into \({\mathrm{H}}^{+}\)and \({\mathrm{OH}}^{-}\)is an exothermic reaction<br/>[JEE Main 2020, 8 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Assertion is not true, but reason is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both assertion and reason are false</p></span></div><div class="option"><span class="key">c</span><span><p>Both assertion and reason are true but the reason is not the correct explanation for the assertion</p></span></div><div class="option"><span class="key">d</span><span><p>Both assertion and reason are true, and the reason is the correct explanation for the assertion</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -812,7 +816,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> (b) \\({\\mathrm{K}}_{\\mathrm{w}}=\\left[{\\mathrm{H}}^{+}\\right]\\left[{\\mathrm{OH}}^{-}\\right]\\)\u003c/p> \u003cp>With increase in temperature, \\({\\mathrm{K}}_{\\mathrm{w}}\\) increases\u003c/p> \u003cp>For pure water \\(\\left[{\\mathrm{H}}^{+}\\right]=\\left[{\\mathrm{OH}}^{-}\\right]\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{w}}={\\left[{\\mathrm{H}}^{+}\\right]}^{2}\\Rightarrow \\left[{\\mathrm{H}}^{+}\\right]=\\sqrt{{\\mathrm{K}}_{\\mathrm{w}}}\\)\u003c/p> \u003cp>On increasing temperature, \\(\\mathrm{Kw}↑\\left[{\\mathrm{H}}^{+}\\right]↑\\mathrm{pH}↓\\)\u003c/p> \u003cp>Dissociation of \\({\\mathrm{H}}_{2}\\mathrm{O}\\) into \\({\\mathrm{H}}^{+}\\)and \\({\\mathrm{OH}}^{-}\\) is endothermic \\((\\Delta \\mathrm{H}\\) is \\(+\\mathrm{ve})\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the reaction \( \mathrm{N}_{2} \mathrm{O}_{4}(\mathrm{~g}) \rightleftharpoons 2 \mathrm{NO}_{2}(\mathrm{~g}) \).</p> <p>The temperature at which \( \mathrm{K}_{\mathrm{C}}=20.4 \) and \( \mathrm{K}_{\mathrm{P}}=600.0 \mathrm{~K} \). (Round off to the nearest integer) (Assume all gases are ideal and \( \mathrm{R}=0.0831 \mathrm{~L} \mathrm{bar} \mathrm{K}^{-1} \mathrm{~mol}^{-1} \))</p> <p><strong>[JEE Main 2021, 17 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>354</p></span></div><div class="option"><span class="key">b</span><span><p>358</p></span></div><div class="option"><span class="key">c</span><span><p>362</p></span></div><div class="option"><span class="key">d</span><span><p>366</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -824,7 +828,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Reaction:\u003cbr/>N₂O₄ ⇌ 2NO₂\u003c/p> \u003cp>Δn = 1\u003c/p> \u003cp>Use: K\u003csub>p\u003c/sub> = K\u003csub>c \u003c/sub>(RT)\u003c/p> \u003cp>600 = 20.4 × RT\u003c/p> \u003cp>RT = 600 / 20.4 ≈ 29.41\u003c/p> \u003cp>T = 29.41 / 0.0831 ≈ 354 K\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio \(\frac{{K}_{p}}{{K}_{c}}\) for the reaction</p> <p>\(\mathrm{CO}(\mathrm{g})+1/2{\mathrm{O}}_{2}⇌\mathrm{CO}(\mathrm{g})\mathrm{is}\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{\sqrt{RT}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\left(RT\right)}^{1/2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(RT\)</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -836,7 +840,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({K}_{p}={K}_{c}{(RT)}^{∆{n}_{g}}\\\\ forthegivenreaction∆{n}_{g}=-1/2\\\\ {K}_{p}={K}_{c}{(RT)}^{-1/2}\\\\ \\frac{{K}_{p}}{{K}_{c}}=\\frac{1}{\\sqrt{RT}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On decreasing the \(\mathrm{pH}\) from 7 to 2 , the solubility of a sparingly soluble salt (MX) of a weak acid (HX) increased from \({10}^{-4}\mathrm{mol}{\mathrm{L}}^{-1}\) to \({10}^{-3}\mathrm{mol}{\mathrm{L}}^{-1}\). The \({\mathrm{pK}}_{\mathrm{a}}\) of \(\mathrm{HX}\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -848,7 +852,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For pure water, \\(\\mathrm{pH}=7\\)\u003c/p> \u003cp>Also, solubility \\(={\\mathrm{S}}_{1}=\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}\\)\u003c/p> \u003cp>Now, at \\(\\mathrm{pH}=2\\)\u003c/p> \u003cp>\\(\\Rightarrow MX(\\mathrm{s})\\mathrm{aq}\\overset{{\\mathrm{K}}_{\\mathrm{sp}}}{⇌}{\\mathrm{M}}^{+}(\\mathrm{aq})+{\\mathrm{X}}^{-}(\\mathrm{aq})\\)\u003c/p> \u003cp>\\(\\underset{\\mathrm{s}-\\mathrm{x}}{{\\mathrm{X}}^{-}}(\\mathrm{aq})+\\underset{{10}^{–2}}{{\\mathrm{H}}^{+}}(\\mathrm{aq})\\underset{}{\\overset{1/{\\mathrm{K}}_{a}}{⇌}}\\underset{x}{\\mathrm{HX}(\\mathrm{aq})}\\)\u003c/p> \u003cp>Approximation : \\(\\mathrm{s}-\\mathrm{x}≃0\\left[{\\mathrm{X}}^{-}\\right.\\)is limiting reagent ]\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{s}≃\\mathrm{x}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{s}(\\mathrm{s}-\\mathrm{x})={\\mathrm{K}}_{\\mathrm{sp}}\\) ... (1)\u003c/p> \u003cp>\\(\\frac{s}{(s-x)\\left({10}^{-2}\\right)}=\\frac{1}{{K}_{a}}\\) ... (2)\u003c/p> \u003cp>Multiply (1) \\(\\times (2)\\Rightarrow \\frac{{s}^{2}}{{10}^{-2}}=\\frac{{\\mathrm{K}}_{\\mathrm{sp}}}{{\\mathrm{K}}_{\\mathrm{a}}}\\)\u003c/p> \u003cp>This implies, \\(\\mathrm{s}=\\frac{\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}}{10\\sqrt{{\\mathrm{K}}_{\\mathrm{a}}}}\\)\u003c/p> \u003cp>Now, given: \\(\\frac{\\mathrm{s}}{{\\mathrm{s}}_{1}}=\\frac{{10}^{-3}}{{10}^{-4}}\\)\u003c/p> \u003cp>\\(\\frac{\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}}{\\frac{10\\sqrt{{\\mathrm{K}}_{\\mathrm{a}}}}{\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}}}=10\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sqrt{{\\mathrm{K}}_{\\mathrm{a}}}={10}^{-2}\\\\ \\Rightarrow {\\mathrm{K}}_{\\mathrm{a}}={10}^{-4}\\\\ \\Rightarrow {\\mathrm{pK}}_{\\mathrm{a}}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At 298 K, for the equilibrium:</p> <p>\({\mathrm{PCl}}_{3}\left(\mathrm{g}\right)+{\mathrm{Cl}}_{2}\left(\mathrm{g}\right)⇄{\mathrm{PCl}}_{5}\left(\mathrm{g}\right)\)</p> <p>Initial equilibrium concentrations are:<br/>\(\left[{\mathrm{PCl}}_{3}\right]=0.20mol{L}^{-1}\\ \left[C{l}_{2}\right]=0.10mol{L}^{-1}\\ [{\mathrm{PCl}}_{5}]=0.40mol{L}^{-1}\\ {K}_{c}=20\)</p> <p>Now, 0.20 mol L⁻¹ \({\mathrm{Cl}}_{2}\) is added. Find the new equilibrium concentration of \({\mathrm{PCl}}_{3}\)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.049 mol L⁻¹</p></span></div><div class="option"><span class="key">b</span><span><p>0.086 mol L⁻¹</p></span></div><div class="option"><span class="key">c</span><span><p>0.114 mol L⁻¹</p></span></div><div class="option"><span class="key">d</span><span><p>0.151 mol L⁻¹</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -860,7 +864,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Initial equilibrium:\u003c/p> \u003cp>[PCl₃] = 0.20\u003cbr/>[Cl₂] = 0.10\u003cbr/>[PCl₅] = 0.40\u003c/p> \u003cp>After adding Cl₂:\u003c/p> \u003cp>[PCl₃] = 0.20\u003cbr/>[Cl₂] = 0.30\u003cbr/>[PCl₅] = 0.40\u003c/p> \u003cp>Let forward shift = x\u003c/p> \u003cp>New equilibrium:\u003c/p> \u003cp>[PCl₃] = 0.20 − x\u003cbr/>[Cl₂] = 0.30 − x\u003cbr/>[PCl₅] = 0.40 + x\u003c/p> \u003cp>K = [PCl₅] / ([PCl₃][Cl₂])\u003c/p> \u003cp>20 = (0.40 + x) / [(0.20 − x)(0.30 − x)]\u003c/p> \u003cp>(0.20 − x)(0.30 − x) = 0.06 − 0.50x + x²\u003c/p> \u003cp>20(0.06 − 0.50x + x²) = 0.40 + x\u003c/p> \u003cp>1.2 − 10x + 20x² = 0.40 + x\u003c/p> \u003cp>20x² − 11x + 0.8 = 0\u003c/p> \u003cp>x = (11 ± √57) / 40\u003c/p> \u003cp>√57 ≈ 7.55\u003c/p> \u003cp>x ≈ 0.086 (valid root)\u003c/p> \u003cp>Final concentration:\u003c/p> \u003cp>[PCl₃] = 0.20 − 0.086\u003cbr/>= 0.114 mol L⁻¹\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equilibrium constant \( \mathrm{K}_{c} \) at \( 298 \mathrm{~K} \) for the reaction \( \mathrm{A}+\mathrm{B} \rightleftharpoons \mathrm{C}+\mathrm{D} \) is 100. Starting with an equimolar solution with concentrations of \( \mathrm{A}, \mathrm{B}, \mathrm{C} \) and \( \mathrm{D} \) all equal to \( 1 \mathrm{M} \), the equilibrium concentration of \( \mathrm{D} \) is "c" M .The value of \(22\times c\) is _______.</p> <p>[JEE Main 2021, 26 Aug (Shift 2)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>20</p></span></div><div class="option"><span class="key">c</span><span><p>30</p></span></div><div class="option"><span class="key">d</span><span><p>40</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -872,7 +876,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(A+B\\Leftrightarrow C+D\\\\ Initial:1111\\\\ Ateq:1-x1-x1+x1+x\\\\ K=\\frac{{(1+x)}^{2}}{{(1-x)}^{2}}=100\\\\ 1+x=10(1-x)\\\\ 11x=9\\\\ x=\\frac{9}{11}\\\\ [D]=1+x=\\frac{20}{11}M=c\\\\ 22\\times c=\\frac{22\\times 20}{11}=40\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assuming that \( \mathrm{Ba}(\mathrm{OH})_{2} \) is completely ionised in aqueous solution under the given conditions, the concentration of \( \mathrm{H}_{3} \mathrm{O}^{+} \)ions in \( 0.005 \mathrm{~M} \) aqueous solution of \( \mathrm{Ba}(\mathrm{OH})_{2} \) at 298 \( \mathrm{K} \) is \( \mathrm{x} \times 10^{-12} \mathrm{~mol} \mathrm{~L}^{-1} \). Find the value of \( \mathrm{x} \).</p> <p>[JEE Main 2021, 25 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -884,7 +888,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>(i) \(\mathrm{X}(\mathrm{g})⇌\mathrm{Y}(\mathrm{g})+\mathrm{Z}(\mathrm{g}){\mathrm{K}}_{{\mathrm{p}}_{1}}=3\)</p> <p>(ii) \(\mathrm{A}(\mathrm{g})⇌2\mathrm{B}(\mathrm{g}){\mathrm{K}}_{{\mathrm{p}}_{2}}=1\)</p> <p>If the degree of dissociation and initial concentration of both the reactants X(g) and A(g) are equal, then the ratio of the total pressure at equilibrium \(\left(\frac{{p}_{1}}{{p}_{2}}\right)\) is equal to x: 1. The value of x is (Nearest integer)</p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>14</p></span></div><div class="option"><span class="key">d</span><span><p>16</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -896,7 +900,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(X(g)⇌Y(g)+Z(g){K}_{{p}_{1}}=\\\\ \\text{ At equilibrium }n-\\alpha n\\alpha n\\alpha n\\\\ {\\mathrm{K}}_{{\\mathrm{p}}_{1}}=\\frac{{\\left(\\frac{\\alpha }{1+\\alpha }\\times {\\mathrm{p}}_{1}\\right)}^{2}}{\\frac{1-\\alpha }{1+\\alpha }{\\mathrm{p}}_{1}}\\\\ 3=\\frac{{\\alpha }^{2}\\times {p}_{1}}{1-{\\alpha }^{2}}\\\\ \\mathrm{A}\\left(\\mathrm{g}\\right)\\underset{\\mathrm{n}}{}⇌\\underset{-}{2\\mathrm{B}\\left(\\mathrm{g}\\right){\\mathrm{K}}_{{\\mathrm{p}}_{2}}}=1\\)\u003c/p> \u003cp>At equilibrium \\(x-\\alpha n2\\alpha n\\)\u003cbr/>\\({\\mathrm{p}}_{\\text{total }}={\\mathrm{p}}_{2}\\\\ {\\mathrm{K}}_{{\\mathrm{p}}_{2}}=\\frac{{\\left(\\frac{2\\alpha }{1+\\alpha }\\times {\\mathrm{p}}_{2}\\right)}^{2}}{\\frac{1-\\alpha }{1+\\alpha }\\times {\\mathrm{p}}_{2}}\\\\ 1=\\frac{4{\\alpha }^{2}\\times {\\mathrm{p}}_{2}}{1-{\\alpha }^{2}}\\\\ \\frac{{\\mathrm{k}}_{{\\mathrm{p}}_{1}}}{{\\mathrm{k}}_{{\\mathrm{p}}_{2}}}=\\frac{{\\mathrm{p}}_{1}}{4{\\mathrm{p}}_{2}}\\\\ \\frac{3}{1}=\\frac{{\\mathrm{p}}_{1}}{4{\\mathrm{p}}_{2}}\\\\ \\mathrm{x}=12\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The \({\mathrm{OH}}^{-}\)concentration in a mixture of \(5.0\mathrm{mL}\) of \(0.0504\mathrm{M}\) \({\mathrm{NH}}_{4}\mathrm{Cl}\) and \(2\mathrm{mL}\) of \(0.0210M{\mathrm{NH}}_{3}\) solution is __________\(\mathrm{x}\times {10}^{-6}\mathrm{M}\). The value of \(\mathrm{x}\) is . (Nearest integer)</p> <p>[Given \({\mathrm{K}}_{\mathrm{w}}=1\times {10}^{-14}\) and \({\mathrm{K}}_{\mathrm{b}}=1.8\times {10}^{-5}\) ]</p> <p><strong>[JEE Main 2021, 26 Aug (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -908,7 +912,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>According to the question,\u003c/p> \u003cp>Millimole of \\({\\mathrm{NH}}_{4}^{+}=0.0504\\times 5\\)\u003c/p> \u003cp>Millimole of \\({\\mathrm{NH}}_{3}=0.0210\\times 2\\)\u003c/p> \u003cp>Here, \\({\\mathrm{K}}_{\\mathrm{b}}=\\frac{\\left[{\\mathrm{OH}}^{-}\\right]\\times \\left[{\\mathrm{NH}}_{4}^{+}\\right]}{\\left[{\\mathrm{NH}}_{3}\\right]}\\)\u003c/p> \u003cp>\\(∴1.8\\times {10}^{-5}=\\frac{\\left[{\\mathrm{OH}}^{-}\\right]\\times 0.0504\\times 5}{0.0210\\times 2}\\)\u003c/p> \u003cp>\\(∴\\left[{\\mathrm{OH}}^{-}\\right]=\\frac{1.8\\times {10}^{-5}\\times 0.0210\\times 2}{0.0504\\times 5}=0.3\\times {10}^{-5}\\mathrm{M}\\)\u003c/p> \u003cp>\\(∴\\left[{\\mathrm{OH}}^{-}\\right]=3\\times {10}^{-6}\\mathrm{M}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{x}=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The \({\mathrm{K}}_{\mathrm{sp}}\) for the following dissociation is \(1.6\times {10}^{-5}\)</p> <p>\({\mathrm{PbCl}}_{2}(\mathrm{s})⇌{\mathrm{Pb}}^{2+}(\mathrm{aq})+2{\mathrm{Cl}}^{-}(\mathrm{aq})\)</p> <p>Which of the following choices is correct for a mixture of \(300\mathrm{mL}0.134M\mathrm{Pb}{\left({\mathrm{NO}}_{3}\right)}_{2}\) and \(100\mathrm{mL}0.4M\mathrm{NaCl}\) ?</p> <p>[JEE Main 2020, 9 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Not enough data provided</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Q}>{\mathrm{K}}_{\mathrm{sp}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Q}<{\mathrm{K}}_{\mathrm{sp}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Q}={\mathrm{K}}_{\mathrm{sp}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -920,7 +924,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>As, \\(\\mathrm{Q}=\\left[{\\mathrm{Pb}}^{2+}\\right]{\\left[{\\mathrm{Cl}}^{-}\\right]}^{2}\\)\u003c/p> \u003cp>\\(\\mathrm{Q}=\\left(\\frac{300\\times 0.134}{400}\\right){\\left(\\frac{100\\times 0.4}{400}\\right)}^{2}=\\frac{3\\times 0.134}{4}(0.1{)}^{2}\\)\u003c/p> \u003cp>\\(=1.005\\times {10}^{-3}\\)\u003c/p> \u003cp>Given, \\({\\mathrm{K}}_{\\mathrm{sp}}=1.6\\times {10}^{-5}\\)\u003c/p> \u003cp>\\(∴\\mathrm{Q}>{\\mathrm{K}}_{\\mathrm{sp}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statement(s) is/are correct?</p> <p>(A) The pH of \(1\times {10}^{-8}\) solution is 8 .</p> <p>(B) The conjugate base \({\mathrm{H}}_{2}{\mathrm{PO}}_{4}^{-}\) is \(\mathrm{H}{{\mathrm{PO}}_{4}}^{2-}\).</p> <p>(C) \({\mathrm{K}}_{\mathrm{W}}\) increases with increase in temperature.</p> <p>(D) When a solution of weak monoprotic acid is titrated against a strong base at half neutralisation point, \(\mathrm{pH}=\frac{1}{2}{\mathrm{pK}}_{\mathrm{a}}\)</p> <p>Choose the correct answer from the option given below.</p> <p><strong>[JEE Main 2023, 15 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (C), (D)</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (D)</p></span></div><div class="option"><span class="key">c</span><span><p>(A),(B),(C)</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (C)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -932,7 +936,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(A) \\(\\mathrm{pH}\\) of \\({10}^{-8}\\mathrm{MHCl}\\) is in acidic range (6.98).\u003c/p> \u003cp>(B) Conjugate Base of \\({\\mathrm{H}}_{2}{\\mathrm{PO}}_{4}^{-}\\) is \\(\\mathrm{H}{{\\mathrm{PO}}_{4}}^{2-}\\)\u003c/p> \u003cp>(C) \\({\\mathrm{K}}_{\\mathrm{W}}\\) increases with increasing Temperature, as the temperature increases, the dissociation of water increases.\u003c/p> \u003cp>(D) At half neutralisation point, half of the acid is present in the form of salt.\u003c/p> \u003cp>\\(\\mathrm{pH}={\\mathrm{pk}}_{\\mathrm{a}}+\\log \\frac{1}{1}={\\mathrm{pk}}_{\\mathrm{a}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Amongst the given options which of the following molecules/ion acts as a Lewis acid?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{H}}_{2}\mathrm{O}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{BF}_3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{OH}}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{NH}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -944,7 +948,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>BF₃ is electron‐deficient at boron (empty p‐orbital) and readily accepts an electron pair, making it a classic Lewis acid. The others (H₂O, OH⁻, NH₃) all have lone pairs and generally act as Lewis bases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\[\mathrm{PCl}_{5}(g) \rightleftharpoons \mathrm{PCl}_{3}(g)+\mathrm{Cl}_{2}(g) ; \mathrm{K}_{\mathrm{C}}=1.844\]</p> <p>3.0 moles of \( \mathrm{PCl}_{5} \) is introduced in a \( 1 \mathrm{~L} \) closed reaction vessel at \( 380 \mathrm{~K} \). The number of moles \( \mathrm{PCl}_{5} \) at equilibrium is _____ \( \times 10^{-3} \). (Round off to the nearest integer)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1196</p></span></div><div class="option"><span class="key">b</span><span><p>1296</p></span></div><div class="option"><span class="key">c</span><span><p>1396</p></span></div><div class="option"><span class="key">d</span><span><p>1496</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -956,7 +960,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pH of a solution obtained by mixing 50 mL of 1 M HCl and 30 mL of 1 M NaOH is \(x\times {10}^{-4}\). The value of x is __________ . (Nearest integer)<br/>\([\log 2.5=0.3979]\)</p> <p><strong>[JEE Main 2021, 31 Aug (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6021</p></span></div><div class="option"><span class="key">b</span><span><p>6031</p></span></div><div class="option"><span class="key">c</span><span><p>6041</p></span></div><div class="option"><span class="key">d</span><span><p>6051</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -968,7 +972,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>50 ml of 1(M) HCl + 30 ml of 1(M) NaOH \u003c/p> \u003cp>\\(\\underset{30\\times 1\\mathrm{m}\\mathrm{mol}\\\\ 0\\mathrm{m}\\mathrm{mol}}{\\mathrm{NaOH}}+\\underset{50\\times 1\\mathrm{m}\\mathrm{mol}\\\\ 20\\mathrm{m}\\mathrm{mol}}{\\mathrm{HCl}}\\to \\mathrm{NaCl}+{\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/p> \u003cp>\\({\\left[{\\mathrm{H}}^{+}\\right]}_{\\text{mix }}=\\frac{20}{50+30}\\mathrm{M}=\\frac{20}{80}\\mathrm{M}=\\frac{1}{4}\\mathrm{M}=0.25\\mathrm{M}\\)\\(\\mathrm{pH}=-\\log \\left[{\\mathrm{H}}^{+}\\right]=-\\log \\left(2.5\\times {10}^{-1}\\right)\\)\u003c/p> \u003cp>\\(=1-0.3979=0.60209\\)\u003c/p> \u003cp>\\(x\\times {10}^{-4}=6021\\times {10}^{-4}\\)\u003c/p> \u003cp>\\(∴\\mathrm{x}=6021\\)\u003c/p> \u003cp>Ans : 6021\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hydrolysis of sucrose is given by the following reaction.</p> <p>Sucrose \( +\mathrm{H}_{2} \mathrm{O} \rightleftharpoons \) Glucose \( + \) Fructose</p> <p>If the equilibrium constant \( \left(\mathrm{K}_{\mathrm{c}}\right) \) is \( 2 \times 10^{13} \) at \( 300 \mathrm{~K} \), the value of \( \Delta_{r} \mathrm{G}^{\mathrm{o}} \) at the same temperature will be :</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 8.314 \mathrm{~J} \mathrm{~mol}^{-1} \mathrm{~K}^{-1} \times 300 \mathrm{~K} \times \ln \left(2 \times 10^{13}\right) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 8.314 \mathrm{~J} \mathrm{~mol}^{-1} \mathrm{~K}^{-1} \times 300 \mathrm{~K} \times \ln \left(3 \times 10^{13}\right) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( -8.314 \mathrm{~J} \mathrm{~mol}^{-1} \mathrm{~K}^{-1} \times 300 \mathrm{~K} \times \ln \left(4 \times 10^{13}\right) \)</p></span></div><div class="option"><span class="key">d</span><span><p> \( -8.314 \mathrm{~J} \mathrm{~mol}^{-1} \mathrm{~K}^{-1} \times 300 \mathrm{~K} \times \ln \left(2 \times 10^{13}\right) \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -980,7 +984,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Standard free energy change is given by\u003c/p> \u003cp>\\({\\Delta }_{\\mathrm{r}}{G}^{∘}=−RT\\text{ }\\ln ⁡K\\mathrm{.}\\)\u003c/p> \u003cp>With \\(K=2\\times {10}^{13}\\), \\(R=8.314\\text{ }\\mathrm{J}\\text{ }\\mathrm{m}\\mathrm{o}{\\mathrm{l}}^{−1}\\text{ }{\\mathrm{K}}^{−1}\\), and \\(T=300\\text{ }\\mathrm{K}\\), we get\u003c/p> \u003cp>\\({\\Delta }_{\\mathrm{r}}{G}^{∘}=−8.314\\times 300\\times \\ln ⁡(2\\times {10}^{13})\\mathrm{.}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A homogeneous ideal gaseous reaction \( \mathrm{AB}_{2}(\mathrm{~g}) \rightleftharpoons \mathrm{A}(\mathrm{g})+2 \mathrm{~B}(\mathrm{~g}) \) is carried out in a 25 litre flask at \( 27^{\circ} \mathrm{C} \). The initial amount of \( \mathrm{AB}_{2} \) was 1 mole and the equilibrium pressure was \( 1.9 \mathrm{~atm} \). The value of \( \mathrm{K}_{P} \) is \( \mathrm{x} \times 10^{-2} \). The value of \( \mathrm{x} \) is _____________(Round off to nearest integer)\[</p> <p><strong>[JEE Main 2021, 26 Feb (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>73</p></span></div><div class="option"><span class="key">b</span><span><p>45</p></span></div><div class="option"><span class="key">c</span><span><p>66</p></span></div><div class="option"><span class="key">d</span><span><p>70</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -992,7 +996,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let degree of dissociation = α\u003c/p> \u003cp>Initial: AB₂ = 1\u003c/p> \u003cp>At equilibrium:\u003cbr/>AB₂ = 1 − α, A = α, B = 2α\u003c/p> \u003cp>n(total) = (1 − α) + α + 2α = 1 + 2α\u003c/p> \u003cp>P = nRT / V\u003c/p> \u003cp>1.9 = (1 + 2α) × (0.08206 × 300) / 25\u003c/p> \u003cp>RT = 0.08206 × 300 = 24.618\u003c/p> \u003cp>RT/V = 24.618 / 25 ≈ 0.985\u003c/p> \u003cp>So:\u003c/p> \u003cp>1.9 = (1 + 2α) × 0.985\u003c/p> \u003cp>⇒ (1 + 2α) = 1.9 / 0.985 ≈ 1.93\u003c/p> \u003cp>1 + 2α = 1.93\u003c/p> \u003cp>2α = 0.93\u003c/p> \u003cp>α ≈ 0.465\u003c/p> \u003cp>Total pressure = 1.9 atm\u003c/p> \u003cp>Mole fractions:\u003c/p> \u003cp>A = α / (1 + 2α) = 0.465 / 1.93\u003cbr/>B = 2α / (1 + 2α) = 0.93 / 1.93\u003cbr/>AB₂ = (1 − α) / (1 + 2α) = 0.535 / 1.93\u003c/p> \u003cp>Partial pressures:\u003c/p> \u003cp>P(A) ≈ 0.458 atm\u003cbr/>P(B) ≈ 0.917 atm\u003cbr/>P(AB₂) ≈ 0.525 atm\u003c/p> \u003cp>Kp = [P(A) × P(B)²] / P(AB₂)\u003c/p> \u003cp>= (0.458 × 0.917²) / 0.525\u003c/p> \u003cp>≈ (0.458 × 0.841) / 0.525\u003c/p> \u003cp>≈ 0.385 / 0.525\u003c/p> \u003cp>≈ 0.73\u003c/p> \u003cp>Kp = 0.73 = 73 × 10⁻²\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>On decreasing the \(\mathrm{pH}\) from 7 to 2 , the solubility of a sparingly soluble salt (MX) of a weak acid (HX) increased from \({10}^{-4}\mathrm{mol}{\mathrm{L}}^{-1}\) to \({10}^{-3}\mathrm{mol}{\mathrm{L}}^{-1}\). The \({\mathrm{pK}}_{\mathrm{a}}\) of \(\mathrm{HX}\) is:</p> <p>[JEE Advanced 2023, Paper-1]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1004,7 +1008,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) For pure water, \\(\\mathrm{pH}=7\\)\u003c/p> \u003cp>Also, solubility \\(={\\mathrm{S}}_{1}=\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}\\)\u003c/p> \u003cp>Now, at \\(\\mathrm{pH}=2\\)\u003c/p> \u003cp>\\(\\Rightarrow MX(\\mathrm{s})\\mathrm{aq}\\overset{{\\mathrm{K}}_{\\mathrm{sp}}}{⇌}{\\mathrm{M}}^{+}(\\mathrm{aq})+{\\mathrm{X}}^{-}(\\mathrm{aq})\\)\u003c/p> \u003cp>\\({\\mathrm{X}}_{\\mathrm{s}-\\mathrm{x}}^{-}(\\mathrm{aq})+{\\mathrm{H}}^{+}(\\mathrm{aq})\\underset{\\mathrm{x}=\\mathrm{s}}{\\overset{1/{\\mathrm{K}}_{a}}{⇌}}\\underset{\\mathrm{HX}(\\mathrm{aq})}{\\mathrm{H}}\\)\u003c/p> \u003cp>Approximation : \\(\\mathrm{s}-\\mathrm{X}≃0\\left[{\\mathrm{X}}^{-}\\right.\\)is limiting reagent ]\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{s}≃\\mathrm{x}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{s}(\\mathrm{s}-\\mathrm{x})={\\mathrm{K}}_{\\mathrm{sp}}\\)\u003c/p> \u003cp>\\(\\frac{s}{(s-x)\\left({10}^{-2}\\right)}=\\frac{1}{{K}_{a}}\\)\u003c/p> \u003cp>Multiply (1) \\(\\times (2)\\Rightarrow \\frac{{s}^{2}}{{10}^{-2}}=\\frac{{\\mathrm{K}}_{\\mathrm{sp}}}{{\\mathrm{K}}_{\\mathrm{a}}}\\)\u003c/p> \u003cp>This implies, \\(\\mathrm{s}=\\frac{\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}}{10\\sqrt{{\\mathrm{K}}_{\\mathrm{a}}}}\\)\u003c/p> \u003cp>Now, given: \\(\\frac{\\mathrm{s}}{{\\mathrm{s}}_{1}}=\\frac{{10}^{-3}}{{10}^{-4}}\\)\u003c/p> \u003cp>\\(\\frac{\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}}{\\frac{10\\sqrt{{\\mathrm{K}}_{\\mathrm{a}}}}{\\sqrt{{\\mathrm{K}}_{\\mathrm{sp}}}}}=10\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sqrt{{\\mathrm{K}}_{\\mathrm{a}}}={10}^{-2}\\\\ \\Rightarrow {\\mathrm{K}}_{\\mathrm{a}}={10}^{-4}\\\\ \\Rightarrow {\\mathrm{pK}}_{\\mathrm{a}}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Value of \( K_{P} \) for the equilibrium reaction, \( \mathrm{N}_{2} \mathrm{O}_{4}(\mathrm{~g}) \rightleftharpoons 2 \mathrm{NO}_{2}(\mathrm{~g}) \) at \( 288 \mathrm{~K} \) is 47.9 . The \( \mathrm{K}_{\mathrm{C}} \) for this reaction at same temperature is ___</p> <p>(Nearest integer \( ) \quad\left(\mathrm{R}=0.083 \mathrm{~L}\right. \) bar \( \left.\mathrm{K}^{-1} \mathrm{~mol}^{-1}\right) \)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1016,7 +1020,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A solution of \({\mathrm{NH}}_{4}\mathrm{Cl}\) and \({\mathrm{NH}}_{3}\) has pH = 8.0. Which of the following hydroxides may be precipitated when this solution is mixed with equal volume of 0.2 M of metal ion.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Ba}{(\mathrm{OH})}_{2}({\mathrm{K}}_{\mathrm{sp}}=1.1\times {10}^{-4})\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Mg{(\mathrm{OH})}_{2}({\mathrm{K}}_{\mathrm{sp}}=3.5\times {10}^{-4})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Fe{(\mathrm{OH})}_{2}({\mathrm{K}}_{\mathrm{sp}}=8.1\times {10}^{-16})\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Ca}{(\mathrm{OH})}_{2}({\mathrm{K}}_{\mathrm{sp}}=2.1\times {10}^{-5})\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1028,7 +1032,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({P}^{H}=8,{P}^{OH}=6\\\\ {\\left[OH\\right]}^{-}={10}^{-6}M\\\\ IonicproductofFe{(OH)}_{2}=0.2\\times {({10}^{-6})}^{2}=2\\times {10}^{-13}whichisgreaterthan\\\\ {K}_{sp}(8.1\\times {10}^{-16})\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The solubility product of \(\mathrm{Cr}(\mathrm{OH})_3\) at \(298 \mathrm{~K}\) is \(6.0 \times 10^{-31}\). The concentration of hydroxide ions in a saturated solution of \(\mathrm{Cr}(\mathrm{OH})_3\) will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\left(2.22\times {10}^{-31}\right)}^{1/4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\left(18\times {10}^{-31}\right)}^{1/2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\left(4.86\times {10}^{-29}\right)}^{1/4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\left(18\times {10}^{-31}\right)}^{1/4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1040,7 +1044,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(D)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q84" data-gated="1">
-      <div class="qnum">Q84</div>
+      <div class="qhead"><div class="qnum">Q84</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The density of a monobasic strong acid (Molar mass \(24.2\mathrm{g}\) ) is \(1.21\mathrm{kg}/L\). The volume of its solution required for the complete neutralization of \(25\mathrm{mL}\) of \(0.24\mathrm{M}\mathrm{NaOH}\) is .............\(\times {10}^{-2}\mathrm{mL}\) (Nearest integer)</p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>11</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>13</p></span></div><div class="option"><span class="key">d</span><span><p>14</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1052,7 +1056,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>millimole of \\(\\mathrm{NaOH}=0.24\\times 25\\)\u003c/p> \u003cp>\\(∴\\) milimole of acid \\(=0.24\\times 25\\)\u003c/p> \u003cp>\\(\\Rightarrow\\) mass of acid \\(=0.24\\times 25\\times 24.2\\mathrm{mg}\\)\u003c/p> \u003cp>for pure acid,\u003c/p> \u003cp>\\(\\mathrm{V}=\\frac{\\mathrm{W}}{\\mathrm{d}};(\\mathrm{d}=1.21\\mathrm{kg}/\\mathrm{L}=1.21\\mathrm{g}/\\mathrm{ml})\\)\u003c/p> \u003cp>\\(∴\\mathrm{V}=\\frac{0.24\\times 25\\times 24.2}{1.21}\\times {10}^{-3}=\\frac{145.2}{1.21}\\times {10}^{-3}\\)\u003c/p> \u003cp>\\(=120\\times {10}^{-3}\\mathrm{ml}\\)\u003c/p> \u003cp>\\(=12\\times {10}^{-2}\\mathrm{ml}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q85" data-gated="1">
-      <div class="qnum">Q85</div>
+      <div class="qhead"><div class="qnum">Q85</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Sulphurous acid \( \left(\mathrm{H}_{2} \mathrm{SO}_{3}\right) \) has <br/>\( \mathrm{Ka}_{1}=1.7 \times 10^{-2} \) and \( \mathrm{Ka}_{2}=6.4 \) \( \times 10^{-8} \). The \( \mathrm{pH} \) of \( 0.588 \mathrm{~M} \mathrm{~H}_{2} \mathrm{SO}_{3} \) is........ (Round off to the nearest integer)</p> <p><strong>[JEE Main 2021, 16 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>7</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1064,7 +1068,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>pH = – log [H\u003csup>+\u003c/sup>]\u003c/p> \u003cp>pH = – log (0.0916)\u003c/p> \u003cp>pH = 1.036 \\(≃1\\)\u003c/p> \u003cp>The pH of 0.588 M \\({\\mathrm{H}}_{2}{\\mathrm{SO}}_{3}\\) is 1.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q86" data-gated="1">
-      <div class="qnum">Q86</div>
+      <div class="qhead"><div class="qnum">Q86</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The \( \mathrm{pK}_{\mathrm{b}} \) of dimethylamine and \( \mathrm{pK}_{\mathrm{a}} \) of acetic acid are \( 3.27 \) and \( 4.77 \) respectively at \( \mathrm{T}(\mathrm{K}) \). The <strong>correct</strong> option for the \( \mathrm{pH} \) of dimethylammonium acetate solution is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 5.50 \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 7.75 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 6.25 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 8.50 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1076,7 +1080,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{pH}\\text{ }=\\text{ }7\\text{  }+\\text{  }\\frac{1}{2}\\text{ }(p{K}_{\\mathrm{a}}\\text{  }−\\text{  }p{K}_{\\mathrm{b}})\\mathrm{.}\\)\u003c/p> \u003cp>\\(\\text{pH}=7+\\frac{1}{2}\\text{ }(\\text{ }4.77−3.27\\text{ })=7+0.75=7.75.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q87" data-gated="1">
-      <div class="qnum">Q87</div>
+      <div class="qhead"><div class="qnum">Q87</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the reaction \( \mathrm{A}_{(\mathrm{g})} \rightleftharpoons \mathrm{B}_{(\mathrm{g})} \), the value of the equilibrium constant at \( 300 \mathrm{~K} \) and \( 1 \mathrm{~atm} \) is equal to 100.0 . The value of \( \Delta_{\mathrm{r}} \mathrm{G} \) for the reaction at \( 300 \mathrm{~K} \) and 1 atm in \( \mathrm{J} \mathrm{mol}^{-1} \) is \( -\mathrm{xR} \), where \( \mathrm{x} \) is</p> <p>(Rounded off to the nearest integer)</p> <p>\( \left(\mathrm{R}=8.31 \mathrm{~J} \mathrm{~mol}^{-1} \mathrm{~K}^{-1}\right. \) and \( \left.\ln 10=2.3\right) \)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1360</p></span></div><div class="option"><span class="key">b</span><span><p>1370</p></span></div><div class="option"><span class="key">c</span><span><p>1380</p></span></div><div class="option"><span class="key">d</span><span><p>1390</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1088,7 +1092,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q88" data-gated="1">
-      <div class="qnum">Q88</div>
+      <div class="qhead"><div class="qnum">Q88</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reaction rate for the reaction</p> <p>\[\left[\mathrm{PtCl}_{4}\right]^{2-}+\mathrm{H}_{2} \mathrm{O} \rightleftharpoons\left[\mathrm{Pt}\left(\mathrm{H}_{2} \mathrm{O}\right) \mathrm{Cl}_{3}\right]^{-}+\mathrm{Cl}^{-}\]</p> <p>was measured as a function of concentration of different species. It was observed that</p> <p>\[\begin{array}{l}\frac{-\mathrm{d}\left[\left[\mathrm{PtCl}_{4}\right]^{2-}\right]}{\mathrm{dt}}=4.8 \times 10^{-5} \\ {\left[\left[\mathrm{PtCl}_{4}\right]^{2-}\right]-2.4 \times 10^{-3}\left[\left[\mathrm{Pt}\left(\mathrm{H}_{2} \mathrm{O}\right) \mathrm{Cl}_{3}\right]^{-}\right]\left[\mathrm{Cl}^{-}\right] \text {. }} \\\end{array}\]</p> <p>where square brackets are used to denote molar concentration. The equilibrium constant \( \mathrm{K}_{\mathrm{C}}= \) _____\(\text{x}{10}^{-2}\). (Nearest integer)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1100,7 +1104,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q89" data-gated="1">
-      <div class="qnum">Q89</div>
+      <div class="qhead"><div class="qnum">Q89</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements.</p> <p>Statement-I: In the titration between strong acid and weak base, methyl orange is suitable as an indicator.</p> <p>Statement-II: For titration of acetic acid with \( \mathrm{NaOH} \), phenolphthalein is not a suitable indicator.</p> <p>- In the light of above statements, choose the most appropriate - answer from the options given below.</p> <p><br/>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is false but Statement-II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is true but Statement-II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Both statement-I and Statement-II are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement-I and Statement-II are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1112,7 +1116,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement I is true because methyl orange indicator has pH range ( 3.2 to 4.2 ) which is suitable for buffer produced by strong acid and weak base.\u003cbr/>Statement II is false because phenolphthalein has pH range ( 8.4 to 10.2) and only suitable for equivalence point above than 7, In this case pH increased by the addition of NaOH on acetic acid.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q90" data-gated="1">
-      <div class="qnum">Q90</div>
+      <div class="qhead"><div class="qnum">Q90</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A mixture of 1 mole of \({\mathrm{H}}_{2}\mathrm{O}\) and 1 mole of CO is taken in a 10 litre container and heated to 725 K. At equilibrium 40% of water by mass reacts with carbon monoxide according to the equation :</p> <p>\(\mathrm{CO}(\mathrm{g})+{\mathrm{H}}_{2}\mathrm{O}(\mathrm{g})\to {\mathrm{CO}}_{2}(\mathrm{g})+{\mathrm{H}}_{2}(\mathrm{g})\)</p> <p>The value of \({\mathrm{K}}_{\mathrm{C}}\times {10}^{2}\) for the reaction is_______.</p> <p>(K<sub>C</sub> - Equilibrium constant) (Nearest integer)</p> <p>[JEE Main 2023, 11 Apr (Shift 1)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>11</p></span></div><div class="option"><span class="key">b</span><span><p>22</p></span></div><div class="option"><span class="key">c</span><span><p>33</p></span></div><div class="option"><span class="key">d</span><span><p>44</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1124,7 +1128,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\mathrm{CO}}_{(\\mathrm{g})}+{\\mathrm{H}}_{2}{\\mathrm{O}}_{(\\mathrm{g})}⇌{\\mathrm{CO}}_{2(\\mathrm{g})}+{\\mathrm{H}}_{2(\\mathrm{g})}\\)\u003c/p> \u003cp>\\(\\mathrm{t}=01\\mathrm{mol}1\\mathrm{mol}00\\)\u003c/p> \u003cp>at eqn. \\(1-\\mathrm{x}1-\\mathrm{x}\\mathrm{x}\\mathrm{x}\\)\u003c/p> \u003cp>at equilibrium 40% by mass water reacts with CO\u003c/p> \u003cp>\\(\\mathrm{x}=0.41-\\mathrm{x}=0.6\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{C}}=\\frac{\\left[{\\mathrm{CO}}_{2}\\right]\\left[{\\mathrm{H}}_{2}\\right]}{[\\mathrm{CO}]\\left[{\\mathrm{H}}_{2}\\mathrm{O}\\right]}=\\frac{0.4\\times 0.4}{0.6\\times 0.6}=0.44\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{C}}\\times {10}^{2}=44\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q91" data-gated="1">
-      <div class="qnum">Q91</div>
+      <div class="qhead"><div class="qnum">Q91</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>3g of acetic acid is added to 250mL of 0.1 M HCL and the solution made up to 500 mL. To 20 mL of this solution \(1/2\mathrm{mL}\) of 5 M NaOH is added.</p> <p>The pH of the solution is___________(round off to the nearest integer)</p> <p>[Given: pKa of acetic acid =4.75, molar mass of acetic acid =60 g/ mol, log 3=0.4771] Neglect any changes in volume.<br/>[JEE Main 2020, 7 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>5</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>7</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1136,7 +1140,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> Molar mass of \\({\\mathrm{CH}}_{3}\\mathrm{COOH}\\) is \\(=60\\mathrm{g}\\)\u003c/p> \u003cp>no of moles \\({\\mathrm{CH}}_{3}\\mathrm{COOH}=\\frac{3}{60}=0.05\\)\u003c/p> \u003cp>no of milli moles of \\({\\mathrm{CH}}_{3}\\mathrm{COOH}\\)\u003c/p> \u003cp>\\(=\\frac{.05}{500}\\times 1000=.1\\mathrm{m}.\\mathrm{mol}\\)\u003c/p> \u003cp>\\(500\\mathrm{mL}\\)has \\(\\mathrm{HCl}=25\\times {10}^{-3}\\mathrm{mol}=25\\mathrm{m}\\cdot \\mathrm{mol}\\)\u003c/p> \u003cp>\\(120\\mathrm{mL}\\) has \\(=1\\mathrm{m}.\\mathrm{mol}\\)\u003c/p> \u003cp>and \\(500\\mathrm{mL}\\) has \\({\\mathrm{CH}}_{3}\\mathrm{COOH}=\\frac{1}{20}\\times {10}^{3}\\mathrm{m}\\cdot \\mathrm{mol}\\)\u003c/p> \u003cp>so 20 ml has \\(\\frac{{10}^{3}}{20}\\times \\frac{20}{500}=2\\mathrm{m}\\cdot \\mathrm{mol}\\)\u003c/p> \u003cp>NaOH added in 20 ml is \\(5\\times \\frac{1}{2}=2.5\\mathrm{m}\\cdot \\mathrm{mol}\\)\u003c/p> \u003cp>So, \\(\\mathrm{NaOH}+{\\mathrm{CH}}_{3}\\mathrm{COOH}⟶{\\mathrm{CH}}_{3}\\mathrm{COOH}+{\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/p> \u003cp>Remained\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{pH}={\\mathrm{pk}}_{\\mathrm{a}}+\\log \\frac{\\text{ salt }}{\\text{ acid }}=4.75+\\log \\frac{1.5}{0.5}\\\\ =4.75+\\log 3\\\\ =4.75+0.4771=5.2271\\)\u003c/p> \u003cp>Round off to 5\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q92" data-gated="1">
-      <div class="qnum">Q92</div>
+      <div class="qhead"><div class="qnum">Q92</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements.</p> <p>Statement-I: In the titration between strong acid and weak base, methyl orange is suitable as an indicator.</p> <p>Statement-II: For titration of acetic acid with \( \mathrm{NaOH} \), phenolphthalein is not a suitable indicator.</p> <p>In the light of above statements, choose the most appropriate - answer from the options given below</p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is false but Statement-II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is true but Statement-II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Both statement-I and Statement-II are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement-I and Statement-II are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1148,7 +1152,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement-I: In titration of a strong acid with a weak base, the equivalence point lies in the acidic region (pH &lt; 7). Methyl orange changes color in acidic range (around pH 3–4). Therefore, it is a suitable indicator. So, Statement-I is true.\u003c/p> \u003cp>Statement-II: Acetic acid is a weak acid and NaOH is a strong base. The equivalence point lies in the basic region (pH &gt; 7). Phenolphthalein changes color in basic range (pH 8–10), so it is suitable. The statement says phenolphthalein is not suitable, which is incorrect. So, Statement-II is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q93" data-gated="1">
-      <div class="qnum">Q93</div>
+      <div class="qhead"><div class="qnum">Q93</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An acidified solution of \(0.05 M Zn ^{2+}\) is saturated with \(0.1 M H _2 S\). What is the minimum molar concentration (M) of \(H ^{+}\)required to prevent the precipitation of \(ZnS\) ?</p> <p>Use \(K _{ sp }( ZnS )=1.25 \times 10^{-22}\) and overall dissociation constant of \(H _2 S , K _{ NET }= K _1 K _2=1 \times 10^{-21}\)<br/>[JEE Advanced 2020, Paper-2]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.2</p></span></div><div class="option"><span class="key">b</span><span><p>0.1</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>0.35</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1157,10 +1161,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For ppt, \\(\\left[ Zn ^{+2}\\right]\\left[ S ^{-2}\\right]= K _{ sp }\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; {\\left[ S ^{-2}\\right]=\\frac{1.25 \\times 10^{-22}}{0.05}=2.5 \\times 10^{-21} M } \\\\\u003cbr/>&amp; H _2 S \\rightleftharpoons 2 H ^{+}+ S ^{-2} \\\\\u003cbr/>&amp; K _{ Net }=10^{-21}=\\frac{\\left[ H ^{+}\\right]^2 \\times 2.5 \\times 10^{-21}}{0.1} \\\\\u003cbr/>&amp; {\\left[ H ^{+}\\right]^2=\\frac{1}{25}} \\\\\u003cbr/>&amp; {\\left[ H ^{+}\\right]=\\frac{1}{5} M =0.2 M }\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For ppt, \\(\\left[ Zn ^{+2}\\right]\\left[ S ^{-2}\\right]= K _{ sp }\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& {\\left[ S ^{-2}\\right]=\\frac{1.25 \\times 10^{-22}}{0.05}=2.5 \\times 10^{-21} M } \\\\& H _2 S \\rightleftharpoons 2 H ^{+}+ S ^{-2} \\\\& K _{ Net }=10^{-21}=\\frac{\\left[ H ^{+}\\right]^2 \\times 2.5 \\times 10^{-21}}{0.1} \\\\& {\\left[ H ^{+}\\right]^2=\\frac{1}{25}} \\\\& {\\left[ H ^{+}\\right]=\\frac{1}{5} M =0.2 M }\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q94" data-gated="1">
-      <div class="qnum">Q94</div>
+      <div class="qhead"><div class="qnum">Q94</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The dissociation constant of acetic is \(x\times {10}^{-5}\). When \(25\mathrm{mL}\) of \(0.2\mathrm{M}{\mathrm{CH}}_{3}\mathrm{COONa}\) solution is mixed with \(25\mathrm{mL}\) of \(0.02\mathrm{M}{\mathrm{CH}}_{3}\mathrm{COOH}\) solution, the \(\mathrm{pH}\) of the resultant solution is found to be equal to 5 . The value of x is</p> <p>[JEE Main 2023, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>11</p></span></div><div class="option"><span class="key">d</span><span><p>12</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1172,7 +1176,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Buffer of HOAc and NaOAc\u003c/p> \u003cp>\\(\\mathrm{pH}={\\mathrm{pK}}_{\\mathrm{a}}+\\log \\frac{[0.1]}{[0.01]}\\)\u003c/p> \u003cp>\\(5={\\mathrm{pK}}_{\\mathrm{a}}+1\\)\u003c/p> \u003cp>\\({\\mathrm{pK}}_{\\mathrm{a}}=4\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{a}}={10}^{-4}\\)\u003c/p> \u003cp>x=10\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q95" data-gated="1">
-      <div class="qnum">Q95</div>
+      <div class="qhead"><div class="qnum">Q95</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water decomposes at \(2300 \mathrm{~K}\)<br/>\({\mathrm{H}}_{2}\mathrm{O}(\mathrm{g})\to {\mathrm{H}}_{2}(\mathrm{g})+\frac{1}{2}{\mathrm{O}}_{2}(\mathrm{g})\)</p> <p>The percent of water decomposing at \(2300 \mathrm{~K}\) and \(1 \mathrm{bar}\) is......... (Nearest integer).<br/>Equilibrium constant for the reaction is \(2 \times 10^{-3}\) at \(2300 \mathrm{~K}\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1184,7 +1188,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q96" data-gated="1">
-      <div class="qnum">Q96</div>
+      <div class="qhead"><div class="qnum">Q96</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following molecular hydrides acts as a Lewis acid?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(N{H}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({H}_{2}O\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({B}_{2}{H}_{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C{H}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1196,7 +1200,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Boron in \\({B}_{2}{H}_{6}\\) is electron deficient . \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q97" data-gated="1">
-      <div class="qnum">Q97</div>
+      <div class="qhead"><div class="qnum">Q97</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Millimoles of calcium hydroxide required to produce 100 mL of the aqueous solution of pH =12 is x \(\times {10}^{-1}\). The value of \(\mathrm{x}\) is ________(Nearest integer).</p> <p>Assume complete dissociation. </p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1208,7 +1212,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(∴\\mathrm{pH}=12\\)\u003c/p> \u003cp>\\(\\mathrm{pH}=-\\log \\left[{\\mathrm{H}}^{+}\\right]\\)\u003c/p> \u003cp>\\(∴\\left[{\\mathrm{H}}^{+}\\right]={10}^{-12}\\mathrm{M}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{W}}=\\left[{\\mathrm{H}}^{+}\\right]\\left[{\\mathrm{OH}}^{-}\\right]\\)\u003c/p> \u003cp>\\(\\Rightarrow \\left[{\\mathrm{OH}}^{-}\\right]=\\frac{{10}^{-14}}{{10}^{-12}}\\)\u003c/p> \u003cp>\\(∴\\left[\\mathrm{Ca}(\\mathrm{OH}{)}_{2}\\right]=\\frac{{10}^{-2}}{2}=5\\times {10}^{-3}\\mathrm{M}\\)\u003c/p> \u003cp>moles = M × V\u003c/p> \u003cp>\\(=5\\times {10}^{-3}\\times 0.1=5\\times {10}^{-4}\\)\u003c/p> \u003cp>milli moles of \\(\\mathrm{Ca}(\\mathrm{OH}{)}_{2}=5\\times {10}^{-4}\\times 1000\\)\u003c/p> \u003cp>\\(\\Rightarrow 5\\times {10}^{-1}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{x}=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q98" data-gated="1">
-      <div class="qnum">Q98</div>
+      <div class="qhead"><div class="qnum">Q98</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\mathrm{A}(\mathrm{g})⇌2\mathrm{B}(\mathrm{g})+\mathrm{C}(\mathrm{g})\)</p> <p>For the given reaction, if the initial pressure is \(450\mathrm{mm}\) Hg and the pressure at time t is \(720\mathrm{mmHg}\) at a constant temperature T and constant volume V. The fraction of Ag decomposed under these conditions is \(\mathrm{x}\times {10}^{-1}\). The value of x is (nearest integer)</p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1220,7 +1224,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Initial moles = 1\u003c/p> \u003cp>At equilibrium:\u003cbr/>A = 1 − α\u003cbr/>B = 2α\u003cbr/>C = α\u003c/p> \u003cp>n(total) = (1 − α) + 2α + α = 1 + 2α\u003c/p> \u003cp>At constant T and V:\u003c/p> \u003cp>P ∝ number of moles\u003c/p> \u003cp>So, P(t) / P(initial) = (1 + 2α) / 1\u003c/p> \u003cp>720 / 450 = 1 + 2α\u003c/p> \u003cp>⇒ 1.6 = 1 + 2α\u003c/p> \u003cp>2α = 0.6\u003cbr/>α = 0.3\u003c/p> \u003cp>α = 0.3 = 3 × 10⁻¹\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q99" data-gated="1">
-      <div class="qnum">Q99</div>
+      <div class="qhead"><div class="qnum">Q99</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>4.5 moles each of hydrogen and iodine is heated in a sealed ten litre vessel. At equilibrium, 3 moles of HI were found. The equilibrium constant for</p> <p>\({\mathrm{H}}_{2}(\mathrm{g})+{\mathrm{I}}_{2}(\mathrm{g})⇌2\mathrm{HI}(\mathrm{g})\) is _____</p> <p>[JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1232,7 +1236,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{H}}_{2}(\\mathrm{g})+{\\mathrm{I}}_{2}(\\mathrm{g})⇌2\\mathrm{HI}(\\mathrm{g})\\)\u003c/p> \u003cp>\\(\\begin{matrix}\\mathrm{t}=0: & 4.5 & 4.5 & - \\\\ {\\mathrm{t}}_{\\text{eq }}: & 3 & 3 & 3\\end{matrix}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{c}}=\\frac{[\\mathrm{C}{]}^{\\mathrm{c}}}{[\\mathrm{A}{]}^{\\mathrm{a}}[\\mathrm{B}{]}^{\\mathrm{b}}}=\\frac{[\\mathrm{HI}{]}^{2}}{\\left[{\\mathrm{H}}_{2}\\right]\\left[{\\mathrm{I}}_{2}\\right]}=\\frac{(3{)}^{2}}{3\\times 3}=\\frac{9}{9}=1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q100" data-gated="1">
-      <div class="qnum">Q100</div>
+      <div class="qhead"><div class="qnum">Q100</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The effect of addition of helium gas to the following reaction in equilibrium state, is:</p> <p>\({\mathrm{PCI}}_{5}(\mathrm{g})⇌{\mathrm{PCl}}_{3}(\mathrm{g})+{\mathrm{Cl}}_{2}(\mathrm{g})\)</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>the equilibrium will shift in the forward direction and more of \({\mathrm{Cl}}_{2}\) and \({\mathrm{PCl}}_{3}\) gases will be produced.</p></span></div><div class="option"><span class="key">b</span><span><p>the equilibrium will go backward due to suppression of dissociation of \({\mathrm{PCl}}_{5}\).</p></span></div><div class="option"><span class="key">c</span><span><p>helium will deactivate \({\mathrm{PCl}}_{5}\) and reaction will stop.</p></span></div><div class="option"><span class="key">d</span><span><p>addition of helium will not affect the equilibrium.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1244,7 +1248,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For given equilibrium, addition of He gas at constant volume will not affect equilibrium while at constant pressure, equilibrium shifts in forward direction &amp; more \\({\\mathrm{Cl}}_{2}\\) &amp; \\({\\mathrm{PCl}}_{3}\\) will from.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q101" data-gated="1">
-      <div class="qnum">Q101</div>
+      <div class="qhead"><div class="qnum">Q101</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The solubility of \(\mathrm{Ca}(\mathrm{OH}{)}_{2}\) in water is :<br/>[Given : The solubility product of \(\mathrm{Ca}(\mathrm{OH}{)}_{2}\) in water \(=5.5\times {10}^{-6}\) ]</p> <p><strong>[JEE Main 2021, 25 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1.11\times {10}^{-6}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.77\times {10}^{-6}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1.77\times {10}^{-2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1.11\times {10}^{-2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1256,7 +1260,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{Ca}(\\mathrm{OH}{)}_{2}⇌{\\mathrm{Ca}}^{4+}+2{\\mathrm{OH}}^{-}\\\\ \\mathrm{S}\\mathrm{S}\\mathrm{S}\\)\u003cbr/>\\(∴{\\mathrm{K}}_{\\mathrm{sp}}=4{\\mathrm{S}}^{3}\\)\u003cbr/>\\(\\mathrm{S}=\\sqrt[3]{\\frac{{\\mathrm{k}}_{\\text{sp }}}{4}}=\\sqrt[3]{\\frac{5.5\\times {10}^{-6}}{4}}=1.11\\times {10}^{-2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q102" data-gated="1">
-      <div class="qnum">Q102</div>
+      <div class="qhead"><div class="qnum">Q102</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An acidic buffer is obtained on mixing</p> <p>[JEE Main 2020, 3 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(100\mathrm{mL}\) of \(0.1\mathrm{M}\mathrm{HCI}\) and \(200\mathrm{mL}\) of \(0.1\mathrm{M}\mathrm{NaCI}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(100\mathrm{mL}\) of \(0.1\mathrm{M}\mathrm{HCl}\) and \(200\mathrm{mL}\) of \(0.1\mathrm{M}\) \({\mathrm{CH}}_{3}\mathrm{COONa}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(100\mathrm{mL}\) of \(0.1\mathrm{M}{\mathrm{CH}}_{3}\mathrm{COOH}\) and \(100\mathrm{mL}\) of \(0.1\mathrm{M}\) \(\mathrm{NaOH}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(100\mathrm{mL}\) of \(0.1\mathrm{M}{\mathrm{CH}}_{3}\mathrm{COOH}\) and \(200\mathrm{mL}\) of \(0.1\mathrm{M}\) \(\mathrm{NaOH}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1268,7 +1272,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>An acidic buffer is formed by a weak acid and its conjugate base.\u003c/p> \u003cp>Check each option:\u003c/p> \u003cp>Option A:\u003cbr/>HCl (strong acid) + NaCl (neutral salt)\u003cbr/>No buffer formed\u003c/p> \u003cp>Option C:\u003cbr/>CH₃COOH (weak acid) + NaOH (strong base, equal moles)\u003c/p> \u003cp>Reaction:\u003cbr/>CH₃COOH + OH⁻ → CH₃COO⁻ + H₂O\u003c/p> \u003cp>Equal moles → complete conversion → only salt present, Not buffer\u003c/p> \u003cp>Option D:\u003cbr/>CH₃COOH = 0.01 mol\u003cbr/>NaOH = 0.02 mol\u003c/p> \u003cp>Excess NaOH → solution becomes basic → not acidic buffer\u003c/p> \u003cp>Option B gives acidic buffer after partial neutralization concept\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q103" data-gated="1">
-      <div class="qnum">Q103</div>
+      <div class="qhead"><div class="qnum">Q103</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The gas phase reaction,</p> <p>\[2 \mathrm{~A}(\mathrm{~g}) \rightleftharpoons \mathrm{A}_{2}(\mathrm{~g})\]</p> <p>at \( 400 \mathrm{~K} \) has \( \Delta \mathrm{G}^{0}=+25.2 \mathrm{~kJ} \mathrm{~mol}^{-1} \).</p> <p>The equilibrium constant \( \mathrm{K}_{\mathrm{C}} \) for this reaction is ____ \( \times 10^{-2} \) (Round off to the nearest integer) (Use : \( \mathrm{R}=8.3 \mathrm{~J} \mathrm{~mol}^{-1} \mathrm{~K}^{-1}, \ln 10=2.3, \log _{10} 2=0.30,1 \mathrm{~atm} \) - \( =1 \) bar \( )(\operatorname{antilog}(-0.3)=0.501) \)</p> <p>[JEE Main 2021, 18 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>100</p></span></div><div class="option"><span class="key">b</span><span><p>200</p></span></div><div class="option"><span class="key">c</span><span><p>300</p></span></div><div class="option"><span class="key">d</span><span><p>400</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1280,7 +1284,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given:\u003cbr/>ΔG° = +25.2 kJ mol⁻¹ = 25200 J mol⁻¹\u003cbr/>T = 400 K\u003c/p> \u003cp>ΔG° = −RT ln Kₚ\u003c/p> \u003cp>25200 = − (8.3 × 400 × ln Kₚ)\u003c/p> \u003cp>ln Kₚ = − (25200 / 3320)\u003c/p> \u003cp>≈ −7.59\u003c/p> \u003cp>log Kₚ = −7.59 / 2.3 ≈ −3.30\u003c/p> \u003cp>Kₚ = 10⁻³.³⁰\u003c/p> \u003cp>= 0.501 × 10⁻³\u003c/p> \u003cp>= 5.01 × 10⁻⁴\u003c/p> \u003cp>2A(g) ⇌ A₂(g)\u003c/p> \u003cp>Δn = 1 − 2 = −1\u003c/p> \u003cp>Kₚ = K\u003csub>c\u003c/sub> (RT)⁻¹\u003c/p> \u003cp>K\u003csub>c\u003c/sub> = Kₚ × RT\u003c/p> \u003cp>RT = 8.3 × 400 = 3320\u003c/p> \u003cp>K\u003csub>c\u003c/sub> = 5.01 × 10⁻⁴ × 3320\u003c/p> \u003cp>≈ 1.66\u003c/p> \u003cp>K\u003csub>c\u003c/sub> = 1.66 = 166 × 10⁻²\u003c/p> \u003cp>≈ 200 × 10⁻²\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q104" data-gated="1">
-      <div class="qnum">Q104</div>
+      <div class="qhead"><div class="qnum">Q104</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In order to prepare a buffer solution of \( \mathrm{pH} = ~5.74 \), sodium acetate is added to acetic acid. If the concentration of acetic acid in the buffer is \( 1.0 \mathrm{~M} \), the concentration of sodium acetate in the buffer is _____M.</p> <p>(Round off to the nearest integer).</p> <p>[Given; \( \mathrm{pK}_{\mathrm{a}}( \) acetic acid \( )=4.74 \) ]</p> <p>[JEE Main 2021, 18 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8</p></span></div><div class="option"><span class="key">b</span><span><p>9</p></span></div><div class="option"><span class="key">c</span><span><p>10</p></span></div><div class="option"><span class="key">d</span><span><p>11</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1292,7 +1296,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\mathrm{pH}=\\mathrm{pka}+\\log \\frac{\\left[\\mathrm{sodium}\\mathrm{acetate}\\right]}{\\left[\\mathrm{acetic}\\mathrm{acid}\\right]}\\\\ 5.74=4.74+\\log \\frac{\\left[\\mathrm{sodium}\\mathrm{acetate}\\right]}{1}\\\\ \\left[\\mathrm{sodium}\\mathrm{acetate}\\right]=10\\mathrm{M}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q105" data-gated="1">
-      <div class="qnum">Q105</div>
+      <div class="qhead"><div class="qnum">Q105</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At \( 310 \mathrm{~K} \), the solubility of \( \mathrm{CaF}_{2} \) in water is \( 2.34 \times 10^{-3} \) \( \mathrm{g} / 100 \mathrm{~mL} \). The solubility product of \( \mathrm{CaF}_{2} \) is __________ \({10}^{-12}{\left(\mathrm{mol}/\mathrm{L}\right)}^{3}\).</p> <p>Given molar mass: \( \mathrm{CaF}_{2}=78 \mathrm{~g} \mathrm{~mol}^{-1} \) </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>108</p></span></div><div class="option"><span class="key">b</span><span><p>208</p></span></div><div class="option"><span class="key">c</span><span><p>308</p></span></div><div class="option"><span class="key">d</span><span><p>408</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1304,7 +1308,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given:\u003c/p> \u003cp>Solubility = 2.34 × 10⁻³ g/100 mL = 2.34 × 10⁻² g/L\u003c/p> \u003cp>Molar mass of CaF₂ = 78 g/mol\u003c/p> \u003cp>So, s = 2.34 × 10⁻² / 78 mol/L = 3 × 10⁻⁴ mol/L\u003c/p> \u003cp>For CaF₂ ⇌ Ca²⁺ + 2F⁻\u003c/p> \u003cp>Ksp = s × (2s)² = 4s³ = 4 × (3 × 10⁻⁴)³ = 1.08 × 10⁻¹⁰ (mol/L)³\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q106" data-gated="1">
-      <div class="qnum">Q106</div>
+      <div class="qhead"><div class="qnum">Q106</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of <strong>correct</strong> statements involving equilibria in physical process from the following is</p> <p>(i) Equilibrium is possible only in a closed system at a given temperature.</p> <p>(ii) Both the opposing processes occur at the same rate.</p> <p>(iii) When equilibrium is attained at a given temperature, the value of all its parameters became equal.</p> <p>(iv) For dissolution of solids in liquids, the solubility is constant at a given temperature</p> <p><strong>[JEE Main 2023, 10 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1316,7 +1320,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(i) is correct as it is one of the characteristic of equilibrium\u003c/p> \u003cp>(ii) for equilibrium \\({r}_{f}={r}_{b}\\)\u003c/p> \u003cp>Hence (ii) is correct\u003c/p> \u003cp>(iii) At equilibrium, the value of parameters become constant at a given temperature and not equal Hence, (iii) is incorrect.\u003c/p> \u003cp>(iv) For a given solid solute and a liquid solvent, solubility depends upon temperature only.\u003c/p> \u003cp>Hence, (iv) is correct\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q107" data-gated="1">
-      <div class="qnum">Q107</div>
+      <div class="qhead"><div class="qnum">Q107</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>25.0 mL of \(0.050\mathrm{M}\mathrm{Ba}{\left({\mathrm{NO}}_{3}\right)}_{2}\) is mixed with \(25.0\mathrm{mL}\) of \(0.020\mathrm{M}\mathrm{NaF}.{\mathrm{K}}_{\mathrm{sp}}\) of \({\mathrm{BaF}}_{2}\) is \(0.5\times {10}^{-6}\) at \(298\mathrm{K}\). The ratio of \(\left[{\mathrm{Ba}}^{2+}\right]{\left[{\mathrm{F}}^{-}\right]}^{2}\) and \({\mathrm{K}}_{\mathrm{sp}}\) is...................... (Nearest integer)</p> <p> </p> <p>[JEE Main 2023, 13 Apr (Shift 1)]</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>14</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1328,7 +1332,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\left[{\\mathrm{Ba}}^{+2}\\right]=\\frac{{\\mathrm{M}}_{{\\mathrm{Ba}}^{2+}}\\times \\mathrm{V}}{{\\mathrm{V}}_{\\text{total }}}=\\frac{25\\times 0.05}{50}=0.025\\mathrm{M}\\\\ \\left[{\\mathrm{V}}_{\\text{total }}=50\\mathrm{mL}\\right]\\\\ \\left[{\\mathrm{F}}^{-}\\right]=\\frac{{\\mathrm{M}}_{{\\mathrm{F}}^{-}}\\times \\mathrm{V}}{{\\mathrm{V}}_{\\text{total }}}=\\frac{25\\times 0.02}{50}=0.01\\mathrm{M}\\)\u003c/p> \u003cp>Now, \\(\\left[{\\mathrm{Ba}}^{+2}\\right]{\\left[{\\mathrm{F}}^{-}\\right]}^{2}=25\\times {10}^{-7}\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{sp}}=5\\times {10}^{-7}\\) (given)\u003c/p> \u003cp>Ratio \\(=\\frac{\\left[{\\mathrm{Ba}}^{+2}\\right]{\\left[{\\mathrm{F}}^{-}\\right]}^{2}}{{\\mathrm{K}}_{\\mathrm{sp}}}=\\frac{25\\times {10}^{-7}}{5\\times {10}^{-7}}=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q108" data-gated="1">
-      <div class="qnum">Q108</div>
+      <div class="qhead"><div class="qnum">Q108</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two salts \( A_{2} X \) and \( M X \) have the same value of solubility product of \( 4.0 \times 10^{-12} \). The ratio of their molar solubilities i.e. \( \frac{S\left(A_{2} X\right)}{S(M X)}= \)___________</p> <p>(Round off to the nearest integer).</p> <p><strong>[JEE Main 2021, 16 Mar (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>40</p></span></div><div class="option"><span class="key">b</span><span><p>50</p></span></div><div class="option"><span class="key">c</span><span><p>60</p></span></div><div class="option"><span class="key">d</span><span><p>80</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1340,7 +1344,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Solubility product of \\({A}_{2}X=4{S}_{1}^{3}\\)\u003c/p> \u003cp>Where , \\({S}_{1}\\) is solubility of salt \\({A}_{2}X\\)\u003c/p> \u003cp>Solubility product of \\(MX={S}_{2}^{3}\\)\u003c/p> \u003cp>Where , \\({S}_{2}\\) is solubility of MX,\u003c/p> \u003cp>\\(4{S}_{1}^{3}=4\\times {10}^{-12}\\)\u003c/p> \u003cp>\\({S}_{1}={10}^{-4}M\\)\u003c/p> \u003cp>\\({S}_{2}^{2}=4\\times {10}^{-12}\\)\u003c/p> \u003cp>\\({S}_{2}=2\\times {10}^{-6}\\)M\u003c/p> \u003cp>So,\\(\\frac{{S}_{1}}{{S}_{2}}=\\frac{{10}^{-4}}{2\\times {10}^{-6}}=50\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q109" data-gated="1">
-      <div class="qnum">Q109</div>
+      <div class="qhead"><div class="qnum">Q109</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I:</strong> Methyl orange is a weak acid.</p> <p><strong>Statement II:</strong> The benzenoid form of methyl orange is more intense / deeply coloured than the quinonoid form.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below.</p> <p><strong>[JEE Main 2023, 08 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement- I is correct but Statement -II is incorrect.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement -I is incorrect but Statement - II is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement -I and Statement -II are incorrect.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement -I and Statement II are correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1352,7 +1356,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Methyl orange is weak base\u003cbr/>Benzenoid structure \\(↔\\) Quinonoid structure\u003cbr/>Yellow coloured Red coloured\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q110" data-gated="1">
-      <div class="qnum">Q110</div>
+      <div class="qhead"><div class="qnum">Q110</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(20\mathrm{mL}\) of 0.1 M NaOH is added to \(50\mathrm{mL}\) of 0.1 M acetic acid solution. The pH of the resulting solution is _________\(\times {10}^{-2}\) (Nearest integer)</p> <p>Given : \({\mathrm{pK}}_{\mathrm{a}}\left({\mathrm{CH}}_{3}\mathrm{COOH}\right)=4.76\)</p> <p>\(\log 2=0.30\)</p> <p>\(\log 3=0.48\)</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>455</p></span></div><div class="option"><span class="key">b</span><span><p>458</p></span></div><div class="option"><span class="key">c</span><span><p>490</p></span></div><div class="option"><span class="key">d</span><span><p>340</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1364,7 +1368,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{CH}}_{3}\\mathrm{COOH}+\\mathrm{NaOH}\\to {\\mathrm{CH}}_{3}\\mathrm{COONa}+{\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/p> \u003cp>\\(\\mathrm{After}\\mathrm{reaction}\\mathrm{mmol}\\mathrm{of}\\mathrm{salt}=2\\\\ \\mathrm{mmol}\\mathrm{of}\\mathrm{acid}=3\\)\u003c/p> \u003cp>The pH of resulting solution is calculated as,\u003c/p> \u003cp>\\(\\mathrm{pH}={\\mathrm{pK}}_{\\mathrm{a}}+{\\log }_{10}\\frac{[\\text{ salt }]}{[\\text{ acid }]}\\)\u003c/p> \u003cp>\\(\\mathrm{pH}=4.76+{\\log }_{10}\\frac{2}{3}\\)\u003c/p> \u003cp>= 4.76 + 0.3 – 0.48 = 4.58\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q111" data-gated="1">
-      <div class="qnum">Q111</div>
+      <div class="qhead"><div class="qnum">Q111</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The molar solubility of \( \mathrm{Zn}(\mathrm{OH})_{2} \) in \( 0.1 \mathrm{~M} \mathrm{~NaOH} \) solution is \( x \times 10^{-18} \mathrm{M} \). The value of \( x \) is ___________. (Nearest integer)</p> <p>(Given: The solubility product of \( \mathrm{Zn}(\mathrm{OH})_{2} \) is \( 2 \times 10^{-20} \) )</p> <p><strong>[JEE Main 2021, 1 Sep (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>8</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1376,7 +1380,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{matrix}\\mathrm{Zn}(\\mathrm{OH}{)}_{2}⇌ & {\\mathrm{Zn}}^{2+}+ & 2{\\mathrm{OH}}^{-} \\\\ S & - & - \\\\ - & S & 2S\\end{matrix}\\)\u003c/p> \u003cp>\\(\\begin{matrix}\\mathrm{NaOH} & {\\mathrm{Na}}^{+} & +{\\mathrm{OH}}^{-} \\\\ 0.1\\mathrm{M} & - & - \\\\ - & 0.1\\mathrm{M} & 0.1\\mathrm{M}\\end{matrix}\\)\u003c/p> \u003cp>\\(\\left[{\\mathrm{Zn}}^{2+}\\right]=\\mathrm{S}\\)\u003c/p> \u003cp>\\(\\left[{\\mathrm{OH}}^{-}\\right]=2\\mathrm{S}+0.1\\approx 0.1\\)\u003c/p> \u003cp>\\(\\mathrm{As};\\mathrm{S}≪1\\)\u003c/p> \u003cp>\\({\\mathrm{K}}_{\\mathrm{sp}}=\\left[{\\mathrm{Zn}}^{2+}\\right]{\\left[{\\mathrm{OH}}^{-}\\right]}^{2}\\)\u003c/p> \u003cp>Here; \\(2\\times {10}^{-20}=S(0.1{)}^{2}\\)\u003cbr/>So; \\(S=2\\times {10}^{-18}\\mathrm{M}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q112" data-gated="1">
-      <div class="qnum">Q112</div>
+      <div class="qhead"><div class="qnum">Q112</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For reaction : \({\mathrm{SO}}_{2}(\mathrm{g})+\frac{1}{2}{\mathrm{O}}_{2}(\mathrm{g})⇌{\mathrm{SO}}_{3}(\mathrm{g})\)</p> <p>K<sub>P</sub> = 2 × 10<sup>12</sup> at 27°C and 1 atm pressure. The K<sub>C</sub> for the same reaction is …… × 10<sup>13</sup>. (Nearest integer)</p> <p>(Given R = 0.082L atm K<sup>–1</sup> mol<sup>–1</sup>)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/board/english/"},{"@type":"ListItem","position":5,"name":"Modern English","item":"https://yespyq.com/exams/board/english/modern-english/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Modern English</h1>
       <p>9 Board English previous year questions on <b>Modern English</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Walter de la Mare knew a ........ who is now dead.</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>lady</p></span></div><div class="option"><span class="key">b</span><span><p>girl</p></span></div><div class="option"><span class="key">c</span><span><p>boy</p></span></div><div class="option"><span class="key">d</span><span><p>lord</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>English developed from the speech of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Anglo-Indian</p></span></div><div class="option"><span class="key">b</span><span><p>Anglo-American</p></span></div><div class="option"><span class="key">c</span><span><p>Anglo-Saxon</p></span></div><div class="option"><span class="key">d</span><span><p>Anglo-African</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The correct answer is C: Anglo-Saxon. \u003c/p> \u003cp>Explanation: The term \"Anglo-Saxon\" refers to the Germanic tribes (Angles, Saxons, and Jutes) who invaded Britain in the 5th century and whose language became the foundation of Old English, which eventually evolved into Modern English. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Dorothy L. Sayers published an authentic verse translation of</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Inferno</p></span></div><div class="option"><span class="key">b</span><span><p>The Bhagavad Geeta</p></span></div><div class="option"><span class="key">c</span><span><p>Clouds of Witness</p></span></div><div class="option"><span class="key">d</span><span><p>Unnatural Death</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct option is A. Inferno. \u003c/p> \u003cp>Dorothy L. Sayers published her authentic verse translation of Dante's Inferno in 1949. She later also published her translation of Purgatorio, and the final volume of the Divine Comedy, Paradiso, was completed by Barbara Reynolds after Sayers's death. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In UK, Australia and New Zealand, English is spoken as a</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>foreign language</p></span></div><div class="option"><span class="key">b</span><span><p>colonial language</p></span></div><div class="option"><span class="key">c</span><span><p>second language</p></span></div><div class="option"><span class="key">d</span><span><p>native language</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In the UK, Australia, and New Zealand, English is spoken as a native language, making option D the correct answer. These countries are considered part of the \"core Anglosphere\" where English is the primary language for the majority of the population. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Who wrote 'Piers the Plowman'?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Spenser</p></span></div><div class="option"><span class="key">b</span><span><p>Milton</p></span></div><div class="option"><span class="key">c</span><span><p>Langland</p></span></div><div class="option"><span class="key">d</span><span><p>Congreve</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>C. Langland. The poem Piers the Plowman was written by William Langland, a 14th-century English poet. The work is an allegorical poem that is a quintessential example of Middle English alliterative poetry. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The English government give elderly people a/an</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>intalment payment</p></span></div><div class="option"><span class="key">b</span><span><p>pension</p></span></div><div class="option"><span class="key">c</span><span><p>loan</p></span></div><div class="option"><span class="key">d</span><span><p>salary</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct option is B. pension.\u003c/p> \u003cp>Explanation\u003c/p> \u003cp>The UK government provides a State Pension, which is a regular payment made to people once they reach State Pension age.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Who was the great-dramatist of the Elizabethan Age? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Charles Dickens</p></span></div><div class="option"><span class="key">b</span><span><p>Shakespeare</p></span></div><div class="option"><span class="key">c</span><span><p>Daniel Defuc</p></span></div><div class="option"><span class="key">d</span><span><p>Thomas Henry</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B) Shakespeare\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>William Shakespeare\u003c/strong> is regarded as the \u003cstrong>great dramatist of the Elizabethan Age\u003c/strong>, famous for his plays and poetry.\u003c/p> \u003c/li> \u003cli> \u003cp>Other options are either from different periods or unrelated to Elizabethan drama.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>About ..... years ago, Latin was a world language. </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>600</p></span></div><div class="option"><span class="key">b</span><span><p>800</p></span></div><div class="option"><span class="key">c</span><span><p>900</p></span></div><div class="option"><span class="key">d</span><span><p>700</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: (b) 800 \u003cbr/>\u003cbr/>About 800 years ago, Latin was used widely as a world language, especially in education, religion, and administration across Europe.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>It was said that the sun never sets in the ________ Empire.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>French</p></span></div><div class="option"><span class="key">b</span><span><p>Russian</p></span></div><div class="option"><span class="key">c</span><span><p>British</p></span></div><div class="option"><span class="key">d</span><span><p>Indian</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

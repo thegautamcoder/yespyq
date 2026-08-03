@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(\\frac{\\sin A}{\\sin B}=\\frac{\\sin (A-C)}{\\sin (C-B)}\\), where \\(A, B, C\\) are angles of a triangle \\(A B C\\). If the lengths of the sides opposite these angles are \\(a, b, c\\) respectively, then: [JEE Main 2021, 27 Aug (Shift 1)]","text":"Let \\(\\frac{\\sin A}{\\sin B}=\\frac{\\sin (A-C)}{\\sin (C-B)}\\), where \\(A, B, C\\) are angles of a triangle \\(A B C\\). If the lengths of the sides opposite these angles are \\(a, b, c\\) respectively, then: [JEE Main 2021, 27 Aug (Shift 1)]","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: d) \\(b^2, c^2, a^2\\) are in \\(A . P\\). \\( \\frac{\\sin A}{\\sin B}=\\frac{\\sin (A-C)}{\\sin (C-B)} \\) \\(\\sin A \\sin C \\cos B-\\sin A \\cos C \\sin B=\\sin B \\sin A \\cos C - \\sin B \\cos A \\sin C \\) \\( 2 \\sin A \\sin B \\cos C=\\sin A \\sin C \\cos B+\\sin B \\sin C \\cos A \\) Using sine rule \\(\\frac{\\sin A}{a}=\\frac{\\sin B}{b}=\\frac{\\sin C}{c}=k\\\\ 2\u22c5ak\u22c5bk\u22c5(\\frac{{a}^{2}+{b}^{2}\u2212{c}^{2}}{2ab})=ak\u22c5ck\u22c5(\\frac{{c}^{2}+{a}^{2}\u2212{b}^{2}}{2ac})+bk\\cdot ck\\left(\\frac{{b}^{2}+{c}^{2}-{a}^{2}}{2bc}\\right)\\\\ \\Rightarrow 2({a}^{2}+{b}^{2}\u2212{c}^{2})={c}^{2}+{a}^{2}\u2212{b}^{2}+{b}^{2}+{c}^{2}\u2212{a}^{2}\\\\ \\Rightarrow 2{c}^{2}={a}^{2}+{b}^{2}\\) \\(\\Rightarrow {b}^{2},{c}^{2},{a}^{2}\\) are in A.P","url":"https://yespyq.com/exams/jee/q/jee-06100-let-frac-sin-a-sin-b-frac-sin-a-c-sin-c-b-where-a-b-c-are-angles-of-a/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">JEE</span><span class="qtag">Maths</span></div>
       <h1>Let \(\frac{\sin A}{\sin B}=\frac{\sin (A-C)}{\sin (C-B)}\), where \(A, B, C\) are angles of a triangle \(A B C\). If th…</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\frac{\sin A}{\sin B}=\frac{\sin (A-C)}{\sin (C-B)}\), where \(A, B, C\) are angles of a triangle \(A B C\). If the lengths of the sides opposite these angles are \(a, b, c\) respectively, then:<br/><br/>[JEE Main 2021, 27 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(b^2-a^2=a^2+c^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(a^2, b^2, c^2\) are in A.P</p></span></div><div class="option"><span class="key">c</span><span><p>\(c^2, a^2, b^2\) are in A.P</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(b^2, c^2, a^2\) are in \(A . P\)</p></span></div></div>
       <div class="explain" data-exp>

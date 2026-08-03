@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/board/english/"},{"@type":"ListItem","position":5,"name":"Vocabulary","item":"https://yespyq.com/exams/board/english/vocabulary/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Vocabulary</h1>
       <p>84 Board English previous year questions on <b>Vocabulary</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct spelling:</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Animate</p></span></div><div class="option"><span class="key">b</span><span><p>Anumete</p></span></div><div class="option"><span class="key">c</span><span><p>Anemate</p></span></div><div class="option"><span class="key">d</span><span><p>Aniumate</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The meaning of 'Compulsory.'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Aphoristic</p></span></div><div class="option"><span class="key">b</span><span><p>Religious</p></span></div><div class="option correct"><span class="key">c</span><span><p>Obligatory</p></span></div><div class="option"><span class="key">d</span><span><p>Permissible</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct meaning of - 'Docile' :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Very bad</p></span></div><div class="option correct"><span class="key">b</span><span><p>Obedient</p></span></div><div class="option"><span class="key">c</span><span><p>Respect</p></span></div><div class="option"><span class="key">d</span><span><p>Disfigure</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym 'destiny' is :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>defeat</p></span></div><div class="option correct"><span class="key">b</span><span><p>fortune</p></span></div><div class="option"><span class="key">c</span><span><p>victory</p></span></div><div class="option"><span class="key">d</span><span><p>confidence</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correctly spelt word: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Proparty</p></span></div><div class="option correct"><span class="key">b</span><span><p>Property</p></span></div><div class="option"><span class="key">c</span><span><p>Preuperty</p></span></div><div class="option"><span class="key">d</span><span><p>Priuparty</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym for queer is:<br/><strong>[PYQ 2020]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sincere</p></span></div><div class="option correct"><span class="key">b</span><span><p>Peculiar</p></span></div><div class="option"><span class="key">c</span><span><p>Arbitrator</p></span></div><div class="option"><span class="key">d</span><span><p>Severe</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct meaning of - "To cry wolf" :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>To listen eagerly</p></span></div><div class="option"><span class="key">b</span><span><p>To turn pale</p></span></div><div class="option"><span class="key">c</span><span><p>To be hungry</p></span></div><div class="option correct"><span class="key">d</span><span><p>To give a false alarm</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct antonym of 'Inferior'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Excellent</p></span></div><div class="option correct"><span class="key">b</span><span><p>Superior</p></span></div><div class="option"><span class="key">c</span><span><p>Supportive</p></span></div><div class="option"><span class="key">d</span><span><p>Exterior</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Synonym of 'gradual'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gentle</p></span></div><div class="option"><span class="key">b</span><span><p>Sage</p></span></div><div class="option"><span class="key">c</span><span><p>Deep</p></span></div><div class="option"><span class="key">d</span><span><p>Hate</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Explanation: 'Gradual' means happening slowly and progressively. Its closest synonym is 'gentle' — both convey a slow, steady progression. In the passage, the pool's depth increased gradually (gently/slowly), not abruptly.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>They tried to.............the painting.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>steel</p></span></div><div class="option"><span class="key">b</span><span><p>steale</p></span></div><div class="option"><span class="key">c</span><span><p>still</p></span></div><div class="option"><span class="key">d</span><span><p>steal</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (D) steal\u003cbr/>\u003cstrong>Explanation:\u003c/strong> “Steal” means to take something unlawfully; other options are incorrect spellings.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct synonym of 'Ancestors'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Extinct tribes</p></span></div><div class="option"><span class="key">b</span><span><p>Relatives</p></span></div><div class="option"><span class="key">c</span><span><p>Forefathers</p></span></div><div class="option"><span class="key">d</span><span><p>Old people</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (C) Forefathers\u003cbr/>\u003cstrong>Explanation:\u003c/strong> “Ancestors” means people from whom one is descended — “forefathers.”\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following words is mis-spelt?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Importance</p></span></div><div class="option"><span class="key">b</span><span><p> Importent</p></span></div><div class="option"><span class="key">c</span><span><p> Important</p></span></div><div class="option"><span class="key">d</span><span><p>Impossible</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct Answer: (B) Importent\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The correct spelling is “Important.”\u003cbr/>The word “Importent” is incorrect because the ending should be “-ant”, not “-ent.”\u003c/p> \u003cp>The other options — Importance, Important, and Impossible — are spelled correctly.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'Division' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Unification</p></span></div><div class="option"><span class="key">b</span><span><p>Partition</p></span></div><div class="option"><span class="key">c</span><span><p>Combination</p></span></div><div class="option"><span class="key">d</span><span><p>Conflict</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B) Partition\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Division\u003c/strong> means \u003cstrong>the act of separating or splitting into parts\u003c/strong>, which is similar to \u003cstrong>partition\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Other options (unification, combination, conflict) have opposite or unrelated meanings.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct meaning of :<br/>"To hold one's tongue"</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>to support</p></span></div><div class="option"><span class="key">b</span><span><p>to insult someone</p></span></div><div class="option"><span class="key">c</span><span><p>to interfere</p></span></div><div class="option"><span class="key">d</span><span><p>to keep quiet</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(D) to keep quiet\u003c/strong>\u003cbr/>“To hold one’s tongue” means to stay silent or not speak.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correctly spelt word</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bouquete</p></span></div><div class="option"><span class="key">b</span><span><p>Bouquet</p></span></div><div class="option"><span class="key">c</span><span><p>Beuquete</p></span></div><div class="option"><span class="key">d</span><span><p>Bouquette</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (B) Bouquet\u003cbr/>\u003cstrong>Explanation:\u003c/strong> “Bouquet” is the correct spelling; it means a bunch of flowers.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct spelling :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Revange</p></span></div><div class="option"><span class="key">b</span><span><p>Revenge</p></span></div><div class="option"><span class="key">c</span><span><p>Rivenge</p></span></div><div class="option"><span class="key">d</span><span><p>Rewenge</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B) Revenge\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The correct spelling is Revenge.\u003c/p> \u003cp>Revange ❌ Incorrect vowel (“a” instead of “e”)\u003c/p> \u003cp>Rivenge ❌ Incorrect vowel (“i” instead of “e”)\u003c/p> \u003cp>Rewenge ❌ Incorrect consonant (“w” instead of “v”)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'jealous' is :<br/>[PYQ 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>zealous</p></span></div><div class="option"><span class="key">b</span><span><p>callous</p></span></div><div class="option"><span class="key">c</span><span><p>envious</p></span></div><div class="option"><span class="key">d</span><span><p>dangerous</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>C. envious\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Jealous”\u003c/strong> means \u003cstrong>feeling envy or resentment toward someone\u003c/strong>, which matches \u003cstrong>envious\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct antonym of 'Divided':<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Isolated</p></span></div><div class="option"><span class="key">b</span><span><p>Separated</p></span></div><div class="option"><span class="key">c</span><span><p>Dignified</p></span></div><div class="option"><span class="key">d</span><span><p>United</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D) United\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The word “Divided” means separated into parts.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Write the synonyms of the following:</strong></p> <p>The synonym of 'forbid' is :<br/><strong>[PYQ 2025]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>forward</p></span></div><div class="option"><span class="key">b</span><span><p>prohibit</p></span></div><div class="option"><span class="key">c</span><span><p>allow</p></span></div><div class="option"><span class="key">d</span><span><p>order</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>B. prohibit\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Forbid”\u003c/strong> and \u003cstrong>“prohibit”\u003c/strong> both mean \u003cstrong>to not allow\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Turn the.............before starting the meeting.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>lights on</p></span></div><div class="option"><span class="key">b</span><span><p>lights up</p></span></div><div class="option"><span class="key">c</span><span><p>lights by</p></span></div><div class="option"><span class="key">d</span><span><p>lights off</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (A) lights on\u003cbr/>\u003cstrong>Explanation:\u003c/strong> The phrasal verb “turn on” means to switch something on — \u003cem>Turn the lights on before starting the meeting.\u003c/em>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'frank' is :<br/>[PYQ 2022, 2024, 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>foolish</p></span></div><div class="option"><span class="key">b</span><span><p>wide spoken</p></span></div><div class="option"><span class="key">c</span><span><p>shameless</p></span></div><div class="option"><span class="key">d</span><span><p>candid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>D. candid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Frank”\u003c/strong> means \u003cstrong>open, honest, and straightforward\u003c/strong>, which matches \u003cstrong>candid\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the mis-spelt word : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Discipleen</p></span></div><div class="option"><span class="key">b</span><span><p>Deescipline</p></span></div><div class="option"><span class="key">c</span><span><p>Discipline</p></span></div><div class="option"><span class="key">d</span><span><p>Disceepleene</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(A) Discipleen\u003c/strong>\u003cbr/>Correct spelling is “Discipline”; the others are incorrect variations.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'Worried' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Troubled</p></span></div><div class="option"><span class="key">b</span><span><p>Unconcerned</p></span></div><div class="option"><span class="key">c</span><span><p>Ignored</p></span></div><div class="option"><span class="key">d</span><span><p>Calm.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: A) Troubled\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Worried\u003c/strong> means anxious or uneasy.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Troubled\u003c/strong> is a synonym, as it also conveys concern or distress.\u003cbr/>Other options (unconcerned, ignored, calm) are opposite in meaning.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>"To shed crocodile tears" means</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>to weep profusely</p></span></div><div class="option"><span class="key">b</span><span><p>to grieve seriously</p></span></div><div class="option"><span class="key">c</span><span><p>to pretend grief</p></span></div><div class="option"><span class="key">d</span><span><p>to mock something</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer: C) to pretend grief\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>“To shed crocodile tears”\u003c/strong> means \u003cstrong>to show false or insincere sorrow\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>It does \u003cstrong>not\u003c/strong> mean genuine grief or mocking.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct antonym of 'Terrible' :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Soothing</p></span></div><div class="option"><span class="key">b</span><span><p>Scaring</p></span></div><div class="option"><span class="key">c</span><span><p>Frightening</p></span></div><div class="option"><span class="key">d</span><span><p>Horrible</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: A) Soothing\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The word “Terrible” means very bad, frightening, or unpleasant.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The antonym of 'Guilty' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Irrelevant</p></span></div><div class="option"><span class="key">b</span><span><p>Innocent</p></span></div><div class="option"><span class="key">c</span><span><p>Immature</p></span></div><div class="option"><span class="key">d</span><span><p>Ignorant</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B) Innocent\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Guilty\u003c/strong> means responsible for a wrongdoing.\u003c/p> \u003c/li> \u003cli> \u003cp>Its antonym is \u003cstrong>innocent\u003c/strong>, meaning \u003cstrong>not guilty\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Other options are unrelated in meaning.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Choose the correct option to answer the following questions :</strong></p> <p>Which of the following words is misspelled? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Prayer </p></span></div><div class="option"><span class="key">b</span><span><p>Mischief </p></span></div><div class="option"><span class="key">c</span><span><p>Grammer </p></span></div><div class="option"><span class="key">d</span><span><p>Attach</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Option C \u003c/p> \u003cp>Grammer\u003c/p> \u003cp>The correct spelling is \u003cem>\u003cstrong>Grammar\u003c/strong>\u003c/em>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following word's spelling is incorrect?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Achieve</p></span></div><div class="option"><span class="key">b</span><span><p>Believe</p></span></div><div class="option"><span class="key">c</span><span><p>Recieve</p></span></div><div class="option"><span class="key">d</span><span><p>Deceive</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) Recieve\u003c/p> \u003cp>Explanation:\u003c/p> \u003cp>The correct spelling is receive, not recieve.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>c) To hit below the belt means :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>To strike above the head.</p></span></div><div class="option"><span class="key">b</span><span><p>To beat badly</p></span></div><div class="option"><span class="key">c</span><span><p>To strike unfairly</p></span></div><div class="option"><span class="key">d</span><span><p>To strike under the knee</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>The correct answer is: Option C\u003c/strong>\u003c/p> \u003cp>\u003cstrong>To strike unfairly \u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The idiom “to hit below the belt” means to behave unfairly or attack someone in a dishonest or unjust way, especially by saying something hurtful or unrelated to the main issue. It does not refer to a physical strike but to unfair behavior.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>My son is __________ in managing things.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>adapt</p></span></div><div class="option"><span class="key">b</span><span><p>adept</p></span></div><div class="option"><span class="key">c</span><span><p>adopt</p></span></div><div class="option"><span class="key">d</span><span><p>adopted</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>(B) adept\u003c/strong>\u003cbr/>“Adept” means skilled or proficient; “adapt” means to adjust.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct antonym of 'Stagnant':</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Progress</p></span></div><div class="option"><span class="key">b</span><span><p>Static</p></span></div><div class="option"><span class="key">c</span><span><p>Mobile</p></span></div><div class="option"><span class="key">d</span><span><p>Affluent</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (C) Mobile\u003cbr/>\u003cstrong>Explanation:\u003c/strong> “Stagnant” means not moving or inactive; its opposite is “mobile,” meaning capable of movement.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct synonym of 'Catch' :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Release</p></span></div><div class="option"><span class="key">b</span><span><p>Grab</p></span></div><div class="option"><span class="key">c</span><span><p>Miss</p></span></div><div class="option"><span class="key">d</span><span><p>Scold</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>(B) Grab\u003c/strong>       \u003cp>“Grab” means to seize or take hold of suddenly, which is similar in meaning to “catch.”\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>My children will not be judged by the.................of their skin.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>colour</p></span></div><div class="option"><span class="key">b</span><span><p>food habits</p></span></div><div class="option"><span class="key">c</span><span><p>education</p></span></div><div class="option"><span class="key">d</span><span><p>culture</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A) colour\u003cbr/>\u003cstrong>Explanation:\u003c/strong> From Dr. Martin Luther King Jr.’s speech — \u003cem>“judged not by the colour of their skin but by the content of their character.”\u003c/em>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>If you do not want anything more, you are: (1)</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Satisfying</p></span></div><div class="option"><span class="key">b</span><span><p>Satisfactory</p></span></div><div class="option"><span class="key">c</span><span><p>Satisfied</p></span></div><div class="option"><span class="key">d</span><span><p>Dissatisfied</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct- C) Satisfied\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Blow his own trumpet means:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>flatter</p></span></div><div class="option"><span class="key">b</span><span><p>discuss</p></span></div><div class="option"><span class="key">c</span><span><p>praise others</p></span></div><div class="option"><span class="key">d</span><span><p>praise one's own self</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (D) praise one's own self\u003cbr/>\u003cstrong>Explanation:\u003c/strong> The idiom “blow his own trumpet” means to boast or praise oneself.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>My grandmother told me a ____________.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>tail</p></span></div><div class="option"><span class="key">b</span><span><p>pale</p></span></div><div class="option"><span class="key">c</span><span><p>stories</p></span></div><div class="option"><span class="key">d</span><span><p>tale</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(D) tale\u003c/strong>\u003cbr/>“Tale” means a story; “tail” refers to the back part of an animal.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct antonym of 'Mighty' :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Forceful</p></span></div><div class="option"><span class="key">b</span><span><p>Tough</p></span></div><div class="option"><span class="key">c</span><span><p>Weak</p></span></div><div class="option"><span class="key">d</span><span><p>Strong</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer: C) Weak\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The word “Mighty” means strong or powerful.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>They decided to ------- his number in the yellow pages.<br/>(Choose the correct option)<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>look into</p></span></div><div class="option"><span class="key">b</span><span><p>look up</p></span></div><div class="option"><span class="key">c</span><span><p>look at</p></span></div><div class="option"><span class="key">d</span><span><p>look onto</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct Answer: (B) look up\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>- Look up means to search for information in a book, list, or directory.\u003cbr/>- Since the yellow pages is a directory, look up is the correct phrasal verb.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym for bold is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>courageous</p></span></div><div class="option"><span class="key">b</span><span><p>obedient</p></span></div><div class="option"><span class="key">c</span><span><p>impertinent</p></span></div><div class="option"><span class="key">d</span><span><p>cruel</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>A. courageous\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Bold”\u003c/strong> means \u003cstrong>brave or fearless\u003c/strong>, which matches \u003cstrong>courageous\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'Dormant' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sleeping</p></span></div><div class="option"><span class="key">b</span><span><p>Quick</p></span></div><div class="option"><span class="key">c</span><span><p>Humble</p></span></div><div class="option"><span class="key">d</span><span><p>Active</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: A) Sleeping\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Dormant\u003c/strong> means \u003cstrong>inactive or temporarily not active\u003c/strong>, similar to \u003cstrong>sleeping\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Other options (quick, humble, active) are unrelated or opposite in meaning.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>We have no alternative plan to ------ on.<br/>(Choose the correct option)<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> fall back</p></span></div><div class="option"><span class="key">b</span><span><p>fall for</p></span></div><div class="option"><span class="key">c</span><span><p>fall out</p></span></div><div class="option"><span class="key">d</span><span><p>fall off</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct Answer: (A) fall back\u003c/strong>\u003cbr/>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>- Fall back on means to rely on something when other plans fail.\u003cbr/>- The sentence means there is no other plan to rely on, so fall back fits correctly.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A poem written on the death of loved one is known as _______.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ode</p></span></div><div class="option"><span class="key">b</span><span><p>Epic</p></span></div><div class="option"><span class="key">c</span><span><p>Sonnet</p></span></div><div class="option"><span class="key">d</span><span><p>Elegy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is \u003cstrong>D. Elegy\u003c/strong>.\u003c/p> \u003cp>An \u003cstrong>Elegy\u003c/strong> is a poem written to \u003cstrong>express sorrow or grief\u003c/strong>, especially for someone who has died. It often reflects on loss, memory, and sometimes consolation.\u003c/p> \u003cp>\u003cstrong>\u003cem>Explanation for other options:\u003c/em>\u003c/strong>\u003c/p> \u003cul> \u003cli>\u003cstrong>A. Ode\u003c/strong> → An \u003cstrong>Ode\u003c/strong> is a poem of praise, usually celebrating a person, object, or idea; not mourning.\u003c/li> \u003cli>\u003cstrong>B. Epic\u003c/strong> → An \u003cstrong>Epic\u003c/strong> is a long narrative poem about heroic deeds and events.\u003c/li> \u003cli>\u003cstrong>C. Sonnet\u003c/strong> → A \u003cstrong>Sonnet\u003c/strong> is a fixed 14-line poem with a rhyme scheme; it can be about love or other themes, not specifically death.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the correct synonym for: prodigy</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>genius</p></span></div><div class="option"><span class="key">b</span><span><p>dull</p></span></div><div class="option"><span class="key">c</span><span><p>proud</p></span></div><div class="option"><span class="key">d</span><span><p>active</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A) genius CORRECT. A prodigy is a person of extraordinary talent. \"Genius\" is the closest synonym.\u003c/p> \u003cp>(B) dull WRONG. \"Dull\" means slow or unintelligent — the exact opposite of prodigy.\u003c/p> \u003cp>(C) proud WRONG. \"Proud\" is a personality trait — not what \"prodigy\" means.\u003c/p> \u003cp>(D) active WRONG. \"Active\" means energetic — unrelated to exceptional talent, which is what prodigy means.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the most appropriate phrase (expressing choice / suggestion / contrast / result)<br/><br/>You should take a day's leave and take rest at home.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Expressing Choice</p></span></div><div class="option"><span class="key">b</span><span><p>Expressing Suggestion</p></span></div><div class="option"><span class="key">c</span><span><p>Expressing Contrast</p></span></div><div class="option"><span class="key">d</span><span><p>Expressing Result</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Answer: Expressing Suggestion | The modal verb 'should' is the key marker of suggestion/advice.\u003c/p> \u003cp>Option analysis:\u003cbr/>[WRONG] Expressing Choice — Wrong. No preference ('would rather / prefer') is expressed.\u003cbr/>[CORRECT] Expressing Suggestion — Correct. 'Should' = advice / suggestion. \u003cbr/>[WRONG] Showing Contrast — Wrong. No contrasting ideas present. \u003cbr/>[WRONG] Expressing Result — Wrong. No result word ('so / therefore / thus') present.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the nearest meaning of the word:<br/><br/>Ornithology </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Books on birds </p></span></div><div class="option"><span class="key">b</span><span><p>Books on plants</p></span></div><div class="option"><span class="key">c</span><span><p>Books on animals</p></span></div><div class="option"><span class="key">d</span><span><p>Books on plants </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>[+] a book on birds: CORRECT — Ornithology is the scientific study of birds (Greek: 'ornithos' = bird).\u003cbr/>[-] a book on creatures: WRONG — too broad; 'creatures' includes all living things.\u003cbr/>[-] a book on plants: WRONG — that would be Botany.\u003cbr/>[-] a book on animals: WRONG — that would be Zoology. Birds are a subset of animals but the specific answer is birds.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>_____________ is a good exercise.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Walk</p></span></div><div class="option"><span class="key">b</span><span><p>Walking</p></span></div><div class="option"><span class="key">c</span><span><p>Walked</p></span></div><div class="option"><span class="key">d</span><span><p>Will walking</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -605,7 +609,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>(B) Walking\u003c/strong>\u003cbr/>“Walking is a good exercise” — here, the gerund “walking” functions as a noun.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The antonym of 'Arrival' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Departure</p></span></div><div class="option"><span class="key">b</span><span><p>Entrance</p></span></div><div class="option"><span class="key">c</span><span><p>Appearance</p></span></div><div class="option"><span class="key">d</span><span><p>Enter</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -617,7 +621,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(A) Departure\u003c/strong>\u003cbr/>“Arrival” means coming, and its opposite is “departure,” meaning leaving.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'Bane' is :<br/>[PYQ 2022, 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Banish</p></span></div><div class="option"><span class="key">b</span><span><p>Banner</p></span></div><div class="option"><span class="key">c</span><span><p>Curse</p></span></div><div class="option"><span class="key">d</span><span><p>Ban</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -629,7 +633,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>C. Curse\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Bane”\u003c/strong> means \u003cstrong>a cause of great distress or harm\u003c/strong>, which matches \u003cstrong>curse\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Give the verb form of the word 'Prohibition.'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Prohibit</p></span></div><div class="option"><span class="key">b</span><span><p>Prohibiting</p></span></div><div class="option"><span class="key">c</span><span><p>Prohibited</p></span></div><div class="option"><span class="key">d</span><span><p>Prohibitively</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -641,7 +645,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Explanation: 'Prohibition' is a noun. Its base verb form is 'Prohibit' — to officially forbid something. This is the infinitive/root verb form.\u003c/p> \u003cp>(2) 'Prohibiting' is the present participle — requires an auxiliary verb.\u003c/p> \u003cp>(3) 'Prohibited' is the past tense / past participle — not the base verb form.\u003c/p> \u003cp>(4) 'Prohibitively' is an adverb (e.g., 'prohibitively expensive') — not a verb.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct synonym of 'Busy' :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Active</p></span></div><div class="option"><span class="key">b</span><span><p>Diligent</p></span></div><div class="option"><span class="key">c</span><span><p>Preoccupied</p></span></div><div class="option"><span class="key">d</span><span><p>Idle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -653,7 +657,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer: C) Preoccupied\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The word “Busy” means engaged or occupied with work.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Give the antonym of 'Poorer.'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Deeper</p></span></div><div class="option"><span class="key">b</span><span><p> Richer</p></span></div><div class="option"><span class="key">c</span><span><p>Taller</p></span></div><div class="option"><span class="key">d</span><span><p> Shorter</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -665,7 +669,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Explanation: In the passage: 'The deeper you dive into it, the richer the meanings you get.' 'Richer' is the direct antonym of 'poorer' — both relate to quality and abundance.\u003c/p> \u003cp>(1) 'Deeper' relates to physical or conceptual depth — different dimension entirely.\u003c/p> \u003cp>(3) 'Taller' is the antonym of 'shorter' — unrelated to poor/rich.\u003c/p> \u003cp>(4) 'Shorter' is the antonym of 'taller' — not of 'poorer'.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'destroy' is :<br/><strong>[PYQ 2023]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>finish</p></span></div><div class="option"><span class="key">b</span><span><p>demolish</p></span></div><div class="option"><span class="key">c</span><span><p>stop</p></span></div><div class="option"><span class="key">d</span><span><p>end</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -677,7 +681,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct answer is:\u003c/p> \u003cp>\u003cstrong>B. demolish\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Destroy”\u003c/strong> means to \u003cstrong>completely ruin or break down\u003c/strong>, which matches \u003cstrong>demolish\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the most appropriate question for the underlined answer<br/><br/>Sentence: You should wash your hands once before you take lunch.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>How often should you wash your hands before you take lunch?</p></span></div><div class="option"><span class="key">b</span><span><p>When should you wash your hands?</p></span></div><div class="option"><span class="key">c</span><span><p>How should you wash your hands?</p></span></div><div class="option"><span class="key">d</span><span><p>What should you do before you take lunch?</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -689,7 +693,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(+) How often should you wash your hands before you take lunch? CORRECT. 'Once' answers frequency (how often = one time), so 'How often' is the exact question word needed. \u003cbr/>(-) When should you wash your hands? WRONG. 'When' asks about TIME (e.g., 'at noon' / 'before lunch'). 'Once' answers frequency, not time. \u003cbr/>(-) How should you wash your hands? WRONG. 'How' asks about MANNER or method. 'Once' is a frequency, not a method. \u003cbr/>(-) What should you do before you take lunch? WRONG. 'What' asks about the ACTION ('wash your hands'), which is NOT the underlined part. The underlined answer is 'once'.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Choose the correct option to answer the following :</strong></p> <p>Which of the following words is mis-spelled ? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Importent </p></span></div><div class="option"><span class="key">b</span><span><p>Importance </p></span></div><div class="option"><span class="key">c</span><span><p>Impossible </p></span></div><div class="option"><span class="key">d</span><span><p>Impact</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Option A\u003c/p> \u003cp>importent\u003c/p> \u003cp>Correct spelling is '\u003cstrong>important'.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'derogatory' is :<br/><strong>[PYQ 2023]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>inflammatory</p></span></div><div class="option"><span class="key">b</span><span><p>defamatory</p></span></div><div class="option"><span class="key">c</span><span><p>satisfactory</p></span></div><div class="option"><span class="key">d</span><span><p>supplementary</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>B. defamatory\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Derogatory”\u003c/strong> means \u003cstrong>showing disrespect or damage to someone’s reputation\u003c/strong>, which closely matches \u003cstrong>defamatory\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The government by the representatives of the people is called.......</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Autocracy</p></span></div><div class="option"><span class="key">b</span><span><p>Democracy</p></span></div><div class="option"><span class="key">c</span><span><p>Socialism</p></span></div><div class="option"><span class="key">d</span><span><p>Anarchy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -725,7 +729,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (B) Democracy\u003cbr/>\u003cstrong>Explanation:\u003c/strong> Government by the representatives of the people is called \u003cem>Democracy.\u003c/em>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Opposite word of 'Malice' is —</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Criticism</p></span></div><div class="option"><span class="key">b</span><span><p> Ill-will</p></span></div><div class="option"><span class="key">c</span><span><p>Good will</p></span></div><div class="option"><span class="key">d</span><span><p> Hatred</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Explanation: 'Malice' means the desire to harm others — equivalent to ill-will or hatred. Its antonym is 'Good will,' which means a positive, benevolent attitude toward others.\u003c/p> \u003cp>(1) 'Criticism' is a negative evaluation — not the antonym of malice.\u003c/p> \u003cp>(2) 'Ill-will' is actually a SYNONYM of malice, not its opposite.\u003c/p> \u003cp>(4) 'Hatred' is also a synonym / near-synonym of malice.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>I have to buy an ________ of Lord Ganesha.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>idle</p></span></div><div class="option"><span class="key">b</span><span><p>idol</p></span></div><div class="option"><span class="key">c</span><span><p>ideal</p></span></div><div class="option"><span class="key">d</span><span><p>idealy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -749,7 +753,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>(B) idol\u003c/strong>\u003cbr/>“Idol” means a statue or image of a deity; “idle” means lazy.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym for 'astonishment' is :<br/>[PYQ 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>punishment</p></span></div><div class="option"><span class="key">b</span><span><p>sentiment</p></span></div><div class="option"><span class="key">c</span><span><p>betterment</p></span></div><div class="option"><span class="key">d</span><span><p>surprise</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,7 +765,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>D. surprise\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Astonishment”\u003c/strong> means \u003cstrong>great surprise or amazement\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'allow' is :<br/><strong>[PYQ 2024]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>admit</p></span></div><div class="option"><span class="key">b</span><span><p>permit</p></span></div><div class="option"><span class="key">c</span><span><p>submit</p></span></div><div class="option"><span class="key">d</span><span><p>commit</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -773,7 +777,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>B. permit\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Allow”\u003c/strong> and \u003cstrong>“permit”\u003c/strong> are synonyms, both meaning \u003cstrong>to give permission\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The government has called _______ the army.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>upon</p></span></div><div class="option"><span class="key">b</span><span><p>at</p></span></div><div class="option"><span class="key">c</span><span><p>by</p></span></div><div class="option"><span class="key">d</span><span><p>out</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -785,7 +789,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(D) out\u003c/strong>\u003cbr/>“Call out the army” means to summon them for action.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct synonym of 'Pious' :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Afraid</p></span></div><div class="option"><span class="key">b</span><span><p>Faithful</p></span></div><div class="option"><span class="key">c</span><span><p>Religious</p></span></div><div class="option"><span class="key">d</span><span><p>Sympathetic</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -797,7 +801,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct answer: C) Religious\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The word “Pious” means deeply religious or devoted to God.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>d) The Government by a ruler who has unlimited power is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Theocracy</p></span></div><div class="option"><span class="key">b</span><span><p>Supremacy</p></span></div><div class="option"><span class="key">c</span><span><p>Bureaurocracy</p></span></div><div class="option"><span class="key">d</span><span><p>Autocracy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -809,7 +813,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>The correct answer is: Option D\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Autocracy \u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>An autocracy is a system of government in which one ruler has absolute or unlimited power. The authority is concentrated in the hands of a single person.\u003c/p> \u003cp>Theocracy – Government ruled by religious leaders.\u003c/p> \u003cp>Supremacy – The state of being superior or having authority.\u003c/p> \u003cp>Bureaucracy – Government run by officials and administrative departments.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Select the correct synonym for 'solemn'</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Humerous</p></span></div><div class="option"><span class="key">b</span><span><p>Serious</p></span></div><div class="option"><span class="key">c</span><span><p>Sober</p></span></div><div class="option"><span class="key">d</span><span><p>Gentle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -821,7 +825,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B) Serious CORRECT. 'Solemn' means grave, earnest, and dignified. 'Serious' is the closest synonym among the given options.\u003c/p> \u003cp>(A) Humerous WRONG. 'Humorous' (note: also misspelled in the option) means funny or amusing — the exact OPPOSITE of solemn. A solemn occasion is serious and dignified, not humorous.\u003c/p> \u003cp>(C) Sober WRONG. While 'sober' can mean serious in some contexts, it primarily means not under the influence of alcohol, or restrained. 'Serious' is a more direct synonym for 'solemn'.\u003c/p> \u003cp>D) Gentle WRONG. 'Gentle' means soft and mild in manner. It does not capture the gravity and formality implied by 'solemn'.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct synonym of 'Cease' :<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Create</p></span></div><div class="option"><span class="key">b</span><span><p>Stop</p></span></div><div class="option"><span class="key">c</span><span><p>Dull</p></span></div><div class="option"><span class="key">d</span><span><p>Begin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -833,7 +837,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B) Stop\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The word “Cease” means to stop or come to an end.\u003c/p> \u003cp>Create ❌ means to make\u003c/p> \u003cp>Dull ❌ means not sharp or not interesting\u003c/p> \u003cp>Begin ❌ means to start\u003c/p> \u003cp>Therefore, the correct synonym is Stop.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct meaning of - "To keep one's temper":</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>To become hungry</p></span></div><div class="option"><span class="key">b</span><span><p>To be aloof</p></span></div><div class="option"><span class="key">c</span><span><p>To remain calm</p></span></div><div class="option"><span class="key">d</span><span><p>To preserve one's energy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -845,7 +849,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Correct Answer: (C) To remain calm\u003c/strong>\u003cbr/>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>- To keep one's temper means to stay calm and not become angry, especially in a difficult situation.\u003cbr/>- Therefore, to remain calm is the correct meaning.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find and write the nearest meaning of the word:<br/><br/>Humming</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rushing</p></span></div><div class="option"><span class="key">b</span><span><p>Hurling</p></span></div><div class="option"><span class="key">c</span><span><p>Hammering</p></span></div><div class="option"><span class="key">d</span><span><p>Buzzing</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -857,7 +861,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>[-] rushing: Means moving fast; no relation to sound.\u003cbr/>[-] hurling: Means throwing something with force; unrelated. \u003cbr/>[-] hammering: Means striking hard; implies heavy impact — not the same as a soft hum.\u003cbr/>[+] buzzing: CORRECT — a buzzing sound is low, continuous, and vibratory, exactly like humming.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'controversy' is :<br/>[PYQ 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>fight</p></span></div><div class="option"><span class="key">b</span><span><p>agreement</p></span></div><div class="option"><span class="key">c</span><span><p>dispute</p></span></div><div class="option"><span class="key">d</span><span><p>resolution</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -869,7 +873,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>C. dispute\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Controversy”\u003c/strong> means \u003cstrong>a public disagreement or debate\u003c/strong>, which matches \u003cstrong>dispute\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The antonym of 'Occupied' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Vacant</p></span></div><div class="option"><span class="key">b</span><span><p>Resurrect</p></span></div><div class="option"><span class="key">c</span><span><p>Loose</p></span></div><div class="option"><span class="key">d</span><span><p>Exit</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -881,7 +885,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Answer:\u003c/strong> (A) Vacant\u003cbr/>\u003cstrong>Explanation:\u003c/strong> “Vacant” is the opposite of “Occupied,” meaning empty or not in use.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'Diligent' is :<br/>[PYQ 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>intelligent</p></span></div><div class="option"><span class="key">b</span><span><p>energetic</p></span></div><div class="option"><span class="key">c</span><span><p>modest</p></span></div><div class="option"><span class="key">d</span><span><p>industrious</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -893,7 +897,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>D. industrious\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Diligent”\u003c/strong> means \u003cstrong>hard-working and careful\u003c/strong>, which matches \u003cstrong>industrious\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'Lofty' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>High</p></span></div><div class="option"><span class="key">b</span><span><p>Shaky</p></span></div><div class="option"><span class="key">c</span><span><p>Small</p></span></div><div class="option"><span class="key">d</span><span><p>Lowly</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -905,7 +909,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: A) High\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Lofty\u003c/strong> means \u003cstrong>tall, elevated, or high in position or character\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Its synonym is \u003cstrong>high\u003c/strong>.\u003cbr/>Other options (shaky, small, lowly) have opposite or unrelated meanings.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The antonym of 'Clean' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Neat</p></span></div><div class="option"><span class="key">b</span><span><p>Wash</p></span></div><div class="option"><span class="key">c</span><span><p>Tidy</p></span></div><div class="option"><span class="key">d</span><span><p>Dirty</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -917,7 +921,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D) Dirty\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Clean\u003c/strong> means free from dirt.\u003c/p> \u003c/li> \u003cli> \u003cp>Its \u003cstrong>antonym\u003c/strong> is \u003cstrong>dirty\u003c/strong>, meaning not clean.\u003cbr/>Other options (neat, wash, tidy) are related to cleanliness but are not opposites.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The word 'corpse' means</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>father</p></span></div><div class="option"><span class="key">b</span><span><p>a body part</p></span></div><div class="option"><span class="key">c</span><span><p>parents</p></span></div><div class="option"><span class="key">d</span><span><p>dead body</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -929,7 +933,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(a) father \u003c/p> \u003cp> Incorrect. 'Corpse' has no relation to 'father'. The word refers to a physical state, not a relationship.\u003c/p> \u003cp>(b) a body part \u003c/p> \u003cp> Incorrect. A corpse is not a body part — it refers to the entire body.\u003c/p> \u003cp>(c) parents \u003c/p> \u003cp> Incorrect. 'Parents' is a relationship term and is unrelated to the meaning of 'corpse'.\u003c/p> \u003cp>(d) dead body \u003c/p> \u003cp> Correct! A 'corpse' is a dead body. The poetess compares her aged, pale, sleeping mother's face to the ashen face of a corpse — reflecting fear of her mother's mortality.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Fill in the blanks choosing the correct option <br/> I know _____ he is ill.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>who</p></span></div><div class="option"><span class="key">b</span><span><p>that</p></span></div><div class="option"><span class="key">c</span><span><p>which</p></span></div><div class="option"><span class="key">d</span><span><p>where</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -941,7 +945,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>a) who Incorrect. 'Who' is a relative pronoun used to refer to a person in relative clauses, not to introduce a noun clause as object.\u003c/p> \u003cp>(b) that Correct! 'That' is the correct conjunction to introduce a noun clause as the object of 'know' — 'I know that he is ill.' The clause 'he is ill' acts as the object of the verb 'know'.\u003c/p> \u003cp>(c) which Incorrect. 'Which' is used for non-human antecedents in relative clauses — not to introduce a reported-speech noun clause.\u003c/p> \u003cp>(d) where Incorrect. 'Where' introduces a clause of place — 'I know where he is' would mean location, not his condition.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Choose the correct option to answer the following :</strong></p> <p><strong>If you do not want anything more, you are:</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>satisfactory </p></span></div><div class="option"><span class="key">b</span><span><p>satisfying </p></span></div><div class="option"><span class="key">c</span><span><p>dissatisfied </p></span></div><div class="option"><span class="key">d</span><span><p>satisfied</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -953,7 +957,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Option D\u003c/p> \u003cp>satisfied\u003c/p> \u003cp>Satisfied means feeling of fullness or not wanting anything more.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The antonym of 'Clever' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Angry</p></span></div><div class="option"><span class="key">b</span><span><p>Cunning</p></span></div><div class="option"><span class="key">c</span><span><p>Naughty</p></span></div><div class="option"><span class="key">d</span><span><p>Stupid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -965,7 +969,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D) Stupid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Clever\u003c/strong> means intelligent or smart.\u003c/p> \u003c/li> \u003cli> \u003cp>Its \u003cstrong>antonym\u003c/strong> is \u003cstrong>stupid\u003c/strong>, meaning lacking intelligence.\u003cbr/>Other options are unrelated in meaning.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct antonym of 'Haughty' :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Humble</p></span></div><div class="option"><span class="key">b</span><span><p>Hard</p></span></div><div class="option"><span class="key">c</span><span><p>Heavy</p></span></div><div class="option"><span class="key">d</span><span><p>Hostile</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -977,7 +981,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(A) Humble\u003c/strong>\u003cbr/>“Haughty” means proud or arrogant; “humble” is its opposite.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'timid' is :<br/><strong>[PYQ 2025]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>daring</p></span></div><div class="option"><span class="key">b</span><span><p>coward</p></span></div><div class="option"><span class="key">c</span><span><p>bold</p></span></div><div class="option"><span class="key">d</span><span><p>grave</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -989,7 +993,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>B. coward\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Timid”\u003c/strong> means \u003cstrong>shy or lacking courage\u003c/strong>, and \u003cstrong>coward\u003c/strong> is the closest option among the choices.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The antonym of 'Finish' is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Start</p></span></div><div class="option"><span class="key">b</span><span><p>Destroy</p></span></div><div class="option"><span class="key">c</span><span><p>Close</p></span></div><div class="option"><span class="key">d</span><span><p>Complete</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1001,7 +1005,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: A) Start\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Finish\u003c/strong> means to \u003cstrong>end or complete\u003c/strong> something.\u003c/p> \u003c/li> \u003cli> \u003cp>Its antonym is \u003cstrong>start\u003c/strong>, which means to \u003cstrong>begin\u003c/strong>.\u003cbr/>Other options (destroy, close, complete) are not opposites of finish.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the odd one out : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Shirt</p></span></div><div class="option"><span class="key">b</span><span><p>Frock</p></span></div><div class="option"><span class="key">c</span><span><p>Skirt</p></span></div><div class="option"><span class="key">d</span><span><p>Cloth</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1013,7 +1017,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(D) Cloth\u003c/strong>\u003cbr/>Others are clothes; “cloth” is the material used to make them.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>After a prolonged suffering he 'passed away'.<br/>(Choose the correct option of the underlined phrase )<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>went away</p></span></div><div class="option"><span class="key">b</span><span><p>expired</p></span></div><div class="option"><span class="key">c</span><span><p>left</p></span></div><div class="option"><span class="key">d</span><span><p>yielded</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1025,7 +1029,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct Answer: (B) expired\u003c/strong>\u003cbr/>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>- \"Passed away\" is a polite expression (euphemism) for died.\u003cbr/>- Expired also means died, so it is the correct equivalent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>There is no ________ rule about good food. (Choose the correct phrase)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>hard and fast</p></span></div><div class="option"><span class="key">b</span><span><p>so far as</p></span></div><div class="option"><span class="key">c</span><span><p>bound for</p></span></div><div class="option"><span class="key">d</span><span><p>brush up</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1037,7 +1041,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(A) hard and fast\u003c/strong>\u003cbr/>The phrase “hard and fast rule” means a strict or definite rule.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The synonym of 'illustrious' is :<br/>[PYQ 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>failure</p></span></div><div class="option"><span class="key">b</span><span><p>renowned</p></span></div><div class="option"><span class="key">c</span><span><p>enduring</p></span></div><div class="option"><span class="key">d</span><span><p>both (a) and (c)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1049,7 +1053,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>B. renowned\u003c/strong>\u003c/p> \u003cp>\u003cstrong>“Illustrious”\u003c/strong> means \u003cstrong>famous, celebrated, or well-known\u003c/strong>, which matches \u003cstrong>renowned\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q84" data-gated="1">
-      <div class="qnum">Q84</div>
+      <div class="qhead"><div class="qnum">Q84</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the most appropriate phrase:<br/><br/> In spite of my advice, he started a risky job.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Expressing Choice</p></span></div><div class="option"><span class="key">b</span><span><p>Expressing Suggestion</p></span></div><div class="option"><span class="key">c</span><span><p>Expressing Contrast</p></span></div><div class="option"><span class="key">d</span><span><p>Expressing Result</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

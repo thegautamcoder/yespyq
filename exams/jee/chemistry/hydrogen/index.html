@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/jee/chemistry/"},{"@type":"ListItem","position":5,"name":"Hydrogen","item":"https://yespyq.com/exams/jee/chemistry/hydrogen/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Hydrogen</h1>
       <p>43 JEE Chemistry previous year questions on <b>Hydrogen</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which of the following reactions of hydrogen peroxide acts as an oxidizing agent (either in acidic, alkaline, or neutral medium)?<br/>(i) \(2F{e}^{+2}+{H}_{2}{O}_{2}\to\)<br/>(ii) \(2{\mathrm{MnO}}_{4}^{-}+6{\mathrm{H}}^{+}+5{\mathrm{H}}_{2}{\mathrm{O}}_{2}\to\)<br/>(iii) \({I}_{2}+{H}_{2}{O}_{2}+2O{H}^{-}\to\)<br/>(iv) \(M{n}^{+2}+{H}_{2}{O}_{2}\to\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(ii), (iii) </p></span></div><div class="option correct"><span class="key">b</span><span><p>(i), (iv) </p></span></div><div class="option"><span class="key">c</span><span><p>(i), (iii) </p></span></div><div class="option"><span class="key">d</span><span><p>(ii), (iv)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement-I : Methane and steam passed over a heated Ni catalyst produces hydrogen gas.<br/>Statement-II : Sodium nitrite reacts with \(\mathrm{NH}_4 \mathrm{Cl}\) to give \(\mathrm{H}_2 \mathrm{O}, \mathrm{N}_2\) and \(\mathrm{NaCl}\).<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p>[JEE Main 2023, 11 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Both the statements I and II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both the statements I and II are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statements about heavy water are given below:</p> <p>(A) Heavy water is used in exchange reactions for the study of reaction mechanisms.</p> <p>(B) Heavy water is prepared by exhaustive electrolysis of water</p> <p>(C) Heavy water has higher boiling point than ordinary water.</p> <p>(D) Viscosity of \(\mathrm{H}_{2} \mathrm{O}\) is greater than \(\mathrm{D}_{2} \mathrm{O}\).</p> <p>Choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 26 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (D) only</p></span></div><div class="option correct"><span class="key">b</span><span><p>(A), (B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A) and (C) only</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the following, the correct statements are:<br/>I. LiH, Be\({H}_{2}\) and Mg\({H}_{2}\) are saline hydrides with significant covalent character<br/>II. Saline hydrides are volatile<br/>III. Electron - precise hydrides are Lewis bases<br/>IV. The formula for chromium hydride is CrH</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I, III only</p></span></div><div class="option"><span class="key">b</span><span><p>II, IV only</p></span></div><div class="option correct"><span class="key">c</span><span><p>I, IV only</p></span></div><div class="option"><span class="key">d</span><span><p>III, IV only</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the following, the correct statements are:<br/>I. LiH, Be\({H}_{2}\) and Mg\({H}_{2}\) are saline hydrides with significant covalent character<br/>II. Saline hydrides are volatile<br/>III. Electron - precise hydrides are Lewis bases<br/>IV. The formula for chromium hydride is CrH</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I, III only</p></span></div><div class="option"><span class="key">b</span><span><p>II, IV only</p></span></div><div class="option"><span class="key">c</span><span><p>I, IV only</p></span></div><div class="option"><span class="key">d</span><span><p>III, IV only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Saline hydrides are not volatile as the strong ionic bonds keep the constituent ions together. Thus, statement II is incorrect. Electron-precise hydrides like \\(C\\)\\({H}_{4}\\), \\(Si{H}_{4}\\), act as pH - neutral species. Thus, statement 3 is incorrect. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which of the following reactions of hydrogen peroxide acts as an oxidizing agent (either in acidic, alkaline, or neutral medium)?<br/>(i) \(2F{e}^{+2}+{H}_{2}{O}_{2}\to\)<br/>(ii) \(2{\mathrm{MnO}}_{4}^{-}+6{\mathrm{H}}^{+}+5{\mathrm{H}}_{2}{\mathrm{O}}_{2}\to\)<br/>(iii) \({I}_{2}+{H}_{2}{O}_{2}+2O{H}^{-}\to\)<br/>(iv) \(M{n}^{+2}+{H}_{2}{O}_{2}\to\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(ii), (iii) </p></span></div><div class="option"><span class="key">b</span><span><p>(i), (iv) </p></span></div><div class="option"><span class="key">c</span><span><p>(i), (iii) </p></span></div><div class="option"><span class="key">d</span><span><p>(ii), (iv)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In reactions \u003cstrong>(i) and (iv)\u003c/strong>, \u003cstrong>H₂O₂\u003c/strong> acts as an oxidizing agent:\u003c/p> \u003cul> \u003cli>\u003cstrong>(i) Fe²⁺ → Fe³⁺\u003c/strong>\u003c/li> \u003cli>\u003cstrong>(iv) Mn\u003csup>2+\u003c/sup>→ Mn\u003csup>7+\u003c/sup>\u003c/strong>\u003cbr/>Thus, correct answer: \u003cstrong>(B) (i), (iv)\u003c/strong>.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/>Statement-I : Methane and steam passed over a heated Ni catalyst produces hydrogen gas.<br/>Statement-II : Sodium nitrite reacts with \(\mathrm{NH}_4 \mathrm{Cl}\) to give \(\mathrm{H}_2 \mathrm{O}, \mathrm{N}_2\) and \(\mathrm{NaCl}\).<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2023, 11 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both the statements I and II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both the statements I and II are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(C{H}_{4}(g)+{H}_{2}O(g)\\overset{Ni}{\\underset{\\Delta }{\\to }}\\underset{\\text{(water gas) }}{\\underset{⏟}{CO(g)+3{H}_{2}(g)}}\\)\u003c/p> \u003cp>\\(NaN{O}_{2}(aq)+N{H}_{4}Cl(aq)⟶NaC{l}_{(aq)}+N{H}_{4}N{O}_{2}\\)\u003c/p> \u003cp>\\(N{H}_{4}N{O}_{2}⟶{N}_{2}(g)+2{H}_{2}O(ℓ)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reaction of \(\mathrm{H}_{2} \mathrm{O}_{2}\) with potassium permanganate in acidic medium leads to the formation of mainly</p> <p>[JEE Main 2022, 25 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Mn}^{2+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Mn}^{4+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Mn}^{3+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Mn}^{6+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) Reaction of \\(\\mathrm{H}_{2} \\mathrm{O}_{2}\\) with \\(\\mathrm{KMnO}_{4}\\) gives \\(\\mathrm{Mn}^{+2}\\) in acidic medium.\u003c/p> \u003cp>\\(2 \\mathrm{MnO}_{4}^{-}+6 \\mathrm{H}^{+} 5 \\mathrm{H}_{2} \\mathrm{O}_{2} \\longrightarrow 2 \\mathrm{Mn}^{2+}+8 \\mathrm{H}_{2} \\mathrm{O}+5 \\mathrm{O}_{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p>Assertion (A): Hydrogen is the most abundant element in the Universe, but it is not the most abundant gas in the troposphere.</p> <p>Reason (R): Hydrogen is the lightest element</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p> <p>[JEE Main 2021, 24 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both \(\mathrm{A}\) and \(\mathrm{R}\) are true but \(\mathrm{R}\) is NOT the correct explanation of \(\mathrm{A}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{A}\) is false but \(\mathrm{R}\) is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(\mathrm{A}\) and \(\mathrm{R}\) are true and \(\mathrm{R}\) is the correct explanation of \(\mathrm{A}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{A}\) is true but \(\mathrm{R}\) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) In universe, Hydrogen is the most abundant element and the lightest element. In troposphere, the most abundant gas in Nitrogen.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Calgon is used for water treatment. Which of the following statement is NOT true about Calgon?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>It is also known as Graham's salt.</p></span></div><div class="option"><span class="key">b</span><span><p>It is polymeric compound and is water soluble.</p></span></div><div class="option"><span class="key">c</span><span><p>It doesn't remove \(\mathrm{Ca}^{2+}\) ion by precipitation.</p></span></div><div class="option"><span class="key">d</span><span><p>Calgon contains the \(2^{\text {nd }}\) most abundant element by weight in the Earth's crust.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Calgon does not contain the \\(2^{\\text {nd }}\\) most abundant element by weight in earth crust because that is Silicon.\u003c/p> \u003cp>Calgon \\(\\rightarrow \\mathrm{Na}_{2}\\left[\\mathrm{Na}_{4}\\left(\\mathrm{PO}_{3}\\right)_{6}\\right] \\xrightarrow{\\text { Water soluble }}\\).\u003c/p> \u003cp>\\(2 \\mathrm{Na}^{+}\\left[\\mathrm{Na}_{4}\\left(\\mathrm{PO}_{3}\\right)_{6}\\right]^{2-} \\xrightarrow{\\mathrm{Ca}^{+2}} 2 \\mathrm{Na}^{+}\\left[\\mathrm{Na}_{2} \\mathrm{Ca}\\left(\\mathrm{PO}_{3}\\right)_{6}\\right]^{2-}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equation that represents the water-gas shift reaction is</p> <p>[JEE Main 2020, 5 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\begin{equation}<br/>\mathrm{CO}(\mathrm{g})+\mathrm{H}_2 \mathrm{O}(\mathrm{g}) \xrightarrow[\text { Catalyst }]{673 \mathrm{~K}} \mathrm{CO}_2(\mathrm{~g})+\mathrm{H}_2(\mathrm{~g})<br/>\end{equation}</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{C}(\mathrm{s})+\mathrm{H}_{2} \mathrm{O}(\mathrm{g}) \stackrel{1270 \mathrm{~K}}{\longrightarrow} \mathrm{CO}(\mathrm{g})+\mathrm{H}_{2}(\mathrm{~g}) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2 \mathrm{C}(\mathrm{s})+\mathrm{O}_{2}(\mathrm{~g})+4 \mathrm{~N}_{2} \stackrel{1273 \mathrm{~K}}{\longrightarrow} 2 \mathrm{CO}(\mathrm{g})+4 \mathrm{~N}_{2}(\mathrm{~g}) \)</p></span></div><div class="option"><span class="key">d</span><span><p>\begin{equation}<br/>\mathrm{CH}_4(\mathrm{~g})+\mathrm{H}_2 \mathrm{O}(\mathrm{g}) \xrightarrow[N i]{1270 \mathrm{~K}} \mathrm{CO}(\mathrm{g})+3 \mathrm{H}_2(\mathrm{~g})<br/>\end{equation}</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The water-gas shift reaction is an important industrial reaction used to increase hydrogen production.\u003c/p> \u003cp>The reaction is:\u003cbr/>CO + H₂O ⇌ CO₂ + H₂\u003c/p> \u003cp>In this reaction, carbon monoxide reacts with steam to form carbon dioxide and hydrogen gas.\u003c/p> \u003cp>Now analyze the options:\u003c/p> \u003cp>Option A shows CO reacting with H₂O to give CO₂ and H₂. This exactly matches the water-gas shift reaction.\u003c/p> \u003cp>Option B represents the formation of water gas (CO + H₂) from carbon and steam, not the shift reaction.\u003c/p> \u003cp>Option C is a combustion-related process and does not involve water gas shift.\u003c/p> \u003cp>Option D represents steam reforming of methane, where CH₄ reacts with steam to form CO and hydrogen.\u003c/p> \u003cp>Thus, only option A represents the water-gas shift reaction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In an ice crystal, each water molecule is hydrogen bonded to .......... neighbouring molecules. </p> <p> </p> <p><strong>[JEE Main 2023, 6 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Each water molecule in ice is hydrogen bonded with four other water molecules.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two reactions, involved in the commercial production of dihydrogen (H<sub>2</sub>). The two reactions are carried out at temperature "T<sub>1</sub>" and "T<sub>2</sub>" respectively</p> <p>\(\mathrm{C}\left(\mathrm{s}\right)+{\mathrm{H}}_{2}\mathrm{O}\overset{{\mathrm{T}}_{1}}{\to }\mathrm{CO}\left(\mathrm{g}\right)+{\mathrm{H}}_{2}\left(\mathrm{g}\right)\)</p> <p>\(\mathrm{CO}\left(\mathrm{g}\right)+{\mathrm{H}}_{2}\mathrm{O}\left(\mathrm{g}\right)\overset{{\mathrm{T}}_{2}}{\to }{\mathrm{CO}}_{2}\left(\mathrm{g}\right)+{\mathrm{H}}_{2}\left(\mathrm{g}\right)\)</p> <p>The temperature T<sub>1</sub> and T<sub>2</sub> are correctly related as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{T}_{1}&gt;\mathrm{T}_{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{T}_{1}=\mathrm{T}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{T}_{1}=100 \mathrm{~K}, \mathrm{~T}_{2}=1270 \mathrm{~K}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{T}_{1}&lt;\mathrm{T}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) In the given reaction, \\(\\mathrm{T}_{1}=1270 \\mathrm{~K} \\quad \\mathrm{~T}_{2}=673 \\mathrm{~K}\\) Hence, \\(\\mathrm{T}_{1}&gt;\\mathrm{T}_{2}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following methods is most suitable for preparing deionized water?</p> <p>[JEE Main 2021, 26 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Permutit method</p></span></div><div class="option"><span class="key">b</span><span><p>Synthetic resin method</p></span></div><div class="option"><span class="key">c</span><span><p>Calgon's method</p></span></div><div class="option"><span class="key">d</span><span><p>Clark's method</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Deionised water is obtained by passing water successively through a cation exchange and an anion exchange.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following metals forms interstitial hydride easily?</p> <p>[JEE Main 2021, 25 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Fe</p></span></div><div class="option"><span class="key">b</span><span><p>Cr</p></span></div><div class="option"><span class="key">c</span><span><p>Mn</p></span></div><div class="option"><span class="key">d</span><span><p>Co</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B) Metals belong to group 7, 8, &amp; 9 dose not form interstitial hydride, this is known as hydride gap.\u003c/p> \u003cp>group -7, group -8 , group -9\u003c/p> \u003cp>So, Cr will form interstitial hydride easily.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ionic hydrides reacts with water to give</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>acidic solutions</p></span></div><div class="option"><span class="key">b</span><span><p>hydride ions</p></span></div><div class="option"><span class="key">c</span><span><p>basic solutions</p></span></div><div class="option"><span class="key">d</span><span><p>electrons</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ionic hydrides give the basic solution when it reacts with water, e.g.,\u003cbr/>LiH + \\({H}_{2}O\\) → LiOH + \\({H}_{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hydrogen has three isotopes (a), (b) and (c). If the number of neutron(s) in (a), (b) and (c) respectively, are (x), (y) and \((\mathrm{z})\), the sum of \((\mathrm{x}),(\mathrm{y})\) and \((\mathrm{z})\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Number of neutrons in protium \\((a)\\), deuterium (b) and tritium \\((c)\\) are 0,1 and 2 respectively.\u003c/p> \u003cp>Therefore, \\(\\mathrm{x}+\\mathrm{y}+\\mathrm{z}=0+1+2=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statements is incorrect?</p> <p>[JEE Main 2021, 31 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Atomic hydrogen is produced when \(\mathrm{H}_{2}\) molecules at a high temperature are irradiated with UV radiation.</p></span></div><div class="option"><span class="key">b</span><span><p>Bond dissociation enthalpy of \(\mathrm{H}_{2}\) is highest among diatomic gaseous molecules which contain a single bond.</p></span></div><div class="option"><span class="key">c</span><span><p>Dihydrogen is produced on reacting zinc with \(\mathrm{HCl}\) as well as \(\mathrm{NaOH}(\mathrm{aq})\).</p></span></div><div class="option"><span class="key">d</span><span><p>At around \(2000 \mathrm{~K}\), the dissociation of dihydrogen into its atoms is nearly \(8.1 \%\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) At around \\(2000 \\mathrm{~K}\\), the dissociation of \\(\\mathrm{H}_{2}\\) into its atoms is nearly \\(0.081 \\%\\).\u003c/p> \u003cp>Hence, (D) is the incorrect statement.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hydrogen peroxide reacts with iodine in basic medium to give:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{IO}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{I}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{IO}_{4}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{IO}_{3}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) In a basic medium, hydrogen peroxide reduces iodine to iodide ion.\u003c/p> \u003cp>\\(\\mathrm{H}_{2} \\mathrm{O}_{2}+2 \\mathrm{OH}^{-}+\\mathrm{I}_{2} \\rightarrow \\mathrm{O}_{2}+2 \\mathrm{I}^{-}+2 \\mathrm{H}_{2} \\mathrm{O}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Decreasing order of the hydrogen bonding in following forms of water is correctly represented by</p> <p>(A) Liquid water<br/>(B) Ice<br/>(C) Impure water</p> <p>[JEE Main 2023, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\mathrm{A})=(\mathrm{B})&gt;(\mathrm{C})\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((\mathrm{B})&gt;(\mathrm{A})&gt;(\mathrm{C})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\mathrm{C})&gt;(\mathrm{B})&gt;(\mathrm{A})\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\mathrm{A})&gt;(\mathrm{B})&gt;\) (C)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Ice \\(&gt;\\) Liquid water \\(&gt;\\) Impure water\u003c/p> \u003cp>As the impurity decreases \\(\\mathrm{H}\\)-Bonding decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The functional groups that are responsible for the ion exchange property of cation and anion exchange resins, respectively, are:</p> <p>[JEE Main 2021, 17 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-\mathrm{SO}_{3} \mathrm{H}\) and \(-\mathrm{NH}_{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-\mathrm{SO}_{3} \mathrm{H}\) and \(-\mathrm{COOH}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\mathrm{NH}_{2}\) and \(-\mathrm{COOH}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-\mathrm{NH}_{2}\) and \(-\mathrm{SO}_{3} \mathrm{H}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(-\\mathrm{NH}_{2}\\) is anion exchanger and \\(-\\mathrm{SO}_{3} \\mathrm{H}\\) is cation exchanger.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which hydride among the following is less stable? [JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(BeH _2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(NH _3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{HF}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(LiH\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(BeH _2\\) is Hypovalent.\u003cbr/>Hypovalent compounds are those having incomplete octet.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements, one is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p>Assertion A: Isotopes of hydrogen have almost same chemical properties, but difference in their rates of reaction.</p> <p>Reason R: Isotopes of hydrogen have different enthalpy of bond dissociation.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2023, 13 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is NOT the correct explanation of \((\mathrm{A})\)</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of \((\mathrm{A})\)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is correct but (R) is not correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Due to difference in the atomic weight of isotopes of hydrogen they differ in their rate of reaction. Again due to this difference in mass, they have different bond dissociation enthalpy. The stronger bond in deuterium compared to protium leads to higher bond dissociation enthalpy. This in turns influence rate of reaction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At \(298.2 K\) the relationship between enthalpy of bond dissociation ( in \(kJ mol ^{-1}\) ) for hydrogen \(\left( E _{ H }\right.\) ) and its isotope, deuterium \(\left(E_D\right)\), is best described by:</p> <p><strong>[JEE Main 2021, 25 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(E _{ H }= E _{ D }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(E _{ H }=\frac{1}{2} E _{ D }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(E _{ H }=2 E _{ D }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(E _{ H } \simeq E _{ D }-7.5\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,10 +354,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Bond dissociation enthalpy of \\(D _2&gt;\\) Bond dissociation enthalpy of \\(H _2\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>\\text { B.D. } E _{ H - H } &amp; =435.9 kJ / mole \\\\\u003cbr/>\\text { B.D. } E _{ D - D } &amp; =443.4 kJ / mole \\\\\u003cbr/>E _{ H } &amp; \\approx E _{ D }-7.5\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Bond dissociation enthalpy of \\(D _2&gt;\\) Bond dissociation enthalpy of \\(H _2\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}\\text { B.D. } E _{ H - H } & =435.9 kJ / mole \\\\\\text { B.D. } E _{ D - D } & =443.4 kJ / mole \\\\E _{ H } & \\approx E _{ D }-7.5\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water does not produce \(\mathrm{CO}\) on reacting with:</p> <p>[JEE Main 2021, 25 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{C}_{3} \mathrm{H}_{8}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{CO}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{CH}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>C</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Water forms carbonic acid with \\(\\mathrm{CO}_{2}\\) gas.\u003c/p> \u003cp>\\(\\mathrm{H}_{2} \\mathrm{O}+\\mathrm{CO}_{2} \\rightarrow \\mathrm{H}_{2} \\mathrm{CO}_{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The INCORRECT statement(s) about heavy water is (are)</p> <p>(A) used as a moderator in nuclear reactor</p> <p>(B) obtained as by-product in fertilizer industry</p> <p>(C) used for the study of reaction mechanism</p> <p>(D) has a higher dielectric constant than water</p> <p>Choose the correct answer from the options given below:</p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(B) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(d) Dielectric constant of \\(\\mathrm{D}_{2} \\mathrm{O}\\) and \\(\\mathrm{H}_{2} \\mathrm{O}\\) are respectively 78.06 and \\(78.39 \\mathrm{C}^{2} / \\mathrm{N} \\cdot \\mathrm{m}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Dihydrogen of high purity ( \(&gt;99.95 \%)\) is obtained through:</p> <p> </p> <p>[JEE Main 2020, 6 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>the reaction of \(\mathrm{Zn}\) with dilute \(\mathrm{HCl}\).</p></span></div><div class="option"><span class="key">b</span><span><p>the electrolysis of acidified water using Pt electrodes</p></span></div><div class="option"><span class="key">c</span><span><p>the electrolysis of brine solution.</p></span></div><div class="option"><span class="key">d</span><span><p>the electrolysis of warm \(\mathrm{Ba}(\mathrm{OH})_{2}\), solution using \(\mathrm{Ni}\) electrodes.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Dihydrogen with high degree of purity ( \\(&gt;99.95 \\%)\\) can be obtained by the electrolysis of warm \\(\\mathrm{Ba}(\\mathrm{OH})_{2}\\) solution by using Ni electrodes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In comparison to the zeolite process for the removal of permanent hardness, the synthetic resins method is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>less efficient at the resins cannot be regenerated</p></span></div><div class="option"><span class="key">b</span><span><p>less efficient as it exchanges only anions</p></span></div><div class="option"><span class="key">c</span><span><p>more efficient as it can exchange only cations</p></span></div><div class="option"><span class="key">d</span><span><p>more efficient as it can exchange both cations as well as anions</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>more efficient as it can exchange both cations as well as anions\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>' 25 volume' hydrogen peroxide means</p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1 \mathrm{~L}\) marketed solution contains \(250 \mathrm{~g}\) of \(\mathrm{H}_{2} \mathrm{O}_{2}\).</p></span></div><div class="option"><span class="key">b</span><span><p>\(1 \mathrm{~L}\) marketed solution contains \(75 \mathrm{~g}\) of \(\mathrm{H}_{2} \mathrm{O}_{2}\).</p></span></div><div class="option"><span class="key">c</span><span><p>\(100 \mathrm{~mL}\) marketed solution contains \(25 \mathrm{~g}\) of \(\mathrm{H}_{2} \mathrm{O}_{2}\).</p></span></div><div class="option"><span class="key">d</span><span><p>\(1 \mathrm{~L}\) marketed solution contains \(25 \mathrm{~g}\) of \(\mathrm{H}_{2} \mathrm{O}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Volume \\(=11.35 \\times \\mathrm{M}\\)\u003c/p> \u003cp>Strength\u003c/p> \u003cp>\\(\\mathrm{M}=\\frac{25}{11.35} \\mathrm{M}\\)\u003c/p> \u003cp>\\(\\mathrm{g} / \\mathrm{L}=25 \\times 34 / 11.35=74.889\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hydrogen has three isotopes (a), (b) and (c). If the number of neutron(s) in (a), (b) and (c) respectively, are (x), (y) and \((\mathrm{z})\), the sum of \((\mathrm{x}),(\mathrm{y})\) and \((\mathrm{z})\) is:<br/><br/>[JEE Main 2020, 8 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Number of neutrons in protium \\((a)\\), deuterium (b) and tritium \\((c)\\) are 0,1 and 2 respectively.\u003c/p> \u003cp>Therefore, \\(\\mathrm{x}+\\mathrm{y}+\\mathrm{z}=0+1+2=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following equation depicts the oxidizing nature of \(\mathrm{H}_{2} \mathrm{O}_{2}\) ?</p> <p>[JEE Main 2021, 25 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2 \mathrm{I}^{-}+\mathrm{H}_{2} \mathrm{O}_{2}+2 \mathrm{H}^{+} \rightarrow \mathrm{I}_{2}+2 \mathrm{H}_{2} \mathrm{O}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Cl}_{2}+\mathrm{H}_{2} \mathrm{O}_{2} \rightarrow 2 \mathrm{HCl}+\mathrm{O}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{KIO}_{4}+\mathrm{H}_{2} \mathrm{O}_{2} \rightarrow \mathrm{KIO}_{3}+\mathrm{H}_{2} \mathrm{O}+\mathrm{O}_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{I}_{2}+\mathrm{H}_{2} \mathrm{O}_{2}+2 \mathrm{OH}^{-} \rightarrow 2 \mathrm{I}^{-}+2 \mathrm{H}_{2} \mathrm{O}+\mathrm{O}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{I}^{-}+\\mathrm{H}_{2} \\mathrm{O}_{2}+2 \\mathrm{H}^{+} \\longrightarrow \\mathrm{I}_{2}+2 \\mathrm{H}_{2} \\mathrm{O}\\)\u003c/p> \u003cp>Here, \\(\\mathrm{I}^{-}\\)is getting oxidized to \\({\\mathrm{I}}_{2}\\) hence, acts as a reducing agent.\u003c/p> \u003cp>\\(\\therefore \\mathrm{H}_{2} \\mathrm{O}_{2}\\) acts as an oxidizing agent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p>Assertion (A): Physical properties of isotopes of hydrogen are different.</p> <p>Reason (R): Mass difference between isotopes of hydrogen is very large.</p> <p>In the light of the above statements, chose the correct answer from the options given below:</p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is false but (R) is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the NOT the correct explanation of (A).</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is true but \((\mathrm{R})\) is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of \((\mathrm{A})\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Physical properties of isotopes differ considerably due to large mass differences between isotopes of hydrogen.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following statements is incorrect?</p> <p>[ JEE Main 2021, 31 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Atomic hydrogen is produced when \(\mathrm{H}_{2}\) molecules at a high temperature are irradiated with UV radiation.</p></span></div><div class="option"><span class="key">b</span><span><p>Bond dissociation enthalpy of \(\mathrm{H}_{2}\) is highest among diatomic gaseous molecules which contain a single bond.</p></span></div><div class="option"><span class="key">c</span><span><p>Dihydrogen is produced on reacting zinc with \(\mathrm{HCl}\) as well as \(\mathrm{NaOH}(\mathrm{aq})\).</p></span></div><div class="option"><span class="key">d</span><span><p>At around \(2000 \mathrm{~K}\), the dissociation of dihydrogen into its atoms is nearly \(8.1 \%\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> At around 2000 K the dissociation of H\u003csub>2\u003c/sub> into its atoms is nearly 0.081 %.\u003c/p> \u003cp>Hence, (D) is the incorrect statement.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the given compounds can enhance the efficiency of hydrogen storage tank?</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Li} / \mathrm{P}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{SiH}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{NaNi}_{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>diisobutylaluminium hydride</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) \\(\\mathrm{NaNi}_{5}, \\mathrm{Mg}-\\mathrm{MgH}_{2}\\) are compounds that can enhance the efficiency of hydrogen storage tanks.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The single largest industrial application of dihydrogen is</p> <p><strong>[JEE Main 2021, 20 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rocket fuel in space research</p></span></div><div class="option"><span class="key">b</span><span><p>In the synthesis of nitric acid</p></span></div><div class="option"><span class="key">c</span><span><p>In the synthesis of ammonia</p></span></div><div class="option"><span class="key">d</span><span><p>Manufacture of metal hydrides</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) With respect to industrial consumption of \\(\\mathrm{H}_{2}\\), manufacturing of \\(\\mathrm{NH}_{3}\\) is one of the largest applications.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During water-gas shift reaction</p> <p>[JEE Main 2023, 15 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>carbon monoxide is oxidized to carbon dioxide.</p></span></div><div class="option"><span class="key">b</span><span><p>carbon is oxidized to carbon monoxide.</p></span></div><div class="option"><span class="key">c</span><span><p>carbon dioxide is reduced to carbon monoxide.</p></span></div><div class="option"><span class="key">d</span><span><p>water is evaporated in presence of catalyst.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In water gas shift reaction, carbon monoxide is oxidised to carbon dioxide.\u003c/p> \u003cp>\\(\\underset{\\text { water gas }}{\\mathrm{CO}(\\mathrm{g})+\\mathrm{H}_{2}}+\\underset{\\text { Steam }}{\\mathrm{H}_{2} \\mathrm{O}} \\xrightarrow[\\text { Catalyst }]{\\text { Iron Chromate }} \\mathrm{CO}_{2}(\\mathrm{~g})+2 \\mathrm{H}_{2}(\\mathrm{~g})\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The starting material for convenient preparation of deuterated hydrogen peroxide \(\left(\mathrm{D}_{2} \mathrm{O}_{2}\right)\) in laboratory is:</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{K}_{2} \mathrm{~S}_{2} \mathrm{O}_{8}\)</p></span></div><div class="option"><span class="key">b</span><span><p>2-ethylanthraquinol</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{BaO}_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{BaO}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{K}_{2} \\mathrm{~S}_{2} \\mathrm{O}_{8}\\) (s) \\(+2 \\mathrm{D}_{2} \\mathrm{O}(1) \\rightarrow 2 \\mathrm{KDSO}_{4}\\) (aq.) \\(+\\mathrm{D}_{2} \\mathrm{O}_{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The oxide that gives \(H _2 O _2\) most readily on treatment with \(H _2 O\) is:</p> <p>[JEE Main 2021, 27 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Na _2 O _2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(BaO _2 \cdot 8 H _2 O\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(PbO _2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(SnO _2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Na₂O₂ reacts directly with water:\u003cbr/>Na₂O₂ + 2H₂O → 2NaOH + H₂O₂\u003c/p> \u003cp>This reaction occurs readily with water itself.\u003c/p> \u003cp>BaO₂·8H₂O generally gives H₂O₂ more efficiently in the presence of dilute acids:\u003cbr/>BaO₂ + H₂SO₄ → BaSO₄ + H₂O₂\u003c/p> \u003cp>With only water, the formation of H₂O₂ is not as direct or effective.\u003c/p> \u003cp>PbO₂ and SnO₂ do not produce H₂O₂ with water.\u003c/p> \u003cp>Hence, the oxide that gives H₂O₂ most readily with water is Na₂O₂.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion (A) and the other is labelled as Reason (R).</p> <p>Assertion A: Hydrogen is an environment friendly fuel. </p> <p>Reason R: Atomic number of hydrogen is 1 and it is a very light element.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is true but ( \(\mathrm{R})\) is false</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true but (R) is NOT the correct explanation of \((\mathrm{A})\)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> Due to low density of hydrogen, it create no pollution on combustion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement-I: \(\mathrm{H}_{2} \mathrm{O}_{2}\) is used in the synthesis of Cephalosporin</p> <p>Statement-II: \(\mathrm{H}_{2} \mathrm{O}_{2}\) is used for the restoration of aerobic conditions to sewage wastes.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement-I and Statement II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is incorrect but Statement-II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is correct but Statement-II is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(\\mathrm{H}_{2} \\mathrm{O}_{2}\\) is used to synthesize tartaric acid, hydroquinone, cephalosporin. It is also used in environmental treatment of domestic and to restore aerobic conditions to sewage wastes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two reactions, involved in the commercial production of dihydrogen \(\left(\mathrm{H}_{2}\right)\).</p> <p>The two reactions are carried out at temperature " \(\mathrm{T}_{1}\) " and " \(\mathrm{T}_{2}\) " respectively</p> <p>\(\mathrm{C}(\mathrm{s})+\mathrm{H}_{2} \mathrm{O}(\mathrm{g}) \xrightarrow{\mathrm{T}_{1}} \mathrm{CO}(\mathrm{g})+\mathrm{H}_{2}(\mathrm{~g})\)</p> <p>\(\mathrm{CO}(\mathrm{g})+\mathrm{H}_{2} \mathrm{O}(\mathrm{g}) \xrightarrow[\text { Catalyst }]{\mathrm{T}_{2}} \mathrm{CO}(\mathrm{g})+\mathrm{H}_{2}(\mathrm{~g})\)</p> <p>The temperature \(\mathrm{T}_{1}\) and \(\mathrm{T}_{2}\) are correctly related as</p> <p>[JEE Main 2023, 10 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{T}_{1}&gt;\mathrm{T}_{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{T}_{1}=\mathrm{T}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{T}_{1}=100 \mathrm{~K}, \mathrm{~T}_{2}=1270 \mathrm{~K}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{T}_{1}&lt;\mathrm{T}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) In the given reaction, \\(\\mathrm{T}_{1}=1270 \\mathrm{~K} \\quad \\mathrm{~T}_{2}=673 \\mathrm{~K}\\) Hence, \\(\\mathrm{T}_{1}&gt;\\mathrm{T}_{2}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The metal salts formed during softening of hardwater using Clark's method are:</p> <p>[JEE Main 2022, 28 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Ca}(\mathrm{OH})_{2}\) and \(\mathrm{Mg}(\mathrm{OH})_{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{CaCO}_{3}\) and \(\mathrm{Mg}(\mathrm{OH})_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Ca}(\mathrm{OH})_{2}\) and \(\mathrm{MgCO}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{CaCO}_{3}\) and \(\mathrm{MgCO}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) In clark's method \\(\\mathrm{Ca}(\\mathrm{OH})_{2}\\) is used for softening hard water.\u003c/p> \u003cp>\\(\\mathrm{Ca}\\left(\\mathrm{HCO}_{3}\\right)_{2}+\\mathrm{Ca}(\\mathrm{OH})_{2} \\longrightarrow 2 \\mathrm{CaCO}_{3}+2 \\mathrm{H}_{2} \\mathrm{O}\\)\u003c/p> \u003cp>\\(\\mathrm{Mg}\\left(\\mathrm{HCO}_{3}\\right)_{2}+2 \\mathrm{Ca}(\\mathrm{OH})_{2} \\longrightarrow 2 \\mathrm{CaCO}_{3}+\\mathrm{Mg}(\\mathrm{OH})_{2}\\) \\(+2 \\mathrm{H}_{2} \\mathrm{O}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In basic medium, \(\mathrm{H}_{2} \mathrm{O}_{2}\) exhibits which of the following reactions?</p> <p>(A) \(\mathrm{Mn}^{2+} \longrightarrow \mathrm{Mn}^{4+}\)<br/>(B) \(\mathrm{I}_{2} \longrightarrow \mathrm{I}^{-}\)<br/>(C) \(\mathrm{PbS} \longrightarrow \mathrm{PbSO}_{4}\)</p> <p>Choose the most appropriate answer from the options given below:</p> <p>[JEE Main 2021, 18 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (C) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

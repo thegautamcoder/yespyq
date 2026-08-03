@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Inverse Trigonometric Functions","item":"https://yespyq.com/exams/jee/maths/inverse-trigonometric-functions/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Inverse Trigonometric Functions</h1>
       <p>100 JEE Maths previous year questions on <b>Inverse Trigonometric Functions</b> — options free on every question; <b>10 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \([x]\) denote the greatest integer less than or equal to \(x\). Then the domain of \(f(x)=\sec ^{-1}(2[x]+1)\) is :</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\((-\infty ,\infty )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((-\infty, \infty)-\{0\}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((-\infty,-1] \cup[0, \infty)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((-\infty,-1] \cup[1, \infty)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Using the principal values of the inverse trigonometric functions the sum of the maximum and the minimum values of \(16\left({\left({\sec }^{-1}x\right)}^{2}+{\left({\csc }^{-1}x\right)}^{2}\right)\) is:</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(24 \pi^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(18 \pi^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(31 \pi^2\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(22 \pi^2\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given that the inverse trigonometric function assumes principal values only. Let \(x\), \(y\) be any two real numbers in \([-1,1]\) such that \({\cos }^{-1}x-{\sin }^{-1}y=\alpha ,\frac{-\pi }{2}\leq \alpha \leq \pi\). Then, the minimum value of \({x}^{2}+{y}^{2}+2xy\sin \alpha\) is</p> <p> </p> <p>[JEE Main 2024, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{-1}{2}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \([\cdot ]\) denote the greatest integer function. If the domain of the function \(f\left(x\right)={\cos }^{-1}\left(\frac{4x+2[x]}{3}\right)\) is\([\alpha ,\beta ]\)then \(12(\alpha +\beta )\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(6\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(8\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(9\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(f(x)=16\left(\left(\sec ^{-1} x\right)^2+\left(\operatorname{cosec}^{-1} x\right)^2\right)\) then the sum of max. and min. value of \(f(x)\) is <em><strong>(22 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(22{\pi }^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(20{\pi }^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2{\pi }^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Using the principal values of the inverse trigonometric functions the sum of the maximum and the minimum values of \(16\left({\left({\sec }^{-1}x\right)}^{2}+{\left({\csc }^{-1}x\right)}^{2}\right)\) is:</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(24 \pi^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(18 \pi^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(31 \pi^2\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(22 \pi^2\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(0<\alpha <1,\beta =\frac{1}{3\alpha }\) and \({\tan }^{-1}(1-\alpha )+{\tan }^{-1}(1-\beta )=\frac{\pi }{4}\). Then \(6(\alpha +\beta )\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(7\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(8\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(9\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\cot \left(\cos ^{-1} x\right)=\sec \left(\tan ^{-1}\left(\frac{a}{\sqrt{b^2-a^2}}\right)\right)\), then:</p> <p>[JEE Main 2024]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\frac{b}{\sqrt{2 b^2-a^2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\sqrt{b^2-a^2}}{a b}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{a}{\sqrt{22 b^2-a^2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\sqrt{b^2-a^2}}{a}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9">
-      <div class="qnum">Q9 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q9 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\cot \left(\cos ^{-1} x\right)=\sec \left(\tan ^{-1}\left(\frac{a}{\sqrt{b^2-a^2}}\right)\right)\), then:</p> <p>[JEE Main 2024]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\frac{b}{\sqrt{2 b^2-a^2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\sqrt{b^2-a^2}}{a b}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{a}{\sqrt{22 b^2-a^2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\sqrt{b^2-a^2}}{a}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -158,7 +162,7 @@
       </div>
     </div>
     <div class="qblock" id="q10">
-      <div class="qnum">Q10 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q10 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For \(\alpha, \beta, \gamma \neq 0\), if \(\sin ^{-1} \alpha+\sin ^{-1} \beta+\sin ^{-1} \gamma=\pi\) and \((\alpha+\beta+\gamma)(\alpha-\gamma+\beta)=3 \alpha \beta\), then \(\gamma\) equals </p> <p> </p> <p>[JEE Main 2024, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\sqrt{3}-1}{2 \sqrt{2}}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\frac{\sqrt{3}}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{\sqrt{2}}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -167,7 +171,7 @@
       </div>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\alpha&gt;\beta&gt;\gamma&gt;0\), then the expression \({\cot }^{-1}\left{\beta +\frac{\left(1+{\beta }^{2}\right)}{(\alpha -\beta )}\right}\)\(+{\cot }^{-1}\left{\gamma +\frac{\left(1+{\gamma }^{2}\right)}{(\beta -\gamma )}\right}\)\(+{\cot }^{-1}\left{\alpha +\frac{\left(1+{\alpha }^{2}\right)}{(\gamma -\alpha )}\right}\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 \pi\)</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi}{2}-(\alpha+\beta+\gamma)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\pi\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\cot }^{-1}\\left{\\beta +\\frac{\\left(1+{\\beta }^{2}\\right)}{(\\alpha -\\beta )}\\right}+{\\cot }^{-1}\\left{\\gamma +\\frac{\\left(1+{\\gamma }^{2}\\right)}{(\\beta -\\gamma )}\\right}+{\\cot }^{-1}\\left{\\alpha +\\frac{\\left(1+{\\alpha }^{2}\\right)}{(\\gamma -\\alpha )}\\right}\\\\ ={\\cot }^{-1}\\left(\\frac{\\alpha \\beta +1}{\\alpha -\\beta }\\right)+{\\cot }^{-1}\\left(\\frac{\\beta \\gamma +1}{\\beta -\\gamma }\\right)+{\\cot }^{-1}\\left(\\frac{\\alpha \\gamma +1}{\\gamma -\\alpha }\\right)\\\\ ={\\tan }^{-1}\\left(\\frac{\\alpha -\\beta }{1+\\alpha \\beta }\\right)+{\\tan }^{-1}\\left(\\frac{\\beta -\\gamma }{1+\\beta \\gamma }\\right)+\\pi +{\\tan }^{-1}\\left(\\frac{\\gamma -\\alpha }{1+\\gamma \\alpha }\\right)\\\\ =\\left({\\tan }^{-1}\\alpha -{\\tan }^{-1}\\beta \\right)+\\left({\\tan }^{-1}\\beta -{\\tan }^{-1}\\gamma \\right)+\\left(\\pi +{\\tan }^{-1}\\gamma -{\\tan }^{-1}\\alpha \\right)\\\\ =\\pi\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text{ Find domain of }{\sec }^{-1}(2[x]+1)\text{,}\)</p> <p>(where [ ] denotes greatest integer function)</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x\in (-\infty ,-1)\cup [0,\infty )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x\in (-\infty ,-1]\cup [0,\infty )\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x\in (-\infty ,0)\cup (0,\infty )\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x\in (-\infty ,0)\cup [0,\infty )\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\text{ Domain of }{Sec}^{-1}(2[x]+1)\\\\ 2[x]+1\\geq 1\\text{ or }2[x]+1\\leq -1\\\\ 2[x]\\geq 0\\text{ or }2[x]\\leq -2\\\\ x\\geq 0\\text{ or }[x]\\leq -1\\\\ ∴x\\in (-\\infty ,0)\\cup [0,\\infty )\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \([\cdot]\) denote that greatest integer function. If the domain of the function \(f(x)=\sin ^{-1}\left(\frac{x+[x]}{3}\right)\) is \([\alpha, \beta)\), then \(\alpha^2+\beta^2\) is equal to:<br/><br/></p> <p>[JEE Main 2026, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(13\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For domain of \\(f(x)=\\sin ^{-1}\\left(\\frac{x+[x]}{3}\\right)\\)\u003c/p> \u003cp>\\(-1 \\leq \\frac{x+[x]}{3} \\leq 1\\)\u003c/p> \u003cp>\\(\\Rightarrow-3 \\leq x+[x] \\leq 3\\)\u003c/p> \u003cp>\\(\\Rightarrow-3-[x] \\leq x \\leq 3-[x]\\)\u003c/p> \u003cp>if \\([x]=-1 \\Rightarrow x \\in[-1,0)\\)\u003c/p> \u003cp>if \\([x]=0 \\Rightarrow x \\in[0,1)\\)\u003c/p> \u003cp>if \\([x]=1 \\Rightarrow x \\in[1,2)\\)\u003c/p> \u003cp>If \\([x]=-2\\), then \\(x \\in[-2,-1)\\) and \\(x+[x]=x-2 \\in[-4,-3)\\), which is outside \\([-3,3]\\)\u003c/p> \u003cp>If \\([x]=2\\), then \\(x \\in[2,3)\\) and \\(x+[x]=x+2 \\in[4,5)\\), which is outside \\([-3,3]\\)\u003c/p> \u003cp>Hence \\(x \\in[-1,2)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\alpha=-1\\) and \\(\\beta=2\\)\u003c/p> \u003cp>\\(\\Rightarrow \\alpha^2+\\beta^2=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text{ Find domain of }{\sec }^{-1}(2[x]+1)\text{,}\)</p> <p>(where [ ] denotes greatest integer function)</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x\in (-\infty ,-1)\cup [0,\infty )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x\in (-\infty ,-1]\cup [0,\infty )\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x\in (-\infty ,0)\cup (0,\infty )\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x\in (-\infty ,0)\cup [0,\infty )\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\text{ Domain of }{Sec}^{-1}(2[x]+1)\\\\ 2[x]+1\\geq 1\\text{ or }2[x]+1\\leq -1\\\\ 2[x]\\geq 0\\text{ or }2[x]\\leq -2\\\\ x\\geq 0\\text{ or }[x]\\leq -1\\\\ ∴x\\in (-\\infty ,0)\\cup [0,\\infty )\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering only the principal values of inverse trigonometric functions, the number of positive real values of \(x\) satisfying \(\tan ^{-1}(x)+\tan ^{-1}(2 x)=\frac{\pi}{4}\) is :</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>more than 2</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Since \\(x&gt;0\\),\u003c/p> \u003cp>\\(\\tan^{-1}(x),\\tan^{-1}(2x)\\in\\left(0,\\frac{\\pi}{2}\\right)\\)\u003c/p> \u003cp>and their sum is \\(\\frac{\\pi}{4}\\).\u003c/p> \u003cp>Therefore,\u003c/p> \u003cp>\\(\\tan\\left(\\tan^{-1}(x)+\\tan^{-1}(2x)\\right)=\\tan\\frac{\\pi}{4}=1\\)\u003c/p> \u003cp>\\(\\frac{x+2x}{1-2x^2}=1\\)\u003c/p> \u003cp>\\(\\frac{3x}{1-2x^2}=1\\)\u003c/p> \u003cp>\\(2x^2+3x-1=0\\)\u003c/p> \u003cp>\\(x=\\frac{-3\\pm\\sqrt{17}}{4}\\)\u003c/p> \u003cp>Only \\(x=\\frac{-3+\\sqrt{17}}{4}&gt;0\\) is acceptable.\u003c/p> \u003cp>Hence there is exactly one positive real solution.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\alpha\) and \(\beta\) are real numbers such that \(\sec ^2\left(\tan ^{-1}(\alpha)\right)+\operatorname{cosec}^2\left(\cot ^{-1}(\beta)\right)=36\) and \(\alpha+\beta=8\), then \(\left(\alpha^2+\beta\right)\) is \((\alpha&gt;\beta)\) <em><strong> (24 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>23</p></span></div><div class="option"><span class="key">b</span><span><p>28</p></span></div><div class="option"><span class="key">c</span><span><p>34</p></span></div><div class="option"><span class="key">d</span><span><p>27</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,10 +240,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\sec ^2\\left(\\tan ^{-1} \\alpha\\right)+\\cos e c^2\\left(\\cot ^{-1} \\beta\\right)=36, \\quad \\alpha+\\beta=8 \\\\\u003cbr/>&amp; 1+\\alpha^2+1+\\beta^2=36 \\Rightarrow \\alpha^2+\\beta^2=34 \\\\\u003cbr/>&amp; \\Rightarrow \\alpha^2+(8-\\alpha)^2=34 \\\\\u003cbr/>&amp; \\Rightarrow 2 \\alpha^2-16 \\alpha+30=0 \\\\\u003cbr/>&amp; \\alpha^2-8 \\alpha+15=0 \\Rightarrow \\alpha=5, \\beta=3 \\\\\u003cbr/>&amp; \\alpha^2+\\beta=28\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& \\sec ^2\\left(\\tan ^{-1} \\alpha\\right)+\\cos e c^2\\left(\\cot ^{-1} \\beta\\right)=36, \\quad \\alpha+\\beta=8 \\\\& 1+\\alpha^2+1+\\beta^2=36 \\Rightarrow \\alpha^2+\\beta^2=34 \\\\& \\Rightarrow \\alpha^2+(8-\\alpha)^2=34 \\\\& \\Rightarrow 2 \\alpha^2-16 \\alpha+30=0 \\\\& \\alpha^2-8 \\alpha+15=0 \\Rightarrow \\alpha=5, \\beta=3 \\\\& \\alpha^2+\\beta=28\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text{ If }{\cos }^{-1}x=\pi +{\sin }^{-1}x+{\sin }^{-1}(2x-1)\text{,}\\ \text{then find the sum of all values of ' }x\text{ '. }\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>1/2</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>3/2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\cos }^{-1}x=\\pi +{\\sin }^{-1}x+{\\sin }^{-1}(2x-1)\\\\ \\text{ Now }-1\\leq 2x-1\\leq 1\\\\ 0\\leq x\\leq 1\\\\ \\Rightarrow \\pi +{\\sin }^{-1}x+{\\sin }^{-1}(2x-1)\\geq \\frac{\\pi }{2}\\\\ \\text{ and }{\\cos }^{-1}x\\text{ for }x\\in [0,1]\\text{ always lies in }\\left[0,\\frac{\\pi }{2}\\right]\\\\ \\Rightarrow \\mathrm{LHS}=\\mathrm{RHS}=\\frac{\\pi }{2}\\\\ \\Rightarrow {\\cos }^{-1}x=\\frac{\\pi }{2}\\Rightarrow x=0\\\\ \\mathrm{Hence}\\mathrm{only}x=0\\text{is the possible solution}.\\\\ \\text{ Sum of all solution}=0.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the domain of the function \(f\left(x\right)={\sin }^{-1}\left(\frac{x-1}{2x+3}\right)\) is \(R-(\alpha ,\beta )\), then \(12\alpha \beta\) is equal to :</p> <p> </p> <p>[JEE Main 2024, 9 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>36</p></span></div><div class="option"><span class="key">b</span><span><p>32</p></span></div><div class="option"><span class="key">c</span><span><p>24</p></span></div><div class="option"><span class="key">d</span><span><p>40</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(f(x)=\\sin ^{-1}\\left(\\frac{x-1}{2 x+3}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow 2 x+3 \\neq 0 \\text { and }-1 \\leq \\frac{x-1}{2 x+3} \\leq 1\\) \u003c/p> \u003cp>\\(\\Rightarrow \\frac{x-1-2 x-3}{2 x+3} \\leq 0 \\Rightarrow \\frac{x+4}{2 x+3} \\geq 0\\)\u003c/p> \u003cp>Also, \\(0 \\leq \\frac{x-1+2 x+3}{2 x+3} \\Rightarrow \\frac{3 x+2}{2 x+3} \\geq 0\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\in\\left(-\\infty, \\frac{-3}{2}\\right) \\cup\\left[\\frac{-2}{3}, \\infty\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text { domain } \\Rightarrow x \\in(-\\infty,-4] \\cup\\left(\\frac{-2}{3}, \\infty\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow R-\\left(-4, \\frac{-2}{3}\\right]\\) \u003c/p> \u003cp>\\(\\Rightarrow \\alpha=-4, \\beta=\\frac{-2}{3}\\)\u003c/p> \u003cp>\\(\\Rightarrow 12 \\times(-4)\\left(\\frac{-2}{3}\\right)=32\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Value of \(\cos ^{-1}\left[\frac{12}{13} \cos x+\frac{5}{13} \sin x\right]\) is \(\left(x \in\left[\frac{\pi}{2}, \frac{3\pi}{4}\right]\right)\)</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x+\tan ^{-1} \frac{12}{13}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x-\tan ^{-1} \frac{12}{13} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x-\tan ^{-1} \frac{5}{12}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x+\tan ^{-1}\left(\frac{4}{5}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,10 +276,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\cos ^{-1}\\left[\\frac{12}{13} \\cos x+\\frac{5}{13} \\sin x\\right] \\\\\u003cbr/>&amp; let \\cos \\alpha=\\frac{12}{13}. \\\\\u003cbr/>&amp;\\sin \\alpha=\\frac{5}{13} \\\\\u003cbr/>&amp; \\cos ^{-1}[\\cos \\alpha \\cos x+\\sin \\alpha \\sin x] \\\\\u003cbr/>&amp; \\cos ^{-1}(\\cos (x-\\alpha)) \\\\\u003cbr/>&amp;= x-\\tan ^{-1} \\frac{5}{12}\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned}& \\cos ^{-1}\\left[\\frac{12}{13} \\cos x+\\frac{5}{13} \\sin x\\right] \\\\& let \\cos \\alpha=\\frac{12}{13}. \\\\&\\sin \\alpha=\\frac{5}{13} \\\\& \\cos ^{-1}[\\cos \\alpha \\cos x+\\sin \\alpha \\sin x] \\\\& \\cos ^{-1}(\\cos (x-\\alpha)) \\\\&= x-\\tan ^{-1} \\frac{5}{12}\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering only the principal values of the inverse trigonometric functions, the value of \(\tan \left({\sin }^{-1}\left(\frac{3}{5}\right)-2{\cos }^{-1}\left(\frac{2}{\sqrt{5}}\right)\right)\) is</p> <p> </p> <p>[JEE Advanced 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{7}{24}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{-7}{24}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{-5}{24}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{24}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\(\\alpha=\\sin^{-1}\\!\\left(\\frac35\\right)\\)\u003c/p> \u003cp>Then \\(\\sin\\alpha=\\frac35,\\quad \\cos\\alpha=\\frac45\\)\u003c/p> \u003cp>\\(\\tan\\alpha=\\frac34\\)\u003c/p> \u003cp>Let \\(\\beta=\\cos^{-1}\\!\\left(\\frac{2}{\\sqrt5}\\right)\\)\u003c/p> \u003cp>\\(\\cos\\beta=\\frac{2}{\\sqrt5},\\quad \\sin\\beta=\\frac1{\\sqrt5}\\)\u003c/p> \u003cp>\\(\\tan\\beta=\\frac12\\)\u003c/p> \u003cp>\\(\\tan2\\beta=\\frac{2\\tan\\beta}{1-\\tan^2\\beta}\u003cbr/>=\\frac{2\\cdot\\frac12}{1-\\frac14}\u003cbr/>=\\frac43\\)\u003c/p> \u003cp>\\(\\tan(\\alpha-2\\beta)\u003cbr/>=\\frac{\\tan\\alpha-\\tan2\\beta}{1+\\tan\\alpha\\tan2\\beta}\\)\u003c/p> \u003cp>\\(=\\frac{\\frac34-\\frac43}{1+\\frac34\\cdot\\frac43}\u003cbr/>=\\frac{-\\frac7{12}}2\u003cbr/>=-\\frac7{24}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \([x]\) denote the greatest integer less than or equal to \(x\). Then the domain of \(f(x)=\sec ^{-1}(2[x]+1)\) is :</p> <p>[JEE Main 2025, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((-\infty ,\infty )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((-\infty, \infty)-\{0\}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((-\infty,-1] \cup[0, \infty)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((-\infty,-1] \cup[1, \infty)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Range of \\({\\text{sec}}^{-1}x\\) is \\(\\mathrm{x}\\in (-\\infty ,-1]\\cup [1,\\infty )\\)\u003c/p> \u003cp>\\(2[x]+1 \\leq-1\\) or \\(2[x]+1 \\geq 1\\)\u003c/p> \u003cp>\\(\\Rightarrow[x] \\leq-1\\) or \\([x] \\geq 0\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{x} \\in(-\\infty, 0)\\) or \\(x \\in[0, \\infty)\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\in(-\\infty, \\infty)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the domain of the function \({\sin }^{-1}\left(\frac{3x-22}{2x-19}\right)+{\log }_{e}\left(\frac{3{x}^{2}-8x+5}{{x}^{2}-3x-10}\right)\) is \((\alpha ,\beta ]\), then \(3\alpha +10\beta\) is equal to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>98</p></span></div><div class="option"><span class="key">b</span><span><p>100</p></span></div><div class="option"><span class="key">c</span><span><p>95</p></span></div><div class="option"><span class="key">d</span><span><p>97</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>97\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\sin \left({\tan }^{-1}(x\sqrt{2})\right)=\cot \left({\sin }^{-1}\sqrt{1-{x}^{2}}\right),x\in \left(0,1\right)\), then the value of \(x\) is:<br/><br/></p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{8}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let \\(\\theta=\\tan ^{-1}(x \\sqrt{2})\\)\u003c/p> \u003cp>\\(\\tan \\theta=x \\sqrt{2}\\)\u003c/p> \u003cp>\\(\\sin \\theta=\\frac{x \\sqrt{2}}{\\sqrt{1+2 x^2}}\\)\u003c/p> \u003cp>Therefore we get\u003c/p> \u003cp>\\(\\sin \\left(\\tan ^{-1}(x \\sqrt{2})\\right)=\\frac{x \\sqrt{2}}{\\sqrt{1+2 x^2}}\\)\u003c/p> \u003cp>Now let \\(\\phi=\\sin ^{-1} \\sqrt{1-x^2}\\)\u003c/p> \u003cp>\\(\\cos \\phi=\\sqrt{1-\\sin ^2 \\phi}=\\sqrt{1-\\left(1-x^2\\right)}=\\sqrt{x^2}=x\\)\u003c/p> \u003cp>\\(\\cot \\phi=\\frac{\\cos \\phi}{\\sin \\phi}=\\frac{x}{\\sqrt{1-x^2}}\\)\u003c/p> \u003cp>So, \\(\\cot \\left(\\sin ^{-1} \\sqrt{1-x^2}\\right)=\\frac{x}{\\sqrt{1-x^2}}\\)\u003c/p> \u003cp>Now, the equation becomes \u003c/p> \u003cp>\\(\\frac{x \\sqrt{2}}{\\sqrt{1+2 x^2}}=\\frac{x}{\\sqrt{1-x^2}}\\)\u003c/p> \u003cp>\\(2\\left(1-x^2\\right)=1+2 x^2\\)\u003c/p> \u003cp>\\(x^2=\\frac{1}{4}\\)\u003c/p> \u003cp>Since \\(x \\in(0,1)\\),\u003c/p> \u003cp>\\(x=\\frac{1}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(x=\frac{m}{n}\) ( \(m, n\) are co-prime natural numbers) be a solution of the equation \(\cos \left(2 \sin ^{-1} x\right)=\frac{1}{9}\) and let \(\alpha, \beta(\alpha&gt;\beta)\) be the roots of the equation \(m x^2-n x-m+\) \(n=0\). Then the point \((\alpha, \beta)\) lies on the line</p> <p> </p> <p>[JEE Main 2024, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 x-2 y=-2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5 x+8 y=9\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3 x+2 y=2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5 x-8 y=-9\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Assume \\(\\sin ^{-1} \\mathbf{x}=\\theta\\)\u003c/p> \u003cp>\\( \\cos (2 \\theta)=\\frac{1}{9}\\)\u003cbr/>\\(\\sin \\theta= \\pm \\frac{2}{3}\\)\u003cbr/>as \\(m\\) and \\(n\\) are co-prime natural numbers,\u003c/p> \u003cp>\\(x=\\frac{2}{3}\\)\u003cbr/>i.e. \\(m=2, n=3\\)\u003c/p> \u003cp>So, the quadratic equation becomes \\(2 x^2-3 x+1=0\\)\u003c/p> \u003cp>whose roots are \\(\\alpha=1, \\beta=\\frac{1}{2}\\)\u003cbr/>\\(\\left(1, \\frac{1}{2}\\right)\\) lies on \\(5 x+8 y=9\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(x=\frac{m}{n}\) ( \(m, n\) are co-prime natural numbers) be a solution of the equation \(\cos \left(2 \sin ^{-1} x\right)=\frac{1}{9}\) and let \(\alpha, \beta(\alpha&gt;\beta)\) be the roots of the equation \(m x^2-n x-m+\) \(n=0\). Then the point \((\alpha, \beta)\) lies on the line</p> <p> </p> <p>[JEE Main 2024, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 x-2 y=-2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5 x+8 y=9\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3 x+2 y=2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5 x-8 y=-9\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Assume \\(\\sin ^{-1} \\mathbf{x}=\\theta\\)\u003c/p> \u003cp>\\( \\cos (2 \\theta)=\\frac{1}{9}\\)\u003cbr/>\\(\\sin \\theta= \\pm \\frac{2}{3}\\)\u003cbr/>as \\(m\\) and \\(n\\) are co-prime natural numbers,\u003c/p> \u003cp>\\(x=\\frac{2}{3}\\)\u003cbr/>i.e. \\(m=2, n=3\\)\u003c/p> \u003cp>So, the quadratic equation becomes \\(2 x^2-3 x+1=0\\)\u003c/p> \u003cp>whose roots are \\(\\alpha=1, \\beta=\\frac{1}{2}\\)\u003cbr/>\\(\\left(1, \\frac{1}{2}\\right)\\) lies on \\(5 x+8 y=9\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\cos \left({\sin }^{-1}\frac{3}{5}+{\sin }^{-1}\frac{5}{13}+{\sin }^{-1}\frac{33}{65}\right)\text{ is equal to: }\) <em><strong>(28 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{32}{65}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{33}{65}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\cos \\left({\\sin }^{-1}\\frac{3}{5}+{\\sin }^{-1}\\frac{5}{13}+{\\sin }^{-1}\\frac{33}{65}\\right)=\\cos \\left({\\tan }^{-1}\\frac{3}{4}+{\\tan }^{-1}\\frac{5}{12}+{\\tan }^{-1}\\frac{33}{56}\\right)\\\\ =\\cos \\left({\\tan }^{-1}\\left(\\frac{3/4+5/12}{1-\\frac{3}{4}\\cdot \\frac{5}{12}}\\right)+{\\tan }^{-1}\\left(\\frac{33}{56}\\right)\\right)\\\\ =\\cos \\left({\\tan }^{-1}\\frac{56}{33}+{\\cot }^{-1}\\left(\\frac{56}{33}\\right)\\right)\\\\ =\\cos \\pi /2=0\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Value of \(\cos ^{-1}\left[\frac{12}{13} \cos x+\frac{5}{13} \sin x\right]\) is \(\left(x \in\left[\frac{\pi}{2}, \frac{3\pi}{4}\right]\right)\)</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x+\tan ^{-1} \frac{12}{13}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x-\tan ^{-1} \frac{12}{13} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x-\tan ^{-1} \frac{5}{12}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x+\tan ^{-1}\left(\frac{4}{5}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,10 +372,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\cos ^{-1}\\left[\\frac{12}{13} \\cos x+\\frac{5}{13} \\sin x\\right] \\\\\u003cbr/>&amp; let \\cos \\alpha=\\frac{12}{13}. \\\\\u003cbr/>&amp;\\sin \\alpha=\\frac{5}{13} \\\\\u003cbr/>&amp; \\cos ^{-1}[\\cos \\alpha \\cos x+\\sin \\alpha \\sin x] \\\\\u003cbr/>&amp; \\cos ^{-1}(\\cos (x-\\alpha)) \\\\\u003cbr/>&amp;= x-\\tan ^{-1} \\frac{5}{12}\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned}& \\cos ^{-1}\\left[\\frac{12}{13} \\cos x+\\frac{5}{13} \\sin x\\right] \\\\& let \\cos \\alpha=\\frac{12}{13}. \\\\&\\sin \\alpha=\\frac{5}{13} \\\\& \\cos ^{-1}[\\cos \\alpha \\cos x+\\sin \\alpha \\sin x] \\\\& \\cos ^{-1}(\\cos (x-\\alpha)) \\\\&= x-\\tan ^{-1} \\frac{5}{12}\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \({\cot }^{-1}\left(\frac{\sqrt{1+{\tan }^{2}(2)}-1}{\tan (2)}\right)-{\cot }^{-1}\) \(\left(\frac{\sqrt{1+{\tan }^{2}\left(\frac{1}{2}\right)}+1}{\tan \left(\frac{1}{2}\right)}\right)\) is equal to</p> <p> </p> <p>[JEE Main 2025, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi -\frac{5}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\pi -\frac{3}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\pi +\frac{3}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\pi +\frac{5}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -383,7 +387,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let \\({\\theta }_{1}=2\\) radians. Since \\(\\frac{\\pi }{2}\u003c2\u003c\\pi ,\\sec 2\\) is negative.\u003cbr/>Consider the first term's argument:\u003c/p> \u003cp>\\({E}_{1}=\\frac{\\sqrt{1+{\\tan }^{2}2}-1}{\\tan 2}=\\frac{|\\sec 2|-1}{\\tan 2}\\\\ =\\frac{-\\sec 2-1}{\\tan 2}=\\frac{-\\frac{1}{\\cos 2}-1}{\\frac{\\sin 2}{\\cos 2}}=\\frac{-(1+\\cos 2)}{\\sin 2}\\)\u003c/p> \u003cp>Using half-angle formulas:\u003c/p> \u003cp>\\({E}_{1}=\\frac{-2{\\cos }^{2}1}{2\\sin 1\\cos 1}=-\\cot 1\\)\u003c/p> \u003cp>The first term is \\({\\cot }^{-1}(-\\cot 1)=\\pi -{\\cot }^{-1}(\\cot 1)=\\pi -1\\)(since 1 is in the principal range \\((0,\\pi )\\)).\u003c/p> \u003cp>Let \\({\\theta }_{2}=\\frac{1}{2}\\) radian. Since \\(0\u003c\\frac{1}{2}\u003c\\frac{\\pi }{2},\\sec \\left(\\frac{1}{2}\\right)\\) is positive.\u003cbr/>Consider the second term's argument:\u003c/p> \u003cp>\\({E}_{2}=\\frac{\\sqrt{1+{\\tan }^{2}(1/2)}+1}{\\tan (1/2)}=\\frac{\\sec (1/2)+1}{\\tan (1/2)}=\\frac{1+\\cos (1/2)}{\\sin (1/2)}\\\\ =\\frac{2{\\cos }^{2}(1/4)}{2\\sin (1/4)\\cos (1/4)}=\\cot (1/4)\\)\u003c/p> \u003cp>The second term is \\({\\cot }^{-1}(\\cot (1/4))=\\frac{1}{4}\\) (since \\(\\frac{1}{4}\\) is in the principal range \\((0,\\pi )\\)).\u003c/p> \u003cp>The full expression is:\u003c/p> \u003cp>\\((\\pi -1)-\\frac{1}{4}=\\pi -\\frac{5}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The sum of the infinite series \({\cot }^{-1}\left(\frac{7}{4}\right)+{\cot }^{-1}\left(\frac{19}{4}\right)+{\cot }^{-1}\left(\frac{39}{4}\right)+{\cot }^{-1}\left(\frac{67}{4}\right)+\ldots .\). is :- </p> <p> </p> <p>[JEE Main 2025, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{2}+{\tan }^{-1}\left(\frac{1}{2}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{2}-{\cot }^{-1}\left(\frac{1}{2}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{2}+{\cot }^{-1}\left(\frac{1}{2}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\pi }{2}-{\tan }^{-1}\left(\frac{1}{2}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -395,7 +399,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{T}_{\\mathrm{n}}=\\tan ^{-1}\\left(\\frac{4}{4 \\mathrm{n}^2+3}\\right)\\)\u003c/p> \u003cp>\\(T_n=\\tan ^{-1}\\left(\\frac{\\left(n+\\frac{1}{2}\\right)-\\left(n-\\frac{1}{2}\\right)}{1+\\left(n+\\frac{1}{2}\\right)\\left(n-\\frac{1}{2}\\right)}\\right)\\)\u003c/p> \u003cp>\\(\\mathrm{T}_{\\mathrm{n}}=\\tan ^{-1}\\left(\\mathrm{n}+\\frac{1}{2}\\right)-\\tan ^{-1}\\left(\\mathrm{n}-\\frac{1}{2}\\right)\\)\u003c/p> \u003cp>\\(\\mathrm{T}_1+\\mathrm{T}_2+\\ldots+\\mathrm{T}_{\\mathrm{n}}=\\tan ^{-1}\\left(\\mathrm{n}+\\frac{1}{2}\\right)-\\tan ^{-1}\\left(\\frac{1}{2}\\right)\\) \u003c/p> \u003cp>\\(\\mathrm{S}_{\\infty}=\\frac{\\pi}{2}-\\tan ^{-1}\\left(\\frac{1}{2}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\alpha&gt;\beta&gt;\gamma&gt;0\), then the expression \({\cot }^{-1}\left{\beta +\frac{\left(1+{\beta }^{2}\right)}{(\alpha -\beta )}\right}\)\(+{\cot }^{-1}\left{\gamma +\frac{\left(1+{\gamma }^{2}\right)}{(\beta -\gamma )}\right}\)\(+{\cot }^{-1}\left{\alpha +\frac{\left(1+{\alpha }^{2}\right)}{(\gamma -\alpha )}\right}\) is equal to :</p> <p>[JEE Main 2025, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 \pi\)</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi}{2}-(\alpha+\beta+\gamma)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\pi\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -407,7 +411,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Required value =\u003c/p> \u003cp>\\({\\cot }^{-1}\\left(\\frac{\\alpha \\beta +1}{\\alpha -\\beta }\\right)+{\\cot }^{-1}\\left(\\frac{\\beta \\gamma +1}{\\beta -\\gamma }\\right)+{\\cot }^{-1}\\left(\\frac{\\alpha \\gamma +1}{\\gamma -\\alpha }\\right)\\\\ ={\\tan }^{-1}\\left(\\frac{\\alpha -\\beta }{1+\\alpha \\beta }\\right)+{\\tan }^{-1}\\left(\\frac{\\beta -\\gamma }{1+\\beta \\gamma }\\right)+\\pi +{\\tan }^{-1}\\left(\\frac{\\gamma -\\alpha }{1+\\gamma \\alpha }\\right)\\\\ =\\left({\\tan }^{-1}\\alpha -{\\tan }^{-1}\\beta \\right)+\\left({\\tan }^{-1}\\beta -{\\tan }^{-1}\\gamma \\right)+\\left(\\pi +{\\tan }^{-1}\\gamma -{\\tan }^{-1}\\alpha \\right)\\\\ =\\pi\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The total number of real solutions of the equation\(\ \theta=\tan ^{-1}(2 \tan \theta)-\frac{1}{2} \sin ^{-1}\left(\frac{6 \tan \theta}{9+\tan ^2 \theta}\right) \) is (Here, the inverse trigonometric functions \(\sin ^{-1} x\) and \(\tan ^{-1} x\) assume values in \(\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]\) and \(\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)\), respectively. </p> <p> </p> <p>[JEE Advanced 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -419,7 +423,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let \\(t=\\tan\\theta\\)\u003c/p> \u003cp>\\(\\frac{6t}{9+t^2}=\\frac{2\\cdot(2t/3)}{1+(2t/3)^2}\\)\u003c/p> \u003cp>\\(\\sin^{-1}\\left(\\frac{6t}{9+t^2}\\right)=2\\tan^{-1}\\left(\\frac{t}{3}\\right)\\)\u003c/p> \u003cp>because \\(\\tan^{-1}\\left(\\frac{t}{3}\\right)\\in\\left[-\\frac{\\pi}{6},\\frac{\\pi}{6}\\right]\\)\u003c/p> \u003cp>Hence the equation becomes\u003c/p> \u003cp>\\(\\theta=\\tan^{-1}(2t)-\\tan^{-1}\\left(\\frac{t}{3}\\right)\\)\u003c/p> \u003cp>\\(\\tan^{-1}a-\\tan^{-1}b=\\tan^{-1}\\left(\\frac{a-b}{1+ab}\\right)\\)\u003c/p> \u003cp>\\(\\theta=\\tan^{-1}\\left(\\frac{5t/3}{1+\\frac{2t^2}{3}}\\right)\\)\u003c/p> \u003cp>\\(\\theta=\\tan^{-1}\\left(\\frac{5t}{3+2t^2}\\right)\\)\u003c/p> \u003cp>Taking tangent on both sides\u003c/p> \u003cp>\\(t=\\frac{5t}{3+2t^2}\\)\u003c/p> \u003cp>\\(t(3+2t^2)=5t\\)\u003c/p> \u003cp>\\(2t(t^2-1)=0\\)\u003c/p> \u003cp>\\(t=0,\\pm1\\)\u003c/p> \u003cp>\\(t=0 \\Rightarrow \\theta=0\\)\u003c/p> \u003cp>\\(t=1 \\Rightarrow \\theta=\\frac{\\pi}{4}\\)\u003c/p> \u003cp>\\(t=-1 \\Rightarrow \\theta=-\\frac{\\pi}{4}\\)\u003c/p> \u003cp>Thus there are \\(3\\) real solutions\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text { If } \alpha&gt;\beta&gt;\gamma&gt;0 \text {, then find } \cot ^{-1}\left(\frac{1+\alpha \beta}{\alpha-\beta}\right)+\cot ^{-1}\left(\frac{1+\beta \gamma}{\beta-\gamma}\right)+\cot ^{-1}\left(\frac{1+\gamma \alpha}{\gamma-\alpha}\right)\) (24 Jan, Shift II, Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{2}-\left(\alpha +\beta +\gamma \right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\pi\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,10 +432,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\tan ^{-1}\\left(\\frac{\\alpha-\\beta}{1+\\alpha \\beta}\\right)+\\tan ^{-1}\\left(\\frac{\\beta-\\gamma}{1+\\beta \\gamma}\\right)+ \\pi +\\tan ^{-1}\\left(\\frac{\\gamma-\\alpha}{1+\\alpha \\gamma}\\right) \\\\\u003cbr/>&amp; =\\tan ^{-1} \\alpha-\\tan \\beta+\\tan ^{-1} \\beta-\\tan ^{-1} \\gamma+ \\pi +\\tan ^{-1} \\gamma-\\tan ^{-1} \\alpha \\\\\u003cbr/>&amp; =\\pi .\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}& \\tan ^{-1}\\left(\\frac{\\alpha-\\beta}{1+\\alpha \\beta}\\right)+\\tan ^{-1}\\left(\\frac{\\beta-\\gamma}{1+\\beta \\gamma}\\right)+ \\pi +\\tan ^{-1}\\left(\\frac{\\gamma-\\alpha}{1+\\alpha \\gamma}\\right) \\\\& =\\tan ^{-1} \\alpha-\\tan \\beta+\\tan ^{-1} \\beta-\\tan ^{-1} \\gamma+ \\pi +\\tan ^{-1} \\gamma-\\tan ^{-1} \\alpha \\\\& =\\pi .\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the principal values of inverse trigonometric functions, the value of the expression \(\tan \left(2{\sin }^{−1}\left(\frac{2}{\sqrt{13}}\right)−2{\cos }^{−1}\left(\frac{3}{\sqrt{10}}\right)\right)\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{16}{63}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{33}{56}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(−\frac{16}{63}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(−\frac{33}{56}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -443,7 +447,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\({\\sin }^{−1}\\frac{2}{\\sqrt{13}}=\\theta &{\\cos }^{−1}\\frac{3}{\\sqrt{10}}=ϕ\\)\u003c/p> \u003cp>\\(\\sin \\theta =\\frac{2}{\\sqrt{13}}&\\cos ϕ=\\frac{3}{\\sqrt{10}}\\)\u003c/p> \u003cp>\\(\\tan \\theta =\\frac{2}{3}&\\tan ϕ=\\frac{1}{3}\\)\u003c/p> \u003cp>\\(\\tan 2\\theta =\\frac{2\\tan \\theta }{1-{\\tan }^{2}\\theta }\\\\ =\\frac{12}{5}\\)\u003c/p> \u003cp>\\(\\tan 2ϕ=\\frac{2\\tan ϕ}{1-{\\tan }^{2}ϕ}\\\\ =\\frac{3}{4}\\)\u003c/p> \u003cp>\\(\\tan \\left(2\\theta −2ϕ\\right)=\\frac{\\tan 2\\theta −\\tan 2ϕ}{1+\\tan 2\\theta \\tan 2ϕ}\\)\u003c/p> \u003cp>\\(=\\frac{\\frac{12}{5}−\\frac{3}{4}}{1+\\frac{12}{5}⋅\\frac{3}{4}}\\)\u003c/p> \u003cp>\\(=\\frac{33}{56}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(a={\sin }^{-1}(\sin (5))\) and \(b={\cos }^{-1}(\cos (5))\), then \({a}^{2}+{b}^{2}\) is equal to</p> <p> </p> <p>[JEE Main 2024, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4{\pi }^{2}-20\pi +50\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4{\pi }^{2}+25\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(8{\pi }^{2}-40\pi +50\)</p></span></div><div class="option"><span class="key">d</span><span><p>25</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -455,7 +459,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Since \\(\\dfrac{3\\pi}{2}&lt;5&lt;2\\pi\\)\u003c/p> \u003cp>the principal value of \\(\\sin^{-1}(\\sin5)\\) is\u003c/p> \u003cp>\\(a=5-2\\pi\\)\u003c/p> \u003cp>\\(\\pi&lt;5&lt;2\\pi\\)\u003c/p> \u003cp>\\(b=2\\pi-5\\)\u003c/p> \u003cp>\\(a=-(2\\pi-5)\\)\u003c/p> \u003cp>and \\(b=2\\pi-5\\)\u003c/p> \u003cp>\\(a^2+b^2\u003cbr/>=(2\\pi-5)^2+(2\\pi-5)^2\u003cbr/>=2(2\\pi-5)^2\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\alpha =3{\sin }^{-1}\left(\frac{6}{11}\right)\) and \(\beta =3{\cos }^{-1}\left(\frac{4}{9}\right)\), where inverse trigonometric functions take only the principal values.<br/>Given below are two statements:<br/>Statement I: \(\cos (\alpha +\beta )>0\).<br/>Statement II<strong>:</strong> \(\cos (\alpha )<0\).<br/>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is false but Statement II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -467,7 +471,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Since \\(\\frac{1}{2}&lt;\\frac{6}{11}&lt;\\frac{1}{\\sqrt{2}}\\), we get:\u003c/p> \u003cp>\\(\\sin^{-1}\\left(\\frac{1}{2}\\right)&lt;\\sin^{-1}\\left(\\frac{6}{11}\\right)&lt;\\sin^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right)\\).\u003c/p> \u003cp>So, \\(\\frac{\\pi}{6}&lt;\\sin^{-1}\\left(\\frac{6}{11}\\right)&lt;\\frac{\\pi}{4}\\)\u003c/p> \u003cp>Multiplying by \\(3\\):\u003c/p> \u003cp>\\(\\frac{\\pi}{2}&lt;\\alpha&lt;\\frac{3\\pi}{4}\\), hence \\(\\cos\\alpha&lt;0\\).\u003c/p> \u003cp>So, Statement II is true.\u003c/p> \u003cp>Since \\(\\frac{4}{9}&lt;\\frac{1}{2}\\), we get:\u003c/p> \u003cp>\\(\\cos^{-1}\\left(\\frac{4}{9}\\right)&gt;\\cos^{-1}\\left(\\frac{1}{2}\\right)=\\frac{\\pi}{3}\\)\u003c/p> \u003cp>Also, \\(\\frac{4}{9}&gt;0\\), so \\(\\cos^{-1}\\left(\\frac{4}{9}\\right)&lt;\\frac{\\pi}{2}\\)\u003c/p> \u003cp>Thus, \\(\\frac{\\pi}{3}&lt;\\cos^{-1}\\left(\\frac{4}{9}\\right)&lt;\\frac{\\pi}{2}\\)\u003c/p> \u003cp>Multiplying by \\(3\\):\u003c/p> \u003cp>\\(\\pi&lt;\\beta&lt;\\frac{3\\pi}{2}\\)\u003c/p> \u003cp>Now, \\(\\frac{\\pi}{2}&lt;\\alpha&lt;\\frac{3\\pi}{4}\\) and \\(\\pi&lt;\\beta&lt;\\frac{3\\pi}{2}\\)\u003c/p> \u003cp>So, \\(\\frac{3\\pi}{2}&lt;\\alpha+\\beta&lt;\\frac{9\\pi}{4}\\)\u003c/p> \u003cp>In this interval, \\(\\cos(\\alpha+\\beta)&gt;0\\),\u003c/p> \u003cp>so Statement I is true.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(x=\frac{m}{n}\) ( \(m, n\) are co-prime natural numbers) be a solution of the equation \(\cos \left(2 \sin ^{-1} x\right)=\frac{1}{9}\) and let \(\alpha, \beta(\alpha&gt;\beta)\) be the roots of the equation \(m x^2-n x-m+\) \(n=0\). Then the point \((\alpha, \beta)\) lies on the line</p> <p>[JEE Main 2024, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 x-2 y=-2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5 x+8 y=9\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3 x+2 y=2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5 x-8 y=-9\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -476,10 +480,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Assume \\(\\sin ^{-1} \\mathrm{x}=\\theta\\)\u003c/p> \u003cp>$$\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\cos (2 \\theta)=\\frac{1}{9} \\\\\u003cbr/>&amp; \\sin \\theta= \\pm \\frac{2}{3}\u003cbr/>\\end{aligned}\u003cbr/>$$\u003c/p> \u003cp>as \\(m\\) and \\(n\\) are co-prime natural numbers,\u003c/p> \u003cp>\\(x=\\frac{2}{3}\\)\u003c/p> \u003cp>i.e. \\(m=2, n=3\\)\u003cbr>So, the quadratic equation becomes \\(2 x^2-3 x+1=0\\) whose roots are \\(\\alpha=1, \\beta=\\frac{1}{2} \\left(1, \\frac{1}{2}\\right)\\) lies on \\(5 x+8 y=9\\).\u003c/br>\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Assume \\(\\sin ^{-1} \\mathrm{x}=\\theta\\)\u003c/p> \u003cp>$$\u003cbr/>$$\\begin{aligned}& \\cos (2 \\theta)=\\frac{1}{9} \\\\& \\sin \\theta= \\pm \\frac{2}{3}\\end{aligned}$$\u003cbr/>$$\u003c/p> \u003cp>as \\(m\\) and \\(n\\) are co-prime natural numbers,\u003c/p> \u003cp>\\(x=\\frac{2}{3}\\)\u003c/p> \u003cp>i.e. \\(m=2, n=3\\)\u003cbr>So, the quadratic equation becomes \\(2 x^2-3 x+1=0\\) whose roots are \\(\\alpha=1, \\beta=\\frac{1}{2} \\left(1, \\frac{1}{2}\\right)\\) lies on \\(5 x+8 y=9\\).\u003c/br>\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Using the principal values of the inverse trigonometric functions the sum of the maximum and the minimum values of \(16\left({\left({\sec }^{-1}x\right)}^{2}+{\left({\csc }^{-1}x\right)}^{2}\right)\) is:</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(24 \pi^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(18 \pi^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(31 \pi^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(22 \pi^2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -491,7 +495,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(16\\left(\\left(\\sec ^{-1} x\\right)^2+\\left(\\operatorname{cosec}^{-1} x\\right)^2\\right) \\ldots(i)\\)\u003c/p> \u003cp>we know that,\\(\\sec ^{-1} x+\\operatorname{cosec}^{-1} x=\\frac{\\pi}{2}\\)\u003c/p> \u003cp>and \\(\\sec ^{-1} x \\in[0, \\pi]-\\left\\{\\frac{\\pi}{2}\\right\\}\\)\u003c/p> \u003cp>now ,put in(i),we get\u003c/p> \u003cp>\\(16\\left(\\left(\\sec ^{-1} x\\right)^2+\\left(\\frac{\\pi}{2}-\\sec ^{-1} x\\right)^2\\right)\\)\u003c/p> \u003cp>let \\(\\sec ^{-1} x=y\\)\u003c/p> \u003cp>\\(16\\left(2 y^2-\\pi y+\\frac{\\pi^2}{4}\\right)=0\\)\u003c/p> \u003cp>Now, it is maximum at \\(y=\\pi\\)\u003c/p> \u003cp>maximum value \\(=16\\left[2 \\pi^2-\\pi^2+\\frac{\\pi^2}{4}\\right]\\)\u003c/p> \u003cp>\\(=20 \\pi^2\\)\u003c/p> \u003cp>and minimum at \\(y=\\frac{\\pi}{4}\\)\u003c/p> \u003cp>\\(\\left(y=-\\frac{b}{2 a}\\right.\\) for the quadratic in \\(\\left.y\\right)\\)\u003c/p> \u003cp>minimum value \\(=16\\left[\\frac{2 \\times \\pi^2}{16}-\\frac{\\pi^2}{4}+\\frac{\\pi^2}{4}\\right]\\)\u003c/p> \u003cp>\\(=2 \\pi^2\\)\u003c/p> \u003cp>And sum of maximum &amp;minimum value= \\(20 \\pi^2+2 \\pi^2=22 \\pi^2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\frac{\pi }{2}\leq x\leq \frac{3\pi }{4}\) , then \({\cos }^{-1}\left(\frac{12}{13}\cos x+\frac{5}{13}\sin x\right)\) is equal to</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x-{\tan }^{-1}\frac{4}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x-{\tan }^{-1}\frac{5}{12}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x+{\tan }^{-1}\frac{4}{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x+{\tan }^{-1}\frac{5}{12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -503,7 +507,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\(\\alpha=\\tan^{-1}\\frac{5}{12}\\)\u003c/p> \u003cp>\\(\\cos\\alpha=\\frac{12}{13}\\), \\(\\sin\\alpha=\\frac{5}{13}\\)\u003c/p> \u003cp>\\(\\frac{12}{13}\\cos x+\\frac{5}{13}\\sin x=\\cos\\alpha\\cos x+\\sin\\alpha\\sin x\\)\u003c/p> \u003cp>\\(=\\cos(x-\\alpha)\\)\u003c/p> \u003cp>\\(\\cos^{-1}\\left(\\frac{12}{13}\\cos x+\\frac{5}{13}\\sin x\\right)=\\cos^{-1}(\\cos(x-\\alpha))\\)\u003c/p> \u003cp>\\(\\frac{\\pi}{2}\\le x\\le\\frac{3\\pi}{4}\\) and \\(0&lt;\\alpha&lt;\\frac{\\pi}{2}\\)\u003c/p> \u003cp>\\(0&lt;x-\\alpha&lt;\\pi\\)\u003c/p> \u003cp>Hence \\(x-\\alpha\\) already lies in the principal range of \\(\\cos^{-1}\\), namely \\([0,\\pi]\\).\u003c/p> \u003cp>\\(\\cos^{-1}(\\cos(x-\\alpha))=x-\\alpha\\)\u003c/p> \u003cp>\\(=x-\\tan^{-1}\\frac{5}{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering only the principal values of the inverse trigonometric functions, the value of \({\text{cot}}^{−1}\left(\text{cot}\left(−11\right)\right)\)\(+10\text{sin}\left(2{\text{cos}}^{−1}\left(\frac{1}{\sqrt{2}}\right)\right)\)\(+10\text{sin}\left(2{\text{tan}}^{−1}\left(2\right)\right)\) is</p> <p> </p> <p>[JEE Advanced 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3\pi +7\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(7\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\pi +7\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\pi -5\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -515,7 +519,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\cot^{-1}(\\cot(-11))\\) must be taken in principal range \\((0,\\pi)\\).\u003c/p> \u003cp>Since \\(-11+4\\pi\\in(0,\\pi)\\),\u003c/p> \u003cp>\\(\\cot^{-1}(\\cot(-11))=4\\pi-11\\)\u003c/p> \u003cp>\\(\\cos^{-1}\\dfrac1{\\sqrt2}=\\dfrac{\\pi}{4}\\)\u003c/p> \u003cp>\\(10\\sin\\left(2\\cos^{-1}\\dfrac1{\\sqrt2}\\right)=10\\sin\\dfrac{\\pi}{2}=10\\)\u003c/p> \u003cp>Also, \\(\\sin(2\\tan^{-1}2)=\\dfrac{2\\tan(\\tan^{-1}2)}{1+\\tan^2(\\tan^{-1}2)}=\\dfrac{4}{5}\\)\u003c/p> \u003cp>So \\(10\\sin(2\\tan^{-1}2)=8\\).\u003c/p> \u003cp>Total value \\(=4\\pi-11+10+8=4\\pi+7\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text { If } \alpha&gt;\beta&gt;\gamma&gt;0 \text {, then find } \cot ^{-1}\left(\frac{1+\alpha \beta}{\alpha-\beta}\right)+\cot ^{-1}\left(\frac{1+\beta \gamma}{\beta-\gamma}\right)+\cot ^{-1}\left(\frac{1+\gamma \alpha}{\gamma-\alpha}\right)\) (24 Jan, Shift II, Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{2}-\left(\alpha +\beta +\gamma \right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\pi\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -524,10 +528,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\tan ^{-1}\\left(\\frac{\\alpha-\\beta}{1+\\alpha \\beta}\\right)+\\tan ^{-1}\\left(\\frac{\\beta-\\gamma}{1+\\beta \\gamma}\\right)+ \\pi +\\tan ^{-1}\\left(\\frac{\\gamma-\\alpha}{1+\\alpha \\gamma}\\right) \\\\\u003cbr/>&amp; =\\tan ^{-1} \\alpha-\\tan \\beta+\\tan ^{-1} \\beta-\\tan ^{-1} \\gamma+ \\pi +\\tan ^{-1} \\gamma-\\tan ^{-1} \\alpha \\\\\u003cbr/>&amp; =\\pi .\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned}& \\tan ^{-1}\\left(\\frac{\\alpha-\\beta}{1+\\alpha \\beta}\\right)+\\tan ^{-1}\\left(\\frac{\\beta-\\gamma}{1+\\beta \\gamma}\\right)+ \\pi +\\tan ^{-1}\\left(\\frac{\\gamma-\\alpha}{1+\\alpha \\gamma}\\right) \\\\& =\\tan ^{-1} \\alpha-\\tan \\beta+\\tan ^{-1} \\beta-\\tan ^{-1} \\gamma+ \\pi +\\tan ^{-1} \\gamma-\\tan ^{-1} \\alpha \\\\& =\\pi .\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\alpha\) and \(\beta\) are real numbers such that \(\sec ^2\left(\tan ^{-1}(\alpha)\right)+\operatorname{cosec}^2\left(\cot ^{-1}(\beta)\right)=36\) and \(\alpha+\beta=8\), then \(\left(\alpha^2+\beta\right)\) is \((\alpha&gt;\beta)\) <em><strong> (24 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>23</p></span></div><div class="option"><span class="key">b</span><span><p>28</p></span></div><div class="option"><span class="key">c</span><span><p>34</p></span></div><div class="option"><span class="key">d</span><span><p>27</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -536,10 +540,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\sec ^2\\left(\\tan ^{-1} \\alpha\\right)+\\cos e c^2\\left(\\cot ^{-1} \\beta\\right)=36, \\quad \\alpha+\\beta=8 \\\\\u003cbr/>&amp; 1+\\alpha^2+1+\\beta^2=36 \\Rightarrow \\alpha^2+\\beta^2=34 \\\\\u003cbr/>&amp; \\Rightarrow \\alpha^2+(8-\\alpha)^2=34 \\\\\u003cbr/>&amp; \\Rightarrow 2 \\alpha^2-16 \\alpha+30=0 \\\\\u003cbr/>&amp; \\alpha^2-8 \\alpha+15=0 \\Rightarrow \\alpha=5, \\beta=3 \\\\\u003cbr/>&amp; \\alpha^2+\\beta=28\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& \\sec ^2\\left(\\tan ^{-1} \\alpha\\right)+\\cos e c^2\\left(\\cot ^{-1} \\beta\\right)=36, \\quad \\alpha+\\beta=8 \\\\& 1+\\alpha^2+1+\\beta^2=36 \\Rightarrow \\alpha^2+\\beta^2=34 \\\\& \\Rightarrow \\alpha^2+(8-\\alpha)^2=34 \\\\& \\Rightarrow 2 \\alpha^2-16 \\alpha+30=0 \\\\& \\alpha^2-8 \\alpha+15=0 \\Rightarrow \\alpha=5, \\beta=3 \\\\& \\alpha^2+\\beta=28\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Using the principal values of the inverse trigonometric functions the sum of the maximum and the minimum values of \(16\left({\left({\sec }^{-1}x\right)}^{2}+{\left({\csc }^{-1}x\right)}^{2}\right)\) is:</p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(24 \pi^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(18 \pi^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(31 \pi^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(22 \pi^2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -551,7 +555,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(16\\left(\\left(\\sec ^{-1} x\\right)^2+\\left(\\operatorname{cosec}^{-1} x\\right)^2\\right) \\ldots(i)\\)\u003c/p> \u003cp>we know that,\\(\\sec ^{-1} x+\\operatorname{cosec}^{-1} x=\\frac{\\pi}{2}\\)\u003c/p> \u003cp>and \\(\\sec ^{-1} x \\in[0, \\pi]-\\left\\{\\frac{\\pi}{2}\\right\\}\\)\u003c/p> \u003cp>now ,put in(i),we get\u003c/p> \u003cp>\\(16\\left(\\left(\\sec ^{-1} x\\right)^2+\\left(\\frac{\\pi}{2}-\\sec ^{-1} x\\right)^2\\right)\\)\u003c/p> \u003cp>let \\(\\sec ^{-1} x=y\\)\u003c/p> \u003cp>\\(16\\left(2 y^2-\\pi y+\\frac{\\pi^2}{4}\\right)=0\\)\u003c/p> \u003cp>Now, it is maximum at \\(y=\\pi\\)\u003c/p> \u003cp>maximum value \\(=16\\left[2 \\pi^2-\\pi^2+\\frac{\\pi^2}{4}\\right]\\)\u003c/p> \u003cp>\\(=20 \\pi^2\\)\u003c/p> \u003cp>and minimum at \\(y=\\frac{\\pi}{4}\\)\u003c/p> \u003cp>\\(\\left(y=-\\frac{b}{2 a}\\right.\\) for the quadratic in \\(\\left.y\\right)\\)\u003c/p> \u003cp>minimum value \\(=16\\left[\\frac{2 \\times \\pi^2}{16}-\\frac{\\pi^2}{4}+\\frac{\\pi^2}{4}\\right]\\)\u003c/p> \u003cp>\\(=2 \\pi^2\\)\u003c/p> \u003cp>And sum of maximum &amp;minimum value= \\(20 \\pi^2+2 \\pi^2=22 \\pi^2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering the principal values of the inverse trigonometric functions, \({\sin }^{-1}\left(\frac{\sqrt{3}}{2}x+\frac{1}{2}\sqrt{1-{x}^{2}}\right),-\frac{1}{2}<x<\frac{1}{\sqrt{2}}\), is equal to</p> <p>[JEE Main 2025, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{4}+{\sin }^{-1}x\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{6}+{\sin }^{-1}x\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{-5\pi }{6}-{\sin }^{-1}x\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5\pi }{6}-{\sin }^{-1}x\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -563,7 +567,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\sin ⁡}^{−1}\\text{ ⁣}(\\frac{\\sqrt{3}}{2}x+\\frac{1}{2}\\sqrt{1−{x}^{2}}),\\ −\\frac{1}{2}\u003cx\u003c\\frac{1}{\\sqrt{2}}\\mathrm{.}\\)\u003c/p> \u003cp>Let\u003c/p> \u003cp>\\(x=\\sin ⁡\\theta \\ \\Rightarrow \\ \\sqrt{1−{x}^{2}}=\\cos ⁡\\theta ,\\)\u003c/p> \u003cp>with \\(\\theta ={\\sin ⁡}^{−1}x\\in (−\\frac{\\pi }{6},\\frac{\\pi }{4})\\) (from the given range of \\(x\\)).\u003c/p> \u003cp>Then the expression inside \\({\\sin ⁡}^{−1}\\) becomes\u003c/p> \u003cp>\\(\\frac{\\sqrt{3}}{2}\\sin ⁡\\theta +\\frac{1}{2}\\cos ⁡\\theta =\\sin ⁡\\theta \\cos ⁡\\frac{\\pi }{6}+\\cos ⁡\\theta \\sin ⁡\\frac{\\pi }{6}=\\sin ⁡(\\theta +\\frac{\\pi }{6})\\mathrm{.}\\)\u003c/p> \u003cp>So the whole expression is\u003c/p> \u003cp>\\({\\sin ⁡}^{−1}(\\sin ⁡(\\theta +\\frac{\\pi }{6}))\\mathrm{.}\\)\u003c/p> \u003cp>Now check the range of \\(\\theta +\\frac{\\pi }{6}\\):\u003c/p> \u003cp>\\(\\theta \\in (−\\frac{\\pi }{6},\\frac{\\pi }{4})\\text{  }⟹\\text{  }\\theta +\\frac{\\pi }{6}\\in (0,\\frac{5\\pi }{12})\\subset [−\\frac{\\pi }{2},\\frac{\\pi }{2}]\\mathrm{.}\\)\u003c/p> \u003cp>On this interval, \\({\\sin ⁡}^{−1}(\\sin ⁡y)=y\\). Thus\u003c/p> \u003cp>\\({\\sin ⁡}^{−1}(\\frac{\\sqrt{3}}{2}x+\\frac{1}{2}\\sqrt{1−{x}^{2}})=\\theta +\\frac{\\pi }{6}={\\sin ⁡}^{−1}x+\\frac{\\pi }{6}\\mathrm{.}\\)\u003c/p> \u003cp>So the correct option is:\u003c/p> \u003cp>\\(\\frac{\\pi }{6}+{\\sin ⁡}^{−1}x\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the domain of the function \(f(x)=\cos ^{-1}\left(\frac{2-|x|}{4}\right)+\left\{\log _{ e }(3-x)\right\}^{-1}\) is \([-\alpha, \beta)-\{\gamma\}\), then \(\alpha+\beta+\gamma\) is equal to :</p> <p> </p> <p>[JEE Main 2024, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>11</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -575,7 +579,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(-1 \\leq\\left|\\frac{2-|x|}{4}\\right| \\leq 1\\)\u003c/p> \u003cp>\\(\\Rightarrow\\left|\\frac{2-|x|}{4}\\right| \\leq 1\\) \u003c/p> \u003cp>\\(-4 \\leq 2-|x| \\leq 4\\)\u003c/p> \u003cp>\\(-6 \\leq-|x| \\leq 2 \\)\u003c/p> \u003cp>\\(-2 \\leq|x| \\leq 6\\)\u003c/p> \u003cp>\\( |x| \\leq 6 \\)\u003cbr/>\\( \\Rightarrow x \\in[-6,6] .......{1}\\)\u003cbr/>Now, \\(3-x \\neq 1\\)\u003cbr/>And \\(x \\neq 2\\)\u003c/p> \u003cp>\\(\\text { and } 3-x&gt;0\\)\u003c/p> \u003cp>\\(x&lt;3 \\ldots .(3)\\)\u003c/p> \u003cp>\\(\\text { From (1), (2) and (3) }\\) \u003c/p> \u003cp>\\(\\Rightarrow x \\in[-6,3)-\\{2\\}\\)\u003c/p> \u003cp>\\( \\alpha=6\\)\u003c/p> \u003cp>\\(\\beta=3\\)\u003c/p> \u003cp>\\(\\gamma=2\\)\u003c/p> \u003cp>\\(\\alpha+\\beta+\\gamma=11\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\cos \left({\sin }^{-1}\frac{3}{5}+{\sin }^{-1}\frac{5}{13}+{\sin }^{-1}\frac{33}{65}\right)\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{33}{65}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{32}{65}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -587,7 +591,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\alpha=\\sin^{-1}\\frac{3}{5}\\), \\(\\beta=\\sin^{-1}\\frac{5}{13}\\)\u003c/p> \u003cp>\\(\\cos\\alpha=\\frac{4}{5}\\), \\(\\cos\\beta=\\frac{12}{13}\\)\u003c/p> \u003cp>\\(\\sin(\\alpha+\\beta)=\\frac{3}{5}\\cdot\\frac{12}{13}+\\frac{4}{5}\\cdot\\frac{5}{13}=\\frac{56}{65}\\)\u003c/p> \u003cp>\\(\\cos(\\alpha+\\beta)=\\frac{4}{5}\\cdot\\frac{12}{13}-\\frac{3}{5}\\cdot\\frac{5}{13}=\\frac{33}{65}\\)\u003c/p> \u003cp>\\(\\alpha+\\beta=\\sin^{-1}\\frac{56}{65}=\\cos^{-1}\\frac{33}{65}\\)\u003c/p> \u003cp>\\(\\gamma=\\sin^{-1}\\frac{33}{65}\\)\u003c/p> \u003cp>Since \\(\\cos\\gamma=\\frac{56}{65}\\),\u003c/p> \u003cp>\\((\\alpha+\\beta)+\\gamma=\\frac{\\pi}{2}\\)\u003c/p> \u003cp>\\(\\cos\\left(\\alpha+\\beta+\\gamma\\right)=\\cos\\frac{\\pi}{2}=0\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\text{ If }{\cos }^{-1}x=\pi +{\sin }^{-1}x+{\sin }^{-1}(2x-1)\text{,}\\ \text{then find the sum of all values of ' }x\text{ '. }\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>1/2</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>3/2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -599,7 +603,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\cos }^{-1}x=\\pi +{\\sin }^{-1}x+{\\sin }^{-1}(2x-1)\\\\ \\text{ Now }-1\\leq 2x-1\\leq 1\\\\ 0\\leq x\\leq 1\\\\ \\Rightarrow \\pi +{\\sin }^{-1}x+{\\sin }^{-1}(2x-1)\\geq \\frac{\\pi }{2}\\\\ \\text{ and }{\\cos }^{-1}x\\text{ for }x\\in [0,1]\\text{ always lies in }\\left[0,\\frac{\\pi }{2}\\right]\\\\ \\Rightarrow \\mathrm{LHS}=\\mathrm{RHS}=\\frac{\\pi }{2}\\\\ \\Rightarrow {\\cos }^{-1}x=\\frac{\\pi }{2}\\Rightarrow x=0\\\\ \\mathrm{Hence}\\mathrm{only}x=0\\text{is the possible solution}.\\\\ \\text{ Sum of all solution}=0.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering the principal values of the inverse trigonometric functions, \({\sin }^{-1}\left(\frac{\sqrt{3}}{2}x+\frac{1}{2}\sqrt{1-{x}^{2}}\right),-\frac{1}{2}<x<\frac{1}{\sqrt{2}}\), is equal to</p> <p> </p> <p>[JEE Main 2025, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{4}+{\sin }^{-1}x\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{6}+{\sin }^{-1}x\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{-5\pi }{6}-{\sin }^{-1}x\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5\pi }{6}-{\sin }^{-1}x\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -611,7 +615,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\sin ^{-1}\\left(\\frac{\\sqrt{3}}{2} x+\\frac{1}{2} \\sqrt{1-x^2}\\right), \\frac{-1}{2}&lt;x&lt;\\frac{1}{\\sqrt{2}}\\)\u003c/p> \u003cp>Let \\( \\sin ^{-1}(x)=\\theta \\frac{-\\pi}{6}&lt;\\theta&lt;\\frac{\\pi}{4}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{x}=\\sin \\theta,\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sin ^{-1}\\left(\\frac{\\sqrt{3}}{2} \\sin \\theta+\\frac{1}{2} \\cos \\theta\\right)\\) \u003c/p> \u003cp>\\(\\Rightarrow \\sin ^{-1}\\left(\\sin \\left(\\theta+\\frac{\\pi}{6}\\right)\\right)=\\theta+\\frac{\\pi}{6}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sin ^{-1}(\\mathrm{x})+\\frac{\\pi}{6}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\frac{\pi }{2}\leq x\leq \frac{3\pi }{4}\) , then \({\cos }^{-1}\left(\frac{12}{13}\cos x+\frac{5}{13}\sin x\right)\) is equal to</p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x-{\tan }^{-1}\frac{4}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x-{\tan }^{-1}\frac{5}{12}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x+{\tan }^{-1}\frac{4}{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x+{\tan }^{-1}\frac{5}{12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -623,7 +627,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\cos }^{-1}\\left(\\frac{12}{13}\\cos x+\\frac{5}{13}\\sin x\\right)\\\\ \\text{where},\\frac{\\pi }{2}\\leq x\\leq \\frac{3\\pi }{4}\\\\ \\text{let},\\cos \\theta =\\frac{12}{13},\\text{then}\\sin \\theta =\\frac{5}{13}\\\\ \\text{and}\\tan \\theta =\\frac{5}{12}\\\\ \\theta ={\\tan }^{-1}\\frac{5}{12}\\\\ Now,{\\cos }^{-1}\\left(\\cos \\theta .\\cos x+\\sin \\theta .\\sin x\\right)\\\\ {\\cos }^{-1}(\\cos (x-\\theta ))\\\\ x-\\theta \\\\ x-{\\tan }^{-1}\\frac{5}{12}\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\cos \left({\sin }^{-1}\frac{3}{5}+{\sin }^{-1}\frac{5}{13}+{\sin }^{-1}\frac{33}{65}\right)\) is equal to :</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{33}{65}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{32}{65}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -635,7 +639,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{Let,}\\\\ A=\\cos \\left({\\sin }^{-1}\\frac{3}{5}+{\\sin }^{-1}\\frac{5}{13}+{\\sin }^{-1}\\frac{33}{65}\\right)\\\\ A=\\cos \\left({\\tan }^{-1}\\frac{3}{4}+{\\tan }^{-1}\\frac{5}{12}+{\\tan }^{-1}\\frac{33}{56}\\right)\\\\ \\text{we know,}\\\\ {\\tan }^{-1}x+{\\tan }^{-1}y={\\tan }^{-1}\\left(\\frac{x+y}{1-xy}\\right)\\\\ \\text{Now},\\\\ A=\\cos \\left({\\tan }^{-1}\\left(\\frac{\\frac{3}{4}+\\frac{5}{12}}{1-\\frac{3}{4}\\cdot \\frac{5}{12}}\\right)+{\\tan }^{-1}\\frac{33}{56}\\right)\\\\ A=\\cos \\left({\\tan }^{-1}\\frac{56}{33}+{\\cot }^{-1}\\frac{56}{33}\\right)\\\\ A=\\cos \\left(\\frac{\\pi }{2}\\right)=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \({\cot }^{-1}\left(\frac{\sqrt{1+{\tan }^{2}(2)}-1}{\tan (2)}\right)-{\cot }^{-1}\) \(\left(\frac{\sqrt{1+{\tan }^{2}\left(\frac{1}{2}\right)}+1}{\tan \left(\frac{1}{2}\right)}\right)\) is equal to</p> <p>[JEE Main 2025, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi -\frac{5}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\pi -\frac{3}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\pi +\frac{3}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\pi +\frac{5}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -647,7 +651,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Sol: \\(E={\\cot ⁡}^{−1}(\\frac{−\\sec ⁡2−1}{\\tan ⁡2})−{\\cot ⁡}^{−1}(\\frac{\\sec ⁡\\frac{1}{2}+1}{\\tan ⁡\\frac{1}{2}})\\)\u003c/p> \u003cp>\\(\\begin{matrix}={\\cot ⁡}^{−1}(−(\\frac{1+\\cos ⁡2}{\\sin ⁡2}))−{\\cot ⁡}^{−1}(\\frac{1+\\cos ⁡\\frac{1}{2}}{\\sin ⁡\\frac{1}{2}}) \\\\ ={\\cot ⁡}^{−1}(−\\cot ⁡1)−{\\cot ⁡}^{−1}(\\cot ⁡\\frac{1}{4}) \\\\ =\\pi −1−\\frac{1}{4}\\ =\\pi −\\frac{5}{4}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\cos \left({\sin }^{-1}\frac{3}{5}+{\sin }^{-1}\frac{5}{13}+{\sin }^{-1}\frac{33}{65}\right)\text{ is equal to: }\) <em><strong>(28 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{32}{65}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{33}{65}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -659,7 +663,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\cos \\left({\\sin }^{-1}\\frac{3}{5}+{\\sin }^{-1}\\frac{5}{13}+{\\sin }^{-1}\\frac{33}{65}\\right)=\\cos \\left({\\tan }^{-1}\\frac{3}{4}+{\\tan }^{-1}\\frac{5}{12}+{\\tan }^{-1}\\frac{33}{56}\\right)\\\\ =\\cos \\left({\\tan }^{-1}\\left(\\frac{3/4+5/12}{1-\\frac{3}{4}\\cdot \\frac{5}{12}}\\right)+{\\tan }^{-1}\\left(\\frac{33}{56}\\right)\\right)\\\\ =\\cos \\left({\\tan }^{-1}\\frac{56}{33}+{\\cot }^{-1}\\left(\\frac{56}{33}\\right)\\right)\\\\ =\\cos \\pi /2=0\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \(\tan \left(2{\tan }^{-1}\left(\frac{3}{5}\right)+{\sin }^{-1}\left(\frac{5}{13}\right)\right)\) is equal to:</p> <p> </p> <p>[JEE Main 2021, 20 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{151}{63}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{-291}{76}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{220}{21}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{-181}{69}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -671,7 +675,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(2{\\tan }^{-1}\\left(\\frac{3}{5}\\right)+{\\sin }^{-1}\\left(\\frac{5}{13}\\right)\\\\ ={\\tan }^{-1}\\left(\\frac{2\\times \\frac{3}{5}}{1-\\frac{9}{25}}\\right)+{\\sin }^{-1}\\frac{5}{13}\\\\ ={\\tan }^{-1}\\frac{15}{8}+{\\tan }^{-1}\\frac{5}{12}\\\\ ={\\tan }^{-1}\\frac{\\frac{15}{8}+\\frac{5}{12}}{1-\\frac{15}{8}\\frac{5}{12}}={\\tan }^{-1}\\frac{220}{21}\\\\ ∴\\tan \\left({\\tan }^{-1}\\frac{220}{21}\\right)=\\frac{220}{21}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \({\cot }^{-1}(\alpha )={\cot }^{-1}2+{\cot }^{-1}8+{\cot }^{-1}18+{\cot }^{-1}32+\ldots .\) upto 100 terms, then \( \alpha \) is :</p> <p> </p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 1.02 \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( 1.03 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 1.01 \)</p></span></div><div class="option"><span class="key">d</span><span><p> \( 1.00 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -683,7 +687,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\operatorname{Cot}^{-1}(\\alpha)=\\cot ^{-1}(2)+\\cot ^{-1}(8)+\\cot ^{-1}(18)+\\ldots \\ldots\\)\u003c/p> \u003cp>\\(=\\sum_{n=1}^{100} \\tan ^{-1}\\left(\\frac{2}{4 n^2}\\right)\\)\u003c/p> \u003cp>\\(=\\sum_{n=1}^{100} \\tan ^{-1}\\left(\\frac{(2 n+1)-(2 n-1)}{1+(2 n+1)(2 n-1)}\\right)\\) \u003c/p> \u003cp>\\(=\\sum_{n=1}^{100} \\tan ^{-1}(2 n+1)-\\tan ^{-1}(2 n-1)\\) \u003c/p> \u003cp>\\(=\\tan ^{-1} 201-\\tan ^{-1} 1\\)\u003c/p> \u003cp>\\(=\\tan ^{-1}\\left(\\frac{200}{202}\\right)\\) \u003c/p> \u003cp>\\(\\therefore \\cot ^{-1}(\\alpha)=\\cot ^{-1}\\left(\\frac{202}{200}\\right)\\) \u003c/p> \u003cp>\\(\\alpha=1.01\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The sum of possible values of \( x \) for \( \tan ^{-1}(x+1)+\cot ^{-1}\left(\frac{1}{x-1}\right)=\tan ^{-1}\left(\frac{8}{31}\right) \) is</p> <p> </p> <p>[JEE Main 2021, 17 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( -\frac{32}{4} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( -\frac{33}{4} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( -\frac{31}{4} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( -\frac{30}{4} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -695,7 +699,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Using the principal value relation\u003c/p> \u003cp>\\(\\cot^{-1}\\left(\\frac{1}{x-1}\\right)=\\tan^{-1}(x-1)\\)\u003c/p> \u003cp>for \\(x&gt;1\\)\u003c/p> \u003cp>\\(\\cot^{-1}\\left(\\frac{1}{x-1}\\right)=\\pi+\\tan^{-1}(x-1)\\)\u003c/p> \u003cp>for \\(x&lt;1\\)\u003c/p> \u003cp>If \\(x&lt;1\\), then the left side exceeds \\(\\pi\\), \u003c/p> \u003cp>Hence \\(x&gt;1\\)\u003c/p> \u003cp>\\(\\tan^{-1}(x+1)+\\tan^{-1}(x-1)=\\tan^{-1}\\left(\\frac{8}{31}\\right)\\)\u003c/p> \u003cp>\\(\\tan^{-1}a+\\tan^{-1}b=\\tan^{-1}\\left(\\frac{a+b}{1-ab}\\right)\\)\u003c/p> \u003cp>\\(\\tan^{-1}\\left(\\frac{2x}{\\,2-x^2\\,}\\right)=\\tan^{-1}\\left(\\frac{8}{31}\\right)\\)\u003c/p> \u003cp>\\(\\frac{2x}{2-x^2}=\\frac{8}{31}\\)\u003c/p> \u003cp>\\(62x=16-8x^2\\)\u003c/p> \u003cp>\\(4x^2+31x-8=0\\)\u003c/p> \u003cp>\\((4x-1)(x+8)=0\\)\u003c/p> \u003cp>\\(x=\\frac14\\) or \\(x=-8\\)\u003c/p> \u003cp>But \\(x&gt;1\\)\u003c/p> \u003cp>Hence (\\tan^{-1}(x+1)+\\tan^{-1}(x-1)=\\pi+\\tan^{-1}\\left(\\frac{8}{31}\\right)\\)\u003c/p> \u003cp>This occurs when \\(ab&gt;1\\), i.e. \\(x^2-2&gt;1\\)\u003c/p> \u003cp>\\(\\frac{2x}{2-x^2}=\\frac{8}{31}\\)\u003c/p> \u003cp>\\(x=\\frac14,\\,-8\\)\u003c/p> \u003cp> only \\(x=-8\\) satisfies \\(x^2-2&gt;1\\).\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A possible value of \( \tan \left(\frac{1}{4} \sin ^{-1} \frac{\sqrt{63}}{8}\right) \) is:</p> <p> </p> <p>[JEE Main 2021, 24 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( \sqrt{7}-1 \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{1}{\sqrt{7}} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2 \sqrt{2}-1 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{1}{2 \sqrt{2}} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -707,7 +711,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Here given that the function,\u003c/p> \u003cp>\\(\\tan \\left(\\frac{1}{4}{\\sin }^{-1}\\frac{\\sqrt{63}}{8}\\right)\\)\u003c/p> \u003cp>Let,\u003c/p> \u003cp>\\(\\frac{1}{4}{\\sin }^{-1}\\frac{\\sqrt{63}}{8}=\\theta\\)\u003c/p> \u003cp>\\(\\Rightarrow {\\sin }^{-1}\\frac{\\sqrt{63}}{8}=4\\theta\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sin 4\\theta =\\frac{\\sqrt{63}}{8}\\)\u003c/p> \u003cp>We know that \\(\\left[\\cos \\theta =\\sqrt{1-{\\sin }^{2}\\theta }\\right]\\)\u003c/p> \u003cp>\\(\\Rightarrow \\cos 4\\theta =\\sqrt{1-{\\left(\\frac{\\sqrt{63}}{8}\\right)}^{2}}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\cos 4\\theta =\\sqrt{1-\\frac{63}{64}}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\cos 4\\theta =\\sqrt{\\frac{64-63}{64}}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\cos 4\\theta =\\frac{1}{8}\\)\u003c/p> \u003cp>Here we get,\u003c/p> \u003cp>\\(\\Rightarrow 2{\\cos }^{2}2\\theta −1=\\frac{1}{8}\\)\u003c/p> \u003cp>\\({\\cos }^{2}2\\theta =\\frac{9}{16}​\\)\u003c/p> \u003cp>\\(\\cos 2\\theta =\\sqrt{\\frac{9}{16}}\\)\u003c/p> \u003cp>\\(\\cos 2\\theta =\\frac{3}{4}\\)\u003c/p> \u003cp>Next,\u003c/p> \u003cp>\\(2{\\cos }^{2}\\theta −1=\\frac{3}{4}\\)\u003c/p> \u003cp>\\({\\cos }^{2}\\theta =\\frac{7}{8}\\)\u003c/p> \u003cp>\\(\\cos \\theta =\\frac{\\sqrt{7}}{2\\sqrt{2}}\\)\u003c/p> \u003cp>Here we get,\u003c/p> \u003cp>\\(\\tan \\theta =\\frac{1}{\\sqrt{7}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\tan }^{-1}\left(\frac{1+\sqrt{3}}{3+\sqrt{3}}\right)+{\sec }^{-1}\left(\sqrt{\frac{8+4\sqrt{3}}{6+3\sqrt{3}}}\right)\) is equal to</p> <p> </p> <p>[JEE Main 2023, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\pi }{6}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -719,7 +723,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\tan }^{-1}\\left(\\frac{1+\\sqrt{3}}{3+\\sqrt{3}}\\right)+{\\sec }^{-1}\\left(\\sqrt{\\frac{8+4\\sqrt{3}}{6+3\\sqrt{3}}}\\right)\\\\ {\\tan }^{-1}\\left(\\frac{1+\\sqrt{3}}{\\sqrt{3}(\\sqrt{3}+1)}\\right)+{\\sec }^{-1}\\left(\\sqrt{\\frac{4(2+\\sqrt{3})}{3(2+\\sqrt{3})}}\\right)\\\\ ={\\tan }^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right)+{\\sec }^{-1}\\left(\\frac{2}{\\sqrt{3}}\\right)\\\\ =\\frac{\\pi }{6}+\\frac{\\pi }{6}=\\frac{\\pi }{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \( \tan \left(2 \tan ^{-1}\left(\frac{3}{5}\right)+\sin ^{-1}\left(\frac{5}{13}\right)\right) \) is equal to:</p> <p><strong>[JEE Main 2021, 20 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{151}{63} \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{-291}{76} \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{220}{21} \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{-181}{69} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -728,10 +732,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\underbrace{\\tan ^{-1} \\frac{3}{5}+\\tan ^{-1} \\frac{3}{5}}_{x&gt;0, y&gt;0, x y&lt;1}+\\tan ^{-1} \\frac{5}{12} \\\\ &amp; \\tan ^{-1} \\frac{\\frac{6}{5}}{1-\\frac{9}{25}}+\\tan ^{-1} \\frac{5}{12}=\\underbrace{\\tan ^{-1} \\frac{15}{8}+\\tan ^{-1} \\frac{5}{12}}_{x&gt;0, y&gt;0, x y&lt;1} \\\\ &amp; \\tan ^{-1} \\frac{\\frac{15}{8}+\\frac{5}{12}}{1-\\frac{15}{8} \\cdot \\frac{5}{12}}=\\tan ^{-1} \\frac{220}{21} \\\\ &amp; \\tan \\left(\\tan ^{-1} \\frac{220}{21}\\right)=\\frac{220}{21} \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} & \\underbrace{\\tan ^{-1} \\frac{3}{5}+\\tan ^{-1} \\frac{3}{5}}_{x&gt;0, y&gt;0, x y&lt;1}+\\tan ^{-1} \\frac{5}{12} \\\\ & \\tan ^{-1} \\frac{\\frac{6}{5}}{1-\\frac{9}{25}}+\\tan ^{-1} \\frac{5}{12}=\\underbrace{\\tan ^{-1} \\frac{15}{8}+\\tan ^{-1} \\frac{5}{12}}_{x&gt;0, y&gt;0, x y&lt;1} \\\\ & \\tan ^{-1} \\frac{\\frac{15}{8}+\\frac{5}{12}}{1-\\frac{15}{8} \\cdot \\frac{5}{12}}=\\tan ^{-1} \\frac{220}{21} \\\\ & \\tan \\left(\\tan ^{-1} \\frac{220}{21}\\right)=\\frac{220}{21} \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \( S \) is the sum of the first 10 terms of the series \( \tan ^{-1}\left(\frac{1}{3}\right)+\tan ^{-1}\left(\frac{1}{7}\right)+\tan ^{-1}\left(\frac{1}{13}\right) \) \( +\tan ^{-1}\left(\frac{1}{21}\right)+\ldots \ldots \) then \( \tan (S) \) is equal to</p> <p> </p> <p>[JEE Main 2020, 5 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{10}{11} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{5}{11} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( -\frac{6}{5} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{5}{6} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -743,7 +747,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(S=\\tan ^{-1}\\left(\\frac{1}{3}\\right)+\\tan ^{-1}\\left(\\frac{1}{7}\\right)+\\tan ^{-1}\\left(\\frac{1}{13}\\right)+\\ldots\\)\u003cbr/>\\(S=\\tan ^{-1}\\left(\\frac{2-1}{1+1.2}\\right)+\\tan ^{-1}\\left(\\frac{3-2}{1+2 \\times 3}\\right)\\)\u003c/p> \u003cp>\\(+\\tan ^{-1}\\left(\\frac{4-3}{1+3 \\times 4}\\right)+\\ldots .+\\tan ^{-1}\\left(\\frac{11-10}{1+10 \\times 11}\\right)\\)\u003cbr/>\\( S=\\left(\\tan ^{-1} 2-\\tan ^{-1} 1\\right)+\\left(\\tan ^{-1} 3-\\tan ^{-1} 2\\right)\\)\u003c/p> \u003cp>\\(+\\left(\\tan ^{-1} 4-\\tan ^{-1} 3\\right)+\\ldots . .+\\left(\\tan ^{-1}(11)-\\tan ^{-1}(10)\\right)\\)\u003cbr/>\\(S=\\tan ^{-1} 11-\\tan ^{-1} 1=\\tan ^{-1}\\left(\\frac{11-1}{1+11}\\right)\\)\u003cbr/>\\(\\tan (S)=\\frac{11-1}{1+11 \\times 1}=\\frac{10}{12}=\\frac{5}{6}\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let S be the set of all solutions of the equation \({\cos }^{-1}(2x)-2{\cos }^{-1}\left(\sqrt{1-{x}^{2}}\right)=\pi ,x\in \left[-\frac{1}{2},\frac{1}{2}\right]\text{. }\) Then \(\sum _{x\in S}2{\sin }^{-1}\left({x}^{2}-1\right)\) is equal to</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{-2\pi }{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\pi -{\sin }^{-1}\left(\frac{\sqrt{3}}{4}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -752,10 +756,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\cos^{-1}(2x)-2\\cos^{-1}\\sqrt{1-x^2}=\\pi\\\\\u003cbr/>&amp;\\cos^{-1}(2x)-\\cos^{-1}\\!\\left(2(1-x^2)-1\\right)=\\pi\\\\\u003cbr/>&amp;\\cos^{-1}(2x)-\\cos^{-1}(1-2x^2)=\\pi\\\\\u003cbr/>&amp;-\\cos^{-1}(1-2x^2)=\\pi-\\cos^{-1}(2x)\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Taking \\(\\cos\\) on both sides, we get\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\cos\\!\\left(-\\cos^{-1}(1-2x^2)\\right)\u003cbr/>=\\cos\\!\\left(\\pi-\\cos^{-1}(2x)\\right)\\\\\u003cbr/>&amp;1-2x^2=-2x\\\\\u003cbr/>&amp;2x^2-2x-1=0\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>On solving,\u003c/p> \u003cp>\\(\u003cbr/>x=\\frac{1-\\sqrt{3}}{2},\\quad \\frac{1+\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>As\u003c/p> \u003cp>\\(\u003cbr/>x\\in\\left[-\\frac{1}{2},\\frac{1}{2}\\right],\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>x=\\frac{1+\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>is rejected.\u003c/p> \u003cp>So,\u003c/p> \u003cp>\\(\u003cbr/>x=\\frac{1-\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\Rightarrow x^2-1=-\\frac{\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>2\\sin^{-1}(x^2-1)\u003cbr/>=2\\sin^{-1}\\!\\left(-\\frac{\\sqrt{3}}{2}\\right)\u003cbr/>=-\\frac{2\\pi}{3}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}&\\cos^{-1}(2x)-2\\cos^{-1}\\sqrt{1-x^2}=\\pi\\\\&\\cos^{-1}(2x)-\\cos^{-1}\\!\\left(2(1-x^2)-1\\right)=\\pi\\\\&\\cos^{-1}(2x)-\\cos^{-1}(1-2x^2)=\\pi\\\\&-\\cos^{-1}(1-2x^2)=\\pi-\\cos^{-1}(2x)\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Taking \\(\\cos\\) on both sides, we get\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}&\\cos\\!\\left(-\\cos^{-1}(1-2x^2)\\right)=\\cos\\!\\left(\\pi-\\cos^{-1}(2x)\\right)\\\\&1-2x^2=-2x\\\\&2x^2-2x-1=0\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>On solving,\u003c/p> \u003cp>\\(\u003cbr/>x=\\frac{1-\\sqrt{3}}{2},\\quad \\frac{1+\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>As\u003c/p> \u003cp>\\(\u003cbr/>x\\in\\left[-\\frac{1}{2},\\frac{1}{2}\\right],\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>x=\\frac{1+\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>is rejected.\u003c/p> \u003cp>So,\u003c/p> \u003cp>\\(\u003cbr/>x=\\frac{1-\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\Rightarrow x^2-1=-\\frac{\\sqrt{3}}{2}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>2\\sin^{-1}(x^2-1)\u003cbr/>=2\\sin^{-1}\\!\\left(-\\frac{\\sqrt{3}}{2}\\right)\u003cbr/>=-\\frac{2\\pi}{3}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \({a}_{1}=1,{a}_{2},{a}_{3},{a}_{4},\ldots .\). be consecutive natural numbers. Then \({\tan }^{-1}\left(\frac{1}{1+{a}_{1}{a}_{2}}\right)+{\tan }^{-1}\left(\frac{1}{1+{a}_{2}{a}_{3}}\right)\) \(+\ldots ..+{\tan }^{-1}\left(\frac{1}{1+{a}_{2021}{a}_{2022}}\right)\) is equal to</p> <p> </p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{4}-{\cot }^{-1}(2022)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\cot }^{-1}(2022)-\frac{\pi }{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{4}-{\tan }^{-1}(2022)\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -767,7 +771,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({a}_{2}−{a}_{1}={a}_{3}−{a}_{2}=\\ldots ={a}_{2022}−{a}_{2021}=1\\)\u003c/p> \u003cp>\\(∴{\\text{tan}}^{−1}\\left(\\frac{{a}_{2}−{a}_{1}}{1+{a}_{1}{a}_{2}}\\right)+{\\text{tan}}^{−1}\\left(\\frac{{a}_{3}−{a}_{2}}{1+{a}_{2}{a}_{3}}\\right)+\\ldots \\ldots\\)\\(+{\\text{tan}}^{−1}\\left(\\frac{{a}_{2022}−{a}_{2021}}{1+{a}_{2021}{a}_{2022}}\\right)\\)\u003c/p> \u003cp>\\(=\\left[{\\text{tan}}^{−1}{a}_{2}−{\\text{tan}}^{−1}{a}_{1}\\right]+\\left[{\\text{tan}}^{−1}{a}_{3}−{\\text{tan}}^{−1}{a}_{2}\\right]+\\ldots \\ldots\\)\\(+\\left[{\\text{tan}}^{−1}{a}_{2022}−{\\text{tan}}^{−1}{a}_{2021}\\right]\\)\u003c/p> \u003cp>\\(={\\text{tan}}^{−1}{a}_{2022}−{\\text{tan}}^{−1}{a}_{1}\\)\u003c/p> \u003cp>\\(\\text{As }{a}_{1}=1,{a}_{2}=2\\ldots \\ldots {a}_{2022}=2022\\)\u003c/p> \u003cp>\\(={\\text{tan}}^{−1}\\left(2022\\right)−{\\text{tan}}^{−1}1={\\text{tan}}^{−1}2022−\\frac{\\pi }{4}\\)\u003c/p> \u003cp>\\(=\\left(\\frac{\\pi }{2}−{\\text{cot}}^{−1}\\left(2022\\right)\\right)−\\frac{\\pi }{4}\\)\u003c/p> \u003cp>\\(=\\frac{\\pi }{4}−{\\text{cot}}^{−1}\\left(2022\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S=\left{x\in R:0<x<1\text{  and  }2{\tan }^{−1}\left(\frac{1−x}{1+x}\right)\right.\)\(\left.={\cos }^{−1}\left(\frac{1−{x}^{2}}{1+{x}^{2}}\right)\right}\). If <em>n</em>(<em>S</em>) denotes the number of elements in <em>S</em> then:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><em>n</em>(<em>S</em>) = 2 and only one element is <em>S</em> is less than \(\frac{1}{2}.\)</p></span></div><div class="option"><span class="key">b</span><span><p><em>n</em>(<em>S</em>) = 1 and the element in <em>S</em> is more than \(\frac{1}{2}.\)</p></span></div><div class="option"><span class="key">c</span><span><p><em>n</em>(<em>S</em>) = 1 and the element in S is less than \(\frac{1}{2}.\)</p></span></div><div class="option"><span class="key">d</span><span><p><em>n</em>(<em>S</em>) = 0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -779,7 +783,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>0 &lt; x &lt; 1\u003c/p> \u003cp> \u003c/p> \u003cp>\\({\\tan }^{−1}x=\\theta \\in \\left(0,\\frac{\\pi }{4}\\right)∴x=\\tan \\theta\\)\u003c/p> \u003cp>\\(2{\\tan }^{−1}\\left(\\tan \\left(\\frac{\\pi }{4}−\\theta \\right)\\right)={\\cos }^{−1}\\left(\\cos 2\\theta \\right)\\)\u003c/p> \u003cp>\\(2\\left(\\frac{\\pi }{4}−\\theta \\right)=2\\theta ∴40=\\frac{\\pi }{2}∴\\theta =\\frac{\\pi }{8}\\)\u003c/p> \u003cp>\\(x=\\tan \\frac{\\pi }{8}∴x=\\sqrt{2}−1≃0.414\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The value of \(\ \cos \left(2 \cos ^{-1} x+\sin ^{-1} x\right) \) at \(\ x=\frac{1}{5} \) is</p> <p>[JEE Main 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\ -\frac{2 \sqrt{6}}{5} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\ -2 \sqrt{6} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\ -\frac{\sqrt{6}}{5} \)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -788,10 +792,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\cos \\left[2 \\cos ^{-1} x+\\sin ^{-1} x\\right] \\\\\u003cbr/>&amp; =\\cos \\left[\\cos ^{-1} x+\\cos ^{-1} x+\\sin ^{-1} x\\right] \\\\\u003cbr/>&amp; =\\cos \\left[\\cos ^{-1} x+\\frac{\\pi}{2}\\right]=-\\sin \\left[\\cos ^{-1} x\\right] \\\\\u003cbr/>&amp; =-\\sin \\left[\\sin ^{-1} \\sqrt{1-x^2}\\right]=-\\sqrt{1-x^2} \\\\\u003cbr/>&amp; =-\\sqrt{1-\\left(\\frac{1}{5}\\right)^2}=-\\sqrt{\\frac{24}{25}}=-\\frac{2 \\sqrt{6}}{5}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>$$\\begin{aligned}& \\cos \\left[2 \\cos ^{-1} x+\\sin ^{-1} x\\right] \\\\& =\\cos \\left[\\cos ^{-1} x+\\cos ^{-1} x+\\sin ^{-1} x\\right] \\\\& =\\cos \\left[\\cos ^{-1} x+\\frac{\\pi}{2}\\right]=-\\sin \\left[\\cos ^{-1} x\\right] \\\\& =-\\sin \\left[\\sin ^{-1} \\sqrt{1-x^2}\\right]=-\\sqrt{1-x^2} \\\\& =-\\sqrt{1-\\left(\\frac{1}{5}\\right)^2}=-\\sqrt{\\frac{24}{25}}=-\\frac{2 \\sqrt{6}}{5}\\end{aligned}$$\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The range of \(f(x)=4 \sin ^{-1}\left(\frac{x^2}{x^2+1}\right)\) is</p> <p> </p> <p>[JEE Main 2023, 13 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\([0,\pi ]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\([1,2\pi )\)</p></span></div><div class="option"><span class="key">c</span><span><p>\([0,\pi )\)</p></span></div><div class="option"><span class="key">d</span><span><p>\([0,2\pi )\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -803,7 +807,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given, \\(f(x)=4 \\sin ^{-1}\\left(\\frac{x^2}{x^2+1}\\right)\\)\u003cbr/>Now, \\(\\frac{x^2+1-1}{x^2+1}=1-\\frac{1}{x^2+1} \\Rightarrow[0,1)\\)\u003cbr/>Range of \\(f(x)=[0,2 \\pi)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(y(x)={\cot }^{-1}\left(\frac{\sqrt{1+\sin x}+\sqrt{1-\sin x}}{\sqrt{1+\sin x}-\sqrt{1-\sin x}}\right),x\in \left(\frac{\pi }{2},\pi \right)\), then \(\frac{dy}{dx}\) at \(x=\frac{5\pi }{6}\) is:</p> <p><strong>[JEE Main 2021, 27 Aug (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>-1</p></span></div><div class="option"><span class="key">b</span><span><p>0</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -815,7 +819,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(y(x)={\\cot }^{-1}\\left(\\frac{\\sqrt{1+\\sin x}+\\sqrt{1-\\sin x}}{\\sqrt{1+\\sin x}-\\sqrt{1-\\sin x}}\\right),x\\in \\left(\\frac{\\pi }{2},\\pi \\right)\\)\u003c/p> \u003cp>\\(={\\cot }^{-1}\\left(\\frac{\\sin \\frac{x}{2}+\\cos \\frac{x}{2}+\\sin \\frac{x}{2}-\\cos \\frac{x}{2}}{\\sin \\frac{x}{2}+\\cos \\frac{x}{2}-\\sin \\frac{x}{2}+\\cos \\frac{x}{2}}\\right)={\\cot }^{-1}\\tan \\frac{x}{2}={\\cot }^{-1}\\cot \\left(\\frac{\\pi }{2}-\\frac{x}{2}\\right)=\\frac{\\pi }{2}-\\frac{x}{2}\\)\u003c/p> \u003cp>\\(\\frac{dy}{dx}=\\frac{-1}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of real roots of the equation \({\tan }^{-1}\sqrt{x\left(x+1\right)}+{\sin }^{-1}\sqrt{{x}^{2}+x+1}=\frac{\pi }{4}\)</p> <p> </p> <p>[JEE Main 2021, 20 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -827,7 +831,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\tan ^{-1} \\sqrt{x(x+1)}+\\sin ^{-1} \\sqrt{x^2+x+1}=\\frac{\\pi}{4}\\)\u003c/p> \u003cp>For equation to be defined,\u003c/p> \u003cp>\\( x^2+x \\geq 0\\)\u003cbr/>\\( \\Rightarrow x^2+x+1 \\geq 1\\)\u003cbr/>only possibility that the equation is defined\u003c/p> \u003cp>\\(x^2+x=0\\)\u003c/p> \u003cp>\\(\\Rightarrow x=0 ; x=-1\\)\u003cbr/>None of these values satisfy\u003cbr/>so, No of roots \\(=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \( \frac{\sin ^{-1} x}{a}=\frac{\cos ^{-1} x}{b}=\frac{\tan ^{-1} y}{c} ; 0&lt;x&lt;1 \), then the value of \( \cos \left(\frac{\pi c}{a+b}\right) \) is :</p> <p>[JEE Main 2021, 26 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{1-y^{2}}{2 y} \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( \frac{1-y^{2}}{y \sqrt{y}} \)</p></span></div><div class="option"><span class="key">c</span><span><p> \( 1-y^{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p> \( \frac{1-y^{2}}{1+y^{2}} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -839,7 +843,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let us consider the given function,\u003c/p> \u003cp>\\(\\frac{{\\sin }^{-1}x}{a}=\\frac{{\\cos }^{-1}x}{b}=\\frac{{\\tan }^{-1}y}{c};0\u003cx\u003c1\\)\u003c/p> \u003cp>Next, We have to find the value of\u003c/p> \u003cp>\\(\\frac{a}{b}=\\frac{c}{d}=\\frac{a+c}{b+d}\\)\u003c/p> \u003cp>Now,\u003c/p> \u003cp>\\(\\frac{{\\sin }^{-1}x}{a}=\\frac{{\\cos }^{-1}x}{b}=\\frac{{\\tan }^{-1}y}{c}=\\frac{{\\sin }^{-1}x+{\\cos }^{-1}x}{a+b}\\)\u003c/p> \u003cp>\\(\\frac{{\\tan }^{-1}y}{c}=\\frac{\\pi }{2(a+b)}\\)\u003c/p> \u003cp>\\(\\frac{\\pi c}{a+b}=2{\\tan }^{-1}y\\)\u003c/p> \u003cp>Then,\u003c/p> \u003cp>\\(\\frac{\\pi c}{a+b}={\\cos }^{-1}\\left(\\frac{1-{y}^{2}}{1+{y}^{2}}\\right)\\)\u003c/p> \u003cp>Here we get,\u003c/p> \u003cp>\\(\\cos \\left(\\frac{\\pi c}{a+b}\\right)=\\frac{1-{y}^{2}}{1+{y}^{2}}\\)\u003c/p> \u003cp>This is the required solution.\u003c/p> \u003cp>Hence, the correct answer is option D. i.e. \\(\\frac{1-{y}^{2}}{1+{y}^{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\csc \left[2{\cot }^{-1}(5)+{\cos }^{-1}\left(\frac{4}{5}\right)\right]\) is equal to:</p> <p>[JEE Main 2021, 25 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{65}{33}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{56}{33}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{65}{56}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{75}{56}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -848,10 +852,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>y=\\operatorname{cosec}\\left(2 \\cot ^{-1}(5)+\\cos ^{-1}\\left(\\frac{4}{5}\\right)\\right)\u003cbr/>\\]\u003c/p> \u003cp>Let \\(\\cot ^{-1}(5)=\\theta\\) and \\(\\cos ^{-1}\\left(\\frac{4}{5}\\right)=\\alpha\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow \\cot \\theta=5 \\text{ and } \\cos \\alpha=\\frac{4}{5} \\\\\u003cbr/>&amp; y=\\operatorname{cosec}(2 \\theta+\\alpha)=\\frac{1}{\\sin (2 \\theta+\\alpha)} \\\\\u003cbr/>&amp; =\\frac{1}{\\sin 2 \\theta \\cos \\alpha+\\cos 2 \\theta \\sin \\alpha}=\\frac{1}{\\frac{5}{13} \\cdot \\frac{4}{5}+\\frac{12}{13} \\cdot \\frac{3}{5}} \\\\\u003cbr/>&amp; =\\frac{65}{20+36}=\\frac{65}{56} \\\\\u003cbr/>&amp; \\text { as }\\left\\{\\begin{array}{l}\u003cbr/>\\sin 2 \\theta=\\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta}=\\frac{2\\left(\\frac{1}{5}\\right)}{1+\\frac{1}{25}}=\\frac{5}{13} \\\\\u003cbr/>\\cos 2 \\theta=\\frac{1-\\tan ^2 \\theta}{1+\\tan ^2 \\theta}=\\frac{1-\\frac{1}{25}}{1+\\frac{1}{25}}=\\frac{12}{13}\u003cbr/>\\end{array}\\right.\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>y=\\operatorname{cosec}\\left(2 \\cot ^{-1}(5)+\\cos ^{-1}\\left(\\frac{4}{5}\\right)\\right)\u003cbr/>\\]\u003c/p> \u003cp>Let \\(\\cot ^{-1}(5)=\\theta\\) and \\(\\cos ^{-1}\\left(\\frac{4}{5}\\right)=\\alpha\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\Rightarrow \\cot \\theta=5 \\text{ and } \\cos \\alpha=\\frac{4}{5} \\\\& y=\\operatorname{cosec}(2 \\theta+\\alpha)=\\frac{1}{\\sin (2 \\theta+\\alpha)} \\\\& =\\frac{1}{\\sin 2 \\theta \\cos \\alpha+\\cos 2 \\theta \\sin \\alpha}=\\frac{1}{\\frac{5}{13} \\cdot \\frac{4}{5}+\\frac{12}{13} \\cdot \\frac{3}{5}} \\\\& =\\frac{65}{20+36}=\\frac{65}{56} \\\\& \\text { as }\\left\\{\\begin{array}{l}\\sin 2 \\theta=\\frac{2 \\tan \\theta}{1+\\tan ^2 \\theta}=\\frac{2\\left(\\frac{1}{5}\\right)}{1+\\frac{1}{25}}=\\frac{5}{13} \\\\\\cos 2 \\theta=\\frac{1-\\tan ^2 \\theta}{1+\\tan ^2 \\theta}=\\frac{1-\\frac{1}{25}}{1+\\frac{1}{25}}=\\frac{12}{13}\\end{array}\\right.\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \( \sin ^{-1} \frac{\alpha}{17}+\cos ^{-1} \frac{4}{5}-\tan ^{-1} \frac{77}{36}=0,0&lt;\alpha&lt;13 \),</p> <p>then \( \sin ^{-1}(\sin \alpha)+\cos ^{-1}(\cos \alpha) \) is equal to</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \pi \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( 16 \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( 0 \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( 16-5 \pi \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -860,10 +864,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\cos ^{-1} \\frac{4}{5}=\\tan ^{-1} \\frac{3}{4} \\\\ &amp; \\therefore \\sin ^{-1} \\frac{\\alpha}{17}=\\tan ^{-1} \\frac{77}{36}-\\tan ^{-1} \\frac{3}{4}=\\tan ^{-1}\\left(\\frac{\\frac{77}{36}-\\frac{3}{4}}{1+\\frac{77}{36} \\cdot \\frac{3}{4}}\\right) \\\\ &amp; \\sin ^{-1} \\frac{\\alpha}{17}=\\tan ^{-1} \\frac{8}{15}=\\sin ^{-1} \\frac{8}{17} \\\\ &amp; \\Rightarrow \\frac{\\alpha}{17}=\\frac{8}{17} \\Rightarrow \\alpha=8 \\\\ &amp; \\therefore \\sin ^{-1}(\\sin 8)+\\cos ^{-1}(\\cos 8) \\\\ &amp; =3 \\pi-8+8-2 \\pi \\\\ &amp; =\\pi \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} & \\cos ^{-1} \\frac{4}{5}=\\tan ^{-1} \\frac{3}{4} \\\\ & \\therefore \\sin ^{-1} \\frac{\\alpha}{17}=\\tan ^{-1} \\frac{77}{36}-\\tan ^{-1} \\frac{3}{4}=\\tan ^{-1}\\left(\\frac{\\frac{77}{36}-\\frac{3}{4}}{1+\\frac{77}{36} \\cdot \\frac{3}{4}}\\right) \\\\ & \\sin ^{-1} \\frac{\\alpha}{17}=\\tan ^{-1} \\frac{8}{15}=\\sin ^{-1} \\frac{8}{17} \\\\ & \\Rightarrow \\frac{\\alpha}{17}=\\frac{8}{17} \\Rightarrow \\alpha=8 \\\\ & \\therefore \\sin ^{-1}(\\sin 8)+\\cos ^{-1}(\\cos 8) \\\\ & =3 \\pi-8+8-2 \\pi \\\\ & =\\pi \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \({\left({\sin }^{-1}x\right)}^{2}-{\left({\cos }^{-1}x\right)}^{2}=a,0<x<1,a\neq 0\), then the value of \(2{x}^{2}-1\) is:</p> <p>[JEE Main 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\cos \left(\frac{2a}{\pi }\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\cos \left(\frac{4a}{\pi }\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sin \left(\frac{2a}{\pi }\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sin \left(\frac{4a}{\pi }\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -875,7 +879,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\left({\\sin }^{-1}x\\right)}^{2}-{\\left({\\cos }^{-1}x\\right)}^{2}=a,0\u003cx\u003c1\\\\ \\left({\\sin }^{-1}x+{\\cos }^{-1}x\\right)\\left({\\sin }^{-1}x-{\\cos }^{-1}x\\right)=a\\\\ {\\sin }^{-1}x-{\\cos }^{-1}x=\\frac{2a}{\\pi }\\left[∵{\\sin }^{-1}x+{\\cos }^{-1}x=\\frac{\\pi }{2}\\right]\\\\ \\Rightarrow \\frac{\\pi }{2}-2{\\cos }^{-1}x=\\frac{2a}{\\pi }\\\\ \\Rightarrow 2{\\cos }^{-1}x=\\frac{\\pi }{2}-\\frac{2a}{\\pi }\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp>Let \\(\\cos ^{-1} x=\\theta\\) then \\(x=\\cos \\theta\\)\u003cbr/>So, \\(2 x^2-1=2 \\cos ^2 \\theta-1=\\cos 2 \\theta\\)\u003cbr/>Now, \\(2 \\theta=2 \\cos ^{-1} x=\\frac{\\pi}{2}-\\frac{2 a}{\\pi}\\) from \\((i)\\)\u003cbr/>So, \\(\\cos 2 \\theta=\\cos \\left(\\frac{\\pi}{2}-\\frac{2 a}{\\pi}\\right)=\\sin \\frac{2 a}{\\pi}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the domain of the function\(f(x)={\sec }^{-1}\left(\frac{2x}{5x+3}\right)\) is \([\alpha ,\beta )\cup (\gamma ,\delta ]\), then \(|3\alpha +10(\beta +\gamma )+21\delta |\) is equal to ___</p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>23</p></span></div><div class="option"><span class="key">b</span><span><p>24</p></span></div><div class="option"><span class="key">c</span><span><p>28</p></span></div><div class="option"><span class="key">d</span><span><p>30</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -884,10 +888,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>f(x)=\\sec ^{-1} \\frac{2 x}{5 x+3}\u003cbr/>\\)For domain of \\(\\sec ^{-1}(x)\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; |x| \\geq 1 \\\\\u003cbr/>&amp; \\Rightarrow\\left|\\frac{2 x}{5 x+3}\\right| \\geq 1 \\Rightarrow|2 x| \\geq|5 x+3| \\\\\u003cbr/>&amp; \\Rightarrow(2 x)^2-(5 x+3)^2 \\geq 0 \\\\\u003cbr/>&amp; \\Rightarrow(7 x+3)(-3 x-3) \\geq 0 \\\\\u003cbr/>&amp; x \\neq-\\frac{3}{5}, \\\\\u003cbr/>&amp; x\\ge -1, \\quad x\\le-\\frac{3}{7}\u003cbr/>\\end{aligned}\\)\u003cbr/>\\(\\therefore\\) Domain is \\(\\left[-1, \\frac{-3}{5}\\right) \\cup\\left(\\frac{-3}{5}, \\frac{-3}{7}\\right]\\)\u003cbr/>\\(\\alpha=-1, \\beta=\\frac{-3}{5}, \\gamma=\\frac{-3}{5}, \\delta=\\frac{-3}{7}\u003cbr/>\\)Now, \\(3 \\alpha+10(\\beta+\\gamma)+21 \\delta=-3\\)\u003cbr/>\\(-3+10\\left(\\frac{-6}{5}\\right)+\\left(\\frac{-3}{7}\\right) 21=-24\\)\u003c/p> \u003cp>Hence, absolute value is 24 .\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>f(x)=\\sec ^{-1} \\frac{2 x}{5 x+3}\u003cbr/>\\)For domain of \\(\\sec ^{-1}(x)\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& |x| \\geq 1 \\\\& \\Rightarrow\\left|\\frac{2 x}{5 x+3}\\right| \\geq 1 \\Rightarrow|2 x| \\geq|5 x+3| \\\\& \\Rightarrow(2 x)^2-(5 x+3)^2 \\geq 0 \\\\& \\Rightarrow(7 x+3)(-3 x-3) \\geq 0 \\\\& x \\neq-\\frac{3}{5}, \\\\& x\\ge -1, \\quad x\\le-\\frac{3}{7}\\end{aligned}$$\\)\u003cbr/>\\(\\therefore\\) Domain is \\(\\left[-1, \\frac{-3}{5}\\right) \\cup\\left(\\frac{-3}{5}, \\frac{-3}{7}\\right]\\)\u003cbr/>\\(\\alpha=-1, \\beta=\\frac{-3}{5}, \\gamma=\\frac{-3}{5}, \\delta=\\frac{-3}{7}\u003cbr/>\\)Now, \\(3 \\alpha+10(\\beta+\\gamma)+21 \\delta=-3\\)\u003cbr/>\\(-3+10\\left(\\frac{-6}{5}\\right)+\\left(\\frac{-3}{7}\\right) 21=-24\\)\u003c/p> \u003cp>Hence, absolute value is 24 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \({\sin }^{-1}\frac{\alpha }{17}+{\cos }^{-1}\frac{4}{5}-{\tan }^{-1}\frac{77}{36}=0,0<\alpha <13\), then \({\sin }^{-1}(\sin \alpha )+{\cos }^{-1}(\cos \alpha )\) is equal to:</p> <p><strong>[JEE Main 2023, 31 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\pi\)</p></span></div><div class="option"><span class="key">b</span><span><p>16</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>\(16-5\pi\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -899,7 +903,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let \\({\\cos }^{-1}\\frac{4}{5}=\\theta\\),\u003cbr/>\\(∴\\theta ={\\tan }^{-1}\\frac{3}{4}\\\\ ∴{\\sin }^{-1}\\frac{\\alpha }{17}={\\tan }^{-1}\\frac{77}{36}-{\\tan }^{-1}\\frac{3}{4}\\\\ {\\sin }^{-1}\\frac{\\alpha }{17}={\\tan }^{-1}\\left(\\frac{\\frac{77}{36}-\\frac{3}{4}}{1+\\frac{77}{36}\\cdot \\frac{3}{4}}\\right)\\\\ \\Rightarrow {\\sin }^{-1}\\frac{\\alpha }{17}={\\tan }^{-1}\\frac{8}{15}={\\sin }^{-1}\\frac{8}{17}\\\\ \\Rightarrow \\frac{\\alpha }{17}=\\frac{8}{17}\\Rightarrow \\alpha =8\\\\ ∴{\\sin }^{-1}\\left(\\sin 8\\right)+{\\cos }^{-1}\\left(\\cos 8\\right)\\\\ =3\\pi -8+8-2\\pi \\\\ =\\pi\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\sum _{r=1}^{50}{\tan }^{-1}\frac{1}{2{r}^{2}}=p\), then the value of \(\tan p\) is:</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>100</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{101}{102}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{51}{50}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{50}{51}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -911,7 +915,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(∵{\\tan }^{-1}\\frac{1}{2{r}^{2}}={\\tan }^{-1}\\frac{2}{1+\\left(4{r}^{2}-1\\right)}\\\\ ={\\tan }^{-1}\\left(\\frac{(2r+1)-(2r-1)}{1+(2r+1)(2r-1)}\\right)\\\\ ={\\tan }^{-1}(2r+1)-{\\tan }^{-1}(2r-1)\\\\ ∴\\sum _{r=1}^{50}{\\tan }^{-1}\\frac{1}{2{r}^{2}}\\\\ =\\sum _{r=1}^{50}\\left[{\\tan }^{-1}(2r+1)-{\\tan }^{-1}(2r-1)\\right]\\)\u003c/p> \u003cp>\\(∴p=\\left({\\tan }^{-1}3-{\\tan }^{-1}1\\right)+\\left({\\tan }^{-1}5-{\\tan }^{-1}3\\right)+..\\ldots +\\left({\\tan }^{-1}101-{\\tan }^{-1}99)\\right.\\)\u003c/p> \u003cp>\\(={\\tan }^{-1}101-{\\tan }^{-1}1={\\tan }^{-1}\\frac{100}{102}\\\\ \\Rightarrow \\tan p=\\frac{100}{102}=\\frac{50}{51}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \({S}_{k}=\sum _{r=1}^{k}{\tan }^{-1}\left(\frac{{6}^{r}}{{2}^{2r+1}+{3}^{2r+1}}\right)\) Then \(\lim _{k\to \infty }{S}_{k}\) is equal to:</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\cot }^{-1}\left(\frac{3}{2}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\tan }^{-1}\left(\frac{3}{2}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\tan }^{-1}(3)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\pi }{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -923,7 +927,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given that\u003c/p> \u003cp>\\({S}_{k}=\\sum _{r=1}^{k}{\\tan }^{-1}\\left(\\frac{{6}^{r}}{{2}^{2r+1}+{3}^{2r+1}}\\right)\\\\ \\Rightarrow {t}_{r}={\\tan }^{-1}\\frac{\\frac{{6}^{r}}{{2}^{2r+1}}}{1+{\\left(\\frac{3}{2}\\right)}^{2r+1}}\\\\ ={\\tan }^{-1}\\frac{\\frac{{3}^{r}}{{2}^{r+1}}}{1+{\\left(\\frac{3}{2}\\right)}^{r+1}\\times {\\left(\\frac{3}{2}\\right)}^{r}}\\\\ ={\\tan }^{-1}\\frac{{\\left(\\frac{3}{2}\\right)}^{r+1}-{\\left(\\frac{3}{2}\\right)}^{r}}{1+{\\left(\\frac{3}{2}\\right)}^{r+1}{\\left(\\frac{3}{2}\\right)}^{r}}\\\\ ={\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{r+1}-{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{r}\\)\u003c/p> \u003cp>\\(∴{S}_{k}=\\sum _{r=1}^{k}{t}_{r}\\\\ =\\left{{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{2}-{\\tan }^{-1}\\left(\\frac{3}{2}\\right)\\right}+\\left{{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{3}-{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{2}\\right}+\\left{{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{4}-{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{3}\\right}+\\ldots +{\\tan }^{-1}\\infty \\\\ ={\\tan }^{-1}\\infty -{\\tan }^{-1}\\frac{3}{2}=\\frac{\\pi }{2}-{\\tan }^{-1}\\frac{3}{2}\\\\ ={\\cot }^{-1}\\frac{3}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\cos }^{-1}(\cos (-5))+{\sin }^{-1}(\sin (6))-{\tan }^{-1}(\tan (12))\) is equal to: (The inverse trigonometric functions take the principal values)</p> <p>[JEE Main 2021, 1 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3\pi -11\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3\pi +1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\pi -11\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\pi -9\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -935,7 +939,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given expression, \\({\\cos }^{-1}(\\cos (-5))+{\\sin }^{-1}(\\sin (6))-{\\tan }^{1}\\) \\((\\tan (12))\\)\u003cbr/>\\(=2\\pi -5+6-2\\pi -(12-4\\pi )=4\\pi -11\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given that the inverse trigonometric functions take principal values only. Then, the number of real values of \( x \) which satisfy \( \sin ^{-1}\left(\frac{3 x}{5}\right)+\sin ^{-1}\left(\frac{4 x}{5}\right)=\sin ^{-1} x \) is equal to :</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -947,7 +951,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\sin ^{-1} \\frac{3 x}{5}+\\sin ^{-1} \\frac{4 x}{5}=\\sin ^{-1} x\\)\u003c/p> \u003cp>\\(\\sin ^{-1}\\left(\\frac{3 x}{5} \\sqrt{1-\\frac{16 x^2}{25}}+\\frac{4 x}{5} \\sqrt{1-\\frac{9 x^2}{25}}\\right)=\\sin ^{-1} x\\) \u003c/p> \u003cp>\\(\\frac{3 x}{5} \\sqrt{1-\\frac{16 x^2}{25}}+\\frac{4 x}{5} \\sqrt{1-\\frac{9 x^2}{25}}=x\\) \u003c/p> \u003cp>\\(x=0,3 \\sqrt{25-16 x^2}+4 \\sqrt{25-9 x^2}=25\\) \u003c/p> \u003cp>\\(4 \\sqrt{25-9 x^2}=25-3 \\sqrt{25-16 x^2}\\) \u003c/p> \u003cp>squaring we get \\(16\\left(25-9 x^2\\right)=625+9\\left(25-16 x^2\\right)-150 \\sqrt{25-16 x^2}\\)\u003c/p> \u003cp>\\(400=625+225-150 \\sqrt{25-16 x^2} \\)\u003cbr/>\\( \\sqrt{25-16 x^2}=3 \\Rightarrow 25-16 x^2=9 \\)\u003cbr/>\\( \\Rightarrow x^2=1\\)\u003cbr/>Put \\(x=0,1,-1\\) in the original equation \u003cbr/>Number of solution \\(=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For any \(y\in \mathrm{ℝ}\), let \({\cot }^{-1}(y)\in (0,\pi )\) and \({\tan }^{-1}(y)\in \left(-\frac{\pi }{2},\frac{\pi }{2}\right)\) Then the sum of all the solutions of the equation \({\tan }^{-1}\left(\frac{6y}{9-{y}^{2}}\right)+{\cot }^{-1}\left(\frac{9-{y}^{2}}{6y}\right)=\frac{2\pi }{3}\) for \(0&lt;|y|&lt;3\), is equal to:<br/>[JEE Advanced 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\sqrt{3}-3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3-2\sqrt{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4\sqrt{3}-6\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6-4\sqrt{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -959,7 +963,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{ Case-I: }-3\u003cy\u003c0\\\\ {\\tan }^{-1}\\left(\\frac{6y}{9-{y}^{2}}\\right)+\\pi +{\\tan }^{-1}\\left(\\frac{6y}{9-{y}^{2}}\\right)=\\frac{2\\pi }{3}\\\\ 2{\\tan }^{-1}\\left(\\frac{6y}{9-{y}^{2}}\\right)=-\\frac{\\pi }{3}\\\\ {y}^{2}-6\\sqrt{3}y-9=0\\Rightarrow y=3\\sqrt{3}-6(∵y\\in (-3,0))\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp>Case-I: \\(0&lt;y=3\\)\u003cbr/>\\[\u003cbr/>2 \\tan ^{-1}\\left(\\frac{6 y}{9-y^2}\\right)=\\frac{2 \\pi}{3} \\Rightarrow \\sqrt{3} y^2+6 y-9 \\sqrt{3}=0\u003cbr/>\\]\u003cbr/>\\(y=\\sqrt{3}\\) or \\(y=-3 \\sqrt{3}\\) (rejected, since, \\(y&gt;0\\) )\u003cbr/>\\(\\text{ sum }=\\sqrt{3}+3\\sqrt{3}-6=4\\sqrt{3}-6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(0<a,b<1\), and \({\tan }^{-1}a+{\tan }^{-1}b=\frac{\pi }{4}\), then the value of \((a+b)-\left(\frac{{a}^{2}+{b}^{2}}{2}\right)+\left(\frac{{a}^{3}+{b}^{3}}{3}\right)-\left(\frac{{a}^{4}+{b}^{4}}{4}\right)+\ldots\) is</p> <p>[JEE Main 2021, 26 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\log }_{e}2\)</p></span></div><div class="option"><span class="key">b</span><span><p>e</p></span></div><div class="option"><span class="key">c</span><span><p>\({e}^{2}-1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\log }_{e}\left(\frac{e}{2}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -971,7 +975,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{ Given }{\\tan }^{-1}a+{\\tan }^{-1}(b)=\\frac{\\pi }{4}\\\\ {\\tan }^{-1}\\left(\\frac{a+b}{1-ab}\\right)=\\frac{\\pi }{4}\\\\ ∴{\\tan }^{-1}x+{\\tan }^{-1}y\\\\ ={\\tan }^{-1}\\left(\\frac{x+y}{x-xy}\\right)\\\\ \\Rightarrow \\frac{a+b}{1-ab}=1\\\\ \\Rightarrow a+b=1-ab\\)\u003cbr/>\u003cbr/>\u003c/p> \u003cp>Now,\u003cbr/>\\((a+b)-\\left(\\frac{{a}^{2}+{b}^{2}}{2}\\right)+\\left(\\frac{{a}^{3}+{b}^{3}}{3}\\right)-\\left(\\frac{{a}^{4}+{b}^{4}}{4}\\right)+\\ldots \\ldots .\\\\ \\left(a-\\frac{{a}^{2}}{2}+\\frac{{a}^{3}}{3}+\\frac{{a}^{3}}{3}-\\frac{{a}^{4}}{4}+\\ldots \\right)+\\left(b-\\frac{{b}^{2}}{2}+\\frac{{b}^{3}}{3}-\\frac{{b}^{4}}{4}+\\ldots \\right)\\\\ \\log (1+a)+\\log (1+b)=\\log (1+a)(1+b)\\\\ =\\log {1+a+b+ab}={\\log }_{e}2\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(\tan ^{-1}\left(\frac{1}{4}\right)+\tan ^{-1}\left(\frac{2}{9}\right)\) is equal to</p> <p>[JEE Main 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2} \cos ^{-1}\left(\frac{3}{5}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{2} \sin ^{-1}\left(\frac{3}{5}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2} \tan ^{-1}\left(\frac{3}{5}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\tan ^{-1}\left(\frac{1}{2}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -980,10 +984,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\tan ^{-1}\\left(\\frac{1}{4}\\right)+\\tan ^{-1}\\left(\\frac{2}{9}\\right)=\\tan ^{-1}\\left\\{\\frac{\\frac{1}{4}+\\frac{2}{9}}{1-\\frac{1}{4} \\times \\frac{2}{9}}\\right\\} \\\\\u003cbr/>= &amp; \\tan ^{-1}\\left\\{\\frac{9+8}{36-2}\\right\\}=\\tan ^{-1}\\left(\\frac{1}{2}\\right)\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>$$\\begin{aligned}& \\tan ^{-1}\\left(\\frac{1}{4}\\right)+\\tan ^{-1}\\left(\\frac{2}{9}\\right)=\\tan ^{-1}\\left\\{\\frac{\\frac{1}{4}+\\frac{2}{9}}{1-\\frac{1}{4} \\times \\frac{2}{9}}\\right\\} \\\\= & \\tan ^{-1}\\left\\{\\frac{9+8}{36-2}\\right\\}=\\tan ^{-1}\\left(\\frac{1}{2}\\right)\\end{aligned}$$\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The domain of the function \( \operatorname{cosec}^{-1}\left(\frac{1+x}{x}\right) \) is:</p> <p> </p> <p>[JEE Main 2021, 26 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( \left(-1,-\frac{1}{2}\right] \cup(0, \infty) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \left[-\frac{1}{2}, 0\right) \cup[1, \infty) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \left(-\frac{1}{2}, \infty\right)-\{0\} \)</p></span></div><div class="option"><span class="key">d</span><span><p> \( \left[-\frac{1}{2}, \infty\right)-\{0\} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -995,7 +999,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{1+x}{x} \\in(-\\infty,-1] \\cup[1, \\infty) \\)\u003c/p> \u003cp>\\(\\frac{1}{x} \\in(-\\infty,-2] \\cup[0, \\infty) \\)\u003c/p> \u003cp>\\(x \\in\\left[-\\frac{1}{2}, 0\\right) \\cup(0, \\infty) \\)\u003c/p> \u003cp>\\(x \\in\\left[-\\frac{1}{2}, \\infty\\right)-\\{0\\}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(0<a,b<1\), and \({\tan }^{-1}a+{\tan }^{-1}b=\frac{\pi }{4}\), then the value of \(\left(a+b\right)-\left(\frac{{a}^{2}+{b}^{2}}{2}\right)+\left(\frac{{a}^{3}+{b}^{3}}{3}\right)-\left(\frac{{a}^{4}+{b}^{4}}{4}\right)+\ldots\) is</p> <p> </p> <p>[JEE Main 2021, 26 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\log }_{e}2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(e\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({e}^{2}-1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\log }_{e}\left(\frac{e}{2}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1007,7 +1011,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given\u003c/p> \u003cp>\\(S=(a+b)-\\frac{a^2+b^2}{2}+\\frac{a^3+b^3}{3}-\\frac{a^4+b^4}{4}+\\cdots\\)\u003c/p> \u003cp>Since \\(0&lt;a, b&lt;1\\),\u003c/p> \u003cp>\\(\\log (1+x)=x-\\frac{x^2}{2}+\\frac{x^3}{3}-\\frac{x^4}{4}+\\cdots\\)\u003c/p> \u003cp>Therefore,\u003c/p> \u003cp>\\(S=\\log (1+a)+\\log (1+b)\\)\u003cbr/>\\(S=\\log ((1+a)(1+b))\\)\u003cbr/>Now,\u003c/p> \u003cp>\\(\\tan ^{-1} a+\\tan ^{-1} b=\\frac{\\pi}{4}\\)\u003c/p> \u003cp>Using\u003c/p> \u003cp>\\(\\tan (A+B)=\\frac{\\tan A+\\tan B}{1-\\tan A \\tan B},\\)\u003c/p> \u003cp>we get\u003c/p> \u003cp>\\(\\frac{a+b}{1-a b}=1\\)\u003c/p> \u003cp>Hence,\u003c/p> \u003cp>\\(a+b=1-a b \\)\u003cbr/>\\(a+b+a b=1\\)\u003cbr/>Therefore,\u003c/p> \u003cp>\\((1+a)(1+b)=1+a+b+a b=2\\)\u003c/p> \u003cp>Thus,\u003c/p> \u003cp>\\(S=\\log 2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\( 2 \pi-\left(\sin ^{-1} \frac{4}{5}+\sin ^{-1} \frac{5}{13}+\sin ^{-1} \frac{16}{65}\right) \) is equal to :</p> <p> </p> <p>[JEE Main 2020, 3 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( \frac{\pi}{2} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{7 \pi}{4} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{3 \pi}{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{5 \pi}{4} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1019,7 +1023,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(2 \\pi-\\left(\\sin ^{-1}\\left(\\frac{4}{5}\\right)+\\sin ^{-1}\\left(\\frac{5}{13}\\right)+\\sin ^{-1}\\left(\\frac{16}{65}\\right)\\right)\\) \u003c/p> \u003cp>\\(=2 \\pi-\\left(\\tan ^{-1}\\left(\\frac{4}{3}\\right)+\\tan ^{-1}\\left(\\frac{5}{12}\\right)+\\tan ^{-1}\\left(\\frac{16}{63}\\right)\\right)\\) \u003c/p> \u003cp>\\(=2 \\pi-\\left(\\tan ^{-1}\\left(\\frac{63}{16}\\right)+\\tan ^{-1}\\left(\\frac{16}{63}\\right)\\right)\\)\u003c/p> \u003cp>\\(=2\\pi -\\frac{\\pi }{2}=\\frac{3\\pi }{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S=\left{x\in R:0<x<1\right.\) and \(\left.2{\tan }^{-1}\left(\frac{1-x}{1+x}\right)={\cos }^{-1}\left(\frac{1-{x}^{2}}{1+{x}^{2}}\right)\right}\). If \(n(S)\) denotes the number of elements in S then:</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n(S)=2\) and only one element in \(S\) is less than \(\frac{1}{2}\).</p></span></div><div class="option"><span class="key">b</span><span><p>\(n(S)=1\) and the element in \(S\) is more than \(\frac{1}{2}\).</p></span></div><div class="option"><span class="key">c</span><span><p>\(n(S)=1\) and the element in \(S\) is less than \(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n(S)=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1031,7 +1035,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(0\u003cx\u003c1\\\\ 2{\\tan }^{-1}\\left(\\frac{1-x}{1+x}\\right)={\\cos }^{-1}\\left(\\frac{1-{x}^{2}}{1+{x}^{2}}\\right)\\\\ {\\tan }^{-1}x=\\theta \\in \\left(0,\\frac{\\pi }{4}\\right)∴x=\\tan \\theta \\\\ 2{\\tan }^{-1}\\left(\\tan \\left(\\frac{\\pi }{4}-\\theta \\right)\\right)={\\cos }^{-1}\\left(\\cos 2\\theta \\right)\\\\ 2\\left(\\frac{\\pi }{4}-\\theta \\right)=2\\theta ∴4\\theta =\\frac{\\pi }{2}∴\\theta =\\frac{\\pi }{8}\\\\ x=\\tan \\frac{\\pi }{8}∴x=\\sqrt{2}-1≃0.414\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The real function \(f(x)=\frac{{\csc }^{-1}x}{\sqrt{x-[x]}}\), where \([x]\) denotes the greatest integer less than or equal to x, is defined for all x belonging to:</p> <p>[JEE Main 2021, 18 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>All integers except \(0,-1,1\)</p></span></div><div class="option"><span class="key">b</span><span><p>All non-integers except the interval \([-1,1]\)</p></span></div><div class="option"><span class="key">c</span><span><p>All reals except the interval \([-1,1]\)</p></span></div><div class="option"><span class="key">d</span><span><p>All reals except integers</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1043,7 +1047,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(f\\left(x\\right)=\\frac{{\\csc }^{-1}x}{\\sqrt{x-[x]}}\\)\u003cbr/>\\(∴{\\csc }^{-1}x\\) is defined on \\((-\\infty -1]\\cup [1,\\infty )\\)\u003cbr/>and \\(x-[x]\\neq 0\\)\u003cbr/>\\({x}\\neq 0,x\\notin I\\)\u003c/p> \u003cp>Hence, \\(f(x)\\) is defined for all non integer except in the interval \\([-1,1]\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q84" data-gated="1">
-      <div class="qnum">Q84</div>
+      <div class="qhead"><div class="qnum">Q84</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \( g(x)=f(x)+f(1-x) \) and \( f^{\prime \prime}(x)&gt;0, x \in(0,1) \). If \( g \) is decreasing in the interval \( (0, \alpha) \) and increasing in the interval \( (\alpha, 1) \), then the value of \( \tan ^{-1}(2 \alpha)+\tan ^{-1}\left(\frac{1}{\alpha}\right)+\tan ^{-1}\left(\frac{\alpha+1}{\alpha}\right) \), is equal to</p> <p><strong>[JEE Main 2023, 10 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{3 \pi}{2} \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( \pi \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{5 \pi}{4} \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{3 \pi}{4} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1052,10 +1056,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\[ \\begin{gathered} g(x)=f(x)+f(1-x) \\text { and } f^{\\prime}(x)&gt;0, x \\in(0,1) \\\\ g^{\\prime}(x)=f^{\\prime}(x)-f^{\\prime}(1-x)=0 \\Rightarrow f^{\\prime}(x)=f^{\\prime}(1-x) \\\\ \\Rightarrow \\quad x=1-x \\Rightarrow x=\\frac{1}{2} \\\\ g^{\\prime}(x)=0 \\text { at } x=\\frac{1}{2} \\\\ g^{\\prime \\prime}(x)=f^{\\prime \\prime}(x)+f^{\\prime \\prime}(1-x)&gt;0 \\end{gathered} \\]\u003c/p> \u003cp>\\( g \\) is concave up, hence \\( \\alpha=\\frac{1}{2} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\tan ^{-1} 2 \\alpha+\\tan ^{-1} \\frac{1}{\\alpha}+\\tan ^{-1} \\frac{\\alpha+1}{\\alpha} \\\\ \\Rightarrow \\quad &amp; \\tan ^{-1} 1+\\tan ^{-1} 2+\\tan ^{-1} 3 \\\\ &amp; =\\pi \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\[ \\begin{gathered} g(x)=f(x)+f(1-x) \\text { and } f^{\\prime}(x)&gt;0, x \\in(0,1) \\\\ g^{\\prime}(x)=f^{\\prime}(x)-f^{\\prime}(1-x)=0 \\Rightarrow f^{\\prime}(x)=f^{\\prime}(1-x) \\\\ \\Rightarrow \\quad x=1-x \\Rightarrow x=\\frac{1}{2} \\\\ g^{\\prime}(x)=0 \\text { at } x=\\frac{1}{2} \\\\ g^{\\prime \\prime}(x)=f^{\\prime \\prime}(x)+f^{\\prime \\prime}(1-x)&gt;0 \\end{gathered} \\]\u003c/p> \u003cp>\\( g \\) is concave up, hence \\( \\alpha=\\frac{1}{2} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} & \\tan ^{-1} 2 \\alpha+\\tan ^{-1} \\frac{1}{\\alpha}+\\tan ^{-1} \\frac{\\alpha+1}{\\alpha} \\\\ \\Rightarrow \\quad & \\tan ^{-1} 1+\\tan ^{-1} 2+\\tan ^{-1} 3 \\\\ & =\\pi \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q85" data-gated="1">
-      <div class="qnum">Q85</div>
+      <div class="qhead"><div class="qnum">Q85</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the domain of the function \(f\left(x\right)={\sec }^{-1}\left(\frac{2x}{5x+3}\right)\) is \([\alpha ,\beta )\cup (\gamma ,\delta ]\), then \(|3\alpha +10(\beta +\gamma )+21\delta |\) is equal to ___</p> <p> </p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>23</p></span></div><div class="option"><span class="key">b</span><span><p>24</p></span></div><div class="option"><span class="key">c</span><span><p>28</p></span></div><div class="option"><span class="key">d</span><span><p>30</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1064,10 +1068,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>f(x)=\\sec ^{-1} \\frac{2 x}{5 x+3}\u003cbr/>\\)\u003c/p> \u003cp>For domain of \\(\\sec ^{-1}(x)\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; |x| \\geq 1 \\\\\u003cbr/>&amp; \\Rightarrow\\left|\\frac{2 x}{5 x+3}\\right| \\geq 1 \\Rightarrow|2 x| \\geq|5 x+3| \\\\\u003cbr/>&amp; \\Rightarrow(2 x)^2-(5 x+3)^2 \\geq 0 \\\\\u003cbr/>&amp; \\Rightarrow(7 x+3)(-3 x-3) \\geq 0 \\\\\u003cbr/>&amp; x \\neq-\\frac{3}{5}, \\\\\u003cbr/>&amp; x\\ge -1, \\quad x\\le-\\frac{3}{7}\u003cbr/>\\end{aligned}\\)\u003cbr/>\\(\\therefore\\) Domain is \\(\\left[-1, \\frac{-3}{5}\\right) \\cup\\left(\\frac{-3}{5}, \\frac{-3}{7}\\right]\\)\u003cbr/>\\(\\alpha=-1, \\beta=\\frac{-3}{5}, \\gamma=\\frac{-3}{5}, \\delta=\\frac{-3}{7}\u003cbr/>\\)\u003c/p> \u003cp>Now, \\(3 \\alpha+10(\\beta+\\gamma)+21 \\delta=-3\\)\u003cbr/>\\(-3+10\\left(\\frac{-6}{5}\\right)+\\left(\\frac{-3}{7}\\right) 21=-24\\)\u003c/p> \u003cp>Hence, absolute value is 24 .\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>f(x)=\\sec ^{-1} \\frac{2 x}{5 x+3}\u003cbr/>\\)\u003c/p> \u003cp>For domain of \\(\\sec ^{-1}(x)\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& |x| \\geq 1 \\\\& \\Rightarrow\\left|\\frac{2 x}{5 x+3}\\right| \\geq 1 \\Rightarrow|2 x| \\geq|5 x+3| \\\\& \\Rightarrow(2 x)^2-(5 x+3)^2 \\geq 0 \\\\& \\Rightarrow(7 x+3)(-3 x-3) \\geq 0 \\\\& x \\neq-\\frac{3}{5}, \\\\& x\\ge -1, \\quad x\\le-\\frac{3}{7}\\end{aligned}$$\\)\u003cbr/>\\(\\therefore\\) Domain is \\(\\left[-1, \\frac{-3}{5}\\right) \\cup\\left(\\frac{-3}{5}, \\frac{-3}{7}\\right]\\)\u003cbr/>\\(\\alpha=-1, \\beta=\\frac{-3}{5}, \\gamma=\\frac{-3}{5}, \\delta=\\frac{-3}{7}\u003cbr/>\\)\u003c/p> \u003cp>Now, \\(3 \\alpha+10(\\beta+\\gamma)+21 \\delta=-3\\)\u003cbr/>\\(-3+10\\left(\\frac{-6}{5}\\right)+\\left(\\frac{-3}{7}\\right) 21=-24\\)\u003c/p> \u003cp>Hence, absolute value is 24 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q86" data-gated="1">
-      <div class="qnum">Q86</div>
+      <div class="qhead"><div class="qnum">Q86</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(f(x)=\cos \left(2{\tan }^{-1}\sin \left({\cot }^{-1}\sqrt{\frac{1-x}{x}}\right)\right)\), \(0<x<1\). Then:</p> <p><strong>[JEE Main 2021, 26 Aug (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((1-x{)}^{2}{f}^{'}(x)+2(f(x){)}^{2}=0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((1-x{)}^{2}{f}^{'}(x)-2(f(x){)}^{2}=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((1+x{)}^{2}{f}^{'}(x)+2(f(x){)}^{2}=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((1+x{)}^{2}{f}^{'}(x)-2(f(x){)}^{2}=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1079,7 +1083,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(f(x)=\\frac{1-x}{1+x},0\u003cx\u003c1\\) (on simplification)\u003c/p> \u003cp>\\(\\Rightarrow {f}^{'}(x)=\\frac{-2}{(1+x{)}^{2}}\\)\u003c/p> \u003cp>\\(\\Rightarrow (1-x{)}^{2}{f}^{'}(x)=-2(f(x){)}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q87" data-gated="1">
-      <div class="qnum">Q87</div>
+      <div class="qhead"><div class="qnum">Q87</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The real function \(f\left(x\right)=\frac{{\csc }^{-1}x}{\sqrt{x-[x]}}\), where \([x]\) denotes the greatest integer less than or equal to \(x\), is defined for all \(x\) belonging to:</p> <p> </p> <p>[JEE Main 2021, 18 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>All integers except \(0,-1,1\)</p></span></div><div class="option"><span class="key">b</span><span><p>All non-integers except the interval \([-1,1]\)</p></span></div><div class="option"><span class="key">c</span><span><p>All reals except the interval \([-1,1]\)</p></span></div><div class="option"><span class="key">d</span><span><p>All reals except integers</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1091,7 +1095,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(f\\left(x\\right)=\\frac{{\\csc }^{-1}x}{\\sqrt{x-[x]}}\\)\u003cbr/>\\(∴{\\csc }^{-1}x\\) is defined on \\((-\\infty -1]\\cup [1,\\infty )\\)\u003cbr/>and \\(x-[x]\\neq 0\\)\u003cbr/>\\({x}\\neq 0,x\\notin I\\)\u003c/p> \u003cp>Hence, \\(f(x)\\) is defined for all non integer except in the interval \\([-1,1]\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q88" data-gated="1">
-      <div class="qnum">Q88</div>
+      <div class="qhead"><div class="qnum">Q88</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The sum of possible value of \( x \) for \( \tan ^{-1}(x+1)+ \)</p> <p>\( \cot ^{-1}\left(\frac{1}{x-1}\right)=\tan ^{-1}\left(\frac{8}{31}\right) \) is</p> <p><strong>[JEE Main 2021, 17 Mar (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( -\frac{33}{4} \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( -\frac{31}{4} \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( -\frac{30}{4} \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( -\frac{32}{4} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1100,10 +1104,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\tan ^{-1}(x+1)+\\cot ^{-1}\\left(\\frac{1}{x-1}\\right)=\\tan ^{-1} \\frac{8}{31} \\]\u003c/p> \u003cp>Taking tangent both sides:-\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\frac{(x+1)+(x-1)}{1-\\left(x^{2}-1\\right)}=\\frac{8}{31} \\\\ &amp; \\Rightarrow \\quad \\frac{2 x}{2-x^{2}}=\\frac{8}{31} \\\\ &amp; \\Rightarrow \\quad 4 x^{2}+31 x-8=0 \\\\ &amp; \\Rightarrow \\quad x=-8, \\frac{1}{4} \\end{aligned} \\]\u003c/p> \u003cp>But, if \\( x=\\frac{1}{4} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\tan ^{-1}(x+1) \\in\\left(0, \\frac{\\pi}{2}\\right) \\\\ &amp; \\&amp; \\cot ^{-1}\\left(\\frac{1}{x-1}\\right) \\in\\left(\\frac{\\pi}{2}, \\pi\\right) \\\\ &amp; \\Rightarrow \\quad L H S&gt;\\frac{\\pi}{2} \\&amp; R H S&lt;\\frac{\\pi}{2} \\end{aligned} \\]\u003c/p> \u003cp>(Not possible)\u003c/p> \u003cp>Hence, \\( x=-8 \\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\tan ^{-1}(x+1)+\\cot ^{-1}\\left(\\frac{1}{x-1}\\right)=\\tan ^{-1} \\frac{8}{31} \\]\u003c/p> \u003cp>Taking tangent both sides:-\u003c/p> \u003cp>\\[ \\begin{aligned} & \\frac{(x+1)+(x-1)}{1-\\left(x^{2}-1\\right)}=\\frac{8}{31} \\\\ & \\Rightarrow \\quad \\frac{2 x}{2-x^{2}}=\\frac{8}{31} \\\\ & \\Rightarrow \\quad 4 x^{2}+31 x-8=0 \\\\ & \\Rightarrow \\quad x=-8, \\frac{1}{4} \\end{aligned} \\]\u003c/p> \u003cp>But, if \\( x=\\frac{1}{4} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} & \\tan ^{-1}(x+1) \\in\\left(0, \\frac{\\pi}{2}\\right) \\\\ & \\& \\cot ^{-1}\\left(\\frac{1}{x-1}\\right) \\in\\left(\\frac{\\pi}{2}, \\pi\\right) \\\\ & \\Rightarrow \\quad L H S&gt;\\frac{\\pi}{2} \\& R H S&lt;\\frac{\\pi}{2} \\end{aligned} \\]\u003c/p> \u003cp>(Not possible)\u003c/p> \u003cp>Hence, \\( x=-8 \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q89" data-gated="1">
-      <div class="qnum">Q89</div>
+      <div class="qhead"><div class="qnum">Q89</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \({S}_{k}=\sum _{r=1}^{k}{\tan }^{-1}\left(\frac{{6}^{r}}{{2}^{2r+1}+{3}^{2r+1}}\right)\). Then \(\lim _{k\to \infty }{S}_{k}\) is equal to:</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\cot }^{-1}\left(\frac{3}{2}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\tan }^{-1}\left(\frac{3}{2}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\tan }^{-1}(3)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\pi }{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1115,7 +1119,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given that\u003c/p> \u003cp>\\({S}_{k}=\\sum _{r=1}^{k}{\\tan }^{-1}\\left(\\frac{{6}^{r}}{{2}^{2r+1}+{3}^{2r+1}}\\right)\\\\ \\Rightarrow {t}_{r}={\\tan }^{-1}\\frac{\\frac{{6}^{r}}{{2}^{2r+1}}}{1+{\\left(\\frac{3}{2}\\right)}^{2r+1}}\\\\ ={\\tan }^{-1}\\frac{\\frac{{3}^{r}}{{2}^{r+1}}}{1+{\\left(\\frac{3}{2}\\right)}^{r+1}\\times {\\left(\\frac{3}{2}\\right)}^{r}}\\\\ ={\\tan }^{-1}\\frac{{\\left(\\frac{3}{2}\\right)}^{r+1}-{\\left(\\frac{3}{2}\\right)}^{r}}{1+{\\left(\\frac{3}{2}\\right)}^{r+1}{\\left(\\frac{3}{2}\\right)}^{r}}\\\\ ={\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{r+1}-{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{r}\\)\u003c/p> \u003cp>\\(∴\\lim _{k\\to \\infty }{S}_{k}=\\lim _{k\\to \\infty }\\sum _{r=1}^{k}{t}_{r}\\\\ =\\left{{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{2}-{\\tan }^{-1}\\left(\\frac{3}{2}\\right)\\right}+\\left{{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{3}-{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{2}\\right}\\\\ +\\left{{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{4}-{\\tan }^{-1}{\\left(\\frac{3}{2}\\right)}^{3}\\right}+\\ldots +{\\tan }^{-1}\\infty \\\\ ={\\tan }^{-1}\\infty -{\\tan }^{-1}\\frac{3}{2}=\\frac{\\pi }{2}-{\\tan }^{-1}\\frac{3}{2}\\\\ ={\\cot }^{-1}\\frac{3}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q90" data-gated="1">
-      <div class="qnum">Q90</div>
+      <div class="qhead"><div class="qnum">Q90</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \((a,b)\subset (0,2\pi )\) be the largest interval for which\({\sin }^{-1}(\sin \theta )-{\cos }^{-1}(\sin \theta )>0,\theta \in (0,2\pi )\) holds. If \(\alpha {x}^{2}+\beta x+{\sin }^{-1}\left({x}^{2}-6x+10\right)+{\cos }^{-1}\left({x}^{2}-6x+10\right)=0\) and \(\alpha -\beta =b-a\), then \(\alpha\) is equal to:</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{48}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{16}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{8}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\pi }{12}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1127,7 +1131,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\( \\sin ^{-1} \\sin \\theta-\\left(\\frac{\\pi}{2}-\\sin ^{-1} \\sin \\theta\\right)&gt;0\\)\u003cbr/>\\( \\Rightarrow \\sin ^{-1} \\sin \\theta&gt;\\frac{\\pi}{4}\\)\u003cbr/>\\( \\Rightarrow \\sin \\theta&gt;\\frac{1}{\\sqrt{2}}\\)\u003cbr/>So, \\(\\theta \\in\\left(\\frac{\\pi}{4}, \\frac{3 \\pi}{4}\\right)\\)\u003c/p> \u003cp>\\( \\theta \\in\\left(\\frac{\\pi}{4}, \\frac{3 \\pi}{4}\\right)=(\\mathrm{a}, \\mathrm{b})\\) \u003c/p> \u003cp>\\( \\mathrm{b}-\\mathrm{a}=\\frac{\\pi}{2}=\\alpha-\\beta\\) \u003c/p> \u003cp>\\(\\Rightarrow \\beta=\\alpha-\\frac{\\pi}{2}\\)\u003c/p> \u003cp>\\( \\Rightarrow \\alpha \\mathrm{x}^2+\\beta \\mathrm{x}+\\sin ^{-1}\\left[(\\mathrm{x}-3)^2+1\\right]+\\cos ^{-1}\\left[(\\mathrm{x}-3)^2+1\\right]=0\\) \u003c/p> \u003cp>\\( \\mathrm{x}=3,9 \\alpha+3 \\beta+\\frac{\\pi}{2}+0=0\\)\u003c/p> \u003cp>\\( \\Rightarrow 9 \\alpha+3\\left(\\alpha-\\frac{\\pi}{2}\\right)+\\frac{\\pi}{2}=0\\)\u003c/p> \u003cp>\\( \\Rightarrow 12 \\alpha-\\pi=0\\)\u003c/p> \u003cp>\\( \\alpha=\\frac{\\pi}{12}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q91" data-gated="1">
-      <div class="qnum">Q91</div>
+      <div class="qhead"><div class="qnum">Q91</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \( g(x)=f(x)+f(1-x) \) and \( f^{\prime \prime}(x)&gt;0, x \in(0,1) \). If</p> <p>\( g \) is decreasing in the interval \( (0, \alpha) \) and increasing</p> <p>in the interval \( (\alpha, 1) \), then the value of</p> <p>\( \tan ^{-1}(2 \alpha)+\tan ^{-1}\left(\frac{1}{\alpha}\right)+\tan ^{-1}\left(\frac{\alpha+1}{\alpha}\right) \), is equal to</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{3 \pi}{2} \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( \pi \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{5 \pi}{4} \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{3 \pi}{4} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1136,10 +1140,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\[ \\begin{gathered} g(x)=f(x)+f(1-x) \\text { and } f^{\\prime}(x)&gt;0, x \\in(0,1) \\\\ g^{\\prime}(x)=f^{\\prime}(x)-f^{\\prime}(1-x)=0 \\Rightarrow f^{\\prime}(x)=f^{\\prime}(1-x) \\\\ \\Rightarrow \\quad x=1-x \\Rightarrow x=\\frac{1}{2} \\\\ g^{\\prime}(x)=0 \\text { at } x=\\frac{1}{2} \\\\ g^{\\prime \\prime}(x)=f^{\\prime \\prime}(x)+f^{\\prime \\prime}(1-x)&gt;0 \\end{gathered} \\]\u003c/p> \u003cp>\\( g \\) is concave up, hence \\( \\alpha=\\frac{1}{2} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\tan ^{-1} 2 \\alpha+\\tan ^{-1} \\frac{1}{\\alpha}+\\tan ^{-1} \\frac{\\alpha+1}{\\alpha} \\\\ \\Rightarrow \\quad &amp; \\tan ^{-1} 1+\\tan ^{-1} 2+\\tan ^{-1} 3 \\\\ &amp; =\\pi \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\[ \\begin{gathered} g(x)=f(x)+f(1-x) \\text { and } f^{\\prime}(x)&gt;0, x \\in(0,1) \\\\ g^{\\prime}(x)=f^{\\prime}(x)-f^{\\prime}(1-x)=0 \\Rightarrow f^{\\prime}(x)=f^{\\prime}(1-x) \\\\ \\Rightarrow \\quad x=1-x \\Rightarrow x=\\frac{1}{2} \\\\ g^{\\prime}(x)=0 \\text { at } x=\\frac{1}{2} \\\\ g^{\\prime \\prime}(x)=f^{\\prime \\prime}(x)+f^{\\prime \\prime}(1-x)&gt;0 \\end{gathered} \\]\u003c/p> \u003cp>\\( g \\) is concave up, hence \\( \\alpha=\\frac{1}{2} \\)\u003c/p> \u003cp>\\[ \\begin{aligned} & \\tan ^{-1} 2 \\alpha+\\tan ^{-1} \\frac{1}{\\alpha}+\\tan ^{-1} \\frac{\\alpha+1}{\\alpha} \\\\ \\Rightarrow \\quad & \\tan ^{-1} 1+\\tan ^{-1} 2+\\tan ^{-1} 3 \\\\ & =\\pi \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q92" data-gated="1">
-      <div class="qnum">Q92</div>
+      <div class="qhead"><div class="qnum">Q92</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the solution of the equation </p> <p>\( \log _{\cos x} \cot x+4 \log _{\sin x} \tan x=1 \),</p> <p>\( x \in\left(0, \frac{\pi}{2}\right) \), is \( \sin ^{-1}\left(\frac{\alpha+\sqrt{\beta}}{2}\right) \), where \( \alpha \beta \) are</p> <p>integers, then \( \alpha+\beta \) is equal to:</p> <p> </p> <p><strong>[JEE Main 2023, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 3 \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( 5 \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( 6 \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( 4 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1148,10 +1152,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \u003c/p> \u003cp>Given a equation \\( \\log _{\\cos x} \\cot x+4 \\log _{\\sin x} \\tan x=1 \\)\u003c/p> \u003cp>\\[ \\begin{array}{ll} \\Rightarrow \\quad &amp; \\frac{\\ln \\cos x-\\ln \\sin x}{\\ln \\cos x}+4 \\frac{\\ln \\sin x-\\ln \\cos x}{\\ln \\sin x}=1 \\\\ \\Rightarrow &amp; (\\ln \\sin x)^{2}-4(\\ln \\sin x)(\\ln \\cos x)+ \\\\ &amp; 4(\\ln \\cos x)^{2}=0 \\\\ \\Rightarrow &amp; \\ln \\sin x=2 \\ln \\cos x \\\\ \\Rightarrow \\quad &amp; \\ln \\sin x=\\ln \\left(1-\\sin ^{2} x\\right) \\\\ \\Rightarrow \\quad \\sin ^{2} x+\\sin x-1=0 \\Rightarrow \\sin x=\\frac{-1+\\sqrt{5}}{2} \\end{array} \\]\u003c/p> \u003cp>So, \\( \\alpha+\\beta=4 \\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \u003c/p> \u003cp>Given a equation \\( \\log _{\\cos x} \\cot x+4 \\log _{\\sin x} \\tan x=1 \\)\u003c/p> \u003cp>\\[ \\begin{array}{ll} \\Rightarrow \\quad & \\frac{\\ln \\cos x-\\ln \\sin x}{\\ln \\cos x}+4 \\frac{\\ln \\sin x-\\ln \\cos x}{\\ln \\sin x}=1 \\\\ \\Rightarrow & (\\ln \\sin x)^{2}-4(\\ln \\sin x)(\\ln \\cos x)+ \\\\ & 4(\\ln \\cos x)^{2}=0 \\\\ \\Rightarrow & \\ln \\sin x=2 \\ln \\cos x \\\\ \\Rightarrow \\quad & \\ln \\sin x=\\ln \\left(1-\\sin ^{2} x\\right) \\\\ \\Rightarrow \\quad \\sin ^{2} x+\\sin x-1=0 \\Rightarrow \\sin x=\\frac{-1+\\sqrt{5}}{2} \\end{array} \\]\u003c/p> \u003cp>So, \\( \\alpha+\\beta=4 \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q93" data-gated="1">
-      <div class="qnum">Q93</div>
+      <div class="qhead"><div class="qnum">Q93</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\frac{{(x+1)}^{2}}{{x}^{3}+x}=\frac{A}{x}+\frac{Bx+C}{{x}^{2}+1}\), then \({\sin }^{−1}A+{\tan }^{−1}B+{\sec }^{−1}C=\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\pi }{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\pi }{6}\)</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5\pi }{6}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1163,7 +1167,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>We have, \\({(x+1)}^{2}=A\\left({x}^{2}+1\\right)+(Bx+C)x\\)\u003c/p> \u003cp>\\(\\Rightarrow {x}^{2}+1+2x=A{x}^{2}+A+B{x}^{2}+Cx\\)\u003c/p> \u003cp>Comparing the like terms, we have\u003c/p> \u003cp>\\(1=A+B,A=1,C=2\\)\u003c/p> \u003cp>\\(\\Rightarrow A=1,B=0,C=2\\)\u003c/p> \u003cp>\\(∴{\\sin }^{−1}A+{\\tan }^{−1}B+{\\sec }^{−1}C\\)\u003c/p> \u003cp>\\({\\sin }^{−1}1+{\\tan }^{−1}0+{\\sec }^{−1}2\\)\u003c/p> \u003cp>\\(={\\sin }^{−1}\\left(\\sin \\frac{\\pi }{2}\\right)+0+{\\sec }^{−1}\\left(\\sec \\frac{\\pi }{3}\\right)\\)\u003c/p> \u003cp>\\(=\\frac{5\\pi }{6}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q94" data-gated="1">
-      <div class="qnum">Q94</div>
+      <div class="qhead"><div class="qnum">Q94</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of real roots of the equation \({\tan }^{-1}\sqrt{x(x+1)}+{\sin }^{-1}\sqrt{{x}^{2}+x+1}=\frac{\pi }{4}\) is :</p> <p><strong>[JEE Main 2021, 20 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1175,7 +1179,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Domain of definition\u003c/p> \u003cp>\\(={-1,0}\\)\u003c/p> \u003cp>For \\(x=0\\) \\(LHS=\\frac{\\pi }{2}\\)\u003c/p> \u003cp>\\(x=-1\\) \\(LHS=\\frac{\\pi }{2}\\)\u003c/p> \u003cp>No solution.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q95" data-gated="1">
-      <div class="qnum">Q95</div>
+      <div class="qhead"><div class="qnum">Q95</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \({\left({\sin }^{-1}x\right)}^{2}-{\left({\cos }^{-1}x\right)}^{2}=a,0<x<1,a\neq 0\), then the value of \(2{x}^{2}-1\) is:</p> <p> </p> <p>[JEE Main 2021, 27 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\cos \left(\frac{2a}{\pi }\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\cos \left(\frac{4a}{\pi }\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sin \left(\frac{2a}{\pi }\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sin \left(\frac{4a}{\pi }\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1187,7 +1191,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Using \\(\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}\\)\u003c/p> \u003cp>\\((\\sin^{-1}x-\\cos^{-1}x)\\frac{\\pi}{2}=a\\)\u003c/p> \u003cp>\\(\\sin^{-1}x-\\cos^{-1}x=\\frac{2a}{\\pi}\\)\u003c/p> \u003cp>\\(\\sin^{-1}x+\\cos^{-1}x=\\frac{\\pi}{2}\\)\u003c/p> \u003cp>\\(2\\sin^{-1}x=\\frac{\\pi}{2}+\\frac{2a}{\\pi}\\)\u003c/p> \u003cp>\\(\\sin^{-1}x=\\frac{\\pi}{4}+\\frac{a}{\\pi}\\)\u003c/p> \u003cp>\\(x=\\sin\\left(\\frac{\\pi}{4}+\\frac{a}{\\pi}\\right)\\)\u003c/p> \u003cp>\\(2x^2-1=-\\cos\\left(2\\sin^{-1}x\\right)\\)\u003c/p> \u003cp>\\(=-\\cos\\left(\\frac{\\pi}{2}+\\frac{2a}{\\pi}\\right)\\)\u003c/p> \u003cp>\\(=\\sin\\left(\\frac{2a}{\\pi}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q96" data-gated="1">
-      <div class="qnum">Q96</div>
+      <div class="qhead"><div class="qnum">Q96</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The domain of the function \(f(x)=\sin ^{-1}\left(\frac{|x|+5}{x^2+1}\right)\) is \((-\infty,-a] \cup[a, \infty)\). Then \(a\) is equal to :</p> <p> </p> <p>[JEE Main 2020, 2 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\sqrt{17}}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1+\sqrt{17}}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\sqrt{17}-1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\text{ }\frac{\sqrt{17}}{2}+1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1199,7 +1203,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(f(x)=\\sin \\left(\\frac{|x|+5}{x^2+1}\\right)\\)\u003c/p> \u003cp>For domain :\u003c/p> \u003cp>\\(-1 \\leq \\frac{|x|+5}{x^2+1} \\leq 1\\)\u003c/p> \u003cp>Since \\(|x|+5 \\&amp; x^2+1\\) is always positive\u003cbr/>So \\(\\frac{|x|+5}{x^2+1} \\geq 0 \\forall x \\in R\\)\u003cbr/>So for domain:\u003c/p> \u003cp>\\(\\frac{|x|+5}{x^2+1} \\leq 1\\)\u003c/p> \u003cp>\\(\\Rightarrow|x|+5 \\leq x^2+1\\)\u003c/p> \u003cp>\\(\\Rightarrow 0 \\leq x^2-|x|-4\\)\u003c/p> \u003cp>\\(\\Rightarrow 0 \\leq\\left(|x|-\\frac{1+\\sqrt{17}}{2}\\right)\\left(|x|-\\frac{1-\\sqrt{17}}{2}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow|x| \\geq \\frac{1+\\sqrt{17}}{2}\\) or \\(|x| \\leq \\frac{1-\\sqrt{17}}{2} \\quad\\) (Rejected)\u003c/p> \u003cp>\\(\\Rightarrow x \\in\\left(-\\infty,-\\frac{1+\\sqrt{17}}{2}\\right] \\cup\\left[\\frac{1+\\sqrt{17}}{2}, \\infty\\right)\\)\u003c/p> \u003cp>So, \\(a=\\frac{1+\\sqrt{17}}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q97" data-gated="1">
-      <div class="qnum">Q97</div>
+      <div class="qhead"><div class="qnum">Q97</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \({\cot }^{-1}(\alpha )={\cot }^{-1}2+{\cot }^{-1}8+{\cot }^{-1}18+{\cot }^{-1}32+\ldots\). upto 100 terms, then \(\alpha\) is : </p> <p><strong>[JEE Main 2021, 17 Mar (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 1.02 \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 1.03 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 1.01 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 1.00 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1211,7 +1215,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({\\cot }^{-1}\\alpha =\\sum _{r=1}^{100}{\\cot }^{-1}\\left(2{r}^{2}\\right)=\\sum _{r=1}^{100}{\\tan }^{-1}\\frac{2}{4{r}^{2}}=\\sum _{r=1}^{100}{\\tan }^{-1}\\frac{(2r+1)-(2r-1)}{1+(2r+1)(2r-1)}\\)\u003c/p> \u003cp>\\(=\\sum _{r=1}^{100}\\left({\\tan }^{-1}(2r+1)-{\\tan }^{-1}(2r-1)\\right)={\\tan }^{-1}201-{\\tan }^{-1}1={\\tan }^{-1}\\left(\\frac{201-1}{1+201}\\right)\\)\u003c/p> \u003cp>\\(={\\tan }^{-1}\\frac{200}{202}={\\tan }^{-1}\\left(\\frac{100}{101}\\right)={\\cot }^{-1}\\left(\\frac{101}{100}\\right)\\)\u003c/p> \u003cp>\\(∴\\alpha =\\frac{101}{100}=1.01\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q98" data-gated="1">
-      <div class="qnum">Q98</div>
+      <div class="qhead"><div class="qnum">Q98</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If (sin<sup>–1</sup> <em>x</em>)<sup>2</sup> – (cos<sup>–1</sup> <em>x</em>)<sup>2</sup> = <em>a</em>;0 &lt; <em>x</em> &lt; 1;<em>a</em> \(\neq\)0, then the value of 2<em>x</em><sup>2</sup> – 1 is</p> <p><strong>[JEE Main 2021, 27 Aug (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \cos \left(\frac{4 \mathrm{a}}{\pi}\right) \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( \sin \left(\frac{2 \mathrm{a}}{\pi}\right) \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\( \cos \left(\frac{2 \mathrm{a}}{\pi}\right) \)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>\( \sin \left(\frac{4 \mathrm{a}}{\pi}\right) \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1220,10 +1224,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; \\text { Given } a=\\left(\\sin ^{-1} x\\right)^{2}-\\left(\\cos ^{-1} x\\right)^{2} \\\\ &amp; =\\left(\\sin ^{-1} x+\\cos ^{-1} x\\right)\\left(\\sin ^{-1} x-\\cos ^{-1} x\\right) \\\\ &amp; =\\frac{\\pi}{2}\\left(\\frac{\\pi}{2}-2 \\cos ^{-1} x\\right) \\\\ &amp; \\Rightarrow 2 \\cos ^{-1} x=\\frac{\\pi}{2}-\\frac{2 a}{\\pi} \\\\ &amp; \\Rightarrow \\cos ^{-1}\\left(2 x^{2}-1\\right)=\\frac{\\pi}{2}-\\frac{2 a}{\\pi} \\\\ &amp; \\Rightarrow 2 x^{2}-1=\\cos \\left(\\frac{\\pi}{2}-\\frac{2 a}{\\pi}\\right) \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p> \u003cp>\\[ \\begin{aligned} & \\text { Given } a=\\left(\\sin ^{-1} x\\right)^{2}-\\left(\\cos ^{-1} x\\right)^{2} \\\\ & =\\left(\\sin ^{-1} x+\\cos ^{-1} x\\right)\\left(\\sin ^{-1} x-\\cos ^{-1} x\\right) \\\\ & =\\frac{\\pi}{2}\\left(\\frac{\\pi}{2}-2 \\cos ^{-1} x\\right) \\\\ & \\Rightarrow 2 \\cos ^{-1} x=\\frac{\\pi}{2}-\\frac{2 a}{\\pi} \\\\ & \\Rightarrow \\cos ^{-1}\\left(2 x^{2}-1\\right)=\\frac{\\pi}{2}-\\frac{2 a}{\\pi} \\\\ & \\Rightarrow 2 x^{2}-1=\\cos \\left(\\frac{\\pi}{2}-\\frac{2 a}{\\pi}\\right) \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q99" data-gated="1">
-      <div class="qnum">Q99</div>
+      <div class="qhead"><div class="qnum">Q99</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of solutions of the equation \( \sin ^{-1}\left[x^{2}+\frac{1}{3}\right]+\cos ^{-1}\left[x^{2}-\frac{2}{3}\right]=x^{2} \), for \( x \in[-1,1] \), and \( [\mathrm{x}] \) denotes the greatest integer less than or equal to \( x \), is :</p> <p> </p> <p>[JEE Main 2021, 17 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">b</span><span><p>Infinite</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1235,7 +1239,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\sin ^{-1}\\left[x^2+\\frac{1}{3}\\right]+\\cos ^{-1}\\left[x^2-\\frac{2}{3}\\right]=x^2\\)\u003c/p> \u003cp>Now, \\(\\sin ^{-1}\\left[x^2+\\frac{1}{3}\\right]\\) is defined if\u003c/p> \u003cp>\\(-1 \\leq x^2+\\frac{1}{3}&lt;2 \\Rightarrow \\frac{-4}{3} \\leq x^2&lt;\\frac{5}{3}\\)\u003c/p> \u003cp>\\(\\Rightarrow 0 \\leq x^2&lt;\\frac{5}{3} ..........(1)\\)\u003c/p> \u003cp>and \\(\\cos ^{-1}\\left[x^2-\\frac{2}{3}\\right]\\) is defined if\u003c/p> \u003cp>\\( -1 \\leq x^2-\\frac{2}{3}&lt;2 \\Rightarrow \\frac{-1}{3} \\leq x^2&lt;\\frac{8}{3} \\)\u003cbr/>\\(\\Rightarrow 0 \\leq x^2&lt;\\frac{8}{3} ..........(2)\\)\u003cbr/>So, form (1) and (2) we can conclude\u003c/p> \u003cp>\\( 0 \\leq x^2&lt;\\frac{5}{3}\\)\u003cbr/>Case - I if \\(0 \\leq \\mathrm{x}^2&lt;\\frac{2}{3}\\)\u003c/p> \u003cp>\\( \\sin ^{-1}(0)+\\cos ^{-1}(-1)=\\mathrm{x}^2\\)\u003cbr/>\\( \\Rightarrow \\mathrm{x}+\\pi=\\mathrm{x}^2\\)\u003cbr/>\\( \\Rightarrow \\mathrm{x}^2=\\pi\\)\u003cbr/>but \\(\\pi \\notin\\left[0, \\frac{2}{3}\\right)\\)\u003cbr/>⇒ No value of ' x '\u003cbr/>Case - II if \\(\\frac{2}{3} \\leq x^2&lt;\\frac{5}{3}\\)\u003c/p> \u003cp>\\( \\sin ^{-1}(1)+\\cos ^{-1}(0)=x^2 \\)\u003cbr/>\\( \\Rightarrow \\frac{\\pi}{2}+\\frac{\\pi}{2}=x^2\\)\u003cbr/>\\( \\Rightarrow x^2=\\pi\\)\u003cbr/>but \\( \\pi \\notin\\left[\\frac{2}{3}, \\frac{5}{3}\\right) \\)\u003cbr/>\\( \\Rightarrow \\text { No value of ' } x^{\\prime}\\)\u003cbr/>So, number of solutions of the equation is zero.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q100" data-gated="1">
-      <div class="qnum">Q100</div>
+      <div class="qhead"><div class="qnum">Q100</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \( a_{1}=1, a_{2}, a_{3}, a_{4}, \ldots \) be consecutive natural</p> <p>numbers.</p> <p>Then</p> <p>\( \tan ^{-1}\left(\frac{1}{1+a_{1} a_{2}}\right)+\tan ^{-1}\left(\frac{1}{1+a_{2} a_{3}}\right)+\ldots+ \)</p> <p>\( \tan ^{-1}\left(\frac{1}{1+a_{2021} a_{2022}}\right) \) is equal to</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{\pi}{4}-\cot ^{-1}(2022) \)</p> <p> </p></span></div><div class="option"><span class="key">b</span><span><p>\( \cot ^{-1}(2022)-\frac{\pi}{4} \)</p> <p> </p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\pi }{4}-{\tan }^{-1}(2022)\)</p> <p> </p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1244,7 +1248,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} &amp; a_{2}-a_{1}=a_{3}-a_{2}=\\ldots .=a_{2022}-a_{2021}=1 . \\\\ &amp; \\therefore \\tan ^{-1}\\left(\\frac{a_{2}-a_{1}}{1+a_{1} a_{2}}\\right)+\\tan ^{-1}\\left(\\frac{a_{3}-a_{2}}{1+a_{2} a_{3}}\\right)+\\ldots .+\\tan ^{-1}\\left(\\frac{a_{2022}-a_{2021}}{1+a_{2021} a_{2022}}\\right) \\\\ &amp; =\\left[\\left(\\tan ^{-1} a_{2}\\right)-\\tan ^{-1} a_{1}\\right]+\\left[\\tan ^{-1} a_{3}-\\tan ^{-1} a_{2}\\right]+\\ldots \\\\ &amp; +\\left[\\tan ^{-1} a_{2022}-\\tan ^{-1} a_{2021}\\right] \\\\ &amp; =\\tan ^{-1} a_{2022}-\\tan ^{-1} a_{1} \\\\ &amp; =\\tan ^{-1}(2022)-\\tan ^{-1} 1=\\tan ^{-1} 2022-\\frac{\\pi}{4} \\\\ &amp; =\\left(\\frac{\\pi}{2}-\\cot ^{-1}(2022)\\right) \\\\ &amp; =\\left(\\frac{\\pi}{2}-\\cot ^{-1}(2022)\\right)-\\frac{\\pi}{4} \\\\ &amp; =\\frac{\\pi}{4}-\\cot ^{-1}(2022) \\text { (option 1) } \\\\ &amp; \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> \u003c/p> \u003cp>\\[ \\begin{aligned} & a_{2}-a_{1}=a_{3}-a_{2}=\\ldots .=a_{2022}-a_{2021}=1 . \\\\ & \\therefore \\tan ^{-1}\\left(\\frac{a_{2}-a_{1}}{1+a_{1} a_{2}}\\right)+\\tan ^{-1}\\left(\\frac{a_{3}-a_{2}}{1+a_{2} a_{3}}\\right)+\\ldots .+\\tan ^{-1}\\left(\\frac{a_{2022}-a_{2021}}{1+a_{2021} a_{2022}}\\right) \\\\ & =\\left[\\left(\\tan ^{-1} a_{2}\\right)-\\tan ^{-1} a_{1}\\right]+\\left[\\tan ^{-1} a_{3}-\\tan ^{-1} a_{2}\\right]+\\ldots \\\\ & +\\left[\\tan ^{-1} a_{2022}-\\tan ^{-1} a_{2021}\\right] \\\\ & =\\tan ^{-1} a_{2022}-\\tan ^{-1} a_{1} \\\\ & =\\tan ^{-1}(2022)-\\tan ^{-1} 1=\\tan ^{-1} 2022-\\frac{\\pi}{4} \\\\ & =\\left(\\frac{\\pi}{2}-\\cot ^{-1}(2022)\\right) \\\\ & =\\left(\\frac{\\pi}{2}-\\cot ^{-1}(2022)\\right)-\\frac{\\pi}{4} \\\\ & =\\frac{\\pi}{4}-\\cot ^{-1}(2022) \\text { (option 1) } \\\\ & \\end{aligned} \\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Maths PYQs</h3>

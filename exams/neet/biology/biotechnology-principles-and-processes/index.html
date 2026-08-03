@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Biotechnology - Principles and Processes","item":"https://yespyq.com/exams/neet/biology/biotechnology-principles-and-processes/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Biotechnology - Principles and Processes</h1>
       <p>81 NEET Biology previous year questions on <b>Biotechnology - Principles and Processes</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The restriction enzymes are used in genetic engineering, because:</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>they can cut DNA at specific base sequence.</span></div><div class="option"><span class="key">b</span><span>they are nucleases that cut DNA at variable sites.</span></div><div class="option"><span class="key">c</span><span>they can degrade harmful proteins.</span></div><div class="option"><span class="key">d</span><span>they can join different DNA fragments.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below is a sample of a portion of DNA strand giving the base sequence on the opposite strands. What is so special shown in it? _________GAATTC ________ __________ CTTAAG ________</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Replication completed</span></div><div class="option"><span class="key">b</span><span>Deletion mutation</span></div><div class="option"><span class="key">c</span><span>Start codon at the 5' end</span></div><div class="option correct"><span class="key">d</span><span>Palindromic sequence of base pairs</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following in not a feature of the plasmids?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Circular structure</span></div><div class="option"><span class="key">b</span><span>Transferable</span></div><div class="option correct"><span class="key">c</span><span>Single-stranded</span></div><div class="option"><span class="key">d</span><span>Independent replication</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a mixture, DNA fragments are separated by</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Restriction digestion</span></div><div class="option correct"><span class="key">b</span><span>Electrophoresis</span></div><div class="option"><span class="key">c</span><span>Polymerase chain reaction</span></div><div class="option"><span class="key">d</span><span>Bioprocess engineering</span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">During the purification process for recombinant DNA technology, addition of chilled ethanol precipitates out [NEET 2021]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Histones</span></div><div class="option"><span class="key">b</span><span>Polysaccharides</span></div><div class="option"><span class="key">c</span><span>RNA</span></div><div class="option correct"><span class="key">d</span><span>DNA</span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">During the process of gene amplification using PCR, if very high temperature is not maintained in the beginning, then which of the following steps of PCR will be affected first?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Extension</span></div><div class="option correct"><span class="key">b</span><span>Denaturation</span></div><div class="option"><span class="key">c</span><span>Ligation</span></div><div class="option"><span class="key">d</span><span>Annealing</span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Hind II always cuts DNA molecules at a particular point called recognition sequence and it consists of: [NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>10 bp</span></div><div class="option"><span class="key">b</span><span>8 bp</span></div><div class="option"><span class="key">c</span><span>4 bp</span></div><div class="option correct"><span class="key">d</span><span>6 bp</span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Plasmid pBR322 has PstI restriction enzyme site within gene that confers ampicillin resistance, If this enzyme is used for inserting a gene for -galactoside production and the recombinant plasmid is inserted in an E.coli strain</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>The transformed cells will have the ability to resist ampicillin as well as produce - galactoside.</span></div><div class="option"><span class="key">b</span><span>It will lead to lysis of host cell.</span></div><div class="option"><span class="key">c</span><span>It will be able to produce a novel protein with dual ability.</span></div><div class="option correct"><span class="key">d</span><span>It will not be able to confer ampicillin resistance to host cell.</span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">DNA precipitation out of a mixture of biomolecules can be achieved by treatment with</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Isopropanol</span></div><div class="option"><span class="key">b</span><span>Chilled ethanol</span></div><div class="option"><span class="key">c</span><span>Methanol at room temperature</span></div><div class="option"><span class="key">d</span><span>Chilled chloroform</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The correct answer is Option B — Chilled ethanol. Explanation: During DNA isolation, after removing proteins, RNA, and other biomolecules, DNA is precipitated out of the solution by adding chilled ethanol. DNA is insoluble in cold alcohol, so it separates out as fine white threads that can be spooled or collected. The low temperature enhances precipitation and prevents DNA degradation. Isopropanol can also precipitate DNA but NCERT specifically mentions chilled ethanol for DNA precipitation. Methanol at room temperature and chloroform are not used for DNA precipitation. Therefore, the correct choice is chilled ethanol.","fmt":""}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the correct pair from the following. [NEET 2020]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Ligases - Join the two DNA molecules</span></div><div class="option"><span class="key">b</span><span>Polymerases - Break the DNA into fragments</span></div><div class="option"><span class="key">c</span><span>Nucleases - Separate the two strands of DNA</span></div><div class="option"><span class="key">d</span><span>Exonucleases - Make cuts at specific positions within DNA</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Ligases are enzymes that play a crucial role in molecular biology by catalyzing the joining of two DNA molecules. They create phosphodiester bonds between adjacent nucleotides, sealing breaks or nicks in the DNA backbone. This process is fundamental in genetic engineering and molecular cloning, facilitating the construction of recombinant DNA molecules. Ligases are essential for linking donor DNA fragments with vectors, enabling the production of genetically modified organisms or the amplification of specific DNA sequences.","fmt":""}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is incorrect?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bio-reactors have an agitator system, an oxygen delivery system and foam control system.</p></span></div><div class="option"><span class="key">b</span><span><p>A bio-reactor provides optimal growth conditions for achieving the desired product.</p></span></div><div class="option"><span class="key">c</span><span><p>Most commonly used bio-reactors are of stirring type.</p></span></div><div class="option"><span class="key">d</span><span><p>Bio-reactors are used to produce small scale bacterial cultures.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D — Bio-reactors are used to produce small scale bacterial cultures.\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>Bio-reactors are designed for \u003cstrong>large-scale\u003c/strong> production of biologically derived products such as enzymes, vaccines, or antibodies — \u003cstrong>not small-scale cultures\u003c/strong>.\u003cbr/>They maintain \u003cstrong>optimal growth conditions\u003c/strong> (temperature, pH, oxygen, nutrients) and include components like \u003cstrong>agitators, foam control, and oxygen delivery systems\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statement related to gel electrophoresis.</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Separated DNA fragments can be direct seen under UV radiation.</p></span></div><div class="option"><span class="key">b</span><span><p>Separated DNA can be extracted from gel piece.</p></span></div><div class="option"><span class="key">c</span><span><p>Fragment of DNA moves toward anode.</p></span></div><div class="option"><span class="key">d</span><span><p>Sieving effect of agarose gel helps in separation of DNA fragments.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>While gel electrophoresis is used to separate DNA fragments based on their size, pure DNA fragments cannot be visualized directly under UV radiation. To see the separated DNA bands, the gel is stained with a dye like ethidium bromide, which then fluoresces under UV light\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The "Ti plasmid" of <em>Agrobacterium tumefaciens </em>stands for</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Temperature independent plasmid</p></span></div><div class="option"><span class="key">b</span><span><p>Tumour inhibiting plasmid</p></span></div><div class="option"><span class="key">c</span><span><p>Tumor independent plasmid</p></span></div><div class="option"><span class="key">d</span><span><p>Tumor inducing plasmid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D — Tumor inducing plasmid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The \u003cstrong>Ti plasmid\u003c/strong> (Tumor inducing plasmid) is found in \u003cem>Agrobacterium tumefaciens\u003c/em>, a soil bacterium that causes \u003cstrong>crown gall disease\u003c/strong> in dicot plants.\u003cbr/>It carries \u003cstrong>T-DNA\u003c/strong>, which integrates into the plant genome and induces \u003cstrong>tumor (gall) formation\u003c/strong> — hence the name \u003cem>tumor inducing\u003c/em> plasmid.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a chromosome, there is a specific DNA sequence, responsible for initiating replication. It is called as:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>recognition sequence</p></span></div><div class="option"><span class="key">b</span><span><p>cloning site</p></span></div><div class="option"><span class="key">c</span><span><p>restriction site</p></span></div><div class="option"><span class="key">d</span><span><p>ori site</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is D. ori site.\u003c/p> \u003cp>The ori site (origin of replication) is a specific DNA sequence in a chromosome where DNA replication begins. Other options like recognition sequence, cloning site, and restriction site have different functions and are not involved in initiating replication.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hind II always cuts DNA molecules at a particular point called recognition sequence and it consists of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 bp</p></span></div><div class="option"><span class="key">b</span><span><p>8 bp</p></span></div><div class="option"><span class="key">c</span><span><p>6 bp</p></span></div><div class="option"><span class="key">d</span><span><p>4 bp</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>Hind II was the first restriction endonuclease discovered that cuts DNA at a specific site — known as a recognition sequence.\u003c/p> \u003c/li> \u003cli> \u003cp>This recognition sequence is 6 base pairs (bp) long and is palindromic, meaning the sequence reads the same on both strands in the 5′ \\(\\to\\) 3′ direction.\u003c/p> \u003c/li> \u003cli> \u003cp>Hind II recognizes a specific 6-bp sequence and cuts DNA within this site, producing blunt ends.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following are the steps involved in the process of PCR.<br/>A. Annealing<br/>B. Amplification ( \(~1\) billion times)<br/>C. Denaturation<br/>D. Treatment with Taq polymerase and deoxynucleotides<br/>E. Extension</p> <p>Choose the correct sequence of steps of PCR from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{C}\to \mathrm{A}\to \mathrm{D}\to \mathrm{E}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{A}\to \mathrm{B}\to \mathrm{E}\to \mathrm{D}\to \mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{A}\to \mathrm{C}\to \mathrm{E}\to \mathrm{D}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{D}\to \mathrm{B}\to \mathrm{E}\to \mathrm{C}\to \mathrm{A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>Denaturation (C) \\(\\to\\) Double-stranded DNA is heated (~94–98°C) to separate the strands.\u003c/p> \u003c/li> \u003cli> \u003cp>Annealing (A) \\(\\to\\) Primers bind to the complementary sequences on the single-stranded DNA (~50–65°C).\u003c/p> \u003c/li> \u003cli> \u003cp>Treatment with Taq polymerase and deoxynucleotides (D) \\(\\to\\) Taq polymerase and dNTPs are present for DNA synthesis.\u003c/p> \u003c/li> \u003cli> \u003cp>Extension (E) \\(\\to\\) Taq polymerase synthesizes new DNA strands (~72°C).\u003c/p> \u003c/li> \u003cli> \u003cp>Amplification (B) \\(\\to\\) Repeated cycles exponentially amplify DNA (up to ~1 billion copies).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.</p> <p>Assertion A: In recombinant DNA technology, lysozyme is used for disrupting bacterial cells while cellulase is for plant cells.</p> <p>Reason R: Isolation of genetic material needs disruption of cells.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are correct and R is the correct explanation of A</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are correct but R is not the correct explanation of A</p></span></div><div class="option"><span class="key">c</span><span><p>A is correct but R is not correct</p></span></div><div class="option"><span class="key">d</span><span><p>A is not correct but R is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Assertion (A) is correct:\u003cbr/>In recombinant DNA technology, isolation of DNA requires breaking open the cells. Since bacterial and plant cells have different cell wall compositions, different enzymes are used for cell disruption. Lysozyme is used to digest the bacterial cell wall, whereas cellulase is used to digest the plant cell wall.\u003c/p> \u003cp>Reason (R) is also correct:\u003cbr/>Genetic material is present inside the cells. Therefore, for the isolation of DNA, the cells must first be disrupted so that their contents, including DNA, are released into the solution.\u003c/p> \u003cp>R is the correct explanation of A:\u003cbr/>The use of lysozyme for bacterial cells and cellulase for plant cells is necessary because isolation of genetic material requires disruption of cells. Thus, the need for cell disruption explains why these specific enzymes are used.\u003c/p> \u003cp>Hence, both Assertion (A) and Reason (R) are correct, and Reason (R) is the correct explanation of Assertion (A).\u003c/p> \u003cp>Answer: A. Both A and R are correct and R is the correct explanation of A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is incorrect?</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bio-reactors have an agitator system, an oxygen delivery system and foam control system.</p></span></div><div class="option"><span class="key">b</span><span><p>A bio-reactor provides optimal growth conditions for achieving the desired product.</p></span></div><div class="option"><span class="key">c</span><span><p>Most commonly used bio-reactors are of stirring type.</p></span></div><div class="option"><span class="key">d</span><span><p>Bio-reactors are used to produce small scale bacterial cultures.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D — Bio-reactors are used to produce small scale bacterial cultures.\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>Bio-reactors are designed for \u003cstrong>large-scale\u003c/strong> production of biologically derived products such as enzymes, vaccines, or antibodies — \u003cstrong>not small-scale cultures\u003c/strong>.\u003cbr/>They maintain \u003cstrong>optimal growth conditions\u003c/strong> (temperature, pH, oxygen, nutrients) and include components like \u003cstrong>agitators, foam control, and oxygen delivery systems\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a chromosome, there is a specific DNA sequence, responsible for initiating replication. It is called as:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>recognition sequence</p></span></div><div class="option"><span class="key">b</span><span><p>cloning site</p></span></div><div class="option"><span class="key">c</span><span><p>restriction site</p></span></div><div class="option"><span class="key">d</span><span><p>ori site</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is D. ori site.\u003c/p> \u003cp>The ori site (origin of replication) is a specific DNA sequence in a chromosome where DNA replication begins. Other options like recognition sequence, cloning site, and restriction site have different functions and are not involved in initiating replication.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The "Ti plasmid" of <em>Agrobacterium tumefaciens </em>stands for</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Temperature independent plasmid</p></span></div><div class="option"><span class="key">b</span><span><p>Tumour inhibiting plasmid</p></span></div><div class="option"><span class="key">c</span><span><p>Tumor independent plasmid</p></span></div><div class="option"><span class="key">d</span><span><p>Tumor inducing plasmid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Correct answer: D — Tumor inducing plasmid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>The \u003cstrong>Ti plasmid\u003c/strong> (Tumor inducing plasmid) is found in \u003cem>Agrobacterium tumefaciens\u003c/em>, a soil bacterium that causes \u003cstrong>crown gall disease\u003c/strong> in dicot plants.\u003cbr/>It carries \u003cstrong>T-DNA\u003c/strong>, which integrates into the plant genome and induces \u003cstrong>tumor (gall) formation\u003c/strong> — hence the name \u003cem>tumor inducing\u003c/em> plasmid.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I: Plasmids are autonomously replicating DNA.</p> <p>Statement II: Plasmids are extrachromosomal DNA.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Plasmids are small, circular, double-stranded DNA molecules found in many bacteria. Plasmids exist outside the bacterial chromosome and possess the ability to replicate independently of the chromosomal DNA.\u003c/p> \u003cul> \u003cli>Statement I: Plasmids are autonomously replicating DNA.\u003cbr/>This statement is correct because plasmids contain their own origin of replication and can replicate independently.\u003c/li> \u003cli>Statement II: Plasmids are extrachromosomal DNA.\u003cbr/>This statement is correct because plasmids are present outside the main chromosomal DNA of the bacterial cell.\u003c/li> \u003c/ul> \u003cp>Therefore, both Statement I and Statement II are correct.\u003c/p> \u003cp>Correct Answer: A. Both Statement I and Statement II are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are correct about EcoRI?<br/>A. Cut the DNA with blunt end<br/>B. Cut the DNA with sticky end<br/>C. Recognises a specific palindromic sequence<br/>D. Cut the DNA between the base G and A where it encounters the DNA sequence 'GAATTC'<br/>E. Exonuclease</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, C, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C, D only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D, E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>    \u003cstrong>B. Cut the DNA with sticky end:\u003c/strong>  EcoRI is a restriction enzyme that cuts DNA at specific palindromic sequences, resulting in sticky ends. This means the cut leaves overhanging nucleotides that can pair with complementary bases on another DNA fragment.            \u003c/li> \u003cli>    \u003cstrong>C. Recognizes a specific palindromic sequence:\u003c/strong>  EcoRI recognizes the specific palindromic sequence \"GAATTC\". A palindromic sequence reads the same forwards and backwards.            \u003c/li> \u003cli>    \u003cstrong>D. Cut the DNA between the base G and A where encounters the DNA sequence 'GAATTC':\u003c/strong>  EcoRI cuts the DNA backbone between the G and A bases within the sequence \"GAATTC\".     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the fate of a piece of DNA carrying only gene of interest which is transferred into an alien organism?<br/>A. The piece of DNA would be able to multiply itself independently in the progeny cells of the organism.<br/>B. It may get integrated into the genome of the recipient.<br/>C. It may multiply and be inherited along with the host DNA.<br/>D. The alien piece of DNA is not an integral part of chromosome.<br/>E. It shows ability to replicate.</p> <p>Choose the <strong>correct </strong>answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>When a foreign DNA fragment (gene of interest) is introduced into a host (alien) organism without a vector, it cannot replicate on its own because it lacks an origin of replication.\u003c/p> \u003cp>Its possible fates are:\u003c/p> \u003cul> \u003cli>(B) It may integrate into the genome of the host organism.\u003c/li> \u003cli>(C) Once integrated, it can replicate and be inherited along with the host DNA during cell division.\u003c/li> \u003c/ul> \u003cp>Therefore, only B and C correctly describe the fate of such a DNA fragment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct with respect to DNA separation, isolation and visualization?</p> <p>A. The cutting of DNA is done by molecular scissors.</p> <p>B. The DNA fragments separate according to their size in an agarose gel, upon electrophoresis.</p> <p>C. The separated DNA fragments can be seen without staining when exposed to UV light.</p> <p>D. The separated DNA fragments, when stained with ethidium bromide, can be seen in visible light.</p> <p>Choose the <strong>correct </strong>answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and D only </p></span></div><div class="option"><span class="key">c</span><span><p>B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>A and B only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>DNA separation, isolation and visualization: involves cutting DNA, separating fragments by size using electrophoresis, and visualising them after staining\u003c/p> \u003cul> \u003cli>Statement A: Correct → DNA is cut by restriction enzymes, which are called molecular scissors\u003c/li> \u003cli>Statement B: Correct → During agarose gel electrophoresis, DNA fragments separate based on their size\u003c/li> \u003cli>Statement C: Incorrect → DNA fragments cannot be seen without staining; they are not visible under UV light unless stained\u003c/li> \u003cli>Statement D: Incorrect → Ethidium bromide-stained DNA is visualised under UV light, not visible light\u003c/li> \u003c/ul> \u003cp>Thus, the correct statements are: A and B only\u003c/p> \u003cp>Final Answer: Option D\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statement related to gel electrophoresis.</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Separated DNA fragments can be direct seen under UV radiation.</p></span></div><div class="option"><span class="key">b</span><span><p>Separated DNA can be extracted from gel piece.</p></span></div><div class="option"><span class="key">c</span><span><p>Fragment of DNA moves toward anode.</p></span></div><div class="option"><span class="key">d</span><span><p>Sieving effect of agarose gel helps in separation of DNA fragments.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>While gel electrophoresis is used to separate DNA fragments based on their size, pure DNA fragments cannot be visualized directly under UV radiation. To see the separated DNA bands, the gel is stained with a dye like ethidium bromide, which then fluoresces under UV light\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the <strong>correct</strong> sequence of steps in each cycle of Polymerase Chain Reaction :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Denaturation → Annealing → Extension</p></span></div><div class="option"><span class="key">b</span><span><p>Denaturation → Extension → Annealing</p></span></div><div class="option"><span class="key">c</span><span><p>Extension → Annealing → Denaturation</p></span></div><div class="option"><span class="key">d</span><span><p>Annealing → Denaturation → Extension</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Each cycle of Polymerase Chain Reaction (PCR) involves three main steps carried out in a specific order.\u003c/p> \u003cul> \u003cli>First, denaturation occurs, where the double-stranded DNA is heated to separate into single strands.\u003c/li> \u003cli>Next, annealing takes place, where primers bind (hybridise) to the complementary sequences on the DNA strands.\u003c/li> \u003cli>Finally, extension occurs, where DNA polymerase synthesizes new DNA strands by extending the primers.\u003c/li> \u003c/ul> \u003cp>Thus, the correct sequence is - Denaturation → Annealing → Extension\u003c/p> \u003cp>Final answer: Option A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the restriction endonuclease enzymes whose restriction sites are present for the tetracycline resistance (\(te{t}^{R}\) ) gene in the pBR322 cloning vector.</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bam HI and Sal I</p></span></div><div class="option"><span class="key">b</span><span><p>Sal I and Pst I</p></span></div><div class="option"><span class="key">c</span><span><p>Pst I and Pvu I</p></span></div><div class="option"><span class="key">d</span><span><p>Pvu I and Bam HI</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In the pBR322 plasmid map:\u003c/p> \u003cul> \u003cli> \u003cp>The tetracycline-resistance (\\({\\mathrm{tet}}^{\\mathrm{R}}\\)) gene contains restriction sites for\u003cbr/>\\(\\to\\) BamHI\u003cbr/>\\(\\to\\) SalI\u003c/p> \u003c/li> \u003c/ul> \u003cp>These enzymes cut within the \\({\\mathrm{tet}}^{\\mathrm{R}}\\) gene and are commonly used to check insertional inactivation of tetracycline resistance.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are not true regarding restriction endonucleases?<br/>A. They are called molecular scissors.<br/>B. These are the enzymes responsible for restricting the growth of bacteriophages in <em>E. coli</em>.<br/>C. They cut the DNA only at the centre of the palindromic sites.<br/>D. They remove nucleotides only from the ends of DNA fragments.<br/>E. They recognise specific palindromic base-pair sequences.<br/>Choose the answer from the options given below :</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>B and E only</p></span></div><div class="option"><span class="key">c</span><span><p>C and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A and E only </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>\u003cstrong>A. They are called molecular scissors → True\u003c/strong>\u003cbr/>Restriction endonucleases cleave DNA at specific recognition sites, so they are commonly referred to as\u003cem> \u003c/em>molecular scissors in genetic engineering.\u003c/li> \u003cli>\u003cstrong>B. Responsible for restricting bacteriophage growth in \u003cem>E. coli\u003c/em> → True\u003c/strong>\u003cbr/>These enzymes are part of the bacterial defense system. They cut foreign DNA (like bacteriophage DNA), thereby “restricting” its growth.\u003c/li> \u003cli>\u003cstrong>C. They cut DNA only at the centre of palindromic sites → False\u003c/strong>\u003cbr/>Restriction enzymes recognize palindromic sequences, but they do not always cut exactly at the center. Many produce \u003cstrong>staggered (sticky) ends\u003c/strong>, while some produce blunt ends.\u003c/li> \u003cli>\u003cstrong>D. They remove nucleotides only from ends of DNA fragments → False\u003c/strong>\u003cbr/>This is a property of \u003cstrong>exonucleases\u003c/strong>. Restriction endonucleases cut \u003cstrong>within\u003c/strong> the DNA strand at specific internal sites, not from the ends.\u003c/li> \u003cli>\u003cstrong>E. They recognise specific palindromic base-pair sequences → True\u003c/strong>\u003cbr/>Each restriction enzyme has a specific recognition sequence, usually a palindrome (same sequence when read 5'→3' on both strands).\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Final Answer: C and D only (Option C)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hind II always cuts DNA molecules at a particular point called recognition sequence and it consists of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 bp</p></span></div><div class="option"><span class="key">b</span><span><p>8 bp</p></span></div><div class="option"><span class="key">c</span><span><p>6 bp</p></span></div><div class="option"><span class="key">d</span><span><p>4 bp</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>Hind II was the first restriction endonuclease discovered that cuts DNA at a specific site — known as a recognition sequence.\u003c/p> \u003c/li> \u003cli> \u003cp>This recognition sequence is 6 base pairs (bp) long and is palindromic, meaning the sequence reads the same on both strands in the 5′ → 3′ direction.\u003c/p> \u003c/li> \u003cli> \u003cp>Hind II recognizes a specific 6-bp sequence and cuts DNA within this site, producing blunt ends.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hind II always cuts DNA molecules at a particular point called recognition sequence and it consists of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 bp</p></span></div><div class="option"><span class="key">b</span><span><p>8 bp</p></span></div><div class="option"><span class="key">c</span><span><p>4 bp</p></span></div><div class="option"><span class="key">d</span><span><p>6 bp</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>Hind II was the first restriction endonuclease discovered that cuts DNA at a specific site — known as a recognition sequence.\u003c/p> \u003c/li> \u003cli> \u003cp>This recognition sequence is 6 base pairs (bp) long and is palindromic, meaning the sequence reads the same on both strands in the 5′ → 3′ direction.\u003c/p> \u003c/li> \u003cli> \u003cp>Hind II recognizes a specific 6-bp sequence and cuts DNA within this site, producing blunt ends.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the fate of a piece of DNA carrying only gene of interest which is transferred into an alien organism?<br/>A. The piece of DNA would be able to multiply itself independently in the progeny cells of the organism.<br/>B. It may get integrated into the genome of the recipient.<br/>C. It may multiply and be inherited along with the host DNA.<br/>D. The alien piece of DNA is not an integral part of chromosome.<br/>E. It shows ability to replicate.</p> <p>Choose the <strong>correct </strong>answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>When a foreign DNA fragment (gene of interest) is introduced into a host (alien) organism without a vector, it cannot replicate on its own because it lacks an origin of replication.\u003c/p> \u003cp>Its possible fates are:\u003c/p> \u003cul> \u003cli>(B) It may integrate into the genome of the host organism.\u003c/li> \u003cli>(C) Once integrated, it can replicate and be inherited along with the host DNA during cell division.\u003c/li> \u003c/ul> \u003cp>Therefore, only B and C correctly describe the fate of such a DNA fragment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Recombinant DNA molecule can be created normally by cutting the vector DNA and target DNA respectively with:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Hind II, Hind II</p></span></div><div class="option"><span class="key">b</span><span><p>Hind II, Alu I</p></span></div><div class="option"><span class="key">c</span><span><p>Hind II, EcoR I</p></span></div><div class="option"><span class="key">d</span><span><p>Hind II, Bam H</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Recombinant DNA technology involves joining DNA fragments from different sources. To create a recombinant DNA molecule, both the vector DNA (the carrier) and the target DNA (the desired gene) must be cut with the same restriction enzyme, so that their \"sticky ends\" can complementarily pair and be joined together by DNA ligase. If you use different restriction enzymes, the ends won't match and the DNA fragments cannot be ligated together. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Insertion of a foreign DNA at BamHI site in an <em>E. coli </em>cloning vector pBR322 results in the loss of antibiotic resistance towards:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Gentamycin</p></span></div><div class="option"><span class="key">b</span><span><p>Ampicillin and tetracycline</p></span></div><div class="option"><span class="key">c</span><span><p>Tetracycline</p></span></div><div class="option"><span class="key">d</span><span><p>Ampicillin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Insertion of foreign DNA into a cloning vector can disrupt a gene (insertional inactivation), leading to loss of its function.\u003c/p> \u003cp>In pBR322, there are two antibiotic resistance genes:\u003c/p> \u003cul> \u003cli>ampᴿ → ampicillin resistance\u003c/li> \u003cli>tetᴿ → tetracycline resistance\u003c/li> \u003c/ul> \u003cp>Option A: Incorrect → Gentamycin resistance gene is not present in pBR322\u003cbr/>Option B: Incorrect → Only one gene is disrupted, not both\u003cbr/>Option C: Correct → BamHI site lies within the tetracycline resistance gene, so insertion disrupts tetᴿ\u003cbr/>Option D: Incorrect → Ampicillin resistance gene remains unaffected\u003c/p> \u003cp>Thus, the correct answer is: Tetracycline\u003c/p> \u003cp>Final Answer: Option C\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are correct about EcoR1?<br/>A. Cut the DNA with blunt end<br/>B. Cut the DNA with sticky end<br/>C. Recognises a specific palindromic sequence<br/>D. Cut the DNA between the base G and A wher encounters the DNA sequence 'GAATTC<br/>E. Exonuclease</p> <p>Choose the correct answer from the options giver below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, C, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C, D only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D, E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>    \u003cstrong>B. Cut the DNA with sticky end:\u003c/strong>  EcoRI is a restriction enzyme that cuts DNA at specific palindromic sequences, resulting in sticky ends. This means the cut leaves overhanging nucleotides that can pair with complementary bases on another DNA fragment.            \u003c/li> \u003cli>    \u003cstrong>C. Recognizes a specific palindromic sequence:\u003c/strong>  EcoRI recognizes the specific palindromic sequence \"GAATTC\". A palindromic sequence reads the same forwards and backwards.            \u003c/li> \u003cli>    \u003cstrong>D. Cut the DNA between the base G and A where encounters the DNA sequence 'GAATTC':\u003c/strong>  EcoRI cuts the DNA backbone between the G and A bases within the sequence \"GAATTC\".     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Polymerase chain reaction (PCR) amplifies DNA following the equation</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2n+1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2{N}^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({N}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({2}^{n}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The Polymerase Chain Reaction (PCR) is a technique used to amplify a specific segment of DNA. It works by repeating cycles of denaturation, annealing, and extension. After each cycle, the number of DNA copies doubles.\u003c/p> \u003cp>So, if n is the number of cycles, then the total number of DNA copies formed is 2\u003csup>n\u003c/sup> times the original.\u003cbr/>For example, after 5 cycles, DNA copies = 2\u003csup>5\u003c/sup> = 32 copies.\u003c/p> \u003cul> \u003cli> \u003cp>Option A (2n+1), B (2N\u003csup>2\u003c/sup>), and C (N\u003csup>2\u003c/sup>) are incorrect because PCR follows exponential doubling, not addition or squaring.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During PCR, primers bind to the DNA strands in the _____ step.</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>denaturation</p></span></div><div class="option"><span class="key">b</span><span><p>extension</p></span></div><div class="option"><span class="key">c</span><span><p>annealing</p></span></div><div class="option"><span class="key">d</span><span><p>ligation</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>PCR (Polymerase Chain Reaction) occurs in three main steps:\u003c/p> \u003col> \u003cli>\u003cstrong>Denaturation\u003c/strong> → DNA strands separate\u003c/li> \u003cli>\u003cstrong>Annealing\u003c/strong> → \u003cstrong>primers bind (attach) to complementary DNA sequences\u003c/strong>\u003c/li> \u003cli>\u003cstrong>Extension\u003c/strong> → DNA polymerase extends the new strand\u003c/li> \u003c/ol> Conclusion: \u003cp>Primers bind to DNA during the \u003cstrong>annealing step\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the restriction endonuclease enzymes whose restriction sites are present for the tetracycline resistance (\(te{t}^{R}\) ) gene in the pBR322 cloning vector.</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bam HI and Sal I</p></span></div><div class="option"><span class="key">b</span><span><p>Sal I and Pst I</p></span></div><div class="option"><span class="key">c</span><span><p>Pst I and Pvu I</p></span></div><div class="option"><span class="key">d</span><span><p>Pvu I and Bam HI</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In the pBR322 plasmid map:\u003c/p> \u003cul> \u003cli> \u003cp>The tetracycline-resistance (\\({\\mathrm{tet}}^{\\mathrm{R}}\\)) gene contains restriction sites for\u003cbr/>→ BamHI\u003cbr/>→ SalI\u003c/p> \u003c/li> \u003c/ul> \u003cp>These enzymes cut within the \\({\\mathrm{tet}}^{\\mathrm{R}}\\) gene and are commonly used to check insertional inactivation of tetracycline resistance.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following are the steps involved in the process of PCR.<br/>A. Annealing<br/>B. Amplification ( \(~1\) billion times)<br/>C. Denaturation<br/>D. Treatment with Taq polymerase and deoxynucleotides<br/>E. Extension</p> <p>Choose the correct sequence of steps of PCR from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{C}\to \mathrm{A}\to \mathrm{D}\to \mathrm{E}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{A}\to \mathrm{B}\to \mathrm{E}\to \mathrm{D}\to \mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{A}\to \mathrm{C}\to \mathrm{E}\to \mathrm{D}\to \mathrm{B}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{D}\to \mathrm{B}\to \mathrm{E}\to \mathrm{C}\to \mathrm{A}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli> \u003cp>Denaturation (C) → Double-stranded DNA is heated (~94–98°C) to separate the strands.\u003c/p> \u003c/li> \u003cli> \u003cp>Annealing (A) → Primers bind to the complementary sequences on the single-stranded DNA (~50–65°C).\u003c/p> \u003c/li> \u003cli> \u003cp>Treatment with Taq polymerase and deoxynucleotides (D) → Taq polymerase and dNTPs are present for DNA synthesis.\u003c/p> \u003c/li> \u003cli> \u003cp>Extension (E) → Taq polymerase synthesizes new DNA strands (~72°C).\u003c/p> \u003c/li> \u003cli> \u003cp>Amplification (B) → Repeated cycles exponentially amplify DNA (up to ~1 billion copies).\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Recombinant DNA molecule can be created normally by cutting the vector DNA and target DNA respectively with:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Hind II, Hind II</p></span></div><div class="option"><span class="key">b</span><span><p>Hind II, Alu I</p></span></div><div class="option"><span class="key">c</span><span><p>Hind II, EcoR I</p></span></div><div class="option"><span class="key">d</span><span><p>Hind II, Bam H</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Recombinant DNA technology involves joining DNA fragments from different sources. To create a recombinant DNA molecule, both the vector DNA (the carrier) and the target DNA (the desired gene) must be cut with the same restriction enzyme, so that their \"sticky ends\" can complementarily pair and be joined together by DNA ligase. If you use different restriction enzymes, the ends won't match and the DNA fragments cannot be ligated together. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are correct about EcoR1?<br/>A. Cut the DNA with blunt end<br/>B. Cut the DNA with sticky end<br/>C. Recognises a specific palindromic sequence<br/>D. Cut the DNA between the base G and A wher encounters the DNA sequence 'GAATTC<br/>E. Exonuclease</p> <p>Choose the correct answer from the options giver below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, C, E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C, D only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D, E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, C, D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>    \u003cstrong>B. Cut the DNA with sticky end:\u003c/strong>  EcoRI is a restriction enzyme that cuts DNA at specific palindromic sequences, resulting in sticky ends. This means the cut leaves overhanging nucleotides that can pair with complementary bases on another DNA fragment.            \u003c/li> \u003cli>    \u003cstrong>C. Recognizes a specific palindromic sequence:\u003c/strong>  EcoRI recognizes the specific palindromic sequence \"GAATTC\". A palindromic sequence reads the same forwards and backwards.            \u003c/li> \u003cli>    \u003cstrong>D. Cut the DNA between the base G and A where encounters the DNA sequence 'GAATTC':\u003c/strong>  EcoRI cuts the DNA backbone between the G and A bases within the sequence \"GAATTC\".     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In gene gun method used to introduce alien DNA into host cells, microparticles of _______ metal are used.</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Zinc</p></span></div><div class="option"><span class="key">b</span><span><p>Tungsten or gold</p></span></div><div class="option"><span class="key">c</span><span><p>Silver</p></span></div><div class="option"><span class="key">d</span><span><p>Copper</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In the \u003cstrong>gene gun method\u003c/strong>, \u003cstrong>microparticles of tungsten or gold\u003c/strong> are used to \u003cstrong>introduce alien DNA\u003c/strong> into host cells because they are \u003cstrong>inert, dense, and non-toxic\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the wrong statement with regard to restriction enzymes.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>They cut the strand of DNA at palindromic sites.</p></span></div><div class="option"><span class="key">b</span><span><p>They are useful in genetic engineering.</p></span></div><div class="option"><span class="key">c</span><span><p>Sticky ends can be joined by using DNA ligases.</p></span></div><div class="option"><span class="key">d</span><span><p>Each restriction enzyme functions by inspecting the length of a DNA sequence.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The sticky ends form hydrogen bonds with their complementary cut counterparts. This stickiness of the ends facilitates the action of the enzyme DNA ligase.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Upon exposure to UV radiation, DNA stained with ethidium bromide will show;</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>bright blue colour.</p></span></div><div class="option"><span class="key">b</span><span><p>bright yellow colour.</p></span></div><div class="option"><span class="key">c</span><span><p>bright orange colour.</p></span></div><div class="option"><span class="key">d</span><span><p>bright red colour.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Ethidium bromide-stained DNA\u003c/strong> emits a \u003cstrong>bright orange\u003c/strong> fluorescence when exposed to \u003cstrong>UV radiation\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the process of gene amplification using PCR, if very high temperature is not maintained in the beginning, then which of the following steps of PCR will be affected first?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Denaturation</p></span></div><div class="option"><span class="key">b</span><span><p>Ligation</p></span></div><div class="option"><span class="key">c</span><span><p>Annealing</p></span></div><div class="option"><span class="key">d</span><span><p>Extension</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In \u003cstrong>Polymerase Chain Reaction (PCR)\u003c/strong>, the \u003cstrong>first step is denaturation\u003c/strong>, where the \u003cstrong>double-stranded DNA is heated to a high temperature (usually 94–98°C)\u003c/strong> to break \u003cstrong>hydrogen bonds\u003c/strong> and separate the strands. If high temperature is not maintained, DNA strands will not separate, preventing primer binding (\u003cstrong>annealing\u003c/strong>) and \u003cstrong>DNA synthesis (extension)\u003c/strong>, thereby stopping the amplification process.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the purification process for recombinant DNA technology, addition of chilled ethanol precipitates out</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Polysaccharides</p></span></div><div class="option"><span class="key">b</span><span><p>RNA</p></span></div><div class="option"><span class="key">c</span><span><p>DNA</p></span></div><div class="option"><span class="key">d</span><span><p>Histones</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>The rate of growth of microorganisms in a bioreactor is influenced by multiple factors including oxygen concentration, temperature, pH, and nutrient availability.\u003c/li> \u003cli>These factors collectively determine the efficiency of microbial metabolism and reproduction, thus affecting the overall growth rate in the bioreactor.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A specific recognition sequence identified by endonucleases to make cuts at specific positions within the DNA is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Palindromic Nucleotide sequences</p></span></div><div class="option"><span class="key">b</span><span><p>ori</p></span></div><div class="option"><span class="key">c</span><span><p>Restriction site</p></span></div><div class="option"><span class="key">d</span><span><p>rop</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -605,7 +609,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(1)\u003c/strong>\u003c/p> \u003cp>When complementary DNA strands read identically in both ways, whether from the 5-prime end to 3 -prime end or perhaps from the 3-prime end to 5 prime end, it results in a palindromic sequence of nucleotides. Palindromic sequences have complementary strands, such as 5’-AGCGCT-3’, and 3’-TCGCGA-5'.\u003c/p> \u003cp>Palindromic Nucleotide Sequences are a particular recognition sequence identified by endonucleases to make cuts at particular locations within the DNA.\u003c/p> \u003cp>\u003cstrong>[New NCERT Class 12\u003csup>th\u003c/sup> Page No. 166]\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Upon exposure to UV radiation, DNA stained with ethidium bromide will show</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bright orange colour</p></span></div><div class="option"><span class="key">b</span><span><p>Bright red colour</p></span></div><div class="option"><span class="key">c</span><span><p>Bright blue colour</p></span></div><div class="option"><span class="key">d</span><span><p>Bright yellow colour</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -617,7 +621,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In gel electrophoresis the separated DNA fragments can be visualized only after staining the DNA with a compound known as ethidium bromide followed by exposure to UV radiation. Bright orange coloured bands of DNA can be seen when stained with ethidium bromide and exposed to UV light.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a correct sequence of steps in a PCR (Polymerase Chain Reaction)?</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Denaturation, Extension, Annealing </p></span></div><div class="option"><span class="key">b</span><span><p>Extension, Denaturation, Annealing </p></span></div><div class="option"><span class="key">c</span><span><p>Annealing, Denaturation, Extension </p></span></div><div class="option"><span class="key">d</span><span><p>Denaturation, Annealing, Extension </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -629,7 +633,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The PCR (polymerase chain reaction) occurs in three steps namely; \u003c/p> \u003cp>• Denaturation of DNA fragments\u003c/p> \u003cp>• Annealing\u003c/p> \u003cp>• Extension of the primers \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the purification process for recombinant DNA technology, addition of chilled ethanol precipitates out</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>DNA</p></span></div><div class="option"><span class="key">b</span><span><p>Histones</p></span></div><div class="option"><span class="key">c</span><span><p>Polysaccharides</p></span></div><div class="option"><span class="key">d</span><span><p>RNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -641,7 +645,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>During the purification process in recombinant DNA technology, the addition of chilled ethanol causes \u003cstrong>DNA\u003c/strong> to precipitate out as fine threads, which can then be spooled and collected.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the <strong>correct</strong> statement from the following:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The polymerase enzyme joins the gene of interest and the vector DNA</p></span></div><div class="option"><span class="key">b</span><span><p>Restriction enzyme digestions are performed by incubating purified DNA molecules with the restriction enzymes of optimum conditions</p></span></div><div class="option"><span class="key">c</span><span><p>PCR is used for isolation and separation of gene of interest</p></span></div><div class="option"><span class="key">d</span><span><p>Gel electrophoresis is used for amplification of a DNA segment</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -653,7 +657,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Restriction enzyme digestions are performed by incubating purified DNA molecules with the restriction enzyme, at the optimal conditions for that specific enzyme. Agarose gel electrophoresis is employed to check the progression of a restriction enzyme digestion.\u003c/p> \u003cp>DNA ligase joins the gene of interest and the vector DNA.\u003c/p> \u003cp>Gel electrophoresis is used for isolation and separation of gene of interest.\u003c/p> \u003cp>PCR is used for the amplification of a DNA segment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During the purification process for recombinant DNA technology, addition of chilled ethanol precipitates out:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>DNA</p></span></div><div class="option"><span class="key">b</span><span><p>Histones</p></span></div><div class="option"><span class="key">c</span><span><p>Polysaccharides</p></span></div><div class="option"><span class="key">d</span><span><p>RNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -665,7 +669,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In order to isolate the genetic material, i.e., DNA, certain enzymes are used to treat the cells such as lysozyme, cellulose, chitinase, etc. The RNA is removed by ribonuclease. Proteins are removed by protease. The purified DNA is finally precipitated out by addition of chilled ethanol. This can be seen as collection of fine threads in the suspension.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ligation of foreign DNA at which of the following site will result in loss of tetracycline resistance of \(\mathrm{pBR}322\) :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Pst I</p></span></div><div class="option"><span class="key">b</span><span><p>\(Pvu\mathrm{I}\)</p></span></div><div class="option"><span class="key">c</span><span><p>EcoR I</p></span></div><div class="option"><span class="key">d</span><span><p>\(Bam\mathrm{HI}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -677,7 +681,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>BamH I\u003c/p> \u003cp>The ligation of alien DNA is carried out at a restriction site present in one of the two antibiotic resistance genes. For example, a foreign DNA ligated at the BamH I site of tetracycline resistance gene in the vector \\(\\mathrm{pBR}322\\) resulting in the recombinant plasmids will lose tetracycline resistance due to insertion of foreign DNA.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In gel electrophoresis, separated DNA fragments can be visualized with the help of</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>acetocarmine in bright blue light</p></span></div><div class="option"><span class="key">b</span><span><p>ethidium bromide in UV radiation</p></span></div><div class="option"><span class="key">c</span><span><p>acetocarmine in UV radiation</p></span></div><div class="option"><span class="key">d</span><span><p>ethidium bromide in infrared radiation.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -689,7 +693,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Gel electrophoresis\u003c/strong> is a technique used to \u003cstrong>separate DNA fragments\u003c/strong> based on their size. To \u003cstrong>visualize\u003c/strong> these fragments after separation, a \u003cstrong>DNA-staining dye\u003c/strong> is used.\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Ethidium bromide (EtBr)\u003c/strong> is a commonly used \u003cstrong>fluorescent dye\u003c/strong> that \u003cstrong>intercalates between the bases of DNA\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>When exposed to \u003cstrong>ultraviolet (UV) light\u003c/strong>, ethidium bromide \u003cstrong>fluoresces\u003c/strong> with an \u003cstrong>orange color\u003c/strong>, allowing the DNA bands to be seen clearly.\u003c/p> \u003c/li> \u003c/ul> Why the other options are incorrect: \u003cul> \u003cli> \u003cp>\u003cstrong>A. Acetocarmine in bright blue light\u003c/strong>:\u003cbr/>❌ Acetocarmine is a stain for chromosomes in dividing cells, not for DNA in gels.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Acetocarmine in UV radiation\u003c/strong>:\u003cbr/>❌ Again, acetocarmine is not used in gel electrophoresis.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Ethidium bromide in infrared radiation\u003c/strong>:\u003cbr/>❌ Ethidium bromide fluoresces only under \u003cstrong>UV light\u003c/strong>, not infrared.\u003c/p> \u003c/li> \u003c/ul> ✅ Final Answer: \u003cstrong>B. Ethidium bromide in UV radiation\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In gel electrophoresis, separated DNA fragments can be visualized with the help of:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ethidium bromide in UV radiation</p></span></div><div class="option"><span class="key">b</span><span><p>Acetorarmine in UV radiation</p></span></div><div class="option"><span class="key">c</span><span><p>Ethidium bromide in infrared radiation</p></span></div><div class="option"><span class="key">d</span><span><p>Acetocarmine in bright blue light</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The cutting of DNA by restriction endonucleases results in the fragments of DNA. These fragments can be separated by a technique known as gel electrophoresis. The separated DNA fragments can be visualised only after staining the DNA with a compound known as ethidium bromide followed by exposure to UV radiation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>DNA strands on a gel stained with ethidium bromide when viewed under UV radiation, appear as:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bright orange bands</p></span></div><div class="option"><span class="key">b</span><span><p>Dark red bands</p></span></div><div class="option"><span class="key">c</span><span><p>Bright blue bands</p></span></div><div class="option"><span class="key">d</span><span><p>Yellow bands</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>After gel electrophoresis, the fragments of DNA that are separated can be seen under the exposure of UV radiation after staining it with ethidium bromide. This imparts bright orange colour to the fragments.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a mixture, DNA fragments are separated by: </p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>restriction digestion.</p></span></div><div class="option"><span class="key">b</span><span><p>electrophoresis.</p></span></div><div class="option"><span class="key">c</span><span><p>polymerase chain reaction.</p></span></div><div class="option"><span class="key">d</span><span><p>bioprocess engineering.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -725,9 +729,9 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>DNA fragments in a mixture can be separated on the basis of their size by a technique known as gel electrophoresis.\u003c/li> \u003cli>In this techniques, DNA samples are loaded into wells (indentations) at one end of a gel, and an electric current is applied to pull them through the gel.\u003c/li> \u003cli>DNA fragments are negatively charged, so they move towards the positive electrode.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The specific palindromic sequence which is recognized by EcoRI is</p> <p> </p> <p>[NEET 2020]</p></div>
-      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{aligned} &amp; 5^{\prime} \text { - GGAACC - 3' } \\ &amp; 3^{\prime} \text { - CCTTGG - 5' }\end{aligned}\) </p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{aligned} &amp; 5^{\prime} \text { - CTTAAG - 3' } \\ &amp; \text { 3' - GAATTC - 5', }\end{aligned}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\begin{aligned} &amp; 5^{\prime}-\text { GGATCC - 3' } \\ &amp; 3^{\prime} \text { - CCTAGG - 5' }\end{aligned}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\begin{aligned} &amp; 5^{\prime}-\text { GAATTC - 3' } \\ &amp; 3^{\prime} \text { - CTTAAG - 5' }\end{aligned}\)</p></span></div></div>
+      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{aligned} & 5^{\prime} \text { - GGAACC - 3' } \\ & 3^{\prime} \text { - CCTTGG - 5' }\end{aligned}\) </p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{aligned} & 5^{\prime} \text { - CTTAAG - 3' } \\ & \text { 3' - GAATTC - 5', }\end{aligned}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\begin{aligned} & 5^{\prime}-\text { GGATCC - 3' } \\ & 3^{\prime} \text { - CCTAGG - 5' }\end{aligned}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\begin{aligned} & 5^{\prime}-\text { GAATTC - 3' } \\ & 3^{\prime} \text { - CTTAAG - 5' }\end{aligned}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
         <div><b>Answer &amp; explanation — PYQ Pass</b><p>Options are free to see. Unlock the correct answer and full explanation with Pass.</p></div>
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>EcoRI\u003c/strong> is a restriction endonuclease enzyme that \u003cstrong>recognizes a specific palindromic DNA sequence\u003c/strong> and \u003cstrong>cuts between G and A\u003c/strong> on each strand.\u003c/p> \u003cul> \u003cli> \u003cp>The \u003cstrong>recognition site\u003c/strong> of EcoRI is:\u003c/p> \u003c/li> \u003c/ul> \u003cp> \u003cstrong>5′–GAATTC–3′\u003c/strong>\u003cbr/> \u003cstrong>3′–CTTAAG–5′\u003c/strong>\u003c/p> \u003cp>This sequence is \u003cstrong>palindromic\u003c/strong>, meaning the sequence on one strand (5′ to 3′) is the \u003cstrong>same as the complementary strand\u003c/strong> (3′ to 5′).\u003c/p> \u003cul> \u003cli> \u003cp>EcoRI makes a \u003cstrong>staggered cut\u003c/strong> between \u003cstrong>G and A\u003c/strong>:\u003c/p>    5′–G↓AATTC–3′ 3′–CTTAA↑G–5′   \u003c/li> \u003c/ul> \u003cp>This leaves \u003cstrong>\"sticky ends\"\u003c/strong>, which are useful for \u003cstrong>recombinant DNA technology\u003c/strong>.\u003c/p> Why other options are incorrect: \u003cul> \u003cli> \u003cp>\u003cstrong>A\u003c/strong>: GGAACC / CCTTGG → Not the EcoRI site.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B\u003c/strong>: CTTAAG / GAATTC → Wrong orientation (reverse).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C\u003c/strong>: GGATCC / CCTAGG → Recognized by \u003cstrong>BamHI\u003c/strong>, not EcoRI.\u003c/p> \u003c/li> \u003c/ul> Final Answer: \u003cstrong>D. 5′− GAATTC - 3′ ; 3′− CTTAAG - 5′\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Main steps in the formation of Recombinant DNA are given below. Arrange these steps in a correct sequence</p> <p>A. Insertion of recombinant DNA into the host cell.</p> <p>B. Cutting of DNA at specific location by restriction enzyme. C. Isolation of desired DNA fragment.</p> <p>D. Amplification of gene of interest using PCR.</p> <p>Choose the correct answer from the option given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B, D, A, C</p></span></div><div class="option"><span class="key">b</span><span><p>B, C, D, A</p></span></div><div class="option"><span class="key">c</span><span><p>C, A, B, D</p></span></div><div class="option"><span class="key">d</span><span><p>C, B, D, A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -749,7 +753,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Main steps in the formation of recombinant DNA in correct sequence are:\u003c/p> \u003cp>B: Cutting of DNA at specific location by restriction enzyme.\u003c/p> \u003cp>C: Isolation of desired DNA fragment by electrophoresis.\u003c/p> \u003cp>D: Amplification of gene of interest using PCR.\u003c/p> \u003cp>A: Insertion of recombinant DNA into the host cell.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In recombinant DNA technology antibiotics are used:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>To detect alien DNA</p></span></div><div class="option"><span class="key">b</span><span><p>To impart disease-resistance to the host plant</p></span></div><div class="option"><span class="key">c</span><span><p>As selectable markers</p></span></div><div class="option"><span class="key">d</span><span><p>To keep medium bacteria-free</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,7 +765,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In recombinant DNA technology, antibiotics are used as selectable markers. Selectable markers helps in identifying and eliminating nontransformants and selectively permitting the growth of the transformants.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the <strong>correct </strong>pair from the following:</p> <table> <tbody> <tr> <td>a.</td> <td>Polymerases</td> <td>-</td> <td>Break the DNA into fragments</td> </tr> <tr> <td>b.</td> <td>Nucleases</td> <td>-</td> <td>Separate the two strands of DNA</td> </tr> <tr> <td>c.</td> <td>Exonucleases</td> <td>-</td> <td>Make cuts at specific positions within DNA</td> </tr> <tr> <td>d.</td> <td>Ligases</td> <td>-</td> <td>Join the two DNA molecules</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>a</p></span></div><div class="option"><span class="key">b</span><span><p>b</p></span></div><div class="option"><span class="key">c</span><span><p>c</p></span></div><div class="option"><span class="key">d</span><span><p>d</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -773,7 +777,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Polymerases - Synthesizes long chains of polymers or nucleic acids\u003c/p> \u003cp>Nucleases - Break the DNA into fragments\u003c/p> \u003cp>Helicases - Separate the two strands of DNA\u003c/p> \u003cp>Endonucleases - Make cuts at specific positions within DNA\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Main steps in the formation of recombinant DNA are given below. Arrange these steps in a <strong>correct</strong> sequence.<br/>A. Insertion of recombinant DNA into the host cell.<br/>B. Cutting of DNA at specific location by restriction enzyme.<br/>C. Isolation of desired DNA from the cell.<br/>D. Amplification of gene of interest using PCR.<br/>Choose the <strong>correct</strong> answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C\( \rightarrow \) A\( \rightarrow \) B\( \rightarrow \) D</p></span></div><div class="option"><span class="key">b</span><span><p>C\( \rightarrow \) B\( \rightarrow \) D\( \rightarrow \) A</p></span></div><div class="option"><span class="key">c</span><span><p>B\( \rightarrow \) D\( \rightarrow \) A\( \rightarrow \) C</p></span></div><div class="option"><span class="key">d</span><span><p>B\( \rightarrow \) C\( \rightarrow \) D\( \rightarrow \) A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -785,7 +789,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Main steps in the formation of recombinant DNA are:\u003c/p> \u003cul> \u003cli>Isolation of desired DNA from the cell.\u003c/li> \u003cli>Cutting of DNA at specific location by restriction enzyme.\u003c/li> \u003cli>Amplification of gene of interest using PCR.\u003c/li> \u003cli>Insertion of recombinant DNA into the host cell.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>First discovered restriction endonuclease that always cuts DNA molecule at a particular point by recognising a specific sequence of six base pairs is</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><em>Eco</em> RI</p></span></div><div class="option"><span class="key">b</span><span><p>adenosine deaminase</p></span></div><div class="option"><span class="key">c</span><span><p>thermostable DNA polymerase</p></span></div><div class="option"><span class="key">d</span><span><p><em>Hin</em>d II</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -797,7 +801,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>Hind II\u003c/strong> was the \u003cstrong>first restriction endonuclease\u003c/strong> discovered (in 1970 by Smith, Wilcox, and Kelley) that \u003cstrong>cuts DNA at specific recognition sites\u003c/strong>. It recognizes a particular \u003cstrong>six-base pair palindromic sequence\u003c/strong> and makes a \u003cstrong>precise cut within this sequence\u003c/strong>, producing blunt ends. This enzyme was isolated from \u003cem>Haemophilus influenzae\u003c/em>. The discovery of Hind II marked a revolution in molecular biology, enabling scientists to cut and manipulate DNA in a predictable manner. Unlike random DNA cleavage, Hind II’s specificity laid the foundation for recombinant DNA technology, gene cloning, and genetic engineering, making it a milestone in biotechnology.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a cloning vector?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Probe</p></span></div><div class="option"><span class="key">b</span><span><p>BAC</p></span></div><div class="option"><span class="key">c</span><span><p>YAC</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{pBR}322\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -809,7 +813,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A probe is not a cloning vector rather it is a singlestranded sequence of DNA or RNA used to search for its complementary sequence in a sample genome.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Plasmid pBR322 has PstI restriction enzyme site within gene \({\mathrm{amp}}^{\mathrm{R}}\) that confers ampicillin resistance, If this enzyme is used for inserting a gene for \(\beta\)-galactoside production and the recombinant plasmid is inserted in an <em>E.coli</em> strain</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The transformed cells will have the ability to resist ampicillin as well as produce \(\beta\)-galactoside.</p></span></div><div class="option"><span class="key">b</span><span><p>It will lead to lysis of host cell.</p></span></div><div class="option"><span class="key">c</span><span><p>It will be able to produce a novel protein with dual ability.</p></span></div><div class="option"><span class="key">d</span><span><p>It will not be able to confer ampicillin resistance to host cell.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -821,7 +825,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>pBR322 is a commonly used cloning vector. Here, gene coding for beta-galactosidase is inserted in the plasmid pBR322 at PstI restriction enzyme site which is responsible for providing resistance toward antibiotic ampicillin. This causes insertional inactivation of the antibiotic resistance gene thus E.coli strain will not provide resistance towards the antibiotic ampicillin\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Spooling is </p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cutting of separated DNA bands from the agarose gel</p></span></div><div class="option"><span class="key">b</span><span><p>Transfer of separated DNA fragments to synthetic membranes</p></span></div><div class="option"><span class="key">c</span><span><p>Collection of isolated DNA</p></span></div><div class="option"><span class="key">d</span><span><p>Amplification of DNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -833,7 +837,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>During DNA extraction, the ethanol can be gently pushed down into the DNA solution by using a glass rod or wooden spooling stick. The charged DNA molecules move away from the ethanol and can be scooped up and swirled around a glass rod or wooden spooling stick. This is called DNA spooling. DNA spooling can isolate long strands of DNA from a solution.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not a cloning vector?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>YAC</p></span></div><div class="option"><span class="key">b</span><span><p>pBR322</p></span></div><div class="option"><span class="key">c</span><span><p>Probe </p></span></div><div class="option"><span class="key">d</span><span><p>BAC</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -845,7 +849,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>\u003cstrong>A cloning vector\u003c/strong> is a small piece of DNA used to introduce foreign DNA into a host cell for cloning, which means making many copies of the DNA.\u003c/li> \u003cli>\u003cstrong>YAC (Yeast Artificial Chromosome)\u003c/strong> and \u003cstrong>BAC (Bacterial Artificial Chromosome)\u003c/strong> are types of cloning vectors specifically designed to carry and replicate very large DNA fragments in yeast and bacteria, respectively.\u003c/li> \u003cli>\u003cstrong>pBR322\u003c/strong> is a well-known plasmid cloning vector used for cloning smaller DNA fragments in \u003cem>E. coli\u003c/em>.\u003c/li> \u003cli>\u003cstrong>A probe\u003c/strong>, however, is a short, single-stranded nucleic acid molecule used to detect a specific sequence in a sample through hybridization. It is not used to carry and replicate foreign DNA. \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II.</p> <table> <tbody> <tr> <td>List-I</td> <td>List-II</td> </tr> <tr> <td>(A)</td> <td>Kanamycin</td> <td>(I)</td> <td>Delivers genes into<br/>animal cells</td> </tr> <tr> <td>(B)</td> <td>ClaI</td> <td>(II)</td> <td>Selectable marker</td> </tr> <tr> <td>(C)</td> <td>Disarmed retroviruses</td> <td>(III)</td> <td>Restriction site</td> </tr> <tr> <td>(D)</td> <td>Kanamycin \({}^{R}gene\)</td> <td>(IV)</td> <td>Antibiotic resistance</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-III, C-I, D-IV</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-I, C-IV, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-III, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-IV, C-I, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -857,7 +861,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(A)-(IV), (B)-(III), (C)-(I), (D)-(II)\u003c/p> \u003cp>(A) Kanamycin - (IV) Antibiotic resistance\u003c/p> \u003cp>(B) ClaI - (III) Restriction site\u003c/p> \u003cp>(C) Disarmed retroviruses- (I) Delivers genes into animal cells\u003c/p> \u003cp>(D) Kanamycin Rgene - (II) Selectable marker\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the organism with its use in biotechnology.</p> <table> <tbody> <tr> <td>1</td> <td><em>Bacillus thuringiensis</em></td> <td>(i)</td> <td>Cloning vector</td> </tr> <tr> <td>2</td> <td><em>Thermus aquaticus</em></td> <td>(ii)</td> <td>Construction of first rDNA molecule</td> </tr> <tr> <td>3</td> <td><em>Agrobacterium tumifaciens</em></td> <td>(iii)</td> <td>DNA polymerase</td> </tr> <tr> <td>4</td> <td><em>Salmonella typhimurium</em></td> <td>(iv)</td> <td>Cry proteins</td> </tr> </tbody> </table> <p>Select the correct option from the following</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1-(iv) 2-(iii) 3-(i) 4-(ii)</p></span></div><div class="option"><span class="key">b</span><span><p>1-(iii) 2-(ii) 3-(iv) 4-(i)</p></span></div><div class="option"><span class="key">c</span><span><p>1-(iii) 2-(iv) 3-(i) 4-(ii)</p></span></div><div class="option"><span class="key">d</span><span><p>1-(ii) 2-(iv) 3-(iii) 4-(i)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -869,7 +873,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Bacillus thuringiensis - Source of Cry proteins\u003c/p> \u003cp>Thermus aquaticus - SourceofthermostableDNApolymerase (Taq polymerase)\u003c/p> \u003cp>Agrobacterium tumefaciens - Cloning vector\u003c/p> \u003cp>Salmonella typhimurium-Used in construction of first rDNA molecule\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Thermostable DNA polymerase used in PCR was isolated from:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><em>Thermus aquaticus</em></p></span></div><div class="option"><span class="key">b</span><span><p><em>Escherichia coli</em></p></span></div><div class="option"><span class="key">c</span><span><p><em>Agrobacterium tumifaciens</em></p></span></div><div class="option"><span class="key">d</span><span><p><em>Bacillus thuringiensis</em></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -881,7 +885,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Thermus aquaticus\u003c/p> \u003cp>Thermostable DNA polymerase, crucial for the Polymerase Chain Reaction (PCR) technique, was isolated from Thermus aquaticus. Its ability to withstand high temperatures makes it ideal for the denaturing steps in PCR.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the following techniques or instruments with their usage:</p> <table> <tbody> <tr> <td>1</td> <td>Bioreactor</td> <td>(i)</td> <td>Separation of DNA fragments</td> </tr> <tr> <td>2</td> <td>Electrophoresis</td> <td>(ii)</td> <td>Production of large quantities of<br/>products</td> </tr> <tr> <td>3</td> <td>PCR</td> <td>(iii)</td> <td>Detection of pathogen, based on<br/>antigen-antibody reaction</td> </tr> <tr> <td>4</td> <td>ELISA</td> <td>(iv)</td> <td>Amplification of nucleic acids</td> </tr> </tbody> </table> <p>Select the correct option from following:<br/> (1) (2) (3) (4)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(ii) (i) (iv) (iii)</p></span></div><div class="option"><span class="key">b</span><span><p>(iv) (iii) (ii) (i)</p></span></div><div class="option"><span class="key">c</span><span><p>(ii) (i) (iii) (iv)</p></span></div><div class="option"><span class="key">d</span><span><p>(iii) (ii) (iv) (i)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -893,7 +897,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Bioreactor - To produce products, such as proteins, in large quantities\u003c/p> \u003cp>Electrophoresis - A technique employed for the separation of DNA fragments on the basis of their size\u003c/p> \u003cp>PCR (Polymerase chain reaction) - It is used for the amplification of nucleic acids.\u003c/p> \u003cp>ELISA (Enzyme-linked immunosorbent assay) - It is based on the antigen-antibody reaction for the detection of pathogens.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The sequence that controls the copy number of the linked DNA in the vector, is termed:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p><em>Ori</em> site</p></span></div><div class="option"><span class="key">b</span><span><p>Palindromic sequence</p></span></div><div class="option"><span class="key">c</span><span><p>Recognition site</p></span></div><div class="option"><span class="key">d</span><span><p>Selectable marker</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -905,7 +909,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Origin of replication (ori) : This is a sequence from where replication starts and any piece of DNA when linked to this sequence can be made to replicate within the host cells. This sequence is also responsible for controlling the copy number of the linked DNA.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>DNA strands on a gel stained with ethidium bromide when viewed under UV radiation, appear as</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>bright blue bands </p></span></div><div class="option"><span class="key">b</span><span><p>yellow bands</p></span></div><div class="option"><span class="key">c</span><span><p>bright orange bands </p></span></div><div class="option"><span class="key">d</span><span><p>dark red bands </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -917,7 +921,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ethidium bromide is a fluorescent dye commonly used in gel electrophoresis to visualize DNA. When exposed to UV radiation, ethidium bromide intercalates between the bases of DNA, causing it to fluoresce. This fluorescence appears as bright orange bands under UV light. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In recombinant DNA technology antibiotics are used:</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>To detect alien DNA</p></span></div><div class="option"><span class="key">b</span><span><p>To impart disease-resistance to the host plant</p></span></div><div class="option"><span class="key">c</span><span><p>As selectable markers</p></span></div><div class="option"><span class="key">d</span><span><p>To keep medium bacteria-free</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -929,7 +933,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In \u003cstrong>recombinant DNA technology\u003c/strong>, \u003cstrong>antibiotics are used as selectable markers\u003c/strong> to identify and select genetically transformed cells. Plasmid vectors used for cloning often carry \u003cstrong>antibiotic resistance genes\u003c/strong> (like ampicillin or tetracycline resistance). After introducing recombinant DNA into host cells (usually bacteria), the culture is grown on a medium containing the antibiotic. \u003cstrong>Only those cells that have taken up the plasmid with the resistance gene survive\u003c/strong>, while others die. This helps in easily distinguishing \u003cstrong>transformed cells from non-transformed ones\u003c/strong>. Thus, antibiotics do not detect alien DNA directly but \u003cstrong>help in selecting recombinant colonies\u003c/strong> effectively and efficiently.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In gene gun method used to introduce alien DNA into host cells, microparticles of metal are used.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Silver</p></span></div><div class="option"><span class="key">b</span><span><p>Copper</p></span></div><div class="option"><span class="key">c</span><span><p>Zinc</p></span></div><div class="option"><span class="key">d</span><span><p>Tungsten or gold</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -941,7 +945,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>A biolistic or gene gun is a technique of genetic engineering where the genes, DNA, RNA or proteins are transferred to the plant cells without the use of any vectors. The genetic material is coated with heavy metal i.e. gold or tungsten bombarded with the heavy velocity.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the correct statement from the following</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The polymerase enzyme joins the gene of interest and the vector DNA</p></span></div><div class="option"><span class="key">b</span><span><p>Restriction enzyme digestions are performed by incubating purified DNA molecules with the restriction enzymes of optimum conditions</p></span></div><div class="option"><span class="key">c</span><span><p>PCR is used for isolation and separation of gene of interest</p></span></div><div class="option"><span class="key">d</span><span><p>Gel electrophoresis is used for amplification of a DNA segment</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -953,7 +957,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Restriction enzyme digestions are performed by incubating purified DNA molecules with the restriction enzyme, at the optimal conditions for that specific enzyme. Agarose gel electrophoresis is employed to check the progression of a restriction enzyme digestion.\u003cbr/>DNA ligase joins the gene of interest and the vector DNA.\u003cbr/>Gel electrophoresis is used for isolation and separation of gene of interest.\u003cbr/>PCR is used for the amplification of a DNA segment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The sequence that controls the copy number of the linked DNA in the vector, is termed</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Selectable marker</p></span></div><div class="option"><span class="key">b</span><span><p>Ori site</p></span></div><div class="option"><span class="key">c</span><span><p>Palindromic sequence</p></span></div><div class="option"><span class="key">d</span><span><p>Recognition site.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -965,7 +969,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Selectable marker\u003c/strong> \\(\\to\\) helps identify transformants (e.g., antibiotic resistance).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Ori site (origin of replication)\u003c/strong> \\(\\to\\) controls \u003cstrong>copy number of linked DNA\u003c/strong> in vector.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Palindromic sequence\u003c/strong> \\(\\to\\) recognition sites for restriction enzymes.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Recognition site\u003c/strong> \\(\\to\\) site where restriction enzyme cuts.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The specific palindromic sequence which is recognized by EcoRI is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5' - GGAACC - 3'</p> <p>3' - CCTTGG - 5'</p></span></div><div class="option"><span class="key">b</span><span><p>5' - CTTAAG - 3'<br/>\({3}^{'}\) - GAATTC - 5 '</p></span></div><div class="option"><span class="key">c</span><span><p>5' - GGATCC - 3'<br/>\({3}^{'}\)- CCTAGG - 5 '</p></span></div><div class="option"><span class="key">d</span><span><p>5' - GAATTC - 3'<br/>\({3}^{'}\) - CTTAAG - 5 '</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -977,7 +981,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Each restriction endonuclease recognises a specific palindromic nucleotide sequences in the DNA. The specific palindromic sequence which is recognised by EcoRI is\u003c/p> \u003cp>\\({5}^{'}\\) - GAATTC - 3\u003c/p> \u003cp>\\({3}^{'}\\) - CTTAAG - 5\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following can act as molecular scissors?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Restriction enzymes</p></span></div><div class="option"><span class="key">b</span><span><p>DNA ligase</p></span></div><div class="option"><span class="key">c</span><span><p>RNA polymerase</p></span></div><div class="option"><span class="key">d</span><span><p>DNA polymerase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -989,7 +993,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Restriction enzymes\u003c/p> \u003cp>Restriction enzymes act as molecular scissors by cutting DNA at specific sequences.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A specific recognition sequence identified by endonucleases to make cuts at specific positions within the DNA is:</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Okazaki sequences</p></span></div><div class="option"><span class="key">b</span><span><p>Palindromic Nucleotide sequences</p></span></div><div class="option"><span class="key">c</span><span><p>Poly (A) tail sequences</p></span></div><div class="option"><span class="key">d</span><span><p>Degenerate primer sequence</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1001,7 +1005,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Each restriction endonuclease enzyme recognises a specific palindromic nucleotide sequence in the DNA and bind to the DNA. Then, the enzyme cut each of the two strands of the double helix at specific points in their sugar -phosphate backbones.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the wrong statement with regard to restriction enzymes.</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Each restriction enzyme functions by inspecting the length of a DNA sequence.</p></span></div><div class="option"><span class="key">b</span><span><p>They cut the strand of DNA at palindromic sites.</p></span></div><div class="option"><span class="key">c</span><span><p>They are useful in genetic engineering.</p></span></div><div class="option"><span class="key">d</span><span><p>Sticky ends can be joined by using DNA ligases.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1013,7 +1017,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is Option D.\u003c/p> \u003cp>Explanation:\u003c/p> \u003cp>The question asks about restriction enzymes, not about enzymes used after restriction.\u003cbr/>Option D states that sticky ends can be joined by using DNA ligases. This statement is true in general, but it is not a property or function of restriction enzymes. Joining sticky ends is the role of DNA ligase, not restriction endonucleases. Hence, with respect to restriction enzymes, this statement is considered wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Plasmid <em>pBR322 </em>has a Pst I restriction enzyme site within gene amp R that confers ampicillin resistance. If this enzyme is used for inserting a gene for Beta-galactoside production and the recombinant plasmid is inserted in an <em>E.coli </em>strain</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>it will lead to the lysis of host cells.</p></span></div><div class="option"><span class="key">b</span><span><p>it will be able to produce a novel protein with dual abilities.</p></span></div><div class="option"><span class="key">c</span><span><p>it will not be able to confer ampicillin resistance to the host cell.</p></span></div><div class="option"><span class="key">d</span><span><p>the transformed cells will have the ability to resist ampicillin as well as produce beta -galactoside.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

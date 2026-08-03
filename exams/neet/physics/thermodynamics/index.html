@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Thermodynamics","item":"https://yespyq.com/exams/neet/physics/thermodynamics/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Thermodynamics</h1>
       <p>13 NEET Physics previous year questions on <b>Thermodynamics</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">500 J of energy is transferred as heat to 0.5 mol of Argon gas at 298 K and 1.00 atm . The final temperature and the change in internal energy respectively are (Given : ) [JEE Main 2025, 29 Jan (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>378 K and 300 J</span></div><div class="option correct"><span class="key">b</span><span>348 K and 300 J</span></div><div class="option"><span class="key">c</span><span>368 K and 500 J</span></div><div class="option"><span class="key">d</span><span>378 K and 500 J</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statements is false?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Gibbs free energy is path function.</span></div><div class="option"><span class="key">b</span><span>Temperature is a state function.</span></div><div class="option"><span class="key">c</span><span>Change in the state is completely defined when the initial and final states are specified.</span></div><div class="option"><span class="key">d</span><span>Work appears at the boundary of the system.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"False Statement: (A) Gibbs free energy is a state function. Reason: It does not depend on the path taken between two states.","fmt":""}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following is not correct?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>G is positive for a non-spontaneous reaction</span></div><div class="option"><span class="key">b</span><span>G is positive for a spontaneous reaction</span></div><div class="option"><span class="key">c</span><span>G is negative for a spontaneous reaction</span></div><div class="option"><span class="key">d</span><span>G is zero for a reversible reaction</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"“ΔG is positive for a spontaneous reaction” is incorrect. For spontaneity ΔG \u003c 0; a positive ΔG indicates non-spontaneity.","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electric heater supplies heat to a system at a rate of 100 W. If the system performs work at a rate of 75 J/s, then the rate at which internal energy increases will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>125 W</p></span></div><div class="option"><span class="key">b</span><span><p>100 W</p></span></div><div class="option"><span class="key">c</span><span><p>25 W</p></span></div><div class="option"><span class="key">d</span><span><p>75 W</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>From first law of thermodynamics\u003c/p> \u003cp> \u003c/p> \u003cp>\\(\\frac{dQ}{dt}=\\frac{dU}{dt}+\\frac{dW}{dt}\\\\ 100=\\frac{dU}{dt}+75\\\\ \\frac{dU}{dt}=100−75=25Watt\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equilibrium state of a thermodynamic system is described by :<br/>A Pressure<br/>B Total heat<br/>C Temperature<br/>D Volume<br/>E Work done</p> <p>Choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B and E only</p></span></div><div class="option"><span class="key">b</span><span><p>B, C and D only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The equilibrium state of a thermodynamic system is described by macroscopic state variables like Pressure (P), Temperature (T), and Volume (V). Heat and Work are energy transfers, not state variables.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equilibrium state of a thermodynamic system is described by :<br/>A. Pressure<br/>B. Total heat<br/>C. Temperature<br/>D. Volume<br/>E. Work done</p> <p>Choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B and E only</p></span></div><div class="option"><span class="key">b</span><span><p>B, C and D only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B and C only</p></span></div><div class="option"><span class="key">d</span><span><p>A, C and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The equilibrium state of a thermodynamic system is described by macroscopic state variables like Pressure (P), Temperature (T), and Volume (V). Heat and Work are energy transfers, not state variables.\u003c/p> \u003cp>\u003cstrong>(NEW NCERT 11\u003csup>th\u003c/sup> Page No. 227, 228)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two gases A and B are filled at the same pressure in separate cylinders with movable pistons of radius \({r}_{A}\) and \({r}_{B}\), respectively. On supplying an equal amount of heat to both the systems reversibly under constant pressure, the pistons of gas A and B are displaced by 16 cm and 9 cm , respectively. If the change in their internal energy is the same, then the ratio \({\mathrm{r}}_{\mathrm{A}}/{\mathrm{r}}_{\mathrm{B}}\)is equal to</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{2}{\sqrt{3}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\sqrt{3}}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Using first law of thermodynamics\u003c/p> \u003cp>\\(\\text{Δ}Q=\\text{Δ}U+P\\text{Δ}V\\)\u003c/p> \u003cp>\\(\\text{Δ}Q\\) is same\u003cbr/>\\(\\text{Δ}U\\) is also same\u003c/p> \u003cp>\\({W}_{A}={W}_{B}\\)\u003c/p> \u003cp>\\(∴{\\left(P\\Delta V\\right)}_{A}={\\left(P\\Delta V\\right)}_{B}\\)\u003c/p> \u003cp>P is also same\u003c/p> \u003cp>\\(∴\\text{ }{A}_{A}{d}_{A}={A}_{B}{d}_{B}\\)\u003c/p> \u003cp>\\(\\pi {r}_{A}^{2}{d}_{A}=\\pi {r}_{B}^{2}{d}_{B}\\)\u003c/p> \u003cp>\\(\\frac{{r}_{A}}{{r}_{B}}={\\left(\\frac{dB}{dA}\\right)}^{\\frac{1}{2}}={\\left(\\frac{9}{16}\\right)}^{\\frac{1}{2}}\\)\u003c/p> \u003cp>\\(=\\frac{3}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A sample of gas at temperature \(T\) is adiabatically expanded to double its volume. The work done by the gas in the process is \(\left(\right.\) given, \(\left.\gamma=\frac{3}{2}\right)\) :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(W=T R[\sqrt{2}-2]\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(W=\frac{T}{R}[\sqrt{2}-2]\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(W=\frac{R}{T}[2-\sqrt{2}]\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(W=R T[2-\sqrt{2}]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,10 +171,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (d) } T_1 V_1^{\\gamma-1}=T_2 V_2^{\\gamma-1} \\\\ &amp; T V^{1 / 2}=T_2(2 V)^{1 / 2} \\\\ &amp; \\therefore T_2=\\frac{T}{\\sqrt{2}} \\\\ &amp; \\Rightarrow W=\\frac{R\\left(T_1-T_2\\right)}{\\gamma-1}=\\frac{R\\left(T-\\frac{T}{\\sqrt{2}}\\right)}{\\frac{1}{2}}=R T(2-\\sqrt{2})\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (d) } T_1 V_1^{\\gamma-1}=T_2 V_2^{\\gamma-1} \\\\ & T V^{1 / 2}=T_2(2 V)^{1 / 2} \\\\ & \\therefore T_2=\\frac{T}{\\sqrt{2}} \\\\ & \\Rightarrow W=\\frac{R\\left(T_1-T_2\\right)}{\\gamma-1}=\\frac{R\\left(T-\\frac{T}{\\sqrt{2}}\\right)}{\\frac{1}{2}}=R T(2-\\sqrt{2})\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two Carnot engines \(A\) and operate in series such that engine \(A\) absorbs heat at \(T_1\) and rejects heat to a sink at temperature \(T\). Engine \(B\) absorbs half of the heat rejected by Engine \(A\) and rejects heat to the sink at \(T_3\). When work done in both the cases is equal, the value of \(T\) is:</p> <p> </p> <p>[JEE Main 2021, 27 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{2} T_1+\frac{1}{3} T_3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{3} T_1+\frac{3}{2} T_3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3} T_1+\frac{1}{3} T_3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{3} T_1+\frac{2}{3} T_3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,10 +183,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Work done \\(W_A=1-\\frac{T}{T_1}, W_B=1-\\frac{T_3}{T}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Given, } W_A=W_B \\\\\u003cbr/>&amp; \\Rightarrow Q_1-Q_2=\\frac{Q_2}{2}-Q_3 \\Rightarrow 2 \\times \\frac{Q_1}{Q_2}+\\frac{2 Q_3}{Q_2}=3 \\\\\u003cbr/>&amp; \\Rightarrow \\frac{2 T_1}{T}+\\frac{T_3}{T}=3 \\Rightarrow \\frac{2 T_1}{3}+\\frac{T_3}{3}=T\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Work done \\(W_A=1-\\frac{T}{T_1}, W_B=1-\\frac{T_3}{T}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { Given, } W_A=W_B \\\\& \\Rightarrow Q_1-Q_2=\\frac{Q_2}{2}-Q_3 \\Rightarrow 2 \\times \\frac{Q_1}{Q_2}+\\frac{2 Q_3}{Q_2}=3 \\\\& \\Rightarrow \\frac{2 T_1}{T}+\\frac{T_3}{T}=3 \\Rightarrow \\frac{2 T_1}{3}+\\frac{T_3}{3}=T\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. One is labelled as Assertion A and the other is labelled as Reason R.<br/><strong>Assertion A: </strong>If \(d Q\) and \(d W\) represent the heat supplied to the system and the work done on the system respectively. Then according to the first law of thermodynamics \(d Q=d U-d W\).<br/><strong>Reason R:</strong> First law of thermodynamics is based on law of conservation of energy.<br/>In the light of the above statements, choose the correct answer from the option given below:</p> <p>[JEE Main 2023, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\) is correct but \(R\) is not correct</p></span></div><div class="option"><span class="key">b</span><span><p>\(A\) is not correct but \(R\) is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(A\) and \(R\) are correct and \(R\) is the correct explanation of \(A\)</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(A\) and \(R\) are correct but \(R\) is not the correct explanation of \(A\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,7 +198,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) If \\(d W\\) is work done on the system there, according to First law of thermodynamics \\(d Q=d U-d W\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A monatomic gas at a pressure \( P \), having a volume \( V \) expands isothermally to a volume \( 2 V \) and then adiabatically to a volume \( 16 \mathrm{~V} \). The final pressure of the gas is (Take \( \gamma=5 / 3 \) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 64 P \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( 32 P \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( P / 64 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 16 P \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,7 +210,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003col> \u003cli> \u003cp>\u003cstrong>Step 1: Isothermal expansion from \\((P,\\text{ }V)\\) to \\(({P}_{1},\\text{ }2V)\\)\u003c/strong>\u003cbr/>Because the process is isothermal, \\(P\\text{ }V={P}_{1}\\text{ }(2V)\\).\u003cbr/>Hence, \\({P}_{1}=\\frac{P}{2}\\).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Step 2: Adiabatic expansion from \\(({P}_{1},2V)\\) to \\(({P}_{\\mathrm{f}},16V)\\)\u003c/strong>\u003cbr/>For a reversible adiabatic of an ideal gas, \\(P\\text{ }{V}^{\\gamma }=\\text{constant}\\). With \\(\\gamma =\\frac{5}{3}\\) (monatomic gas),\u003c/p> \\({P}_{1}\\text{ }(2V{)}^{5\\mathrm{/}3}\\text{  }=\\text{  }{P}_{\\mathrm{f}}\\text{ }(16V{)}^{5\\mathrm{/}3}\\mathrm{.}\\) \u003cp>Thus,\u003c/p> \\({P}_{\\mathrm{f}}={P}_{1}\\text{ }\\frac{(2V{)}^{5\\mathrm{/}3}}{(16V{)}^{5\\mathrm{/}3}}={P}_{1}\\text{ }\\frac{{2}^{5\\mathrm{/}3}}{{16}^{5\\mathrm{/}3}}={P}_{1}\\text{ }\\frac{{2}^{5\\mathrm{/}3}}{({2}^{4}{)}^{5\\mathrm{/}3}}={P}_{1}\\text{ }{2}^{\\text{ }\\frac{5}{3}−\\frac{20}{3}}={P}_{1}\\text{ }{2}^{−5}=\\frac{{P}_{1}}{32}\\mathrm{.}\\) \u003cp>Since \\({P}_{1}=\\frac{P}{2}\\) from Step 1,\u003c/p> \\({P}_{\\mathrm{f}}=\\frac{P\\mathrm{/}2}{32}=\\frac{P}{64}\\mathrm{.}\\)\u003c/li> \u003c/ol> \u003cp>Hence, the final pressure is\u003c/p> \u003cp>\\(\\frac{P}{64}\\mathrm{.}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>One mole of an ideal gas expands adiabatically from an initial state \(\left(T_A, V_0\right)\) to final state \(\left(T_f, 5 V_0\right)\). Another mole of the same gas expands isothermally from a different initial state \(\left(T_B, V_0\right)\) to the same final state \(\left(T_f, 5 V_0\right)\). The ratio of the specific heats at constant pressure and constant volume of this ideal gas is \(\gamma\). What is the ratio \(T_A / T_B\) ?</p> <p> </p> <p>[JEE Advanced 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5^{\gamma-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5^{1-\gamma}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5^\gamma\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5^{1+\gamma}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,7 +222,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Find \\({T}_{A}/{T}_{B}\\) given adiabatic expansion from \\({T}_{A}\\) and isothermal expansion from \\({T}_{B}\\) to the same final state.\u003c/p> \u003cp>\u003cstrong>1. Process 1 (Adiabatic):\u003c/strong> \\(\\left({T}_{A},{V}_{0}\\right)\\to \\left({T}_{f},5{V}_{0}\\right)\\).\u003c/p> \u003cul> \u003cli>Relation: \\(T{V}^{\\gamma −1}=\\text{constant}\\).\u003c/li> \u003cli>\\({T}_{A}{V}_{0}^{\\gamma −1}={T}_{f}{(5{V}_{0})}^{\\gamma −1}\\)\u003c/li> \u003cli>\\({T}_{A}={T}_{f}⋅{5}^{\\gamma −1}\\).\u003c/li> \u003c/ul> \u003cp>\u003cstrong>2. \u003c/strong>\u003cstrong>Process 2 (Isothermal):\u003c/strong> \\(\\left({T}_{B},{V}_{0}\\right)\\to \\left({T}_{f},5{V}_{0}\\right)\\).\u003c/p> \u003cul> \u003cli>Relation: \\(T=\\text{constant}\\).\u003c/li> \u003cli>\\({T}_{B}={T}_{f}\\).\u003c/li> \u003c/ul> \u003cp>\u003cstrong>3. Ratio: \\(\\frac{{T}_{A}}{{T}_{B}}=\\frac{{T}_{f}⋅{5}^{\\gamma −1}}{{T}_{f}}={5}^{\\gamma −1}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two cylinders \( A \) and \( B \) of equal capacity are connected to each other via a stopcock. \( A \) contains an ideal gas at standard temperature and pressure. \( B \) is completely evacuated. The entire system is thermally insulated. The stopcock is suddenly opened. The process is</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>isothermal</p></span></div><div class="option"><span class="key">b</span><span><p>adiabatic</p></span></div><div class="option"><span class="key">c</span><span><p>isochoric</p></span></div><div class="option"><span class="key">d</span><span><p>isobaric</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

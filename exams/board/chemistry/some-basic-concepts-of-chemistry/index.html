@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Some Basic Concepts of Chemistry","item":"https://yespyq.com/exams/board/chemistry/some-basic-concepts-of-chemistry/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Some Basic Concepts of Chemistry</h1>
       <p>21 Board Chemistry previous year questions on <b>Some Basic Concepts of Chemistry</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The <strong>incorrect </strong>postulates of the Dalton's atomic theory are:</p> <p>(A) Atoms of different elements differ in mass. </p> <p>(B) Matter consists of divisible atoms. </p> <p>(C) Compounds are formed when atoms of different element combine in a fixed ratio. </p> <p>(D) All the atoms of given element have different properties including mass. </p> <p>(E) Chemical reactions involve reorganisation of atoms.</p> <p>Choose the <strong>correct </strong>answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (D), (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B), (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C), (D), (E) only</p></span></div><div class="option correct"><span class="key">d</span><span><p>(B), (D) only</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An organic compound has 42.1% carbon, 6.4% hydrogen and remainder is oxygen. If its molecular weight is 342, then its molecular formula is: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C<sub>11</sub>H<sub>18</sub>O<sub>12</sub> </p></span></div><div class="option"><span class="key">b</span><span><p>C<sub>12</sub>H<sub>20</sub>O<sub>12</sub> </p></span></div><div class="option"><span class="key">c</span><span><p>C<sub>14</sub>H<sub>20</sub>O<sub>10</sub> </p></span></div><div class="option correct"><span class="key">d</span><span><p>C<sub>12</sub>H<sub>22</sub>O<sub>11</sub> </p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>7.3 g of benzalacetone is synthesized from 10.6 g of benzaldehyde using acetone as another reactant. Percentage yield of benzalacetone is (memory based jee mains shift-2 29/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>50%</p></span></div><div class="option"><span class="key">b</span><span><p>27%</p></span></div><div class="option"><span class="key">c</span><span><p>90%</p></span></div><div class="option"><span class="key">d</span><span><p>40%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Benzalacetone is synthesized from benzaldehyde (10.6 g) and acetone. Theoretical yield is 14.6 g from 0.1 moles of benzaldehyde. Given actual yield = 7.3 g, the percentage yield is \\(\\frac{7.3}{14.6}\\times 100=50\\mathrm{%}\\)\u003c/p> \u003cp>Correct answer: A (50%).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the Incorrect Statement about Dalton's Atomic Theory</p> <p> </p> <p>[JEE Main 2024, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>All the atoms of a given element have identical properties including identical mass.</p></span></div><div class="option"><span class="key">b</span><span><p>Chemical reactions involve reorganization of atoms</p></span></div><div class="option"><span class="key">c</span><span><p>Compounds are formed when atoms of different elements combine in any ratio.</p></span></div><div class="option"><span class="key">d</span><span><p>Matter consists of indivisible atoms.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>According to Dalton's Atomic Theory,\u003cbr/>compounds are formed when atoms of different elements combine in a fixed (definite) ratio by mass and number.\u003cbr/>So, saying they combine in \"any\" ratio is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct name of I &amp; II in the following process is :</p> <p>Solid \(\overset{\mathrm{I}}{\to }\)Vapours\(\overset{\mathrm{II}}{\to }\)Solid<br/>Memory Based Question 28/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I \(\to\)Sublimation</p> <p>II \(\to\)Vaporisation</p></span></div><div class="option"><span class="key">b</span><span><p>I Sublimation</p> <p>II Decomposition</p></span></div><div class="option"><span class="key">c</span><span><p>I Sublimation</p> <p>II Deposition</p></span></div><div class="option"><span class="key">d</span><span><p>I Deposition</p> <p>II Sublimation</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The given process represents phase transitions:\u003c/p> \u003cul> \u003cli>Solid → Vapors is sublimation (conversion of solid directly to gas).\u003c/li> \u003cli>Vapors → Solid is deposition (direct conversion of gas to solid).\u003c/li> \u003c/ul> \u003cp>Thus, the correct answer is:\u003c/p> \u003cp>(C) I → Sublimation, II → Deposition.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the Incorrect Statement about Dalton's Atomic Theory</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Compounds are formed when atoms of different elements combine in any ratio</p></span></div><div class="option"><span class="key">b</span><span><p>All the atoms of a given element have identical properties including identical mass</p></span></div><div class="option"><span class="key">c</span><span><p>Matter consists of indivisible atoms</p></span></div><div class="option"><span class="key">d</span><span><p>Chemical reactions involve reorganization of atoms</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct answer is A. Dalton’s atomic theory states that compounds form when atoms combine in a fixed simple whole number ratio, not any ratio. So option A is incorrect. Option B matches Dalton’s postulate, though it is now known isotopes exist. Option C is Dalton’s idea; although atoms are divisible (electrons, protons exist), this was Dalton’s belief. Option D is also correct per Dalton—he proposed that chemical reactions are rearrangements of atoms. Thus, option A contradicts Dalton’s theory and is the only incorrect statement among the given choices.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The quantity which changes with temperature is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Mole fraction</p></span></div><div class="option"><span class="key">b</span><span><p>Molality</p></span></div><div class="option"><span class="key">c</span><span><p>Molarity</p></span></div><div class="option"><span class="key">d</span><span><p>Mass percentage</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>When the temperature is changed,volume will be changed and they are directly proportional to each other. Molarity is defined as the number of moles per unit volume, so molarity is also affected by temperature. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statements.<br/>(A) Weight of a substance is the amount of matter present in it.<br/>(B) Mass is the force exerted by gravity on an object.<br/>(C) Volume is the amount of space occupied by a substance.<br/>(D) Temperatures below \(0^\circ C\) are possible in Celsius scale, but in Kelvin scale negative temperature is not possible.<br/>(E) Precision refers to the closeness of various measurements for the same quantity.</p> <p>Choose the correct answer from the options given below</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (C) and (D) Only</p></span></div><div class="option"><span class="key">b</span><span><p>(C), (D) and (E) Only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B) and (C) Only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (D) and (E) Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Weight is the force of gravity on an object, while mass is the amount of matter.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following mixing of 1 M base and 1 M acid leads to the largest increase in temperature?</p> <p>[JEE Main 2025, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(45\mathrm{mL}{\mathrm{CH}}_{3}\mathrm{COOH}\) and 25 mL NaOH</p></span></div><div class="option"><span class="key">b</span><span><p>\(30\mathrm{mL}{\mathrm{CH}}_{3}\mathrm{CHCOOH}\) and 30 mL NaOH</p></span></div><div class="option"><span class="key">c</span><span><p>50 mL HCl and 20 mL NaOH</p></span></div><div class="option"><span class="key">d</span><span><p>30 mL HCl and 30 mL NaOH</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>More moles of neutralization → More heat released → Higher temperature rise. Largest temperature increase occurs when maximum moles are neutralized with a strong acid and strong base. Hence, option (d) is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Concentrated nitric acid is labelled as 75 % by mass. The volume in mL of the solution which contains 30 g of nitric acid is_____<br/>Given : Density of nitric acid solution is 1.25 g/mL.</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>45</p></span></div><div class="option"><span class="key">b</span><span><p>55</p></span></div><div class="option"><span class="key">c</span><span><p>32</p></span></div><div class="option"><span class="key">d</span><span><p>40</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Since 75 % of the solution is nitric acid by mass, 30 g is 75 % of the total mass.\u003cbr/>Let the total mass of the solution be M.\u003c/p> \u003cp>0.75 × M = 30g\u003c/p> \u003cp>\\(\\mathrm{M}=\\frac{30}{0.75}=40\\mathrm{g}\\)\u003c/p> \u003cp>\\(\\mathrm{V}=\\frac{\\text{ Mass }}{\\text{ Density }}=\\frac{40\\mathrm{g}}{1.25\\mathrm{g}/\\mathrm{mL}}=32\\mathrm{mL}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements.</p> <p><strong>Statement-I:</strong> One mole of propyne reacts with excess of sodium to liberate half a mole of hydrogen gas.</p> <p><strong>Statement-II: </strong>Four grams of propyne reacts with sodium amide to liberate ammonia gas which occupies 224 mL at STP.</p> <p>In the light of above statements, choose most appropriate answer from options given below</p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is correct but statement-II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Both statement-I and statement-II are incorrect</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is incorrect but statement-II is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement-I and statement-II are correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{CH}}_{3}-\\mathrm{C}\\equiv \\mathrm{CH}+\\mathrm{Na}\\to {\\mathrm{CH}}_{3}-\\mathrm{C}\\equiv \\overset{-}{\\mathrm{C}}\\overset{+}{\\mathrm{Na}}+\\frac{1}{2}{\\mathrm{H}}_{2}\\\\ 1\\mathrm{mole}\\mathrm{of}\\mathrm{propyne}\\mathrm{gives}0.5\\mathrm{mole}\\mathrm{of}\\mathrm{hydrogen}\\mathrm{gas}\\\\ {\\mathrm{CH}}_{3}-\\mathrm{C}\\equiv \\mathrm{CH}+{\\mathrm{NaNH}}_{2}\\to {\\mathrm{CH}}_{3}-\\mathrm{C}\\equiv \\overset{-}{\\mathrm{C}}\\overset{+}{\\mathrm{Na}}+{\\mathrm{NH}}_{3}\\\\ \\mathrm{n}=\\frac{4\\mathrm{g}}{40\\mathrm{g}}=0.1\\mathrm{mole}\\\\ 1\\mathrm{mole}\\mathrm{occupies}22400\\mathrm{ml}\\\\ \\mathrm{So},0.1\\mathrm{mole}\\mathrm{occupies}2240\\mathrm{ml}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>7.3 g of benzalacetone is synthesized from 10.6 g of benzaldehyde using acetone as another reactant. Percentage yield of benzalacetone is (memory based jee mains shift-2 29/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>50%</p></span></div><div class="option"><span class="key">b</span><span><p>27%</p></span></div><div class="option"><span class="key">c</span><span><p>90%</p></span></div><div class="option"><span class="key">d</span><span><p>40%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Benzalacetone is synthesized from benzaldehyde (10.6 g) and acetone. Theoretical yield is 14.6 g from 0.1 moles of benzaldehyde. Given actual yield = 7.3 g, the percentage yield is \\(\\frac{7.3}{14.6}\\times 100=50\\mathrm{%}\\)\u003c/p> \u003cp>Correct answer: A (50%).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of moles of methane required to produce 11g CO<sub>2</sub>(g) after complete combustion is:</p> <p>(Given molar mass of methane in g mol<sup>–1</sup> : 16)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.75</p></span></div><div class="option"><span class="key">b</span><span><p>0.25</p></span></div><div class="option"><span class="key">c</span><span><p>0.35</p></span></div><div class="option"><span class="key">d</span><span><p>0.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Balanced reaction:\u003c/p> \u003cp>CH₄ + 2O₂ → CO₂ + 2H₂O\u003c/p> \u003cp> \u003c/p> \u003cp>CO₂ produced = 11 g\u003c/p> \u003cp>Molar mass of CO₂ = 44 g/mol\u003c/p> \u003cp>Moles of CO₂ = 11 / 44 = 0.25 mol\u003c/p> \u003cp> \u003c/p> \u003cp>From equation, 1 mol CH₄ gives 1 mol CO₂\u003c/p> \u003cp>So, moles of CH₄ needed = 0.25 mol\u003c/p> \u003cp> \u003c/p> \u003cp>Final Answer: 0.25\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the value of solubility of zirconium phosphate with formula \(\left[{\mathrm{Zr}}_{3}{\left({\mathrm{PO}}_{4}\right)}_{4}\right]\) in terms of solubility product Ksp</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{s}={\left(\frac{\mathrm{Ksp}}{6912}\right)}^{1/7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{s}=\mathrm{Ksp}\times {4352}^{4/3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{s}={\left(\frac{6912}{\mathrm{ksp}}\right)}^{4/5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{s}={\left(\frac{2345}{\mathrm{Ksp}}\right)}^{5/3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(Z{r}_{3}{(P{O}_{4})}_{4}(s)⇌3{\\mathrm{Zr}}^{4+}(\\mathrm{aq})+4{{\\mathrm{PO}}_{4}}^{3-}(\\mathrm{aq})\\\\ 3\\mathrm{s}4\\mathrm{s}\\\\ {\\mathrm{K}}_{\\mathrm{sp}}={(3\\mathrm{s})}^{3}{(4\\mathrm{s})}^{4}=6912{\\mathrm{s}}^{7}\\\\ \\mathrm{s}={(\\frac{{\\mathrm{K}}_{\\mathrm{sp}}}{6912})}^{1/7}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>0.1 M solution of KI reacts with excess of \({H}_{2}S{O}_{4}\) and \(KI{O}_{3}\) solutions. According to equation</p> <p>\(5{I}^{-}+I{O}_{3}^{-}+6{H}^{+}\to 3{I}_{2}+3{H}_{2}O\)</p> <p>Identify the correct statements :<br/>(A) 200 mL of KI solution reacts with 0.004 mol of \(KI{O}_{3}\)<br/>(B) 200 mL of KI solution reacts with 0.006 mol of \({H}_{2}S{O}_{4}\)<br/>(C) 0.5 L of KI solution produced 0.005 mol of \({I}_{2}\)<br/>(D) Equivalent weight of \(KI{O}_{3}\) is equal to (\(\frac{\text{ Molecular weight }}{5}\))</p> <p>Choose the correct answer from the options given below</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(B) and (C) only</p></span></div><div class="option"><span class="key">d</span><span><p>(C) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(200mL(0.2L)\\) of KI solution \\((0.1M)\\)\u003cbr/>\\(\\to\\) Moles of Kl (I\u003csup>–\u003c/sup>)\u003c/p> \u003cp>\\(=0.1\\times 0.2=0.02\\text{ moles }.\\)\u003c/p> \u003cp>From reaction: 5 moles of \\({I}^{-}\\)react with 1 mole of \\(I{O}_{3}^{-}\\).\u003cbr/>Required \\(I{O}_{3}^{-}:0.02\\times 1/5=0.004\\) moles.\u003c/p> \u003cp>Equivalent weight formula:\u003c/p> \u003cp>\\(\\text{ Equivalent weight }=\\frac{\\text{ Molecular weight }}{n-\\text{ factor }}\\)\u003c/p> \u003cp>For \\(I{O}_{3}^{-}\\)in this reaction, the change in oxidation state ( n -factor) is 5 .\u003cbr/>Hence, Equivalent weight =( Molecular weight)/5.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\(2.8\times {10}^{-3}\mathrm{mol}\mathrm{of}{\mathrm{CO}}_{2}\)is left after removing \({10}^{21}\)molecules from its ' x ' mg sample. The mass of \({\mathrm{CO}}_{2}\) taken initially is</p> <p>(Given : \({\mathrm{N}}_{\mathrm{A}}=6.02\times {10}^{23}{\mathrm{mol}}^{-1}\))</p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>48.2 mg</p></span></div><div class="option"><span class="key">b</span><span><p>98.3 mg</p></span></div><div class="option"><span class="key">c</span><span><p>150.4 mg</p></span></div><div class="option"><span class="key">d</span><span><p>196.2 mg</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\mathrm{Initial}\\mathrm{moles}=\\frac{\\mathrm{x}\\times {10}^{-3}}{44}\\\\ \\mathrm{removed}\\mathrm{moles}=\\frac{{10}^{21}}{6.02\\times {10}^{23}}\\\\ \\mathrm{Moles}\\mathrm{left}=\\mathrm{initial}\\mathrm{moles}-\\mathrm{removed}\\mathrm{moles}\\\\ 2.8\\times {10}^{-3}=\\frac{\\mathrm{x}\\times {10}^{-3}}{44}-\\frac{{10}^{21}}{6.02\\times {10}^{23}}\\\\ \\mathrm{x}=196.2\\mathrm{mg}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Density of 3 M NaCl solution is 1.25 g/mL. The molality of the solution is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.79 m</p></span></div><div class="option"><span class="key">b</span><span><p>2.79 m</p></span></div><div class="option"><span class="key">c</span><span><p><strong>3.</strong>2 m</p></span></div><div class="option"><span class="key">d</span><span><p>4.3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The relation between molarity and molality which includes density is:\u003c/p> \u003cp>\\(\\text{ Molality }=\\frac{\\mathrm{M}\\times 1000}{1000\\mathrm{d}-\\mathrm{M}\\times {\\mathrm{M}}_{\\mathrm{w}}}\\)\u003c/p> \u003cp>Substitute the values in the above expression:\u003c/p> \u003cp>\\(=\\frac{3000}{1250-175.5}=2.79\\mathrm{m}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a compound contains 54.2 % carbon, 9.2 % of hydrogen and rest are oxygen. What is molecular formula of compound, if molecular mass is 132 g/mol ?<br/>(Memory Based JEE Mains 24/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{C}}_{6}{\mathrm{H}}_{12}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{C}}_{4}{\mathrm{H}}_{12}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{C}}_{4}{\mathrm{H}}_{12}{\mathrm{O}}_{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{C}}_{6}{\mathrm{H}}_{13}{\mathrm{O}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,10 +288,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{array}{|c|c|c|c|c|}\u003cbr/>\\hline \\text { Element } &amp; \\text { mass% } &amp; \\text { Atomic mass(g) } &amp; \\frac{\\text { mass%}}{\\text{ atomic mass} } &amp; \\text { Integral ratio } \\\\\u003cbr/>\\hline \\mathrm{C} &amp; 54.2 &amp; 12 &amp; 4.52 &amp; 2 \\\\\u003cbr/>\\hline \\mathrm{H} &amp; 9.2 &amp; 1 &amp; 9.2 &amp; 4 \\\\\u003cbr/>\\hline \\mathrm{O} &amp; 36.6 &amp; 16 &amp; 2.3 &amp; 1 \\\\\u003cbr/>\\hline\u003cbr/>\\end{array}\u003cbr/>\\)\u003c/p> \u003cp>The empirical formula is \\({\\mathrm{C}}_{2}{\\mathrm{H}}_{4}\\mathrm{O}\\)\u003c/p> \u003cp>Molecular formula = \\({({\\mathrm{C}}_{2}{\\mathrm{H}}_{4}\\mathrm{O})}_{\\mathrm{x}}\\)\u003c/p> \u003cp> \\(\\mathrm{x}=\\frac{\\mathrm{Moleuclar}\\mathrm{mass}}{\\mathrm{Empirical}\\mathrm{mass}}=\\frac{132}{44}=3\\)\u003c/p> \u003cp>\\({({\\mathrm{C}}_{2}{\\mathrm{H}}_{4}\\mathrm{O})}_{3}={C}_{6}{\\mathrm{H}}_{12}{\\mathrm{O}}_{3}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{array}{|c|c|c|c|c|}\\hline \\text { Element } & \\text { mass% } & \\text { Atomic mass(g) } & \\frac{\\text { mass%}}{\\text{ atomic mass} } & \\text { Integral ratio } \\\\\\hline \\mathrm{C} & 54.2 & 12 & 4.52 & 2 \\\\\\hline \\mathrm{H} & 9.2 & 1 & 9.2 & 4 \\\\\\hline \\mathrm{O} & 36.6 & 16 & 2.3 & 1 \\\\\\hline\\end{array}$$\u003cbr/>\\)\u003c/p> \u003cp>The empirical formula is \\({\\mathrm{C}}_{2}{\\mathrm{H}}_{4}\\mathrm{O}\\)\u003c/p> \u003cp>Molecular formula = \\({({\\mathrm{C}}_{2}{\\mathrm{H}}_{4}\\mathrm{O})}_{\\mathrm{x}}\\)\u003c/p> \u003cp> \\(\\mathrm{x}=\\frac{\\mathrm{Moleuclar}\\mathrm{mass}}{\\mathrm{Empirical}\\mathrm{mass}}=\\frac{132}{44}=3\\)\u003c/p> \u003cp>\\({({\\mathrm{C}}_{2}{\\mathrm{H}}_{4}\\mathrm{O})}_{3}={C}_{6}{\\mathrm{H}}_{12}{\\mathrm{O}}_{3}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following sets of quantum numbers have the same energy?</p> <p>(a) n=2 , l=2 , m=+1</p> <p>(b) n=2 , l=1 , m=-1</p> <p>(c) n=3, l=2 , m=0</p> <p>(d) n=3 , l=2 , m=1</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>a, b</p></span></div><div class="option"><span class="key">b</span><span><p>b, c</p></span></div><div class="option"><span class="key">c</span><span><p>c, d</p></span></div><div class="option"><span class="key">d</span><span><p>a, c</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The (n+l) value determines the energy of the orbital. The lower the value of (n+l), the lower will be the energy of orbitals. If the value of (n+l) is the same for the two orbitals, then lower the value of n , the lower will be the energy of the orbital.\u003c/p> \u003cp>(A) n+l =4 \u003c/p> \u003cp>(B) n+l = 3 \u003c/p> \u003cp>(C) n+l = 5 \u003c/p> \u003cp>(D) n+l = 5 \u003c/p> \u003cp>For (C) and (D) the value of (n+l) =5, hence they both have the same energy \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is an example of a heterogeneous substance?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bottled water</p></span></div><div class="option"><span class="key">b</span><span><p>Table salt</p></span></div><div class="option"><span class="key">c</span><span><p>Pieces of copper</p></span></div><div class="option"><span class="key">d</span><span><p>Candle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Candle is a heterogeneous mixture of wax and threads. Copper is an element while bottled water and table salt are compounds.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The <strong>correct</strong> option for the mass of \(\mathrm{CO}_2\) produced by heating \(20 \mathrm{~g}\) of \(20 \%\) pure limestone is<br/>(Atomic mass of \(\mathrm{Ca}=40\)u)<br/>\(\left[{\mathrm{CaCO}}_{3}\overset{1200\mathrm{K}}{\to }\mathrm{CaO}+{\mathrm{CO}}_{2}\right]\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.76 g</p></span></div><div class="option"><span class="key">b</span><span><p>2.64 g</p></span></div><div class="option"><span class="key">c</span><span><p>1.32 g</p></span></div><div class="option"><span class="key">d</span><span><p>1.12 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

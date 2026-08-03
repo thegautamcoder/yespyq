@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"SSC CGL","item":"https://yespyq.com/exams/ssc-cgl/"},{"@type":"ListItem","position":4,"name":"Quantitative Aptitude","item":"https://yespyq.com/exams/ssc-cgl/aptitude/"},{"@type":"ListItem","position":5,"name":"Pipes and Cisterns","item":"https://yespyq.com/exams/ssc-cgl/aptitude/pipes-and-cisterns/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Pipes and Cisterns</h1>
       <p>5 SSC CGL Quantitative Aptitude previous year questions on <b>Pipes and Cisterns</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">There are two water taps in a tank which can fill the empty tank in 12 hours and 18 hours respectively. It is seen that there is a leakage point at the bottom of the tank which can empty the completely filled tank in 36 hours. If both the water taps are opened at the same time to fill the empty tank and the leakage point was repaired after 1 hour, then in how much time the empty tank will be completely filled?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>7 hours 12 minutes</span></div><div class="option"><span class="key">b</span><span>8 hours 24 minutes</span></div><div class="option correct"><span class="key">c</span><span>7 hours 24 minutes</span></div><div class="option"><span class="key">d</span><span>7 hours</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Pipe A can fill a tank in 12 minutes; pipe B can fill it in 18 minutes, while pipe can empty the full tank in 36 minutes. If all the pipes are opened simultaneously, how much time will it take to fill the empty tank completely?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>7 minutes 30 seconds</span></div><div class="option"><span class="key">b</span><span>10 minutes</span></div><div class="option"><span class="key">c</span><span>9 minutes</span></div><div class="option"><span class="key">d</span><span>6 minutes</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Pipe A can fill the tank = 12 min Pipe B can fill the tank = 18 min Pipe C can empty the tank = 36 min According to question, Part of tank filled by all three pipes in 1 min Time taken = 9 min Hence, the correct answer is (C).","fmt":""}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Each inlet pipe can fill an empty cistern in 84 hours while each drain pipe can empty the same cistern from a filled condition in 105 hours. When the cistern is empty, 9 inlet pipes and 10 outlet pipes are simultaneously opened. After how many hours will the cistern be completely filled?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>84</span></div><div class="option"><span class="key">b</span><span>88</span></div><div class="option"><span class="key">c</span><span>80</span></div><div class="option"><span class="key">d</span><span>90</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Each inlet pipe can fill an empty cistern in 84 hours while each drain pipe can empty the same cistern from a filled condition in 105 hours LCM of 84, 105 = 420 Let the total capacity of cistern be 420 unit. Total capacity = Efficiency Time taken Efficiency of each inlet pipe = = 5 unit/hr Efficiency of each outlet pipe = = 4 unit/hr When the cistern is empty, 9 inlet pipes and 10 outlet pipes are simultaneously opened. Efficiency of 9 inlet pipe = 5 9 = 45 unit/hr Efficiency of 10 outlet pipe = 4 10 = 40 unit/hr the cistern will be completely filled = = = 84 hours So,correct option is A.","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A pipe can fill a tank in 30 hours. Due to a leakage at the bottom, it is filled in 50 hours. How much time will the leakage take to empty the completely filled tank?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>60 hours</span></div><div class="option"><span class="key">b</span><span>85 hours</span></div><div class="option"><span class="key">c</span><span>70 hours</span></div><div class="option"><span class="key">d</span><span>75 hours</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Let the leakage can empty the completely filled tank in x hours. Part filled by the pipe in 1 hour = Part filled by the pipe and leakage in 1 hour = = = x = 75 So, the leakage will take 75 hours to empty the filled tank. Hence, Option D is correct","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Pipe A can fill of the tank in 6 hours and pipe B can completely fill the same tank in 18 hours. If both the pipes are opened at the same time, in how much time (in minutes) will the empty tank be completely filled?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>420</span></div><div class="option"><span class="key">b</span><span>425</span></div><div class="option"><span class="key">c</span><span>432</span></div><div class="option"><span class="key">d</span><span>435</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

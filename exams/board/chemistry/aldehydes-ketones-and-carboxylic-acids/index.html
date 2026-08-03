@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Aldehydes, Ketones and Carboxylic Acids","item":"https://yespyq.com/exams/board/chemistry/aldehydes-ketones-and-carboxylic-acids/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Aldehydes, Ketones and Carboxylic Acids</h1>
       <p>7 Board Chemistry previous year questions on <b>Aldehydes, Ketones and Carboxylic Acids</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\mathrm{CH}}_{3}-\mathrm{C}\equiv \mathrm{CH}\overset{\mathrm{Pd}/\mathrm{C}}{\underset{{\mathrm{H}}_{2}}{\to }}\mathrm{A}\overset{(\mathrm{i}){\mathrm{O}}_{3}}{\underset{(\mathrm{ii})\mathrm{Zn},{\mathrm{H}}_{2}\mathrm{O}}{\to }}\mathrm{B}+\mathrm{C}\)</p> <p>Products B and C are :</p> <p>Memory Based Question 28/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Ethanal and formaldehyde</p></span></div><div class="option"><span class="key">b</span><span><p>Propanal and formaldehyde</p></span></div><div class="option"><span class="key">c</span><span><p>Ethanal and propanal</p></span></div><div class="option"><span class="key">d</span><span><p>Propanal only</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Both acetaldehyde and acetone (individually) undergo which of the following reactions?<br/>A. Iodoform Reaction<br/>B. Cannizzaro Reaction<br/>C. Aldol Condensation<br/>D. Tollen's Test<br/>E. Clemmensen Reduction</p> <p>Choose the <strong>correct </strong>answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B and D Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and E Only</p></span></div><div class="option"><span class="key">c</span><span><p>B, C and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>C and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Cannizzaro Reaction:\u003cbr/>- Cannizzaro reaction occurs in aldoses (aldehydes with no \\(\\alpha\\)-hydrogen).\u003cbr/>- Acetaldehyde \\(\\left(C{H}_{3}CHO\\right)\\) has an \\(\\alpha\\)-hydrogen, so it does NOT undergo the Cannizzaro reaction.\u003cbr/>- Acetone \\(\\left(C{H}_{3}COC{H}_{3}\\right)\\) is a ketone and also does not undergo the Cannizzaro reaction.\u003cbr/>Tollen's Test:\u003cbr/>- Tollen's test detects aldehydes (it oxidizes them to carboxylic acids).\u003cbr/>- Acetaldehyde \\(\\left(C{H}_{3}CHO\\right)\\) is an aldehyde, so it gives a positive Tollen's test.\u003cbr/>- Acetone \\(\\left(C{H}_{3}COC{H}_{3}\\right)\\) is a ketone, and ketones do not give Tollen's test.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following arrangements with respect to their reactivity in nucleophilic addition reaction is correct?</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>acetophenone &lt; p-tolualdehyde &lt; benzaldehyde &lt; p- nitrobenzaldehyde</p></span></div><div class="option"><span class="key">b</span><span><p> acetophenone &lt; benzaldehyde &lt; p-tolualdehyde &lt; p- nitrobenzaldehyde</p></span></div><div class="option"><span class="key">c</span><span><p>benzaldehyde &lt; acetophenone &lt; p- nitrobenzaldehyde &lt; p-tolualdehyde</p></span></div><div class="option"><span class="key">d</span><span><p>p-nitrobenzaldehyde &lt; benzaldehyde &lt; p-tolualdehyde &lt; acetophenone</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Electron-donating groups decrease the electrophilicity of the carbonyl carbon, making it less reactive. On the other hand, electronwithdrawing groups increase the electrophilicity, making the carbonyl carbon highly reactive towards nucleophiles. . Thus, the correct order of increasing reactivity is: acetophenone &lt; p-tolualdehyde &lt; benzaldehyde &lt; p-nitrobenzaldehyde\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Both acetaldehyde and acetone (individually) undergo which of the following reactions,<br/>A) lodoform Reaction<br/>B) Cannizzaro Reaction<br/>C) Aldol condensation.<br/>D) Tollen's test<br/>E) Clemmesen Reduction</p> <p>Memory Based Question 28/Jan/25 Morning shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, C &amp; E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, D &amp; E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, C, D &amp; E</p></span></div><div class="option"><span class="key">d</span><span><p>A &amp; C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The Aldol Condensation involves the reaction of two aldehydes or ketones (with at least one alpha-hydrogen) in the presence of a base, leading to the formation of a β-hydroxy ketone or aldehyde, which may further undergo dehydration to give an α,β-unsaturated carbonyl compound. Acetaldehyde can undergo aldol condensation because it has an alpha-hydrogen. Acetone can also undergo aldol condensation since it has alpha-hydrogens as well. Both acetaldehyde and acetone undergo aldol condensation. The Tollen's test detects aldehydes, which are oxidized to carboxylates while the Tollen’s reagent (silver ammonia complex) is reduced to metallic silver. Acetaldehyde can undergo Tollen's test because it is an aldehyde. Acetone cannot undergo Tollen’s test because it is a ketone and does not react with Tollen's reagent. Only acetaldehyde undergoes Tollen's test. The Clemmensen Reduction involves the reduction of ketones or aldehydes to alkanes using zinc amalgam in the presence of hydrochloric acid. Acetaldehyde can undergo Clemmensen reduction to form ethane. Acetone can also undergo Clemmensen reduction to form propane. Both acetaldehyde and acetone undergo Clemmensen reduction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following sequence of reaction\({\mathrm{C}}_{6}{\mathrm{H}}_{12}\overset{\mathrm{Se}/∆}{\to }\mathrm{A}\overset{{\mathrm{CH}}_{3}-\mathrm{Cl}}{\underset{{\mathrm{AlCl}}_{3}}{\to }}\mathrm{B}\overset{{\mathrm{CrO}}_{2}{\mathrm{Cl}}_{2}}{\underset{{{\mathrm{H}}_{3}\mathrm{O}}^{+}}{\to }}\mathrm{C}\)</p> <p><br/>Choose the correct option about maior product</p> <p>Memory Based Question 28/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>'C' gives Fehling's solution test</p></span></div><div class="option"><span class="key">b</span><span><p>'C' can be prepared by reacting PhMgBr with \({\mathrm{CO}}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>'C' gives Tollen's test</p></span></div><div class="option"><span class="key">d</span><span><p>'C' can give effervescence with \({\mathrm{NaHCO}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The given reaction sequence involves:\u003c/p> \u003col> \u003cli>C₆H₁₂ → A (Se/Δ): Dehydrogenation converts cyclohexane to benzene (A = C₆H₆).\u003c/li> \u003cli>A → B (AlCl₃/CH₃Cl): Friedel-Crafts alkylation forms toluene (B = C₆H₅CH₃).\u003c/li> \u003cli>B → C (CrO₂Cl₂/H₃O⁺): Etard oxidation converts toluene to benzaldehyde (C = C₆H₅CHO).\u003c/li> \u003c/ol> \u003cp>Checking options:\u003c/p> \u003cul> \u003cli>C does not give Fehling’s test (A).\u003c/li> \u003cli>C is not formed from PhMgBr + CO₂ (B).\u003c/li> \u003cli>C gives Tollen’s test due to the –CHO group (C ).\u003c/li> \u003cli>C does not react with NaHCO₃ (D).\u003c/li> \u003c/ul> \u003cp>Final answer: (C) ‘C’ gives Tollen’s test.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which is the correct order of nucleophilic addition<br/>1. Acetophenone, <br/>2. p-nitrobenzaldehyde<br/>3. benzaldehyde, <br/>4. p-tolualdehyde</p> <p>(Memory Based JEE Mains 24/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1&gt;2&gt;3&gt;4</p></span></div><div class="option"><span class="key">b</span><span><p>2&gt;3&gt;4&gt;1</p></span></div><div class="option"><span class="key">c</span><span><p>2 &gt;4&gt;3&gt;1</p></span></div><div class="option"><span class="key">d</span><span><p>4&gt;3&gt;2&gt;1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Electronwithdrawing group facilitates the nucleophilic addition reaction by increasing electrophilicity on carbonyl carbon, where as electrondonating group decreases reactivity. Hence, the correct order is as follows :\u003c/p> \u003cp>p-Nitrobenzaldehyde &gt;Benzaldehyde&gt;p-Tolualdehyde&gt; Acetophenone\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I </strong>with <strong>List-II</strong>.</p> <table> <tbody> <tr> <td> <p><strong>List-I</strong></p> <p><strong>(Reactions)</strong></p> </td> <td> <p><strong>List-II</strong></p> <p><strong>(Reagent)</strong></p> </td> </tr> <tr> <td> <p>(A)</p> </td> <td> <p>Hoffmann Degradation </p> </td> <td> <p>(I)</p> </td> <td> <p>Conc. KOH, \(∆\)</p> </td> </tr> <tr> <td> <p>(B)</p> </td> <td> <p>Clemmensen reduction </p> </td> <td> <p>(II)</p> </td> <td> <p>CHCl<sub>3</sub>, NaOH/\({\mathrm{H}}_{3}{\mathrm{O}}^{⊕}\)</p> </td> </tr> <tr> <td> <p>(C)</p> </td> <td> <p>Cannizzaro reaction </p> </td> <td> <p>(III)</p> </td> <td> <p>Br<sub>2</sub>, NaOH</p> </td> </tr> <tr> <td> <p>(D)</p> </td> <td> <p>Reimer-Tiemann Reaction</p> </td> <td> <p>(IV)</p> </td> <td> <p>Zn.Hg/HCl</p> </td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\text{ A - III, B - IV, C - I, D - II}\text{ }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\text{ A - III, B - IV, C - II, D - I }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\text{ A - II, B - I, C - III, D - IV }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\text{ A - II, B - IV, C - I, D - III }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

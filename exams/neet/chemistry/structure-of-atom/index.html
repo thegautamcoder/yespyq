@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Structure of Atom","item":"https://yespyq.com/exams/neet/chemistry/structure-of-atom/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Structure of Atom</h1>
       <p>23 NEET Chemistry previous year questions on <b>Structure of Atom</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Among the following, the correct statement(s) for electrons in an atom is(are)</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Uncertainty principle rules out the existence of definite paths for electrons.</span></div><div class="option"><span class="key">b</span><span>The energy of an electron in 2s orbital of an atom is lower than the energy of an electron that is infinitely far away from the nucleus.</span></div><div class="option"><span class="key">c</span><span>According to Bohr’s model, the most negative energy value for an electron is given by n = 1, which corresponds to the most stable orbit.</span></div><div class="option"><span class="key">d</span><span>According to Bohr’s model, the magnitude of velocity of electrons increases with increase in values of n.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement-I: The orbitals having same energy are called as degenerate orbitals. Statement-II: In hydrogen atom, 3p and 3d orbitals are not degenerate orbitals. In the light of the above statements, choose the most appropriate answer from the options given</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Statement-I is true but Statement-II is false</span></div><div class="option"><span class="key">b</span><span>Both Statement-I and Statement-II are true.</span></div><div class="option"><span class="key">c</span><span>Both Statement-I and Statement-II are false</span></div><div class="option"><span class="key">d</span><span>Statement-I is false but Statement-II is true</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The first use of quantum theory to explain the structure of atom was made by:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Heisenberg</span></div><div class="option"><span class="key">b</span><span>Bohr</span></div><div class="option"><span class="key">c</span><span>Planck</span></div><div class="option"><span class="key">d</span><span>Einstein</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Bohr was the first to apply quantum ideas (quantized angular momentum, ) to describe the hydrogen atom’s structure and spectrum.","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a given atom no two electrons can have the same values for all the four quantum numbers. This is called:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Hund's Rule</span></div><div class="option"><span class="key">b</span><span>Aufbau principle</span></div><div class="option"><span class="key">c</span><span>Uncertainty principle</span></div><div class="option"><span class="key">d</span><span>Pauli's Exclusion principle.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"n a given atom no two electrons can have the same values for all the four quantum numbers. This is called Pauli's exclusion principle.","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The number of angular nodes and radial nodes in 3s orbital are [Re-NEET 2020]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>1 and 0, respectively</span></div><div class="option"><span class="key">b</span><span>3 and 0, respectively</span></div><div class="option"><span class="key">c</span><span>0 and 1, respectively</span></div><div class="option"><span class="key">d</span><span>0 and 2, respectively</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Number of angular nodes = . For 3s ( ), angular nodes = 0. Number of radial nodes = . For 3s ( , ), radial nodes = .","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The quantum numbers of four electrons are given below</p> <p>I. \(n=4 ; l=2 ; m_l=-2 ; s=-\frac{1}{2}\)<br/>II. \(n=3 ; l=2 ; m_l=1 ; s=+\frac{1}{2}\)<br/>III. \(n=4 ; l=1 ; m_l=0 ; s=+\frac{1}{2}\)<br/>IV. \(n=3 ; l=1 ; m_l=-1 ; s=+\frac{1}{2}\)</p> <p>The <strong>correct</strong> decreasing order of energy of these electrons is </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>IV \(&gt;\) II \(&gt;\) III \(&gt;\) I</p></span></div><div class="option"><span class="key">b</span><span><p>I \(&gt;\) III \(&gt;\) II \(&gt;\) IV</p></span></div><div class="option"><span class="key">c</span><span><p>III \(&gt;\) I \(&gt;\) II \(&gt;\) IV</p></span></div><div class="option"><span class="key">d</span><span><p>I \(&gt;\) II \(&gt;\) III \(&gt;\) IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Higher the value of (n + l), higher will be energy of orbital. If (n + l) are equal, then higher the value of n, higher will be energy.\u003c/p> \u003cp>I. n + l = 6 n = 4\u003c/p> \u003cp>II. n + l = 5 n = 3\u003c/p> \u003cp>III. n + l = 5 n = 4\u003c/p> \u003cp>IV. n + l = 4 n = 3\u003c/p> \u003cp>I \\(&gt;\\) III \\(&gt;\\) II \\(&gt;\\) IV\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements </p> <p>Statement I: The Balmer spectral line for H-atom with lowest energy is located at \(\frac{5}{36} R _{ H } cm ^{-1}\). \(\left( R _{ H }=\right.\) Rydberg constant \()\)<br/>Statement II: When the temperature of blackbody increases, the maxima of the curve (intensity Vs wavelength) shifts to shorter wavelength.</p> <p>In the light of the above statements, choose the correct answer from the options given below<br/><br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\overset{¯}{\\nu }={\\mathrm{R}}_{\\mathrm{H}}\\left[\\frac{1}{{\\mathrm{n}}_{1}^{2}}−\\frac{1}{{\\mathrm{n}}_{2}^{2}}\\right]\\)\u003c/p> \u003cp>\\(\\overset{¯}{\\nu }={\\mathrm{R}}_{\\mathrm{H}}\\left[\\frac{1}{{(2)}^{2}}−\\frac{1}{{(3)}^{2}}\\right]\\)\u003c/p> \u003cp>\\(\\begin{matrix}\\overset{¯}{\\nu }={\\mathrm{R}}_{\\mathrm{H}}\\left[\\frac{1}{4}−\\frac{1}{9}\\right] \\\\ \\overset{¯}{\\nu }=\\frac{5}{36}{\\mathrm{R}}_{\\mathrm{H}}\\text{ }{\\mathrm{cm}}^{−1}\\end{matrix}\\)\u003c/p> \u003cp>As the temperature of a blackbody increases, the peak wavelength of its radiation shifts towards shorter wavelengths\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy and radius of first Bohr orbit of \({\mathrm{He}}^{+}\mathrm{and}{\mathrm{Li}}^{2+}\)are</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \({E}_{n}(L{i}^{2+})=-19.62\times {10}^{-16}J\\ {r}_{n}(L{i}^{2+})=17.6pm\\ {E}_{n}(H{e}^{+})=-8.72\times {10}^{-16}J\\ {r}_{n}(H{e}^{+})=26.4pm\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({E}_{n}(L{i}^{2+})=-8.72\times {10}^{-16}J\\ {r}_{n}(L{i}^{2+})=17.6pm\\ {E}_{n}(H{e}^{+})=-19.62\times {10}^{-16}J\\ {r}_{n}(H{e}^{+})=17.6pm\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({E}_{n}(L{i}^{2+})=-19.62\times {10}^{-18}J\\ {r}_{n}(L{i}^{2+})=17.6pm\\ {E}_{n}(H{e}^{+})=-8.72\times {10}^{-18}J\\ {r}_{n}(H{e}^{+})=26.4pm\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({E}_{n}(L{i}^{2+})=-8.72\times {10}^{-18}J\\ {r}_{n}(L{i}^{2+})=26.4pm\\ {E}_{n}(H{e}^{+})=-19.62\times {10}^{-18}J\\ {r}_{n}(H{e}^{+})=17.6pm\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For hydrogen-like ions:\u003c/p> \u003cp>Energy formula\u003c/p> \u003cp>Eₙ = −13.6 Z² / n² (eV)\u003c/p> \u003cp>1 eV = 1.6 × 10⁻¹⁹ J\u003c/p> \u003cp>Radius formula\u003c/p> \u003cp>rₙ = 0.53 n² / Z (Å)\u003c/p> \u003cp>1. For Li²⁺ (Z = 3)\u003cbr/>Energy\u003c/p> \u003cp>E₁ = −13.6 × 3²\u003c/p> \u003cp>E₁ = −13.6 × 9\u003c/p> \u003cp>E₁ = −122.4 eV\u003c/p> \u003cp>In joules\u003c/p> \u003cp>E₁ = −122.4 × 1.6 × 10⁻¹⁹\u003c/p> \u003cp>E₁ = −19.6 × 10⁻¹⁸ J\u003c/p> \u003cp>Radius\u003c/p> \u003cp>r₁ = 0.53 / 3 Å\u003c/p> \u003cp>= 0.176 Å\u003c/p> \u003cp>1 Å = 100 pm\u003c/p> \u003cp>r₁ = 17.6 pm\u003c/p> \u003cp>2. For He⁺ (Z = 2)\u003cbr/>Energy\u003c/p> \u003cp>E₁ = −13.6 × 2²\u003c/p> \u003cp>E₁ = −13.6 × 4\u003c/p> \u003cp>E₁ = −54.4 eV\u003c/p> \u003cp>In joules\u003c/p> \u003cp>E₁ = −54.4 × 1.6 × 10⁻¹⁹\u003c/p> \u003cp>E₁ = −8.72 × 10⁻¹⁸ J\u003c/p> \u003cp>Radius\u003c/p> \u003cp>r₁ = 0.53 / 2 Å\u003c/p> \u003cp>= 0.265 Å\u003c/p> \u003cp>= 26.4 pm\u003c/p> \u003cp>Li²⁺\u003cbr/>E₁ = −19.62 × 10⁻¹⁸ J\u003cbr/>r₁ = 17.6 pm\u003c/p> \u003cp>He⁺\u003cbr/>E₁ = −8.72 × 10⁻¹⁸ J\u003cbr/>r₁ = 26.4 pm\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy of an electron in the ground state (n = 1) for \({\mathrm{He}}^{+}\) ion is \(-\mathrm{x}\) Joules then that for an electron in n = 2 state for \({\mathrm{Be}}^{3+}\)ion in Joule is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-\frac{4}{9}\mathrm{x}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-\mathrm{x}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{\mathrm{x}}{9}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-4\mathrm{x}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For a one‐electron ion, the energy is \\({\\mathrm{E}}_{\\mathrm{n}}=-\\mathrm{k}\\times \\frac{{\\mathrm{Z}}^{2}}{{\\mathrm{n}}^{2}}\\mathrm{J}\\) \u003c/p> \u003cul> \u003cli>For \\({He}^{+}\\) ion, \\(n=1\\), \\(Z=2\\), so \\({\\mathrm{E}}_{1}=−\\mathrm{k}\\times 4\\mathrm{J}=-\\mathrm{x}\\mathrm{J}\\) \u003c/li> \u003cli>For \\(B{e}^{3+}\\) ion, \\(n=2\\), \\(Z=4\\), \\({\\mathrm{E}}_{2}=-\\mathrm{k}\\times \\frac{16}{4}\\) = – k × 4 J\u003c/li> \u003cli>E\u003csub>2\u003c/sub> = – x J\u003c/li> \u003c/ul> \u003cp>OR\u003c/p> \u003cp>\\({E}_{n}=−{E}_{0}\\times \\frac{{2}^{2}}{{n}^{2}}\\)\u003c/p> \u003cp>\\({E}_{H{e}^{+}}=−{E}_{0}\\times \\frac{{2}^{2}}{{1}^{2}}=−4{E}_{0}\\)\u003c/p> \u003cp>According to question this energy is equal to -x joules\u003c/p> \u003cp>\\(−4{E}_{0}=−x\\Rightarrow {E}_{0}=\\frac{x}{4}\\)\u003c/p> \u003cp>\\({E}_{B{e}^{+3}}=−{E}_{0}\\times \\frac{{4}^{2}}{{2}^{2}}={E}_{0}\\times \\frac{16}{4}=−4{E}_{0}\\)\u003c/p> \u003cp>on putting the value of E\u003csub>0\u003c/sub>\u003c/p> \u003cp>\\({E}_{B{e}^{+3}}=−4\\times \\left(\\frac{x}{4}\\right)=−x\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The quantum numbers of four electrons are given below</p> <p>I. \(n=4 ; l=2 ; m_l=-2 ; s=-\frac{1}{2}\)<br/>II. \(n=3 ; l=2 ; m_l=1 ; s=+\frac{1}{2}\)<br/>III. \(n=4 ; l=1 ; m_l=0 ; s=+\frac{1}{2}\)<br/>IV. \(n=3 ; l=1 ; m_l=-1 ; s=+\frac{1}{2}\)</p> <p>The <strong>correct</strong> decreasing order of energy of these electrons is </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>IV \(&gt;\) II \(&gt;\) III \(&gt;\) I</p></span></div><div class="option"><span class="key">b</span><span><p>I \(&gt;\) III \(&gt;\) II \(&gt;\) IV</p></span></div><div class="option"><span class="key">c</span><span><p>III \(&gt;\) I \(&gt;\) II \(&gt;\) IV</p></span></div><div class="option"><span class="key">d</span><span><p>I \(&gt;\) II \(&gt;\) III \(&gt;\) IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Higher the value of (n + l), higher will be energy of orbital. If (n + l) are equal, then higher the value of n, higher will be energy.\u003c/p> \u003cp>I. n + l = 6 n = 4\u003c/p> \u003cp>II. n + l = 5 n = 3\u003c/p> \u003cp>III. n + l = 5 n = 4\u003c/p> \u003cp>IV. n + l = 4 n = 3\u003c/p> \u003cp>IV &lt; II &lt; III &lt; I\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II.</p> <table> <tbody> <tr> <td> <p><strong>List-I</strong></p> <p><strong>(Quantum Number)</strong></p> </td> <td> <p><strong>List-II</strong></p> <p><strong>(Orbital)</strong></p> </td> </tr> <tr> <td>(A)</td> <td>n = 2, ℓ = 1</td> <td>(I)</td> <td>2s</td> </tr> <tr> <td>(B)</td> <td>n = 3, ℓ = 2</td> <td>(II)</td> <td>3s</td> </tr> <tr> <td>(C)</td> <td>n = 3, ℓ = 0</td> <td>(III)</td> <td>2p</td> </tr> <tr> <td>(D)</td> <td>n = 2, ℓ = 0</td> <td>(IV)</td> <td>3d</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">c</span><span><p>A-IV, B-III, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-III, C-II, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>2s: n = 2, ℓ = 0\u003c/p> \u003cp>3s: n = 3, ℓ = 0\u003c/p> \u003cp>2p: n = 2, ℓ = 1\u003c/p> \u003cp>3d: n = 3, ℓ = 2\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the maximum wavelength line in the Lyman series of \({\mathrm{He}}^{+}\) ion?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3R</p></span></div><div class="option"><span class="key">b</span><span><p>1/3R</p></span></div><div class="option"><span class="key">c</span><span><p>1/R</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\frac{1}{\\lambda }=R{Z}^{2}\\left[\\frac{1}{{{n}_{1}}^{2}}-\\frac{1}{{{n}_{2}}^{2}}\\right]=R{2}^{2}\\left[\\frac{1}{{1}^{2}}-\\frac{1}{{2}^{2}}\\right]=3R\\\\ \\lambda =\\frac{1}{3R}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particular station of All India Radio, New Delhi, broadcasts on a frequency of \( 1,368 \mathrm{~kHz} \) (kilohertz). The wavelength of the electromagnetic radiation emitted by the transmitter is: [speed of light, \( \mathrm{c}=3.0 \times 10^{8} \mathrm{~ms}^{-1} \) ]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 219.2 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 2192 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 21.92 \mathrm{~cm} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 219.3 \mathrm{~m} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Frequency \\(\\nu =1368\\text{ }\\mathrm{k}\\mathrm{H}\\mathrm{z}=1.368\\times {10}^{6}\\text{ }\\mathrm{H}\\mathrm{z}\\).\u003cbr/>Speed of light \\(c=3.0\\times {10}^{8}\\text{ }{\\mathrm{m}\\text{ }\\mathrm{s}}^{−1}\\).\u003cbr/>Wavelength \\(\\lambda =\\frac{c}{\\nu }\\approx \\frac{3.0\\times {10}^{8}}{1.368\\times {10}^{6}}\\approx 219.3\\text{ }\\mathrm{m}\\mathrm{.}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of protons, neutrons and electrons in \( { }_{71}^{175} \mathrm{Lu} \), respectively, are</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>104, 71 and 71</p></span></div><div class="option"><span class="key">b</span><span><p>71, 71 and 104</p></span></div><div class="option"><span class="key">c</span><span><p>175, 104 and 71</p></span></div><div class="option"><span class="key">d</span><span><p>71, 104 and 71</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Number of protons = number of electrons = 71\u003c/p> \u003cp>Number of neutrons = A-Z = 175 - 71 = 104\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>According to Bohrs atomic theory</p> <p>(I) Kinetic energy of electron is \( \propto \frac{\mathrm{Z}^{2}}{\mathrm{n}^{2}} \).</p> <p>(II) The product of velocity (v) of electron and principal quantum number \( (\mathrm{n}) \), \( v n \) \( \propto Z^{2} \).</p> <p>(III) Frequency of revolution of electron in an orbit is \( \propto \frac{Z^{3}}{n^{3}} \).</p> <p>(IV) Coulombic force of attraction on the electron is \( \propto \frac{Z^{3}}{n^{4}} \).</p> <p> Choose the most appropriate answer the from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I, III and IV only</p></span></div><div class="option"><span class="key">b</span><span><p>I and IV only</p></span></div><div class="option"><span class="key">c</span><span><p>I only</p></span></div><div class="option"><span class="key">d</span><span><p>III only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>I and IV only\u003cbr/>\u003cbr/>Concept Based\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the <strong>correct </strong>statements from the following <br/>A. Atoms of all elements are composed of two fundamental particles.<br/>B. The mass of the electron is \(9.10939 \times 10^{-31} \mathrm{~kg}\).<br/>C. All the isotopes of a given elements show same chemical properties.<br/>D. Protons and electrons are collectively known as nucleons.<br/>E. Dalton's atomic theory, regarded the atom as an ultimate particle of matter.</p> <p>Choose the <strong>correct </strong>answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C,D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and E only</p></span></div><div class="option"><span class="key">c</span><span><p>B,C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A,B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Atoms of all elements are composed of three fundamental particles, i.e, electron, proton, neutrons. \u003c/p> \u003cp>Protons and neutrons are collectively known as nucleons\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Calculate the wavelength (in nanometer) associated with a proton<br/>moving at \(1.0\times {10}^{3}{\mathrm{ms}}^{-1}\)<br/>.<br/>(Mass of proton =\(1.67\times {10}^{-27}\mathrm{kg}\mathrm{and}\mathrm{h}=6.63\times {10}^{-34}\mathrm{Js}\))</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.40 nm</p></span></div><div class="option"><span class="key">b</span><span><p>2.5 nm</p></span></div><div class="option"><span class="key">c</span><span><p>14.0 nm</p></span></div><div class="option"><span class="key">d</span><span><p>0.32 nm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\lambda =\\frac{\\mathrm{h}}{\\mathrm{mv}}=\\frac{6.63\\mathrm{x}{10}^{-34}}{1.67\\mathrm{x}{10}^{-27}\\mathrm{x}1\\mathrm{x}{10}^{3}}\\\\ =3.97\\mathrm{x}{10}^{-10}\\mathrm{meter}\\\\ 0.397\\mathrm{nano}\\mathrm{metre}=0.40\\mathrm{nm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement-I: </strong>Bohr's theory accounts for the stability and line spectrum of \(\mathrm{Li}^{+}\) ion.</p> <p><strong>Statement-II: </strong>Bohr's theory was unable to explain the splitting of spectral lines in the presence of a magnetic field.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both statement-I and statement-II are true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is true but statement-II is false</p></span></div><div class="option"><span class="key">c</span><span><p>Both statement-I and statement-II are false</p></span></div><div class="option"><span class="key">d</span><span><p>Statement-I is false but statement-II is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Bohr's theory is applicable to Li\u003csup>2+\u003c/sup> (single electron system)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Select the <strong>correct </strong>statements from the following <br/>A. Atoms of all elements are composed of two fundamental particles.<br/>B. The mass of the electron is \(9.10939 \times 10^{-31} \mathrm{~kg}\).<br/>C. All the isotopes of a given elements show same chemical properties.<br/>D. Protons and electrons are collectively known as nucleons.<br/>E. Dalton's atomic theory, regarded the atom as an ultimate particle of matter.</p> <p>Choose the <strong>correct </strong>answer from the options given below</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C,D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and E only</p></span></div><div class="option"><span class="key">c</span><span><p>B,C and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A,B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Atoms of all elements are composed of three fundamental particles, i.e, electron, proton, neutrons. \u003c/p> \u003cp>Protons and neutrons are collectively known as nucleons.\u003c/p> \u003cp>According to John Dalton, atom is indivisible and smallest unit.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The relation between \(n_m,\left(n_m=\right.\) the number of permissible values of magnetic quantum number (m)) for a given value of azimuthal quantum number \((l)\), is</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(l=2{\mathrm{n}}_{\mathrm{m}}+1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{n}}_{\mathrm{m}}=2{l}^{2}+1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{n}}_{\mathrm{m}}=l+2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(l=\frac{{\mathrm{n}}_{\mathrm{m}}-1}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>For a given azimuthal quantum number \\(l\\), the number of allowed \\(m\\) values is\u003c/p> \u003cp>\\({n}_{m}\\text{  }=\\text{  }2l\\text{  }+\\text{  }1.\\)\u003c/p> \u003cp>Rearranging,\u003c/p> \u003cp>\\(l\\text{  }=\\text{  }\\frac{{n}_{m}−1}{2}\\mathrm{.}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements </p> <p>Statement I: The Balmer spectral line for H-atom with lowest energy is located at \(\frac{5}{36} R _{ H } cm ^{-1}\). \(\left( R _{ H }=\right.\) Rydberg constant \()\)<br/>Statement II: When the temperature of blackbody increases, the maxima of the curve (intensity Vs wavelength) shifts to shorter wavelength.</p> <p>In the light of the above statements, choose the correct answer from the options given below </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \\(\\overset{¯}{\\nu }={\\mathrm{R}}_{\\mathrm{H}}\\left[\\frac{1}{{\\mathrm{n}}_{1}^{2}}−\\frac{1}{{\\mathrm{n}}_{2}^{2}}\\right]\\)\u003c/li> \u003c/ul> \u003cp> \\(\\overset{¯}{\\nu }={\\mathrm{R}}_{\\mathrm{H}}\\left[\\frac{1}{{(2)}^{2}}−\\frac{1}{{(3)}^{2}}\\right]\\)\u003c/p> \u003cp> \\(\\begin{matrix}\\overset{¯}{\\nu }={\\mathrm{R}}_{\\mathrm{H}}\\left[\\frac{1}{4}−\\frac{1}{9}\\right] \\\\ \\overset{¯}{\\nu }=\\frac{5}{36}{\\mathrm{R}}_{\\mathrm{H}}\\text{ }{\\mathrm{cm}}^{−1}\\end{matrix}\\)\u003c/p> \u003cul> \u003cli>As the temperature of a blackbody increases, the peak wavelength of its radiation shifts towards shorter wavelengths.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Bohr orbit radius for the hydrogen atom (n = 1) is approximately 0.530Å. The radius for the first excited state (n = 2) orbit is (in Å):</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.13</p></span></div><div class="option"><span class="key">b</span><span><p>1.06</p></span></div><div class="option"><span class="key">c</span><span><p>4.77</p></span></div><div class="option"><span class="key">d</span><span><p>2.12</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given : Radius of hydrogen atom = 0.530 Å, Number of excited state (n) = 2 and atomic number of hydrogen atom (Z ) = 1. We know that the Bohr radius \\(\\left(\\mathrm{r}\\right)=\\overset{{\\mathrm{n}}^{2}}{\\underset{\\mathrm{z}}{-}}\\times \\mathrm{radius}\\mathrm{of}\\mathrm{atom}=\\overset{{\\left(2\\right)}^{2}}{\\underset{1}{-}}\\times 0.530=4\\times 0.530=2.12\\mathrm{A}^\\circ\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particular station of All India Radio, New Delhi, broadcasts on a frequency of \( 1,368 \mathrm{~kHz} \) (kilohertz). The wavelength of the electromagnetic radiation emitted by the transmitter is: [speed of light, \( \mathrm{c}=3.0 \times 10^{8} \mathrm{~ms}^{-1} \) ]</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 219.2 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 2192 \mathrm{~m} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 21.92 \mathrm{~cm} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 219.3 \mathrm{~m} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

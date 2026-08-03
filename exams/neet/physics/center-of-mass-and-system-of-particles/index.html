@@ -20,13 +20,13 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Center of Mass and System of Particles","item":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"Center of Mass and System of Particles NEET Physics PYQs","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"name":"A moving block having mass m, collides with another stationary block having mass 4m. The lighter block comes to rest after collision. When t","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q1"},{"@type":"ListItem","position":2,"name":"Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity \\({v}_{1}\\) while bod","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q2"},{"@type":"ListItem","position":3,"name":"Two identical bodies A and B of equal masses have initial velocities \\({\\vec{v}}_{1}=4\\overset{^}{i}m/s\\) and \\({\\vec{v}}_{2}=4\\overset{^}{j","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q3"},{"@type":"ListItem","position":4,"name":"Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity \\({v}_{1}\\) while bod","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q4"},{"@type":"ListItem","position":5,"name":"Given below are two statements : one is labelled as Assertion \\(A\\) and the other is labelled as Reason R. Assertion A : Body ' \\(P\\) ' havi","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q5"},{"@type":"ListItem","position":6,"name":"Two particles of equal mas \\( m \\) have respective initial velocities u \\( \\hat{i} \\) and \\( u\\left(\\frac{\\hat{i}+\\hat{j}}{2}\\right) \\). The","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q6"}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"Center of Mass and System of Particles NEET Physics PYQs","numberOfItems":6,"itemListElement":[{"@type":"ListItem","position":1,"name":"A moving block having mass m, collides with another stationary block having mass 4m. The lighter block comes to rest after collision. When t","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q1"},{"@type":"ListItem","position":2,"name":"Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity \\({v}_{1}\\) while bod","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q2"},{"@type":"ListItem","position":3,"name":"Two identical bodies A and B of equal masses have initial velocities \\({\\vec{v}}_{1}=4\\hat{i}m/s\\) and \\({\\vec{v}}_{2}=4\\hat{j}m/s\\) respect","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q3"},{"@type":"ListItem","position":4,"name":"Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity \\({v}_{1}\\) while bod","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q4"},{"@type":"ListItem","position":5,"name":"Given below are two statements : one is labelled as Assertion \\(A\\) and the other is labelled as Reason R. Assertion A : Body ' \\(P\\) ' havi","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q5"},{"@type":"ListItem","position":6,"name":"Two particles of equal mas \\( m \\) have respective initial velocities u \\( \\hat{i} \\) and \\( u\\left(\\frac{\\hat{i}+\\hat{j}}{2}\\right) \\). The","url":"https://yespyq.com/exams/neet/physics/center-of-mass-and-system-of-particles/#q6"}]}
   </script>
   <style>
     .exam-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1.6rem 0}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Center of Mass and System of Particles</h1>
       <p>6 NEET Physics previous year questions on <b>Center of Mass and System of Particles</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A moving block having mass m, collides with another stationary block having mass 4m. The lighter block comes to rest after collision. When the initial velocity of the lighter block is v, then the value of coefficient of restitution (e) will be:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>0.8</span></div><div class="option"><span class="key">b</span><span>0.4</span></div><div class="option"><span class="key">c</span><span>0.5</span></div><div class="option correct"><span class="key">d</span><span>0.25</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity \({v}_{1}\) while body B is at rest before collision. The velocity of the system after collision is \({v}_{2}\). The ratio \({v}_{1}:{v}_{2}\) is :</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1 : 2</p></span></div><div class="option"><span class="key">b</span><span><p>2 : 1</p></span></div><div class="option"><span class="key">c</span><span><p>4 : 1</p></span></div><div class="option"><span class="key">d</span><span><p>1 : 4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,8 +102,8 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>By conservation of linear momentum:-\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }m{v}_{1}=(m+m){v}_{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ }m{v}_{1}=2m{v}_{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{v}_{1}}{{v}_{2}}=2:1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
-      <div class="qtext"><p>Two identical bodies A and B of equal masses have initial velocities \({\vec{v}}_{1}=4\overset{^}{i}m/s\) and \({\vec{v}}_{2}=4\overset{^}{j}m/s\) respectively. The body A has acceleration \({\vec{a}}_{1}=6\overset{^}{i}+6\overset{^}{j}m/{s}^{2}\) while the acceleration of the other body B is zero. The centre of mass of the two bodies moves in ..... path.</p> <p><br/>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>Two identical bodies A and B of equal masses have initial velocities \({\vec{v}}_{1}=4\hat{i}m/s\) and \({\vec{v}}_{2}=4\hat{j}m/s\) respectively. The body A has acceleration \({\vec{a}}_{1}=6\hat{i}+6\hat{j}m/{s}^{2}\) while the acceleration of the other body B is zero. The centre of mass of the two bodies moves in ..... path.</p> <p><br/>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>circular </p></span></div><div class="option"><span class="key">b</span><span><p>parabolic </p></span></div><div class="option"><span class="key">c</span><span><p>straight line </p></span></div><div class="option"><span class="key">d</span><span><p>elliptical</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Here is the short solution to the problem:\u003c/p> \u003cp>Let the mass of each identical body be \\(m\\).\u003c/p> \u003cp>Find the initial velocity of the center of mass (\\({\\vec{v}}_{cm}\\))\u003c/p> \\[\\vec{v}_{cm} = \\frac{m\\vec{v}_1 + m\\vec{v}_2}{m + m}\\] \\[\\vec{v}_{cm} = \\frac{\\vec{v}_1 + \\vec{v}_2}{2}\\] \\[\\vec{v}_{cm} = \\frac{4\\hat{i} + 4\\hat{j}}{2} = 2\\hat{i} + 2\\hat{j} \\text{ m/s}\\] \u003cp>Find the acceleration of the center of mass (\\({\\vec{a}}_{cm}\\))\u003c/p> \\[\\vec{a}_{cm} = \\frac{m\\vec{a}_1 + m\\vec{a}_2}{m + m}\\] \\[\\vec{a}_{cm} = \\frac{\\vec{a}_1 + \\vec{a}_2}{2}\\] \\[\\vec{a}_{cm} = \\frac{(6\\hat{i} + 6\\hat{j}) + 0}{2} = 3\\hat{i} + 3\\hat{j} \\text{ m/s}^2\\] \u003cp>Analyze the path\u003c/p> \u003cp>Notice that the acceleration of the center of mass is directly proportional to its velocity:\u003c/p> \\[\\vec{a}_{cm} = 1.5 \\vec{v}_{cm}\\] \u003cp>Since the acceleration vector is parallel to the initial velocity vector, the center of mass will move in a straight line.\u003c/p> \u003cp>Therefore, the correct option is C.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two bodies A and B of same mass undergo completely inelastic one dimensional collision. The body A moves with velocity \({v}_{1}\) while body B is at rest before collision. The velocity of the system after collision is \({v}_{2}\). The ratio \({v}_{1}:{v}_{2}\) is :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1 : 2</p></span></div><div class="option"><span class="key">b</span><span><p>2 : 1</p></span></div><div class="option"><span class="key">c</span><span><p>4 : 1</p></span></div><div class="option"><span class="key">d</span><span><p>1 : 4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>Conservation of linear momentum in a completely inelastic collision (objects stick together).\u003c/li> \u003cli>Initial momentum = m(v₁) + m(0) = mv₁. Final momentum = (m+m)v₂ = 2mv₂. Conservation: mv₁ = 2mv₂ \\(\\Rightarrow\\) v₁/v₂ = 2/1.\u003c/li> \u003cli>v₁ : v₂: 2 : 1. \u003cp>\u003cstrong>(NEW NCERT 11\u003csup>th\u003c/sup> Page No. 83, 84, 85, 86)\u003c/strong>\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion \(A\) and the other is labelled as Reason R.<br/>Assertion A : Body ' \(P\) ' having mass \(M\) moving with speed ' \(u\) ' has head - on collision elastically with another body ' \(Q\) ' having mass ' \(m\) ' initially at rest. If \(m&lt;&lt;M\), Body will have a maximum speed equal to' \(2 u\) ' after collision.<br/>Reason R : During elastic collision, the momentum and kinetic energy are both conserved. In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[JEE Main 2021, 26 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\) is correct but \(R\) is not correct.</p></span></div><div class="option"><span class="key">b</span><span><p>\(A\) is not correct but \(R\) is correct.</p></span></div><div class="option"><span class="key">c</span><span><p>Both \(A\) and \(R\) are correct and \(R\) is the correct explanation of \(A\).</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(A\) and \(R\) correct but \(R\) is not the correct explanation of \(A\).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>mass \\(m\\) will acquire velocity \\(2 u\\). During collision, total momentum of system will be conserved but total kinetic energy is not conserved.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two particles of equal mas \( m \) have respective initial velocities u \( \hat{i} \) and \( u\left(\frac{\hat{i}+\hat{j}}{2}\right) \). They collide completely inelastically. The energy lost in the process is</p> <p>[JEE Main 2020, 9 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{3}{4} m u^{2} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \sqrt{\frac{2}{3}} m u^{2} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{1}{3} m u^{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{1}{8} m u^{2} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

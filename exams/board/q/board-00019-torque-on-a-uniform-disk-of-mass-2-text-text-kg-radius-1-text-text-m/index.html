@@ -20,10 +20,10 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Torque on a uniform disk of mass \\(2\\text{ }\\text{kg}\\), radius \\(1\\text{ }\\text{m}\\), is given as \\(\\tau (t)=5{t}^{2}\u22128t\\). If the disk was initially at rest, find the power by torque at \\(t=1\\text{ }\\text{s}\\).","text":"Torque on a uniform disk of mass \\(2\\text{ }\\text{kg}\\), radius \\(1\\text{ }\\text{m}\\), is given as \\(\\tau (t)=5{t}^{2}\u22128t\\). If the disk was initially at rest, find the power by torque at \\(t=1\\text{ }\\text{s}\\).","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: c) 7 W. (3) \\( \\begin{aligned} &amp; \\rho=\\vec{\\tau} \\cdot \\vec{\\omega} \\\\ &amp; \\tau=l \\alpha \\\\ &amp; I=\\frac{M R^2}{2}=1 \\\\ &amp; \\alpha=5 t^2-8 t \\\\ &amp; \\omega=\\frac{5}{3} t^3-4 t^2 \\\\ &amp; \\text { At } t=1, \\omega=\\frac{5}{3}-4=-\\frac{7}{3} \\\\ &amp; t(3)=5-8=-3 \\\\ &amp; \\rho=\\vec{\\tau} \\cdot \\vec{\\omega}=7 \\mathrm{~W} \\end{aligned} \\)","url":"https://yespyq.com/exams/board/q/board-00019-torque-on-a-uniform-disk-of-mass-2-text-text-kg-radius-1-text-text-m/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
+  {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Torque on a uniform disk of mass \\(2\\text{ }\\text{kg}\\), radius \\(1\\text{ }\\text{m}\\), is given as \\(\\tau (t)=5{t}^{2}\u22128t\\). If the disk was initially at rest, find the power by torque at \\(t=1\\text{ }\\text{s}\\).","text":"Torque on a uniform disk of mass \\(2\\text{ }\\text{kg}\\), radius \\(1\\text{ }\\text{m}\\), is given as \\(\\tau (t)=5{t}^{2}\u22128t\\). If the disk was initially at rest, find the power by torque at \\(t=1\\text{ }\\text{s}\\).","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: c) 7 W. (3) \\( $$\\begin{aligned}& \\rho=\\vec{\\tau} \\cdot \\vec{\\omega} \\\\& \\tau=l \\alpha \\\\& I=\\frac{M R^2}{2}=1 \\\\& \\alpha=5 t^2-8 t \\\\& \\omega=\\frac{5}{3} t^3-4 t^2 \\\\& \\text { At } t=1, \\omega=\\frac{5}{3}-4=-\\frac{7}{3} \\\\& t(3)=5-8=-3 \\\\& \\rho=\\vec{\\tau} \\cdot \\vec{\\omega}=7 \\mathrm{~W}\\end{aligned}$$ \\)","url":"https://yespyq.com/exams/board/q/board-00019-torque-on-a-uniform-disk-of-mass-2-text-text-kg-radius-1-text-text-m/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
   </script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Rotational Motion","item":"https://yespyq.com/exams/board/physics/rotational-motion/"},{"@type":"ListItem","position":6,"name":"Question","item":"https://yespyq.com/exams/board/q/board-00019-torque-on-a-uniform-disk-of-mass-2-text-text-kg-radius-1-text-text-m/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,12 +80,12 @@
       <div class="qtags"><span class="qtag">Board</span><span class="qtag">Physics</span></div>
       <h1>Torque on a uniform disk of mass \(2\text{ }\text{kg}\), radius \(1\text{ }\text{m}\), is given as \(\tau (t)=5{t}^{2}−8…</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Torque on a uniform disk of mass \(2\text{ }\text{kg}\), radius \(1\text{ }\text{m}\), is given as \(\tau (t)=5{t}^{2}−8t\). If the disk was initially at rest, find the power by torque at \(t=1\text{ }\text{s}\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 W</p></span></div><div class="option"><span class="key">b</span><span><p>3 W</p></span></div><div class="option correct"><span class="key">c</span><span><p>7 W</p></span></div><div class="option"><span class="key">d</span><span><p>9 W</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: c) <p>7 W</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p><strong>(3)</strong></p> <p>\(<br/>\begin{aligned}<br/>&amp; \rho=\vec{\tau} \cdot \vec{\omega} \\<br/>&amp; \tau=l \alpha \\<br/>&amp; I=\frac{M R^2}{2}=1 \\<br/>&amp; \alpha=5 t^2-8 t \\<br/>&amp; \omega=\frac{5}{3} t^3-4 t^2 \\<br/>&amp; \text { At } t=1, \omega=\frac{5}{3}-4=-\frac{7}{3} \\<br/>&amp; t(3)=5-8=-3 \\<br/>&amp; \rho=\vec{\tau} \cdot \vec{\omega}=7 \mathrm{~W}<br/>\end{aligned}<br/>\)</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p><strong>(3)</strong></p> <p>\(<br/>$$\begin{aligned}& \rho=\vec{\tau} \cdot \vec{\omega} \\& \tau=l \alpha \\& I=\frac{M R^2}{2}=1 \\& \alpha=5 t^2-8 t \\& \omega=\frac{5}{3} t^3-4 t^2 \\& \text { At } t=1, \omega=\frac{5}{3}-4=-\frac{7}{3} \\& t(3)=5-8=-3 \\& \rho=\vec{\tau} \cdot \vec{\omega}=7 \mathrm{~W}\end{aligned}$$<br/>\)</p></div>
       </div>
     </div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0"><a class="btn btn-ghost" href="/exams/board/q/board-00034-two-identical-masses-each-1-text-text-kg-having-velocity-vectors-vec/">Next question →</a></div>

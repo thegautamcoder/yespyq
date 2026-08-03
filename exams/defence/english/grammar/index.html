@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Defence","item":"https://yespyq.com/exams/defence/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/defence/english/"},{"@type":"ListItem","position":5,"name":"Grammar","item":"https://yespyq.com/exams/defence/english/grammar/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Grammar</h1>
       <p>19 Defence English previous year questions on <b>Grammar</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Read the sentence to find out whether there is any error in it or not. The error, if any, will be in one part of the sentence. The number of that part (which has the error) is the answer. If there is no error, the answer is (4). Ignore errors of punctuation, if any. The more you (1)/ work hard, (2)/ the more better you get (3)./ No error (4)</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>The more you</span></div><div class="option"><span class="key">b</span><span>work hard,</span></div><div class="option correct"><span class="key">c</span><span>the more better you get</span></div><div class="option"><span class="key">d</span><span>No error</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank with a suitable phrase preposition. I will introduce you ______ my boss this week.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>on</span></div><div class="option correct"><span class="key">b</span><span>to</span></div><div class="option"><span class="key">c</span><span>too</span></div><div class="option"><span class="key">d</span><span>for</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blanks in the following sentences with the help of options that follow. She was delighted ________ as well as surprised at her friend's fluke.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>with</span></div><div class="option"><span class="key">b</span><span>but</span></div><div class="option"><span class="key">c</span><span>to</span></div><div class="option"><span class="key">d</span><span>None of these</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct answer is Option A. From the given options, 'with' is the most appropriate answer to fill in the blank. As we can understand from the sentence that she was pleased with something. 'Delighted with' means to please someone with something, such as a gift. • Example: He was delighted with the gift. So option A is the most appropriate answer as it fits with the context of the sentence. The correct sentence is: She was delighted with as well as surprised at her friend's fluke.","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank with a suitable phrase preposition. Ankit will _______ as managing director when Rahul retires.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>take away</span></div><div class="option"><span class="key">b</span><span>take over</span></div><div class="option"><span class="key">c</span><span>take up</span></div><div class="option"><span class="key">d</span><span>take down</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The most suitable phrase preposition to fill the blank is: B. take over Take away: This implies removing something from someone, which wouldn't be the case here. Take over: This perfectly captures the situation. It means to assume control or responsibility for something from someone else. In this context, Ankit will take over the managing director role when Rahul retires. Take up: This can imply starting a new activity. Take down: This suggests removing something or defeating someone. Therefore, \"take over\" is the most appropriate phrase preposition for the sentence.","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the following question, one part of the sentence may have an error. Find out which part of the sentence has an error and click the option corresponding to it. If the sentence is free from error, click the 'No error' option. He would succeeds / in his efforts only / if he tries hard.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>He would succeeds</span></div><div class="option"><span class="key">b</span><span>in his efforts only</span></div><div class="option"><span class="key">c</span><span>if he tries hard</span></div><div class="option"><span class="key">d</span><span>No error</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Error: \"He would succeeds\" - \"Succeeds\" should be \"succeed\" The modal verb \"would\" indicates a conditional situation, and in such cases, the main verb should be in the base form (succeed, not succeeds). Therefore, the answer is A. He would succeeds.","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill up the blank with the correct option to complete the sentence: They will not go to Japan this year for a vacation, ______?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>didn't they</span></div><div class="option"><span class="key">b</span><span>wont they</span></div><div class="option"><span class="key">c</span><span>dont they</span></div><div class="option"><span class="key">d</span><span>will they</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The best option to complete the sentence is: D. will they \"They will not go to Japan this year for a vacation\" is a negative statement. To form a question tag after a negative statement, we use the positive auxiliary verb. In this case, the auxiliary verb in the main clause is \"will\" (future tense), so the question tag uses the positive form \"will.\" Therefore, \"will they\" creates a grammatically correct and natural question tag, confirming the information in the main sentence.","fmt":""}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the appropriate option to complete the given sentence: __________ his parent's disapproval, he joined this university.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>While</span></div><div class="option"><span class="key">b</span><span>Despite</span></div><div class="option"><span class="key">c</span><span>Nonetheless</span></div><div class="option"><span class="key">d</span><span>Until</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The best option to complete the sentence is: B. Despite While: This suggests a contrast, but it implies the disapproval happened at the same time he joined. \"Despite\" indicates the disapproval happened before but didn't stop him. Nonetheless used as conjunctive adverbs, or adverbs that are used to connect two independent clauses. Until: This indicates a time limit, which wouldn't make sense in this context. Therefore, \"Despite\" is the most appropriate choice to show that his parents' disapproval did not prevent him from joining the university.","fmt":""}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank with the appropriate modal in the given sentence: The battery of your phone is dead? No problem. You _________ use my phone.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>should</span></div><div class="option"><span class="key">b</span><span>will</span></div><div class="option"><span class="key">c</span><span>must</span></div><div class="option"><span class="key">d</span><span>can</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The best option to fill the blank is: D. can Should suggests a recommendation. Will wouldn't be appropriate because you're not predicting their action, just offering the option. Must implies obligation. Can is the most natural choice to offer permission or possibility. It indicates they are able to use your phone if they want to.","fmt":""}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Mark the part of the given sentence on your answer-sheet, in which there is an error (of adjective, adverb, clause). This road is the most shortest of all.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>This road is</span></div><div class="option"><span class="key">b</span><span>the most shortest</span></div><div class="option"><span class="key">c</span><span>of all</span></div><div class="option"><span class="key">d</span><span>No error</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The error is in part (B) of the sentence. the most shortest: \"Shortest\" is already the superlative form of the adjective \"short.\" Adding \"most\" before it creates a double superlative, which is grammatically incorrect. The correct construction is simply \"the shortest.\" Therefore, the answer is B. the most shortest.","fmt":""}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The following sentence has been split into four segments. Identify the segment that contains a grammatical error. I earn / little money / than my / younger brother.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>little money</span></div><div class="option"><span class="key">b</span><span>than my</span></div><div class="option"><span class="key">c</span><span>I earn</span></div><div class="option"><span class="key">d</span><span>younger brother</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The segment containing the grammatical error is: little money (incorrect): \"Little\" is a positive adjective, not a comparative adjective. Little refers to non-countable nouns, and is used with the singular form. Less is the comparative form of little. Use less in comparative structures, especially before uncountable nouns. Therefore, the error is in using \"little\" instead of a comparative adjective.","fmt":""}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the sentence identify the segment which contains the grammatical error. The manager was referring about the previous instances of loss to the employees during his address.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>The manager was referring about</span></div><div class="option"><span class="key">b</span><span>the previous instances</span></div><div class="option"><span class="key">c</span><span>during his address</span></div><div class="option"><span class="key">d</span><span>of loss to the employees</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The segment containing the grammatical error is: A. The manager was referring about about (incorrect): The preposition \"about\" is not typically used with \"referring\" in this context. A more natural preposition would be \"to.\" \"Referring to\" something indicates mentioning or speaking of it. Therefore, the error is in using \"about\" after \"referring.\" The correct sentence would be: The manager was referring to the previous instances of loss to the employees during his address.","fmt":""}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Each item in this section has a sentence with three parts labelled (a), (b) and (c). Read each sentence to find out whether there is any error in any part and indicate your response in the Answer Sheet against the corresponding letter i.e., (a) or (b) or (c). If you find no error, your response should be indicated as (d).</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Each of</span></div><div class="option"><span class="key">b</span><span>these substances</span></div><div class="option"><span class="key">c</span><span>are found in India.</span></div><div class="option"><span class="key">d</span><span>No error</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"When the sentence starts with the distributive pronoun 'each', the verb is always singular. When we use 'each' with a plural noun as a subject, it's normally followed by a singular verb. The correct sentence is: Each of these substances is found in India.","fmt":""}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Change the voice: The cobbler mended my shoes.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>My shoes were mended by the cobbler.</span></div><div class="option"><span class="key">b</span><span>My shoes are mended by the cobbler.</span></div><div class="option"><span class="key">c</span><span>My shoes was mended by the cobbler.</span></div><div class="option"><span class="key">d</span><span>My shoes have been mended by the cobbler.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Answer: a) My shoes were mended by the cobbler. Solution: Active: Subject + Verb + Object Passive: Object + was/were + past participle + by + subject. Here, were mended is correct (plural shoes).","fmt":""}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Change the speech. He asked Rama If he needed his help then.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>He said to Rama "Do you need my help?"</span></div><div class="option"><span class="key">b</span><span>He told Rama, "Tell me if you need help."</span></div><div class="option"><span class="key">c</span><span>He asked Rama, "Do I need your help?"</span></div><div class="option"><span class="key">d</span><span>He said to Rama, "Do you need my help now?"</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"In indirect speech, reported questions are stated without the original question structure. To convert it back to direct speech: Change the reported verb \"asked\" to a question format. Replace \"if\" with the appropriate question word or question format. Replace \"then\" with \"now\" if the context demands it. Direct Speech Version: \"He said to Rama, 'Do you need my help now?'\" Correct Answer: D - He said to Rama, 'Do you need my help now?'","fmt":""}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Change the voice. He is said to be very rich.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>People say he is very rich.</span></div><div class="option"><span class="key">b</span><span>He said he is very rich.</span></div><div class="option"><span class="key">c</span><span>He said it is very rich.</span></div><div class="option"><span class="key">d</span><span>People say it is very rich.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"In passive sentences, the subject receives the action. To change it into active voice, identify the doer of the action (which is often implied as \"people\" or \"they\" in such constructions) and place it as the subject. Active Voice Version: \"People say he is very rich.\" Correct Answer: A - People say he is very rich.","fmt":""}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Spot the error in the given sentence parts:</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Unless you do not work</span></div><div class="option"><span class="key">b</span><span>hard</span></div><div class="option"><span class="key">c</span><span>you cannot</span></div><div class="option"><span class="key">d</span><span>pass the examination.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The word \"unless\" is a conjunction that introduces a condition. It is equivalent to saying \"if not.\" Therefore, using \"not\" with \"unless\" creates a double negative, which makes the sentence incorrect. The correct construction would be \"Unless you work hard,\" which means \"If you do not work hard.\" Correct sentence- \"Unless you work hard, you cannot pass the examination.\"","fmt":""}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank: ________ he graduated, he has not been able to find a job.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Till</span></div><div class="option"><span class="key">b</span><span>Since</span></div><div class="option"><span class="key">c</span><span>When</span></div><div class="option"><span class="key">d</span><span>Until</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The correct conjunction to use here is \"since,\" which indicates the time period from when he graduated until now. Correct Answer: B - since","fmt":""}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Fill in the blank: Nisha dances very well _______ ?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>doesn't she</span></div><div class="option"><span class="key">b</span><span>does she</span></div><div class="option"><span class="key">c</span><span>aren't she</span></div><div class="option"><span class="key">d</span><span>isn't she</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"This is a question tag, which is added at the end of a statement. The rule for question tags is to use a negative tag when the statement is positive and vice versa. Since the statement \"Nisha dances very well\" is positive, the correct negative question tag would be \"doesn't she.\" Correct Answer: A - doesn't she","fmt":""}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Choose the correct adjective form of 'clarity':</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Clarify</span></div><div class="option"><span class="key">b</span><span>Clearly</span></div><div class="option"><span class="key">c</span><span>Clear</span></div><div class="option"><span class="key">d</span><span>Clarifying</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

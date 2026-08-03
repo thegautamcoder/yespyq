@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Magnetism and Matter","item":"https://yespyq.com/exams/jee/physics/magnetism-and-matter/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Magnetism and Matter</h1>
       <p>15 JEE Physics previous year questions on <b>Magnetism and Matter</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a ferromagnetic material, below the curie temperature, a domain is defined as: [JEE Main 2021, 25 Feb (Shift 2)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>a macroscopic region with zero magnetization.</span></div><div class="option correct"><span class="key">b</span><span>a macroscopic region with saturation magnetization.</span></div><div class="option"><span class="key">c</span><span>a macroscopic region with randomly oriented magnetic dipoles.</span></div><div class="option"><span class="key">d</span><span>a macroscopic region with consecutive magnetic dipoles oriented in opposite direction.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The relationship between the magnetic susceptibility \((\chi )\) and the magnetic permeability \((\mu )\) is given by :<br/>( \({\mu }_{0}\) is the permeability of free space and \({\mu }_{\mathrm{r}}\) is relative permeability)</p> <p> </p> <p>[JEE Main 2025, 2 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\chi =\frac{\mu }{{\mu }_{0}}-1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\chi =\frac{{\mu }_{\mathrm{r}}}{{\mu }_{0}}+1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\chi ={\mu }_{r}+1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\chi =1-\frac{\mu }{{\mu }_{0}}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The source of time varying magnetic field may be<br/>A. a permanent magnet<br/>B. an electric field changing linearly with time</p> <p>C. direct current</p> <p>D. a decelerating charge particle<br/>E. an antenna fed with a digital signal</p> <p>Choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D only</p></span></div><div class="option"><span class="key">b</span><span><p>C and E only</p></span></div><div class="option"><span class="key">c</span><span><p>A only</p></span></div><div class="option"><span class="key">d</span><span><p> B and D only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Retarded or accelerated charge may produce time varying electric and magnetic fields. While an electric field varying linearly with time will not produce variable magnetic field because of the current become constant.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The relationship between the magnetic susceptibility \((\chi )\) and the magnetic permeability \((\mu )\) is given by :<br/>( \({\mu }_{0}\) is the permeability of free space and \({\mu }_{\mathrm{r}}\) is relative permeability)</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\chi =\frac{\mu }{{\mu }_{0}}-1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\chi =\frac{{\mu }_{\mathrm{r}}}{{\mu }_{0}}+1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\chi ={\mu }_{r}+1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\chi =1-\frac{\mu }{{\mu }_{0}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Relation between relative permeability and magnetic susceptibility: \u003cbr/>\\({\\mu }_{r}=(1+\\chi )\\) \u003cbr/>Expressing susceptibility in terms of relative permeability: \u003cbr/>\\(\\chi ={\\mu }_{r}−1\\) \u003cbr/>Relation between permeability and relative permeability: \u003cbr/>\\(\\mu ={\\mu }_{0}{\\mu }_{r}\\) \u003cbr/>Substituting for relative permeability: \u003cbr/>\\({\\mu }_{r}=\\frac{\\mu }{{\\mu }_{0}}\\) \u003cbr/>Final Answer: \u003cbr/>\\(\\chi =(\\frac{\\mu }{{\\mu }_{0}}−1)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason(R).<br/>Assertion (A) : Magnetic monopoles do not exist.<br/>Reason (R): Magnetic field lines are continuous and form closed loops.<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p> (A) is not correct but (R) is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The magnet does not exist in form of monopole and magnetic lines never intersect, continuous and form a closed loop. Line initiates from north pole and end to south outside while inside vice versa.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason(R).<br/>Assertion (A) : Magnetic monopoles do not exist.<br/>Reason (R): Magnetic field lines are continuous and form closed loops.<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p> (A) is not correct but (R) is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The magnet does not exist in form of monopole and magnetic lines never intersect, continuous and form a closed loop. Line initiates from north pole and end to south outside while inside vice versa.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A magnetic dipole experiences a torque of \(80\sqrt{3}\mathrm{N}\mathrm{m}\) when placed in uniform magnetic field in such a way that dipole moment makes angle of \(60^\circ\) with magnetic field. The potential energy of the dipole is :</p> <p><strong>[JEE Main 2025, 3 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(80\mathrm{J}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-40\sqrt{3}\mathrm{J}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-60\mathrm{J}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-80\mathrm{J}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,10 +156,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; \\tau=M \\times B=M B \\sin 60=\\frac{\\sqrt{3}}{2} M B \\\\\u003cbr/>&amp; =80 \\sqrt{3} \\\\\u003cbr/>&amp; \\text { МВ }=160 \\\\\u003cbr/>&amp; U=-M \\cdot B=-M B \\cos 60 \\\\\u003cbr/>&amp; U=-160 \\times \\frac{1}{2}=-80 J\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>$$\\begin{aligned}& \\tau=M \\times B=M B \\sin 60=\\frac{\\sqrt{3}}{2} M B \\\\& =80 \\sqrt{3} \\\\& \\text { МВ }=160 \\\\& U=-M \\cdot B=-M B \\cos 60 \\\\& U=-160 \\times \\frac{1}{2}=-80 J\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The percentage increase in magnetic field (B) when space within a current carrying solenoid is filled with magnesium (magnetic susceptibility \({\chi }_{\mathrm{mg}}=1.2\times {10}^{-5}\) ) is :</p> <p><strong>[JEE Main 2025, 7 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{6}{5}\times {10}^{-3}%\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{5}{6}\times {10}^{-5}%\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{6}\times {10}^{-4}%\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{3}\times {10}^{-5}%\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Percentage change in magnetic field is defined as\u003cbr/>\\(%\\mathrm{change}\\mathrm{in}B=\\frac{{B}_{\\mathrm{new}}-{B}_{\\mathrm{old}}}{{B}_{\\mathrm{old}}}\\times 100%\\)\u003c/p> \u003cp>Substituting magnetic field in terms of permeability\u003cbr/>\\(=\\frac{\\mu ni-{\\mu }_{0}ni}{{\\mu }_{0}ni}\\times 100%\\)\u003c/p> \u003cp>Cancelling common terms\u003cbr/>\\(=\\frac{\\mu -{\\mu }_{0}}{{\\mu }_{0}}\\times 100%\\)\u003c/p> \u003cp>Using relative permeability relation\u003cbr/>\\(=\\frac{{\\mu }_{0}{\\mu }_{r}-{\\mu }_{0}}{{\\mu }_{0}}\\times 100%\\)\u003c/p> \u003cp>Simplifying\u003cbr/>\\(=({\\mu }_{r}-1)\\times 100%\\)\u003c/p> \u003cp>Substituting given value\u003cbr/>\\(=1.2\\times {10}^{-3}%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Paramagnetic substances:<br/>A. align themselves along the directions of external magnetic field.<br/>B. attract strongly towards external magnetic field.<br/>C. has susceptibility little more than zero.<br/>D. move from a region of strong magnetic field to weak magnetic field.</p> <p>Choose the most appropriate answer from the options given below: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C, D</p></span></div><div class="option"><span class="key">b</span><span><p>A, C Only</p></span></div><div class="option"><span class="key">c</span><span><p>B, D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B, C Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Paramagnetic substances are materials that possess permanent magnetic dipoles due to unpaired electrons. Their behavior in an external magnetic field is characterized by the following: \u003cbr/>- Alignment: When placed in an external magnetic field, their atomic dipoles align themselves along the direction of that field. This makes statement A correct.\u003cbr/>- Magnetic Susceptibility ( \\(\\chi\\) ): They have a small, positive magnetic susceptibility (slightly greater than zero). This means they are weakly magnetized in the direction of the field. This makes statement \\(\\mathbf{C}\\) correct. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The free space inside a current carrying toroid is filled with a material of susceptibility \(2\times {10}^{-2}\). The percentage increase in the value of magnetic field inside the toroid will be</p> <p><strong>[JEE Main 2023, 11 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2%\)</p></span></div><div class="option"><span class="key">b</span><span><p>0.2%</p></span></div><div class="option"><span class="key">c</span><span><p>0.1%</p></span></div><div class="option"><span class="key">d</span><span><p>1%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, \\({\\chi }_{m}=2\\times {10}^{-2}=0.02\\)\u003cbr/>\\(B={\\mu }_{r}{B}_{0}\\\\ B=\\left(1+{\\chi }_{m}\\right){B}_{0}=(1+0.02){B}_{0}=1.02{B}_{0}\\)\u003c/p> \u003cp>Percentage increase in magnetic field\u003cbr/>\\(=\\frac{B-{B}_{0}}{{B}_{0}}\\times 100=\\frac{1.02{B}_{0}-{B}_{0}}{{B}_{0}}\\times 100=2%\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct?</p> <p>(A) Electric monopoles do not exist whereas magnetic monopoles exist.</p> <p>(B) Magnetic field lines due to a solenoid at its ends and outside cannot be completely straight and confined.</p> <p>(C) Magnetic field lines are completely confined within a toroid.</p> <p>(D) Magnetic field lines inside a bar magnet are not parallel.</p> <p>(E) \( \chi=-1 \) is the condition for a perfect diamagnetic material, where \( x \) is its magnetic susceptibility.</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (D) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>3\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements; one is labelled as Assertion A and the other is labelled as Reason R</p> <p><strong>Assertion (A):</strong> Electromagnets are made of soft iron.</p> <p><strong>Reason (R):</strong> Soft iron has high permeability and low retentivity.<br/>In the light of above, statements, choose the most appropriate answer from the options given below. </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is not correct but R is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are correct and R is the correct explanation of A</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are correct but R is not the correct explanation of A</p></span></div><div class="option"><span class="key">d</span><span><p>A is correct but R is not correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Electromagnets are made of soft iron core because of its high permeability and low retentivity.\u003c/p> \u003cp>So, Both A and R are correct and R is the correct explanation of A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/><strong>Statement-I:</strong> For diamagnetic substance \(-1\leq \chi <0\), where \(\chi\) is the magnetic susceptibility.<br/><strong>Statement-II:</strong> Diamagnetic substances when placed in an external magnetic field, tend to move from stronger to weaker part of the field.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p> </p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement-I and Statement-II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement-I and Statement-II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement-I is incorrect but Statement-II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement-I is correct but Statement-II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both Statements are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At an angle of \(30^\circ\)to the magnetic meridian, the apparent dip is \(45^\circ\). Find the true dip:</p> <p><strong>[JEE Main 2021, 20 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\tan }^{-1}\frac{\sqrt{3}}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\tan }^{-1}\sqrt{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\tan }^{-1}\frac{1}{\sqrt{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\tan }^{-1}\frac{2}{\sqrt{3}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let us suppose, the true trip dip is\\(\\delta\\) and apparent dip is \\({\\delta }^{'}\\)\u003cbr/>It is given that,\\(\\delta =45^\\circ ,\\theta =30^\\circ\\)\u003cbr/>\\(∴\\tan {\\delta }^{'}=\\frac{{B}_{v}}{{B}_{H}\\cos \\theta }=\\frac{\\tan \\delta }{\\cos \\theta }\\\\ \\Rightarrow \\tan {\\delta }^{'}\\cos \\theta =\\tan 45^\\circ \\cos 30^\\circ =1\\times \\frac{\\sqrt{3}}{2}\\\\ \\Rightarrow \\delta ={\\tan }^{-1}\\left(\\frac{\\sqrt{3}}{2}\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bar magnet with a magnetic moment 5.0 Am<sup>2</sup> is placed in parallel position relative to a magnetic field of 0.4 T. The amount of work done required in turning the magnet from parallel to antiparallel position relative to the field direction is _______.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4 J</p></span></div><div class="option"><span class="key">b</span><span><p>2 J</p></span></div><div class="option"><span class="key">c</span><span><p>1 J</p></span></div><div class="option"><span class="key">d</span><span><p>zero</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

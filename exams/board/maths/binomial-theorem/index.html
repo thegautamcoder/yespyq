@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/board/maths/"},{"@type":"ListItem","position":5,"name":"Binomial Theorem","item":"https://yespyq.com/exams/board/maths/binomial-theorem/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Binomial Theorem</h1>
       <p>4 Board Maths previous year questions on <b>Binomial Theorem</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The remainder when 3<sup>2022</sup> is divided by 5 is:</p> <p><strong>[JEE Main 2022, 24 Jun (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option correct"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The coefficient of the term independent of \(\ x \) in the expansion of \(\ \left(\sqrt{\frac{x}{3}}+\frac{3}{2 x^2}\right)^{10} \) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\ \frac{5}{4} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\ \frac{7}{4} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\ \frac{9}{4} \)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -95,10 +99,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The \\((r+1)\\) th term in the expansion of \\(\\left(\\sqrt{\\frac{x}{3}}+\\frac{3}{2 x^2}\\right)^{10}\\) is given by\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mathrm{T}_{\\mathrm{r}+1}={ }^{10} \\mathrm{C}_{\\mathrm{r}}\\left(\\sqrt{\\frac{\\bar{x}}{3}}\\right)^{10-\\mathrm{r}}\\left(\\frac{3}{2 \\mathrm{x}^2}\\right)^{\\mathrm{r}} \\\\\u003cbr/>&amp; ={ }^{10} \\mathrm{C}_r \\frac{x^{5-\\left(\\frac{r}{2}\\right)}}{3^{5-\\left(\\frac{r}{2}\\right)}} \\cdot \\frac{3^r}{2^r x^{2 r}}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>={ }^{10} C_r \\frac{3^{\\left(\\frac{3 r}{2}\\right)-5}}{2^r} x^{5-\\left(\\frac{5 r}{2}\\right)}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>For \\(\\mathrm{T}_{r+1}\\) to be independent of x , we must have \\(5-\\left(\\frac{5 r}{2}\\right)=0\\) or \\(r=2\\).\u003cbr/>Thus, the 3rd term is independent of \\(x\\) and is equal to\u003c/p> \u003cp>\\(\u003cbr/>{ }^{10} \\mathrm{C}_2 \\frac{3^{3-5}}{2^2}=\\frac{10 \\times 9}{2} \\times \\frac{3^{-2}}{4}=\\frac{5}{4}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The \\((r+1)\\) th term in the expansion of \\(\\left(\\sqrt{\\frac{x}{3}}+\\frac{3}{2 x^2}\\right)^{10}\\) is given by\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\mathrm{T}_{\\mathrm{r}+1}={ }^{10} \\mathrm{C}_{\\mathrm{r}}\\left(\\sqrt{\\frac{\\bar{x}}{3}}\\right)^{10-\\mathrm{r}}\\left(\\frac{3}{2 \\mathrm{x}^2}\\right)^{\\mathrm{r}} \\\\& ={ }^{10} \\mathrm{C}_r \\frac{x^{5-\\left(\\frac{r}{2}\\right)}}{3^{5-\\left(\\frac{r}{2}\\right)}} \\cdot \\frac{3^r}{2^r x^{2 r}}\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>={ }^{10} C_r \\frac{3^{\\left(\\frac{3 r}{2}\\right)-5}}{2^r} x^{5-\\left(\\frac{5 r}{2}\\right)}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>For \\(\\mathrm{T}_{r+1}\\) to be independent of x , we must have \\(5-\\left(\\frac{5 r}{2}\\right)=0\\) or \\(r=2\\).\u003cbr/>Thus, the 3rd term is independent of \\(x\\) and is equal to\u003c/p> \u003cp>\\(\u003cbr/>{ }^{10} \\mathrm{C}_2 \\frac{3^{3-5}}{2^2}=\\frac{10 \\times 9}{2} \\times \\frac{3^{-2}}{4}=\\frac{5}{4}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The coefficient of \(x^{301}\) in \((1+x)^{500}+x(1+x)^{499}\) \(+x^2(1+x)^{498}+\ldots+x^{500}\) is:</p> <p> </p> <p><strong>[JEE Main 2023, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({ }^{501} C _{302}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({ }^{500} C _{301}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({ }^{500} C _{300}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({ }^{501} C _{200}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\((1+x)^{500}+x(1+x)^{499}+x^2(1+x)^{498}+\\ldots+x^{500}\\) are in G.P\u003c/p> \u003cp>\\(=(1+x)^{500} \\cdot\\left\\{\\frac{1-\\left(\\frac{x}{1+x}\\right)^{501}}{1-\\frac{x}{1+x}}\\right\\}\\)\u003c/p> \u003cp>\\(=(1+x)^{500} \\frac{\\left((1+x)^{501}-x^{501}\\right)}{(1+x)^{501}} \\cdot(1+x)\\)\u003c/p> \u003cp>Coefficient of \\(x^{301}\\) in \\((1+x)^{501}-x^{501}\\) is given by \\({ }^{501} C _{301}\\)\u003cbr/>\\(={ }^{501} C _{200}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the greatest value of the term independent of '\( x \)' in the expansion of \( \left(x \sin \alpha+a \frac{\cos \alpha}{x}\right)^{10} \) is \( \frac{10 \text { ! }}{(5 !)^{2}} \), then the value of '\( a \)' is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( -1 \)</p></span></div><div class="option"><span class="key">b</span><span><p>1</p></span></div><div class="option"><span class="key">c</span><span><p>\( -2 \)</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

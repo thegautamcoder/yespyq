@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Amines","item":"https://yespyq.com/exams/neet/chemistry/amines/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Amines</h1>
       <p>15 NEET Chemistry previous year questions on <b>Amines</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The action of nitrous acid on an aliphatic primary amine gives</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>secondary amine</span></div><div class="option"><span class="key">b</span><span>nitro alkane</span></div><div class="option correct"><span class="key">c</span><span>alcohol</span></div><div class="option"><span class="key">d</span><span>alkyl nitrite.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Given below are two statements: Statement-I: Aniline is less basic than acetamide. Statement-II: In aniline, the lone pair of electrons on nitrogen atom is delocalised over benzene ring due to resonance and hence less available to a proton. Choose the most appropriate option: [JEE Main 2020, 6 Sep (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Statement-I is true but Statement-II is false.</span></div><div class="option correct"><span class="key">b</span><span>Statement-I is false but Statement-II is true</span></div><div class="option"><span class="key">c</span><span>Both Statement-I and Statement-II are true.</span></div><div class="option"><span class="key">d</span><span>Both Statement-I and Statement-II are false.</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following reactions will <strong>NOT </strong>give primary amine as the product?</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{CH}}_{3}\mathrm{CN}\overset{(\mathrm{i})\text{  }{\mathrm{LiAlH}}_{4}}{\underset{(\mathrm{ii})\text{  }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\)Product</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{CH}}_{3}\mathrm{NC}\overset{(\mathrm{i})\text{  }{\mathrm{LiAlH}}_{4}}{\underset{(\mathrm{ii})\text{  }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\) Product</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CONH}}_{2}\overset{(\mathrm{i})\text{  }{\mathrm{LiAlH}}_{4}}{\underset{(\mathrm{ii})\text{  }{\mathrm{H}}_{3}{\mathrm{O}}^{+}}{\to }}\)Product</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{CH}_3 \mathrm{CONH}_2 \xrightarrow{\mathrm{Br}_2 / \mathrm{KOH}}\) Product</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>CH₃CN reduced by LiAlH₄ gives ethylamine, a primary amine.\u003c/p> \u003cp>CH₃NC (isonitrile) upon reduction with LiAlH₄ produces dimethylamine, a secondary amine (so NOT a primary amine).\u003c/p> \u003cp>Acetamide (CH₃CONH₂) under LiAlH₄ reduction yields ethylamine, a primary amine.\u003c/p> \u003cp>Acetamide + Br₂/KOH (Hofmann bromamide) also yields methylamine, a primary amine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements</p> <p>Statement I : Benzenediazonium salt is prepared by the reaction of aniline with nitrous açid at \(273-278\mathrm{K}\). It decomposes easily in the dry state.</p> <p>Statement II : Insertion of iodine into the benzene ring is difficult and hence iodobenzene is prepared through the reaction of benzenediazonium salt with KI.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>statement I: Benzenediazonium salt is prepared at 273–278 K by the reaction of aniline with nitrous acid. It decomposes easily in the dry state.\u003cbr/>This statement is true. Aniline reacts with NaNO\u003csub>2\u003c/sub> and HCl at 273–278 K to form benzenediazonium chloride. This compound is unstable in the dry state and can decompose explosively, so it is generally kept in solution only.\u003c/p> \u003cp>Statement II: Direct introduction of iodine into the benzene ring is difficult, and therefore iodobenzene is prepared by the reaction of benzenediazonium salt with KI.\u003cbr/>This statement is also true. Direct electrophilic substitution of iodine in the benzene ring does not occur easily because the reactivity of iodine is low. Therefore, to prepare iodobenzene, benzenediazonium salt is reacted with KI, in which the \\(–{\\mathrm{N}}_{2}^{+}\\) group is replaced by I.\u003c/p> \u003cp>Hence, both statements are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>4-nitrotoluene is treated with \({\mathrm{Br}}_{2}\) to get compound P which is reduced with Sn and HCl to get Compound Q, then Q is diazotized and the product is treated with phosphinic acid to get R, R is oxidized with alkaline \({\mathrm{KMnO}}_{4}\) to get the final product P. P is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2-Bromo-4-hydroxy Benzoic acid </p></span></div><div class="option"><span class="key">b</span><span><p>Benzoic acid </p></span></div><div class="option"><span class="key">c</span><span><p>4-Bromo Benzoic acid</p></span></div><div class="option"><span class="key">d</span><span><p>2-Bromo Benzoic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>1.4-Nitrotoluene + Br₂: Bromination at the meta position forms 2-Bromo-4-nitrotoluene (Compound P).\u003c/p> \u003cp>2.P + Sn/HCl: Reduction of the nitro group forms 2-Bromo-4-aminotoluene (Compound Q).\u003c/p> \u003cp>3.Q + NaNO₂/HCl: Diazotization forms a diazonium salt.\u003c/p> \u003cp>4.Diazonium salt + H₃PO₂: Forms 2-Bromotoluene (Compound R).\u003c/p> \u003cp>5.R + KMnO₄ (alkaline): Oxidation forms 2-Bromobenzoic acid (final product).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the major product \(C\) formed in the following reaction sequence <br/>\({\mathrm{CH}}_{3}-{\mathrm{CH}}_{2}-{\mathrm{CH}}_{2}-\mathrm{I}\overset{\mathrm{NaCN}}{\to }\mathrm{A}\)</p> <p>\(\overset{{\mathrm{OH}}^{-}}{\underset{\mathrm{Partial}\mathrm{hydrolysis}}{\to }}\mathrm{B}\overset{\mathrm{NaOH}}{\underset{{\mathrm{Br}}_{2}}{\to }}\underset{(\mathrm{major})}{\mathrm{C}}\) </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\alpha\)-Bromobutanoic acid</p></span></div><div class="option"><span class="key">b</span><span><p>Propylamine</p></span></div><div class="option"><span class="key">c</span><span><p>Butylamine</p></span></div><div class="option"><span class="key">d</span><span><p>Butanamide</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003col> \u003cli> \u003cp>\u003cstrong>CH₃CH₂CH₂I\u003c/strong> reacts with \u003cstrong>NaCN\u003c/strong> → forms \u003cstrong>CH₃CH₂CH₂CN\u003c/strong> (Butanenitrile).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Partial hydrolysis\u003c/strong> → converts nitrile to amide → \u003cstrong>CH₃CH₂CH₂CONH₂\u003c/strong> (Butanamide).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Hoffmann bromamide degradation\u003c/strong> with Br₂/NaOH → eliminates one carbon → forms \u003cstrong>CH₃CH₂CH₂NH₂\u003c/strong> (Propylamine).\u003c/p> \u003c/li> \u003c/ol> \u003cp>Hence, the major product is\u003cstrong> Propylamine.\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I : </strong>Primary aliphatic amines react with \( \mathrm{HNO}_{2} \) to give unstable diazonium salts.</p> <p><strong>Statement II :</strong> Primary aromatic amines react with \( \mathrm{HNO}_{2} \) to form diazonium salts which are stable even above \( 300 \mathrm{~K} \).</p> <p>In the light of the above Statements, choose the <em>most appropriate</em> answer from the options given below</p> <p>[NEET 2022]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is incorrect but Statement II is correct. </p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are correct </p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are incorrect. </p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is correct but Statement II is incorrect.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Primary aliphatic amines (\\(R−N{H}_{2}\\)) react with nitrous acid (\\(HN{O}_{2}\\)​) to form aliphatic diazonium salts (\\(R−{N}_{2}^{+}{X}^{−}\\)).\u003c/p> \u003cp>However, aliphatic diazonium salts are highly unstable and decompose rapidly at room temperature, releasing nitrogen gas (\\({N}_{2}\\)​) and forming alcohols, alkenes, or other side products.\u003c/p> \u003cp>Primary aromatic amines (e.g., aniline, \\({C}_{6}{H}_{5}N{H}_{2}\\)​) react with nitrous acid to form aromatic diazonium salts (\\({C}_{6}{H}_{5}{N}_{2}^{+}{X}^{−}\\)).\u003c/p> \u003cp>These diazonium salts are stable only at low temperatures (273-278 K or 0-5°C) because they are stabilized by resonance over the benzene ring.\u003c/p> \u003cp>However, above 300 K (27°C), they decompose rapidly, leading to side reactions such as the formation of phenols, halobenzenes, or azo compounds.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The compound that does not undergo Friedel-Crafts alkylation reaction but gives a positive carbylamine test is </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>aniline</p></span></div><div class="option"><span class="key">b</span><span><p>pyridine</p></span></div><div class="option"><span class="key">c</span><span><p>\(N\)-methylaniline</p></span></div><div class="option"><span class="key">d</span><span><p>triethylamine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Aniline is a primary amine, so it gives a positive carbylamine test.\u003c/p> \u003cp>N-methylaniline is a secondary amine → negative\u003c/p> \u003cp>Triethylamine is a tertiary amine → negative\u003c/p> \u003cp>Pyridine is not an amine → negative\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the major product \(C\) formed in the following reaction sequence <br/>\({\mathrm{CH}}_{3}-{\mathrm{CH}}_{2}-{\mathrm{CH}}_{2}-\mathrm{I}\overset{\mathrm{NaCN}}{\to }\mathrm{A}\)</p> <p>\(\overset{{\mathrm{OH}}^{-}}{\underset{\mathrm{Partial}\mathrm{hydrolysis}}{\to }}\mathrm{B}\overset{\mathrm{NaOH}}{\underset{{\mathrm{Br}}_{2}}{\to }}\underset{(\mathrm{major})}{\mathrm{C}}\)</p> <p>[NEET-2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\alpha\)-Bromobutanoic acid</p></span></div><div class="option"><span class="key">b</span><span><p>Propylamine</p></span></div><div class="option"><span class="key">c</span><span><p>Butylamine</p></span></div><div class="option"><span class="key">d</span><span><p>Butanamide</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>CH₃CH₂CH₂I reacts with NaCN → forms CH₃CH₂CH₂CN (Butanenitrile)\u003c/p> \u003cp>Partial hydrolysis → converts nitrile to amide → CH₃CH₂CH₂CONH₂ (Butanamide)\u003c/p> \u003cp>Hoffmann bromamide degradation with Br₂/NaOH → eliminates one carbon → forms CH₃CH₂CH₂NH₂ (Propylamine)\u003c/p> \u003cp>Hence, the major product is Propylamine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p><strong>Statement I : </strong>Aniline does not undergo Friedel Crafts alkylation reaction.</p> <p><strong>Statement II :</strong> Aniline cannot be prepared through Gabriel synthesis.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>Friedel-Crafts alkylation involves the reaction of an aromatic compound with an alkyl halide (\\(R−X\\)) in the presence of a Lewis acid catalyst like \\(AlC{l}_{3}\\)​.\u003c/p> \u003c/li> \u003cli> \u003cp>Aniline (\\({C}_{6}{H}_{5}N{H}_{2}\\)) does not undergo this reaction because:\u003c/p> \u003col> \u003cli> \u003cp>The lone pair on the \\(−N{H}_{2}\\) group coordinates with the Lewis acid catalyst (AlCl₃), forming a complex.\u003c/p> \u003c/li> \u003cli> \u003cp>This deactivates the benzene ring, making it less reactive towards electrophilic substitution.\u003c/p> \u003c/li> \u003cli> \u003cp>As a result, the reaction does not proceed efficiently.\u003c/p> \u003c/li> \u003c/ol> \u003c/li> \u003cli> \u003cp>Gabriel Phthalimide Synthesis is used for preparing primary amines but is not suitable for preparing aryl amines (like aniline) because:\u003c/p> \u003col> \u003cli> \u003cp>The method involves nucleophilic substitution of alkyl halides (\\(R−X\\)) with phthalimide anion.\u003c/p> \u003c/li> \u003cli> \u003cp>Aryl halides (\\({C}_{6}{H}_{5}X\\)) do not undergo simple nucleophilic substitution due to partial double-bond character in the C-X bond, making it unreactive in Gabriel synthesis.\u003c/p> \u003c/li> \u003cli> \u003cp>Thus, aniline cannot be synthesized using this method\u003c/p> \u003c/li> \u003c/ol> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order in aqueous medium of basic strength in case of methyl substituted amines is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Me}}_{2}\mathrm{NH}>{\mathrm{MeNH}}_{2}>{\mathrm{Me}}_{3}\mathrm{N}>{\mathrm{NH}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Me}}_{2}\mathrm{NH}>{\mathrm{Me}}_{3}\mathrm{N}>{\mathrm{MeNH}}_{2}>{\mathrm{NH}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{NH}}_{3}>{\mathrm{Me}}_{3}\mathrm{N}>{\mathrm{MeNH}}_{2}>{\mathrm{Me}}_{2}\mathrm{NH}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Me}}_{3}\mathrm{N}>{\mathrm{Me}}_{2}\mathrm{NH}>{\mathrm{MeNH}}_{2}>{\mathrm{NH}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In aqueous medium basic strength is dependent on electron density on nitrogen as well as solvation of cation formed after accepting \\({\\mathrm{H}}^{+}\\). After considering all these factors overall basic strength order is\u003cbr/>\\({\\mathrm{Me}}_{2}\\mathrm{NH}>{\\mathrm{MeNH}}_{2}>{\\mathrm{Me}}_{3}\\mathrm{N}>{\\mathrm{NH}}_{3}\\\\ 2^\\circ >1^\\circ >3^\\circ >{\\mathrm{NH}}_{3}\\)\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the colums and select the correct option (memory based jee mains shift-2 22/01/2025)</p> <table> <tbody> <tr> <td>Column-I (Compound)</td> <td>Column-II (Reducing agent for preparing primary amine)</td> </tr> <tr> <td>(A) \({\mathrm{RCONH}}_{2}\)</td> <td>(I) \(\mathrm{Na}/{\mathrm{C}}_{2}{\mathrm{H}}_{5}\mathrm{OH}\)</td> </tr> <tr> <td>(B)\({\mathrm{PhNO}}_{2}\)</td> <td>(II) \({\mathrm{LiAlH}}_{4}\)</td> </tr> <tr> <td>(C) \(\mathrm{PhCN}\)</td> <td>(III) \(\mathrm{R}-\mathrm{X}/\mathrm{aq}.\mathrm{NaOH}\)</td> </tr> <tr> <td>(D) Phthalimide</td> <td>(IV) \(\mathrm{Fe}/\mathrm{HCl}\)</td> </tr> </tbody> </table></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-II, B-IV, C-I, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-IV, C-III, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-IV, C-I, D-II</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-II, C-I, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{R}-\\mathrm{CO}-{\\mathrm{NH}}_{2}\\overset{{\\mathrm{LiALH}}_{4}}{\\to }\\mathrm{R}-{\\mathrm{CH}}_{2}-{\\mathrm{NH}}_{2}\\\\ \\mathrm{Ph}-{\\mathrm{NO}}_{2}\\overset{\\mathrm{Fe}/\\mathrm{HCl}}{\\to }\\mathrm{Ph}-{\\mathrm{NH}}_{2}\\\\ \\mathrm{Ph}-\\mathrm{CN}\\overset{\\mathrm{Na}/{\\mathrm{C}}_{2}{\\mathrm{H}}_{5}\\mathrm{Oh}}{\\to }\\mathrm{Ph}-{\\mathrm{NH}}_{2}\\\\ \\mathrm{Phthalimide}\\overset{\\mathrm{R}-\\mathrm{X}/\\mathrm{aq}.\\mathrm{NaOH}}{\\to }\\mathrm{R}-{\\mathrm{NH}}_{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the compound that will react with Hinsberg's reagent to give a solid which dissolves in alkali</p> <p>[NEET-2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}{\mathrm{NHCH}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}{\mathrm{NH}}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}\mathrm{N}\left({\mathrm{CH}}_{3}\right){\mathrm{CH}}_{2}{\mathrm{CH}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}{\mathrm{NO}}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>A primary amine gives a sulfonamide on reaction with Hinsberg’s reagent, which subsequently dissolves in alkali\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reaction of propanamide with ethanolic sodium hydroxide and bromine will give.</p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Methylamine</p></span></div><div class="option"><span class="key">b</span><span><p>Propylamine</p></span></div><div class="option"><span class="key">c</span><span><p>Aniline</p></span></div><div class="option"><span class="key">d</span><span><p>Ethylamine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Propanamide (CH₃CH₂CONH₂) reacts under Hoffmann bromamide conditions (Br₂ in ethanolic NaOH) to lose its carbonyl carbon and form a primary amine with one fewer carbon atom. Thus, propanamide (3 carbons) gives \u003cstrong>ethylamine (CH₃CH₂NH₂)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of the basic strength of methyl substituted amines in aqueous solution is:</p> <p>[NEET 2019]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \left(\mathrm{CH}_{3}\right)_{2} \mathrm{NH}&gt;\mathrm{CH}_{3} \mathrm{NH}_{2}&gt;\left(\mathrm{CH}_{3}\right)_{3} \mathrm{~N} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \left(\mathrm{CH}_{3}\right)_{3} \mathrm{~N}&gt;\mathrm{CH}_{3} \mathrm{NH}_{2}&gt;\left(\mathrm{CH}_{3}\right)_{2} \mathrm{NH} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \left(\mathrm{CH}_{3}\right)_{3} \mathrm{~N}&gt;\left(\mathrm{CH}_{3}\right)_{2} \mathrm{NH}&gt;\mathrm{CH}_{3} \mathrm{NH}_{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{CH}_{3} \mathrm{NH}_{2}&gt;\left(\mathrm{CH}_{3}\right)_{2} \mathrm{NH}&gt;\left(\mathrm{CH}_{3}\right)_{3} \mathrm{~N} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

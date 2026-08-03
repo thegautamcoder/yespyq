@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Electrostatic Potential and Capacitance","item":"https://yespyq.com/exams/jee/physics/electrostatic-potential-and-capacitance/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Electrostatic Potential and Capacitance</h1>
       <p>64 JEE Physics previous year questions on <b>Electrostatic Potential and Capacitance</b> — options free on every question; <b>6 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The capacitance of a capacitor with charge and a potential difference depends on :</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>both and</span></div><div class="option correct"><span class="key">b</span><span>the geometry of the capacitor</span></div><div class="option"><span class="key">c</span><span>q only</span></div><div class="option"><span class="key">d</span><span>V only</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the distance between two parallel plates of a capacitor is \(d\), \(A\) is the area of each plate, and \(E\) is the electric field, find the energy stored in the capacitor.</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\frac{1}{2}{E}^{2}A{ϵ}_{0}d\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{4}{E}^{2}A{ϵ}_{0}d\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{4}{E}^{2}A{ϵ}_{0}d\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({E}^{2}A{ϵ}_{0}d\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electrostatic potential due to an electric dipole at a distance ' \(r\) ' varies as :</p> <p> </p> <p>[JEE Main 2024, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{r}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{r^3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{\mathbf{r}}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{1}{r^2}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a parallel plate capacitor of area A (of each plate) and separation '𝑑' between the plates. If 𝐸 is the electric field and \({\epsilon }_{0}\) is the permittivity of free space between the plates, then potential energy stored in the capacitor is</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{4}{\epsilon }_{0}{E}^{2}Ad\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\epsilon }_{0}{E}^{2}Ad\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{4}{\epsilon }_{0}{E}^{2}Ad\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{1}{2}{\epsilon }_{0}{E}^{2}Ad\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel plate capacitor of capacitance \(40\text{ }\mu F\) is connected to a \(100\text{ }\text{V}\) power supply. The intermediate space between the plates is then filled with a dielectric material of dielectric constant \(K=2\). Calculate the extra charge stored in the capacitor and the change in its electrostatic energy due to the introduction of the dielectric. (JEE Mains - 21 Jan 2025 - Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 mC and 0.4 J</p></span></div><div class="option"><span class="key">b</span><span><p> 2 mC and 0.2 J</p></span></div><div class="option correct"><span class="key">c</span><span><p> 4 mC and 0.2 J</p></span></div><div class="option"><span class="key">d</span><span><p> 8 mC and 2 J</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A thin half ring of radius 35 cm is uniformly charged with a total charge of \(Q\) coulomb. If the magnitude of the electric field at centre of the half ring is \(100V/m\), then the value of \(Q\) is ______ nC.</p> <p>\(\left({ϵ}_{0}=8.85\times {10}^{-12}{C}^{2}/N{m}^{2}\text{ and }\pi =3.14\right)\)</p>     <p>[JEE Main 2026, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>2.14</p></span></div><div class="option"><span class="key">b</span><span><p>2.44</p></span></div><div class="option"><span class="key">c</span><span><p>3.25</p></span></div><div class="option"><span class="key">d</span><span><p>0.7</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled a Assertion (A) and the other is labelled as Reason(R) </p> <p>Assertion (A): Work done by electric field on moving a positive charge on an equipotential surface is always zero.</p> <p>Reason (R): Electric lines of forces are always perpendicular to equipotential surfaces.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Electric field lines are perpendicular to equipotential surfaces\u003cbr/>Displacement along an equipotential surface is perpendicular to electric force\u003cbr/>Angle between force and displacement is ninety degrees\u003cbr/>Work done by electric force is given by\u003cbr/>\\(W=Fs\\cos \\theta\\)\u003cbr/>\\(\\cos 90=0\\)\u003cbr/>Hence work done becomes\u003cbr/>\\(W=0\\)\u003cbr/>Conclusion work done in motion along equipotential surface is zero\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled a Assertion (A) and the other is labelled as Reason(R) </p> <p>Assertion (A): Work done by electric field on moving a positive charge on an equipotential surface is always zero.</p> <p>Reason (R): Electric lines of forces are always perpendicular to equipotential surfaces.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is not correct but (R) is correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Electric field lines are perpendicular to equipotential surfaces\u003cbr/>Displacement along an equipotential surface is perpendicular to electric force\u003cbr/>Angle between force and displacement is ninety degrees\u003cbr/>Work done by electric force is given by\u003cbr/>\\(W=Fs\\cos \\theta\\)\u003cbr/>\\(\\cos 90=0\\)\u003cbr/>Hence work done becomes\u003cbr/>\\(W=0\\)\u003cbr/>Conclusion work done in motion along equipotential surface is zero\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A sphere of capacitance 100 pF is charged to a potential of 100 V. Another identical uncharged metal sphere is brought in contact with the charged sphere, then the change in the total energy stored on these spheres, when they touch is \(\alpha \times {10}^{-7}J\). The value of α is___ (combined capacitance of spheres is 200 pF)</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{5}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{7}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{9}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given data,\u003c/p> \u003cp>\\({C}_{1}=100\\text{ pF}=100\\times {10}^{-12}\\text{ F}\\)\u003c/p> \u003cp>\\({V}_{1}=100\\text{ V}\\)\u003c/p> \u003cp>\\({C}_{2}=100\\text{ pF}\\) (identical sphere)\u003c/p> \u003cp>\\({V}_{2}=0\\text{ V}\\) (uncharged)\u003c/p> \u003cp>Substitute the values into the formula:\u003c/p> \\[\\Delta U = \\frac{1}{2} \\left( \\frac{100 \\times 100}{100 + 100} \\right) \\times 10^{-12} \\times (100 - 0)^2\\] \\[\\Delta U = \\frac{1}{2} \\left( \\frac{10000}{200} \\right) \\times 10^{-12} \\times 10000\\] \\[\\Delta U = \\frac{1}{2} \\times 50 \\times 10^{-12} \\times 10^4\\] \\[\\Delta U = 25 \\times 10^{-8}\\text{ J}\\] \u003cp>Format to match the question's target expression (\\(\\alpha \\times {10}^{-7}\\text{ J}\\)):\u003c/p> \\[\\Delta U = 2.5 \\times 10^{-7}\\text{ J} = \\frac{5}{2} \\times 10^{-7}\\text{ J}\\] \u003cp>By comparing this with \\(\\alpha \\times {10}^{-7}\\text{ J}\\), we get:\u003c/p> \\[\\alpha = \\frac{5}{2}\\]","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electrostatic potential on the surface of uniformly charged spherical shell of radius \(\mathrm{R}=10\mathrm{cm}\) is \(120\mathrm{V}\) . The potential at the centre of shell, at a distance \(r=5\mathrm{cm}\) from centre, and at a distance \(\mathrm{r}=15\mathrm{cm}\) from the centre of the shell respectively, are :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>120V, 120V, 80V</p></span></div><div class="option"><span class="key">b</span><span><p>40V, 40V, 80V </p></span></div><div class="option"><span class="key">c</span><span><p>0V, 0V, 80V</p></span></div><div class="option"><span class="key">d</span><span><p>0V, 120V, 40V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Potential inside a conducting spherical shell is equal to the potential on its surface.\u003cbr/>\\({V}_{\\mathrm{in}}={V}_{\\mathrm{surface}}=\\frac{kQ}{R}=120V\\)\u003cbr/>At distance r = 15 cm (outside the shell).\u003cbr/>\\(V=\\frac{kQ}{r}=\\frac{120\\times 10}{15}=80V\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Parallel plate capacitor was made with two rectangular plates, each with a length of 𝑙=3 cm and breath of b=1 cm. The distance between the plates is 3𝜇 m. Out of the following, which are the ways to increase the capacitance by a factor of 10 ?<br/>A. 𝑙=30 cm, b=1 cm, d=1𝜇 m<br/>B. 𝑙=3 cm, b=1 cm, d=30𝜇 m<br/>C. 𝑙=6 cm, b=5 cm, d=3𝜇 m<br/>D. 𝑙=1 cm, b=1 cm, d=10𝜇 m<br/>E. 𝑙=5 cm, b=2 cm, d=1𝜇 m<br/>Choose the correct answer from the options given below:</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and D only</p></span></div><div class="option"><span class="key">b</span><span><p>C only</p></span></div><div class="option"><span class="key">c</span><span><p>A only</p></span></div><div class="option"><span class="key">d</span><span><p>C and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The capacitance C of a parallel plate capacitor is given by the formula:\u003c/p> \u003cp>\\(C=\\frac{{\\epsilon }_{0}A}{d}\\)\u003c/p> \u003cp>To increase the capacitance by a factor of 10 , either the area A (which depends on \\(l\\times b\\)) should be increased, or the distance d should be reduced.\u003cbr/>Option C: \\(l=6cm,b=5cm,d=3\\mu m\\) increases the area, so the capacitance becomes 10 times the initial capacitance.\u003cbr/>Option E: \\(l=5cm,b=2cm,d=1\\mu m\\) reduces the distance d and increases the capacitance by 10 times.\u003cbr/>Thus, Options C and E increase the capacitance by a factor of 10 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A uniform wire of linear charge density \(\lambda\) is placed along the y-axis. Determine the<strong> </strong>locus of the equipotential surface in the surrounding space.</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({x}^{2}+{y}^{2}+{z}^{2}=\text{constant}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({x}^{2}+{z}^{2}=\text{constant}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(xyz=\text{constant}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(xy+yz+zx=\text{constant}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Here, the line charge is placed aling the Y axis, so the equipotential surfaces are cocentric cylinders, and their crossections are circles in X Z plane. So the equation of locus, \u003c/p> \u003cp>\\({\\mathrm{x}}^{2}+{\\mathrm{z}}^{2}=\\mathrm{Constant}\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor has air as dielectric medium and two conducting plates of area \(12 cm ^2\) and they are \(0.6 cm\) apart. When a slab of dielectric having area \(12 cm ^2\) and \(0.6 cm\) thickness is inserted between the plates, one of the conducting plates has to be moved by \(0.2 cm\) to keep the capacitance same as in previous case. The dielectric constant of the slab is : (Given \(\epsilon_0=8.834 \times 10^{-12} F / m\) ) </p> <p><strong>[JEE Main 2024, 08 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.33</p></span></div><div class="option"><span class="key">b</span><span><p>1.50</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>0.66</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\frac{A{\\epsilon }_{o}}{d}=\\frac{A{\\epsilon }_{o}}{\\left(0.2+\\frac{d}{k}\\right)}\\)\u003c/p> \u003cp>\\(0.6=0.2+\\frac{0.6}{k}\\)\u003c/p> \u003cp>\\(k=\\frac{3}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor has air as dielectric medium and two conducting plates of area \(12 cm ^2\) and they are \(0.6 cm\) apart. When a slab of dielectric having area \(12 cm ^2\) and \(0.6 cm\) thickness is inserted between the plates, one of the conducting plates has to be moved by \(0.2 cm\) to keep the capacitance same as in previous case. The dielectric constant of the slab is : (Given \(\epsilon_0=8.834 \times 10^{-12} F / m\) ) </p> <p><strong>[JEE Main 2024, 08 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.33</p></span></div><div class="option"><span class="key">b</span><span><p>1.50</p></span></div><div class="option"><span class="key">c</span><span><p>1</p></span></div><div class="option"><span class="key">d</span><span><p>0.66</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\frac{A{\\epsilon }_{o}}{d}=\\frac{A{\\epsilon }_{o}}{\\left(0.2+\\frac{d}{k}\\right)}\\)\u003c/p> \u003cp>\\(0.6=0.2+\\frac{0.6}{k}\\)\u003c/p> \u003cp>\\(k=\\frac{3}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two charges +7 C and - 4 C are located at (-7, 0, 0) m and (7, 0, 0) m, find electrostatic potential energy of the system. \(( K=9 \times 10^9 SI units )\)</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-6 \times 10^9 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-18 \times 10^9 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(18 \times 10^9 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6 \times 10^9 \mathrm{~J}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The formula for electrostatic potential energy between two point charges is:\u003c/p> \u003cp>\\(U=K\\frac{{q}_{1}{q}_{2}}{r}\\)​​\u003c/p> \u003cp>Where:\u003c/p> \u003cul> \u003cli>\\(K=9\\times 1{0}^{9}\\text{ }{\\text{N}\\text{}\\text{m}}^{2}\\mathrm{/}{\\text{C}}^{2}\\),\u003c/li> \u003cli>\\({q}_{1}=+7\\text{ }\\text{C}\\), \\({q}_{2}=−4\\text{ }\\text{C}\\)\u003c/li> \u003cli>\\(r=\\text{distance between the charges}\\)\u003c/li> \u003c/ul> \u003cp>The charges are located at \\((−7,0,0)\\) and \\((7,0,0)\\), so the distance \\(r\\) is:\u003c/p> \u003cp>\\(r=\\mathrm{∣}7−(−7)\\mathrm{∣}=14\\text{ }\\text{m}\\)\u003c/p> \u003cp>Substitute the values into the formula:\u003c/p> \u003cp>\\(U=(9\\times 1{0}^{9})⋅\\frac{(+7)(−4)}{14}\\)​\u003c/p> \u003cp>Simplify:\u003c/p> \u003cp>\\(U=(9\\times 1{0}^{9})⋅\\frac{−28}{14}\\)\u003c/p> \u003cp> \\(U=(9\\times 1{0}^{9})⋅(−2)=−18\\times 1{0}^{9}\\text{ }\\text{J}\\)\u003c/p> \u003cp>\u003cstrong>Correct answer: (b) \\(−18\\times 1{0}^{9}\\text{ }\\text{J}\\)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel plate capacitor of capacitance \(40\text{ }\mu F\) is connected to a \(100\text{ }\text{V}\) power supply. The intermediate space between the plates is then filled with a dielectric material of dielectric constant \(K=2\). Calculate the extra charge stored in the capacitor and the change in its electrostatic energy due to the introduction of the dielectric. (JEE Mains - 21 Jan 2025 - Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 mC and 0.4 J</p></span></div><div class="option"><span class="key">b</span><span><p> 2 mC and 0.2 J</p></span></div><div class="option"><span class="key">c</span><span><p> 4 mC and 0.2 J</p></span></div><div class="option"><span class="key">d</span><span><p> 8 mC and 2 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003col> \u003cli> \u003cp>\u003cstrong>Initial Charge Stored\u003c/strong>:\u003cbr/>The charge stored in a capacitor is given by:\u003c/p> \\(Q=CV\\) \u003cp>Substituting \\(C=40\\text{ }\\mu \\text{F}\\) and \\(V=100\\text{ }\\text{V}\\):\u003c/p> \\(Q=40\\times 1{0}^{−6}\\times 100=4\\text{ }\\text{mC}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Capacitance with Dielectric\u003c/strong>:\u003cbr/>When the dielectric is introduced, the capacitance becomes:\u003c/p> \\({C}^{′}=K⋅C=2⋅40=80\\text{ }\\mu \\text{F}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Charge with Dielectric\u003c/strong>:\u003c/p> \\({Q}^{′}={C}^{′}⋅V=80\\times 1{0}^{−6}⋅100=8\\text{ }\\text{mC}\\mathrm{.}\\) \u003cp>The extra charge stored is:\u003c/p> \\(\\Delta Q={Q}^{′}−Q=8−4=4\\text{ }\\text{mC}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Change in Electrostatic Energy\u003c/strong>:\u003cbr/>The energy stored in a capacitor is given by:\u003c/p> \\(U=\\frac{1}{2}C{V}^{2}\\mathrm{.}\\) \u003cul> \u003cli>Initial energy: \\(U=\\frac{1}{2}⋅40\\times 1{0}^{−6}⋅(100{)}^{2}=0.2\\text{ }\\text{J}\\mathrm{.}\\)\u003c/li> \u003cli>Final energy with dielectric: \\({U}^{′}=\\frac{1}{2}⋅80\\times 1{0}^{−6}⋅(100{)}^{2}=0.4\\text{ }\\text{J}\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>The change in energy is:\u003c/p> \\(\\Delta U={U}^{′}−U=0.4−0.2=0.2\\text{ }\\text{J}\\mathrm{.}\\)\u003c/li> \u003c/ol> \u003cp>Thus, the extra charge stored is \\(4\\text{ }\\text{mC}\\) and the change in energy is \\(0.2\\text{ }\\text{J}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Three infinitely long wires with linear charge density \(\lambda\) are placed along the X-axis, Y-axis and Z-axis respectively. Which of the following denotes an equipotential surface?</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left({x}^{2}+{y}^{2}\right)\left({y}^{2}+{z}^{2}\right)\left({z}^{2}+{x}^{2}\right)=\text{ constant }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(xy+yz+zx=\text{ constant }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{xyz}=\text{ constant }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((x+y)(y+z)(z+x)=\text{ constant }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Electric potential due to an infinite line charge at distance r:\u003cbr/>\\(V=−\\int \\vec{E}\\cdot \\vec{\\mathrm{dr}}\\)\u003cbr/>\\(V=\\int \\frac{2k\\lambda }{r}\\mathrm{dr}\\)\u003cbr/>\\(V=2k\\lambda \\ln r+c\\)Net potential due to three mutually perpendicular infinite line charges:\u003cbr/>\\(V=2k\\lambda \\ln \\sqrt{{x}^{2}+{y}^{2}}+2k\\lambda \\ln \\sqrt{{y}^{2}+{z}^{2}}\\)\\(+2k\\lambda \\ln \\sqrt{{z}^{2}+{x}^{2}}+c\\)\u003cbr/>For equipotential surface V = constant:\u003cbr/>\\(\\ln \\sqrt{({x}^{2}+{y}^{2})({y}^{2}+{z}^{2})({z}^{2}+{x}^{2})}=c\\)\u003cbr/>Final equation of equipotential surface:\u003cbr/>\\(({x}^{2}+{y}^{2})({y}^{2}+{z}^{2})({z}^{2}+{x}^{2})=c\\)\u003cbr/>where c is a constant\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The point \(A\) is situated on the axis of a dipole at a distance \(r\) from the dipole, where the electric field and potential are given as \({E}_{0}\)​ and \({V}_{0}\)​, respectively. Find the electric field and potential at point \(B\), which is at a distance \(2r\) from the dipole on its perpendicular bisector.</p> <p>(Shift II Memory Based)​​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({E}_{B}=\frac{{E}_{0}}{8},\text{ }{V}_{B}={V}_{0}\)​​</p></span></div><div class="option"><span class="key">b</span><span><p>​\({E}_{B}=\frac{{E}_{0}}{16},\text{ }{V}_{B}=0\)​​</p></span></div><div class="option"><span class="key">c</span><span><p>\({E}_{B}=\frac{{E}_{0}}{4},\text{ }{V}_{B}=\frac{{V}_{0}}{2}\)​​</p></span></div><div class="option"><span class="key">d</span><span><p>​​\({E}_{B}=\frac{{E}_{0}}{32},\text{ }{V}_{B}=\frac{{V}_{0}}{4}\)​​</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{E}}_{\\mathrm{axial}}=\\frac{2\\mathrm{kP}}{{\\mathrm{r}}^{3}}={\\mathrm{E}}_{\\mathrm{o}}\\\\ {\\mathrm{E}}_{\\mathrm{equitorial}}=\\frac{\\mathrm{kP}}{{\\left(2\\mathrm{r}\\right)}^{3}}=\\frac{\\mathrm{kP}}{8{\\mathrm{r}}^{3}}=\\frac{{\\mathrm{E}}_{\\mathrm{o}}}{16}\\\\ \\mathrm{V}=\\frac{\\mathrm{kP}\\mathrm{cosθ}}{{\\mathrm{r}}^{2}}\\\\ {\\mathrm{V}}_{\\mathrm{axial}}=\\frac{\\mathrm{kP}\\cos 0}{{\\mathrm{r}}^{2}}=\\frac{\\mathrm{kP}}{{\\mathrm{r}}^{2}}\\\\ {\\mathrm{V}}_{\\mathrm{equitorial}}=\\frac{\\mathrm{kP}\\cos 90}{{\\left(2\\mathrm{r}\\right)}^{2}}=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the distance between two parallel plates of a capacitor is \(d\), \(A\) is the area of each plate, and \(E\) is the electric field, find the energy stored in the capacitor.</p> <p>(Shift I - Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}{E}^{2}A{ϵ}_{0}d\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{4}{E}^{2}A{ϵ}_{0}d\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{4}{E}^{2}A{ϵ}_{0}d\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({E}^{2}A{ϵ}_{0}d\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>The capacitance of the parallel plate capacitor is: \\(C={ϵ}_{0}\\frac{A}{d}\\mathrm{.}\\)\u003c/li> \u003cli>Energy stored in a capacitor: \\(U=\\frac{1}{2}C{V}^{2}\\mathrm{.}\\)\u003c/li> \u003cli>Substituting \\(V=Ed\\) and \\(C={ϵ}_{0}\\frac{A}{d}\\)​:\u003c/li> \u003cli>\\(U=\\frac{1}{2}{ϵ}_{0}\\frac{A}{d}(Ed{)}^{2}=\\frac{1}{2}{E}^{2}A{ϵ}_{0}d\\mathrm{.}\\)\u003c/li> \u003c/ul> \u003cp>Thus, the energy stored is \\(\\frac{1}{2}{E}^{2}A{ϵ}_{0}d\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The point \(A\) is situated on the axis of a dipole at a distance \(r\) from the dipole, where the electric field and potential are given as \({E}_{0}\)​ and \({V}_{0}\)​, respectively. Find the electric field and potential at point \(B\), which is at a distance \(2r\) from the dipole on its perpendicular bisector.</p> <p>(Shift II Memory Based)​​</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({E}_{B}=\frac{{E}_{0}}{8},\text{ }{V}_{B}={V}_{0}\)​​</p></span></div><div class="option"><span class="key">b</span><span><p>​\({E}_{B}=\frac{{E}_{0}}{16},\text{ }{V}_{B}=0\)​​</p></span></div><div class="option"><span class="key">c</span><span><p>\({E}_{B}=\frac{{E}_{0}}{4},\text{ }{V}_{B}=\frac{{V}_{0}}{2}\)​​</p></span></div><div class="option"><span class="key">d</span><span><p>​​\({E}_{B}=\frac{{E}_{0}}{32},\text{ }{V}_{B}=\frac{{V}_{0}}{4}\)​​</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{E}}_{\\mathrm{axial}}=\\frac{2\\mathrm{kP}}{{\\mathrm{r}}^{3}}={\\mathrm{E}}_{\\mathrm{o}}\\\\ {\\mathrm{E}}_{\\mathrm{equitorial}}=\\frac{\\mathrm{kP}}{{\\left(2\\mathrm{r}\\right)}^{3}}=\\frac{\\mathrm{kP}}{8{\\mathrm{r}}^{3}}=\\frac{{\\mathrm{E}}_{\\mathrm{o}}}{16}\\\\ \\mathrm{V}=\\frac{\\mathrm{kP}\\mathrm{cosθ}}{{\\mathrm{r}}^{2}}\\\\ {\\mathrm{V}}_{\\mathrm{axial}}=\\frac{\\mathrm{kP}\\cos 0}{{\\mathrm{r}}^{2}}=\\frac{\\mathrm{kP}}{{\\mathrm{r}}^{2}}\\\\ {\\mathrm{V}}_{\\mathrm{equitorial}}=\\frac{\\mathrm{kP}\\cos 90}{{\\left(2\\mathrm{r}\\right)}^{2}}=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electrostatic potential due to an electric dipole at a distance ' \(r\) ' varies as :</p> <p> </p> <p>[JEE Main 2024, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{r}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{r^3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{\mathbf{r}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{r^2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The electrostatic potential due to an electric dipole at a distance ' \\(r\\) ' varies as \\(\\frac{1}{r^2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two point charges \(-4 \mu c\) and \(4 \mu c\), constituting an electric dipole, are placed at \((-9,0,0)\mathrm{cm}\)and \((9,0,0) \mathrm{cm}\) in a uniform electric field of strength \({10}^{4}{\mathrm{NC}}^{-1}\). The work done on the dipole in rotating it from the equilibrium through \(180^\circ\) is :</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12.4 mJ</p></span></div><div class="option"><span class="key">b</span><span><p>14.4 mJ</p></span></div><div class="option"><span class="key">c</span><span><p>18.4 mJ</p></span></div><div class="option"><span class="key">d</span><span><p>16.4 mJ</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(=W=PE\\left(\\cos {\\theta }_{1}-\\cos {\\theta }_{2}\\right)\\\\ P=4\\times {10}^{-6}\\times \\frac{18}{100}\\\\ P=72\\times {10}^{-8}cm\\\\ W=72\\times {10}^{-8}\\times 2\\times {10}^{4}\\\\ W=14.4mJ\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor with capacitance \(1 \mu \mathrm{~F}\) is connected to a 20 V supply. The distance between the plates is 1 \(\mu \mathrm{m}\). Find the energy density between the plates.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1770 \mathrm{~J} / \mathrm{m}^3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1800 \mathrm{~J} / \mathrm{m}^3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1600 \mathrm{~J} / \mathrm{m}^3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2000 \mathrm{~J} / \mathrm{m}^3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -335,7 +339,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>To find the \u003cstrong>energy density\u003c/strong> (energy per unit volume) between the plates of the capacitor, we use the formula:\u003c/p> \u003cp>\\(\\text{Energy Density}(u)=\\frac{1}{2}{ϵ}_{0}{E}^{2}\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({ϵ}_{0}\\)​ = \u003cstrong>Permittivity of free space\u003c/strong> \\(=8.85\\times 1{0}^{−12}\\text{ }F\\mathrm{/}m\\)\u003c/li> \u003cli>\\(E\\) = \u003cstrong>Electric field\u003c/strong> inside the capacitor, given by:\u003c/li> \u003c/ul> \u003cp>\\(E=\\frac{V}{d}\\)​\u003c/p> \u003cstrong>Step 1: Calculate the Electric Field \\(E\\)\u003c/strong> \u003cp>\\(E=\\frac{V}{d}=\\frac{20V}{1\\times 1{0}^{−6}m}\\)\u003c/p> \u003cp> \\(E=2\\times 1{0}^{7}\\text{ }V\\mathrm{/}m\\)\u003c/p> \u003cstrong>Step 2: Calculate the Energy Density \\(u\\)\u003c/strong> \u003cp>\\(u=\\frac{1}{2}\\times (8.85\\times 1{0}^{−12})\\times (2\\times 1{0}^{7}{)}^{2}\\)\u003c/p> \u003cp> \\(u=\\frac{1}{2}\\times (8.85\\times 1{0}^{−12})\\times (4\\times 1{0}^{14})\\)\u003c/p> \u003cp> \\(u=\\frac{1}{2}\\times 3.54\\times 1{0}^{3}\\)\u003c/p> \u003cp> \\(u=1.77\\times 1{0}^{3}\\text{ }J\\mathrm{/}{m}^{3}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(1770J/{m}^{3}\\)\u003c/p> \u003cp>So, the \u003cstrong>correct option is (A) 1770 J/m³\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The potential of a large liquid drop when eight liquid drops are combined is 20 V. Then, the potential of each single drop was:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 V</p></span></div><div class="option"><span class="key">b</span><span><p>7.5 V</p></span></div><div class="option"><span class="key">c</span><span><p>5 V</p></span></div><div class="option"><span class="key">d</span><span><p>2.5 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -347,7 +351,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>By the volume conservation \u003c/p> \u003cp>\\(8\\times \\frac{4}{3}{\\mathrm{πr}}^{3}=\\frac{4}{3}{\\mathrm{πR}}^{3}\\\\ \\mathrm{R}=2\\mathrm{r}\\\\ \\mathrm{By}\\mathrm{conservation}\\mathrm{of}\\mathrm{charge}\\\\ \\mathrm{Q}=8\\mathrm{q}\\\\ \\mathrm{Now},\\\\ \\mathrm{V}=\\frac{\\mathrm{k}\\mathrm{q}}{\\mathrm{r}}.....(1)\\\\ \\mathrm{V}'=\\frac{\\mathrm{k}\\mathrm{Q}}{\\mathrm{R}}=\\frac{\\mathrm{K}8\\mathrm{q}}{2\\mathrm{r}}=4\\mathrm{V}\\\\ 20=4\\mathrm{V}\\\\ \\mathrm{V}=5\\mathrm{V}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The potential of a large liquid drop when eight liquid drops are combined is 20 V. Then, the potential of each single drop was:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10 V</p></span></div><div class="option"><span class="key">b</span><span><p>7.5 V</p></span></div><div class="option"><span class="key">c</span><span><p>5 V</p></span></div><div class="option"><span class="key">d</span><span><p>2.5 V</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -359,7 +363,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>By the volume conservation \u003c/p> \u003cp>\\(8\\times \\frac{4}{3}{\\mathrm{πr}}^{3}=\\frac{4}{3}{\\mathrm{πR}}^{3}\\\\ \\mathrm{R}=2\\mathrm{r}\\\\ \\mathrm{By}\\mathrm{conservation}\\mathrm{of}\\mathrm{charge}\\\\ \\mathrm{Q}=8\\mathrm{q}\\\\ \\mathrm{Now},\\\\ \\mathrm{V}=\\frac{\\mathrm{k}\\mathrm{q}}{\\mathrm{r}}.....(1)\\\\ \\mathrm{V}'=\\frac{\\mathrm{k}\\mathrm{Q}}{\\mathrm{R}}=\\frac{\\mathrm{K}8\\mathrm{q}}{2\\mathrm{r}}=4\\mathrm{V}\\\\ 20=4\\mathrm{V}\\\\ \\mathrm{V}=5\\mathrm{V}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two point charges \(-4 \mu c\) and \(4 \mu c\), constituting an electric dipole, are placed at \((-9,0,0)\mathrm{cm}\)and \((9,0,0) \mathrm{cm}\) in a uniform electric field of strength \({10}^{4}{\mathrm{NC}}^{-1}\). The work done on the dipole in rotating it from the equilibrium through \(180^\circ\) is :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12.4 mJ</p></span></div><div class="option"><span class="key">b</span><span><p>14.4 mJ</p></span></div><div class="option"><span class="key">c</span><span><p>18.4 mJ</p></span></div><div class="option"><span class="key">d</span><span><p>16.4 mJ</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -371,19 +375,19 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(=W=PE\\left(\\cos {\\theta }_{1}-\\cos {\\theta }_{2}\\right)\\\\ P=4\\times {10}^{-6}\\times \\frac{18}{100}\\\\ P=72\\times {10}^{-8}cm\\\\ W=72\\times {10}^{-8}\\times 2\\times {10}^{4}\\\\ W=14.4mJ\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electric potential as function of\(x,y\)is given by \(V=5\left({x}^{2}-{y}^{2}\right)V\). The electric field at a point \((2,3)m\) is \(____\) (V / m).</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
-      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((-20\overset{^}{i}+30\overset{^}{j})\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((-20\overset{^}{i}-30\overset{^}{j})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((20\overset{^}{i}+45\overset{^}{j})\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((-4\overset{^}{i}+6\overset{^}{j})\)</p></span></div></div>
+      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((-20\hat{i}+30\hat{j})\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((-20\hat{i}-30\hat{j})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((20\hat{i}+45\hat{j})\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((-4\hat{i}+6\hat{j})\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
         <div><b>Answer &amp; explanation — PYQ Pass</b><p>Options are free to see. Unlock the correct answer and full explanation with Pass.</p></div>
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Use the relation between Electric Field (\\(\\vec{E}\\)) and Potential (\\(V\\)):\u003c/p> \u003cp>The electric field is the negative gradient of the electric potential.\u003c/p> \\[\\vec{E} = -\\left( \\frac{\\partial V}{\\partial x}\\hat{i} + \\frac{\\partial V}{\\partial y}\\hat{j} \\right)\\] \u003cp>Given the potential function:\u003c/p> \\[V = 5(x^2 - y^2) = 5x^2 - 5y^2\\] \u003cp>Calculate the partial derivatives:\u003c/p> \u003cp>Differentiate with respect to \\(x\\) (treating \\(y\\) as a constant):\u003c/p> \\[\\frac{\\partial V}{\\partial x} = 10x\\] \u003cp>Differentiate with respect to \\(y\\) (treating \\(x\\) as a constant):\u003c/p> \\[\\frac{\\partial V}{\\partial y} = -10y\\] \u003cp>Write the Electric Field vector expression:\u003c/p> \\[\\vec{E} = -(10x\\hat{i} - 10y\\hat{j})\\] \\[\\vec{E} = -10x\\hat{i} + 10y\\hat{j}\\] \u003cp>Substitute the given point coordinates \\((2, 3)\\):\u003c/p> \u003cp>Here, \\(x=2\\) and \\(y=3\\).\u003c/p> \\[\\vec{E} = -10(2)\\hat{i} + 10(3)\\hat{j}\\] \\[\\vec{E} = -20\\hat{i} + 30\\hat{j} \\text{ V/m}\\] \u003cp>Correct Option: A \\((-20\\overset{^}{i}+30\\overset{^}{j})\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Use the relation between Electric Field (\\(\\vec{E}\\)) and Potential (\\(V\\)):\u003c/p> \u003cp>The electric field is the negative gradient of the electric potential.\u003c/p> \\[\\vec{E} = -\\left( \\frac{\\partial V}{\\partial x}\\hat{i} + \\frac{\\partial V}{\\partial y}\\hat{j} \\right)\\] \u003cp>Given the potential function:\u003c/p> \\[V = 5(x^2 - y^2) = 5x^2 - 5y^2\\] \u003cp>Calculate the partial derivatives:\u003c/p> \u003cp>Differentiate with respect to \\(x\\) (treating \\(y\\) as a constant):\u003c/p> \\[\\frac{\\partial V}{\\partial x} = 10x\\] \u003cp>Differentiate with respect to \\(y\\) (treating \\(x\\) as a constant):\u003c/p> \\[\\frac{\\partial V}{\\partial y} = -10y\\] \u003cp>Write the Electric Field vector expression:\u003c/p> \\[\\vec{E} = -(10x\\hat{i} - 10y\\hat{j})\\] \\[\\vec{E} = -10x\\hat{i} + 10y\\hat{j}\\] \u003cp>Substitute the given point coordinates \\((2, 3)\\):\u003c/p> \u003cp>Here, \\(x=2\\) and \\(y=3\\).\u003c/p> \\[\\vec{E} = -10(2)\\hat{i} + 10(3)\\hat{j}\\] \\[\\vec{E} = -20\\hat{i} + 30\\hat{j} \\text{ V/m}\\] \u003cp>Correct Option: A \\((-20\\hat{i}+30\\hat{j})\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel plate air capacitor is connected to a battery. The plates are pulled apart at uniform speed v. If x is the separation between the plates at any instant, then the time rate of change of electrostatic energy of the capacitor is proportional to , where \({x}^{\alpha }\) is ______ .</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-2\)</p></span></div><div class="option"><span class="key">b</span><span><p>1</p></span></div><div class="option"><span class="key">c</span><span><p>\(-1\)</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -395,7 +399,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For a parallel plate air capacitor,\u003c/p> \u003cp>\\(C=\\frac{{\\epsilon }_{0}A}{x}\\)​\u003c/p> \u003cp>Since it is connected to a battery, potential difference V remains constant.\u003c/p> \u003cp>Electrostatic energy stored:\u003c/p> \u003cp>\\(U=\\frac{1}{2}C{V}^{2}\\) \u003c/p> \u003cp>\\(U=\\frac{1}{2}(\\frac{{\\epsilon }_{0}A}{x}){V}^{2}\\)\u003c/p> \u003cp>\\(U\\propto \\frac{1}{x}\\)​\u003c/p> \u003cp>Now, plates are pulled apart with uniform speed v, so\u003c/p> \u003cp>\\(\\frac{dx}{dt}=v\\)\u003c/p> \u003cp>\\(\\frac{dU}{dt}\\propto \\frac{d}{dt}({x}^{−1})\\)\u003c/p> \u003cp>\\(\\frac{dU}{dt}\\propto −{x}^{−2}\\frac{dx}{dt}\\)\u003c/p> \u003cp>\\(\\frac{dU}{dt}\\propto {x}^{−2}\\)\u003c/p> \u003cp>Therefore,\u003c/p> \u003cp>\\(\\alpha =−2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a parallel plate capacitor of area A (of each plate) and separation '𝑑' between the plates. If 𝐸 is the electric field and \({\epsilon }_{0}\) is the permittivity of free space between the plates, then potential energy stored in the capacitor is</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{4}{\epsilon }_{0}{E}^{2}Ad\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\epsilon }_{0}{E}^{2}Ad\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{3}{4}{\epsilon }_{0}{E}^{2}Ad\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}{\epsilon }_{0}{E}^{2}Ad\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -407,7 +411,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Energy per unit volume is given by:\u003c/p> \u003cp>\\(\\frac{U}{V}=\\frac{1}{2}{\\epsilon }_{0}{E}^{2}\\)\u003c/p> \u003cp>Since volume V of the capacitor is \\(A\\times d\\), the total energy stored in the capacitor is:\u003c/p> \u003cp>\\(U=\\frac{1}{2}{\\epsilon }_{0}{E}^{2}\\times Ad\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Parallel plate capacitor was made with two rectangular plates, each with a length of 𝑙=3 cm and breath of b=1 cm. The distance between the plates is 3𝜇 m. Out of the following, which are the ways to increase the capacitance by a factor of 10 ?<br/>A. 𝑙=30 cm, b=1 cm, d=1𝜇 m<br/>B. 𝑙=3 cm, b=1 cm, d=30𝜇 m<br/>C. 𝑙=6 cm, b=5 cm, d=3𝜇 m<br/>D. 𝑙=1 cm, b=1 cm, d=10𝜇 m<br/>E. 𝑙=5 cm, b=2 cm, d=1𝜇 m<br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and D only</p></span></div><div class="option"><span class="key">b</span><span><p>C only</p></span></div><div class="option"><span class="key">c</span><span><p>A only</p></span></div><div class="option"><span class="key">d</span><span><p>C and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -419,7 +423,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The capacitance C of a parallel plate capacitor is given by the formula:\u003c/p> \u003cp>\\(C=\\frac{{\\epsilon }_{0}A}{d}\\)\u003c/p> \u003cp>To increase the capacitance by a factor of 10 , either the area A (which depends on \\(l\\times b\\)) should be increased, or the distance d should be reduced.\u003cbr/>Option C: \\(l=6cm,b=5cm,d=3\\mu m\\) increases the area, so the capacitance becomes 10 times the initial capacitance.\u003cbr/>Option E: \\(l=5cm,b=2cm,d=1\\mu m\\) reduces the distance d and increases the capacitance by 10 times.\u003cbr/>Thus, Options C and E increase the capacitance by a factor of 10 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.<br/>Assertion A: In electrostatics, a conductor does not store any net charge inside.<br/>Reason R: Inside the capacitor (with no dielectric medium), the free charge carriers, if placed between the plates of capacitor, experience force and drift.<br/>Choose the correct answer from the options given below.</p> <p> </p> <p>[JEE Main 2026, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are true and R is the correct explanation of A</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are true but R is NOT the correct explanation of A</p></span></div><div class="option"><span class="key">c</span><span><p>A is true but R is false</p></span></div><div class="option"><span class="key">d</span><span><p>A is false but R is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -431,7 +435,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Assertion A: In electrostatics, any net charge given to a conductor resides only on its surface, not inside. (Correct)\u003cbr/>Reason R: Inside a capacitor, free charge carriers do experience electric force and drift when placed between plates. (Correct)\u003cbr/>However, R explains behavior inside a capacitor, not why a conductor has no net charge inside. The correct explanation of A is Gauss's law (electric field inside conductor =0), not R.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a parallel-plate capacitor, the length and width of the plates are \(3\text{ }\text{cm}\) and \(1\text{ }\text{cm}\), respectively. The separation between the plates is \(3\text{ }\mu \text{m}\). By which of the following configurations does the capacitance increase by a factor of 10?</p> <p><strong>(A):</strong> \(l=6\text{ }\text{cm},b=5\text{ }\text{cm},d=3\text{ }\mu \text{m}\)<br/><strong>(B):</strong> \(l=5\text{ }\text{cm},b=2\text{ }\text{cm},d=1\text{ }\mu \text{m}\)<br/><strong>(C):</strong> \(l=5\text{ }\text{cm},b=1\text{ }\text{cm},d=30\text{ }\mu \text{m}\)<br/><strong>(D):</strong> \(l=1\text{ }\text{cm},b=1\text{ }\text{cm},d=30\text{ }\mu \text{m}\)</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A,B</p></span></div><div class="option"><span class="key">b</span><span><p>A,C</p></span></div><div class="option"><span class="key">c</span><span><p>B,C</p></span></div><div class="option"><span class="key">d</span><span><p>B,C,D</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -443,7 +447,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Solution: \u003col> \u003cli> \u003cp>\u003cstrong>Capacitance Formula:\u003c/strong> The capacitance of a parallel-plate capacitor is given by:\u003c/p> \\(C={ϵ}_{0}\\frac{A}{d},\\) \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(A=l\\times b\\) is the plate area,\u003c/li> \u003cli>\\(d\\) is the separation between the plates,\u003c/li> \u003cli>\\({ϵ}_{0}\\) is the permittivity of free space.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Initial Capacitance:\u003c/strong> For the given dimensions:\u003c/p> \u003cul> \u003cli>\\(l=3\\text{ }\\text{cm},b=1\\text{ }\\text{cm},d=3\\text{ }\\mu \\text{m}\\)\u003c/li> \u003c/ul> \\({C}_{\\text{initial}}={ϵ}_{0}\\frac{(3\\text{ }\\text{cm})\\times (1\\text{ }\\text{cm})}{3\\text{ }\\mu \\text{m}}={ϵ}_{0}\\frac{3}{3}={ϵ}_{0}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Condition for Increasing Capacitance by a Factor of 10:\u003c/strong> To increase capacitance by a factor of 10:\u003c/p> \\({C}_{\\text{new}}=10\\times {C}_{\\text{initial}}=10{ϵ}_{0}\\mathrm{.}\\) \u003cp>This requires:\u003c/p> \\(\\frac{l⋅b}{d}=10\\times \\frac{3\\text{ }\\text{cm}⋅1\\text{ }\\text{cm}}{3\\text{ }\\mu \\text{m}}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Analyze Each Option:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>(A):\u003c/strong> \\(l=6\\text{ }\\text{cm},b=5\\text{ }\\text{cm},d=3\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{6⋅5}{3}=10\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Satisfies the condition.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(B):\u003c/strong> \\(l=5\\text{ }\\text{cm},b=2\\text{ }\\text{cm},d=1\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{5⋅2}{1}=10\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Satisfies the condition.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(C):\u003c/strong> \\(l=5\\text{ }\\text{cm},b=1\\text{ }\\text{cm},d=30\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{5⋅1}{30}=\\frac{1}{6}\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Does \u003cstrong>not\u003c/strong> satisfy the condition.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(D):\u003c/strong> \\(l=1\\text{ }\\text{cm},b=1\\text{ }\\text{cm},d=30\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{1⋅1}{30}=\\frac{1}{30}\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Does \u003cstrong>not\u003c/strong> satisfy the condition.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Correct Answer:\u003c/strong> The capacitance increases by a factor of 10 for configurations \u003cstrong>A and B\u003c/strong>.\u003c/p> \u003c/li> \u003c/ol> \u003cp>\u003cstrong>Answer:\u003c/strong> (1) A, B\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor \(C_1=6 \mu \mathrm{~F}\), initially charged with a cell of emf 5 V is disconnected and connected to another capacitor \(C_2=12 \mu \mathrm{~F}\) which is initially neutral. The charges on \(C_1\) and \(C_2\) after connection are</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0 \mu \mathrm{C}, 30 \mu \mathrm{C}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(10 \mu \mathrm{C}, 20 \mu \mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(20 \mu \mathrm{C}, 10 \mu \mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(30 \mu \mathrm{C}, 0 \mu \mathrm{C}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -455,7 +459,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Initial Charge on \\({C}_{1}\\)​\u003c/strong> \u003cp>The charge on a capacitor is given by:\u003c/p> \u003cp>\\(Q=CV\\)\u003c/p> \u003cp>Given:\u003c/p> \u003cul> \u003cli>\\({C}_{1}=6\\mu F\\)\u003c/li> \u003cli>\\(V=5V\\)\u003c/li> \u003c/ul> \u003cp>\\({Q}_{1}=(6\\times 1{0}^{−6}F)\\times (5V)=30\\mu C\\)\u003c/p> \u003cp>Since \\({C}_{2}\\)​ is initially \u003cstrong>uncharged\u003c/strong>, its initial charge is:\u003c/p> \u003cp>\\({Q}_{2}=0\\mu C\\)\u003c/p> \u003cstrong>Step 2: Charge Conservation\u003c/strong> \u003cp>When the two capacitors are connected, charge redistributes while maintaining charge conservation:\u003c/p> \u003cp>\\({Q}_{\\text{total}}={Q}_{1}+{Q}_{2}=30\\mu C+0=30\\mu C\\)\u003c/p> \u003cstrong>Step 3: Common Voltage after Connection\u003c/strong> \u003cp>Since the capacitors are connected in \u003cstrong>parallel\u003c/strong>, they share a common voltage \\({V}_{f}\\):\u003c/p> \u003cp>\\({V}_{f}=\\frac{{Q}_{\\text{total}}}{{C}_{1}+{C}_{2}}\\)\u003c/p> \u003cp> \\({V}_{f}=\\frac{30\\mu C}{(6+12)\\mu F}\\)V\u003c/p> \u003cp>​ \\({V}_{f}=\\frac{30}{18}V=\\frac{5}{3}V\\)\u003c/p> \u003cstrong>Step 4: Finding Final Charges\u003c/strong> \u003cp>Using \\(Q=CV\\)\u003c/p> \u003col> \u003cli>\u003cstrong>Final charge on \\({C}_{1}\\):\u003c/strong>\u003c/li> \u003c/ol> \u003cp>\\({Q}_{1}^{′}={C}_{1}{V}_{f}=(6\\mu F)\\times \\frac{5}{3}V\\)\u003c/p> \u003cp> \\({Q}_{1}^{′}=10\\mu C\\)\u003c/p> \u003col> \u003cli>\u003cstrong>Final charge on \\({C}_{2}\\):\u003c/strong>\u003c/li> \u003c/ol> \u003cp>\\({Q}_{2}^{′}={C}_{2}{V}_{f}=(12\\mu F)\\times \\frac{5}{3}V\\)\u003c/p> \u003cp>\\({Q}_{2}^{′}=20\\mu C\\)\u003c/p> \u003cstrong>Step 5: Selecting the Correct Option\u003c/strong> \u003cp>The charges on \\({C}_{1}\\)​ and \\({C}_{2}\\)​ after connection are:\u003c/p> \u003cp>\\(B\\ 10\\mu C,20\\mu C\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two charges \(7\mu \mathrm{c}\) and \(-4\mu \mathrm{c}\) are placed at \((-7\mathrm{cm},0,0)\) and \((7\mathrm{cm},0,0)\) respectively. Given, \({ϵ}_{0}=8.85\times {10}^{-12}{\mathrm{C}}^{2}{\mathrm{N}}^{-1}{\mathrm{m}}^{-2}\), the electrostatic potential energy of the charge configuration is :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>-2.0 J</p></span></div><div class="option"><span class="key">b</span><span><p>-1.5 J</p></span></div><div class="option"><span class="key">c</span><span><p>-1.2 J</p></span></div><div class="option"><span class="key">d</span><span><p>-1.8 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -467,7 +471,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(U=\\frac{k{q}_{1}{q}_{2}}{r}\\\\ U=\\frac{-9\\times {10}^{9}\\times 4\\times {10}^{-6}\\times 7\\times {10}^{-6}\\times 100}{14}\\\\ U=-18\\times {10}^{-1}J\\\\ U=-1.8J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two metal spheres of radius R and 3R have same surface charge density \(\sigma\). If they are brought in contact and then separated, the surface charge density on smaller and bigger sphere becomes \({\sigma }_{1}\)and \({\sigma }_{2}\), respectively. The ratio \(\frac{{\sigma }_{1}}{{\sigma }_{2}}\) is</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{9}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -479,7 +483,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({V}_{1}={V}_{2},\\\\ \\frac{{Q}_{1}}{R}=\\frac{{Q}_{2}}{3R},\\\\ {Q}_{1}=\\frac{{Q}_{2}}{3},\\\\ {\\sigma }_{1}=\\frac{{Q}_{1}}{4\\pi {R}^{2}},\\\\ {\\sigma }_{2}=\\frac{{Q}_{2}}{36\\pi {R}^{2}},\\\\ \\frac{{\\sigma }_{1}}{{\\sigma }_{2}}=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel-plate capacitor of capacitance \(40\mu \mathrm{F}\) is connected to a 100 V power supply. Now the intermediate space between the plates is filled with a dielectric material of dielectric constant \(\mathrm{K}=2\). Due to the introduction of dielectric material, the extra charge and the change in the electrostatic energy in the capacitor, respectively, are</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4 mC and 0.2 J</p></span></div><div class="option"><span class="key">b</span><span><p>2 mC and 0.2 J</p></span></div><div class="option"><span class="key">c</span><span><p>8 mC and 2.0 J</p></span></div><div class="option"><span class="key">d</span><span><p>2 mC and 0.4 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -491,7 +495,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{ }\\Delta q=(KC-C)V\\\\ =40\\times {10}^{-6}\\times 100=4mC\\\\ \\Delta U=\\frac{1}{2}{C}^{'}{V}^{2}-\\frac{1}{2}C{V}^{2}=\\frac{1}{2}(K-1)C{V}^{2}\\\\ =\\frac{1}{2}C{V}^{2}(2-1)\\\\ =\\frac{1}{2}\\times 40\\times {10}^{-6}\\times 10000=0.2J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/><strong>Assertion (A) : </strong>Net dipole moment of a polar linear isotropic dielectric substance is not zero even in the absence of an external electric field.<br/><strong>Reason (R) : </strong>In absence of an external electric field, the different permanent dipoles of a polar dielectric substance are oriented in random directions.<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2025, 2 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is correct but (R) is not correct</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are correct but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is not correct but (R) is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -503,7 +507,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Since polar dielectrics are randomly oriental\u003c/p> \u003cp>\\(\\vec{P}_{n e t}=\\overrightarrow{0}\\)\u003c/p> \u003cp>\\(R:If\\vec{E}\\) is absent, polar dielectric remain polar &amp; are randomly oriented.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion A and the other is labelled as Reason R <strong>Assertion A : </strong>Work done in moving a test charge between two points inside a uniformly charged spherical shell is zero, no matter which path is chosen.<br/><strong>Reason R : </strong>Electrostatic potential inside a uniformly charged spherical shell is constant and is same as that on the surface of the shell.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is true but R is false </p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are true and R is the correct explanation of A</p></span></div><div class="option"><span class="key">c</span><span><p>A is false but R is true </p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true but R is NOT the correct explanation of A</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -515,7 +519,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both A and R are correct and R is the correct explanation\u003cbr/>Work done by electric field is related to potential difference\u003cbr/>\\(\\Delta W=q(\\Delta V)\\)\u003cbr/>Given potential difference is zero\u003cbr/>\\(\\Delta V=0\\)\u003cbr/>So,\u003cbr/>\\(\\Delta W=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a parallel-plate capacitor, the length and width of the plates are \(3\text{ }\text{cm}\) and \(1\text{ }\text{cm}\), respectively. The separation between the plates is \(3\text{ }\mu \text{m}\). By which of the following configurations does the capacitance increase by a factor of 10?</p> <p><strong>(A):</strong> \(l=6\text{ }\text{cm},b=5\text{ }\text{cm},d=3\text{ }\mu \text{m}\)<br/><strong>(B):</strong> \(l=5\text{ }\text{cm},b=2\text{ }\text{cm},d=1\text{ }\mu \text{m}\)<br/><strong>(C):</strong> \(l=5\text{ }\text{cm},b=1\text{ }\text{cm},d=30\text{ }\mu \text{m}\)<br/><strong>(D):</strong> \(l=1\text{ }\text{cm},b=1\text{ }\text{cm},d=30\text{ }\mu \text{m}\)</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A,B</p></span></div><div class="option"><span class="key">b</span><span><p>A,C</p></span></div><div class="option"><span class="key">c</span><span><p>B,C</p></span></div><div class="option"><span class="key">d</span><span><p>B,C,D</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -527,7 +531,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Solution: \u003col> \u003cli> \u003cp>\u003cstrong>Capacitance Formula:\u003c/strong> The capacitance of a parallel-plate capacitor is given by:\u003c/p> \\(C={ϵ}_{0}\\frac{A}{d},\\) \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(A=l\\times b\\) is the plate area,\u003c/li> \u003cli>\\(d\\) is the separation between the plates,\u003c/li> \u003cli>\\({ϵ}_{0}\\) is the permittivity of free space.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Initial Capacitance:\u003c/strong> For the given dimensions:\u003c/p> \u003cul> \u003cli>\\(l=3\\text{ }\\text{cm},b=1\\text{ }\\text{cm},d=3\\text{ }\\mu \\text{m}\\)\u003c/li> \u003c/ul> \\({C}_{\\text{initial}}={ϵ}_{0}\\frac{(3\\text{ }\\text{cm})\\times (1\\text{ }\\text{cm})}{3\\text{ }\\mu \\text{m}}={ϵ}_{0}\\frac{3}{3}={ϵ}_{0}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Condition for Increasing Capacitance by a Factor of 10:\u003c/strong> To increase capacitance by a factor of 10:\u003c/p> \\({C}_{\\text{new}}=10\\times {C}_{\\text{initial}}=10{ϵ}_{0}\\mathrm{.}\\) \u003cp>This requires:\u003c/p> \\(\\frac{l⋅b}{d}=10\\times \\frac{3\\text{ }\\text{cm}⋅1\\text{ }\\text{cm}}{3\\text{ }\\mu \\text{m}}\\mathrm{.}\\)\u003c/li> \u003cli> \u003cp>\u003cstrong>Analyze Each Option:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>(A):\u003c/strong> \\(l=6\\text{ }\\text{cm},b=5\\text{ }\\text{cm},d=3\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{6⋅5}{3}=10\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Satisfies the condition.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(B):\u003c/strong> \\(l=5\\text{ }\\text{cm},b=2\\text{ }\\text{cm},d=1\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{5⋅2}{1}=10\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Satisfies the condition.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(C):\u003c/strong> \\(l=5\\text{ }\\text{cm},b=1\\text{ }\\text{cm},d=30\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{5⋅1}{30}=\\frac{1}{6}\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Does \u003cstrong>not\u003c/strong> satisfy the condition.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>(D):\u003c/strong> \\(l=1\\text{ }\\text{cm},b=1\\text{ }\\text{cm},d=30\\text{ }\\mu \\text{m}\\)\u003c/p> \\(\\frac{l⋅b}{d}=\\frac{1⋅1}{30}=\\frac{1}{30}\\text{ }\\text{times the initial value}\\mathrm{.}\\) \u003cp>Does \u003cstrong>not\u003c/strong> satisfy the condition.\u003c/p> \u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Correct Answer:\u003c/strong> The capacitance increases by a factor of 10 for configurations \u003cstrong>A and B\u003c/strong>.\u003c/p> \u003c/li> \u003c/ol> \u003cp>\u003cstrong>Answer:\u003c/strong> (1) A, B\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor \(C_1=6 \mu \mathrm{~F}\), initially charged with a cell of emf 5 V is disconnected and connected to another capacitor \(C_2=12 \mu \mathrm{~F}\) which is initially neutral. The charges on \(C_1\) and \(C_2\) after connection are</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0 \mu \mathrm{C}, 30 \mu \mathrm{C}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(10 \mu \mathrm{C}, 20 \mu \mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(20 \mu \mathrm{C}, 10 \mu \mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(30 \mu \mathrm{C}, 0 \mu \mathrm{C}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -539,7 +543,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Initial Charge on \\({C}_{1}\\)​\u003c/strong> \u003cp>The charge on a capacitor is given by:\u003c/p> \u003cp>\\(Q=CV\\)\u003c/p> \u003cp>Given:\u003c/p> \u003cul> \u003cli>\\({C}_{1}=6\\mu F\\)\u003c/li> \u003cli>\\(V=5V\\)\u003c/li> \u003c/ul> \u003cp>\\({Q}_{1}=(6\\times 1{0}^{−6}F)\\times (5V)=30\\mu C\\)\u003c/p> \u003cp>Since \\({C}_{2}\\)​ is initially \u003cstrong>uncharged\u003c/strong>, its initial charge is:\u003c/p> \u003cp>\\({Q}_{2}=0\\mu C\\)\u003c/p> \u003cstrong>Step 2: Charge Conservation\u003c/strong> \u003cp>When the two capacitors are connected, charge redistributes while maintaining charge conservation:\u003c/p> \u003cp>\\({Q}_{\\text{total}}={Q}_{1}+{Q}_{2}=30\\mu C+0=30\\mu C\\)\u003c/p> \u003cstrong>Step 3: Common Voltage after Connection\u003c/strong> \u003cp>Since the capacitors are connected in \u003cstrong>parallel\u003c/strong>, they share a common voltage \\({V}_{f}\\):\u003c/p> \u003cp>\\({V}_{f}=\\frac{{Q}_{\\text{total}}}{{C}_{1}+{C}_{2}}\\)\u003c/p> \u003cp> \\({V}_{f}=\\frac{30\\mu C}{(6+12)\\mu F}\\)V\u003c/p> \u003cp>​ \\({V}_{f}=\\frac{30}{18}V=\\frac{5}{3}V\\)\u003c/p> \u003cstrong>Step 4: Finding Final Charges\u003c/strong> \u003cp>Using \\(Q=CV\\)\u003c/p> \u003col> \u003cli>\u003cstrong>Final charge on \\({C}_{1}\\):\u003c/strong>\u003c/li> \u003c/ol> \u003cp>\\({Q}_{1}^{′}={C}_{1}{V}_{f}=(6\\mu F)\\times \\frac{5}{3}V\\)\u003c/p> \u003cp> \\({Q}_{1}^{′}=10\\mu C\\)\u003c/p> \u003col> \u003cli>\u003cstrong>Final charge on \\({C}_{2}\\):\u003c/strong>\u003c/li> \u003c/ol> \u003cp>\\({Q}_{2}^{′}={C}_{2}{V}_{f}=(12\\mu F)\\times \\frac{5}{3}V\\)\u003c/p> \u003cp>\\({Q}_{2}^{′}=20\\mu C\\)\u003c/p> \u003cstrong>Step 5: Selecting the Correct Option\u003c/strong> \u003cp>The charges on \\({C}_{1}\\)​ and \\({C}_{2}\\)​ after connection are:\u003c/p> \u003cp>\\(B\\ 10\\mu C,20\\mu C\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A uniform wire of linear charge density \(\lambda\) is placed along the y-axis. Determine the<strong> </strong>locus of the equipotential surface in the surrounding space.</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({x}^{2}+{y}^{2}+{z}^{2}=\text{constant}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({x}^{2}+{z}^{2}=\text{constant}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(xyz=\text{constant}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(xy+yz+zx=\text{constant}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -551,7 +555,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Here, the line charge is placed aling the Y axis, so the equipotential surfaces are cocentric cylinders, and their crossections are circles in X Z plane. So the equation of locus, \u003c/p> \u003cp>\\({\\mathrm{x}}^{2}+{\\mathrm{z}}^{2}=\\mathrm{Constant}\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two charges +7 C and - 4 C are located at (-7, 0, 0) m and (7, 0, 0) m, find electrostatic potential energy of the system. \(( K=9 \times 10^9 SI units )\)</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-6 \times 10^9 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-18 \times 10^9 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(18 \times 10^9 \mathrm{~J}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6 \times 10^9 \mathrm{~J}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -563,7 +567,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The formula for electrostatic potential energy between two point charges is:\u003c/p> \u003cp>\\(U=K\\frac{{q}_{1}{q}_{2}}{r}\\)​​\u003c/p> \u003cp>Where:\u003c/p> \u003cul> \u003cli>\\(K=9\\times 1{0}^{9}\\text{ }{\\text{N}\\text{}\\text{m}}^{2}\\mathrm{/}{\\text{C}}^{2}\\),\u003c/li> \u003cli>\\({q}_{1}=+7\\text{ }\\text{C}\\), \\({q}_{2}=−4\\text{ }\\text{C}\\)\u003c/li> \u003cli>\\(r=\\text{distance between the charges}\\)\u003c/li> \u003c/ul> \u003cp>The charges are located at \\((−7,0,0)\\) and \\((7,0,0)\\), so the distance \\(r\\) is:\u003c/p> \u003cp>\\(r=\\mathrm{∣}7−(−7)\\mathrm{∣}=14\\text{ }\\text{m}\\)\u003c/p> \u003cp>Substitute the values into the formula:\u003c/p> \u003cp>\\(U=(9\\times 1{0}^{9})⋅\\frac{(+7)(−4)}{14}\\)​\u003c/p> \u003cp>Simplify:\u003c/p> \u003cp>\\(U=(9\\times 1{0}^{9})⋅\\frac{−28}{14}\\)\u003c/p> \u003cp> \\(U=(9\\times 1{0}^{9})⋅(−2)=−18\\times 1{0}^{9}\\text{ }\\text{J}\\)\u003c/p> \u003cp>\u003cstrong>Correct answer: (b) \\(−18\\times 1{0}^{9}\\text{ }\\text{J}\\)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Three infinitely long wires with linear charge density \(\lambda\) are placed along the X-axis, Y-axis and Z-axis respectively. Which of the following denotes an equipotential surface?</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\begin{equation}<br/>\left(x^2+y^2\right)\left(y^2+z^2\right)\left(z^2+x^2\right)=\text { constant }<br/>\end{equation}</p></span></div><div class="option"><span class="key">b</span><span><p>\begin{equation}<br/>x y+y z+z x=\text { constant }<br/>\end{equation}</p></span></div><div class="option"><span class="key">c</span><span><p>\begin{equation}<br/>\mathrm{xyz}=\text { constant }<br/>\end{equation}</p></span></div><div class="option"><span class="key">d</span><span><p>\begin{equation}<br/>(x+y)(y+z)(z+x)=\text { constant }<br/>\end{equation}</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -575,7 +579,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Electric potential due to an infinite line charge at distance r:\u003cbr/>\\(V=−\\int \\vec{E}\\cdot \\vec{\\mathrm{dr}}\\)\u003cbr/>\\(V=\\int \\frac{2k\\lambda }{r}\\mathrm{dr}\\)\u003cbr/>\\(V=2k\\lambda \\ln r+c\\)Net potential due to three mutually perpendicular infinite line charges:\u003cbr/>\\(V=2k\\lambda \\ln \\sqrt{{x}^{2}+{y}^{2}}+2k\\lambda \\ln \\sqrt{{y}^{2}+{z}^{2}}+2k\\lambda \\ln \\sqrt{{z}^{2}+{x}^{2}}+c\\)\u003cbr/>For equipotential surface V = constant:\u003cbr/>\\(\\ln \\sqrt{({x}^{2}+{y}^{2})({y}^{2}+{z}^{2})({z}^{2}+{x}^{2})}=c\\)\u003cbr/>Final equation of equipotential surface:\u003cbr/>\\(({x}^{2}+{y}^{2})({y}^{2}+{z}^{2})({z}^{2}+{x}^{2})=c\\)\u003cbr/>where c is a constant\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor with capacitance \(1 \mu \mathrm{~F}\) is connected to a 20 V supply. The distance between the plates is 1 \(\mu \mathrm{m}\). Find the energy density between the plates.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1770 \mathrm{~J} / \mathrm{m}^3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1800 \mathrm{~J} / \mathrm{m}^3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1600 \mathrm{~J} / \mathrm{m}^3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2000 \mathrm{~J} / \mathrm{m}^3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -587,7 +591,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>To find the \u003cstrong>energy density\u003c/strong> (energy per unit volume) between the plates of the capacitor, we use the formula:\u003c/p> \u003cp>\\(\\text{Energy Density}(u)=\\frac{1}{2}{ϵ}_{0}{E}^{2}\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({ϵ}_{0}\\)​ = \u003cstrong>Permittivity of free space\u003c/strong> \\(=8.85\\times 1{0}^{−12}\\text{ }F\\mathrm{/}m\\)\u003c/li> \u003cli>\\(E\\) = \u003cstrong>Electric field\u003c/strong> inside the capacitor, given by:\u003c/li> \u003c/ul> \u003cp>\\(E=\\frac{V}{d}\\)​\u003c/p> \u003cstrong>Step 1: Calculate the Electric Field \\(E\\)\u003c/strong> \u003cp>\\(E=\\frac{V}{d}=\\frac{20V}{1\\times 1{0}^{−6}m}\\)\u003c/p> \u003cp> \\(E=2\\times 1{0}^{7}\\text{ }V\\mathrm{/}m\\)\u003c/p> \u003cstrong>Step 2: Calculate the Energy Density \\(u\\)\u003c/strong> \u003cp>\\(u=\\frac{1}{2}\\times (8.85\\times 1{0}^{−12})\\times (2\\times 1{0}^{7}{)}^{2}\\)\u003c/p> \u003cp> \\(u=\\frac{1}{2}\\times (8.85\\times 1{0}^{−12})\\times (4\\times 1{0}^{14})\\)\u003c/p> \u003cp> \\(u=\\frac{1}{2}\\times 3.54\\times 1{0}^{3}\\)\u003c/p> \u003cp> \\(u=1.77\\times 1{0}^{3}\\text{ }J\\mathrm{/}{m}^{3}\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(1770J/{m}^{3}\\)\u003c/p> \u003cp>So, the \u003cstrong>correct option is (A) 1770 J/m³\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two charges \(7\mu \mathrm{c}\) and \(-4\mu \mathrm{c}\) are placed at \((-7\mathrm{cm},0,0)\) and \((7\mathrm{cm},0,0)\) respectively. Given, \({ϵ}_{0}=8.85\times {10}^{-12}{\mathrm{C}}^{2}{\mathrm{N}}^{-1}{\mathrm{m}}^{-2}\), the electrostatic potential energy of the charge configuration is :</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>-2.0 J</p></span></div><div class="option"><span class="key">b</span><span><p>-1.5 J</p></span></div><div class="option"><span class="key">c</span><span><p>-1.2 J</p></span></div><div class="option"><span class="key">d</span><span><p>-1.8 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -599,7 +603,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(U=\\frac{k{q}_{1}{q}_{2}}{r}\\\\ U=\\frac{-9\\times {10}^{9}\\times 4\\times {10}^{-6}\\times 7\\times {10}^{-6}\\times 100}{14}\\\\ U=-18\\times {10}^{-1}J\\\\ U=-1.8J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel plate capacitor has a uniform electric field ' \(\overrightarrow{E}\) ' in the space between the plates. If the distance between the plates is ' \(d\) ' and the area of each plate is ' \(A\) ', the energy stored in the capacitor is : ( \(\varepsilon_{0} =\) permittivity of free space)</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\varepsilon_{0}\text{EAd}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{2}\varepsilon_{0}E^{2}\text{Ad}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{E^{2}\text{Ad}}{\varepsilon_{0}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}\varepsilon_{0}E^{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -611,7 +615,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Given:-\u003c/strong>\u003c/p> \u003cp>Distance between two plates = d\u003c/p> \u003cp>Electric field between theses plates of the capacitor\\(\\ = \\ E\\)\u003c/p> \u003cp>Area of each plate \\(= \\ A\\)\u003c/p> \u003cp>\u003cstrong>Explanation:-\u003c/strong>\u003c/p> \u003cp>Capacitance of the capacitor is \\(\\frac{\\varepsilon_{0}A}{d}\\).\u003c/p> \u003cp>Potential between these plates is \\(\\text{E.d}\\)\u003c/p> \u003cp>Total energy stored in the capacitor is (\\(\\frac{1}{2}\\))×capacitance×potential²\u003c/p> \u003cp>\\(= \\frac{1}{2} \\times \\frac{\\varepsilon_{0}A}{d} \\times ({E.d)}^{2}\\)\u003c/p> \u003cp>=\\(\\frac{1}{2}\\varepsilon_{0}E^{2}\\text{Ad}\\)\u003c/p> \u003cp>\u003cstrong>Final Answer:-\u003c/strong>\u003c/p> \u003cp>Hence, the correct answer is (d)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two isolated metallic solid spheres of radii \(R\) and \(2 R\) are charged such that both have same charge density \(\sigma\). The spheres are then connected by a thin conducting wire. If the new charge density of the bigger sphere is \(\sigma^{\prime}\). The ratio \(\frac{\sigma^{\prime}}{\sigma}\) is:[JEE Main 2023, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{9}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{6}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -620,10 +624,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>Q_1 &amp; =\\sigma\\left(4 \\pi R^2\\right) \\\\\u003cbr/>&amp; =4 \\pi R^2 \\sigma\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>Q_2 &amp; =\\sigma\\left(4 \\pi\\left(2 R^2\\right)\\right) \\\\\u003cbr/>&amp; =16 \\pi R^2 \\sigma\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\frac{Q_1^{\\prime}}{4 \\pi \\varepsilon_0 R}=\\frac{Q_2^{\\prime}}{4 \\pi \\varepsilon_0(2 R)} \\therefore Q_2^{\\prime}=2 Q_1^{\\prime}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>Q_1^{\\prime}+Q_2^{\\prime}=Q_1+Q_2\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{2}+Q_2^{\\prime}=20 \\pi R^2 \\sigma\\)\u003cbr/>\\[\u003cbr/>\\frac{3}{2} Q_2^{\\prime}=20 \\pi R^2 \\sigma\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{4 \\pi(2 R)^2}=\\frac{2}{3} \\cdot \\frac{20 \\pi R^2 \\sigma}{16 \\pi R^2}\\)\u003cbr/>\\[\u003cbr/>\\therefore \\frac{\\sigma^{\\prime}}{\\sigma}=\\frac{5}{6}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}Q_1 & =\\sigma\\left(4 \\pi R^2\\right) \\\\& =4 \\pi R^2 \\sigma\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}Q_2 & =\\sigma\\left(4 \\pi\\left(2 R^2\\right)\\right) \\\\& =16 \\pi R^2 \\sigma\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\frac{Q_1^{\\prime}}{4 \\pi \\varepsilon_0 R}=\\frac{Q_2^{\\prime}}{4 \\pi \\varepsilon_0(2 R)} \\therefore Q_2^{\\prime}=2 Q_1^{\\prime}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>Q_1^{\\prime}+Q_2^{\\prime}=Q_1+Q_2\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{2}+Q_2^{\\prime}=20 \\pi R^2 \\sigma\\)\u003cbr/>\\[\u003cbr/>\\frac{3}{2} Q_2^{\\prime}=20 \\pi R^2 \\sigma\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{4 \\pi(2 R)^2}=\\frac{2}{3} \\cdot \\frac{20 \\pi R^2 \\sigma}{16 \\pi R^2}\\)\u003cbr/>\\[\u003cbr/>\\therefore \\frac{\\sigma^{\\prime}}{\\sigma}=\\frac{5}{6}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the combination of 2 capacitors \(C_1\) and \(C_2\), with \(C_1&gt;C_2\), when connected in parallel, the equivalent capacitance is \(\frac{15}{4}\) times the equivalent capacitance of the same connected in series, Calculate the ratio of capacitors, \(\frac{C_2}{C_1}\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{111}{80}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{15}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{29}{15}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{15}{11}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -632,10 +636,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(*) For series combination of capacitors of capacitance\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; C_1 \\text { and } C_2, C_{\\text {eq }}=\\frac{C_1 C_2}{C_1+C_2} \\\\\u003cbr/>&amp; \\frac{C_1 \\times C_2}{C_1+C_2}-\\frac{15}{4}\\left(C_1+C_2\\right) \\Rightarrow 4 C_1 C_2-15\\left(C_1^2+C_2^2+2 C_1 C_2\\right) \\\\\u003cbr/>&amp; \\Rightarrow 4\\left(\\frac{C_2}{C_1}\\right)=15\\left(\\frac{C_2}{C_1}\\right)^2+30\\left(\\frac{C_2}{C_1}\\right)+15 \\Rightarrow 15 x^2+26 x+15=0\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Where, \\(x=\\frac{C_2}{C_1}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow x=\\frac{-26 \\pm \\sqrt{676-900}}{30}\u003cbr/>\\]\u003c/p> \u003cp>Since \\(x\\) cannot be real, so this Question has been dropped by NTA. Its is bonus.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(*) For series combination of capacitors of capacitance\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& C_1 \\text { and } C_2, C_{\\text {eq }}=\\frac{C_1 C_2}{C_1+C_2} \\\\& \\frac{C_1 \\times C_2}{C_1+C_2}-\\frac{15}{4}\\left(C_1+C_2\\right) \\Rightarrow 4 C_1 C_2-15\\left(C_1^2+C_2^2+2 C_1 C_2\\right) \\\\& \\Rightarrow 4\\left(\\frac{C_2}{C_1}\\right)=15\\left(\\frac{C_2}{C_1}\\right)^2+30\\left(\\frac{C_2}{C_1}\\right)+15 \\Rightarrow 15 x^2+26 x+15=0\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Where, \\(x=\\frac{C_2}{C_1}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow x=\\frac{-26 \\pm \\sqrt{676-900}}{30}\u003cbr/>\\]\u003c/p> \u003cp>Since \\(x\\) cannot be real, so this Question has been dropped by NTA. Its is bonus.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the combination of 2 capacitors \(C_1\) and \(C_2\), with \(C_1&gt;C_2\), when connected in parallel, the equivalent capacitance is \(\frac{15}{4}\) times the equivalent capacitance of the same connected in series, Calculate the ratio of capacitors, \(\frac{C_2}{C_1}\)</p> <p> </p> <p>[JEE Main 2021, 26 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{111}{80}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{15}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{29}{15}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{15}{11}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -644,10 +648,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) For series combination of capacitors of capacitance\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; C_1 \\text { and } C_2, C_{\\text {ev }}=\\frac{C_1 C_2}{C_1+C_2} \\\\\u003cbr/>&amp; \\frac{C_1 \\times C_2}{C_1+C_2}=\\frac{15}{4}\\left(C_1+C_2\\right) \\Rightarrow 4 C_1 C_2=15\\left(C_1^2+C_2^2+2 C_1 C_2\\right) \\\\\u003cbr/>&amp; \\Rightarrow 4\\left(\\frac{C_2}{C_1}\\right)=15\\left(\\frac{C_2}{C_1}\\right)^2+30\\left(\\frac{C_2}{C_1}\\right)+15 \\Rightarrow 15 x^2+26 x+15=0\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Where, \\(x=\\frac{C_2}{C_1}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow x=\\frac{-26 \\pm \\sqrt{676-900}}{30}\u003cbr/>\\]\u003c/p> \u003cp>Since \\(x\\) cannot be real, so this Question has been dropped by NTA\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) For series combination of capacitors of capacitance\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& C_1 \\text { and } C_2, C_{\\text {ev }}=\\frac{C_1 C_2}{C_1+C_2} \\\\& \\frac{C_1 \\times C_2}{C_1+C_2}=\\frac{15}{4}\\left(C_1+C_2\\right) \\Rightarrow 4 C_1 C_2=15\\left(C_1^2+C_2^2+2 C_1 C_2\\right) \\\\& \\Rightarrow 4\\left(\\frac{C_2}{C_1}\\right)=15\\left(\\frac{C_2}{C_1}\\right)^2+30\\left(\\frac{C_2}{C_1}\\right)+15 \\Rightarrow 15 x^2+26 x+15=0\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Where, \\(x=\\frac{C_2}{C_1}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow x=\\frac{-26 \\pm \\sqrt{676-900}}{30}\u003cbr/>\\]\u003c/p> \u003cp>Since \\(x\\) cannot be real, so this Question has been dropped by NTA\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: One is labelled as Assertion A and the other is labelled as Reason R.</p> <p>Assertion A: Two metallic spheres are charged to the same potential. One of them is hollow and another is solid, and both have the same radii. Solid sphere will have lower charge than the hollow one.<br/>Reason R: Capacitance of metallic spheres depend on the radii of spheres. <br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is false but \( \mathrm{R} \) is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both \( \mathrm{A} \) and \( \mathrm{R} \) are true and \( \mathrm{R} \) is the correct explanation of \( \mathrm{A} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{A} \) is true but \( \mathrm{R} \) is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both \( \mathrm{A} \) and \( \mathrm{R} \) are true but \( \mathrm{R} \) is not the correct explanation of \( A \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -659,7 +663,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Potential of a conducting sphere is\u003c/p> \u003cp>\\( V=\\frac{K Q}{R} \\) (Solid as well as hollow)\u003c/p> \u003cp>\\( V_{1}=V_{2} \\) and \\( R_{1}=R_{2} \\)\u003c/p> \u003cp>\\[ \\therefore Q_{1}=Q_{2} \\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ten charges are placed on the circumference of a circle of radius \( \mathrm{R} \) with constant angular separation between successive charges. Alternate charges \( 1,3,5,7,9 \) have charge \( (+q) \) each, while \( 2,4,6,8,10 \) have charge \( (-q) \) each. The potential \( \mathrm{V} \) and the electric field \( \mathrm{E} \) at the centre of the circle are respectively.</p> <p>(Take \( \mathrm{V}=0 \) at infinity)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{V}=0 ; \mathrm{E}=0 \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{V}=\frac{10 \mathrm{q}}{4 \pi \varepsilon_{0} \mathrm{R}} ; \mathrm{E}=\frac{10 \mathrm{q}}{4 \pi \varepsilon_{0} \mathrm{R}^{2}} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( V=\frac{10 q}{4 \pi \varepsilon_{0} R}=E=0 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( V=0 ; E=\frac{10 q}{4 \pi \varepsilon_{0} R^{2}} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -671,7 +675,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel plate capacitor has plate area \(40 cm ^2\) and plate separation \(2 mm\). The space between the plates is filled with a dielectric medium of thickness \(1 mm\) and dielectric constant 5 . The new capacitance of the system is :</p> <p> </p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(24 \varepsilon_0 F\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{10} \varepsilon_0 F\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{10}{3} \varepsilon_0 F\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(10 \varepsilon_0 F\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -680,10 +684,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c)\u003cbr/>Above arrangement is similar as two capacitors in series combination so\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\rightarrow \\frac{1}{C_{e q}}=\\frac{1}{C_1}+\\frac{1}{C_2} \\\\\u003cbr/>&amp; =\\frac{1}{\\frac{K \\epsilon_0 A}{t}}+\\frac{1}{\\frac{\\epsilon_0 A}{d-t}} \\\\\u003cbr/>&amp; =\\frac{1 \\times 10^{-3}}{5 \\epsilon_0 \\times 40 \\times 10^{-4}}+\\frac{1 \\times 10^{-3}}{\\epsilon_0 \\times 40 \\times 10^{-4}} \\\\\u003cbr/>&amp; \\frac{1}{C_{e q}}=\\frac{1}{20 \\epsilon_0}+\\frac{1}{4 \\epsilon_0} \\\\\u003cbr/>&amp; C_{e q}=\\frac{20 \\times 4 \\epsilon_{00}}{24}=\\frac{10 \\epsilon_{00}}{3} F\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c)\u003cbr/>Above arrangement is similar as two capacitors in series combination so\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\rightarrow \\frac{1}{C_{e q}}=\\frac{1}{C_1}+\\frac{1}{C_2} \\\\& =\\frac{1}{\\frac{K \\epsilon_0 A}{t}}+\\frac{1}{\\frac{\\epsilon_0 A}{d-t}} \\\\& =\\frac{1 \\times 10^{-3}}{5 \\epsilon_0 \\times 40 \\times 10^{-4}}+\\frac{1 \\times 10^{-3}}{\\epsilon_0 \\times 40 \\times 10^{-4}} \\\\& \\frac{1}{C_{e q}}=\\frac{1}{20 \\epsilon_0}+\\frac{1}{4 \\epsilon_0} \\\\& C_{e q}=\\frac{20 \\times 4 \\epsilon_{00}}{24}=\\frac{10 \\epsilon_{00}}{3} F\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(q_{ f }\) is the free charge on the capacitor plates and \(q_{ b }\) is the bound charge on the dielectric slab of dielectric constant \(k\) placed between the capacitor plates, then bound charge \(q_{ b }\) can be expressed as:</p> <p> </p> <p>[JEE Main 2021, 25 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(q_b=q_f\left(1+\frac{1}{\sqrt{k}}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(q_b=q_f\left(1-\frac{1}{\sqrt{k}}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(q_b=q_f\left(1-\frac{1}{k}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(q_b=q_f\left(1+\frac{1}{k}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -695,7 +699,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{array}{r}\\text { (c) } E_{\\text {net }}=\\frac{E_0}{k}, \\frac{q_f}{E_0}-\\frac{q_b}{E_0}=\\frac{q_f}{k E_0} \\\\ q_b=q_f\\left(1-\\frac{1}{k}\\right)\\end{array}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor \(C\) is fully charged with voltage \(V_0\). After disconnecting the voltage source, it is connected in parallel with another uncharged capacitor of capacitance \(2 C\). The energy loss in the process after the charge is distributed between the two capacitors is:</p> <p>[JEE Main 2020, 4 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{4} C V_0^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{6} C V_0^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2} C V_0^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{3} C V_0^2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -704,10 +708,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Heat loss \u003c/p> \u003cp>\\begin{aligned}\u003cbr/>&amp; =\\frac{1}{2} \\frac{C_1 C_2}{C_1+C_2}\\left(V_1-V_2\\right)^2 \\\\\u003cbr/>&amp; =\\frac{1}{2} \\frac{C(2 C)}{C+2 C}\\left(V_0-0\\right)^2 \\\\\u003cbr/>&amp; =\\frac{1}{3} C V_0^2\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Heat loss \u003c/p> \u003cp>$$\\begin{aligned}& =\\frac{1}{2} \\frac{C_1 C_2}{C_1+C_2}\\left(V_1-V_2\\right)^2 \\\\& =\\frac{1}{2} \\frac{C(2 C)}{C+2 C}\\left(V_0-0\\right)^2 \\\\& =\\frac{1}{3} C V_0^2\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The distance between two plates of a capacitor is \(d\) and its capacitance is \(C_1\), when air is the medium between the plates. If a metal sheet of thickness \(\frac{2 d}{3}\) and of same area as plate is introduced between the plates, the capacitance of the capacitor becomes \(C_2\). The ratio \(\frac{C_2}{C_1}\) is:</p> <p>[JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 : 1</p></span></div><div class="option"><span class="key">b</span><span><p>4 : 1`</p></span></div><div class="option"><span class="key">c</span><span><p>3 : 1 </p></span></div><div class="option"><span class="key">d</span><span><p>1 : 1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -716,10 +720,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; K_{\\text {metal }}=\\infty, t=\\frac{2 d}{3} \\\\\u003cbr/>&amp; C_1=\\frac{\\in_0 A}{d}=C \\\\\u003cbr/>&amp; C_2=\\frac{\\epsilon_0 A}{d-t+\\frac{t}{k_{\\text {metal }}}}=\\frac{\\epsilon_0 A}{d-\\frac{2 d}{3}+0}=3 C_1=3 C \\\\\u003cbr/>&amp; \\frac{C_2}{C_1}=\\frac{3 C}{C}=\\frac{3}{1}\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\\begin{aligned}& K_{\\text {metal }}=\\infty, t=\\frac{2 d}{3} \\\\& C_1=\\frac{\\in_0 A}{d}=C \\\\& C_2=\\frac{\\epsilon_0 A}{d-t+\\frac{t}{k_{\\text {metal }}}}=\\frac{\\epsilon_0 A}{d-\\frac{2 d}{3}+0}=3 C_1=3 C \\\\& \\frac{C_2}{C_1}=\\frac{3 C}{C}=\\frac{3}{1}\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A capacitor of capacitance C is charged to a potential V. The flux of the electric field through a closed surface enclosing the positive plate of the capacitor is:</p> <p>[JEE Main 2023, 11 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{CV}{2{\epsilon }_{0}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2CV}{{\epsilon }_{0}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{CV}{{\epsilon }_{0}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Zero</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -731,7 +735,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>From gauss's law \\(ϕ=\\frac{{q}_{in}}{{ϵ}_{0}}\\)\\(=\\frac{CV}{{ϵ}_{0}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A parallel plate capacitor of capacitance \(2 F\) is charged to a potential \(V\). The energy stored in the capacitor is \(E_1\). The capacitor is now connected to another uncharged identical capacitor in parallel combination. The energy stored in the combination is \(E_2\). The ratio \(E_2 / E_1\) is:</p> <p>[JEE Main 2023, 11 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2:1</p></span></div><div class="option"><span class="key">b</span><span><p>1:2</p></span></div><div class="option"><span class="key">c</span><span><p>1:4</p></span></div><div class="option"><span class="key">d</span><span><p>2:3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -740,10 +744,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2) Initially, Charge on capacitor\u003cbr/>\\[\u003cbr/>Q_1=C V=2 V\u003cbr/>\\]\u003c/p> \u003cp>Energy stored\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; E_1=\\frac{Q_1^2}{2 C}=\\frac{4 V^2}{2 \\times 2}=V^2 \\\\\u003cbr/>&amp; E_1=1 / 2 C V^2=1 / 2(2) V^2=V^2\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Finally\u003cbr/>Charge on each capacitor, \\(Q_2=\\frac{Q_1}{2}=\\frac{2 V }{2}= V\\)\u003cbr/>\\[\u003cbr/>E_2=2\\left(\\frac{1}{2} \\frac{Q_2^2}{C}\\right)=\\frac{V^2}{2} \\quad \\therefore \\frac{E_2}{E_1}=\\frac{1}{2}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2) Initially, Charge on capacitor\u003cbr/>\\[\u003cbr/>Q_1=C V=2 V\u003cbr/>\\]\u003c/p> \u003cp>Energy stored\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& E_1=\\frac{Q_1^2}{2 C}=\\frac{4 V^2}{2 \\times 2}=V^2 \\\\& E_1=1 / 2 C V^2=1 / 2(2) V^2=V^2\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Finally\u003cbr/>Charge on each capacitor, \\(Q_2=\\frac{Q_1}{2}=\\frac{2 V }{2}= V\\)\u003cbr/>\\[\u003cbr/>E_2=2\\left(\\frac{1}{2} \\frac{Q_2^2}{C}\\right)=\\frac{V^2}{2} \\quad \\therefore \\frac{E_2}{E_1}=\\frac{1}{2}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering a group of positive charges, which of the following statements is correct?</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Net potential of the system cannot be zero at a point but net electric field can be zero at that point.</p></span></div><div class="option"><span class="key">b</span><span><p>Net potential of the system at a point can be zero but net electric field can't be zero at that point.</p></span></div><div class="option"><span class="key">c</span><span><p>Both the net potential and the net field can be zero at a point.</p></span></div><div class="option"><span class="key">d</span><span><p>Both the net potential and the net electric field cannot be zero at a point.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -755,7 +759,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(1)\u003c/strong>\u003c/p> \u003cp>Since potential of positive charge is always positive &amp; electric field is a vector. So two electric field can be get cancelled if it has same magnitude &amp; opposite direction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: One is labelled as Assertion \(A\) and the other is labelled as Reason \(R\).<br/><strong>Assertion (A):</strong> Two metallic spheres are charged to the same potential. One of them is hollow and another is solid, and both have the same radii. Solid sphere will have lower charge than the hollow one.<br/><strong>Reason (R):</strong> Capacitance of metallic spheres depend on the radii of spheres.<br/>In the light of the above statements, choose the correct answer from the options given below.</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(A\) is false but \(R\) is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both \(A\) and \(R\) are true and \(R\) is the correct explanation of \(A\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(A\) is true but \(R\) is false</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(A\) and \(R\) are true but \(R\) is not the correct explanation of \(A\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -767,7 +771,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) Potential of a conducting sphere is given by,\u003cbr/>\\[\u003cbr/>V=\\frac{K Q}{R}\u003cbr/>\\]\u003c/p> \u003cp>Given \\(V_1=V_2\\) and \\(R_1=R_2\\)\u003cbr/>\\[\u003cbr/>\\therefore Q_1=Q_2\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For changing the capacitance of a given parallel plate capacitor, a dielectric material of dielectric constant \(K\) is used, which has the same area as the plates of the capacitor. The thickness of the dielectric slab is \(\frac{3}{4} d\), where ' \(d\) ' is the separation between the plates of parallel plate capacitor.The new capacitance ( \(C^{\prime}\) ) in terms of original capacitance \(\left( C _0\right)\) is given by the following relation:</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(C^{\prime}=\frac{4+K}{3} C_0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(C^{\prime}=\frac{3+K}{4 K} C_0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(C^{\prime}=\frac{4}{3+K} C_0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C^{\prime}=\frac{4 K}{K+3} C_0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -776,10 +780,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; C_1=\\frac{\\varepsilon_0 A k}{3 d / 4}=\\frac{4 \\varepsilon_0 A k}{3 d}=\\frac{4 k C_0}{3} \\\\\u003cbr/>&amp; C_2=\\frac{\\varepsilon_0 A}{d / 4}=\\frac{4 \\varepsilon_0 A}{d}=4 C_0\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Since capacitors \\(C_1\\) and \\(C_2\\) are in series, so\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>C e q &amp; =\\frac{C_1 C_2}{C_1+C_2}=\\frac{\\frac{4 k C o}{3} \\times 4 C o}{\\frac{4 k C o}{3}+4 C o} \\\\\u003cbr/>&amp; =\\frac{4 k}{k+3} Co\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& C_1=\\frac{\\varepsilon_0 A k}{3 d / 4}=\\frac{4 \\varepsilon_0 A k}{3 d}=\\frac{4 k C_0}{3} \\\\& C_2=\\frac{\\varepsilon_0 A}{d / 4}=\\frac{4 \\varepsilon_0 A}{d}=4 C_0\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Since capacitors \\(C_1\\) and \\(C_2\\) are in series, so\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}C e q & =\\frac{C_1 C_2}{C_1+C_2}=\\frac{\\frac{4 k C o}{3} \\times 4 C o}{\\frac{4 k C o}{3}+4 C o} \\\\& =\\frac{4 k}{k+3} Co\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In finding the electric field using Gauss Law the formula \(\left|\vec{E}\right|=\frac{{q}_{enc}}{{\epsilon }_{0}\left|A\right|}\) is applicable. In the formula \({\epsilon }_{0}\) is permittivity of free space, A is the area of Gaussian surface and \({q}_{enc}\) is charge enclosed by the Gaussian surface. The equation can be used in which of the following situation?</p> <p>[JEE Main 2020, 8 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Only when the Gaussian surface is an equipotential surface.</p></span></div><div class="option"><span class="key">b</span><span><p>Only when \(\left|\vec{E}\right|\) = constant on the surface.</p></span></div><div class="option"><span class="key">c</span><span><p>Only when the Gaussian surface is an equipotential surface and \(\left|\vec{E}\right|\) is constant on the surface.</p></span></div><div class="option"><span class="key">d</span><span><p>For any choice of Gaussian surface</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -791,7 +795,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two isolated metallic solid spheres of radii \(R\) and \(2 R\) are charged such that both have same charge density \(\sigma\). The spheres are then connected by a thin conducting wire. If the new charge density of the bigger sphere is \(\sigma^{\prime}\). The ratio \(\frac{\sigma^{\prime}}{\sigma}\) is:</p> <p>[JEE Main 2023, 30 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{9}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{5}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{6}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -800,10 +804,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>Q_1 &amp; =\\sigma\\left(4 \\pi R^2\\right) \\\\\u003cbr/>&amp; =4 \\pi R^2 \\sigma\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>Q_2 &amp; =\\sigma\\left(4 \\pi\\left(2 R^2\\right)\\right) \\\\\u003cbr/>&amp; =16 \\pi R^2 \\sigma\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\frac{Q_1^{\\prime}}{4 \\pi \\varepsilon_0 R}=\\frac{Q_2^{\\prime}}{4 \\pi \\varepsilon_0(2 R)} \\therefore Q_2^{\\prime}=2 Q_1^{\\prime}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>Q_1^{\\prime}+Q_2^{\\prime}=Q_1+Q_2\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{2}+Q_2^{\\prime}=20 \\pi R^2 \\sigma\\)\u003cbr/>\\[\u003cbr/>\\frac{3}{2} Q_2^{\\prime}=20 \\pi R^2 \\sigma\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{4 \\pi(2 R)^2}=\\frac{2}{3} \\cdot \\frac{20 \\pi R^2 \\sigma}{16 \\pi R^2}\\)\u003cbr/>\\[\u003cbr/>\\therefore \\frac{\\sigma^{\\prime}}{\\sigma}=\\frac{5}{6}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}Q_1 & =\\sigma\\left(4 \\pi R^2\\right) \\\\& =4 \\pi R^2 \\sigma\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}Q_2 & =\\sigma\\left(4 \\pi\\left(2 R^2\\right)\\right) \\\\& =16 \\pi R^2 \\sigma\\end{aligned}$$\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\frac{Q_1^{\\prime}}{4 \\pi \\varepsilon_0 R}=\\frac{Q_2^{\\prime}}{4 \\pi \\varepsilon_0(2 R)} \\therefore Q_2^{\\prime}=2 Q_1^{\\prime}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>Q_1^{\\prime}+Q_2^{\\prime}=Q_1+Q_2\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{2}+Q_2^{\\prime}=20 \\pi R^2 \\sigma\\)\u003cbr/>\\[\u003cbr/>\\frac{3}{2} Q_2^{\\prime}=20 \\pi R^2 \\sigma\u003cbr/>\\]\u003cbr/>\\(\\therefore \\frac{Q_2^{\\prime}}{4 \\pi(2 R)^2}=\\frac{2}{3} \\cdot \\frac{20 \\pi R^2 \\sigma}{16 \\pi R^2}\\)\u003cbr/>\\[\u003cbr/>\\therefore \\frac{\\sigma^{\\prime}}{\\sigma}=\\frac{5}{6}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Electric potential at a point ' \(P\) ' due to a point charge of \(5\times {10}^{−9}\mathrm{C}\) is \(50 \ V\). The distance of ' \(P\) ' from the point charge is:<br/>\(\left(\mathrm{Assume},\frac{1}{4{\mathrm{πε}}_{0}}=9\times {10}^{9}{\mathrm{Nm}}^{2}{\mathrm{C}}^{−2}\right)\)<br/></p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3 cm</p></span></div><div class="option"><span class="key">b</span><span><p>9 cm</p></span></div><div class="option"><span class="key">c</span><span><p>90 cm</p></span></div><div class="option"><span class="key">d</span><span><p>0.9 cm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -812,10 +816,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Electric Potential \\(V=\\frac{K q}{r}\\)\u003cbr/>\\[\u003cbr/>\\therefore r=\\frac{K q}{V}\u003cbr/>\\]\\(\\begin{aligned} &amp; r=\\frac{9 \\times 10^9 \\times 5 \\times 10^{-9}}{50} \\\\ &amp; r=\\frac{45}{50}=\\frac{9}{10}=0.9 m =90 cm \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Electric Potential \\(V=\\frac{K q}{r}\\)\u003cbr/>\\[\u003cbr/>\\therefore r=\\frac{K q}{V}\u003cbr/>\\]\\(\\begin{aligned} & r=\\frac{9 \\times 10^9 \\times 5 \\times 10^{-9}}{50} \\\\ & r=\\frac{45}{50}=\\frac{9}{10}=0.9 m =90 cm \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electric potential at the centre of two concentric half rings of radii \(R_1\) and \(R_2\), having same linear charge density \(\lambda\) is </p> <p><strong>[JEE Main 2023, 24 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{2 \lambda}{\epsilon_0}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\lambda}{2 \epsilon_0}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\lambda}{4 \epsilon_0}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(\frac{\lambda}{\epsilon_0}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -824,7 +828,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Potential at the centre of the half rings\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; V=\\frac{\\left(\\lambda \\cdot \\pi R_2\\right)}{4 \\pi \\varepsilon_0 R_2}+\\frac{\\left(\\lambda \\cdot \\pi R_1\\right)}{4 \\pi \\varepsilon_0 R_1} \\\\\u003cbr/>&amp; \\Rightarrow V=\\frac{\\lambda}{2 \\varepsilon_0}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Potential at the centre of the half rings\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& V=\\frac{\\left(\\lambda \\cdot \\pi R_2\\right)}{4 \\pi \\varepsilon_0 R_2}+\\frac{\\left(\\lambda \\cdot \\pi R_1\\right)}{4 \\pi \\varepsilon_0 R_1} \\\\& \\Rightarrow V=\\frac{\\lambda}{2 \\varepsilon_0}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Physics PYQs</h3>

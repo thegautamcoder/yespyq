@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Organisms and Populations","item":"https://yespyq.com/exams/neet/biology/organisms-and-populations/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Organisms and Populations</h1>
       <p>26 NEET Biology previous year questions on <b>Organisms and Populations</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">What type of human population is represented by the following age pyramid?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Vanishing population</span></div><div class="option"><span class="key">b</span><span>Stable population</span></div><div class="option correct"><span class="key">c</span><span>Declining population</span></div><div class="option"><span class="key">d</span><span>Expanding population</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">A biologist studied the population of rats in a barn. He found that the average natality was average mortality , immigration and emigration . The net increase in population is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>05</span></div><div class="option correct"><span class="key">b</span><span>Zero</span></div><div class="option"><span class="key">c</span><span>10</span></div><div class="option"><span class="key">d</span><span>15</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Study of inter-relationships between organisms and their environment is:</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Ecology</span></div><div class="option"><span class="key">b</span><span>Ecosystem</span></div><div class="option"><span class="key">c</span><span>Phytogeography</span></div><div class="option"><span class="key">d</span><span>Ethology</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In the exponential growth equation , e represents [NEET 2021]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>The base of geometric logarithms</span></div><div class="option"><span class="key">b</span><span>The base of number logarithms</span></div><div class="option"><span class="key">c</span><span>The base of exponential logarithms</span></div><div class="option"><span class="key">d</span><span>The base of natural logarithms</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"In the equation, ‘e’ represents the base of natural logarithms. It is used in exponential and logarithmic equations to describe continuous processes such as population growth or decay.Exponential growth is a type of population growth where the population increases at a constant rate per unit time, without any limitation of resources.","fmt":""}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Inspite of interspecific competition in nature, by which mechanism the competing species might have evolved for their survival? [NEET 2021]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Predation</span></div><div class="option"><span class="key">b</span><span>Resource partitioning</span></div><div class="option"><span class="key">c</span><span>Competitive release</span></div><div class="option"><span class="key">d</span><span>Mutualism</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Although different species often compete for similar resources in nature, they can continue to exist together by developing strategies to use those resources in separate ways. This adaptive process is called resource partitioning. For example, two species of birds living on the same tree may avoid competition by feeding at different heights or on different types of insects. By dividing the habitat and resources, both species can survive without directly harming each other’s chances of survival.","fmt":""}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">What do ' ' and ' ' represent in the following population growth curve? [Re-NEET 2024]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>'a' represents exponential growth when responses are not limiting the growth; and ' b ' represents logistic growth when responses are limiting the growth.</span></div><div class="option"><span class="key">b</span><span>'a' represents logistic growth when responses are not limiting the growth; ' b ' represents exponential growth when responses are limiting the growth.</span></div><div class="option"><span class="key">c</span><span>'a' represents carrying capacity and ' b ' shows logistic growth when responses are limiting the growth.</span></div><div class="option"><span class="key">d</span><span>'a' represents exponential growth when responses are not limiting the growth and ' b ' shows carrying capacity.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Curve ‘a’ → Exponential Growth (dN/dt = rN) Fast, unrestricted growth No limiting factors (resources not limiting the population) J-shaped curve Curve ‘b’ → Logistic Growth (dN/dt = rN[(K– N)/K]) Growth slows as population approaches carrying capacity (K) Limiting factors (competition, resources) operate S-shaped (sigmoid) curve So the correct interpretation is: ‘a’ = exponential growth (no limiting factors) ‘b’ = logistic growth (limiting factors present) Hence, Option A is correct.","fmt":""}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is an appropriate example of 'sexual deceit' ?</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Female wasp and fig</p></span></div><div class="option"><span class="key">b</span><span><p>Cuckoo and crow</p></span></div><div class="option"><span class="key">c</span><span><p><em>Ophrys </em>and bumblebee</p></span></div><div class="option"><span class="key">d</span><span><p>Sea anemone and clown fish</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>Sexual deceit is a pollination strategy in which flowers mimic the appearance, odour, or signals of female insects to attract male pollinators without offering any reward.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cem>Ophrys \u003c/em>orchid is a classic example where the flower closely resembles a female bumblebee in shape, colour, texture and releases similar pheromone-like chemicals.\u003c/p> \u003c/li> \u003cli> \u003cp>Male bumblebee is deceived by this mimicry and attempts to mate with the flower through pseudocopulation, mistaking it for a real female bee.\u003c/p> \u003c/li> \u003cli> \u003cp>During this false mating attempt, the pollen sacs get attached to the body of the bee and are carried to another flower, ensuring pollination.\u003c/p> \u003c/li> \u003cli> \u003cp>Therefore, option C (\u003cem>Ophrys \u003c/em>and bumblebee) correctly represents sexual deceit in pollination.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equation of Verhulst-Pearl logistic growth is \(\frac{dN}{dt}=rN\left[\frac{K-N}{K}\right]\text{.  }\)From this equation, K indicates:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Population density</p></span></div><div class="option"><span class="key">b</span><span><p>Intrinsic rate of natural increase</p></span></div><div class="option"><span class="key">c</span><span><p>Biotic potential</p></span></div><div class="option"><span class="key">d</span><span><p>Carrying capacity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The given equation represents the \u003cstrong>logistic growth model\u003c/strong> (Verhulst-Pearl logistic growth equation):\u003c/p> \u003cp>\\(\\frac{dN}{dt}=rN(\\frac{K−N}{K})\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\u003cstrong>\\(N\\)\u003c/strong> = Population size\u003c/li> \u003cli>\u003cstrong>\\(r\\)\u003c/strong> = Intrinsic rate of natural increase\u003c/li> \u003cli>\u003cstrong>\\(K\\)\u003c/strong> = Carrying capacity of the environment\u003c/li> \u003c/ul> \u003cp>\u003cstrong>\\(K\\)\u003c/strong> in this equation represents the \u003cstrong>carrying capacity\u003c/strong>, which is the maximum number of individuals an environment can sustain indefinitely based on available resources such as food, water, and shelter.\u003c/p> \u003cp>Thus, the correct answer is \u003cstrong>D. Carrying capacity\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statements regarding population interactions between two species.<br/>A. In both parasitism and commensalism, only one species benefits and the other species is harmed.<br/>B. Both species benefit in mutualism.<br/>C. Both species benefit in commensalism,<br/>D. In parasitism, only one species benefits and the other species is harmed.<br/>E. In amensalism, one species is harmed and the other is unaffected.<br/>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and D only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>B and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B, D and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Population interactions describe how two different species affect each other’s survival and reproduction.\u003c/p> \u003cul> \u003cli>Statement A: Incorrect\u003cbr/>In commensalism, one species benefits while the other is neither harmed nor benefited. Harm occurs only in parasitism, not in commensalism.\u003c/li> \u003cli>Statement B: Correct\u003cbr/>In mutualism, both species benefit from the interaction (e.g., lichens, plant-pollinator relationships).\u003c/li> \u003cli>Statement C: Incorrect\u003cbr/>In commensalism, only one species benefits; the other remains unaffected.\u003c/li> \u003cli>Statement D: Correct\u003cbr/>In parasitism, one species (parasite) benefits, while the other (host) is harmed.\u003c/li> \u003cli>Statement E: Correct\u003cbr/>In amensalism, one species is harmed while the other remains unaffected.\u003c/li> \u003c/ul> \u003cp>Correct Answer: Option D (B, D and E only)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following equations depicts Verhulst-Pearl logistic population growth?</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\mathrm{dN}}{\mathrm{dt}}=\mathrm{rN}\left(\frac{\mathrm{K}-\mathrm{N}}{\mathrm{K}}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\mathrm{dN}}{\mathrm{dt}}=\mathrm{rN}\left(\frac{\mathrm{K}+\mathrm{N}}{\mathrm{K}}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\mathrm{dN}}{\mathrm{dt}}=\mathrm{rN}\left(\frac{\mathrm{K}}{\mathrm{K}-\mathrm{N}}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\mathrm{dN}}{\mathrm{d}\overset{}{\mathrm{t}}}=\mathrm{rN}\left(\frac{\mathrm{K}-\mathrm{N}}{\mathrm{N}}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>The Verhulst–Pearl logistic growth equation describes population growth under limited resources and is given by: \\(\\frac{dN}{dt}=rN(\\frac{K−N}{K})\\)\u003c/li> \u003cli>where N = population size, r = intrinsic rate of increase, and K = carrying capacity.\u003c/li> \u003cli>Option A represents \\(\\frac{dN}{dt}=rN(\\frac{K−N}{K})\\), which matches the logistic growth equation.\u003c/li> \u003cli>Therefore, the correct answer is Option A.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Epiphytes that are growing on a mango branch is an example of which of the following?</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Predation</p></span></div><div class="option"><span class="key">b</span><span><p>Amensalism</p></span></div><div class="option"><span class="key">c</span><span><p>Commensalism</p></span></div><div class="option"><span class="key">d</span><span><p>Mutualism </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Epiphytes\u003c/strong> are plants like \u003cstrong>orchids\u003c/strong> that grow on the branches of trees such as \u003cstrong>mango\u003c/strong> without harming them. They use the tree \u003cstrong>only for support\u003c/strong> to get better access to sunlight and air. They \u003cstrong>do not take nutrients\u003c/strong> from the tree and \u003cstrong>do not harm\u003c/strong> it in any way. This type of relationship is called \u003cstrong>commensalism\u003c/strong>, where \u003cstrong>one organism benefits\u003c/strong> (the epiphyte) and the \u003cstrong>other is neither helped nor harmed\u003c/strong> (the mango tree).\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Predation\u003c/strong> involves killing.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Amensalism\u003c/strong> harms one, the other is unaffected.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Mutualism\u003c/strong> benefits both.\u003c/p> \u003c/li> \u003c/ul> \u003cp>So, \u003cstrong>commensalism\u003c/strong> is the correct answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When will the population density increase, under special conditions? </p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Deaths exceeds number of births and also number of emigrants equals number of immigrants.</p></span></div><div class="option"><span class="key">b</span><span><p>Births plus number of immigrants equals number of deaths plus number of emigrants.</p></span></div><div class="option"><span class="key">c</span><span><p>Births plus number of emigrants is more than the number of deaths plus number of immigrants.</p></span></div><div class="option"><span class="key">d</span><span><p>Births plus number of immigrants is more than the sum of number of deaths and number of emigrants.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is option D \u003c/p> \u003cp>\u003cstrong>Explaination\u003c/strong> \u003c/p>     \u003cp>Population density increases when the overall population of an area grows. This growth occurs when the number of people entering the area (through births and immigration) is greater than the number of people leaving (through deaths and emigration).\u003c/p> \u003cul> \u003cli>\u003cstrong>Births\u003c/strong> add to the population.\u003c/li> \u003cli>\u003cstrong>Immigration\u003c/strong> brings people into the area, also increasing the population.\u003c/li> \u003cli>\u003cstrong>Deaths\u003c/strong> reduce the population.\u003c/li> \u003cli>\u003cstrong>Emigration\u003c/strong> is when people leave the area, which also reduces the population.\u003c/li> \u003c/ul> \u003cp>To increase population density, the combined effect of births and immigration (which add to the population) must be greater than the combined effect of deaths and emigration (which decrease the population). Thus, the population density will increase under the condition where births plus immigrants exceed deaths plus emigrants.\u003c/p> \u003cp>\u003cstrong>Option D: Births plus number of immigrants is more than the sum of number of deaths and number of emigrants\u003c/strong> correctly describes this situation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equation of Verhulst-Pearl logistic growth is \(\frac{dN}{dt}=rN\left[\frac{K-N}{K}\right]\text{.  }\)From this equation, K indicates:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Population density</p></span></div><div class="option"><span class="key">b</span><span><p>Intrinsic rate of natural increase</p></span></div><div class="option"><span class="key">c</span><span><p>Biotic potential</p></span></div><div class="option"><span class="key">d</span><span><p>Carrying capacity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The given equation represents the \u003cstrong>logistic growth model\u003c/strong> (Verhulst-Pearl logistic growth equation):\u003c/p> \u003cp>\\(\\frac{dN}{dt}=rN(\\frac{K−N}{K})\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\u003cstrong>\\(N\\)\u003c/strong> = Population size\u003c/li> \u003cli>\u003cstrong>\\(r\\)\u003c/strong> = Intrinsic rate of natural increase\u003c/li> \u003cli>\u003cstrong>\\(K\\)\u003c/strong> = Carrying capacity of the environment\u003c/li> \u003c/ul> \u003cp>\u003cstrong>\\(K\\)\u003c/strong> in this equation represents the \u003cstrong>carrying capacity\u003c/strong>, which is the maximum number of individuals an environment can sustain indefinitely based on available resources such as food, water, and shelter.\u003c/p> \u003cp>Thus, the correct answer is \u003cstrong>D. Carrying capacity\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.</p> <p>Assertion A: Abingdon tortoise in Galapagos islands became extinct within a decade after goats were introduced.</p> <p>Reason R: Goats were more efficient at browsing than Abingdon tortoise.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are correct and R is the correct explanation of A</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are correct but R is not the correct explanation of A</p></span></div><div class="option"><span class="key">c</span><span><p>A is correct but R is not correct</p></span></div><div class="option"><span class="key">d</span><span><p>A is not correct but R is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The Abingdon tortoise of the Galapagos Islands became extinct after the introduction of goats by humans. The goats competed with the tortoises for vegetation and were much more efficient browsers, leading to depletion of food resources available to the tortoises.\u003c/p> \u003cul> \u003cli>Assertion A: Abingdon tortoise in Galapagos Islands became extinct within a decade after goats were introduced.\u003cbr/>Correct. This as an example of extinction caused by the introduction of an alien species.\u003c/li> \u003cli>Reason R: Goats were more efficient at browsing than Abingdon tortoise.\u003cbr/>Correct. The goats consumed vegetation more effectively and outcompeted the tortoises for food.\u003c/li> \u003c/ul> \u003cp>Since the greater browsing efficiency of goats led to competition and contributed to the extinction of the Abingdon tortoise, the reason correctly explains the assertion.\u003c/p> \u003cp>Correct Answer: A. Both A and R are correct and R is the correct explanation of A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When will the population density increase, under special conditions? </p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Deaths exceeds number of births and also number of emigrants equals number of immigrants.</p></span></div><div class="option"><span class="key">b</span><span><p>Births plus number of immigrants equals number of deaths plus number of emigrants.</p></span></div><div class="option"><span class="key">c</span><span><p>Births plus number of emigrants is more than the number of deaths plus number of immigrants.</p></span></div><div class="option"><span class="key">d</span><span><p>Births plus number of immigrants is more than the sum of number of deaths and number of emigrants.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The correct answer is option D \u003c/p> \u003cp>\u003cstrong>Explanation\u003c/strong> \u003c/p>     \u003cp>Population density increases when the overall population of an area grows. This growth occurs when the number of people entering the area (through births and immigration) is greater than the number of people leaving (through deaths and emigration).\u003c/p> \u003cul> \u003cli>\u003cstrong>Births\u003c/strong> add to the population.\u003c/li> \u003cli>\u003cstrong>Immigration\u003c/strong> brings people into the area, also increasing the population.\u003c/li> \u003cli>\u003cstrong>Deaths\u003c/strong> reduce the population.\u003c/li> \u003cli>\u003cstrong>Emigration\u003c/strong> is when people leave the area, which also reduces the population.\u003c/li> \u003c/ul> \u003cp>To increase population density, the combined effect of births and immigration (which add to the population) must be greater than the combined effect of deaths and emigration (which decrease the population). Thus, the population density will increase under the condition where births plus immigrants exceed deaths plus emigrants.\u003c/p> \u003cp>\u003cstrong>Option D: Births plus number of immigrants is more than the sum of number of deaths and number of emigrants\u003c/strong> correctly describes this situation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II :</p> <table> <thead> <tr> <th>List I</th> <th>List II</th> </tr> </thead> <tbody> <tr> <td>A. Predator</td> <td>I. <em>Ophrys</em></td> </tr> <tr> <td>B. Mutualism</td> <td>II. Pisaster</td> </tr> <tr> <td>C. Parasitism</td> <td>III. Female wasp and fig</td> </tr> <tr> <td>D. Sexual deceit</td> <td>IV. <em>Plasmodium</em></td> </tr> </tbody> </table> <p>Choose the correct answer from the options give below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">b</span><span><p>A-IV, B-I, C-II, D-III .</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-III, C-I, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-III, C-IV, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"A. Predator → \u003cem>Pisaster\u003c/em> \u003cp>\u003cem>Pisaster\u003c/em> (a starfish) is a classic example of a \u003cstrong>keystone predator\u003c/strong>. \u003cstrong>A → II\u003c/strong>\u003c/p> B. Mutualism → Female wasp and fig \u003cp>The fig–fig wasp interaction is a classic case of \u003cstrong>obligate mutualism\u003c/strong>. \u003cstrong>B → III\u003c/strong>\u003c/p> C. Parasitism → \u003cem>Plasmodium\u003c/em> \u003cp>\u003cem>Plasmodium\u003c/em> causes malaria and is a \u003cstrong>parasite\u003c/strong>. \u003cstrong>C → IV\u003c/strong>\u003c/p> D. Sexual deceit → \u003cem>Ophrys\u003c/em> \u003cp>\u003cem>Ophrys\u003c/em> (orchid) mimics female insects to attract males, an example of \u003cstrong>sexual deceit\u003c/strong>. \u003cstrong>D → I\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following equations represents the Verhulst-Pearl Logistic Growth of population?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{dN}{dt}=rN\left(\frac{N-K}{N}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{dN}{dt}=N\left(\frac{r-K}{K}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{dN}{dt}=r(\frac{K-N}{K})\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{dN}{dt}=rN(\frac{K-N}{K})\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The \u003cstrong>Verhulst-Pearl Logistic Growth Equation\u003c/strong> describes \u003cstrong>population growth\u003c/strong> when resources are \u003cstrong>limited\u003c/strong>. Unlike exponential growth, it accounts for \u003cstrong>carrying capacity (K)\u003c/strong> — the maximum population size an environment can support.\u003c/p> \u003cp>The correct equation is:\u003c/p> \\(\\frac{dN}{dt}=rN(\\frac{K−N}{K})\\) \u003cp>Where:\u003c/p> \u003cul> \u003cli> \u003cp>\\(N\\) = population size\u003c/p> \u003c/li> \u003cli> \u003cp>\\(r\\) = intrinsic growth rate\u003c/p> \u003c/li> \u003cli> \u003cp>\\(K\\) = carrying capacity\u003c/p> \u003c/li> \u003cli> \u003cp>\\(\\frac{dN}{dt}\\)​ = rate of population growth\u003c/p> \u003c/li> \u003c/ul> \u003cp>As \\(N\\) approaches \\(K\\), growth slows down and eventually stops. This is known as \u003cstrong>logistic or S-shaped growth\u003c/strong>.\u003c/p> \u003cp>So, \u003cstrong>Option D\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements<br/>Statement I : Gause's competitive exclusion principle states that two closely related species competing for different resources cannot exist indefinitely.<br/>Statement II : According to Gause's principle, during competition, the inferior will be eliminated. This may be true if resources are limiting.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Gause’s ‘\u003cem>Competitive Exclusion Principle\u003c/em>’ states that two closely related species competing for the same resources cannot co-exist indefinitely and the competitively inferior one will be eliminated eventually. This may be true if resources are limiting, but not otherwise.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement-I: Fig fruit is a non-vegetarian fruit as it has enclosed fig wasps in it.<br/>Statement-II: Fig wasp and fig tree exhibit mutual relationship as fig wasp completes its life cycle in fig fruit and fig fruit gets pollinated by fig wasp.<br/>In the light of the above statements, choose the correct answer from the options given below: </p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is correct but Statement-II is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is incorrect but Statement-II is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement-I and Statement-II are correct. </p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement-I and Statement-II are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Statement I: \"Fig fruit is a non-vegetarian fruit as it has enclosed fig wasps in it\" — Incorrect\u003c/strong>\u003cbr/>This is a \u003cstrong>misconception\u003c/strong>. While it's true that \u003cstrong>fig wasps enter the fig fruit to pollinate\u003c/strong>, not all fig fruits contain wasps. Moreover, the fig often \u003cstrong>digests the wasp's body with enzymes\u003c/strong>, so no visible remains are present. Labeling fig as “non-vegetarian” is \u003cstrong>unscientific and incorrect\u003c/strong>, especially because it does \u003cstrong>not contain animal flesh\u003c/strong> or live insects in edible form.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Statement II: \"Fig wasp and fig tree exhibit mutual relationship...\" — Incorrect\u003c/strong>\u003cbr/>This is \u003cstrong>not true for all fig species\u003c/strong>. While some fig trees and fig wasps do share \u003cstrong>mutualism\u003c/strong>, it is \u003cstrong>not universal\u003c/strong>. Some figs are \u003cstrong>parthenocarpic\u003c/strong> (develop without fertilization or pollination), and some fig species \u003cstrong>do not depend on wasps\u003c/strong> at all for pollination.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, Both Statement-I and Statement-II are incorrect, making \u003cstrong>Option D the correct answer\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R.</p> <p>Assertion A: The logistic growth model of populations is considered more realistic than the exponential growth model.</p> <p>Reason R: Resources are finite.</p> <p>In the light of the above statements, choose the most appropriate answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both A and R are correct and R is the correct explanation of A</p></span></div><div class="option"><span class="key">b</span><span><p>Both A and R are correct but R is not the correct explanation of A</p></span></div><div class="option"><span class="key">c</span><span><p>A is correct but R is not correct</p></span></div><div class="option"><span class="key">d</span><span><p>A is not correct but R is correct</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Assertion A: The logistic growth model of populations is considered more realistic than the exponential growth model.\u003c/p> \u003cul> \u003cli>Correct. The logistic growth model considers that population growth slows down when resources become limited and reaches a carrying capacity (K).\u003c/li> \u003c/ul> \u003cp>Reason R: Resources are finite.\u003c/p> \u003cul> \u003cli>Correct. In nature, resources like food, space, and nutrients are limited, so unlimited population growth is not possible.\u003c/li> \u003c/ul> \u003cp>Relation:\u003cbr/>Since resources are finite, populations cannot grow continuously at an exponential rate. Therefore, the logistic growth model is more realistic.\u003c/p> \u003cp>Final Answer: Option A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The impact of immigration on population density is</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both positive and negative </p></span></div><div class="option"><span class="key">b</span><span><p>Neutralized by natality </p></span></div><div class="option"><span class="key">c</span><span><p>Positive</p></span></div><div class="option"><span class="key">d</span><span><p>Negative</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Immigration is the number of individuals of the same species that have come into the habitat from elsewhere during the time period under consideration.\u003c/p> \u003cp>Immigration contribute to an increase in population density. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I</strong> : Gause's 'Competitive Exclusion Principle' states that two closely related species competing for the same resources cannot co-exist indefinitely and competitively inferior one will be eliminated eventually.<br/><strong>Statement II</strong> : In general, carnivores are more adversely affected by competition than herbivores.</p> <p>In the light of the above statements, choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is correct but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is incorrect but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli> \u003cp>Statement I: Gause’s \u003cem>Competitive Exclusion Principle\u003c/em> states that two closely related species competing for the same limiting resources cannot coexist indefinitely; the competitively inferior species is eliminated.\u003cbr/>Correct\u003c/p> \u003c/li> \u003cli> \u003cp>Statement II: In general, herbivores are more adversely affected by competition than carnivores, because plant resources are more limiting and niche overlap is higher at lower trophic levels.\u003cbr/>The statement says the opposite, so it is false.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Amensalism can be represented as:</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Species A (+); Species B (0)</p></span></div><div class="option"><span class="key">b</span><span><p>Species A (-); Species B (0)</p></span></div><div class="option"><span class="key">c</span><span><p>Species A (+); Species B (+)</p></span></div><div class="option"><span class="key">d</span><span><p>Species A (-); Species B (-)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Amensalism is an ecological interaction where one species is harmed while the other remains unaffected. It usually occurs when one organism produces substances that inhibit or kill another, without gaining any advantage or disadvantage itself. Example: The Penicillium fungus releases penicillin, which kills surrounding bacteria. The fungus is unaffected (0), but the bacteria are harmed (–).\u003c/p> \u003cp>\u003cstrong>Incorrect Options:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>A (+, 0): Represents commensalism – one benefits, the other is unaffected.\u003c/p> \u003c/li> \u003cli> \u003cp>C (+, +): Represents mutualism – both species benefit.\u003c/p> \u003c/li> \u003cli> \u003cp>D (–, –): Represents competition – both species are negatively affected.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not an attribute of a population?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Natality</p></span></div><div class="option"><span class="key">b</span><span><p>Mortality</p></span></div><div class="option"><span class="key">c</span><span><p>Species interaction </p></span></div><div class="option"><span class="key">d</span><span><p>Sex ratio </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Species interaction is not an attribute of a population. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Read the following statements</p> <p>Assertion (A): A person goes to high altitude and experiences altitude sickness with symptoms like breathing difficulty and heart palpitations.</p> <p>Reason (R): Due to low atmospheric pressure at high altitudes, the body does not get sufficient oxygen.</p> <p>In the light of the above statements, choose the correct answer from the options given below</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) is false but (R) is true</p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">c</span><span><p>Both (A) and (R) are true but (R) is not the correct explanation of (A)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is true but (R) is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>At high altitudes, air pressure and oxygen availability decrease. When a person ascends to such regions suddenly, the partial pressure of oxygen in blood falls, causing less oxygen supply to body tissues.\u003cbr/>This results in altitude sickness, showing symptoms like breathlessness, nausea, and heart palpitations as the body struggles to obtain adequate oxygen.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the exponential growth equation \( \mathrm{N}_{\mathrm{t}}=\mathrm{N}_{\mathrm{o}} \mathrm{e}^{\mathrm{rt}} \), e represents</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The base of geometric logarithms</p></span></div><div class="option"><span class="key">b</span><span><p>The base of number logarithms</p></span></div><div class="option"><span class="key">c</span><span><p>The base of exponential logarithms</p></span></div><div class="option"><span class="key">d</span><span><p>The base of natural logarithms</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

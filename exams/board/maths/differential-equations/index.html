@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/board/maths/"},{"@type":"ListItem","position":5,"name":"Differential Equations","item":"https://yespyq.com/exams/board/maths/differential-equations/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Differential Equations</h1>
       <p>26 Board Maths previous year questions on <b>Differential Equations</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The solution of the differential equation \(\frac{dy}{dx}=\frac{y}{x}\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(y=\log \left|x\right|+c\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(y=cx\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(y=x\log \left|x\right|+cx\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(y=\log \left|x\right|+cx\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(y=y(x)\) be the solution of the differential equation \({x}^{4}dy+\left(4{x}^{3}y+2\sin x\right)dx=0\), \(x>0,y\left(\frac{\pi }{2}\right)=0\). Then \({\pi }^{4}y\left(\frac{\pi }{3}\right)\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>64</p></span></div><div class="option"><span class="key">b</span><span><p>92</p></span></div><div class="option correct"><span class="key">c</span><span><p>81</p></span></div><div class="option"><span class="key">d</span><span><p>72</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integrating factor of the differential equation \(\left(1-x^2\right) \frac{d y}{d x}+x y=a x\), \(-1&lt;x&lt;1\), is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\frac{1}{x^2-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{\sqrt{x^2-1}}\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\frac{1}{1-\mathrm{x}^2}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{1}{\sqrt{1-\mathrm{x}^2}}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The differential equation \(\frac{d y}{d x}=F(x, y)\) will not be a homogeneous differential equation, if \(\mathrm{F}(\mathrm{x}, \mathrm{y})\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\cos x-\sin \left(\frac{y}{x}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{y}{x}\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\frac{x^2+y^2}{x y}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\cos ^2\left(\frac{x}{y}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For a first-order differential equation \\(\\frac{d y}{d x}=F(x, y)\\) to be homogeneous if\u003c/p> \u003cp>\\(F(t x, t y)=F(x, y) \\forall t&gt;0\\)\u003c/p> \u003cp>(A) \\(F(x, y)=\\cos x-\\sin \\left(\\frac{y}{x}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow F(t x, t y)=\\cos (t x)-\\sin \\left(\\frac{y}{x}\\right) \\neq F(x, y)\\) (not a homogeneous differential equation)\u003c/p> \u003cp>(B) \\(F(\\lambda x, \\lambda y)=\\frac{\\lambda y}{\\lambda x}=\\frac{y}{x}=F(x, y)\\) (homogeneous differential equation)\u003cbr/>(C) \\(F(\\lambda x, \\lambda y)=\\frac{(\\lambda x)^2+\\left(\\lambda y^2\\right)}{\\lambda x \\lambda y}=\\frac{\\lambda^2 x^2+\\lambda^2 y^2}{\\lambda^2 x y}=\\frac{x^2+y^2}{x y}=F(x, y)\\) (homogeneous differential equation)\u003cbr/>(D) \\(F(\\lambda x, \\lambda y)=\\cos ^2\\left(\\frac{\\lambda y}{\\lambda x}\\right)=\\cos ^2\\left(\\frac{y}{x}\\right)=F(x, y)\\) (homogeneous differential equation)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(f:\left[1,∞\right)\to ℝ\) be a differentiable function. If \(6{\int }_{1}^{x}f\left(t\right)dt=3xf\left(x\right)+{x}^{3}−4\) for all \(x\geq 1\), then the value of \(f(2)–f(3)\) is</p> <p> </p> <p>[JEE Main 2026, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(–3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(–4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(6{\\int }_{1}^{x}f\\left(t\\right)dt=3xf\\left(x\\right)+{x}^{3}−4\\)\u003c/p> \u003cp>Differentiating w.r.t. \\(x\\)\u003c/p> \u003cp>\\(6f\\left(x\\right)=3x{f}^{'}\\left(x\\right)+3f\\left(x\\right)+3{x}^{2}\\)\u003c/p> \u003cp>\\(f\\left(x\\right)=x{f}^{'}\\left(x\\right)+{x}^{2}\\)\u003c/p> \u003cp>Replacing \\(y=f\\left(x\\right)\\) and \\(\\frac{dy}{dx}={f}^{'}\\left(x\\right)\\)\u003c/p> \u003cp>\\(x\\frac{dy}{dx}−y=−{x}^{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{x\\frac{dy}{dx}−y}{{x}^{2}}=−1\\)\u003c/p> \u003cp>Using exact differential equation :\u003c/p> \u003cp>\\(\\Rightarrow \\frac{d}{dx}\\left(\\frac{y}{x}\\right)=−1\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{y}{x}=−x+C\\)\u003c/p> \u003cp>\\(\\Rightarrow f\\left(x\\right)=−{x}^{2}+Cx\\)\u003c/p> \u003cp>at \\(x=1,\\text{  }y=1\\Rightarrow C=2\\)\u003c/p> \u003cp>\\(f\\left(x\\right)=−{x}^{2}+2x\\)\u003c/p> \u003cp>Now,\u003c/p> \u003cp>\\(f\\left(2\\right)−f\\left(3\\right)=3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The degree of the differential equation \(\left(y^{\prime \prime}\right)^2+\left(y^{\prime}\right)^3=x \sin \left(y^{\prime}\right)\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p> not defined</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Degree is defined only when the DE is a polynomial in \\(y^{\\prime}, y^{\\prime \\prime}, \\ldots\\)\u003cbr/>Here \\(\\left(y^{\\prime \\prime}\\right)^2+\\left(y^{\\prime}\\right)^3=x \\sin \\left(y^{\\prime}\\right)\\) contains \\(\\sin \\left(y^{\\prime}\\right)\\)\u003cbr/>⇒ Not a polynomial in derivatives because the first order derivative is inside the trigonometric function.\u003cbr/>⇒ Degree not defined\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order and degree of the differential equation</p> <p>\(xy\left(\frac{{d}^{2}y}{d{x}^{2}}\right)+x{\left(\frac{dy}{dx}\right)}^{2}-y\left(\frac{dy}{dx}\right)=0\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Order\(=2\), Degree\(=1.\)</p></span></div><div class="option"><span class="key">b</span><span><p>Order \(=2\), Degree \(=2.\)</p></span></div><div class="option"><span class="key">c</span><span><p>Order \(=1\), Degree\(=2.\)</p></span></div><div class="option"><span class="key">d</span><span><p>Order \(=1\), Degree \(=1.\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>As observing the given differential equation\u003c/p> \u003cp> \\(xy\\left(\\frac{{d}^{2}y}{d{x}^{2}}\\right)+x{\\left(\\frac{dy}{dx}\\right)}^{2}-y\\left(\\frac{dy}{dx}\\right)=0\\),\u003c/p> \u003cp>the highest derivative of the differential equation is \\(\\frac{{d}^{2}y}{d{x}^{2}}\\)\u003c/p> \u003cp>has power \\(2\\) so the order of the given differential equation is \\(2.\\)\u003c/p> \u003cp>The power of the term \\(\\frac{{d}^{2}y}{d{x}^{2}}\\) in the given differential equation\u003c/p> \u003cp>is \\(1\\) so the degree of the given differential equation is \\(1.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integrating factor of the differential equation \(\frac{dy}{dx}+2y={e}^{3x}\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({e}^{3x}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({e}^{2x}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({e}^{x}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({e}^{4x}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The given differential equation is:\u003c/p> \u003cp>\\(\\frac{dy}{dx}+2y={e}^{3x}......(I)\\)\u003c/p> \u003cp>Compare equation \\(\\left(I\\right)\\) with the equation \\(\\frac{dy}{dx}+Py=Q\\) and calculate the value of \\(P\\).\u003c/p> \u003cp>The value of \\(P\\) is \\(P=2.\\)\u003c/p> \u003cp>Use the formula for integrating factor which is \\(\\mu ={e}^{\\int Pdx}\\).\u003c/p> \u003cp>Put the value of \\(P\\) in \\(\\mu\\) and calculate the integrating factor of the differential equation.\u003c/p> \u003cp>\\(\\mu ={e}^{\\int 2dx}={e}^{2\\int dx}={e}^{2x}.\\)\u003c/p> \u003cp>Hence, the integrating factor of the given differential equation is \\(\\mu ={e}^{2x}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the solution curve of the differential equation \(xdy−ydx=\sqrt{{x}^{2}+{y}^{2}}dx,x>0\), \(y(1)=0,\) be \(y=y(x)\). Then \(y(3)\) is equal to</p> <p> </p> <p>[JEE Main 2026, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{xdy−ydx}{{x}^{2}}=\\frac{\\sqrt{{x}^{2}+{y}^{2}}}{{x}^{2}}dx\\)\u003c/p> \u003cp>\\(d\\left(\\frac{y}{x}\\right)=\\sqrt{1+\\frac{{y}^{2}}{{x}^{2}}}⋅\\frac{1}{x}dx\\)\u003c/p> \u003cp>\\(\\int \\frac{d\\left(\\frac{y}{x}\\right)}{\\sqrt{1+{\\left(\\frac{y}{x}\\right)}^{2}}}=\\int \\frac{1}{x}dx\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{ln}\\left(\\frac{y}{x}+\\sqrt{1+\\frac{{y}^{2}}{{x}^{2}}}\\right)=\\text{ln }x+\\text{ln }k=\\text{ln }kx\\)\u003c/p> \u003cp>\\(\\Rightarrow y+\\sqrt{{x}^{2}+{y}^{2}}=k{x}^{2}\\)\u003c/p> \u003cp>\\(0+1=k\\)\u003c/p> \u003cp>\\(\\Rightarrow y+\\sqrt{{x}^{2}+{y}^{2}}={x}^{2}\\)\u003c/p> \u003cp>Now,\u003c/p> \u003cp>\\(y\\left(3\\right)+\\sqrt{9+{\\left(y\\left(3\\right)\\right)}^{2}}=9\\)\u003c/p> \u003cp>\\(y\\left(3\\right)=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integrating factor of the differential equation \(\frac{dy}{dx}+2y={e}^{3x}\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({e}^{3x}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({e}^{2x}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({e}^{x}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({e}^{4x}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The given differential equation is:\u003c/p> \u003cp>\\(\\frac{dy}{dx}+2y={e}^{3x}......(I)\\)\u003c/p> \u003cp>Compare equation \\(\\left(I\\right)\\) with the equation \\(\\frac{dy}{dx}+Py=Q\\) and calculate the value of \\(P\\).\u003c/p> \u003cp>The value of \\(P\\) is \\(P=2.\\)\u003c/p> \u003cp>Use the formula for integrating factor which is \\(\\mu ={e}^{\\int Pdx}\\).\u003c/p> \u003cp>Put the value of \\(P\\) in \\(\\mu\\) and calculate the integrating factor of the differential equation.\u003c/p> \u003cp>\\(\\mu ={e}^{\\int 2dx}={e}^{2\\int dx}={e}^{2x}.\\)\u003c/p> \u003cp>Hence, the integrating factor of the given differential equation is \\(\\mu ={e}^{2x}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integrating factor of the differential equation \(\left(1-x^2\right) \frac{d y}{d x}+x y=a x\), \(-1&lt;x&lt;1\), is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\frac{1}{x^2-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{\sqrt{x^2-1}}\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\frac{1}{1-\mathrm{x}^2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{\sqrt{1-\mathrm{x}^2}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given: \\(\\left(1-x^2\\right) \\frac{d y}{d x}+x y=a x\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{d y}{d x}+\\frac{x}{1-x^2} y=\\frac{a x}{1-x^2}\\)\u003c/p> \u003cp>Here, \\(P(x)=\\frac{x}{1-x^2}\\) and \\(Q(x) =\\frac{a x}{1-x^2}\\)\u003c/p> \u003cp>\\(\\int P(x) d x=\\int \\frac{x}{1-x^2} d x\\)\u003c/p> \u003cp>Let \\(u=1-x^2, d u=-2 x d x\\)\u003c/p> \u003cp>\\(\\int \\frac{x}{1-x^2} d x=-\\frac{1}{2} \\int \\frac{d u}{u}=-\\frac{1}{2} \\ln \\left(1-x^2\\right)\\)\u003c/p> \u003cp>I.F. \\(=e^{\\int P d x}=e^{-\\frac{1}{2} \\ln \\left(1-x^2\\right)}=\\left(1-x^2\\right)^{-1 / 2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order of the differential equation \(\frac{{\mathrm{d}}^{4}\mathrm{y}}{{\mathrm{dx}}^{4}}-\sin \left(\frac{{\mathrm{d}}^{2}\mathrm{y}}{{\mathrm{dx}}^{2}}\right)=5\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{not}\mathrm{defined}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The order of a differential equation is determined by the highest order of the derivative present in the equation.\u003c/p> \u003cp>In the given equation, the highest derivative is \\(\\frac{{d}^{4}y}{d{x}^{4}}\\), thus the order is \\(4\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integrating factor of the differential equation</p> <p> \(\frac{dy}{dx}+2y=\sin x\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({e}^{x}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({e}^{3x}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({e}^{2x}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({e}^{4x}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The formula for the integrating factor of\u003c/p> \u003cp>a differential equation of the form\u003c/p> \u003cp> \\(\\frac{dy}{dx}+Py=Q\\) is \\(\\mu ={e}^{\\int Pdx}.\\)\u003c/p> \u003cp>To find the integrating factor\u003c/p> \u003cp>of the given differential equation \\(\\frac{dy}{dx}+2y=\\sin x\\),\u003c/p> \u003cp>compare the given differential equation\u003c/p> \u003cp> \\(\\frac{dy}{dx}+Py=Q\\) and\u003c/p> \u003cp>find the value \\(P\\),\u003c/p> \u003cp>then use the formula for the integrating factor.\u003c/p> \u003cp>The value of \\(P\\) for the given\u003c/p> \u003cp>differential equation is \\(P=2.\\) \u003c/p> \u003cp>Put the value of \\(P\\) in the formula for integrating facto\u003c/p> \u003cp>r and calculate the value of \\(\\mu\\)\u003c/p> \u003cp>which represents the integrating factor of the given differential equation.\u003c/p> \u003cp>\\(\\mu ={e}^{\\int 2dx}={e}^{2\\int dx}={e}^{2x}.\\)\u003c/p> \u003cp>Hence,\u003c/p> \u003cp>the integrating factor of the given differential equation\u003c/p> \u003cp>is \\(\\mu ={e}^{2x}.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(p\) and \(q\) are respectively the order and degree of the differential equation \(\frac{\mathrm{d}}{\mathrm{d} x}\left(\frac{\mathrm{~d} y}{\mathrm{~d} x}\right)^3=0\), then \((p-q)\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\frac{d}{d x}\\left(\\left(y^{\\prime}\\right)^3\\right)=0\\)\u003c/p> \u003cp>\\(\\Rightarrow 3\\left(y^{\\prime}\\right)^2 y^{\\prime \\prime}=0\\)\u003c/p> \u003cp>Highest order derivative \\(=y^{\\prime \\prime} \\Rightarrow p=2\\)\u003c/p> \u003cp>Power of \\(y^{\\prime \\prime}\\) is \\(1 \\Rightarrow q=1\\)\u003c/p> \u003cp>\\(\\Rightarrow p-q=2-1=1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The integrating factor of the differential equation</p> <p> \(\frac{dy}{dx}+2y=\sin x\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({e}^{x}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({e}^{3x}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({e}^{2x}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({e}^{4x}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The formula for the integrating factor of\u003c/p> \u003cp>a differential equation of the form\u003c/p> \u003cp> \\(\\frac{dy}{dx}+Py=Q\\) is \\(\\mu ={e}^{\\int Pdx}.\\)\u003c/p> \u003cp>To find the integrating factor\u003c/p> \u003cp>of the given differential equation \\(\\frac{dy}{dx}+2y=\\sin x\\),\u003c/p> \u003cp>compare the given differential equation\u003c/p> \u003cp> \\(\\frac{dy}{dx}+Py=Q\\) and\u003c/p> \u003cp>find the value \\(P\\),\u003c/p> \u003cp>then use the formula for the integrating factor.\u003c/p> \u003cp>The value of \\(P\\) for the given\u003c/p> \u003cp>differential equation is \\(P=2.\\) \u003c/p> \u003cp>Put the value of \\(P\\) in the formula for integrating facto\u003c/p> \u003cp>r and calculate the value of \\(\\mu\\)\u003c/p> \u003cp>which represents the integrating factor of the given differential equation.\u003c/p> \u003cp>\\(\\mu ={e}^{\\int 2dx}={e}^{2\\int dx}={e}^{2x}.\\)\u003c/p> \u003cp>Hence,\u003c/p> \u003cp>the integrating factor of the given differential equation\u003c/p> \u003cp>is \\(\\mu ={e}^{2x}.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order and degree of the differential equation \(\left[1+\left(\frac{d y}{d x}\right)^2\right]^3=\frac{d^2 y}{d x^2}\) respectively are :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1,2</p></span></div><div class="option"><span class="key">b</span><span><p>2,3</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2,1\)</p></span></div><div class="option"><span class="key">d</span><span><p>2,6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Equation: \\(\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]^3=\\frac{d^2 y}{d x^2}\\).\u003c/p> \u003cp>Highest order derivative present: \\(\\frac{d^2 y}{d x^2}\\)\u003c/p> \u003cp>\\(\\Rightarrow\\) order \\(=2\\).\u003c/p> \u003cp>The equation is polynomial in derivatives and power of \\(\\frac{d^2 y}{d x^2}\\) is \\(1\\).\u003c/p> \u003cp>\\(\\Rightarrow\\) degree \\(=1\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order and degree of the differential equation</p> <p>\(xy\left(\frac{{d}^{2}y}{d{x}^{2}}\right)+x{\left(\frac{dy}{dx}\right)}^{2}-y\left(\frac{dy}{dx}\right)=0\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Order\(=2\), Degree\(=1.\)</p></span></div><div class="option"><span class="key">b</span><span><p>Order \(=2\), Degree \(=2.\)</p></span></div><div class="option"><span class="key">c</span><span><p>Order \(=1\), Degree\(=2.\)</p></span></div><div class="option"><span class="key">d</span><span><p>Order \(=1\), Degree \(=1.\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>As observing the given differential equation\u003c/p> \u003cp> \\(xy\\left(\\frac{{d}^{2}y}{d{x}^{2}}\\right)+x{\\left(\\frac{dy}{dx}\\right)}^{2}-y\\left(\\frac{dy}{dx}\\right)=0\\),\u003c/p> \u003cp>the highest derivative of the differential equation is \\(\\frac{{d}^{2}y}{d{x}^{2}}\\)\u003c/p> \u003cp>has power \\(2\\) so the order of the given differential equation is \\(2.\\)\u003c/p> \u003cp>The power of the term \\(\\frac{{d}^{2}y}{d{x}^{2}}\\) in the given differential equation\u003c/p> \u003cp>is \\(1\\) so the degree of the given differential equation is \\(1.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The solution of the differential equation \(\frac{dy}{dx}=\frac{y}{x}\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(y=\log \left|x\right|+c\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(y=cx\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(y=x\log \left|x\right|+cx\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(y=\log \left|x\right|+cx\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The given differential equation is:\u003c/p> \u003cp>\\(\\frac{dy}{dx}=\\frac{y}{x}.....(I)\\)\u003c/p> \u003cp>Rearrange the tems of the equation \\(\\left(I\\right)\\)\u003c/p> \u003cp>\\(\\frac{dy}{y}=\\frac{dx}{x}.....(II)\\)\u003c/p> \u003cp>Integrate on both sides of equation \\((II)\\) and calculate the solution of the given differential equation.\u003c/p> \u003cp>\\(\\int \\frac{dy}{y}=\\int \\frac{dx}{x}\\\\ \\log (y)=\\log (x)+\\log (c)\\\\ \\log (y)=\\log (cx)\\\\ y=cx\\)\u003c/p> \u003cp>Hence, the solution of the given differential equation is \\(y=cx\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(y=y(x)\) satisfies the differential equation \(16\left(\sqrt{9x+x\sqrt{x}}\right)\left(4+\sqrt{9+\sqrt{x}}\right)\) \(\cos y\text{  }dy=(1+2\sin y)\)\(dx,\text{  }x>0\) and \(y(256)=\frac{\pi }{2},\text{  }y(49)=\alpha ,\) then \(2\sin \alpha\) is equal to</p> <p> </p> <p>[JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{2}−1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2(\sqrt{2}−1)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\sqrt{2}−1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3(\sqrt{2}−1)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(16(\\sqrt{9x+x\\sqrt{x}})(4+\\sqrt{9+\\sqrt{x}})\\cos ydy=(1+2\\sin y)dx\\)\u003c/p> \u003cp>\\(\\int \\frac{16\\cos ydy}{(1+2\\sin y)}=\\int \\frac{dx}{(\\sqrt{9x+x\\sqrt{x}})(4+\\sqrt{9+\\sqrt{x}})}\\)\u003c/p> \u003cp>In L.H.S., Put \\( 1+2 \\sin y=p \\Rightarrow 2 \\cos y d y=d p\\)\u003c/p> \u003cp>and in R.H.S., put \\( 4+\\sqrt{9+\\sqrt{x}}=t \\)\u003cbr/>\\( 0+\\frac{d x}{2 \\sqrt{9+\\sqrt{x}}} \\times \\left(\\frac{1}{2 \\sqrt{x}}\\right)=dt \\)\u003cbr/>\\( \\frac{d x}{\\sqrt{9x+x \\sqrt{x}}}=4 dt\\)\u003c/p> \u003cp>Therefore \\(\\int \\frac{8dp}{p}=\\int \\frac{4dt}{t}\\)\u003c/p> \u003cp>\\(2\\log p=\\log t+\\log c\\\\ \\Rightarrow \\log {p}^{2}=\\log tc\\)\u003c/p> \u003cp>\\( p^2=tc \\)\u003cbr/>\\( (1+2 \\sin y)^2=c(4+\\sqrt{9+\\sqrt{x}})\\)\u003c/p> \u003cp>Substituting \\(\\left(256, \\frac{\\pi}{2}\\right)\\)\u003c/p> \u003cp>\\( (3)^2=c(4+\\sqrt{9+16})\\)\u003c/p> \u003cp>\\(9=9c \\Rightarrow c=0\\)\u003c/p> \u003cp>\\( (1+2 \\sin y)^2=(4+\\sqrt{9+\\sqrt{x}})\\)\u003c/p> \u003cp>Substituting \\((49, \\alpha)\\)\u003c/p> \u003cp>\\( (1+2 \\sin \\alpha)^2=(4+\\sqrt{9+\\sqrt{49}})\\)\u003c/p> \u003cp>\\( (1+2 \\sin \\alpha)^2=(4+4)\\)\u003c/p> \u003cp>\\( 2 \\sin \\alpha+1=2 \\sqrt{2} \\)\u003cbr/>\\( 2 \\sin \\alpha=2 \\sqrt{2}-1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order of the differential equation \(\frac{{\mathrm{d}}^{4}\mathrm{y}}{{\mathrm{dx}}^{4}}-\sin \left(\frac{{\mathrm{d}}^{2}\mathrm{y}}{{\mathrm{dx}}^{2}}\right)=5\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{not}\mathrm{defined}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The order of a differential equation is determined by the highest order of the derivative present in the equation.\u003c/p> \u003cp>In the given equation, the highest derivative is \\(\\frac{{d}^{4}y}{d{x}^{4}}\\), thus the order is \\(4\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The differential equation \(\frac{d y}{d x}=F(x, y)\) will not be a homogeneous differential equation, if \(\mathrm{F}(\mathrm{x}, \mathrm{y})\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\cos x-\sin \left(\frac{y}{x}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{y}{x}\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(\frac{x^2+y^2}{x y}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\cos ^2\left(\frac{x}{y}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For a first-order DE \\(\\frac{d y}{d x}=F(x, y)\\) to be homogeneous:\u003c/p> \u003cp>\\(F(t x, t y)=F(x, y) \\forall t&gt;0\\)\u003c/p> \u003cp>\\(F(x, y)=\\phi\\left(\\frac{y}{x}\\right)\\)\u003c/p> \u003cp>Option A: \\(F(x, y)=\\cos x-\\sin \\left(\\frac{y}{x}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow F(t x, t y)=\\cos (t x)-\\sin \\left(\\frac{y}{x}\\right) \\neq F(x, y)\\) (depends on \\(\\left.x\\right)\\)\u003c/p> \u003cp>Options B, C, D depend only on \\(\\frac{y}{x}\\) (homogeneous)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The order and degree of the differential equation \(\left[1+\left(\frac{d y}{d x}\right)^2\right]^3=\frac{d^2 y}{d x^2}\) respectively are :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1,2</p></span></div><div class="option"><span class="key">b</span><span><p>2,3</p></span></div><div class="option"><span class="key">c</span><span><p>\( 2,1\)</p></span></div><div class="option"><span class="key">d</span><span><p>2,6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Equation: \\(\\left[1+\\left(\\frac{d y}{d x}\\right)^2\\right]^3=\\frac{d^2 y}{d x^2}\\).\u003c/p> \u003cp>Highest order derivative present: \\(\\frac{d^2 y}{d x^2}\\)\u003c/p> \u003cp>\\(\\Rightarrow\\) order \\(=2\\).\u003c/p> \u003cp>The equation is polynomial in derivatives and \\(\\frac{d^2 y}{d x^2}\\) occurs to power \\(1\\)\u003c/p> \u003cp>\\(\\Rightarrow\\) degree \\(=1\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The degree of the differential equation \(\left(y^{\prime \prime}\right)^2+\left(y^{\prime}\right)^3=x \sin \left(y^{\prime}\right)\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p> not defined</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Degree is defined only when the DE is a polynomial in \\(y^{\\prime}, y^{\\prime \\prime}, \\ldots\\)\u003cbr/>Here \\(\\left(y^{\\prime \\prime}\\right)^2+\\left(y^{\\prime}\\right)^3=x \\sin \\left(y^{\\prime}\\right)\\) contains \\(\\sin \\left(y^{\\prime}\\right)\\)\u003cbr/>⇒ Not a polynomial in derivatives\u003cbr/>⇒ Degree not defined\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(p\) and \(q\) are respectively the order and degree of the differential equation \(\frac{\mathrm{d}}{\mathrm{d} x}\left(\frac{\mathrm{~d} y}{\mathrm{~d} x}\right)^3=0\), then \((p-q)\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>1</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\frac{d}{d x}\\left(\\left(y^{\\prime}\\right)^3\\right)=0\\)\u003c/p> \u003cp>\\(\\Rightarrow 3\\left(y^{\\prime}\\right)^2 y^{\\prime \\prime}=0\\)\u003c/p> \u003cp>Highest derivative \\(=y^{\\prime \\prime} \\Rightarrow p=2\\)\u003c/p> \u003cp>Power of \\(y^{\\prime \\prime}\\) is \\(1 \\Rightarrow q=1\\)\u003c/p> \u003cp>\\(\\Rightarrow p-q=2-1=1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of arbitrary constants in the general solution of a differential equation of fourth order are :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The order of a differential equation is the highest derivative present.\u003cbr/>The general solution of an n\u003csup>th\u003c/sup> -order differential equation contains n arbitrary constants.\u003c/p> \u003cp>Here the differential equation is of order 4, So 4 arbitrary constant is present in the diferential equation\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The anti derivative of \(\left(\sqrt{x}+\frac{1}{\sqrt{x}}\right)\) with respect to x-</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{3}{x}^{\frac{1}{3}}+2{x}^{\frac{1}{2}}+\mathrm{C}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{3}{x}^{\frac{2}{3}}+\frac{1}{2}{x}^{2}+\mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3}{x}^{\frac{3}{2}}+2{x}^{\frac{1}{2}}+\mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3}{2}{x}^{\frac{3}{2}}+\frac{1}{2}{x}^{\frac{1}{2}}+\mathrm{C}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

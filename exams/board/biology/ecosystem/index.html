@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/board/biology/"},{"@type":"ListItem","position":5,"name":"Ecosystem","item":"https://yespyq.com/exams/board/biology/ecosystem/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Ecosystem</h1>
       <p>5 Board Biology previous year questions on <b>Ecosystem</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct statements:<br/>A. Detrivores perform fragmentation<br/>B. The humus is further degraded by some microbes during mineralization.<br/>C. Water soluble inorganic nutrients go down into the soil and get precipitated by a process called leaching.<br/>D. The detritus food chain begins with living organisms.<br/>E.Earthworms break down detritus into smaller particles by a process called catabolism.</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D, E, A only</p></span></div><div class="option correct"><span class="key">b</span><span><p>A, B, C only</p></span></div><div class="option"><span class="key">c</span><span><p>B, C, D only</p></span></div><div class="option"><span class="key">d</span><span><p>C, D, E only</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Encrgy cnters the Ecosystem through which trophic level ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Producer</p></span></div><div class="option"><span class="key">b</span><span><p>Herbivore</p></span></div><div class="option"><span class="key">c</span><span><p>Carnivorc</p></span></div><div class="option"><span class="key">d</span><span><p>Consumer</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Energy enters an ecosystem through the first trophic level, which is formed by the producers (green plants). Producers capture solar energy through photosynthesis and convert it into chemical energy, which then flows to other trophic levels.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>SECTION-A</strong></p> <p><strong>Objective Type Question , Each Carry one Marks</strong></p> <p>The most dangerous<strong> </strong>reason for the existence of lives<strong> </strong>is </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Desertation </p></span></div><div class="option"><span class="key">b</span><span><p>Radiation</p></span></div><div class="option"><span class="key">c</span><span><p>Deforestation</p></span></div><div class="option"><span class="key">d</span><span><p>none of these. </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> Deforestation\u003c/p> \u003cp>Deforestation destroys natural habitats, disturbs ecological balance, reduces oxygen levels, increases CO₂, and leads to loss of biodiversity. Hence, it is the most dangerous threat to the existence of life on Earth.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I</strong> with <strong>List-II</strong>:</p> <table> <thead> <tr> <th>List-I </th> <th>List-II </th> </tr> </thead> <tbody> <tr> <td>(A) Standing state</td> <td>(I) Available biomass for the consumption of heterotrophs</td> </tr> <tr> <td>(B) Secondary productivity</td> <td>(II) Rate of formation of organic matter by consumers</td> </tr> <tr> <td>(C) Standing crop</td> <td>(III) Mass of living matter in a trophic level at a given time</td> </tr> <tr> <td>(D) Net primary productivity</td> <td>(IV) Amount of mineral nutrients in the soil at a given time</td> </tr> </tbody> </table> <p>Choose the <em><strong>correct </strong></em>answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) - (IV), (B) - (III), (C) - (II), (D) - (I)</p></span></div><div class="option"><span class="key">b</span><span><p>(A) - (I), (B) - (II), (C) - (III), (D) - (IV)</p></span></div><div class="option"><span class="key">c</span><span><p>(A) - (IV), (B) - (II), (C) - (III), (D) - (I)</p></span></div><div class="option"><span class="key">d</span><span><p>(A) - (I), (B) - (IV), (C) - (II), (D) - (III) </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(A) \u003cstrong>Standing state\u003c/strong> - (IV) The quantity of mineral nutrients present in the soil at a specific time.\u003cbr/>(B) \u003cstrong>Secondary productivity\u003c/strong> - (II) The rate at which consumers generate organic matter.\u003cbr/>(C) \u003cstrong>Standing crop\u003c/strong> - (III) The biomass of living organisms in a trophic level at a given time.\u003cbr/>(D) \u003cstrong>Net primary productivity\u003c/strong> - (I) The biomass available for consumption by heterotrophs.\u003c/p> \u003cp>\u003cstrong>The correct option is C__ (B) and (C) only. \u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the percentage of photosynthetically active radiation (PAR) captured by plants for synthesis of organic matters?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>100%</p></span></div><div class="option"><span class="key">b</span><span><p>50%</p></span></div><div class="option"><span class="key">c</span><span><p>1-5%</p></span></div><div class="option"><span class="key">d</span><span><p>2-10%</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

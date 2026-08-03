@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Atoms","item":"https://yespyq.com/exams/board/physics/atoms/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Atoms</h1>
       <p>67 Board Physics previous year questions on <b>Atoms</b> — options free on every question; <b>7 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron makes a transition from orbit n = 2 to orbit n = 1, in Bohr’s model of hydrogen atom. Consider change in magnitudes of its kinetic energy (K) and potential energy (U).</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>K increases and U decreases</p></span></div><div class="option"><span class="key">b</span><span><p>K decreases and U increases</p></span></div><div class="option"><span class="key">c</span><span><p>Both K and U decrease</p></span></div><div class="option"><span class="key">d</span><span><p>Both K and U increase</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron in the ground state of the hydrogen atom has the orbital radius of \(5.3\times {10}^{-11}\mathrm{m}\) while that for the electron in third excited state is \(8.48\times {10}^{-10}\mathrm{m}\). The ratio of the de Broglie wavelengths of electron in the ground state to that in the excited state is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>16</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A proton and an alpha particle having equal velocities approach a target nucleus. They come momentarily to rest and then reverse their directions. The ratio of the distance of closest approach of the proton to that of the alpha particle will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct for alpha particle scattering experiment?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>For angle of scattering \(\theta \approx 0\), the impact parameter is small.</p></span></div><div class="option"><span class="key">b</span><span><p>For angle of scattering \(\theta ≃\pi\), the impact parameter is large.</p></span></div><div class="option correct"><span class="key">c</span><span><p>The number of alpha particles undergoing head-on collision is small.</p></span></div><div class="option"><span class="key">d</span><span><p>The experiment provides an estimate of the upper limit to the size of target atom.</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,16 +117,16 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The powers of two light sources \(S_1\) and \(S_2\) are in the ratio 2: 1. Source \(S_1\) emits \(2 \times 10^{15}\) photons per second at a wavelength of 600 nm . Find the number of photons per second emitted at a wavelength of 300 nm by \(S_2\).</p> <p>(Shift - II Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2 \times 10^{15}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1 \times 10^{15}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(5 \times 10^{14}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 \times 10^{15}\)</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: c) <p>\(5 \times 10^{14}\)</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p> </p> <p>\begin{equation}<br/>\begin{aligned}<br/>&amp; \mathrm{P}_1=\mathrm{P}=\frac{\mathrm{N}_1 \mathrm{hc}}{\lambda_1} \quad \mathrm{P}=\frac{\mathrm{Nhc}}{\lambda} \\<br/>&amp; \mathrm{P}_2=\frac{\mathrm{P}}{2}=\frac{\mathrm{N}_2 \mathrm{hc}}{\lambda_2} \\<br/>&amp; \frac{\mathrm{P}_1}{\mathrm{P}_2}=\frac{\mathrm{N}_1}{\lambda_1} \cdot \frac{\lambda_2}{\mathrm{~N}_2} \\<br/>&amp; \mathrm{~N}_2=\frac{\mathrm{N}_1 \lambda_2}{\lambda_1 2}=\frac{2 \times 10^{15} \times 300}{600 \times 2} \\<br/>&amp; \mathrm{n}_2=5 \times 10^{14} \text { per second }<br/>\end{aligned}<br/>\end{equation}</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p> </p> <p>\begin{equation}<br/>$$\begin{aligned}& \mathrm{P}_1=\mathrm{P}=\frac{\mathrm{N}_1 \mathrm{hc}}{\lambda_1} \quad \mathrm{P}=\frac{\mathrm{Nhc}}{\lambda} \\& \mathrm{P}_2=\frac{\mathrm{P}}{2}=\frac{\mathrm{N}_2 \mathrm{hc}}{\lambda_2} \\& \frac{\mathrm{P}_1}{\mathrm{P}_2}=\frac{\mathrm{N}_1}{\lambda_1} \cdot \frac{\lambda_2}{\mathrm{~N}_2} \\& \mathrm{~N}_2=\frac{\mathrm{N}_1 \lambda_2}{\lambda_1 2}=\frac{2 \times 10^{15} \times 300}{600 \times 2} \\& \mathrm{n}_2=5 \times 10^{14} \text { per second }\end{aligned}$$<br/>\end{equation}</p></div>
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy of an electron in the ground state of hydrogen atom is -13.6 eV . The kinetic and potential energy of the electron in the first excited state will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-13.6\mathrm{eV},27.2\mathrm{eV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-6.8\mathrm{eV},13.6\mathrm{eV}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(3.4\mathrm{eV},-6.8\mathrm{eV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.8\mathrm{eV},-3.4\mathrm{eV}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron makes a transition from \(n=2\) level to \(n=1\) level in the Bohr model of a hydrogen atom. Its period of revolution :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>increases by \(87.5 \%\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>decreases by \(87.5 \%\)</p></span></div><div class="option"><span class="key">c</span><span><p>increases by \(43.75 \%\)</p></span></div><div class="option"><span class="key">d</span><span><p>decreases by \(43.75 \%\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a hydrogen like ion, the energy difference between the \({2}^{\text{nd }}\) excitation energy state and ground is \(108.8eV\) . The atomic number of the ion is;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In hydrogen-like atoms, energy of the \\( n^\\text{th} \\) level is:\u003c/p> \u003cp>\\[\u003cbr/>E_n = -13.6 \\cdot \\frac{Z^2}{n^2}\u003cbr/>\\]\u003c/p> \u003cp>Second excitation means third level \\( (n = 3) \\), and ground state is \\( n = 1 \\).\u003c/p> \u003cp>So,\u003c/p> \u003cp>\\[\u003cbr/>\\Delta E = E_1 - E_3 = 13.6 Z^2 \\left(1 - \\frac{1}{9}\\right)\u003cbr/>= 13.6 Z^2 \\cdot \\frac{8}{9}\u003cbr/>\\]\u003c/p> \u003cp>Given: \\( \\Delta E = 108.8 \\, \\text{eV} \\)\u003c/p> \u003cp>\\[\u003cbr/>\\Rightarrow 13.6 Z^2 \\cdot \\frac{8}{9} = 108.8\u003cbr/>\\Rightarrow Z^2 = \\frac{108.8 \\cdot 9}{13.6 \\cdot 8} = 9\u003cbr/>\\Rightarrow Z = 3\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A proton and an alpha particle having equal velocities approach a target nucleus. They come momentarily to rest and then reverse their directions. The ratio of the distance of closest approach of the proton to that of the alpha particle will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\\( \\text{Given:} \\quad q_p = +e,\\, m_p; \\quad q_\\alpha = +2e,\\, m_\\alpha = 4m_p; \\quad v_p = v_\\alpha = v \\) \\( \\text{At the point of closest approach:} \\quad \\frac{1}{2} m v^2 = \\frac{1}{4\\pi\\varepsilon_0} \\frac{Z e q}{r_{\\min}} \\) \\( r_{\\min} = \\frac{1}{4\\pi\\varepsilon_0} \\frac{2 Z e q}{m v^2} \\) \\( \\text{For proton:} \\quad r_p = \\frac{2 Z e^2}{4\\pi\\varepsilon_0\\, m_p v^2} \\) \\( \\text{For alpha particle:} \\quad r_\\alpha = \\frac{2 Z (2e)e}{4\\pi\\varepsilon_0\\, (4m_p) v^2} \\) \\( \\frac{r_p}{r_\\alpha} = \\frac{\\dfrac{e}{m_p}}{\\dfrac{2e}{4m_p}} = \\frac{1}{(2/4)} = 2 \\) \\( \\boxed{\\frac{r_p}{r_\\alpha} = 2} \\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A proton and an alpha particle having equal velocities approach a target nucleus. They come momentarily to rest and then reverse their directions. The ratio of the distance of closest approach of the proton to that of the alpha particle will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\\( \\text{Given:} \\quad q_p = +e,\\, m_p; \\quad q_\\alpha = +2e,\\, m_\\alpha = 4m_p; \\quad v_p = v_\\alpha = v \\) \\( \\text{At the point of closest approach:} \\quad \\frac{1}{2} m v^2 = \\frac{1}{4\\pi\\varepsilon_0} \\frac{Z e q}{r_{\\min}} \\) \\( r_{\\min} = \\frac{1}{4\\pi\\varepsilon_0} \\frac{2 Z e q}{m v^2} \\) \\( \\text{For proton:} \\quad r_p = \\frac{2 Z e^2}{4\\pi\\varepsilon_0\\, m_p v^2} \\) \\( \\text{For alpha particle:} \\quad r_\\alpha = \\frac{2 Z (2e)e}{4\\pi\\varepsilon_0\\, (4m_p) v^2} \\) \\( \\frac{r_p}{r_\\alpha} = \\frac{\\dfrac{e}{m_p}}{\\dfrac{2e}{4m_p}} = \\frac{1}{(2/4)} = 2 \\) \\( \\boxed{\\frac{r_p}{r_\\alpha} = 2} \\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct for alpha particle scattering experiment?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>For angle of scattering \(\theta \approx 0\), the impact parameter is small.</p></span></div><div class="option"><span class="key">b</span><span><p>For angle of scattering \(\theta ≃\pi\), the impact parameter is large.</p></span></div><div class="option"><span class="key">c</span><span><p>The number of alpha particles undergoing head-on collision is small.</p></span></div><div class="option"><span class="key">d</span><span><p>The experiment provides an estimate of the upper limit to the size of target atom.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In the alpha particle scattering experiment, the impact parameter is the perpendicular distance between the path of an alpha particle and the center of the nucleus. The scattering angle is the angle at which the alpha particle is deflected. The correct statements are as follows:\u003c/p> \u003cp>(A) For a scattering angle \\(\\theta \\approx 0\\), the impact parameter is large because the alpha particle passes far from the nucleus and experiences a small deflection.\u003c/p> \u003cp>(B) For a scattering angle \\(\\theta \\approx \\pi\\), the impact parameter is small because the alpha particle passes very close to the nucleus and experiences a large deflection.\u003c/p> \u003cp>(C) The number of alpha particles undergoing head-on collision is small because head-on collisions are rare events.\u003c/p> \u003cp>(D) The experiment provides an estimate of the upper limit to the size of the target nucleus because the closest approach of the alpha particles gives information about the size of the nucleus.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alpha particle approaches a gold nucleus in Geiger-Marsden experiment with kinetic energy K. It momentarily stops at a distance \(d\) from the nucleus and reverses its direction. Then d is proportional to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{\sqrt{\mathrm{K}}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{\mathrm{K}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{\mathrm{K}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>K</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> The electric potential energy (\\(U\\)) between the alpha particle (charge\\(+2e\\)) and the gold nucleus (charge\\(+Ze\\)) at a distance \\(d\\)is given by     \\(U=k\\frac{(2e)(Ze)}{d}=\\frac{2kZ{e}^{2}}{d}\\), where \\(k\\)is Coulomb's constant.        \u003c/li> \u003c/ul>  \u003cul> \u003cli>\u003cstrong>Equating energies\u003c/strong>: By setting \\(K=U\\), we get    \\(K=\\frac{2kZ{e}^{2}}{d}\\)       \\(d=\\frac{2kZ{e}^{2}}{K}\\) the equation shows that \\(d\\)is directly proportional to \\(\\frac{1}{K}\\)    \u003c/li> \u003c/ul>     \u003cbr/>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy levels A, B and C of an atom correspond to increasing values of energy i.e. \({\mathrm{E}}_{\mathrm{A}}<{\mathrm{E}}_{\mathrm{B}}<{\mathrm{E}}_{\mathrm{C}}\). Let \({\lambda }_{1},{\lambda }_{2}\) and \({\lambda }_{3}\) be the wavelengths of radiation corresponding to the transitions C to \(\mathrm{B}, \mathrm{B}\) to A and C to A , respectively. The correct relation between \({\lambda }_{1},{\lambda }_{2}\) and \({\lambda }_{3}\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{1}^{2}+{\lambda }_{2}^{2}={\lambda }_{3}^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{{\lambda }_{1}}+\frac{1}{{\lambda }_{2}}=\frac{1}{{\lambda }_{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{1}+{\lambda }_{2}+{\lambda }_{3}=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{1}+{\lambda }_{2}={\lambda }_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The total energy difference for the transition from C to A is the sum of the energy differences for the transitions from C to B and B to A.\u003cbr/>  \\({E}_{C}−{E}_{A}=({E}_{C}−{E}_{B})+({E}_{B}−{E}_{A})\\)  Substitute and solve for the wavelength relationship \\(\\frac{hc}{{\\lambda }_{3}}=\\frac{hc}{{\\lambda }_{1}}+\\frac{hc}{{\\lambda }_{2}}\\) Divide all terms by \\(hc\\) \\(\\frac{1}{{\\lambda }_{3}}=\\frac{1}{{\\lambda }_{1}}+\\frac{1}{{\\lambda }_{2}}\\)   \u003cbr/>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The transition of electron that gives rise to the formation of the second spectral line of the Balmer series in the spectrum of hydrogen atom corresponds to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n _{ f }=2\) and \(n _{ i }=3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n _{ f }=3\) and \(n _{ i }=4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n _{ f }=2\) and \(n _{ i }=4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n _{ f }=2\) and \(n _{ i }=\infty\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For hydrogen atom, the Balmer series corresponds to transitions ending at \\({n}_{2}=2\\)\u003cbr/>Thus, the general transition is \\({n}_{i}\\to 2,where{n}_{i}=3,4,5...\\)\u003cbr/>The first Balmer line \\(({H}_{\\alpha })\\) : \\({n}_{i}=3\\to 2\\)\u003cbr/>The second Balmer line (\\({H}_{\\beta }\\)) : \\({n}_{i}=4\\to 2\\)\u003cbr/>Hence, the transition giving the second Balmer line is \\({n}_{i}=4\\to {n}_{f}=2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron makes a transition from orbit n = 2 to orbit n = 1, in Bohr’s model of hydrogen atom. Consider change in magnitudes of its kinetic energy (K) and potential energy (U).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>K increases and U decreases</p></span></div><div class="option"><span class="key">b</span><span><p>K decreases and U increases</p></span></div><div class="option"><span class="key">c</span><span><p>Both K and U decrease</p></span></div><div class="option"><span class="key">d</span><span><p>Both K and U increase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In Bohr's model of the hydrogen atom, the kinetic energy (\\(K\\)) and potential energy (\\(U\\)) of an electron in an orbit are related to its distance from the nucleus. When an electron transitions from a higher energy level (\\(n=2\\)) to a lower energy level (\\(n=1\\)), it loses energy. The kinetic energy of the electron is given by the formula \\(K = \\frac{1}{2}mv^2\\), and the potential energy is given by \\(U = -\\frac{ke^2}{r}\\), where \\(r\\) is the radius of the orbit. As the electron moves to a lower orbit (\\(n=1\\)), the radius decreases, leading to an increase in kinetic energy (since the electron moves faster in lower orbits) and a decrease in potential energy (since it is closer to the nucleus). Therefore, \\(K\\) increases and \\(U\\) decreases.\u003cbr/>Identify the initial and final orbits: initial orbit \\(n=2\\), final orbit \\(n=1\\).\u003c/p> \u003cp>Understand that as the electron moves to a lower orbit, it loses energy.\u003c/p> \u003cp>Determine that kinetic energy increases because the electron moves faster in the lower orbit.\u003c/p> \u003cp>Determine that potential energy decreases because the electron is closer to the nucleus\u003c/p> \u003cp>A. \\(K\\) increases and \\(U\\) decreases\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius \(\left(r_n\right)\) of \(n^{\text {th }}\) orbit in Bohr model of hydrogen atom varies with \(n\) as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(r_n \propto n\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(r _{ n } \propto \frac{1}{ n }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(r _{ n } \propto n ^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(r _{ n } \propto \frac{1}{ n ^2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({r}_{n}=\\frac{{n}^{2}h{\\epsilon }_{0}}{\\pi m{e}^{2}}\\\\ {r}_{n}\\alpha {n}^{2}\\)\u003c/p> \u003cp> \u003c/p>   \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy of an electron in the ground state of hydrogen atom is -13.6 eV . The kinetic and potential energy of the electron in the first excited state will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-13.6\mathrm{eV},27.2\mathrm{eV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-6.8\mathrm{eV},13.6\mathrm{eV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.4\mathrm{eV},-6.8\mathrm{eV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.8\mathrm{eV},-3.4\mathrm{eV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For the first excited state of a hydrogen atom ( n=2), the kinetic energy is 3.4 eV and the potential energy is \u003c/p> \u003cp>\\(-6.8\\)eV. This is calculated using the formula for energy levels (\\({E}_{n}=-13.6/{n}^{2}\\)Sv6Kpe[] eV) and the relationship that potential energy (\\(U\\)Sv6Kpe[]) is equal to \\(-2\\)Sv6Kpe[] times the kinetic energy (\\(K\\)Sv6Kpe[]), with total energy (\\(E\\)Sv6Kpe[]) being the sum of both (\\(E=K+U\\)Sv6Kpe[]), and kinetic energy being the negative of the total energy (\\(K=−E\\)) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Balmer series of hydrogen atom, as the wavelength of spectral lines decreases, they appear</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>equally spaced and equally intense.</p></span></div><div class="option"><span class="key">b</span><span><p>further apart and stronger in intensity.</p></span></div><div class="option"><span class="key">c</span><span><p>closer together and stronger in intensity.</p></span></div><div class="option"><span class="key">d</span><span><p>closer together and weaker in intensity.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As the wavelength of spectral lines in the Balmer Series of H-atoms drops, they appear close together and have a lower intensity due to transition probability.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering the Bohr model of hydrogen like atoms, the ratio of the ratio of the radius \({5}^{\text{th }}\) orbit of the electron in \({\mathrm{Li}}^{2+}\) and \({\mathrm{He}}^{+}\)is;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{4}{9}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{9}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{2}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In Bohr's model, radius of \\( n^\\text{th} \\) orbit in hydrogen-like atoms is given by:\u003c/p> \u003cp>\\[\u003cbr/>r_n \\propto \\frac{n^2}{Z}\u003cbr/>\\]\u003c/p> \u003cp>So for 5th orbit:\u003c/p> \u003cp>\\[\u003cbr/>r_5 \\propto \\frac{25}{Z}\u003cbr/>\\]\u003c/p> \u003cp>Now, \u003cbr/>For Li\\(^{2+}\\), \\( Z = 3 \\Rightarrow r \\propto \\frac{25}{3} \\) \u003cbr/>For He\\(^{+}\\), \\( Z = 2 \\Rightarrow r \\propto \\frac{25}{2} \\)\u003c/p> \u003cp>Taking ratio:\u003c/p> \u003cp>\\[\u003cbr/>\\frac{r_{Li^{2+}}}{r_{He^+}} = \\frac{25/3}{25/2} = \\frac{2}{3}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron makes a transition from orbit n = 2 to orbit n = 1, in Bohr’s model of hydrogen atom. Consider change in magnitudes of its kinetic energy (K) and potential energy (U).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>K increases and U decreases</p></span></div><div class="option"><span class="key">b</span><span><p>K decreases and U increases</p></span></div><div class="option"><span class="key">c</span><span><p>Both K and U decrease</p></span></div><div class="option"><span class="key">d</span><span><p>Both K and U increase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In Bohr's model of the hydrogen atom, the kinetic energy (\\(K\\)) and potential energy (\\(U\\)) of an electron in an orbit are related to its distance from the nucleus. When an electron transitions from a higher energy level (\\(n=2\\)) to a lower energy level (\\(n=1\\)), it loses energy. The kinetic energy of the electron is given by the formula \\(K = \\frac{1}{2}mv^2\\), and the potential energy is given by \\(U = -\\frac{ke^2}{r}\\), where \\(r\\) is the radius of the orbit. As the electron moves to a lower orbit (\\(n=1\\)), the radius decreases, leading to an increase in kinetic energy (since the electron moves faster in lower orbits) and a decrease in potential energy (since it is closer to the nucleus). Therefore, \\(K\\) increases and \\(U\\) decreases.\u003cbr/>Identify the initial and final orbits: initial orbit \\(n=2\\), final orbit \\(n=1\\).\u003c/p> \u003cp>Understand that as the electron moves to a lower orbit, it loses energy.\u003c/p> \u003cp>Determine that kinetic energy increases because the electron moves faster in the lower orbit.\u003c/p> \u003cp>Determine that potential energy decreases because the electron is closer to the nucleus\u003c/p> \u003cp>A. \\(K\\) increases and \\(U\\) decreases\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Balmer series of hydrogen atom, as the wavelength of spectral lines decreases, they appear</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>equally spaced and equally intense.</p></span></div><div class="option"><span class="key">b</span><span><p>further apart and stronger in intensity.</p></span></div><div class="option"><span class="key">c</span><span><p>closer together and stronger in intensity.</p></span></div><div class="option"><span class="key">d</span><span><p>closer together and weaker in intensity.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As the wavelength of spectral lines in the Balmer Series of H-atoms drops, they appear close together and have a lower intensity due to transition probability.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement 1: Graph of frequency f of X ray and atomic number Z of heavy nucleus is not straight line, in X ray emission.<br/>Statement 2: Graph of square root of frequency \(\sqrt{\mathrm{f}}\) of X ray and atomic number Z of heavy nucleus is straight line, in X ray emission.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement 1 is correct and statement 2 is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Statement 1 is incorrect and statement 2 is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement 1 is correct and statement 2 is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement 1 is incorrect and statement 2 is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Moseley's law states that \\(\\sqrt{f}=k\\left(z-b\\right)\\), where k is a constant and b is the screening constant. This implies that the square root of frequency is directly proportional to Z, resulting in a straight-line graph. However, f itself does not follow a linear relationship with Z. Moseley's law is primarily valid for \u003cstrong>heavy elements\u003c/strong>, and deviations occur for light atoms due to weaker screening effects and other relativistic considerations. Hence, both statements are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of spectral lines emitted by atomic hydrogen that is in the \({4}^{\text{th }}\) energy level, is</p> <p>[JEE Main 2025, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>No. of spectral line \\(=\\frac{n(n-1)}{2}=\\frac{4\\times 3}{2}=6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius \(\left(r_n\right)\) of \(n^{\text {th }}\) orbit in Bohr model of hydrogen atom varies with \(n\) as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(r_n \propto n\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(r _{ n } \propto \frac{1}{ n }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(r _{ n } \propto n ^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(r _{ n } \propto \frac{1}{ n ^2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({r}_{n}=\\frac{{n}^{2}h{\\epsilon }_{0}}{\\pi m{e}^{2}}\\\\ {r}_{n}\\alpha {n}^{2}\\)\u003c/p> \u003cp> \u003c/p>   \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the wavelength of the first member of Lyman series of hydrogen is \( \lambda \). The wavelength of the second member will be;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{32}{27} \lambda\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{27}{5} \lambda\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{27}{32} \lambda\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{5}{27} \lambda\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>First member of Lyman series: \\( n_2 = 2 \\to n_1 = 1 \\) \u003cbr/>Second member: \\( n_2 = 3 \\to n_1 = 1 \\)\u003c/p> \u003cp>From Rydberg formula:\u003c/p> \u003cp>\\[\u003cbr/>\\frac{1}{\\lambda} = R \\left( \\frac{1}{n_1^2} - \\frac{1}{n_2^2} \\right)\u003cbr/>\\]\u003c/p> \u003cp>For first member:\u003cbr/>\\[\u003cbr/>\\frac{1}{\\lambda_1} = R \\left(1 - \\frac{1}{4} \\right) = R \\cdot \\frac{3}{4}\u003cbr/>\\]\u003c/p> \u003cp>For second member:\u003cbr/>\\[\u003cbr/>\\frac{1}{\\lambda_2} = R \\left(1 - \\frac{1}{9} \\right) = R \\cdot \\frac{8}{9}\u003cbr/>\\]\u003c/p> \u003cp>Taking ratio:\u003cbr/>\\[\u003cbr/>\\frac{\\lambda_2}{\\lambda_1} = \\frac{\\frac{1}{R \\cdot \\frac{8}{9}}}{\\frac{1}{R \\cdot \\frac{3}{4}}} = \\frac{3}{4} \\cdot \\frac{9}{8} = \\frac{27}{32}\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\lambda_2 = \\frac{27}{32} \\lambda\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of spectral lines emitted by atomic hydrogen that is in the \({4}^{\text{th }}\) energy level, is</p> <p>[JEE Main 2025, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>0</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>No. of spectral line \\(=\\frac{n(n-1)}{2}=\\frac{4\\times 3}{2}=6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A proton and an alpha particle having equal velocities approach a target nucleus. They come momentarily to rest and then reverse their directions. The ratio of the distance of closest approach of the proton to that of the alpha particle will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\\( \\text{Given:} \\quad q_p = +e,\\, m_p; \\quad q_\\alpha = +2e,\\, m_\\alpha = 4m_p; \\quad v_p = v_\\alpha = v \\) \\( \\text{At the point of closest approach:} \\quad \\frac{1}{2} m v^2 = \\frac{1}{4\\pi\\varepsilon_0} \\frac{Z e q}{r_{\\min}} \\) \\( r_{\\min} = \\frac{1}{4\\pi\\varepsilon_0} \\frac{2 Z e q}{m v^2} \\) \\( \\text{For proton:} \\quad r_p = \\frac{2 Z e^2}{4\\pi\\varepsilon_0\\, m_p v^2} \\) \\( \\text{For alpha particle:} \\quad r_\\alpha = \\frac{2 Z (2e)e}{4\\pi\\varepsilon_0\\, (4m_p) v^2} \\) \\( \\frac{r_p}{r_\\alpha} = \\frac{\\dfrac{e}{m_p}}{\\dfrac{2e}{4m_p}} = \\frac{1}{(2/4)} = 2 \\) \\( \\boxed{\\frac{r_p}{r_\\alpha} = 2} \\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron is moving in a magnetic field \(B\) in a circular orbit. Assume Bohr's quantization to be valid. Find the radius of the orbit in the 1st excited state.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{\frac{4h}{\pi Be}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{\frac{h}{2\pi Be}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{\frac{h}{\pi Be}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{\frac{2h}{\pi Be}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"Key Concepts: \u003col> \u003cli> \u003cp>\u003cstrong>Bohr’s Quantization Rule:\u003c/strong> The angular momentum of the electron is quantized:\u003c/p> \\(mvr=n\\frac{h}{2\\pi }\\)​ \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(m\\) is the mass of the electron,\u003c/li> \u003cli>\\(v\\) is its velocity,\u003c/li> \u003cli>\\(r\\) is the radius of the orbit,\u003c/li> \u003cli>\\(n\\) is the quantum number (\\(n=2\\) for the 1st excited state),\u003c/li> \u003cli>\\(h\\) is Planck's constant.\u003c/li> \u003c/ul> \u003c/li> \u003cli> \u003cp>\u003cstrong>Magnetic Force Provides Centripetal Force:\u003c/strong> The force on a moving charge in a magnetic field is:\u003c/p> \\({F}_{\\text{magnetic}}=evB\\) \u003cp>This provides the centripetal force:\u003c/p> \\({F}_{\\text{magnetic}}=\\frac{m{v}^{2}}{r}\\)​\u003c/li> \u003c/ol> Step 1: Equating Forces \u003cp>From the magnetic force equation:\u003c/p> \\(evB=\\frac{m{v}^{2}}{r}\\)​ \u003cp>Simplify to find \\(v\\):\u003c/p> \\(v=\\frac{eBr}{m}\\)​ Step 2: Use Bohr's Quantization \u003cp>Substitute \\(v=\\frac{eBr}{m}\\)​ into Bohr’s quantization rule:\u003c/p> \\(m⋅\\frac{eBr}{m}⋅r=n\\frac{h}{2\\pi }\\)​ \u003cp>Simplify:\u003c/p> \\(eB{r}^{2}=n\\frac{h}{2\\pi }\\)​ \u003cp>Rearrange to solve for \\({r}^{2}\\):\u003c/p> \\({r}^{2}=\\frac{nh}{2\\pi eB}\\)​ \u003cp>Thus:\u003c/p> \\(r=\\sqrt{\\frac{nh}{2\\pi eB}}\\) Step 3: For the 1st Excited State \u003cp>For the 1st excited state, \\(n=2\\):\u003c/p> \\(r=\\sqrt{\\frac{2h}{2\\pi eB}}=\\sqrt{\\frac{h}{\\pi eB}}\\)​ Final Answer: \u003cp>\u003cstrong>(C) \\(\\sqrt{\\frac{h}{\\pi Be}}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy levels A, B and C of an atom correspond to increasing values of energy i.e. \({\mathrm{E}}_{\mathrm{A}}<{\mathrm{E}}_{\mathrm{B}}<{\mathrm{E}}_{\mathrm{C}}\). Let \({\lambda }_{1},{\lambda }_{2}\) and \({\lambda }_{3}\) be the wavelengths of radiation corresponding to the transitions C to \(\mathrm{B}, \mathrm{B}\) to A and C to A , respectively. The correct relation between \({\lambda }_{1},{\lambda }_{2}\) and \({\lambda }_{3}\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{1}^{2}+{\lambda }_{2}^{2}={\lambda }_{3}^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{{\lambda }_{1}}+\frac{1}{{\lambda }_{2}}=\frac{1}{{\lambda }_{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{1}+{\lambda }_{2}+{\lambda }_{3}=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{1}+{\lambda }_{2}={\lambda }_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The total energy difference for the transition from C to A is the sum of the energy differences for the transitions from C to B and B to A.\u003cbr/>  \\({E}_{C}−{E}_{A}=({E}_{C}−{E}_{B})+({E}_{B}−{E}_{A})\\)  Substitute and solve for the wavelength relationship \\(\\frac{hc}{{\\lambda }_{3}}=\\frac{hc}{{\\lambda }_{1}}+\\frac{hc}{{\\lambda }_{2}}\\) Divide all terms by \\(hc\\) \\(\\frac{1}{{\\lambda }_{3}}=\\frac{1}{{\\lambda }_{1}}+\\frac{1}{{\\lambda }_{2}}\\)   \u003cbr/>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The transition of electron that gives rise to the formation of the second spectral line of the Balmer series in the spectrum of hydrogen atom corresponds to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\) and \({\mathrm{n}}_{\mathrm{i}}=3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=3\) and \({\mathrm{n}}_{\mathrm{i}}=4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\) and \({\mathrm{n}}_{\mathrm{i}}=4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\)and \({\mathrm{n}}_{\mathrm{i}}=\infty\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>for second line of Balmer series, \\({\\mathrm{n}}_{\\mathrm{f}}=2,{\\mathrm{n}}_{\\mathrm{i}}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron makes a transition from \(n=2\) level to \(n=1\) level in the Bohr model of a hydrogen atom. Its period of revolution :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>increases by \(87.5 \%\)</p></span></div><div class="option"><span class="key">b</span><span><p>decreases by \(87.5 \%\)</p></span></div><div class="option"><span class="key">c</span><span><p>increases by \(43.75 \%\)</p></span></div><div class="option"><span class="key">d</span><span><p>decreases by \(43.75 \%\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,7 +432,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\\( \\text{Given: Electron transition from } n = 2 \\to n = 1 \\) \\( \\text{In the Bohr model:} \\quad r_n \\propto n^2, \\quad v_n \\propto \\frac{1}{n} \\) \\( T_n = \\frac{2\\pi r_n}{v_n} \\propto \\frac{n^2}{1/n} = n^3 \\) \\( \\text{Hence, } T_n \\propto n^3 \\) \\( \\frac{T_2}{T_1} = \\left(\\frac{2}{1}\\right)^3 = 8 \\) \\( \\text{When the electron goes from } n=2 \\text{ to } n=1, \\text{ the period becomes } \\frac{1}{8} \\text{ of its initial value.} \\) \\( \\text{Percentage decrease} = \\frac{T_2 - T_1}{T_2} \\times 100 = \\frac{8T_1 - T_1}{8T_1} \\times 100 = \\frac{7}{8} \\times 100 = 87.5\\% \\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct for alpha particle scattering experiment?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>For angle of scattering \(\theta \approx 0\), the impact parameter is small.</p></span></div><div class="option"><span class="key">b</span><span><p>For angle of scattering \(\theta ≃\pi\), the impact parameter is large.</p></span></div><div class="option"><span class="key">c</span><span><p>The number of alpha particles undergoing head-on collision is small.</p></span></div><div class="option"><span class="key">d</span><span><p>The experiment provides an estimate of the upper limit to the size of target atom.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -440,7 +444,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In the alpha particle scattering experiment, the impact parameter is the perpendicular distance between the path of an alpha particle and the center of the nucleus. The scattering angle is the angle at which the alpha particle is deflected. The correct statements are as follows:\u003c/p> \u003cp>(A) For a scattering angle \\(\\theta \\approx 0\\), the impact parameter is large because the alpha particle passes far from the nucleus and experiences a small deflection.\u003c/p> \u003cp>(B) For a scattering angle \\(\\theta \\approx \\pi\\), the impact parameter is small because the alpha particle passes very close to the nucleus and experiences a large deflection.\u003c/p> \u003cp>(C) The number of alpha particles undergoing head-on collision is small because head-on collisions are rare events.\u003c/p> \u003cp>(D) The experiment provides an estimate of the upper limit to the size of the target nucleus because the closest approach of the alpha particles gives information about the size of the nucleus.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering Bohr's atomic model for hydrogen atom :<br/>(A) the energy of H atom in ground state is same as energy of \({\mathrm{He}}^{+}\)ion in its first excited state.<br/>(B) the energy of H atom in ground state is same as that for \({\mathrm{Li}}^{++}\)ion in its second excited state.<br/>(C) the energy of H atom in its ground state is same as that of \({\mathrm{He}}^{+}\)ion for its ground state.<br/>(D) the energy of \({\mathrm{He}}^{+}\)ion in its first excited state is same as that for \({\mathrm{Li}}^{++}\)ion in its ground state</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (D) only </p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B) only</p></span></div><div class="option"><span class="key">c</span><span><p> (A), (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -452,7 +456,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>From Bohr's model, energy of hydrogen-like species is:\u003c/p> \u003cp>\\[\u003cbr/>E_n = -13.6 \\cdot \\frac{Z^2}{n^2} \\, \\text{eV}\u003cbr/>\\]\u003c/p> \u003cp>**(A)** \u003cbr/>H atom ground state: \\( Z = 1, n = 1 \\Rightarrow E = -13.6 \\, \\text{eV} \\) \u003cbr/>He\\(^+\\) first excited state: \\( Z = 2, n = 2 \\Rightarrow E = -13.6 \\cdot \\frac{4}{4} = -13.6 \\, \\text{eV} \\) ✅\u003c/p> \u003cp>**(B)** \u003cbr/>H ground: \\( -13.6 \\, \\text{eV} \\) \u003cbr/>Li\\(^{++}\\) second excited state: \\( Z = 3, n = 3 \\Rightarrow E = -13.6 \\cdot \\frac{9}{9} = -13.6 \\, \\text{eV} \\) ✅\u003c/p> \u003cp>**(C)** \u003cbr/>H ground: \\( -13.6 \\, \\text{eV} \\) \u003cbr/>He\\(^+\\) ground: \\( Z = 2, n = 1 \\Rightarrow E = -13.6 \\cdot 4 = -54.4 \\, \\text{eV} \\) ❌\u003c/p> \u003cp>**(D)** \u003cbr/>He\\(^+\\) first excited: \\( Z = 2, n = 2 \\Rightarrow E = -13.6 \\cdot \\frac{4}{4} = -13.6 \\, \\text{eV} \\) \u003cbr/>Li\\(^{++}\\) ground: \\( Z = 3, n = 1 \\Rightarrow E = -13.6 \\cdot 9 = -122.4 \\, \\text{eV} \\) ❌\u003c/p> \u003cp>Correct statements: **(A), (B)**\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius \(\left(r_n\right)\) of \(n^{\text {th }}\) orbit in Bohr model of hydrogen atom varies with \(n\) as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(r_n \propto n\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(r _{ n } \propto \frac{1}{ n }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(r _{ n } \propto n ^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(r _{ n } \propto \frac{1}{ n ^2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -464,7 +468,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({r}_{n}=\\frac{{n}^{2}h{\\epsilon }_{0}}{\\pi m{e}^{2}}\\\\ {r}_{n}\\alpha {n}^{2}\\)\u003c/p> \u003cp> \u003c/p>   \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The potential energy of an electron in the second excited state in hydrogen atom is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-3 \cdot 4 \mathrm{eV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-3.02 \mathrm{eV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-1.51 \mathrm{eV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-6 \cdot 8 \mathrm{eV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -476,7 +480,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cul> \u003cli>The second excited state corresponds to the third energy level, where the principal quantum number     \\(n=3\\) \\({E}_{3}=\\frac{-13.6}{{3}^{2}}=\\frac{-13.6}{9}\\approx -1.51\\)eV.     \u003c/li> \u003cli>The potential energy (\\(PE\\)) is related to the total energy (\\(E\\)) by the formula \\(PE=2E\\)       Therefore, the potential energy in the second excited state is    \\(P{E}_{3}=2\\times {E}_{3}=2\\times (-1.51\\text{ eV})=-3.02\\)eV.     \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alpha particle approaches a gold nucleus in Geiger-Marsden experiment with kinetic energy K. It momentarily stops at a distance \(d\) from the nucleus and reverses its direction. Then d is proportional to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{\sqrt{\mathrm{K}}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{\mathrm{K}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{\mathrm{K}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>K</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -488,7 +492,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> The electric potential energy (\\(U\\)) between the alpha particle (charge\\(+2e\\)) and the gold nucleus (charge\\(+Ze\\)) at a distance \\(d\\)is given by     \\(U=k\\frac{(2e)(Ze)}{d}=\\frac{2kZ{e}^{2}}{d}\\), where \\(k\\)is Coulomb's constant.        \u003c/li> \u003c/ul>  \u003cul> \u003cli>\u003cstrong>Equating energies\u003c/strong>: By setting \\(K=U\\), we get    \\(K=\\frac{2kZ{e}^{2}}{d}\\)       \\(d=\\frac{2kZ{e}^{2}}{K}\\) the equation shows that \\(d\\)is directly proportional to \\(\\frac{1}{K}\\)    \u003c/li> \u003c/ul>     \u003cbr/>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Energy levels A, B and C of an atom correspond to increasing values of energy i.e. \({\mathrm{E}}_{\mathrm{A}}<{\mathrm{E}}_{\mathrm{B}}<{\mathrm{E}}_{\mathrm{C}}\). Let \({\lambda }_{1},{\lambda }_{2}\) and \({\lambda }_{3}\) be the wavelengths of radiation corresponding to the transitions C to \(\mathrm{B}, \mathrm{B}\) to A and C to A , respectively. The correct relation between \({\lambda }_{1},{\lambda }_{2}\) and \({\lambda }_{3}\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{1}^{2}+{\lambda }_{2}^{2}={\lambda }_{3}^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{{\lambda }_{1}}+\frac{1}{{\lambda }_{2}}=\frac{1}{{\lambda }_{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{1}+{\lambda }_{2}+{\lambda }_{3}=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{1}+{\lambda }_{2}={\lambda }_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -500,7 +504,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The total energy difference for the transition from C to A is the sum of the energy differences for the transitions from C to B and B to A.\u003cbr/>  \\({E}_{C}−{E}_{A}=({E}_{C}−{E}_{B})+({E}_{B}−{E}_{A})\\)  Substitute and solve for the wavelength relationship \\(\\frac{hc}{{\\lambda }_{3}}=\\frac{hc}{{\\lambda }_{1}}+\\frac{hc}{{\\lambda }_{2}}\\) Divide all terms by \\(hc\\) \\(\\frac{1}{{\\lambda }_{3}}=\\frac{1}{{\\lambda }_{1}}+\\frac{1}{{\\lambda }_{2}}\\)   \u003cbr/>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy of an electron in the ground state of hydrogen atom is -13.6 eV . The kinetic and potential energy of the electron in the first excited state will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-13.6\mathrm{eV},27.2\mathrm{eV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-6.8\mathrm{eV},13.6\mathrm{eV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.4\mathrm{eV},-6.8\mathrm{eV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.8\mathrm{eV},-3.4\mathrm{eV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -512,7 +516,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For the first excited state of a hydrogen atom ( n=2), the kinetic energy is 3.4 eV and the potential energy is \u003c/p> \u003cp>\\(-6.8\\)eV. This is calculated using the formula for energy levels (\\({E}_{n}=-13.6/{n}^{2}\\)Sv6Kpe[] eV) and the relationship that potential energy (\\(U\\)Sv6Kpe[]) is equal to \\(-2\\)Sv6Kpe[] times the kinetic energy (\\(K\\)Sv6Kpe[]), with total energy (\\(E\\)Sv6Kpe[]) being the sum of both (\\(E=K+U\\)Sv6Kpe[]), and kinetic energy being the negative of the total energy (\\(K=−E\\)) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy of an electron in the ground state of hydrogen atom is -13.6 eV . The kinetic and potential energy of the electron in the first excited state will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-13.6\mathrm{eV},27.2\mathrm{eV}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(-6.8\mathrm{eV},13.6\mathrm{eV}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3.4\mathrm{eV},-6.8\mathrm{eV}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.8\mathrm{eV},-3.4\mathrm{eV}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -524,7 +528,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For the first excited state of a hydrogen atom ( n=2), the kinetic energy is 3.4 eV and the potential energy is \u003c/p> \u003cp>\\(-6.8\\)eV. This is calculated using the formula for energy levels (\\({E}_{n}=-13.6/{n}^{2}\\)Sv6Kpe[] eV) and the relationship that potential energy (\\(U\\)Sv6Kpe[]) is equal to \\(-2\\)Sv6Kpe[] times the kinetic energy (\\(K\\)Sv6Kpe[]), with total energy (\\(E\\)Sv6Kpe[]) being the sum of both (\\(E=K+U\\)Sv6Kpe[]), and kinetic energy being the negative of the total energy (\\(K=−E\\)) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : <br/><strong>Statement (I) : </strong>The dimensions of Planck’s constant and angular momentum are same. <br/><strong>Statement (II) : </strong>In Bohr’s model electron revolve around the nucleus only in those orbits for which angular momentum is integral multiple of Planck’s constant. <br/>In the light of the above statements, choose the most appropriate answer from the options given below : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Both Statement I and Statement II are correct </p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is incorrect but Statement II is correct </p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is correct but Statement II is incorrect </p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are incorrect </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -536,7 +540,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>**Statement I**: \u003cbr/>Planck’s constant \\( h \\) has dimensions of angular momentum:\u003c/p> \u003cp>\\[\u003cbr/>[h] = [M L^2 T^{-1}] = \\text{same as angular momentum}\u003cbr/>\\]\u003c/p> \u003cp>✅ So, Statement I is **correct**.\u003c/p> \u003cp>**Statement II**: \u003cbr/>In Bohr’s model, angular momentum is quantized as:\u003c/p> \u003cp>\\[\u003cbr/>mvr = n h / (2\\pi) = n \\hbar\u003cbr/>\\]\u003c/p> \u003cp>Which means electron revolves only in those orbits where angular momentum is integral multiple of Planck's constant \\( \\hbar \\). \u003cbr/>✅ So, Statement II is **also correct**.\u003c/p> \u003cp>**Conclusion**: Both statements are correct. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An alpha particle approaches a gold nucleus in Geiger-Marsden experiment with kinetic energy K. It momentarily stops at a distance \(d\) from the nucleus and reverses its direction. Then d is proportional to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{\sqrt{\mathrm{K}}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{\mathrm{K}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{\mathrm{K}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>K</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -548,7 +552,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> The electric potential energy (\\(U\\)) between the alpha particle (charge\\(+2e\\)) and the gold nucleus (charge\\(+Ze\\)) at a distance \\(d\\)is given by     \\(U=k\\frac{(2e)(Ze)}{d}=\\frac{2kZ{e}^{2}}{d}\\), where \\(k\\)is Coulomb's constant.        \u003c/li> \u003c/ul>  \u003cul> \u003cli>\u003cstrong>Equating energies\u003c/strong>: By setting \\(K=U\\), we get    \\(K=\\frac{2kZ{e}^{2}}{d}\\)       \\(d=\\frac{2kZ{e}^{2}}{K}\\) the equation shows that \\(d\\)is directly proportional to \\(\\frac{1}{K}\\)    \u003c/li> \u003c/ul>     \u003cbr/>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Balmer series of hydrogen atom, as the wavelength of spectral lines decreases, they appear</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>equally spaced and equally intense.</p></span></div><div class="option"><span class="key">b</span><span><p>further apart and stronger in intensity.</p></span></div><div class="option"><span class="key">c</span><span><p>closer together and stronger in intensity.</p></span></div><div class="option"><span class="key">d</span><span><p>closer together and weaker in intensity.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -560,7 +564,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>As the wavelength of spectral lines in the Balmer Series of H-atoms drops, they appear close together and have a lower intensity due to transition probability.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The transition of electron that gives rise to the formation of the second spectral line of the Balmer series in the spectrum of hydrogen atom corresponds to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\) and \({\mathrm{n}}_{\mathrm{i}}=3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=3\) and \({\mathrm{n}}_{\mathrm{i}}=4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\) and \({\mathrm{n}}_{\mathrm{i}}=4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\)and \({\mathrm{n}}_{\mathrm{i}}=\infty\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -572,7 +576,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>for second line of Balmer series, \\({\\mathrm{n}}_{\\mathrm{f}}=2,{\\mathrm{n}}_{\\mathrm{i}}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If radius of first Bohr's orbit of H-atom is <em>a</em>. Then find the radius of 2nd Bohr's orbit of H-atom.</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>8a</p></span></div><div class="option"><span class="key">b</span><span><p>4a</p></span></div><div class="option"><span class="key">c</span><span><p>2a</p></span></div><div class="option"><span class="key">d</span><span><p>a</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -584,7 +588,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Step 1: Bohr's Radius Formula\u003c/strong> \u003cp>The radius of the \\(n\\)nth orbit in the Bohr model is given by:\u003c/p> \u003cp>\\({r}_{n}={n}^{2}{r}_{1}\\)​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({r}_{n}\\)​ is the radius of the \\(n\\)nth orbit.\u003c/li> \u003cli>\\({r}_{1}\\)​ is the radius of the first orbit.\u003c/li> \u003cli>\\(n\\) is the principal quantum number.\u003c/li> \u003c/ul> \u003cstrong>Step 2: Given Data\u003c/strong> \u003cul> \u003cli>The radius of the \u003cstrong>first Bohr orbit\u003c/strong> is \u003cstrong>\\(a\\)\u003c/strong>.\u003c/li> \u003cli>We need to find the radius of the \u003cstrong>second Bohr orbit\u003c/strong> (\\(n=2\\)).\u003c/li> \u003c/ul> \u003cp>Using the formula:\u003c/p> \u003cp>\\({r}_{2}={2}^{2}{r}_{1}=4{r}_{1}\\)\u003c/p> \u003cp>​ \\({r}_{2}=4a\\)\u003c/p> \u003cstrong>Final Answer:\u003c/strong> \u003cp>\\(B\\ 4a\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron makes a transition from \(n=2\) level to \(n=1\) level in the Bohr model of a hydrogen atom. Its period of revolution :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>increases by \(87.5 \%\)</p></span></div><div class="option"><span class="key">b</span><span><p>decreases by \(87.5 \%\)</p></span></div><div class="option"><span class="key">c</span><span><p>increases by \(43.75 \%\)</p></span></div><div class="option"><span class="key">d</span><span><p>decreases by \(43.75 \%\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -596,7 +600,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\\( \\text{Given: Electron transition from } n = 2 \\to n = 1 \\) \\( \\text{In the Bohr model:} \\quad r_n \\propto n^2, \\quad v_n \\propto \\frac{1}{n} \\) \\( T_n = \\frac{2\\pi r_n}{v_n} \\propto \\frac{n^2}{1/n} = n^3 \\) \\( \\text{Hence, } T_n \\propto n^3 \\) \\( \\frac{T_2}{T_1} = \\left(\\frac{2}{1}\\right)^3 = 8 \\) \\( \\text{When the electron goes from } n=2 \\text{ to } n=1, \\text{ the period becomes } \\frac{1}{8} \\text{ of its initial value.} \\) \\( \\text{Percentage decrease} = \\frac{T_2 - T_1}{T_2} \\times 100 = \\frac{8T_1 - T_1}{8T_1} \\times 100 = \\frac{7}{8} \\times 100 = 87.5\\% \\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement 1: Graph of frequency f of X ray and atomic number Z of heavy nucleus is not straight line, in X ray emission.<br/>Statement 2: Graph of square root of frequency \(\sqrt{\mathrm{f}}\) of X ray and atomic number Z of heavy nucleus is straight line, in X ray emission.</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement 1 is correct and statement 2 is correct</p></span></div><div class="option"><span class="key">b</span><span><p>Statement 1 is incorrect and statement 2 is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Statement 1 is correct and statement 2 is incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement 1 is incorrect and statement 2 is incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -608,7 +612,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Moseley's law states that \\(\\sqrt{f}=k\\left(z-b\\right)\\), where k is a constant and b is the screening constant. This implies that the square root of frequency is directly proportional to Z, resulting in a straight-line graph. However, f itself does not follow a linear relationship with Z. Moseley's law is primarily valid for \u003cstrong>heavy elements\u003c/strong>, and deviations occur for light atoms due to weaker screening effects and other relativistic considerations. Hence, both statements are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Infrared light of wavelength \(900\text{ }\text{nm}\) is used for muscle pain relief. Which of the following transitions in the hydrogen atom can produce this wavelength?</p> <p>(shift 1 Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Lyman: \(3\to 1\)</p></span></div><div class="option"><span class="key">b</span><span><p> Balmer: \(5\to 2\)</p></span></div><div class="option"><span class="key">c</span><span><p> Paschen: \(5\to 3\)</p></span></div><div class="option"><span class="key">d</span><span><p>Paschen: \(\mathrm{∞}\to 3\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -620,7 +624,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The wavelength of light emitted during an electronic transition in the hydrogen atom is determined using the \u003cstrong>Rydberg formula\u003c/strong>:\u003c/p> \u003cp>\\(\\frac{1}{\\lambda }=R(\\frac{1}{{n}_{1}^{2}}−\\frac{1}{{n}_{2}^{2}}),\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(R=1.097\\times 1{0}^{7}\\text{ }{\\text{m}}^{−1}\\) (Rydberg constant),\u003c/li> \u003cli>\\({n}_{1}\\)​ and \\({n}_{2}\\) are the principal quantum numbers (\\({n}_{2}>{n}_{1}\\)​).\u003c/li> \u003c/ul> \u003cstrong>Step 1: Identify the Series\u003c/strong>: \u003cul> \u003cli>\u003cstrong>Lyman Series\u003c/strong>: Transitions to \\({n}_{1}=1\\) (UV region).\u003c/li> \u003cli>\u003cstrong>Balmer Series\u003c/strong>: Transitions to \\({n}_{1}=2\\) (visible region).\u003c/li> \u003cli>\u003cstrong>Paschen Series\u003c/strong>: Transitions to \\({n}_{1}=3\\) (infrared region).\u003c/li> \u003c/ul> \u003cp>Since \\(900\\text{ }\\text{nm}\\) falls in the \u003cstrong>infrared region\u003c/strong>, the transition must belong to the \u003cstrong>Paschen series\u003c/strong>.\u003c/p> \u003cstrong>Step 2: Verify Wavelength\u003c/strong>: \u003cp>For \\({n}_{1}=3\\) (Paschen series) and \\({n}_{2}=\\mathrm{∞}\\):\u003c/p> \u003cp>\\(\\frac{1}{\\lambda }=R(\\frac{1}{{3}^{2}}−\\frac{1}{{\\mathrm{∞}}^{2}}),\\)\u003c/p> \u003cp> \\(\\frac{1}{\\lambda }=R(\\frac{1}{9}−0),\\)\u003c/p> \u003cp> \\(\\lambda =\\frac{1}{R⋅\\frac{1}{9}}=\\frac{9}{R}\\mathrm{.}\\)λ\u003c/p> \u003cp>Substitute \\(R=1.097\\times 1{0}^{7}\\text{ }{\\text{m}}^{−1}\\)\u003c/p> \u003cp>\\(\\lambda =\\frac{9}{1.097\\times 1{0}^{7}}=8.2\\times 1{0}^{−7}\\text{ }\\text{m}=820\\text{ }\\text{nm}\\mathrm{.}\\)\u003c/p> \u003cp>The transition \\({n}_{2}=\\mathrm{∞}\\to {n}_{1}=3\\) in the Paschen series matches the infrared wavelength range close to \\(900\\text{ }\\text{nm}\\).\u003c/p> \u003cp>\u003cstrong>Correct Answer\u003c/strong>: \u003cstrong>(d)\u003c/strong> Paschen: \\(\\mathrm{∞}\\to 3\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius of the \(\mathrm{n}^{\text {th }}\) orbit in Bohr model of hydrogen atom is proportional to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{n^2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{n}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{\mathrm{n}}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -632,7 +636,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In the \u003cstrong>Bohr model of the hydrogen atom\u003c/strong>, the radius of the \\({n}^{th}\\)nth orbit is given by:\u003c/p> \u003cp>\\({r}_{n}={n}^{2}{a}_{0}\\)​\u003c/p> \u003cp>where \\({a}_{0}\\)​ is the Bohr radius (a constant).\u003cbr/>\\({r}_{n}\\propto {n}^{2}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Considering Bohr's atomic model for hydrogen atom :<br/>(A) the energy of H atom in ground state is same as energy of \({\mathrm{He}}^{+}\)ion in its first excited state.<br/>(B) the energy of H atom in ground state is same as that for \({\mathrm{Li}}^{++}\)ion in its second excited state.<br/>(C) the energy of H atom in its ground state is same as that of \({\mathrm{He}}^{+}\)ion for its ground state.<br/>(D) the energy of \({\mathrm{He}}^{+}\)ion in its first excited state is same as that for \({\mathrm{Li}}^{++}\)ion in its ground state</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B), (D) only </p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B) only</p></span></div><div class="option"><span class="key">c</span><span><p> (A), (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (C) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -644,7 +648,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>From Bohr's model, energy of hydrogen-like species is:\u003c/p> \u003cp>\\[\u003cbr/>E_n = -13.6 \\cdot \\frac{Z^2}{n^2} \\, \\text{eV}\u003cbr/>\\]\u003c/p> \u003cp>**(A)** \u003cbr/>H atom ground state: \\( Z = 1, n = 1 \\Rightarrow E = -13.6 \\, \\text{eV} \\) \u003cbr/>He\\(^+\\) first excited state: \\( Z = 2, n = 2 \\Rightarrow E = -13.6 \\cdot \\frac{4}{4} = -13.6 \\, \\text{eV} \\) ✅\u003c/p> \u003cp>**(B)** \u003cbr/>H ground: \\( -13.6 \\, \\text{eV} \\) \u003cbr/>Li\\(^{++}\\) second excited state: \\( Z = 3, n = 3 \\Rightarrow E = -13.6 \\cdot \\frac{9}{9} = -13.6 \\, \\text{eV} \\) ✅\u003c/p> \u003cp>**(C)** \u003cbr/>H ground: \\( -13.6 \\, \\text{eV} \\) \u003cbr/>He\\(^+\\) ground: \\( Z = 2, n = 1 \\Rightarrow E = -13.6 \\cdot 4 = -54.4 \\, \\text{eV} \\) ❌\u003c/p> \u003cp>**(D)** \u003cbr/>He\\(^+\\) first excited: \\( Z = 2, n = 2 \\Rightarrow E = -13.6 \\cdot \\frac{4}{4} = -13.6 \\, \\text{eV} \\) \u003cbr/>Li\\(^{++}\\) ground: \\( Z = 3, n = 1 \\Rightarrow E = -13.6 \\cdot 9 = -122.4 \\, \\text{eV} \\) ❌\u003c/p> \u003cp>Correct statements: **(A), (B)**\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The transition of electron that gives rise to the formation of the second spectral line of the Balmer series in the spectrum of hydrogen atom corresponds to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n _{ f }=2\) and \(n _{ i }=3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n _{ f }=3\) and \(n _{ i }=4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n _{ f }=2\) and \(n _{ i }=4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n _{ f }=2\) and \(n _{ i }=\infty\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -656,7 +660,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For hydrogen atom, the Balmer series corresponds to transitions ending at \\({n}_{2}=2\\)\u003cbr/>Thus, the general transition is \\({n}_{i}\\to 2,where{n}_{i}=3,4,5...\\)\u003cbr/>The first Balmer line \\(({H}_{\\alpha })\\) : \\({n}_{i}=3\\to 2\\)\u003cbr/>The second Balmer line (\\({H}_{\\beta }\\)) : \\({n}_{i}=4\\to 2\\)\u003cbr/>Hence, the transition giving the second Balmer line is \\({n}_{i}=4\\to {n}_{f}=2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of the shortest wavelength of Balmer series to the shortest wavelength of Lyman series for hydrogen atom is: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2 : 1</p></span></div><div class="option"><span class="key">b</span><span><p>1 : 4</p></span></div><div class="option"><span class="key">c</span><span><p>1 : 2</p></span></div><div class="option"><span class="key">d</span><span><p>4 : 1 </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -668,7 +672,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> for Balmer series limit, \\(\\frac{1}{{\\lambda }_{B}}\\text{ }=R\\left[\\frac{1}{{(2)}^{2}}−\\frac{1}{{∞}^{2}}\\right]\\text{ }=\\frac{R}{4}\\text{ }\\)\u003c/p> \u003cp>for Lyman series limit, \\(\\frac{1}{{\\lambda }_{l}}\\text{ }=k\\left[\\frac{1}{{(1)}^{2}}−\\frac{1}{{∞}^{2}}\\right]\\text{ }=R\\) \u003c/p> \u003cp>\\(\\left(\\frac{{\\lambda }_{B}}{{\\lambda }_{l}}\\text{ }=\\text{ }4\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The transition of electron that gives rise to the formation of the second spectral line of the Balmer series in the spectrum of hydrogen atom corresponds to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\) and \({\mathrm{n}}_{\mathrm{i}}=3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=3\) and \({\mathrm{n}}_{\mathrm{i}}=4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\) and \({\mathrm{n}}_{\mathrm{i}}=4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{n}}_{\mathrm{f}}=2\)and \({\mathrm{n}}_{\mathrm{i}}=\infty\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -680,7 +684,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>for second line of Balmer series, \\({\\mathrm{n}}_{\\mathrm{f}}=2,{\\mathrm{n}}_{\\mathrm{i}}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is correct for alpha particle scattering experiment?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>For angle of scattering \(\theta \approx 0\), the impact parameter is small.</p></span></div><div class="option"><span class="key">b</span><span><p>For angle of scattering \(\theta ≃\pi\), the impact parameter is large.</p></span></div><div class="option"><span class="key">c</span><span><p>The number of alpha particles undergoing head-on collision is small.</p></span></div><div class="option"><span class="key">d</span><span><p>The experiment provides an estimate of the upper limit to the size of target atom.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -692,7 +696,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In the alpha particle scattering experiment, the impact parameter is the perpendicular distance between the path of an alpha particle and the center of the nucleus. The scattering angle is the angle at which the alpha particle is deflected. The correct statements are as follows:\u003c/p> \u003cp>(A) For a scattering angle \\(\\theta \\approx 0\\), the impact parameter is large because the alpha particle passes far from the nucleus and experiences a small deflection.\u003c/p> \u003cp>(B) For a scattering angle \\(\\theta \\approx \\pi\\), the impact parameter is small because the alpha particle passes very close to the nucleus and experiences a large deflection.\u003c/p> \u003cp>(C) The number of alpha particles undergoing head-on collision is small because head-on collisions are rare events.\u003c/p> \u003cp>(D) The experiment provides an estimate of the upper limit to the size of the target nucleus because the closest approach of the alpha particles gives information about the size of the nucleus.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The transition of electron that gives rise to the formation of the second spectral line of the Balmer series in the spectrum of hydrogen atom corresponds to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(n _{ f }=2\) and \(n _{ i }=3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(n _{ f }=3\) and \(n _{ i }=4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n _{ f }=2\) and \(n _{ i }=4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n _{ f }=2\) and \(n _{ i }=\infty\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -704,7 +708,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For hydrogen atom, the Balmer series corresponds to transitions ending at \\({n}_{2}=2\\)\u003cbr/>Thus, the general transition is \\({n}_{i}\\to 2,where{n}_{i}=3,4,5...\\)\u003cbr/>The first Balmer line \\(({H}_{\\alpha })\\) : \\({n}_{i}=3\\to 2\\)\u003cbr/>The second Balmer line (\\({H}_{\\beta }\\)) : \\({n}_{i}=4\\to 2\\)\u003cbr/>Hence, the transition giving the second Balmer line is \\({n}_{i}=4\\to {n}_{f}=2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of maximum frequency and minimum frequency of light emitted in Balmer series of hydrogen spectrum, in Bohr's model is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{11}{9}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{9}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{11}{7}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{16}{7}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -716,7 +720,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{gathered}\u003cbr/>\\nu=R_\\nu\\left(\\frac{1}{n_f^2}-\\frac{1}{n_i^2}\\right) \\\\\u003cbr/>\\nu_{\\max }=R_\\nu\\left(\\frac{1}{2^2}-\\frac{1}{\\infty^2}\\right) \\\\\u003cbr/>\\nu_{\\max }=R_\\nu\\left(\\frac{1}{4}-0\\right)=\\frac{R_\\nu}{4} \\\\\u003cbr/>\\nu_{\\min }=R_\\nu\\left(\\frac{1}{2^2}-\\frac{1}{3^2}\\right) \\\\\u003cbr/>\\nu_{\\min }=R_\\nu\\left(\\frac{1}{4}-\\frac{1}{9}\\right) \\\\\u003cbr/>\\nu_{\\min }=R_\\nu\\left(\\frac{9-4}{36}\\right)=\\frac{5 R_\\nu}{36} \\\\\u003cbr/>\\frac{\\nu_{\\max }}{\\nu_{\\min }}=\\frac{R_\\nu / 4}{5 R_\\nu / 36} \\\\\u003cbr/>\\frac{\\nu_{\\max }}{\\nu_{\\min }}=\\frac{1 / 4}{5 / 36}=\\frac{1}{4} \\times \\frac{36}{5} \\\\\u003cbr/>\\frac{\\nu_{\\max }}{\\nu_{\\min }}=\\frac{36}{20}=\\frac{9}{5}\u003cbr/>\\end{gathered}\u003cbr/>\\end{equation} \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion (A) : The potential energy of an electron revolving in any stationary orbit in a hydrogen atom is positive.<br/>Reason (R) : The total energy of a charged particle is always positive.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).</p></span></div><div class="option"><span class="key">b</span><span><p>Both Assertion (A) and Reason (R) are true, but Reason (R) is not the correct explanation of Assertion (A).</p></span></div><div class="option"><span class="key">c</span><span><p>Assertion (A) is true, but Reason (R) is false.</p></span></div><div class="option"><span class="key">d</span><span><p>Assertion (A) is false and Reason (R) is also false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -728,7 +732,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct option is : (D)\u003c/p> \u003cp>Assertion (A) : False: The potential energy of an electron in an orbit is negative, as it is bound to the nucleus.\u003c/p> \u003cp>Reason (R) : False: Total energy of a charged particle can be negative (e.g., bound systems like atoms) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For which one of the following, Bohr model is not valid?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Hydrogen atom</p></span></div><div class="option"><span class="key">b</span><span><p>Singly ionised helium atom (\(H{e}^{+}\))</p></span></div><div class="option"><span class="key">c</span><span><p>Deuteron atom</p></span></div><div class="option"><span class="key">d</span><span><p>Singly ionised neon atom (\(N{e}^{+}\))</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -740,7 +744,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The Bohr model is strictly applicable only to single-electron species (also known as hydrogenic or hydrogen-like atoms). Its formulation considers only the electrostatic force between a single electron and a positively charged nucleus, failing to account for the complex electron-electron repulsions present in multi-electron systems.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The total energy of an electron in the \( \mathrm{n}^{\text {th }} \) stationary orbit of the hydrogen atom can be obtained by. </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{E}_{\mathrm{n}}=-\frac{13.6}{\mathrm{n}^{2}} \mathrm{eV} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{E}_{\mathrm{n}}=-\frac{1.36}{\mathrm{n}^{2}} \mathrm{eV} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{E}_{\mathrm{n}}=-13.6 \times \mathrm{n}^{2} \mathrm{eV} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{E}_{\mathrm{n}}=\frac{13.6}{\mathrm{n}^{2}} \mathrm{eV} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -752,7 +756,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The total energy of an electron in the \\(n^{\\text {th }}\\) stationary orbit of the hydrogen atom can be obtained by the formula \\(E _{ n }=-\\frac{ 1 3 . 6 }{ n ^{ 2 }} ~ e V\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron and proton are separated by a large distance. The electron starts approaching the proton with energy \(3 eV\). The proton captures the electron and forms a hydrogen atom in second excited state. The resulting photon is incident on a photosensitive metal of threshold wavelength 4000 \(\overset{\mathrm{o}}{\mathrm{A}}\). What is the maximum kinetic energy of the emitted photoelectron?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1.41 eV<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>7.61 eV \text {. }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3.3 eV<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>No photoelectron would be emitted</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -764,7 +768,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We have given the energy of electron \\(=3 eV\\) In 2nd excited state, \\(E=-\\frac{(13.6)}{9}=-1.51 eV\\) Energy of photon, \\(\\frac{h c}{\\lambda}=4.512 eV\\) \u003c/p> \u003cp>\\(K.{E}_{\\max }=\\frac{hc}{\\lambda }−ϕ=4.51−\\left(\\frac{hc}{{\\lambda }_{\\text{Threshold}}}\\right)\\)\u003c/p> \u003cp>\\(=4.51−\\frac{12400}{4000}=1.41\\text{ eV}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion (A) : An alpha particle is moving towards a gold nucleus. The impact parameter is maximum for the scattering angle of \(180^\circ\).<br/>Reason (R) : The impact parameter in an alpha particle scattering experiment does not depend upon the atomic number of the target nucleus.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>If both Assertion (A) and Reason (R) are true and Reason (R) is correct explanation of Assertion (A).</p></span></div><div class="option"><span class="key">b</span><span><p>If both Assertion (A) and Reason (R) are true and Reason (R) is not the correct explanation of Assertion (A).</p></span></div><div class="option"><span class="key">c</span><span><p>If Assertion (A) is true but Reason (R) is false.</p></span></div><div class="option"><span class="key">d</span><span><p>If both Assertion (A) and Reason (R) are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -776,7 +780,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>\u003cstrong>Assertion (A):Sv6Kpe[]\u003c/strong> The impact parameter is the perpendicular distance from the center of the nucleus to the initial trajectory of the alpha particle. The relationship between the impact parameter (\\(b\\)Sv6Kpe[]) and the scattering angle (\\(\\theta\\)Sv6Kpe[]) is given by the formula:\u003cbr/>  \\(b=\\frac{Z{e}^{2}\\cot (\\theta /2)}{4\\pi {ϵ}_{0}E}\\) For a scattering angle of \\(\\theta ={180}^{∘}\\), \\(\\cot ({180}^{∘}/2)=\\cot ({90}^{∘})=0\\). Therefore, the impact parameter for a   \\({180}^{∘}\\)scattering angle is \u003cstrong>minimum (zero)\u003c/strong>, not maximum. This corresponds to a head-on collision. For large impact parameters, the scattering angle is small.    Sv6Kpe[]\u003c/li> \u003cli>\u003cstrong>Reason (R):Sv6Kpe[]\u003c/strong> The formula clearly shows that the impact parameter (\\(b\\)Sv6Kpe[]) is directly proportional to the atomic number (\\(Z\\)Sv6Kpe[]) of the target nucleus. Therefore, the impact parameter \u003cem>doesSv6Kpe[]\u003c/em> depend upon the atomic number of the target nucleus\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Hydrogen atom initially in the ground state, absorbs a photon which excites it to \(n =5\) level. The wavelength of the photon is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(975 nm\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(740 nm\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(523 nm\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(95 nm\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -788,7 +792,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>Hydrogen atom initially in ground state \\({n}_{1}=1\\)\u003c/p> \u003c/li> \u003cli> \u003cp>Excited to \\({n}_{2}=5\\)\u003c/p> \u003c/li> \u003cli> \u003cp>We need\u003cstrong> \u003c/strong>wavelength λ of absorbed photon.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\\(E=13.6(\\frac{1}{{n}_{1}^{2}}−\\frac{1}{{n}_{2}^{2}})\\text{ eV}\\)\u003c/p> \u003cp>Substitute \\({n}_{1}=1,{n}_{2}=5\\)\u003c/p> \u003cp>\\(E=13.6(1−\\frac{1}{25})\\)\u003c/p> \u003cp>\\(E=13.6\\times \\frac{24}{25}=13.056\\text{ eV}\\)\u003c/p> \u003cp>\\(E=\\frac{hc}{\\lambda }\\)\u003c/p> \u003cp>\\(\\lambda =\\frac{hc}{E}\\)​\u003c/p> \u003cp>Using hc=1240 eV\u003c/p> \u003cp>\\(\\lambda =\\frac{1240}{13.056}\\approx 95.0\\text{ nm}\\)\u003c/p> \u003cp>\\(\\lambda =95\\text{ nm}\\)​\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A hydrogen atom makes a transition from \(n =5\) to \(n =1\) orbit. The wavelength of photon emitted is \(\lambda\). The wavelength of photon emitted when it makes a transition from \(n =5\) to \(n =2\) orbit is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{8}{7} \lambda\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{16}{7} \lambda\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{24}{7} \lambda\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{32}{7} \lambda\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -800,7 +804,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \u003c/p> \u003cp>The Rydberg formula for the wavelength \\((\\lambda)\\) of a photon emitted during a transition in a hydrogen atom is:\u003c/p> \u003cp>\\[\u003cbr/>\\frac{1}{\\lambda} = R_H \\left( \\frac{1}{n_f^2} - \\frac{1}{n_i^2} \\right)\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\textbf{Transition from } n_i = 5 \\text{ to } n_f = 1\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\frac{1}{\\lambda} \u003cbr/>= R_H \\left( \\frac{1}{1^2} - \\frac{1}{5^2} \\right)\u003cbr/>= R_H \\left( 1 - \\frac{1}{25} \\right)\u003cbr/>= R_H \\left( \\frac{24}{25} \\right)\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\textbf{Transition from } n_i = 5 \\text{ to } n_f = 2\u003cbr/>\\]\u003c/p> \u003cp>Let the new wavelength be \\(\\lambda'\\).\u003c/p> \u003cp>\\[\u003cbr/>\\frac{1}{\\lambda'} \u003cbr/>= R_H \\left( \\frac{1}{2^2} - \\frac{1}{5^2} \\right)\u003cbr/>= R_H \\left( \\frac{1}{4} - \\frac{1}{25} \\right)\u003cbr/>= R_H \\left( \\frac{25 - 4}{100} \\right)\u003cbr/>= R_H \\left( \\frac{21}{100} \\right)\u003cbr/>\\]\u003c/p> \u003cp>Ratio of the Wavelengths\u003c/p> \u003cp>To express \\(\\lambda'\\) in terms of \\(\\lambda\\), divide the equation for the second transition by the first:\u003c/p> \u003cp>\\[\u003cbr/>\\frac{1 / \\lambda'}{1 / \\lambda} \u003cbr/>= \\frac{R_H (21/100)}{R_H (24/25)}\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\frac{\\lambda}{\\lambda'} \u003cbr/>= \\frac{21/100}{24/25} \u003cbr/>= \\frac{21}{100} \\times \\frac{25}{24}\u003cbr/>= \\frac{21}{96}\u003cbr/>= \\frac{7}{32}\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\textbf{Solving for } \\lambda'\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\lambda' = \\frac{32}{7} \\lambda\u003cbr/>\\]\u003c/p> \u003cp>\\[\u003cbr/>\\boxed{\\lambda' = \\frac{32}{7} \\lambda}\u003cbr/>\\]\u003c/p> \u003cp>Thus, the wavelength of the photon emitted during the transition from \\(n_i = 5\\) to \\(n_f = 2\\) is \\(\\dfrac{32}{7}\\) times the wavelength of the photon emitted during the transition from \\(n_i = 5\\) to \\(n_f = 1.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In hydrogen spectrum, the shortest wavelength in the Balmer series is \(\lambda\). The shortest wavelength in the Bracket series is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\lambda\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\lambda\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(16\lambda\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2\lambda\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -812,7 +816,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\frac{1}{\\lambda }=R(\\frac{1}{{n}_{1}^{2}}−\\frac{1}{{n}_{2}^{2}})\\)\u003c/p> \u003cp>\u003cstrong>Balmer series:\u003c/strong> \\({n}_{1}=2\\), for smallest λ\u003c/p> \u003cp>\\({n}_{2}=\\mathrm{∞}\\)\u003c/p> \u003cp>\\(\\frac{1}{{\\lambda }_{B}}=R(\\frac{1}{{2}^{2}}−0)=\\frac{R}{4}\\) \\(\\Rightarrow {\\lambda }_{B}=\\frac{4}{R}\\)​\u003c/p> \u003cp>\u003cstrong>Brackett series:\u003c/strong> \\({n}_{1}=4\\), for smallest λ\u003c/p> \u003cp>\\({n}_{2}=\\mathrm{∞}\\)\u003c/p> \u003cp>\\(\\frac{1}{{\\lambda }_{Br}}=R(\\frac{1}{{4}^{2}}−0)=\\frac{R}{16}\\)​ \\(\\Rightarrow {\\lambda }_{Br}=\\frac{16}{R}\\)​\u003c/p> \u003cp>Take Ratio —\u003c/p> \u003cp> \\(\\Rightarrow {\\lambda }_{Br}=4{\\lambda }_{B}\\)​\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius of the \(n ^{\text {th }}\) orbit in Bohr model of hydrogen atom is proportional to :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{1}{ n ^2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{ n }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(n ^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(n\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -824,7 +828,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In the Bohr model of the hydrogen atom, the radius of the \\({n}^{\\text{th}}\\)nth orbit is given by:\u003c/p> \u003cp>\\({r}_{n}={n}^{2}{a}_{0}\\)​\u003c/p> \u003cp>where \\({a}_{0}\\) is the Bohr radius (a constant).\u003c/p> \u003cp>Hence, the radius \\({r}_{n}\\)​ is directly proportional to the square of the principal quantum number n:\u003c/p> \u003cp>\\({r}_{n}\\propto {n}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle of mass m is moving around the origin with a constant force F pulling it towards the origin. If Bohr model is used to describe its motion, the radius of the \({\mathrm{n}}^{\text{th }}\) orbit and the particle's speed v in the orbit depend on n as</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{2/3};\mathrm{v}\propto {\mathrm{n}}^{1/3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{4/3};\mathrm{v}\propto {\mathrm{n}}^{-1/3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{1/3};\mathrm{v}\propto {\mathrm{n}}^{1/3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{r}\propto {\mathrm{n}}^{1/3};\mathrm{v}\propto {\mathrm{n}}^{2/3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -836,7 +840,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, force is constant\u003c/p> \u003cp>\\(F=\\frac{m{v}^{2}}{r}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{v}^{2}}{r}=\\text{constant}\\)\u003c/p> \u003cp>\\(\\Rightarrow r\\propto {v}^{2}\\ldots \\left(1\\right)\\)\u003c/p> \u003cp>\\(L=mvr=\\frac{nh}{2\\pi }\\) ...(2)\u003c/p> \u003cp>⇒ on solving equation (1) and equation (2)\u003cbr/>\\(v\\propto {n}^{1/3}\\) and \\(r\\propto {n}^{2/3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The energy required to break one bond in DNA is \( 10^{-20} \mathrm{~J} \). This value in \( \mathrm{eV} \) is nearly.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 0.6 \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( 0.06 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 0.006 \)</p></span></div><div class="option"><span class="key">d</span><span><p> 6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -848,7 +852,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{array}{l}1 eV =1.6 \\times 10^{-19} J \\\\ 1 J=\\frac{1}{1.6 \\times 10^{-19}} eV \\\\ 10^{-20} J=\\frac{10^{-20}}{1.6 \\times 10^{-19}} eV \\\\ =0.06 eV \\end{array}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The radius of inner most orbit of hydrogen atom is \(5.3 \times 10^{-11} \mathrm{~m}\). What is the radius of third allowed orbit of hydrogen atom?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.06Å</p></span></div><div class="option"><span class="key">b</span><span><p>1.59Å</p></span></div><div class="option"><span class="key">c</span><span><p>4.77Å</p></span></div><div class="option"><span class="key">d</span><span><p>0.53Å</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

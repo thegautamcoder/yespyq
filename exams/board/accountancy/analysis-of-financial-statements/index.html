@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Accountancy","item":"https://yespyq.com/exams/board/accountancy/"},{"@type":"ListItem","position":5,"name":"Analysis of Financial Statements","item":"https://yespyq.com/exams/board/accountancy/analysis-of-financial-statements/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Analysis of Financial Statements</h1>
       <p>10 Board Accountancy previous year questions on <b>Analysis of Financial Statements</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Under which Sub head we show the Security Premium in Balance Sheet?</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Reserve and Surplus</p></span></div><div class="option"><span class="key">b</span><span><p>Share Capital</p></span></div><div class="option"><span class="key">c</span><span><p>Equity Share Capital</p></span></div><div class="option"><span class="key">d</span><span><p>Shares and Liabilities</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Other income is ₹5,00,000 which is 25% of Revenue from operations. Employees benefit Expenses are 30% of the Revenue from operation. Tax rate is 40%. Net profit after tax will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹ 10,25,000</p></span></div><div class="option"><span class="key">b</span><span><p>₹ 11,40,000</p></span></div><div class="option"><span class="key">c</span><span><p>₹ 10,75,000</p></span></div><div class="option"><span class="key">d</span><span><p>₹ 10,35,000</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Other Income = ₹5,00,000 = 25 % of Revenue from operations.\u003c/p> Revenue from Operations = \\(\\frac{5,00,000}{0.25}=₹20,00,000\\)   Employees benefit Expenses = \\(20,00,000\\times \\frac{30}{100}=₹6,00,000\\)   Profit before tax = \\(20,00,000+5,00,000-6,00,000=₹19,00,000\\)   Tax Rate = 40% or 0.4   Profit after tax = Profit before tax (1-tax rate) \\(=19,00,000\\times \\left(1-0.4\\right)\\) = ₹11,40,000   Therefore, \u003cstrong>Option B\u003c/strong> is correct.","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Balance Sheet of companies is prepared in :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Horizontal form </p></span></div><div class="option"><span class="key">b</span><span><p> Vertical form </p></span></div><div class="option"><span class="key">c</span><span><p> Either (A) or (B) </p></span></div><div class="option"><span class="key">d</span><span><p> None of these </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(B) Vertical format\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>As per the Companies Act, a company’s Balance Sheet is required to be prepared in the Vertical format only. The horizontal (T-form) format is not used for companies.\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Horizontal format — Incorrect\u003cbr/>Companies are not allowed to prepare Balance Sheet in horizontal format as per Companies Act.\u003c/p> \u003cp>(C) (A) or (B) — Incorrect\u003cbr/>Only vertical format is permitted, not both.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Since vertical format is correct, this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Vertical Analysis also known as :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Fluctuation Analysis </p></span></div><div class="option"><span class="key">b</span><span><p> Static Analysis </p></span></div><div class="option"><span class="key">c</span><span><p> Horizontal Analysis </p></span></div><div class="option"><span class="key">d</span><span><p> None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(B) Static Analysis\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Vertical Analysis studies the relationship of different items within the same financial statement for a single period. Since it is based on data of one period only, it is called Static Analysis.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Dynamic Analysis — Incorrect\u003cbr/>Dynamic analysis studies changes over several years, which is not done in vertical analysis.\u003c/p> \u003cp>(C) Horizontal Analysis — Incorrect\u003cbr/>Horizontal analysis compares figures of two or more years, not percentages within the same year.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Since Static Analysis is correct, this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Analysis of financial statement includes :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Trading A/C </p></span></div><div class="option"><span class="key">b</span><span><p> Profit &amp; Loss Statement </p></span></div><div class="option"><span class="key">c</span><span><p> Balance Sheet </p></span></div><div class="option"><span class="key">d</span><span><p> All of the above</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(D) All of the above\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Financial statement analysis involves the study of all major financial statements, including the Trading Account, Profit and Loss Statement, and Balance Sheet, to understand the financial performance and position of the business. Therefore, all are included.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Trading Account — Incorrect (alone)\u003cbr/>It is part of financial statements, but analysis is not limited to this only.\u003c/p> \u003cp>(B) Profit and Loss Statement — Incorrect (alone)\u003cbr/>It shows profitability, but balance sheet is also analyzed.\u003c/p> \u003cp>(C) Balance Sheet — Incorrect (alone)\u003cbr/>It shows financial position, but income statements are also required.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Interpretation of Financial Statement includes :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Criticism &amp; Analysis </p></span></div><div class="option"><span class="key">b</span><span><p> Comparison and trend study </p></span></div><div class="option"><span class="key">c</span><span><p> Drawing Conclusion </p></span></div><div class="option"><span class="key">d</span><span><p> All of the above</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(D) All of the above\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Interpretation of financial statements involves:\u003c/p> \u003cul> \u003cli> \u003cp>Analysis and evaluation of data,\u003c/p> \u003c/li> \u003cli> \u003cp>Comparison and trend study over periods, and\u003c/p> \u003c/li> \u003cli> \u003cp>Drawing conclusions for decision-making.\u003cbr/>Since all these activities are part of interpretation, the correct answer is All of the above.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Criticism and Analysis — Incorrect (alone)\u003cbr/>This is only one part of interpretation, not the complete process.\u003c/p> \u003cp>(B) Comparison and Trend Study — Incorrect (alone)\u003cbr/>This is also just one technique used in interpretation.\u003c/p> \u003cp>(C) Drawing Conclusions — Incorrect (alone)\u003cbr/>Conclusions are based on analysis and comparison, not the only step.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Financial Analysis is useful for :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Investors </p></span></div><div class="option"><span class="key">b</span><span><p>Shareholders </p></span></div><div class="option"><span class="key">c</span><span><p> Debenture holders </p></span></div><div class="option"><span class="key">d</span><span><p> All of the above</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(D) All of the above\u003c/p> \u003cp> Why This Answer Is Correct?\u003c/p> \u003cp>Financial analysis helps different users in decision-making:\u003c/p> \u003cul> \u003cli> \u003cp>Investors use it to decide where to invest.\u003c/p> \u003c/li> \u003cli> \u003cp>Shareholders use it to know profitability and safety of their investment.\u003c/p> \u003c/li> \u003cli> \u003cp>Debenture holders use it to check the company’s ability to pay interest and principal.\u003cbr/>Hence, financial analysis is useful for all of them.\u003c/p> \u003c/li> \u003c/ul> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Investors — Incorrect (alone)\u003cbr/>It is useful for investors, but not only for them.\u003c/p> \u003cp>(B) Shareholders — Incorrect (alone)\u003cbr/>Shareholders benefit, but other users also depend on financial analysis.\u003c/p> \u003cp>(C) Debenture holders — Incorrect (alone)\u003cbr/>Debenture holders also use it, but they are not the only users.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Common Size Statements are also known as :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Dynamic analysis</p></span></div><div class="option"><span class="key">b</span><span><p>Horizontal analysis</p></span></div><div class="option"><span class="key">c</span><span><p>Vertical analysis</p></span></div><div class="option"><span class="key">d</span><span><p>External analysis</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Common-size statements are also known as \u003cstrong>Vertical Analysis \u003c/strong>because it analyses a financial statement by looking at the relationships between items \u003cstrong>vertically\u003c/strong> within a single accounting period. It is a \u003cstrong>Static Analysis\u003c/strong>.\u003c/p> \u003cp>Comparative statements are also known as \u003cstrong>Horizontal Analysis \u003c/strong>or \u003cstrong>Dynamic Analysis\u003c/strong>. This involves comparing financial data across multiple periods to identify trends over time.\u003c/p> \u003cp>\u003cstrong>Ratio Statements (D):\u003c/strong> While common size percentages (like net profit margin) are a form of ratio, \"Ratio Analysis\" is a broader field that establishes specific relationships between various financial figures, often from different statements.\u003c/p> \u003cp>\u003cstrong>External Analysis \u003c/strong>refers to analysis conducted by outsiders (like investors or creditors) who rely on published financial statements rather than internal records.\u003c/p> \u003cp>Therefore, \u003cstrong>Option C\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Amount set aside to meet losses due to bad debt is called :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Reserve </p></span></div><div class="option"><span class="key">b</span><span><p> Provision </p></span></div><div class="option"><span class="key">c</span><span><p>Liability </p></span></div><div class="option"><span class="key">d</span><span><p> None of these </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(B) Provision\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>The amount set aside to meet a known and expected loss, like bad debts, is called a Provision. Since loss due to bad debts is anticipated, provision is created for it.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Reserve — Incorrect\u003cbr/>Reserve is created out of profits for future uncertainties, not for known losses.\u003c/p> \u003cp>(C) Liability — Incorrect\u003cbr/>Liability means an obligation to pay, not an amount kept to cover losses.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Since the correct answer is Provision, this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Current Assets on the Assets side of Balance Sheet of a company <br/>include :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Sundry Debtors </p></span></div><div class="option"><span class="key">b</span><span><p>Cash in hand </p></span></div><div class="option"><span class="key">c</span><span><p>Stock </p></span></div><div class="option"><span class="key">d</span><span><p> All of these </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

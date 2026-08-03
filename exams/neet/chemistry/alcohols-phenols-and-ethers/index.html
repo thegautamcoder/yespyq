@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Alcohols, Phenols and Ethers","item":"https://yespyq.com/exams/neet/chemistry/alcohols-phenols-and-ethers/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Alcohols, Phenols and Ethers</h1>
       <p>6 NEET Chemistry previous year questions on <b>Alcohols, Phenols and Ethers</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The difference in the reaction of phenol with bromine in chloroform and bromine in water medium is due to [JEE Main 2022, 26 Jul (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Hyperconujugation in substrate</span></div><div class="option correct"><span class="key">b</span><span>Polarity of solvent</span></div><div class="option"><span class="key">c</span><span>Free radical formation</span></div><div class="option"><span class="key">d</span><span>Electromeric effect of the substrate</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The products A and B obtained in the following reactions, respectively, are<br/> \(3ROH+PC{l}_{3}\to 3RCl+A\\ ROH+PC{l}_{5}\to RCl+HCl+B\) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({H}_{3}P{O}_{3}\) and \(POC{l}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(POC{l}_{3}\) and \({H}_{3}P{O}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(POC{l}_{3}\) and \({H}_{3}P{O}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({H}_{3}P{O}_{4}\) and \(POC{l}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003col> \u003cli> \u003cp>With PCl₃, alcohols form alkyl chlorides and the by‐product \u003cstrong>H₃PO₃\u003c/strong> (phosphorous acid).\u003c/p> \u003c/li> \u003cli> \u003cp>With PCl₅, alcohols give alkyl chlorides, HCl, and the by‐product \u003cstrong>POCl₃\u003c/strong> (phosphoryl chloride).\u003cbr/>Hence, A is H₃PO₃ and B is POCl₃.\u003c/p> \u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following compounds in the increasing order of polarity:</p> <p>A. CH₃CH₂OCH₂CH₃<br/>B. CH₃CH₂OH<br/>C. CH₃COCH₃<br/>D. CH₃COOH</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A &lt; B &lt; C &lt; D</p></span></div><div class="option"><span class="key">b</span><span><p>C &lt; A &lt; D &lt; B</p></span></div><div class="option"><span class="key">c</span><span><p>C &lt; A &lt; B &lt; D</p></span></div><div class="option"><span class="key">d</span><span><p>A &lt; C &lt; B &lt; D</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The polarity of a molecule depends on its dipole moment and the nature of its polar bonds.\u003c/p> \u003cp>CH₃CH₂OCH₂CH₃ (ether) contains only a C–O–C linkage and has the lowest polarity.\u003cbr/>CH₃COCH₃ (acetone) contains a polar carbonyl (C=O) group, making it more polar than ether.\u003cbr/>CH₃CH₂OH (ethanol) contains a highly polar –OH group, so it is more polar than acetone.\u003cbr/>CH₃COOH (acetic acid) contains both C=O and O–H groups, making it the most polar compound among the given molecules.\u003c/p> \u003cp>Hence, the increasing order of polarity is:\u003c/p> \u003cp>CH₃CH₂OCH₂CH₃ &lt; CH₃COCH₃ &lt; CH₃CH₂OH &lt; CH₃COOH\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The products A and B obtained in the following reactions, respectively, are<br/> \(3ROH+PC{l}_{3}\to 3RCl+A\\ ROH+PC{l}_{5}\to RCl+HCl+B\) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({H}_{3}P{O}_{3}\) and \(POC{l}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(POC{l}_{3}\) and \({H}_{3}P{O}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(POC{l}_{3}\) and \({H}_{3}P{O}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({H}_{3}P{O}_{4}\) and \(POC{l}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003col> \u003cli> \u003cp>With PCl₃, alcohols form alkyl chlorides and the by‐product \u003cstrong>H₃PO₃\u003c/strong> (phosphorous acid).\u003c/p> \u003c/li> \u003cli> \u003cp>With PCl₅, alcohols give alkyl chlorides, HCl, and the by‐product \u003cstrong>POCl₃\u003c/strong> (phosphoryl chloride).\u003cbr/>Hence, A is H₃PO₃ and B is POCl₃.\u003c/p> \u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}\mathrm{CH}={\mathrm{CH}}_{2}\overset{{\mathrm{B}}_{2}{\mathrm{H}}_{6}}{\underset{{\mathrm{H}}_{2}\mathrm{O},{\mathrm{H}}_{2}{\mathrm{O}}_{2},{\mathrm{OH}}^{-}}{\to }}\mathrm{Z}\)</p> <p>What is \( \mathrm{Z} \) ?</p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}\mathrm{CH}\left(\mathrm{OH}\right){\mathrm{CH}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{CH}}_{3}{\mathrm{CH}}_{2}{\mathrm{CH}}_{2}\mathrm{CHO}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{CH}_{3} \mathrm{CH}_{2} \mathrm{CH}_{2} \mathrm{CH}_{3} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{CH}_{3} \mathrm{CH}_{2} \mathrm{CH}_{2} \mathrm{CH}_{2} \mathrm{OH} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The given reaction involves Hydroboration-Oxidation of 1-butene \\((C{H}_{3}C{H}_{2}CH=C{H}_{2})\\) using diborane (B₂H₆) followed by oxidation with hydrogen peroxide (H₂O₂) in basic medium (OH⁻).\u003c/p> Mechanism: \u003col> \u003cli> \u003cp>Hydroboration Step:\u003cbr/>i) Diborane \\(({B}_{2}{H}_{6})\\) adds to the double bond in anti Markovnikov manner, meaning boron \u003cbr/> attaches to the less substituted carbon (\\({C}_{1}\\)).\u003cbr/>\u003cbr/>ii) The product formed is tributylborane \\({\\left(C{H}_{3}C{H}_{2}C{H}_{2}C{H}_{2}\\right)}_{3}B\\).\u003c/p> \u003c/li> \u003cli> \u003cp>Oxidation Step: \u003cbr/>The boron group (-B) is replaced by a hydroxyl (-OH) group, leading to the formation of \u003cbr/>1-butanol (CH₃CH₂CH₂CH₂OH).\u003c/p> \u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Reaction between acetone and methyl magnesium chloride followed by hydrolysis will give:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{iso}-\mathrm{propyl}\mathrm{alcohol}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sec -\mathrm{butyl}\mathrm{alcohol}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{tert}-\mathrm{butyl}\mathrm{alcohol}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{iso}-\mathrm{butyl}\mathrm{alcohol}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

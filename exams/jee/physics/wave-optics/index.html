@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/jee/physics/"},{"@type":"ListItem","position":5,"name":"Wave Optics","item":"https://yespyq.com/exams/jee/physics/wave-optics/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Wave Optics</h1>
       <p>45 JEE Physics previous year questions on <b>Wave Optics</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a Young's double-slit experiment, the screen is moved away from the plane of the slits. What will be its effect on the following? (i) Angular separation of the fringes. (ii) Fringe-width.</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Both (i) and (ii) remain constant.</span></div><div class="option"><span class="key">b</span><span>(i) remains constant, but (ii) decreases.</span></div><div class="option correct"><span class="key">c</span><span>(i) remains constant, but (ii) increases.</span></div><div class="option"><span class="key">d</span><span>Both (i) and (ii) increase.</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">In a single-slit diffraction experiment, the width of the slit is halved. The width of the central maximum, in the diffraction pattern, will become :</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>half</span></div><div class="option correct"><span class="key">b</span><span>twice</span></div><div class="option"><span class="key">c</span><span>four times</span></div><div class="option"><span class="key">d</span><span>one-fourth</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In interference experiment the path difference between two interfering waves at a point \(A\) on the screen is \(\lambda /3\), where \(\lambda\) is the wavelength of these waves, and at another point \(B\) the path difference is \(\lambda /6\). The ratio of intensities at points \(A\) and \(B\) is _______.</p> <p>[JEE Main 2026, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(\frac{1}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{4}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a Young's double slit experiment, the slits are separated by 0.2 mm. If the slits separation is increased to 0.4 mm, the percentage change of the fringe width is:</p> <p><strong>[JEE Main 2025, 4 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0%</p></span></div><div class="option"><span class="key">b</span><span><p>100%</p></span></div><div class="option correct"><span class="key">c</span><span><p>50%</p></span></div><div class="option"><span class="key">d</span><span><p>25%</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two monochromatic light beams have intensities in the ratio 1:9. An interference pattern is obtained by these beams. The ratio of the intensities of maximum to minimum is </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(8:1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9:1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3:1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4:1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,9 +129,9 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{{I}_{\\max }}{{I}_{\\min }}=\\frac{{\\left(\\sqrt{{I}_{1}}+\\sqrt{{I}_{2}}\\right)}^{2}}{{\\left(\\sqrt{{I}_{1}}-\\sqrt{{I}_{2}}\\right)}^{2}}\\Rightarrow \\frac{(4{)}^{2}}{(2{)}^{2}}\\Rightarrow \\frac{16}{4}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A ring of radius 3 cm has a soap film which is getting evaporated. Light of wavelength \(\lambda=580 \mathrm{~nm}\) gives minimum transmission every 12 s . Find the rate of evaporation. (Refractive index=1.45)(Shift - II Memory Based)</p></div>
-      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{aligned}&amp; 1.5 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{aligned}&amp; 15 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\begin{aligned}&amp; 3 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\begin{aligned}&amp; 3 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div></div>
+      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{aligned}& 1.5 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{aligned}& 15 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\begin{aligned}& 3 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\begin{aligned}& 3 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
         <div><b>Answer &amp; explanation — PYQ Pass</b><p>Options are free to see. Unlock the correct answer and full explanation with Pass.</p></div>
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>To find the \u003cstrong>rate of evaporation\u003c/strong> of the soap film, we need to determine the rate at which its thickness decreases over time.\u003c/p> \u003cstrong>Step 1: Understanding the Given Data\u003c/strong> \u003cul> \u003cli>\u003cstrong>Wavelength of light:\u003c/strong> \\(\\lambda =580\\) = \\(580\\times 1{0}^{−9}\\)\u003c/li> \u003cli>\u003cstrong>Refractive index of soap film:\u003c/strong> \\(\\mu =1.45\\)\u003c/li> \u003cli>\u003cstrong>Minimum transmission occurs every\u003c/strong> \\(T=12\\)\u003c/li> \u003cli>\u003cstrong>Radius of the ring:\u003c/strong> \\(r=3\\) = \\(0.03\\)\u003c/li> \u003c/ul> \u003cstrong>Step 2: Condition for Minimum Transmission\u003c/strong> \u003cp>A \u003cstrong>thin-film interference\u003c/strong> pattern changes when the \u003cstrong>optical path difference\u003c/strong> changes by \u003cstrong>half a wavelength\u003c/strong> in the medium:\u003c/p> \u003cp>\\(∆t=\\frac{\\lambda }{2\\mu }\\)​\u003c/p> \u003cp>This means that the thickness \u003cstrong>decreases\u003c/strong> by:\u003c/p> \u003cp>\\(\\Delta t=\\frac{\\lambda }{2\\mu }\\)​\u003c/p> \u003cp>Substituting values:\u003c/p> \u003cp>\\(\\Delta t=\\frac{580\\times 1{0}^{−9}}{2\\times 1.45}\\)\u003c/p> \u003cp> \\(\\Delta t=\\frac{580\\times 1{0}^{−9}}{2.9}\\)\u003c/p> \u003cp>​ \\(\\Delta t=200\\times 1{0}^{−9}\\text{ m}=2\\times 1{0}^{−7}\\text{ m}\\)\u003c/p> \u003cp>This thickness decreases \u003cstrong>every 12 seconds\u003c/strong>, so the rate of evaporation per second:\u003c/p> \u003cp>\\(\\frac{∆t}{dt}=\\frac{2\\times 1{0}^{−7}\\text{ m}}{12}\\)​ \\(=1.67\\times 1{0}^{−8}\\text{ m/s}\\)\u003c/p> \u003cstrong>Step 3: Finding the Volume Evaporation Rate\u003c/strong> \u003cp>The \u003cstrong>evaporating volume per second\u003c/strong> is:\u003c/p> \u003cp>\\(\\text{Rate of evaporation}=\\text{Surface area}\\times \\frac{∆t}{dt}\\)\\(=\\pi {r}^{2}\\times \\frac{∆t}{dt}\\)​\u003c/p> \u003cp>Substituting values:\u003c/p> \u003cp>\\(=\\pi (0.03{)}^{2}\\times (1.67\\times 1{0}^{−8})\\)\u003c/p> \u003cp> \\(=\\pi (9\\times 1{0}^{−4})\\times (1.67\\times 1{0}^{−8})\\)\u003c/p> \u003cp> \\(=15\\pi \\times 1{0}^{−12}{\\text{ m}}^{3}\\mathrm{/}\\text{s}\\)\u003c/p> \u003cstrong>Step 4: Choosing the Correct Option\u003c/strong> \u003cp>From the given options, the correct answer :\u003cstrong> \\(15\\pi \\times 1{0}^{−12}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The width of one of the two slits in Young's double slit experiment is d while that of the other slit is \(x\mathrm{d}\). If the ratio of the maximum to the minimum intensity in the interference pattern on the screen is \(9:4\) then what is the value of \(x\) ?<br/>(Assume that the field strength varies according to the slit width.)</p> <p><strong>[JEE Main 2025, 23 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>25</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(I\\propto {(\\text{ width })}^{2}\\)\u003c/p> \u003cp>\\({\\left(\\frac{\\sqrt{{I}_{1}}+\\sqrt{{I}_{2}}}{\\sqrt{{I}_{1}}−\\sqrt{{I}_{2}}}\\right)}^{2}=\\frac{9}{4}\\)\u003c/p> \u003cp>\\(\\frac{\\sqrt{{I}_{1}}+\\sqrt{{I}_{2}}}{\\sqrt{{I}_{1}−\\sqrt{{I}_{2}}}}=\\frac{3}{2}\\)\u003c/p> \u003cp>\\(\\frac{(x+1)\\text{d}}{(\\text{x}−1)\\text{d}}=\\frac{3}{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow 3\\text{x}−3=2\\text{x}+2\\)\u003c/p> \u003cp>\\(\\text{x}=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements : one is labelled as Assertion (A) and the other is labelled as Reason (R).<br/>Assertion-(A) : If Young's double slit experiment is performed in an optically denser medium than air, then the consecutive fringes come closer.<br/>Reason-(R) : The speed of light reduces in an optically denser medium than air while its frequency does not change.<br/>In the light of the above statements, choose the most appropriate answer from the options given below :</p> <p><strong>[JEE Main 2025, 22 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and ( R ) are true and ( R ) is the correct explanation of (A) </p></span></div><div class="option"><span class="key">b</span><span><p>(A) is true but (A) is false</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is false but ( R ) is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both (A) and \((\mathbf{R})\) are true but \((\mathbf{R})\) is not the correct explanation of (A) </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In an optically denser medium, the speed of light decreases, which leads to a decrease in the wavelength \\(\\lambda\\) (since \\(\\lambda =\\frac{c}{ƒ}\\) = , where frequency ƒ remains unchanged).\u003c/p> \u003cp>As λ decreases, the fringe width w also decreases (since fringe width, \\(w=\\frac{\\lambda D}{d}\\) ), meaning the fringes come closer. The reason is also true because when light enters a denser medium, its speed decreases, but the frequency remains constant (as frequency is determined by the source).\u003c/p> \u003cp>Option 1: Both (A) and (R) are true, and (R) is the correct explanation of (A).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Young's double slit inteference apparatus is immersed in a liquid of refractive index 1.44. It has slit separation of 1.5 mm. The slits are illuminated by a parallel beam of light whose wavelength in air is 690 nm. The fringe-width on a screen placed behind the plane of slits at a distance of 0.72 m, will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.33 mm</p></span></div><div class="option"><span class="key">b</span><span><p>0.63 mm</p></span></div><div class="option"><span class="key">c</span><span><p>0.46 mm</p></span></div><div class="option"><span class="key">d</span><span><p>0.23 mm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\text{Fringe width is given by }\\\\ \\frac{\\lambda D}{\\mu d}=\\frac{690\\times {10}^{-9}\\times 0.72}{1.44\\times 1.5\\times {10}^{-3}}=0.23mm\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The diffraction pattern of a light of wavelength \(400 \mathrm{~nm}\) diffracting from a slit of width \(0.2 \mathrm{~mm}\) is focused on the focal plane of a convex lens of focal length \(100 \mathrm{~cm}\). The width of the \(1^{\text {st }}\) secondary maxima will be :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2 \mathrm{mm}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(0.2 \mathrm{~mm}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2 \mathrm{~cm}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(0.02 \mathrm{~mm}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(1)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Width of one of the two slits in a Young's double slit interference experiment is half of the other slit. The ratio of the maximum to the minimum intensity in the interference pattern is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((2\sqrt{2}+1):(2\sqrt{2}-1)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((3+2\sqrt{2}):(3-2\sqrt{2})\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(9:1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3:1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,10 +198,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(I\\propto\\) width\u003c/p> \u003cp>$$\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_{\\max }=\\left(\\sqrt{I}_1+\\sqrt{I}_2\\right)^2 \\\\\u003cbr/>&amp; \\therefore I_1=I_o, I_2=2 I_0 \\\\\u003cbr/>&amp; I_{\\min }=\\left(\\sqrt{I_1}-\\sqrt{I_2}\\right)^2 \\\\\u003cbr/>&amp; \\frac{I_{\\max }}{I_{\\min }}=\\frac{(\\sqrt{2}+1)^2}{(\\sqrt{2}-1)^2} \\Rightarrow \\frac{3+2 \\sqrt{2}}{3-2 \\sqrt{2}}\u003cbr/>\\end{aligned}\u003cbr/>$$\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(I\\propto\\) width\u003c/p> \u003cp>$$\u003cbr/>$$\\begin{aligned}& I_{\\max }=\\left(\\sqrt{I}_1+\\sqrt{I}_2\\right)^2 \\\\& \\therefore I_1=I_o, I_2=2 I_0 \\\\& I_{\\min }=\\left(\\sqrt{I_1}-\\sqrt{I_2}\\right)^2 \\\\& \\frac{I_{\\max }}{I_{\\min }}=\\frac{(\\sqrt{2}+1)^2}{(\\sqrt{2}-1)^2} \\Rightarrow \\frac{3+2 \\sqrt{2}}{3-2 \\sqrt{2}}\\end{aligned}$$\u003cbr/>$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young's double slit experiment, light from two identical sources are superimposing on a screen. The path difference between the two lights reaching at a point on the screen is \(7\lambda /4\). The ratio of intensity of fringe at this point with respect to the maximum intensity of the fringe is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{1}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{1}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Light emerges out of a convex lens when a source of light kept at its focus. The shape of wavefront of the light is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cylindrical</p></span></div><div class="option"><span class="key">b</span><span><p>Both spherical and cylindrical</p></span></div><div class="option"><span class="key">c</span><span><p>Spherical</p></span></div><div class="option"><span class="key">d</span><span><p>Plane</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The convex lens focuses light rays that were initially diverging from the point source.\u003c/li> \u003c/ul>  \u003cul> \u003cli>The light rays become nearly parallel after passing through the lens.\u003c/li> \u003c/ul>   \u003cul> \u003cli>The wavefronts become approximately flat and parallel to each other.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Light emerges out of a convex lens when a source of light kept at its focus. The shape of wavefront of the light is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Cylindrical</p></span></div><div class="option"><span class="key">b</span><span><p>Both spherical and cylindrical</p></span></div><div class="option"><span class="key">c</span><span><p>Spherical</p></span></div><div class="option"><span class="key">d</span><span><p>Plane</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>The convex lens focuses light rays that were initially diverging from the point source.\u003c/li> \u003c/ul>  \u003cul> \u003cli>The light rays become nearly parallel after passing through the lens.\u003c/li> \u003c/ul>   \u003cul> \u003cli>The wavefronts become approximately flat and parallel to each other.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a Young's double slit experiment, the source is white light. One of the slits is covered by red filter and another by a green filter. In this case</p> <p><strong>[JEE Main 2025, 8 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>There shall be an interference pattern for red distinct from that for green.</p></span></div><div class="option"><span class="key">b</span><span><p>There shall be no interference fringes.</p></span></div><div class="option"><span class="key">c</span><span><p>There shall be alternate interference fringes of red and green.</p></span></div><div class="option"><span class="key">d</span><span><p>There shall be an interference pattern, where each fringe's pattern center is green and outer edges is red.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Different colours will have different fringe width. Within a few fringes of red, there will be several fringes of violet. Also, there will be overlapping of colours.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The maximum intensity in a Young's double slit experiment is \({I}_{\mathrm{o}}\). Distance between the slits (d) is \(5\lambda\), where \(\lambda\) is the wavelength of light used. The intensity of the fringe, exactly opposite to one of the slits on the screen, placed at \(D=10d\) is ____ .<br/><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{{I}_{o}}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{{I}_{o}}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>I₀</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{3{I}_{o}}{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) Given: d = 5l, D = 10d\u003cbr/>At the point exactly opposite to one slit, take\u003cbr/>\\(y=\\frac{d}{2}\\)\u003cbr/>Path difference:\u003cbr/>\\(\\Delta x=\\frac{yd}{D}=\\frac{{d}^{2}}{2D}=\\frac{{d}^{2}}{2\\times 10d}=\\frac{d}{20}\\)\u003cbr/>\\(ϕ=\\frac{5\\pi }{\\lambda }\\times \\Delta x=\\frac{2\\pi }{\\lambda }\\times \\frac{d}{20}\\)\u003cbr/>Since d = 5\\(\\lambda ,ϕ=\\frac{\\pi }{2}\\)\u003cbr/>Intensity:\u003cbr/>\\(I={I}_{0}{\\cos }^{2}\\frac{ϕ}{2}={I}_{0}{\\cos }^{2}\\frac{\\pi }{4}={I}_{0}\\times \\frac{1}{2}\\)\u003cbr/>\\(I=\\frac{{I}_{0}}{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two plane polarized light waves combine at a certain point whose electric field components are<br/>\({\mathrm{E}}_{1}={\mathrm{E}}_{0}\mathrm{sinωt}\\ {\mathrm{E}}_{2}={\mathrm{E}}_{0}\sin \left(\mathrm{ωt}+\frac{\pi }{3}\right)\)<br/>Find the amplitude of the resultant wave.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.9\mathrm{E}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{E}}_{0}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1.7{\mathrm{E}}_{0}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3.4{\mathrm{E}}_{0}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,7 +273,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Resultant electric field is obtained by vector addition of two equal fields making an angle of π/3.\u003cbr/>\\(E=\\sqrt{{{E}_{0}}^{2}+{{E}_{0}}^{2}+2{E}_{0}{E}_{0}\\cos (\\frac{\\pi }{3})}\\)\u003c/p> \u003cp> Simplifying the expression.\u003cbr/>\\(E=\\sqrt{3{{E}_{0}}^{2}}\\)\u003c/p> \u003cp>Final magnitude of the resultant electric field\u003cbr/>\\(E=\\sqrt{3}{E}_{0}\\)\u003c/p> \u003cp>Numerical value of the resultant field.\u003cbr/>\\(E\\approx 1.73{E}_{0}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Young's double slit inteference apparatus is immersed in a liquid of refractive index 1.44. It has slit separation of 1.5 mm. The slits are illuminated by a parallel beam of light whose wavelength in air is 690 nm. The fringe-width on a screen placed behind the plane of slits at a distance of 0.72 m, will be :</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.33 mm</p></span></div><div class="option"><span class="key">b</span><span><p>0.63 mm</p></span></div><div class="option"><span class="key">c</span><span><p>0.46 mm</p></span></div><div class="option"><span class="key">d</span><span><p>0.23 mm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\text{Fringe width is given by }\\\\ \\frac{\\lambda D}{\\mu d}=\\frac{690\\times {10}^{-9}\\times 0.72}{1.44\\times 1.5\\times {10}^{-3}}=0.23mm\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Young's double slit interference experiment is performed using light consisting of 480 nm and 600 nm wavelengths to form interference patterns. The least number of the bright fringes of 480 nm light that are required for the first coincidence with the bright fringes formed by 600 nm light is</p> <p><strong>[JEE Main 2025, 24 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6</p></span></div><div class="option"><span class="key">b</span><span><p>8</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{ }\\frac{{n}_{1}{\\lambda }_{1}D}{d}=\\frac{{n}_{2}{\\lambda }_{2}D}{d}\\\\ n480=m600\\\\ {n}_{\\min }=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The width of one of the two slits in Young's double slit experiment is d while that of the other slit is \(x\mathrm{d}\). If the ratio of the maximum to the minimum intensity in the interference pattern on the screen is \(9:4\) then what is the value of \(x\) ?<br/>(Assume that the field strength varies according to the slit width.)</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>25</p></span></div><div class="option"><span class="key">c</span><span><p>4</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(I\\propto {(\\text{ width })}^{2}\\)\u003c/p> \u003cp>\\({\\left(\\frac{\\sqrt{{I}_{1}}+\\sqrt{{I}_{2}}}{\\sqrt{{I}_{1}}−\\sqrt{{I}_{2}}}\\right)}^{2}=\\frac{9}{4}\\)\u003c/p> \u003cp>\\(\\frac{\\sqrt{{I}_{1}}+\\sqrt{{I}_{2}}}{\\sqrt{{I}_{1}−\\sqrt{{I}_{2}}}}=\\frac{3}{2}\\)\u003c/p> \u003cp>\\(\\frac{(x+1)\\text{d}}{(\\text{x}−1)\\text{d}}=\\frac{3}{2}\\)\u003c/p> \u003cp>\\(\\Rightarrow 3\\text{x}−3=2\\text{x}+2\\)\u003c/p> \u003cp>\\(\\text{x}=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A glass slab of refractive index \({\mu }_{0}=1.44\) is coated with a thin film of refractive index \({\mu }_{f}=2\). The minimum thickness of the film, so that maximum transmission of green light of wavelength λ = 5000A˚ (incident normally) takes place, is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>625A˚</p></span></div><div class="option"><span class="key">b</span><span><p>2500A˚</p></span></div><div class="option"><span class="key">c</span><span><p>1250A˚</p></span></div><div class="option"><span class="key">d</span><span><p>1000A˚</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>To achieve maximum transmission of green light, the thin film must cause destructive interference for the light reflected from its top and bottom surfaces. This is a standard case of thin-film interference, and the condition for minimum thickness for maximum transmission (destructive reflection) is:\u003c/p> \u003cp>\\(2\\mathrm{n}\\mathrm{t}=\\mathrm{m}\\lambda\\)\u003c/p> \u003cp>where: n is the refractive index of the film, t is the thickness of the film, \\(\\lambda\\) is the wavelength of light in the medium of the film, m is the order of interference (minimum for the thinnest film).\u003c/p> \u003cp>Here, m = 1\u003c/p> \u003cp>So, \\(\\mathrm{t}=\\frac{\\mathrm{m}\\lambda }{2\\mathrm{n}}=\\frac{1\\times 5000}{2\\times 2}=1250\\overset{^\\circ }{\\mathrm{A}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two plane polarized light waves combine at a certain point whose electric field components are<br/>\({\mathrm{E}}_{1}={\mathrm{E}}_{0}\mathrm{sinωt}\\ {\mathrm{E}}_{2}={\mathrm{E}}_{0}\sin \left(\mathrm{ωt}+\frac{\pi }{3}\right)\)<br/>Find the amplitude of the resultant wave.</p> <p>[JEE Main 2025, 7 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(0.9\mathrm{E}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{E}}_{0}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1.7{\mathrm{E}}_{0}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3.4{\mathrm{E}}_{0}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Resultant electric field is obtained by vector addition of two equal fields making an angle of π/3.\u003cbr/>\\(E=\\sqrt{{{E}_{0}}^{2}+{{E}_{0}}^{2}+2{E}_{0}{E}_{0}\\cos (\\frac{\\pi }{3})}\\)\u003c/p> \u003cp> Simplifying the expression.\u003cbr/>\\(E=\\sqrt{3{{E}_{0}}^{2}}\\)\u003c/p> \u003cp>Final magnitude of the resultant electric field\u003cbr/>\\(E=\\sqrt{3}{E}_{0}\\)\u003c/p> \u003cp>Numerical value of the resultant field.\u003cbr/>\\(E\\approx 1.73{E}_{0}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a polaroid sheet is rotated between two crossed polaroids then the transmitted light intensity will be maximum for a rotation of :</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(90^{\circ}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(60^{\circ}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(30^{\circ}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(45^{\circ}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\({I}_{0}\\)be intensity of unpolarised light incident on first polaroid\u003cbr/>Since first and third polaroids are crossed, angle between them is ninety degrees\u003cbr/>Let theta be angle of rotation of the middle polaroid from the first polaroid\u003cbr/>Intensity after first polaroid\u003cbr/>\\({I}_{1}=\\frac{{I}_{0}}{2}\\)\u003cbr/>Intensity after second polaroid using Malus law\u003cbr/>\\({I}_{2}={I}_{1}\\cos {\\theta }^{2}\\)\u003cbr/>Angle between second and third polaroid\u003cbr/>\\(\\phi =90−\\theta\\)\u003cbr/>Intensity after third polaroid\u003cbr/>\\({I}_{3}={I}_{2}\\cos {\\phi }^{2}\\)\u003cbr/>Substitute expressions\u003cbr/>\\({I}_{3}=\\frac{{I}_{0}}{2}\\cos {\\theta }^{2}\\sin {\\theta }^{2}\\)\u003cbr/>Using trigonometric identity\u003cbr/>\\(\\cos {\\theta }^{2}\\sin {\\theta }^{2}=\\frac{1}{4}\\sin {2\\theta }^{2}\\)\u003cbr/>Final expression for transmitted intensity\u003cbr/>\\({I}_{3}=\\frac{{I}_{0}}{8}\\sin {2\\theta }^{2}\\)\u003cbr/>For maximum intensity\u003cbr/>\\(\\sin 2\\theta =1\\)\u003cbr/>Condition for maximum transmission\u003cbr/>\\(\\theta =45\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When a polaroid sheet is rotated between two crossed polaroids then the transmitted light intensity will be maximum for a rotation of :</p> <p><strong>[JEE Main 2024, 27 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(90^{\circ}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(60^{\circ}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(30^{\circ}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(45^{\circ}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\({I}_{0}\\)be intensity of unpolarised light incident on first polaroid\u003cbr/>Since first and third polaroids are crossed, angle between them is ninety degrees\u003cbr/>Let theta be angle of rotation of the middle polaroid from the first polaroid\u003cbr/>Intensity after first polaroid\u003cbr/>\\({I}_{1}=\\frac{{I}_{0}}{2}\\)\u003cbr/>Intensity after second polaroid using Malus law\u003cbr/>\\({I}_{2}={I}_{1}\\cos {\\theta }^{2}\\)\u003cbr/>Angle between second and third polaroid\u003cbr/>\\(\\phi =90−\\theta\\)\u003cbr/>Intensity after third polaroid\u003cbr/>\\({I}_{3}={I}_{2}\\cos {\\phi }^{2}\\)\u003cbr/>Substitute expressions\u003cbr/>\\({I}_{3}=\\frac{{I}_{0}}{2}\\cos {\\theta }^{2}\\sin {\\theta }^{2}\\)\u003cbr/>Using trigonometric identity\u003cbr/>\\(\\cos {\\theta }^{2}\\sin {\\theta }^{2}=\\frac{1}{4}\\sin {2\\theta }^{2}\\)\u003cbr/>Final expression for transmitted intensity\u003cbr/>\\({I}_{3}=\\frac{{I}_{0}}{8}\\sin {2\\theta }^{2}\\)\u003cbr/>For maximum intensity\u003cbr/>\\(\\sin 2\\theta =1\\)\u003cbr/>Condition for maximum transmission\u003cbr/>\\(\\theta =45\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a Young's Double-Slit Experiment (YDSE), lights of wavelengths \(600\text{ }\text{nm}\) and \(500\text{ }\text{nm}\) are used. What is the minimum order of the bright fringe of 500nm that coincides with the dark fringe of \(600\text{ }\text{nm}\)?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>18</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,9 +369,9 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(m{\\lambda }_{1}=\\left(n+\\frac{1}{2}\\right)\\)\u003c/p> \u003cp>where:\u003c/p> \u003cp>\\({\\lambda }_{1}=600\\text{ nm}\\)\u003c/p> \u003cp>\\({\\lambda }_{2}=500\\text{ nm}\\)\u003c/p> \u003cp>\\(m=\\left(n+\\frac{1}{2}\\right)\\frac{6}{5}\\)\u003c/p> \u003cp>\u003cem>m\u003c/em>\u003csub>min\u003c/sub>=3\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A ring of radius 3 cm has a soap film which is getting evaporated. Light of wavelength \(\lambda=580 \mathrm{~nm}\) gives minimum transmission every 12 s . Find the rate of evaporation. (Refractive index=1.45)(Shift - II Memory Based)</p></div>
-      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{aligned}&amp; 1.5 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{aligned}&amp; 15 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\begin{aligned}&amp; 3 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\begin{aligned}&amp; 3 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div></div>
+      <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\begin{aligned}& 1.5 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\begin{aligned}& 15 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\begin{aligned}& 3 \pi \times 10^{-13} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\begin{aligned}& 3 \pi \times 10^{-12} \mathrm{~m}^3 / \mathrm{s}\end{aligned}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
         <div><b>Answer &amp; explanation — PYQ Pass</b><p>Options are free to see. Unlock the correct answer and full explanation with Pass.</p></div>
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>To find the \u003cstrong>rate of evaporation\u003c/strong> of the soap film, we need to determine the rate at which its thickness decreases over time.\u003c/p> \u003cstrong>Step 1: Understanding the Given Data\u003c/strong> \u003cul> \u003cli>\u003cstrong>Wavelength of light:\u003c/strong> \\(\\lambda =580\\) = \\(580\\times 1{0}^{−9}\\)\u003c/li> \u003cli>\u003cstrong>Refractive index of soap film:\u003c/strong> \\(\\mu =1.45\\)\u003c/li> \u003cli>\u003cstrong>Minimum transmission occurs every\u003c/strong> \\(T=12\\)\u003c/li> \u003cli>\u003cstrong>Radius of the ring:\u003c/strong> \\(r=3\\) = \\(0.03\\)\u003c/li> \u003c/ul> \u003cstrong>Step 2: Condition for Minimum Transmission\u003c/strong> \u003cp>A \u003cstrong>thin-film interference\u003c/strong> pattern changes when the \u003cstrong>optical path difference\u003c/strong> changes by \u003cstrong>half a wavelength\u003c/strong> in the medium:\u003c/p> \u003cp>\\(∆t=\\frac{\\lambda }{2\\mu }\\)​\u003c/p> \u003cp>This means that the thickness \u003cstrong>decreases\u003c/strong> by:\u003c/p> \u003cp>\\(\\Delta t=\\frac{\\lambda }{2\\mu }\\)​\u003c/p> \u003cp>Substituting values:\u003c/p> \u003cp>\\(\\Delta t=\\frac{580\\times 1{0}^{−9}}{2\\times 1.45}\\)\u003c/p> \u003cp> \\(\\Delta t=\\frac{580\\times 1{0}^{−9}}{2.9}\\)\u003c/p> \u003cp>​ \\(\\Delta t=200\\times 1{0}^{−9}\\text{ m}=2\\times 1{0}^{−7}\\text{ m}\\)\u003c/p> \u003cp>This thickness decreases \u003cstrong>every 12 seconds\u003c/strong>, so the rate of evaporation per second:\u003c/p> \u003cp>\\(\\frac{∆t}{dt}=\\frac{2\\times 1{0}^{−7}\\text{ m}}{12}\\)​ \\(=1.67\\times 1{0}^{−8}\\text{ m/s}\\)\u003c/p> \u003cstrong>Step 3: Finding the Volume Evaporation Rate\u003c/strong> \u003cp>The \u003cstrong>evaporating volume per second\u003c/strong> is:\u003c/p> \u003cp>\\(\\text{Rate of evaporation}=\\text{Surface area}\\times \\frac{∆t}{dt}\\)\\(=\\pi {r}^{2}\\times \\frac{∆t}{dt}\\)​\u003c/p> \u003cp>Substituting values:\u003c/p> \u003cp>\\(=\\pi (0.03{)}^{2}\\times (1.67\\times 1{0}^{−8})\\)\u003c/p> \u003cp> \\(=\\pi (9\\times 1{0}^{−4})\\times (1.67\\times 1{0}^{−8})\\)\u003c/p> \u003cp> \\(=15\\pi \\times 1{0}^{−12}{\\text{ m}}^{3}\\mathrm{/}\\text{s}\\)\u003c/p> \u003cstrong>Step 4: Choosing the Correct Option\u003c/strong> \u003cp>From the given options, the correct answer :\u003cstrong> \\(15\\pi \\times 1{0}^{−12}\\)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a Young's Double Slit Experiment (YDSE), for a wavelength \({\lambda }_{1}=600nm\), the 10th bright fringe is observed at a distance of 10 mm from the central maximum.For a new wavelength \({\lambda }_{2}=660nm\), what will be the distance of the 10th bright fringe from the central maximum? </p> <p>(Shift - I Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>11</p></span></div><div class="option"><span class="key">d</span><span><p>12</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cstrong>Step 1: Understanding the Fringe Position Formula\u003c/strong> \u003cp>In \u003cstrong>Young’s Double Slit Experiment (YDSE)\u003c/strong>, the position of the \u003cstrong>\\({n}^{th}\\) bright fringe\u003c/strong> is given by:\u003c/p> \u003cp>\\({y}_{n}=n\\times \\frac{\\lambda D}{d}\\)​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({y}_{n}\\)​ = distance of the \\({n}^{th}\\) bright fringe from the central maximum,\u003c/li> \u003cli>\\(\\lambda\\)= wavelength of light used,\u003c/li> \u003cli>\\(D\\) = distance between slits and screen,\u003c/li> \u003cli>\\(d\\)= separation between the two slits,\u003c/li> \u003cli>\\(n\\) = fringe order.\u003c/li> \u003c/ul> \u003cstrong>Step 2: Finding \\(\\frac{D}{d}\\)​ Using Given Data\u003c/strong> \u003cp>For \\({\\lambda }_{1}=600\\), the \u003cstrong>10th bright fringe\u003c/strong> is at \u003cstrong>10 mm\u003c/strong>:\u003c/p> \u003cp>\\({y}_{10}=10\\times \\frac{600D}{d}=10\\text{ mm}\\)\u003c/p> \u003cp> \\(\\frac{D}{d}=\\frac{1}{600}\\text{ mm/nm}\\)\u003c/p> \u003cstrong>Step 3: Finding \\({y}_{10}\\)​ for \\({\\lambda }_{2}=660\\)\u003c/strong> \u003cp>Now, using the same formula for \u003cstrong>\\({\\lambda }_{2}=660\\)\u003c/strong>:\u003c/p> \u003cp>\\({y}_{10}=10\\times \\frac{660D}{d}\\)​\u003c/p> \u003cp>Substituting \\(\\frac{D}{d}=\\frac{1}{600}\\text{ mm/nm}\\):\u003c/p> \u003cp>\\({y}_{10}=10\\times \\frac{660}{600}\\)\u003c/p> \u003cp>​ \\({y}_{10}=10\\times 1.1\\)\u003c/p> \u003cp>\\({y}_{10}=11\\text{ mm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Young's double slit interference experiment is performed using light consisting of 480 nm and 600 nm wavelengths to form interference patterns. The least number of the bright fringes of 480 nm light that are required for the first coincidence with the bright fringes formed by 600 nm light is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>6</p></span></div><div class="option"><span class="key">b</span><span><p>8</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{ }\\frac{{n}_{1}{\\lambda }_{1}D}{d}=\\frac{{n}_{2}{\\lambda }_{2}D}{d}\\\\ n480=m600\\\\ {n}_{\\min }=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young’s double slit experiment, the fringe width of the interference pattern produced on the screen is 2.4 \(\mu \mathrm{m}\). If the experiment is carried out in another medium having refractive index 1.2, the fringe width will be _______ \(\mu \mathrm{m}\).</p> <p>[JEE Main 2026, 5 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.2 </p></span></div><div class="option"><span class="key">b</span><span><p>2 </p></span></div><div class="option"><span class="key">c</span><span><p>2.4 </p></span></div><div class="option"><span class="key">d</span><span><p>2.88 </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\beta =\\frac{\\lambda D}{d}\\)\u003c/p> \u003cp>In a medium of refractive index \\(\\mu ,\\) wavelength becomes\u003c/p> \u003cp>\\({\\lambda }^{'}=\\frac{\\lambda }{\\mu }\\)\u003c/p> \u003cp>\\(\\text{ Hence, new fringe width }{\\beta }^{'}=\\frac{\\beta }{\\mu }\\)\u003c/p> \u003cp>\\({\\beta }^{'}=\\frac{2.4}{1.2}=2\\mu \\mathrm{m}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A slit of width a is illuminated by light of wavelength \(\lambda\) The linear separation between \({1}^{st}\) and \({3}^{rd}\)minima in the diffraction pattern produced on a screen placed at a distance D from the slit system is ____.</p> <p> </p> <p>[04 April, 2026 (Shift-I)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{D\lambda }{a}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.5\frac{D\lambda }{a}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\frac{D\lambda }{a}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3\frac{D\lambda }{a}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For single-slit diffraction, the position of the n-th minimum is\u003c/p> \u003cp>\\({y}_{n}=\\frac{n\\lambda D}{a}\\)\u003c/p> \u003cp>So, \\({y}_{1}=\\frac{\\lambda D}{a},{y}_{3}=\\frac{3\\lambda D}{a}\\)\u003c/p> \u003cp>Therefore, the separation between the first and third minima is\u003c/p> \u003cp>\\({y}_{3}−{y}_{1}=\\frac{3\\lambda D}{a}−\\frac{\\lambda D}{a}=\\frac{2\\lambda D}{a}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A glass slab of refractive index \({\mu }_{0}=1.44\) is coated with a thin film of refractive index \({\mu }_{f}=2\). The minimum thickness of the film, so that maximum transmission of green light of wavelength λ = 5000A˚ (incident normally) takes place, is:</p> <p>(Shift II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>625A˚</p></span></div><div class="option"><span class="key">b</span><span><p>2500A˚</p></span></div><div class="option"><span class="key">c</span><span><p>1250A˚</p></span></div><div class="option"><span class="key">d</span><span><p>1000A˚</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>To achieve maximum transmission of green light, the thin film must cause destructive interference for the light reflected from its top and bottom surfaces. This is a standard case of thin-film interference, and the condition for minimum thickness for maximum transmission (destructive reflection) is:\u003c/p> \u003cp>\\(2\\mathrm{n}\\mathrm{t}=\\mathrm{m}\\lambda\\)\u003c/p> \u003cp>where: n is the refractive index of the film, t is the thickness of the film, \\(\\lambda\\) is the wavelength of light in the medium of the film, m is the order of interference (minimum for the thinnest film).\u003c/p> \u003cp>Here, m = 1\u003c/p> \u003cp>So, \\(\\mathrm{t}=\\frac{\\mathrm{m}\\lambda }{2\\mathrm{n}}=\\frac{1\\times 5000}{2\\times 2}=1250\\overset{^\\circ }{\\mathrm{A}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a Young's Double Slit Experiment (YDSE), for a wavelength \({\lambda }_{1}=600nm\), the 10th bright fringe is observed at a distance of 10 mm from the central maximum.For a new wavelength \({\lambda }_{2}=660nm\), what will be the distance of the 10th bright fringe from the central maximum? </p> <p>(Shift - I Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>11</p></span></div><div class="option"><span class="key">d</span><span><p>12</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cstrong>Step 1: Understanding the Fringe Position Formula\u003c/strong> \u003cp>In \u003cstrong>Young’s Double Slit Experiment (YDSE)\u003c/strong>, the position of the \u003cstrong>\\({n}^{th}\\) bright fringe\u003c/strong> is given by:\u003c/p> \u003cp>\\({y}_{n}=n\\times \\frac{\\lambda D}{d}\\)​\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\({y}_{n}\\)​ = distance of the \\({n}^{th}\\) bright fringe from the central maximum,\u003c/li> \u003cli>\\(\\lambda\\)= wavelength of light used,\u003c/li> \u003cli>\\(D\\) = distance between slits and screen,\u003c/li> \u003cli>\\(d\\)= separation between the two slits,\u003c/li> \u003cli>\\(n\\) = fringe order.\u003c/li> \u003c/ul> \u003cstrong>Step 2: Finding \\(\\frac{D}{d}\\)​ Using Given Data\u003c/strong> \u003cp>For \\({\\lambda }_{1}=600\\), the \u003cstrong>10th bright fringe\u003c/strong> is at \u003cstrong>10 mm\u003c/strong>:\u003c/p> \u003cp>\\({y}_{10}=10\\times \\frac{600D}{d}=10\\text{ mm}\\)\u003c/p> \u003cp> \\(\\frac{D}{d}=\\frac{1}{600}\\text{ mm/nm}\\)\u003c/p> \u003cstrong>Step 3: Finding \\({y}_{10}\\)​ for \\({\\lambda }_{2}=660\\)\u003c/strong> \u003cp>Now, using the same formula for \u003cstrong>\\({\\lambda }_{2}=660\\)\u003c/strong>:\u003c/p> \u003cp>\\({y}_{10}=10\\times \\frac{660D}{d}\\)​\u003c/p> \u003cp>Substituting \\(\\frac{D}{d}=\\frac{1}{600}\\text{ mm/nm}\\):\u003c/p> \u003cp>\\({y}_{10}=10\\times \\frac{660}{600}\\)\u003c/p> \u003cp>​ \\({y}_{10}=10\\times 1.1\\)\u003c/p> \u003cp>\\({y}_{10}=11\\text{ mm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young’s double slits experiment, the position of 5<sup>th</sup> bright fringe from the central maximum is 5 cm. The distance between slits and the screen is 1m and wavelength of monochromatic light used is 600nm. The separation between the slits is:</p> <p><strong>[JEE Main 2023, 25 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>60 μm</p></span></div><div class="option"><span class="key">b</span><span><p>48 μm</p></span></div><div class="option"><span class="key">c</span><span><p>12 μm</p></span></div><div class="option"><span class="key">d</span><span><p>36 μm</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(∵{\\mathrm{y}}_{\\mathrm{nth}}=\\frac{\\mathrm{nλD}}{\\mathrm{d}}\\\\ \\Rightarrow \\frac{5\\times 600\\times {10}^{-9}\\times 1}{\\mathrm{d}}=5\\times {10}^{-2}\\\\ \\Rightarrow \\mathrm{d}=60\\mathrm{μm}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A scientist is observing a bacteria using a compound microscope. For better analysis and to improve its resolving power, he should: (Select the best option)</p> <p> </p> <p>[JEE Main 2023, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Increase the wavelength of the light</p></span></div><div class="option"><span class="key">b</span><span><p>Increase the refractive index of the medium between the object and the objective lens</p></span></div><div class="option"><span class="key">c</span><span><p>Decrease the focal length of the eye piece</p></span></div><div class="option"><span class="key">d</span><span><p>Decrease the diameter of the objective lens </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Resolving power of a compound microscope\u003cbr/>\\[\u003cbr/>P=\\frac{2 \\mu \\sin \\theta}{1.22 \\lambda}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The ratio of intensities at two points \(P\) and \(Q\) on the screen in a Young's double slit experiment where phase difference between two waves of same amplitude are \(\pi / 3\) and \(\pi / 2\), respectively are:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1: 3<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>3: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>3: 2<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>2: 3<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,10 +486,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I=I_1+I_2+2 \\sqrt{I_1 I_2} \\cos \\phi \\\\\u003cbr/>&amp; =I_0+I_0+2 I_0 \\cos \\phi=2 I_0(1-\\cos \\phi) \\\\\u003cbr/>&amp; \\text { For } \\phi=\\frac{\\pi}{3} \\Rightarrow I_p=3 I_0 \\\\\u003cbr/>&amp; \\text { For } \\phi=\\frac{\\pi}{2} \\Rightarrow I_Q=2 I_0\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\frac{I_P}{I_Q}=\\frac{3 I_0}{2 I_0}=\\frac{3}{2}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& I=I_1+I_2+2 \\sqrt{I_1 I_2} \\cos \\phi \\\\& =I_0+I_0+2 I_0 \\cos \\phi=2 I_0(1-\\cos \\phi) \\\\& \\text { For } \\phi=\\frac{\\pi}{3} \\Rightarrow I_p=3 I_0 \\\\& \\text { For } \\phi=\\frac{\\pi}{2} \\Rightarrow I_Q=2 I_0\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\frac{I_P}{I_Q}=\\frac{3 I_0}{2 I_0}=\\frac{3}{2}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two coherent sources of light interfere and produce fringe pattern on a screen. For central maximum, the phase difference between the two waves will be. </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \pi \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 3 \pi / 2 \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \pi / 2 \)</p></span></div><div class="option"><span class="key">d</span><span><p>zero</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>At central maximum, Δx = 0. Therefore, Δφ = (2π/λ) x 0 = 0.\u003c/p> \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 265)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two light waves having the same wavelength \(\lambda\) in vacuum are in phase initially. Then the first wave travels a path \( \mathrm{L}_1\) through a medium of refractive index \(n_1\) while the second wave travels a path of length \(L_2\) through a medium of refractive index \(n_2\). After this the phase difference between the two waves is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{2 \pi}{\lambda}\left(\frac{L_1}{n_1}-\frac{L_2}{n_2}\right) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{2 \pi}{\lambda}\left(n_1 L_1-n_2 L_2\right) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{2 \pi}{\lambda}\left(n_2 L_1-n_1 L_2\right) \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{2 \pi}{\lambda}\left(\frac{L_2}{n_1}-\frac{L_1}{n_2}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(2)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the Young's double slit experiment, the distance between the slits varies in time as \(d(t)=d_0+a_0 \sin \omega t\); where \(d_0, \omega\) and \(a_0\) are constants. The difference between the largest fringe width and the smallest fringe width obtained over time is given as:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{\lambda D}{d_0+a_0}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{\lambda D}{d_0^2} a_0<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{2 \lambda D a_0}{\left(d_0^2-a_0^2\right)}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{2 \lambda D\left(d_0\right)}{\left(d_0^2-a_0^2\right)}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -518,10 +522,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>\\beta=\\frac{\\lambda D}{d} = \\frac{\\lambda D}{d_0+a_0 \\sin \\omega t}\u003cbr/>\\]\u003c/p> \u003cp>For the largest fringe width, \\(\\sin \\omega t=-1\\)\u003cbr/>For the smallest fringe width, \\(\\sin \\omega t=+1\\)\u003cbr/>\\(\\therefore\\) Difference between the largest to smallest fringe width \\(=\\beta_1-\\beta_2\\).\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\beta_1-\\beta_2=\\frac{\\lambda D}{d_0-a_0}-\\frac{\\lambda D}{d_0+a_0} \\\\\u003cbr/>&amp; =\\lambda D\\left[\\frac{\\left(d_0+a_0\\right)-\\left(d_0-a_0\\right)}{d_0^2-a_0^2}\\right]=\\frac{2 \\lambda D a_0}{d_0^2-a_0^2}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>\\beta=\\frac{\\lambda D}{d} = \\frac{\\lambda D}{d_0+a_0 \\sin \\omega t}\u003cbr/>\\]\u003c/p> \u003cp>For the largest fringe width, \\(\\sin \\omega t=-1\\)\u003cbr/>For the smallest fringe width, \\(\\sin \\omega t=+1\\)\u003cbr/>\\(\\therefore\\) Difference between the largest to smallest fringe width \\(=\\beta_1-\\beta_2\\).\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\beta_1-\\beta_2=\\frac{\\lambda D}{d_0-a_0}-\\frac{\\lambda D}{d_0+a_0} \\\\& =\\lambda D\\left[\\frac{\\left(d_0+a_0\\right)-\\left(d_0-a_0\\right)}{d_0^2-a_0^2}\\right]=\\frac{2 \\lambda D a_0}{d_0^2-a_0^2}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two polaroide \(A\) and \(B\) are placed in such a way that the pass-axis of polaroids are perpendicular to each other. Now, another polaroid \(C\) is placed between \(A\) and \(B\) bisecting the angle between them. If intensity of unpolarised light is \(I_0\) then intensity of transmitted light after passing through polaroid B will be:</p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{I_0}{4}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{I_0}{2}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{I_0}{8}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Zero }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -530,10 +534,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Intensity of light after passing through the polariser\u003cbr/>\\[\u003cbr/>I_A=\\frac{I_o}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the polariserc\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_C=\\frac{I_o}{2} \\cos ^2 45=\\frac{I_o}{4} \\\\\u003cbr/>&amp; \\Rightarrow I_B=I_C \\cos ^2 45=\\frac{I_o}{8}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Intensity of light after passing through the polariser\u003cbr/>\\[\u003cbr/>I_A=\\frac{I_o}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the polariserc\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& I_C=\\frac{I_o}{2} \\cos ^2 45=\\frac{I_o}{4} \\\\& \\Rightarrow I_B=I_C \\cos ^2 45=\\frac{I_o}{8}\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For Young's double slit experiment, two statements are given below :<br/>Statement I : If screen is moved away from the plane of slits, angular separation of the fringes remains constant.</p> <p>Statement II : If the monochromatic source is replaced by another monochromatic source of larger wavelength, the angular separation of fringes decreases.</p> <p>In the light of the above statements, choose the correct answer from the options given below :</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is true but Statement II is false</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Angular fringe separation:\u003cbr/>In Young’s experiment\u003c/p> \u003cp>\\(\\theta \\text{  }=\\text{  }\\frac{\\beta }{D}\\text{  }=\\text{  }\\frac{\\lambda D\\mathrm{/}d}{D}\\text{  }=\\text{  }\\frac{\\lambda }{d},\\)\u003c/p> \u003cp>which depends only on the wavelength \\(\\lambda\\) and slit separation \\(d\\), not on the screen distance \\(D\\).\u003c/p> \u003cp>Statement I – Moving the screen farther (changing \\(D\\)):\u003cbr/>\\(\\theta\\) stays at \\(\\lambda \\mathrm{/}d\\).\u003cbr/>⇒ True.\u003c/p> \u003cp>Statement II – Replacing the source with a larger wavelength:\u003cbr/>Since \\(\\theta =\\lambda \\mathrm{/}d\\), increasing \\(\\lambda\\) increases the angular separation, it does not decrease it.\u003cbr/>⇒ False.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In Young's double slit experiment, if the source of light changes from orange to blue then:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The distance between consecutive fringes will decrease.</p></span></div><div class="option"><span class="key">b</span><span><p>The distance between consecutive fringes will increase.</p></span></div><div class="option"><span class="key">c</span><span><p>The central bright fringe will become a dark fringe.</p></span></div><div class="option"><span class="key">d</span><span><p>The intensity of the minima will increase.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\beta=\\frac{\\lambda D}{d}\u003cbr/>\\]\u003c/p> \u003cp>From formula, fringe width is directly proportional to wavelength and wavelength of orange light is greater than the blue light therefore,\u003cbr/>So, \\(\\beta_{\\text {Orange }}&gt;\\beta_{\\text {Blue }}\\)\u003cbr/>Hence, distance between consecutive fringes will decrease.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two coherent light sources having intensity in the ratio \(2x\) produce an interference pattern. The ratio \(\ \frac{I_{\max }-I_{\min }}{I_{\max }+I_{\min }}\) will be:</p> <p> </p> <p><strong>[JEE Main 2021, 25 Feb (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\ \frac{2 \sqrt{2 x}}{2 x+1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\ \frac{\sqrt{2 x}}{2 x+1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\ \frac{\sqrt{2 x}}{x+1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\ \frac{2 \sqrt{2 x}}{x+1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(y=\\frac{{I}_{\\max }-{I}_{\\min }}{{I}_{\\max }+{I}_{\\min }}\\\\ =\\frac{{I}_{\\max }}{{I}_{\\min }}=\\frac{{\\left(\\sqrt{{I}_{1}}+\\sqrt{{I}_{2}}\\right)}^{2}}{{\\left(\\sqrt{{I}_{1}}-\\sqrt{{I}_{2}}\\right)}^{2}}\\\\ \\frac{{I}_{\\max }}{{I}_{\\min }}={\\left(\\frac{\\sqrt{x}+1}{\\sqrt{x}-1}\\right)}^{2}\\left[\\text{ Given }=\\frac{{I}_{1}}{{I}_{2}}=2x\\right]\\)\u003c/p> \u003cp>\\(y=\\frac{{\\left(\\frac{\\sqrt{2x}+1}{\\sqrt{2x}-1}\\right)}^{2}-1}{{\\left(\\frac{\\sqrt{2x}+1}{\\sqrt{2x}-1}\\right)}^{2}+1}\\\\ y=\\frac{2x+1+2\\sqrt{2x}-2x-1+2\\sqrt{2x}}{2x+1+2\\sqrt{2x}+2x+1-2\\sqrt{2x}}\\\\ y=\\frac{4\\sqrt{2x}}{2(2x+1)}\\\\ y=\\frac{2\\sqrt{2x}}{2x+1}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two polaroids \(A\) and \(B\) are placed in such a way that the pass-axis of polaroids are perpendicular to each other. Now, another polaroid \(C\) is placed between \(A\) and \(B\) bisecting the angle between them. If intensity of unpolarised light is \(I_0\) then intensity of transmitted light after passing through polaroid B will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{I_0}{4}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{I_0}{2}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{I_0}{8}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Zero }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -578,10 +582,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Intensity of light after passing through the polariser\u003cbr/>\\[\u003cbr/>I_A=\\frac{I_o}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the polariserc\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_C=\\frac{I_o}{2} \\cos ^2 45=\\frac{I_o}{4} \\\\\u003cbr/>&amp; \\Rightarrow I_B=I_C \\cos ^2 45=\\frac{I_o}{8}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Intensity of light after passing through the polariser\u003cbr/>\\[\u003cbr/>I_A=\\frac{I_o}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the polariserc\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& I_C=\\frac{I_o}{2} \\cos ^2 45=\\frac{I_o}{4} \\\\& \\Rightarrow I_B=I_C \\cos ^2 45=\\frac{I_o}{8}\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The light waves from two coherent sources have same intensity \(I_1=I_2=I_0\). In interference pattern the intensity of light at minima is zero. What will be the intensity of light at maxima?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( I_0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2 I_0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 5 I_0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 I_0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Maximum intensity in interference is:\u003c/p> \\({I}_{\\text{max}}={I}_{1}+{I}_{2}+2\\sqrt{{I}_{1}{I}_{2}}\\) \u003cp>Given:\u003c/p> \\({I}_{1}={I}_{2}={I}_{0}\\) \u003cp>Substitute the values:\u003c/p> \\({I}_{\\text{max}}={I}_{0}+{I}_{0}+2\\sqrt{{I}_{0}^{2}}\\) \\({I}_{\\text{max}}={I}_{0}+{I}_{0}+2{I}_{0}\\) \\({I}_{\\text{max}}=4{I}_{0}\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>' \(n\) ' polarizing sheets are arranged such that each makes an angle \(45^{\circ}\) with the preceeding sheet. An unpolarized light of intensity \(I\) is incident into this arrangement. The output intensity is found to be \(\frac{I}{64}\). The value of \(n\) will be:</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -602,7 +606,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Intensity of light after passing through the first sheet\u003cbr/>\\[\u003cbr/>I_1=\\frac{I}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the second sheet\u003cbr/>\\[\u003cbr/>I_2=I_1 \\cos ^2\\left(45^{\\circ}\\right)=\\frac{I}{4}\u003cbr/>\\]\u003c/p> \u003cp>After passing through \\(n^{\\text {th }}\\) sheet\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; I_{ n }=\\frac{I}{2^{ n }}=\\frac{I}{64} \\\\\u003cbr/>&amp; \\Rightarrow n=6\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Intensity of light after passing through the first sheet\u003cbr/>\\[\u003cbr/>I_1=\\frac{I}{2}\u003cbr/>\\]\u003c/p> \u003cp>Intensity of light after passing through the second sheet\u003cbr/>\\[\u003cbr/>I_2=I_1 \\cos ^2\\left(45^{\\circ}\\right)=\\frac{I}{4}\u003cbr/>\\]\u003c/p> \u003cp>After passing through \\(n^{\\text {th }}\\) sheet\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& I_{ n }=\\frac{I}{2^{ n }}=\\frac{I}{64} \\\\& \\Rightarrow n=6\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Physics PYQs</h3>

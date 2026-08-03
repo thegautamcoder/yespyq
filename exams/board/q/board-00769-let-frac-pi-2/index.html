@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"QAPage","mainEntity":{"@type":"Question","name":"Let \\(\\frac{\\pi }{2}","text":"Let \\(\\frac{\\pi }{2}","answerCount":1,"author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03","acceptedAnswer":{"@type":"Answer","text":"Correct answer: b) \\(\\frac{\\sqrt{11}+1}{2\\sqrt{3}}\\). Simplify the trigonometric expression Let the given expression be \\(E\\). \\(E=(\\sin \u2061\\frac{11x}{2})(\\sin \u20616x\u2212\\cos \u20616x)+(\\cos \u2061\\frac{11x}{2})(\\sin \u20616x+\\cos \u20616x)\\) Expand the terms: \\(E=\\sin \u2061\\frac{11x}{2}\\sin \u20616x\u2212\\sin \u2061\\frac{11x}{2}\\cos \u20616x+\\cos \u2061\\frac{11x}{2}\\sin \u20616x+\\cos \u2061\\frac{11x}{2}\\cos \u20616x\\) Rearrange the terms to group familiar identities: \\(E=(\\cos \u2061\\frac{11x}{2}\\cos \u20616x+\\sin \u2061\\frac{11x}{2}\\sin \u20616x)+(\\cos \u2061\\frac{11x}{2}\\sin \u20616x\u2212\\sin \u2061\\frac{11x}{2}\\cos \u20616x)\\) We recognize the cosine difference formula \\(\\cos \u2061(A\u2212B)=\\cos \u2061A\\cos \u2061B+\\sin \u2061A\\sin \u2061B\\) and the sine difference formula \\(\\sin \u2061(B\u2212A)=\\sin \u2061B\\cos \u2061A\u2212\\cos \u2061B\\sin \u2061A\\). Let \\(A=\\frac{11x}{2}\\) and \\(B=6x\\). The first part is \\(\\cos \u2061(\\frac{11x}{2}\u22126x)\\). The second part is \\(\\sin \u2061(6x\u2212\\frac{11x}{2})\\). Calculate the arguments: \\(A\u2212B=\\frac{11x}{2}\u2212\\frac{12x}{2}=\u2212\\frac{x}{2}\\) \\(B\u2212A=\\frac{12x}{2}\u2212\\frac{11x}{2}=\\frac{x}{2}\\) Substitute these back into the expression: \\(E=\\cos \u2061(\u2212\\frac{x}{2})+\\sin \u2061(\\frac{x}{2})\\) Since cosine is an even function , \\(\\cos \u2061(\u2212\\theta )=\\cos \u2061(\\","url":"https://yespyq.com/exams/board/q/board-00769-let-frac-pi-2/","author":{"@type":"Organization","name":"YESPYQ","url":"https://yespyq.com/"},"datePublished":"2026-08-03"}}}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -76,7 +80,7 @@
       <div class="qtags"><span class="qtag">Board</span><span class="qtag">Maths</span></div>
       <h1>Let \(\frac{\pi }{2}</h1>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(\frac{\pi }{2}<x<\pi\) be such that \(cotx=\frac{-5}{\sqrt{11}}\). Then \(\left(\sin \frac{11x}{2}\right)(\sin 6x-\cos 6x)+\)\(\left(\cos \frac{11x}{2}\right)(\sin 6x+\cos 6x)\) is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{\sqrt{11}-1}{2\sqrt{3}}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(\frac{\sqrt{11}+1}{2\sqrt{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\sqrt{11}+1}{3\sqrt{2}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\sqrt{11}-1}{3\sqrt{2}}\)</p></span></div></div>
       <div class="explain" data-exp>

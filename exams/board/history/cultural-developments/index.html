@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"History","item":"https://yespyq.com/exams/board/history/"},{"@type":"ListItem","position":5,"name":"Cultural Developments","item":"https://yespyq.com/exams/board/history/cultural-developments/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Cultural Developments</h1>
       <p>10 Board History previous year questions on <b>Cultural Developments</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which of the following texts were Buddha’s teachings compiled ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> Uttaradhyayana Sutta </p></span></div><div class="option correct"><span class="key">b</span><span><p>Sutta Pitaka</p></span></div><div class="option"><span class="key">c</span><span><p>Kalpsutta </p></span></div><div class="option"><span class="key">d</span><span><p>Rigveda</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following statements regarding Jainism and choose the correct option:<br/>I. The cycle of birth and rebirth is shaped through Karma.<br/>II. There is a need to renounce the world.<br/>III. Worldly existence is a necessary condition for attaining salvation.<br/>IV. Principle of Ahimsa is important.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I, II and III</p></span></div><div class="option"><span class="key">b</span><span><p> II, III and IV</p></span></div><div class="option"><span class="key">c</span><span><p>I, II and IV</p></span></div><div class="option"><span class="key">d</span><span><p> I, III and IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) I, II and IV\u003c/p> \u003cp>Explanation:\u003c/p> \u003cp>I. Correct – According to Jainism, karma binds the soul and leads to the cycle of birth and rebirth.\u003c/p> \u003cp>II. Correct – Jainism strongly advocates renunciation of worldly life as essential to attain liberation (moksha).\u003c/p> \u003cp>III. Incorrect – Jainism teaches that liberation can only be achieved by ending the cycle of worldly existence, not by continuing it.\u003c/p> \u003cp>IV. Correct – Ahimsa (non-violence) is the central tenet of Jainism and applies to thoughts, words, and actions.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are not correct?"</p> <p>Statements:<br/>(A) Vinay Pitaka does not describe the rules for monks.<br/>(B) Buddhism grew only after the death of Buddha.<br/>(C) Sutta Pitaka are the verses composed by bhikkunis.<br/>(D) Punna was a rich land-lady.<br/>(E) The word Chaitya may have been derived from the word chita.</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(D) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(C) and (E) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (D) and (E) only.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(A) is incorrect because the Vinay Pitaka does describe rules for monks.\u003cbr/>(B) is incorrect because Buddhism started spreading even during the Buddha's lifetime.\u003cbr/>(D) is incorrect, Punna was not particularly noted as a rich land-lady in traditional texts.\u003cbr/>\u003cbr/>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Who was the first woman to be ordained as bhikkhuni?"</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Sigala</p></span></div><div class="option"><span class="key">b</span><span><p>Karuni Pajapati</p></span></div><div class="option"><span class="key">c</span><span><p>Mahapajapati Gotami</p></span></div><div class="option"><span class="key">d</span><span><p>Punna</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Answer: The correct answer is (C) Mahapajapati Gotami.\u003c/p> \u003cp>She was the first woman to be ordained as a bhikkhuni (a fully ordained female monk) in the Buddhist tradition.\u003c/p> \u003cp>The first woman to be ordained as a bhikkhuni (fully ordained Buddhist nun) was Mahapajapati Gotami, the stepmother and maternal aunt of the Buddha. She approached the Buddha seeking ordination, and after initial reluctance, the Buddha permitted it, establishing the Bhikkhuni Sangha (the community of nuns). This marked the beginning of the formal ordination of women in Buddhism.\u003c/p> \u003cp>Mahapajapati Gotami's ordination was granted under specific conditions known as the Eight Garudhammas, which set rules for the relationship between monks and nuns in the monastic community.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion (A): Buddhism grew rapidly both during the lifetime and after the death of Buddha.<br/>Reason (R): Many people were dissatisfied with existing religious practices and confused by the rapid social changes taking place around them.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are true and (R) is the correct reason for (A). </p></span></div><div class="option"><span class="key">b</span><span><p>Both (A) and (R) are true but (R) is not the correct reason for (A).</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is true, (R) is untrue.</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is untrue, (R) is true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: (A) Both (A) and (R) are true and (R) is the correct reason for (A).\u003cbr/>Explanation: The rise of Buddhism can be explained by the discontent with ritualistic Brahmanical practices and the impact of social change (urbanization, inequality, new kingdoms). Hence, both statements are true and R provides the valid explanation for A.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Assertion–Reason Question<br/>Assertion (A): Like Buddhism, Jainism also spread to many parts of India.<br/>Reason (R): Jaina scholars produced literature in various languages like Tamil, Prakrit and Sanskrit etc.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both (A) and (R) are correct and (R) is the correct explanation of (A)</p></span></div><div class="option"><span class="key">b</span><span><p> Both (A) and (R) are correct, but (R) is not the correct explanation of (A).</p></span></div><div class="option"><span class="key">c</span><span><p>(A) is correct, but (R) is not correct.</p></span></div><div class="option"><span class="key">d</span><span><p>(A) is not correct, but (R) is correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer: (B) Both (A) and (R) are correct, but (R) is not the correct explanation of (A).\u003c/p> \u003cp>Explanation:\u003cbr/>Jainism did spread widely across different regions of India, especially in western and southern India.\u003cbr/>Jaina scholars indeed produced literature in languages such as Prakrit, Sanskrit, and Tamil.\u003c/p> \u003cp>However, the spread of Jainism was mainly due to:\u003c/p> \u003cp>support from rulers and merchants,\u003cbr/>missionary activities,\u003cbr/>simple teachings and monastic organization.\u003c/p> \u003cp>The production of literature helped preserve and promote Jain traditions, but it was not the main reason for the spread of Jainism.\u003c/p> \u003cp>So:\u003c/p> \u003cp>Assertion is true \u003cbr/>Reason is also true \u003cbr/>But Reason does not correctly explain Assertion \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Mauryan Emperor who embraced Buddhism was:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Chandragupta</p></span></div><div class="option"><span class="key">b</span><span><p> Bimbisara</p></span></div><div class="option"><span class="key">c</span><span><p>Ashoka</p></span></div><div class="option"><span class="key">d</span><span><p>Bindusara</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer: (C) Ashoka\u003cbr/>Why Ashoka embraced Buddhism\u003cbr/>Kalinga War (c. 261 BCE): The massive loss of life and suffering during this campaign deeply affected Emperor Ashoka.\u003c/p> \u003cp>Moral transformation: Moved by remorse, he adopted Buddhist dhamma (dharma)—emphasizing non-violence (ahiṁsā), compassion, and ethical governance.\u003c/p> \u003cp>Support for Buddhism: Ashoka became Buddhism’s greatest royal patron—sending missions abroad (e.g., his son Mahinda to Sri Lanka), convening the Third Buddhist Council at Pataliputra, and engraving edicts on pillars and rocks promoting tolerance and welfare.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext">Two statements have been given below as Assertion (A) and Reason (R). Read the statements and choose the appropriate answer:  Assertion (A): Buddhism grew rapidly both during the lifetime and after the death of Buddha. Reason (R): Many people were dissatisfied with existing religious practices and confused by the rapid social changes taking place around them.</div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Both A and R are true, and R is the correct explanation of A.</span></div><div class="option"><span class="key">b</span><span>Both A and R are true, but R is not the correct explanation of A.</span></div><div class="option"><span class="key">c</span><span>A is true, but R is false.</span></div><div class="option"><span class="key">d</span><span>A is false, but R is true.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"Correct Answer: A. Both A and R are true, and R is the correct explanation of A. Assertion (A) is true: Buddhism did grow rapidly both during the lifetime of Gautama Buddha and after his death. His teachings attracted a wide range of followers due to their emphasis on non-violence, ethical living, and liberation from suffering.   Reason (R) is also true: At the time, many people were dissatisfied with the ritualistic and hierarchical practices of Brahmanical religion. Additionally, rapid social changes such as urbanization, emergence of new trade routes, and the rise of new social groups (like merchants and artisans) created confusion and a need for new religious ideas.   The Reason explains the Assertion correctly: Because people were disillusioned with the existing religious system and troubled by societal changes, they were drawn to Buddhism, which was simple, inclusive, and offered a path to salvation without elaborate rituals or caste barriers.","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Read the following statements regarding Buddhist teachings and choose the correct option:</p> <p>I. The world is transient and constantly changing.<br/>II. It is soulless and there is nothing eternal in it.<br/>III. Sorrows and sufferings are intrinsic to human existence.<br/>IV. Renouncing the world is essential for living.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>I, II, III are correct.</p></span></div><div class="option"><span class="key">b</span><span><p> II, III, IV are correct.</p></span></div><div class="option"><span class="key">c</span><span><p> I, III, IV are correct.</p></span></div><div class="option"><span class="key">d</span><span><p>I, II, IV are correct.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -182,7 +186,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Correct Answer: (A) I, II, III are correct\u003c/p> \u003cp>Explanation (English):\u003c/p> \u003cp>Buddhist teachings emphasize:\u003c/p> \u003cp>the impermanent nature of the world (Anitya),\u003cbr/>the absence of an eternal soul (Anatman),\u003cbr/>and that suffering is part of human life (Dukkha).\u003c/p> \u003cp>However, Buddhism does not say that complete renunciation of the world is essential for everyone. Gautama Buddha taught the Middle Path, avoiding both extreme luxury and extreme asceticism.\u003c/p> \u003cp>Therefore, statement IV is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is not a structural feature of Stupa ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Harmika </p></span></div><div class="option"><span class="key">b</span><span><p>Chhatri</p></span></div><div class="option"><span class="key">c</span><span><p>Garbhagriha </p></span></div><div class="option"><span class="key">d</span><span><p>Gateways</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

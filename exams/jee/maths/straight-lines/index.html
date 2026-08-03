@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Straight Lines","item":"https://yespyq.com/exams/jee/maths/straight-lines/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Straight Lines</h1>
       <p>44 JEE Maths previous year questions on <b>Straight Lines</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the range of the function \(f(x)=6+16 \cos x \cdot \cos \left(\frac{\pi}{3}-x\right) \cdot \cos \left(\frac{\pi}{3}+x\right)\)\(\sin 3 x \cdot \cos 6 x, x \in R\) be \([\alpha, \beta]\). Then the distance of the point \((\alpha, \beta)\) from the line \(3 x+4 y+12=0\) is :</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>11</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>9</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the lines \(\mathrm{x}(3\lambda +1)+\mathrm{y}(7\lambda +2)=17\lambda +5\), \(\lambda\) being a parameter, all passing through a point \(P\). One of these lines (say \(L\)) is farthest from the origin. If the distance of \(L\)from the point\((3,6)\) is \(d\), then the value of \({d}^{2}\) is</p> <p> </p> <p>[JEE Main 2025, 3 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(20\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(30\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(15\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the images of the points \(\mathbf{A}(1,3), \mathbf{B}(3,1)\) and \(\mathbf{C}(2,4)\) in the line \(x+2 y=4\) are D, E and F respectively, then the centroid of the triangle DEF is</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(\left(\frac{2}{3},0\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left(\frac{5}{3},0\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left(\frac{1}{3},0\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>none of these</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the locus of the point, whose distances from the points \((2,1)\) and \((1,3)\) are in the ratio \(5: 4\), is \(a x^2+b y^2+c x y+d x+e y+170=0\), then the value of \(a^2+2 b+3 c+4 d+e\) is equal to:</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\(37\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-27\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(437\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the triangle \(P Q R\) be the image of the triangle with vertices \((1,3),(3,1)\) and \((2,4)\) in the line \(x+2 y=2\). If the centroid of \(\Delta PQR\)<em> </em>is the point \((\alpha, \beta)\), then \(15(\alpha-\beta)\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>24</p></span></div><div class="option"><span class="key">b</span><span><p>19</p></span></div><div class="option"><span class="key">c</span><span><p>21</p></span></div><div class="option"><span class="key">d</span><span><p>22</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(G\\) be the centroid of triangle formed by \\((1,3),(3,1)\\) and \\((2,4).\\)\u003c/p> \u003cp>\\(G\\equiv \\left(2,\\frac{8}{3}\\right)\\)\u003cbr/>Image of \\(G\\), with respect to \\(x+2y-2=0\\)\u003c/p> \u003cp>\\(\\frac{\\alpha -2}{1}=\\frac{\\beta -\\frac{8}{3}}{2}=-2\\frac{\\left(2+\\frac{16}{3}-2\\right)}{1+4}=\\frac{-2}{5}\\left(\\frac{16}{3}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\alpha =\\frac{-2}{15},\\beta =\\frac{-24}{15}\\\\ \\text{Now},15\\left(\\alpha -\\beta \\right)=15\\left(\\frac{-2}{15}+\\frac{24}{15}\\right)=22\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A triangle \(A B C\) have sides \(x+y=11 ; 2 x+3 y=29\) and \(x+2y=16\) such that a point \(P\left(\frac{11}{2}, \alpha\right)\) lies on or inside the triangle find the product of maximum and minimum value of " \(\alpha\) ".</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>29.8</p></span></div><div class="option"><span class="key">b</span><span><p>31.2</p></span></div><div class="option"><span class="key">c</span><span><p>31.8</p></span></div><div class="option"><span class="key">d</span><span><p>32</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -137,7 +141,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(Here,x=\\frac{11}{2}&y=\\alpha \\\\ thenputinx+y=11,weget\\\\ \\frac{11}{2}+\\alpha =11\\Rightarrow \\alpha =5.5\\\\ Nowputinx+2y=16,weget\\\\ \\frac{11}{2}+2\\alpha =16\\Rightarrow \\alpha =5.2\\\\ Atlastputin2x+3y=29,weget\\\\ 2\\times \\frac{11}{2}+3\\alpha =29\\Rightarrow \\alpha =6\\\\ Nowtheminimumvalueof\\alpha is5.2\\\\ andmaximumvalueis6.\\\\ Sotheproductofminimumandmaximum=6\\times 5.2=31.2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \({}^{n}C_{r-1}=28,{}^{n}C_{r}=56\text{ and }{}^{n}C_{r+1}=70\). Let \(\mathrm{A}(4\cos t,4\sin t),\mathrm{B}(2\mathrm{sint},-2\mathrm{cost})\)\(\text{ and }C\left(3r-n,{r}^{2}-n-1\right)\) be the vertices of a triangle \(ABC\), where \(t\) is a parameter. If \((3x-1{)}^{2}+(3y{)}^{2}=\alpha ,\) is the locus of the centroid of triangle \(ABC\), then\(\alpha\)equals:</p> <p> </p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>20</p></span></div><div class="option"><span class="key">b</span><span><p>8</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>18</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -149,7 +153,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({ }^n C_{r-1}=28,{ }^n C_r=56 \\)\u003cbr/>\\(\\frac{{ }^n C_{r-1}}{{ }^n C_r}=\\frac{28}{56} \\)\u003cbr/>\\(\\frac{\\frac{n!}{(r-1)!(n-r+1)!}}{\\frac{n!}{n!(n-r)!}}=\\frac{1}{2} \\)\u003cbr/>\\(\\frac{r}{(n-r+1)}=\\frac{1}{2} \\)\u003cbr/>\\(3 r=n+1 \\ldots(i) \\)\u003cbr/>\\(\\frac{{ }^n C_{\\mathrm{r}}}{{ }^n C_{\\mathrm{r}+1}}=\\frac{56}{70} \\)\u003cbr/>\\(\\frac{(r+1)}{(n-r)}=\\frac{56}{70} \\Rightarrow 9 r=4 n-5 \\ldots(i i) \\)\u003cbr/> By (i) and (ii) \u003cbr/>we get \\(r=3,n=8) \\)\u003cbr/>\\(A(4 \\cos t, 4 \\sin t) , B(2 \\sin t,-2 \\cos t), C\\left(3 r-n, r^2-n-1\\right)\\)\u003cbr/>\\(A(4 \\cos t, 4 \\sin t), B(2 \\sin t,-2 \\cos t), C(1,0) \\)\u003c/p> \u003cp>Let centroid of triangle \\(ABC\\) be \\(G(x,y)\\)\u003c/p> \u003cp>then \\(x=\\frac{4 \\cos t+2 \\sin t+1}{3} \\Rightarrow 3 x-1=4 \\cos t+2 \\sin t\\)\u003c/p> \u003cp>\\(y=\\frac{4 \\sin t-2 \\cos t+0}{3} \\Rightarrow 3 y=4 \\sin t-2 \\cos t\\)\u003c/p> \u003cp>Now \u003cbr/>\\((3 x-1)^2+(3 y)^2=(4 \\cos t+2 \\sin t)^2+(4 \\sin t-2\\cos t)^2 \\)\u003cbr/>\\((3 x-1)^2+(3 y)^2=20\\)\u003c/p> \u003cp>Hence \\(\\alpha=20\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the line \({L}_{1}:x+3=0\) intersect the lines \({L}_{2}:x-y=0\) and \({L}_{3}:3x+y=0\) at the points \(A\) and \(B,\) respectively. Let the bisector of the obtuse angle between the lines \({L}_{2}\text{and}{L}_{3}\) intersect the line \({L}_{1}\) at the point \(C.\) Then \(B{C}^{2}:A{C}^{2}\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5:1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1:5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2:3\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3:2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\( L_1: x+3=0\\)\u003cbr/>\\( L_2: x-y=0 \\)\u003cbr/>\\( L_3: 3 x+y=0 \\)\u003cbr/>\\( \\Rightarrow A(-3,-3)\\) and \\( B(-3,9)\\)\u003cbr/>Obtuse angle bisector of \\( L_3\\) and \\( L_2\\)\u003cbr/>\\( \\frac{x-y}{\\sqrt{2}}=\\frac{3 x+y}{\\sqrt{10}} \\ldots\\)(1)\u003c/p> \u003cp>point of intersection of \\(L_1\\) with eq(1) will give point \\(C\\)\u003cbr/>\\( \\Rightarrow C\\left(-3, \\frac{9-3 \\sqrt{5}}{1+\\sqrt{5}}\\right)\\)\u003c/p> \u003cp>using distance formulae, we get \\(BC\\) and \\(AC\\).\u003c/p> \u003cp>Thus, \\( \\frac{(B C)^2}{(A C)^2}=\\left(\\frac{9-\\frac{9-3 \\sqrt{5}}{1+\\sqrt{5}}}{3+\\frac{9-3 \\sqrt{5}}{1+\\sqrt{5}}}\\right)=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two sides of isoceles triangle are \(x+2y=4\) and \(x+y=4\). Then the sum of all possible values of \(m\) where \(m\) is slope of 3rd side,is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{3}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-\frac{2}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let Slope of third side is m\u003cbr/>\\(\\frac{-\\frac{1}{2}-\\mathrm{m}}{1-\\frac{\\mathrm{m}}{2}}=\\frac{\\mathrm{m}+1}{1-\\mathrm{m}}\\\\ \\Rightarrow \\frac{1+2m}{m-2}=\\frac{m+1}{1-m}\\\\ \\Rightarrow -2{\\mathrm{m}}^{2}+\\mathrm{m}+1={\\mathrm{m}}^{2}-\\mathrm{m}-2\\\\ \\Rightarrow 3{\\mathrm{m}}^{2}-2\\mathrm{m}-3=0\\\\ \\Rightarrow {\\mathrm{m}}_{1}+{\\mathrm{m}}_{2}=\\frac{2}{3}\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A triangle \(A B C\) have sides \(x+y=11 ; 2 x+3 y=29\) and \(x+2y=16\) such that a point \(P\left(\frac{11}{2}, \alpha\right)\) lies on or inside the triangle find the product of maximum and minimum value of " \(\alpha\) ".</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>29.8</p></span></div><div class="option"><span class="key">b</span><span><p>31.2</p></span></div><div class="option"><span class="key">c</span><span><p>31.8</p></span></div><div class="option"><span class="key">d</span><span><p>32</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(Here,x=\\frac{11}{2}&y=\\alpha \\\\ thenputinx+y=11,weget\\\\ \\frac{11}{2}+\\alpha =11\\Rightarrow \\alpha =5.5\\\\ Nowputinx+2y=16,weget\\\\ \\frac{11}{2}+2\\alpha =16\\Rightarrow \\alpha =5.2\\\\ Atlastputin2x+3y=29,weget\\\\ 2\\times \\frac{11}{2}+3\\alpha =29\\Rightarrow \\alpha =6\\\\ Nowtheminimumvalueof\\alpha is5.2\\\\ andmaximumvalueis6.\\\\ Sotheproductofminimumandmaximum=6\\times 5.2=31.2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The distance from the origin to the image of \((1,1)\) with respect to the line \(x+y+5=0\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7 \sqrt{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3 \sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6 \sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 \sqrt{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{ Let }(h,k)\\text{ be the image of }(1,1)\\text{ w.r.to }x+y+5=0\\\\ ∴\\frac{h-{x}_{1}}{a}=\\frac{k-{y}_{1}}{b}=\\frac{-2(a{x}_{1}+b{y}_{1}+c)}{{a}^{2}+{b}^{2}}\\\\ \\Rightarrow \\frac{h-1}{1}=\\frac{k-1}{1}=\\frac{-2(1+1+5)}{1+1}\\\\ \\Rightarrow \\frac{h-1}{1}=\\frac{k-1}{1}=-7\\\\ h=-6&k=-6\\)\u003c/p> \u003cp>Now, \\(\\text{P}\\left(-6,-6\\right)\\text{ & O}\\left(0,0\\right)\\)\u003c/p> \u003cp>\\(OP=\\sqrt{{\\left(0+6\\right)}^{2}+{\\left(0+6\\right)}^{2}}\\\\ =\\sqrt{36+36}=\\sqrt{72}\\\\ =6\\sqrt{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two sides of isoceles triangle are \(x+2y=4\) and \(x+y=4\). Then the sum of all possible values of \(m\) where \(m\) is slope of 3rd side,is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-\frac{3}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(-\frac{2}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let Slope of third side is m\u003cbr/>\\(\\frac{-\\frac{1}{2}-\\mathrm{m}}{1-\\frac{\\mathrm{m}}{2}}=\\frac{\\mathrm{m}+1}{1-\\mathrm{m}}\\\\ \\Rightarrow \\frac{1+2m}{m-2}=\\frac{m+1}{1-m}\\\\ \\Rightarrow -2{\\mathrm{m}}^{2}+\\mathrm{m}+1={\\mathrm{m}}^{2}-\\mathrm{m}-2\\\\ \\Rightarrow 3{\\mathrm{m}}^{2}-2\\mathrm{m}-3=0\\\\ \\Rightarrow {\\mathrm{m}}_{1}+{\\mathrm{m}}_{2}=\\frac{2}{3}\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The distance from the origin to the image of \((1,1)\) with respect to the line \(x+y+5=0\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(7 \sqrt{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3 \sqrt{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6 \sqrt{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 \sqrt{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\text{ Let }(h,k)\\text{ be the image of }(1,1)\\text{ w.r.to }x+y+5=0\\\\ ∴\\frac{h-{x}_{1}}{a}=\\frac{k-{y}_{1}}{b}=\\frac{-2(a{x}_{1}+b{y}_{1}+c)}{{a}^{2}+{b}^{2}}\\\\ \\Rightarrow \\frac{h-1}{1}=\\frac{k-1}{1}=\\frac{-2(1+1+5)}{1+1}\\\\ \\Rightarrow \\frac{h-1}{1}=\\frac{k-1}{1}=-7\\\\ h=-6&k=-6\\)\u003c/p> \u003cp>Now, \\(\\text{P}\\left(-6,-6\\right)\\text{ & O}\\left(0,0\\right)\\)\u003c/p> \u003cp>\\(OP=\\sqrt{{\\left(0+6\\right)}^{2}+{\\left(0+6\\right)}^{2}}\\\\ =\\sqrt{36+36}=\\sqrt{72}\\\\ =6\\sqrt{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the images of the points \(\mathbf{A}(1,3), \mathbf{B}(3,1)\) and \(\mathbf{C}(2,4)\) in the line \(x+2 y=4\) are D, E and F respectively, then the centroid of the triangle DEF is <em><strong> (24 Jan, Shift I, Memory Based)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left(\frac{2}{3},0\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left(\frac{5}{3},0\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left(\frac{1}{3},0\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>none of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The mirror line is \\(x+2 y-4=0\\)\u003cbr/>image of \\(\\mathrm{A}(1,3)\\) is \\(\\frac{x-1}{1}=\\frac{y-3}{2}=-2\\left(\\frac{1+6-4}{5}\\right)\\)\u003cbr/>image of \\(\\mathrm{B}(3,1)\\) is \\(\\frac{x-3}{1}=\\frac{y-1}{2}=-2\\left(\\frac{3+2-4}{5}\\right)\\)\u003cbr/>image of \\((2,4)\\) is \\(\\frac{x-2}{1}=\\frac{y-4}{2}=-2\\left(\\frac{2+8-4}{5}\\right)\\)\u003c/p> \u003cp>So \\(D=\\left(-\\frac{1}{5}, \\frac{3}{5}\\right), E=\\left(\\frac{13}{5}, \\frac{1}{5}\\right), F=\\left(\\frac{-2}{5}, \\frac{-4}{5}\\right)\\)\u003cbr/>Centroid \\(=\\left(\\frac{\\frac{-1}{5}+\\frac{13}{5} -\\frac{2}{5}}{3}, \\frac{\\frac{3}{5}+\\frac{1}{5}-\\frac{4}{5}}{3}\\right)\\)\u003cbr/>\\(=\\left(\\frac{10}{15}, 0\\right)=\\left(\\frac{2}{3}, 0\\right)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the triangle \(P Q R\) be the image of the triangle with vertices \((1,3),(3,1)\) and \((2,4)\) in the line \(x+2 y=2\). If the centroid of Δ<em>PQR </em>is the point \((\alpha, \beta)\), then \(15(\alpha-\beta)\) is equal to :</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>24</p></span></div><div class="option"><span class="key">b</span><span><p>19</p></span></div><div class="option"><span class="key">c</span><span><p>21</p></span></div><div class="option"><span class="key">d</span><span><p>22</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let 'G' be the centroid of triangle formed by (1,3), (3,1) and (2,4).\u003c/p> \u003cp>\\(G\\equiv \\left(2,\\frac{8}{3}\\right)\\)\u003cbr/>Image of 'G', with respect to \\(x+2y-2=0\\)\u003c/p> \u003cp>\\(\\frac{\\alpha -2}{1}=\\frac{\\beta -\\frac{8}{3}}{2}=-2\\frac{\\left(2+\\frac{16}{3}-2\\right)}{1+4}=\\frac{-2}{5}\\left(\\frac{16}{3}\\right)\\)\u003c/p> \u003cp>\\(\\Rightarrow \\alpha =\\frac{-2}{15},\\beta =\\frac{-24}{15}\\\\ \\text{Now},15(\\alpha -\\beta )=15\\left(\\frac{-2}{15}+\\frac{24}{15}\\right)=22\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the range of the function</p> <p>\(<br/>f(x)=6+16 \cos x \cdot \cos \left(\frac{\pi}{3}-x\right) \cdot \cos \left(\frac{\pi}{3}+x\right)\)\(\sin 3 x \cdot \cos 6 x, x \in R\)</p> <p>be \([\alpha, \beta]\). Then the distance of the point \((\alpha, \beta)\) from the line \(3 x+4 y+12=0\) is :</p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>11</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>9</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{Since,}\\cos x.\\cos \\left(\\frac{\\pi }{3}-x\\right).\\cos \\left(\\frac{\\pi }{3}+x\\right)\\\\ =\\frac{1}{4}\\cos 3x\\\\ f(x)=6+16\\left(\\frac{1}{4}\\cos 3x\\right)\\sin 3x\\cdot \\cos 6x\\\\ =6+4\\cos 3x\\sin 3x\\cos 6x\\\\ =6+\\sin 12x\\\\ \\text{Since, Range of }\\sin \\text{12x is }[-1,1]\\\\ \\text{ Range of }f(x)\\text{ is }[5,7]\\\\ (\\alpha ,\\beta )\\equiv (5,7)\\\\ \\text{ distance }=\\left|\\frac{15+28+12}{5}\\right|=11\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the lines \(3x-4y-\alpha =0,8x-11y-33=0\) and \(2x-3y+\lambda =0\) be concurrent. If the image of the point \((1, 2)\) in the line \(2x-3y+\lambda =0\) is \(\left(\frac{57}{13}, \frac{-40}{13}\right)\), then \(|\alpha \lambda|\) is equal to: </p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>84</p></span></div><div class="option"><span class="key">b</span><span><p>91</p></span></div><div class="option"><span class="key">c</span><span><p>113</p></span></div><div class="option"><span class="key">d</span><span><p>101</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,10 +270,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{Given,}\\\\ 3x-4y-\\alpha =0,\\\\ 8x-11y-33=0\\\\ 2x–3y+\\lambda =0\\\\ \\text{Here, these equations are concurrent.}\\\\ \\text{then ∆}=0\\\\ \\Rightarrow \\left|\\begin{matrix}3 & -4 & -\\alpha  \\\\ 8 & -11 & -33 \\\\ 2 & -3 & \\lambda \\end{matrix}\\right|=0\\\\ \\Rightarrow 2\\alpha -\\lambda =33.........\\left(i\\right)\\\\ \\text{Now for image of point }\\left(1,2\\right)\\text{:}\\\\ \\frac{x-1}{2}=\\frac{y-2}{-3}=\\frac{-2\\cdot \\left(2-6+\\lambda \\right)}{4+9}=\\frac{-2\\lambda +8}{13}\\\\ \\mathrm{Now},x=\\frac{29-4\\lambda }{13}=\\frac{57}{13}\\text{ (given) }\\\\ \\Rightarrow \\lambda =-7\\\\ \\text{put in eqn }\\left(i\\right),\\text{we get }\\\\ \\alpha =13\\\\ \\left|\\alpha \\lambda \\right|=91\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{Given,}\\\\ 3x-4y-\\alpha =0,\\\\ 8x-11y-33=0\\\\ 2x–3y+\\lambda =0\\\\ \\text{Here, these equations are concurrent.}\\\\ \\text{then ∆}=0\\\\ \\Rightarrow \\left|$$\\begin{matrix}3 & -4 & -\\alpha  \\\\ 8 & -11 & -33 \\\\ 2 & -3 & \\lambda \\end{matrix}$$\\right|=0\\\\ \\Rightarrow 2\\alpha -\\lambda =33.........\\left(i\\right)\\\\ \\text{Now for image of point }\\left(1,2\\right)\\text{:}\\\\ \\frac{x-1}{2}=\\frac{y-2}{-3}=\\frac{-2\\cdot \\left(2-6+\\lambda \\right)}{4+9}=\\frac{-2\\lambda +8}{13}\\\\ \\mathrm{Now},x=\\frac{29-4\\lambda }{13}=\\frac{57}{13}\\text{ (given) }\\\\ \\Rightarrow \\lambda =-7\\\\ \\text{put in eqn }\\left(i\\right),\\text{we get }\\\\ \\alpha =13\\\\ \\left|\\alpha \\lambda \\right|=91\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(a\) be the length of a side of a square <em>OABC </em>with <em>O</em> being the origin. Its side <em>OA </em>makes an acute angle \(\alpha\) with the positive <em>x</em>-axis and the equations of its diagonals are \((\sqrt{3}+1)x+(\sqrt{3}-1)y=0\) and \((\sqrt{3}-1)x-(\sqrt{3}+1)y+8\sqrt{3}=0\). Then <em>\({a}^{2}\)</em> is equal to</p> <p> </p> <p>[JEE Main 2025, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(48\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(32\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(24\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\((\\sqrt{3}+1)x+(\\sqrt{3}−1)y=0\\)\u003c/p> \u003cp>\\(y=\\left(\\frac{\\sqrt{3}+1}{1−\\sqrt{3}}\\right)x\\)\u003c/p> \u003cp>\\(m=\\frac{\\sqrt{3}+1}{1−\\sqrt{3}}\\)\u003c/p> \u003cp>\\(m=\\tan {105}^{^\\circ }\\)\u003c/p> \u003cp>\\(A(a\\cos {60}^{o},a\\sin {60}^{o})\\)\u003c/p> \u003cp>\\(A\\left(\\frac{a}{3},\\frac{a\\sqrt{3}}{2}\\right)\\)\u003c/p> \u003cp>eqn. of \u003cem>AC\u003c/em>\u003c/p> \u003cp>\u003cem>\\((\\sqrt{3}−1)x−(\\sqrt{3}+1)y+8\\sqrt{3}=0\\)\u003c/em>\u003c/p> \u003cp>\u003cem>\\(A\\left(\\frac{a}{2},\\frac{a\\sqrt{3}}{2}\\right)\\) \u003c/em>lies on \u003cem>AC\u003c/em>\u003c/p> \u003cp>\\((\\sqrt{3}−1)\\frac{a}{2}−(\\sqrt{3}+1)\\frac{a\\sqrt{3}}{2}+8\\sqrt{3}=0\\)\u003c/p> \u003cp>\\(\\sqrt{3}a−a−3a−2\\sqrt{3}+16\\sqrt{3}=0\\)\u003c/p> \u003cp>\\(4a=−16\\sqrt{3}\\)\u003c/p> \u003cp>\\(a=4\\sqrt{3}\\)\u003c/p> \u003cp>\\({a}^{2}=16\\times 3=48\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A line passing through the point \(\mathrm{P}(\mathrm{a},0)\)makes an acute angle \(\alpha\) with the positive x -axis. Let this line be rotated about the point P through an angle \(\frac{\alpha }{2}\) in the clock-wise direction. If in the new position, the slope of the line is \(2-\sqrt{3}\) and its distance from the origin is \(\frac{1}{\sqrt{2}}\), then the value of \(3{\mathrm{a}}^{2}{\tan }^{2}\alpha -2\sqrt{3}\) is</p> <p> </p> <p>[JEE Main 2025, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>5</p></span></div><div class="option"><span class="key">d</span><span><p>8</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Sol: \\(\\tan ⁡\\frac{\\alpha }{2}=2−\\sqrt{3}=\\tan ⁡\\frac{\\pi }{12}\\)\u003c/p> \u003cp>\\(\\alpha =\\frac{\\pi }{6}\\)\u003c/p> \u003cp>Equation of new line is \\(y−0=\\tan ⁡\\frac{\\alpha }{2}(x−a)\\)\u003c/p> \u003cp>dis tance from \\((0,0)=\\frac{∣−a\\tan ⁡\\frac{\\alpha }{2}∣}{\\sqrt{1+{\\tan ⁡}^{2}\\frac{\\alpha }{2}}}\\)\\(=\\frac{1}{\\sqrt{2}}\\)\u003c/p> \u003cp>\\(\\Rightarrow\\) \\(\\frac{a\\tan ⁡\\frac{\\alpha }{2}}{\\sec ⁡\\frac{\\alpha }{2}}=\\frac{1}{\\sqrt{2}}\\)\u003c/p> \u003cp>\\(\\Rightarrow a=\\sqrt{3}+1\\) \\(3{a}^{2}{\\tan ⁡}^{2}\\alpha −2\\sqrt{3}=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The image of a point \(A(3,8)\) in the line \(x+3y-7=0\), is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((-1,-4)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((-3,-8)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((1,-4)\)</p></span></div><div class="option"><span class="key">d</span><span><p>(3, 8)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of the line passing through (3,8) and perpendicular to \\(x+3y−7=0\\) is \\(3x−y−1=0\\). The intersection point of both the lines is (1,2).\u003c/p> \u003cp>Now let the image of \\(A\\)(3,8) be \\(A'\\left({x}_{1},{y}_{1}\\right)\\) then point (1,2) will be the mid point of \\(AA'\\).\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{x}_{1}+3}{2}=1\\Rightarrow {x}_{1}=−1\\) and \\(\\frac{{y}_{1}+8}{2}=2\\)\u003c/p> \u003cp>\\(\\Rightarrow {y}_{1}=−4.\\)\u003c/p> \u003cp>Hence, the image is \\((-1,-4)\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>let the equation \(x(x+2)(12-k)=2\) have equal roots. Then the distance of the point \(\left(k,\frac{k}{2}\right)\) from the line \(3x+4y+5=0\) is</p> <p> </p> <p>[JEE Main 2025, 3 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(15\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5\sqrt{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(15\sqrt{5}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(12\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The equation is\u003c/p> \u003cp>\\(x(x+2)(12−k)=2\\)\u003c/p> \u003cp>which can be written as a quadratic in \\(x\\):\u003c/p> \u003cp>\\((12−k)({x}^{2}+2x)−2=0\\) \\((12−k){x}^{2}+2(12−k)x−2=0\\)\u003c/p> \u003cp>For equal roots, its discriminant must be zero.\u003c/p> \u003cp>Let\u003c/p> \u003cp>\\(a=12−k,\\ b=2(12−k),\\ c=−2\\)\u003c/p> \u003cp>Then\u003c/p> \u003cp>\\(\\Delta ={b}^{2}−4ac=[2(12−k){]}^{2}−4(12−k)(−2)\\) \\(\\Delta =4(12−k{)}^{2}+8(12−k)=4(12−k)(14−k)\\)\u003c/p> \u003cp>Set \\(\\Delta =0\\):\u003c/p> \u003cp>\\(4(12−k)(14−k)=0\\Rightarrow k=12\\text{ or }k=14\\)\u003c/p> \u003cp>For \\(k=12\\), the original equation becomes \\(0=2\\), which has no roots, so discard.\u003cbr/>Thus \\(k=14\\).\u003c/p> \u003cp>The point is \\((k,k\\mathrm{/}2)=(14,7)\\).\u003cbr/>Distance from this point to the line \\(3x+4y+5=0\\) is:\u003c/p> \u003cp>\\(d=\\frac{\\mathrm{∣}3(14)+4(7)+5\\mathrm{∣}}{\\sqrt{{3}^{2}+{4}^{2}}}=\\frac{\\mathrm{∣}42+28+5\\mathrm{∣}}{\\sqrt{9+16}}=\\frac{75}{5}=15\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(p\) and \(q\) are the length of the perpendiculars from the origin on the lines \(\text{xcosec}\alpha - ysec\alpha = k\ cot2\alpha\) and \(\text{xsin}\alpha + ycos\alpha = ksin2\alpha\) respectively, then \(k^{2}\) is equal to?<br/><br/>[JEE Main 2021, 31 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p^{2} + 2q^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2p^{2} + q^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p^{2} + 4q^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4p^{2} + q^{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>First line is \\(\\text{xcosec}\\alpha - ysec\\alpha = k\\ cot2\\alpha\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{x}{\\sin\\alpha} - \\frac{y}{\\cos\\alpha} = \\frac{kcos2\\alpha}{sin2\\alpha}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\text{x cos}\\alpha - ysin\\alpha = \\frac{k}{2}cos2\\alpha\\)\u003c/p> \u003cp>\\(\\therefore\\ p = \\left| \\frac{k}{2}cos2\\alpha \\right|\\)\u003c/p> \u003cp>\\(\\Rightarrow \\ 2p = \\left| kcos2\\alpha \\right|.........(i)\\)\u003c/p> \u003cp>Second line is \\(\\text{xsin}\\alpha + ycos\\alpha = ksin2\\alpha\\)\u003c/p> \u003cp>\\(\\Rightarrow \\ q = \\left| ksin2\\alpha \\right|.........(ii)\\)\u003c/p> \u003cp>Now, squaring both sides of eq.(i) and eq.(ii) , then adding both equation, we get\u003c/p> \u003cp>\\(4p^{2} + q^{2} = k^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the distance between the straight lines \(3x+4y=9\) and \(6x+8y=15?\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{3}{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{10}\)</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -341,7 +345,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Distance between parallel lines\u003c/p> \u003cp>\\(=\\frac{\\left|{c}_{1}−{c}_{2}\\right|}{\\sqrt{{a}^{2}+{b}^{2}}}=\\frac{3}{10}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A(a, 0), B(b, 2 b+1)\) and \(C(0, b), b \neq 0,|b| \neq 1\), be points such that the area of \(\triangle ABC\) is 1sq. unit, then the sum of all possible values of a is</p> <p> </p> <p>[JEE Main 2021, 27 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{2 b^2}{b+1}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{-2 b^2}{b+1}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{-b^2}{b+1}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{-2 b^2}{b-1}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -350,10 +354,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp;A ( a , 0), B ( b , 2 b +1), C (0, b )\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\text { Area of } \\triangle ABC =\\frac{1}{2}\\left|\\begin{array}{ccc} \u003cbr/>a &amp; 0 &amp; 1 \\\\\u003cbr/>b &amp; 2 b +1 &amp; 1 \\\\\u003cbr/>0 &amp; b &amp; 1\u003cbr/>\\end{array}\\right|= \\pm 1 \\\\\u003cbr/>&amp; \\Rightarrow \\quad \\frac{1}{2}\\left[ a ( b +1)+ b ^2\\right]= \\pm 1 \\\\\u003cbr/>&amp; \\Rightarrow \\quad a =\\frac{2- b ^2}{ b +1} \\text { or } \\frac{-2- b ^2}{ b +1}\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\text { Sum of all possible values of } a=\\frac{-2 b^2}{b+1}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}&A ( a , 0), B ( b , 2 b +1), C (0, b )\\\\&\\begin{aligned}& \\text { Area of } \\triangle ABC =\\frac{1}{2}\\left|\\begin{array}{ccc} a & 0 & 1 \\\\b & 2 b +1 & 1 \\\\0 & b & 1\\end{array}\\right|= \\pm 1 \\\\& \\Rightarrow \\quad \\frac{1}{2}\\left[ a ( b +1)+ b ^2\\right]= \\pm 1 \\\\& \\Rightarrow \\quad a =\\frac{2- b ^2}{ b +1} \\text { or } \\frac{-2- b ^2}{ b +1}\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\text { Sum of all possible values of } a=\\frac{-2 b^2}{b+1}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the coordinates of the points A and B be (3, 3) and (7, 6), then the length of the portion of the line AB intercepted between the axes is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{\sqrt{10}}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{\sqrt{13}}{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Equation of line \\(A B\\) is \\(y-3=\\frac{6-3}{7-3}(x-3)\\)\u003c/p> \u003cp>\\(\u003cbr/>\\Rightarrow 3 x-4 y+3=0 \\Rightarrow \\frac{x}{-1}+\\frac{y}{3 / 4}=1\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Hence required length is \\(\\sqrt{(-1)^2+\\left(\\frac{3}{4}\\right)^2}=\\frac{5}{4}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \((\alpha, \beta)\) be the centroid of the triangle formed by the lines \(15 x-y=82,6 x-5 y=-4\) and \(9 x+4 y=17\). Then \(\alpha\) \(+2 \beta\) and \(2 \alpha-\beta\) are the roots of the equation</p> <p> </p> <p>[JEE Main 2023, 13 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x^2-7 x+12=0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x^2-13 x+42=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x^2-14 x+48=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x^2-10 x+25=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\alpha=\\frac{6+1+5}{3}=4 \\)\u003c/p> \u003cp>\\( \\beta=\\frac{8+2-7}{3}=1 \\)\u003c/p> \u003cp>\\(\\alpha+2 \\beta=6 \\)\u003c/p> \u003cp>\\( 2 \\alpha-\\beta=7 \\)\u003c/p> \u003cp>\\( x^2-13 x+42=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the angle between the two straight lines \(y=(2-\sqrt{3}) x+5\) and \(y=(2+\sqrt{3}) x-7 ?\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(60^{\circ}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(45^{\circ}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(30^{\circ}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(15^{\circ}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -386,10 +390,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The given lines are:\u003c/p> \u003cp>\\(\u003cbr/>y=(2-\\sqrt{3}) x+5 \\text { and } y=(2+\\sqrt{3}) x-7\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Therefore, slope of first line \\(=m_1=2-\\sqrt{3}\\) and slope of second line \\(=m_2=2+\\sqrt{3}\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\tan \\theta=\\left|\\frac{m_2-m_1}{1+m_1 m_2}\\right|=\\left|\\frac{2+\\sqrt{3}-2+\\sqrt{3}}{1+(4-3)}\\right| \\\\\u003cbr/>&amp; =\\left|\\frac{2 \\sqrt{3}}{2}\\right|=\\sqrt{3}=\\tan \\frac{\\pi}{3} \\Rightarrow \\theta=\\frac{\\pi}{3}=60^{\\circ}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The given lines are:\u003c/p> \u003cp>\\(\u003cbr/>y=(2-\\sqrt{3}) x+5 \\text { and } y=(2+\\sqrt{3}) x-7\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Therefore, slope of first line \\(=m_1=2-\\sqrt{3}\\) and slope of second line \\(=m_2=2+\\sqrt{3}\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\therefore \\tan \\theta=\\left|\\frac{m_2-m_1}{1+m_1 m_2}\\right|=\\left|\\frac{2+\\sqrt{3}-2+\\sqrt{3}}{1+(4-3)}\\right| \\\\& =\\left|\\frac{2 \\sqrt{3}}{2}\\right|=\\sqrt{3}=\\tan \\frac{\\pi}{3} \\Rightarrow \\theta=\\frac{\\pi}{3}=60^{\\circ}\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(A(a, 0), B(b, 2 b+1)\) and \(C(0, b), b \neq 0,|b| \neq 1\), be points such that the area of \(\triangle ABC\) is 1sq. unit, then the sum of all possible values of \(a\) is</p> <p> </p> <p>[JEE Main 2021, 27 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{2 b^2}{b+1}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{-2 b^2}{b+1}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{-b^2}{b+1}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{-2 b^2}{b+1}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,10 +402,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(A(a,0),B(b,2b+1),C(0,b)\\)\u003cbr/> Area of \\(∆ABC=\\frac{1}{2}\\left|\\begin{matrix}a & 0 & 1 \\\\ b & 2b+1 & 1 \\\\ 0 & b & 1\\end{matrix}\\right|=\\pm 1\\)\u003cbr/>\\( \\Rightarrow \\quad \\frac{1}{2}\\left[ a ( b +1)+ b ^2\\right]= \\pm 1\\)\u003cbr/>\\( \\Rightarrow \\quad a =\\frac{2- b ^2}{ b +1} \\text { or } \\frac{-2- b ^2}{ b +1}\\)\u003c/p> \u003cp> Sum of all possible values of \\( a=\\frac{-2 b^2}{b+1}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(A(a,0),B(b,2b+1),C(0,b)\\)\u003cbr/> Area of \\(∆ABC=\\frac{1}{2}\\left|$$\\begin{matrix}a & 0 & 1 \\\\ b & 2b+1 & 1 \\\\ 0 & b & 1\\end{matrix}$$\\right|=\\pm 1\\)\u003cbr/>\\( \\Rightarrow \\quad \\frac{1}{2}\\left[ a ( b +1)+ b ^2\\right]= \\pm 1\\)\u003cbr/>\\( \\Rightarrow \\quad a =\\frac{2- b ^2}{ b +1} \\text { or } \\frac{-2- b ^2}{ b +1}\\)\u003c/p> \u003cp> Sum of all possible values of \\( a=\\frac{-2 b^2}{b+1}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The combined equation of the two lines \(a x+b y+c=0\) and \(a^{\prime} x+b^{\prime} y+c^{\prime}=0\) can be written as \((a x+b y+c)\left(a^{\prime} x+\right.\) \(\left.b^{\prime} y+c^{\prime}\right)=0\) .The equation of the angle bisectors of the lines represented by the equation \(2 x^2+x y-3 y^2=0\) is</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3 x^2+5 x y+2 y^2=0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(x^2-y^2+10 x y=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3 x^2+x y-2 y^2=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x^2-y^2-10 x y=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -410,10 +414,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Equation of the pair of angle bisector for the homogenous equation \\(a x^2+2 h x y+b y^2=0\\) is given as\u003cbr/>\\[\u003cbr/>\\frac{x^2-y^2}{a-b}=\\frac{x y}{h}\u003cbr/>\\]\u003c/p> \u003cp>Here \\(a=2, h=1 / 2\\) and \\(b=-3\\)\u003cbr/>Equation will become\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{x^2-y^2}{2-(-3)}=\\frac{x y}{1 / 2} \\\\\u003cbr/>&amp; x^2-y^2=10 x y \\\\\u003cbr/>&amp; x^2-y^2-10 x y=0\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) Equation of the pair of angle bisector for the homogenous equation \\(a x^2+2 h x y+b y^2=0\\) is given as\u003cbr/>\\[\u003cbr/>\\frac{x^2-y^2}{a-b}=\\frac{x y}{h}\u003cbr/>\\]\u003c/p> \u003cp>Here \\(a=2, h=1 / 2\\) and \\(b=-3\\)\u003cbr/>Equation will become\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{x^2-y^2}{2-(-3)}=\\frac{x y}{1 / 2} \\\\& x^2-y^2=10 x y \\\\& x^2-y^2-10 x y=0\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The points \(\ (0,7,10),(-1,6,6) \) and \(\ (-4,9,6) \) form</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>a right angled isosceles triangle</p></span></div><div class="option"><span class="key">b</span><span><p> a scalene triangle</p></span></div><div class="option"><span class="key">c</span><span><p>a right angled triangle</p></span></div><div class="option"><span class="key">d</span><span><p>an equilateral triangle</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,10 +426,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let \\(\\mathrm{P}(0,7,10), \\mathrm{Q}(-1,6,6)\\) and \\(\\mathrm{R}(-4,9,6)\\) be the vertices of a triangle\u003cbr/>Here, \\(P Q=\\sqrt{1+1+16}=3 \\sqrt{2}\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mathrm{QR}=\\sqrt{9+9+0}=3 \\sqrt{2} \\\\\u003cbr/>&amp; \\mathrm{PR}=\\sqrt{16+4+16}=6 \\\\\u003cbr/>&amp; \\text { Now, } \\mathrm{PQ}^2+\\mathrm{QR}^2=(3 \\sqrt{2})^2+(3 \\sqrt{2})^2=36=(\\mathrm{PR})^2\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Therefore, \\(\\triangle \\mathrm{PQR}\\) is a right angled triangle at Q . Also, \\(\\mathrm{OQ}=\\mathrm{QR}\\).\u003cbr/>Hence, \\(\\triangle \\mathrm{PQR}\\) is a right angled isosceles triangle.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let \\(\\mathrm{P}(0,7,10), \\mathrm{Q}(-1,6,6)\\) and \\(\\mathrm{R}(-4,9,6)\\) be the vertices of a triangle\u003cbr/>Here, \\(P Q=\\sqrt{1+1+16}=3 \\sqrt{2}\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\mathrm{QR}=\\sqrt{9+9+0}=3 \\sqrt{2} \\\\& \\mathrm{PR}=\\sqrt{16+4+16}=6 \\\\& \\text { Now, } \\mathrm{PQ}^2+\\mathrm{QR}^2=(3 \\sqrt{2})^2+(3 \\sqrt{2})^2=36=(\\mathrm{PR})^2\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Therefore, \\(\\triangle \\mathrm{PQR}\\) is a right angled triangle at Q . Also, \\(\\mathrm{OQ}=\\mathrm{QR}\\).\u003cbr/>Hence, \\(\\triangle \\mathrm{PQR}\\) is a right angled isosceles triangle.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A light ray emits from the origin making an angle \(30^{\circ}\) with the positive \(x\)-axis. After getting reflected by the line \(x+y=1\), if this ray intersects \(x\)-axis at \(Q\), then the abscissa of \(Q\) is</p> <p> </p> <p>[JEE Main 2023, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{2}{(\sqrt{3}-1)}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{2}{3+\sqrt{3}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{2}{3-\sqrt{3}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{\sqrt{3}}{2(\sqrt{3}+1)}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -437,7 +441,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Equation of line passing through origin making an angle of \\(30^{\\circ}\\) is\u003c/p> \u003cp>\\(y=\\frac{1}{\\sqrt{3}} x\\)\u003c/p> \u003cp>Slope of reflected ray \\(=\\tan 60^{\\circ}=\\sqrt{3}\\)\u003cbr/>Since, line \\(y=\\frac{x}{\\sqrt{3}}\\) intersect \\(y+x=1\\) at \\(\\left(\\frac{\\sqrt{3}}{\\sqrt{3}+1}, \\frac{1}{\\sqrt{3}+1}\\right)\\)\u003cbr/>So, equation of reflected ray is given by\u003cbr/>\\(y-\\frac{1}{\\sqrt{3}+1}=\\sqrt{3}\\left(x-\\frac{\\sqrt{3}}{\\sqrt{3}+1}\\right)\\)\u003c/p> \u003cp>On putting \\(y=0 \\Rightarrow x=\\frac{2}{3+\\sqrt{3}}\\)\u003cbr/>Hence, abscissa of \\(Q=\\frac{2}{3+\\sqrt{3}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The set of all possible values of \(\theta\) in the interval \((0, \pi)\) for which the points \((1,2)\) and \((\sin \theta, \cos \theta)\) lie on the same side of the line \(x+y=1\) is:</p> <p><br/>[JEE Main 2020, 2 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\left(0, \frac{\pi}{2}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\left(\frac{\pi}{4}, \frac{3 \pi}{4}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\left(0, \frac{\pi}{4}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\left(0, \frac{3 \pi}{4}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -446,10 +450,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (a) Let } f(x, y)=x+y-1 \\\\ &amp; \\because f(1,2) \\cdot f(\\sin \\theta, \\cos \\theta)&gt;0 \\\\ &amp; \\Rightarrow 2[\\sin \\theta+\\cos \\theta-1]&gt;0\\end{aligned}\\)\\(\\begin{aligned} &amp; \\Rightarrow \\sin \\theta+\\cos \\theta&gt;1 \\\\ &amp; \\Rightarrow \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)&gt;\\frac{1}{\\sqrt{2}} \\\\ &amp; \\Rightarrow \\theta+\\frac{\\pi}{4} \\in\\left(\\frac{\\pi}{4}, \\frac{3 \\pi}{4}\\right) \\\\ &amp; \\Rightarrow \\theta \\in\\left(0, \\frac{\\pi}{2}\\right)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (a) Let } f(x, y)=x+y-1 \\\\ & \\because f(1,2) \\cdot f(\\sin \\theta, \\cos \\theta)&gt;0 \\\\ & \\Rightarrow 2[\\sin \\theta+\\cos \\theta-1]&gt;0\\end{aligned}\\)\\(\\begin{aligned} & \\Rightarrow \\sin \\theta+\\cos \\theta&gt;1 \\\\ & \\Rightarrow \\sin \\left(\\theta+\\frac{\\pi}{4}\\right)&gt;\\frac{1}{\\sqrt{2}} \\\\ & \\Rightarrow \\theta+\\frac{\\pi}{4} \\in\\left(\\frac{\\pi}{4}, \\frac{3 \\pi}{4}\\right) \\\\ & \\Rightarrow \\theta \\in\\left(0, \\frac{\\pi}{2}\\right)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement-1 : If the general equation \(x^2+y^2+2 x y+2 g x+2 f y+4=0\) represents a pair of real lines then \(|g| \geq 2\).<br/>Statement-2 : The equation \(\mathrm{ax}^2+2 \mathrm{hxy}+\mathrm{by}^2+2 \mathrm{gx}+2 \mathrm{fy}+\mathrm{c}=0\) represents pair of real lines if \(abc +2 \mathrm{fgh}-\mathrm{af}^2-\mathrm{bg}^2-\mathrm{ch}^2=0\).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement -1 is false, Statement- 2 is true</p></span></div><div class="option"><span class="key">b</span><span><p>Statement -1 is true, Statement-2 is true; Statement -2 is a correct explanation for Statement-1</p></span></div><div class="option"><span class="key">c</span><span><p>Statement -1 is true, Statement-2 is true; Statement -2 is not a correct explanation for Statement-1</p></span></div><div class="option"><span class="key">d</span><span><p>Statement -1 is true, Statement- 2 is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -458,10 +462,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The equation represents a pair of lines if\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; 1 \\cdot 1 \\cdot 4+2 \\cdot \\mathrm{f} \\cdot \\mathrm{~g} \\cdot 1-1 \\cdot \\mathrm{f}^2-1 \\cdot \\mathrm{~g}^2-4 \\cdot 1^2=0 \\\\\u003cbr/>&amp; \\Rightarrow(\\mathrm{f}-\\mathrm{g})^2=0 \\Rightarrow \\mathrm{f}=\\mathrm{g}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>The equation becomes \\((x+y)^2+2 g(x+y)+4=0\\) Which represents pair of parallel lines, which are real provided \\((2 \\mathrm{~g})^2-4 \\cdot 4 \\cdot 1 \\geq 0 \\Rightarrow|\\mathrm{~g}| \\geq 2\\).\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The equation represents a pair of lines if\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& 1 \\cdot 1 \\cdot 4+2 \\cdot \\mathrm{f} \\cdot \\mathrm{~g} \\cdot 1-1 \\cdot \\mathrm{f}^2-1 \\cdot \\mathrm{~g}^2-4 \\cdot 1^2=0 \\\\& \\Rightarrow(\\mathrm{f}-\\mathrm{g})^2=0 \\Rightarrow \\mathrm{f}=\\mathrm{g}\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>The equation becomes \\((x+y)^2+2 g(x+y)+4=0\\) Which represents pair of parallel lines, which are real provided \\((2 \\mathrm{~g})^2-4 \\cdot 4 \\cdot 1 \\geq 0 \\Rightarrow|\\mathrm{~g}| \\geq 2\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A man is walking on a straight line. The arithmetic mean of the reciprocals of the intercepts of this line on the coordinate axis is \( \frac{1}{4} \). Three stones, \( A, B \) and \( C \) are placed at the point \( (1,1),(2,2) \) and \( (4,4) \) respectively. Then which of these stones is/are on the path of the man</p> <p> </p> <p>[JEE Main 2021, 24 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( B \) only</p></span></div><div class="option"><span class="key">b</span><span><p>\( A \) only</p></span></div><div class="option"><span class="key">c</span><span><p>All of three</p></span></div><div class="option"><span class="key">d</span><span><p>C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Let the intercepts made by the line on the coordinate axes be \\(a\\) and \\(b\\).\u003c/p> \u003cp>So, the equation of the line is \\(\\frac{x}{a}+\\frac{y}{b}=1\\).\u003c/p> \u003cp>Given that the arithmetic mean of the reciprocals of the intercepts is \\(\\frac{1}{4}\\).\u003c/p> \u003cp>So, \\(\\frac{\\frac{1}{a}+\\frac{1}{b}}{2}=\\frac{1}{4}\\).\u003c/p> \u003cp>Hence, \\(\\frac{1}{a}+\\frac{1}{b}=\\frac{1}{2}\\).\u003c/p> \u003cp>Now For stone \\(A(1,1)\\),\u003c/p> \u003cp>\\(\\frac{1}{a}+\\frac{1}{b}=\\frac{1}{2}\\neq 1\\),\u003c/p> \u003cp>so \\(A\\) is not on the path.\u003c/p> \u003cp>For stone \\(B(2,2)\\),\u003c/p> \u003cp>\\(\\frac{2}{a}+\\frac{2}{b}=2\\left(\\frac{1}{a}+\\frac{1}{b}\\right)=2\\cdot\\frac{1}{2}=1\\),\u003c/p> \u003cp>so \\(B\\) is on the path.\u003c/p> \u003cp>For stone \\(C(4,4)\\),\u003c/p> \u003cp>\\(\\frac{4}{a}+\\frac{4}{b}=4\\left(\\frac{1}{a}+\\frac{1}{b}\\right)=4\\cdot\\frac{1}{2}=2\\neq 1\\),\u003c/p> \u003cp>so \\(C\\) is not on the path.\u003c/p> \u003cp>Therefore, only stone \\(B\\) is on the path of the man.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(a, b, c\) be in arithmetic progression. Let the centroid of the triangle with vertices \((a, c),(2, b)\) and \((a, b)\) be \(\left(\frac{10}{3}, \frac{7}{3}\right)\). If \(\alpha, \beta\) are the roots of the equation \(a x^2+b x+1=0\), then the value of \(\alpha^2+\beta^2-\alpha \beta\) is:</p> <p><strong>[JEE Main 2021, 24 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \(\frac{71}{256}\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(-\frac{69}{256}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{69}{256}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(-\frac{71}{256}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,10 +486,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>a, b, c \\rightarrow A P \\Rightarrow 2 b=a+c\u003cbr/>\\]\u003c/p> \u003cp>Centroid is \\(\\left(\\frac{10}{3}, \\frac{7}{3}\\right)\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{a+2+a}{3}=\\frac{10}{3} \\text { and } \\frac{c+b+b}{3}=\\frac{7}{3} \\\\\u003cbr/>&amp; \\Rightarrow 2 a+2=10 \\\\\u003cbr/>&amp; \\Rightarrow 2 a=8 \\\\\u003cbr/>&amp; \\Rightarrow a=4 ;\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>and \\(c+2 b=7\\)\u003cbr/>Put \\(a =4\\) in \\((i)\\)\u003cbr/>\\[\u003cbr/>2 b=c+4 \\Rightarrow c-2 b+4=0\u003cbr/>\\]\u003c/p> \u003cp>Solving (ii) \\&amp; (iii) we get\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; c=\\frac{3}{2} \\\\\u003cbr/>&amp; \\therefore 2 b=c+4=\\frac{11}{2} \\\\\u003cbr/>&amp; \\Rightarrow b=\\frac{11}{4} \\\\\u003cbr/>&amp; a x^2+b x+4=0 \\Rightarrow 4 x^2+\\frac{11 x}{4}+1=0 \\\\\u003cbr/>&amp; \\alpha+\\beta=\\frac{-11}{4 \\times 4}=\\frac{-11}{16} ; \\alpha \\beta=\\frac{1}{4} \\\\\u003cbr/>&amp; \\therefore \\alpha^2+\\beta^2-\\alpha \\beta=(\\alpha+\\beta)^2-3 \\alpha \\beta=\\frac{121}{256}-\\frac{3}{4}=\\frac{-71}{256}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\[\u003cbr/>a, b, c \\rightarrow A P \\Rightarrow 2 b=a+c\u003cbr/>\\]\u003c/p> \u003cp>Centroid is \\(\\left(\\frac{10}{3}, \\frac{7}{3}\\right)\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{a+2+a}{3}=\\frac{10}{3} \\text { and } \\frac{c+b+b}{3}=\\frac{7}{3} \\\\& \\Rightarrow 2 a+2=10 \\\\& \\Rightarrow 2 a=8 \\\\& \\Rightarrow a=4 ;\\end{aligned}$$\u003cbr/>\\]\u003cbr/>and \\(c+2 b=7\\)\u003cbr/>Put \\(a =4\\) in \\((i)\\)\u003cbr/>\\[\u003cbr/>2 b=c+4 \\Rightarrow c-2 b+4=0\u003cbr/>\\]\u003c/p> \u003cp>Solving (ii) \\&amp; (iii) we get\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& c=\\frac{3}{2} \\\\& \\therefore 2 b=c+4=\\frac{11}{2} \\\\& \\Rightarrow b=\\frac{11}{4} \\\\& a x^2+b x+4=0 \\Rightarrow 4 x^2+\\frac{11 x}{4}+1=0 \\\\& \\alpha+\\beta=\\frac{-11}{4 \\times 4}=\\frac{-11}{16} ; \\alpha \\beta=\\frac{1}{4} \\\\& \\therefore \\alpha^2+\\beta^2-\\alpha \\beta=(\\alpha+\\beta)^2-3 \\alpha \\beta=\\frac{121}{256}-\\frac{3}{4}=\\frac{-71}{256}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(p\) and \(q\) are the length of the perpendiculars from the origin on the lines \(x \operatorname{cosec} \alpha-y \sec \alpha=k \cot 2 \alpha\) and \(x \sin \alpha+y \cos \alpha=k \sin 2 \alpha\) respectively, then \(k^2\) is equal to?</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p^{2} + 2q^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2p^{2} + q^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p^{2} + 4q^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4p^{2} + q^{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Let \\(\\mathrm{L}_1: \\mathrm{x} \\operatorname{cosec} \\alpha-\\mathrm{y} \\sec \\alpha=\\mathrm{k} \\cot 2 \\alpha\\)\u003cbr/>Then \\(\\frac{x}{\\sin \\alpha}-\\frac{y}{\\cos \\alpha}=\\frac{k \\cos 2 \\alpha}{\\sin 2 \\alpha}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\mathrm{x} \\cos \\alpha-\\mathrm{y} \\sin \\alpha=\\frac{k}{2} \\cos 2 \\alpha\\)\u003cbr/>Perpendicular distance from \\((0,0)\\) is\u003c/p> \u003cp>\\( \\mathrm{p}=\\left|\\frac{0-0-\\frac{k}{2} \\cos 2 \\alpha}{\\sqrt{\\cos ^2 \\alpha+\\sin ^2 \\alpha}}\\right| \\)\u003cbr/>\\( \\Rightarrow \\mathrm{p}=\\left|\\frac{k}{2} \\cos 2 \\alpha\\right| \\)\u003cbr/>\\( \\Rightarrow 2 \\mathrm{p}=|\\mathrm{k} \\cos 2 \\alpha| \\ldots(\\mathrm{i})\\)\u003c/p> \u003cp>\\({\\mathrm{L}}_{2}:\\mathrm{xsinα}+\\mathrm{ycosα}=\\mathrm{ksin}2\\alpha\\)\u003cbr/>Perpendicular distance from \\((0,0)\\) is\u003c/p> \u003cp>\\( q=\\left|\\frac{0+0-k \\sin 2 \\alpha}{\\sqrt{\\sin ^2 \\alpha+\\cos ^2 \\alpha}}\\right| \\)\u003cbr/>\\( \\Rightarrow q=|k \\sin 2 \\alpha| \\ldots \\text { (ii) }\\)\u003c/p> \u003cp>Hence \\(4 p^2+q^2=k^2 \\ldots(\\) From (i) and (ii))\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The distance between the parallel lines \(\ 3 x-4 y+7=0 \) and \(\ 3 x-4 y+5=0 \) is \(\ \frac{a}{b} \). Value of \(\ a+b\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2</p></span></div><div class="option"><span class="key">b</span><span><p>5</p></span></div><div class="option"><span class="key">c</span><span><p>7</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -506,10 +510,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\text { Given parallel lines are }\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; 3 \\mathrm{x}-4 \\mathrm{y}+7=0 \\text { and } 3 \\mathrm{x}-4 \\mathrm{y}+5=0 \\\\\u003cbr/>&amp; \\text { Required distance }=\\frac{|7-5|}{\\sqrt{(3)^2+(-4)^2}}=\\frac{2}{5} \\\\\u003cbr/>&amp; \\Rightarrow \\mathrm{a}=2, \\mathrm{~b}=5\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>$$\\begin{aligned}&\\text { Given parallel lines are }\\\\&\\begin{aligned}& 3 \\mathrm{x}-4 \\mathrm{y}+7=0 \\text { and } 3 \\mathrm{x}-4 \\mathrm{y}+5=0 \\\\& \\text { Required distance }=\\frac{|7-5|}{\\sqrt{(3)^2+(-4)^2}}=\\frac{2}{5} \\\\& \\Rightarrow \\mathrm{a}=2, \\mathrm{~b}=5\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider a triangle Δ whose two sides lie on the x-axis and the line x + y + 1 = 0. If the orthocentre of Δ is (1, 1), then the equation of the circle passing through the vertices of the triangle Δ is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>x<sup>2</sup> + y<sup>2</sup> – 3x + y = 0</p></span></div><div class="option"><span class="key">b</span><span><p>x<sup>2</sup> + y<sup>2</sup> + x + 3y = 0</p></span></div><div class="option"><span class="key">c</span><span><p>x<sup>2</sup> + y<sup>2</sup> + 2y – 1 = 0</p></span></div><div class="option"><span class="key">d</span><span><p>x<sup>2</sup> + y<sup>2</sup> + x + y = 0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> \u003c/p> \u003col> \u003cli>Identify the Vertices of the Triangle\u003c/li> \u003c/ol> \u003cp>Let the two given sides of the triangle be:\u003c/p> \u003cp>Line 1 (\\({L}_{1}\\)): The x-axis, which is \\(y=0\\).\u003c/p> \u003cp>Line 2 (\\({L}_{2}\\)): \\(x+y+1=0\\).\u003c/p> \u003cp>The first vertex of the triangle, let's call it \\(A\\), is the intersection of \\({L}_{1}\\) and \\({L}_{2}\\).\u003c/p> \u003cp>Substitute \\(y=0\\) into the equation of \\({L}_{2}\\):\u003c/p> \u003cp>\\(x+0+1=0\\text{  }⟹\\text{  }x=−1\\)\u003c/p> \u003cp>So, one vertex is \\(A=(−1,0)\\).\u003c/p> \u003cp>Let the orthocenter of the triangle be \\(H=(1,1)\\).\u003c/p> \u003cp>Let the other two vertices be \\(B\\) and \\(C\\).\u003c/p> \u003cp>Assume side \\(AB\\) lies on \\({L}_{1}\\) (\\(y=0\\)) and side\u003c/p> \u003cp>\\(AC\\) lies on \\({L}_{2}\\) (\\(x+y+1=0\\)).\u003c/p> \u003cp>Finding Vertex C:\u003c/p> \u003cp>Since \\(C\\) is a vertex, it must lie on \\({L}_{2}\\), so \\({x}_{C}+{y}_{C}+1=0\\).\u003c/p> \u003cp>The side \\(AB\\) lies on the x-axis (\\(y=0\\)).\u003c/p> \u003cp>The altitude from vertex \\(C\\) to side \\(AB\\) must be\u003c/p> \u003cp>perpendicular to the x-axis.\u003c/p> \u003cp>This means the altitude is a vertical line of the form \\(x=k\\).\u003c/p> \u003cp>This altitude must pass through the orthocenter \\(H=(1,1)\\).\u003c/p> \u003cp>Therefore, the equation of this altitude is \\(x=1\\).\u003c/p> \u003cp>This implies \\({x}_{C}=1\\).\u003c/p> \u003cp>Substitute \\({x}_{C}=1\\) into the equation for \\({L}_{2}\\):\u003c/p> \u003cp>\\(1+{y}_{C}+1=0\\text{  }⟹\\text{  }{y}_{C}=−2\\)\u003c/p> \u003cp>So, the second vertex is \\(C=(1,−2)\\).\u003c/p> \u003cp>Finding Vertex B:\u003c/p> \u003cp>Since \\(B\\) is a vertex, it must lie on \\({L}_{1}\\), so \\({y}_{B}=0\\).\u003c/p> \u003cp>Let \\(B=({x}_{B},0)\\).\u003c/p> \u003cp>The side \\(AC\\) lies on \\({L}_{2}\\) (\\(x+y+1=0\\)).\u003c/p> \u003cp>The slope of \\({L}_{2}\\) is \\({m}_{AC}=−1\\).\u003c/p> \u003cp>The altitude from vertex \\(B\\) to side \\(AC\\) must be\u003c/p> \u003cp>perpendicular to \\(AC\\).\u003c/p> \u003cp>The slope of this altitude is \\({m}_{altB}=−\\frac{1}{{m}_{AC}}=−\\frac{1}{−1}=1\\).\u003c/p> \u003cp>This altitude must pass through the orthocenter \\(H=(1,1)\\).\u003c/p> \u003cp>The line segment \\(BH\\) represents this altitude.\u003c/p> \u003cp>The slope of \\(BH\\) is given by:\u003c/p> \u003cp>\\({m}_{BH}=\\frac{{y}_{H}−{y}_{B}}{{x}_{H}−{x}_{B}}=\\frac{1−0}{1−{x}_{B}}=\\frac{1}{1−{x}_{B}}\\)\u003c/p> \u003cp>Equating the slopes:\u003c/p> \u003cp>\\(\\frac{1}{1−{x}_{B}}=1\\text{  }⟹\\text{  }1−{x}_{B}=1\\text{  }⟹\\text{  }{x}_{B}=0\\)\u003c/p> \u003cp>So, the third vertex is \\(B=(0,0)\\).\u003c/p> \u003cp>The vertices of the triangle are \\(A=(−1,0)\\), \\(B=(0,0)\\),\u003c/p> \u003cp>and \\(C=(1,−2)\\).\u003c/p> \u003col> \u003cli>Find the Equation of the Circumcircle\u003c/li> \u003c/ol> \u003cp>The general equation of a circle is \\({x}^{2}+{y}^{2}+Dx+Ey+F=0\\).\u003c/p> \u003cp>The circumcircle passes through the three vertices \\(A\\), \\(B\\), and \\(C\\).\u003c/p> \u003cp>We substitute the coordinates of\u003c/p> \u003cp>these points into the general equation:\u003c/p> \u003cp>Using vertex \\(B=(0,0)\\):\u003c/p> \u003cp>\\({0}^{2}+{0}^{2}+D(0)+E(0)+F=0\\text{  }⟹\\text{  }F=0\\)\u003c/p> \u003cp>The equation simplifies to \\({x}^{2}+{y}^{2}+Dx+Ey=0\\).\u003c/p> \u003cp>Using vertex \\(A=(−1,0)\\):\u003c/p> \u003cp>\\((−1{)}^{2}+{0}^{2}+D(−1)+E(0)=0\\)\u003c/p> \u003cp>\\(1−D=0\\text{  }⟹\\text{  }D=1\\)\u003c/p> \u003cp>The equation further simplifies to\u003c/p> \u003cp>\\({x}^{2}+{y}^{2}+x+Ey=0\\).\u003c/p> \u003cp>Using vertex \\(C=(1,−2)\\):\u003c/p> \u003cp>\\({1}^{2}+(−2{)}^{2}+(1)+E(−2)=0\\)\u003c/p> \u003cp>\\(1+4+1−2E=0\\)\u003c/p> \u003cp>\\(6−2E=0\\text{  }⟹\\text{  }2E=6\\text{  }⟹\\text{  }E=3\\)\u003c/p> \u003cp>Substituting the values of \\(D=1\\), \\(E=3\\),\u003c/p> \u003cp>and \\(F=0\\) into the general equation of the circle:\u003c/p> \u003cp>\\({x}^{2}+{y}^{2}+1x+3y+0=0\\)\u003c/p> \u003cp>\\({x}^{2}+{y}^{2}+x+3y=0\\)\u003c/p> \u003col> \u003cli>Compare with Options\u003c/li> \u003c/ol> \u003cp>The derived equation is \\({x}^{2}+{y}^{2}+x+3y=0\\).\u003c/p> \u003cp>Comparing this with the given options:\u003c/p> \u003cp>A \\({x}^{2}+{y}^{2}−3x+y=0\\)\u003c/p> \u003cp>B \\({x}^{2}+{y}^{2}+x+3y=0\\)\u003c/p> \u003cp>C \\({x}^{2}+{y}^{2}+2y−1=0\\)\u003c/p> \u003cp>D \\({x}^{2}+{y}^{2}+x+y=0\\)\u003c/p> \u003cp>The equation matches option B.\u003c/p> \u003cp>The final answer is \\(\\text{B }{x}^{2}+{y}^{2}+x+3y=0\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> If \(\mathrm{p}\) and \(\mathrm{q}\) are the lengths of the perpendiculars from the origin on the lines.</p> <p>\(x \operatorname{cosec} \alpha-y \sec \alpha=k \cot 2 \alpha\) and \(x \sin \alpha+y \cos \alpha=k \sin\) \(2 \alpha\) respectively, then \(k^{2}\) is equal to:</p> <p><strong>[JEE Main 2021, 31 Aug (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p^{2}+2 q^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(4 p^{2}+q^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p^{2}+4 q^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p> \(2 p^{2}+q^{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Length of perpendicular from origin to\u003c/p> \u003cp>\\(x \\operatorname{cosec} \\alpha-y \\sec \\alpha=k \\cot 2 \\alpha\\)\u003c/p> \u003cp>\\(\\Rightarrow x \\cos \\alpha-y \\sin \\alpha=k \\cos 2 \\alpha\\)\u003c/p> \u003cp>\\(p=\\frac{|-k \\cos 2 \\alpha|}{\\sqrt{\\cos ^{2} \\alpha+\\sin ^{2} \\alpha}}=\\frac{k}{2} \\cos 2 \\alpha\\)\u003c/p> \u003cp>Length of perpendicular is from origin to \\(x \\sin \\alpha+y \\cos \\alpha=k \\sin 2 \\alpha\\)\u003c/p> \u003cp>\\(q=\\frac{|-k \\sin 2 \\alpha|}{\\sqrt{\\sin ^{2} \\alpha+\\cos ^{2} \\alpha}}=k \\sin 2 \\alpha\\)\u003c/p> \u003cp>From \\((i)\\) and (ii), we get\u003c/p> \u003cp>\\(\\frac{4 p^{2}}{k^{2}}+\\frac{q^{2}}{k^{2}}=1\\)\u003c/p> \u003cp>\\(k^{2}=4 p^{2}+q^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> Let the equation of the pair of lines, \(y=p x\) and \(y=q x\), can be written as \((y-p x)(y-q x)=0\). Then the equation of the pair of the angle bisectors of the lines \(x^{2}-4 x y-5 y^{2}=0\) is:</p> <p><strong>[JEE Main 2021, 25 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x^{2}-3 x y+y^{2}=0\)</p></span></div><div class="option"><span class="key">b</span><span><p> \(x^{2}+3 x y-y^{2}=0\)</p></span></div><div class="option"><span class="key">c</span><span><p> \(x^{2}-3 x y-y^{2}=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x^{2}+4 x y-y^{2}=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Equation of angle bisector of pair of straight line \\(a x^{2}+2 h x y+b y^{2}=0\\) is \\(\\frac{x^{2}-y^{2}}{a-b}=\\frac{x y}{h}\\)\u003c/p> \u003cp>For \\(x^{2}-4 x y-5 y^{2}=0\\)\u003c/p> \u003cp>\\(\\Rightarrow a=1, h=-2, b=-5\\)\u003c/p> \u003cp>\\(\\therefore \\frac{x^{2}-y^{2}}{1-(-5)}=\\frac{x y}{-2}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{x^{2}-y^{2}}{6}=\\frac{x y}{-2}\\)\u003c/p> \u003cp>\\(\\Rightarrow x^{2}-y^{2}=-3 x y\\)\u003c/p> \u003cp>\\(\\Rightarrow x^{2}+3 x y-y^{2}=0\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of integral values of \( m \) so that the abscissa of point of intersection of lines \( 3 x+4 y \) \( =9 \) and \( y=m x+1 \) is also an integer, is :</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>0</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -554,10 +558,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>B\u003c/p> \u003cp>\\[ \\begin{aligned} &amp; 3 x+4 y=9 \\\\ &amp; y=m x+4=9 \\\\ &amp; \\Rightarrow 3 x+4 m x+4=9 \\end{aligned} \\]\u003c/p> \u003cp>\\( \\Rightarrow(3+4 m) x=5 \\Rightarrow \\mathrm{x} \\) will be an integer\u003c/p> \u003cp>when \\( 3+4 m=5,-5,1,-1 \\)\u003c/p> \u003cp>\\[ \\Rightarrow m=\\frac{1}{2},-2,-\\frac{1}{2},-1 \\]\u003c/p> \u003cp>So number of integeral values of \\( m \\) is \\( 2 \\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>B\u003c/p> \u003cp>\\[ \\begin{aligned} & 3 x+4 y=9 \\\\ & y=m x+4=9 \\\\ & \\Rightarrow 3 x+4 m x+4=9 \\end{aligned} \\]\u003c/p> \u003cp>\\( \\Rightarrow(3+4 m) x=5 \\Rightarrow \\mathrm{x} \\) will be an integer\u003c/p> \u003cp>when \\( 3+4 m=5,-5,1,-1 \\)\u003c/p> \u003cp>\\[ \\Rightarrow m=\\frac{1}{2},-2,-\\frac{1}{2},-1 \\]\u003c/p> \u003cp>So number of integeral values of \\( m \\) is \\( 2 \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The equation of one of the straight lines which passes through the point \((1,3)\) and makes an angle \(\tan ^{-1}(\sqrt{2})\) with the straight line \(y+1=3 \sqrt{2} x\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4 \sqrt{2} x+5 y-(15+4 \sqrt{2})=0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5 \sqrt{2} x+4 y-(15+4 \sqrt{2})=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(4 \sqrt{2} x+5 y-4 \sqrt{2}-0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4 \sqrt{2} x-5 y-(5+4 \sqrt{2})=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(A)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the perpendicular bisector of the line segment joining the points \(\mathrm{P}(1,4)\) and \(\mathrm{Q}(\mathrm{k},3)\) has \(y\)-intercept equal to \(-4,\) then a value of \(k\) is :</p> <p> </p> <p>[JEE Main 2020, 4 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \sqrt{14} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \sqrt{15} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( -4 \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( -2 \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,8 +585,8 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let the points be \\(P(1,4)\\) and \\(Q(k,3)\\)\u003c/p> \u003cp>The midpoint of \\(PQ\\) is \\(M\\left(\\dfrac{1+k}{2},\\dfrac{4+3}{2}\\right)=M\\left(\\dfrac{1+k}{2},\\dfrac{7}{2}\\right)\\)\u003c/p> \u003cp>Slope of \\(PQ\\) is \\(\\dfrac{3-4}{k-1}=\\dfrac{-1}{k-1}\\)\u003c/p> \u003cp>Therefore, slope of the perpendicular bisector is \\(k-1\\)\u003c/p> \u003cp>The perpendicular bisector passes through \\(M\\left(\\dfrac{1+k}{2},\\dfrac{7}{2}\\right)\\),\u003c/p> \u003cp>so its equation is \\(y-\\dfrac{7}{2}=(k-1)\\left(x-\\dfrac{1+k}{2}\\right)\\)\u003c/p> \u003cp>Putting \\(x=0\\), we get the \\(y\\)-intercept\u003c/p> \u003cp>So, \\(y-\\dfrac{7}{2}=(k-1)\\left(-\\dfrac{1+k}{2}\\right)\\)\u003c/p> \u003cp>Thus, \\(y=\\dfrac{7}{2}-\\dfrac{(k-1)(k+1)}{2}\\)\u003c/p> \u003cp>\\(y=\\dfrac{7}{2}-\\dfrac{k^2-1}{2}=\\dfrac{8-k^2}{2}\\)\u003c/p> \u003cp>Given \\(y\\)-intercept is \\(-4\\),\u003c/p> \u003cp>so \\(\\dfrac{8-k^2}{2}=-4\\)\u003c/p> \u003cp>Therefore, \\(8-k^2=-8\\), hence \\(k^2=16\\)\u003c/p> \u003cp>So, \\(k=\\pm4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
-      <div class="qtext"><p>If the system of equations<br/>\[<br/>\begin{aligned}<br/>&amp; x+2 y+3 z=3 \\<br/>&amp; 4 x+3 y-4 z=4 \\<br/>&amp; 8 x+4 y-\lambda z=9+\mu<br/>\end{aligned}<br/>\]<br/>has infinitely many solutions, then the ordered pair \((\lambda, \mu)\) is equal to</p></div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>If the system of equations<br/>\[<br/>$$\begin{aligned}& x+2 y+3 z=3 \\& 4 x+3 y-4 z=4 \\& 8 x+4 y-\lambda z=9+\mu\end{aligned}$$<br/>\]<br/>has infinitely many solutions, then the ordered pair \((\lambda, \mu)\) is equal to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\left(\frac{72}{5}, \frac{21}{5}\right)<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\left(\frac{-72}{5}, \frac{-21}{5}\right)<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\left(\frac{72}{5}, \frac{-21}{5}\right)<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\left(\frac{-72}{5}, \frac{21}{5}\right)<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -590,7 +594,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; x+2 y+3 z=3 \\\\\u003cbr/>&amp; 4 x+3 y-4 z=4 \\\\\u003cbr/>&amp; 8 x+4 y-\\lambda z=9+\\mu \\\\\u003cbr/>&amp; (i) \\times 4-(\\text { ii }) \\Rightarrow 5 y+16 z=8 \\\\\u003cbr/>&amp; (\\text { ii }) \\times 2-(\\text { iii }) \\Rightarrow 2 y+(\\lambda-8) z=-1-\\mu \\\\\u003cbr/>&amp; \\text { (iv) } \\times 2-(v) \\times 5 \\Rightarrow(32-5(\\lambda-8)) z=16-5(-1-\\mu) \\\\\u003cbr/>&amp; \\Rightarrow(72-5 \\lambda) z=21+5 \\mu\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>For infinite solutions \\(72-5 \\lambda=0\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow 72-5 \\lambda=0 \\Rightarrow \\lambda=\\frac{72}{5}\u003cbr/>\\]\u003cbr/>and \\(21+5 \\mu=0 \\Rightarrow \\mu=\\frac{-21}{5}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow(\\lambda, \\mu) \\equiv\\left(\\frac{72}{5}, \\frac{-21}{5}\\right)\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}& x+2 y+3 z=3 \\\\& 4 x+3 y-4 z=4 \\\\& 8 x+4 y-\\lambda z=9+\\mu \\\\& (i) \\times 4-(\\text { ii }) \\Rightarrow 5 y+16 z=8 \\\\& (\\text { ii }) \\times 2-(\\text { iii }) \\Rightarrow 2 y+(\\lambda-8) z=-1-\\mu \\\\& \\text { (iv) } \\times 2-(v) \\times 5 \\Rightarrow(32-5(\\lambda-8)) z=16-5(-1-\\mu) \\\\& \\Rightarrow(72-5 \\lambda) z=21+5 \\mu\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>For infinite solutions \\(72-5 \\lambda=0\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow 72-5 \\lambda=0 \\Rightarrow \\lambda=\\frac{72}{5}\u003cbr/>\\]\u003cbr/>and \\(21+5 \\mu=0 \\Rightarrow \\mu=\\frac{-21}{5}\\)\u003cbr/>\\[\u003cbr/>\\Rightarrow(\\lambda, \\mu) \\equiv\\left(\\frac{72}{5}, \\frac{-21}{5}\\right)\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Maths PYQs</h3>

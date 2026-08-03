@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Acids, Bases and Salts","item":"https://yespyq.com/exams/board/chemistry/acids-bases-and-salts/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Acids, Bases and Salts</h1>
       <p>9 Board Chemistry previous year questions on <b>Acids, Bases and Salts</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is not an olfactory indicator?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Clove oil</p></span></div><div class="option"><span class="key">b</span><span><p>Vanilla</p></span></div><div class="option correct"><span class="key">c</span><span><p>Sweet potato</p></span></div><div class="option"><span class="key">d</span><span><p>All of these</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An aqueous solution of an acid conducts electricity because the acid dissolves in water</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>gets ionized</p></span></div><div class="option"><span class="key">b</span><span><p>is soluble</p></span></div><div class="option"><span class="key">c</span><span><p>is insoluble</p></span></div><div class="option"><span class="key">d</span><span><p>none of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: A) Ionizes\u003c/strong>\u003c/p> \u003cp>An \u003cstrong>aqueous solution of an acid conducts electricity\u003c/strong> because the acid \u003cstrong>ionizes in water\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>When an acid dissolves in water, it \u003cstrong>ionizes to produce ions (H⁺/H₃O⁺ and anions)\u003c/strong>. These ions are responsible for the conduction of electricity in the aqueous solution.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which acid is found in ant sting?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Citric acid</p></span></div><div class="option"><span class="key">b</span><span><p>Acetic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Methanoic acid</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The acid present in an \u003cstrong>ant’s sting\u003c/strong> is \u003cstrong>methanoic acid (formic acid)\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>Methanoic acid, also known as \u003cstrong>formic acid\u003c/strong>, is responsible for the burning sensation caused by an ant’s sting.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A solution turns blue litmus to red, its pH is likely to be -</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12</p></span></div><div class="option"><span class="key">b</span><span><p>13</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>7</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>If a solution turns \u003cstrong>blue litmus to red\u003c/strong>, it is \u003cstrong>acidic\u003c/strong>.\u003cbr/>Acidic solutions have \u003cstrong>pH less than 7\u003c/strong>.\u003c/p> \u003cp>Among the given options:\u003c/p> \u003cul> \u003cli> \u003cp>12→ basic\u003c/p> \u003c/li> \u003cli> \u003cp>13 → basic\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>2 → strongly acidic\u003c/strong> ✅\u003c/p> \u003c/li> \u003cli> \u003cp>7 → neutral\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>Correct answer: C — 2\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>pH value of a neutral solution is -</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1.2</p></span></div><div class="option"><span class="key">b</span><span><p>7</p></span></div><div class="option"><span class="key">c</span><span><p>7.4</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: ✅ B. 7\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>A \u003cstrong>neutral solution\u003c/strong> has equal concentrations of \\(({\\mathrm{H}}^{+})and({\\mathrm{OH}}^{-})\\) ions, so its \u003cstrong>pH value is 7\u003c/strong>.\u003c/p> \u003cul> \u003cli> \u003cp>pH &lt; 7 → acidic\u003c/p> \u003c/li> \u003cli> \u003cp>pH = 7 → neutral\u003c/p> \u003c/li> \u003cli> \u003cp>pH &gt; 7 → basic\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In which of the following is tartaric acid found?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Orange</p></span></div><div class="option"><span class="key">b</span><span><p>Tamarind</p></span></div><div class="option"><span class="key">c</span><span><p>Tomato</p></span></div><div class="option"><span class="key">d</span><span><p>Vinegar</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Tartaric acid\u003c/strong> is mainly found in \u003cstrong>tamarind\u003c/strong> and grapes.\u003cbr/>The \u003cstrong>sour taste\u003c/strong> of tamarind is mainly due to \u003cstrong>tartaric acid\u003c/strong> along with some citric acid.\u003c/p> \u003ctable> \u003ctbody> \u003ctr> \u003ctd>\u003cstrong>Source\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>Acids\u003c/strong>\u003c/td> \u003c/tr> \u003ctr> \u003ctd>Orange\u003c/td> \u003ctd>Citric Acid\u003c/td> \u003c/tr> \u003ctr> \u003ctd>\u003cstrong>Tamarind\u003c/strong>\u003c/td> \u003ctd>\u003cstrong>Tartaric Acid\u003c/strong>\u003c/td> \u003c/tr> \u003ctr> \u003ctd>Tomato\u003c/td> \u003ctd>Oxalic Acid\u003c/td> \u003c/tr> \u003ctr> \u003ctd>Vinegar\u003c/td> \u003ctd>Acetic Acid\u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The gas evolved on the reaction between zinc and dilute sulphuric acid is -</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>H<sub>2</sub></p></span></div><div class="option"><span class="key">b</span><span><p><sub>O2</sub></p></span></div><div class="option"><span class="key">c</span><span><p><sub>CO2</sub></p></span></div><div class="option"><span class="key">d</span><span><p><sub>SO2</sub></p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Correct answer: ✅ A. H₂\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003cbr/>When zinc reacts with dilute sulphuric acid, \u003cstrong>hydrogen gas\u003c/strong> is evolved.\u003c/p> \u003cp>\u003cstrong>Reaction:\u003c/strong>\u003cbr/>\\(\\text{Zn}+{\\text{H}}_{2}{\\text{SO}}_{4};(\\text{dil.})\\to {\\text{ZnSO}}_{4}+{\\text{H}}_{2}↑\\)\u003c/p> \u003cp>So, the gas evolved is \u003cstrong>hydrogen (H₂)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An acid present in curd is -</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Oxalic acid</p></span></div><div class="option"><span class="key">b</span><span><p>Tartaric acid</p></span></div><div class="option"><span class="key">c</span><span><p>Methanoic acid</p></span></div><div class="option"><span class="key">d</span><span><p>Lactic acid</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Lactic acid\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The chemical formula of Plaster of Paris is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \({\mathrm{CaSO}}_{4}\cdot 2{\mathrm{H}}_{2}\mathrm{O}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Na}}_{2}{\mathrm{CO}}_{3}\cdot 10{\mathrm{H}}_{2}\mathrm{O}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{CaSO}}_{4}\cdot \frac{1}{2}{\mathrm{H}}_{2}\mathrm{O}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Na}}_{2}{\mathrm{CO}}_{3}\cdot {\mathrm{H}}_{2}\mathrm{O}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

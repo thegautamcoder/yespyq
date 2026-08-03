@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Accountancy","item":"https://yespyq.com/exams/board/accountancy/"},{"@type":"ListItem","position":5,"name":"Accounting for Debentures","item":"https://yespyq.com/exams/board/accountancy/accounting-for-debentures/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Accounting for Debentures</h1>
       <p>17 Board Accountancy previous year questions on <b>Accounting for Debentures</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Debenture is the part of : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Share Capital </p></span></div><div class="option correct"><span class="key">b</span><span><p> Long term Borrowing</p></span></div><div class="option"><span class="key">c</span><span><p> Owned Capital </p></span></div><div class="option"><span class="key">d</span><span><p> None of these</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Rate of Interest on debenture is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>12% p.a. </p></span></div><div class="option"><span class="key">b</span><span><p> 20 % p.a. </p></span></div><div class="option correct"><span class="key">c</span><span><p> Fixed rate </p></span></div><div class="option"><span class="key">d</span><span><p> 15 % p.a.</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Debentures which are transferred by mere delivery are called </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Registered Debentures </p></span></div><div class="option"><span class="key">b</span><span><p>First Debentures </p></span></div><div class="option"><span class="key">c</span><span><p> Bearer Debentures </p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(C) Bearer Debentures\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Bearer debentures are transferred simply by delivery, without any need for registration in the company’s books. Whoever holds the debenture is treated as the owner. Therefore, debentures transferable merely by delivery are called Bearer Debentures.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Registered Debentures — Incorrect\u003cbr/>Registered debentures can be transferred only after registration in the company’s records, not by mere delivery.\u003c/p> \u003cp>(B) First Debentures — Incorrect\u003cbr/>First debentures refer to priority of payment, not to the method of transfer.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Bearer debentures are clearly the correct answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a company issue ₹1,00,000,9% debentures of ₹100 each at discount of 5% but redeemable at premium of 5% then what amount will be debited to Loss on Issue of Debentures Account?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>₹5,000</p></span></div><div class="option"><span class="key">b</span><span><p>₹10,000</p></span></div><div class="option"><span class="key">c</span><span><p>₹15,000</p></span></div><div class="option"><span class="key">d</span><span><p>₹20,000</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Loss on Issue of Debentures = Discount on issue + Premium on redemption\u003c/strong>\u003c/p> \u003cp>Face Value of Issued Shares = ₹1,00,000 (1000 × 100)\u003c/p> \u003cul> \u003cli>Discount on issue @ 5% = ₹5,000 (5/100 × 1,00,000)\u003c/li> \u003cli>Premium on redemption @ 5% = ₹5,000 (5/100 × 1,00,000)\u003c/li> \u003c/ul> \u003cp>Thus, Loss on Issue of Debentures = \\(5000+5000=₹10,000\\)\u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Debenture suspense is shown in the balance sheet as:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Deduction from debenture.</p></span></div><div class="option"><span class="key">b</span><span><p>A commitment.</p></span></div><div class="option"><span class="key">c</span><span><p>Trade payables.</p></span></div><div class="option"><span class="key">d</span><span><p>Debenture redemption reserve.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Debenture suspense is a temporary account used when debentures are issued as collateral security. \u003c/p> \u003cp>The amount in the debenture suspense account is shown as a deduction from the total debentures on the liability side of the balance sheet. \u003c/p> \u003cp>This presentation clarifies that the debentures have not been sold for cash but are simply held as security against a loan.\u003c/p> \u003cp>Therefore, \u003cstrong>Option A\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In case of issue of debentures as a collateral security for the loan taken from the bank, which account will be debited ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bank A/c</p></span></div><div class="option"><span class="key">b</span><span><p>Bank Loan A/c</p></span></div><div class="option"><span class="key">c</span><span><p>Debenture A/c</p></span></div><div class="option"><span class="key">d</span><span><p>Debenture Suspense A/c</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(D) Debentures Suspense Account\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>When debentures are issued as collateral security, no actual debentures are issued for cash. To record this, Debentures Suspense Account is debited and Debentures Account is credited, only as a memorandum (not real liability). Hence, Debentures Suspense Account is debited.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Bank Account — Incorrect\u003cbr/>Bank account is debited when cash is received, but here the loan is already taken; debentures are only given as security.\u003c/p> \u003cp>(B) Bank Loan Account — Incorrect\u003cbr/>Bank Loan Account is credited when loan is taken, not debited in this case.\u003c/p> \u003cp>(C) Debentures Account — Incorrect\u003cbr/>Debentures Account is credited, not debited, when debentures are issued as collateral security.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Debentures issued for consideration other than cash includes, debentures :<br/>(A) Issued to bank as additional security<br/>(B) Issued to vendor<br/>(C) Issued to Public<br/>(D) Issued to creditor<br/>(E) Issued for cash</p> <p>Choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(C), (B), (A) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A), (B) and (D) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (D) and (C) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (D) and (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The issue of debentures for consideration other than cash refers to transactions where a company issues debentures in exchange for assets, services, or the settlement of existing liabilities, rather than receiving liquid cash.\u003c/p> \u003cul> \u003cli>\u003cstrong>Issued to bank as additional security\u003c/strong>: Also known as \u003cstrong>collateral security\u003c/strong>, these debentures are issued as a secondary guarantee for a loan. No cash is received specifically for the debentures themselves.\u003c/li> \u003cli>\u003cstrong>Issued to vendor\u003c/strong>: This occurs when a company purchases assets (like machinery or land) or a business and pays the seller (vendor) by issuing debentures instead of cash.\u003c/li> \u003cli>\u003cstrong>Issued to creditor\u003c/strong>: If a company owes money to a creditor, it may issue debentures to discharge or settle that outstanding liability. \u003c/li> \u003c/ul> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the nature of Debenture application account ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Real A/c</p></span></div><div class="option"><span class="key">b</span><span><p>Personal A/c</p></span></div><div class="option"><span class="key">c</span><span><p>Nominal A/c</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(B) Personal Account\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Debenture Application Account represents amounts received from applicants (persons) who apply for debentures. Since it relates to persons, it is treated as a Personal Account.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Real Account — Incorrect\u003cbr/>Real accounts relate to assets like cash, building, machinery, etc. Debenture Application Account does not represent an asset.\u003c/p> \u003cp>(C) Nominal Account — Incorrect\u003cbr/>Nominal accounts relate to expenses, losses, incomes, and gains, not to persons.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Since it is a Personal Account, this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Discount on issue of 8% debentures is shown in the balance sheet as:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Other current assets</p></span></div><div class="option"><span class="key">b</span><span><p>Short term loans and advances </p></span></div><div class="option"><span class="key">c</span><span><p>Long term loans and advances</p></span></div><div class="option"><span class="key">d</span><span><p>Other current liabilities</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>Discount on Issue of DebenturesTgQPHd|[]\u003c/strong> is a capital loss incurred when debentures are sold for less than their nominal (face) value. It is treated as a \u003cstrong>fictitious assetTgQPHd|[]\u003c/strong> (or deferred revenue expenditure).\u003c/p> \u003cp>The unamortized (unwritten-off) portion of discount on issue of debentures appears on the Assets side of the Balance Sheet.\u003c/p> \u003cp>As per Schedule III of the Companies Act, 2013, it is shown under:\u003c/p> \u003cul> \u003cli>Other Current Assets if the amount is to be written off within 12 months\u003c/li> \u003cli>Other Non-Current Assets if the amount is to be written off after 12 months\u003c/li> \u003c/ul> \u003cp>Therefore, \u003cstrong>Option A\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consideration of debenture is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Profit </p></span></div><div class="option"><span class="key">b</span><span><p> Dividend </p></span></div><div class="option"><span class="key">c</span><span><p> Interest </p></span></div><div class="option"><span class="key">d</span><span><p> None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(C) Interest\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Debentures are loan instruments. The company pays a fixed return to debenture holders, which is called Interest. Debenture holders are creditors of the company, not owners. Therefore, the return on debentures is Interest.\u003c/p> \u003cp> Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Profit — Incorrect\u003cbr/>Profit is earned by the business and belongs to owners, not to debenture holders.\u003c/p> \u003cp>(B) Dividend — Incorrect\u003cbr/>Dividend is paid on shares to shareholders, not on debentures.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Interest is the correct return on debentures, so this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>AB&amp;Co. purchased assets worth ₹28,80,000 from vendor. It issued debentures of ₹100 each at a discount of 4% in full satisfaction of the purchase consideration. The number of debentures issued to vendor is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>30,000</p></span></div><div class="option"><span class="key">b</span><span><p>28,800</p></span></div><div class="option"><span class="key">c</span><span><p>32,000</p></span></div><div class="option"><span class="key">d</span><span><p>27,693</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Amount to be paid = ₹28,80,000\u003c/p> \u003cp>Face Value of Debentures = ₹100\u003c/p> \u003cp>Discount on Issue = 4% = ₹4\u003c/p> \u003cp>Issue Price = \\(100-4=₹96\\)\u003c/p> \u003cp>No. of Debentures Issued = \\(\\frac{\\mathrm{Amount}\\mathrm{to}\\mathrm{be}\\mathrm{paid}}{\\mathrm{Issue}\\mathrm{Price}}\\)\u003c/p> \u003cp>\\(=\\frac{28,80,000}{96}\\\\ =30,000\\)\u003c/p> \u003cp>Therefore, \u003cstrong>Option A\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Deep Ltd. issued 10,00,000, 7% debentures of Rs. 100 each at a discount of 4%, redeemable after 5 years at a premium of 6%. Loss on the issue of debenture is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rs. 10,00,000</p></span></div><div class="option"><span class="key">b</span><span><p>Rs. 6,00,000 </p></span></div><div class="option"><span class="key">c</span><span><p>Rs. 4,00,000 </p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(D) None of these\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Step 1: Face value of Debentures\u003cbr/>₹10,00,000 (as given)\u003c/p> \u003cp>Step 2: Discount on Issue (4%)\u003cbr/>4% of ₹10,00,000 = ₹40,000\u003c/p> \u003cp>Step 3: Premium on Redemption (6%)\u003cbr/>6% of ₹10,00,000 = ₹60,000\u003c/p> \u003cp>Step 4: Loss on Issue of Debentures\u003cbr/>Loss = Discount on Issue + Premium on Redemption\u003cbr/>Loss = ₹40,000 + ₹60,000 = ₹1,00,000\u003c/p> \u003cp>Since ₹1,00,000 is not given in any option, the correct answer is:\u003cbr/>(D) None of these\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) ₹10,00,000 — Incorrect\u003cbr/>This is the face value of debentures, not the loss.\u003c/p> \u003cp>(B) ₹6,00,000 — Incorrect\u003cbr/>Premium on redemption is only ₹60,000, not ₹6,00,000.\u003c/p> \u003cp>(C) ₹4,00,000 — Incorrect\u003cbr/>Discount on issue is only ₹40,000, not ₹4,00,000.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Debenture holders are the</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Customers of the company</p></span></div><div class="option"><span class="key">b</span><span><p>Creditors of the company</p></span></div><div class="option"><span class="key">c</span><span><p>Owners of the company</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(B) Creditors of the company\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Debenture holders give loans to the company. They receive fixed interest and do not have ownership rights. Therefore, they are treated as creditors, not as owners or customers.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Customers of the company — Incorrect\u003cbr/>Customers buy goods or services; they do not lend money to the company.\u003c/p> \u003cp>(C) Owners of the company — Incorrect\u003cbr/>Owners are shareholders, not debenture holders.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Since debenture holders are creditors, this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Interest payable on debentures is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>An appropriation of profits of the company</p></span></div><div class="option"><span class="key">b</span><span><p>Transfer to sinking fund</p></span></div><div class="option"><span class="key">c</span><span><p>A charge against the profit of the company</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(C) A charge against company’s profits\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Interest on debentures must be paid whether the company earns profit or not. Therefore, it is treated as a charge against profits, not an appropriation of profits.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) An appropriation of profits — Incorrect\u003cbr/>Appropriation is done only after profit is earned (like dividend), but interest is payable even if there is no profit.\u003c/p> \u003cp>(B) Transfer to Sinking Fund — Incorrect\u003cbr/>Interest is an expense, not an amount transferred to sinking fund.\u003c/p> \u003cp>(D) None of these — Incorrect\u003cbr/>Since option (C) is correct, this option is wrong.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the correct statement in respect of "Loss in Issue of Debentures".</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The amount of Discount on issue of Debentures cannot be debited into the Loss on issue of Debentures Account.</p></span></div><div class="option"><span class="key">b</span><span><p>The amount of Discount on the issue of Debentures can be debited into the Loss on issue of Debentures Account.</p></span></div><div class="option"><span class="key">c</span><span><p>The amount of Premium on Redemption of Debentures can be debited into the Discount on issue of Debentures Account.</p></span></div><div class="option"><span class="key">d</span><span><p>The amount of Discount on the issue of Debentures can be debited into the Premium on Redemption of Debentures Account.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>When a company issues debentures, there are two types of financial \"losses\" it might encounter:\u003c/p> \u003col> \u003cli> \u003cp>\u003cstrong>Discount on Issue:\u003c/strong> Selling a ₹100 debenture for ₹95 (a ₹5 loss now).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Premium on Redemption:\u003c/strong> Promising to pay back ₹105 for a ₹100 debenture (a ₹5 loss in the future).\u003c/p> \u003c/li> \u003c/ol> \u003cp>Under modern accounting practices, both of these are typically combined and debited to a single account: \u003cstrong>Loss on Issue of Debentures A/c\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Premium on Redemption\u003c/strong> is a \u003cstrong>liability\u003c/strong> (a future obligation). It cannot be debited into an \"asset/expense\" account like \"Discount on Issue\" to represent its total value; rather, both are debited to \"Loss on Issue.\"\u003c/p> \u003cp>\u003cstrong>Premium on Redemption Account\u003c/strong> is a liability account (credit balance). The \"Discount\" (an expense/loss) cannot be debited into a liability account.\u003c/p> \u003cp>Therefore, \u003cstrong>Option B\u003c/strong> is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a company, premium on issue of debenture is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Revenue Receipt </p></span></div><div class="option"><span class="key">b</span><span><p> Profit </p></span></div><div class="option"><span class="key">c</span><span><p> Capital Profit </p></span></div><div class="option"><span class="key">d</span><span><p>Asset </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Correct Answer:\u003c/p> \u003cp>(C) Capital Profit\u003c/p> \u003cp>Why This Answer Is Correct?\u003c/p> \u003cp>Premium on issue of debentures is a capital receipt and is not earned from normal business operations. It is credited to Securities Premium Reserve and used only for specific purposes as per law. Hence, it is treated as a Capital Profit.\u003c/p> \u003cp>Why Other Options Are Incorrect?\u003c/p> \u003cp>(A) Revenue Receipt — Incorrect\u003cbr/>Revenue receipts arise from regular business activities, but debenture premium is not from normal operations.\u003c/p> \u003cp>(B) Profit — Incorrect\u003cbr/>This is not operating or trading profit; it is a capital nature gain.\u003c/p> \u003cp>(D) Asset — Incorrect\u003cbr/>Premium is not an asset; it is a reserve (liability side of Balance Sheet).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Discount on issue of debentures is :- </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Fixed Asset </p></span></div><div class="option"><span class="key">b</span><span><p> Current Asset </p></span></div><div class="option"><span class="key">c</span><span><p>Real Asset </p></span></div><div class="option"><span class="key">d</span><span><p>Fictitious Asset</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

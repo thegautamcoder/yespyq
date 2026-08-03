@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"The D and F-Block Elements","item":"https://yespyq.com/exams/board/chemistry/the-d-and-f-block-elements/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>The D and F-Block Elements</h1>
       <p>26 Board Chemistry previous year questions on <b>The D and F-Block Elements</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Lanthanoid ions with \(4{f}^{7}\) configuration are :<br/>(A) \(E{u}^{2+}\)<br/>(B) \(G{d}^{3+}\)<br/>(C) \(E{u}^{3+}\)<br/>(D) \(T{b}^{3+}\)<br/>(E) \(S{m}^{2+}\)</p> <p>Choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>(A) and (B) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (E) only</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following pair of ions are coloured?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Ti}}^{4+},{\mathrm{V}}^{3+}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\({\mathrm{Cr}}^{2+},{\mathrm{Cu}}^{2+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Cr}}^{3+},{\mathrm{Ni}}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Mn}}^{3+},{\mathrm{Ni}}^{2+}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following element in in TI, Al, and Pb .The most stable oxidation states of elements with highest and lowest first Ionisation enthalpies, respectively are:</p> <p>Memory Based Question 28/Jan/25 Morning shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>+4 and +1</p></span></div><div class="option correct"><span class="key">b</span><span><p>+2 and +3</p></span></div><div class="option"><span class="key">c</span><span><p>+4 and +3</p></span></div><div class="option"><span class="key">d</span><span><p>+1 and +4</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>'Spin only' magnetic moment is same for which of the following ions?</p> <p>\(A.{\mathrm{Ti}}^{3+}\\ B.{\mathrm{Cr}}^{2+}\\ C.{\mathrm{Mn}}^{2+}\\ D.{\mathrm{Fe}}^{2+}\\ E.{\mathrm{Sc}}^{3+}\)</p> <p>Choose the most appropriate answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and D only</p></span></div><div class="option"><span class="key">c</span><span><p>A and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -113,10 +117,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{matrix}{\\mathrm{Ti}}^{3+} & \\begin{matrix}: & 3{\\mathrm{d}}^{1}\\end{matrix} & \\mathrm{n}=1 \\\\ {\\mathrm{Cr}}^{2+} & \\begin{matrix}: & 3{\\mathrm{d}}^{4}\\end{matrix} & \\mathrm{n}=4 \\\\ {\\mathrm{Mn}}^{2+} & \\begin{matrix}: & 3{\\mathrm{d}}^{5}\\end{matrix} & \\mathrm{n}=5 \\\\ {\\mathrm{Fe}}^{2+} & \\begin{matrix}: & 3{\\mathrm{d}}^{6}\\end{matrix} & \\mathrm{n}=4 \\\\ {\\mathrm{Sc}}^{3+} & \\begin{matrix}: & 3{\\mathrm{d}}^{0}\\end{matrix} & \\mathrm{n}=0\\end{matrix}\\)\u003c/p> \u003cp>The same number of unpaired electron (n) in 3d orbital is same for \\(C{r}^{2+}\\) and \\(F{e}^{2+}\\). They will have same spin-only magnetic moment.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\($$\\begin{matrix}{\\mathrm{Ti}}^{3+} & \\begin{matrix}: & 3{\\mathrm{d}}^{1}\\end{matrix}$$ & \\mathrm{n}=1 \\\\ {\\mathrm{Cr}}^{2+} & $$\\begin{matrix}: & 3{\\mathrm{d}}^{4}\\end{matrix}$$ & \\mathrm{n}=4 \\\\ {\\mathrm{Mn}}^{2+} & $$\\begin{matrix}: & 3{\\mathrm{d}}^{5}\\end{matrix}$$ & \\mathrm{n}=5 \\\\ {\\mathrm{Fe}}^{2+} & $$\\begin{matrix}: & 3{\\mathrm{d}}^{6}\\end{matrix}$$ & \\mathrm{n}=4 \\\\ {\\mathrm{Sc}}^{3+} & $$\\begin{matrix}: & 3{\\mathrm{d}}^{0}\\end{matrix}$$ & \\mathrm{n}=0\\end{matrix}\\)\u003c/p> \u003cp>The same number of unpaired electron (n) in 3d orbital is same for \\(C{r}^{2+}\\) and \\(F{e}^{2+}\\). They will have same spin-only magnetic moment.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which has a maximum oxidizing power among the following?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({{\mathrm{VO}}_{2}}^{+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Cr}}_{2}{{\mathrm{O}}_{7}}^{2-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({{\mathrm{MnO}}_{4}}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{TiO}}_{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Among the given species, MnO₄⁻ has the highest standard reduction potential (E° ≈ +1.52 V), making it the strongest oxidizing agent. Comparatively, Cr₂O₇²⁻ (E° ≈ +1.33 V), VO₂⁺ (E° ≈ +1.00 V), and TiO₂ are weaker oxidizers. Answer: MnO₄⁻. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During preparation of potassium permanganate from manganese dioxide, the compound formed when manganese dioxide reacts with potassium hydroxide is (MEMORY based jee mains shift-1 24/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{KMnO}}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{K}}_{2}{\mathrm{MnO}}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{MnO}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Mn}}_{3}{\mathrm{O}}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>During the preparation of potassium permanganate from manganese dioxide, potassium manganate is formed when manganese dioxide reacts with potassium hydroxide. Potassium manganate reacts with HCl to give potassium permanganate.\u003c/p> \u003cp>\\(2{\\mathrm{MnO}}_{2}+{\\mathrm{O}}_{2}+4\\mathrm{KOH}\\to 2{\\mathrm{K}}_{2}{\\mathrm{MnO}}_{4}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\ 3{\\mathrm{K}}_{2}{\\mathrm{MnO}}_{4}+4\\mathrm{HCl}\\to 2{\\mathrm{KMnO}}_{4}+{\\mathrm{MnO}}_{2}+4\\mathrm{KCl}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During preparation of potassium permanganate from manganese dioxide, the compound formed when manganese dioxide reacts with potassium hydroxide is (MEMORY based jee mains shift-1 24/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{KMnO}}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{K}}_{2}{\mathrm{MnO}}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{MnO}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Mn}}_{3}{\mathrm{O}}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>During the preparation of potassium permanganate from manganese dioxide, potassium manganate is formed when manganese dioxide reacts with potassium hydroxide. Potassium manganate reacts with HCl to give potassium permanganate.\u003c/p> \u003cp>\\(2{\\mathrm{MnO}}_{2}+{\\mathrm{O}}_{2}+4\\mathrm{KOH}\\to 2{\\mathrm{K}}_{2}{\\mathrm{MnO}}_{4}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\ 3{\\mathrm{K}}_{2}{\\mathrm{MnO}}_{4}+4\\mathrm{HCl}\\to 2{\\mathrm{KMnO}}_{4}+{\\mathrm{MnO}}_{2}+4\\mathrm{KCl}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following lanthanide ion has 7 electrons in its outer shell?</p> <p> (Memory Based JEE Mains 22/01/2025 Shift-1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Eu}}^{+3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Gd}}^{+3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Sm}}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Gd}}^{+2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\mathrm{Gd}(64)=\\left[\\mathrm{Xe}\\right]4{\\mathrm{f}}^{7}5{\\mathrm{d}}^{1}6{\\mathrm{s}}^{2}\\\\ {\\mathrm{Gd}}^{3+}=\\left[\\mathrm{Xe}\\right]4{\\mathrm{f}}^{7}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following oxidation reactions are carried out by both \({K}_{2}C{r}_{2}{O}_{7}\) and \(KMn{O}_{4}\) in acidic medium?<br/>A. \({I}^{–}\to {I}_{2}\)<br/>B. \({S}^{2-}\to S\)<br/>C. \(F{e}^{2+}\to F{e}^{3+}\)<br/>D. \({I}^{–}\to I{O}_{3}^{-}\)<br/>E. \({S}_{2}{O}_{3}^{2-}\to S{O}_{4}^{2-}\)</p> <p>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E Only</p></span></div><div class="option"><span class="key">b</span><span><p>A, B and C Only</p></span></div><div class="option"><span class="key">c</span><span><p>B, C and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, D and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both \\({\\mathrm{KMnO}}_{4}\\) and \\({\\mathrm{K}}_{2}{\\mathrm{Cr}}_{2}{\\mathrm{O}}_{7}\\) can oxidise \\({\\mathrm{I}}^{-}\\)to \\({\\mathrm{I}}_{2}\\) in acidic medium.\u003cbr/>Both \\({\\mathrm{KMnO}}_{4}\\) and \\({\\mathrm{K}}_{2}{\\mathrm{Cr}}_{2}{\\mathrm{O}}_{7}\\) can oxidize \\({\\mathrm{S}}^{2-}\\) (sulhphide ions) to sulphur S in acidic medium.\u003cbr/>Both \\({\\mathrm{KMnO}}_{4}\\) and \\({\\mathrm{K}}_{2}{\\mathrm{Cr}}_{2}{\\mathrm{O}}_{7}\\) easily oxidize \\({\\mathrm{Fe}}^{2+}\\) to \\({\\mathrm{Fe}}^{3+}\\) in acidic medium.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Preparation of potassium permanganate from \(Mn{O}_{2}\) involves two step process in which the 1st step is a reaction with KOH and \(KN{O}_{3}\) to produce</p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({K}_{2}Mn{O}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(KMn{O}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({K}_{3}Mn{O}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({K}_{4}\left[Mn(OH{)}_{6}\right]\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(Mn{O}_{2}+2KOH+KN{O}_{3}\\to {K}_{2}Mn{O}_{4}+KN{O}_{2}+{H}_{2}O\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following set of ions act as oxidising agents?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Ce ^{4+}\) and \(Tb ^{4+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(La ^{3+}\) and \(Lu ^{3+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Eu ^{2+}\) and \(Yb ^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Eu ^{2+}\) and \(Tb ^{4+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Higher‐oxidation‐state lanthanide ions such as Ce\u003csup>4+\u003c/sup> and Tb\u003csup>4+\u003c/sup> readily get reduced to more stable Ln\u003csup>3+\u003c/sup> states, making them oxidizing agents. The other listed ions are either already in their more stable +3 state (La\u003csup>3+\u003c/sup>, Lu\u003csup>3+\u003c/sup>) or not favored to act as oxidizers (Eu\u003csup>2+\u003c/sup>, Yb\u003csup>2+\u003c/sup>).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following ions is the strongest oxidizing agent?<br/>(Atomic Number of Ce = 58, Eu = 63, Tb = 65, Lu = 71)</p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(T{b}^{4+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(L{u}^{3+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(E{u}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(C{e}^{3+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The most stable oxidation state of Lanthanides is \\(+3.T{b}^{4+}\\) is \\([Xe]4{f}^{7}\\). It tends to revert to the more stable oxidation state of +3 by the gain of an electron That is why \\(T{b}^{4+}\\) is strongest oxidizing agent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The amphoteric oxide among \({V}_{2}{O}_{3},{V}_{2}{O}_{4}\) and \({V}_{2}{O}_{5}\), upon reaction with alkali leads to formation of an oxide anion. The oxidation state of V in the oxide anion is</p> <p>[JEE Main 2025, 28 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>+4</p></span></div><div class="option"><span class="key">b</span><span><p>+7</p></span></div><div class="option"><span class="key">c</span><span><p>+3</p></span></div><div class="option"><span class="key">d</span><span><p>+5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({V}_{2}{O}_{5}\\) reacts with alkalies to give \\(V{O}_{4}^{3-}\\) In \\(V{O}_{4}^{3-}\\) ion, vanadium is in +5 oxidation state.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider ' n ' is the number of lone pair of electrons present in the equatorial position of the most stable structure of \(Cl{F}_{3}\). The ions from the following with ' n ' number of unpaired electrons are<br/>A. \({V}^{3+}\)<br/>B. \(T{i}^{3+}\)<br/>C. \(C{u}^{2+}\)<br/>D. \(N{i}^{2+}\)<br/>E. \(T{i}^{2+}\)</p> <p>Choose the correct answer from the options given below:</p> <p>[JEE Main 2025, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>B and C Only</p></span></div><div class="option"><span class="key">b</span><span><p>A and C Only</p></span></div><div class="option"><span class="key">c</span><span><p>B and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, D and E Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The molecular structure of chlorine trifluoride (\\(Cl{F}_{3}\\) ) is T- , following the VSEPR theory.\u003cbr/>• Central atom: Chlorine (Cl)\u003cbr/>• Total valence electrons: 7 + (3 × 7) = 28\u003cbr/>• Bonded pairs: 3 fluorine atoms\u003cbr/>• Lone pairs on Cl: 2\u003cbr/>• Most stable structure: Trigonal bipyramidal electron geometry\u003cbr/>• Fluorine atoms occupy axial positions.\u003cbr/>• Two lone pairs occupy equatorial positions.\u003cbr/>\\({V}^{+3},N{i}^{+2}andT{i}^{+2}\\) have 2 unpaired electrons each.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>One of the products formed from the reaction of permanganate ion with iodide ion in neutral aqueous medium is</p> <p>[JEE Advanced 2025, Paper-1]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{I}}_{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{IO}}_{3}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{IO}}_{4}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{IO}}_{2}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{I}}^{−}+2{\\mathrm{MnO}}_{4}^{−}+{\\mathrm{H}}_{2}\\mathrm{O}\\to {\\mathrm{IO}}_{3}^{−}+2{\\mathrm{MnO}}_{2}+2{\\mathrm{OH}}^{−}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following oxides,</p> <p>\({\mathrm{V}}_{2}{\mathrm{O}}_{3},{\mathrm{V}}_{2}{\mathrm{O}}_{4}\mathrm{and}{\mathrm{V}}_{2}{\mathrm{O}}_{5}\)</p> <p>Change in oxidation state of vanadium when amphoteric oxide reacts with acids to form \({{\mathrm{VO}}_{2}}^{+}\mathrm{is}\) (Memory Based Question 28/Jan/25 Evening shift)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Among the given oxides, V₂O₅ (vanadium(V) oxide) is amphoteric. When it reacts with acids, it forms VO₂⁺ (dioxovanadium ion).\u003c/p> \u003cul> \u003cli>The oxidation state of vanadium in V₂O₅ is +5.\u003c/li> \u003cli>The oxidation state of vanadium in VO₂⁺ is also +5.\u003c/li> \u003c/ul> \u003cp>Since there is no change in oxidation state, the oxidation state remains +5 throughout the reaction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The pair of lanthanoid ions which are diamagnetic is </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(P{m}^{3+}\) and \(S{m}^{3+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(C{e}^{4+}\) and \(Y{b}^{2+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(C{e}^{3+}\) and \(E{u}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(G{d}^{3+}\)and \(E{u}^{3+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Ce⁴⁺ has a 4f⁰ configuration (no unpaired electrons) and Yb²⁺ has a 4f¹⁴ configuration (all f‐orbitals filled). Both ions are diamagnetic.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following lanthanide ion has 7 electrons in its outer shell?</p> <p> (Memory Based JEE Mains 22/01/2025 Shift-1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Eu}}^{+3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Gd}}^{+3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Sm}}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Gd}}^{+2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\mathrm{Gd}(64)=\\left[\\mathrm{Xe}\\right]4{\\mathrm{f}}^{7}5{\\mathrm{d}}^{1}6{\\mathrm{s}}^{2}\\\\ {\\mathrm{Gd}}^{3+}=\\left[\\mathrm{Xe}\\right]4{\\mathrm{f}}^{7}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following electronic configuration would be associated with the highest magnetic moment?</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\([ Ar ] 3 d ^7\)</p></span></div><div class="option"><span class="key">b</span><span><p>\([ Ar ] 3 d ^3\)</p></span></div><div class="option"><span class="key">c</span><span><p>\([ Ar ] 3 d ^8\)</p></span></div><div class="option"><span class="key">d</span><span><p>\([ Ar ] 3 d ^6\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\([\\mathrm{Ar}]3\\mathrm{d}6\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following reactions</p> <p>\({\mathrm{K}}_{2}{\mathrm{Cr}}_{2}{\mathrm{O}}_{7}\overset{\mathrm{KOH}}{\to }\mathrm{A}\overset{{\mathrm{H}}_{2}{\mathrm{SO}}_{4}}{\to }\mathrm{B}+{\mathrm{K}}_{2}{\mathrm{SO}}_{4}\)</p> <p>The products A and B respectively are</p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{K}}_{2}{\mathrm{CrO}}_{4}\mathrm{and}{\mathrm{K}}_{2}{\mathrm{Cr}}_{2}{\mathrm{O}}_{7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{K}}_{2}\mathrm{Cr}{\left(\mathrm{OH}\right)}_{6}\mathrm{and}{\mathrm{Cr}}_{2}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{K}}_{2}{\mathrm{CrO}}_{4}\mathrm{and}{\mathrm{Cr}}_{2}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{K}}_{2}{\mathrm{CrO}}_{4}\mathrm{and}\mathrm{CrO}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct answer is: K₂CrO₄ and K₂Cr₂O₇.\u003c/p> \u003cp>Reaction explanation:\u003c/p> \u003cp>K₂Cr₂O₇ reacts with KOH to form K₂CrO₄ (A) in an alkaline medium.\u003c/p> \u003cp>K₂CrO₄ converts back to K₂Cr₂O₇ (B) in an acidic medium (H₂SO₄).\u003cbr/>Thus, [A] = K₂CrO₄ and [B] = K₂Cr₂O₇.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct set of ions (aqueous solution) with same colour from the following is:</p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Zn}}^{2+},{\mathrm{V}}^{3+},{\mathrm{Fe}}^{3+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Sc}}^{3+},{\mathrm{Ti}}^{3+},{\mathrm{Cr}}^{2+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Ti}}^{4+},{\mathrm{V}}^{4+},{\mathrm{Mn}}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{V}}^{2+},{\mathrm{Cr}}^{3+},{\mathrm{Mn}}^{3+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\mathrm{V}}^{2+},{\\mathrm{Cr}}^{3+},{\\mathrm{Mn}}^{3+}\\) show violet color in aqueous solution.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following does not belong to the same period in the modern periodic table?</p> <p> (Memory Based JEE Mains 23/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Pd</p></span></div><div class="option"><span class="key">b</span><span><p>Ir</p></span></div><div class="option"><span class="key">c</span><span><p>Pt</p></span></div><div class="option"><span class="key">d</span><span><p>Os</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Pd belongs to 5th period,whereas Os, Ir and Pt belong to 6th period\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following pair of ions are same coloured?</p> <p> (Memory Based JEE Mains 23/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Ti}}^{4+},{\mathrm{V}}^{3+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Cr}}^{2+},{\mathrm{Cu}}^{2+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Cr}}^{3+},{\mathrm{Ni}}^{2+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Mn}}^{3+},{\mathrm{Ni}}^{2+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Both \\({\\mathrm{Cr}}^{2+}\\mathrm{and}{\\mathrm{Cu}}^{2+}\\)are blue in colour\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is the strongest oxidising agent ? (Jee mains shift-1 memory based 24/01/2025).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Eu}}^{+2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{Ce}}^{+2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Ce}}^{+4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Eu}}^{4+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Cerium has only 4 electrons in its outermost shell. Hence, it can only gain electrons and not lose extra electrons and act as an oxidizing agent in its +4 oxidation state\u003c/p> \u003cp>\\(\\mathrm{Ce}=\\left[\\mathrm{Xe}\\right]4{\\mathrm{f}}^{1}5{\\mathrm{d}}^{1}6{\\mathrm{s}}^{2}\\\\ \\mathrm{Hence},{\\mathrm{Ce}}^{4+}\\mathrm{acts}\\mathrm{as}\\mathrm{strongest}\\mathrm{oxidizing}\\mathrm{agent}\\\\ {\\mathrm{Ce}}^{4+}=\\left[\\mathrm{Xe}\\right]4{\\mathrm{f}}^{0}5{\\mathrm{d}}^{0}6{\\mathrm{s}}^{0}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>During preparation of potassium permanganate from manganese dioxide, the compound formed when manganese dioxide reacts with potassium hydroxide is (MEMORY based jee mains shift-1 24/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{KMnO}}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{K}}_{2}{\mathrm{MnO}}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{MnO}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Mn}}_{3}{\mathrm{O}}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>During the preparation of potassium permanganate from manganese dioxide, potassium manganate is formed when manganese dioxide reacts with potassium hydroxide. Potassium manganate reacts with HCl to give potassium permanganate.\u003c/p> \u003cp>\\(2{\\mathrm{MnO}}_{2}+{\\mathrm{O}}_{2}+4\\mathrm{KOH}\\to 2{\\mathrm{K}}_{2}{\\mathrm{MnO}}_{4}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\ 3{\\mathrm{K}}_{2}{\\mathrm{MnO}}_{4}+4\\mathrm{HCl}\\to 2{\\mathrm{KMnO}}_{4}+{\\mathrm{MnO}}_{2}+4\\mathrm{KCl}+2{\\mathrm{H}}_{2}\\mathrm{O}\\\\\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The electronic configurations of bivalent europium and trivalent cerium are :</p> <p>(atomic number : \( \mathrm{Xe}=54, \mathrm{Ce}=58, \mathrm{Eu}=63 \) )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( [\mathrm{Xe}] 4 \mathrm{f}^{4} \) and \( [\mathrm{Xe}] 4 \mathrm{f}^{9} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( [\mathrm{Xe}] 4 \mathrm{f}^{7} \) and \( [\mathrm{Xe}] 4 \mathrm{f}^{1} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( [\mathrm{Xe}] 4 \mathrm{f}^{7} 6 \mathrm{~s}^{2} \) and \( [\mathrm{Xe}] 4 \mathrm{f}^{2} 6 \mathrm{s}^{2} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( [\mathrm{Xe}] 4 \mathrm{f}^{2} \) and \( [\mathrm{Xe}] 4 \mathrm{f}^{7} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

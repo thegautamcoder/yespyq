@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Electrochemistry","item":"https://yespyq.com/exams/board/chemistry/electrochemistry/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Electrochemistry</h1>
       <p>34 Board Chemistry previous year questions on <b>Electrochemistry</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Electrolysis of which compound give \({\mathrm{H}}_{2}{\mathrm{S}}_{2}{\mathrm{O}}_{8}\\\)<br/>(Memory Based JEE Mains 22/01/2025,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Electrolysis of conc.\({\text{Na}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>Electrolysis of dil. \({\text{Na}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>Electrolysis of conc.\({\text{H}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Electrolysis of dil.\({\text{H}}_{2}{\mathrm{SO}}_{4}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following has least tendency to liberate \({H}_{2}\) from mineral acids? </p> <p> </p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>Cu</p></span></div><div class="option"><span class="key">b</span><span><p>Mn</p></span></div><div class="option"><span class="key">c</span><span><p>Ni</p></span></div><div class="option"><span class="key">d</span><span><p>Zn</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. Select the correct option (memory based jee mains shift-2 22/01/2025)</p> <p>Statement-1: In corrosion pure metal acts as anode, the impure metal acts as a cathode</p> <p>Statement-2: Alkaline medium increases the rate of corrosion more than in acidic medium</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-1 is correct but statement-2 is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-1 is incorrect but statement-2 is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both statements are correct</p></span></div><div class="option correct"><span class="key">d</span><span><p>Both statements are incorrect</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Standard electrode potentials for a few half cells are mentioned below</p> <p>\({\text{E}}_{C{u}^{2+}/Cu}^{∘}=0.34\text{V},{\text{E}}_{Z{n}^{2+}/Zn}^{∘}=−0.76\text{V}\)</p> <p>\({\text{E}}_{A{g}^{+}/Ag}^{∘}=0.80\text{V},{\text{E}}_{M{g}^{2+}/Mg}^{∘}=−2.37\text{V}\)</p> <p>Which one of the following cells give the most negative value of \(∆{\mathrm{G}}^{\mathrm{o}}\)?</p> <p>[JEE Main 2025, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Zn}|{\mathrm{Zn}}^{2+}\left(1\mathrm{M}\right)||{\mathrm{Mg}}^{2+}\left(1\mathrm{M}\right)|\mathrm{Mg}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Ag}|{\mathrm{Ag}}^{+}\left(1\mathrm{M}\right)||{\mathrm{Mg}}^{2+}\left(1\mathrm{M}\right)|\mathrm{Mg}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Zn}|{\mathrm{Zn}}^{2+}\left(1\mathrm{M}\right)||{\mathrm{Ag}}^{+}\left(1\mathrm{M}\right)|\mathrm{Ag}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Cu}|{\mathrm{Cu}}^{2+}\left(1\mathrm{M}\right)||{\mathrm{Ag}}^{+}\left(1\mathrm{M}\right)|\mathrm{Ag}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Determine the cell with the most negative ΔG°, we use:\u003c/p> \u003cp>\\({E}_{\\text{cell}}^{∘}={E}_{\\text{cathode}}^{∘}−{E}_{\\text{anode}}^{∘}\\)\u003c/p> \u003cp>For Zn|Zn²⁺(1M)||Ag⁺(1M)|Ag,\u003c/p> \u003cp>\\({E}_{\\text{cell}}^{∘}=0.80V−(−0.76V)=1.56V\\)\\(\\Delta {G}^{∘}=−nF{E}_{\\text{cell}}^{∘}\\)​\u003c/p> \u003cp>Since 1.56V is the highest, ΔG° is most negative for option (c)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the factor from the following that does not affect electolytic conductance of a solution.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The nature of the electrolyte added</p></span></div><div class="option"><span class="key">b</span><span><p>The nature of the electrode used</p></span></div><div class="option"><span class="key">c</span><span><p>The nature of solvent used</p></span></div><div class="option"><span class="key">d</span><span><p>Concentration of the electrolyte</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Factors that \u003cstrong>affect conductance\u003c/strong>: \u003col> \u003cli> \u003cp>\u003cstrong>Nature of electrolyte\u003c/strong> → determines type and number of ions ✅\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Nature of solvent\u003c/strong> → affects ionization and mobility ✅\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Concentration of electrolyte\u003c/strong> → changes number of free ions ✅\u003c/p> \u003c/li> \u003c/ol> Factor that \u003cstrong>does NOT affect conductance\u003c/strong>: \u003cul> \u003cli> \u003cp>\u003cstrong>Nature of electrode used\u003c/strong> → electrodes only allow current to pass; they don’t affect ionic conductance of the solution itself ❌\u003c/p> \u003c/li> \u003c/ul>  \u003cp>✅ \u003cstrong>Correct Answer:\u003c/strong> \u003cstrong>(B) The nature of the electrode used\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a \(Mg\left|M{g}^{2+}(aq)\right|\left|A{g}^{+}(aq)\right|Ag\) the correct Nernst Equation is </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({E}_{\text{cell }}={E}_{\text{cell }}^{o}+\frac{RT}{2F}\ln \frac{{\left[A{g}^{+}\right]}^{2}}{\left[M{g}^{2+}\right]}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({E}_{\text{cell }}={E}_{\text{cell }}^{o}-\frac{RT}{2F}\ln \frac{\left[A{g}^{+}\right]}{\left[M{g}^{2+}\right]}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({E}_{\text{cell }}={E}_{\text{cell }}^{o}-\frac{RT}{2F}\ln \frac{\left[M{g}^{2+}\right]}{\left[A{g}^{+}\right]}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({E}_{\text{cell }}={E}_{\text{cell }}^{o}-\frac{RT}{2F}\ln \frac{{\left[A{g}^{+}\right]}^{2}}{\left[M{g}^{2+}\right]}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The Nernst equation is given by:\u003c/p> \u003cp>\\(E=E^\\circ -\\frac{RT}{nF}\\ln Q\\)\u003c/p> \u003cp>Cell Reaction:\u003c/p> \u003cp>\\(Mg(s)+2A{g}^{+}(aq)⇌2Ag(s)+M{g}^{2+}(aq)\\\\ E={E}_{\\text{cell }}^\\circ -\\frac{RT}{2F}\\ln \\frac{\\left[M{g}^{2+}\\right]}{{\\left[A{g}^{+}\\right]}^{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the electro chemical cell<br/>\(M\left|{M}^{2+}\right||X|{X}^{2-}\)</p> <p>\(\text{ If }{E}_{\left({M}^{2+}/M\right)}^{0}=0.46V\text{ and }{E}_{\left(x/{x}^{2-}\right)}^{0}=0.34V\text{. }\)</p> <p>Which of the following is correct?</p> <p> </p> <p>[JEE Main 2024, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({E}_{\text{cell }}=0.80 V\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(M+X\to {M}^{2+}+{X}^{2-}\) is a spontaneous reaction</p></span></div><div class="option"><span class="key">c</span><span><p>\({E}_{\text{cell }}= -0.80 V\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({M}^{2+}+{X}^{2-}\to M+X\) is a spontaneous reaction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Step 1: Identify the oxidation and reduction half-reactionsSv6Kpe[]  Sv6Kpe[[null,null,&amp;quot;ffffecfd-eb6a-4a58-a97b-605377b6da81&amp;quot;,null,null,0,0]]Sv6Kpe[] The electrochemical cell is given as  \\(M|{M}^{2+}||X|{X}^{2−}\\) 𝑀|𝑀2+||𝑋|𝑋2− Sv6Kpe[].\u003cbr/>In standard cell notation, the anode (oxidation) is on the left and the cathode (reduction) is on the right. Sv6Kpe[[null,null,&amp;quot;449ca43e-df0e-4d00-9582-be9565dd053c&amp;quot;,null,null,0,0]]Sv6Kpe[] \u003cul> \u003cli>At the anode (left side), oxidation occurs:   \\(M\\to {M}^{2+}+2{e}^{−}\\) 𝑀→𝑀2++2𝑒− Sv6Kpe[]Sv6Kpe[]Sv6Kpe[]\u003c/li> \u003cli>At the cathode (right side), reduction occurs:   \\(X+2{e}^{−}\\to {X}^{2−}\\) 𝑋+2𝑒−→𝑋2− Sv6Kpe[]Sv6Kpe[] Sv6Kpe[[null,null,&amp;quot;1bc3879f-f6a6-439a-894e-2b7f19490913&amp;quot;,null,null,0,0]]Sv6Kpe[]\u003c/li> Sv6Kpe[]\u003c/ul> The overall cell reaction is the sum of these two half-reactions:\u003cbr/>  \\(M+X\\to {M}^{2+}+{X}^{2−}\\) 𝑀+𝑋→𝑀2++𝑋2− Sv6Kpe[]Sv6Kpe[] Step 2: Determine the standard cell potential (  \\({E}_{\\text{cell}}^{0}\\) 𝐸0cell Sv6Kpe[]) Sv6Kpe[[null,null,&amp;quot;bbc5c098-4767-4aec-adbb-ec865ccc7618&amp;quot;,null,null,0,0]]Sv6Kpe[] The standard cell potential is calculated using the formula:\u003cbr/>  \\({E}_{\\text{cell}}^{0}={E}_{\\text{cathode}}^{0}−{E}_{\\text{anode}}^{0}\\) 𝐸0cell=𝐸0cathode−𝐸0anode Sv6Kpe[]Sv6Kpe[] From the given information: Sv6Kpe[[null,null,&amp;quot;d82a6487-cce5-4b05-9506-f41e342570d7&amp;quot;,null,null,0,0]]Sv6Kpe[] \u003cul> \u003cli>Standard reduction potential for the cathode:   \\({E}^{0}(X/{X}^{2−})\\) 𝐸0(𝑋/𝑋2−) Sv6Kpe[] is not given directly. The given value is   \\({E}^{0}(X/{X}^{2−})=0.34V\\) 𝐸0(𝑋/𝑋2−)=0.34𝑉 Sv6Kpe[]. However, the reduction potential is typically given as   \\({E}^{0}(\\text{oxidized}/\\text{reduced})\\) 𝐸0(oxidized/reduced) Sv6Kpe[]. The reaction at the cathode is   \\(X+2{e}^{−}\\to {X}^{2−}\\) 𝑋+2𝑒−→𝑋2− Sv6Kpe[], which is a reduction. Let's assume the given value is the reduction potential for the cathode. So,   \\({E}_{\\text{cathode}}^{0}=0.34V\\) 𝐸0cathode=0.34𝑉 Sv6Kpe[].Sv6Kpe[]Sv6Kpe[]\u003c/li> \u003cli>Standard reduction potential for the anode:   \\({E}^{0}({M}^{2+}/M)=0.46V\\) 𝐸0(𝑀2+/𝑀)=0.46𝑉 Sv6Kpe[]. So,   \\({E}_{\\text{anode}}^{0}=0.46V\\) 𝐸0anode=0.46𝑉 Sv6Kpe[].Sv6Kpe[] Sv6Kpe[[null,null,&amp;quot;01c67cc7-da83-4f94-bb74-2362ab7f0b90&amp;quot;,null,null,0,0]]Sv6Kpe[]\u003c/li> Sv6Kpe[]\u003c/ul> Using the formula:\u003cbr/>  \\({E}_{\\text{cell}}^{0}={E}^{0}(\\text{cathode})−{E}^{0}(\\text{anode})=0.34V−0.46V=-0.12V\\) 𝐸0cell=𝐸0(cathode)−𝐸0(anode)=0.34𝑉−0.46𝑉=−0.12𝑉 Sv6Kpe[]Sv6Kpe[] The standard cell potential is  \\(-0.12V\\) −𝟎.𝟏𝟐𝐕 Sv6Kpe[].","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({O}_{2}\) gas will be evolved as a product of electrolysis of :<br/>(A) an aqueous solution of \(AgN{O}_{3}\) using silver electrodes.<br/>(B) an aqueous solution of \(AgN{O}_{3}\) using platinum electrodes.<br/>(C) a dilute solution of \({H}_{2}S{O}_{4}\) using platinum electrodes.<br/>(D) a high concentration solution of \({H}_{2}S{O}_{4}\) using platinum electrodes.</p> <p>Choose the correct answer from the options given below :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B) and (D) only</p></span></div><div class="option"><span class="key">b</span><span><p>(A) and (C) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B) and (C) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Oxygen gas is evolved during the electrolysis of aqueous \\(AgN{O}_{3}\\) with platinum electrodes and dilute \\({H}_{2}S{O}_{4}\\)with platinum electrodes.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Based on the data given below :</p> <p>\({E}_{C{r}_{2}{O}_{7}^{2-}/C{r}^{3+}}^{0}=1.33V{E}_{C{l}_{2}/C{l}^{(-)}}^{0}=1.36V\\ {E}_{Mn{O}_{4}^{-}/M{n}^{2+}}^{0}=1.51V{E}_{C{r}^{3+}/Cr}^{0}=-0.74V\)<br/>the strongest reducing agent is</p> <p>[JEE Main 2025, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(C{l}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Mn{O}_{4}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Cr</p></span></div><div class="option"><span class="key">d</span><span><p>\(M{n}^{2+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The element with the most negative reduction potential is the strongest reducing agent. Among the given options, Cr will act as the reducing agent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following electrolyte can be used to obtain \({\mathrm{H}}_{2}{\mathrm{S}}_{2}{\mathrm{O}}_{8}\) by the process of electrolysis?</p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Dilute solution of sodium sulphate</p></span></div><div class="option"><span class="key">b</span><span><p>Concentrated solution of sulphuric acid</p></span></div><div class="option"><span class="key">c</span><span><p>Dilute solution of sulphuric acid</p></span></div><div class="option"><span class="key">d</span><span><p>Acidified dilute solution of sodium sulphate</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Concentrared Sulphuric acid can be used to obtain \\({\\mathrm{H}}_{2}{\\mathrm{S}}_{2}{\\mathrm{O}}_{8}\\) by the process of electrolysis.\u003c/p> \u003cp>At cathode :\u003c/p> \u003cp>\\(2{\\mathrm{HSO}}_{4}^{-}\\to {\\mathrm{H}}_{2}{\\mathrm{S}}_{2}{\\mathrm{O}}_{8}+2{\\mathrm{e}}^{–}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Mass in grams of copper deposited by passing \(9.6487\mathrm{A}\) current through a voltmeter containing copper sulphate solution for \(100\) seconds is (Given : Molar mass of \(\mathrm{Cu}:63{\mathrm{gmol}}^{-1}\), \(1\mathrm{F}=96487\mathrm{C})\) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.0315 g</p></span></div><div class="option"><span class="key">b</span><span><p>3.15 g</p></span></div><div class="option"><span class="key">c</span><span><p>0.315 g</p></span></div><div class="option"><span class="key">d</span><span><p>31.5 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{matrix}\\mathrm{W}=\\frac{\\mathrm{M}}{\\mathrm{nF}}\\times \\mathrm{It} \\\\ \\mathrm{W}=\\frac{63\\times 9.6487\\times 100}{2\\times 96487} \\\\ \\mathrm{W}=0.315\\text{ }\\mathrm{g}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>From the following select the one which is not an example of corrosion?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rusting of iron object</p></span></div><div class="option"><span class="key">b</span><span><p>Production of hydrogen by electrolysis of water</p></span></div><div class="option"><span class="key">c</span><span><p>Tarnishing of silver</p></span></div><div class="option"><span class="key">d</span><span><p>Development of green coating on copper and bronze ornaments</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The option that is not an example of corrosion is:\u003c/p> \u003cp>\u003cstrong>B. Production of hydrogen by electrolysis of water\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli>\u003cstrong>A. Rusting of iron object\u003c/strong> is a type of corrosion where iron reacts with oxygen and moisture to form iron oxides (rust).\u003c/li> \u003cli>\u003cstrong>C. Tarnishing of silver\u003c/strong> involves the formation of silver sulfide on the surface of silver items due to a reaction with sulfur compounds in the air.\u003c/li> \u003cli>\u003cstrong>D. Development of green coating on copper and bronze ornaments\u003c/strong> is caused by the formation of copper carbonate or copper chloride, known as patina, which is also a form of corrosion.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Option B\u003c/strong> refers to a chemical reaction in which water is split into hydrogen and oxygen gases through electrolysis, and is not related to the process of corrosion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>How can an electrochemical cell be converted into an electrolytic cell</p> <p> </p> <p>[JEE Main 2024, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Reversing the flow of ions in salt bridge</p></span></div><div class="option"><span class="key">b</span><span><p>Applying an external opposite potential greater than \({\mathrm{E}}_{\mathrm{cell}}^{\mathrm{o}}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Exchanging the electrodes at anode and cathode.</p></span></div><div class="option"><span class="key">d</span><span><p>Applying an external opposite potential lower than \(E _{\text {cell }}^0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>To convert it into an electrolytic cell:\u003c/strong> \u003cp>We must make the reaction \u003cstrong>non-spontaneous\u003c/strong>, i.e., \u003cstrong>reverse the direction\u003c/strong> of the spontaneous redox reaction.\u003c/p> \u003cp>To do that, we need to \u003cstrong>apply an external voltage\u003c/strong> that \u003cstrong>opposes\u003c/strong> the cell’s emf — and it must be \u003cstrong>greater than\u003c/strong> \\({E}_{\\text{cell}}^{∘}\\)Ecell∘​ to drive the reverse reaction.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Mass in grams of copper deposited by passing \(9.6487\mathrm{A}\) current through a voltmeter containing copper sulphate solution for \(100\) seconds is (Given : Molar mass of \(\mathrm{Cu}:63{\mathrm{gmol}}^{-1}\), \(1\mathrm{F}=96487\mathrm{C})\) </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>0.0315 g</p></span></div><div class="option"><span class="key">b</span><span><p>3.15 g</p></span></div><div class="option"><span class="key">c</span><span><p>0.315 g</p></span></div><div class="option"><span class="key">d</span><span><p>31.5 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{matrix}\\mathrm{W}=\\frac{\\mathrm{M}}{\\mathrm{nF}}\\times \\mathrm{It} \\\\ \\mathrm{W}=\\frac{63\\times 9.6487\\times 100}{2\\times 96487} \\\\ \\mathrm{W}=0.315\\text{ }\\mathrm{g}\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The standard reduction potential values of some of the p-block ions are given below. Predict the one with the strongest oxidising capacity</p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({{E}^{⊖}}_{{\mathrm{Sn}}^{4+}/{\mathrm{Sn}}^{2+}}=+1.15\mathrm{V}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({{E}^{⊖}}_{{\mathrm{Pb}}^{4+}/{\mathrm{Pb}}^{2+}}=+1.67\mathrm{V}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{E}}_{{\mathrm{Tl}}^{3+}/\mathrm{Tl}}^{⊖}=+1.26\mathrm{V}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({E}_{A{l}^{3+}/Al}^{⊖}=-1.66V\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>A higher reduction potential means a stronger oxidising agent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What is the correct Nernst equation representation for the following cell reaction? (Memory based 29 Jan /2025 morning shift )</p> <p>\(\mathrm{Mg}(\mathrm{s})\to {\mathrm{Mg}}^{2+}+2{\mathrm{e}}^{-}\\ {\mathrm{Ag}}^{+}+{\mathrm{e}}^{-}\to \mathrm{Ag}(\mathrm{s})\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{E}}_{\mathrm{cell}}={{\mathrm{E}}^{0}}_{\mathrm{cell}}-\frac{\mathrm{RT}}{\mathrm{nF}}\ln \frac{\left[{\mathrm{Mg}}^{2+}\right]}{{\left[{\mathrm{Ag}}^{+}\right]}^{2}}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{E}}_{\mathrm{cell}}={{\mathrm{E}}^{0}}_{\mathrm{cell}}-\frac{\mathrm{RT}}{\mathrm{nF}}\ln \frac{{\left[{\mathrm{Ag}}^{+}\right]}^{2}}{\left[{\mathrm{Mg}}^{2+}\right]}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{E}}_{\mathrm{cell}}={{\mathrm{E}}^{0}}_{\mathrm{cell}}+\frac{\mathrm{RT}}{\mathrm{nF}}\ln \frac{\left[{\mathrm{Mg}}^{2+}\right]}{\left[{\mathrm{Ag}}^{+}\right]}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{E}}_{\mathrm{cell}}={{\mathrm{E}}^{0}}_{\mathrm{cell}}+\frac{\mathrm{RT}}{\mathrm{nF}}\ln \frac{\left[{\mathrm{Ag}}^{+}\right]}{\left[{\mathrm{Mg}}^{2+}\right]}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{Mg}(\\mathrm{s})\\to {\\mathrm{Mg}}^{2+}+2{\\mathrm{e}}^{-}(\\mathrm{oxidation}\\mathrm{half}\\mathrm{cell})\\\\ 2{\\mathrm{Ag}}^{+}+2{\\mathrm{e}}^{-}\\to 2\\mathrm{Ag}(\\mathrm{s})(\\mathrm{reduction}\\mathrm{half}\\mathrm{cell})\\\\ \\mathrm{Net}\\mathrm{cell}\\mathrm{reaction}\\mathrm{Mg}(\\mathrm{s})+2{\\mathrm{Ag}}^{+}\\to {\\mathrm{Mg}}^{2+}+\\mathrm{Ag}(\\mathrm{s})\\\\ \\mathrm{Nernst}\\mathrm{equation}{\\mathrm{E}}_{\\mathrm{cell}}={{\\mathrm{E}}^{0}}_{\\mathrm{cell}}-\\frac{\\mathrm{RT}}{\\mathrm{nF}}\\ln \\frac{\\left[{\\mathrm{Mg}}^{2+}\\right]}{{\\left[{\\mathrm{Ag}}^{+}\\right]}^{2}}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the factor from the following that does not affect electrolytic conductance of a solution. <br/><br/></p> <p>[JEE Main 2024, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Concentration of the electrolyte.</p></span></div><div class="option"><span class="key">b</span><span><p>The nature of the electrode used.</p></span></div><div class="option"><span class="key">c</span><span><p>The nature of solvent used.</p></span></div><div class="option"><span class="key">d</span><span><p> The nature of the electrolyte added.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Electrolytic conductance\u003c/strong> depends on factors that influence: \u003cul> \u003cli> \u003cp>Number of ions present\u003c/p> \u003c/li> \u003cli> \u003cp>Mobility of ions in solution\u003c/p> \u003c/li> \u003c/ul> \u003cp>So, conductance \u003cstrong>is affected by\u003c/strong>:\u003c/p> \u003col> \u003cli> \u003cp>\u003cstrong>Concentration of the electrolyte\u003c/strong> ✅ — affects ion concentration.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Nature of the electrolyte added\u003c/strong> ✅ — strong or weak electrolyte → degree of ionization changes.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Nature of the solvent used\u003c/strong> ✅ — dielectric constant and viscosity affect ionization and mobility.\u003c/p> \u003c/li> \u003c/ol>  \u003cstrong>But not affected by:\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Nature of the electrode used\u003c/strong> ❌ — electrodes only act as conductors of current; they don’t influence ionic conductance of the solution itself.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Electrolysis of which compound give \({\mathrm{H}}_{2}{\mathrm{S}}_{2}{\mathrm{O}}_{8}\\\)<br/>(Memory Based JEE Mains 22/01/2025,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Electrolysis of conc.\({\text{Na}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>Electrolysis of dil. \({\text{Na}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Electrolysis of conc.\({\text{H}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Electrolysis of dil.\({\text{H}}_{2}{\mathrm{SO}}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\mathrm{The}\\mathrm{electrolysis}\\mathrm{of}\\mathrm{conc}{\\mathrm{H}}_{2}{\\mathrm{SO}}_{4}\\mathrm{give}\\mathrm{oleum}({\\mathrm{H}}_{2}{\\mathrm{S}}_{2}{\\mathrm{O}}_{8})\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A solution of aluminium chloride is electrolysed for 30 minutes using a current of 2 A . The amount of the aluminium deposited at the cathode is ________.<br/>[Given : molar mass of aluminium and chlorine are \(27gmo{l}^{-1}\) and \(35.5gmo{l}^{-1}\) respectively]</p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>660 g</p></span></div><div class="option"><span class="key">b</span><span><p>0.441 g</p></span></div><div class="option"><span class="key">c</span><span><p>0.336 g</p></span></div><div class="option"><span class="key">d</span><span><p>1.007 g</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Using Faraday's laws of electrolysis,\u003c/p> \u003cp>\\(W=Z\\times I\\times t\\)\u003c/p> \u003cp>Given:\u003c/p> \u003cp>\\(I=2A,t=30min=30\\times 60sec\\)\u003c/p> \u003cp>\\(∴W=\\frac{M}{nF}\\times I\\times t\\left(∵Z=\\frac{M}{nF}\\right)\\\\ W=\\frac{27}{3\\times 96500}\\times 2\\times 30\\times 60\\)\u003c/p> \u003cp>\u003cbr/>\\(W=0.336g\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What pressure (bar) of \({H}_{2}\) would be required to make emf of hydrogen electrode zero in pure water at \(25^\circ C\) ?</p> <p> </p> <p>[JEE Main 2024, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({10}^{-7}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({10}^{-14}\)</p></span></div><div class="option"><span class="key">c</span><span><p>0.5</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Understanding the Question\u003c/strong> \u003cp>A \u003cstrong>hydrogen electrode\u003c/strong> is defined by the half-cell reaction:\u003c/p> \\({\\text{H}}^{+}(aq)+{e}^{−}⇌\\frac{1}{2}{\\text{H}}_{2}(g)\\)H+(aq)+e−⇌21​H2​(g) \u003cp>The \u003cstrong>Nernst equation\u003c/strong> for the hydrogen electrode is:\u003c/p> \\(E={E}^{∘}−\\frac{0.0591}{1}\\log ⁡(\\frac{1}{[{H}^{+}]⋅\\sqrt{{P}_{{\\text{H}}_{2}}}})\\)E=E∘−10.0591​log([H+]⋅PH2​​​1​) \u003cp>Since \\({E}^{∘}=0\\)E∘=0 V for SHE, this simplifies to:\u003c/p> \\(E=−0.0591\\log ⁡(\\frac{1}{[{H}^{+}]⋅\\sqrt{{P}_{{\\text{H}}_{2}}}})=0.0591\\log ⁡([{H}^{+}]⋅\\sqrt{{P}_{{\\text{H}}_{2}}})\\)E=−0.0591log([H+]⋅PH2​​​1​)=0.0591log([H+]⋅PH2​​​) \u003cp>We are told that:\u003c/p> \u003cul> \u003cli> \u003cp>The electrode is dipped in \u003cstrong>pure water\u003c/strong>\u003c/p> \u003c/li> \u003cli> \u003cp>We want \u003cstrong>emf = 0\u003c/strong> (i.e., E = 0)\u003c/p> \u003c/li> \u003cli> \u003cp>Temperature = 25°C (already factored into the 0.0591 V term)\u003c/p> \u003c/li> \u003c/ul>  🔬 \u003cstrong>Step 1: [H⁺] in pure water\u003c/strong> \u003cp>In pure water at 25°C:\u003c/p> \\([{H}^{+}]=[O{H}^{−}]={10}^{−7}\\text{ }\\text{mol/L}\\)[H+]=[OH−]=10−7mol/L 🧮 \u003cstrong>Step 2: Use Nernst Equation\u003c/strong> \u003cp>Set \\(E=0\\)E=0:\u003c/p> \\(0=0.0591\\log ⁡([{H}^{+}]⋅\\sqrt{{P}_{{\\text{H}}_{2}}})\\)0=0.0591log([H+]⋅PH2​​​) \\(\\Rightarrow \\log ⁡([{H}^{+}]⋅\\sqrt{{P}_{{\\text{H}}_{2}}})=0\\)⇒log([H+]⋅PH2​​​)=0 \\(\\Rightarrow [{H}^{+}]⋅\\sqrt{{P}_{{\\text{H}}_{2}}}=1\\)⇒[H+]⋅PH2​​​=1 \\(\\Rightarrow \\sqrt{{P}_{{\\text{H}}_{2}}}=\\frac{1}{[{H}^{+}]}={10}^{7}\\)⇒PH2​​​=[H+]1​=107 \\(\\Rightarrow {P}_{{\\text{H}}_{2}}=({10}^{7}{)}^{2}={10}^{14}\\text{ }\\text{bar}\\)⇒PH2​​=(107)2=1014bar ✅ \u003cstrong>Final Answer:\u003c/strong> \u003cp>To make emf \u003cstrong>zero\u003c/strong> in pure water, hydrogen pressure must be:\u003c/p> \\({10}^{14}\\text{ bar}\\)1014 bar​ \u003cp>But wait — the \u003cstrong>question asks\u003c/strong>:\u003c/p>  \u003cp>What pressure \u003cstrong>would be required to make emf zero\u003c/strong>?\u003c/p>  \u003cp>This is \u003cstrong>inverse\u003c/strong> of what we just did.\u003c/p> \u003cp>If we \u003cstrong>set pressure = 1 bar\u003c/strong>, then:\u003c/p> \\(E=0.0591\\log ⁡({10}^{−7}⋅\\sqrt{1})=0.0591\\log ⁡({10}^{−7})=−0.4137\\text{ }\\text{V}\\)E=0.0591log(10−7⋅1​","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The standard cell potential of the following cell </p> <p>\(Zn|Z{n}^{{2}^{+}}(aq)||F{e}^{2+}(aq)∣Fe\)<br/>is \(0.32 V\). Calculate the standard Gibbs energy change for the reaction:<br/>\(Zn(s)+F{e}^{2+}(aq)\to Z{n}^{2+}(aq)+Fe(s)\)<br/>(Given : \(1 F =96487 C\) )</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(-61.75kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(+5.006kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(-5.006kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(+61.75kJmo{l}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\mathrm{ΔG}}^{∘}=–\\mathrm{nFE}^\\circ\\)\u003c/p> \u003cp> = –2 × 96487 × 0.32\u003c/p> \u003cp> = –61750.4 J/mol\u003c/p> \u003cp> = –61.75 kJ/mol\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the given cell</p> <p>\(F{e}^{2+}{}_{(aq)}+A{g}^{+}{}_{(aq)}\to F{e}^{3+}{}_{(aq)}+A{g}_{(s)}\)</p> <p>The standard cell potential of the above reaction is</p> <p>Given</p> <p>\(A{g}^{+}+{e}^{-}\to Ag{E}^{\theta }=xV\)</p> <p>\(F{e}^{2+}+2{e}^{-}\to Fe{E}^{\theta }=yV\)</p> <p>\(F{e}^{3+}+3{e}^{-}\to Fe{E}^{\theta }=zV\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>x + y – z</p></span></div><div class="option"><span class="key">b</span><span><p>y – 2x</p></span></div><div class="option"><span class="key">c</span><span><p>x + 2y</p></span></div><div class="option"><span class="key">d</span><span><p>x + 2y – 3z</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The given cell reaction is:\u003c/p> \u003cp>\\(F{e}^{2+}(aq)+A{g}^{+}(aq)\\to F{e}^{3+}(aq)+Ag(s)\\)\u003c/p> \u003cp>From the given data:\u003c/p> \u003cp> \\(A{g}^{+}+{e}^{-}\\to Ag,{E}^{\\theta }=xV\\\\ F{e}^{3+}+3{e}^{-}\\to Fe,{E}^{\\theta }=zV\\\\ F{e}^{2+}+2{e}^{-}\\to Fe,{E}^{\\theta }=yV\\)\u003c/p> \u003cp>The given cell reaction shows \\(F{e}^{2+}\\) is oxidized to \\(F{e}^{3+}\\).\u003cbr/>The corresponding reverse reaction of \\(F{e}^{3+}+{e}^{-}\\to F{e}^{2+}\\) is:\u003c/p> \u003cp>\\(F{e}^{2+}\\to F{e}^{3+}+{e}^{-},\\)\u003c/p> \u003cp>\\({E}^{\\theta }=-(3z-2y)=2y-3z\\)\u003c/p> \u003cp>Add the Half-Reactions\u003c/p> \u003cp>\\(F{e}^{2+}\\to F{e}^{3+}+{e}^{-},{E}^{\\theta }=2y-3z\\\\ A{g}^{+}+{e}^{-}\\to Ag,{E}^{\\theta }=x\\)\u003c/p> \u003cp>Net cell reaction:\u003c/p> \u003cp>\\(F{e}^{2+}+A{g}^{+}\\to F{e}^{3+}+Ag\\)\u003c/p> \u003cp>The standard cell potential is:\u003c/p> \u003cp>\\({E}_{cell}^{\\theta }={E}_{\\text{cathode }}^{\\theta }-{E}_{\\text{anode }}^{\\theta }\\\\ =(x)-(2y-3z)\\\\ =x+2y-3z\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements. Select the correct option (memory based jee mains shift-2 22/01/2025)</p> <p>Statement-1: In corrosion pure metal acts as anode, the impure metal acts as a cathode</p> <p>Statement-2: Alkaline medium increases the rate of corrosion more than in acidic medium</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-1 is correct but statement-2 is incorrect</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-1 is incorrect but statement-2 is correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both statements are correct</p></span></div><div class="option"><span class="key">d</span><span><p>Both statements are incorrect</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In corrosion, a metal is oxidized by loss of electrons to oxygen. Electrons released at anodic spot move through the same metal and go to another spot on the metal and reduce oxygen in the presence of \\({\\mathrm{H}}^{+}\\) (which is believed to be available from \\({\\mathrm{H}}_{2}{\\mathrm{CO}}_{3}\\) formed due to dissolution of \\({\\mathrm{CO}}_{2}\\) from air into water.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following gives predominantly \({\mathrm{O}}_{2}\) on electrolysis among the following? </p> <p>A) Aq. \({\mathrm{AgNO}}_{3}\) (Pt electrodes)</p> <p>B) Aq. \({\mathrm{AgNO}}_{3}\) (Ag electrodes)</p> <p>C) Conc.\({\mathrm{H}}_{2}{\mathrm{SO}}_{4}\) (Pt electrodes)</p> <p>D) Dilute \({\mathrm{H}}_{2}{\mathrm{SO}}_{4}\)(Ag electrodes)</p> <p>Memory Based Question 29/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>AB</p></span></div><div class="option"><span class="key">b</span><span><p>BC</p></span></div><div class="option"><span class="key">c</span><span><p>ABC</p></span></div><div class="option"><span class="key">d</span><span><p>AD</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In aqueous AgNO₃ (Pt electrodes) (A) and dilute H₂SO₄ (Ag electrodes) (D), water oxidizes at the anode, forming O₂. In (B) and (C), Ag dissolves or sulfate ions oxidize, preventing O₂ formation.\u003c/p> \u003cp>Correct answer: Option D (A and D).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Electrolysis of which compound give \({\mathrm{H}}_{2}{\mathrm{S}}_{2}{\mathrm{O}}_{8}\\\)<br/>(Memory Based JEE Mains 22/01/2025,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Electrolysis of conc.\({\text{Na}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">b</span><span><p>Electrolysis of dil. \({\text{Na}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>Electrolysis of conc.\({\text{H}}_{2}{\mathrm{SO}}_{4}\)</p></span></div><div class="option"><span class="key">d</span><span><p>Electrolysis of dil.\({\text{H}}_{2}{\mathrm{SO}}_{4}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\mathrm{The}\\mathrm{electrolysis}\\mathrm{of}\\mathrm{conc}{\\mathrm{H}}_{2}{\\mathrm{SO}}_{4}\\mathrm{give}\\mathrm{oleum}({\\mathrm{H}}_{2}{\\mathrm{S}}_{2}{\\mathrm{O}}_{8})\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following ions is the strongest oxidizing agent (Memory based 29 Jan /2025 morning shift )</p> <p>\(\mathrm{Given}:{{\mathrm{E}}^{0}}_{{\mathrm{Al}}^{3+}/\mathrm{Al}}=-2.7\mathrm{V}\\ {{\mathrm{E}}^{0}}_{{\mathrm{Cu}}^{2+}/\mathrm{Cu}}=0.34\mathrm{V}\\ {{\mathrm{E}}^{0}}_{{\mathrm{Pb}}^{4+}/{\mathrm{Pb}}^{2+}}=1.8\mathrm{V}\\ {{\mathrm{E}}^{0}}_{{\mathrm{Ti}}^{3+}/\mathrm{Ti}}=-1.21\mathrm{V}\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Al}}^{3+}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(C{u}^{2+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(P{b}^{4+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(T{i}^{3+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cstrong>Greater reduction potential means a greater tendency to reduce itself and oxidize others\u003c/strong>. Hence a stronger oxidizing agent will tend to abstract electrons easily, thus having greater reduction potential. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements</p> <p><strong>Statement(I): </strong>Corrosion is an electrochemical phenomenon in which pure metal acts as an anode, impure metal as a cathode. </p> <p><strong>Statement(II):</strong> The rate of corrosion is more in alkaline medium than in acidic medium.</p> <p>In the light of above statements, choose the <strong>correct </strong>answer from options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement-I is false but statement-II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement-I is true but statement-II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Both statement-I and statement-II are true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement-I and statement-II are false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement-I is true but statement-II is false.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\mathrm{E}}_{{\mathrm{Cr}}_{2}{\mathrm{O}}_{7}^{2-}/{\mathrm{Cr}}^{3+}}^{\mathrm{o}}=1.33\mathrm{V}{\mathrm{E}}_{{\mathrm{Cl}}_{2}/{\mathrm{Cl}}^{-}}^{\mathrm{o}}=1.36\mathrm{V}\\ {\mathrm{E}}_{{\mathrm{MnO}}_{4}^{-}/{\mathrm{Mn}}^{2+}}^{\mathrm{o}}=1.51\mathrm{V}{\mathrm{E}}_{{\mathrm{Cr}}^{3+}/\mathrm{Cr}}^{\mathrm{o}}=-0.74\mathrm{V}\)</p> <p>Mark the strongest reducing agent.<br/>(Memory Based JEE Mains 24/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Cl}}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>Cr</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Cr}}^{3+}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Mn}}^{2+}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Greater the reduction potential , lesser will be the tendency to act as reducing agent\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following</p> <p> \({\mathrm{E}}^{0}\mathrm{Value}\mathrm{for}\mathrm{the}\mathrm{given}\mathrm{half}\mathrm{cell}\\ {{\mathrm{E}}^{0}}_{{\mathrm{Ag}}^{+}/\mathrm{Ag}}=0.8\mathrm{V},{{\mathrm{E}}^{0}}_{{\mathrm{Zn}}^{2+}/\mathrm{Zn}}=-0.76\mathrm{V}\\ {{\mathrm{E}}^{0}}_{{\mathrm{Cu}}^{2+}/\mathrm{Cu}}=0.34\mathrm{V}{{\mathrm{E}}^{0}}_{{\mathrm{Mg}}^{2+}/\mathrm{Mg}}=-2.35\mathrm{V}\\ \mathrm{Then}\mathrm{which}\mathrm{of}\mathrm{the}\mathrm{following}\mathrm{will}\mathrm{have}\mathrm{the}\mathrm{most}\mathrm{negative}\mathrm{value}\mathrm{of}∆{\mathrm{G}}^{0}?\) </p> <p> (Memory Based JEE Mains 23/01/2025 ,Shift -2)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Zn|Z{n}^{2+}∥C{u}^{2+}|Cu\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Mg|M{g}^{2+}∥A{g}^{+}|Ag\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Mg|M{g}^{2+}∥Z{n}^{2+}|Zn\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Cu|C{u}^{2+}∥A{g}^{+}|Ag\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The cell which has most positive value of will have most negative value of.\u003c/p> \u003cp>\\({{\\mathrm{E}}_{\\mathrm{cell}}^{\\mathrm{o}}={\\mathrm{E}}^{0}}_{{\\mathrm{Ag}}^{+}/\\mathrm{Ag}}-{{\\mathrm{E}}^{0}}_{{\\mathrm{Mg}}^{2+}/\\mathrm{Mg}}\\\\ =0.8\\mathrm{V}-(-2.35\\mathrm{V})=3.15\\mathrm{V}\\\\ ∆{\\mathrm{G}}^{0}=-{\\mathrm{nFE}}_{\\mathrm{cell}}^{\\mathrm{o}}\\)\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The reaction ;<br/>\(\frac{1}{2}{H}_{2(g)}+AgC{l}_{(s)}\to {H}_{(aq)}^{+}+C{l}_{(aq)}^{-}+A{g}_{(s)}\)<br/>occurs in which of the following galvanic cell :</p> <p>[JEE Main 2024, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Pt \left| H _{2( g )}\right| HCl _{\text {(soln.) }}\left| AgCl _{( s )}\right| Ag\) </p></span></div><div class="option"><span class="key">b</span><span><p>\(Pt \left| H _{2( g )}\right| KCl _{(\text {soln. })}\left| AgCl _{( s )}\right| Ag\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(Ag \left| AgCl _{(\text {s) }}\right| KCl _{\text {(soln.) }}\left| AgNO _{3 \text { (aq.) }}\right| Ag\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Pt \left| H _{2( g )}\right| HCl _{(\text {soln.) }}\left| AgNO _{3( aq )}\right| Ag\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,7 +432,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct option is A, because the cell representation matches the given reaction:    \\(\\frac{1}{2}{H}_{2}(g)+AgCl(s)\\to {H}^{+}(aq)+C{l}^{−}(aq)+Ag(s)\\) 12𝐻2(𝑔)+𝐴𝑔𝐶𝑙(𝑠)→𝐻+(𝑎𝑞)+𝐶𝑙−(𝑎𝑞)+𝐴𝑔(𝑠)   . In this cell,    \\({H}_{2}\\) 𝐻2   is oxidized at the anode to    \\({H}^{+}\\) 𝐻+   ions, and    \\(AgCl\\) 𝐴𝑔𝐶𝑙   is reduced at the cathode to solid silver, which is consistent with the given half-reactions in a galvanic cell.                \u003cul> \u003cli>\u003cstrong>Anode (Oxidation):\u003c/strong>     \\(\\frac{1}{2}{H}_{2}(g)\\to {H}^{+}(aq)+{e}^{−}\\) 12𝐻2(𝑔)→𝐻+(𝑎𝑞)+𝑒−   \u003c/li> \u003cli>\u003cstrong>Cathode (Reduction):\u003c/strong>     \\(AgCl(s)+{e}^{−}\\to Ag(s)+C{l}^{−}(aq)\\) 𝐴𝑔𝐶𝑙(𝑠)+𝑒−→𝐴𝑔(𝑠)+𝐶𝑙−(𝑎𝑞)   \u003c/li> \u003cli>\u003cstrong>Overall Reaction:\u003c/strong> The sum of these two half-reactions gives the overall reaction:     \\(\\frac{1}{2}{H}_{2}(g)+AgCl(s)\\to {H}^{+}(aq)+C{l}^{−}(aq)+Ag(s)\\) 12𝐻2(𝑔)+𝐴𝑔𝐶𝑙(𝑠)→𝐻+(𝑎𝑞)+𝐶𝑙−(𝑎𝑞)+𝐴𝑔(𝑠)   . \u003c/li> \u003cli>\u003cstrong>Cell Notation:\u003c/strong> The cell notation    \\(Pt||{H}_{2}(g)||HCl(soln.)||AgCl(s)||Ag\\) 𝑃𝑡||𝐻2(𝑔)||𝐻𝐶𝑙(𝑠𝑜𝑙𝑛.)||𝐴𝑔𝐶𝑙(𝑠)||𝐴𝑔   correctly represents this process, with the anode on the left and the cathode on the right. The    \\(HCl\\) 𝐻𝐶𝑙   solution provides both    \\({H}^{+}\\) 𝐻+   and    \\(C{l}^{−}\\) 𝐶𝑙−   ions for the respective half-cells.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>\({\mathrm{Fe}}^{2+}+{\mathrm{Ag}}^{+}\to {\mathrm{Fe}}^{3+}+\mathrm{Ag};{\mathrm{E}}_{\mathrm{net}}^{\mathrm{o}}\mathrm{______}?\\ {\mathrm{Ag}}^{+}+{\mathrm{e}}^{-}\to \mathrm{Ag};{\mathrm{E}}^{\mathrm{o}}=\mathrm{x}\\ {\mathrm{Fe}}^{2+}+2{\mathrm{e}}^{-}\to \mathrm{Fe};{\mathrm{E}}^{\mathrm{o}}=\mathrm{y}\\ {\mathrm{Fe}}^{3+}+3{\mathrm{e}}^{-}\to \mathrm{Fe};{\mathrm{E}}^{\mathrm{o}}=\mathrm{z}\\ \mathrm{The}\mathrm{value}\mathrm{of}{\mathrm{E}}_{\mathrm{net}}^{\mathrm{o}}=?\)</p> <p>(Memory Based 24/ 01/25 Shift-1 )</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>x + y- z</p></span></div><div class="option"><span class="key">b</span><span><p>x + 3y- 2z</p></span></div><div class="option"><span class="key">c</span><span><p> y- 2x</p></span></div><div class="option"><span class="key">d</span><span><p>x -3z+2y</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -440,7 +444,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\({\\mathrm{Ag}}^{+}+{\\mathrm{e}}^{-}\\to \\mathrm{Ag};{{\\mathrm{E}}_{1}}^{\\mathrm{o}}=\\mathrm{x}(\\mathrm{n}=1)\\\\ {\\mathrm{Fe}}^{2+}+2{\\mathrm{e}}^{-}\\to \\mathrm{Fe};{{\\mathrm{E}}_{1}}^{\\mathrm{o}}=\\mathrm{y}({\\mathrm{n}}_{1}=2)\\\\ {\\mathrm{Fe}}^{3+}+3{\\mathrm{e}}^{-}\\to \\mathrm{Fe};{{\\mathrm{E}}_{2}}^{\\mathrm{o}}=\\mathrm{z}({\\mathrm{n}}_{2}=3)\\\\ {\\mathrm{Fe}}^{2+}\\to {\\mathrm{Fe}}^{3+}+{\\mathrm{e}}^{-}{{\\mathrm{E}}_{3}}^{\\mathrm{o}}=?(\\mathrm{n}=3)\\\\ \\mathrm{Now}{{\\mathrm{E}}_{3}}^{\\mathrm{o}}=\\frac{{\\mathrm{n}}_{1}{{\\mathrm{E}}_{1}}^{\\mathrm{o}}+{\\mathrm{n}}_{2}{{\\mathrm{E}}_{2}}^{\\mathrm{o}}}{\\mathrm{n}}=\\frac{2\\mathrm{y}+3\\mathrm{z}}{1}=2\\mathrm{y}+3\\mathrm{z}\\\\ {\\mathrm{Fe}}^{2+}+{\\mathrm{Ag}}^{+}\\to {\\mathrm{Fe}}^{3+}+\\mathrm{Ag};\\\\ {\\mathrm{E}}_{\\mathrm{net}}^{\\mathrm{o}}=\\mathrm{x}+2\\mathrm{y}-3\\mathrm{z}=\\mathrm{x}-3\\mathrm{z}+2\\mathrm{y}\\\\ \\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>From the following select the one which is not an example of corrosion?</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Rusting of iron object</p></span></div><div class="option"><span class="key">b</span><span><p>Production of hydrogen by electrolysis of water</p></span></div><div class="option"><span class="key">c</span><span><p>Tarnishing of silver</p></span></div><div class="option"><span class="key">d</span><span><p>Development of green coating on copper and bronze ornaments</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -452,7 +456,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The option that is not an example of corrosion is:\u003c/p> \u003cp>\u003cstrong>B. Production of hydrogen by electrolysis of water\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli>\u003cstrong>A. Rusting of iron object\u003c/strong> is a type of corrosion where iron reacts with oxygen and moisture to form iron oxides (rust).\u003c/li> \u003cli>\u003cstrong>C. Tarnishing of silver\u003c/strong> involves the formation of silver sulfide on the surface of silver items due to a reaction with sulfur compounds in the air.\u003c/li> \u003cli>\u003cstrong>D. Development of green coating on copper and bronze ornaments\u003c/strong> is caused by the formation of copper carbonate or copper chloride, known as patina, which is also a form of corrosion.\u003c/li> \u003c/ul> \u003cp>\u003cstrong>Option B\u003c/strong> refers to a chemical reaction in which water is split into hydrogen and oxygen gases through electrolysis, and is not related to the process of corrosion.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Fuel cell, using hydrogen and oxygen as fuels,<br/>A. has been used in spaceship<br/>B. has as efficiency of \(40%\) to produce electricity<br/>C. uses aluminum as catalysts<br/>D. is eco-friendly<br/>E. is actually a type of Galvanic cell only</p> <p>Choose the correct answer from the options given below</p> <p> </p> <p>[JEE Main 2024, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C only</p></span></div><div class="option"><span class="key">b</span><span><p>A, D, E only</p></span></div><div class="option"><span class="key">c</span><span><p>A, B, D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B, D, E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -464,7 +468,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>A. has been used in spaceship\u003c/strong> ✅\u003cbr/>Yes, hydrogen–oxygen fuel cells were used in \u003cstrong>Apollo missions\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>B. has an efficiency of 40% to produce electricity\u003c/strong> ✅\u003cbr/>Fuel cells typically have efficiencies around \u003cstrong>40–60%\u003c/strong>; 40% is acceptable.\u003c/p> \u003cp>\u003cstrong>C. uses aluminium as catalysts\u003c/strong> ❌\u003cbr/>Catalyst used is \u003cstrong>platinum (Pt)\u003c/strong>, not aluminium.\u003c/p> \u003cp>\u003cstrong>D. is eco-friendly\u003c/strong> ✅\u003cbr/>Product is \u003cstrong>water\u003c/strong>, so it is environmentally friendly.\u003c/p> \u003cp>\u003cstrong>E. is actually a type of Galvanic cell only\u003c/strong> ✅\u003cbr/>Fuel cell is a \u003cstrong>galvanic (voltaic) cell\u003c/strong> producing electrical energy from a spontaneous redox reaction.\u003c/p>  ✅ Correct set: \u003cstrong>A, B, D, E\u003c/strong> \u003cp>\u003cstrong>Correct option: 🔹 D\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The best way to protect iron from rusting is—</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>making from cathode</p></span></div><div class="option"><span class="key">b</span><span><p>make it anode</p></span></div><div class="option"><span class="key">c</span><span><p>Put it in alkaline water</p></span></div><div class="option"><span class="key">d</span><span><p>none of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

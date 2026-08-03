@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"English","item":"https://yespyq.com/exams/board/english/"},{"@type":"ListItem","position":5,"name":"A Pinch of Snuff","item":"https://yespyq.com/exams/board/english/a-pinch-of-snuff/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>A Pinch of Snuff</h1>
       <p>9 Board English previous year questions on <b>A Pinch of Snuff</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Nanukaka still wore</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>a knee length black coat</p></span></div><div class="option"><span class="key">b</span><span><p>Aligarhi pajamas</p></span></div><div class="option correct"><span class="key">c</span><span><p>a Jodhpur coat</p></span></div><div class="option"><span class="key">d</span><span><p>an Aligarhi kurta</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Who took a pinch of snuff ?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Alam</p></span></div><div class="option"><span class="key">b</span><span><p>Rehman</p></span></div><div class="option"><span class="key">c</span><span><p>Manohar</p></span></div><div class="option"><span class="key">d</span><span><p>Nanukaka</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(D) Nanukaka\u003c/p>      He is the central character in the short story \"A Pinch of Snuff,\" known for his habit of taking snuff while planning his clever schemes.","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Nanukaka stood in the doorway of a ___________ class carriage.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>First</p></span></div><div class="option"><span class="key">b</span><span><p>A.C. 2 tier</p></span></div><div class="option"><span class="key">c</span><span><p>Third</p></span></div><div class="option"><span class="key">d</span><span><p>Second</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) second\u003cbr/>In the short story \"A Pinch of Snuff\" by Manohar Malgaonkar, the narrator describes Nanukaka standing in the doorway of a second-class carriage as the train pulls into the station. Although Nanukaka had a third-class ticket, he managed to travel in the second class by striking an \"amicable arrangement\" with the ticket collector.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Nanukaka had tied a huge _________ round the narrator's head.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>orange turban</p></span></div><div class="option"><span class="key">b</span><span><p>green turban</p></span></div><div class="option"><span class="key">c</span><span><p>red turban</p></span></div><div class="option"><span class="key">d</span><span><p>yellow turban</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A. The correct answer is orange turban.\u003c/p> \u003cp>Nanukaka tied a huge orange turban around the narrator's head, as described in the story \"A Pinch of Snuff\". \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Nanukaka managed to travel in \({2}^{\text{nd }}\) Class on a ticket of ......</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({1}^{\text{st }}\) Class</p></span></div><div class="option"><span class="key">b</span><span><p>\({3}^{\text{rd }}\) Class</p></span></div><div class="option"><span class="key">c</span><span><p>General Class</p></span></div><div class="option"><span class="key">d</span><span><p>Sleeper class</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,7 +138,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(B) 3rd Class\u003cbr/>\u003cstrong>Explanation:\u003c/strong> In \u003cem>“The Letter of Recommendation,”\u003c/em> Nanukaka cleverly travels in \u003cem>2nd Class\u003c/em> on a \u003cem>3rd Class\u003c/em> ticket.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Nanukaka managed to travel in 2<sup>nd</sup> Class on a ticket of ________.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1<sup>st</sup> Class</p></span></div><div class="option"><span class="key">b</span><span><p>3<sup>rd</sup> Class</p></span></div><div class="option"><span class="key">c</span><span><p>General Class</p></span></div><div class="option"><span class="key">d</span><span><p>Sleeper class</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,7 +150,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In the lesson 'A Pinch of Snuff', Nanukaka explains that there was “no room in the third class, and they wouldn't issue second-class tickets without reservation,” so he “had to travel second on a third-class ticket.” In other words, Nanukaka managed to travel in 2\u003csup>nd\u003c/sup> Class on a ticket of \u003cstrong>3\u003csup>rd\u003c/sup> Class\u003c/strong> without any difficulty. This highlights his ability to manipulate situations and people to his advantage, which is an important aspect of his character in the story.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Nanukaka was coming to Delhi to ________________.</p> <p><em><strong>(Choose the correct option)</strong></em></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>see some people</p></span></div><div class="option"><span class="key">b</span><span><p>see some minister</p></span></div><div class="option"><span class="key">c</span><span><p>see his sister</p></span></div><div class="option"><span class="key">d</span><span><p>see some relatives</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,7 +162,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Nanukaka was coming to Delhi \u003cstrong>to meet a\u003c/strong> \u003cstrong>minister\u003c/strong>. He believed strongly in recommendations and connections and felt that knowing people in power could solve problems easily. This incident highlights Nanukaka’s faith in social status and political contacts rather than personal effort or merit, which is a key theme of the chapter.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Manohar Malgaonkar's story is full of wit and..........</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Humour</p></span></div><div class="option"><span class="key">b</span><span><p>Tragedy</p></span></div><div class="option"><span class="key">c</span><span><p>Adventure</p></span></div><div class="option"><span class="key">d</span><span><p>Irony</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -170,7 +174,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) Humour\u003cbr/>Manohar Malgaonkar’s story, \"A Pinch of Snuff,\" is celebrated for its wit and humour. It highlights the clever schemes and amusing lies of Nanukaka to navigate through political challenges successfully.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Manohar Malgaonkar's story is full of wit and _____ .</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Adventure</p></span></div><div class="option"><span class="key">b</span><span><p>Tragedy</p></span></div><div class="option"><span class="key">c</span><span><p>Satire</p></span></div><div class="option"><span class="key">d</span><span><p>Irony</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

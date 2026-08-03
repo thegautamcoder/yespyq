@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"The P-Block Elements (XII)","item":"https://yespyq.com/exams/board/chemistry/the-p-block-elements-xii/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>The P-Block Elements (XII)</h1>
       <p>22 Board Chemistry previous year questions on <b>The P-Block Elements (XII)</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Element not showing variable oxidation state? (memory based jee mains shift-1 22/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Br</p></span></div><div class="option"><span class="key">b</span><span><p>I</p></span></div><div class="option"><span class="key">c</span><span><p>Cl</p></span></div><div class="option correct"><span class="key">d</span><span><p>F</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Superacidity of \({\mathrm{HSO}}_{3}\mathrm{F}+{\mathrm{SbF}}_{5}\) is due to:</p> <p>Memory Based Question 29/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{SbF}}_{6}^{-}\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\({\mathrm{H}}_{2}{\mathrm{SO}}_{3}{\mathrm{F}}^{+}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{SOF}}_{3}{{\mathrm{SbF}}_{3}}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{HSO}}_{3}\mathrm{F}\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Element not showing variable oxidation state? (memory based jee mains shift-1 22/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Br</p></span></div><div class="option"><span class="key">b</span><span><p>I</p></span></div><div class="option"><span class="key">c</span><span><p>Cl</p></span></div><div class="option"><span class="key">d</span><span><p>F</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Fluorine does not show variable oxidation state due to absence of vacant-d orbitals\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The species formed on fluorination of phosphorus pentachloride in a polar organic solvent are</p> <p>[JEE Advanced 2024, Paper-2]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\left[{\mathrm{PF}}_{4}\right]}^{+}{\left[{\mathrm{PF}}_{6}\right]}^{-}\)and \({\left[{\mathrm{PCl}}_{4}\right]}^{+}{\left[{\mathrm{PF}}_{6}\right]}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\left[{\mathrm{PCl}}_{4}\right]}^{+}{\left[{\mathrm{PCl}}_{4}{\mathrm{F}}_{2}\right]}^{-}\)and \({\left[{\mathrm{PCl}}_{4}\right]}^{+}{\left[{\mathrm{PF}}_{6}\right]}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{PF}}_{3}\) and \({\mathrm{PCl}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{PF}}_{5}\) and \({\mathrm{PCl}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>In a polar solvent, PCl\u003csub>5\u003c/sub> undergoes auto-ionization to form ionic species [PCl\u003csub>4\u003c/sub>]\u003csup>+ \u003c/sup>[PCl\u003csub>6\u003c/sub>]\u003csup>–\u003c/sup>. Upon fluorination, fluorine, being more electronegative and smaller, tends to replace chlorine in the coordination sphere. This results in the formation of ionic isomers such as [PCl\u003csub>4\u003c/sub>]\u003csup>+ \u003c/sup>[PCl\u003csub>4\u003c/sub>F\u003csub>2\u003c/sub>]\u003csup>–\u003c/sup> and [PCl\u003csub>4\u003c/sub>]\u003csup>+ \u003c/sup>[PF\u003csub>6\u003c/sub>]\u003csup>–\u003c/sup>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among Group 16 elements, which one does NOT show \(-2\) oxidation state?</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(PO\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{O}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Se}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Te}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Oxygen, sulphur, selenium, and tellurium can show the −2 oxidation state. However, polonium (being a heavier, more metallic Group 16 element) does \u003cem>not\u003c/em> typically exhibit a stable −2 state; its common oxidation states are +2 and +4 (and it can reach +6 in some compounds), but the −2 state is unknown for Po.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among Group 16 elements, which one does NOT show \(-2\) oxidation state?</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(PO\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{O}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Se}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Te}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Oxygen, sulphur, selenium, and tellurium can show the −2 oxidation state. However, polonium (being a heavier, more metallic Group 16 element) does \u003cem>not\u003c/em> typically exhibit a stable −2 state; its common oxidation states are +2 and +4 (and it can reach +6 in some compounds), but the −2 state is unknown for Po.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The incorrect statement among the following is</p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{PF}}_{5}\mathrm{exist}\mathrm{but}{\mathrm{NF}}_{5}\mathrm{does}\mathrm{not}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{SO}}_{2}\) can act as an oxidizing agent, but not as a reducing agent</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{PH}}_{3}\) shows lower proton affinity than\({\mathrm{NH}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{NO}}_{2}\) can dimerises easily</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{SO}}_{2}\\) can oxidise as well as reduce. Hence it can act as both oxidising and reducing agent.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>First ionisation enthalpy values of first four group 15 elements are given below. Choose the correct value for the element that is a main component of apatite family :</p> <p>[JEE Main 2025, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1012kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(834kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1402kJmo{l}^{-1}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(947kJmo{l}^{-1}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The main element in the apatite family is phosphorus (P), and its first ionization enthalpy is 1012 kJ/mol.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following group-15 element forms \(p\pi -p\pi\) bond and strongest basic hydride? (memory based jee mains shift-2 28/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Z=7</p></span></div><div class="option"><span class="key">b</span><span><p>Z=15</p></span></div><div class="option"><span class="key">c</span><span><p>Z=33</p></span></div><div class="option"><span class="key">d</span><span><p>Z=51</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Nitrogen (Z=7) forms strong pπ−pπ bonds (e.g., N≡N in N₂) due to its small size and effective orbital overlap. It also has the strongest basic hydride (NH₃) because of its highly available lone pair. Heavier Group-15 elements (P, As, Sb) have weaker bonding and less basic hydrides. Correct answer: (A) Z=7.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the <strong>incorrect </strong>statement from the following</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>The acidic strength of \(HX ( X = F , Cl , Br\) and I) follows the order : \(HF &gt; HCl &gt; HBr &gt;\) \(HI\).</p></span></div><div class="option"><span class="key">b</span><span><p>Fluorine exhibits -1 oxidation state whereas other halogens exhibit \(+1,+3,+5\) and +7 oxidation states also.</p></span></div><div class="option"><span class="key">c</span><span><p>The enthalpy of dissociation of \(F _2\) is smaller than that of \(Cl _2\).</p></span></div><div class="option"><span class="key">d</span><span><p>Fluorine is stronger oxidising agent than chlorine.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The actual acid strength order for hydrogen halides is \u003cstrong>HI &gt; HBr &gt; HCl &gt; HF\u003c/strong>, because the H–I bond is the weakest and easiest to ionize. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which element in group-15 has lowest ionisation energy? <br/><br/>Memory Based Question 29/Jan/25 Evening shift</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Bi</p></span></div><div class="option"><span class="key">b</span><span><p>P</p></span></div><div class="option"><span class="key">c</span><span><p>As</p></span></div><div class="option"><span class="key">d</span><span><p>Sb</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The ionization energy decreases down the group, hence Bi has the lowest energy among the group -15 elements.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>At room temperature, disproportionation of an aqueous solution of in situ generated nitrous acid (\({\mathrm{HNO}}_{2}\)) gives the species</p> <p>[JEE Advanced 2024, Paper-1]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({H}_{3}{O}^{+},N{{O}_{3}}^{−}andNO\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({H}_{3}{O}^{+},N{{O}_{3}}^{−}andN{O}_{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({H}_{3}{O}^{+},N{O}^{−}andN{O}_{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({H}_{3}{O}^{+},N{{O}_{3}}^{−}and{N}_{2}O\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Reaction:\u003c/p> \u003cp>\\(3{\\mathrm{HNO}}_{2}\\to 2\\mathrm{NO}+{\\mathrm{HNO}}_{3}+{\\mathrm{H}}_{2}\\mathrm{O}\\)\u003c/p> \u003cp>In aqueous solution, HNO\u003csub>3\u003c/sub> dissociates to H\u003csub>3\u003c/sub>O\u003csup>+\u003c/sup> and \\({\\mathrm{NO}}_{3}^{−}\\).\u003c/p> \u003cp>So the species formed are H\u003csub>3\u003c/sub>O\u003csup>+\u003c/sup>, \\({\\mathrm{NO}}_{3}^{−}\\) and NO.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The nature of oxide \(\left({\mathrm{TeO}}_{2}\right)\) and hydride \(\left({\mathrm{TeH}}_{2}\right)\) formed by Te , respectively are</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Oxidising and acidic</p></span></div><div class="option"><span class="key">b</span><span><p>Reducing and basic</p></span></div><div class="option"><span class="key">c</span><span><p>Reducing and acidic</p></span></div><div class="option"><span class="key">d</span><span><p>Oxidising and basic</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Oxidising and acidic\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The large difference between the melting and boiling points of oxygen and sulphur may be explained on the basis of</p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Electronegativity</p></span></div><div class="option"><span class="key">b</span><span><p>Atomicity</p></span></div><div class="option"><span class="key">c</span><span><p>Atomic size</p></span></div><div class="option"><span class="key">d</span><span><p>Electron gain enthalpy</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The large difference in melting and boiling points between oxygen \\(\\left({O}_{2}\\right)\\) and sulphur \\(\\left({S}_{8}\\right)\\) is primarily due to their atomicity.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct statements about p-block elements and their compounds.<br/>(A) Non metals have higher electronegativity than metals.<br/>(B) Non metals have lower ionisation enthalpy than metals.<br/>(C) Compounds formed between highly reactive nonmetals and highly reactive metals are generally ionic.<br/>(D) The non-metal oxides are generally basic in nature.<br/>(E) The metal oxides are generally acidic or neutral in nature.</p> <p>Choose the correct answer from the options given below : </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(D) and (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(B) and (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(B) and (D) only</p></span></div><div class="option"><span class="key">d</span><span><p>(A) and (C) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(A) true—nonmetals are more electronegative; (C) true—large ΔEN between reactive metals and nonmetals gives ionic compounds; (B) false—nonmetals have higher ionization enthalpy; (D) false—nonmetal oxides are generally acidic; (E) false—metal oxides are typically basic/amphoteric.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following group-15 element forms \(p\pi -p\pi\) bond and strongest basic hydride? (memory based jee mains shift-2 28/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Z=7</p></span></div><div class="option"><span class="key">b</span><span><p>Z=15</p></span></div><div class="option"><span class="key">c</span><span><p>Z=33</p></span></div><div class="option"><span class="key">d</span><span><p>Z=51</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Nitrogen (Z=7) forms strong pπ−pπ bonds (e.g., N≡N in N₂) due to its small size and effective orbital overlap. It also has the strongest basic hydride (NH₃) because of its highly available lone pair. Heavier Group-15 elements (P, As, Sb) have weaker bonding and less basic hydrides. Correct answer: (A) Z=7.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Element not showing variable oxidation state:</p> <p> (Memory Based JEE Mains 22/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Br</p></span></div><div class="option"><span class="key">b</span><span><p>I</p></span></div><div class="option"><span class="key">c</span><span><p>Cl</p></span></div><div class="option"><span class="key">d</span><span><p>F</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Fluorine has no vacant d-orbitals so no electron excitation is possible and so it does not exhibit variable oxidation states.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The maximum covalency of a non-metallic group 15 element ' E ' with weakest E-E bond is</p> <p>[JEE Main 2025, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>5</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>3</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The single N-N bond is weakest in E-E bond of group 15 elements due to interelectronic repulsions.\u003c/p> \u003cp>Maxium covalency of Nitrogen is 4.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Anomalous behavior of oxygen is due to its</p> <p> </p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>large size and high electronegativity</p></span></div><div class="option"><span class="key">b</span><span><p>large size and low electronegativity</p></span></div><div class="option"><span class="key">c</span><span><p>small size and high electronegativity</p></span></div><div class="option"><span class="key">d</span><span><p>small size and low electronegativity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>anomalous behavior of oxygen is primarily due to its small atomic size and high electronegativity, which influence its properties like strong hydrogen bonding in water, its limited covalency, and its tendency to form multiple bonds less easily than other elements in its group. The absence of vacant d-orbitals in its valence shell also contributes to these differences, preventing it from expanding its covalency beyond four, unlike other group 16 elements. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statements about group 15 elements :<br/>(A) Dinitrogen is a diatomic gas which acts like an inert gas at room temperature.<br/>(B) The common oxidation states of these elements are \(-3,+3\) and +5 .<br/>(C) Nitrogen has unique ability to form \(p \pi- p \pi\) multiple bonds.<br/>(D) The stability of +5 oxidation states increases down the group.<br/>(E) Nitrogen shows a maximum covalency of 6.</p> <p>Choose the correct answer from the options given below : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A), (C), (E) only</p></span></div><div class="option"><span class="key">b</span><span><p>(D) and (E) only</p></span></div><div class="option"><span class="key">c</span><span><p>(A), (B), (C) only</p></span></div><div class="option"><span class="key">d</span><span><p>(B), (D), (E) only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -311,7 +315,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement (D) is incorrect: The stability of the +5 oxidation state decreases down Group 15, while the stability of the +3 oxidation state increases. This is due to the inert pair effect, where the outermost s-electrons become reluctant to participate in bonding for the heavier elements.\u003c/p> \u003cp>Statement (E) is incorrect: Nitrogen (N) is in the second and has only four available orbitals (one s and three p) in its valence shell, allowing a maximum covalency of 4. It cannot expand its octet to a covalency of 6 because it lacks d-orbitals.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Incorrect Statement among the following is (JEE mains memory based shift-1 23/01/2025)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{SO}}_{2}\) acts as oxidizing agent but not reducing agent </p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{NO}}_{2}\) exist as a dimer</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{PF}}_{5}\mathrm{exists}\mathrm{but}{\mathrm{NF}}_{5}\) does not </p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{PH}}_{3}\) has lower proton affinity than \({\mathrm{NH}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -323,7 +327,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>In SO₂, sulfur has an oxidation number of +4. It acts as a reducing agent by increasing its oxidation number to +6 ( forming H₂SO₄) and as an oxidizing agent by decreasing its oxidation number to 0 ( forming sulfur). Thus, SO₂ shows both behaviors.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The complete hydrolysis of \(\mathrm{ICl},{\mathrm{ClF}}_{3}\), and \({\mathrm{BrF}}_{5}\) respectively gives</p> <p>[JEE Advanced 2025, Paper-2]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(I{O}^{-},Cl{O}_{2}^{-}\text{and }Br{O}_{3}^{-}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(I{O}_{3}^{-},Cl{O}_{2}^{-}\text{and }Br{O}_{3}^{-}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(I{O}^{-},Cl{O}^{-}\text{and }Br{O}_{2}^{-}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(I{O}_{3}^{-},Cl{O}_{4}^{-}\text{and }Br{O}_{2}^{-}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,13 +20,13 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Mathematical Tools and Vectors","item":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/"}]}
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ItemList","name":"Mathematical Tools and Vectors NEET Physics PYQs","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Assertion A: If and are four points on a semicircular arc with centre at ' ' such that , then Reason R: Polygon law of vector addition yield","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q1"},{"@type":"ListItem","position":2,"name":"Statement I : If three forces , are represented by three sides of a triangle and , then these three forces are concurrent forces and satisfy","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q2"},{"@type":"ListItem","position":3,"name":"If two vectors \\(\\vec{P}=\\overset{^}{i}+2m\\overset{^}{j}+m\\overset{^}{k}\\) and \\(\\vec{Q}=4\\overset{^}{i}\u22122\\overset{^}{j}+m\\overset{^}{k}\\) a","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q3"},{"@type":"ListItem","position":4,"name":"Two vectors \\(\\vec{X}\\) and \\(\\vec{Y}\\) have equal magnitude. The magnitude of \\((\\vec{X}-\\vec{Y})\\) is \\(n\\) times the magnitude of \\((\\vec","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q4"},{"@type":"ListItem","position":5,"name":"When vector \\(\\vec{A}=2 \\hat{i}+3 \\hat{j}+2 \\hat{k}\\) is subtracted from vector \\(\\vec{B}\\), it gives a vector equal to \\(2 \\hat{j}\\). Then","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q5"}]}
+  {"@context":"https://schema.org","@type":"ItemList","name":"Mathematical Tools and Vectors NEET Physics PYQs","numberOfItems":5,"itemListElement":[{"@type":"ListItem","position":1,"name":"Assertion A: If and are four points on a semicircular arc with centre at ' ' such that , then Reason R: Polygon law of vector addition yield","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q1"},{"@type":"ListItem","position":2,"name":"Statement I : If three forces , are represented by three sides of a triangle and , then these three forces are concurrent forces and satisfy","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q2"},{"@type":"ListItem","position":3,"name":"If two vectors \\(\\vec{P}=\\hat{i}+2m\\hat{j}+m\\hat{k}\\) and \\(\\vec{Q}=4\\hat{i}\u22122\\hat{j}+m\\hat{k}\\) are perpendicular to each other. Then, the","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q3"},{"@type":"ListItem","position":4,"name":"Two vectors \\(\\vec{X}\\) and \\(\\vec{Y}\\) have equal magnitude. The magnitude of \\((\\vec{X}-\\vec{Y})\\) is \\(n\\) times the magnitude of \\((\\vec","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q4"},{"@type":"ListItem","position":5,"name":"When vector \\(\\vec{A}=2 \\hat{i}+3 \\hat{j}+2 \\hat{k}\\) is subtracted from vector \\(\\vec{B}\\), it gives a vector equal to \\(2 \\hat{j}\\). Then","url":"https://yespyq.com/exams/neet/physics/mathematical-tools-and-vectors/#q5"}]}
   </script>
   <style>
     .exam-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1.6rem 0}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Mathematical Tools and Vectors</h1>
       <p>5 NEET Physics previous year questions on <b>Mathematical Tools and Vectors</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Assertion A: If and are four points on a semicircular arc with centre at ' ' such that , then Reason R: Polygon law of vector addition yields In the light of the above statements, choose the most appropriate answer from the options given below: [JEE Main 2021, 27 Jul (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>is not correct but is correct.</span></div><div class="option"><span class="key">b</span><span>is correct but is not correct.</span></div><div class="option"><span class="key">c</span><span>Both and are correct and is the correct explanation of .</span></div><div class="option correct"><span class="key">d</span><span>Both and are correct but is not the correct explanation of .</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Statement I : If three forces , are represented by three sides of a triangle and , then these three forces are concurrent forces and satisfy the condition for equilibrium. Statement II : A triangle made up of three forces and as its sides taken in the same order, satisfy the condition for translatory equilibrium. In the light of the above statements, choose the most appropriate answer from the options given below: [JEE Main 2021, 31 Aug (Shift 2)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Statement I is false but Statement II is true</span></div><div class="option"><span class="key">b</span><span>Statement I is true but Statement II is false</span></div><div class="option"><span class="key">c</span><span>Both Statement I and Statement II are false</span></div><div class="option"><span class="key">d</span><span>Both Statement I and Statement II are true.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,8 +102,8 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Given statements are: Statement: I If three forces , are represented by three sides of a triangle and , then these three forces are concurrent forces and satisfy the condition for equilibrium. Statement: II A triangle made up of three forces and as its sides taken in the same order, satisfy the condition for translatory equilibrium. Solution: Here Since (equilibrium) Hence, both the statements are correct.","fmt":""}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
-      <div class="qtext"><p>If two vectors \(\vec{P}=\overset{^}{i}+2m\overset{^}{j}+m\overset{^}{k}\) and \(\vec{Q}=4\overset{^}{i}−2\overset{^}{j}+m\overset{^}{k}\) are perpendicular to each other. Then, the value of m will be:</p></div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
+      <div class="qtext"><p>If two vectors \(\vec{P}=\hat{i}+2m\hat{j}+m\hat{k}\) and \(\vec{Q}=4\hat{i}−2\hat{j}+m\hat{k}\) are perpendicular to each other. Then, the value of m will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>–1</p></span></div><div class="option"><span class="key">c</span><span><p>–3</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
         <span class="ag-lock">🔒</span>
@@ -107,10 +111,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\vec{P} \\cdot \\vec{Q}=0 \\\\\u003cbr/>&amp; (\\hat{i}+2 m \\hat{j}+m \\hat{k}) \\cdot(4 \\hat{i}-2 \\hat{j}+m \\hat{k})=0 \\\\\u003cbr/>&amp; \\Rightarrow 4-4 m+m^2=0 \\\\\u003cbr/>&amp; \\Rightarrow m=2\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\begin{equation}\u003cbr/>$$\\begin{aligned}& \\vec{P} \\cdot \\vec{Q}=0 \\\\& (\\hat{i}+2 m \\hat{j}+m \\hat{k}) \\cdot(4 \\hat{i}-2 \\hat{j}+m \\hat{k})=0 \\\\& \\Rightarrow 4-4 m+m^2=0 \\\\& \\Rightarrow m=2\\end{aligned}$$\u003cbr/>\\end{equation}\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two vectors \(\vec{X}\) and \(\vec{Y}\) have equal magnitude. The magnitude of \((\vec{X}-\vec{Y})\) is \(n\) times the magnitude of \((\vec{X}+\vec{Y})\). The angle between \(\vec{X}\) and \(\vec{Y}\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\cos }^{-1}\left(\frac{{n}^{2}+1}{{n}^{2}-1}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\cos }^{-1}\left(\frac{-{n}^{2}-1}{{n}^{2}-1}\right)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\cos }^{-1}\left(\frac{{n}^{2}-1}{-{n}^{2}-1}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\cos }^{-1}\left(\frac{{n}^{2}+1}{-{n}^{2}-1}\right)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,10 +123,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; |\\vec{x}|=|\\vec{y}| \\text { and }|\\vec{x}-\\vec{y}|=n|\\vec{x}+\\vec{y}| \\\\\u003cbr/>&amp; x^2+y^2-2 \\vec{x} \\cdot \\vec{y}=n^2\\left(x^2+y^2+2 \\vec{x} \\cdot \\vec{y}\\right) \\\\\u003cbr/>&amp; \\left(1-n^2\\right)\\left(x^2+y^2\\right)=\\left(1+n^2\\right) 2 \\vec{x} \\cdot \\vec{y} \\\\\u003cbr/>&amp; \\left(1-n^2\\right)\\left(x^2+y^2\\right)=\\left(1+n^2\\right) 2 x y \\cos \\theta \\\\\u003cbr/>&amp; \\cos \\theta=\\frac{1-n^2}{1+n^2} \\quad \\therefore 2 x y=x^2+y^2 \\\\\u003cbr/>&amp; \\theta=\\cos ^{-1}\\left(\\frac{n^2-1}{-n^2-1}\\right)\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& |\\vec{x}|=|\\vec{y}| \\text { and }|\\vec{x}-\\vec{y}|=n|\\vec{x}+\\vec{y}| \\\\& x^2+y^2-2 \\vec{x} \\cdot \\vec{y}=n^2\\left(x^2+y^2+2 \\vec{x} \\cdot \\vec{y}\\right) \\\\& \\left(1-n^2\\right)\\left(x^2+y^2\\right)=\\left(1+n^2\\right) 2 \\vec{x} \\cdot \\vec{y} \\\\& \\left(1-n^2\\right)\\left(x^2+y^2\\right)=\\left(1+n^2\\right) 2 x y \\cos \\theta \\\\& \\cos \\theta=\\frac{1-n^2}{1+n^2} \\quad \\therefore 2 x y=x^2+y^2 \\\\& \\theta=\\cos ^{-1}\\left(\\frac{n^2-1}{-n^2-1}\\right)\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>When vector \(\vec{A}=2 \hat{i}+3 \hat{j}+2 \hat{k}\) is subtracted from vector \(\vec{B}\), it gives a vector equal to \(2 \hat{j}\). Then the magnitude of vector \(\vec{B}\) will be:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{33}\)</p></span></div><div class="option"><span class="key">b</span><span><p>3</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{6}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, \\(\\vec{B}-\\vec{A}=2 \\hat{j}, \\vec{B}=2 \\hat{j}+2 \\hat{i}+3 \\hat{j}+2 \\hat{k}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\vec{B}=2 \\hat{i}+5 \\hat{j}+2 \\hat{k} \\\\\u003cbr/>&amp; |\\vec{B}|=\\sqrt{(2)^2+(5)^2+(2)^2}=\\sqrt{33}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given, \\(\\vec{B}-\\vec{A}=2 \\hat{j}, \\vec{B}=2 \\hat{j}+2 \\hat{i}+3 \\hat{j}+2 \\hat{k}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\therefore \\vec{B}=2 \\hat{i}+5 \\hat{j}+2 \\hat{k} \\\\& |\\vec{B}|=\\sqrt{(2)^2+(5)^2+(2)^2}=\\sqrt{33}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more NEET Physics PYQs</h3>

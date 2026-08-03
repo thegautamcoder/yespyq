@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Mathematical Reasoning","item":"https://yespyq.com/exams/jee/maths/mathematical-reasoning/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Mathematical Reasoning</h1>
       <p>35 JEE Maths previous year questions on <b>Mathematical Reasoning</b> — options free on every question; <b>4 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement \(B\Rightarrow ((~A)∨B)\) is not equivalent to :</p> <p> </p> <p><strong>[JEE Main 2023, 29 Jan (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(B\Rightarrow ((~A)\Rightarrow B)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(A\Rightarrow ((~A)\Rightarrow B)\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(A\Rightarrow (A\Leftrightarrow B)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(B\Rightarrow (A\Rightarrow B)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of \( (\sim p \wedge q) \vee(p \wedge \sim q) \) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( (p \vee \sim q) \vee(\sim p \vee q) \)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\( (p \vee \sim q) \wedge(\sim p \vee q) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( (p \wedge \sim q) \wedge(\sim p \vee q) \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( (p \wedge \sim q) \wedge(p \vee \sim q) \)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following Boolean expressions is not a tautology?</p> <p> </p> <p>[JEE Main 2021, 22 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\((~p\Rightarrow q)∨(~q\Rightarrow p)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((q\Rightarrow p)∨(~q\Rightarrow p)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((p\Rightarrow ~q)∨(~q\Rightarrow p)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((p\Rightarrow q)∨(~q\Rightarrow p)\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,16 +108,16 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement \((p \wedge(\sim q) \vee((\sim p) \wedge q) \vee((\sim p) \wedge)(\sim q))\) is equivalent to</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\((\sim p) \vee(\sim q)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(p \vee(\sim q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim p) \vee q\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p \vee q\)</p></span></div></div>
       <div class="explain" data-exp>
         <div class="verdict ok">✓ Correct answer: a) <p>\((\sim p) \vee(\sim q)\)</p></div>
-        <div class="exp-body"><span class="lbl">Explanation</span><p> \(\begin{aligned} &amp; (p \wedge(\sim q) \vee((\sim p) \wedge q) \vee((\sim p) \wedge)(\sim q)) \\ = &amp; (p \wedge(\sim q)) \vee((\sim p) \wedge(q \vee(\sim q))) \\ = &amp; (p \wedge(\sim q)) \vee((\sim p) \wedge t) \\ = &amp; (p \wedge(\sim q)) \vee(\sim p) \\ = &amp; (\sim p) \vee(p \wedge \sim q) \\ = &amp; (\sim p \vee p) \wedge(\sim p \wedge \sim q) \\ = &amp; t \wedge(\sim p \vee \sim q) \\ &amp; =\sim p \vee \sim q\end{aligned}\)</p></div>
+        <div class="exp-body"><span class="lbl">Explanation</span><p> \(\begin{aligned} & (p \wedge(\sim q) \vee((\sim p) \wedge q) \vee((\sim p) \wedge)(\sim q)) \\ = & (p \wedge(\sim q)) \vee((\sim p) \wedge(q \vee(\sim q))) \\ = & (p \wedge(\sim q)) \vee((\sim p) \wedge t) \\ = & (p \wedge(\sim q)) \vee(\sim p) \\ = & (\sim p) \vee(p \wedge \sim q) \\ = & (\sim p \vee p) \wedge(\sim p \wedge \sim q) \\ = & t \wedge(\sim p \vee \sim q) \\ & =\sim p \vee \sim q\end{aligned}\)</p></div>
       </div>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the following statements:<br/>P : I have fever<br/>Q : I will not take medicine<br/>\(R\) : I will take rest<br/>The statement "If I have fever, then I will take medicine and I will take rest" is equivalent to:</p> <p> </p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(((\sim P ) \vee \sim Q ) \wedge((\sim P ) \vee R )\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(((\sim P ) \vee \sim Q ) \wedge((\sim P ) \vee \sim R )\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(( P \vee Q ) \wedge((\sim P ) \vee R )\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(( P \vee \sim Q ) \wedge( P \vee \sim R )\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -125,7 +129,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\( P \\rightarrow(\\sim Q \\wedge R ) \\)\u003c/p> \u003cp>\\( \\equiv \\sim P \\vee(\\sim Q \\wedge R ) \\quad[\\because P \\rightarrow Q \\equiv \\sim P \\vee Q ] \\)\u003c/p> \u003cp>\\( \\equiv(\\sim P \\vee \\sim Q ) \\wedge(\\sim P \\vee R )\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements is a tautology?</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p \rightarrow(p \wedge(p \rightarrow q))\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((p \wedge q) \rightarrow(\sim(p) \rightarrow q))\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((p \wedge(p \rightarrow q)) \rightarrow \sim q\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p \vee(p \wedge q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -134,10 +138,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { (a) } p \\rightarrow(p \\wedge(p \\rightarrow q)) \\\\\u003cbr/>&amp; (\\sim p) \\vee(p \\wedge(\\sim p \\vee q)) \\\\\u003cbr/>&amp; (\\sim p) \\vee(f \\vee(p \\wedge q)) \\\\\u003cbr/>&amp; \\sim p \\vee(p \\wedge q)=(\\sim p \\vee p) \\wedge(\\sim p \\vee q) \\\\\u003cbr/>&amp; =\\sim p \\vee q\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003cbr/>(b)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; (p \\wedge q) \\rightarrow(\\sim p \\rightarrow q) \\\\\u003cbr/>&amp; \\sim(p \\wedge q) \\vee(p \\vee q) \\Rightarrow(\\sim p \\vee \\sim q) \\vee(p \\vee q) \\equiv t\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Tautology\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { (a) } p \\rightarrow(p \\wedge(p \\rightarrow q)) \\\\& (\\sim p) \\vee(p \\wedge(\\sim p \\vee q)) \\\\& (\\sim p) \\vee(f \\vee(p \\wedge q)) \\\\& \\sim p \\vee(p \\wedge q)=(\\sim p \\vee p) \\wedge(\\sim p \\vee q) \\\\& =\\sim p \\vee q\\end{aligned}$$\u003cbr/>\\]\u003cbr/>(b)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& (p \\wedge q) \\rightarrow(\\sim p \\rightarrow q) \\\\& \\sim(p \\wedge q) \\vee(p \\vee q) \\Rightarrow(\\sim p \\vee \\sim q) \\vee(p \\vee q) \\equiv t\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Tautology\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement \(\sim[p \vee(\sim(p \wedge q))]\) is equivalent to</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim(p \wedge q)) \wedge q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sim(p \wedge q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sim(p \vee q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((p \wedge q) \wedge(\sim p)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -146,10 +150,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) \\(\\begin{aligned} &amp; \\sim[p \\vee(\\sim(p \\wedge q))] \\\\ &amp; \\equiv(\\sim p) \\wedge(p \\wedge q)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(d) \\(\\begin{aligned} & \\sim[p \\vee(\\sim(p \\wedge q))] \\\\ & \\equiv(\\sim p) \\wedge(p \\wedge q)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement \((p \wedge(\sim q)) \Rightarrow(p \Rightarrow(\sim q))\) is</p> <p> </p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>equivalent to \((\sim p) \vee(\sim q)\)</p></span></div><div class="option"><span class="key">b</span><span><p>a tautology</p></span></div><div class="option"><span class="key">c</span><span><p>equivalent to \(p \vee q\)</p></span></div><div class="option"><span class="key">d</span><span><p>a contradiction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,7 +165,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\( (p \\wedge \\sim q) \\rightarrow(p \\rightarrow \\sim q) \\)\u003c/p> \u003cp>\\(\\equiv(\\sim(p \\wedge \\sim q)) \\vee(\\sim p \\vee \\sim q) [\\because p \\rightarrow q \\equiv \\sim p \\vee q] \\)\u003c/p> \u003cp>\\(\\equiv(\\sim p \\vee q) \\vee(\\sim p \\vee \\sim q)\\)\u003c/p> \u003cp>\\( \\equiv \\sim p \\vee t \\equiv t\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The converse of \(((~p)∧q)\Rightarrow r\) is</p> <p><strong>[JEE Main 2023, 11 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((~r)\Rightarrow p∧q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((~r)\Rightarrow ((~p)∧q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(((~p)∨q)\Rightarrow r\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((p∨(~q))\Rightarrow (~r)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Converse of the given expression is\u003c/p> \u003cp>\\(~((~p∧q)\\Rightarrow r)\\)\u003c/p> \u003cp>\\(=(p∨~q)\\Rightarrow (-r)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider the two statements :</p> <p>\( \left(S_{1}\right):(p \rightarrow q) \vee(\sim q \rightarrow p) \) is a tautology</p> <p>\( \left(S_{2}\right):(p \wedge \sim q) \wedge(\sim p \vee q) \) is a fallacy Then,</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>only \( \left(S_{1}\right) \) is true</p></span></div><div class="option"><span class="key">b</span><span><p>both \( \left(S_{1}\right) \) and \( \left(S_{2}\right) \) are false</p></span></div><div class="option"><span class="key">c</span><span><p>both \( \left(S_{1}\right) \) and \( \left(S_{2}\right) \) are true</p></span></div><div class="option"><span class="key">d</span><span><p>only \( \left(S_{2}\right) \) is true</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({S}_{1}\\)is a tautology\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of the statement \((p \vee q) \wedge(q \vee(\sim r))\) is</p> <p> </p> <p>[JEE Main 2023, 10 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(((\sim p) \vee r) \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(((\sim p) \vee(\sim q)) \wedge(\sim r)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(((\sim p) \vee(\sim q)) \vee(\sim r)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((p \vee r) \wedge(\sim q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -194,10 +198,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (a) Negation of }[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ &amp; =\\sim[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ &amp; =\\sim(p \\vee q) \\wedge(\\sim q \\wedge r) \\\\ &amp; =(\\sim p \\wedge \\sim q) \\vee(\\sim q \\wedge r) \\\\ &amp; =(\\sim p \\vee r) \\wedge(\\sim q) \\\\ &amp; \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (a) Negation of }[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ & =\\sim[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ & =\\sim(p \\vee q) \\wedge(\\sim q \\wedge r) \\\\ & =(\\sim p \\wedge \\sim q) \\vee(\\sim q \\wedge r) \\\\ & =(\\sim p \\vee r) \\wedge(\\sim q) \\\\ & \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement \(\ p \) : For any real numbers \(\ x, y \) if \(\ x=y \), then \(\ 2 x+a=2 y+a \) when \(\ a \in Z \).</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>is true</p></span></div><div class="option"><span class="key">b</span><span><p>is false</p></span></div><div class="option"><span class="key">c</span><span><p>its contrapositive is not true</p></span></div><div class="option"><span class="key">d</span><span><p>None of these</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -206,10 +210,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We prove the statement p is true by contrapositive method and by direct method.\u003cbr/>Direct method: For any real number \\(x\\) and \\(y\\),\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; x=y \\\\\u003cbr/>&amp; \\Rightarrow 2 x=2 y \\\\\u003cbr/>&amp; \\Rightarrow 2 x+a=2 y+a \\text { a for some } a \\in Z\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Contrapositive method: The contrapositive statement of \\(p\\) is \"For any real numbers \\(x, y\\) if \\(2 x+a \\neq 2 y+a\\), where \\(a \\in\\) \\(z\\), then \\(x \\neq y\\).\"\u003cbr/>Given, \\(2 x+a \\neq 2 y+a\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow 2 x \\neq 2 y \\\\\u003cbr/>&amp; \\Rightarrow x \\neq y\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Hence, the given statement is true.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>We prove the statement p is true by contrapositive method and by direct method.\u003cbr/>Direct method: For any real number \\(x\\) and \\(y\\),\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& x=y \\\\& \\Rightarrow 2 x=2 y \\\\& \\Rightarrow 2 x+a=2 y+a \\text { a for some } a \\in Z\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Contrapositive method: The contrapositive statement of \\(p\\) is \"For any real numbers \\(x, y\\) if \\(2 x+a \\neq 2 y+a\\), where \\(a \\in\\) \\(z\\), then \\(x \\neq y\\).\"\u003cbr/>Given, \\(2 x+a \\neq 2 y+a\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow 2 x \\neq 2 y \\\\& \\Rightarrow x \\neq y\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\u003cbr/>Hence, the given statement is true.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of the statement \((p∨q)∧(q∨(~r))\) is</p> <p><strong>[JEE Main 2023, 10 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(((~\mathrm{p})∨\mathrm{r})∧)~\mathrm{q})\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(((~p)∨(~q))∨(~r)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((p∨r)∧(~q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(((~p)∨(~q))∧(~r)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -218,10 +222,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { Negation of }[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ &amp;= \\sim[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ &amp;=\\sim(p \\vee q) \\wedge(\\sim q \\wedge r) \\\\ &amp;=(\\sim p \\wedge \\sim q) \\vee(\\sim q \\wedge r) \\\\ &amp;=(\\sim p \\vee r) \\wedge(\\sim q)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} & \\text { Negation of }[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ &= \\sim[(p \\vee q) \\wedge(q \\vee(\\sim r))] \\\\ &=\\sim(p \\vee q) \\wedge(\\sim q \\wedge r) \\\\ &=(\\sim p \\wedge \\sim q) \\vee(\\sim q \\wedge r) \\\\ &=(\\sim p \\vee r) \\wedge(\\sim q)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of the expression \(q \vee((\sim q) \wedge p)\) is equivalent to</p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim p) \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(p \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim p) \vee(\sim q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\sim p) \vee q\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -230,10 +234,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(\\begin{aligned} &amp; \\sim(q \\vee((\\sim q) \\wedge p)) \\\\ &amp; =\\sim q \\wedge \\sim((\\sim q) \\wedge p) \\\\ &amp; =\\sim q \\wedge(q \\vee \\sim p) \\\\ &amp; =(\\sim q \\wedge q) \\vee(\\sim q \\wedge \\sim p) \\\\ &amp; =(\\sim q \\wedge \\sim p)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>(a) \\(\\begin{aligned} & \\sim(q \\vee((\\sim q) \\wedge p)) \\\\ & =\\sim q \\wedge \\sim((\\sim q) \\wedge p) \\\\ & =\\sim q \\wedge(q \\vee \\sim p) \\\\ & =(\\sim q \\wedge q) \\vee(\\sim q \\wedge \\sim p) \\\\ & =(\\sim q \\wedge \\sim p)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is equivalent to the Boolean expression \(p \wedge \sim q\) ?</p> <p> </p> <p>[JEE Main 2021, 1 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sim p \rightarrow \sim q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sim(q \rightarrow p)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sim(p \rightarrow q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sim(p \rightarrow \sim q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(A) \\(\\sim p \\rightarrow \\sim q\\)\u003c/p> \u003cp>\\( \\equiv \\sim(\\sim p) \\vee \\sim q \\)\u003cbr/>\\( =p \\vee \\sim q\\)\u003c/p> \u003cp>(B) \\(\\sim(q \\rightarrow p)\\)\u003c/p> \u003cp>\\( \\equiv \\sim(\\sim q \\vee p) \\)\u003cbr/>\\( \\equiv q \\wedge \\sim p\\)\u003c/p> \u003cp>(C) \\(\\sim(p \\rightarrow q)\\)\u003c/p> \u003cp>\\( \\equiv \\sim(\\sim p \\vee q) \\)\u003cbr/>\\( \\equiv p \\wedge \\sim q\\)\u003c/p> \u003cp>so option (C) is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Contrapositive of the statement: If a function \( f \) is differentiable at \( a \), then it is also continuous at \( a \), is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>If a function \( f \) is continuous at \( a \), then it is not differentiable at \( a \).</p></span></div><div class="option"><span class="key">b</span><span><p>If a function \( f \) is not continuous at \( a \), then it is not differentiable at \( a \).</p></span></div><div class="option"><span class="key">c</span><span><p>If a function \( f \) is not continuous at \( a \), then it is differentiable at \( a \).</p></span></div><div class="option"><span class="key">d</span><span><p>If a function \( f \) is continuous at \( a \), then it is differentiable at \( a \).</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>If a function \\( f \\) is not continuous at \\( a \\), then it is not differentiable at \\( a \\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is tautology?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim p) \wedge(p \vee q) \rightarrow a\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((p \rightarrow q) \wedge(q \rightarrow p)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim q) \vee(p \wedge q) \rightarrow q\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((q \rightarrow p) \vee \sim(p \rightarrow q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,10 +270,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\text { (a) } \\begin{aligned}\u003cbr/>&amp; (\\sim p) \\wedge(p \\vee q) \\rightarrow q \\\\\u003cbr/>&amp; \\equiv(\\sim p \\wedge p) \\vee(\\sim p \\wedge q) \\rightarrow q \\\\\u003cbr/>&amp; \\equiv f \\vee(\\sim p \\wedge q) \\rightarrow q \\\\\u003cbr/>&amp; \\equiv(\\sim p \\wedge q) \\rightarrow q \\\\\u003cbr/>&amp; \\equiv \\sim(\\sim p \\wedge q) \\vee q \\\\\u003cbr/>&amp; \\equiv(p \\vee q) \\vee(\\sim q \\vee q) \\quad \\\\\u003cbr/>&amp; \\equiv(p \\vee q) \\vee T \\equiv T\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So, \\(\\sim p \\wedge(p \\vee q) \\rightarrow q\\) is a tautology.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\text { (a) } $$\\begin{aligned}& (\\sim p) \\wedge(p \\vee q) \\rightarrow q \\\\& \\equiv(\\sim p \\wedge p) \\vee(\\sim p \\wedge q) \\rightarrow q \\\\& \\equiv f \\vee(\\sim p \\wedge q) \\rightarrow q \\\\& \\equiv(\\sim p \\wedge q) \\rightarrow q \\\\& \\equiv \\sim(\\sim p \\wedge q) \\vee q \\\\& \\equiv(p \\vee q) \\vee(\\sim q \\vee q) \\quad \\\\& \\equiv(p \\vee q) \\vee T \\equiv T\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So, \\(\\sim p \\wedge(p \\vee q) \\rightarrow q\\) is a tautology.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The only statement among the following that is a tautology is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{A} \wedge(\mathrm{A} \vee \mathrm{B}) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{A} \vee(\mathrm{A} \wedge \mathrm{B}) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( [\mathrm{A} \wedge(\mathrm{A} \rightarrow \mathrm{B})] \rightarrow \mathrm{B} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{B} \rightarrow[\mathrm{A} \wedge(\mathrm{A} \rightarrow \mathrm{B})] \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\( [\\mathrm{A} \\wedge(\\mathrm{A} \\rightarrow \\mathrm{B})] \\rightarrow \\mathrm{B} \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Negation of the Boolean expression \(p \Leftrightarrow(q \Rightarrow p)\) is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim p) \wedge q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((\mathrm{p}) \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim p) \vee(\sim q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\sim p) \wedge(\sim q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -290,10 +294,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\text { Given expression is } p \\Leftrightarrow(q \\Rightarrow p)\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\\u003cbr/>&amp; \\sim(p \\leftrightarrow q)=(p \\wedge \\sim q) \\vee(q \\wedge \\sim p) \\\\\u003cbr/>&amp; \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\\u003cbr/>&amp; =(p \\wedge \\sim(q \\rightarrow p)) \\vee((q \\rightarrow p) \\wedge \\sim p) \\\\\u003cbr/>&amp; (p \\wedge \\sim(q \\rightarrow p))=p \\wedge(q \\wedge \\sim p) \\\\\u003cbr/>&amp; =(p \\wedge \\sim p) \\wedge q=c \\\\\u003cbr/>&amp; (q \\rightarrow p) \\wedge \\sim p=(\\sim q \\vee p) \\wedge \\sim p \\\\\u003cbr/>&amp; =\\sim p \\wedge(\\sim q \\vee p) \\\\\u003cbr/>&amp; =(\\sim p \\wedge \\sim q) \\vee(\\sim p \\wedge p)=\\sim p \\wedge \\sim q \\\\\u003cbr/>&amp; \\sim(p \\leftrightarrow(q \\rightarrow p))=c \\vee(\\sim p \\wedge \\sim q)=\\sim p \\wedge \\sim q\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{equation}\u003cbr/>$$\\begin{aligned}&\\text { Given expression is } p \\Leftrightarrow(q \\Rightarrow p)\\\\&\\begin{aligned}& \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\& \\sim(p \\leftrightarrow q)=(p \\wedge \\sim q) \\vee(q \\wedge \\sim p) \\\\& \\sim(p \\leftrightarrow(q \\rightarrow p)) \\\\& =(p \\wedge \\sim(q \\rightarrow p)) \\vee((q \\rightarrow p) \\wedge \\sim p) \\\\& (p \\wedge \\sim(q \\rightarrow p))=p \\wedge(q \\wedge \\sim p) \\\\& =(p \\wedge \\sim p) \\wedge q=c \\\\& (q \\rightarrow p) \\wedge \\sim p=(\\sim q \\vee p) \\wedge \\sim p \\\\& =\\sim p \\wedge(\\sim q \\vee p) \\\\& =(\\sim p \\wedge \\sim q) \\vee(\\sim p \\wedge p)=\\sim p \\wedge \\sim q \\\\& \\sim(p \\leftrightarrow(q \\rightarrow p))=c \\vee(\\sim p \\wedge \\sim q)=\\sim p \\wedge \\sim q\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\end{equation}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(P\) and \(Q\) are two statement, then which of the following compound statement is a tautology?</p> <p> </p> <p>[JEE Main 2021, 18 Mar (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(((P \Rightarrow Q) \wedge \sim Q) \Rightarrow Q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(((P \Rightarrow Q) \wedge \sim Q) \Rightarrow \sim P\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(((P \Rightarrow Q) \wedge \sim Q) \Rightarrow P\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(((P \Rightarrow Q) \wedge \sim Q) \Rightarrow(P \wedge Q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let \\( (P \\Rightarrow Q) \\wedge \\sim Q\\)\u003cbr/>\\( \\equiv P \\Rightarrow Q \\equiv \\sim P \\vee Q\\)\u003cbr/>\\( \\equiv (\\sim P \\vee Q) \\wedge \\sim Q\\)\u003cbr/>\\( \\equiv (\\sim P \\wedge \\sim Q) \\vee(Q \\wedge \\sim Q)\\)\u003c/p> \u003cp>Since \\( (Q \\wedge \\sim Q) =F\\)\u003cbr/>\\( \\equiv \\equiv \\sim P \\wedge \\sim Q\\)\u003c/p> \u003cp>Option (A) \u003c/p> \u003cp>\\((\\sim P \\wedge \\sim Q) \\Rightarrow Q\\).\u003c/p> \u003cp>If both \\(P\\) and \\(Q\\) are false,\u003c/p> \u003cp>this becomes \\(T \\Rightarrow F\\),\u003c/p> \u003cp>which is False.\u003c/p> \u003cp>Option (B)\u003c/p> \u003cp>\\((\\sim P \\wedge \\sim Q) \\Rightarrow \\sim P\\)\u003c/p> \u003cp>This is a tautology because\u003c/p> \u003cp>if \\((\\sim P \\wedge \\sim Q\\) ) is true, then \\(\\sim P\\) must be true. \u003c/p> \u003cp>Option (C)\u003c/p> \u003cp>\\((\\sim P \\wedge \\sim Q) \\Rightarrow P\\).\u003c/p> \u003cp>If \\(P\\) is false, then statement is False.\u003c/p> \u003cp>Option (D)\u003c/p> \u003cp>\\((\\sim P \\wedge \\sim Q) \\Rightarrow(P \\wedge Q)\\).\u003c/p> \u003cp>If both \\(P\\) and \\(Q\\) are false,\u003c/p> \u003cp>it leads to \\(T \\Rightarrow F\\),\u003c/p> \u003cp>which is False.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p> If \(p \rightarrow(p \wedge \sim q)\) is false, then the truth values of \(\mathrm{p}\) and \(\mathrm{q}\) are respectively:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>F,F</p></span></div><div class="option"><span class="key">b</span><span><p>F,T</p></span></div><div class="option"><span class="key">c</span><span><p>T,F</p></span></div><div class="option"><span class="key">d</span><span><p>T,T</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,7 +321,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>p=T\u003c/p> \u003cp>q = T\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The statement \(\sim[p \vee(\sim(p \wedge q))]\) is equivalent to</p> <p><strong>[JEE Main 2023, 10 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim(p \wedge q)) \wedge q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sim(p \wedge q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sim(p \vee q)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((p \wedge q) \wedge(\sim p)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -326,10 +330,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\sim[p \\vee(\\sim(p \\wedge q))] \\\\ &amp; \\equiv(\\sim p) \\wedge(p \\wedge q)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} & \\sim[p \\vee(\\sim(p \\wedge q))] \\\\ & \\equiv(\\sim p) \\wedge(p \\wedge q)\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the statements:<br/>\(\left(S_1\right)((p \vee q) \Rightarrow r) \Leftrightarrow(p \Rightarrow r)\)<br/>\(\left(S_2\right)((p \vee q) \Rightarrow r) \Leftrightarrow((p \Rightarrow r) \vee(q \Rightarrow r))\)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Only \(\left(S_1\right)\) is a tautology</p></span></div><div class="option"><span class="key">b</span><span><p>Neither \(\left(S_1\right)\) nor \(\left(S_2\right)\) is a tautology</p></span></div><div class="option"><span class="key">c</span><span><p>Only \(\left(S_2\right)\) is a tautology</p></span></div><div class="option"><span class="key">d</span><span><p>Both \(\left(S_1\right)\) and \(\left(S_2\right)\) are tautologies</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,10 +342,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) \\(S_1:((p \\vee q) \\Rightarrow r) \\Leftrightarrow(p \\Rightarrow r)\\)\u003cbr/>If \\(p\\) is \\(F, q\\) is \\(T, r\\) is \\(F\\) then\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; (p \\vee q) \\Rightarrow r \\equiv F \\\\\u003cbr/>&amp; (p \\Rightarrow r) \\equiv T \\\\\u003cbr/>&amp; F \\Leftrightarrow T =F\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So, \\(S_1\\) is not tautology.\u003cbr/>\\[\u003cbr/>S_2:((p \\vee q) \\Rightarrow r) \\Leftrightarrow((p \\Rightarrow r) \\vee(q \\Rightarrow r))\u003cbr/>\\]\u003c/p> \u003cp>If \\(p\\) is \\(T, q\\) is \\(F, r\\) is \\(F\\), then\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; ((p \\vee q) \\Rightarrow r) \\equiv F \\\\\u003cbr/>&amp; ((p \\Rightarrow r) \\vee(q \\Rightarrow r)) \\\\\u003cbr/>&amp; (F \\vee T) \\equiv T\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So, \\(F \\Leftrightarrow T \\equiv F\\)\u003cbr/>\\(S _2\\) is not tautology.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>(b) \\(S_1:((p \\vee q) \\Rightarrow r) \\Leftrightarrow(p \\Rightarrow r)\\)\u003cbr/>If \\(p\\) is \\(F, q\\) is \\(T, r\\) is \\(F\\) then\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& (p \\vee q) \\Rightarrow r \\equiv F \\\\& (p \\Rightarrow r) \\equiv T \\\\& F \\Leftrightarrow T =F\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So, \\(S_1\\) is not tautology.\u003cbr/>\\[\u003cbr/>S_2:((p \\vee q) \\Rightarrow r) \\Leftrightarrow((p \\Rightarrow r) \\vee(q \\Rightarrow r))\u003cbr/>\\]\u003c/p> \u003cp>If \\(p\\) is \\(T, q\\) is \\(F, r\\) is \\(F\\), then\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& ((p \\vee q) \\Rightarrow r) \\equiv F \\\\& ((p \\Rightarrow r) \\vee(q \\Rightarrow r)) \\\\& (F \\vee T) \\equiv T\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So, \\(F \\Leftrightarrow T \\equiv F\\)\u003cbr/>\\(S _2\\) is not tautology.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Negation of the statement \((p \vee r) \Rightarrow(q \vee r)\) is.</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sim p \wedge q \wedge \sim r\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sim p \wedge q \wedge r\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p \wedge \sim q \wedge \sim r\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p \wedge q \wedge r\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp> As \\( \\sim(A \\Rightarrow B)=A \\wedge \\sim B\\)\u003c/p> \u003cp> Negation of \\((p \\vee r) \\Rightarrow(q \\vee r) \\)\u003c/p> \u003cp>\\( =\\sim((p \\vee r) \\Rightarrow(q \\vee r))\\)\u003c/p> \u003cp>\\( =(p \\vee r) \\wedge(\\sim r \\wedge \\sim q)\\)\u003c/p> \u003cp>\\( =((p \\vee r) \\wedge \\sim r) \\wedge(\\sim q) \\)\u003c/p> \u003cp>\\( =(p \\wedge \\sim r) \\vee(r \\wedge \\sim r) \\wedge(\\sim q) \\)\u003c/p> \u003cp>\\( =(p \\wedge \\sim r) \\wedge \\sim q \\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Negation of \(p \wedge(q \wedge \sim(p \wedge q))\) is</p> <p> </p> <p>[JEE Main 2023, 15 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sim( p \vee q)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(p \vee q\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim(p \wedge q)) \wedge q\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\sim(p \wedge q)) \vee p\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -362,10 +366,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\sim[p \\wedge(q \\wedge \\sim(p \\wedge q))] \\\\ &amp; \\sim p \\vee \\sim(q \\wedge \\sim(p \\wedge q)) \\\\ &amp; \\sim p \\vee(\\sim q \\vee(p \\wedge q)) \\\\ &amp; \\sim p \\vee((\\sim q \\vee p) \\wedge(\\sim q \\vee q)) \\\\ &amp; \\sim p \\vee(\\sim q \\vee p) \\\\ &amp; \\sim(p \\wedge q) \\vee p\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{aligned} & \\sim[p \\wedge(q \\wedge \\sim(p \\wedge q))] \\\\ & \\sim p \\vee \\sim(q \\wedge \\sim(p \\wedge q)) \\\\ & \\sim p \\vee(\\sim q \\vee(p \\wedge q)) \\\\ & \\sim p \\vee((\\sim q \\vee p) \\wedge(\\sim q \\vee q)) \\\\ & \\sim p \\vee(\\sim q \\vee p) \\\\ & \\sim(p \\wedge q) \\vee p\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(p\) and \(q\) be two statements. Then \(\sim(p \wedge(p \Rightarrow \sim q))\) is equivalent to</p> <p> </p> <p>[JEE Main 2023, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p \vee(p \wedge(\sim q))\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(p \vee((\sim p) \wedge q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim p) \vee q\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p \vee(p \wedge q)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -374,10 +378,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\sim(p \\wedge(p \\rightarrow \\sim q)) \\\\ &amp; \\equiv \\sim p \\vee \\sim(\\sim p \\vee \\sim q) \\\\ &amp; \\equiv \\sim p \\vee(p \\wedge q) \\\\ &amp; \\equiv(\\sim p \\vee p) \\wedge(\\sim p \\vee q) \\\\ &amp; \\equiv t \\wedge(\\sim p \\vee q) \\\\ &amp; \\equiv \\sim p \\vee q\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned} & \\sim(p \\wedge(p \\rightarrow \\sim q)) \\\\ & \\equiv \\sim p \\vee \\sim(\\sim p \\vee \\sim q) \\\\ & \\equiv \\sim p \\vee(p \\wedge q) \\\\ & \\equiv(\\sim p \\vee p) \\wedge(\\sim p \\vee q) \\\\ & \\equiv t \\wedge(\\sim p \\vee q) \\\\ & \\equiv \\sim p \\vee q\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If P and Q are two statements, then which of the following compound statement is a tautology?</p> <p><strong>[JEE Main 2021, 18 Mar (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(((P\Rightarrow Q)∧~Q)\Rightarrow Q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(((P\Rightarrow Q)∧~Q)\Rightarrow (P∧Q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(((P\Rightarrow Q)∧~Q)\Rightarrow P\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(((P\Rightarrow Q)∧~Q)\Rightarrow ~P\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd> \u003cp>P\u003c/p> \u003c/td> \u003ctd> \u003cp>Q\u003c/p> \u003c/td> \u003ctd>\\(P\\Rightarrow Q\\)\u003c/td> \u003ctd> \u003cp> \\(~Q\\)\u003c/p> \u003c/td> \u003ctd>\\((P\\Rightarrow Q)∧~Q\\)\u003c/td> \u003ctd>\\(~P\\)\u003c/td> \u003ctd>\\(\\left((P\\Rightarrow Q{)}_{∧}~Q\\right)\\Rightarrow ~P\\)\u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>F\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003ctd> \u003cp>T\u003c/p> \u003c/td> \u003c/tr> \u003c/tbody> \u003c/table>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of \((p \wedge(\sim q)) \vee(\sim p)\) is equivalent to</p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p \wedge q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(p \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p \wedge(q \wedge(\sim p))\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p \vee(q \vee(\sim p))\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -398,10 +402,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (a) Negation of }(p \\wedge(\\sim q)) \\vee(\\sim p) \\\\ &amp; =\\sim[(p \\wedge(\\sim q)) \\vee(\\sim p)] \\\\ &amp; =(\\sim p \\vee q) \\wedge(p) \\\\ &amp; =(\\sim p \\wedge p) \\vee(q \\wedge p) \\\\ &amp; =C \\vee(q \\wedge p) \\\\ &amp; =(p \\wedge q) \\\\ &amp; \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (a) Negation of }(p \\wedge(\\sim q)) \\vee(\\sim p) \\\\ & =\\sim[(p \\wedge(\\sim q)) \\vee(\\sim p)] \\\\ & =(\\sim p \\vee q) \\wedge(p) \\\\ & =(\\sim p \\wedge p) \\vee(q \\wedge p) \\\\ & =C \\vee(q \\wedge p) \\\\ & =(p \\wedge q) \\\\ & \\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Statement \((P \Rightarrow Q) \wedge(R \Rightarrow Q)\) is logically equivalent to</p> <p> </p> <p>[JEE Main 2023, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(( P \vee R) \Rightarrow Q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(( P \Rightarrow R) \wedge(Q \Rightarrow R)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(( P \Rightarrow R) \vee(Q \Rightarrow R)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(( P \wedge R) \Rightarrow Q\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\((P \\Rightarrow Q) \\wedge(R \\Rightarrow Q)\\)\u003cbr/>We know that \\(P \\Rightarrow Q \\equiv \\sim P \\vee Q\\)\u003cbr/>\\( \\Rightarrow(\\sim P \\vee Q) \\wedge(\\sim R \\vee Q) \\)\u003cbr/>\\( \\Rightarrow(\\sim P \\wedge \\sim R) \\vee Q \\)\u003cbr/>\\( \\Rightarrow \\sim( P \\vee R) \\vee Q \\)\u003cbr/>\\( \\Rightarrow( P \\vee R) \\Rightarrow Q\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Among the statements :</p> <p>\((\mathrm{S}1)((\mathrm{p}∨\mathrm{q})\Rightarrow \mathrm{r})\Leftrightarrow (\mathrm{p}\Rightarrow \mathrm{r})\)</p> <p>\((\mathrm{S}2)((\mathrm{p}∨\mathrm{q})\Rightarrow \mathrm{r})\Leftrightarrow ((\mathrm{p}\Rightarrow \mathrm{r})∨(\mathrm{q}\Rightarrow \mathrm{r}))\)</p> <p> </p> <p><strong>[JEE Main 2023, 30 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> neither (S1) nor (S2) is a tautology</p></span></div><div class="option"><span class="key">b</span><span><p>only (S2) is a tautology</p></span></div><div class="option"><span class="key">c</span><span><p>both (S1) and (S2) are tautologies</p></span></div><div class="option"><span class="key">d</span><span><p>only (S1) is a tautology</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -422,10 +426,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{matrix}p & q & r & p∨q & p∨q\\Rightarrow r & p\\Rightarrow r & {S}_{1}\\end{matrix}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\)\u003c/p> \u003cp>So \\({\\mathrm{S}}_{1}\\) is not a tautology\u003c/p> \u003cp>\\(\\begin{matrix}p & q & r & p∨q & p∨q\\Rightarrow r & p\\Rightarrow r & q\\Rightarrow r\\end{matrix}(p\\Rightarrow r)∨(q\\Rightarrow r){S}_{2}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{F}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\\\)\u003c/p> \u003cp>So \\({\\mathrm{S}}_{2}\\) is not a tautology\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\($$\\begin{matrix}p & q & r & p∨q & p∨q\\Rightarrow r & p\\Rightarrow r & {S}_{1}\\end{matrix}$$\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\)\u003c/p> \u003cp>So \\({\\mathrm{S}}_{1}\\) is not a tautology\u003c/p> \u003cp>\\($$\\begin{matrix}p & q & r & p∨q & p∨q\\Rightarrow r & p\\Rightarrow r & q\\Rightarrow r\\end{matrix}$$(p\\Rightarrow r)∨(q\\Rightarrow r){S}_{2}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{F}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\ \\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{F}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\mathrm{T}\\\\\\)\u003c/p> \u003cp>So \\({\\mathrm{S}}_{2}\\) is not a tautology\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of the statement \(((A∧(B∨C))\Rightarrow (A∨B))\Rightarrow A\)) is</p> <p><strong>[JEE Main 2023, 13 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>equivalent to \(~A\)</p></span></div><div class="option"><span class="key">b</span><span><p>equivalent to \(B∨~C\)</p></span></div><div class="option"><span class="key">c</span><span><p>a fallacy</p></span></div><div class="option"><span class="key">d</span><span><p>equivalent to \(~C\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,10 +438,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; p:((A \\wedge(B \\vee C)) \\Rightarrow(A \\vee B)) \\Rightarrow A \\\\\u003cbr/>&amp; \\equiv[\\sim(A \\wedge(B \\vee C)) \\vee(A \\vee B)] \\Rightarrow A \\quad[p \\rightarrow q \\equiv \\sim p \\vee q] \\\\\u003cbr/>&amp; \\equiv[(A \\wedge(B \\vee C)) \\wedge \\sim(A \\vee B) \\vee A \\\\\u003cbr/>&amp; \\equiv(f \\vee A))=A \\\\\u003cbr/>&amp; \\text { Negation: } \\sim p \\equiv \\sim A\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}& p:((A \\wedge(B \\vee C)) \\Rightarrow(A \\vee B)) \\Rightarrow A \\\\& \\equiv[\\sim(A \\wedge(B \\vee C)) \\vee(A \\vee B)] \\Rightarrow A \\quad[p \\rightarrow q \\equiv \\sim p \\vee q] \\\\& \\equiv[(A \\wedge(B \\vee C)) \\wedge \\sim(A \\vee B) \\vee A \\\\& \\equiv(f \\vee A))=A \\\\& \\text { Negation: } \\sim p \\equiv \\sim A\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Negation of (p\(\to\)q) \(\to\)(q \(\to\) p) is </p> <p><strong>[JEE Main 2023, 08 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>~q\(∧\)p</p></span></div><div class="option"><span class="key">b</span><span><p>pv(~q)</p></span></div><div class="option"><span class="key">c</span><span><p>(~p)vq </p></span></div><div class="option"><span class="key">d</span><span><p>q\(∧\)(~p)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given: (p \\(\\to\\)q) \\(\\to\\)(q \\(\\to\\) p)\u003cbr/>Negation of the above statement is\u003cbr/>\u003cbr/>~[(p \\(\\to\\)q) \\(\\to\\)(q \\(\\to\\) p)] \u003cbr/>~[~( p \\(\\to\\) q) \\(∨\\) (q \\(\\to\\)p)] \u003cbr/>(p \\(\\to\\) q) \\(∧\\)(~ (q \\(\\to\\) p)) \u003cbr/>(~p v q) \\(∧\\)(q \\(∧\\) ~p)\u003c/p> \u003cp>q \\(∧\\)(~p) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Negation of \((p \rightarrow q) \rightarrow(q \rightarrow p)\) is</p> <p> </p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((\sim p) \vee q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(q \wedge(\sim p)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((\sim q) \wedge p\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((\sim(p \wedge q)) \vee p\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\( (p \\rightarrow q) \\rightarrow(q \\rightarrow p) \\)\u003cbr/>\\(\\equiv \\sim(p \\rightarrow q) \\vee(q \\rightarrow p) \\)\u003cbr/>\\(\\equiv \\sim(\\sim p \\vee q) \\vee(\\sim q \\vee p) \\)\u003cbr/>\\(\\equiv p \\wedge(\\sim q) \\vee(\\sim q \\vee p) \\)\u003cbr/>\\(\\equiv (\\sim q \\vee p) \\vee(\\sim q \\vee p) \\)\u003cbr/>\\(\\equiv (\\sim q \\vee p)\\)\u003c/p> \u003cp>Negation: \\(\\sim(\\sim q \\vee p)\\)\u003c/p> \u003cp>\\(\\equiv q \\wedge(\\sim p)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The Boolean expression \((p \wedge \sim q) \Rightarrow(q \vee \sim p)\) is equivalent to :</p> <p><strong>[JEE Main 2021, 20 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(q\Rightarrow p\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(~q\Rightarrow p\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p\Rightarrow q\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p\Rightarrow ~q\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\((P∧~q)\\to (q∨~p)\\)\u003c/p> \u003cp>\\(\\equiv ~(P∧~q)∨(P∨~p)\\)\u003c/p> \u003cp>\\(\\equiv ~p∨q\\)\u003c/p> \u003cp>\\(\\equiv p\\to q\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The negation of \((p \wedge(\sim q)) \vee(\sim p)\) is equivalent to </p> <p><strong>[JEE Main 2023, 08 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(p \wedge q\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(p \wedge(\sim q)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(p \wedge(q \wedge(\sim p))\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(p \vee(q \vee(\sim p))\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -482,7 +486,7 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Negation of \\((p \\wedge(\\sim q)) \\vee(\\sim p)\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; =\\sim[(p \\wedge(\\sim q)) \\vee(\\sim p)] \\\\\u003cbr/>&amp; =(\\sim p \\vee q) \\wedge(p) \\\\\u003cbr/>&amp; =(\\sim p \\wedge p) \\vee(q \\wedge p) \\\\\u003cbr/>&amp; =C \\vee(q \\wedge p) \\\\\u003cbr/>&amp; =(p \\wedge q)\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Negation of \\((p \\wedge(\\sim q)) \\vee(\\sim p)\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& =\\sim[(p \\wedge(\\sim q)) \\vee(\\sim p)] \\\\& =(\\sim p \\vee q) \\wedge(p) \\\\& =(\\sim p \\wedge p) \\vee(q \\wedge p) \\\\& =C \\vee(q \\wedge p) \\\\& =(p \\wedge q)\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
       <div class="cta-box">
         <h3>Practice more JEE Maths PYQs</h3>

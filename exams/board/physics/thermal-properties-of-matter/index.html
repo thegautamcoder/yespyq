@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/board/physics/"},{"@type":"ListItem","position":5,"name":"Thermal Properties of Matter","item":"https://yespyq.com/exams/board/physics/thermal-properties-of-matter/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Thermal Properties of Matter</h1>
       <p>19 Board Physics previous year questions on <b>Thermal Properties of Matter</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cup of coffee cools from \(90^\circ C\) to \(80^\circ C\) in t minutes when the room temperature is \(20^\circ C\). The time taken by the similar cup of coffee to cool from \(80^\circ C\) to \(60^\circ C\) at the same room temperature is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{5}{13}t\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{13}{10}t\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{10}{13}t\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(\frac{13}{5}t\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: The hot water flows faster than cold water<br/>Statement II: Soap water has higher surface tension as compared to fresh water.<br/>In the light of above statements, choose the correct answer from the options given below</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option correct"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The temperature of a body in air falls from \(40^\circ C\) to \(24^\circ C\) in 4 minutes. The temperature of the air is \(16^\circ C\). The temperature of the body in the next 4 minutes will be : </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{14}{3}{}^{∘}C\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{42^\circ }{3}C\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{56}{3}{}^{∘}C\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{28}{3}{}^{∘}C\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>From Newton's law of cooling\u003c/p> \u003cp>\\(\\frac{{T}_{2}-{T}_{1}}{t}=K\\left[\\frac{{T}_{2}+{T}_{1}}{2}\\right]\\\\ {T}_{1}=24^\\circ C;{T}_{2}=40^\\circ C,t=4,{T}_{s}=16^\\circ C\\\\ \\frac{40-24}{4}=K[32-16]\\)\u003c/p> \u003cp>Let T be final temp.\u003c/p> \u003cp>\\(\\frac{24-T}{4}=K\\left[\\frac{T+24}{2}-16\\right]\\)\u003c/p> \u003cp>From equation (i) &amp;(ii)\u003c/p> \u003cp>\\(T=\\frac{56}{3}C\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two spherical bodies of same materials having radiii 0.2 m and 0.8 m are placed in same atmosphere. The temperature of the smaller body is 800 K and temperature of the bigger body is 400 K . If the energy radiated from the smaller body is E, the energy radiated from the bigger body is (assume, effect of the surrounding temperature to be negligible),</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E</p></span></div><div class="option"><span class="key">b</span><span><p>16 E</p></span></div><div class="option"><span class="key">c</span><span><p>64 E</p></span></div><div class="option"><span class="key">d</span><span><p> 256 E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(E\\propto A{T}^{4}\\\\ \\frac{{E}_{\\text{smaller }}}{{E}_{\\text{larger }}}=\\frac{(0.2{)}^{2}\\times {800}^{4}}{(0.8{)}^{2}\\times {400}^{4}}=\\frac{1}{16}\\times 16=1\\\\ ∴{E}_{\\text{lager }}={E}_{\\text{smaller }}=E\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Water is used as a coolant in a nuclear reactor because of its:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>high thermal expansion coefficient</p></span></div><div class="option"><span class="key">b</span><span><p>high specific heat capacity</p></span></div><div class="option"><span class="key">c</span><span><p>low density</p></span></div><div class="option"><span class="key">d</span><span><p>low boiling point</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Water is used as a coolant in a nuclear reactor primarily because of its high specific heat capacity\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: The hot water flows faster than cold water<br/>Statement II: Soap water has higher surface tension as compared to fresh water.<br/>In the light of above statements, choose the correct answer from the options given below</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The viscosity of water decreases with increasing temperature, allowing hot water to flow more easily than cold water. Adding soap to water reduces surface tension because soap molecules disrupt the cohesive forces between water molecules.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cup of coffee take a time ' t' to cool from \(90^{\circ} \mathrm{C}\) to \(80^{\circ} \mathrm{C}\) in a surrounding of \(20^{\circ} \mathrm{C}\). If a similar cup of coffee is cooled from \(80^{\circ} \mathrm{C}\) to \(60^{\circ} \mathrm{C}\) in the same surrounding, it takes a time</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>13t/5</p></span></div><div class="option"><span class="key">b</span><span><p>5t/13</p></span></div><div class="option"><span class="key">c</span><span><p>12t/5</p></span></div><div class="option"><span class="key">d</span><span><p>2t</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Newton’s Law of Cooling states:\u003c/p> \\(\\frac{{T}_{1}−{T}_{2}}{t}=k(\\frac{{T}_{1}+{T}_{2}}{2}−{T}_{s})\\) \u003cstrong>First Case: Cooling from \\(9{0}^{∘}C\\)90∘C to \\(8{0}^{∘}C\\)80∘C\u003c/strong> \u003cp>\u003cstrong>Given:\u003c/strong>\u003c/p> \u003cul> \u003cli>Initial Temperature: \\({T}_{1}=9{0}^{∘}C\\)\u003c/li> \u003cli>Final Temperature: \\({T}_{2}=8{0}^{∘}C\\)\u003c/li> \u003cli>Surrounding Temperature: \\({T}_{s}=2{0}^{∘}C\\)\u003c/li> \u003c/ul> \u003cp>Substituting the values into the equation:\u003c/p> \\(\\frac{90−80}{t}=k(\\frac{90+80}{2}−20)\\)  \\(\\frac{10}{t}=k(85−20)\\)  \\(\\frac{10}{t}=k(65)\\) \u003cp>Solving for \\(k\\):\u003c/p> \\(k=\\frac{2}{13t}\\)​ \u003cstrong>Second Case: Cooling from \\(8{0}^{∘}C\\) to \\(6{0}^{∘}C\\)\u003c/strong> \u003cp>\u003cstrong>Given:\u003c/strong>\u003c/p> \u003cul> \u003cli>Initial Temperature: \\({T}_{1}=8{0}^{∘}C\\)\u003c/li> \u003cli>Final Temperature: \\({T}_{2}=6{0}^{∘}C\\)\u003c/li> \u003cli>Surrounding Temperature: \\({T}_{s}=2{0}^{∘}C\\)\u003c/li> \u003c/ul> \u003cp>Using Newton’s Law:\u003c/p> \\(\\frac{80−60}{{t}^{′}}=k(\\frac{80+60}{2}−20)\\)  \\(\\frac{20}{{t}^{′}}=k(50)\\) \u003cp>Substituting \\(k=\\frac{2}{13t}\\)​ from the first case:\u003c/p> \\(\\frac{20}{{t}^{′}}=\\frac{2}{13t}\\times 50\\) \\({t}^{′}=\\frac{13t}{5}\\)​ \u003cstrong>Final Answer:\u003c/strong> \\(\\frac{13t}{5}\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: The hot water flows faster than cold water<br/>Statement II: Soap water has higher surface tension as compared to fresh water.<br/>In the light of above statements, choose the correct answer from the options given below</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The viscosity of water decreases with increasing temperature, allowing hot water to flow more easily than cold water. Adding soap to water reduces surface tension because soap molecules disrupt the cohesive forces between water molecules.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A bullet at \(300\text{ }\text{K}\) hits a wooden block. The melting point is \(600\text{ }\text{K}\), and the total work done is <strong>625 J</strong>. If the specific heat capacity is \(0.442\text{ }\text{J/g}{⋅}^{∘}\text{C}\) and the latent heat is \(247\text{ }\text{J/g}\), find the mass of the bullet.(shift 1 Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1.32\text{ }\text{g}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.65\text{ }\text{g}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2.50\text{ }\text{g}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(3.00\text{ }\text{g}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The total energy required for the bullet to reach its melting point and completely melt is given by:\u003c/p> \u003cp>\\(Q=mc\\Delta T+mL,\\)\u003c/p> \u003cp>where:\u003c/p> \u003cul> \u003cli>\\(Q=625\\text{ }\\text{J}\\)\u003c/li> \u003cli>\\(c=0.442\\text{ }\\text{J/g}{⋅}^{∘}\\text{C}\\)\u003c/li> \u003cli>T = 600 - 300 = 300 K\u003c/li> \u003cli>\\(L=247\\text{ }\\text{J/g}\\).\u003c/li> \u003c/ul> \u003cp>Substitute these values:\u003c/p> \u003cp>\\(625=m(0.442⋅300)+m(247)\\mathrm{.}\\)\u003c/p> \u003cp>\\(625=m(132.6+247)\\mathrm{.}\\)\u003c/p> \u003cp> \\(625=m⋅379.6.\\)\u003c/p> \u003cp>Solve for \\(m\\):\u003c/p> \u003cp>\\(m=\\frac{625}{379.6}\\approx 1.65\\text{ }\\text{g}\\mathrm{.}\\)\u003c/p> \u003cp>Thus, the mass of the bullet is \u003cstrong>\\(1.65\\text{ }\\text{g}\\)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A cup of coffee take a time ' t' to cool from \(90^{\circ} \mathrm{C}\) to \(80^{\circ} \mathrm{C}\) in a surrounding of \(20^{\circ} \mathrm{C}\). If a similar cup of coffee is cooled from \(80^{\circ} \mathrm{C}\) to \(60^{\circ} \mathrm{C}\) in the same surrounding, it takes a time</p> <p>(Shift - II Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>13t/5</p></span></div><div class="option"><span class="key">b</span><span><p>5t/13</p></span></div><div class="option"><span class="key">c</span><span><p>12t/5</p></span></div><div class="option"><span class="key">d</span><span><p>2t</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Newton’s Law of Cooling states:\u003c/p> \\(\\frac{{T}_{1}−{T}_{2}}{t}=k(\\frac{{T}_{1}+{T}_{2}}{2}−{T}_{s})\\) \u003cstrong>First Case: Cooling from \\(9{0}^{∘}C\\)90∘C to \\(8{0}^{∘}C\\)80∘C\u003c/strong> \u003cp>\u003cstrong>Given:\u003c/strong>\u003c/p> \u003cul> \u003cli>Initial Temperature: \\({T}_{1}=9{0}^{∘}C\\)\u003c/li> \u003cli>Final Temperature: \\({T}_{2}=8{0}^{∘}C\\)\u003c/li> \u003cli>Surrounding Temperature: \\({T}_{s}=2{0}^{∘}C\\)\u003c/li> \u003c/ul> \u003cp>Substituting the values into the equation:\u003c/p> \\(\\frac{90−80}{t}=k(\\frac{90+80}{2}−20)\\)  \\(\\frac{10}{t}=k(85−20)\\)  \\(\\frac{10}{t}=k(65)\\) \u003cp>Solving for \\(k\\):\u003c/p> \\(k=\\frac{2}{13t}\\)​ \u003cstrong>Second Case: Cooling from \\(8{0}^{∘}C\\) to \\(6{0}^{∘}C\\)\u003c/strong> \u003cp>\u003cstrong>Given:\u003c/strong>\u003c/p> \u003cul> \u003cli>Initial Temperature: \\({T}_{1}=8{0}^{∘}C\\)\u003c/li> \u003cli>Final Temperature: \\({T}_{2}=6{0}^{∘}C\\)\u003c/li> \u003cli>Surrounding Temperature: \\({T}_{s}=2{0}^{∘}C\\)\u003c/li> \u003c/ul> \u003cp>Using Newton’s Law:\u003c/p> \\(\\frac{80−60}{{t}^{′}}=k(\\frac{80+60}{2}−20)\\)  \\(\\frac{20}{{t}^{′}}=k(50)\\) \u003cp>Substituting \\(k=\\frac{2}{13t}\\)​ from the first case:\u003c/p> \\(\\frac{20}{{t}^{′}}=\\frac{2}{13t}\\times 50\\) \\({t}^{′}=\\frac{13t}{5}\\)​ \u003cstrong>Final Answer:\u003c/strong> \\(\\frac{13t}{5}\\)","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Temperature of a body reduces from \(40^{\circ}\) to \(24^{\circ} \mathrm{C}\) in 4 minutes in surrounding of \(16^{\circ} \mathrm{C}\). What is the temperature of body after further 4 minutes?</p> <p>(Shift - II Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(20^{\circ} \mathrm{C}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(22^{\circ} \mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{56}{3}{ }^{\circ} \mathrm{C}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(17^{\circ} \mathrm{C}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>According to Newton's Law of cooling\u003c/p> \u003cp>\\(\\left(\\frac{\\mathrm{dT}}{\\mathrm{dt}}\\right)=\\mathrm{k}\\left(\\mathrm{T}-{\\mathrm{T}}_{\\mathrm{o}}\\right)\\\\ \\mathrm{So},\\\\ \\left(\\frac{40-24}{4}\\right)=\\mathrm{k}\\left(\\frac{40+24}{2}-16\\right)......(1)\\\\ \\mathrm{And}\\\\ \\left(\\frac{24-\\mathrm{T}}{4}\\right)=\\mathrm{k}\\left(\\frac{\\mathrm{T}+24}{2}-16\\right).....(2)\\\\ \\mathrm{From}(1)\\mathrm{and}(2),\\mathrm{we}\\mathrm{get}\\\\ \\mathrm{T}=\\frac{56}{3}^\\circ \\mathrm{C}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two spherical bodies of same materials having radiii 0.2 m and 0.8 m are placed in same atmosphere. The temperature of the smaller body is 800 K and temperature of the bigger body is 400 K . If the energy radiated from the smaller body is E, the energy radiated from the bigger body is (assume, effect of the surrounding temperature to be negligible),</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E</p></span></div><div class="option"><span class="key">b</span><span><p>16 E</p></span></div><div class="option"><span class="key">c</span><span><p>64 E</p></span></div><div class="option"><span class="key">d</span><span><p> 256 E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(E\\propto A{T}^{4}\\\\ \\frac{{E}_{\\text{smaller }}}{{E}_{\\text{larger }}}=\\frac{(0.2{)}^{2}\\times {800}^{4}}{(0.8{)}^{2}\\times {400}^{4}}=\\frac{1}{16}\\times 16=1\\\\ ∴{E}_{\\text{lager }}={E}_{\\text{smaller }}=E\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:<br/>Statement I: The hot water flows faster than cold water<br/>Statement II: Soap water has higher surface tension as compared to fresh water.<br/>In the light of above statements, choose the correct answer from the options given below</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is false but Statement II is true</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are true</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>The viscosity of water decreases with increasing temperature, allowing hot water to flow more easily than cold water. Adding soap to water reduces surface tension because soap molecules disrupt the cohesive forces between water molecules.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An amount of ice of mass \({10}^{-3}\mathrm{kg}\) and temperature \(-10^\circ \mathrm{C}\) is transformed to vapour of temperature \(110^\circ \mathrm{C}\) by applying heat. The total amount of work required for this conversion is,<br/>(Take, specific heat of ice \(=2100{\mathrm{Jkg}}^{-1}{\mathrm{K}}^{-1}\), specific heat of water \(=4180{\mathrm{Jkg}}^{-1}{\mathrm{K}}^{-1}\), specific heat of steam \(=1920{\mathrm{Jkg}}^{-1}{\mathrm{K}}^{-1}\), Latent heat of ice \(=3.35\times {10}^{5}{\mathrm{Jkg}}^{-1}\) and Latent heat of steam \(=2.25\times {10}^{6}\) \({\mathrm{Jkg}}^{-1}\) )</p> <p> </p> <p>[JEE Main 2025, 22 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3043 J</p></span></div><div class="option"><span class="key">b</span><span><p>3024 J</p></span></div><div class="option"><span class="key">c</span><span><p>3003 J</p></span></div><div class="option"><span class="key">d</span><span><p>3022 J</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\Delta {Q}_{1}=m\\times {S}_{1}\\times \\Delta T={10}^{-3}\\times 2100\\times 10=21J\\\\ \\Delta {Q}_{2}=m\\times {L}_{1}\\times {10}^{-3}\\times 3.35\\times {10}^{5}=335J\\\\ \\Delta {Q}_{3}=m\\times {S}_{w}\\times \\Delta T={10}^{-3}\\times 4180\\times 100\\\\ =418J\\\\ \\Delta {Q}_{4}=m\\times {L}_{v}={10}^{-3}\\times 2.25\\times {10}^{6}=2250J\\\\ \\Delta {Q}_{5}=m\\times {S}_{v}\\times \\Delta T={10}^{-3}\\times 1920\\times 10\\\\ =19.2J\\\\ \\Delta {Q}_{ne}=3043.2J\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The difference of temperature in a material can convert heat energy into electrical energy. To harvest the heat energy, the material should have;</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>low thermal conductivity and high electrical conductivity</p></span></div><div class="option"><span class="key">b</span><span><p>high thermal conductivity and high electrical conductivity</p></span></div><div class="option"><span class="key">c</span><span><p>high thermal conductivity and low electrical conductivity</p></span></div><div class="option"><span class="key">d</span><span><p>low thermal conductivity and low electrical conductivity</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The material should have low thermal conductivity and high electrical conductivity to maximize the thermoelectric effect. Therefore, the correct answer is (a).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Two spherical black bodies of radii \(0.8\text{ }\text{m}\) and \(0.2\text{ }\text{m}\) are at temperatures of \(400\text{ }\text{K}\) and \(800\text{ }\text{K}\), respectively. Find the ratio of the rate of heat loss from the two bodies.</p> <p>(Shift I Memory based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1 : 4</p></span></div><div class="option"><span class="key">b</span><span><p>1 : 8</p></span></div><div class="option"><span class="key">c</span><span><p>1 : 2</p></span></div><div class="option"><span class="key">d</span><span><p>1 : 1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>According to the Stefan's law,\u003c/p> \u003cp>\\(\\mathrm{P}={\\mathrm{σAT}}^{4}=4{\\mathrm{πr}}^{2}{\\mathrm{σT}}^{4}\\)\u003c/p> \u003cp>So, \u003c/p> \u003cp>\\(\\frac{{\\mathrm{P}}_{1}}{{\\mathrm{P}}_{2}}={\\left(\\frac{{\\mathrm{r}}_{1}}{{\\mathrm{r}}_{2}}\\right)}^{2}{\\left(\\frac{{\\mathrm{T}}_{1}}{{\\mathrm{T}}_{2}}\\right)}^{4}\\\\ \\frac{{\\mathrm{P}}_{1}}{{\\mathrm{P}}_{2}}={\\left(\\frac{0.8}{0.2}\\right)}^{2}{\\left(\\frac{400}{800}\\right)}^{4}\\\\ \\frac{{\\mathrm{P}}_{1}}{{\\mathrm{P}}_{2}}=1:1\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>What amount of heat is required to convert \(1\text{ }\text{gm}\) of ice at \(−1{0}^{∘}\text{C}\) into steam at \(11{0}^{∘}\text{C}\)?</p> <p>(Shift I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\Delta Q=730\text{ }\text{cal}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\Delta Q=1100\text{ }\text{cal}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\Delta Q=930\text{ }\text{cal}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\Delta Q=900\text{ }\text{cal}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\mathrm{Initially},-10^\\circ \\mathrm{C}\\mathrm{ice}\\mathrm{converts}\\mathrm{into}0^\\circ \\mathrm{C}\\mathrm{water}\\mathrm{then}0^\\circ \\mathrm{C}\\mathrm{ice}\\mathrm{converts}\\mathrm{into}0^\\circ \\mathrm{C}\\mathrm{water}\\\\ \\mathrm{then}0^\\circ \\mathrm{C}\\mathrm{water}\\mathrm{converts}\\mathrm{into}100^\\circ \\mathrm{C}\\mathrm{water}\\mathrm{then}100^\\circ \\mathrm{C}\\mathrm{water}\\mathrm{converts}\\mathrm{into}100^\\circ \\mathrm{C}\\\\ \\mathrm{steam}\\mathrm{and}\\mathrm{then}100\\mathrm{C}\\mathrm{steam}\\mathrm{into}110^\\circ \\mathrm{C}\\mathrm{steam}\\)\u003c/p> \u003cp>\\(\\mathrm{Q}=1\\times \\frac{1}{2}\\times 0+180+1\\times 1\\times 100+1\\times 540+1\\times \\frac{1}{2}\\times 10\\\\ \\mathrm{Q}=730\\mathrm{cal}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Three stars \( A, B, C \) have surface temperatures \( T_{A}, T_{B}, T_{C} \) respectively. Star \(A\) appears bluish, star \(B\) appears reddish and star \(C\) yellowish. Hence,</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{T}_{\mathrm{B}}&gt;\mathrm{T}_{\mathrm{C}}&gt;\mathrm{T}_{\mathrm{A}} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( T_{C}&gt;T_{B}&gt;T_{A} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{T}_{\mathrm{A}}&gt;\mathrm{T}_{\mathrm{C}}&gt;\mathrm{T}_{\mathrm{B}} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( T_{A}&gt;T_{B}&gt;T_{C} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The appearance of a star depends of the wavelength \\(({\\lambda }_{m})\\) at which it radiates maximum energy. This depends inversely on the surface temperature (T) of the star. Now \\({\\lambda }_{\\text{blue}}\u003c{\\lambda }_{\\text{yellow}}\u003c{\\lambda }_{\\text{red}}\\). Thus, star A (bluish) radiates the shortest \\(\\lambda\\) and must be at the highest temperature, while star B (raddish) must be at the lowest temperature.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The quantities of heat required to raise the temperature of two solid copper sphere of radii \( r_{1} \) and \( r_{2}\left(r_{1}=1.5 r_{2}\right) \) through \( 1 \mathrm{~K} \) are in the ratio </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \frac{9}{4} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \frac{3}{2} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \frac{5}{3} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{27}{8} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

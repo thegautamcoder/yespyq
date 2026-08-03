@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Biology","item":"https://yespyq.com/exams/neet/biology/"},{"@type":"ListItem","position":5,"name":"Biomolecules","item":"https://yespyq.com/exams/neet/biology/biomolecules/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Biomolecules</h1>
       <p>72 NEET Biology previous year questions on <b>Biomolecules</b> — options free on every question; <b>7 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Glucose on prolonged heating with HI gives</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>-hexane</span></div><div class="option"><span class="key">b</span><span>1-hexene</span></div><div class="option"><span class="key">c</span><span>Hexanoic acid</span></div><div class="option"><span class="key">d</span><span>6-iodohexanal</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statement is not true for glucose? [JEE Main 2020, 8 Jan (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Glucose exists in two crystalline forms and</span></div><div class="option correct"><span class="key">b</span><span>Glucose gives Schiff's test for aldehyde</span></div><div class="option"><span class="key">c</span><span>Glucosse reacts with hydroxylamine to form oxime</span></div><div class="option"><span class="key">d</span><span>The pentaacetate of glucose does not react with hydroxylamine to give oxime</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following statements is not true about RNA? [JEE Main 2019, 12 Apr (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>It has always double stranded α-helix structure</span></div><div class="option"><span class="key">b</span><span>It usually does not replicate</span></div><div class="option"><span class="key">c</span><span>It is present in the nucleus of the cell</span></div><div class="option"><span class="key">d</span><span>It controls the synthesis of protein</span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following are not secondary metabolites in plants? [NEET 2021]</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Amino acids, glucose</span></div><div class="option"><span class="key">b</span><span>Vinblastin, curcumin</span></div><div class="option"><span class="key">c</span><span>Rubber, gums</span></div><div class="option"><span class="key">d</span><span>Morphine, codeine</span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Water present in human body is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>60-65 %</span></div><div class="option"><span class="key">b</span><span>50-55 %</span></div><div class="option"><span class="key">c</span><span>75-80 %</span></div><div class="option correct"><span class="key">d</span><span>65-70 %</span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which protein found in maximum amount?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Catalase</span></div><div class="option"><span class="key">b</span><span>Zinc carbonic anhydrase</span></div><div class="option"><span class="key">c</span><span>Transferase</span></div><div class="option correct"><span class="key">d</span><span>RuBisCO</span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which one of the following is not a constituent of cell membrane?</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Glycolipids</span></div><div class="option correct"><span class="key">b</span><span>Proline</span></div><div class="option"><span class="key">c</span><span>Phospholipids</span></div><div class="option"><span class="key">d</span><span>Cholesterol</span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The essential chemical components of many coenzymes are</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>carbohydrates</span></div><div class="option"><span class="key">b</span><span>vitamins</span></div><div class="option"><span class="key">c</span><span>proteins</span></div><div class="option"><span class="key">d</span><span>nucleic acids.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"The essential chemical components of many coenzymes are vitamins. Coenzymes are non-protein organic molecules that bind to enzymes to assist in their catalytic activity. Many coenzymes, particularly those derived from the water-soluble B-complex vitamins, cannot be synthesized by the body and must be obtained from the diet. Examples include:Niacin (Vitamin B3) is a precursor for the coenzymes NAD and NADP (nicotinamide adenine dinucleotide and its phosphate). Riboflavin (Vitamin B2) is a precursor for FAD and FMN (flavin adenine dinucleotide and flavin mononucleotide).","fmt":""}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The correct statement regarding RNA and DNA, respectively is</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>the sugar component in RNA is a arabinose and the sugar component in DNA is ribose</span></div><div class="option"><span class="key">b</span><span>the sugar component in RNA is - deoxyribose and the sugar component in DNA is arabinose</span></div><div class="option"><span class="key">c</span><span>the sugar component in RNA is arabinose and the sugar component in DNA is - deoxyribose</span></div><div class="option"><span class="key">d</span><span>the sugar component in RNA is ribose and the sugar component in DNA is - deoxyribose.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -164,7 +168,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"The correct answer is: 4 — the sugar component in RNA is ribose and the sugar component in DNA is 2′-deoxyribose Explanation: RNA contains the sugar ribose, which has a hydroxyl group (-OH) at the 2′ carbon. DNA contains 2′-deoxyribose, which lacks the hydroxyl group at the 2′ carbon, making it more stable. Arabinose is a sugar found in some plants but is not a component of nucleic acids.","fmt":""}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Prosthetic groups differ from co-enzymes in that</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>they require metal ions for their activity</span></div><div class="option"><span class="key">b</span><span>they (prosthetic groups) are tightly bound to apoenzymes</span></div><div class="option"><span class="key">c</span><span>their association with apoenzymes is transient</span></div><div class="option"><span class="key">d</span><span>they can serve as co-factors in a number of enzyme-catalyzed reactions.</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"Both prosthetic groups and coenzymes are types of cofactors, which are non-protein components required for an enzyme's activity. The key difference lies in how they bind to the protein part of the enzyme, known as the apoenzyme. Prosthetic groups are permanently and tightly bound to the apoenzyme, often through strong covalent bonds. An example is the heme group in hemoglobin, which is essential for its function. Coenzymes are loosely and temporarily bound to the apoenzyme. They typically bind during the reaction and are released afterward.","fmt":""}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The protein portion of an enzyme is called : [NEET 2025]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Apoenzyme</span></div><div class="option"><span class="key">b</span><span>Prosthetic group</span></div><div class="option"><span class="key">c</span><span>Cofactor</span></div><div class="option"><span class="key">d</span><span>Coenzyme</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"The correct answer is Apoenzyme. An enzyme may consist of two parts: a protein portion and a non-protein component. The protein part alone of an enzyme is called the apoenzyme. By itself, the apoenzyme is usually inactive and cannot catalyse a reaction efficiently. For the enzyme to become fully functional, it often needs a cofactor, which may be a metal ion or an organic molecule. When the apoenzyme combines with its required cofactor, the complete and active enzyme formed is called a holoenzyme. A prosthetic group is a tightly bound cofactor, while a coenzyme is an organic cofactor that is loosely attached. Thus, among the given options, apoenzyme specifically refers to the protein portion of an enzyme and is the correct answer.","fmt":""}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The protein portion of an enzyme is called :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Apoenzyme</p></span></div><div class="option"><span class="key">b</span><span><p>Prosthetic group</p></span></div><div class="option"><span class="key">c</span><span><p>Cofactor</p></span></div><div class="option"><span class="key">d</span><span><p>Coenzyme </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The correct answer is \u003cstrong>Apoenzyme\u003c/strong>.\u003c/p> \u003cp>An enzyme may consist of two parts: a protein portion and a non-protein component. The \u003cstrong>protein part alone\u003c/strong> of an enzyme is called the \u003cstrong>apoenzyme\u003c/strong>. By itself, the apoenzyme is usually inactive and cannot catalyse a reaction efficiently. For the enzyme to become fully functional, it often needs a \u003cstrong>cofactor\u003c/strong>, which may be a metal ion or an organic molecule. When the apoenzyme combines with its required cofactor, the complete and active enzyme formed is called a \u003cstrong>holoenzyme\u003c/strong>.\u003c/p> \u003cp>A \u003cstrong>prosthetic group\u003c/strong> is a tightly bound cofactor, while a \u003cstrong>coenzyme\u003c/strong> is an organic cofactor that is loosely attached. Thus, among the given options, apoenzyme specifically refers to the protein portion of an enzyme and is the correct answer.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II:</p> <table> <tbody> <tr> <td><strong>List-I</strong></td> <td><strong>List-II</strong></td> </tr> <tr> <td>A.</td> <td>Primary structure</td> <td>I.</td> <td>Human haemoglobin</td> </tr> <tr> <td>B.</td> <td>Secondary structure</td> <td>II.</td> <td>Disulphide bonds of protein</td> </tr> <tr> <td>C.</td> <td>Tertiary structure</td> <td>III.</td> <td>Polypeptide chain of protein</td> </tr> <tr> <td>D.</td> <td>Quaternary structure</td> <td>IV.</td> <td>Alpha helix and \(\beta\) structure of protein sheet</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-I, B-III, C-II, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-III, C-II, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd> \u003cp>\u003cstrong>List-I\u003c/strong>\u003c/p> \u003c/td> \u003ctd> \u003cp>\u003cstrong>List-II\u003c/strong>\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>A\u003c/p> \u003c/td> \u003ctd> \u003cp>Primary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>III\u003c/p> \u003c/td> \u003ctd> \u003cp>Polypeptide chain of protein\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>B\u003c/p> \u003c/td> \u003ctd> \u003cp>Secondary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>IV\u003c/p> \u003c/td> \u003ctd> \u003cp>Alpha helix and β structure of protein sheet\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>C\u003c/p> \u003c/td> \u003ctd> \u003cp>Tertiary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>II\u003c/p> \u003c/td> \u003ctd> \u003cp>Disulphide bonds of protein\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>D\u003c/p> \u003c/td> \u003ctd> \u003cp>Quaternary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>I\u003c/p> \u003c/td> \u003ctd> \u003cp>Human haemoglobin\u003c/p> \u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Inhibition of succinic dehydrogenase enzyme by malonate is a classical example of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>enzyme activation.</p></span></div><div class="option"><span class="key">b</span><span><p>cofactor inhibition.</p></span></div><div class="option"><span class="key">c</span><span><p>feedback inhibition.</p></span></div><div class="option"><span class="key">d</span><span><p>competitive inhibition.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -224,7 +228,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Malonate structurally resembles succinate and competes for the active site of succinic dehydrogenase, thereby inhibiting the enzyme competitively.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a nucleotide ?</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Uridine</p></span></div><div class="option"><span class="key">b</span><span><p>Adenylic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Guanine</p></span></div><div class="option"><span class="key">d</span><span><p>Guanosine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B — Adenylic acid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>A \u003cstrong>nucleotide\u003c/strong> = \u003cstrong>nitrogenous base + sugar + phosphate group\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>A \u003cstrong>nucleoside\u003c/strong> = \u003cstrong>nitrogenous base + sugar (no phosphate)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Adenylic acid\u003c/strong> → \u003cstrong>nucleotide\u003c/strong> (adenine + ribose + phosphate) is correct.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are <strong>not </strong>fatty acids?<br/>A. Glutamic acid<br/>B. Arachidonic acid<br/>C. Palmitic acid<br/>D. Lecithin<br/>E. Aspartic acid</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Glutamic acid and Aspartic acid are example of amino acid where as lecithin is a phospholipid. Only Arachidonic acid and Palmitic acid are example of fatty acids.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Inhibition of succinic dehydrogenase enzyme by malonate is a classical example of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>enzyme activation.</p></span></div><div class="option"><span class="key">b</span><span><p>cofactor inhibition.</p></span></div><div class="option"><span class="key">c</span><span><p>feedback inhibition.</p></span></div><div class="option"><span class="key">d</span><span><p>competitive inhibition.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Malonate structurally resembles succinate and competes for the active site of succinic dehydrogenase, thereby inhibiting the enzyme competitively.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Name the class of enzyme that usually catalyze the following reaction:</p> <p>\(S-G+{S}^{#}\to S+{S}^{#}-G\)</p> <p>Where, G → a group other than hydrogen<br/>S → a substrate<br/>\({S}^{#}\) → another substrate</p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Transferase</p></span></div><div class="option"><span class="key">b</span><span><p>Ligase</p></span></div><div class="option"><span class="key">c</span><span><p>Hydrolase</p></span></div><div class="option"><span class="key">d</span><span><p>Lyase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -272,7 +276,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The given reaction:\u003cbr/>\u003cstrong>S−G + S\u003csup># \u003c/sup>→ S + S\u003csup>#\u003c/sup>−G\u003c/strong>\u003cbr/>shows the \u003cstrong>transfer of a group (G)\u003c/strong> from one substrate (\u003cstrong>S\u003c/strong>) to another (\u003cstrong>S\u003csup>#\u003c/sup>\u003c/strong>). This type of reaction is \u003cstrong>catalyzed by transferase enzymes\u003c/strong>.\u003c/p> \u003cp>\u003cstrong>Transferases\u003c/strong> are enzymes that \u003cstrong>transfer a functional group\u003c/strong> (like methyl, phosphate, or glycosyl group) from one molecule (donor) to another (acceptor). In this reaction, \u003cstrong>G\u003c/strong> (a group other than hydrogen) is transferred from \u003cstrong>S\u003c/strong> to \u003cstrong>S\u003csup>#\u003c/sup>\u003c/strong>.\u003c/p> \u003cp>Other options:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Ligase\u003c/strong> joins two molecules.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Hydrolase\u003c/strong> breaks bonds using water.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Lyase\u003c/strong> breaks bonds without water or oxidation.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Thus, the correct answer is \u003cstrong>A — Transferase\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Enzymes that catalyse the removal of groups from substrates by mechanisms other than hydrolysis leaving double bonds, are known as :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Transferases</p></span></div><div class="option"><span class="key">b</span><span><p>Oxidoreductases</p></span></div><div class="option"><span class="key">c</span><span><p>Dehydrogenases</p></span></div><div class="option"><span class="key">d</span><span><p>Lyases</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Lyases are a class of enzymes that cleave bonds other than hydrolysis, leaving double bonds in the process. They catalyze reactions where a molecule is split into two parts, often forming a new double bond in one of the fragments\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are <strong>not </strong>fatty acids?<br/>A. Glutamic acid<br/>B. Arachidonic acid<br/>C. Palmitic acid<br/>D. Lecithin<br/>E. Aspartic acid</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -296,7 +300,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Glutamic acid and Aspartic acid are example of amino acid where as lecithin is a phospholipid. Only Arachidonic acid and Palmitic acid are example of fatty acids.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Regarding catalytic cycle of an enzyme action, select the correct sequential steps :<br/>A. Substrate enzyme complex formation.<br/>B. Free enzyme ready to bind with another substrate.<br/>C. Release of products.<br/>D. Chemical bonds of the substrate broken.<br/>E. Substrate binding to active site.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E, D, C, A, B</p></span></div><div class="option"><span class="key">b</span><span><p>E, A, D, C, B</p></span></div><div class="option"><span class="key">c</span><span><p>A, E, B, D, C</p></span></div><div class="option"><span class="key">d</span><span><p>B, A, C, D, E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct sequential steps of the catalytic cycle of enzyme action are:\u003c/p> \u003col> \u003cli>\u003cstrong>Substrate binding to active site (E)\u003c/strong> – The substrate attaches to the enzyme’s active site.\u003c/li> \u003cli>\u003cstrong>Substrate-enzyme complex formation (A)\u003c/strong> – The enzyme stabilizes the substrate in the active site.\u003c/li> \u003cli>\u003cstrong>Chemical bonds of the substrate broken (D)\u003c/strong> – The enzyme catalyzes the reaction, leading to bond breaking or formation.\u003c/li> \u003cli>\u003cstrong>Release of products (C)\u003c/strong> – The reaction products are released from the enzyme.\u003c/li> \u003cli>\u003cstrong>Free enzyme ready to bind with another substrate (B)\u003c/strong> – The enzyme returns to its original form to catalyse another reaction.\u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>hsdbafjknkjndkfngkdglkbm</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>2</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -320,7 +324,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>dfjnvvz kjbnkjxgfnkbkbmn mn \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are <strong>not </strong>fatty acids?<br/>A. Glutamic acid<br/>B. Arachidonic acid<br/>C. Palmitic acid<br/>D. Lecithin<br/>E. Aspartic acid</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>A, D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Glutamic acid and Aspartic acid are example of amino acid where as lecithin is a phospholipid. Only Arachidonic acid and Palmitic acid are example of fatty acids.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Inhibition of succinic dehydrogenase enzyme by malonate is a classical example of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>enzyme activation.</p></span></div><div class="option"><span class="key">b</span><span><p>cofactor inhibition.</p></span></div><div class="option"><span class="key">c</span><span><p>feedback inhibition.</p></span></div><div class="option"><span class="key">d</span><span><p>competitive inhibition.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Malonate structurally resembles succinate and competes for the active site of succinic dehydrogenase, thereby inhibiting the enzyme competitively.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match <strong>List-I </strong>with <strong>List-II</strong>:</p> <table> <tbody> <tr> <td><strong> List-I </strong></td> <td> <strong>List-II</strong></td> </tr> <tr> <td>(A)</td> <td>Lipase </td> <td>(I)</td> <td> Peptide bond </td> </tr> <tr> <td>(B)</td> <td>Nuclease </td> <td>(II)</td> <td>Ester bond </td> </tr> <tr> <td>(C)</td> <td>Protease </td> <td>(III)</td> <td>Glycosidic bond</td> </tr> <tr> <td>(D)</td> <td>Amylase </td> <td>(IV)</td> <td>Phosphodiester bond</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-IV, B-I, C-III, D-II</p></span></div><div class="option"><span class="key">b</span><span><p>A-IV, B-II, C-III, D-I</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-II, B-IV, C-I, D-III</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -356,7 +360,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>Lipase → Ester bond (II): Lipase hydrolyses fats or lipids by breaking ester bonds between glycerol and fatty acids.\u003c/li> \u003cli>Nuclease → Phosphodiester bond (IV): Nuclease acts on nucleic acids and breaks phosphodiester bonds between nucleotides.\u003c/li> \u003cli>Protease → Peptide bond (I): Protease hydrolyses peptide bonds linking amino acids in proteins.\u003c/li> \u003cli>Amylase → Glycosidic bond (III): Amylase breaks glycosidic bonds in starch and glycogen to release sugars.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The cofactor of the enzyme carboxypeptidase is:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Haem</p></span></div><div class="option"><span class="key">b</span><span><p>Zinc</p></span></div><div class="option"><span class="key">c</span><span><p>Niacin</p></span></div><div class="option"><span class="key">d</span><span><p>Flavin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Carboxypeptidase is a \u003cstrong>metalloenzyme\u003c/strong> that requires \u003cstrong>zinc (Zn²⁺)\u003c/strong> as a cofactor for its enzymatic activity.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ligases is a class of enzymes responsible for catalysing the linking together of two compounds. Which of the following bonds is not catalysed by it?</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C - C</p></span></div><div class="option"><span class="key">b</span><span><p>P - O</p></span></div><div class="option"><span class="key">c</span><span><p>C - O</p></span></div><div class="option"><span class="key">d</span><span><p>C - N</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -380,7 +384,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Ligases catalyze the formation of bonds between carbon and other atoms like oxygen, nitrogen, sulfur, or phosphorus (C-O, C-N, C-S, C-P). They do not directly catalyze the formation of \u003cstrong>C-C bonds\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ligases is a class of enzymes responsible for catalysing the linking together of two compounds. Which of the following bonds is not catalysed by it?</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C - C</p></span></div><div class="option"><span class="key">b</span><span><p>P - O</p></span></div><div class="option"><span class="key">c</span><span><p>C - O</p></span></div><div class="option"><span class="key">d</span><span><p>C - N</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Ligases catalyze the formation of bonds between carbon and other atoms like oxygen, nitrogen, sulfur, or phosphorus (C-O, C-N, C-S, C-P). They do not directly catalyze the formation of \u003cstrong>C-C bonds\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Lecithin, a small molecular weight organic compound found in living tissues, is an example of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>carbohydrates.</p></span></div><div class="option"><span class="key">b</span><span><p>amino acids.</p></span></div><div class="option"><span class="key">c</span><span><p>phospholipids.</p></span></div><div class="option"><span class="key">d</span><span><p>glycerides.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -404,7 +408,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Lecithin (also known as phosphatidylcholine) is a phospholipid, a type of lipid molecule that contains both fatty acids and a phosphate group. It is an essential component of cell membranes, contributing to membrane fluidity and structure.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a nucleotide ?</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Uridine</p></span></div><div class="option"><span class="key">b</span><span><p>Adenylic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Guanine</p></span></div><div class="option"><span class="key">d</span><span><p>Guanosine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B — Adenylic acid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>A \u003cstrong>nucleotide\u003c/strong> = \u003cstrong>nitrogenous base + sugar + phosphate group\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>A \u003cstrong>nucleoside\u003c/strong> = \u003cstrong>nitrogenous base + sugar (no phosphate)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Adenylic acid\u003c/strong> → \u003cstrong>nucleotide\u003c/strong> (adenine + ribose + phosphate) is correct.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II :</p> <table> <tbody> <tr> <td>List I</td> <td>List II</td> </tr> <tr> <td>A. Trypsin </td> <td>I. Intercellular ground substance</td> </tr> <tr> <td>B. Morphine</td> <td>II. Lectin</td> </tr> <tr> <td>C. Concanavalin</td> <td>III. Enzyme</td> </tr> <tr> <td>D. Collagen</td> <td>IV. Alkaloid</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-II, D-I</p></span></div><div class="option"><span class="key">b</span><span><p>A-I, B-II, C-III, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-III, B-II, C-IV, D-I</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-III, C-II, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -428,7 +432,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Biomolecules and their functions: different biological molecules are classified based on their structure and role\u003c/p> \u003cul> \u003cli>A. Trypsin → III → It is a digestive enzyme\u003c/li> \u003cli>B. Morphine → IV → It is an alkaloid obtained from opium\u003c/li> \u003cli>C. Concanavalin → II → It is a lectin (carbohydrate-binding protein)\u003c/li> \u003cli>D. Collagen → I → It is present in intercellular ground substance\u003c/li> \u003c/ul> \u003cp>Thus, the correct matching is: A-III, B-IV, C-II, D-I\u003c/p> \u003cp>Final Answer: Option A\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Enzymes that catalyse the removal of groups from substrates by mechanisms other than hydrolysis leaving double bonds, are known as :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Transferases</p></span></div><div class="option"><span class="key">b</span><span><p>Oxidoreductases</p></span></div><div class="option"><span class="key">c</span><span><p>Dehydrogenases</p></span></div><div class="option"><span class="key">d</span><span><p>Lyases</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -440,7 +444,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Lyases are a class of enzymes that cleave bonds other than hydrolysis, leaving double bonds in the process. They catalyze reactions where a molecule is split into two parts, often forming a new double bond in one of the fragments\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Lecithin, a small molecular weight organic compound found in living tissues, is an example of:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>carbohydrates.</p></span></div><div class="option"><span class="key">b</span><span><p>amino acids.</p></span></div><div class="option"><span class="key">c</span><span><p>phospholipids.</p></span></div><div class="option"><span class="key">d</span><span><p>glycerides.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -452,7 +456,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Lecithin (also known as phosphatidylcholine) is a phospholipid, a type of lipid molecule that contains both fatty acids and a phosphate group. It is an essential component of cell membranes, contributing to membrane fluidity and structure.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Alpha-helix is found in which level of protein structure?</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Quaternary structure</p></span></div><div class="option"><span class="key">b</span><span><p>Tertiary structure</p></span></div><div class="option"><span class="key">c</span><span><p>Primary structure</p></span></div><div class="option"><span class="key">d</span><span><p>Secondary structure</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -464,7 +468,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Proteins have different levels of structural organisation:\u003c/p> \u003cul> \u003cli>Primary structure: Linear sequence of amino acids linked by peptide bonds.\u003c/li> \u003cli>Secondary structure: Regular folding of the polypeptide chain into structures like α-helix and β-pleated sheet, stabilized by hydrogen bonds.\u003c/li> \u003cli>Tertiary structure: Overall 3D folding of a single polypeptide chain.\u003c/li> \u003cli>Quaternary structure: Association of two or more polypeptide chains.\u003c/li> \u003c/ul> \u003cp>The α-helix is a coiled structure formed due to hydrogen bonding within the polypeptide backbone and is a characteristic feature of the secondary structure.\u003c/p> \u003cp>Answer: Option D (Secondary structure)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Regarding catalytic cycle of an enzyme action, select the correct sequential steps :<br/>A. Substrate enzyme complex formation.<br/>B. Free enzyme ready to bind with another substrate.<br/>C. Release of products.<br/>D. Chemical bonds of the substrate broken.<br/>E. Substrate binding to active site.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E, D, C, A, B</p></span></div><div class="option"><span class="key">b</span><span><p>E, A, D, C, B</p></span></div><div class="option"><span class="key">c</span><span><p>A, E, B, D, C</p></span></div><div class="option"><span class="key">d</span><span><p>B, A, C, D, E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -476,7 +480,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct sequential steps of the catalytic cycle of enzyme action are:\u003c/p> \u003col> \u003cli>\u003cstrong>Substrate binding to active site (v)\u003c/strong> – The substrate attaches to the enzyme’s active site.\u003c/li> \u003cli>\u003cstrong>Substrate-enzyme complex formation (i)\u003c/strong> – The enzyme stabilizes the substrate in the active site.\u003c/li> \u003cli>\u003cstrong>Chemical bonds of the substrate broken (iv)\u003c/strong> – The enzyme catalyzes the reaction, leading to bond breaking or formation.\u003c/li> \u003cli>\u003cstrong>Release of products (iii)\u003c/strong> – The reaction products are released from the enzyme.\u003c/li> \u003cli>\u003cstrong>Free enzyme ready to bind with another substrate (ii)\u003c/strong> – The enzyme returns to its original form to catalyse another reaction.\u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following elements in descending order of their contribution to percentage weight of the human body.</p> <p>(a) Oxygen</p> <p>(b) Carbon</p> <p>(c) Hydrogen</p> <p>(d) Nitrogen</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(a), (b), (c), (d)</p></span></div><div class="option"><span class="key">b</span><span><p>(c), (a), (b), (d)</p></span></div><div class="option"><span class="key">c</span><span><p>(b), (c), (a), (d)</p></span></div><div class="option"><span class="key">d</span><span><p>(b), (a), (c), (d)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -488,7 +492,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>The percentage weight contribution of elements in the human body is:\u003c/p> \u003cul> \u003cli>Oxygen (O) = \u003cstrong>65.0%\u003c/strong>\u003c/li> \u003cli>Carbon (C) = \u003cstrong>18.5%\u003c/strong>\u003c/li> \u003cli>Hydrogen (H) = \u003cstrong>9.5%\u003c/strong>\u003c/li> \u003cli>Nitrogen (N) = \u003cstrong>3.3%\u003c/strong>\u003c/li> \u003c/ul> \u003cp>Arranging them in \u003cstrong>descending order\u003c/strong> (highest to lowest):\u003c/p> \u003cp>\u003cstrong>Oxygen &gt; Carbon &gt; Hydrogen &gt; Nitrogen\u003c/strong>\u003c/p> \u003cp>So the correct sequence is: \u003cstrong>(a), (b), (c), (d)\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Correct Answer: A\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ligases is a class of enzymes responsible for catalysing the linking together of two compounds. Which of the following bonds is not catalysed by it?</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C - C</p></span></div><div class="option"><span class="key">b</span><span><p>P - O</p></span></div><div class="option"><span class="key">c</span><span><p>C - O</p></span></div><div class="option"><span class="key">d</span><span><p>C - N</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -500,7 +504,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Ligases catalyze the formation of bonds between carbon and other atoms like oxygen, nitrogen, sulfur, or phosphorus (C-O, C-N, C-S, C-P). They do not directly catalyze the formation of \u003cstrong>C-C bonds\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following is a nucleotide ?</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Uridine</p></span></div><div class="option"><span class="key">b</span><span><p>Adenylic acid</p></span></div><div class="option"><span class="key">c</span><span><p>Guanine</p></span></div><div class="option"><span class="key">d</span><span><p>Guanosine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -512,7 +516,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer: B — Adenylic acid\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>A \u003cstrong>nucleotide\u003c/strong> = \u003cstrong>nitrogenous base + sugar + phosphate group\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>A \u003cstrong>nucleoside\u003c/strong> = \u003cstrong>nitrogenous base + sugar (no phosphate)\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Adenylic acid\u003c/strong> → \u003cstrong>nucleotide\u003c/strong> (adenine + ribose + phosphate) is correct.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are correct regarding amino acids?<br/>A. They are substituted methanes.<br/>B. Serine is an aromatic amino acid.<br/>C. Valine is a neutral amino acid.<br/>D. Lysine is an acidic amino acid.</p> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D only</p></span></div><div class="option"><span class="key">b</span><span><p>A and B only</p></span></div><div class="option"><span class="key">c</span><span><p>A and C only</p></span></div><div class="option"><span class="key">d</span><span><p>B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -524,7 +528,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli>Statement A: Correct\u003cbr/>Amino acids can be considered as substituted methanes, where the central carbon (α-carbon) is attached to an amino group (–NH₂), a carboxyl group (–COOH), a hydrogen atom, and a variable side chain (R group).\u003c/li> \u003cli>Statement B: Incorrect\u003cbr/>Serine is a polar, uncharged amino acid, not an aromatic one. Aromatic amino acids include phenylalanine, tyrosine, and tryptophan.\u003c/li> \u003cli>Statement C: Correct\u003cbr/>Valine is a neutral (non-polar) amino acid.\u003c/li> \u003cli>Statement D: Incorrect\u003cbr/>Lysine is a basic amino acid, not an acidic one. Acidic amino acids include aspartic acid and glutamic acid.\u003c/li> \u003c/ul> \u003cp>Correct Answer: Option C (A and C only)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II.</p> <table> <tbody> <tr> <td>List-I</td> <td>List-II</td> </tr> <tr> <td>A. Starch</td> <td>I. Fights infection</td> </tr> <tr> <td>B. Antibody</td> <td>II. Energy storage</td> </tr> <tr> <td>C. Concanavalin A</td> <td>III. Glucose transport</td> </tr> <tr> <td>D. Glut-4</td> <td>IV. Lectin</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below:</p> <p> </p> <p>[Re-NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-I, B-II, C-IV, D-III</p></span></div><div class="option"><span class="key">b</span><span><p>A-II, B-I, C-IV, D-III</p></span></div><div class="option"><span class="key">c</span><span><p>A-II, B-I, C-III, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-I, B-II, C-III, D-IV</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -536,7 +540,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Starch serves as the primary polysaccharide for energy storage in plants → II.\u003c/p> \u003cp>An Antibody is an immunological protein designed to fight infections → I.\u003c/p> \u003cp>Concanavalin A is classified chemically as a plant-derived lectin → IV.\u003c/p> \u003cp>Glut-4 is a specialized transmembrane glucose transporter → III.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following enzymes contains 'Haem' as the prosthetic group? </p> <p> </p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Succinate dehydrogenase</p></span></div><div class="option"><span class="key">b</span><span><p>Catalase</p></span></div><div class="option"><span class="key">c</span><span><p>RuBisCo</p></span></div><div class="option"><span class="key">d</span><span><p>Carbonic anhydrase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -548,7 +552,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Catalase\u003c/strong> is an enzyme found in almost all living organisms exposed to oxygen. It helps in breaking down \u003cstrong>hydrogen peroxide (H₂O₂)\u003c/strong>, a harmful byproduct of metabolism, into \u003cstrong>water and oxygen\u003c/strong>.\u003c/p> \u003cp>Catalase contains \u003cstrong>‘haem’ (heme)\u003c/strong> as a \u003cstrong>prosthetic group\u003c/strong>, which means it has an \u003cstrong>iron-containing porphyrin ring\u003c/strong> tightly bound to the enzyme. The haem group is essential for the \u003cstrong>oxidative breakdown\u003c/strong> of hydrogen peroxide.\u003c/p> \u003cp>Other options:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Succinate dehydrogenase\u003c/strong> has FAD as a cofactor.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>RuBisCO\u003c/strong> has magnesium ions.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Carbonic anhydrase\u003c/strong> contains zinc.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Hence, the correct answer is \u003cstrong>Catalase (Option B)\u003c/strong>.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The cofactor of the enzyme carboxypeptidase is:</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Haem</p></span></div><div class="option"><span class="key">b</span><span><p>Zinc</p></span></div><div class="option"><span class="key">c</span><span><p>Niacin</p></span></div><div class="option"><span class="key">d</span><span><p>Flavin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -560,7 +564,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Carboxypeptidase is a \u003cstrong>metalloenzyme\u003c/strong> that requires \u003cstrong>zinc (Zn²⁺)\u003c/strong> as a cofactor for its enzymatic activity.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the correct statements about biomolecules:<br/>A Lipids are generally water soluble．<br/>B. Proteins are polypeptides．<br/>C. Polysaccharides are long chains of sugars．<br/>D. Adenine and guanine are substituted pyrimidines．<br/>E. Almost all enzymes are proteins．<br/>Choose the correct answer from the options given below：</p> <p> </p> <p>[NEET 2026]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C, D and E only </p></span></div><div class="option"><span class="key">b</span><span><p>B, C and E only </p></span></div><div class="option"><span class="key">c</span><span><p>B, D and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -572,7 +576,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>A. Lipids are generally water soluble - Incorrect.\u003c/strong> \u003cbr/>Lipids are hydrophobic and insoluble in water.\u003c/p> \u003cp>\u003cstrong>B. Proteins are polypeptides - Correct.\u003c/strong> \u003cbr/>Proteins are made up of long chains of amino acids linked by peptide bonds.\u003c/p> \u003cp>\u003cstrong>C. Polysaccharides are long chains of sugars - Correct.\u003c/strong> \u003cbr/>They are polymers of monosaccharides (e.g., starch, glycogen, cellulose).\u003c/p> \u003cp>\u003cstrong>D. Adenine and guanine are substituted pyrimidines -Incorrect.\u003c/strong> \u003cbr/>They are purines, not pyrimidines.\u003c/p> \u003cp>\u003cstrong>E. Almost all enzymes are proteins - Correct.\u003c/strong> \u003cbr/>Most enzymes are proteins (except some RNA enzymes called ribozymes).\u003c/p> \u003cp>Correct statements: B, C and E\u003c/p> \u003cp>Final answer: Option B\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Regarding catalytic cycle of an enzyme action, select the correct sequential steps :<br/>A. Substrate enzyme complex formation.<br/>B. Free enzyme ready to bind with another substrate.<br/>C. Release of products.<br/>D. Chemical bonds of the substrate broken.<br/>E. Substrate binding to active site.</p> <p>Choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>E, D, C, A, B</p></span></div><div class="option"><span class="key">b</span><span><p>E, A, D, C, B</p></span></div><div class="option"><span class="key">c</span><span><p>A, E, B, D, C</p></span></div><div class="option"><span class="key">d</span><span><p>B, A, C, D, E</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -584,7 +588,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct sequential steps of the catalytic cycle of enzyme action are:\u003c/p> \u003col> \u003cli>\u003cstrong>Substrate binding to active site (v)\u003c/strong> – The substrate attaches to the enzyme’s active site.\u003c/li> \u003cli>\u003cstrong>Substrate-enzyme complex formation (i)\u003c/strong> – The enzyme stabilizes the substrate in the active site.\u003c/li> \u003cli>\u003cstrong>Chemical bonds of the substrate broken (iv)\u003c/strong> – The enzyme catalyzes the reaction, leading to bond breaking or formation.\u003c/li> \u003cli>\u003cstrong>Release of products (iii)\u003c/strong> – The reaction products are released from the enzyme.\u003c/li> \u003cli>\u003cstrong>Free enzyme ready to bind with another substrate (ii)\u003c/strong> – The enzyme returns to its original form to catalyse another reaction.\u003c/li> \u003c/ol>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the basic amino acid from the following.</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Tyrosine</p></span></div><div class="option"><span class="key">b</span><span><p>Glutamic Acid</p></span></div><div class="option"><span class="key">c</span><span><p>Lysine</p></span></div><div class="option"><span class="key">d</span><span><p>Valine </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -596,7 +600,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Tyrosine\u003c/strong> → aromatic, polar, but not basic.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Glutamic acid\u003c/strong> → acidic amino acid.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Lysine\u003c/strong> → \u003cstrong>basic amino acid\u003c/strong> (has an extra amino group in the side chain).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Valine\u003c/strong> → nonpolar, aliphatic.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Correct answer: \u003cstrong>C. Lysine\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the substances having glycosidic bond and peptide bond, respectively in their structure: </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Glycerol, trypsin </p></span></div><div class="option"><span class="key">b</span><span><p>Cellulose, lecithin</p></span></div><div class="option"><span class="key">c</span><span><p>Inulin, insulin </p></span></div><div class="option"><span class="key">d</span><span><p>Chitin, cholesterol</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -608,7 +612,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Glycosidic bonds are formed between monosaccharides in carbohydrates, such as inulin, which is a polymer of fructose. Peptide bonds are formed between amino acids in proteins, such as insulin. Glycerol does not contain glycosidic bonds, and lecithin is a lipid with ester bonds. Cholesterol is also a lipid and lacks peptide bonds. Hence, only inulin (glycosidic) and insulin (peptide) match correctly. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II</p> <p> &lt;!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}--&gt; </p> <table> <tbody> <tr> <td><strong>List-I</strong></td> <td><strong>List-II</strong></td> </tr> <tr> <td>A.</td> <td>Protein</td> <td>(i)</td> <td>C = C double bonds</td> </tr> <tr> <td>B.</td> <td>Unsaturated fatty<br/>acid</td> <td>(ii)</td> <td>Phosphodiester bonds</td> </tr> <tr> <td>C.</td> <td>Nucleic acid</td> <td>(iii)</td> <td>Glycosidic bonds</td> </tr> <tr> <td>D.</td> <td>Polysaccharide</td> <td>(iv)</td> <td>Peptide bonds</td> </tr> </tbody> </table> <p>Choose the correct answer from the options given below. </p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-i, B-iv, C-iii, D-ii</p></span></div><div class="option"><span class="key">b</span><span><p> A-ii, B-i, C-iv, D-iii</p></span></div><div class="option"><span class="key">c</span><span><p>A-iv, B-iii, C-i, D-ii</p></span></div><div class="option"><span class="key">d</span><span><p> A-iv, B-i, C-ii, D-iii</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -620,7 +624,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cstrong>(4)\u003c/strong>\u003c/p> \u003cp>Proteins are polypeptides. They are linear chains of amino acids linked by peptide bonds.\u003cbr/>Unsaturated fatty acids contain one or more \\(C = C\\) double bonds.\u003cbr/>In a nucleic acid, a phosphate moiety links the 3'-carbon of one sugar of one nucleotide to the \\(5^{\\prime}\\)-carbon of the sugar of the succeeding nucleotide. The bond between the phosphate and hydroxyl group of sugar is an ester bond. As there is one such ester bond on either side, it is called a phosphodiester bond.\u003cbr/>In a polysaccharide, the individual monosaccharides are linked by a glycosidic bond. This bond is also formed by dehydration.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement<em> </em>I</strong> : Low temperature preserves the enzyme in a temporarily inactive state whereas high temperature destroys enzymatic activity because proteins are denatured by heat.<br/><strong>Statement<em> </em>II</strong> : When the inhibitor closely resembles the substrate in its molecular structure and inhibits the activity of the enzyme, it is known as competitive inhibitor.<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both Statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -632,7 +636,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Low temperature preserves the enzyme in a temporarily inactive state whereas high temperature destroys enzymatic activity because proteins are denatured by heat.\u003c/p> \u003cp>When the inhibitor closely resembles the substrate in its molecular structure and inhibits the activity of the enzyme, it is known as competitive inhibitor.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cellulose does not form blue colour with Iodine because</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>It is a helical molecule.</p></span></div><div class="option"><span class="key">b</span><span><p>It does not contain complex helices and hence cannot hold iodine molecules. </p></span></div><div class="option"><span class="key">c</span><span><p>It breaks down when iodine reacts with it.</p></span></div><div class="option"><span class="key">d</span><span><p>It is a disaccharide.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -644,7 +648,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Cellulose is a polysaccharide made of β-glucose units linked by β(1→4) glycosidic bonds, forming straight, unbranched chains. Unlike starch (especially amylose), cellulose does not form a helical structure. Since iodine fits into the helical structure of amylose to give a blue color, the absence of such helices in cellulose means it cannot trap iodine molecules and hence does not give a blue color with iodine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the substances having glycosidic bond and peptide bond, respectively in their structure.</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Chitin, cholesterol</p></span></div><div class="option"><span class="key">b</span><span><p>Glycerol, trypsin</p></span></div><div class="option"><span class="key">c</span><span><p>Cellulose, lecithin</p></span></div><div class="option"><span class="key">d</span><span><p>Inulin, insulin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -656,7 +660,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli> \u003cp>\u003cstrong>Glycosidic bond\u003c/strong> → present in \u003cstrong>polysaccharides\u003c/strong> (carbohydrates).\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Peptide bond\u003c/strong> → present in \u003cstrong>proteins\u003c/strong> (between amino acids).\u003c/p> \u003c/li> \u003c/ul> \u003cp>Checking options:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>A. Chitin, cholesterol\u003c/strong> → Chitin has glycosidic bonds ✅, but cholesterol is a lipid ❌.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>B. Glycerol, trypsin\u003c/strong> → Glycerol has ester bonds ❌, trypsin is a protein ✅.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>C. Cellulose, lecithin\u003c/strong> → Cellulose has glycosidic bonds ✅, lecithin is a phospholipid ❌.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>D. Inulin, insulin\u003c/strong> → Inulin is a polysaccharide (glycosidic bonds) ✅, Insulin is a protein (peptide bonds) ✅.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Correct answer: \u003cstrong>D. Inulin, insulin\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following are the statements with reference to lipids</p> <p>A. Lipids having only single bonds are called unsaturated fatty acids.</p> <p>B. Lecithin is a phospholipid.</p> <p>C. Trihydroxy propane is glycerol.</p> <p>D. Palmitic acid has 20 carbon atoms including carboxyl carbon.</p> <p>E. Arachidonic acid has 16 carbon atoms.</p> <p>Choose the correct answer from the options given below</p> <p> </p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C and D only</p></span></div><div class="option"><span class="key">b</span><span><p>B and C only</p></span></div><div class="option"><span class="key">c</span><span><p>B and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A and B only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -668,7 +672,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Correct answer:\u003c/strong> \u003cstrong>B) B and C only\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cp>A. Lipids having only single bonds are called unsaturated fatty acids. → Incorrect. Fatty acids with only single bonds are saturated, while unsaturated fatty acids have one or more double bonds.\u003c/p> \u003cp>B. Lecithin is a phospholipid. → Correct. Lecithin (phosphatidylcholine) is a well-known phospholipid found in cell membranes.\u003c/p> \u003cp>C. Trihydroxy propane is glycerol. → Correct. Glycerol is indeed propane-1,2,3-triol (trihydroxy propane).\u003c/p> \u003cp>D. Palmitic acid has 20 carbon atoms including carboxyl carbon. → Incorrect. Palmitic acid has 16 carbon atoms (C₁₆H₃₂O₂).\u003c/p> \u003cp>E. Arachidonic acid has 16 carbon atoms. → Incorrect. Arachidonic acid has 20 carbon atoms (C₂₀H₃₂O₂).\u003c/p> \u003cp> Therefore, only statements B and C are correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cellulose does not form blue colour with lodine because</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>It breaks down when iodine reacts with it.</p></span></div><div class="option"><span class="key">b</span><span><p>It is a disaccharide.</p></span></div><div class="option"><span class="key">c</span><span><p>It is a helical molecule.</p></span></div><div class="option"><span class="key">d</span><span><p>It does not contain complex helices and hence cannot hold iodine molecules.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -680,7 +684,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Cellulose does not give a blue colour with iodine because it does not have a helical structure. Starch forms helices that trap iodine molecules, producing a blue colour. Cellulose has a linear structure with hydrogen bonding and cannot trap iodine. Therefore, no colour change occurs. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Secondary metabolites such as nicotine, strychnine and caffeine are produced by plants for their</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Defence action</p></span></div><div class="option"><span class="key">b</span><span><p>Effect on reproduction</p></span></div><div class="option"><span class="key">c</span><span><p>Nutritive value</p></span></div><div class="option"><span class="key">d</span><span><p>Growth response</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -692,7 +696,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cul> \u003cli>Secondary metabolites like nicotine, strychnine, and caffeine are primarily produced by plants for defense against herbivores, pathogens, and other environmental threats.\u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the following.</p> <table> <tbody> <tr> <td><strong>List I</strong></td> <td><strong>List II</strong></td> </tr> <tr> <td>(A) Inhibitor of catalytic activity</td> <td>(i) Ricin</td> </tr> <tr> <td>(B) Possess peptide bonds</td> <td>(ii) Malonate</td> </tr> <tr> <td>(C) Cell wall material in fungi</td> <td>(iii) Chitin</td> </tr> <tr> <td>(D) Secondary metabolite</td> <td>(iv) Collagen</td> </tr> </tbody> </table> <p>Choose the correct option from the following:</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-(ii), B-(iv), C-(iii), D-(i)</p></span></div><div class="option"><span class="key">b</span><span><p>A-(iii), B-(i), C-(iv), D-(ii)</p></span></div><div class="option"><span class="key">c</span><span><p>A-(iii), B-(iv), C-(i), D-(ii)</p></span></div><div class="option"><span class="key">d</span><span><p>A-(ii), B-(iii), C-(i), D-(iv)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -704,7 +708,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(A) Inhibitor of catalytic activity\u003c/strong> → \u003cstrong>(ii) Malonate\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Malonate\u003c/strong> is a \u003cstrong>competitive inhibitor\u003c/strong> of \u003cstrong>succinate dehydrogenase\u003c/strong>, an enzyme in the Krebs cycle.\u003c/p> \u003c/li> \u003cli> \u003cp>It \u003cstrong>inhibits catalytic activity\u003c/strong>, so this pair is correct.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>(B) Possess peptide bonds\u003c/strong> → \u003cstrong>(iv) Collagen\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Collagen\u003c/strong> is a \u003cstrong>protein\u003c/strong>, and proteins are made up of \u003cstrong>amino acids linked by peptide bonds\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Hence, collagen has peptide bonds.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>(C) Cell wall material in fungi\u003c/strong> → \u003cstrong>(iii) Chitin\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Chitin\u003c/strong> is a polysaccharide that forms the \u003cstrong>cell wall in fungi\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>It is analogous to cellulose in plants but contains \u003cstrong>N-acetylglucosamine\u003c/strong> units.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>(D) Secondary metabolite\u003c/strong> → \u003cstrong>(i) Ricin\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Ricin\u003c/strong> is a highly toxic \u003cstrong>secondary metabolite\u003c/strong> produced by the castor bean plant.\u003c/p> \u003c/li> \u003cli> \u003cp>It is not involved in primary metabolism but serves defensive roles.\u003c/p> \u003c/li> \u003c/ul> Final Answer: \u003cstrong>A. A-(ii), B-(iv), C-(iii), D-(i)\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which one of the following is the most abundant protein in the animals?</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Haemoglobin</p></span></div><div class="option"><span class="key">b</span><span><p>Collagen</p></span></div><div class="option"><span class="key">c</span><span><p>Lectin</p></span></div><div class="option"><span class="key">d</span><span><p>Insulin</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -716,7 +720,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Collagen\u003c/strong> is the \u003cstrong>most abundant protein\u003c/strong> in animals, making up about \u003cstrong>25–35%\u003c/strong> of the total protein content in the body. It is a \u003cstrong>structural protein\u003c/strong> that plays a critical role in providing \u003cstrong>strength, flexibility, and support\u003c/strong> to various connective tissues such as \u003cstrong>skin, bones, tendons, ligaments, and cartilage\u003c/strong>.\u003c/p> \u003cp>Collagen molecules form long fibers that are tough and resistant to stretching. There are \u003cstrong>at least 28 types\u003c/strong> of collagen, with \u003cstrong>Type I collagen\u003c/strong> being the most common in mammals.\u003c/p> \u003cp>Let’s look at the other options:\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Haemoglobin\u003c/strong> is a vital \u003cstrong>oxygen-carrying protein\u003c/strong> in red blood cells, but it is not the most abundant overall.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Lectins\u003c/strong> are carbohydrate-binding proteins involved in cell recognition, not very abundant.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Insulin\u003c/strong> is a \u003cstrong>hormone\u003c/strong> secreted in small amounts to regulate blood sugar, hence not abundant.\u003c/p> \u003c/li> \u003c/ul> ✅ Final Answer: \u003cstrong>B. Collagen\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Malonate inhibits the growth of pathogenic bacteria by inhibiting the activity of </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Dinitrogenase</p></span></div><div class="option"><span class="key">b</span><span><p>Succinic dehydrogenase</p></span></div><div class="option"><span class="key">c</span><span><p>Amylase </p></span></div><div class="option"><span class="key">d</span><span><p>Lipase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -728,7 +732,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Malonate inhibits succinic dehydrogenase by acting as a competitive inhibitor. It resembles succinate structurally and binds to the enzyme’s active site. This prevents the actual substrate from binding.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following are <strong>not </strong>secondary metabolites in plants? </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Amino acids, glucose</p></span></div><div class="option"><span class="key">b</span><span><p>Vinblastin, curcumin</p></span></div><div class="option"><span class="key">c</span><span><p>Rubber, gums</p></span></div><div class="option"><span class="key">d</span><span><p>Morphine, codeine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -740,7 +744,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Amino acids, glucose are not secondary metabolites rather they are the examples of primary metabolites. Rest all other belongs to secondary metabolites.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I</strong> : A protein is imagined as a line, the left end represented by first amino acid (C-terminal) and the right end represented by last amino acid (N-terminal).<br/><strong>Statement II</strong> : Adult human haemoglobin, consists of 4 subunits (two subunits of \(\alpha\)-type and two subunits \(\beta\)-type.)<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -752,7 +756,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Statement I is false because the first amino acid represents the N-terminal, and the last amino acid represents the C-terminal in a protein.\u003cbr/>Statement II is true as adult human hemoglobin consists of 4 subunits (2 alpha and 2 beta).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match the following.</p> <table> <tbody> <tr> <td>(A) Inhibitor of catalytic activity</td> <td>(i) Ricin</td> </tr> <tr> <td>(B) Possess peptide bonds</td> <td>(ii) Malonate</td> </tr> <tr> <td>(C) Cell wall material in fungi</td> <td>(iii) Chitin</td> </tr> <tr> <td>(D) Secondary metabolite</td> <td>(iv) Collagen</td> </tr> </tbody> </table> <p>Choose the correct option from the following:</p> <p> </p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-(ii), B-(iv), C-(iii), D-(i)</p></span></div><div class="option"><span class="key">b</span><span><p>A-(iii).B-(i), C-(iv), D-(ii)</p></span></div><div class="option"><span class="key">c</span><span><p>A-(iii), B-(iv), C-(i), D-(ii)</p></span></div><div class="option"><span class="key">d</span><span><p>A-(ii), B-(iii), C-(i), D-(iv)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -764,7 +768,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\u003cstrong>(A) Inhibitor of catalytic activity\u003c/strong> → \u003cstrong>(ii) Malonate\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Malonate\u003c/strong> is a \u003cstrong>competitive inhibitor\u003c/strong> of \u003cstrong>succinate dehydrogenase\u003c/strong>, an enzyme in the Krebs cycle.\u003c/p> \u003c/li> \u003cli> \u003cp>It \u003cstrong>inhibits catalytic activity\u003c/strong>, so this pair is correct.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>(B) Possess peptide bonds\u003c/strong> → \u003cstrong>(iv) Collagen\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Collagen\u003c/strong> is a \u003cstrong>protein\u003c/strong>, and proteins are made up of \u003cstrong>amino acids linked by peptide bonds\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Hence, collagen has peptide bonds.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>(C) Cell wall material in fungi\u003c/strong> → \u003cstrong>(iii) Chitin\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Chitin\u003c/strong> is a polysaccharide that forms the \u003cstrong>cell wall in fungi\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>It is analogous to cellulose in plants but contains \u003cstrong>N-acetylglucosamine\u003c/strong> units.\u003c/p> \u003c/li> \u003c/ul> \u003cp>\u003cstrong>(D) Secondary metabolite\u003c/strong> → \u003cstrong>(i) Ricin\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Ricin\u003c/strong> is a highly toxic \u003cstrong>secondary metabolite\u003c/strong> produced by the castor bean plant.\u003c/p> \u003c/li> \u003cli> \u003cp>It is not involved in primary metabolism but serves defensive roles.\u003c/p> \u003c/li> \u003c/ul> ✅ Final Answer: \u003cstrong>A. A-(ii), B-(iv), C-(iii), D-(i)\u003c/strong>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A non-proteinaceous enzyme is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>lysozyme</p></span></div><div class="option"><span class="key">b</span><span><p>ribozyme</p></span></div><div class="option"><span class="key">c</span><span><p>ligase</p></span></div><div class="option"><span class="key">d</span><span><p>deoxyribonuclease.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -776,7 +780,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cstrong>Ribozymes\u003c/strong> are \u003cstrong>non-proteinaceous enzymes\u003c/strong> made of \u003cstrong>RNA molecules\u003c/strong> that can catalyze specific biochemical reactions, similar to protein enzymes. They were first discovered in self-splicing RNA of \u003cem>Tetrahymena\u003c/em>. Ribozymes catalyze reactions like \u003cstrong>RNA splicing, cleavage, and ligation\u003c/strong>, proving that RNA can act both as \u003cstrong>genetic material\u003c/strong> and as a \u003cstrong>catalyst\u003c/strong>—supporting the \u003cstrong>RNA world hypothesis\u003c/strong>.\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Lysozyme\u003c/strong>, \u003cstrong>ligase\u003c/strong>, and \u003cstrong>deoxyribonuclease\u003c/strong> are all \u003cstrong>proteinaceous enzymes\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Lysozyme\u003c/strong> breaks down bacterial cell walls.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Ligase\u003c/strong> joins DNA strands.\u003c/p> \u003c/li> \u003cli> \u003cp>\u003cstrong>Deoxyribonuclease (DNase)\u003c/strong> breaks down DNA.\u003c/p> \u003c/li> \u003c/ul> \u003cp>Thus, \u003cstrong>ribozyme\u003c/strong> is the only non-protein enzyme among the options.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the polynucleotide chain of DNA, a nitrogenous base is linked to the \( -\mathrm{OH} \) of</p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2'C pentose sugar </p></span></div><div class="option"><span class="key">b</span><span><p>5'C pentose sugar</p></span></div><div class="option"><span class="key">c</span><span><p>3'C pentose sugar</p></span></div><div class="option"><span class="key">d</span><span><p>\( 1^{\prime} \mathrm{C} \) pentose sugar</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -788,7 +792,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>In a polynucleotide chain of DNA, each nitrogenous base (adenine, thymine, guanine, or cytosine) is attached to the \u003cstrong>1′ carbon (1′C)\u003c/strong> of the \u003cstrong>deoxyribose sugar\u003c/strong>. This linkage forms a \u003cstrong>nucleoside\u003c/strong> through a \u003cstrong>β-N-glycosidic bond\u003c/strong> between the nitrogen atom of the base and the hydroxyl group on the 1′C of the sugar. The sugar then connects to phosphate groups at the \u003cstrong>5′ and 3′ positions\u003c/strong>, forming the sugar-phosphate backbone. The specific attachment at 1′C is crucial for correct base pairing and the double helix structure of DNA, ensuring proper storage and transmission of genetic information.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement I</strong> : A protein is imagined as a line, the left end represented by first amino acid (C-terminal) and the right end represented by last amino acid (N-terminal).<br/><strong>Statement II</strong> : Adult human haemoglobin, consists of 4 subunits (two subunits of \(\alpha\) type and two subunits \(\beta\) type.)<br/>In the light of the above statements, choose the correct answer from the options given below :</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both statement I and Statement II are false.</p></span></div><div class="option"><span class="key">b</span><span><p>Statement I is true but Statement II is false.</p></span></div><div class="option"><span class="key">c</span><span><p>Statement I is false but Statement II is true.</p></span></div><div class="option"><span class="key">d</span><span><p>Both statement I and Statement II are true.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -800,7 +804,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Statement I is false because the first amino acid represents the N-terminal, and the last amino acid represents the C-terminal in a protein.\u003cbr/>Statement II is true as adult human hemoglobin consists of 4 subunits (2 alpha and 2 beta).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the statement which is incorrect. </p> <p> </p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Glycine is an example of lipids</p></span></div><div class="option"><span class="key">b</span><span><p>Lecithin contains phosphorus atom in its structure</p></span></div><div class="option"><span class="key">c</span><span><p>Tyrosine possesses aromatic ring in its structure</p></span></div><div class="option"><span class="key">d</span><span><p>Sulphur is an integral part of cysteine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -812,7 +816,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Glycine is an example of amino acids. It is the simplest amino acid with hydrogen as R-group.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Cellulose does <strong>not </strong>form blue colour with Iodine because:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>It is a helical molecule.</p></span></div><div class="option"><span class="key">b</span><span><p>It does not contain complex helices and hence cannot hold iodine molecules. </p></span></div><div class="option"><span class="key">c</span><span><p>It breakes down when iodine reacts with it.</p></span></div><div class="option"><span class="key">d</span><span><p>It is a disaccharide.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -824,7 +828,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Cellulose is a polysaccharide made of β-glucose units linked by β(1→4) glycosidic bonds, forming straight, unbranched chains. Unlike starch (especially amylose), cellulose does not form a helical structure. Since iodine fits into the helical structure of amylose to give a blue color, the absence of such helices in cellulose means it cannot trap iodine molecules and hence does not give a blue color with iodine.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Following are the statements with reference to 'lipids'.<br/>A. Lipids having only single bonds are called unsaturated fatty acids.<br/>B. Lecithin is a phospholipid.<br/>C. Trihydroxy propane is glycerol.<br/>D.Palmitic acid has 20 carbon atoms including carboxyl carbon.<br/>E. Arachidonic acid has 16 carbon atoms.</p> <p>Choose the correct answer from the options given below.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>C &amp; D only</p></span></div><div class="option"><span class="key">b</span><span><p>B &amp; C only</p></span></div><div class="option"><span class="key">c</span><span><p>B &amp; E only</p></span></div><div class="option"><span class="key">d</span><span><p>A &amp; B only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -836,7 +840,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement A is incorrect because saturated fatty acids have only single bonds. Statement B is correct as lecithin is a phospholipid. Statement C is correct since glycerol is trihydroxy propane. Statement D is incorrect as palmitic acid has 16 carbons, not 20. Statement E is incorrect as arachidonic acid has 20 carbons, not 16. Thus, only B and C are correct. Hence, option (b) is correct.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List-I with List-II:</p> <table> <tbody> <tr> <td><strong>List-I</strong></td> <td><strong>List-II</strong></td> </tr> <tr> <td>A.</td> <td>Primary strucute</td> <td>I.</td> <td>Human haemoglobin</td> </tr> <tr> <td>B.</td> <td>Secondary structure</td> <td>II.</td> <td>Disulphide bonds of protein</td> </tr> <tr> <td>C.</td> <td>Tertiary structure</td> <td>III.</td> <td>Polypeptidechain of protein</td> </tr> <tr> <td>D.</td> <td>Quaternary</td> <td>IV.</td> <td>Alpha helix and \(\beta\) structure of protein sheeet</td> </tr> </tbody> </table> <p>Choose the <strong>correct</strong> answer from the options given below :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A-III, B-IV, C-II, D-I.</p></span></div><div class="option"><span class="key">b</span><span><p>A-III, B-II, C-I, D-IV</p></span></div><div class="option"><span class="key">c</span><span><p>A-I, B-III, C-II, D-IV</p></span></div><div class="option"><span class="key">d</span><span><p>A-IV, B-III, C-II, D-I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -848,7 +852,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003ctable> \u003ctbody> \u003ctr> \u003ctd> \u003cp>\u003cstrong>List-I\u003c/strong>\u003c/p> \u003c/td> \u003ctd> \u003cp>\u003cstrong>List-II\u003c/strong>\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>A\u003c/p> \u003c/td> \u003ctd> \u003cp>Primary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>I\u003c/p> \u003c/td> \u003ctd> \u003cp>Polypeptide chain of protein\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>B\u003c/p> \u003c/td> \u003ctd> \u003cp>Secondary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>II\u003c/p> \u003c/td> \u003ctd> \u003cp>Alpha helix and β structure of protein sheet\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>C\u003c/p> \u003c/td> \u003ctd> \u003cp>Tertiary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>III\u003c/p> \u003c/td> \u003ctd> \u003cp>Disulphide bonds of protein\u003c/p> \u003c/td> \u003c/tr> \u003ctr> \u003ctd> \u003cp>D\u003c/p> \u003c/td> \u003ctd> \u003cp>Quaternary structure\u003c/p> \u003c/td> \u003ctd> \u003cp>IV\u003c/p> \u003c/td> \u003ctd> \u003cp>Human haemoglobin\u003c/p> \u003c/td> \u003c/tr> \u003c/tbody> \u003c/table> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements:</p> <p>Statement I: Low temperature preserves the enzyme in a temporarily inactive state whereas high temperature destroys enzymatic activity because proteins are denatured by heat.<br/>Statement II: When the inhibitor closely resembles the substrate in its molecular structure and inhibits the activity of the enzyme, it is known as competitive inhibitor.<br/>In the light of the above statements, choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is false but statement II is true.</p></span></div><div class="option"><span class="key">b</span><span><p>Both Statement I and Statement II are true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are false.</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is true but Statement II is false.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -860,7 +864,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Statement I is correct as low temperature makes enzymes inactive temporarily, while high temperature denatures them. Statement II is also correct as competitive inhibitors resemble substrates and bind to active sites. \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Secondary metabolites such as nicotine, strychnine and caffeine are produced by plants for their</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>nutritive value</p></span></div><div class="option"><span class="key">b</span><span><p>growth response</p></span></div><div class="option"><span class="key">c</span><span><p>defence action</p></span></div><div class="option"><span class="key">d</span><span><p>effect on reproduction.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -872,7 +876,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(3)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect pair.<br/><br/>[NEET 2021]<br/></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Toxin - Abrin</p></span></div><div class="option"><span class="key">b</span><span><p>Lectins - Concanavalin A</p></span></div><div class="option"><span class="key">c</span><span><p>Drugs - Ricin</p></span></div><div class="option"><span class="key">d</span><span><p>Alkaloids - Codeine</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -884,7 +888,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Ricin and abrinare toxins. Vinblastin and curcumin are drugs.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Malonate inhibits the growth of pathogenic bacteria by inhibiting the activity of</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Amylase</p></span></div><div class="option"><span class="key">b</span><span><p>Lipase</p></span></div><div class="option"><span class="key">c</span><span><p>Dinitrogenase</p></span></div><div class="option"><span class="key">d</span><span><p>Succinic dehydrogenase</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -896,7 +900,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Malonate inhibits the growth of pathogenic bacteria by acting as a competitive inhibitor of succinic dehydrogenase, an important enzyme in the Krebs cycle (citric acid cycle). This enzyme catalyzes the oxidation of succinate to fumarate, and its inhibition disrupts ATP production and energy metabolism in bacteria. As a result, bacterial growth is suppressed due to energy shortage, making malonate an effective metabolic inhibitor.\u003cstrong> \u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Most abundant organic compound on Earth is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>protein</p></span></div><div class="option"><span class="key">b</span><span><p>cellulose</p></span></div><div class="option"><span class="key">c</span><span><p>lipids</p></span></div><div class="option"><span class="key">d</span><span><p>steroids</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -908,7 +912,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The correct answer is: \u003cstrong>B — Cellulose\u003c/strong>\u003c/p> \u003cp>\u003cstrong>Explanation:\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>\u003cstrong>Cellulose\u003c/strong> is the most abundant organic compound on Earth.\u003c/p> \u003c/li> \u003cli> \u003cp>It is a \u003cstrong>polysaccharide\u003c/strong> composed of β-glucose units and forms the structural component of plant cell walls.\u003c/p> \u003c/li> \u003cli> \u003cp>Proteins, lipids, and steroids are abundant but not as widespread as cellulose.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Choose the <strong>correct</strong> pair from the following.</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Ligases - Join the two DNA molecules</p></span></div><div class="option"><span class="key">b</span><span><p>Polymerases - Break the DNA into fragments</p></span></div><div class="option"><span class="key">c</span><span><p>Nucleases - Separate the two strands of DNA</p></span></div><div class="option"><span class="key">d</span><span><p>Exonucleases - Make cuts at specific positions within DNA</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"JEE","item":"https://yespyq.com/exams/jee/"},{"@type":"ListItem","position":4,"name":"Maths","item":"https://yespyq.com/exams/jee/maths/"},{"@type":"ListItem","position":5,"name":"Statistics","item":"https://yespyq.com/exams/jee/maths/statistics/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Statistics</h1>
       <p>83 JEE Maths previous year questions on <b>Statistics</b> — options free on every question; <b>8 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean deviation about the median of the numbers \(k, 2 k, 3 k, \ldots, 1000 k\) is \(500\), then \(k^2\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(9\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and variance of 8 numbers \(-10,-7,-1,x,y,9,2,16\) be \(\frac{7}{2}\) and \(\frac{293}{4}\), respectively. Then the mean of 4 numbers \(x,y,x+y+1,|x-y|\) is:</p> <p> </p> <p>[JEE Main 2026, 23 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(11\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(12\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of a data of \(10\) observations are \(10\) and \(2\) , respectively. If an observations \(\alpha\) in this data is replaced by \(\beta\), then the means and variance becomes \(10.1\) and \(1.99\), respectively. Then \(\alpha+\beta\) equals</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(15\)</p></span></div><div class="option correct"><span class="key">c</span><span><p>\(20\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(5\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4">
-      <div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q4 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For \(10\) observations \({x}_{1},{x}_{2},\ldots ,{x}_{10}\), if \(\sum _{i=1}^{10}{\left({x}_{i}+2\right)}^{2}=180\) and \(\sum _{i=1}^{10}{\left({x}_{i}-1\right)}^{2}=90\), then their standard deviation is:</p> <p> </p> <p>[JEE Main 2026, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\sqrt{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\sqrt{2}\)</p></span></div><div class="option correct"><span class="key">d</span><span><p>\(3\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -113,7 +117,7 @@
       </div>
     </div>
     <div class="qblock" id="q5">
-      <div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q5 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and the variance of seven observations \(2,4, \alpha, 8, \beta,12,14, \alpha&lt;\beta\), be \(8\) and \(16\) respectively. Then the quadratic equation whose roots are \(3 \alpha+2\) and \(2 \beta+1\) is:</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({x}^{2}-35x+306=0\)</p></span></div><div class="option correct"><span class="key">b</span><span><p>\({x}^{2}-41x+420=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({x}^{2}-45x+506=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({x}^{2}-37x+342=0\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -122,7 +126,7 @@
       </div>
     </div>
     <div class="qblock" id="q6">
-      <div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q6 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the variance of the frequency distribution<br/>\(\begin{matrix}x & c & 2c & 3c & 4c & 5c & 6c \\ f & 2 & 1 & 1 & 1 & 1 & 1\end{matrix}\)<br/>is 160 , then the value of \(c\in N\) is</p> <p> </p> <p>[JEE Main 2024, 09 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option correct"><span class="key">d</span><span><p>7</p></span></div></div>
       <div class="explain" data-exp>
@@ -131,7 +135,7 @@
       </div>
     </div>
     <div class="qblock" id="q7">
-      <div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q7 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the variance of the frequency distribution<br/>\(\begin{matrix}x & c & 2c & 3c & 4c & 5c & 6c \\ f & 2 & 1 & 1 & 1 & 1 & 1\end{matrix}\)<br/>is 160 , then the value of \(c\in N\) is</p> <p> </p> <p>[JEE Main 2024, 09 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option correct"><span class="key">d</span><span><p>7</p></span></div></div>
       <div class="explain" data-exp>
@@ -140,7 +144,7 @@
       </div>
     </div>
     <div class="qblock" id="q8">
-      <div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q8 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean of 10 observations is 5.5. If each observation is multiplied by 4 and subtracted from 44, then what is the new mean?</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>20</p></span></div><div class="option correct"><span class="key">b</span><span><p>22</p></span></div><div class="option"><span class="key">c</span><span><p>34</p></span></div><div class="option"><span class="key">d</span><span><p>44</p></span></div></div>
       <div class="explain" data-exp>
@@ -149,7 +153,7 @@
       </div>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a statistical data \({x}_{1},{x}_{2},\ldots ,{x}_{10}\) of 10 values, a student obtained the mean as \(5.5\) and \(\sum _{i=1}^{10}{x}_{i}^{2}=371.\) He later found that he had noted two values in the data incorrectly as 4 and 5, instead of the correct values 6 and 8, respectively. The variance of the corrected data is</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>9</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -158,10 +162,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given,\u003cbr/>Number of terms \\(=10\\)\u003cbr/>Mean \\(=5.5\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{10} x_i^2=371\\)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\mu=\\frac{\\sum_{i=1}^{10} \\mathrm{x}_{\\mathrm{i}}}{n} \\\\ &amp; 5.5=\\frac{\\sum_{i=1}^{10} \\mathrm{x}_{\\mathrm{i}}}{10} \\\\ &amp; \\sum_{i=1}^{10} \\mathrm{x}_{\\mathrm{i}}=55\\end{aligned}\\)\u003c/p> \u003cp>Corrected \\(\\sum^{10} x_i=55-(4+5)+(6+8)=60\\)\u003c/p> \u003cp>Corrected Mean \\(\\mu=\\frac{60}{10}=6\\)\u003c/p> \u003cp>Corrected \\(\\sum_{i=1}^{10} x_i^2=371-\\left(4^2+5^2\\right)+\\left(6^2+8^2\\right)=430\\)\u003c/p> \u003cp>Now, corrected variance \\(=\\frac{1}{n} \\text { Corrected } \\sum_{i=1}^{10} x_i^2-(\\text { Corrected Mean } \\mu)^2\\)\u003c/p> \u003cp>\\(=\\frac{1}{10} \\times 430-(6)^2=43-36=7\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given,\u003cbr/>Number of terms \\(=10\\)\u003cbr/>Mean \\(=5.5\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{10} x_i^2=371\\)\u003c/p> \u003cp>\\(\\begin{aligned} & \\mu=\\frac{\\sum_{i=1}^{10} \\mathrm{x}_{\\mathrm{i}}}{n} \\\\ & 5.5=\\frac{\\sum_{i=1}^{10} \\mathrm{x}_{\\mathrm{i}}}{10} \\\\ & \\sum_{i=1}^{10} \\mathrm{x}_{\\mathrm{i}}=55\\end{aligned}\\)\u003c/p> \u003cp>Corrected \\(\\sum^{10} x_i=55-(4+5)+(6+8)=60\\)\u003c/p> \u003cp>Corrected Mean \\(\\mu=\\frac{60}{10}=6\\)\u003c/p> \u003cp>Corrected \\(\\sum_{i=1}^{10} x_i^2=371-\\left(4^2+5^2\\right)+\\left(6^2+8^2\\right)=430\\)\u003c/p> \u003cp>Now, corrected variance \\(=\\frac{1}{n} \\text { Corrected } \\sum_{i=1}^{10} x_i^2-(\\text { Corrected Mean } \\mu)^2\\)\u003c/p> \u003cp>\\(=\\frac{1}{10} \\times 430-(6)^2=43-36=7\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>10 is the mean of a set of 7 observations and 5 is the mean of a set of 3 observations. The mean of the combined set is given by</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>15</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>8.5</p></span></div><div class="option"><span class="key">d</span><span><p>7.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -173,7 +177,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({x}_{1}=10,{\\omega }_{1}=7,{x}_{2}=5,{\\omega }_{2}=3\\\\ x=\\frac{{x}_{1}{\\omega }_{1}+{\\overset{¯}{x}}_{2}{\\omega }_{2}}{{\\omega }_{1}+{\\omega }_{2}}=\\frac{10\\times 7+5\\times 3}{7+3}=\\frac{85}{10}=8.5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the Mean and Variance of five observations \({\mathrm{x}}_{1}=1,{\mathrm{x}}_{2}=3,{\mathrm{x}}_{3}=\mathrm{a},{\mathrm{x}}_{4}=7\) and \({\mathrm{x}}_{5}=\mathrm{b},\mathrm{a}>\mathrm{b}\), be \(5\) and \(10\) respectively. Then the Variance of the observations \(\mathrm{n}+{\mathrm{x}}_{\mathrm{n}},\mathrm{n}=1,2,\ldots \ldots ..5\) is</p> <p> </p> <p>[JEE Main 2025, 3 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(17\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(16.4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(17.4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(16\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -185,7 +189,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(\\frac{1+3+a+7+b}{5}=5\\text{  }⟹\\text{  }11+a+b=25\\text{  }⟹\\text{  }a+b=14\\)\u003c/p> \u003cp> \\(\\frac{1}{5}\\sum ({x}_{i}−5{)}^{2}=10\\text{  }⟹\\text{  }\\sum ({x}_{i}−5{)}^{2}=50\\)\u003c/p> \u003cp> \\(74+({a}^{2}+{b}^{2})−10(a+b)=50\\)\u003c/p> \u003cp>Substitute \\(a+b=14\\)\u003c/p> \u003cp> \\({a}^{2}+{b}^{2}=116\\)\u003c/p> \u003cp>\\(a=10,b=4\\).\u003c/p> \u003cp>Mean of \\({y}_{n}=\\frac{2+5+13+11+9}{5}=8\\)\u003c/p> \u003cp>Variance \\(=\\frac{1}{5}\\sum {y}_{n}^{2}−(\\overset{ˉ}{y}{)}^{2}\\)\u003c/p> \u003cp>\\(\\sum {y}_{n}^{2}={2}^{2}+{5}^{2}+{13}^{2}+{11}^{2}+{9}^{2}=400\\)\u003c/p> \u003cp>Variance \\(=\\frac{400}{5}−{8}^{2}=80−64=16\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(a_1, a_2, \ldots a_{10}\) be 10 observations such that \(\sum_{k=1}^{10} a_k=50\) and \(\sum _{\forall k<j}{a}_{k}\cdot {a}_{j}=1100\). Then the standard deviation of \(a_1, a_2, \ldots, a_{10}\) is equal to :</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{115}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -197,7 +201,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given \\(a_1+a_2+\\cdots+a_{10}=50\\)\u003c/p> \u003cp>\\(\\left(a_1+a_2+\\ldots+a_{10}\\right)^2=2500\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{10} a_i^2+2 \\sum_{\\forall k&lt;j} a_k \\cdot a_j=2500\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{10} a_i^2=2500-2(1100)=300\\)\u003c/p> \u003cp>Standard Deviation \\(=\\sqrt{\\frac{\\sum a_k^2}{10}-\\left(\\frac{\\sum a_k}{10}\\right)^2} \\)\u003cbr/>Standard Deviation \\(=\\sqrt{\\frac{300}{10}-\\left(\\frac{50}{10}\\right)^2}=\\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(a_1, a_2, \ldots a_{10}\) be 10 observations such that \(\sum_{k=1}^{10} a_k=50\) and \(\sum _{\forall k<j}{a}_{k}\cdot {a}_{j}=1100\). Then the standard deviation of \(a_1, a_2, \ldots, a_{10}\) is equal to :</p> <p> </p> <p>[JEE Main 2024, 27 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\sqrt{115}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -209,7 +213,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given \\(a_1+a_2+\\cdots+a_{10}=50\\)\u003c/p> \u003cp>\\(\\left(a_1+a_2+\\ldots+a_{10}\\right)^2=2500\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{10} a_i^2+2 \\sum_{\\forall k&lt;j} a_k \\cdot a_j=2500\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{10} a_i^2=2500-2(1100)=300\\)\u003c/p> \u003cp>Standard Deviation \\(=\\sqrt{\\frac{\\sum a_k^2}{10}-\\left(\\frac{\\sum a_k}{10}\\right)^2} \\)\u003cbr/>Standard Deviation \\(=\\sqrt{\\frac{300}{10}-\\left(\\frac{50}{10}\\right)^2}=\\sqrt{5}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Marks obtains by all the students of class \(12\) are presented in a frequency distribution with classes of equal width. Let the median of this grouped data be \(14\) with median class interval \(12-18\) and median class frequency \(12.\) If the number of students whose marks are less than \(12\) is \(18,\) then the total number of students is</p> <p> </p> <p>[JEE Main 2025, 23 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>48</p></span></div><div class="option"><span class="key">b</span><span><p>44</p></span></div><div class="option"><span class="key">c</span><span><p>40</p></span></div><div class="option"><span class="key">d</span><span><p>52</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,7 +225,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\text{Given, lower limit }ℓ\\text{ =12}\\\\ \\text{frequency f = 12}\\\\ \\text{frequency less than 12  F= 18}\\\\ \\text{class height = 18-12=6}\\\\ \\text{median =14}\\\\ \\text{Now, }\\\\ \\text{ medain =ℓ+}\\left(\\frac{\\frac{\\mathrm{N}}{2}-\\mathrm{F}}{\\mathrm{f}}\\right)\\times \\mathrm{h}\\\\ 14=12+\\left(\\frac{\\frac{\\mathrm{N}}{2}-18}{12}\\right)\\times 6\\\\ \\frac{14-12}{6}=\\left(\\frac{\\frac{\\mathrm{N}}{2}-18}{12}\\right)\\\\ 4=\\frac{\\mathrm{N}}{2}-18\\\\ \\mathrm{N}=44\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the variance of the data \(2,3,5,8,12\) is \(\sigma^2\) and the mean deviation from the median for this data is \(M\), then \(\sigma^2-M\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10.2</p></span></div><div class="option"><span class="key">b</span><span><p>5.8</p></span></div><div class="option"><span class="key">c</span><span><p>10.6</p></span></div><div class="option"><span class="key">d</span><span><p>8.2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -233,7 +237,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\sigma }^{2}=\\frac{\\sum {x}^{2}}{n}-{\\left(\\frac{\\sum x}{n}\\right)}^{2}\\\\ \\Rightarrow {\\sigma }^{2}=\\frac{{2}^{2}+{3}^{2}+{5}^{2}+{8}^{2}+{12}^{2}}{5}-{\\left(\\frac{2+3+5+8+12}{5}\\right)}^{2}\\\\ \\Rightarrow {\\sigma }^{2}=13.2\\)\u003c/p> \u003cp>Data 2, 3, 5, 8, 12\u003cbr/>Median = 5\u003cbr/>Mean deviation from the median \u003c/p> \u003cp>\\(M=\\frac{\\sum \\left|x-\\mathrm{Median}\\right|}{n}=\\frac{3+2+0+3+7}{5}\\\\ M=\\frac{15}{5}=3\\\\ {\\sigma }^{2}-\\mathrm{M}=10.2\\\\\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A data consists of \(20\) observations \({x}_{1},{x}_{2},\ldots ,{x}_{20}\). If \(\sum _{i=1}^{20}{\left({x}_{i}+5\right)}^{2}=2500\) and \(\sum _{i=1}^{20}{\left({x}_{i}-5\right)}^{2}=100\), then the ratio of mean to standard deviation of this data is:</p> <p> </p> <p>[JEE Main 2026, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(2:1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(3:1\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(3:2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(4:1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -245,7 +249,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let the mean of the \\(20\\) observations be \\(\\bar{x}\\) and the standard deviation be \\(\\sigma\\).\u003c/p> \u003cp>\\(\\sum_{i=1}^{20}\\left(x_i+5\\right)^2=2500\\)\\(\\ldots(1)\\)\u003c/p> \u003cp>\\(\\sum_{i=1}^{20}\\left(x_i-5\\right)^2=100\\)\\(\\ldots(2)\\)\u003c/p> \u003cp>\\((1)-(2)\\)\u003c/p> \u003cp>\\(\\Rightarrow 20 \\sum x_i=2400 \\Rightarrow \\sum x_i=120\\)\u003c/p> \u003cp>mean, \\(\\bar{x}=6\\)\u003c/p> \u003cp>\\((1)+(2)\\)\u003c/p> \u003cp>\\(\\Rightarrow 2 \\sum x_{i}^2+40\\left(5^2\\right)=2600\\)\u003c/p> \u003cp>\\(\\sum x_i^2=800\\)\u003c/p> \u003cp>\\(\\sigma^2=\\frac{\\sum x_{i}^2}{\\mathrm{n}}-(\\bar{x})^2=\\frac{800}{20}-36=4\\)\u003c/p> \u003cp>\\(\\bar{x}: \\sigma=6: 2=3: 1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Marks obtains by all the students of class \(12\) are presented in a frequency distribution with classes of equal width. Let the median of this grouped data be \(14\) with median class interval \(12-18\) and median class frequency \(12.\) If the number of students whose marks are less than \(12\) is \(18,\) then the total number of students is</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>48</p></span></div><div class="option"><span class="key">b</span><span><p>44</p></span></div><div class="option"><span class="key">c</span><span><p>40</p></span></div><div class="option"><span class="key">d</span><span><p>52</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -257,7 +261,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Given, lower limit \\(\\ell=12\\)\u003cbr/>frequency \\(\\mathrm{f}=12\\)\u003cbr/>frequency less than \\(12 \\mathrm{~F}=18\\)\u003cbr/>class height \\(=18-12=6\\)\u003cbr/>median \\(=14\\)\u003cbr/>Now,\u003c/p> \u003cp>Median\u003c/p> \u003cp>\\(M=ℓ+\\left(\\frac{\\frac{\\mathrm{N}}{2}-\\mathrm{F}}{\\mathrm{f}}\\right)\\times \\mathrm{h}\\\\ 14=12+\\left(\\frac{\\frac{\\mathrm{N}}{2}-18}{12}\\right)\\times 6\\\\ \\frac{14-12}{6}=\\left(\\frac{\\frac{\\mathrm{N}}{2}-18}{12}\\right)\\\\ 4=\\frac{\\mathrm{N}}{2}-18\\\\ \\mathrm{N}=44\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a distribution of 10 observations, \(\sum_{i=1}^{10} x_i=55\) and \(\sum_{i=1}^{10} x_i^2=328\) If the observations 4 and 5 are replaced by 6 and 8 respectively, then the new variance is </p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2.5</p></span></div><div class="option"><span class="key">b</span><span><p>2.7</p></span></div><div class="option"><span class="key">c</span><span><p>3.4</p></span></div><div class="option"><span class="key">d</span><span><p>3.6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -266,10 +270,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\sum x=55-4-5+6+8=60 \\\\\u003cbr/>&amp; \\sum x^2=328-16-25+36+64=387 \\\\\u003cbr/>&amp; \\bar{x}=6 \\\\\u003cbr/>&amp; \\sigma^2=\\frac{387}{10}-6^2=38.7-36=2.7\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& \\sum x=55-4-5+6+8=60 \\\\& \\sum x^2=328-16-25+36+64=387 \\\\& \\bar{x}=6 \\\\& \\sigma^2=\\frac{387}{10}-6^2=38.7-36=2.7\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \({\mathrm{x}}_{1},{\mathrm{x}}_{2},\ldots \ldots {\mathrm{x}}_{10}\) be ten observations such that \(\sum _{i=1}^{10}\left({x}_{i}-2\right)=30,\sum _{i=1}^{10}{\left({x}_{i}-\beta \right)}^{2}=98,\beta >2\) and their variance is \(\frac{4}{5}\). If \(\mu\) and \({\sigma }^{2}\) are respectively the mean and the variance of \(2\left({x}_{1}-1\right)+4\beta ,2\left({x}_{2}-1\right)+4\beta ,\)\(\ldots ..,2\left({x}_{10}-1\right)+4\beta ,\) then \(\frac{\beta \mu }{{\sigma }^{2}}\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>100</p></span></div><div class="option"><span class="key">b</span><span><p>110</p></span></div><div class="option"><span class="key">c</span><span><p>120</p></span></div><div class="option"><span class="key">d</span><span><p>90</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -281,7 +285,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{Consider}\\sum _{i=1}^{10}\\left({x}_{i}-2\\right)=30\\\\ \\Rightarrow \\sum _{i=1}^{10}{x}_{i}-2\\times 10=30\\\\ \\Rightarrow \\sum _{i=1}^{10}{x}_{i}=50\\\\ \\text{Variance}=\\frac{4}{5}\\\\ \\Rightarrow \\frac{4}{5}=\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{10}-{\\left(\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{10}\\right)}^{2}\\\\ \\Rightarrow \\frac{4}{5}=\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{10}-{5}^{2}\\\\ \\Rightarrow \\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}=258\\\\ \\text{Next,}\\text{ }\\sum _{i=1}^{10}{\\left({x}_{i}-\\beta \\right)}^{2}=98\\\\ \\overset{10}{\\underset{i=1}{\\Rightarrow \\sum }}\\left({x}_{i}^{2}-2\\beta \\cdot {x}_{i}+{\\beta }^{2}\\right)=98\\\\ \\Rightarrow 258-2\\beta \\left(50\\right)+10{\\beta }^{2}=98\\\\ \\Rightarrow \\left(\\beta -8\\right)\\left(\\beta -2\\right)=0\\\\ \\text{As}\\beta >2,\\text{we get }\\beta =8\\)\u003c/p> \u003cp>\\(\\text{Consider,  }\\\\ 2\\left({\\mathrm{x}}_{1}-1\\right)+4\\beta ,2\\left({\\mathrm{x}}_{2}-1\\right)+4\\beta ,\\\\ \\ldots .2\\left({\\mathrm{x}}_{10}-1\\right)+4\\beta \\\\ \\text{Put}\\beta =8\\\\ \\text{we get }2{\\mathrm{x}}_{1}+30,2{\\mathrm{x}}_{2}+30,\\ldots ..2{\\mathrm{x}}_{10}+30\\\\ \\mu =2(5)+30=40\\\\ {\\sigma }^{2}={2}^{2}\\left(\\frac{4}{5}\\right)=\\frac{16}{5}\\\\ \\frac{\\beta \\mu }{{\\sigma }^{2}}=\\frac{8\\times 40}{16/5}=100\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A variable \(X\) takes values \(0,0,2,6,12,20, \ldots \mathrm{n}(\mathrm{n}-1)\) with frequencies \({ }^{\mathrm{n}} \mathrm{C}_0,{ }^{\mathrm{n}} \mathrm{C}_1,{ }^{\mathrm{n}} \mathrm{C}_2,{ }^{\mathrm{n}} \mathrm{C}_3,{ }^{\mathrm{n}} \mathrm{C}_4,{ }^{\mathrm{n}} \mathrm{C}_5, \ldots,{ }^{\mathrm{n}} \mathrm{C}_{\mathrm{n}}\), respectively. If the mean of this data is \(60\), then its median is:</p> <p><br/>[JEE Main 2026, 5 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(56\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(42\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(72\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(90\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,7 +297,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Mean \\(=\\frac{\\sum_{r=0}^n r(r-1)^n C_r}{\\sum_{r=0}^n{ }^n C_r}\\)\u003c/p> \u003cp>Using \\(\\sum_{r=0}^n r(r-1){ }^n C_r=n(n-1) 2^{n-2}\\) and \\(\\sum_{r=0}^n{ }^n C_r=2^n\\):\u003c/p> \u003cp>Mean \\(=\\frac{n(n-1) 2^{n-2}}{2^n}= \\frac{n(n-1)}{4}\\)\u003c/p> \u003cp>\\(\\frac{n(n-1)}{4}=60\\)\u003c/p> \u003cp>\\(n(n-1)=240\\)\u003c/p> \u003cp>\\(n=16\\)\u003c/p> \u003cp>Total frequency \\(=2^{16}=65536\\)\u003c/p> \u003cp>Median lies at the \\(32768^{\\text {th }}\\) and \\(32769^{\\text {th }}\\) observations\u003c/p> \u003cp>Cumulative frequency up to \\(r=7\\) is \\(\\sum_{r=0}^7{ }^{16} C_r=26333\\), and cumulative frequency up to \\(r=8\\) is \\(\\sum_{r=0}^8{ }^{16} C_r=39203\\)\u003c/p> \u003cp>So both middle observations correspond to \\(r=8\\)\u003c/p> \u003cp>Median \\(=8(8-1)=56\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and the standard deviation of the observation \(2,3,3,4,5,7,\mathrm{a},\mathrm{b}\) be \(4\) and \(\sqrt{2}\) respectively. Then the mean deviation about the mode of these observations is :</p> <p> </p> <p>[JEE Main 2025, 4 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -305,7 +309,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>2,3,3,4,5,7,a,b are the observations\u003c/p> \u003cp>\\(\\begin{matrix}\\text{Mean}=4=\\frac{2+6+4+12+a+b}{8}\\Rightarrow a+b=8 \\\\ \\text{Variance}=2=\\frac{4+18+16+25+49+{a}^{2}+{b}^{2}}{8}−{4}^{2}=2 \\\\ {a}^{2}+{b}^{2}=32 \\\\ a=b=4\\end{matrix}\\)\u003c/p> \u003cp>Mean deviation about mode\u003c/p> \u003cp>\\(\\begin{matrix}=\\frac{1}{8}(\\mathrm{∣}2−4\\mathrm{∣}+\\mathrm{∣}3−4\\mathrm{∣}+\\mathrm{∣}3−4\\mathrm{∣}+\\mathrm{∣}5−4\\mathrm{∣}+\\mathrm{∣}7−4\\mathrm{∣}) \\\\ =\\frac{1}{8}(2+1+1+1+3)=1\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Marks obtained by all the students of class \(12^{\text {th }}\) are in a frequency distribution with classes of equal width. Let the median of the group data be 14 with median class interval 12-18 and the median class frequency is 12 . If the number of students who secures marks below 12 is 18 then the total number of students is</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>48</p></span></div><div class="option"><span class="key">b</span><span><p>52</p></span></div><div class="option"><span class="key">c</span><span><p>44</p></span></div><div class="option"><span class="key">d</span><span><p>40</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -314,10 +318,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; l=12, f=18 \\quad f=12 \\\\\u003cbr/>&amp; h=6 \\\\\u003cbr/>&amp; M=14, \\quad \\Rightarrow 12+\\frac{n / 2-18}{12} \\times 6 =14\\\\\u003cbr/>&amp; 4=n / 2-18 \\Rightarrow \\quad n=44\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\($$\\begin{aligned}&\\begin{aligned}& l=12, f=18 \\quad f=12 \\\\& h=6 \\\\& M=14, \\quad \\Rightarrow 12+\\frac{n / 2-18}{12} \\times 6 =14\\\\& 4=n / 2-18 \\Rightarrow \\quad n=44\\end{aligned}$$\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of \(10\) observations are \(9\) and \(34.2\), respectively. If \(8\) of these observations are \(2, 3, 5, 10, 11, 13, 15, 21\), then the mean deviation about the median of all the \(10\) observations is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(7\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -329,7 +333,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let remaining two observasions are \\(a\\) and \\(b\\).\u003c/p> \u003cp>Then, Mean\\(=\\frac{2+3+5+10+11+13+15+21+a+b}{10}=9\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{80+a+b}{10}=9\\Rightarrow a+b=10\\) …\\((i)\\)\u003c/p> \u003cp>And variance \\(=\\frac{\\Sigma {x}_{i}^{2}}{10}−{\\left(\\frac{\\Sigma {x}_{i}}{10}\\right)}^{2}=34.2\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{2}^{2}+{3}^{2}+{5}^{2}+{10}^{2}+{11}^{2}+{13}^{2}+{15}^{2}+{21}^{2}+{a}^{2}+{b}^{2}}{10}−{(9)}^{2}=34.2\\)\u003c/p> \u003cp>\\(\\Rightarrow 1094+{a}^{2}+{b}^{2}−810=342\\)\u003c/p> \u003cp>\\(\\Rightarrow {a}^{2}+{b}^{2}=58\\) …\\((ii)\\)\u003c/p> \u003cp>from \\((i)\\) and \\((ii)\\), we get\u003c/p> \u003cp>\\(a=7,b=3\\)\u003c/p> \u003cp>or \\(a=3,b=7\\)\u003c/p> \u003cp>Numbers are \\(2,3,3,5,7,10,11,13,15,21\\) (even number of terms)\u003c/p> \u003cp>Median \\(=\\frac{7+10}{2}=8.5\\)\u003c/p> \u003cp>Now, mean deviation about the median:\u003c/p> \u003cp>\\(\\text{M}.\\text{D}=\\frac{6.5+5.5+5.5+3.5+1.5+1.5+2.5+4.5+6.5+12.5}{10}\\)\u003c/p> \u003cp>\\(=\\frac{50}{5}=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a distribution of 10 observations, \(\sum_{i=1}^{10} x_i=55\) and \(\sum_{i=1}^{10} x_i^2=328\) If the observations 4 and 5 are replaced by 6 and 8 respectively, then the new variance is </p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>2.5</p></span></div><div class="option"><span class="key">b</span><span><p>2.7</p></span></div><div class="option"><span class="key">c</span><span><p>3.4</p></span></div><div class="option"><span class="key">d</span><span><p>3.6</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -338,10 +342,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp; \\sum x=55-4-5+6+8=60 \\\\\u003cbr/>&amp; \\sum x^2=328-16-25+36+64=387 \\\\\u003cbr/>&amp; \\bar{x}=6 \\\\\u003cbr/>&amp; \\sigma^2=\\frac{387}{10}-6^2=38.7-36=2.7\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\\begin{aligned}& \\sum x=55-4-5+6+8=60 \\\\& \\sum x^2=328-16-25+36+64=387 \\\\& \\bar{x}=6 \\\\& \\sigma^2=\\frac{387}{10}-6^2=38.7-36=2.7\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of \(10\) observations are \(9\) and \(34.2\), respectively. If \(8\) of these observations are \(2, 3, 5, 10, 11, 13, 15, 21\), then the mean deviation about the median of all the \(10\) observations is</p> <p> </p> <p>[JEE Main 2026, 28 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(7\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,7 +357,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let remaining two observations are \\(a\\) and \\(b\\).\u003c/p> \u003cp>Then, Mean\\(=\\frac{2+3+5+10+11+13+15+21+a+b}{10}=9\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{80+a+b}{10}=9\\Rightarrow a+b=10\\) …\\((i)\\)\u003c/p> \u003cp>And variance \\(=\\frac{\\Sigma {x}_{i}^{2}}{10}−{\\left(\\frac{\\Sigma {x}_{i}}{10}\\right)}^{2}=34.2\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{{2}^{2}+{3}^{2}+{5}^{2}+{10}^{2}+{11}^{2}+{13}^{2}+{15}^{2}+{21}^{2}+{a}^{2}+{b}^{2}}{10}−{(9)}^{2}=34.2\\)\u003c/p> \u003cp>\\(\\Rightarrow 1094+{a}^{2}+{b}^{2}−810=342\\)\u003c/p> \u003cp>\\(\\Rightarrow {a}^{2}+{b}^{2}=58\\) …\\((ii)\\)\u003c/p> \u003cp>from \\((i)\\) and \\((ii)\\), we get\u003c/p> \u003cp>\\(a=7,b=3\\)\u003c/p> \u003cp>or \\(a=3,b=7\\)\u003c/p> \u003cp>Numbers are \\(2,3,3,5,7,10,11,13,15,21\\) (even number of terms)\u003c/p> \u003cp>Median \\(=\\frac{7+10}{2}=8.5\\)\u003c/p> \u003cp>Now, mean deviation about the median:\u003c/p> \u003cp>\\(\\text{M}.\\text{D}=\\frac{6.5+5.5+5.5+3.5+1.5+1.5+2.5+4.5+6.5+12.5}{10}\\)\u003c/p> \u003cp>\\(=\\frac{50}{5}=5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \({\mathrm{x}}_{1},{\mathrm{x}}_{2},\ldots \ldots {\mathrm{x}}_{10}\) be ten observations such that \(\sum _{i=1}^{10}\left({x}_{i}-2\right)=30,\sum _{i=1}^{10}{\left({x}_{i}-\beta \right)}^{2}=98,\beta >2\) and their variance is \(\frac{4}{5}\). If \(\mu\) and \({\sigma }^{2}\) are respectively the mean and the variance of \(2\left({x}_{1}-1\right)+4\beta ,2\left({x}_{2}-1\right)+4\beta ,\)\(\ldots ..,2\left({x}_{10}-1\right)+4\beta ,\) then \(\frac{\beta \mu }{{\sigma }^{2}}\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 29 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>100</p></span></div><div class="option"><span class="key">b</span><span><p>110</p></span></div><div class="option"><span class="key">c</span><span><p>120</p></span></div><div class="option"><span class="key">d</span><span><p>90</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -365,7 +369,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{Consider}\\sum _{i=1}^{10}\\left({x}_{i}-2\\right)=30\\\\ \\Rightarrow \\sum _{i=1}^{10}{x}_{i}-2\\times 10=30\\\\ \\Rightarrow \\sum _{i=1}^{10}{x}_{i}=50\\\\ \\text{Variance}=\\frac{4}{5}\\\\ \\Rightarrow \\frac{4}{5}=\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{10}-{\\left(\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{10}\\right)}^{2}\\\\ \\Rightarrow \\frac{4}{5}=\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{10}-{5}^{2}\\\\ \\Rightarrow \\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}=258\\\\ \\text{Next,}\\text{ }\\sum _{i=1}^{10}{\\left({x}_{i}-\\beta \\right)}^{2}=98\\\\ \\overset{10}{\\underset{i=1}{\\Rightarrow \\sum }}\\left({x}_{i}^{2}-2\\beta \\cdot {x}_{i}+{\\beta }^{2}\\right)=98\\\\ \\Rightarrow 258-2\\beta \\left(50\\right)+10{\\beta }^{2}=98\\\\ \\Rightarrow \\left(\\beta -8\\right)\\left(\\beta -2\\right)=0\\\\ \\text{As}\\beta >2,\\text{we get }\\beta =8\\)\u003c/p> \u003cp>\\(\\text{Consider,  }\\\\ 2\\left({\\mathrm{x}}_{1}-1\\right)+4\\beta ,2\\left({\\mathrm{x}}_{2}-1\\right)+4\\beta ,\\ldots .2\\left({\\mathrm{x}}_{10}-1\\right)+4\\beta \\\\ \\text{Put}\\beta =8\\\\ \\text{we get }2{\\mathrm{x}}_{1}+30,2{\\mathrm{x}}_{2}+30,\\ldots ..2{\\mathrm{x}}_{10}+30\\\\ \\mu =2(5)+30=40\\\\ {\\sigma }^{2}={2}^{2}\\left(\\frac{4}{5}\\right)=\\frac{16}{5}\\\\ \\frac{\\beta \\mu }{{\\sigma }^{2}}=\\frac{8\\times 40}{16/5}=100\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and the standard deviation of the observation \(2,3,3,4,5,7,\mathrm{a},\mathrm{b}\) be \(4\) and \(\sqrt{2}\) respectively. Then the mean deviation about the mode of these observations is :</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{3}{4}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{1}{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,7 +381,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Observations: 2, 3, 3, 4, 5, 7, a, b\u003cbr/>Mean = 4 and Standard Deviation = 2.\u003cbr/>Mode = 3.\u003cbr/>Using mean: (2+3+3+4+5+7+a+b)/8 = 4 ⇒ a+b = 8.\u003cbr/>Using variance: [(2−4)\u003csup>2\u003c/sup>+(3−4)\u003csup>2\u003c/sup>+(3−4)\u003csup>2\u003c/sup>+(4−4)\u003csup>2\u003c/sup>+(5−4)\u003csup>2\u003c/sup>+(7−4)\u003csup>2\u003c/sup>+(a−4)\u003csup>2\u003c/sup>+(b−4)\u003csup>2\u003c/sup>]/8 = 4.\u003cbr/>This gives (a−4)\u003csup>2\u003c/sup>+(b−4)\u003csup>2\u003c/sup> = 16.\u003cbr/>Since a+b=8, let b=8−a. Then 2(a−4)\u003csup>2\u003c/sup>=16 ⇒ (a−4)\u003csup>2\u003c/sup>=8 ⇒ a,b = 4±2√2.\u003cbr/>Mean deviation about mode (3) = [1+0+0+1+2+4+(1+2√2)+(1+2√2)]/8 = (10+4√2)/8 = (5+2√2)/4.\u003cbr/>Answer: Option (A).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean and the variance of \(6,4,a,8,b,12,10,13\), are \(9\) and \(9.25\) respectively, then \(\mathrm{a}+\mathrm{b}+\mathrm{ab}\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 2 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(105\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(103\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(100\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(106\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -389,7 +393,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let the data be:\u003cbr/>\\(6,4,a,8,b,12,10,13\\)\u003c/p> \u003cp>There are \\(n=8\\) observations, with mean \\(\\overset{ˉ}{x}=9\\) and variance \\({\\sigma }^{2}=9.25\\).\u003c/p> \u003cp>\\(\\frac{6+4+a+8+b+12+10+13}{8}=9\\)\u003c/p> \u003cp>Sum of known numbers: \\(6+4+8+12+10+13=53\\).\u003c/p> \u003cp>\\(\\frac{53+a+b}{8}=9\\Rightarrow 53+a+b=72\\Rightarrow a+b=19.\\)\u003c/p> \u003cp>\\({\\sigma }^{2}=\\frac{\\sum {x}_{i}^{2}}{n}−{\\overset{ˉ}{x}}^{2}\\)\u003c/p> \u003cp>\\(9.25=\\frac{\\sum {x}_{i}^{2}}{8}−{9}^{2}=\\frac{\\sum {x}_{i}^{2}}{8}−81\\) \\(\\frac{\\sum {x}_{i}^{2}}{8}=90.25\\Rightarrow \\sum {x}_{i}^{2}=722.\\)\u003c/p> \u003cp>\\(529+{a}^{2}+{b}^{2}=722\\Rightarrow {a}^{2}+{b}^{2}=193.\\)\u003c/p> \u003cp>\\((a+b{)}^{2}={a}^{2}+{b}^{2}+2ab\\Rightarrow {19}^{2}=193+2ab\\)\u003c/p> \u003cp>\\(361=193+2ab\\Rightarrow 2ab=168\\Rightarrow ab=84.\\)\u003c/p> \u003cp>\\(a+b+ab=19+84=103.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a statistical data \({x}_{1},{x}_{2},\ldots ,{x}_{10}\)of 10 values, a student obtained the mean as \(5.5\) and \(\sum _{i=1}^{10}{x}_{i}^{2}=371.\) He later found that he had noted two values in the data incorrectly as 4 and 5, instead of the correct values 6 and 8, respectively. The variance of the corrected data is</p> <p> </p> <p>[JEE Main 2025, 24 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>7</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>9</p></span></div><div class="option"><span class="key">d</span><span><p>5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,7 +405,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\text{Given,}\\\\ \\text{Number of terms =10}\\\\ \\text{Mean = 5.5}\\\\ \\sum _{i=1}^{10}{x}_{i}^{2}=371\\\\ \\text{We know, }\\\\ \\mu =\\frac{\\sum _{i=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}}{n}\\\\ 5.5=\\frac{\\sum _{i=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}}{10}\\\\ \\sum _{i=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}=55\\\\ \\mathrm{Corrected}\\sum _{\\mathrm{i}=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}=55-(4+5)+(6+8)=60\\\\ \\mathrm{Corrected}\\mathrm{Mean}\\mu =\\frac{\\mathrm{corrected}\\sum _{\\mathrm{i}=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}}{10}\\\\ \\mathrm{Corrected}\\mathrm{Mean}\\mu =\\frac{60}{10}=6\\\\ \\mathrm{Now},\\sum _{\\mathrm{i}=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}^{2}=371\\\\ \\mathrm{Corrected}\\sum _{\\mathrm{i}=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}^{2}=371-\\left({4}^{2}+{5}^{2}\\right)+\\left({6}^{2}+{8}^{2}\\right)=430\\\\ \\mathrm{Now},\\mathrm{corrected}\\mathrm{variance}=\\\\ \\frac{1}{\\mathrm{n}}\\mathrm{Corrected}\\sum _{\\mathrm{i}=1}^{10}{\\mathrm{x}}_{\\mathrm{i}}^{2}-{\\left(\\mathrm{Corrected}\\mathrm{Mean}\\mu \\right)}^{2}\\\\ =\\frac{1}{10}\\times 430-{\\left(6\\right)}^{2}=43-36=7\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of \(100\) observations are \(40\)and \(5.1\), respectively, By mistake one observation is taken as \(50\) instead of \(40\). If the correct mean and the correct standard deviation are \(\mu\) and \(\sigma\) respectively, then \(10(\mu +\sigma )\) is equal to</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>445</p></span></div><div class="option"><span class="key">b</span><span><p>451</p></span></div><div class="option"><span class="key">c</span><span><p>447</p></span></div><div class="option"><span class="key">d</span><span><p>449</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -413,7 +417,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{\\sum x_i}{100}=40 \\)\u003cbr/>\\(\\Rightarrow \\sum x_i=4000 \\)\u003cbr/>\\(\\sum x_i=4000-50+40=3990 \\)\u003cbr/>\\(\\mu=\\frac{3990}{10}=39.9 \\)\u003cbr/>\\((5.1)^2=\\frac{\\sum x_i^2}{100}-(40)^2 \\)\u003cbr/>\\(\\sigma=\\sqrt{\\frac{\\left\\{(5.1)^2+1600\\right\\} \\times 100-(50)^2+(40)^2}{100}-(39.90)^2}=5 \\)\u003cbr/>\\(10(\\mu+\\sigma)=10(39.90+5)=449\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If mean of \(n\) item is \(\overset{¯}{x}\). If each \({r}^{\mathrm{th}}\) item is increased by \(2r\). Then new mean will be</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\overset{¯}{x}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\overset{¯}{x}+\frac{n}{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\overset{¯}{x}+\frac{n+2}{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\overset{¯}{x}+n+1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,7 +429,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\frac{{x}_{1}+{x}_{2}+{x}_{3}+\\ldots +{x}_{n}}{n}=\\overset{¯}{x}\\)\u003c/p> \u003cp>\\(∴\\) New mean is \\({\\overset{¯}{x}}_{B}^{'}=\\frac{\\sum _{r=1}^{n}\\left({x}_{i}+2r\\right)}{n}\\)\u003c/p> \u003cp>\\(=\\overset{¯}{x}+\\frac{2n(n+1)}{2n}\\)\u003c/p> \u003cp>\\(\\overset{¯}{x}'\\Rightarrow \\overset{¯}{x}+(n+1)\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q32" data-gated="1">
-      <div class="qnum">Q32</div>
+      <div class="qhead"><div class="qnum">Q32</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Marks obtained by all the students of class \(12^{\text {th }}\) are in a frequency distribution with classes of equal width. Let the median of the group data be 14 with median class interval 12-18 and the median class frequency is 12 . If the number of students who secures marks below 12 is 18 then the total number of students is</p> <p>[JEE Main 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>48</p></span></div><div class="option"><span class="key">b</span><span><p>52</p></span></div><div class="option"><span class="key">c</span><span><p>44</p></span></div><div class="option"><span class="key">d</span><span><p>40</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -434,10 +438,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned}\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; l=12, f=18 \\quad f=12 \\\\\u003cbr/>&amp; h=6 \\\\\u003cbr/>&amp; M=14, \\quad \\Rightarrow 12+\\frac{n / 2-18}{12} \\times 6 =14\\\\\u003cbr/>&amp; 4=n / 2-18 \\Rightarrow \\quad n=44\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\($$\\begin{aligned}&\\begin{aligned}& l=12, f=18 \\quad f=12 \\\\& h=6 \\\\& M=14, \\quad \\Rightarrow 12+\\frac{n / 2-18}{12} \\times 6 =14\\\\& 4=n / 2-18 \\Rightarrow \\quad n=44\\end{aligned}$$\u003cbr/>\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q33" data-gated="1">
-      <div class="qnum">Q33</div>
+      <div class="qhead"><div class="qnum">Q33</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(X=\{x \in N: 1 \leq x \leq 19\}\) and for some \(a, b \in R, Y=\{a x+b: x \in X\}\). If the mean and variance of the elements of \(Y\) are \(30\) and \(750\), respectively, then the sum of all possible values of \(b\) is</p> <p> </p> <p>[JEE Main 2026, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(100\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(20\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(80\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(60\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -449,7 +453,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given: \\(y=ax+b\\)\u003c/p> \u003cp>\\(\\Sigma y_i=a \\Sigma x_i+\\Sigma b\\)\u003c/p> \u003cp>\\(=a \\times(1+2+\\ldots \\ldots+19)+19 b\\)\u003c/p> \u003cp>\u003cem>\\(\\Rightarrow \\frac{\\sum {y}_{i}}{19}=\\frac{a\\times 19\\times 20}{2\\times 19}+b\\)\u003c/em>\u003c/p> \u003cp>\\(\\Rightarrow 30=10 a+b \\ldots(i)\\)\u003c/p> \u003cp>Variance of \u003cem>\\(X=\\frac{\\sum {x}_{i}^{2}}{19}−{\\left(\\frac{\\sum {x}_{i}}{19}\\right)}^{2}\\)\u003c/em>\u003c/p> \u003cp>\u003cem>\\(=\\frac{19\\times 20\\times 39}{19\\times 6}−{(10)}^{2}=30\\)\u003c/em>\u003c/p> \u003cp>Variance of \\(Y=a^2(\\) variance of \\(X)\\)\u003c/p> \u003cp>\\(\\Rightarrow 750=a^2 \\times 30\\)\u003c/p> \u003cp>\\(\\Rightarrow a^2=25 \\Rightarrow a= \\pm 5\\)\u003c/p> \u003cp> if \\(a=5 \\Rightarrow b=30-50=-20\\) ...from \\((i)\\)\u003c/p> \u003cp> if \\(a=-5 \\Rightarrow b=30+50=80\\) ...from \\((i)\\)\u003c/p> \u003cp> Sum of values of \\(b=80-20=60\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q34" data-gated="1">
-      <div class="qnum">Q34</div>
+      <div class="qhead"><div class="qnum">Q34</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of \(n\) observations are \(8\) and \(16\), respectively. If the sum of the first \((n – 1)\) observations is \(48\) and the sum of squares of the first \((n – 1)\) observations is \(496,\) then the value of \(n\) is: </p> <p> </p> <p>[JEE Main 2026, 2 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(21\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(13\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(7\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -461,7 +465,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\( \\frac{\\sum_{i=1}^n x_i}{n}=8 \\)\u003cbr/>\\( \\Rightarrow \\frac{48+x_n}{n}=8 \\Rightarrow x_n=8 n-48\\)\u003cbr/>\\( \\frac{\\sum x_1^2}{n}-(\\bar{x})^2=16\\)\u003cbr/>\\( \\Rightarrow \\frac{496+x_n^2}{n}-64=16\\)\u003cbr/>\\( \\Rightarrow 496+x_n^2=80 n \\)\u003cbr/>\\( \\Rightarrow 496+(8 n-48)^2=80 n \\)\u003cbr/>\\( \\Rightarrow31+4(n-6)^2=5 n\\)\u003cbr/>\\( \\Rightarrow 4 n^2-48 n+175=5 n\\)\u003cbr/>\\( \\Rightarrow 4 n^2-53 n+175=0\\)\u003c/p> \u003cp>\\(\\Rightarrow(4 n-25)(n-7)=0\\)\u003c/p> \u003cp>\\(n=7, \\frac{25}{4}\\)\u003c/p> \u003cp>but \\(n\\) must be a natural number, so \\(n=7\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q35" data-gated="1">
-      <div class="qnum">Q35</div>
+      <div class="qhead"><div class="qnum">Q35</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A set of four observations has mean \(1\) and variance \(13\). Another set of six observations has mean \(2\) and variance \(1\). Then, the variance of all these \(10\) observations is equal to:</p> <p> </p> <p>[JEE Main 2026, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(5.96\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6.14\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6.04\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6.24\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -473,7 +477,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For set \\(1\\)\u003c/p> \u003cp>\\(\\bar{x}=1, \\sigma_1^2=13\\)\u003c/p> \u003cp>For set \\(2\\)\u003c/p> \u003cp>\\(\\bar{y}=2, \\sigma_2^2=1\\)\u003c/p> \u003cp>Combined variance \\(=\\frac{\\mathrm{n}_1 \\sigma_1^2+\\mathrm{n}_2 \\sigma_2^2}{\\mathrm{n}_1+\\mathrm{n}_2}+\\frac{\\mathrm{n}_1 \\mathrm{n}_2}{\\left(\\mathrm{n}_1+\\mathrm{n}_2\\right)^2}(\\overline{\\mathrm{x}}-\\overline{\\mathrm{y}})^2\\)\u003c/p> \u003cp>\\(=\\frac{4 \\times 13+6 \\times 1}{10}+\\frac{4 \\times 6}{10^2}(2-1)^2\\)\u003c/p> \u003cp>\\(=\\frac{58}{10}+\\frac{24}{100}=\\frac{580+24}{100}=\\frac{604}{100}=6.04\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q36" data-gated="1">
-      <div class="qnum">Q36</div>
+      <div class="qhead"><div class="qnum">Q36</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the Mean and Variance of five observations \({\mathrm{x}}_{1}=1,{\mathrm{x}}_{2}=3,{\mathrm{x}}_{3}=\mathrm{a},{\mathrm{x}}_{4}=7\) and \({\mathrm{x}}_{5}=\mathrm{b},\mathrm{a}>\mathrm{b}\), be \(5\) and \(10\) respectively. Then the Variance of the observations \(\mathrm{n}+{\mathrm{x}}_{\mathrm{n}},\mathrm{n}=1,2,\ldots \ldots ..5\) is</p> <p> </p> <p>[JEE Main 2025, 3 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(17\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(16.4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(17.4\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(16\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -485,7 +489,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp> \\(\\frac{1+3+a+7+b}{5}=5⟹11+a+b=25⟹a+b=14\\)\u003c/p> \u003cp> \\(\\frac{1}{5}\\sum ({x}_{i}−5{)}^{2}=10⟹\\sum ({x}_{i}−5{)}^{2}=50\\)\u003c/p> \u003cp> \\(74+({a}^{2}+{b}^{2})−10(a+b)=50\\)\u003c/p> \u003cp>Substitute \\(a+b=14\\)\u003c/p> \u003cp> \\({a}^{2}+{b}^{2}=116\\)\u003c/p> \u003cp>\\(a=10,b=4\\).\u003c/p> \u003cp>Let \\({y}_{n}=n+{x}_{n}\\), therefore\u003c/p> \u003cp>Mean of \\({y}_{n}=\\frac{2+5+13+11+9}{5}=8\\)\u003c/p> \u003cp>Variance \\(=\\frac{1}{5}\\sum {y}_{n}^{2}−(\\overset{ˉ}{y}{)}^{2}\\)\u003c/p> \u003cp>\\(\\sum {y}_{n}^{2}={2}^{2}+{5}^{2}+{13}^{2}+{11}^{2}+{9}^{2}=400\\)\u003c/p> \u003cp>Variance \\(=\\frac{400}{5}−{8}^{2}=80−64=16\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q37" data-gated="1">
-      <div class="qnum">Q37</div>
+      <div class="qhead"><div class="qnum">Q37</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>10 is the mean of a set of 7 observations and 5 is the mean of a set of 3 observations. The mean of the combined set is given by</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>15</p></span></div><div class="option"><span class="key">b</span><span><p>10</p></span></div><div class="option"><span class="key">c</span><span><p>8.5</p></span></div><div class="option"><span class="key">d</span><span><p>7.5</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -497,7 +501,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({x}_{1}=10,{\\omega }_{1}=7,{x}_{2}=5,{\\omega }_{2}=3\\\\ x=\\frac{{x}_{1}{\\omega }_{1}+{\\overset{¯}{x}}_{2}{\\omega }_{2}}{{\\omega }_{1}+{\\omega }_{2}}=\\frac{10\\times 7+5\\times 3}{7+3}=\\frac{85}{10}=8.5\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q38" data-gated="1">
-      <div class="qnum">Q38</div>
+      <div class="qhead"><div class="qnum">Q38</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean deviation about the median of the numbers \(k, 2 k, 3 k, \ldots, 1000 k\) is \(500\), then \(k^2\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 22 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(9\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(4\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(16\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -509,7 +513,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Here number of terms are even therefore\u003c/p> \u003cp>median \\(=\\frac{500k+501k}{2}=\\frac{1001\\text{k}}{2}={\\text{X}}_{\\text{M}}\\)\u003c/p> \u003cp>mean deviation about median \\(=\\frac{\\sum \\left|{\\text{X}}_{\\text{i}}−{\\text{X}}_{\\text{M}}\\right|}{\\text{n}}\\)\u003c/p> \u003cp>\\(=\\frac{2\\left(\\frac{\\text{k}}{2}+\\frac{3\\text{k}}{2}+\\frac{5\\text{k}}{2}+\\ldots 500\\text{ terms }\\right)}{1000}\\)\u003c/p> \u003cp>\\(=\\frac{2\\times \\frac{k}{2}\\left(1+3+5+.....500\\mathrm{terms}\\right)}{1000}\\\\ =\\frac{2\\times \\frac{k}{2}\\left(\\frac{500}{2}\\left{2+\\left(500-1\\right)\\times 2\\right}\\right)}{1000}\\)\u003c/p> \u003cp>\\(=\\frac{2 \\cdot \\frac{k}{2}(500)^2}{1000}=\\frac{500 k}{2}=500(\\) given \\()\\)\u003c/p> \u003cp>\\(\\therefore k=2\\)\u003c/p> \u003cp>Hence, \\(k^2=4\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q39" data-gated="1">
-      <div class="qnum">Q39</div>
+      <div class="qhead"><div class="qnum">Q39</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Suppose that the mean and median of the non-negative numbers \(21,8,17,a,51,103,b,13,67,(a>b),\) are \(40\) and \(21,\) respectively. If the mean deviation about the median is \(26,\) then \(2a\) is equal to:</p> <p> </p> <p>[JEE Main 2026, 4 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(109\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(117\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(161\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(131\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -521,7 +525,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\( \\frac{8+13+17+\\mathrm{b}+21+\\mathrm{a}+51+67+103}{9}=40 \\)\u003cbr/>\\( \\mathrm{a}+\\mathrm{b}+280=360 \\Rightarrow \\mathrm{a}+\\mathrm{b}=80 \\ldots .(1) \\)\u003c/p> \u003cp>For median \\(21\\), after arranging the \\(9\\) numbers, \\(21\\) must be the fifth term.\u003c/p> \u003cp>The numbers less than \\(21\\) are \\(8,13,17\\). Hence one of \\(a,b\\) must also be less than \\(21\\).\u003c/p> \u003cp>Since \\(a&gt;b\\), we take \\(b&lt;21\\) and \\(a&gt;21\\)\u003c/p> \u003cp>Mean deviation about median \\(=\\frac{\\sum\\left|\\mathrm{x}_{\\mathrm{i}}-\\mathrm{M}\\right|}{\\mathrm{n}} \\)\u003cbr/>\\( \\Rightarrow \\frac{\\sum\\left|\\mathrm{x}_{\\mathrm{i}}-21\\right|}{9}=26 \\)\u003cbr/>\\( \\Rightarrow \\frac{1}{9}(13+8+4+21-\\mathrm{b}+0+\\mathrm{a}-21+30+46+82)=26 \\)\u003cbr/>\\( \\Rightarrow \\mathrm{a}-\\mathrm{b}=51 \\quad \\ldots .(2) \\)\u003c/p> \u003cp>From (1) and (2)\u003cbr/>\\( \\Rightarrow 2 \\mathrm{a}=131\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q40" data-gated="1">
-      <div class="qnum">Q40</div>
+      <div class="qhead"><div class="qnum">Q40</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(X=\{x \in N: 1 \leq x \leq 19\}\) and for some \(a, b \in R, Y=\{a x+b: x \in X\}\). If the mean and variance of the elements of \(Y\) are \(30\) and \(750\), respectively, then the sum of all possible values of \(b\) is</p> <p> </p> <p>[JEE Main 2026, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(100\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(20\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(80\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(60\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -533,7 +537,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given: \\(y=ax+b\\)\u003c/p> \u003cp>\\(\\Sigma y_i=a \\Sigma x_i+\\Sigma b\\)\u003c/p> \u003cp>\\(=a \\times(1+2+\\ldots \\ldots+19)+19 b\\)\u003c/p> \u003cp>\u003cem>\\(\\Rightarrow \\frac{\\sum {y}_{i}}{19}=\\frac{a\\times 19\\times 20}{2\\times 19}+b\\)\u003c/em>\u003c/p> \u003cp>\\(\\Rightarrow 30=10 a+b \\ldots(i)\\)\u003c/p> \u003cp>Variance of \u003cem>\\(X=\\frac{\\sum {x}_{i}^{2}}{19}−{\\left(\\frac{\\sum {x}_{i}}{19}\\right)}^{2}\\)\u003c/em>\u003c/p> \u003cp>\u003cem>\\(=\\frac{19\\times 20\\times 39}{19\\times 6}−{(10)}^{2}=30\\)\u003c/em>\u003c/p> \u003cp>Variance of \\(Y=a^2(\\) variance of \\(X)\\)\u003c/p> \u003cp>\\(\\Rightarrow 750=a^2 \\times 30\\)\u003c/p> \u003cp>\\(\\Rightarrow a^2=25 \\Rightarrow a= \\pm 5\\)\u003c/p> \u003cp> if \\(a=5 \\Rightarrow b=30-50=-20\\) ...from \\((i)\\)\u003c/p> \u003cp> if \\(a=-5 \\Rightarrow b=30+50=80\\) ...from \\((i)\\)\u003c/p> \u003cp> Sum of values of \\(b=80-20=60\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q41" data-gated="1">
-      <div class="qnum">Q41</div>
+      <div class="qhead"><div class="qnum">Q41</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of 20 observations are found to be 10 and 2 , respectively. On rechecking, it was found that an observation by mistake was taken 8 instead of 12. The correct standard deviation is</p> <p> </p> <p>[JEE Main 2024, 06 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1.8\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.94\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{3.86}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{3.96}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -545,7 +549,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Mean \\((\\overset{¯}{x})=10\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{20}=10\\)\u003cbr/>\\(\\Sigma {\\mathrm{x}}_{\\mathrm{i}}=10\\times 20=200\\)\u003cbr/>If 8 is replaced by 12 , then correct \\(\\Sigma {x}_{i}=200-8+12=204\\)\u003cbr/> Correct mean \\((\\bar{x})=\\frac{\\sum x_{\\mathrm{i}}}{20}\\)\u003cbr/>\\(=\\frac{204}{20}=10.2\\)\u003cbr/>since standard deviation \\(=2\\)\u003cbr/>therefore variance \\(=(\\text { S.D. })^2=2^2=4\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}-{\\left(\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{20}\\right)}^{2}=4\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}-(10{)}^{2}=4\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}=104\\)\u003cbr/>\\(\\Rightarrow \\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}=2080\\)\u003cbr/>Now, replaced '8' by '12'\u003cbr/>Then, correct \\(\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}=2080-{8}^{2}+{12}^{2}=2160\\)\u003cbr/>\\(∴\\) correct Variance \u003c/p> \u003cp>\\(=\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}-{\\left(\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{20}\\right)}^{2}\\)\u003cbr/>\\(=\\frac{2160}{20}-(10.2{)}^{2}\\)\u003cbr/>\\(=108-104.04\\)\u003cbr/>\\(=3.96\\)\u003cbr/>Correct standard deviation\u003c/p> \u003cp>\\(=\\sqrt{3.96}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q42" data-gated="1">
-      <div class="qnum">Q42</div>
+      <div class="qhead"><div class="qnum">Q42</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of 20 observations are found to be 10 and 2 , respectively. On rechecking, it was found that an observation by mistake was taken 8 instead of 12. The correct standard deviation is</p> <p> </p> <p>[JEE Main 2024, 06 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1.8\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1.94\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{3.86}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\sqrt{3.96}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -557,7 +561,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Mean \\((\\overset{¯}{x})=10\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{20}=10\\)\u003cbr/>\\(\\Sigma {\\mathrm{x}}_{\\mathrm{i}}=10\\times 20=200\\)\u003cbr/>If 8 is replaced by 12 , then correct \\(\\Sigma {x}_{i}=200-8+12=204\\)\u003cbr/> Correct mean \\((\\bar{x})=\\frac{\\sum x_{\\mathrm{i}}}{20}\\)\u003cbr/>\\(=\\frac{204}{20}=10.2\\)\u003cbr/>since standard deviation \\(=2\\)\u003cbr/>therefore variance \\(=(\\text { S.D. })^2=2^2=4\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}-{\\left(\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{20}\\right)}^{2}=4\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}-(10{)}^{2}=4\\)\u003cbr/>\\(\\Rightarrow \\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}=104\\)\u003cbr/>\\(\\Rightarrow \\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}=2080\\)\u003cbr/>Now, replaced '8' by '12'\u003cbr/>Then, correct \\(\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}=2080-{8}^{2}+{12}^{2}=2160\\)\u003cbr/>\\(∴\\) correct Variance \u003c/p> \u003cp>\\(=\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}^{2}}{20}-{\\left(\\frac{\\Sigma {\\mathrm{x}}_{\\mathrm{i}}}{20}\\right)}^{2}\\)\u003cbr/>\\(=\\frac{2160}{20}-(10.2{)}^{2}\\)\u003cbr/>\\(=108-104.04\\)\u003cbr/>\\(=3.96\\)\u003cbr/>Correct standard deviation\u003c/p> \u003cp>\\(=\\sqrt{3.96}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q43" data-gated="1">
-      <div class="qnum">Q43</div>
+      <div class="qhead"><div class="qnum">Q43</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean and the variance of \(6,4,a,8,b,12,10,13\), are \(9\) and \(9.25\) respectively, then \(\mathrm{a}+\mathrm{b}+\mathrm{ab}\) is equal to :</p> <p> </p> <p>[JEE Main 2025, 2 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(105\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(103\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(100\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(106\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -569,7 +573,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Let the data be:\u003cbr/>\\(6,4,a,8,b,12,10,13\\)\u003c/p> \u003cp>There are \\(n=8\\) observations, with mean \\(\\overset{ˉ}{x}=9\\) and variance \\({\\sigma }^{2}=9.25\\).\u003c/p> \u003cp>\\(\\frac{6+4+a+8+b+12+10+13}{8}=9\\)\u003c/p> \u003cp>Sum of known numbers: \\(6+4+8+12+10+13=53\\).\u003c/p> \u003cp>\\(\\frac{53+a+b}{8}=9\\Rightarrow 53+a+b=72\\Rightarrow a+b=19.\\)\u003c/p> \u003cp>\\({\\sigma }^{2}=\\frac{\\sum {x}_{i}^{2}}{n}−{\\overset{ˉ}{x}}^{2}\\)\u003c/p> \u003cp>\\(9.25=\\frac{\\sum {x}_{i}^{2}}{8}−{9}^{2}=\\frac{\\sum {x}_{i}^{2}}{8}−81\\)\u003c/p> \u003cp>\\(\\frac{\\sum {x}_{i}^{2}}{8}=90.25\\Rightarrow \\sum {x}_{i}^{2}=722.\\)\u003c/p> \u003cp>\\(529+{a}^{2}+{b}^{2}=722\\Rightarrow {a}^{2}+{b}^{2}=193.\\)\u003c/p> \u003cp>\\((a+b{)}^{2}={a}^{2}+{b}^{2}+2ab\\Rightarrow {19}^{2}=193+2ab\\)\u003c/p> \u003cp>\\(361=193+2ab\\Rightarrow 2ab=168\\Rightarrow ab=84.\\)\u003c/p> \u003cp>\\(a+b+ab=19+84=103.\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q44" data-gated="1">
-      <div class="qnum">Q44</div>
+      <div class="qhead"><div class="qnum">Q44</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the variance of the data \(2,3,5,8,12\) is \(\sigma^2\) and the mean deviation from the median for this data is \(M\), then \(\sigma^2-M\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10.2</p></span></div><div class="option"><span class="key">b</span><span><p>5.8</p></span></div><div class="option"><span class="key">c</span><span><p>10.6</p></span></div><div class="option"><span class="key">d</span><span><p>8.2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -581,7 +585,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\({\\sigma }^{2}=\\frac{\\sum {x}^{2}}{n}-{\\left(\\frac{\\sum x}{n}\\right)}^{2}\\\\ \\Rightarrow {\\sigma }^{2}=\\frac{{2}^{2}+{3}^{2}+{5}^{2}+{8}^{2}+{12}^{2}}{5}-{\\left(\\frac{2+3+5+8+12}{5}\\right)}^{2}\\\\ \\Rightarrow {\\sigma }^{2}=13.2\\)\u003c/p> \u003cp>Data 2, 3, 5, 8, 12\u003cbr/>Median = 5\u003cbr/>Mean deviation from the median \u003c/p> \u003cp>\\(M=\\frac{\\sum \\left|x-\\mathrm{Median}\\right|}{n}=\\frac{3+2+0+3+7}{5}\\\\ M=\\frac{15}{5}=3\\\\ {\\sigma }^{2}-\\mathrm{M}=10.2\\\\\\) \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q45" data-gated="1">
-      <div class="qnum">Q45</div>
+      <div class="qhead"><div class="qnum">Q45</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and variance of 8 numbers \(-10,-7,-1,x,y,9,2,16\) be \(\frac{7}{2}\) and \(\frac{293}{4}\), respectively. Then the mean of 4 numbers \(x,y,x+y+1,|x-y|\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(10\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(9\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(11\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(12\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -593,7 +597,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Given: Mean\u003c/p> \u003cp>\\(\\mu =\\frac{-18+x+y+2+9+16}{8}=\\frac{7}{2}\\\\ \\Rightarrow \\frac{x+y+9}{8}=\\frac{7}{2}\\\\ \\Rightarrow x+y+9=28\\\\ \\Rightarrow x+y=19....\\left(i\\right)\\)\u003c/p> \u003cp>And Variance\u003cbr/>\\({\\sigma }^{2}=\\frac{\\sum {x}_{i}^{2}}{8}-{\\left(\\mu \\right)}^{2}=\\frac{293}{4}\\\\ \\Rightarrow \\frac{{10}^{2}+{7}^{2}+{1}^{2}+{x}^{2}+{y}^{2}+{2}^{2}+{9}^{2}+{16}^{2}}{8}-{\\left(\\frac{7}{2}\\right)}^{2}=\\frac{293}{4}\\)\u003cbr/>\\(\\Rightarrow \\frac{293}{4}+\\frac{49}{4}=\\frac{{x}^{2}+{y}^{2}+491}{8}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\frac{171}{2}=\\frac{{x}^{2}+{y}^{2}+491}{8}\\)\u003c/p> \u003cp>\\(\\Rightarrow {x}^{2}+{y}^{2}=193...\\left(ii\\right)\\)\u003c/p> \u003cp>After solving equation \\((i)\\) and \\((ii)\\), We get:\u003c/p> \u003cp>\\(x=7\\) and \\(y=12\\) or \\(x=12\\) and \\(y=7\\)\u003c/p> \u003cp>Hence numbers are \\(7,12,20,5\\)\u003c/p> \u003cp>Mean\\(=\\frac{20+12+7+5}{4}=\\frac{44}{4}=11\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q46" data-gated="1">
-      <div class="qnum">Q46</div>
+      <div class="qhead"><div class="qnum">Q46</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(X=\{11,12,13, \ldots . ., 40,41\}\) and \(Y=\{61,62,63, \ldots \ldots\), \(90,91\}\) be the two sets of observations. If \(\bar{x}\) and \(\bar{y}\) are their respective means and \(\sigma^2\) is the variance of all the observations in \(X \cup Y\), then \(\left|\bar{x}+\bar{y}-\sigma^2\right|\) is equal to__________</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>603</p></span></div><div class="option"><span class="key">b</span><span><p>600</p></span></div><div class="option"><span class="key">c</span><span><p>525</p></span></div><div class="option"><span class="key">d</span><span><p>425</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -602,10 +606,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\because n(X)=31\\)\u003c/p> \u003cp>\\(n(Y)=31\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\bar{x}=\\frac{\\sum_{i=11}^{41} i}{31}=\\frac{1}{31} \\times \\frac{31}{2}\\left(\\frac{11+41}{2}\\right)=26 \\\\\u003cbr/>&amp; \\bar{y}=\\frac{\\sum_{j=61}^{91}}{31}=\\frac{1}{31} \\times \\frac{31}{2}\\left(\\frac{61+91}{2}\\right)=76\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Combined mean, \\(\\mu=\\frac{31 \\times 26+31 \\times 76}{31+31}\\)\u003cbr/>\\(\u003cbr/>\\begin{gathered}\u003cbr/>=\\frac{26+76}{2}=51 \\\\\u003cbr/>\\sigma^2=\\frac{1}{62} \\times\\left(\\sum_{i=1}^{31}\\left(x_i-\\mu\\right)^2+\\sum_{i=1}^{31}\\left(y_i-\\mu\\right)^2\\right)\u003cbr/>\\end{gathered}\u003cbr/>\\)\u003c/p> \u003cp>Since, \\(x_i \\in X\\) are in A.P. with 31 elements \\&amp; common difference 1 , same is \\(y_1 \\in y\\), when written in increasing order.\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\sum_{i=1}^{31}\\left(x_i-\\mu\\right)^2=\\sum_{i=1}^{31}\\left(y_i-\\mu\\right)^2 \\\\\u003cbr/>&amp; =10^2+11^2+\\ldots .+40^2 \\\\\u003cbr/>&amp; =\\frac{40 \\times 41 \\times 81}{6}-\\frac{9 \\times 10 \\times 19}{6}=21855\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Hence, \\(\\sigma^2=\\frac{21855}{62}+\\frac{21855}{62}=705\\)\u003cbr/>\\(\\therefore\\left|\\bar{x}+\\bar{y}-\\sigma^2\\right|=|26+76-705|=603\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\because n(X)=31\\)\u003c/p> \u003cp>\\(n(Y)=31\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\bar{x}=\\frac{\\sum_{i=11}^{41} i}{31}=\\frac{1}{31} \\times \\frac{31}{2}\\left(\\frac{11+41}{2}\\right)=26 \\\\& \\bar{y}=\\frac{\\sum_{j=61}^{91}}{31}=\\frac{1}{31} \\times \\frac{31}{2}\\left(\\frac{61+91}{2}\\right)=76\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Combined mean, \\(\\mu=\\frac{31 \\times 26+31 \\times 76}{31+31}\\)\u003cbr/>\\(\u003cbr/>\\begin{gathered}\u003cbr/>=\\frac{26+76}{2}=51 \\\\\u003cbr/>\\sigma^2=\\frac{1}{62} \\times\\left(\\sum_{i=1}^{31}\\left(x_i-\\mu\\right)^2+\\sum_{i=1}^{31}\\left(y_i-\\mu\\right)^2\\right)\u003cbr/>\\end{gathered}\u003cbr/>\\)\u003c/p> \u003cp>Since, \\(x_i \\in X\\) are in A.P. with 31 elements \\&amp; common difference 1 , same is \\(y_1 \\in y\\), when written in increasing order.\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\therefore \\sum_{i=1}^{31}\\left(x_i-\\mu\\right)^2=\\sum_{i=1}^{31}\\left(y_i-\\mu\\right)^2 \\\\& =10^2+11^2+\\ldots .+40^2 \\\\& =\\frac{40 \\times 41 \\times 81}{6}-\\frac{9 \\times 10 \\times 19}{6}=21855\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Hence, \\(\\sigma^2=\\frac{21855}{62}+\\frac{21855}{62}=705\\)\u003cbr/>\\(\\therefore\\left|\\bar{x}+\\bar{y}-\\sigma^2\\right|=|26+76-705|=603\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q47" data-gated="1">
-      <div class="qnum">Q47</div>
+      <div class="qhead"><div class="qnum">Q47</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Find the mean deviation about the mean for the data<br/>4, 7, 8, 9, 10, 12, 13, 17</p> <p>[JEE Main 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>3</p></span></div><div class="option"><span class="key">b</span><span><p>24</p></span></div><div class="option"><span class="key">c</span><span><p>10</p></span></div><div class="option"><span class="key">d</span><span><p>8</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -614,10 +618,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Arithmetic mean \\(\\bar{x}\\) of \\(4,7,8,9,10,12,13,17\\) is\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\bar{x}=\\frac{4+7+8+9+10+12+13+17}{8}=\\frac{80}{8}=10 \\\\\u003cbr/>&amp; \\sum\\left|x_i-\\bar{x}\\right|=6+3+2+1+0+2+3+7=24\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Mean deviation about mean\u003c/p> \u003cp>\\(\u003cbr/>=\\mathrm{M} \\cdot \\mathrm{D} \\cdot(\\bar{x})=\\frac{\\Sigma\\left|x_t-\\bar{x}\\right|}{n}=\\frac{24}{8}=3\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Arithmetic mean \\(\\bar{x}\\) of \\(4,7,8,9,10,12,13,17\\) is\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\bar{x}=\\frac{4+7+8+9+10+12+13+17}{8}=\\frac{80}{8}=10 \\\\& \\sum\\left|x_i-\\bar{x}\\right|=6+3+2+1+0+2+3+7=24\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Mean deviation about mean\u003c/p> \u003cp>\\(\u003cbr/>=\\mathrm{M} \\cdot \\mathrm{D} \\cdot(\\bar{x})=\\frac{\\Sigma\\left|x_t-\\bar{x}\\right|}{n}=\\frac{24}{8}=3\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q48" data-gated="1">
-      <div class="qnum">Q48</div>
+      <div class="qhead"><div class="qnum">Q48</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let sets \(A\) and \(B\) have 5 elements each. Let the mean of the elements in sets \(A\) and \(B\) be 5 and 8 respectively and the variance of the elements in sets \(A\) and \(B\) be 12 and 20 respectively. A new set \(C\) of 10 elements is formed by subtracting 3 from each element of \(A\) and adding 2 to each element of \(B\). Then the sum of the mean and variance of the elements of \(C\) is</p> <p><strong>[JEE Main 2023, 11 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>32</p></span></div><div class="option"><span class="key">b</span><span><p>38</p></span></div><div class="option"><span class="key">c</span><span><p>40</p></span></div><div class="option"><span class="key">d</span><span><p>36</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -629,7 +633,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\( A=\\left\\{a_1, a_2, a_3, a_4, a_5\\right\\} \\)\u003cbr/>\\( B=\\left\\{b_1, b_2, b_3, b_4, b_5\\right\\}\\)\u003c/p> \u003cp>Mean of set \\(A\\) and \\(B\\) are 5 and 8 respectively.\u003c/p> \u003cp>So, \\( \\sum_{i=1}^5 a_i=25, \\sum_{i=1}^5 b_i=40 \\)\u003cbr/> Variance \\(=\\frac{\\sum_{i=1}^5 a_i^2}{5}-\\left(\\frac{\\sum_{i=1}^5 a_i}{5}\\right)^2=12, \\)\u003c/p> \u003cp>\\(\\frac{\\sum_{i=1}^5 b_i^2}{5}-\\left(\\frac{\\sum_{i=1}^5 b_i}{5}\\right)^2=20 \\)\u003cbr/>\\( \\Rightarrow \\sum_{i=1}^5 a_i^2=185, \\sum_{i=1}^5 b_i^2=420\\)\u003c/p> \u003cp>Now, \\(C=\\left\\{c_1, c_2, \\ldots . . c_{10}\\right\\}\\)\u003cbr/>\\(c_i=a_i-3 \\text { or } b_i+2\\)\u003c/p> \u003cp>First five Last five elements elements\u003cbr/>\\(\\therefore\\) Mean of \\(C,\\)\u003c/p> \u003cp>\\(\\bar{C}=\\frac{\\left(\\sum a_i-15\\right)+\\left(\\sum b_i+10\\right)}{10}\\)\u003cbr/>\\( \\bar{C}=\\frac{10+50}{10}=6 \\)\u003cbr/>\\( \\therefore \\sigma^2=\\frac{\\sum_{i=1}^{10} c_i^2}{10}-(\\bar{C})^2\\)\u003c/p> \u003cp>\\( =\\frac{\\sum\\left(a_i-3\\right)^2+\\sum\\left(b_i+2\\right)^2}{10}-(6)^2 \\)\u003c/p> \u003cp>\\( =\\frac{\\sum a_i^2+\\sum b_i^2-6 \\sum a_i+4 \\sum b_i+65}{10}-36 \\)\u003c/p> \u003cp>\\( =\\frac{185+420-150+160+65}{10}-36 \\)\u003c/p> \u003cp>\\( =32 \\)\u003c/p> \u003cp>\\( \\therefore \\text { Mean + Variance }=\\bar{C}+\\sigma^2=6+32=38\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q49" data-gated="1">
-      <div class="qnum">Q49</div>
+      <div class="qhead"><div class="qnum">Q49</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let in a series of \( 2 \mathrm{n} \) observations, half of them are equal to \(a\) and remaining half are equal to \(-a\). Also by adding \( a \) constant \( b \) in each of these observations, the mean and standard deviation of new set become 5 and 20 , respectively. Then the value of \( a^{2}+b^{2} \) is equal to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>425</p></span></div><div class="option"><span class="key">b</span><span><p>650</p></span></div><div class="option"><span class="key">c</span><span><p>250</p></span></div><div class="option"><span class="key">d</span><span><p>925</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -641,7 +645,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>There are 2n observations: n observations equal to a and n observations equal to −a.\u003cbr/>Original mean = 0.\u003cbr/>After adding constant b to each observation, new mean = 5 ⇒ b = 5.\u003cbr/>Adding a constant does not change standard deviation.\u003cbr/>Hence original SD = new SD = 20.\u003cbr/>For data {a,...,a,−a,...,−a}, variance = a² and SD = |a|.\u003cbr/>Therefore a = 20.\u003cbr/>Required value = a² + b² = 20² + 5² = 400 + 25 = 425.\u003cbr/>Answer: Option (A).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q50" data-gated="1">
-      <div class="qnum">Q50</div>
+      <div class="qhead"><div class="qnum">Q50</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of the marks of 10 students were found to be 50 and 12 respectively. Later, it was observed that two marks 20 and 25 were wrongly read as 45 and 50 respectively. Then the correct variance is..........</p> <p>[JEE Main 2023, 13 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>345</p></span></div><div class="option"><span class="key">b</span><span><p>369</p></span></div><div class="option"><span class="key">c</span><span><p>269</p></span></div><div class="option"><span class="key">d</span><span><p>459</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -650,10 +654,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\\u003cbr/>\\begin{aligned}\u003cbr/>&amp;\\begin{aligned}\u003cbr/>&amp; \\quad \\bar{x}=50 \\\\\u003cbr/>&amp; \\sum x_i=500 \\\\\u003cbr/>&amp; \\sum x_{i_{\\text {correct }}}=500+20+25-45-50=450 \\\\\u003cbr/>&amp; \\sigma^2=144 \\\\\u003cbr/>&amp; \\frac{\\sum x_i^2}{10}-(50)^2=144 \\\\\u003cbr/>&amp; \\sum x_{i_{\\text {correct }}}^2 \\\\\u003cbr/>&amp; =\\left(144+(50)^2\\right) \\times 10-(45)^2-(50)^2+(20)^2+(25)^2 \\\\\u003cbr/>&amp; =22940\u003cbr/>\\end{aligned}\\\\\u003cbr/>&amp;\\text { Correct variance }\\\\\u003cbr/>&amp;\\begin{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(=\\frac{\\sum {\\left({x}_{{i}_{correct}}\\right)}^{2}}{10}-{\\left(\\frac{\\sum {x}_{{i}_{correct}}}{10}\\right)}^{2}\\)\u003cbr/>\\(=2294-(45{)}^{2}\\) \u003cbr/>\\(=2294-2025=269\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\\u003cbr/>$$\\begin{aligned}&\\begin{aligned}& \\quad \\bar{x}=50 \\\\& \\sum x_i=500 \\\\& \\sum x_{i_{\\text {correct }}}=500+20+25-45-50=450 \\\\& \\sigma^2=144 \\\\& \\frac{\\sum x_i^2}{10}-(50)^2=144 \\\\& \\sum x_{i_{\\text {correct }}}^2 \\\\& =\\left(144+(50)^2\\right) \\times 10-(45)^2-(50)^2+(20)^2+(25)^2 \\\\& =22940\\end{aligned}$$\\\\\u003cbr/>&amp;\\text { Correct variance }\\\\\u003cbr/>&amp;$$\\begin{aligned}\\end{aligned}$$\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(=\\frac{\\sum {\\left({x}_{{i}_{correct}}\\right)}^{2}}{10}-{\\left(\\frac{\\sum {x}_{{i}_{correct}}}{10}\\right)}^{2}\\)\u003cbr/>\\(=2294-(45{)}^{2}\\) \u003cbr/>\\(=2294-2025=269\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q51" data-gated="1">
-      <div class="qnum">Q51</div>
+      <div class="qhead"><div class="qnum">Q51</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Consider three observations \(a, b\) and \(c\) such that \(b=a+c\). If the standard deviation of \(a+2, b+2, c+2\) is \(d\), then which of the following is true?</p> <p> </p> <p>[JEE Main 2021, 16 Mar (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(b^2=3\left(a^2+c^2\right)-9 d^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(b^2=a^2+c^2+3 d^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(b^2=3\left(a^2+c^2+d^2\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(b^2=3\left(a^2+c^2\right)+9 d^2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -662,10 +666,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For \\(a, b, c\\)\u003cbr/>\\(\\begin{array}{ll} \\bar{x}=\\frac{a+b+c}{3} &amp; \\\\ \\Rightarrow \\bar{x}=\\frac{2 b}{3} &amp; {[\\because b=a+c]}\\end{array}\\)\u003cbr/>S.D. \\((a+2, b+2, c+2)=\\) S.D. \\((a, b, c)=d\\)\u003cbr/>\\(\\Rightarrow d^2=\\frac{a^2+b^2+c^2}{3}-(\\bar{x})^2\\)\u003cbr/>\\(\\Rightarrow d^2=\\frac{a^2+b^2+c^2}{3}-\\frac{4 b^2}{9}\\)\u003cbr/>\\(\\Rightarrow 9 d^2=3\\left(a^2+b^2+c^2\\right)-4 b^2\\)\u003cbr/>\\(\\Rightarrow b^2=3\\left(a^2+c^2\\right)-9 d^2\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For \\(a, b, c\\)\u003cbr/>\\(\\begin{array}{ll} \\bar{x}=\\frac{a+b+c}{3} & \\\\ \\Rightarrow \\bar{x}=\\frac{2 b}{3} & {[\\because b=a+c]}\\end{array}\\)\u003cbr/>S.D. \\((a+2, b+2, c+2)=\\) S.D. \\((a, b, c)=d\\)\u003cbr/>\\(\\Rightarrow d^2=\\frac{a^2+b^2+c^2}{3}-(\\bar{x})^2\\)\u003cbr/>\\(\\Rightarrow d^2=\\frac{a^2+b^2+c^2}{3}-\\frac{4 b^2}{9}\\)\u003cbr/>\\(\\Rightarrow 9 d^2=3\\left(a^2+b^2+c^2\\right)-4 b^2\\)\u003cbr/>\\(\\Rightarrow b^2=3\\left(a^2+c^2\\right)-9 d^2\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q52" data-gated="1">
-      <div class="qnum">Q52</div>
+      <div class="qhead"><div class="qnum">Q52</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean and variance of the following data \(6,10,7,13,a,12,b,12\) are\(9\)and \(\frac{37}{4}\) respectively, then \({(a-b)}^{2}\) is equal to</p> <p> </p> <p>[JEE Main 2021, 27 Jul (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>32</p></span></div><div class="option"><span class="key">b</span><span><p>24</p></span></div><div class="option"><span class="key">c</span><span><p>12</p></span></div><div class="option"><span class="key">d</span><span><p>\(16\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -677,7 +681,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Mean \\(=\\frac{6+10+7+13+a 12+b+12}{8}=9 \\)\u003cbr/>\\( 60+a+b=72 \\)\u003cbr/>\\( a+b=12 \\ldots .(1) \\)\u003cbr/> variance\\(=\\frac{\\sum x_i^2}{n}-\\left(\\frac{\\sum x_i}{n}\\right)^2=\\frac{37}{4} \\)\u003cbr/>\\( \\sum x_i^2=6^2+10^2+7^2+13^2+a^2+b^2+12^2+12^2 \\)\u003cbr/>\\( =a^2+b^2+642 \\)\u003cbr/>\\( \\frac{a^2+b^2+642}{8}-(9)^2=\\frac{37}{4} \\)\u003cbr/>\\( \\frac{a^2+b^2}{8}+\\frac{321}{4}-81=\\frac{37}{4} \\)\u003cbr/>\\( \\frac{a^2+b^2}{8}=81+\\frac{37}{4}-\\frac{321}{4}\\)\u003cbr/>\\( \\frac{a^2+b^2}{8}=81-71 \\)\u003cbr/>\\( \\therefore a^2+b^2=80 \\ldots \\text { (2) }\\)\u003cbr/> From (1) \\( a^2+b^2+2 a b=144\\)\u003cbr/>\\( 80+2 a b=144 \\therefore 2 a b=64 \\)\u003cbr/>\\( (a-b)^2=a^2+b^2-2 a b=64=80-64=16\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q53" data-gated="1">
-      <div class="qnum">Q53</div>
+      <div class="qhead"><div class="qnum">Q53</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let sets \(A\) and \(B\) have \(5\) elements each. Let the mean of the elements in sets \(A\) and \(B\) be \(5\) and \(8\) respectively and the variance of the elements in sets \(A\) and \(B\) be \(12\) and \(20\) respectively. A new set \(C\) of \(10\) elements is formed by subtracting \(3\) from each element of \(A\) and adding \(2\) to each element of \(B\). Then the sum of the mean and variance of the elements of \(C\) is</p> <p> </p> <p>[JEE Main 2023, 11 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>32</p></span></div><div class="option"><span class="key">b</span><span><p>38</p></span></div><div class="option"><span class="key">c</span><span><p>40</p></span></div><div class="option"><span class="key">d</span><span><p>36</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -689,7 +693,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\( A=\\left\\{a_1, a_2, a_3, a_4, a_5\\right\\} \\)\u003cbr/>\\( B=\\left\\{b_1, b_2, b_3, b_4, b_5\\right\\}\\)\u003c/p> \u003cp>Mean of set \\(A\\) and \\(B\\) are 5 and 8 respectively.\u003c/p> \u003cp>So, \\( \\sum_{i=1}^5 a_i=25, \\sum_{i=1}^5 b_i=40 \\)\u003cbr/> Variance \\(=\\frac{\\sum_{i=1}^5 a_i^2}{5}-\\left(\\frac{\\sum_{i=1}^5 a_i}{5}\\right)^2=12, \\)\u003c/p> \u003cp>\\(\\frac{\\sum_{i=1}^5 b_i^2}{5}-\\left(\\frac{\\sum_{i=1}^5 b_i}{5}\\right)^2=20 \\)\u003cbr/>\\( \\Rightarrow \\sum_{i=1}^5 a_i^2=185, \\sum_{i=1}^5 b_i^2=420\\)\u003c/p> \u003cp>Now, \\(C=\\left\\{c_1, c_2, \\ldots . . c_{10}\\right\\}\\)\u003cbr/>\\(c_i=a_i-3 \\text { or } b_i+2\\)\u003c/p> \u003cp>First five Last five elements elements\u003cbr/>\\(\\therefore\\) Mean of \\(C,\\)\u003c/p> \u003cp>\\(\\bar{C}=\\frac{\\left(\\sum a_i-15\\right)+\\left(\\sum b_i+10\\right)}{10}\\)\u003cbr/>\\( \\bar{C}=\\frac{10+50}{10}=6 \\)\u003cbr/>\\( \\therefore \\sigma^2=\\frac{\\sum_{i=1}^{10} c_i^2}{10}-(\\bar{C})^2\\)\u003c/p> \u003cp>\\( =\\frac{\\sum\\left(a_i-3\\right)^2+\\sum\\left(b_i+2\\right)^2}{10}-(6)^2 \\)\u003c/p> \u003cp>\\( =\\frac{\\sum a_i^2+\\sum b_i^2-6 \\sum a_i+4 \\sum b_i+65}{10}-36 \\)\u003c/p> \u003cp>\\( =\\frac{185+420-150+160+65}{10}-36 \\)\u003c/p> \u003cp>\\( =32 \\)\u003c/p> \u003cp>\\( \\therefore \\text { Mean + Variance }=\\bar{C}+\\sigma^2=6+32=38\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q54" data-gated="1">
-      <div class="qnum">Q54</div>
+      <div class="qhead"><div class="qnum">Q54</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of \(5\) observations are \(5\) and \(8\) respectively. If \(3\) observations are \(1,3,5\), then the sum of cubes of the remaining two observations is</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(1072\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(1792\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1216\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(1456\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -701,7 +705,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(x=\\frac{1+3+5+a+b}{5}\\Rightarrow a+b=16....\\left(1\\right)\\\\ {\\sigma }^{2}=\\frac{\\sum {{x}_{i}}^{2}}{n}-{\\left(x\\right)}^{2}\\Rightarrow 8=\\frac{{1}^{2}+{3}^{2}+{5}^{2}+{a}^{2}+{b}^{2}}{5}-25\\)\u003c/p> \u003cp>\\(\\Rightarrow {a}^{2}+{b}^{2}=130....\\left(2\\right)\\)\u003c/p> \u003cp>Using (1) and (2), we get \\(ab=63\\)\u003c/p> \u003cp>Now, \\({a}^{3}+{b}^{3}=\\left(a+b\\right)({a}^{2}+{b}^{2}-ab)=16\\times 67=1072\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q55" data-gated="1">
-      <div class="qnum">Q55</div>
+      <div class="qhead"><div class="qnum">Q55</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean of 10 numbers \(7 \times \ 8,10 \times \ 10,13 \times \ 12,16 \times \ 14 ,\ ....\ \) is</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>209</p></span></div><div class="option"><span class="key">b</span><span><p>290</p></span></div><div class="option"><span class="key">c</span><span><p>398</p></span></div><div class="option"><span class="key">d</span><span><p>389</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -713,7 +717,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\((7 \\times 8),(10 \\times 10),(13 \\times 12), \\ldots \\ldots \\)\u003cbr/>\\(7,10,13, \\ldots \\ldots\\)\u003cbr/>\\(a_n=7+(n-1) 3=3 n+4 \\)\u003cbr/>\\(8,10,12, \\ldots \\ldots \\)\u003cbr/>\\( b_n=8+(n-1) 2=2 n+6 \\)\u003cbr/>\\(\\Rightarrow T_n=(3 n+4)(2 n+6) \\)\u003cbr/>\\(=6 n^2+26 n+24\\)\u003c/p> \u003cp>Sum \\(S_n=\\Sigma T_n \\)\u003cbr/>\\( =6 \\cdot\\left[\\frac{n(n+1)(2 n+1)}{6}\\right]+26\\left[\\frac{n(n+1)}{2}\\right]+24 n \\)\u003cbr/>Mean \\(=\\frac{10 \\cdot 11 \\cdot 21}{10}+\\frac{13 \\cdot 10 \\cdot 11}{10}+\\frac{24 \\cdot 10}{10} =398\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q56" data-gated="1">
-      <div class="qnum">Q56</div>
+      <div class="qhead"><div class="qnum">Q56</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The first of the two samples has 100 items with mean 15 and \(\mathrm{S}.\mathrm{D}.3\). If the whole group has 250 items with mean 15.6 and S.D\(=\sqrt{13.44}\) then S.D. of the second group is</p> <p><strong>[JEE Main 2021, 25 Jul (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5</p></span></div><div class="option"><span class="key">b</span><span><p>4</p></span></div><div class="option"><span class="key">c</span><span><p>6</p></span></div><div class="option"><span class="key">d</span><span><p>3.25</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -725,7 +729,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({1}^{\\text{st }}\\text{ sample }\\\\ \\Sigma {x}_{i}=100\\times 15=1500\\\\ {\\sigma }_{x}^{2}=\\frac{\\sum {x}_{i}^{2}}{100}-(15{)}^{2}=9\\\\ \\Rightarrow \\Sigma {x}_{i}^{2}=23400\\\\ {2}^{\\text{nd }}\\text{ sample }\\\\ \\Sigma {y}_{i}=150(\\overset{¯}{y})\\\\ {\\sigma }_{y}^{2}=\\frac{\\Sigma {y}_{i}^{2}}{150}-(\\overset{¯}{y}{)}^{2}\\\\ \\text{ Combined sample }\\\\ {\\sigma }^{2}=\\frac{\\Sigma {x}_{i}^{2}+\\Sigma {y}_{i}^{2}}{250}-(15.6{)}^{2}=13.44\\\\ \\Rightarrow \\Sigma {y}^{2}=40,800\\\\ \\overset{¯}{y}=16\\\\ {\\sigma }_{y}^{2}=\\frac{\\Sigma {y}_{i}^{2}}{150}-(16{)}^{2}\\\\ {\\sigma }_{y}=4\\\\\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q57" data-gated="1">
-      <div class="qnum">Q57</div>
+      <div class="qhead"><div class="qnum">Q57</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S\) be the set of all values of \(a_1\) for which the mean deviation about the mean of 100 consecutive positive integers \(a_1, a_2, a_3, \ldots ., a_{100}\) is 25 . Then \(S\) is</p> <p> </p> <p>[JEE Main 2023, 30 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\phi\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\{99\}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(N\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\{9\}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -737,7 +741,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let \\(a_1\\) be any natural number so,\u003c/p> \u003cp>\\(a_1, a_1+1, a_1+2, \\ldots \\ldots\\), \\(a_1+99\\) are values of \\(a_i{ }^{\\prime}\\)s or \\(S\\).\u003cbr/>Mean, \\(\\bar{x}=\\frac{a_1+\\left(a_1+1\\right)+\\left(a_1+2\\right)+\\ldots .+a_1+99}{100}\\)\u003cbr/>\\(=\\frac{100 a_1+(1+2+\\ldots .+99)}{100}=a_1+\\frac{99 \\times 100}{2 \\times 100}\\)\u003cbr/>\\(=a_1+\\frac{99}{2}\\)\u003c/p> \u003cp>Mean deviation about mean \\(=\\frac{\\sum_{i=1}^{100}\\left|x_i-\\bar{x}\\right|}{100}\\)\u003cbr/>\\(=\\frac{2\\left(\\frac{99}{2}+\\frac{97}{2}+\\frac{95}{2}+\\ldots .+\\frac{1}{2}\\right)}{100}\\)\u003cbr/>\\(=\\frac{1+3+\\ldots .+99}{100}=\\frac{\\frac{50}{2}[1+99]}{100}=25\\)\u003c/p> \u003cp>So, it is true for every natural no. ' \\(a_1\\) ' as there is no term of \\(a_1\\) in mean deviation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q58" data-gated="1">
-      <div class="qnum">Q58</div>
+      <div class="qhead"><div class="qnum">Q58</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and variance of 12 observations be \(\frac{9}{2}\) and 4 respectively. Later on, it was observed that two observations were considered as 9 and 10 instead of 7 and 14 respectively. If the correct variance is \(\frac{m}{n}\), where \(m\) and \(n\) are co-prime, then \(m+n\) is equal to</p> <p>[JEE Main 2023, 8 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>316</p></span></div><div class="option"><span class="key">b</span><span><p>314</p></span></div><div class="option"><span class="key">c</span><span><p>317</p></span></div><div class="option"><span class="key">d</span><span><p>315</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -746,10 +750,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Mean }=\\frac{\\sum x}{12}=\\frac{9}{2} \\Rightarrow \\sum x=54 \\\\\u003cbr/>&amp; \\text { Variance }=4 \\\\\u003cbr/>&amp; \\Rightarrow \\frac{\\sum x^2}{12}-\\left(\\frac{9}{2}\\right)^2=4 \\Rightarrow \\sum x^2=291 \u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\\sum {x}_{\\text{new }}=54-(9+10)+(7+14)=56\\) \u003cbr/>\\(\\sum {x}_{\\text{new }}^{2}=219-(81+100)(49+196)=355\\) \u003cbr/>\\({\\sigma }_{\\text{new }}^{2}=\\frac{355}{12}-{\\left(\\frac{56}{12}\\right)}^{2}=\\frac{281}{36}=\\frac{m}{n}(\\text{ Given })\\)\u003cbr/>\\(∴m=281\\text{ and }n=36\\)\u003c/p> \u003cp>Hence, \\(m+n=317\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\text { Mean }=\\frac{\\sum x}{12}=\\frac{9}{2} \\Rightarrow \\sum x=54 \\\\& \\text { Variance }=4 \\\\& \\Rightarrow \\frac{\\sum x^2}{12}-\\left(\\frac{9}{2}\\right)^2=4 \\Rightarrow \\sum x^2=291 \\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\\(\\sum {x}_{\\text{new }}=54-(9+10)+(7+14)=56\\) \u003cbr/>\\(\\sum {x}_{\\text{new }}^{2}=219-(81+100)(49+196)=355\\) \u003cbr/>\\({\\sigma }_{\\text{new }}^{2}=\\frac{355}{12}-{\\left(\\frac{56}{12}\\right)}^{2}=\\frac{281}{36}=\\frac{m}{n}(\\text{ Given })\\)\u003cbr/>\\(∴m=281\\text{ and }n=36\\)\u003c/p> \u003cp>Hence, \\(m+n=317\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q59" data-gated="1">
-      <div class="qnum">Q59</div>
+      <div class="qhead"><div class="qnum">Q59</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean and variance of the following data :<br/>6,10,7,13, a, 12, b, 12 are 9 and \(\frac{37}{4}\) respectively, then \((a-b{)}^{2}\) is equal to :</p> <p><strong>[JEE Main 2021, 27 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>24</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>32</p></span></div><div class="option"><span class="key">d</span><span><p>16</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -761,7 +765,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\text{ Mean }=\\frac{6+10+7+13+a+12+b+12}{8}=9\\\\ 60+a+b=72\\\\ a+b=12\\ldots \\ldots \\ldots (i)\\\\ \\text{ Variance }=\\frac{\\Sigma {x}_{i}^{2}}{n}-{\\left(\\frac{\\Sigma {x}_{i}}{n}\\right)}^{2}=\\frac{37}{4}\\)\u003c/p> \u003cp>\\(\\Sigma {x}^{2}={6}^{2}+{10}^{2}+{7}^{2}+{13}^{2}+{a}^{2}+{12}^{2}+{b}^{2}+{12}^{2}={a}^{2}+{b}^{2}+642\\\\ \\frac{{a}^{2}+{b}^{2}+642}{8}-(9{)}^{2}=\\frac{37}{4}\\\\ \\frac{{a}^{2}+{b}^{2}}{8}+\\frac{321}{4}-81=\\frac{37}{4}\\\\ {a}^{2}+{b}^{2}=80\\\\ (a+b{)}^{2}=144\\text{ (from (i)) }\\\\ ∴(a-b{)}^{2}=16\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q60" data-gated="1">
-      <div class="qnum">Q60</div>
+      <div class="qhead"><div class="qnum">Q60</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let in a series of \(2 n\) observations, half of them are equal to \(a\) and remaining half are equal to \(-a\). Also by adding a constant \(b\) in each of these observations, the mean and standard deviation of new set become 5 and 20 , respectively. Then the value of \(a^2+b^2\) is equal to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>425</p></span></div><div class="option"><span class="key">b</span><span><p>650</p></span></div><div class="option"><span class="key">c</span><span><p>250</p></span></div><div class="option"><span class="key">d</span><span><p>925</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -770,10 +774,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Let observation are denoted by \\(x_i\\) where \\(1 \\leq i&lt;2 n\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Mean }(\\bar{x})=\\frac{\\sum x_i}{2 n}=\\frac{(a+a+a \\cdots+a)-(a+a+\\cdots a)}{2 n} \\\\\u003cbr/>&amp; =\\frac{n a-n a}{2 n}=0 \\\\\u003cbr/>&amp; \\text { Variance }=\\frac{1}{2 n} \\sum_{i=1}^{2 n} x_i^2-\\bar{x}^2=\\frac{2 n a^2}{2 n}=a^2\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>If \\(b\\) is added to all of each observations then new mean \\(=0+b=b=5\\)\u003cbr/>\\((\\text { S.D. })^2=a^2=(20)^2=400 \\quad[\\because\\) No change in S.D \\(]\\)\u003cbr/>Hence, \\(a^2+b^2=400+25=425\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Let observation are denoted by \\(x_i\\) where \\(1 \\leq i&lt;2 n\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { Mean }(\\bar{x})=\\frac{\\sum x_i}{2 n}=\\frac{(a+a+a \\cdots+a)-(a+a+\\cdots a)}{2 n} \\\\& =\\frac{n a-n a}{2 n}=0 \\\\& \\text { Variance }=\\frac{1}{2 n} \\sum_{i=1}^{2 n} x_i^2-\\bar{x}^2=\\frac{2 n a^2}{2 n}=a^2\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>If \\(b\\) is added to all of each observations then new mean \\(=0+b=b=5\\)\u003cbr/>\\((\\text { S.D. })^2=a^2=(20)^2=400 \\quad[\\because\\) No change in S.D \\(]\\)\u003cbr/>Hence, \\(a^2+b^2=400+25=425\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q61" data-gated="1">
-      <div class="qnum">Q61</div>
+      <div class="qhead"><div class="qnum">Q61</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of the marks of \(10\) students were found to be \(50\) and \(12\) respectively. Later, it was observed that two marks \(20\) and \(25\) were wrongly read as \(45\) and \(50\) respectively. Then the correct variance is..........</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(345\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(369\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(269\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(459\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -785,7 +789,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\( \\bar{x}=50 \\)\u003cbr/>\\( \\sum x_i=500 \\)\u003cbr/>\\( \\sum x_{i_{\\text {correct }}}=500+20+25-45-50=450 \\)\u003cbr/>\\( \\sigma^2=144 \\)\u003cbr/>\\( \\frac{\\sum x_i^2}{10}-(50)^2=144 \\)\u003cbr/>\\( \\sum x_{i_{\\text {correct }}}^2 \\)\u003cbr/>\\( =\\left(144+(50)^2\\right) \\times 10-(45)^2-(50)^2+(20)^2+(25)^2 \\)\u003cbr/>\\( =22940\\)\u003c/p> \u003cp>Correct variance \\(=\\frac{\\sum {\\left({x}_{{i}_{correct}}\\right)}^{2}}{10}-{\\left(\\frac{\\sum {x}_{{i}_{correct}}}{10}\\right)}^{2}\\)\u003cbr/>\\(=2294-(45{)}^{2}\\) \u003cbr/>\\(=2294-2025=269\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q62" data-gated="1">
-      <div class="qnum">Q62</div>
+      <div class="qhead"><div class="qnum">Q62</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of 10 observations are 20 and 8 respectively. Later on, it was observed that one observation was recorded as 50 instead of 40 . Then the correct variance is:</p> <p><strong>[JEE Main 2023, 15 Apr (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>14</p></span></div><div class="option"><span class="key">b</span><span><p>13</p></span></div><div class="option"><span class="key">c</span><span><p>12</p></span></div><div class="option"><span class="key">d</span><span><p>11</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -794,10 +798,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mu=20, \\sigma=8 \\\\\u003cbr/>&amp; \\mu=\\frac{\\sum_{i=1}^{10} x_i}{10}=20 \\Rightarrow \\sum x_i=200 \\\\\u003cbr/>&amp; \\text { Correct } \\Sigma x_i=200-50+40=190 \\\\\u003cbr/>&amp; \\mu_{\\text {Corrected }}=\\frac{190}{10}=19\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Now, \\(\\sigma^2=\\frac{1}{10} \\sum x_i^2-20^2\\)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; (64+400) 10=\\sum x_i^2 \\\\ &amp; \\Sigma x_i^2=4640 \\\\ &amp; \\text { Correct } \\Sigma x_i^2=4640-50^2+40^2=3740 \\\\ &amp; \\sigma_{\\text {Corrected }}^2=\\frac{1}{10}[3740]-19^2 \\\\ &amp; =374-361 \\\\ &amp; =13\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\mu=20, \\sigma=8 \\\\& \\mu=\\frac{\\sum_{i=1}^{10} x_i}{10}=20 \\Rightarrow \\sum x_i=200 \\\\& \\text { Correct } \\Sigma x_i=200-50+40=190 \\\\& \\mu_{\\text {Corrected }}=\\frac{190}{10}=19\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Now, \\(\\sigma^2=\\frac{1}{10} \\sum x_i^2-20^2\\)\u003c/p> \u003cp>\\(\\begin{aligned} & (64+400) 10=\\sum x_i^2 \\\\ & \\Sigma x_i^2=4640 \\\\ & \\text { Correct } \\Sigma x_i^2=4640-50^2+40^2=3740 \\\\ & \\sigma_{\\text {Corrected }}^2=\\frac{1}{10}[3740]-19^2 \\\\ & =374-361 \\\\ & =13\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q63" data-gated="1">
-      <div class="qnum">Q63</div>
+      <div class="qhead"><div class="qnum">Q63</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of 20 observations were calculated as 10 and 2.5 respectively. It was found that by mistake one data value was taken as 25 instead of 35 . If \(\alpha\) and \(\sqrt{\beta}\) are the mean and standard deviation respectively for correct data, then \((\alpha, \beta)\) is:</p> <p><strong>[JEE Main 2021, 26 Aug (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( (11,26) \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( (10.5,25) \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( (11,25) \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( (10.5,26) \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -806,10 +810,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(c) We have, \\(\\Sigma X=200\\)\u003cbr/>and \\(\\sum X^2=2125\\)\u003cbr/>Now, after correcting mistake\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\sum X=200-25+35=210 \\\\\u003cbr/>&amp; \\Rightarrow \\bar{x}=10.5 \\\\\u003cbr/>&amp; \\text { and } \\sum X^2=2725\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Therefore, \\(\\sigma^2=\\frac{2725}{20}-(10.5)^2=26\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>(c) We have, \\(\\Sigma X=200\\)\u003cbr/>and \\(\\sum X^2=2125\\)\u003cbr/>Now, after correcting mistake\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\sum X=200-25+35=210 \\\\& \\Rightarrow \\bar{x}=10.5 \\\\& \\text { and } \\sum X^2=2725\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Therefore, \\(\\sigma^2=\\frac{2725}{20}-(10.5)^2=26\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q64" data-gated="1">
-      <div class="qnum">Q64</div>
+      <div class="qhead"><div class="qnum">Q64</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean of 10 numbers</p> <p>\(7 \times \ 8\ ,10 \times \ 10\ \ ,13 \times \ 12\ \ ,16 \times \ 14\ \ ,\ ....\ is\)</p> <p> </p> <p>[JEE Main 2021, 31 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>209</p></span></div><div class="option"><span class="key">b</span><span><p>290</p></span></div><div class="option"><span class="key">c</span><span><p>398</p></span></div><div class="option"><span class="key">d</span><span><p>389</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -818,10 +822,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\begin{aligned}\u003cbr/>&amp; (7 \\times 8),(10 \\times 10),(13 \\times 12), \\ldots \\ldots \\\\\u003cbr/>&amp; 7,10,13, \\ldots \\ldots \\\\\u003cbr/>&amp; a_n=7+(n-1) 3=3 n+4 \\\\\u003cbr/>&amp; 8,10,12, \\ldots \\ldots \\\\\u003cbr/>&amp; \\quad b_n=8+(n-1) 2=2 n+6 \\\\\u003cbr/>&amp; \\text { So, } T_n=(3 n+4)(2 n+6) \\\\\u003cbr/>&amp; \\quad=6 n^2+26 n+24 \\\\\u003cbr/>&amp; \\text { Sum } S_n=\\Sigma T_n \\\\\u003cbr/>&amp; =6 \\cdot\\left[\\frac{n(n+1)(2 n+1)}{6}\\right]+26\\left[\\frac{n(n+1)}{2}\\right]+24 n \\\\\u003cbr/>&amp; \\text { Mean }=\\frac{\\text { sum }}{10}=\\frac{10 \\cdot 11 \\cdot 21}{10}+\\frac{13 \\cdot 10 \\cdot 11}{10}+\\frac{24 \\cdot 10}{10} \\\\\u003cbr/>&amp; \\quad=398\u003cbr/>\\end{aligned}\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>$$\\begin{aligned}& (7 \\times 8),(10 \\times 10),(13 \\times 12), \\ldots \\ldots \\\\& 7,10,13, \\ldots \\ldots \\\\& a_n=7+(n-1) 3=3 n+4 \\\\& 8,10,12, \\ldots \\ldots \\\\& \\quad b_n=8+(n-1) 2=2 n+6 \\\\& \\text { So, } T_n=(3 n+4)(2 n+6) \\\\& \\quad=6 n^2+26 n+24 \\\\& \\text { Sum } S_n=\\Sigma T_n \\\\& =6 \\cdot\\left[\\frac{n(n+1)(2 n+1)}{6}\\right]+26\\left[\\frac{n(n+1)}{2}\\right]+24 n \\\\& \\text { Mean }=\\frac{\\text { sum }}{10}=\\frac{10 \\cdot 11 \\cdot 21}{10}+\\frac{13 \\cdot 10 \\cdot 11}{10}+\\frac{24 \\cdot 10}{10} \\\\& \\quad=398\\end{aligned}$$\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q65" data-gated="1">
-      <div class="qnum">Q65</div>
+      <div class="qhead"><div class="qnum">Q65</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of the marks of 10 students were found to be 50 and 12 respectively. Later, it was observed that two marks 20 and 25 were wrongly read as 45 and 50 respectively. Then the correct variance is____________</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>269</p></span></div><div class="option"><span class="key">b</span><span><p>200</p></span></div><div class="option"><span class="key">c</span><span><p>100</p></span></div><div class="option"><span class="key">d</span><span><p>150</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -830,10 +834,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given that \\(\\bar{x}=50 \\Rightarrow \\sum x_i=500\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\sum x_{i_{\\text {correct }}}=500+20+25-45-50=450 \\\\\u003cbr/>&amp; \\sigma^2=144 \\\\\u003cbr/>&amp; \\frac{\\sum x_i^2}{10}-(50)^2=144 \\\\\u003cbr/>&amp; \\sum x_{i_{\\text {correct }}}=\\left(144+(50)^2\\right) \\times 10-(45)^2-(50)^2+(20)^2 \\\\\u003cbr/>&amp; +(25)^2=22940 \\\\\u003cbr/>&amp; \\text { Correct variance }=\\frac{\\sum\\left(x_{\\text {icorrect }}\\right)^2}{10}-\\left(\\frac{\\sum x_{\\text {icorrect }}}{10}\\right)^2 \\\\\u003cbr/>&amp; =2294-(45)^2 \\\\\u003cbr/>&amp; =2294-2025=269\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Given that \\(\\bar{x}=50 \\Rightarrow \\sum x_i=500\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\sum x_{i_{\\text {correct }}}=500+20+25-45-50=450 \\\\& \\sigma^2=144 \\\\& \\frac{\\sum x_i^2}{10}-(50)^2=144 \\\\& \\sum x_{i_{\\text {correct }}}=\\left(144+(50)^2\\right) \\times 10-(45)^2-(50)^2+(20)^2 \\\\& +(25)^2=22940 \\\\& \\text { Correct variance }=\\frac{\\sum\\left(x_{\\text {icorrect }}\\right)^2}{10}-\\left(\\frac{\\sum x_{\\text {icorrect }}}{10}\\right)^2 \\\\& =2294-(45)^2 \\\\& =2294-2025=269\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q66" data-gated="1">
-      <div class="qnum">Q66</div>
+      <div class="qhead"><div class="qnum">Q66</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean of 6 observation \(1,2,4,5, x\) and \(y\) be 5 and their variance be 10 . Then their mean deviation about the mean is equal to</p> <p><strong>[JEE Main 2023, 11 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{10}{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{7}{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>3</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{8}{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -842,10 +846,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Mean }=5 \\\\\u003cbr/>&amp; \\Rightarrow 1+2+4+5+x+y=6 \\times 5 \\\\\u003cbr/>&amp; \\Rightarrow x+y=18\\{\\because \\text { Mean }=5\\} \\\\\u003cbr/>&amp; \\text { Variance }=10=\\frac{1+4+16+25+x^2+y^2}{6}-(5)^2 \\\\\u003cbr/>&amp; \\Rightarrow x^2+y^2=164\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>By solving, we get\u003cbr/>\\[\u003cbr/>x=8, y=10\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\text { Mean deviation about mean }=\\frac{\\sum\\left|x_i-\\bar{x}\\right|}{6}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>=\\frac{4+3+1+3+5}{6}=\\frac{8}{3}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { Mean }=5 \\\\& \\Rightarrow 1+2+4+5+x+y=6 \\times 5 \\\\& \\Rightarrow x+y=18\\{\\because \\text { Mean }=5\\} \\\\& \\text { Variance }=10=\\frac{1+4+16+25+x^2+y^2}{6}-(5)^2 \\\\& \\Rightarrow x^2+y^2=164\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>By solving, we get\u003cbr/>\\[\u003cbr/>x=8, y=10\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>\\text { Mean deviation about mean }=\\frac{\\sum\\left|x_i-\\bar{x}\\right|}{6}\u003cbr/>\\]\u003cbr/>\\[\u003cbr/>=\\frac{4+3+1+3+5}{6}=\\frac{8}{3}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q67" data-gated="1">
-      <div class="qnum">Q67</div>
+      <div class="qhead"><div class="qnum">Q67</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the frequency distribution:<br/>Variate \((x): x_1 x_2 x_3 \ldots x_{15}\)<br/>Frequency \((f): f_1 f_2 f_3 \ldots f_{15}\) Where \(0&lt;x_1&lt;x_2&lt;x_3&lt;\ldots&lt;x_{15}=10\) and \(\sum_{i=1}^{15} f_i&gt;0\), then standard deviation cannot be:</p> <p>[JEE Main 2020, 3 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>1</p></span></div><div class="option"><span class="key">b</span><span><p>6</p></span></div><div class="option"><span class="key">c</span><span><p>2</p></span></div><div class="option"><span class="key">d</span><span><p>4</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -854,10 +858,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>If variate varries from \\(a\\) to \\(b\\) then variance\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\operatorname{var}(x) \\leq\\left(\\frac{b-a}{2}\\right)^2 \\Rightarrow \\operatorname{var}(x)&lt;\\left(\\frac{10-0}{2}\\right)^2 \\\\\u003cbr/>&amp; \\Rightarrow \\operatorname{var}(x)&lt;25 \\\\\u003cbr/>&amp; \\Rightarrow \\text { Standard deviation }&lt;5\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Clearly standard deviation cannot be 6 .\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>If variate varries from \\(a\\) to \\(b\\) then variance\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\operatorname{var}(x) \\leq\\left(\\frac{b-a}{2}\\right)^2 \\Rightarrow \\operatorname{var}(x)&lt;\\left(\\frac{10-0}{2}\\right)^2 \\\\& \\Rightarrow \\operatorname{var}(x)&lt;25 \\\\& \\Rightarrow \\text { Standard deviation }&lt;5\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Clearly standard deviation cannot be 6 .\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q68" data-gated="1">
-      <div class="qnum">Q68</div>
+      <div class="qhead"><div class="qnum">Q68</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean and variance of six observations \(7,10,11,15\), \(a, b\) are 10 and \(\frac{20}{3}\), respectively, then the value of \(|a-b|\) is equal to</p> <p><br/>[JEE Main 2021, 20 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option"><span class="key">b</span><span><p>7</p></span></div><div class="option"><span class="key">c</span><span><p>11</p></span></div><div class="option"><span class="key">d</span><span><p>1</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -866,10 +870,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given, mean \\(=10\\)\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow 10=\\frac{7+10+11+15+a+b}{6} \\Rightarrow a+b=17................(i) \\\\\u003cbr/>&amp; \\Rightarrow \\frac{20}{3}=\\frac{7^2+10^2+11^2+15^2+a^2+b^2}{6}-10^2 \\\\\u003cbr/>&amp; a^2+b^2=145............(ii)\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>By solving eqn (i) and eqn (ii) we get, \\(a=8, b=9\\) or \\(a=9, b=8\\)\u003cbr/>\\(\\therefore|a-b|=1\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given, mean \\(=10\\)\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow 10=\\frac{7+10+11+15+a+b}{6} \\Rightarrow a+b=17................(i) \\\\& \\Rightarrow \\frac{20}{3}=\\frac{7^2+10^2+11^2+15^2+a^2+b^2}{6}-10^2 \\\\& a^2+b^2=145............(ii)\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>By solving eqn (i) and eqn (ii) we get, \\(a=8, b=9\\) or \\(a=9, b=8\\)\u003cbr/>\\(\\therefore|a-b|=1\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q69" data-gated="1">
-      <div class="qnum">Q69</div>
+      <div class="qhead"><div class="qnum">Q69</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the mean and the standard deviation of the data \(3,5,7\), \(a, b\) are 5 and 2 respectively, then \(a\) and \(b\) are the roots of the equation:</p> <p> </p> <p>[JEE Main 2020, 5 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(x^2-20 x+18=0\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2 x^2-20 x+19=0\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(x^2-10 x+18=0\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(x^2-10 x+19=0\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -881,7 +885,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Mean \\(=5\\)\u003c/p> \u003cp>\\(\\Rightarrow 3+5+7+a+b=5 \\times 5 \\)\u003cbr/>\\( \\Rightarrow a+b=10 \\)\u003cbr/>Variance \\(=\\frac{3^2+5^2+7^2+a^2+b^2}{5}-(5)^2=4 \\)\u003cbr/>\\( \\Rightarrow a^2+b^2=62\\)\u003c/p> \u003cp>\\(\\Rightarrow(a+b)^2-2 a b=62\\)\u003c/p> \u003cp>\\(\\Rightarrow a b=19\\)\u003c/p> \u003cp>So, \\(a\\) and \\(b\\) are the roots of the equation \\(x^2-10 x+19=0\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q70" data-gated="1">
-      <div class="qnum">Q70</div>
+      <div class="qhead"><div class="qnum">Q70</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(n\) be an odd natural number such that the variance of \(1,2,3,4, \ldots n\) is 14 . Then \(n\) is equal to___________</p> <p> </p> <p>[JEE Main 2021, 27 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>13</p></span></div><div class="option"><span class="key">b</span><span><p>14</p></span></div><div class="option"><span class="key">c</span><span><p>16</p></span></div><div class="option"><span class="key">d</span><span><p>11</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -890,10 +894,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { Variance }=\\frac{\\sum x^2}{n}-(\\bar{x})^2 \\\\ &amp; \\Rightarrow 14=\\frac{1^2+2^2+3^2+\\ldots n^2}{n}-\\left(\\frac{1+2+3+\\ldots n}{n}\\right)^2 \\\\ &amp; \\Rightarrow 14=\\frac{n(n+1)(2 n+1)}{6 n}-\\left(\\frac{n(n+1)}{2 n}\\right)^2 \\\\ &amp; \\Rightarrow 14=\\frac{n+1}{12}[2(2 n+1)-3(n+1)]\\end{aligned}\\)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; \\Rightarrow 168=(n+1)(n-1) \\\\ &amp; \\Rightarrow n^2-1=168 \\\\ &amp; \\Rightarrow n^2=169 \\\\ &amp; \\Rightarrow n=13\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{aligned} & \\text { Variance }=\\frac{\\sum x^2}{n}-(\\bar{x})^2 \\\\ & \\Rightarrow 14=\\frac{1^2+2^2+3^2+\\ldots n^2}{n}-\\left(\\frac{1+2+3+\\ldots n}{n}\\right)^2 \\\\ & \\Rightarrow 14=\\frac{n(n+1)(2 n+1)}{6 n}-\\left(\\frac{n(n+1)}{2 n}\\right)^2 \\\\ & \\Rightarrow 14=\\frac{n+1}{12}[2(2 n+1)-3(n+1)]\\end{aligned}\\)\u003c/p> \u003cp>\\(\\begin{aligned} & \\Rightarrow 168=(n+1)(n-1) \\\\ & \\Rightarrow n^2-1=168 \\\\ & \\Rightarrow n^2=169 \\\\ & \\Rightarrow n=13\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q71" data-gated="1">
-      <div class="qnum">Q71</div>
+      <div class="qhead"><div class="qnum">Q71</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of a set of 15 numbers are 12 and 14 respectively. The mean and variance of another set of 15 numbers are 14 and \(\sigma^2\) respectively. If the variance of all the 30 numbers in the two sets is 13 , then \(\sigma^2\) is equal to</p> <p> </p> <p>[JEE Main 2023, 6 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>9</p></span></div><div class="option"><span class="key">b</span><span><p>12</p></span></div><div class="option"><span class="key">c</span><span><p>11</p></span></div><div class="option"><span class="key">d</span><span><p>10</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -905,7 +909,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Given \\(\\sigma_1^2=14\\), \\(n_1=15\\),\\(m_1=12\\)\u003c/p> \u003cp>Let \\(\\sigma_2^2=\\sigma^2\\), \\(n_2=15\\),\\(m_2=14\\)\u003c/p> \u003cp>Combined variance \\(=\\frac{n_1 \\sigma_1^2+n_2 \\sigma^2}{n_1+n_2}+\\frac{n_1 n_2\\left(m_1-m_2\\right)^2}{\\left(n_1+n_2\\right)^2} \\)\u003c/p> \u003cp>\\(13=\\frac{15.14+15 . \\sigma^2}{30}+\\frac{15.15(12-14)^2}{30 \\times 30} \\Rightarrow 13=\\frac{14+\\sigma^2}{2}+\\frac{4}{4} \\)\u003c/p> \u003cp>\\(\\sigma^2=10\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q72" data-gated="1">
-      <div class="qnum">Q72</div>
+      <div class="qhead"><div class="qnum">Q72</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and variance of 12 observations be \(\frac{9}{2}\) and 4 respectively. Later on, it was observed that two observations were considered as 9 and 10 instead of 7 and 14 respectively. If the correct variance is \(\frac{m}{n}\), where \(m\) and \(n\) are co-prime, then \(m+n\) is equal to</p> <p><strong>[JEE Main 2023, 08 Apr (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>316</p></span></div><div class="option"><span class="key">b</span><span><p>314</p></span></div><div class="option"><span class="key">c</span><span><p>317</p></span></div><div class="option"><span class="key">d</span><span><p>315</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -914,10 +918,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Mean }=\\frac{\\sum x}{12}=\\frac{9}{2} \\Rightarrow \\sum x=54 \\\\\u003cbr/>&amp; \\text { Variance }=4 \\\\\u003cbr/>&amp; \\Rightarrow \\frac{\\sum x^2}{12}-\\left(\\frac{9}{2}\\right)^2=4 \\Rightarrow \\sum x^2=291 \\\\\u003cbr/>&amp; \\sum x_{\\text {new }}=54-(9+10)+(7+14)=56 \\\\\u003cbr/>&amp; \\sum x_{\\text {new }}^2=219-(81+100)(49+196)=355 \\\\\u003cbr/>&amp; \\sigma_{\\text {risw }}^2=\\frac{355}{12}-\\left(\\frac{56}{12}\\right)^2=\\frac{281}{36}=\\frac{m}{n}(\\text { Given }) \\\\\u003cbr/>&amp; \\therefore m=281 \\text { and } n=36\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Hence, \\(m+n=317\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { Mean }=\\frac{\\sum x}{12}=\\frac{9}{2} \\Rightarrow \\sum x=54 \\\\& \\text { Variance }=4 \\\\& \\Rightarrow \\frac{\\sum x^2}{12}-\\left(\\frac{9}{2}\\right)^2=4 \\Rightarrow \\sum x^2=291 \\\\& \\sum x_{\\text {new }}=54-(9+10)+(7+14)=56 \\\\& \\sum x_{\\text {new }}^2=219-(81+100)(49+196)=355 \\\\& \\sigma_{\\text {risw }}^2=\\frac{355}{12}-\\left(\\frac{56}{12}\\right)^2=\\frac{281}{36}=\\frac{m}{n}(\\text { Given }) \\\\& \\therefore m=281 \\text { and } n=36\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Hence, \\(m+n=317\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q73" data-gated="1">
-      <div class="qnum">Q73</div>
+      <div class="qhead"><div class="qnum">Q73</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(x_i(1 \leq i \leq 10)\) be ten observations of a random variable \(X\). If \(\sum_{i=1}^{10}\left(x_i-p\right)=3\) and \(\sum_{i=1}^{10}\left(x_i-p\right)^2=9\) where \(p \neq 0\) \(p \in R\), then the standard deviation of these observations is </p> <p>[JEE Main 2020, 3 Sep (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{7}{10}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{9}{10}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\sqrt{\frac{3}{5}}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{4}{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -929,7 +933,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Here, \\(n=10\\)\u003cbr/>Hence, Standard deviation \\(=\\sqrt{\\frac{\\sum\\left(x_i-p\\right)^2}{n}-\\left(\\frac{\\sum x_i-p}{n}\\right)^2}\\)\u003cbr/>\\(=\\sqrt{\\frac{9}{10}-\\frac{9}{100}}=\\sqrt{\\frac{90-9}{100}}=\\frac{9}{10}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q74" data-gated="1">
-      <div class="qnum">Q74</div>
+      <div class="qhead"><div class="qnum">Q74</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and standard deviation of \(10\) observations are \(20\) and \(8\) respectively. Later on, it was observed that one observation was recorded as \(50\) instead of \(40\) .Then the correct variance is:</p> <p> </p> <p>[JEE Main 2023, 15 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(14\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(13\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(12\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(11\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -938,10 +942,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\mu=20, \\sigma=8 \\\\\u003cbr/>&amp; \\mu=\\frac{\\sum_{i=1}^{10} x_i}{10}=20 \\Rightarrow \\sum x_i=200\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>Correct \\(\\Sigma x_i=200-50+40=190\\)\u003cbr/>\\(\\mu_{\\text {Corrected }}=\\frac{190}{10}=19\\)\u003c/p> \u003cp>Now, \\(\\sigma^2=\\frac{1}{10} \\sum x_i^2-20^2\\)\u003c/p> \u003cp>\\(\\begin{aligned} &amp; (64+400) 10=\\sum x_i^2 \\\\ &amp; \\Sigma x_i^2=4640 \\\\ &amp; \\text { Correct } \\sum x_i^2=4640-50^2+40^2=3740 \\\\ &amp; \\sigma_{\\text {Corrected }}^2=\\frac{1}{10}[3740]-19^2 \\\\ &amp; =374-361 \\\\ &amp; =13\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\mu=20, \\sigma=8 \\\\& \\mu=\\frac{\\sum_{i=1}^{10} x_i}{10}=20 \\Rightarrow \\sum x_i=200\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>Correct \\(\\Sigma x_i=200-50+40=190\\)\u003cbr/>\\(\\mu_{\\text {Corrected }}=\\frac{190}{10}=19\\)\u003c/p> \u003cp>Now, \\(\\sigma^2=\\frac{1}{10} \\sum x_i^2-20^2\\)\u003c/p> \u003cp>\\(\\begin{aligned} & (64+400) 10=\\sum x_i^2 \\\\ & \\Sigma x_i^2=4640 \\\\ & \\text { Correct } \\sum x_i^2=4640-50^2+40^2=3740 \\\\ & \\sigma_{\\text {Corrected }}^2=\\frac{1}{10}[3740]-19^2 \\\\ & =374-361 \\\\ & =13\\end{aligned}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q75" data-gated="1">
-      <div class="qnum">Q75</div>
+      <div class="qhead"><div class="qnum">Q75</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the observations \(x_i(1 \leq i \leq 10)\) satisfy the equations, \(\sum_{i=1}^{10}\left(x_i-5\right)=10\) and \(\sum_{i=1}^{10}\left(x_i-5\right)^2=40\). If \(\mu\) and \(\lambda\) are the mean and the variance of the observations, \(x_1-3, x_2-3\), \(\ldots x_{10}-3\), then the ordered pair \((\mu, \lambda)\) is equal to:</p> <p>[JEE Main 2020, 9 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\((3,3)\)</p></span></div><div class="option"><span class="key">b</span><span><p>\((3,6)\)</p></span></div><div class="option"><span class="key">c</span><span><p>\((6,6)\)</p></span></div><div class="option"><span class="key">d</span><span><p>\((6,3)\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -950,10 +954,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Mean }\\left(x_i-5\\right)=\\frac{\\sum\\left(x_i-5\\right)}{10}=1 \\\\\u003cbr/>&amp; \\therefore \\lambda=\\left\\{\\text { Mean }\\left(x_i-5\\right)\\right\\}+2=3 \\\\\u003cbr/>&amp; \\mu=\\operatorname{var}\\left(x_i-5\\right)=\\frac{\\Sigma\\left(x_i-5\\right)^2}{10}-\\left(\\frac{\\sum\\left(x_i-5\\right)}{10}\\right)^2=3\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003cbr/>[No effect of origin]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\text { Mean }\\left(x_i-5\\right)=\\frac{\\sum\\left(x_i-5\\right)}{10}=1 \\\\& \\therefore \\lambda=\\left\\{\\text { Mean }\\left(x_i-5\\right)\\right\\}+2=3 \\\\& \\mu=\\operatorname{var}\\left(x_i-5\\right)=\\frac{\\Sigma\\left(x_i-5\\right)^2}{10}-\\left(\\frac{\\sum\\left(x_i-5\\right)}{10}\\right)^2=3\\end{aligned}$$\u003cbr/>\\)\u003cbr/>[No effect of origin]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q76" data-gated="1">
-      <div class="qnum">Q76</div>
+      <div class="qhead"><div class="qnum">Q76</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of the marks obtained by the students in a test are 10 and 4 respectively. Later, the marks of one of the students is increased from 8 to 12 . If the new mean of the marks is 10.2 . then their new variance is equal to:</p> <p><strong>[JEE Main 2023, 25 Jan (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4.04</p></span></div><div class="option"><span class="key">b</span><span><p>4.08</p></span></div><div class="option"><span class="key">c</span><span><p>3.96</p></span></div><div class="option"><span class="key">d</span><span><p>3.92</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -962,10 +966,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned} &amp; \\text { (c) } \\sum_{i=1}^n x_i=10 n \\\\ &amp; \\sum_{i=1}^n x_i-8+12=(10.2) n \\\\ &amp; \\therefore n=20 \\\\ &amp; \\end{aligned}\\)\u003c/p> \u003cp>Now \\(\\frac{\\sum_{i=1}^{20} x_i^2}{20}-(10)^2=4 \\Rightarrow \\sum_{i=1}^{20} x_i{ }^2=2080\\)\u003cbr/>New variance \\(=\\frac{\\sum_{i=1}^{20} x_i^2-8^2+12^2}{20}-(10.2)^2\\) \\(=108-104.04=3.96\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\begin{aligned} & \\text { (c) } \\sum_{i=1}^n x_i=10 n \\\\ & \\sum_{i=1}^n x_i-8+12=(10.2) n \\\\ & \\therefore n=20 \\\\ & \\end{aligned}\\)\u003c/p> \u003cp>Now \\(\\frac{\\sum_{i=1}^{20} x_i^2}{20}-(10)^2=4 \\Rightarrow \\sum_{i=1}^{20} x_i{ }^2=2080\\)\u003cbr/>New variance \\(=\\frac{\\sum_{i=1}^{20} x_i^2-8^2+12^2}{20}-(10.2)^2\\) \\(=108-104.04=3.96\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q77" data-gated="1">
-      <div class="qnum">Q77</div>
+      <div class="qhead"><div class="qnum">Q77</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(9=x_1&lt;x_2&lt;\ldots&lt;x_7\) be in an A.P. with common difference \(d\). If the standard deviation of \(x_1, x_2 \ldots, x_7\) is 4 and the mean is \(\bar{x}\), then \(\bar{x}+x_6\) is equal to:</p> <p> </p> <p><strong>[JEE Main 2023, 1 Feb (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(18\left(1+\frac{1}{\sqrt{3}}\right)\)</p></span></div><div class="option"><span class="key">b</span><span><p>34</p></span></div><div class="option"><span class="key">c</span><span><p>\(2\left(9+\frac{8}{\sqrt{7}}\right)\)</p></span></div><div class="option"><span class="key">d</span><span><p>25</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -974,10 +978,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; 9=x_1&lt;x_2&lt;\\ldots \\ldots&lt;x_7 \\\\\u003cbr/>&amp; 9,9+d, 9+2 d, \\ldots \\ldots .9+6 d\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Let \\(0, d, 2 d, \\ldots . .6 d\\)\u003cbr/>[Std. Deviation is independent of change in origin]\u003cbr/>\\[\u003cbr/>\\bar{x}_{\\text {new }}=\\frac{21 d}{7}=3 d\u003cbr/>\\]\u003c/p> \u003cp>Now,\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; 16=\\frac{1}{7}\\left(0^2+1^2+\\ldots \\ldots+6^2\\right) d^2-9 d^2 \\\\\u003cbr/>&amp; =\\frac{1}{7}\\left(\\frac{6 \\times 7 \\times 13}{6}\\right) d^2-9 d^2 \\\\\u003cbr/>&amp; \\Rightarrow 16=4 d^2 \\\\\u003cbr/>&amp; \\Rightarrow d^2=4 \\\\\u003cbr/>&amp; \\Rightarrow d=2\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>Now, \\(\\bar{x}+x_6=6+9+10+9=34\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& 9=x_1&lt;x_2&lt;\\ldots \\ldots&lt;x_7 \\\\& 9,9+d, 9+2 d, \\ldots \\ldots .9+6 d\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Let \\(0, d, 2 d, \\ldots . .6 d\\)\u003cbr/>[Std. Deviation is independent of change in origin]\u003cbr/>\\[\u003cbr/>\\bar{x}_{\\text {new }}=\\frac{21 d}{7}=3 d\u003cbr/>\\]\u003c/p> \u003cp>Now,\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& 16=\\frac{1}{7}\\left(0^2+1^2+\\ldots \\ldots+6^2\\right) d^2-9 d^2 \\\\& =\\frac{1}{7}\\left(\\frac{6 \\times 7 \\times 13}{6}\\right) d^2-9 d^2 \\\\& \\Rightarrow 16=4 d^2 \\\\& \\Rightarrow d^2=4 \\\\& \\Rightarrow d=2\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>Now, \\(\\bar{x}+x_6=6+9+10+9=34\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q78" data-gated="1">
-      <div class="qnum">Q78</div>
+      <div class="qhead"><div class="qnum">Q78</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of \(7\) observations are \(8\) and \(16\) respectively. If two observations are \(6\) and \(8\), then the variance of the remaining \(5\) observations is:</p> <p><strong>[JEE Main 2021, 31 Aug (Shift 2)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\frac{92}{5}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\frac{134}{5}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\frac{536}{25}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\frac{112}{5}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -989,7 +993,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Let the remaining five observations be \\(x_{1},x_{2},x_{3},x_{4},x_{5}\\).\u003c/p> \u003cp>So, \\(\\frac{x_{1} + x_{2} + x_{3} + x_{4} + x_{5} + 6 + 8}{7} = 8 \\Rightarrow x_{i} = 42\\)\u003c/p> \u003cp>Again, \\(\\frac{{x_{1}}^{2} + {x_{2}}^{2} + {x_{3}}^{2} + {x_{4}}^{2} + {x_{5}}^{2} + 36 + 64}{7} - 8^{2} = 16\\)\u003c/p> \u003cp>\\(\\Rightarrow {x_{i}}^{2} = (16 + 64) \\times 7 - 100 = 460\\)\u003c/p> \u003cp>Now, variance of remaining \\(5\\) observations is,\u003c/p> \u003cp>\\(= \\frac{1}{25}\\left\\lbrack 5{x_{i}}^{2} - \\left( x_{i} \\right)^{2} \\right\\rbrack = \\frac{1}{25}(5 \\times 460 - 42^{2}) = \\frac{536}{25}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q79" data-gated="1">
-      <div class="qnum">Q79</div>
+      <div class="qhead"><div class="qnum">Q79</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the six numbers \(a_1, a_2, a_3, a_4, a_5, a_6\) be in A.P. and \(a_1+a_3=10\). If the mean of these six numbers is \(\frac{19}{2}\) and their variance is \(\sigma^2\), then \(8 \sigma^2\) is equal to</p> <p> </p> <p>[JEE Main 2023, 24 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>220</p></span></div><div class="option"><span class="key">b</span><span><p>210</p></span></div><div class="option"><span class="key">c</span><span><p>200</p></span></div><div class="option"><span class="key">d</span><span><p>105</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1001,7 +1005,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(a_1+a_3=10 \\Rightarrow a_1+d=5 \\)\u003cbr/>\\(a_1+a_2+a_3+a_4+a_5+a_6=57 \\)\u003cbr/>\\(\\Rightarrow \\frac{6}{2}\\left[a_1+a_6\\right]=57 \\left[\\because S_n=\\frac{n}{2}[a+l]\\right] \\)\u003cbr/>\\(\\Rightarrow a_1+a_6=19\\)\u003cbr/>\\(\\Rightarrow 2 a_1+5 d=19\\)\u003c/p> \u003cp>and \\(a_1+d=5\\)\u003c/p> \u003cp>Solving both equations\u003cbr/>\\(\\Rightarrow a_1=2, d=3\\)\u003c/p> \u003cp>Numbers: 2, 5, 8, 11, 14, 17\u003cbr/>Variance \\(\\left(\\sigma^2\\right)=\\) Mean of squares of observations Square of mean\u003cbr/>\\(=\\frac{2^2+5^2+8^2+(11)^2+(14)^2+(17)^2}{6}-\\left(\\frac{19}{2}\\right)^2\\)\u003cbr/>\\(=\\frac{699}{6}-\\frac{361}{4}=\\frac{105}{4} \\)\u003cbr/>\\(\\Rightarrow 8 \\sigma^2=210\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q80" data-gated="1">
-      <div class="qnum">Q80</div>
+      <div class="qhead"><div class="qnum">Q80</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let the mean and standard deviation of marks of class \(A\) of 100 students be respectively 40 and \(\alpha(&gt;0)\), and the mean and standard deviation of marks of class \(B\) of \(n\) students be respectively 55 and \(30-\alpha\). If the mean and variance of the marks of the combined class of \(100+n\) students are respectively 50 and 350 , then the sum of variances of classes \(A\) and \(B\) is:</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>500</p></span></div><div class="option"><span class="key">b</span><span><p>650</p></span></div><div class="option"><span class="key">c</span><span><p>450</p></span></div><div class="option"><span class="key">d</span><span><p>900</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1010,10 +1014,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{array}{ccc}A &amp; B &amp; A+B \\\\ \\bar{x}_1=40 &amp; \\bar{x}_2=55 &amp; \\bar{x}=50 \\\\ \\sigma_1=\\alpha &amp; \\sigma_2=30-\\alpha &amp; \\sigma^2=350 \\\\ n_1=100 &amp; n_2=n &amp; 100+n\\end{array}\\)\u003c/p> \u003cp>Combined mean\u003cbr/>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; =\\frac{40 \\times 100+55 \\times n}{100+n}=50 \\\\\u003cbr/>&amp; 4000+55 n=5000+50 n \\\\\u003cbr/>&amp; \\Rightarrow 5 n=1000 \\\\\u003cbr/>&amp; \\Rightarrow n=200 \\\\\u003cbr/>&amp; \\sigma_1^2=\\frac{\\sum x_i^2}{100}-(40)^2 \\text { and } \\sigma_2^2=\\frac{\\sum y_i^2}{n}-(55)^2 \\\\\u003cbr/>&amp; 350=\\frac{\\sum x_i^2+\\sum y_i^2}{300}-(50)^2 \\\\\u003cbr/>&amp; \\Rightarrow 350=\\frac{\\left(1600+\\alpha^2\\right) \\times 100+\\left[\\left(30-\\alpha)^2\\right)+(55)^2\\right] \\times 200}{300}-(50)^2\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\Rightarrow(2500+350) \\times 3=1600+\\alpha^2+2(30-\\alpha)^2+55^2 \\times 2 \\\\\u003cbr/>&amp; \\Rightarrow \\alpha^2-40 \\alpha+300 =0\\\\\u003cbr/>&amp; \\alpha=10,30 \\text { (Rejected) }\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p> \u003cp>So, \\(\\sigma_1^2+\\sigma_2^2=(30-10)^2+(10)^2=20^2+10^2=500\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\\begin{array}{ccc}A & B & A+B \\\\ \\bar{x}_1=40 & \\bar{x}_2=55 & \\bar{x}=50 \\\\ \\sigma_1=\\alpha & \\sigma_2=30-\\alpha & \\sigma^2=350 \\\\ n_1=100 & n_2=n & 100+n\\end{array}\\)\u003c/p> \u003cp>Combined mean\u003cbr/>\\(\u003cbr/>$$\\begin{aligned}& =\\frac{40 \\times 100+55 \\times n}{100+n}=50 \\\\& 4000+55 n=5000+50 n \\\\& \\Rightarrow 5 n=1000 \\\\& \\Rightarrow n=200 \\\\& \\sigma_1^2=\\frac{\\sum x_i^2}{100}-(40)^2 \\text { and } \\sigma_2^2=\\frac{\\sum y_i^2}{n}-(55)^2 \\\\& 350=\\frac{\\sum x_i^2+\\sum y_i^2}{300}-(50)^2 \\\\& \\Rightarrow 350=\\frac{\\left(1600+\\alpha^2\\right) \\times 100+\\left[\\left(30-\\alpha)^2\\right)+(55)^2\\right] \\times 200}{300}-(50)^2\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\Rightarrow(2500+350) \\times 3=1600+\\alpha^2+2(30-\\alpha)^2+55^2 \\times 2 \\\\& \\Rightarrow \\alpha^2-40 \\alpha+300 =0\\\\& \\alpha=10,30 \\text { (Rejected) }\\end{aligned}$$\u003cbr/>\\)\u003c/p> \u003cp>So, \\(\\sigma_1^2+\\sigma_2^2=(30-10)^2+(10)^2=20^2+10^2=500\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q81" data-gated="1">
-      <div class="qnum">Q81</div>
+      <div class="qhead"><div class="qnum">Q81</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean and variance of the marks obtained by the students in a test are 10 and 4 respectively. Later, the marks of one of the students is increased from 8 to 12. If the new mean of the marks is 10.2 . then their new variance is equal to:</p> <p>[JEE Main 2023, 25 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4.04</p></span></div><div class="option"><span class="key">b</span><span><p>4.08</p></span></div><div class="option"><span class="key">c</span><span><p>3.96</p></span></div><div class="option"><span class="key">d</span><span><p>3.92</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1025,7 +1029,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\\sum _{i=1}^{n}{x}_{i}=10n\\)\u003c/p> \u003cp>\\(\\sum _{i=1}^{n}{x}_{i}−8+12=(10.2)n\\text{ }∴n=20\\)\u003c/p> \u003cp>Now \\(\\frac{\\sum _{i=1}^{20}{x}_{i}^{2}}{20}−{(10)}^{2}=4\\)\u003c/p> \u003cp>\\(\\Rightarrow \\sum _{i=1}^{20}{x}_{i}^{2}−{(10)}^{2}=4\\\\ \\frac{\\sum _{i=1}^{20}{x}_{i}^{2}−{8}^{2}+{12}^{2}}{20}−{(10.2)}^{2}\\)\u003c/p> \u003cp>= 108 – 104.04 = 3.96\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q82" data-gated="1">
-      <div class="qnum">Q82</div>
+      <div class="qhead"><div class="qnum">Q82</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Let \(S\) be the set of all values of \(a_1\) for which the mean deviation about the mean of 100 consecutive positive integers \(a_1, a_2, a_3, \ldots . ., a_{100}\) is 25 . Then \(S\) is</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\phi\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\{99\}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(N\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\{9\}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -1034,10 +1038,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Let \\(a_1\\) be any natural number so, \\(a_1, a_1+1, a_1+2, \\ldots \\ldots\\), \\(a_1+99\\) are values of \\(a_i\\) 'or \\(S\\).\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Mean, } \\bar{x}=\\frac{a_1+\\left(a_1+1\\right)+\\left(a_1+2\\right)+\\ldots .+a_1+99}{100} \\\\\u003cbr/>&amp; =\\frac{100 a_1+(1+2+\\ldots .+99)}{100}=a_1+\\frac{99 \\times 100}{2 \\times 100} \\\\\u003cbr/>&amp; =a_1+\\frac{99}{2} \\\\\u003cbr/>&amp; \\text { Mean deviation about mean }=\\frac{\\sum_{i=1}^{100}\\left|x_i-\\bar{x}\\right|}{100} \\\\\u003cbr/>&amp; =\\frac{2\\left(\\frac{99}{2}+\\frac{97}{2}+\\frac{95}{2}+\\ldots .+\\frac{1}{2}\\right)}{100} \\\\\u003cbr/>&amp; =\\frac{1+3+\\ldots . .+99}{100}=\\frac{\\frac{50}{2}[1+99]}{100}=25\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So, it is true for every natural no. ' \\(a_1\\) ' as there is no term of \\(a\\) in mean deviation.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) Let \\(a_1\\) be any natural number so, \\(a_1, a_1+1, a_1+2, \\ldots \\ldots\\), \\(a_1+99\\) are values of \\(a_i\\) 'or \\(S\\).\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { Mean, } \\bar{x}=\\frac{a_1+\\left(a_1+1\\right)+\\left(a_1+2\\right)+\\ldots .+a_1+99}{100} \\\\& =\\frac{100 a_1+(1+2+\\ldots .+99)}{100}=a_1+\\frac{99 \\times 100}{2 \\times 100} \\\\& =a_1+\\frac{99}{2} \\\\& \\text { Mean deviation about mean }=\\frac{\\sum_{i=1}^{100}\\left|x_i-\\bar{x}\\right|}{100} \\\\& =\\frac{2\\left(\\frac{99}{2}+\\frac{97}{2}+\\frac{95}{2}+\\ldots .+\\frac{1}{2}\\right)}{100} \\\\& =\\frac{1+3+\\ldots . .+99}{100}=\\frac{\\frac{50}{2}[1+99]}{100}=25\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So, it is true for every natural no. ' \\(a_1\\) ' as there is no term of \\(a\\) in mean deviation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q83" data-gated="1">
-      <div class="qnum">Q83</div>
+      <div class="qhead"><div class="qnum">Q83</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The mean of 6 distinct observations is 6.5 and their variance is 10.25 . If 4 out of 6 observations are \(2,4,5\) and 7 , then the remaining two observations are :</p> <p><strong>[JEE Main 2021, 20 Jul (Shift 1)]</strong></p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>10,11</p></span></div><div class="option"><span class="key">b</span><span><p>3,18</p></span></div><div class="option"><span class="key">c</span><span><p>8,13</p></span></div><div class="option"><span class="key">d</span><span><p>1,20</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

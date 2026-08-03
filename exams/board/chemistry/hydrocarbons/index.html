@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"Board","item":"https://yespyq.com/exams/board/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/board/chemistry/"},{"@type":"ListItem","position":5,"name":"Hydrocarbons","item":"https://yespyq.com/exams/board/chemistry/hydrocarbons/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Hydrocarbons</h1>
       <p>5 Board Chemistry previous year questions on <b>Hydrocarbons</b> — options free on every question; <b>1 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements :<br/><strong>Statement (I):</strong> Neopentane forms only one monosubstituted derivative.<br/><strong>Statement (II):</strong> Melting point of neopentane is higher than n-pentane<br/>In the light of the above statements, choose the most appropriate answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Statement I is correct but Statement II is incorrect</p></span></div><div class="option correct"><span class="key">b</span><span><p>Both Statement I and Statement II are correct</p></span></div><div class="option"><span class="key">c</span><span><p>Both Statement I and Statement II are incorrect</p></span></div><div class="option"><span class="key">d</span><span><p>Statement I is incorrect but Statement II is correct</p></span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2" data-gated="1">
-      <div class="qnum">Q2</div>
+      <div class="qhead"><div class="qnum">Q2</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Baeyer's reagent is :</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>acidic potassium permanganate solution</p></span></div><div class="option"><span class="key">b</span><span><p>acidic potassium dichromate solution</p></span></div><div class="option"><span class="key">c</span><span><p>cold, dilute, aqueous solution of potassium permanganate</p></span></div><div class="option"><span class="key">d</span><span><p>hot, concentrated solution of potassium permanganate</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -98,7 +102,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Baeyer's reagent is a cold, dilute solution of potassium permanganate (KMnO\u003csub>4\u003c/sub>).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The incorrect statements regarding geometrical isomerism are :<br/>(A) Propene shows geometrical isomerism.<br/>(B) Trans isomer has identical atoms/groups on the opposite sides of the double bond.<br/>(C) Cis-but-2-ene has higher dipole moment than trans-but-2-ene.<br/>(D) 2-methylbut-2-ene shows two geometrical isomers.<br/>(E) Trans-isomer has lower melting point than cis isomer.</p> <p>Choose the correct answer from the options given below</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(B) and (C) Only</p></span></div><div class="option"><span class="key">b</span><span><p>(C), (D) and (E) Only</p></span></div><div class="option"><span class="key">c</span><span><p>(A) and (E) Only</p></span></div><div class="option"><span class="key">d</span><span><p>(A), (D) and (E) Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -110,7 +114,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>A. Propene \\(\\left(C{H}_{3}-CH=C{H}_{2}\\right)\\) does not show geometrical isomerism as one of the double-bonded carbon atom has two identical hydrogen atoms.\u003cbr/>B. Correct statement\u003cbr/>C. Correct statement\u003cbr/>D. 2-Methylbut-2-ene \\(\\left(C{H}_{3}C\\left(C{H}_{3}\\right)\\right.\\) \\(=CHC{H}_{3}\\) ) does not show geometrical isomerism because one of the double bonded carbon atom has two identical methyl groups.\u003cbr/>E. Trans-isomers have higher symmetry and better packing efficiency, leading to a higher melting point than cis-isomers.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statement</p> <p> (Memory Based JEE Mains 22/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>MP of Cis-2-butene is greater than trans-2-butene</p></span></div><div class="option"><span class="key">b</span><span><p>But-2-ene can have two geometrical isomers</p></span></div><div class="option"><span class="key">c</span><span><p>DP moment of Cis-2-butene is greater than trans-2-butene</p></span></div><div class="option"><span class="key">d</span><span><p>In trans isomers identical groups are opposite in opposite direction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -122,7 +126,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>Trans isomers have higher symmetry compared to cis isomers, hence they are tightly packed leading to higher melting point compared to the cis isomers.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Identify the incorrect statement</p> <p> (Memory Based JEE Mains 22/01/2025 ,Shift -1)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>MP of Cis-2-butene is greater than trans-2-butene</p></span></div><div class="option"><span class="key">b</span><span><p>But-2-ene can have two geometrical isomers</p></span></div><div class="option"><span class="key">c</span><span><p>DP moment of Cis-2-butene is greater than trans-2-butene</p></span></div><div class="option"><span class="key">d</span><span><p>In trans isomers identical groups are opposite in opposite direction</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

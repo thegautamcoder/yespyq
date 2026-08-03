@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Physics","item":"https://yespyq.com/exams/neet/physics/"},{"@type":"ListItem","position":5,"name":"Dual Nature of Radiation and Matter","item":"https://yespyq.com/exams/neet/physics/dual-nature-of-radiation-and-matter/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Dual Nature of Radiation and Matter</h1>
       <p>31 NEET Physics previous year questions on <b>Dual Nature of Radiation and Matter</b> — options free on every question; <b>3 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The work functions of cesium (Cs) and lithium (Li) metals are 1.9 eV and 2.5 eV , respectively. If we incident a light of wavelength 550 nm on these two metal surfaces, then photo-electric effect is possible for the case of [JEE Main 2025, 22 Jan (Shift 1)]</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Li only</span></div><div class="option"><span class="key">b</span><span>Neither Cs nor Li</span></div><div class="option"><span class="key">c</span><span>Both Cs and Li</span></div><div class="option correct"><span class="key">d</span><span>Cs only</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron and an alpha particle are accelerated by the same potential difference. Let \({\lambda }_{e}\) and \({\lambda }_{\alpha }\) denote the de Broglie wavelengths of the electron and the alpha particle, respectively, then:</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>\({\lambda }_{e}>{\lambda }_{\alpha }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\lambda }_{e}=4{\lambda }_{\alpha }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{e}={\lambda }_{\alpha }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{e}<{\lambda }_{\alpha }\)</p></span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3">
-      <div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q3 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For a metal of work function 6.6 eV , which of the following wavelengths of incident radiation does not give rise to the photoelectric effect ?<br/>(Take Planck's constant as \(6.6\times {10}^{-34}Js\) )</p></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span><p>200 nm</p></span></div><div class="option"><span class="key">b</span><span><p>150 nm</p></span></div><div class="option"><span class="key">c</span><span><p>100 nm</p></span></div><div class="option"><span class="key">d</span><span><p>50 nm</p></span></div></div>
       <div class="explain" data-exp>
@@ -104,7 +108,7 @@
       </div>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If c is the velocity of light in free space, the correct<strong> </strong>statements about photon among the following are:<br/>A. The energy of a photon is \(E=h\nu\)<br/>B. The velocity of a photon is c.<br/>C. The momentum of a photon, \(p=\frac{hv}{c}\).<br/>D. In a photon-electron collision, both total energy and total momentum are conserved.<br/>E. Photon possesses positive charges. <br/>Choose the correct answer from the options given below :</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A and B only</p></span></div><div class="option"><span class="key">b</span><span><p>A,B,C and D only </p></span></div><div class="option"><span class="key">c</span><span><p>A, C and D only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B , D and E only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -116,7 +120,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>For a photon,\u003cbr/>(i) Energy \\(E=hv\\Rightarrow\\) (statement A is correct)\u003cbr/>(ii) All photons travel with speed of light (= c in free space)\u003c/p> \u003cp>⇒ statement B is correct\u003cbr/>(iii) Momentum of a photon. \\(p=\\frac{E}{c}=\\frac{hv}{c}\\)\u003c/p> \u003cp>⇒ Statement C is correct.\u003cbr/>(iv) In a photon-electron collision, total energy and total momentum are conservec\u003c/p> \u003cp>⇒ statement D is also correct.\u003cbr/>(v) Photons are massless and do not carry any charge.\u003c/p> \u003cp>⇒ statement E is incorrect.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron and an alpha particle are accelerated by the same potential difference. Let \({\lambda }_{e}\) and \({\lambda }_{\alpha }\) denote the de Broglie wavelengths of the electron and the alpha particle respectively, then:</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\lambda }_{e}>{\lambda }_{\alpha }\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\lambda }_{e}=4{\lambda }_{\alpha }\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\lambda }_{e}={\lambda }_{\alpha }\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\lambda }_{e}<{\lambda }_{\alpha }\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -128,7 +132,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>de-Broglie wavelength is given by\u003c/p> \u003cp>\\(\\lambda=\\frac{h}{p}=\\frac{h}{\\sqrt{2 m q V}}\\)\u003c/p> \u003cp>For same potential difference\u003c/p> \u003cp>\\(\\begin{array}{l}\\lambda \\propto \\frac{1}{\\sqrt{m q}} \\\\ \\frac{\\lambda_\\alpha}{\\lambda_e}=\\sqrt{\\frac{m_e q_e}{m_\\alpha q_\\alpha}} \\\\ \\because m_\\alpha \\gg m_e \\\\ \\lambda_e&gt;\\lambda_\\alpha\\end{array}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Match List I with List II :</p> <table> <tbody> <tr> <td>List I</td> <td>List II</td> </tr> <tr> <td>A. \(E=hv\)</td> <td>I. de Broglie wavelength</td> </tr> <tr> <td>B. Diffraction and Interference</td> <td>II. Particle nature of light</td> </tr> <tr> <td>C. \(\lambda =h/p\)</td> <td>III. Wave nature of light</td> </tr> <tr> <td>D. Compton effect </td> <td>IV. Energy of photon</td> </tr> </tbody> </table> <p><br/>Choose the correct answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A - IV, B - III, C - I, D - II</p></span></div><div class="option"><span class="key">b</span><span><p>A - I, B - IV, C - III, D - II</p></span></div><div class="option"><span class="key">c</span><span><p>A - IV, B - I, C - II, D - III</p></span></div><div class="option"><span class="key">d</span><span><p>A - IV, B - III, C - II, D - I</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -140,7 +144,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>A. E=hv is the energy of a photon\u003cbr/>B. Diffraction and interference are the characteristics of wave\u003cbr/>C. \\(\\lambda=\\frac{\\mathrm{h}}{\\mathrm{p}}\\) is the wavelength proposed by de-Broglie\u003cbr/>D. Compton's effect can be explained only by using quantum/ particle nature of light.\u003cbr/>so correct choice is\u003cbr/>A - IV, B - III, C - I, D - II\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If \(\phi\) is the work function of photosensitive material in Joules and light of wavelength of numerical value \(\lambda =\frac{hc}{e}\) metre, is incident on it with energy above its threshold value at an instant then the maximum kinetic energy of the photo-electron ejected by it at that instant (Take h-Planck's constant, c-velocity of light in free space) is (in SI units) :</p> <p> </p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(e+2ϕ\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(2\mathrm{e}-ϕ\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(e-ϕ\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(e+ϕ\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -152,7 +156,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\({(K.E)}_{\\text{max}}=\\frac{hc}{\\lambda }−{ϕ}_{0}\\)\u003c/p> \u003cp>and \\(\\lambda =\\frac{hc}{e}\\)\u003c/p> \u003cp>\\(\\Rightarrow {(K⋅E)}_{\\text{max}}=\\frac{hc}{\\frac{hc}{e}}−{ϕ}_{0}\\)\u003c/p> \u003cp>\\(\\Rightarrow {(K.E)}_{\\text{max }}=e−{ϕ}_{0}\\)\u003c/p> \u003cp>\\(\\Rightarrow {(K.E)}_{\\text{max}}=e−ϕ\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The difference between threshold wavelengths for two metal surfaces \(A\) and \(B\) having work function \(\phi_A=9 eV\) and \(\phi_B=4.5 eV\) in \(nm\) is:<br/>(Given, hc \(=1242 eV nm ) \quad\) </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>264</p></span></div><div class="option"><span class="key">b</span><span><p>138</p></span></div><div class="option"><span class="key">c</span><span><p>276</p></span></div><div class="option"><span class="key">d</span><span><p>540</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -161,10 +165,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Formula of work function } \\phi=\\frac{h c}{\\lambda} \\\\\u003cbr/>&amp; \\lambda_A=\\left(\\frac{1242}{9}\\right)=138 nm \\\\\u003cbr/>&amp; \\lambda_B=\\left(\\frac{1242}{4.5}\\right)=276 nm \\\\\u003cbr/>&amp; \\lambda_B-\\lambda_A=138 nm\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\text { Formula of work function } \\phi=\\frac{h c}{\\lambda} \\\\& \\lambda_A=\\left(\\frac{1242}{9}\\right)=138 nm \\\\& \\lambda_B=\\left(\\frac{1242}{4.5}\\right)=276 nm \\\\& \\lambda_B-\\lambda_A=138 nm\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The work functions of Caesium (Cs), potassium (K) and Sodium (Na) are 2.14 eV, 2.30 eV and 2.75 eV respectively. If incident electromagnetic radiation has an incident energy of 2.20 eV, which of these photosensitive surfaces may emit photoelectrons ?</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Na and K</p></span></div><div class="option"><span class="key">b</span><span><p>K only</p></span></div><div class="option"><span class="key">c</span><span><p>Na only</p></span></div><div class="option"><span class="key">d</span><span><p>Cs only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -176,7 +180,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>E = 2.20 eV.\u003cbr/>Compare with Φ: Cs (2.14 eV), K (2.30 eV), Na (2.75 eV).\u003cbr/>Only Cs satisfies E ≥ Φ (2.20 ≥ 2.14).\u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron of mass \( m \) and magnitude of charge \( |e| \) initially at rest gets accelerated by a constant electric field E. The rate of change of de-Broglie wavelength of this electron at time \( t \) ignoring relativistic effects is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p> \( -\frac{h}{|e| E t} \)</p></span></div><div class="option"><span class="key">b</span><span><p> \( -\frac{h}{|e| E \sqrt{t}} \)</p></span></div><div class="option"><span class="key">c</span><span><p> \( \frac{-\mathrm{h}}{|\mathrm{e}| \mathrm{Et}^{2}} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \frac{|\mathrm{c}| \mathrm{Et}}{\mathrm{h}} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -188,7 +192,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>3\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p><strong>Assertion:</strong> A negative potential is required to stop the photoelectron in a photocell.</p> <p><strong>Reason:</strong> The<strong> </strong>speed of the electron decreases when a negative potential is applied in a photocell.</p> <p>(Shift - I Memory Based)</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Assertion is correct but Reason is false</p></span></div><div class="option"><span class="key">b</span><span><p> Assertion is correct and Reason is also correct</p></span></div><div class="option"><span class="key">c</span><span><p>Assertion is false but Reason is correct</p></span></div><div class="option"><span class="key">d</span><span><p> Assertion is false and Reason is also false</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -200,7 +204,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cstrong>Assertion:\u003c/strong> \"A negative potential is required to stop the photoelectron.\" \u003cp>\u003cstrong>Correct\u003c/strong>\u003c/p> \u003cul> \u003cli> \u003cp>In the \u003cstrong>photoelectric effect\u003c/strong>, photoelectrons are emitted when light of sufficient energy strikes a metal surface.\u003c/p> \u003c/li> \u003cli> \u003cp>To completely stop the fastest emitted electrons, we apply a \u003cstrong>stopping potential\u003c/strong> (negative potential on the anode).\u003c/p> \u003c/li> \u003cli> \u003cp>This stopping potential is used to calculate the \u003cstrong>maximum kinetic energy\u003c/strong> of the photoelectrons using:\u003c/p> eV0​=K.Emax​ \u003cp>where \\({V}_{0}\\)​ is the stopping potential.\u003c/p> \u003c/li> \u003c/ul> \u003cstrong>Reason:\u003c/strong> \"Speed of the electron decreases when a negative potential is applied in a photocell.\" \u003cp>\u003cstrong>Correct\u003c/strong>\u003c/p> \u003cul> \u003cli>When a \u003cstrong>negative potential\u003c/strong> is applied to the anode (collector), it repels the emitted photoelectrons.\u003c/li> \u003cli>This causes the electrons to \u003cstrong>slow down\u003c/strong> and eventually stop if the potential is high enough.\u003c/li> \u003c/ul> \u003cstrong>Step 3: Checking the Relationship\u003c/strong> \u003cul> \u003cli>Both \u003cstrong>Assertion\u003c/strong> and \u003cstrong>Reason\u003c/strong> are correct.\u003c/li> \u003cli>The \u003cstrong>Reason correctly explains the Assertion\u003c/strong>, as the negative stopping potential slows down and eventually stops the electrons.\u003c/li> \u003c/ul> \u003cp>Thus, the correct answer is:\u003c/p> \u003cp>\\(B\\ \\text{Assertion is correct and Reason is also correct.}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a photoelectric experiment, increasing the intensity of incident light:</p> <p> </p> <p>[JEE Main 2021, 27 Aug (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Increases the number of photons incident and also increases the K.E. of the ejected electrons.</p></span></div><div class="option"><span class="key">b</span><span><p>Increases the number of photons incident and the K.E. of the ejected electrons remains unchanged.</p></span></div><div class="option"><span class="key">c</span><span><p>Increases the frequency of photons incident and increases the K.E. of the ejected electrons.</p></span></div><div class="option"><span class="key">d</span><span><p>Increases the frequency of photons incident and the K.E. of the ejected electrons remains unchanged</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -212,7 +216,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>We know that, \\(K E \\propto V(n u)\\)\u003cbr/>And, Intensity \\(\\alpha\\) number of photons.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The threshold frequency of metal is \(f_0\). When the light of frequency \(2 f_0\) is incident on the metal plate, the maximum velocity of photoelectron is \(v_1\). When the frequency of incident radiation is increased to \(5 f_0\), the maximum velocity of photoelectrons emitted is \(v_2\). The ratio of \(v_1\) to \(v_2\) is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{v_1}{v_2}=\frac{1}{2}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{v_1}{v_2}=\frac{1}{8}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{v_1}{v_2}=\frac{1}{16}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{v_1}{v_2}=\frac{1}{4}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -221,10 +225,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\because K_{\\max }=h f-h f_0\u003cbr/>\\]\u003c/p> \u003cp>For incident radiation having fequency \\(=2 f_0\\)\u003cbr/>\\[\u003cbr/>\\frac{1}{2} m v_1^2=2 h f_0-h f_0=h f_0\u003cbr/>\\]\u003c/p> \u003cp>For incident radiation having fequency \\(=5 f_0\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{1}{2} m v_2^2=5 h f_0-h f_0=4 h f_0 \\\\\u003cbr/>&amp; \\Rightarrow\\left(\\frac{v_1}{v_2}\\right)=\\frac{1}{4} \\Rightarrow \\frac{v_1}{v_2}=\\frac{1}{2}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\[\u003cbr/>\\because K_{\\max }=h f-h f_0\u003cbr/>\\]\u003c/p> \u003cp>For incident radiation having fequency \\(=2 f_0\\)\u003cbr/>\\[\u003cbr/>\\frac{1}{2} m v_1^2=2 h f_0-h f_0=h f_0\u003cbr/>\\]\u003c/p> \u003cp>For incident radiation having fequency \\(=5 f_0\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\frac{1}{2} m v_2^2=5 h f_0-h f_0=4 h f_0 \\\\& \\Rightarrow\\left(\\frac{v_1}{v_2}\\right)=\\frac{1}{4} \\Rightarrow \\frac{v_1}{v_2}=\\frac{1}{2}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron accelerated through a potential difference \(V_1\) has a de-Broglie wavelength of \(\lambda\). When the potential is changed to \(V_2\), its de-Broglie wavelength increases by \(50 \%\). The value of \(\left(\frac{V_1}{V_2}\right)\) is equal to:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>3<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{9}{4}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{3}{2}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>4<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -236,7 +240,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(∵KE=\\frac{{P}^{2}}{2m}\\text{ and }P=\\frac{h}{\\lambda }\\\\ \\Rightarrow e{V}_{1}=\\frac{{\\left(\\frac{h}{\\lambda }\\right)}^{2}}{2m}...(i)\\\\ \\Rightarrow e{V}_{2}=\\frac{{\\left(\\frac{h}{1.5\\lambda }\\right)}^{2}}{2m}...(ii)\\\\ \\Rightarrow \\frac{{V}_{1}}{{V}_{2}}=(1.5{)}^{2}=\\frac{9}{4}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The work functions of Caesium (Cs), potassium (K) and Sodium (Na) are 2.14 eV, 2.30 eV and 2.75 eV respectively. If incident electromagnetic radiation has an incident energy of 2.20 eV, which of these photosensitive surfaces may emit photoelectrons ?</p> <p> </p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Both Na and K</p></span></div><div class="option"><span class="key">b</span><span><p>K only</p></span></div><div class="option"><span class="key">c</span><span><p>Na only</p></span></div><div class="option"><span class="key">d</span><span><p>Cs only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -248,7 +252,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cul> \u003cli>E = 2.20 eV.\u003c/li> \u003cli>Compare with Φ: Cs (2.14 eV), K (2.30 eV), Na (2.75 eV).\u003c/li> \u003cli>Only Cs satisfies E ≥ Φ (2.20 ≥ 2.14).\u003c/li> \u003c/ul> \u003cp>\u003cstrong>(NEW NCERT 12\u003csup>th\u003c/sup> Page No. 276)\u003c/strong>\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Light of frequency \( 1.5 \) times the threshold frequency is incident on a photosensitive material. What will be the photoelectric current if the frequency is halved and intensity is doubled?</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>Four times</p></span></div><div class="option"><span class="key">b</span><span><p> One-fourth</p></span></div><div class="option"><span class="key">c</span><span><p>Zero</p></span></div><div class="option"><span class="key">d</span><span><p>Doubled</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -260,7 +264,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>3\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A proton moving with one tenth of velocity of light has a certain de Broglie wavelength of \(\lambda\). An alpha particle having certain kinetic energy has the same de-Broglie wavelength \(\lambda\). The ratio of kinetic energy of proton and that of alpha particle is:</p> <p> </p> <p>[JEE Main 2023, 1 Feb (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>2: 1<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>4: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>1: 2<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>1: 4<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -269,10 +273,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; K E=\\frac{p^2}{2 m}=\\frac{h^2}{2 m \\lambda^2} \\\\\u003cbr/>&amp; \\Rightarrow K E \\propto \\frac{1}{m} \\\\\u003cbr/>&amp; \\Rightarrow \\frac{K E_p}{K E_\\alpha}=\\frac{m_\\alpha}{m_p}=4: 1\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& K E=\\frac{p^2}{2 m}=\\frac{h^2}{2 m \\lambda^2} \\\\& \\Rightarrow K E \\propto \\frac{1}{m} \\\\& \\Rightarrow \\frac{K E_p}{K E_\\alpha}=\\frac{m_\\alpha}{m_p}=4: 1\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electromagnetic wave of wavelength \( \lambda \) is incident on a photosensitive surface of negligible work function. If '\(m\)' mass is of photoelectrons emitted from this surface has de-Broglie wavelength \( \lambda_{d} \) then <br/>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\lambda=\left(\frac{2 m }{hc}\right) \lambda_d{ }^2\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\lambda_d=\left(\frac{2 m c}{h}\right) \lambda^2\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\lambda=\left(\frac{2 m c}{h}\right) \lambda_d{ }^2\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\lambda=\left(\frac{2h}{mc}\right) \lambda_d{ }^2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -284,7 +288,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>As per Einstein's photoelectric equation\u003cbr/>\\(\\frac{hc}{\\lambda }={ϕ}_{0}+k\\)\u003cbr/> \\({ϕ}_{0}\\): work function\u003cbr/>k = maximum kinetic energy of photoelectrons\u003cbr/>As per question, \\(ϕ\\to 0\\)\u003c/p> \u003cp>\\(∴=\\frac{hc}{\\lambda }=k=\\frac{{P}^{2}}{2m}\\Rightarrow P=\\sqrt{\\frac{2mhc}{\\lambda }}\\)\u003cbr/>\u003cbr/>Now De-broglie wavelength\u003cbr/>\\({\\lambda }_{d}=\\frac{h}{P}=\\frac{h}{\\sqrt{2mhc/\\lambda }}\\)\u003cbr/>\\(\\Rightarrow \\sqrt{\\lambda }={\\lambda }_{d}\\sqrt{\\frac{2mc}{h}}\\)\u003c/p> \u003cp>\\(\\Rightarrow \\lambda =\\left(\\frac{2mc}{h}\\right){\\lambda }_{d}^{2}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A proton and an \(\alpha\)-particle are accelerated from rest by \(2 V\) and \(4 V\) potentials, respectively. The ratio of their deBroglie wavelength is:</p> <p>[JEE Main 2023, 12 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>4: 1<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>2: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>8: 1<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>16: 1<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -293,10 +297,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\lambda=\\frac{h}{p}=\\frac{h}{\\sqrt{2 m E}}=\\frac{h}{\\sqrt{2 m q \\Delta V}}(\\because p=\\sqrt{2 m E} \\text { and } E=q \\Delta v) \\\\\u003cbr/>&amp; \\frac{\\lambda_p}{\\lambda_\\alpha}=\\sqrt{\\frac{m_\\alpha V_\\alpha q_\\alpha}{m_p V_p q_p}} \\\\\u003cbr/>&amp; \\frac{\\lambda_p}{\\lambda_\\alpha}=\\sqrt{\\frac{4 \\times 4 \\times 2}{1 \\times 2 \\times 1}}=\\frac{4}{1} \\\\\u003cbr/>&amp; \\Rightarrow \\lambda_p: \\lambda_\\alpha=4: 1\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\lambda=\\frac{h}{p}=\\frac{h}{\\sqrt{2 m E}}=\\frac{h}{\\sqrt{2 m q \\Delta V}}(\\because p=\\sqrt{2 m E} \\text { and } E=q \\Delta v) \\\\& \\frac{\\lambda_p}{\\lambda_\\alpha}=\\sqrt{\\frac{m_\\alpha V_\\alpha q_\\alpha}{m_p V_p q_p}} \\\\& \\frac{\\lambda_p}{\\lambda_\\alpha}=\\sqrt{\\frac{4 \\times 4 \\times 2}{1 \\times 2 \\times 1}}=\\frac{4}{1} \\\\& \\Rightarrow \\lambda_p: \\lambda_\\alpha=4: 1\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron is accelerated from rest through a potential difference of \( \mathrm{V} \) volt. If the de Broglie wavelength of the electron is \( 1.227 \times 10^{-2} \mathrm{~nm} \), the potential difference is :</p> <p>[NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 10^{2} \mathrm{~V} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 10^{3} \mathrm{~V} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 10^{4} \mathrm{~V} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 10 \mathrm{~V} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -308,7 +312,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>For electron, λ(nm) ≈ 1.227 / \\(\\sqrt{V}\\) (V in volts).\u003c/p> \u003cp>1.227 × 10⁻² nm = 1.227 / \\(\\sqrt{V}\\)\u003c/p> \u003cp>10\u003csup>–2\u003c/sup> = 1/\\(\\sqrt{V}\\) \\(\\Rightarrow\\)\u003cem> V\u003c/em> = 10\u003csup>4\u003c/sup> V. \u003c/p> \u003cp> \u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q21" data-gated="1">
-      <div class="qnum">Q21</div>
+      <div class="qhead"><div class="qnum">Q21</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>A particle is travelling 4 times as fast as an electron. Assuming the ratio of de-Broglie wavelength of a particle to that of electron is \(2: 1\), the mass of the particle is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{1}{16} \text { times the mass of } e ^{-}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>8 \text { times the mass of } e ^{-}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{1}{8} \text { times the mass of } e ^{-}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>16 \text { times the mass of e }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -317,10 +321,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\frac{\\lambda}{\\lambda_e}=\\frac{m_e v_e}{m v} \\\\\u003cbr/>&amp; m=\\frac{1}{4} \\times \\frac{1}{2} m_e=\\frac{1}{8} m_e\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\frac{\\lambda}{\\lambda_e}=\\frac{m_e v_e}{m v} \\\\& m=\\frac{1}{4} \\times \\frac{1}{2} m_e=\\frac{1}{8} m_e\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q22" data-gated="1">
-      <div class="qnum">Q22</div>
+      <div class="qhead"><div class="qnum">Q22</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electron moving with speed \(v\) and a photon moving with speed \(c\), have same D-Broglie wavelength. The ratio of kinetic energy of electron to that of photon is:</p> <p> </p> <p>[JEE Main 2021, 25 Jul (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\frac{v}{2 c}<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\frac{2 c}{v}<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\frac{v}{3 c}<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\frac{3 c}{v}<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -332,7 +336,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>For electron,\u003cbr/>\\[\u003cbr/>(K E)_e=\\frac{1}{2} m v^2=\\frac{p v}{2}\u003cbr/>\\]\u003c/p> \u003cp>For photon,\u003c/p> \u003cp>\\((K.E{)}_{p}=\\frac{hc}{\\lambda }=pc\\left(p=\\frac{h}{\\lambda }\\right)\\)\u003c/p> \u003cp>\\(\u003cbr/>\\frac{K E_e}{K E_p}=\\frac{p v / 2}{p c}=\\frac{v}{2 c}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q23" data-gated="1">
-      <div class="qnum">Q23</div>
+      <div class="qhead"><div class="qnum">Q23</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The number of photons per second on an average emitted by the source of monochromatic light of wavelength 600 \( \mathrm{nm} \), when it delivers the power of \( 3.3 \times 10^{-3} \) watt will be: \( \left(\mathrm{h}=6.6 \times 10^{-34} \mathrm{Js}\right) \)</p> <p>[NEET 2021]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 10^{17} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 10^{16} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 10^{15} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 10^{18} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -344,7 +348,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The power of a source is given as,\u003c/p> \u003cp>\\(\\begin{matrix}P=\\frac{E}{t} \\\\ =\\frac{n}{t}\\left(\\frac{hc}{\\lambda }\\right) \\\\ \\Rightarrow \\frac{n}{t}=\\frac{P}{\\left(\\frac{hc}{\\lambda }\\right)}\\end{matrix}\\)\u003c/p> \u003cp>(Here \\(\\frac{n}{t}\\) is number of photons emitted per second)\u003c/p> \u003cp>\\(\\begin{matrix}\\Rightarrow \\frac{n}{t}=\\frac{3.3\\times {10}^{-3}\\times 600\\times {10}^{-9}}{6.6\\times {10}^{-34}\\times 3\\times {10}^{8}} \\\\ ={10}^{16}\\text{ photons }/sec.\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q24" data-gated="1">
-      <div class="qnum">Q24</div>
+      <div class="qhead"><div class="qnum">Q24</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If the ratio of de-Broglie wavelength of an \(\alpha\)-particle and a proton accelerated from rest by the same potential is \(\frac{1}{\sqrt{m}}\), then the value of \(m\) is \(\quad\)</p> <p> </p> <p>[JEE Main 2023, 29 Jan (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>4</p></span></div><div class="option"><span class="key">b</span><span><p>16</p></span></div><div class="option"><span class="key">c</span><span><p>8</p></span></div><div class="option"><span class="key">d</span><span><p>2</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -353,10 +357,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\because \\lambda=\\frac{h}{\\sqrt{2 m q V}} \\Rightarrow \\frac{\\lambda_\\alpha}{\\lambda_p}=\\frac{h}{\\sqrt{2 m_\\alpha q_\\alpha V}} \\times \\frac{\\sqrt{2 m_p q_p V}}{h} \\\\\u003cbr/>&amp; \\Rightarrow m=8\u003cbr/>\\end{aligned}\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\(\u003cbr/>$$\\begin{aligned}& \\because \\lambda=\\frac{h}{\\sqrt{2 m q V}} \\Rightarrow \\frac{\\lambda_\\alpha}{\\lambda_p}=\\frac{h}{\\sqrt{2 m_\\alpha q_\\alpha V}} \\times \\frac{\\sqrt{2 m_p q_p V}}{h} \\\\& \\Rightarrow m=8\\end{aligned}$$\u003cbr/>\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q25" data-gated="1">
-      <div class="qnum">Q25</div>
+      <div class="qhead"><div class="qnum">Q25</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The wave character of electron was experimentally verified by:</p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>de-Broglie</p></span></div><div class="option"><span class="key">b</span><span><p> A. Einstein</p></span></div><div class="option"><span class="key">c</span><span><p>Germer</p></span></div><div class="option"><span class="key">d</span><span><p>Schrödinger</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -368,7 +372,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>The wave nature of electrons was experimentally verified by Clinton Davisson and Lester Germer in 1927 through the Davisson-Germer experiment. They observed diffraction patterns when a beam of electrons was scattered by a nickel crystal, which is a characteristic behavior of waves. This provided the first direct evidence for the wave particle duality of matter and confirmed the earlier theoretical hypothesis.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q26" data-gated="1">
-      <div class="qnum">Q26</div>
+      <div class="qhead"><div class="qnum">Q26</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>If a source of electromagnetic radiation having power \(15 kW\) produces \(10^{16}\) photons per second, the radiation belongs to a part of spectrum is.(Take Planck constant \(h=6 \times 10^{-34} Js\) )</p> <p> </p> <p>[JEE Main 2023, 31 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\text { Micro waves }<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\text { Ultraviolet rays }<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\text { Gamma rays }<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\text { Radio waves }<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -377,10 +381,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { Energy of one photon } E=\\frac{\\text { Power }}{\\text { Photon frequency }} \\\\\u003cbr/>&amp; =\\frac{15 \\times 10^3}{10^{16}} \\\\\u003cbr/>&amp; \\because E=h v \\\\\u003cbr/>&amp; \\Rightarrow v=\\frac{15 \\times 10^{-13}}{6 \\times 10^{-34}}=2.5 \\times 10^{21}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p> \u003cp>So the radiation belongs to gamma Rays.\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>\\[\u003cbr/>$$\\begin{aligned}& \\text { Energy of one photon } E=\\frac{\\text { Power }}{\\text { Photon frequency }} \\\\& =\\frac{15 \\times 10^3}{10^{16}} \\\\& \\because E=h v \\\\& \\Rightarrow v=\\frac{15 \\times 10^{-13}}{6 \\times 10^{-34}}=2.5 \\times 10^{21}\\end{aligned}$$\u003cbr/>\\]\u003c/p> \u003cp>So the radiation belongs to gamma Rays.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q27" data-gated="1">
-      <div class="qnum">Q27</div>
+      <div class="qhead"><div class="qnum">Q27</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The de Broglie wavelength of an electron moving with kinetic energy of \( 144 \mathrm{eV} \) is nearly,</p> <p>[Re-NEET 2020]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( 102 \times 10^{-4} \mathrm{~nm} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( 102 \times 10^{-5} \mathrm{~nm} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( 102 \times 10^{-2} \mathrm{~nm} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( 102 \times 10^{-3} \mathrm{~nm} \)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -392,7 +396,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>\\(\\begin{matrix}\\lambda =\\frac{12.27}{\\sqrt{V}}\\overset{^\\circ }{A} \\\\ =\\frac{12.27}{\\sqrt{144}}\\times {10}^{10} \\\\ =1.02\\times {10}^{-10}m \\\\ =102\\times {10}^{-3}nm\\end{matrix}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q28" data-gated="1">
-      <div class="qnum">Q28</div>
+      <div class="qhead"><div class="qnum">Q28</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Proton (p) and electron (e) will have same deBroglie wavelength when the ratio of their momentum is (assume, \(\left.m_{ p }=1849 m_{ e }\right)\)</p> <p> </p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1: 43<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>43: 1<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>1: 1849<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>1: 1<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -401,10 +405,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>De Broglie wavelength is \\(\\lambda=\\frac{h}{p}=\\frac{h}{m v}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\text { As } \\lambda_{ p }=\\lambda_{ e } \\\\\u003cbr/>&amp; \\Rightarrow m_{ p } v_{ p }=m_{ e } v_{ e } \\\\\u003cbr/>&amp; \\Rightarrow p_{ p }=p_{ e } \\\\\u003cbr/>&amp; \\frac{p_p}{p_e}=\\frac{1}{1}\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>De Broglie wavelength is \\(\\lambda=\\frac{h}{p}=\\frac{h}{m v}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\text { As } \\lambda_{ p }=\\lambda_{ e } \\\\& \\Rightarrow m_{ p } v_{ p }=m_{ e } v_{ e } \\\\& \\Rightarrow p_{ p }=p_{ e } \\\\& \\frac{p_p}{p_e}=\\frac{1}{1}\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q29" data-gated="1">
-      <div class="qnum">Q29</div>
+      <div class="qhead"><div class="qnum">Q29</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In a photoelectric experiment ultraviolet light of wavelength \(280 nm\) is used with lithium cathode having work function \(\phi=2.5 eV\). If the wavelength of incident light is switched to \(400 nm\), find out the change in the stopping potential. \(\left(h=6.63 \times 10^{-34} Js , c=3 \times 10^8 ms ^{-1}\right)\)</p> <p> </p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>1.9 V<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>0.6 V<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>1.1 V<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>1.3 V<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -416,7 +420,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>दिया गया है,\u003cbr/>\\(\\lambda_1=280 nm)\u003cbr/>\\(\\lambda_2=400 nm)\u003cbr/>\\(\\phi=2.5 eV.)\u003cbr/>\\(\\frac{h c}{\\lambda_1}=\\phi+e V_1)\u003cbr/>(h c\\left(\\frac{1}{\\lambda_1}-\\frac{1}{\\lambda_2}\\right)=e\\left(V_1-V_2\\right))\u003cbr/>(V_1-V_2=\\frac{h c}{e}\\left(\\frac{1}{\\lambda_1}-\\frac{1}{\\lambda_2}\\right))\u003cbr/>( =12400\\left(\\frac{1}{2800}-\\frac{1}{4000}\\right)\\left[\\lambda_1 \\text { और } \\lambda_2 \\text { को Å में लिया गया है}\\right])\u003cbr/>(=4.4-3.1)\u003cbr/>(=1.3 V)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q30" data-gated="1">
-      <div class="qnum">Q30</div>
+      <div class="qhead"><div class="qnum">Q30</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An \(\alpha\)-particle, a proton and an electron have the same kinetic energy. Which one of the following is correct in case of their de-Broglie wavelength:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(<br/>\lambda_\alpha&gt;\lambda_p&gt;\lambda_e<br/>\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(<br/>\lambda_\alpha&lt;\lambda_p&lt;\lambda_e<br/>\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(<br/>\lambda_\alpha=\lambda_p=\lambda_e<br/>\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(<br/>\lambda_\alpha&gt;\lambda_p&lt;\lambda_e<br/>\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -425,10 +429,10 @@
         <span class="btn btn-primary btn-sm" data-unlock="exam-answer">Unlock · ₹149</span>
       </div>
       <div class="explain hidden" data-exp></div>
-      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>de-broglie wavelength is given by \\(\\lambda=\\frac{h}{p}=\\frac{h}{\\sqrt{2 m K}}\\)\u003cbr/>\\[\u003cbr/>\\begin{aligned}\u003cbr/>&amp; \\therefore \\lambda \\propto \\frac{1}{\\sqrt{m}} \\\\\u003cbr/>&amp; \\because m_\\alpha&gt;m_p&gt;m_e \\\\\u003cbr/>&amp; \\Rightarrow \\lambda_e&gt;\\lambda_p&gt;\\lambda_\\alpha\u003cbr/>\\end{aligned}\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
+      <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>de-broglie wavelength is given by \\(\\lambda=\\frac{h}{p}=\\frac{h}{\\sqrt{2 m K}}\\)\u003cbr/>\\[\u003cbr/>$$\\begin{aligned}& \\therefore \\lambda \\propto \\frac{1}{\\sqrt{m}} \\\\& \\because m_\\alpha&gt;m_p&gt;m_e \\\\& \\Rightarrow \\lambda_e&gt;\\lambda_p&gt;\\lambda_\\alpha\\end{aligned}$$\u003cbr/>\\]\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q31" data-gated="1">
-      <div class="qnum">Q31</div>
+      <div class="qhead"><div class="qnum">Q31</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>An electromagnetic wave of wavelength \(\lambda\) is incident on a photosensitive surface of negligible work function. If the photoelectrons of mass <em>m</em> emitted from this surface have de Broglie wavelength \({\lambda }_{1}\) then</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\lambda =\left(\frac{2mc}{h}\right){{\lambda }_{1}}^{2}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\lambda =\left(\frac{mc}{h}\right){{\lambda }_{1}}^{2}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\lambda =\left(\frac{2m}{h}\right){{\lambda }_{1}}^{2}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\lambda =\left(\frac{2c}{h}\right){{\lambda }_{1}}^{2}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">

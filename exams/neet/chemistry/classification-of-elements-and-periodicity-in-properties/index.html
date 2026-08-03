@@ -20,7 +20,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <link rel="manifest" href="/manifest.webmanifest" />
-  <link rel="stylesheet" href="/styles.css?v=110" />
+  <link rel="stylesheet" href="/styles.css?v=111" />
   <link rel="stylesheet" href="/blog.css?v=5" />
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://yespyq.com/"},{"@type":"ListItem","position":2,"name":"Exams","item":"https://yespyq.com/exams/"},{"@type":"ListItem","position":3,"name":"NEET","item":"https://yespyq.com/exams/neet/"},{"@type":"ListItem","position":4,"name":"Chemistry","item":"https://yespyq.com/exams/neet/chemistry/"},{"@type":"ListItem","position":5,"name":"Classification of Elements and Periodicity in Properties","item":"https://yespyq.com/exams/neet/chemistry/classification-of-elements-and-periodicity-in-properties/"}]}
@@ -41,7 +41,11 @@
     .chapter-card b{font-size:.92rem;line-height:1.3}
     .chapter-card span{font-size:.78rem;color:var(--muted);white-space:nowrap}
     .qblock{border:1.5px solid var(--line);border-radius:14px;padding:1.2rem;margin:1.1rem 0}
-    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:.4rem}
+    .qblock .qhead{display:flex;align-items:center;justify-content:space-between;gap:.5rem;margin-bottom:.4rem}
+    .qblock .qnum{font-size:.78rem;font-weight:700;color:var(--muted)}
+    .pyq-badge{flex:none;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);
+      border:1px solid rgba(37,99,235,.2);border-radius:6px;padding:.1rem .5rem;
+      font-size:.68rem;font-weight:800;letter-spacing:.04em}
     .qblock .qtext{font-weight:600;margin-bottom:.8rem;line-height:1.55}
     [data-theme="dark"] .exam-tile,[data-theme="dark"] .chapter-card,[data-theme="dark"] .qblock{border-color:var(--line)}
     .answer-gate{display:flex;align-items:center;gap:.8rem;border:1.5px dashed rgba(37,99,235,.4);border-radius:12px;padding:.9rem 1rem;margin:1rem 0;background:var(--card);cursor:pointer}
@@ -77,7 +81,7 @@
       <h1>Classification of Elements and Periodicity in Properties</h1>
       <p>20 NEET Chemistry previous year questions on <b>Classification of Elements and Periodicity in Properties</b> — options free on every question; <b>2 include the answer &amp; explanation free</b>, the rest unlock with PYQ Pass.</p>
     <div class="qblock" id="q1">
-      <div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q1 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">Which of the following element has the highest ionization enthalpy?</span></div>
       <div class="options qpage-options"><div class="option correct"><span class="key">a</span><span>Boron</span></div><div class="option"><span class="key">b</span><span>Aluminium</span></div><div class="option"><span class="key">c</span><span>Germanium</span></div><div class="option"><span class="key">d</span><span>Thallium</span></div></div>
       <div class="explain" data-exp>
@@ -86,7 +90,7 @@
       </div>
     </div>
     <div class="qblock" id="q2">
-      <div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div>
+      <div class="qhead"><div class="qnum">Q2 <span class="free-tag">FREE PREVIEW</span></div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The IUPAC symbol for the element with atomic number 119 would be :</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Unh</span></div><div class="option"><span class="key">b</span><span>Uun</span></div><div class="option"><span class="key">c</span><span>Une</span></div><div class="option correct"><span class="key">d</span><span>Uue</span></div></div>
       <div class="explain" data-exp>
@@ -95,7 +99,7 @@
       </div>
     </div>
     <div class="qblock" id="q3" data-gated="1">
-      <div class="qnum">Q3</div>
+      <div class="qhead"><div class="qnum">Q3</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><span class="bline">The successive 5 ionisation energies of an element are 800, 2427, 3658, 25024 and 32824 kJ/mol, respectively. By using the above values predict the group in which the above element is present :</span></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span>Group 14</span></div><div class="option"><span class="key">b</span><span>Group 4</span></div><div class="option"><span class="key">c</span><span>Group 2</span></div><div class="option"><span class="key">d</span><span>Group 13</span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -107,7 +111,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"Ionization enthalpy = the energy required to remove one electron from an isolated gaseous atom. General trend: Increases across a period (left → right) Decreases down a group Electron gain enthalpy = energy released when an atom gains an electron. More negative = stronger tendency to gain electrons Small size of fluorine Fluorine's atomic radius is very small. When an extra electron is added to fluorine, it goes into the already crowded 2p orbital, where electron–electron repulsion is very high. This reduces the stability gained by accepting that electron. 2. Chlorine has larger size Chlorine's 3p orbital is bigger, so it can accommodate the incoming electron more easily with less repulsion. Hence, it releases more energy (i.e., more negative electron gain enthalpy). Both Statement-I and Statement-II are true","fmt":""}</script>
     </div>
     <div class="qblock" id="q4" data-gated="1">
-      <div class="qnum">Q4</div>
+      <div class="qhead"><div class="qnum">Q4</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which among the following electronic configurations belong to main group elements?<br/>A. \([\mathrm{Ne}]3{\mathrm{s}}^{1}\)<br/>B. \([\mathrm{Ar}]3{\mathrm{d}}^{3}4{\mathrm{s}}^{2}\)<br/>C.\([\mathrm{Kr}]4{\mathrm{d}}^{10}5{s}^{2}5{\mathrm{p}}^{5}\)<br/>D. \([\mathrm{Ar}]3{\mathrm{d}}^{10}4{\mathrm{s}}^{1}\)<br/>E. \([\mathrm{Rn}]5{\mathrm{f}}^{0}6{\mathrm{d}}^{2}7{\mathrm{s}}^{2}\)</p> <p>Choose the correct answer from the option given below :</p> <p>[NEET 2025]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>D and E only</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and D only</p></span></div><div class="option"><span class="key">c</span><span><p>B and E only</p></span></div><div class="option"><span class="key">d</span><span><p>A and C only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -119,7 +123,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>A. [Ne]3s\u003csup>1\u003c/sup>\u003cbr/>The last electron enters the s-subshell, so it is a main group element.\u003c/p> \u003cp>B. [Ar]3d\u003csup>3\u003c/sup>4s\u003csup>2\u003c/sup>\u003cbr/>Here, the d-subshell is being filled, so it is a transition element.\u003c/p> \u003cp>C. [Kr]4d\u003csup>10\u003c/sup>5s\u003csup>2\u003c/sup>5p\u003csup>5\u003c/sup>\u003cbr/>The last electron enters the p-subshell, so it is a main group element.\u003c/p> \u003cp>D. [Ar]3d\u003csup>10\u003c/sup>4s\u003csup>1\u003c/sup>\u003cbr/>This configuration corresponds to copper (Cu) and involves a d-subshell, so it is a transition element.\u003c/p> \u003cp>E. [Rn]5f\u003csup>0\u003c/sup>6d\u003csup>2\u003c/sup>7s\u003csup>2\u003c/sup>\u003cbr/>Since the d-subshell is involved, it is not a main group element (it belongs to transition elements).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q5" data-gated="1">
-      <div class="qnum">Q5</div>
+      <div class="qhead"><div class="qnum">Q5</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following elements in increasing order of electronegativity:<br/>\(\mathrm{N},\mathrm{O},\mathrm{F},\mathrm{C},\mathrm{Si}\) </p> <p>Choose the <strong>correct </strong>answer from the options given bélow: </p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{F}<\mathrm{O}<\mathrm{N}<\mathrm{C}<\mathrm{Si}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Si}<\mathrm{C}<\mathrm{N}<\mathrm{O}<\mathrm{F}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Si}<\mathrm{C}<\mathrm{O}<\mathrm{N}<\mathrm{F}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{O}<\mathrm{F}<\mathrm{N}<\mathrm{C}<\mathrm{Si}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -131,7 +135,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Electronegativity increases from left to right across a period and decreases from top to bottom in a group.\u003c/p> \u003cp>Si is lower in the group, so it has the lowest electronegativity.\u003c/p> \u003cp>Order:\u003cbr/>Si &lt; C &lt; N &lt; O &lt; F\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q6" data-gated="1">
-      <div class="qnum">Q6</div>
+      <div class="qhead"><div class="qnum">Q6</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct decreasing order of atomic radii \(( pm )\) of \(Li , Be , B\) and \(C\) is</p> <p>[Re-NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(Be>Li>B>C\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(Li>Be>B>C\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(C>B>Be>Li\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(Li>C>Be>B\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -143,7 +147,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Across a period, atomic radius decreases from left to right due to increasing nuclear attraction (effective nuclear charge).\u003c/p> \u003cp>For elements: Li, Be, B, C\u003c/p> \u003cp>Correct order: Li &gt; Be &gt; B &gt; C\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q7" data-gated="1">
-      <div class="qnum">Q7</div>
+      <div class="qhead"><div class="qnum">Q7</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Arrange the following elements in increasing order of first ionization enthalpy:</p> <p>\(\mathrm{Li},\mathrm{Be},\mathrm{B},\mathrm{C},\mathrm{N}\)</p> <p>Choose the <strong>correct </strong>answer from the options given below</p> <p>[NEET 2024]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Li}<\mathrm{Be}<\mathrm{N}<\mathrm{B}<\mathrm{C}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Li}<\mathrm{Be}<\mathrm{B}<\mathrm{C}<\mathrm{N}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{Li}<\mathrm{B}<\mathrm{Be}<\mathrm{C}<\mathrm{N}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Li}<\mathrm{Be}<\mathrm{C}<\mathrm{B}<\mathrm{N}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -155,7 +159,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Elements: Li, Be, B, C, N\u003c/p> \u003cp>Generally, ionization enthalpy increases across a period, but B has lower ionization enthalpy than Be due to electron entering a higher energy p-orbital.\u003c/p> \u003cp>Correct order:\u003cbr/>Li &lt; B &lt; Be &lt; C &lt; N\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q8" data-gated="1">
-      <div class="qnum">Q8</div>
+      <div class="qhead"><div class="qnum">Q8</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Given below are two statements: one is labelled as Assertion A and the other is labelled as Reason R:</p> <p><strong>Assertion A:</strong> The energy required to form \({\mathrm{Mg}}^{2+}\) from Mg is much higher than that required to produce \({\mathrm{Mg}}^{+}\).</p> <p><strong>Reason R:</strong> \({\mathrm{Mg}}^{2+}\) is small ion and carry more charge than \({\mathrm{Mg}}^{+}\).</p> <p>In the light of the above statements, choose the <strong>correct</strong> answer from the options given below:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A is true but R is false.</p></span></div><div class="option"><span class="key">b</span><span><p>A is false but R is true.</p></span></div><div class="option"><span class="key">c</span><span><p>Both A and R are true and R is the correct explanation of A.</p></span></div><div class="option"><span class="key">d</span><span><p>Both A and R are true but R is NOT the correct explanation of A.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -167,7 +171,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>Since \\({\\mathrm{Mg}}^{2+}\\) is a small ion and carry more charge than \\({\\mathrm{Mg}}^{+}\\), therefore, more energy is required in its formation.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q9" data-gated="1">
-      <div class="qnum">Q9</div>
+      <div class="qhead"><div class="qnum">Q9</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The five successive ionization energies of an element are 800, 2427, 3658, 25024 and 32824 kJmol<sup>-1</sup> respectively. The number of valence electrons is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(3\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(5\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(1\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(2\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -179,7 +183,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp>3 valence electrons.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q10" data-gated="1">
-      <div class="qnum">Q10</div>
+      <div class="qhead"><div class="qnum">Q10</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Which of the following statements are not correct?</p> <p>(A) The electron gain enthalpy of \(F\) is more negative than that of \(Cl\)<br/>(B) Ionization enthalpy decreases in a group of periodic table<br/>(C) The electronegativity of an atom depends upon the atoms bonded to it.<br/>(D) \(Al _2 O _3\) and \(NO\) are examples of amphoteric oxides.</p> <p>Choose the most appropriate answer from the options given below: [JEE Main 2023, 13 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>A, B, C, and D</p></span></div><div class="option"><span class="key">b</span><span><p>A, C and D Only</p></span></div><div class="option"><span class="key">c</span><span><p>A and D Only</p></span></div><div class="option"><span class="key">d</span><span><p>A, B and D Only</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -191,7 +195,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp> An element's electronegativity depends upon the atoms bonded to it.\u003cbr/>Also, \\(NO =\\) neutral oxide\u003cbr/>\\(Al _2 O _3=\\) amphoteric oxide\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q11" data-gated="1">
-      <div class="qnum">Q11</div>
+      <div class="qhead"><div class="qnum">Q11</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of metallic character is: [JEE Main 2023, 10 Apr (Shift 2)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{Be}>\mathrm{Ca}>\mathrm{K}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Ca}>\mathrm{K}>\mathrm{Be}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{K}>\mathrm{Ca}>\mathrm{Be}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{K}>\mathrm{Be}>\mathrm{Ca}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -203,7 +207,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>(c) On moving from top to bottom, metallic character increases while on moving from left to right metallic decreases.\u003c/p> \u003cp>Hence, the correct order is: \\(\\mathrm{K}>\\mathrm{Ca}>\\mathrm{Be}\\).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q12" data-gated="1">
-      <div class="qnum">Q12</div>
+      <div class="qhead"><div class="qnum">Q12</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The <strong>correct </strong>order of acidic strength is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Cl}}_{2}{\mathrm{O}}_{7}>{\mathrm{SO}}_{2}>{\mathrm{P}}_{4}{\mathrm{O}}_{10}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({K}_{2}\mathrm{O}>\mathrm{CaO}>\mathrm{MgO}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{CO}}_{2}>{\mathrm{N}}_{2}{\mathrm{O}}_{5}>{\mathrm{SO}}_{3}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\({\mathrm{Na}}_{2}\mathrm{O}>\mathrm{MgO}>{\mathrm{Al}}_{2}{\mathrm{O}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -215,7 +219,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cp> Acidic character of oxide \\(\\alpha\\) Non-metallic nature of element.\u003cbr/>Non-metallic character increases along the period. Hence order of acidic character is\u003c/p> \u003cp>\\({\\mathrm{Cl}}_{2}{\\mathrm{O}}_{7}>{\\mathrm{SO}}_{2}>{\\mathrm{P}}_{4}{\\mathrm{O}}_{10}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q13" data-gated="1">
-      <div class="qnum">Q13</div>
+      <div class="qhead"><div class="qnum">Q13</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Element with electronic configuration \(1{\mathrm{s}}^{2}2{\mathrm{s}}^{2}2{\mathrm{p}}^{6}3{\mathrm{s}}^{2}3{\mathrm{p}}^{6}3{\mathrm{d}}^{10}4{\mathrm{s}}^{2}4{\mathrm{p}}^{6}4{\mathrm{d}}^{10}5{\mathrm{s}}^{2}5{\mathrm{p}}^{3}\) belongs to the following group of the periodic table</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>5 th</p></span></div><div class="option"><span class="key">b</span><span><p>15 th</p></span></div><div class="option"><span class="key">c</span><span><p>3rd</p></span></div><div class="option"><span class="key">d</span><span><p>17 th</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -227,7 +231,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>Its valence shell has 5 electrons (\\({\\mathrm{ns}}^{2},{\\mathrm{np}}^{3}\\)). It belongs to 15 th group of the periodic table. for p-block elements (group number is 10+number of valence electron).\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q14" data-gated="1">
-      <div class="qnum">Q14</div>
+      <div class="qhead"><div class="qnum">Q14</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Ionic radii are</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>inversely proportional to effective nuclear charge</p></span></div><div class="option"><span class="key">b</span><span><p>inversely proportional to square of effective nuclear charge</p></span></div><div class="option"><span class="key">c</span><span><p>directly proportional to effective nuclear charge</p></span></div><div class="option"><span class="key">d</span><span><p>directly proportional to square of effective nuclear charge.</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -239,7 +243,7 @@
       <script type="application/json" class="q-payload">{"a":0,"exp":"\u003cstrong>A. Inversely proportional to effective nuclear charge\u003c/strong> \u003cul> \u003cli> \u003cp>\u003cstrong>Effective nuclear charge (Zₑff)\u003c/strong> is the net positive charge experienced by an electron in a multi-electron atom.\u003c/p> \u003c/li> \u003cli> \u003cp>As \u003cstrong>Zₑff increases\u003c/strong>, the nucleus pulls the electrons \u003cstrong>closer\u003c/strong>, making the \u003cstrong>ionic radius smaller\u003c/strong>.\u003c/p> \u003c/li> \u003cli> \u003cp>Hence, \u003cstrong>ionic radius decreases\u003c/strong> with \u003cstrong>increasing effective nuclear charge\u003c/strong>.\u003c/p> \u003c/li> \u003c/ul>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q15" data-gated="1">
-      <div class="qnum">Q15</div>
+      <div class="qhead"><div class="qnum">Q15</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The correct order of electronegativity for given elements is: </p> <p>[JEE Main 2023, 8 Apr (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(\mathrm{C}>\mathrm{P}>\mathrm{At}>\mathrm{Br}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(\mathrm{Br}>\mathrm{P}>\mathrm{At}>\mathrm{C}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(\mathrm{P}>\mathrm{Br}>\mathrm{C}>\mathrm{At}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{Br}>\mathrm{C}>\mathrm{At}>\mathrm{P}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -251,7 +255,7 @@
       <script type="application/json" class="q-payload">{"a":3,"exp":"\u003cp>Atom E.N.\u003c/p> \u003cp>Br 2.96\u003c/p> \u003cp>C 2.55\u003c/p> \u003cp>At 2.2\u003c/p> \u003cp>P 2.19\u003c/p> \u003cp>Correct order of electronegativity is\u003c/p> \u003cp>\\(\\mathrm{Br}>\\mathrm{C}>\\mathrm{At}>\\mathrm{P}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q16" data-gated="1">
-      <div class="qnum">Q16</div>
+      <div class="qhead"><div class="qnum">Q16</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The element expected to form largest ion to achieve the nearest noble gas configuration is</p> <p>[NEET 2023]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>F</p></span></div><div class="option"><span class="key">b</span><span><p>N</p></span></div><div class="option"><span class="key">c</span><span><p>Na</p></span></div><div class="option"><span class="key">d</span><span><p>O</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -263,7 +267,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>The largest ion will be the one in which the number of electrons is more and effective nuclear attraction is less.\u003c/p> \u003cp>F → F⁻\u003cbr/>Radius increases.\u003c/p> \u003cp>O → O²⁻\u003cbr/>Gains two electrons, therefore the ion formed is larger.\u003c/p> \u003cp>N → N³⁻\u003cbr/>Gains three electrons and nuclear attraction decreases relatively, therefore the ion formed is the largest.\u003c/p> \u003cp>Na → Na⁺\u003cbr/>It forms a cation, due to which the radius decreases.\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q17" data-gated="1">
-      <div class="qnum">Q17</div>
+      <div class="qhead"><div class="qnum">Q17</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>For the second period elements the correct increasing order of first ionization enthalpy is</p> <p>[NEET 2019]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\( \mathrm{Li}&lt;\mathrm{Be}&lt;\mathrm{B}&lt;\mathrm{C}&lt;\mathrm{O}&lt;\mathrm{N}&lt;\mathrm{F}&lt;\mathrm{Ne} \)</p></span></div><div class="option"><span class="key">b</span><span><p>\( \mathrm{Li}&lt;\mathrm{Be}&lt;\mathrm{B}&lt;\mathrm{C}&lt;\mathrm{N}&lt;\mathrm{O}&lt;\mathrm{F}&lt;\mathrm{Ne} \)</p></span></div><div class="option"><span class="key">c</span><span><p>\( \mathrm{Li}&lt;\mathrm{B}&lt;\mathrm{Be}&lt;\mathrm{C}&lt;\mathrm{O}&lt;\mathrm{N}&lt;\mathrm{F}&lt;\mathrm{Ne} \)</p></span></div><div class="option"><span class="key">d</span><span><p>\( \mathrm{Li}&lt;\mathrm{B}&lt;\mathrm{Be}&lt;\mathrm{C}&lt;\mathrm{N}&lt;\mathrm{O}&lt;\mathrm{F}&lt;\mathrm{Ne} \) </p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -275,7 +279,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>In the second period, ionization enthalpy generally increases from left to right, but there are two exceptions:\u003c/p> \u003cp>Ionization enthalpy of B is less than that of Be because in B, it is easier to remove the electron from the p subshell.\u003c/p> \u003cp>Ionization enthalpy of O is less than that of N because N has a half-filled p subshell which is more stable.\u003c/p> \u003cp>Hence, the correct order is:\u003c/p> \u003cp>Li &lt; B &lt; Be &lt; C &lt; O &lt; N &lt; F &lt; Ne\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q18" data-gated="1">
-      <div class="qnum">Q18</div>
+      <div class="qhead"><div class="qnum">Q18</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>In the sixth period, the orbitals that are filled are: </p> <p>[JEE Main 2020, 5 Sep (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\(6\mathrm{s},5\mathrm{f},6\mathrm{d},6\mathrm{p}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\(6\mathrm{s},6\mathrm{p},6\mathrm{d},6\mathrm{f}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\(6\mathrm{s},4\mathrm{f},5\mathrm{d},6\mathrm{p}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(6\mathrm{s},5\mathrm{d},5\mathrm{f},6\mathrm{p}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -287,7 +291,7 @@
       <script type="application/json" class="q-payload">{"a":2,"exp":"\u003cp>According to Aufbau's principal, the electrons are filled in increasing energy of atomic orbitals. For sixth period element, the correct order is: \\(6\\mathrm{s}\u003c4\\mathrm{f}\u003c5\\mathrm{d}\u003c6\\mathrm{p}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q19" data-gated="1">
-      <div class="qnum">Q19</div>
+      <div class="qhead"><div class="qnum">Q19</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>The acidic, basic and amphoteric oxides, respectively, are: </p> <p>[JEE Main 2020, 9 Jan (Shift 1)]</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>\({\mathrm{Na}}_{2}\mathrm{O},{\mathrm{SO}}_{3},{\mathrm{Al}}_{2}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">b</span><span><p>\({\mathrm{N}}_{2}{\mathrm{O}}_{3},{\mathrm{Li}}_{2}\mathrm{O},{\mathrm{Al}}_{2}{\mathrm{O}}_{3}\)</p></span></div><div class="option"><span class="key">c</span><span><p>\({\mathrm{Cl}}_{2}\mathrm{O},\mathrm{CaO},{\mathrm{P}}_{4}{\mathrm{O}}_{10}\)</p></span></div><div class="option"><span class="key">d</span><span><p>\(\mathrm{MgO},{\mathrm{Cl}}_{2}\mathrm{O},{\mathrm{Al}}_{2}{\mathrm{O}}_{3}\)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
@@ -299,7 +303,7 @@
       <script type="application/json" class="q-payload">{"a":1,"exp":"\u003cp>\\({\\mathrm{N}}_{2}{\\mathrm{O}}_{3},{\\mathrm{Li}}_{2}\\mathrm{O},{\\mathrm{Al}}_{2}{\\mathrm{O}}_{3}\\)\u003c/p>","fmt":"html"}</script>
     </div>
     <div class="qblock" id="q20" data-gated="1">
-      <div class="qnum">Q20</div>
+      <div class="qhead"><div class="qnum">Q20</div><span class="pyq-badge">PYQ</span></div>
       <div class="qtext"><p>Outermost electronic configuration of four elements \(A , B , C , D\) are given below:<br/>(A) \(3 s^2\)<br/>(B) \(3 s^2 3 p ^1\)<br/>(C) \(3 s^2 3 p ^3\)<br/>(D) \(3 s^2 3 p ^4\)</p> <p>The <strong>correct </strong>order of first ionization enthalpy for them is:</p></div>
       <div class="options qpage-options"><div class="option"><span class="key">a</span><span><p>(A) \(&lt;\) (B) \(&lt;\) (C) \(&lt;\) (D)</p></span></div><div class="option"><span class="key">b</span><span><p>(B) \(&lt;\) (A) \(&lt;\) (D) \(&lt;\) (C)</p></span></div><div class="option"><span class="key">c</span><span><p>(B) \(&lt;\) (D) \(&lt;\) (A) \(&lt;\) (C)</p></span></div><div class="option"><span class="key">d</span><span><p>(B) \(&lt;\) (A) \(&lt;\) (C) \(&lt;\) (D)</p></span></div></div>
       <div class="answer-gate" data-unlock="exam-answer">
