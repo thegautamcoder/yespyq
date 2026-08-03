@@ -251,11 +251,15 @@ msup,msub{font-size:.92em}
 .explain .verdict.no{color:var(--bad)}
 .explain .exp-body{font-size:.95rem;color:var(--slate);line-height:1.7;
   background:var(--blue-50);border:1px solid var(--blue-100);border-radius:12px;padding:1rem 1.1rem}
-/* Multi-line KaTeX display blocks (aligned/cases/matrix) are often wider
-   than the mobile viewport — scroll them horizontally instead of letting
-   them blow out the page. */
+/* KaTeX content (display blocks, but also a single long inline \(...\)
+   expression) is often wider than the mobile viewport — scroll the
+   specific line horizontally instead of letting it blow out the page. */
 .katex-display{overflow-x:auto;overflow-y:hidden;max-width:100%}
 .qtext .katex-display,.exp-body .katex-display{padding-bottom:.3rem}
+.qtext,.exp-body,.option,.opt,.qpage-options .option{
+  overflow-x:auto;max-width:100%
+}
+.qtext .katex,.exp-body .katex,.option .katex,.opt .katex{white-space:normal}
 .explain .lbl{font-weight:700;color:var(--ink);display:block;margin-bottom:.55rem;font-size:1rem}
 
 .quiz-nav{display:flex;gap:.7rem;margin-top:1.2rem;align-items:center;
