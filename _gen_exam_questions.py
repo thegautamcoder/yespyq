@@ -81,7 +81,7 @@ def question_page(x, ecfg, exam, subject, sname, sicon, chapter, gated, is_free,
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › <a href="/exams/{exam}/">{ge.esc(ecfg['name'])}</a> › <a href="/exams/{exam}/{subject}/">{ge.esc(sname)}</a> › <a href="{chapter_url}">{ge.esc(chapter)}</a></nav>
-      <div class="qtags"><span class="qtag">{ecfg['icon']} {ge.esc(ecfg['name'])}</span><span class="qtag">{sicon} {ge.esc(sname)}</span>{f'<span class="qtag">{x["y"]}</span>' if x.get("y") else ""}</div>
+      <div class="qtags"><span class="qtag">{ge.esc(ecfg['name'])}</span><span class="qtag">{ge.esc(sname)}</span>{f'<span class="qtag">{x["y"]}</span>' if x.get("y") else ""}</div>
       <h1>{ge.esc(qplain[:120])}{"…" if len(qplain) > 120 else ""}</h1>
 {qs_html}
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0">{nav_links}</div>

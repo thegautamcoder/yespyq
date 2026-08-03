@@ -240,14 +240,14 @@ def question_page(x):
     pool.sort(key=lambda r: (r.get('c') != x.get('c')))
     rel = pool[:6]
     rel_html = "".join(
-        f'<a href="/pyq/q/{SLUG[r["i"]]}/"><span class="tag">{sicon} {sname.split(" ")[0]}{(" · " + str(r["y"])) if r.get("y") else ""}</span><b>{esc(plain(r["q"])[:90])}…</b></a>'
+        f'<a href="/pyq/q/{SLUG[r["i"]]}/"><span class="tag">{sname.split(" ")[0]}{(" · " + str(r["y"])) if r.get("y") else ""}</span><b>{esc(plain(r["q"])[:90])}…</b></a>'
         for r in rel)
 
     body = f'''{HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/pyq/">PYQs</a> › <a href="/pyq/{x['s']}/">{esc(sname)}</a> › Question</nav>
-      <div class="qmeta-tags"><span class="qtag">{sicon} {esc(sname)}</span>{f'<span class="qtag">UPSC {year}</span>' if year else ''}{f'<span class="qtag">{esc(x.get("c",""))}</span>' if x.get("c") else ''}</div>
+      <div class="qmeta-tags"><span class="qtag">{esc(sname)}</span>{f'<span class="qtag">UPSC {year}</span>' if year else ''}{f'<span class="qtag">{esc(x.get("c",""))}</span>' if x.get("c") else ''}</div>
       <h1 class="qpage-h1 qtext">{format_body(x['q'], True)}</h1>
       <div class="options qpage-options">{opts}</div>
       <div class="explain">
@@ -257,7 +257,7 @@ def question_page(x):
       <div class="cta-box">
         <h3>Practice more {esc(sname.split(' ')[0])} PYQs</h3>
         <p>Attempt a free 10-question quiz or browse the full {esc(sname)} previous-year-question bank with instant answers and explanations.</p>
-        <a href="/subjects/{shub}/" class="btn btn-primary">{sicon} {esc(sname.split(' ')[0])} PYQs →</a>
+        <a href="/subjects/{shub}/" class="btn btn-primary">{esc(sname.split(' ')[0])} PYQs →</a>
       </div>
       <section class="related">
         <h2>More UPSC {esc(sname.split(' ')[0])} PYQs</h2>
@@ -318,13 +318,13 @@ def year_index(year):
     for sid in SUB:
         if not by_sub.get(sid): continue
         sname, sicon, shub = SUB[sid]
-        listing += f'<h2 class="pyq-year">{sicon} {esc(sname)}</h2><ul class="pyq-list">'
+        listing += f'<h2 class="pyq-year">{esc(sname)}</h2><ul class="pyq-list">'
         for x in by_sub[sid]:
             listing += f'<li><a href="/pyq/q/{SLUG[x["i"]]}/">{esc(plain(x["q"])[:110])}{"…" if len(plain(x["q"]))>110 else ""}</a></li>'
         listing += '</ul>'
     # prev/next year links for crawl depth
     yr_links = " · ".join(f'<a href="/pyq/year/{y}/">UPSC {y}</a>' for y in YEARS[:14])
-    sub_links = "".join(f'<a href="/pyq/year/{year}/{sid}/">{SUB[sid][1]} {esc(SUB[sid][0].split(" ")[0])} {year}</a>'
+    sub_links = "".join(f'<a href="/pyq/year/{year}/{sid}/">{esc(SUB[sid][0].split(" ")[0])} {year}</a>'
                         for sid in SUB if (year, sid) in set(YS_COMBOS))
     body = f'''{HEADER}
   <main>
@@ -386,7 +386,7 @@ def hub():
     for sid, (sname, sicon, shub) in SUB.items():
         n = len(BY_SUB[sid])
         if not n: continue
-        cards += f'<a class="post-card" href="/pyq/{sid}/"><span class="tag">{sicon} {esc(sname.split(" ")[0])}</span><h2>{esc(sname)} PYQs</h2><p>{n} solved previous year questions with answers &amp; explanations.</p><span class="read">Browse {n} questions →</span></a>'
+        cards += f'<a class="post-card" href="/pyq/{sid}/"><span class="tag">{esc(sname.split(" ")[0])}</span><h2>{esc(sname)} PYQs</h2><p>{n} solved previous year questions with answers &amp; explanations.</p><span class="read">Browse {n} questions →</span></a>'
     year_chips = "".join(f'<a href="/pyq/year/{y}/">UPSC {y}</a>' for y in YEARS)
     body = f'''{HEADER}
   <main>

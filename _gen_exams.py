@@ -15,23 +15,23 @@ TODAY = datetime.date.today().isoformat()
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SUBJECT_LABELS = {
-    "physics": ("Physics", "🧲"),
-    "chemistry": ("Chemistry", "🧪"),
-    "maths": ("Maths", "➗"),
-    "biology": ("Biology", "🧬"),
-    "english": ("English", "🔤"),
-    "hindi": ("Hindi", "🪔"),
-    "sanskrit": ("Sanskrit", "📜"),
-    "history": ("History", "🏛️"),
-    "geography": ("Geography", "🌍"),
-    "polity": ("Political Science", "⚖️"),
-    "economics": ("Economics", "📈"),
-    "accountancy": ("Accountancy", "📒"),
-    "business-studies": ("Business Studies", "💼"),
-    "social-studies": ("Social Studies", "🌏"),
-    "psychology": ("Psychology", "🧠"),
-    "sociology": ("Sociology", "👥"),
-    "general": ("General", "📘"),
+    "physics": ("Physics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='1.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(60 12 12)'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(120 12 12)'/></svg>"),
+    "chemistry": ("Chemistry", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 2h6M10 2v6.2l-5.3 9.3A2 2 0 0 0 6.4 20.5h11.2a2 2 0 0 0 1.7-3l-5.3-9.3V2'/><path d='M8.3 14h7.4'/></svg>"),
+    "maths": ("Maths", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3 4 20h16L12 3z'/><path d='M9 15h6'/></svg>"),
+    "biology": ("Biology", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='6' cy='6.5' r='2.3'/><circle cx='18' cy='6.5' r='2.3'/><circle cx='12' cy='17.5' r='2.3'/><path d='M7.9 8 10.6 15.3M16.1 8 13.4 15.3M8.3 6.5h7.4'/></svg>"),
+    "english": ("English", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5h16v11H8l-4 3V5z'/><path d='M8 9h8M8 12.3h5'/></svg>"),
+    "hindi": ("Hindi", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 4h6v6H8l-3 3V4z'/><path d='M13 10h6v6h-3l-3 3v-9z'/></svg>"),
+    "sanskrit": ("Sanskrit", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 3h9l5 5v13H6z'/><path d='M15 3v5h5'/><path d='M9 12h6M9 15.3h6'/></svg>"),
+    "history": ("History", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 10v11M12 10v11M16 10v11'/></svg>"),
+    "geography": ("Geography", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
+    "polity": ("Political Science", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18M7 21h10M5 7h5M14 7h5'/><path d='M5 7 2.5 12a2.5 2.5 0 0 0 5 0L5 7z'/><path d='M19 7l-2.5 5a2.5 2.5 0 0 0 5 0L19 7z'/></svg>"),
+    "economics": ("Economics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 17 9 11l4 4 8-8'/><path d='M15 7h6v6'/></svg>"),
+    "accountancy": ("Accountancy", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 3h9l5 5v13H6z'/><path d='M15 3v5h5'/><path d='M9 13l2 2 4-4'/></svg>"),
+    "business-studies": ("Business Studies", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='7' width='18' height='13' rx='2'/><path d='M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'/><path d='M3 12h18'/></svg>"),
+    "social-studies": ("Social Studies", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
+    "psychology": ("Psychology", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 4a3 3 0 0 0-3 3v1a3 3 0 0 0-1 5.8V15a3 3 0 0 0 3 3h1M9 4v14'/><path d='M15 4a3 3 0 0 1 3 3v1a3 3 0 0 1 1 5.8V15a3 3 0 0 1-3 3h-1M15 4v14'/></svg>"),
+    "sociology": ("Sociology", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='8' r='3'/><circle cx='16.5' cy='9.5' r='2.5'/><path d='M3.5 19c.8-3 3-4.5 5.5-4.5S13.7 16 14.5 19'/><path d='M14 19c.4-2 1.8-3.2 3.5-3.2 1.4 0 2.5.7 3 2'/></svg>"),
+    "general": ("General", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z'/><path d='M4 20.5A2.5 2.5 0 0 1 6.5 18H20'/></svg>"),
 }
 
 
@@ -39,7 +39,7 @@ def subject_meta(sid):
     if sid in SUBJECT_LABELS:
         return SUBJECT_LABELS[sid]
     name = sid.replace("-", " ").title()
-    return (name, "📘")
+    return (name, "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z'/><path d='M4 20.5A2.5 2.5 0 0 1 6.5 18H20'/></svg>")
 
 
 def resolve_subjects(ecfg, by_subject):
@@ -59,80 +59,80 @@ EXAMS = {
         "name": "JEE",
         "full": "JEE (Main & Advanced)",
         "desc": "engineering entrance",
-        "icon": "🛠️",
+        "icon": "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z'/></svg>",
         "gated": True,
         "subjects": {
-            "physics": ("Physics", "🧲"),
-            "chemistry": ("Chemistry", "🧪"),
-            "maths": ("Maths", "➗"),
+            "physics": ("Physics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='1.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(60 12 12)'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(120 12 12)'/></svg>"),
+            "chemistry": ("Chemistry", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 2h6M10 2v6.2l-5.3 9.3A2 2 0 0 0 6.4 20.5h11.2a2 2 0 0 0 1.7-3l-5.3-9.3V2'/><path d='M8.3 14h7.4'/></svg>"),
+            "maths": ("Maths", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3 4 20h16L12 3z'/><path d='M9 15h6'/></svg>"),
         },
     },
     "neet": {
         "name": "NEET",
         "full": "NEET-UG",
         "desc": "medical entrance",
-        "icon": "🩺",
+        "icon": "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 3v6a4 4 0 0 0 8 0V3'/><path d='M9 15a5 5 0 0 0 10 0v-2'/><circle cx='19' cy='9' r='2'/></svg>",
         "gated": True,
         "subjects": {
-            "physics": ("Physics", "🧲"),
-            "chemistry": ("Chemistry", "🧪"),
-            "biology": ("Biology", "🧬"),
+            "physics": ("Physics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='1.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(60 12 12)'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(120 12 12)'/></svg>"),
+            "chemistry": ("Chemistry", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 2h6M10 2v6.2l-5.3 9.3A2 2 0 0 0 6.4 20.5h11.2a2 2 0 0 0 1.7-3l-5.3-9.3V2'/><path d='M8.3 14h7.4'/></svg>"),
+            "biology": ("Biology", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='6' cy='6.5' r='2.3'/><circle cx='18' cy='6.5' r='2.3'/><circle cx='12' cy='17.5' r='2.3'/><path d='M7.9 8 10.6 15.3M16.1 8 13.4 15.3M8.3 6.5h7.4'/></svg>"),
         },
     },
     "board": {
         "name": "Board",
         "full": "Board Exams (Class 11 & 12)",
         "desc": "school board exams",
-        "icon": "🏫",
+        "icon": "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M2 9 12 4l10 5-10 5-10-5z'/><path d='M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5'/></svg>",
         "gated": True,
         "subjects": {
-            "physics": ("Physics", "🧲"),
-            "chemistry": ("Chemistry", "🧪"),
-            "maths": ("Maths", "➗"),
-            "english": ("English", "🔤"),
-            "hindi": ("Hindi", "🪔"),
-            "biology": ("Biology", "🧬"),
-            "history": ("History", "🏛️"),
-            "geography": ("Geography", "🌍"),
-            "polity": ("Political Science", "⚖️"),
-            "economics": ("Economics", "📈"),
-            "accountancy": ("Accountancy", "📒"),
-            "business-studies": ("Business Studies", "💼"),
+            "physics": ("Physics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='1.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(60 12 12)'/><ellipse cx='12' cy='12' rx='9' ry='3.8' transform='rotate(120 12 12)'/></svg>"),
+            "chemistry": ("Chemistry", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 2h6M10 2v6.2l-5.3 9.3A2 2 0 0 0 6.4 20.5h11.2a2 2 0 0 0 1.7-3l-5.3-9.3V2'/><path d='M8.3 14h7.4'/></svg>"),
+            "maths": ("Maths", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3 4 20h16L12 3z'/><path d='M9 15h6'/></svg>"),
+            "english": ("English", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5h16v11H8l-4 3V5z'/><path d='M8 9h8M8 12.3h5'/></svg>"),
+            "hindi": ("Hindi", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M5 4h6v6H8l-3 3V4z'/><path d='M13 10h6v6h-3l-3 3v-9z'/></svg>"),
+            "biology": ("Biology", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='6' cy='6.5' r='2.3'/><circle cx='18' cy='6.5' r='2.3'/><circle cx='12' cy='17.5' r='2.3'/><path d='M7.9 8 10.6 15.3M16.1 8 13.4 15.3M8.3 6.5h7.4'/></svg>"),
+            "history": ("History", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 10v11M12 10v11M16 10v11'/></svg>"),
+            "geography": ("Geography", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
+            "polity": ("Political Science", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18M7 21h10M5 7h5M14 7h5'/><path d='M5 7 2.5 12a2.5 2.5 0 0 0 5 0L5 7z'/><path d='M19 7l-2.5 5a2.5 2.5 0 0 0 5 0L19 7z'/></svg>"),
+            "economics": ("Economics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 17 9 11l4 4 8-8'/><path d='M15 7h6v6'/></svg>"),
+            "accountancy": ("Accountancy", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M6 3h9l5 5v13H6z'/><path d='M15 3v5h5'/><path d='M9 13l2 2 4-4'/></svg>"),
+            "business-studies": ("Business Studies", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='7' width='18' height='13' rx='2'/><path d='M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'/><path d='M3 12h18'/></svg>"),
         },
     },
     "defence": {
         "name": "Defence",
         "full": "Defence Exams (Agniveer, AFCAT, Coast Guard & more)",
         "desc": "armed forces recruitment",
-        "icon": "🎖️",
+        "icon": "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3 5 6v6c0 5 3 8.5 7 9 4-.5 7-4 7-9V6l-7-3z'/><path d='M9 12l2 2 4-4'/></svg>",
         "gated": True,
         "subjects": {
-            "staticgk": ("Static GK", "🌐"),
-            "currentaff": ("Current Affairs", "🗞️"),
-            "economy": ("Economics", "📈"),
-            "history": ("History", "🏛️"),
-            "polity": ("Polity", "⚖️"),
-            "english": ("English", "🔤"),
-            "geography": ("Geography", "🌍"),
+            "staticgk": ("Static GK", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
+            "currentaff": ("Current Affairs", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 4h13v14a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2V4z'/><path d='M19 8v10a2 2 0 0 1-2 2'/><path d='M7 8h7M7 11.3h7M7 14.6h4'/></svg>"),
+            "economy": ("Economics", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 17 9 11l4 4 8-8'/><path d='M15 7h6v6'/></svg>"),
+            "history": ("History", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 10v11M12 10v11M16 10v11'/></svg>"),
+            "polity": ("Polity", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18M7 21h10M5 7h5M14 7h5'/><path d='M5 7 2.5 12a2.5 2.5 0 0 0 5 0L5 7z'/><path d='M19 7l-2.5 5a2.5 2.5 0 0 0 5 0L19 7z'/></svg>"),
+            "english": ("English", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5h16v11H8l-4 3V5z'/><path d='M8 9h8M8 12.3h5'/></svg>"),
+            "geography": ("Geography", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
         },
     },
     "ssc-cgl": {
         "name": "SSC CGL",
         "full": "SSC CGL (Combined Graduate Level)",
         "desc": "staff selection commission",
-        "icon": "📝",
+        "icon": "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='5' y='4' width='14' height='17' rx='2'/><path d='M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1'/><path d='M9 13l2 2 4-4'/></svg>",
         "gated": True,
         "subjects": {
-            "english": ("English", "🔤"),
-            "history": ("History", "🏛️"),
-            "economy": ("Economy", "📈"),
-            "aptitude": ("Quantitative Aptitude", "🔢"),
-            "reasoning": ("Reasoning", "🧩"),
-            "computer": ("Computer Awareness", "💻"),
-            "geography": ("Geography", "🌍"),
-            "science": ("Science", "🔬"),
-            "gk": ("General Knowledge", "🌐"),
-            "polity": ("Polity", "⚖️"),
+            "english": ("English", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 5h16v11H8l-4 3V5z'/><path d='M8 9h8M8 12.3h5'/></svg>"),
+            "history": ("History", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 10v11M12 10v11M16 10v11'/></svg>"),
+            "economy": ("Economy", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M3 17 9 11l4 4 8-8'/><path d='M15 7h6v6'/></svg>"),
+            "aptitude": ("Quantitative Aptitude", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M4 6h.01M4 12h.01M4 18h.01'/><path d='M9 6h11M9 12h11M9 18h11'/></svg>"),
+            "reasoning": ("Reasoning", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='3' width='7' height='7' rx='1.5'/><rect x='14' y='3' width='7' height='7' rx='1.5'/><rect x='3' y='14' width='7' height='7' rx='1.5'/><path d='M17.5 14v3M17.5 20.5v.01M14 17.5h3M20.5 17.5h.01'/></svg>"),
+            "computer": ("Computer Awareness", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><rect x='3' y='4' width='18' height='12' rx='1.5'/><path d='M2 20h20M9 16v4M15 16v4'/></svg>"),
+            "geography": ("Geography", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
+            "science": ("Science", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M9 3h3M10.5 3v6.3'/><path d='M6 21h9'/><path d='M8.5 21c0-3.5 2-5.5 2-8a2.5 2.5 0 0 0-5 0'/><ellipse cx='10.5' cy='13' rx='4' ry='1.4'/></svg>"),
+            "gk": ("General Knowledge", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><circle cx='12' cy='12' r='9'/><path d='M3 12h18'/><path d='M12 3c2.5 2.5 3.8 5.8 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.8-3.8-9s1.3-6.5 3.8-9z'/></svg>"),
+            "polity": ("Polity", "<svg viewBox='0 0 24 24' width='20' height='20' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 3v18M7 21h10M5 7h5M14 7h5'/><path d='M5 7 2.5 12a2.5 2.5 0 0 0 5 0L5 7z'/><path d='M19 7l-2.5 5a2.5 2.5 0 0 0 5 0L19 7z'/></svg>"),
         },
     },
 }
@@ -239,7 +239,7 @@ EXTRA_CSS = '''  <style>
     .exam-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1.6rem 0}
     .exam-tile{border:1.5px solid var(--line);border-radius:14px;padding:1.3rem;text-decoration:none;color:inherit;display:block;transition:border-color .15s,transform .15s}
     .exam-tile:hover{border-color:var(--blue-500,#2563eb);transform:translateY(-2px)}
-    .exam-tile .et-icon{font-size:1.8rem}
+    .exam-tile .et-icon{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;background:var(--accent-soft,rgba(37,99,235,.1));color:var(--accent,#2563eb);border:1px solid rgba(37,99,235,.2);margin-bottom:.7rem}
     .exam-tile h3{margin:.5rem 0 .2rem;font-size:1.15rem}
     .exam-tile p{margin:0;color:var(--muted);font-size:.9rem}
     .chapter-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.7rem;margin:1.4rem 0}
@@ -423,14 +423,14 @@ def chapter_page(exam, subject, chapter, items):
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › <a href="/exams/{exam}/">{esc(ecfg['name'])}</a> › <a href="/exams/{exam}/{subject}/">{esc(sname)}</a> › {esc(chapter)}</nav>
-      <div class="qtags"><span class="qtag">{ecfg['icon']} {esc(ecfg['name'])}</span><span class="qtag">{sicon} {esc(sname)}</span></div>
+      <div class="qtags"><span class="qtag">{esc(ecfg['name'])}</span><span class="qtag">{esc(sname)}</span></div>
       <h1>{esc(chapter)}</h1>
       <p>{intro}</p>
 {qs_html}
       <div class="cta-box">
         <h3>Practice more {esc(ecfg['name'])} {esc(sname)} PYQs</h3>
         <p>Browse every {esc(sname)} chapter, or explore the full {esc(ecfg['name'])} question bank.</p>
-        <a href="/exams/{exam}/{subject}/" class="btn btn-primary">{sicon} All {esc(sname)} chapters →</a>
+        <a href="/exams/{exam}/{subject}/" class="btn btn-primary">All {esc(sname)} chapters →</a>
       </div>
     </article>
   </main>
@@ -468,8 +468,8 @@ def subject_index(exam, subject, by_chapter):
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › <a href="/exams/{exam}/">{esc(ecfg['name'])}</a> › {esc(sname)}</nav>
-      <div class="qtags"><span class="qtag">{ecfg['icon']} {esc(ecfg['name'])}</span></div>
-      <h1>{sicon} {esc(ecfg['name'])} {esc(sname)} PYQs</h1>
+      <div class="qtags"><span class="qtag">{esc(ecfg['name'])}</span></div>
+      <h1>{esc(ecfg['name'])} {esc(sname)} PYQs</h1>
       <p>{total} solved {esc(ecfg['name'])} {esc(sname)} previous year questions across {len(by_chapter)} chapters. Pick a chapter to practice.</p>
       <div class="chapter-list">{cards}</div>
     </article>
@@ -509,7 +509,7 @@ def exam_hub(exam, by_subject):
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › {esc(ecfg['name'])}</nav>
-      <h1>{ecfg['icon']} {esc(ecfg['full'])} PYQs</h1>
+      <h1>{esc(ecfg['full'])} PYQs</h1>
       <p>{intro}</p>
       <div class="exam-tiles">{tiles}</div>
     </article>
@@ -530,7 +530,11 @@ def exams_hub(counts):
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{canonical}"}}]}}
   </script>'''
 
-    tiles = f'<a class="exam-tile" href="/pyq/"><div class="et-icon">🏛️</div><h3>UPSC (CSE Prelims)</h3><p>2,200+ solved PYQs</p></a>'
+    tiles = ('<a class="exam-tile" href="/pyq/"><div class="et-icon">'
+             '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" '
+             'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+             '<path d="M4 21h16M5 21V10M19 21V10M3 10l9-6 9 6M8 10v11M12 10v11M16 10v11"/></svg>'
+             '</div><h3>UPSC (CSE Prelims)</h3><p>2,200+ solved PYQs</p></a>')
     for exam, ecfg in EXAMS.items():
         label = "PYQs" if ecfg.get("gated") else "solved PYQs"
         tiles += f'<a class="exam-tile" href="/exams/{exam}/"><div class="et-icon">{ecfg["icon"]}</div><h3>{esc(ecfg["full"])}</h3><p>{counts.get(exam,0)} {label}</p></a>'

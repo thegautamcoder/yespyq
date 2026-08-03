@@ -289,7 +289,7 @@ PAGE_TMPL = """<!DOCTYPE html>
       <nav class="breadcrumb">
         <a href="/">Home</a> › <a href="/subjects/">Subjects</a> › {short} PYQs
       </nav>
-      <h1>{icon} {h1}</h1>
+      <h1>{h1}</h1>
       <div class="meta"><span>By YESPYQ</span> · <span>Updated June 2026</span> · <span>UPSC CSE Prelims</span> · <span>~{weightage} per paper</span></div>
 
       <div class="prose">
@@ -369,10 +369,10 @@ def build_page(sub, all_subs):
     for o in all_subs:
         if o["slug"] == sub["slug"]:
             continue
-        related_html += '          <a href="/subjects/{}/"><span class="tag">{}</span><b>UPSC {} PYQs</b></a>\n'.format(o["slug"], o["icon"], o["short"])
+        related_html += '          <a href="/subjects/{}/"><b>UPSC {} PYQs</b></a>\n'.format(o["slug"], o["short"])
     # add blog related link
     bslug, btitle = sub["related_blog"]
-    related_html += '          <a href="/blog/{}/"><span class="tag">📘 Blog</span><b>{}</b></a>\n'.format(bslug, btitle)
+    related_html += '          <a href="/blog/{}/"><span class="tag">Blog</span><b>{}</b></a>\n'.format(bslug, btitle)
 
     return PAGE_TMPL.format(
         title=sub["title"], desc=sub["desc"], keywords=sub["keywords"],
@@ -507,12 +507,12 @@ def build_hub(all_subs):
     for i, s in enumerate(all_subs, 1):
         cards += (
             '        <a class="post-card" href="/subjects/{slug}/">\n'
-            '          <span class="tag">{icon} {short}</span>\n'
+            '          <span class="tag">{short}</span>\n'
             '          <h2>UPSC {short} PYQs</h2>\n'
             '          <p>{desc}</p>\n'
             '          <span class="read">Practice {short} →</span>\n'
             '        </a>\n'
-        ).format(slug=s["slug"], icon=s["icon"], short=s["short"],
+        ).format(slug=s["slug"], short=s["short"],
                  desc="High-yield " + s["name"] + " previous year questions with answers and explanations.")
         items.append('      {{ "@type": "ListItem", "position": {}, "name": "UPSC {} PYQs", "url": "{}/subjects/{}/" }}'.format(i, esc(s["short"]), BASE, s["slug"]))
     return HUB_TMPL.format(base=BASE, cards=cards, itemlist=",\n".join(items))
