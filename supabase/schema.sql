@@ -172,6 +172,32 @@ begin
 end $$;
 grant execute on function public.track_event(text, jsonb, text, text, text) to anon, authenticated;
 
+/* Abandoned checkouts — signed-in users who reached Razorpay checkout
+   (checkout_started fired only after Google sign-in, so we already have
+   their email) but never completed a payment. Read this in Table Editor
+   / SQL Editor to get a mailable list for a "you were this close" nudge.
+   A user drops off the list the moment entitlements.paid flips true, so
+   re-running this always reflects who's still actually unpaid today. */
+create or replace view public.abandoned_checkouts as
+select
+  u.id                                                      as user_id,
+  coalesce(e.email, u.email)                                as email,
+  min(ev.created_at) filter (where ev.event = 'checkout_started') as first_checkout_started_at,
+  max(ev.created_at) filter (where ev.event = 'checkout_started') as last_checkout_started_at,
+  count(*)          filter (where ev.event = 'checkout_started')  as checkout_attempts,
+  count(*)          filter (where ev.event = 'checkout_dismissed') as times_dismissed,
+  count(*)          filter (where ev.event = 'payment_failed')     as times_failed,
+  (array_agg(ev.props ->> 'amount' order by ev.created_at desc)
+    filter (where ev.event = 'checkout_started'))[1]::bigint       as last_amount_paise
+from public.events ev
+join auth.users u on u.id = ev.user_id
+left join public.entitlements e on e.user_id = u.id
+where coalesce(e.paid, false) = false
+  and ev.user_id in (select user_id from public.events where event = 'checkout_started')
+  and ev.event in ('checkout_started', 'checkout_dismissed', 'payment_failed')
+group by u.id, coalesce(e.email, u.email)
+order by last_checkout_started_at desc;
+
 /* Funnel rollup — how many reach each step, and where people drop. */
 create or replace view public.funnel_daily as
 select date_trunc('day', created_at)::date as day,

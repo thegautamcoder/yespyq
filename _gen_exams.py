@@ -12,6 +12,7 @@ from collections import defaultdict
 
 BASE = "https://yespyq.com"
 TODAY = datetime.date.today().isoformat()
+YEAR = datetime.date.today().year  # kept current automatically, not hardcoded
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SUBJECT_LABELS = {
@@ -394,11 +395,11 @@ def chapter_page(exam, subject, chapter, items):
     sname, sicon = ecfg["subjects"][subject]
     slug = slugify(chapter)
     canonical = f"{BASE}/exams/{exam}/{subject}/{slug}/"
-    title = attr(f"{chapter} — {ecfg['name']} {sname} PYQs with Answers | YESPYQ")
+    title = attr(f"{chapter} — Free {ecfg['name']} {sname} PYQ {YEAR} with Answers | YESPYQ")
     if gated:
-        desc = attr(f"{len(items)} {ecfg['name']} {sname} previous year questions on {chapter} — options free on every question, {free_n} with the answer & explanation free too, the rest unlock with PYQ Pass.")
+        desc = attr(f"{len(items)} free {ecfg['name']} {sname} previous year questions & papers on {chapter} — options free on every question, {free_n} with the answer & explanation free too, the rest unlock with PYQ Pass. No download needed.")
     else:
-        desc = attr(f"{len(items)} solved {ecfg['name']} {sname} previous year questions on {chapter}, each with the correct answer and explanation. Free practice on YESPYQ.")
+        desc = attr(f"{len(items)} free solved {ecfg['name']} {sname} previous year questions & papers on {chapter}, each with the correct answer and explanation. Free practice online on YESPYQ, no download needed.")
 
     # Question stems listed for SEO; answers stay behind Pass on gated exams.
     item_els = []
@@ -453,11 +454,11 @@ def subject_index(exam, subject, by_chapter):
     sname, sicon = ecfg["subjects"][subject]
     canonical = f"{BASE}/exams/{exam}/{subject}/"
     total = sum(len(v) for v in by_chapter.values())
-    title = attr(f"{ecfg['name']} {sname} PYQs — {total} Solved Previous Year Questions | YESPYQ")
+    title = attr(f"Free {ecfg['name']} {sname} PYQ {YEAR} — {total} Previous Year Papers | YESPYQ")
     if gated:
-        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} previous year questions — free to practice, answers & explanations unlocked with PYQ Pass.")
+        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} free PYQ / previous year papers (PYP) — free to practice online, no download needed. Answers & explanations unlocked with PYQ Pass.")
     else:
-        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} solved previous year questions, each with the correct answer and a detailed explanation. Free on YESPYQ.")
+        desc = attr(f"Browse {len(by_chapter)} {ecfg['name']} {sname} chapters with {total} free solved previous year questions and papers, each with the correct answer and a detailed explanation. Practice online on YESPYQ, no download needed.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{json_esc(ecfg['name'])}","item":"{BASE}/exams/{exam}/"}},{{"@type":"ListItem","position":4,"name":"{json_esc(sname)}","item":"{canonical}"}}]}}
@@ -490,11 +491,11 @@ def exam_hub(exam, by_subject):
     gated = ecfg.get("gated", False)
     canonical = f"{BASE}/exams/{exam}/"
     total = sum(len(v) for v in by_subject.values())
-    title = attr(f"{ecfg['full']} PYQs — {total} Solved Previous Year Questions | YESPYQ")
+    title = attr(f"Free {ecfg['name']} PYQ {YEAR} — {ecfg['full']} Previous Year Papers | YESPYQ")
     if gated:
-        desc = attr(f"{ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise. Every question and its options are free — ~10% also include the free answer & explanation, the rest unlock with PYQ Pass.")
+        desc = attr(f"Free {ecfg['name']} PYQ ({ecfg['full']} previous year papers, {ecfg['desc']}), subject-wise. Every question and its options are free to practice online, no download needed — ~10% also include the free answer & explanation, the rest unlock with PYQ Pass.")
     else:
-        desc = attr(f"Free {ecfg['full']} previous year questions ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice on YESPYQ.")
+        desc = attr(f"Free {ecfg['full']} previous year questions and papers (PYP) ({ecfg['desc']}), subject-wise, each with the correct answer and a detailed explanation. Practice online instantly on YESPYQ, no download needed.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{BASE}/exams/"}},{{"@type":"ListItem","position":3,"name":"{json_esc(ecfg['name'])}","item":"{canonical}"}}]}}
@@ -506,15 +507,15 @@ def exam_hub(exam, by_subject):
         label = "PYQs" if gated else "solved PYQs"
         tiles += f'<a class="exam-tile" href="/exams/{exam}/{sid}/"><div class="et-icon">{sicon}</div><h3>{esc(sname)}</h3><p>{n} {label}</p></a>'
 
-    intro = (f"{total} previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject. Every question and its options are free — ~10% also include the free answer &amp; explanation, unlock the rest with PYQ Pass."
+    intro = (f"{total} free {esc(ecfg['name'])} PYQ {YEAR} — previous year questions and papers (PYP) for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject. Every question and its options are free to practice online, no download needed — ~10% also include the free answer &amp; explanation, unlock the rest with PYQ Pass."
               if gated else
-              f"{total} solved previous year questions for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation.")
+              f"{total} free solved previous year questions and papers (PYP) for {esc(ecfg['full'])} ({esc(ecfg['desc'])}), organised by subject — each with the correct answer and a full explanation. No download needed, practice online instantly.")
 
     body = f'''{HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/exams/">Exams</a> › {esc(ecfg['name'])}</nav>
-      <h1>{esc(ecfg['full'])} PYQs</h1>
+      <h1>Free {esc(ecfg['name'])} PYQ {YEAR} — {esc(ecfg['full'])} Previous Year Papers</h1>
       <p>{intro}</p>
       <div class="exam-tiles">{tiles}</div>
     </article>
@@ -528,8 +529,8 @@ def exam_hub(exam, by_subject):
 def exams_hub(counts):
     canonical = f"{BASE}/exams/"
     total = sum(counts.values())
-    title = attr(f"India's PYQ Hub — UPSC, JEE, NEET, Board, Defence, SSC CGL PYQs | YESPYQ")
-    desc = attr(f"Previous year questions for UPSC, JEE, NEET, Board exams, Defence and SSC CGL — {total}+ questions to practice. Pick your exam to start.")
+    title = attr(f"Free PYQ {YEAR} Hub — UPSC, JEE, NEET, Board, Defence, SSC CGL Previous Year Papers | YESPYQ")
+    desc = attr(f"Free PYQ and previous year papers (PYP) for UPSC, JEE, NEET, Board exams, Defence and SSC CGL — {total}+ questions to practice online, no download needed. Pick your exam to start.")
 
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"Exams","item":"{canonical}"}}]}}

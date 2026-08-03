@@ -11,6 +11,7 @@ from collections import defaultdict
 
 BASE = "https://yespyq.com"
 TODAY = "2026-07-14"
+YEAR = int(TODAY[:4])
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
 SUB = {
@@ -377,8 +378,8 @@ def year_subject_index(year, sid):
 def hub():
     canonical = f"{BASE}/pyq/"
     total = len(ITEMS)
-    title = attr(f"UPSC PYQs with Answers — {total} Solved Previous Year Questions | YESPYQ")
-    desc = attr(f"Browse {total} solved UPSC CSE Prelims previous year questions (PYQs) with correct answers and detailed explanations, organised by subject. Free practice on YESPYQ.")
+    title = attr(f"Free UPSC PYQ {YEAR} with Answers — {total} Previous Year Papers | YESPYQ")
+    desc = attr(f"Free UPSC PYQ & previous year papers (PYP) — {total} solved UPSC CSE Prelims previous year questions with correct answers and detailed explanations, organised by subject. Practice online, no download needed.")
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"PYQs","item":"{canonical}"}}]}}
   </script>'''
@@ -391,8 +392,8 @@ def hub():
     body = f'''{HEADER}
   <main>
     <section class="blog-hero"><div class="container"><span class="pill">UPSC CSE Prelims</span>
-      <h1>UPSC Previous Year Questions with Answers &amp; Explanations</h1>
-      <p>{total} solved UPSC CSE Prelims PYQs — every question with its correct answer and a detailed explanation. Pick a subject to start.</p></div></section>
+      <h1>Free UPSC PYQ {YEAR} — Previous Year Questions &amp; Papers with Answers</h1>
+      <p>{total} free solved UPSC CSE Prelims PYQs (previous year questions &amp; papers, also called PYPs) — every question with its correct answer and a detailed explanation. Practice online instantly, no download needed. Pick a subject to start.</p></div></section>
     <div class="container"><div class="post-grid">{cards}</div>
       <h2 class="section-title">Browse UPSC PYQs by year</h2>
       <p class="section-sub">Solved previous-year question papers, year by year — with answers &amp; explanations.</p>
