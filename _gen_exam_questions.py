@@ -46,7 +46,7 @@ def make_desc(x, ecfg, sname, is_free, trunc_len=140):
     return ge.plain(d)
 
 
-def question_page(x, ecfg, exam, subject, sname, sicon, chapter, gated, is_free, prev_slug, next_slug, title, desc):
+def question_page(x, ecfg, exam, subject, sname, sicon, chapter, gated, is_free, prev_slug, next_slug, title, desc, related):
     slug = ge.qslug(x)
     canonical = f"{BASE}/exams/{exam}/q/{slug}/"
     chapter_url = f"/exams/{exam}/{subject}/{ge.slugify(chapter)}/"
@@ -77,6 +77,19 @@ def question_page(x, ecfg, exam, subject, sname, sicon, chapter, gated, is_free,
     if next_slug:
         nav_links += f'<a class="btn btn-ghost" href="/exams/{exam}/q/{next_slug}/">Next question →</a>'
 
+    rel_html = "".join(
+        f'<a href="/exams/{exam}/q/{ge.qslug(r)}/"><span class="tag">{ge.esc(sname.split(" ")[0])}'
+        f'{(" · " + str(r["y"])) if r.get("y") else ""}</span><b>{ge.esc(ge.plain(r["q"])[:90])}…</b></a>'
+        for r in related
+    )
+    related_section = (
+        f'''      <section class="related">
+        <h2>More {ge.esc(ecfg['name'])} {ge.esc(sname.split(' ')[0])} PYQs</h2>
+        <div class="related-list">{rel_html}</div>
+      </section>'''
+        if related else ""
+    )
+
     body = f'''{ge.HEADER}
   <main>
     <article class="article">
@@ -90,6 +103,7 @@ def question_page(x, ecfg, exam, subject, sname, sicon, chapter, gated, is_free,
         <p>See every question on {ge.esc(chapter)}, or browse the full {ge.esc(ecfg['name'])} question bank.</p>
         <a href="{chapter_url}" class="btn btn-primary">See all questions on {ge.esc(chapter)} →</a>
       </div>
+{related_section}
     </article>
   </main>
 {ge.FOOTER}
@@ -150,6 +164,19 @@ def main():
         for x, subject, sname, sicon, chapter, is_free in all_rows:
             by_chapter_slugs[(subject, chapter)].append(ge.qslug(x))
 
+        # Pool for "related questions" internal links -- same chapter
+        # preferred, a few from elsewhere in the subject as filler --
+        # mirroring the pattern _gen_questions.py already uses for UPSC's
+        # /pyq/q/ pages. Indexed once per (subject, chapter) so building
+        # each page's related list is O(1) instead of rescanning the whole
+        # subject (JEE's physics alone runs ~2,500 questions).
+        chapter_items = defaultdict(list)      # (subject, chapter) -> [x, ...]
+        subject_other_items = defaultdict(list)  # subject -> [x, ...] (filler pool, capped)
+        for x, subject, sname, sicon, chapter, is_free in all_rows:
+            chapter_items[(subject, chapter)].append(x)
+            if len(subject_other_items[subject]) < 60:
+                subject_other_items[subject].append(x)
+
         chapter_pos = defaultdict(int)
         for x, subject, sname, sicon, chapter, is_free in all_rows:
             key = (subject, chapter)
@@ -159,12 +186,19 @@ def main():
             prev_slug = slugs[pos - 1] if pos > 0 else None
             next_slug = slugs[pos + 1] if pos + 1 < len(slugs) else None
 
+            same_chapter = [r for r in chapter_items[key] if r["i"] != x["i"]][:6]
+            related = same_chapter
+            if len(related) < 6:
+                filler = [r for r in subject_other_items[subject] if r["i"] != x["i"] and r not in related]
+                related = related + filler[:6 - len(related)]
+
             slug = ge.qslug(x)
             page = question_page(
                 x, ecfg, exam, subject, sname, sicon, chapter,
                 gated=True, is_free=is_free,
                 prev_slug=prev_slug, next_slug=next_slug,
                 title=titles[x["i"]], desc=descs[x["i"]],
+                related=related,
             )
             ge.write(f"exams/{exam}/q/{slug}", page)
             sitemap_urls.append(f"{BASE}/exams/{exam}/q/{slug}/")
