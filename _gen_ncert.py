@@ -60,15 +60,17 @@ FILTER_JS = '''  <script>
   })();
   </script>'''
 
-CLASSES = [("11", "Class 11"), ("12", "Class 12")]
-SUBJECTS = [("physics", "Physics"), ("chemistry", "Chemistry"), ("maths", "Maths")]
-
-
 def load_rows():
     rows = json.load(open(MANIFEST, encoding="utf-8"))
     for r in rows:
         r["pdf_url"] = f"/{r['local_path']}"
     return rows
+
+
+def class_list(rows):
+    """Returns [(class_id, class_slug, class_name), ...], e.g. ("11", "class-11", "Class 11")."""
+    order = sorted(set(r["class"] for r in rows), key=lambda c: int(c) if c.isdigit() else 99)
+    return [(c, f"class-{c}", f"Class {c}") for c in order]
 
 
 def ncert_card(r):
@@ -82,23 +84,26 @@ def ncert_card(r):
 def hub(rows):
     canonical = f"{BASE}/ncert-pdfs/"
     total = len(rows)
+    classes = class_list(rows)
+    class_range = f"{classes[0][0]}–{classes[-1][0]}" if len(classes) > 1 else classes[0][2]
     by_class = {}
     for r in rows:
-        by_class.setdefault(r["class"], []).append(r)
+        by_class.setdefault(r["class_slug"], []).append(r)
+    all_subs = sorted(set(r["subject"] for r in rows))
 
-    title = ge.attr(f"Free NCERT PDF Download {YEAR} — Class 11 & 12 Physics, Chemistry, Maths | YESPYQ")
-    desc = ge.attr(f"Free NCERT PDF download for Class 11 & 12 — {total} chapters across Physics, Chemistry and Maths. No signup, no download limit, practice online or save the PDF instantly.")
+    title = ge.attr(f"Free NCERT PDF Download {YEAR} — Class {class_range} | YESPYQ")
+    desc = ge.attr(f"Free NCERT &amp; board-syllabus PDF download for Class {class_range} — {total} chapters across {', '.join(all_subs)}. No signup, no download limit, practice online or save the PDF instantly.")
 
     faqs = [
-        ("Are these the official NCERT textbook PDFs?",
-         f"Yes — every file is the actual NCERT Class 11 and 12 chapter PDF for Physics, Chemistry and Maths, matching the {YEAR} syllabus prescribed by CBSE and most state boards."),
-        ("Is the NCERT PDF download really free?",
-         "Yes, every one of the " + str(total) + " chapter PDFs on this page is free to download, with no signup, no login and no download limit."),
+        ("Are these official NCERT textbook PDFs?",
+         f"The Class 11 & 12 Physics, Chemistry and Maths chapters are the actual NCERT textbook PDFs. The rest follow the same {class_range} board syllabus (CBSE and most state boards) chapter by chapter."),
+        ("Is the download really free?",
+         f"Yes, every one of the {total} chapter PDFs on this page is free to download, with no signup, no login and no download limit."),
         ("Which classes and subjects are covered?",
-         "Class 11 and Class 12 NCERT PDFs for Physics, Chemistry and Maths — every chapter, organised by class and subject so you can jump straight to the one you need."),
+         f"Class {class_range} across {', '.join(all_subs)} — every chapter, organised by class and subject so you can jump straight to the one you need."),
         ("Can I use these PDFs for JEE and NEET preparation, not just boards?",
-         "Yes — NCERT is the base syllabus for JEE and NEET as well as boards, so these same chapter PDFs work for all three."),
-        ("How do I download an NCERT chapter PDF?",
+         "Yes — NCERT is the base syllabus for JEE and NEET as well as boards, so the Physics, Chemistry and Maths chapters work for all three."),
+        ("How do I download a chapter PDF?",
          "Open a class page, filter by subject if you like, and tap Download PDF on the chapter you want — the file opens or saves immediately, no extra steps."),
     ]
     faq_html = "".join(f'<details class="ncert-faq-item"><summary>{ge.esc(q)}</summary><p>{ge.esc(a)}</p></details>' for q, a in faqs)
@@ -115,17 +120,17 @@ def hub(rows):
   </script>'''
 
     tiles = ""
-    for cslug, cname in CLASSES:
+    for cid, cslug, cname in classes:
         n = len(by_class.get(cslug, []))
         subs = sorted(set(r["subject"] for r in by_class.get(cslug, [])))
-        tiles += (f'<a class="ncert-class-card" href="/ncert-pdfs/class-{cslug}/">'
+        tiles += (f'<a class="ncert-class-card" href="/ncert-pdfs/{cslug}/">'
                   f'<h3>NCERT {cname} PDFs</h3><p>{n} chapters — {", ".join(subs)}</p></a>')
 
     body = f'''{ge.HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › NCERT PDFs</nav>
-      <h1>Free NCERT PDF Download {YEAR} — Class 11 &amp; 12</h1>
+      <h1>Free NCERT PDF Download {YEAR} — Class {class_range}</h1>
       <p>{total} NCERT chapter PDFs for Class 11 and Class 12 — Physics, Chemistry and Maths. Every chapter is free to download, no signup or app required. Pick a class to browse chapters by subject.</p>
       <div class="ncert-classes">{tiles}</div>
       <h2>Frequently asked questions</h2>
@@ -267,17 +272,18 @@ def main():
     ge.write("ncert-pdfs", hub(rows))
     urls = [f"{BASE}/ncert-pdfs/"]
 
-    for cslug, cname in CLASSES:
-        ge.write(f"ncert-pdfs/class-{cslug}", class_page(cslug, cname, rows))
-        urls.append(f"{BASE}/ncert-pdfs/class-{cslug}/")
-        subs = sorted(set((r["subject_slug"], r["subject"]) for r in rows if r["class"] == cslug))
+    for cid, cslug, cname in class_list(rows):
+        crows = [r for r in rows if r["class_slug"] == cslug]
+        ge.write(f"ncert-pdfs/{cslug}", class_page(cid, cname, rows))
+        urls.append(f"{BASE}/ncert-pdfs/{cslug}/")
+        subs = sorted(set((r["subject_slug"], r["subject"]) for r in crows))
         for sslug, sname in subs:
-            ge.write(f"ncert-pdfs/class-{cslug}/{sslug}", subject_page(cslug, cname, sslug, sname, rows))
-            urls.append(f"{BASE}/ncert-pdfs/class-{cslug}/{sslug}/")
-            srows = [r for r in rows if r["class"] == cslug and r["subject_slug"] == sslug]
+            ge.write(f"ncert-pdfs/{cslug}/{sslug}", subject_page(cid, cname, sslug, sname, rows))
+            urls.append(f"{BASE}/ncert-pdfs/{cslug}/{sslug}/")
+            srows = [r for r in crows if r["subject_slug"] == sslug]
             for row in srows:
-                ge.write(f"ncert-pdfs/class-{cslug}/{sslug}/{row['chapter_slug']}", chapter_page(cslug, cname, sslug, sname, row, srows))
-                urls.append(f"{BASE}/ncert-pdfs/class-{cslug}/{sslug}/{row['chapter_slug']}/")
+                ge.write(f"ncert-pdfs/{cslug}/{sslug}/{row['chapter_slug']}", chapter_page(cid, cname, sslug, sname, row, srows))
+                urls.append(f"{BASE}/ncert-pdfs/{cslug}/{sslug}/{row['chapter_slug']}/")
 
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:

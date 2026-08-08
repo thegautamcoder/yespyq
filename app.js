@@ -1276,6 +1276,23 @@ const DEMO_QS = [
   }
 ];
 
+function initLedeExamRotator() {
+  const el = $("#lede-exam-rotator");
+  if (!el) return;
+  const EXAMS = ["UPSC", "JEE", "NEET", "SSC CGL", "Defence", "Boards"];
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return; // leave it on the first exam, no motion
+  let i = 0;
+  setInterval(() => {
+    i = (i + 1) % EXAMS.length;
+    el.style.opacity = "0";
+    setTimeout(() => {
+      el.textContent = EXAMS[i];
+      el.style.opacity = "1";
+    }, 200);
+  }, 1800);
+}
+
 function initPhoneDemo() {
   const phone = $("#demo-phone");
   if (!phone) return;
@@ -1390,6 +1407,7 @@ setTimeout(() => {
 }, countDelay);
 initExamTickers();
 initPhoneDemo();
+initLedeExamRotator();
 revealOnScroll();
 $("#year").textContent = new Date().getFullYear();
 showView("home");
