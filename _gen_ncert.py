@@ -36,6 +36,11 @@ EXTRA_CSS = '''  <style>
     .ncert-card b{font-size:.95rem;line-height:1.35}
     .ncert-card .btn{align-self:flex-start;margin-top:auto}
     [data-theme="dark"] .ncert-class-card,[data-theme="dark"] .ncert-card,[data-theme="dark"] .ncert-chip{border-color:var(--line)}
+    .ncert-faq{margin:1rem 0 1.5rem}
+    .ncert-faq-item{border:1.5px solid var(--line);border-radius:12px;padding:.9rem 1.1rem;margin-bottom:.6rem}
+    .ncert-faq-item summary{cursor:pointer;font-weight:700;font-size:.96rem}
+    .ncert-faq-item p{margin:.6rem 0 0;color:var(--muted);font-size:.92rem;line-height:1.6}
+    [data-theme="dark"] .ncert-faq-item{border-color:var(--line)}
   </style>'''
 
 FILTER_JS = '''  <script>
@@ -84,8 +89,29 @@ def hub(rows):
     title = ge.attr(f"Free NCERT PDF Download {YEAR} — Class 11 & 12 Physics, Chemistry, Maths | YESPYQ")
     desc = ge.attr(f"Free NCERT PDF download for Class 11 & 12 — {total} chapters across Physics, Chemistry and Maths. No signup, no download limit, practice online or save the PDF instantly.")
 
+    faqs = [
+        ("Are these the official NCERT textbook PDFs?",
+         f"Yes — every file is the actual NCERT Class 11 and 12 chapter PDF for Physics, Chemistry and Maths, matching the {YEAR} syllabus prescribed by CBSE and most state boards."),
+        ("Is the NCERT PDF download really free?",
+         "Yes, every one of the " + str(total) + " chapter PDFs on this page is free to download, with no signup, no login and no download limit."),
+        ("Which classes and subjects are covered?",
+         "Class 11 and Class 12 NCERT PDFs for Physics, Chemistry and Maths — every chapter, organised by class and subject so you can jump straight to the one you need."),
+        ("Can I use these PDFs for JEE and NEET preparation, not just boards?",
+         "Yes — NCERT is the base syllabus for JEE and NEET as well as boards, so these same chapter PDFs work for all three."),
+        ("How do I download an NCERT chapter PDF?",
+         "Open a class page, filter by subject if you like, and tap Download PDF on the chapter you want — the file opens or saves immediately, no extra steps."),
+    ]
+    faq_html = "".join(f'<details class="ncert-faq-item"><summary>{ge.esc(q)}</summary><p>{ge.esc(a)}</p></details>' for q, a in faqs)
+    faq_ld = ",".join(
+        f'{{"@type":"Question","name":"{ge.json_esc(q)}","acceptedAnswer":{{"@type":"Answer","text":"{ge.json_esc(a)}"}}}}'
+        for q, a in faqs
+    )
+
     schema = f'''  <script type="application/ld+json">
   {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"NCERT PDFs","item":"{canonical}"}}]}}
+  </script>
+  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{faq_ld}]}}
   </script>'''
 
     tiles = ""
@@ -102,6 +128,8 @@ def hub(rows):
       <h1>Free NCERT PDF Download {YEAR} — Class 11 &amp; 12</h1>
       <p>{total} NCERT chapter PDFs for Class 11 and Class 12 — Physics, Chemistry and Maths. Every chapter is free to download, no signup or app required. Pick a class to browse chapters by subject.</p>
       <div class="ncert-classes">{tiles}</div>
+      <h2>Frequently asked questions</h2>
+      <div class="ncert-faq">{faq_html}</div>
     </article>
   </main>
 {ge.FOOTER}
