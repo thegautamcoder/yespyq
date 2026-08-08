@@ -65,12 +65,14 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="manifest.webmanifest" />
 
-  <!-- Site-wide type: Source Sans 3 (loaded again via styles.css @import for subpages) -->
+  <!-- Site-wide type: Source Sans 3. Loaded non-blocking (media=print flipped
+       to all onload) so webfont fetch never delays first paint. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" /></noscript>
   <link rel="preload" href="styles.css" as="style" />
-  <link rel="stylesheet" href="styles.css?v=112" />
+  <link rel="stylesheet" href="styles.css?v=113" />
 
   <!-- Structured data: WebSite + WebPage + Organization -->
   <script type="application/ld+json">
@@ -767,7 +769,7 @@
         <a class="footer-social" href="https://www.youtube.com/@YesPYQ.Official" target="_blank" rel="noopener">▶ YouTube</a>
       </div>
       <div class="footer-col">
-        <h4>Practice</h4>
+        <h3>Practice</h3>
         <a href="#" data-nav="home">Home</a>
         <a href="#" data-nav="practice">Practice</a>
         <a href="/exams/">Exams</a>
@@ -779,7 +781,7 @@
         <a href="/tools/">Tools</a>
       </div>
       <div class="footer-col">
-        <h4>Exams</h4>
+        <h3>Exams</h3>
         <a href="/pyq/">UPSC PYQs</a>
         <a href="/exams/jee/">JEE PYQs</a>
         <a href="/exams/neet/">NEET PYQs</a>
@@ -788,7 +790,7 @@
         <a href="/exams/ssc-cgl/">SSC CGL PYQs</a>
       </div>
       <div class="footer-col">
-        <h4>Subjects</h4>
+        <h3>Subjects</h3>
         <a href="/subjects/polity/">Polity PYQs</a>
         <a href="/subjects/history/">History PYQs</a>
         <a href="/subjects/geography/">Geography PYQs</a>
@@ -798,7 +800,7 @@
         <a href="/subjects/current-affairs/">Current Affairs PYQs</a>
       </div>
       <div class="footer-col">
-        <h4>PYQs by Year</h4>
+        <h3>PYQs by Year</h3>
         <a href="/pyq/year/2024/">UPSC 2024</a>
         <a href="/pyq/year/2023/">UPSC 2023</a>
         <a href="/pyq/year/2022/">UPSC 2022</a>
@@ -807,7 +809,7 @@
         <a href="/pyq/">All Years</a>
       </div>
       <div class="footer-col">
-        <h4>Popular Explainers</h4>
+        <h3>Popular Explainers</h3>
         <a href="/blog/goods-and-services-tax-gst/">GST Explained</a>
         <a href="/blog/fundamental-rights-explained/">Fundamental Rights</a>
         <a href="/blog/monetary-policy-repo-rate/">Monetary Policy</a>
@@ -816,13 +818,13 @@
         <a href="/blog/fiscal-deficit-explained/">Fiscal Deficit</a>
       </div>
       <div class="footer-col">
-        <h4>Company</h4>
+        <h3>Company</h3>
         <a href="/about/">About</a>
         <a href="/pyq-pass/">PYQ Pass</a>
         <a href="/contact/">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <a href="/privacy-policy/">Privacy Policy</a>
         <a href="/terms/">Terms &amp; Conditions</a>
         <a href="/disclaimer/">Disclaimer</a>

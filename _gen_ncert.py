@@ -217,7 +217,7 @@ def chapter_page(cslug, cname, sslug, sname, row, srows):
       <div class="ncert-list">{ncert_card(row)}</div>
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.4rem 0">{nav_links}</div>
       <div class="cta-box">
-        <h3>More NCERT {ge.esc(cname)} {ge.esc(sname)} chapters</h3>
+        <h2>More NCERT {ge.esc(cname)} {ge.esc(sname)} chapters</h2>
         <p>Browse every {ge.esc(sname)} chapter for {ge.esc(cname)}, or explore all NCERT PDFs.</p>
         <a href="/ncert-pdfs/class-{cslug}/{sslug}/" class="btn btn-primary">All {ge.esc(cname)} {ge.esc(sname)} chapters →</a>
       </div>

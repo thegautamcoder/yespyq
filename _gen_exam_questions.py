@@ -99,7 +99,7 @@ def question_page(x, ecfg, exam, subject, sname, sicon, chapter, gated, is_free,
 {qs_html}
       <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.2rem 0">{nav_links}</div>
       <div class="cta-box">
-        <h3>Practice more {ge.esc(ecfg['name'])} {ge.esc(sname)} PYQs</h3>
+        <h2>Practice more {ge.esc(ecfg['name'])} {ge.esc(sname)} PYQs</h2>
         <p>See every question on {ge.esc(chapter)}, or browse the full {ge.esc(ecfg['name'])} question bank.</p>
         <a href="{chapter_url}" class="btn btn-primary">See all questions on {ge.esc(chapter)} →</a>
       </div>
