@@ -180,6 +180,60 @@ def subject_page(cslug, cname, sslug, sname, rows):
     return ge.head(title, desc, canonical, schema, "") + body
 
 
+def chapter_page(cslug, cname, sslug, sname, row, srows):
+    canonical = f"{BASE}/ncert-pdfs/class-{cslug}/{sslug}/{row['chapter_slug']}/"
+    chapter = row["chapter"]
+    idx = next(i for i, r in enumerate(srows) if r["chapter_slug"] == row["chapter_slug"])
+    prev_r = srows[idx - 1] if idx > 0 else None
+    next_r = srows[idx + 1] if idx + 1 < len(srows) else None
+
+    title = ge.attr(f"NCERT {cname} {sname} {chapter} PDF Download {YEAR} | YESPYQ")
+    desc = ge.attr(f"Free NCERT {cname} {sname} \"{chapter}\" chapter PDF — download instantly, no signup needed. Part of the full NCERT {cname} {sname} syllabus.")
+
+    schema = f'''  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{{"@type":"ListItem","position":1,"name":"Home","item":"{BASE}/"}},{{"@type":"ListItem","position":2,"name":"NCERT PDFs","item":"{BASE}/ncert-pdfs/"}},{{"@type":"ListItem","position":3,"name":"{ge.json_esc(cname)}","item":"{BASE}/ncert-pdfs/class-{cslug}/"}},{{"@type":"ListItem","position":4,"name":"{ge.json_esc(sname)}","item":"{BASE}/ncert-pdfs/class-{cslug}/{sslug}/"}},{{"@type":"ListItem","position":5,"name":"{ge.json_esc(chapter)}","item":"{canonical}"}}]}}
+  </script>
+  <script type="application/ld+json">
+  {{"@context":"https://schema.org","@type":"DigitalDocument","name":"{ge.json_esc(f'NCERT {cname} {sname} — {chapter}')}","about":"{ge.json_esc(chapter)}","educationalLevel":"{ge.json_esc(cname)}","learningResourceType":"Textbook chapter","encodingFormat":"application/pdf","url":"{canonical}","isAccessibleForFree":true}}
+  </script>'''
+
+    nav_links = ""
+    if prev_r:
+        nav_links += f'<a class="btn btn-ghost" href="/ncert-pdfs/class-{cslug}/{sslug}/{prev_r["chapter_slug"]}/">← {ge.esc(prev_r["chapter"])}</a>'
+    if next_r:
+        nav_links += f'<a class="btn btn-ghost" href="/ncert-pdfs/class-{cslug}/{sslug}/{next_r["chapter_slug"]}/">{ge.esc(next_r["chapter"])} →</a>'
+
+    other_chapters = "".join(
+        f'<a href="/ncert-pdfs/class-{cslug}/{sslug}/{r["chapter_slug"]}/">{ge.esc(r["chapter"])}</a>'
+        for r in srows if r["chapter_slug"] != row["chapter_slug"]
+    )
+
+    body = f'''{ge.HEADER}
+  <main>
+    <article class="article">
+      <nav class="breadcrumb"><a href="/">Home</a> › <a href="/ncert-pdfs/">NCERT PDFs</a> › <a href="/ncert-pdfs/class-{cslug}/">{ge.esc(cname)}</a> › <a href="/ncert-pdfs/class-{cslug}/{sslug}/">{ge.esc(sname)}</a> › {ge.esc(chapter)}</nav>
+      <h1>NCERT {ge.esc(cname)} {ge.esc(sname)}: {ge.esc(chapter)} — PDF Download</h1>
+      <p>Download the NCERT {ge.esc(cname)} {ge.esc(sname)} chapter "{ge.esc(chapter)}" as a free PDF — no signup, no download limit. Part of the complete NCERT {ge.esc(cname)} {ge.esc(sname)} syllabus, all {len(srows)} chapters available on YESPYQ.</p>
+      <div class="ncert-list">{ncert_card(row)}</div>
+      <div class="q-nav" style="display:flex;gap:.7rem;flex-wrap:wrap;margin:1.4rem 0">{nav_links}</div>
+      <div class="cta-box">
+        <h3>More NCERT {ge.esc(cname)} {ge.esc(sname)} chapters</h3>
+        <p>Browse every {ge.esc(sname)} chapter for {ge.esc(cname)}, or explore all NCERT PDFs.</p>
+        <a href="/ncert-pdfs/class-{cslug}/{sslug}/" class="btn btn-primary">All {ge.esc(cname)} {ge.esc(sname)} chapters →</a>
+      </div>
+      <section class="related">
+        <h2>Other NCERT {ge.esc(cname)} {ge.esc(sname)} chapters</h2>
+        <div class="related-list">{other_chapters}</div>
+      </section>
+    </article>
+  </main>
+{ge.FOOTER}
+{EXTRA_CSS}
+</body>
+</html>'''
+    return ge.head(title, desc, canonical, schema, "") + body
+
+
 def main():
     rows = load_rows()
     ge.write("ncert-pdfs", hub(rows))
@@ -192,6 +246,10 @@ def main():
         for sslug, sname in subs:
             ge.write(f"ncert-pdfs/class-{cslug}/{sslug}", subject_page(cslug, cname, sslug, sname, rows))
             urls.append(f"{BASE}/ncert-pdfs/class-{cslug}/{sslug}/")
+            srows = [r for r in rows if r["class"] == cslug and r["subject_slug"] == sslug]
+            for row in srows:
+                ge.write(f"ncert-pdfs/class-{cslug}/{sslug}/{row['chapter_slug']}", chapter_page(cslug, cname, sslug, sname, row, srows))
+                urls.append(f"{BASE}/ncert-pdfs/class-{cslug}/{sslug}/{row['chapter_slug']}/")
 
     sm = ['<?xml version="1.0" encoding="UTF-8"?>', '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
