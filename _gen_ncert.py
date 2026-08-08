@@ -17,6 +17,74 @@ ROOT = ge.ROOT
 
 MANIFEST = os.path.join(ROOT, "downloads", "ncert", "manifest.json")
 
+# Original, hand-written blurbs — not summarising or quoting the textbooks
+# themselves, just general context on why each subject matters and how to
+# use the PDF. Keyed by subject name so the same blurb can be reused across
+# classes with the class name substituted in.
+SUBJECT_BLURBS = {
+    "Physics": (
+        "Physics builds from first principles — every later chapter leans on the ones before it, "
+        "which is exactly why a PDF you can flip back through is more useful than scattered notes. "
+        "Working through the chapters in order, and re-deriving the key formulas by hand rather than "
+        "just memorising them, is what actually sticks come exam time.",
+        "Keep a separate page for formulas as you go — Physics rewards recognising which law applies "
+        "to a new problem, not just recalling it in isolation."
+    ),
+    "Chemistry": (
+        "Chemistry splits into three quite different ways of thinking — physical (calculation-heavy), "
+        "organic (structure and reaction-heavy) and inorganic (fact-heavy) — and each chapter tends to "
+        "sit clearly in one of those buckets. Knowing which mode a chapter needs before you start "
+        "reading saves a lot of wasted effort.",
+        "For organic chapters especially, draw the reaction mechanisms out by hand at least once — "
+        "recognising them, not reproducing them from memory, is the actual skill being tested."
+    ),
+    "Maths": (
+        "Maths chapters build a toolkit you're expected to combine, not use one at a time — a single "
+        "exam question often pulls in ideas from two or three different chapters at once. Working "
+        "through problems chapter by chapter first, then mixed-review sets later, mirrors how the "
+        "subject is actually tested.",
+        "Redo problems you got wrong a few days later without looking at the solution first — that "
+        "gap is where the method actually gets internalised."
+    ),
+    "Biology": (
+        "Biology is the most content-dense of the science subjects, and the difference between a "
+        "vague answer and a precise one usually comes down to terminology — the exact name of a "
+        "process, structure or stage. Reading a chapter once for the big picture and once more for "
+        "the specific terms is a more efficient split than trying to absorb both at the same time.",
+        "Diagrams are worth the extra time — labelling one from memory tests whether you actually "
+        "understood the structure, not just whether you recognise it."
+    ),
+    "Science": (
+        "At this stage Science moves fast across physics, chemistry and biology within the same "
+        "chapter list, so it's worth being deliberate about which of the three a given chapter is "
+        "testing before you dive in — the right approach (calculation vs. concept vs. recall) differs "
+        "for each.",
+        "Short, frequent revision of earlier chapters works better here than one long pass — the "
+        "three subjects don't reinforce each other the way sequential chapters in a single subject do."
+    ),
+    "English": (
+        "English chapters at this level are less about memorising the text and more about being able "
+        "to discuss its themes, characters and structure in your own words — the questions test "
+        "comprehension and expression, not recall.",
+        "Practise answering in full sentences under a time limit — English exams reward clarity and "
+        "structure in the answer almost as much as the content itself."
+    ),
+    "Social Science": (
+        "Social Science covers history, geography, political science and economics in one bank of "
+        "chapters, and each rewards a different kind of preparation — dates and causes for history, "
+        "maps and processes for geography, structures and institutions for political science.",
+        "Timelines and simple sketch-maps, drawn yourself rather than just viewed, make history and "
+        "geography chapters far easier to recall accurately under exam pressure."
+    ),
+}
+
+CLASS_INTRO = {
+    "9": "the first year of the secondary syllabus, where subjects widen out from the primary curriculum into distinct disciplines",
+    "10": "the board exam year most students remember — the syllabus here sets the base for whichever stream you pick after",
+    "11": "the first year of senior secondary, where subjects go noticeably deeper and start feeding directly into JEE/NEET as well as boards",
+    "12": "the final board year, and for Physics, Chemistry and Maths the last full pass through the syllabus before competitive exams",
+}
+
 EXTRA_CSS = '''  <style>
     .ncert-classes{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1.6rem 0}
     .ncert-class-card{border:1.5px solid var(--line);border-radius:14px;padding:1.5rem;text-decoration:none;color:inherit;display:block;transition:border-color .15s,transform .15s}
@@ -131,7 +199,8 @@ def hub(rows):
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › NCERT PDFs</nav>
       <h1>Free NCERT PDF Download {YEAR} — Class {class_range}</h1>
-      <p>{total} NCERT chapter PDFs for Class 11 and Class 12 — Physics, Chemistry and Maths. Every chapter is free to download, no signup or app required. Pick a class to browse chapters by subject.</p>
+      <p>{total} NCERT chapter PDFs for Class {class_range} — {', '.join(all_subs)}. Every chapter is free to download, no signup or app required. Pick a class to browse chapters by subject.</p>
+      <p>NCERT textbooks are the base syllabus for CBSE boards and most state boards, and the same chapters carry directly into JEE and NEET for the science subjects — which is why they're usually the first thing a teacher points to before any reference book. Reading straight from the source rather than a summarised guide also avoids the small but real risk of a rewritten explanation drifting from what's actually being tested.</p>
       <div class="ncert-classes">{tiles}</div>
       <h2>Frequently asked questions</h2>
       <div class="ncert-faq">{faq_html}</div>
@@ -164,13 +233,19 @@ def class_page(cslug, cname, rows):
     subject_links = "".join(f'<a href="/ncert-pdfs/class-{cslug}/{sslug}/">{ge.esc(sname)} PDFs →</a> ' for sslug, sname in subs)
 
     cards = "".join(ncert_card(r) for r in crows)
+    class_ctx = CLASS_INTRO.get(cslug, "")
+    subject_summary = "".join(
+        f'<li><strong>{ge.esc(sname)}</strong> — {ge.esc(SUBJECT_BLURBS[sname][0].split(".")[0])}.</li>'
+        for sslug, sname in subs if sname in SUBJECT_BLURBS
+    )
 
     body = f'''{ge.HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/ncert-pdfs/">NCERT PDFs</a> › {ge.esc(cname)}</nav>
       <h1>Free NCERT {ge.esc(cname)} PDF Download {YEAR}</h1>
-      <p>{total} NCERT {ge.esc(cname)} chapter PDFs — {", ".join(s[1] for s in subs)}, free to download, no signup needed. {subject_links}</p>
+      <p>{total} NCERT {ge.esc(cname)} chapter PDFs — {", ".join(s[1] for s in subs)}, free to download, no signup needed. {ge.esc(cname)} is {class_ctx}. {subject_links}</p>
+      {f'<ul>{subject_summary}</ul>' if subject_summary else ''}
       <div class="ncert-filters">{chips}</div>
       <div class="ncert-list">{cards}</div>
     </article>
@@ -196,13 +271,29 @@ def subject_page(cslug, cname, sslug, sname, rows):
   </script>'''
 
     cards = "".join(ncert_card(r) for r in srows)
+    seen_names = []
+    for r in srows:
+        if r["chapter"] not in seen_names:
+            seen_names.append(r["chapter"])
+    chapter_names = ", ".join(seen_names)
+    class_ctx = CLASS_INTRO.get(cslug, "")
+    blurb = SUBJECT_BLURBS.get(sname)
+    blurb_html = ""
+    if blurb:
+        intro, tip = blurb
+        blurb_html = (
+            f'<p>{intro}</p>'
+            f'<p><strong>Tip:</strong> {tip}</p>'
+        )
 
     body = f'''{ge.HEADER}
   <main>
     <article class="article">
       <nav class="breadcrumb"><a href="/">Home</a> › <a href="/ncert-pdfs/">NCERT PDFs</a> › <a href="/ncert-pdfs/class-{cslug}/">{ge.esc(cname)}</a> › {ge.esc(sname)}</nav>
       <h1>Free NCERT {ge.esc(cname)} {ge.esc(sname)} PDF Download {YEAR}</h1>
-      <p>All {total} NCERT {ge.esc(cname)} {ge.esc(sname)} chapter PDFs — free to download, no signup needed.</p>
+      <p>All {total} NCERT {ge.esc(cname)} {ge.esc(sname)} chapter PDFs — free to download, no signup needed. {ge.esc(cname)} is {class_ctx}.</p>
+      {blurb_html}
+      <p>The {total} chapters covered here: {ge.esc(chapter_names)}.</p>
       <div class="ncert-list">{cards}</div>
     </article>
   </main>
